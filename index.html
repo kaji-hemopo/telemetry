@@ -191,10 +191,25 @@
             animation: fadeIn 0.3s ease;
         }
 
-        .tab-radio#tab-markets:checked ~ .tab-content.markets,
-        .tab-radio#tab-venture:checked ~ .tab-content.venture,
-        .tab-radio#tab-feeds:checked ~ .tab-content.feeds {
+        .tab-content.active {
             display: block;
+        }
+
+        .tab-label.active {
+            color: var(--tab-active);
+            background: var(--tab-active-bg);
+            position: relative;
+        }
+
+        .tab-label.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--tab-active);
+            border-radius: 3px 3px 0 0;
         }
 
         @keyframes fadeIn {
@@ -888,7 +903,7 @@
         <!-- TABBED NAVIGATION -->
         <div class="tab-container">
             <div class="tab-bar">
-                <input type="radio" id="tab-markets" name="tab-group" class="tab-radio" checked>
+                <input type="radio" id="tab-markets" name="tab-group" class="tab-radio">
                 <label for="tab-markets" class="tab-label">
                     <span class="tab-icon">📈</span>
                     <span>MARKETS</span>
@@ -1773,6 +1788,55 @@
     </div>
 
     <script>
+        // ===== TAB FUNCTIONALITY =====
+        function switchTab(tabId) {
+            // Remove active class from all tabs and content
+            document.querySelectorAll('.tab-label').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // Add active class to clicked tab
+            const clickedTab = document.querySelector(`label[for="${tabId}"]`);
+            if (clickedTab) {
+                clickedTab.classList.add('active');
+            }
+            
+            // Show corresponding content
+            const contentId = tabId.replace('tab-', '');
+            const contentElement = document.querySelector(`.tab-content.${contentId}`);
+            if (contentElement) {
+                contentElement.classList.add('active');
+            }
+            
+            // Update radio button state
+            const radio = document.getElementById(tabId);
+            if (radio) {
+                radio.checked = true;
+            }
+            
+            // Show notification
+            showNotification(`Switched to ${contentId.toUpperCase()} tab`, 'info');
+        }
+        
+        // Initialize tabs on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set MARKETS as active by default
+            switchTab('tab-markets');
+            
+            // Add click handlers to tab labels
+            document.querySelectorAll('.tab-label').forEach(label => {
+                const tabId = label.getAttribute('for');
+                label.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    switchTab(tabId);
+                });
+            });
+        });
+
         // ===== DATA INJECTION POINTS =====
         // These variables will be populated by Kaji with actual data
         
