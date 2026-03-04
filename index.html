@@ -622,6 +622,131 @@
             color: var(--accent-purple);
         }
 
+        /* ===== TRADINGVIEW COMPONENTS ===== */
+        .trade-levels-overlay {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: var(--space-md);
+            margin-bottom: var(--space-lg);
+            box-shadow: var(--shadow-md);
+        }
+
+        .trade-levels-container {
+            display: flex;
+            justify-content: space-between;
+            gap: var(--space-md);
+            margin-bottom: var(--space-sm);
+        }
+
+        .trade-level {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: var(--space-sm) var(--space-md);
+            border-radius: var(--radius-sm);
+            flex: 1;
+        }
+
+        .trade-level.entry {
+            background: rgba(88, 166, 255, 0.1);
+            border: 1px solid rgba(88, 166, 255, 0.3);
+        }
+
+        .trade-level.take-profit {
+            background: rgba(63, 185, 80, 0.1);
+            border: 1px solid rgba(63, 185, 80, 0.3);
+        }
+
+        .trade-level.stop-loss {
+            background: rgba(248, 81, 73, 0.1);
+            border: 1px solid rgba(248, 81, 73, 0.3);
+        }
+
+        .trade-label {
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: var(--space-xs);
+        }
+
+        .trade-level.entry .trade-label {
+            color: var(--accent-blue);
+        }
+
+        .trade-level.take-profit .trade-label {
+            color: var(--accent-green);
+        }
+
+        .trade-level.stop-loss .trade-label {
+            color: var(--accent-red);
+        }
+
+        .trade-value {
+            font-family: var(--font-mono);
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+
+        .trade-source {
+            text-align: center;
+            font-size: 0.75rem;
+            padding-top: var(--space-xs);
+            border-top: 1px solid var(--border-color);
+        }
+
+        .tradingview-chart-container {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: var(--space-md);
+            margin-bottom: var(--space-lg);
+            overflow: hidden;
+        }
+
+        .price-stickers-container {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: var(--space-md);
+            overflow-x: auto;
+        }
+
+        .price-stickers-scroll {
+            display: flex;
+            gap: var(--space-md);
+            min-width: min-content;
+        }
+
+        .price-stickers-scroll .tradingview-widget-container {
+            min-width: 200px;
+            flex-shrink: 0;
+        }
+
+        @media (max-width: 768px) {
+            .trade-levels-container {
+                flex-direction: column;
+                gap: var(--space-sm);
+            }
+            
+            .trade-level {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+            
+            .trade-label {
+                margin-bottom: 0;
+                margin-right: var(--space-sm);
+            }
+            
+            .price-stickers-scroll .tradingview-widget-container {
+                min-width: 180px;
+            }
+        }
+
         /* ===== TELEMETRY FEEDS SECTION ===== */
         .feed-section {
             margin-bottom: var(--space-lg);
@@ -923,21 +1048,138 @@
             </div>
         </div>
 
-        <!-- TAB 1: MARKETS (Gold-Shield Targets) -->
+        <!-- TAB 1: MARKETS (TradingView Charts) -->
         <div class="tab-content markets">
+            <!-- KAJI OVERLAY: Agent 7 Trade Levels -->
+            <div class="trade-levels-overlay">
+                <div class="trade-levels-container">
+                    <div class="trade-level entry">
+                        <span class="trade-label">[ENTRY]</span>
+                        <span class="trade-value text-mono">148.25</span>
+                    </div>
+                    <div class="trade-level take-profit">
+                        <span class="trade-label">[TAKE PROFIT]</span>
+                        <span class="trade-value text-mono">149.50</span>
+                    </div>
+                    <div class="trade-level stop-loss">
+                        <span class="trade-label">[STOP LOSS]</span>
+                        <span class="trade-value text-mono">147.00</span>
+                    </div>
+                </div>
+                <div class="trade-source">
+                    <span class="text-muted">Gold-Shield Agent 7 • Updated: 21:40 JST</span>
+                </div>
+            </div>
+            
+            <!-- TRADINGVIEW MAIN CHART -->
+            <section class="mb-lg">
+                <div class="card-header mb-md">
+                    <div class="card-title">
+                        <div class="card-icon">📈</div>
+                        <h2>Live TradingView Chart - USD/JPY</h2>
+                    </div>
+                    <div class="card-actions">
+                        <span class="badge badge-info">Live</span>
+                        <span class="badge badge-success">Swing Trade Focus</span>
+                    </div>
+                </div>
+                
+                <div class="tradingview-chart-container">
+                    <!-- TradingView Widget BEGIN -->
+                    <div class="tradingview-widget-container">
+                        <div id="tradingview_chart"></div>
+                        <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                        <script type="text/javascript">
+                        new TradingView.widget({
+                            "width": "100%",
+                            "height": "500",
+                            "symbol": "FX:USDJPY",
+                            "interval": "D",
+                            "timezone": "Asia/Tokyo",
+                            "theme": "dark",
+                            "style": "1",
+                            "locale": "en",
+                            "toolbar_bg": "#1E2329",
+                            "enable_publishing": false,
+                            "allow_symbol_change": true,
+                            "container_id": "tradingview_chart",
+                            "autosize": true
+                        });
+                        </script>
+                    </div>
+                    <!-- TradingView Widget END -->
+                </div>
+            </section>
+            
+            <!-- LIVE PRICE STICKERS -->
             <section class="mb-lg">
                 <div class="card-header mb-md">
                     <div class="card-title">
                         <div class="card-icon">💰</div>
-                        <h2>Gold-Shield High-Conviction Targets</h2>
-                    </div>
-                    <div class="card-actions">
-                        <span class="badge badge-info">Live</span>
-                        <span class="badge badge-success">PASSED</span>
+                        <h3>Live Price Tickers</h3>
                     </div>
                 </div>
                 
-                <div class="grid-2" id="gold-shield-targets">
+                <div class="price-stickers-container">
+                    <div class="price-stickers-scroll">
+                        <!-- XAUUSD -->
+                        <div class="tradingview-widget-container">
+                            <div class="tradingview-widget-container__widget"></div>
+                            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+                            {
+                            "symbol": "FX:XAUUSD",
+                            "width": "100%",
+                            "colorTheme": "dark",
+                            "isTransparent": true,
+                            "locale": "en"
+                            }
+                            </script>
+                        </div>
+                        
+                        <!-- OIL -->
+                        <div class="tradingview-widget-container">
+                            <div class="tradingview-widget-container__widget"></div>
+                            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+                            {
+                            "symbol": "TVC:USOIL",
+                            "width": "100%",
+                            "colorTheme": "dark",
+                            "isTransparent": true,
+                            "locale": "en"
+                            }
+                            </script>
+                        </div>
+                        
+                        <!-- NAS100 -->
+                        <div class="tradingview-widget-container">
+                            <div class="tradingview-widget-container__widget"></div>
+                            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+                            {
+                            "symbol": "NASDAQ:NDX",
+                            "width": "100%",
+                            "colorTheme": "dark",
+                            "isTransparent": true,
+                            "locale": "en"
+                            }
+                            </script>
+                        </div>
+                        
+                        <!-- BTCUSD -->
+                        <div class="tradingview-widget-container">
+                            <div class="tradingview-widget-container__widget"></div>
+                            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+                            {
+                            "symbol": "BITSTAMP:BTCUSD",
+                            "width": "100%",
+                            "colorTheme": "dark",
+                            "isTransparent": true,
+                            "locale": "en"
+                            }
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
     <div class="target-card">
         <div class="target-symbol">XAUUSD</div>
