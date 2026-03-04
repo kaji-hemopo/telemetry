@@ -1010,7 +1010,7 @@
         <header class="header">
             <div class="header-info">
                 <h1>Empire Financial Terminal</h1>
-                <div class="timestamp text-mono">Last Updated: <span id="last-updated">2026-03-04 23:12:41 JST</span></div>
+                <div class="timestamp text-mono">Last Updated: <span id="last-updated">2026-03-05 07:35:51 JST</span></div>
             </div>
             <div class="header-actions">
                 <div class="status-indicator ">
@@ -1067,7 +1067,7 @@
                     </div>
                 </div>
                 <div class="trade-source">
-                    <span class="text-muted">Gold-Shield Agent 7 • Updated: 21:40 JST</span>
+                    <span class="text-muted">Gold-Shield Agent 7 • Updated: 07:35 JST</span>
                 </div>
             </div>
             
@@ -1088,7 +1088,122 @@
                     <!-- TradingView Widget BEGIN -->
                     <div class="tradingview-widget-container">
                         <div id="tradingview_chart"></div>
-                        <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                        <script type="text/javascript" src="https://s3.tradingview.com/tv.js">
+        // ===== DATA INJECTION API =====
+        // These functions allow Kaji to programmatically update the dashboard
+        
+        window.EmpireDashboard = {
+            updateGoldShieldTargets: function(targets) {
+                const container = document.getElementById('gold-shield-targets');
+                if (!container) return;
+                
+                container.innerHTML = '';
+                
+                targets.forEach(target => {
+                    const card = document.createElement('div');
+                    card.className = 'target-card animate-fade-in';
+                    card.innerHTML = `
+                        <div class="target-symbol">${target.symbol}</div>
+                        <div class="target-info">
+                            <div class="target-name">${target.name}</div>
+                            <div class="target-meta">${target.meta}</div>
+                        </div>
+                        <div class="target-stats">
+                            <div class="target-price text-mono">${target.price}</div>
+                            <div class="target-change ${target.change.startsWith('+') ? 'text-success' : target.change.startsWith('-') ? 'text-error' : 'text-warning'} text-mono">${target.change}</div>
+                            <div class="target-score">
+                                <span class="score-value text-mono">${target.score}</span>
+                                <span class="text-muted">/100</span>
+                            </div>
+                        </div>
+                    `;
+                    container.appendChild(card);
+                });
+                
+                showNotification('Gold-Shield targets updated', 'success');
+            },
+            
+            updateEmpireSwarmIdeas: function(ideas) {
+                const container = document.getElementById('empire-swarm-ideas');
+                if (!container) return;
+                
+                container.innerHTML = '';
+                
+                ideas.forEach(idea => {
+                    const card = document.createElement('div');
+                    card.className = 'idea-card animate-fade-in';
+                    card.innerHTML = `
+                        <div class="idea-header">
+                            <div class="idea-title">${idea.title}</div>
+                            <div class="idea-score text-mono">${idea.score}</div>
+                        </div>
+                        <div class="idea-summary">${idea.summary}</div>
+                        <div class="idea-tags">
+                            ${idea.tags.map(tag => `<span class="idea-tag">${tag}</span>`).join('')}
+                        </div>
+                    `;
+                    container.appendChild(card);
+                });
+                
+                showNotification('Empire Swarm ideas updated', 'success');
+            },
+            
+            updateTelemetryFeed: function(feedId, items) {
+                const feed = document.getElementById(feedId);
+                if (!feed) return;
+                
+                feed.innerHTML = '';
+                items.forEach(item => {
+                    const feedItem = document.createElement('div');
+                    feedItem.className = 'feed-item animate-fade-in';
+                    feedItem.innerHTML = `
+                        <div class="feed-item-header">
+                            <div class="feed-item-title">${item.title}</div>
+                            <div class="feed-item-time text-mono">${item.time}</div>
+                        </div>
+                        <div class="feed-item-summary">${item.summary}</div>
+                    `;
+                    feed.appendChild(feedItem);
+                });
+                
+                // Update count
+                const countElement = document.querySelector(\`[onclick="toggleFeed('${feedId}')"] .feed-count\`);
+                if (countElement) {
+                    countElement.textContent = \`${items.length} updates\`;
+                }
+                
+                showNotification(\`${feedId.replace('-feed', '').toUpperCase()} feed updated\`, 'info');
+            },
+            
+            setSystemStatus: function(status, message) {
+                const indicator = document.querySelector('.status-indicator');
+                if (!indicator) return;
+                
+                const statusMap = {
+                    'online': { class: '', text: 'System Status: Online' },
+                    'warning': { class: 'warning', text: 'System Status: Warning' },
+                    'error': { class: 'error', text: 'System Status: Error' }
+                };
+                
+                const statusInfo = statusMap[status] || statusMap.online;
+                indicator.className = \`status-indicator \${statusInfo.class}\`;
+                indicator.textContent = message || statusInfo.text;
+                
+                if (message) {
+                    showNotification(message, status);
+                }
+            },
+            
+            switchToTab: function(tabName) {
+                const tabId = \`tab-\${tabName.toLowerCase()}\`;
+                const tabRadio = document.getElementById(tabId);
+                if (tabRadio) {
+                    tabRadio.checked = true;
+                    showNotification(\`Switched to \${tabName} tab\`, 'info');
+                }
+            }
+        };
+        </script>
                         <script type="text/javascript">
                         new TradingView.widget({
                             "width": "100%",
@@ -1499,6 +1614,59 @@
     </div>
     
 </div>
+            <div class="idea-score text-mono">92</div>
+        </div>
+        <div class="idea-summary">Automated financial management for professional athletes with contract-based income, sponsorship tracking, and Japanese tax optimization.</div>
+        <div class="idea-tags">
+            <span class="idea-tag">SaaS</span><span class="idea-tag">FinTech</span><span class="idea-tag">Japan</span><span class="idea-tag">Athletes</span>
+        </div>
+    </div>
+    
+    <div class="idea-card">
+        <div class="idea-header">
+            <div class="idea-title">AI Property Scout</div>
+            <div class="idea-score text-mono">85</div>
+        </div>
+        <div class="idea-summary">ML-powered property analysis for NZ/JP markets with automated valuation, rental yield prediction, and investment scoring.</div>
+        <div class="idea-tags">
+            <span class="idea-tag">Real Estate</span><span class="idea-tag">AI</span><span class="idea-tag">NZ/JP</span><span class="idea-tag">Property</span>
+        </div>
+    </div>
+    
+    <div class="idea-card">
+        <div class="idea-header">
+            <div class="idea-title">Rugby Tech Analytics</div>
+            <div class="idea-score text-mono">78</div>
+        </div>
+        <div class="idea-summary">Performance tracking and injury prediction platform for rugby teams using wearable data and computer vision.</div>
+        <div class="idea-tags">
+            <span class="idea-tag">Sports Tech</span><span class="idea-tag">Analytics</span><span class="idea-tag">Health</span><span class="idea-tag">Rugby</span>
+        </div>
+    </div>
+    
+    <div class="idea-card">
+        <div class="idea-header">
+            <div class="idea-title">Japanese Immigration SaaS</div>
+            <div class="idea-score text-mono">75</div>
+        </div>
+        <div class="idea-summary">Streamlined visa processing and compliance platform for foreigners moving to Japan with automated document handling.</div>
+        <div class="idea-tags">
+            <span class="idea-tag">SaaS</span><span class="idea-tag">Japan</span><span class="idea-tag">Immigration</span><span class="idea-tag">Compliance</span>
+        </div>
+    </div>
+    
+    <div class="idea-card">
+        <div class="idea-header">
+            <div class="idea-title">NZ Property Exit Optimizer</div>
+            <div class="idea-score text-mono">68</div>
+        </div>
+        <div class="idea-summary">Timing and valuation optimization tool for NZ property sales with market sentiment analysis and tax implications.</div>
+        <div class="idea-tags">
+            <span class="idea-tag">Real Estate</span><span class="idea-tag">NZ</span><span class="idea-tag">Finance</span><span class="idea-tag">Optimization</span>
+        </div>
+    </div>
+    
+</div>
                             <div class="idea-score text-mono">92</div>
                         </div>
                         <div class="idea-summary">
@@ -1607,6 +1775,44 @@
     <div class="feed-item">
         <div class="feed-item-header">
             <div class="feed-item-title">Cursor hits $2B ARR milestone</div>
+            <div class="feed-item-time text-mono">2h ago</div>
+        </div>
+        <div class="feed-item-summary">Four-year-old AI coding assistant startup sees revenue run rate double in three months, signaling strong enterprise adoption.</div>
+    </div>
+    
+    <div class="feed-item">
+        <div class="feed-item-header">
+            <div class="feed-item-title">Stripe launches AI billing feature</div>
+            <div class="feed-item-time text-mono">4h ago</div>
+        </div>
+        <div class="feed-item-summary">New feature allows AI companies to track and profit from underlying model costs, addressing a major pain point in AI SaaS.</div>
+    </div>
+    
+    <div class="feed-item">
+        <div class="feed-item-header">
+            <div class="feed-item-title">Vercel raises at $5B valuation</div>
+            <div class="feed-item-time text-mono">6h ago</div>
+        </div>
+        <div class="feed-item-summary">Frontend cloud platform secures funding to expand AI deployment capabilities, competing directly with AWS Amplify.</div>
+    </div>
+    
+    <div class="feed-item">
+        <div class="feed-item-header">
+            <div class="feed-item-title">GitHub Copilot usage surges 300%</div>
+            <div class="feed-item-time text-mono">1d ago</div>
+        </div>
+        <div class="feed-item-summary">Microsoft reports massive adoption growth, with 50% of Fortune 500 companies now using AI coding assistants.</div>
+    </div>
+    
+    <div class="feed-item">
+        <div class="feed-item-header">
+            <div class="feed-item-title">OpenAI launches enterprise API tier</div>
+            <div class="feed-item-time text-mono">1d ago</div>
+        </div>
+        <div class="feed-item-summary">New pricing model offers volume discounts and dedicated capacity, making AI more accessible for mid-market companies.</div>
+    </div>
+    
+</div>
             <div class="feed-item-time text-mono">2h ago</div>
         </div>
         <div class="feed-item-summary">Four-year-old AI coding assistant startup sees revenue run rate double in three months, signaling strong enterprise adoption.</div>
@@ -1817,6 +2023,44 @@
     </div>
     
 </div>
+            <div class="feed-item-time text-mono">1d ago</div>
+        </div>
+        <div class="feed-item-summary">Bank of Japan keeps interest rates near zero, yen weakens to 148 against USD, supporting export economy.</div>
+    </div>
+    
+    <div class="feed-item">
+        <div class="feed-item-header">
+            <div class="feed-item-title">Visa processing times improving</div>
+            <div class="feed-item-time text-mono">2d ago</div>
+        </div>
+        <div class="feed-item-summary">Immigration services report 6-8 week processing for business manager visas, down from 12+ weeks last quarter.</div>
+    </div>
+    
+    <div class="feed-item">
+        <div class="feed-item-header">
+            <div class="feed-item-title">Japan startup funding hits record</div>
+            <div class="feed-item-time text-mono">3d ago</div>
+        </div>
+        <div class="feed-item-summary">Venture capital investment in Japanese startups reaches ¥1.2 trillion in 2025, driven by AI and fintech sectors.</div>
+    </div>
+    
+    <div class="feed-item">
+        <div class="feed-item-header">
+            <div class="feed-item-title">Corporate tax reforms announced</div>
+            <div class="feed-item-time text-mono">4d ago</div>
+        </div>
+        <div class="feed-item-summary">Government proposes tax incentives for digital transformation and R&D spending to boost productivity.</div>
+    </div>
+    
+    <div class="feed-item">
+        <div class="feed-item-header">
+            <div class="feed-item-title">Tourism recovery continues</div>
+            <div class="feed-item-time text-mono">5d ago</div>
+        </div>
+        <div class="feed-item-summary">Visitor numbers reach 90% of pre-pandemic levels, with strong growth from Southeast Asia and Australia.</div>
+    </div>
+    
+</div>
                                 <div class="feed-item-time text-mono">1d ago</div>
                             </div>
                             <div class="feed-item-summary">
@@ -1875,6 +2119,44 @@
     <div class="feed-item">
         <div class="feed-item-header">
             <div class="feed-item-title">Fuel stock levels remain stable</div>
+            <div class="feed-item-time text-mono">5h ago</div>
+        </div>
+        <div class="feed-item-summary">MBIE confirms healthy fuel reserves despite Middle East tensions affecting global oil prices.</div>
+    </div>
+    
+    <div class="feed-item">
+        <div class="feed-item-header">
+            <div class="feed-item-title">Property market shows signs of stabilization</div>
+            <div class="feed-item-time text-mono">1d ago</div>
+        </div>
+        <div class="feed-item-summary">Auckland prices flat for third consecutive month, Wellington remains soft but decline rate slowing.</div>
+    </div>
+    
+    <div class="feed-item">
+        <div class="feed-item-header">
+            <div class="feed-item-title">RBNZ holds OCR at 5.5%</div>
+            <div class="feed-item-time text-mono">2d ago</div>
+        </div>
+        <div class="feed-item-summary">Reserve Bank maintains official cash rate, signals potential cuts in late 2026 if inflation continues to fall.</div>
+    </div>
+    
+    <div class="feed-item">
+        <div class="feed-item-header">
+            <div class="feed-item-title">Dairy prices edge higher</div>
+            <div class="feed-item-time text-mono">3d ago</div>
+        </div>
+        <div class="feed-item-summary">Global Dairy Trade auction shows 2.1% price increase, supporting rural economy and export earnings.</div>
+    </div>
+    
+    <div class="feed-item">
+        <div class="feed-item-header">
+            <div class="feed-item-title">Immigration policy changes proposed</div>
+            <div class="feed-item-time text-mono">4d ago</div>
+        </div>
+        <div class="feed-item-summary">Government considering skilled migrant points system overhaul to address specific labor shortages.</div>
+    </div>
+    
+</div>
             <div class="feed-item-time text-mono">5h ago</div>
         </div>
         <div class="feed-item-summary">MBIE confirms healthy fuel reserves despite Middle East tensions affecting global oil prices.</div>
@@ -2025,7 +2307,7 @@
                 <a href="https://github.com/kaji-hemopo" class="footer-link" target="_blank">GitHub</a>
                 <a href="#" class="footer-link" onclick="showDocumentation()">Docs</a>
             </div>
-            <p class="timestamp mt-sm">Next auto-refresh: <span id="next-refresh">23:17</span></p>
+            <p class="timestamp mt-sm">Next auto-refresh: <span id="next-refresh">07:40</span></p>
         </footer>
     </div>
 
