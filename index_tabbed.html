@@ -1,0 +1,1541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empire Financial Terminal</title>
+    <style>
+        /* ===== CSS RESET & BASE ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            /* Deep Obsidian Theme */
+            --bg-primary: #0B0E11;
+            --bg-secondary: #1E2329;
+            --bg-card: #1A1D23;
+            --border-color: #2B3139;
+            --text-primary: #E8EAED;
+            --text-secondary: #8B949E;
+            --text-muted: #6E7681;
+            
+            /* Accent Colors */
+            --accent-blue: #58A6FF;
+            --accent-green: #3FB950;
+            --accent-red: #F85149;
+            --accent-yellow: #D29922;
+            --accent-purple: #BC8CFF;
+            
+            /* Tab Highlight Color */
+            --tab-active: #00FFA3;
+            --tab-active-bg: rgba(0, 255, 163, 0.1);
+            
+            /* Status Colors */
+            --status-success: #238636;
+            --status-warning: #9E6A03;
+            --status-error: #DA3633;
+            --status-info: #1F6FEB;
+            
+            /* Typography */
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            --font-mono: 'JetBrains Mono', 'SF Mono', Monaco, 'Cascadia Mono', monospace;
+            
+            /* Spacing */
+            --space-xs: 4px;
+            --space-sm: 8px;
+            --space-md: 16px;
+            --space-lg: 24px;
+            --space-xl: 32px;
+            --space-2xl: 48px;
+            
+            /* Border Radius */
+            --radius-sm: 4px;
+            --radius-md: 8px;
+            --radius-lg: 12px;
+            --radius-xl: 16px;
+            
+            /* Shadows */
+            --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+            --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+            --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.5);
+        }
+
+        @font-face {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            src: url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        }
+
+        @font-face {
+            font-family: 'JetBrains Mono';
+            font-style: normal;
+            font-weight: 400;
+            src: url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap');
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            min-height: 100vh;
+            padding: var(--space-md);
+            overflow-x: hidden;
+        }
+
+        /* ===== LAYOUT SYSTEM ===== */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--space-lg);
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--space-lg);
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--space-md);
+        }
+
+        .grid-4 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--space-md);
+        }
+
+        /* ===== TABBED NAVIGATION ===== */
+        .tab-container {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: var(--bg-primary);
+            padding: var(--space-sm) 0;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: var(--space-lg);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        .tab-bar {
+            display: flex;
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+            background: var(--bg-secondary);
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border-color);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .tab-radio {
+            display: none;
+        }
+
+        .tab-label {
+            flex: 1;
+            text-align: center;
+            padding: var(--space-md) var(--space-sm);
+            font-weight: 600;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            color: var(--text-secondary);
+            user-select: none;
+            position: relative;
+            min-height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--space-xs);
+        }
+
+        .tab-label:hover {
+            background: var(--bg-card);
+            color: var(--text-primary);
+        }
+
+        .tab-radio:checked + .tab-label {
+            color: var(--tab-active);
+            background: var(--tab-active-bg);
+        }
+
+        .tab-radio:checked + .tab-label::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--tab-active);
+            border-radius: 3px 3px 0 0;
+        }
+
+        .tab-icon {
+            font-size: 1.1rem;
+        }
+
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .tab-radio#tab-markets:checked ~ .tab-content.markets,
+        .tab-radio#tab-venture:checked ~ .tab-content.venture,
+        .tab-radio#tab-feeds:checked ~ .tab-content.feeds {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* ===== TYPOGRAPHY ===== */
+        h1, h2, h3, h4 {
+            font-weight: 600;
+            line-height: 1.25;
+            margin-bottom: var(--space-sm);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: var(--text-primary);
+        }
+
+        h3 {
+            font-size: 1.125rem;
+            color: var(--text-primary);
+        }
+
+        h4 {
+            font-size: 1rem;
+            color: var(--text-secondary);
+        }
+
+        .text-mono {
+            font-family: var(--font-mono);
+            font-size: 0.875rem;
+        }
+
+        .text-success { color: var(--accent-green); }
+        .text-warning { color: var(--accent-yellow); }
+        .text-error { color: var(--accent-red); }
+        .text-info { color: var(--accent-blue); }
+        .text-muted { color: var(--text-muted); }
+
+        /* ===== COMPONENTS ===== */
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: var(--space-lg);
+            transition: all 0.2s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            border-color: var(--accent-blue);
+            box-shadow: var(--shadow-md);
+            transform: translateY(-2px);
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: var(--space-lg);
+            padding-bottom: var(--space-sm);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .card-title {
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+        }
+
+        .card-icon {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--bg-secondary);
+            border-radius: var(--radius-sm);
+            color: var(--accent-blue);
+            font-size: 0.875rem;
+        }
+
+        .card-actions {
+            display: flex;
+            gap: var(--space-xs);
+        }
+
+        .card-content {
+            flex: 1;
+        }
+
+        .card-footer {
+            margin-top: var(--space-lg);
+            padding-top: var(--space-sm);
+            border-top: 1px solid var(--border-color);
+            font-size: 0.875rem;
+            color: var(--text-muted);
+        }
+
+        /* Status Indicator */
+        .status-indicator {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-xs);
+            padding: var(--space-xs) var(--space-sm);
+            background: var(--status-success);
+            border-radius: var(--radius-sm);
+            font-size: 0.75rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .status-indicator::before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            background: currentColor;
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        .status-indicator.warning {
+            background: var(--status-warning);
+        }
+
+        .status-indicator.error {
+            background: var(--status-error);
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        /* Data Table */
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .data-table th {
+            text-align: left;
+            padding: var(--space-sm) var(--space-md);
+            font-weight: 500;
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .data-table td {
+            padding: var(--space-sm) var(--space-md);
+            border-bottom: 1px solid var(--border-color);
+            font-size: 0.875rem;
+        }
+
+        .data-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .data-table tr:hover {
+            background: var(--bg-secondary);
+        }
+
+        /* Badge */
+        .badge {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: var(--radius-sm);
+            font-size: 0.75rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+
+        .badge-success {
+            background: rgba(63, 185, 80, 0.15);
+            color: var(--accent-green);
+        }
+
+        .badge-warning {
+            background: rgba(210, 153, 34, 0.15);
+            color: var(--accent-yellow);
+        }
+
+        .badge-error {
+            background: rgba(248, 81, 73, 0.15);
+            color: var(--accent-red);
+        }
+
+        .badge-info {
+            background: rgba(88, 166, 255, 0.15);
+            color: var(--accent-blue);
+        }
+
+        /* Progress Bar */
+        .progress-bar {
+            height: 4px;
+            background: var(--bg-secondary);
+            border-radius: var(--radius-sm);
+            overflow: hidden;
+            margin: var(--space-xs) 0;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: var(--accent-green);
+            border-radius: var(--radius-sm);
+            transition: width 0.3s ease;
+        }
+
+        /* Button */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--space-xs);
+            padding: var(--space-sm) var(--space-md);
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-sm);
+            color: var(--text-primary);
+            font-family: var(--font-sans);
+            font-size: 0.875rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            min-height: 48px; /* Fat-finger friendly */
+            min-width: 48px;
+        }
+
+        .btn:hover {
+            background: var(--bg-card);
+            border-color: var(--accent-blue);
+        }
+
+        .btn-primary {
+            background: var(--accent-blue);
+            border-color: var(--accent-blue);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #4a94e6;
+            border-color: #4a94e6;
+        }
+
+        /* ===== HEADER SECTION ===== */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: var(--space-lg);
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            margin-bottom: var(--space-lg);
+        }
+
+        .header-info {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-xs);
+        }
+
+        .header-actions {
+            display: flex;
+            gap: var(--space-sm);
+        }
+
+        .timestamp {
+            font-family: var(--font-mono);
+            font-size: 0.875rem;
+            color: var(--text-muted);
+        }
+
+        /* ===== GOLD-SHIELD SECTION ===== */
+        .target-card {
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            gap: var(--space-md);
+            align-items: center;
+            padding: var(--space-md);
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-sm);
+            margin-bottom: var(--space-sm);
+            transition: all 0.2s ease;
+        }
+
+        .target-card:hover {
+            border-color: var(--accent-blue);
+            transform: translateX(4px);
+        }
+
+        .target-symbol {
+            font-family: var(--font-mono);
+            font-weight: 600;
+            font-size: 1.125rem;
+            color: var(--text-primary);
+        }
+
+        .target-info {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-xs);
+        }
+
+        .target-name {
+            font-weight: 500;
+        }
+
+        .target-meta {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        .target-stats {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: var(--space-xs);
+        }
+
+        .target-price {
+            font-family: var(--font-mono);
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+
+        .target-change {
+            font-family: var(--font-mono);
+            font-size: 0.875rem;
+        }
+
+        .target-score {
+            display: flex;
+            align-items: center;
+            gap: var(--space-xs);
+        }
+
+        .score-value {
+            font-family: var(--font-mono);
+            font-weight: 600;
+        }
+
+        /* ===== EMPIRE SWARM SECTION ===== */
+        .idea-card {
+            padding: var(--space-md);
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-sm);
+            margin-bottom: var(--space-sm);
+            transition: all 0.2s ease;
+        }
+
+        .idea-card:hover {
+            border-color: var(--accent-purple);
+            transform: translateX(4px);
+        }
+
+        .idea-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: var(--space-sm);
+        }
+
+        .idea-title {
+            font-weight: 500;
+            color: var(--text-primary);
+        }
+
+        .idea-score {
+            font-family: var(--font-mono);
+            font-weight: 600;
+            color: var(--accent-purple);
+        }
+
+        .idea-summary {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            line-height: 1.5;
+            margin-bottom: var(--space-sm);
+        }
+
+        .idea-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-xs);
+        }
+
+        .idea-tag {
+            padding: 2px 8px;
+            background: rgba(188, 140, 255, 0.1);
+            border: 1px solid rgba(188, 140, 255, 0.3);
+            border-radius: var(--radius-sm);
+            font-size: 0.75rem;
+            color: var(--accent-purple);
+        }
+
+        /* ===== TELEMETRY FEEDS SECTION ===== */
+        .feed-section {
+            margin-bottom: var(--space-lg);
+        }
+
+        .feed-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: var(--space-md);
+            cursor: pointer;
+            padding: var(--space-sm);
+            border-radius: var(--radius-sm);
+            transition: background 0.2s ease;
+        }
+
+        .feed-header:hover {
+            background: var(--bg-secondary);
+        }
+
+        .feed-title {
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+        }
+
+        .feed-count {
+            font-family: var(--font-mono);
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            background: var(--bg-secondary);
+            padding: 2px 8px;
+            border-radius: var(--radius-sm);
+        }
+
+        .feed-toggle {
+            transition: transform 0.3s ease;
+        }
+
+        .feed-toggle.collapsed {
+            transform: rotate(-90deg);
+        }
+
+        .feed-content {
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .feed-content.collapsed {
+            max-height: 0;
+        }
+
+        .feed-item {
+            padding: var(--space-sm);
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-sm);
+            margin-bottom: var(--space-sm);
+            font-size: 0.875rem;
+        }
+
+        .feed-item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: var(--space-xs);
+        }
+
+        .feed-item-title {
+            font-weight: 500;
+            color: var(--text-primary);
+            flex: 1;
+        }
+
+        .feed-item-time {
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            margin-left: var(--space-sm);
+        }
+
+        .feed-item-summary {
+            color: var(--text-secondary);
+            line-height: 1.4;
+        }
+
+        /* ===== FOOTER ===== */
+        .footer {
+            text-align: center;
+            padding: var(--space-lg);
+            color: var(--text-muted);
+            font-size: 0.875rem;
+            border-top: 1px solid var(--border-color);
+            margin-top: var(--space-xl);
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: var(--space-md);
+            margin-top: var(--space-md);
+        }
+
+        .footer-link {
+            color: var(--accent-blue);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .footer-link:hover {
+            color: var(--text-primary);
+            text-decoration: underline;
+        }
+
+        /* ===== RESPONSIVE DESIGN ===== */
+        @media (max-width: 768px) {
+            .container {
+                padding: var(--space-sm);
+            }
+
+            .header {
+                flex-direction: column;
+                gap: var(--space-md);
+                text-align: center;
+            }
+
+            .header-actions {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .grid-2, .grid-3, .grid-4 {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.25rem;
+            }
+
+            .card {
+                padding: var(--space-md);
+            }
+
+            .target-card, .idea-card {
+                grid-template-columns: 1fr;
+                gap: var(--space-sm);
+            }
+
+            .target-stats {
+                align-items: flex-start;
+            }
+
+            .tab-label {
+                font-size: 0.85rem;
+                padding: var(--space-sm) var(--space-xs);
+            }
+
+            .tab-icon {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: var(--space-sm);
+            }
+
+            .btn {
+                min-height: 44px;
+                min-width: 44px;
+                padding: var(--space-sm);
+            }
+
+            .data-table {
+                font-size: 0.75rem;
+            }
+
+            .data-table th,
+            .data-table td {
+                padding: var(--space-xs) var(--space-sm);
+            }
+
+            .tab-label {
+                font-size: 0.8rem;
+                padding: var(--space-sm) 4px;
+            }
+
+            .tab-icon {
+                display: none; /* Hide icons on very small screens */
+            }
+        }
+
+        /* ===== UTILITY CLASSES ===== */
+        .hidden {
+            display: none !important;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .flex-col {
+            flex-direction: column;
+        }
+
+        .items-center {
+            align-items: center;
+        }
+
+        .justify-between {
+            justify-content: space-between;
+        }
+
+        .gap-sm {
+            gap: var(--space-sm);
+        }
+
+        .gap-md {
+            gap: var(--space-md);
+        }
+
+        .gap-lg {
+            gap: var(--space-lg);
+        }
+
+        .mt-sm { margin-top: var(--space-sm); }
+        .mt-md { margin-top: var(--space-md); }
+        .mt-lg { margin-top: var(--space-lg); }
+        .mb-sm { margin-bottom: var(--space-sm); }
+        .mb-md { margin-bottom: var(--space-md); }
+        .mb-lg { margin-bottom: var(--space-lg); }
+
+        .text-center { text-align: center; }
+        .text-right { text-align: right; }
+
+        .w-full { width: 100%; }
+        .h-full { height: 100%; }
+
+        /* ===== ANIMATIONS ===== */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .animate-fade-in {
+            animation: fadeIn 0.3s ease forwards;
+        }
+
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- HEADER -->
+        <header class="header">
+            <div class="header-info">
+                <h1>Empire Financial Terminal</h1>
+                <div class="timestamp text-mono">Last Updated: <span id="last-updated">2026-03-04 22:42:07 JST</span></div>
+            </div>
+            <div class="header-actions">
+                <div class="status-indicator">
+                    System Status: Online
+                </div>
+                <button class="btn" onclick="refreshData()">
+                    <span class="text-mono">⟳</span> Refresh
+                </button>
+                <button class="btn btn-primary" onclick="exportData()">
+                    <span class="text-mono">↓</span> Export
+                </button>
+            </div>
+        </header>
+
+        <!-- TABBED NAVIGATION -->
+        <div class="tab-container">
+            <div class="tab-bar">
+                <input type="radio" id="tab-markets" name="tab-group" class="tab-radio" checked>
+                <label for="tab-markets" class="tab-label">
+                    <span class="tab-icon">📈</span>
+                    <span>MARKETS</span>
+                </label>
+                
+                <input type="radio" id="tab-venture" name="tab-group" class="tab-radio">
+                <label for="tab-venture" class="tab-label">
+                    <span class="tab-icon">🚀</span>
+                    <span>VENTURE</span>
+                </label>
+                
+                <input type="radio" id="tab-feeds" name="tab-group" class="tab-radio">
+                <label for="tab-feeds" class="tab-label">
+                    <span class="tab-icon">📡</span>
+                    <span>FEEDS</span>
+                </label>
+            </div>
+        </div>
+
+        <!-- TAB 1: MARKETS (Gold-Shield Targets) -->
+        <div class="tab-content markets">
+            <section class="mb-lg">
+                <div class="card-header mb-md">
+                    <div class="card-title">
+                        <div class="card-icon">💰</div>
+                        <h2>Gold-Shield High-Conviction Targets</h2>
+                    </div>
+                    <div class="card-actions">
+                        <span class="badge badge-info">Live</span>
+                        <span class="badge badge-success">PASSED</span>
+                    </div>
+                </div>
+                
+                <div class="grid-2" id="gold-shield-targets">
+                    <!-- Targets will be injected here by Kaji -->
+                    <div class="target-card">
+                        <div class="target-symbol">XAUUSD</div>
+                        <div class="target-info">
+                            <div class="target-name">Gold (Spot)</div>
+                            <div class="target-meta">Forex • High Liquidity • Safe Haven</div>
+                        </div>
+                        <div class="target-stats">
+                            <div class="target-price text-mono">2,345.67</div>
+                            <div class="target-change text-success text-mono">+1.24%</div>
+                            <div class="target-score">
+                                <span class="score-value text-mono">87</span>
+                                <span class="text-muted">/100</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="target-card">
+                        <div class="target-symbol">NAS100</div>
+                        <div class="target-info">
+                            <div class="target-name">NASDAQ 100</div>
+                            <div class="target-meta">Index Futures • Tech Heavy • High Growth</div>
+                        </div>
+                        <div class="target-stats">
+                            <div class="target-price text-mono">18,245.30</div>
+                            <div class="target-change text-error text-mono">-0.45%</div>
+                            <div class="target-score">
+                                <span class="score-value text-mono">72</span>
+                                <span class="text-muted">/100</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="target-card">
+                        <div class="target-symbol">USDJPY</div>
+                        <div class="target-info">
+                            <div class="target-name">USD/JPY</div>
+                            <div class="target-meta">Forex • BOJ Policy Sensitive • Carry Trade</div>
+                        </div>
+                        <div class="target-stats">
+                            <div class="target-price text-mono">148.25</div>
+                            <div class="target-change text-success text-mono">+0.32%</div>
+                            <div class="target-score">
+                                <span class="score-value text-mono">65</span>
+                                <span class="text-muted">/100</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="target-card">
+                        <div class="target-symbol">BTCUSD</div>
+                        <div class="target-info">
+                            <div class="target-name">Bitcoin</div>
+                            <div class="target-meta">Crypto • High Volatility • Digital Gold</div>
+                        </div>
+                        <div class="target-stats">
+                            <div class="target-price text-mono">68,450.00</div>
+                            <div class="target-change text-warning text-mono">+0.12%</div>
+                            <div class="target-score">
+                                <span class="score-value text-mono">58</span>
+                                <span class="text-muted">/100</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- TAB 2: VENTURE (Empire Swarm Ideas) -->
+        <div class="tab-content venture">
+            <section class="mb-lg">
+                <div class="card-header mb-md">
+                    <div class="card-title">
+                        <div class="card-icon">🚀</div>
+                        <h2>Empire Swarm Business Ideas</h2>
+                    </div>
+                    <div class="card-actions">
+                        <span class="badge badge-success">Active</span>
+                        <span class="badge badge-info">5 Ideas</span>
+                    </div>
+                </div>
+                
+                <div class="grid-3" id="empire-swarm-ideas">
+                    <!-- Ideas will be injected here by Kaji -->
+                    <div class="idea-card">
+                        <div class="idea-header">
+                            <div class="idea-title">Athlete Finance SaaS</div>
+                            <div class="idea-score text-mono">92</div>
+                        </div>
+                        <div class="idea-summary">
+                            Automated financial management for professional athletes with contract-based income, sponsorship tracking, and Japanese tax optimization.
+                        </div>
+                        <div class="idea-tags">
+                            <span class="idea-tag">SaaS</span>
+                            <span class="idea-tag">FinTech</span>
+                            <span class="idea-tag">Japan</span>
+                            <span class="idea-tag">Athletes</span>
+                        </div>
+                    </div>
+                    
+                    <div class="idea-card">
+                        <div class="idea-header">
+                            <div class="idea-title">AI Property Scout</div>
+                            <div class="idea-score text-mono">85</div>
+                        </div>
+                        <div class="idea-summary">
+                            ML-powered property analysis for NZ/JP markets with automated valuation, rental yield prediction, and investment scoring.
+                        </div>
+                        <div class="idea-tags">
+                            <span class="idea-tag">Real Estate</span>
+                            <span class="idea-tag">AI</span>
+                            <span class="idea-tag">NZ/JP</span>
+                            <span class="idea-tag">Property</span>
+                        </div>
+                    </div>
+                    
+                    <div class="idea-card">
+                        <div class="idea-header">
+                            <div class="idea-title">Rugby Tech Analytics</div>
+                            <div class="idea-score text-mono">78</div>
+                        </div>
+                        <div class="idea-summary">
+                            Performance tracking and injury prediction platform for rugby teams using wearable data and computer vision.
+                        </div>
+                        <div class="idea-tags">
+                            <span class="idea-tag">Sports Tech</span>
+                            <span class="idea-tag">Analytics</span>
+                            <span class="idea-tag">Health</span>
+                            <span class="idea-tag">Rugby</span>
+                        </div>
+                    </div>
+                    
+                    <div class="idea-card">
+                        <div class="idea-header">
+                            <div class="idea-title">Japanese Immigration SaaS</div>
+                            <div class="idea-score text-mono">75</div>
+                        </div>
+                        <div class="idea-summary">
+                            Streamlined visa processing and compliance platform for foreigners moving to Japan with automated document handling.
+                        </div>
+                        <div class="idea-tags">
+                            <span class="idea-tag">SaaS</span>
+                            <span class="idea-tag">Japan</span>
+                            <span class="idea-tag">Immigration</span>
+                            <span class="idea-tag">Compliance</span>
+                        </div>
+                    </div>
+                    
+                    <div class="idea-card">
+                        <div class="idea-header">
+                            <div class="idea-title">NZ Property Exit Optimizer</div>
+                            <div class="idea-score text-mono">68</div>
+                        </div>
+                        <div class="idea-summary">
+                            Timing and valuation optimization tool for NZ property sales with market sentiment analysis and tax implications.
+                        </div>
+                        <div class="idea-tags">
+                            <span class="idea-tag">Real Estate</span>
+                            <span class="idea-tag">NZ</span>
+                            <span class="idea-tag">Finance</span>
+                            <span class="idea-tag">Optimization</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- TAB 3: FEEDS (Telemetry Streams) -->
+        <div class="tab-content feeds">
+            <section>
+                <div class="card-header mb-md">
+                    <div class="card-title">
+                        <div class="card-icon">📡</div>
+                        <h2>Telemetry Feeds</h2>
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn" onclick="toggleAllFeeds()">
+                            <span class="text-mono">↕</span> Toggle All
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="feed-section">
+                    <div class="feed-header" onclick="toggleFeed('saas-feed')">
+                        <div class="feed-title">
+                            <h3>SaaS Market Intelligence</h3>
+                            <span class="feed-count">5 updates</span>
+                        </div>
+                        <div class="feed-toggle" id="saas-toggle">▼</div>
+                    </div>
+                    <div class="feed-content" id="saas-feed">
+                        <!-- SaaS feed items will be injected here by Kaji -->
+                        <div class="feed-item">
+                            <div class="feed-item-header">
+                                <div class="feed-item-title">Cursor hits $2B ARR milestone</div>
+                                <div class="feed-item-time text-mono">2h ago</div>
+                            </div>
+                            <div class="feed-item-summary">
+                                Four-year-old AI coding assistant startup sees revenue run rate double in three months, signaling strong enterprise adoption.
+                            </div>
+                        </div>
+                        <div class="feed-item">
+                            <div class="feed-item-header">
+                                <div class="feed-item-title">Stripe launches AI billing feature</div>
+                                <div class="feed-item-time text-mono">4h ago</div>
+                            </div>
+                            <div class="feed-item-summary">
+                                New feature allows AI companies to track and profit from underlying model costs, addressing a major pain point in AI SaaS.
+                            </div>
+                        </div>
+                        <div class="feed-item">
+                            <div class="feed-item-header">
+                                <div class="feed-item-title">Vercel raises at $5B valuation</div>
+                                <div class="feed-item-time text-mono">6h ago</div>
+                            </div>
+                            <div class="feed-item-summary">
+                                Frontend cloud platform secures funding to expand AI deployment capabilities, competing directly with AWS Amplify.
+                            </div>
+                        </div>
+                        <div class="feed-item">
+                            <div class="feed-item-header">
+                                <div class="feed-item-title">GitHub Copilot usage surges 300%</div>
+                                <div class="feed-item-time text-mono">1d ago</div>
+                            </div>
+                            <div class="feed-item-summary">
+                                Microsoft reports massive adoption growth, with 50% of Fortune 500 companies now using AI coding assistants.
+                            </div>
+                        </div>
+                        <div class="feed-item">
+                            <div class="feed-item-header">
+                                <div class="feed-item-title">OpenAI launches enterprise API tier</div>
+                                <div class="feed-item-time text-mono">1d ago</div>
+                            </div>
+                            <div class="feed-item-summary">
+                                New pricing model offers volume discounts and dedicated capacity, making AI more accessible for mid-market companies.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="feed-section">
+                    <div class="feed-header" onclick="toggleFeed('jp-feed')">
+                        <div class="feed-title">
+                            <h3>Japan Business & Regulatory</h3>
+                            <span class="feed-count">5 updates</span>
+                        </div>
+                        <div class="feed-toggle" id="jp-toggle">▼</div>
+                    </div>
+                    <div class="feed-content" id="jp-feed">
+                        <!-- Japan feed items will be injected here by Kaji -->
+                        <div class="feed-item">
+                            <div class="feed-item-header">
+                                <div class="feed-item-title">BOJ maintains ultra-loose policy</div>
+                                <div class="feed-item-time text-mono">1d ago</div>
+                            </div>
+                            <div class="feed-item-summary">
+                                Bank of Japan keeps interest rates near zero, yen weakens to 148 against USD, supporting export economy.
+                            </div>
+                        </div>
+                        <div class="feed-item">
+                            <div class="feed-item-header">
+                                <div class="feed-item-title">Visa processing times improving</div>
+                                <div class="feed-item-time text-mono">2d ago</div>
+                            </div>
+                            <div class="feed-item-summary">
+                                Immigration services report 6-8 week processing for business manager visas, down from 12+ weeks last quarter.
+                            </div>
+                        </div>
+                        <div class="feed-item">
+                            <div class="feed-item-header">
+                                <div class="feed-item-title">Japan startup funding hits record</div>
+                                <div class="feed-item-time text-mono">3d ago</div>
+                            </div>
+                            <div class="feed-item-summary">
+                                Venture capital investment in Japanese startups reaches ¥1.2 trillion in 2025, driven by AI and fintech sectors.
+                            </div>
+                        </div>
+                        <div class="feed-item">
+                            <div class="feed-item-header">
+                                <div class="feed-item-title">Corporate tax reforms announced</div>
+                                <div class="feed-item-time text-mono">4d ago</div>
+                            </div>
+                            <div class="feed-item-summary">
+                                Government proposes tax incentives for digital transformation and R&D spending to boost productivity.
+                            </div>
+                        </div>
+                        <div class="feed-item">
+                            <div class="feed-item-header">
+                                <div class="feed-item-title">Tourism recovery continues</div>
+                                <div class="feed-item-time text-mono">5d ago</div>
+                            </div>
+                            <div class="feed-item-summary">
+                                Visitor numbers reach 90% of pre-pandemic levels, with strong growth from Southeast Asia and Australia.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="feed-section">
+                    <div class="feed-header" onclick="toggleFeed('nz-feed')">
+                        <div class="feed-title">
+                            <h3>NZ Market & Real Estate</h3>
+                            <span class="feed-count">7 updates</span>
+                        </div>
+                        <div class="feed-toggle" id="nz-toggle">▼</div>
+                    </div>
+                    <div class="feed-content" id="nz-feed">
+                        <!-- NZ feed items will be injected here by Kaji -->
+                        <div class="feed-item">
+                            <div class="feed-item-header">
+                                <div class="feed-item-title">Fuel stock levels remain stable</div>
+                                <div class="feed-item-time text-mono">5h ago</div>
+                            </div>
+                            <div class="feed-item-summary">
+                                MBIE confirms healthy fuel reserves despite Middle East tensions affecting global oil prices.
+                            </div>
+                        </div>
+                        <div class="feed-item">
+                            <div class="feed-item-header">
+                                <div class="feed-item-title">Property market shows signs of stabilization</div>
+                                <div class="feed-item-time text-mono">1d ago</div>
+                            </div>
+                            <div class="feed-item-summary">
+                                Auckland prices flat for third consecutive month, Wellington remains soft but decline rate slowing.
+                            </div>
+                        </div>
+                        <div class="feed-item">
+                            <div class="feed-item-header">
+                                <div class="feed-item-title">RBNZ holds OCR at 5.5%</div>
+                                <div class="feed-item-time text-mono">2d ago</div>
+                            </div>
+                            <div class="feed-item-summary">
+                                Reserve Bank maintains official cash rate, signals potential cuts in late 2026 if inflation continues to fall.
+                            </div>
+                        </div>
+                        <div class="feed-item">
+                            <div class="feed-item-header">
+                                <div class="feed-item-title">Dairy prices edge higher</div>
+                                <div class="feed-item-time text-mono">3d ago</div>
+                            </div>
+                            <div class="feed-item-summary">
+                                Global Dairy Trade auction shows 2.1% price increase, supporting rural economy and export earnings.
+                            </div>
+                        </div>
+                        <div class="feed-item">
+                            <div class="feed-item-header">
+                                <div class="feed-item-title">Immigration policy changes proposed</div>
+                                <div class="feed-item-time text-mono">4d ago</div>
+                            </div>
+                            <div class="feed-item-summary">
+                                Government considering skilled migrant points system overhaul to address specific labor shortages.
+                            </div>
+                        </div>
+                        <div class="feed-item">
+                            <div class="feed-item-header">
+                                <div class="feed-item-title">Tourism sector recovery strong</div>
+                                <div class="feed-item-time text-mono">5d ago</div>
+                            </div>
+                            <div class="feed-item-summary">
+                                International visitor numbers at 85% of 2019 levels, with strong growth from North America and Europe.
+                            </div>
+                        </div>
+                        <div class="feed-item">
+                            <div class="feed-item-header">
+                                <div class="feed-item-title">Climate adaptation funding announced</div>
+                                <div class="feed-item-time text-mono">6d ago</div>
+                            </div>
+                            <div class="feed-item-summary">
+                                $2 billion package for infrastructure resilience and flood protection in vulnerable regions.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <p>Empire Financial Terminal v2.1 • Tabbed Navigation • Built for Project Empire & Gold-Shield</p>
+            <div class="footer-links">
+                <a href="#" class="footer-link" onclick="showAbout()">About</a>
+                <a href="#" class="footer-link" onclick="showSettings()">Settings</a>
+                <a href="https://github.com/kaji-hemopo" class="footer-link" target="_blank">GitHub</a>
+                <a href="#" class="footer-link" onclick="showDocumentation()">Docs</a>
+            </div>
+            <p class="timestamp mt-sm">Next auto-refresh: <span id="next-refresh">5:00</span></p>
+        </footer>
+    </div>
+
+    <script>
+        // ===== DATA INJECTION POINTS =====
+        // These variables will be populated by Kaji with actual data
+        
+        const goldShieldData = [
+            {
+                symbol: "XAUUSD",
+                name: "Gold (Spot)",
+                meta: "Forex • High Liquidity • Safe Haven",
+                price: "2,345.67",
+                change: "+1.24%",
+                changeType: "success",
+                score: 87
+            },
+            {
+                symbol: "NAS100",
+                name: "NASDAQ 100",
+                meta: "Index Futures • Tech Heavy • High Growth",
+                price: "18,245.30",
+                change: "-0.45%",
+                changeType: "error",
+                score: 72
+            },
+            {
+                symbol: "USDJPY",
+                name: "USD/JPY",
+                meta: "Forex • BOJ Policy Sensitive • Carry Trade",
+                price: "148.25",
+                change: "+0.32%",
+                changeType: "success",
+                score: 65
+            },
+            {
+                symbol: "BTCUSD",
+                name: "Bitcoin",
+                meta: "Crypto • High Volatility • Digital Gold",
+                price: "68,450.00",
+                change: "+0.12%",
+                changeType: "warning",
+                score: 58
+            }
+        ];
+
+        const empireSwarmData = [
+            {
+                title: "Athlete Finance SaaS",
+                score: 92,
+                summary: "Automated financial management for professional athletes with contract-based income, sponsorship tracking, and Japanese tax optimization.",
+                tags: ["SaaS", "FinTech", "Japan", "Athletes"]
+            },
+            {
+                title: "AI Property Scout",
+                score: 85,
+                summary: "ML-powered property analysis for NZ/JP markets with automated valuation, rental yield prediction, and investment scoring.",
+                tags: ["Real Estate", "AI", "NZ/JP", "Property"]
+            },
+            {
+                title: "Rugby Tech Analytics",
+                score: 78,
+                summary: "Performance tracking and injury prediction platform for rugby teams using wearable data and computer vision.",
+                tags: ["Sports Tech", "Analytics", "Health", "Rugby"]
+            },
+            {
+                title: "Japanese Immigration SaaS",
+                score: 75,
+                summary: "Streamlined visa processing and compliance platform for foreigners moving to Japan with automated document handling.",
+                tags: ["SaaS", "Japan", "Immigration", "Compliance"]
+            },
+            {
+                title: "NZ Property Exit Optimizer",
+                score: 68,
+                summary: "Timing and valuation optimization tool for NZ property sales with market sentiment analysis and tax implications.",
+                tags: ["Real Estate", "NZ", "Finance", "Optimization"]
+            }
+        ];
+
+        // ===== UTILITY FUNCTIONS =====
+        function formatNumber(num) {
+            return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        }
+
+        function getChangeClass(change) {
+            if (change.startsWith('+')) return 'text-success';
+            if (change.startsWith('-')) return 'text-error';
+            return 'text-muted';
+        }
+
+        function updateTimestamp() {
+            const now = new Date();
+            const options = { 
+                timeZone: 'Asia/Tokyo',
+                year: 'numeric', 
+                month: '2-digit', 
+                day: '2-digit',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit'
+            };
+            const formatted = now.toLocaleString('en-US', options).replace(',', '');
+            document.getElementById('last-updated').textContent = formatted;
+            
+            // Update next refresh time (5 minutes from now)
+            const next = new Date(now.getTime() + 5 * 60000);
+            const nextFormatted = next.toLocaleTimeString('en-US', { 
+                timeZone: 'Asia/Tokyo',
+                hour: '2-digit', 
+                minute: '2-digit' 
+            });
+            document.getElementById('next-refresh').textContent = nextFormatted;
+        }
+
+        // ===== TAB FUNCTIONALITY =====
+        function switchTab(tabId) {
+            const tabRadio = document.getElementById(tabId);
+            if (tabRadio) {
+                tabRadio.checked = true;
+                
+                // Trigger custom event for tab change
+                const event = new CustomEvent('tabchange', { 
+                    detail: { tab: tabId.replace('tab-', '') }
+                });
+                document.dispatchEvent(event);
+                
+                // Update URL hash for bookmarking
+                window.location.hash = tabId.replace('tab-', '');
+            }
+        }
+
+        // ===== FEED TOGGLE FUNCTIONALITY =====
+        const feedStates = {
+            'saas-feed': true,
+            'jp-feed': true,
+            'nz-feed': true
+        };
+
+        function toggleFeed(feedId) {
+            const feed = document.getElementById(feedId);
+            const toggle = document.getElementById(feedId.replace('-feed', '-toggle'));
+            
+            if (feedStates[feedId]) {
+                feed.classList.add('collapsed');
+                toggle.classList.add('collapsed');
+                feedStates[feedId] = false;
+            } else {
+                feed.classList.remove('collapsed');
+                toggle.classList.remove('collapsed');
+                feedStates[feedId] = true;
+            }
+        }
+
+        function toggleAllFeeds() {
+            const allCollapsed = Object.values(feedStates).every(state => !state);
+            
+            for (const feedId in feedStates) {
+                const feed = document.getElementById(feedId);
+                const toggle = document.getElementById(feedId.replace('-feed', '-toggle'));
+                
+                if (allCollapsed) {
+                    feed.classList.remove('collapsed');
+                    toggle.classList.remove('collapsed');
+                    feedStates[feedId] = true;
+                } else {
+                    feed.classList.add('collapsed');
+                    toggle.classList.add('collapsed');
+                    feedStates[feedId] = false;
+                }
+            }
+        }
+
+        // ===== DATA REFRESH FUNCTIONS =====
+        function refreshData() {
+            const refreshBtn = document.querySelector('.btn[onclick="refreshData()"]');
+            const originalText = refreshBtn.innerHTML;
+            
+            // Show loading state
+            refreshBtn.innerHTML = '<span class="text-mono">⏳</span> Loading...';
+            refreshBtn.disabled = true;
+            
+            // Simulate API call
+            setTimeout(() => {
+                updateTimestamp();
+                
+                // Update sample data with slight variations
+                goldShieldData.forEach(target => {
+                    const randomChange = (Math.random() - 0.5) * 0.5;
+                    target.change = (randomChange > 0 ? '+' : '') + randomChange.toFixed(2) + '%';
+                    target.changeType = randomChange > 0 ? 'success' : randomChange < 0 ? 'error' : 'warning';
+                    target.score = Math.min(100, Math.max(0, target.score + Math.floor(Math.random() * 5 - 2)));
+                });
+                
+                // Restore button
+                refreshBtn.innerHTML = originalText;
+                refreshBtn.disabled = false;
+                
+                // Show success notification
+                showNotification('Data refreshed successfully', 'success');
+            }, 1500);
+        }
+
+        function exportData() {
+            const activeTab = document.querySelector('.tab-radio:checked').id.replace('tab-', '');
+            let data = {
+                timestamp: new Date().toISOString(),
+                activeTab: activeTab
+            };
+            
+            // Include data based on active tab
+            if (activeTab === 'markets') {
+                data.goldShield = goldShieldData;
+            } else if (activeTab === 'venture') {
+                data.empireSwarm = empireSwarmData;
+            } else if (activeTab === 'feeds') {
+                data.feeds = {
+                    saas: document.querySelectorAll('#saas-feed .feed-item').length,
+                    jp: document.querySelectorAll('#jp-feed .feed-item').length,
+                    nz: document.querySelectorAll('#nz-feed .feed-item').length
+                };
+            }
+            
+            const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `empire-terminal-${activeTab}-export-${new Date().toISOString().split('T')[0]}.json`;
+            document.body.appendChild(a);
+            a.click();
+
