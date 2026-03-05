@@ -187,71 +187,112 @@
         }
         
         .news-wall {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 16px;
-        }
-        
-        @media (max-width: 768px) {
-            .news-wall {
-                grid-template-columns: 1fr;
-            }
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
         }
         
         .news-card {
             background: var(--surface-card);
             border: 1px solid var(--border-subtle);
-            border-radius: 8px;
-            padding: 16px;
+            border-radius: 12px;
+            padding: 24px;
             transition: all 0.2s;
+            width: 100%;
         }
         
         .news-card:hover {
             border-color: var(--accent-mint);
             transform: translateY(-2px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
         }
         
         .news-header {
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
-            margin-bottom: 12px;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+            gap: 12px;
         }
         
         .news-source {
             display: inline-block;
-            padding: 4px 8px;
+            padding: 6px 12px;
             background: var(--accent-mint-glow);
             border: 1px solid var(--accent-mint);
-            border-radius: 4px;
+            border-radius: 6px;
             color: var(--accent-mint);
-            font-size: 12px;
-            font-weight: 600;
+            font-size: 14px;
+            font-weight: 700;
             letter-spacing: 0.05em;
+            text-transform: uppercase;
         }
         
         .news-time {
             color: var(--text-muted);
-            font-size: 12px;
+            font-size: 14px;
             white-space: nowrap;
+            font-weight: 500;
         }
         
         .news-title {
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 1.4;
-            margin-bottom: 8px;
+            font-weight: 800;
+            font-size: 20px;
+            line-height: 1.3;
+            margin-bottom: 12px;
             letter-spacing: var(--letter-spacing-headers);
         }
         
         .news-summary {
             color: var(--text-muted);
-            font-size: 14px;
-            line-height: 1.5;
+            font-size: 16px;
+            line-height: 1.6;
             display: -webkit-box;
-            -webkit-line-clamp: 3;
+            -webkit-line-clamp: 4;
             -webkit-box-orient: vertical;
             overflow: hidden;
+        }
+        
+        @media (max-width: 768px) {
+            .news-card {
+                padding: 20px;
+                border-radius: 10px;
+            }
+            
+            .news-title {
+                font-size: 18px;
+            }
+            
+            .news-summary {
+                font-size: 15px;
+                -webkit-line-clamp: 5;
+            }
+            
+            .news-source {
+                font-size: 13px;
+                padding: 5px 10px;
+            }
+            
+            .news-time {
+                font-size: 13px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .news-card {
+                padding: 16px;
+                border-radius: 8px;
+            }
+            
+            .news-title {
+                font-size: 17px;
+            }
+            
+            .news-summary {
+                font-size: 14px;
+                -webkit-line-clamp: 6;
+            }
         }
 
         /* ===== TAB 2: MARKETS ===== */
