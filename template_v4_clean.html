@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Empire Telemetry Terminal V4.0</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* ===== MINIMALIST SLATE THEME ===== */
+        :root {
+            /* Color Palette: Slate & Mint */
+            --bg-deep: #0F172A;        /* Deep Navy/Slate */
+            --surface-card: #1E293B;   /* Surface */
+            --border-subtle: #334155;  /* Border */
+            --text-main: #F1F5F9;      /* Primary text */
+            --text-muted: #94A3B8;     /* Muted text */
+            --accent-mint: #10B981;    /* Emerald Mint for highlights */
+            --accent-mint-glow: rgba(16, 185, 129, 0.15);
+            
+            /* Typography */
+            --font-primary: 'Inter', sans-serif;
+            --letter-spacing-headers: 0.02em;
+            --letter-spacing-body: -0.01em;
+        }
+
+        /* ===== RESET & BASE ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-deep);
+            color: var(--text-main);
+            font-family: var(--font-primary);
+            letter-spacing: var(--letter-spacing-body);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 16px;
+        }
+
+        /* ===== UTILITIES ===== */
+        .text-muted { color: var(--text-muted); }
+        .text-mint { color: var(--accent-mint); }
+        .text-bold { font-weight: 600; }
+        .text-uppercase { text-transform: uppercase; letter-spacing: 0.05em; }
+        
+        .card {
+            background: var(--surface-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: 8px;
+            padding: 16px;
+            transition: border-color 0.2s;
+        }
+        
+        .card:hover {
+            border-color: var(--accent-mint);
+        }
+
+        /* ===== STICKY TAB BAR ===== */
+        .tab-bar {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: var(--bg-deep);
+            border-bottom: 1px solid var(--border-subtle);
+            padding: 12px 0;
+            margin-bottom: 24px;
+            display: flex;
+            gap: 8px;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+        
+        .tab {
+            padding: 12px 20px;
+            background: transparent;
+            border: 1px solid var(--border-subtle);
+            border-radius: 6px;
+            color: var(--text-muted);
+            font-family: var(--font-primary);
+            font-weight: 600;
+            font-size: 14px;
+            letter-spacing: var(--letter-spacing-headers);
+            cursor: pointer;
+            white-space: nowrap;
+            transition: all 0.2s;
+        }
+        
+        .tab:hover {
+            border-color: var(--accent-mint);
+            color: var(--text-main);
+        }
+        
+        .tab.active {
+            background: var(--surface-card);
+            border-color: var(--accent-mint);
+            color: var(--accent-mint);
+        }
+
+        /* ===== HEADER WITH CONTROLS ===== */
+        .header-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        
+        .page-title {
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: var(--letter-spacing-headers);
+        }
+        
+        .controls-right {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+        
+        .search-bar {
+            padding: 10px 16px;
+            background: var(--surface-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: 6px;
+            color: var(--text-main);
+            font-family: var(--font-primary);
+            font-size: 14px;
+            min-width: 200px;
+            flex: 1;
+        }
+        
+        .search-bar:focus {
+            outline: none;
+            border-color: var(--accent-mint);
+        }
+        
+        .refresh-btn {
+            padding: 10px 20px;
+            background: var(--surface-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: 6px;
+            color: var(--text-main);
+            font-family: var(--font-primary);
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.2s;
+        }
+        
+        .refresh-btn:hover {
+            border-color: var(--accent-mint);
+            color: var(--accent-mint);
+        }
+        
+        .refresh-btn.refreshing {
+            color: var(--accent-mint);
+            pointer-events: none;
+        }
+        
+        .refresh-btn.refreshing .refresh-icon {
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /* ===== TAB 1: INTEL (DEFAULT VIEW) ===== */
+        #tab-intel {
+            display: block;
+        }
+        
+        .news-wall {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .news-card {
+            background: var(--surface-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: 12px;
+            padding: 24px;
+            transition: all 0.2s;
+            width: 100%;
+        }
+        
+        .news-card:hover {
+            border-color: var(--accent-mint);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+        }
+        
+        .news-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            padding: 6px 12px;
+            background: var(--accent-mint-glow);
+            border: 1px solid var(--accent-mint);
+            border-radius: 6px;
+            color: var(--accent-mint);
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+        
+        .news-time {
+            color: var(--text-muted);
+            font-size: 14px;
+            white-space: nowrap;
+            font-weight: 500;
+        }
+        
+        .news-title {
+            font-weight: 800;
+            font-size: 20px;
+            line-height: 1.3;
+            margin-bottom: 12px;
+            letter-spacing: var(--letter-spacing-headers);
+        }
+        
+        .news-summary {
+            color: var(--text-muted);
+            font-size: 16px;
+            line-height: 1.6;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        
+        @media (max-width: 768px) {
+            .news-card {
+                padding: 20px;
+                border-radius: 10px;
+            }
+            
+            .news-title {
+                font-size: 18px;
+            }
+            
+            .news-summary {
+                font-size: 15px;
+                -webkit-line-clamp: 5;
+            }
+            
+            .news-source {
+                font-size: 13px;
+                padding: 5px 10px;
+            }
+            
+            .news-time {
+                font-size: 13px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .news-card {
+                padding: 16px;
+                border-radius: 8px;
+            }
+            
+            .news-title {
+                font-size: 17px;
+            }
+            
+            .news-summary {
+                font-size: 14px;
+                -webkit-line-clamp: 6;
+            }
+        }
+
+        /* ===== TAB 2: MARKETS ===== */
+        #tab-markets {
+            display: none;
+        }
+        
+        .markets-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .market-section {
+            background: var(--surface-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: 8px;
+            padding: 20px;
+        }
+        
+        .section-title {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            letter-spacing: var(--letter-spacing-headers);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .section-title::before {
+            content: '';
+            width: 4px;
+            height: 16px;
+            background: var(--accent-mint);
+            border-radius: 2px;
+        }
+        
+        .tickers-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+        
+        .ticker-widget {
+            min-height: 80px;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+        
+        .targets-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 12px;
+        }
+        
+        .target-card {
+            background: var(--surface-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: 6px;
+            padding: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .target-info {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        
+        .target-symbol {
+            font-weight: 700;
+            font-size: 16px;
+        }
+        
+        .target-name {
+            color: var(--text-muted);
+            font-size: 12px;
+        }
+        
+        .target-price {
+            font-weight: 700;
+            font-size: 16px;
+        }
+        
+        .target-change {
+            font-size: 12px;
+            text-align: right;
+        }
+        
+        .target-change.positive {
+            color: var(--accent-mint);
+        }
+        
+        .target-change.negative {
+            color: #EF4444;
+        }
+
+        /* ===== TAB 3: VENTURE ===== */
+        #tab-venture {
+            display: none;
+        }
+        
+        .venture-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .venture-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .idea-card {
+            background: var(--surface-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: 8px;
+            padding: 20px;
+            transition: all 0.2s;
+        }
+        
+        .idea-card:hover {
+            border-color: var(--accent-mint);
+            transform: translateY(-2px);
+        }
+        
+        .idea-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 12px;
+        }
+        
+        .idea-title {
+            font-weight: 700;
+            font-size: 18px;
+            letter-spacing: var(--letter-spacing-headers);
+        }
+        
+        .idea-score {
+            padding: 4px 8px;
+            background: var(--accent-mint-glow);
+            border: 1px solid var(--accent-mint);
+            border-radius: 4px;
+            color: var(--accent-mint);
+            font-weight: 700;
+            font-size: 14px;
+        }
+        
+        .idea-summary {
+            color: var(--text-muted);
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 16px;
+        }
+        
+        .idea-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        
+        .idea-tag {
+            padding: 4px 8px;
+            background: var(--bg-deep);
+            border: 1px solid var(--border-subtle);
+            border-radius: 4px;
+            color: var(--text-muted);
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        /* ===== NOTIFICATION TOAST ===== */
+        .notification-toast {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: var(--surface-card);
+            border: 1px solid var(--border-subtle);
+            border-left: 4px solid var(--accent-mint);
+            border-radius: 6px;
+            padding: 16px;
+            max-width: 300px;
+            transform: translateY(100px);
+            opacity: 0;
+            transition: all 0.3s;
+            z-index: 1000;
+        }
+        
+        .notification-toast.show {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        /* ===== MOBILE OPTIMIZATIONS ===== */
+        @media (max-width: 640px) {
+            .container {
+                padding: 12px;
+            }
+            
+            .header-controls {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            
+            .controls-right {
+                width: 100%;
+            }
+            
+            .search-bar {
+                min-width: 0;
+            }
+            
+            .tab-bar {
+                padding: 8px 0;
+            }
+            
+            .tab {
+                padding: 10px 16px;
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header with Controls -->
+        <div class="header-controls">
+            <div class="page-title">Empire Telemetry Terminal</div>
+            <div class="controls-right">
+                <input type="text" class="search-bar" placeholder="Search news, markets, ventures..." id="search-input">
+                <button class="refresh-btn" id="refresh-btn" onclick="refreshData()">
+                    <span class="refresh-icon">↻</span>
+                    <span>Refresh</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Sticky Tab Bar -->
+        <div class="tab-bar">
+            <button class="tab active" onclick="switchTab('intel')" id="btn-tab-intel">INTEL</button>
+            <button class="tab" onclick="switchTab('markets')" id="btn-tab-markets">MARKETS</button>
+            <button class="tab" onclick="switchTab('venture')" id="btn-tab-venture">VENTURE</button>
+        </div>
+
+        <!-- TAB 1: INTEL (Default View) -->
+        <div id="tab-intel" class="tab-content">
+            <div class="news-wall" id="news-wall">
+                <!-- News cards will be injected here by build_dashboard_v4.py -->
+                <div class="news-card">
+                    <div class="news-header">
+                        <span class="news-source">SYSTEM</span>
+                        <span class="news-time">Just now</span>
+                    </div>
+                    <div class="news-title">Loading real-time intelligence...</div>
+                    <div class="news-summary">The dashboard is fetching the latest RSS feeds from SaaS, Japan, NZ, Finance, and AI sources. This placeholder will be replaced with real data.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB 2: MARKETS -->
+        <div id="tab-markets" class="tab-content">
+            <div class="markets-grid">
+                <!-- Live Tickers -->
+                <div class="market-section">
+                    <div class="section-title">Live Tickers</div>
+                    <div class="tickers-container">
+                        <div class="ticker-widget">
+                            <!-- TradingView Widget: Gold -->
+                            <div class="tradingview-widget-container">
+                                <div class="tradingview-widget-container__widget"></div>
+                                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+                                {
+                                    "symbol": "FX:XAUUSD",
+                                    "width": "100%",
+                                    "colorTheme": "dark",
+                                    "isTransparent": true,
+                                    "locale": "en"
+                                }
+                                </script>
+                            </div>
+                        </div>
