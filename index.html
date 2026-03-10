@@ -4,199 +4,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Empire Telemetry Terminal | Obsidian Midnight</title>
-    <meta name="last-updated" content="2026-03-10 21:00:19 JST">
-    <meta name="last-updated" content="2026-03-10 06:30:16 JST">
-    <meta name="last-updated" content="2026-03-09 21:00:20 JST">
-    <meta name="last-updated" content="2026-03-06 22:26:56 JST">
-    <meta name="last-updated" content="2026-03-06 22:16:11 JST">
-    <meta name="last-updated" content="2026-03-06 22:15:34 JST">
-    <!-- Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Outfit:wght@300;400;500;600&display=swap"
+    <title>Empire Telemetry | Obsidian Midnight</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Cinzel:wght@700&display=swap"
         rel="stylesheet">
     <style>
         :root {
-            --bg-deep: #050505;
-            /* Obsidian base */
-            --bg-surface: rgba(18, 18, 20, 0.75);
-            /* Darker glass panel */
-            --border-subtle: rgba(255, 255, 255, 0.08);
-            --border-gold: rgba(212, 175, 55, 0.5);
-            /* Antique Gold */
-            --text-main: #EFEFEF;
-            --text-muted: #8E8E93;
-            --accent-gold: #D4AF37;
-            --accent-green: #34C759;
-            --accent-red: #FF3B30;
-            --accent-blue: #0A84FF;
-            --glow-gold: rgba(212, 175, 55, 0.1);
-
-            --font-display: 'Cinzel', serif;
-            --font-body: 'Outfit', sans-serif;
-            --letter-spacing-headers: 0.1em;
-            --letter-spacing-body: 0.01em;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+            --bg: #0A0A0B;
+            --surface: rgba(22, 22, 26, 0.8);
+            --accent: #D4AF37;
+            /* Empire Gold */
+            --mint: #34C759;
+            --crimson: #FF3B30;
+            --blue: #0A84FF;
+            --text: #F2F2F7;
+            --text-dim: #8E8E93;
+            --glass: blur(20px) saturate(180%);
         }
 
         body {
-            background-color: var(--bg-deep);
-            color: var(--text-main);
-            font-family: var(--font-body);
-            letter-spacing: var(--letter-spacing-body);
-            line-height: 1.6;
-            min-height: 100vh;
-            background-image: radial-gradient(circle at 10% 20%, rgba(30, 25, 10, 0.4) 0%, transparent 20%),
-                radial-gradient(circle at 90% 80%, rgba(10, 15, 25, 0.5) 0%, transparent 20%);
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'Outfit', sans-serif;
+            margin: 0;
+            padding-bottom: 90px;
+            overflow-x: hidden;
+            background-image: radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.05) 0%, transparent 50%);
         }
 
-        .container {
-            max-width: 1440px;
-            margin: 0 auto;
-            padding: 24px 32px;
-        }
-
-        /* ===== HEADER ===== */
-        .header-controls {
+        /* --- STICKY HEADER --- */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: var(--surface);
+            backdrop-filter: var(--glass);
+            -webkit-backdrop-filter: var(--glass);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 16px 24px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 40px;
-            padding-bottom: 24px;
-            border-bottom: 1px solid var(--border-subtle);
         }
 
-        .page-title {
-            font-family: var(--font-display);
-            font-size: 28px;
-            font-weight: 700;
-            letter-spacing: var(--letter-spacing-headers);
-            text-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+        .logo {
+            font-family: 'Cinzel', serif;
+            color: var(--accent);
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+        }
+
+        /* --- MOBILE NAV --- */
+        .tab-nav {
+            position: fixed;
+            bottom: 24px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--surface);
+            backdrop-filter: var(--glass);
+            -webkit-backdrop-filter: var(--glass);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 40px;
             display: flex;
-            align-items: center;
-            gap: 16px;
+            padding: 6px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+            z-index: 1000;
+            width: 90%;
+            max-width: 400px;
+            justify-content: space-between;
         }
 
-        .page-title::before {
-            content: '';
-            display: block;
-            width: 20px;
-            height: 20px;
-            background: linear-gradient(135deg, #FFDF73, #D4AF37, #8A7322);
-            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-            animation: pulse-gold 3s infinite ease-in-out;
-        }
-
-        @keyframes pulse-gold {
-
-            0%,
-            100% {
-                filter: drop-shadow(0 0 5px var(--accent-gold));
-            }
-
-            50% {
-                filter: drop-shadow(0 0 15px var(--accent-gold));
-            }
-        }
-
-        .controls-right {
-            display: flex;
-            gap: 16px;
-            align-items: center;
-        }
-
-        .search-bar {
-            padding: 12px 20px;
-            background: rgba(0, 0, 0, 0.3);
-            border: 1px solid var(--border-subtle);
-            border-radius: 6px;
-            color: var(--text-main);
-            font-family: var(--font-body);
-            font-size: 14px;
-            min-width: 280px;
-            transition: all 0.3s ease;
-            backdrop-filter: blur(8px);
-        }
-
-        .search-bar:focus {
-            outline: none;
-            border-color: var(--accent-gold);
-            box-shadow: 0 0 10px var(--glow-gold);
-        }
-
-        .refresh-btn {
-            padding: 12px 24px;
-            background: transparent;
-            border: 1px solid var(--border-subtle);
-            border-radius: 6px;
-            color: var(--text-muted);
-            font-family: var(--font-body);
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            font-size: 12px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            backdrop-filter: blur(10px);
-        }
-
-        .refresh-btn:hover {
-            color: var(--accent-gold);
-            border-color: var(--accent-gold);
-            background: var(--glow-gold);
-        }
-
-        /* ===== TABS ===== */
-        .tab-bar {
-            display: flex;
-            gap: 20px;
-            margin-bottom: 32px;
-            border-bottom: 1px solid var(--border-subtle);
-            padding-bottom: 1px;
-        }
-
-        .tab {
-            padding: 12px 24px;
-            background: transparent;
+        .tab-btn {
+            flex: 1;
+            padding: 12px 0;
             border: none;
-            color: var(--text-muted);
-            font-family: var(--font-body);
+            background: transparent;
+            color: var(--text-dim);
             font-weight: 600;
-            font-size: 14px;
-            letter-spacing: 0.15em;
-            text-transform: uppercase;
+            font-size: 0.9rem;
+            border-radius: 30px;
+            transition: all 0.3s ease;
             cursor: pointer;
-            position: relative;
-            transition: color 0.3s ease;
         }
 
-        .tab::after {
-            content: '';
-            position: absolute;
-            bottom: -1px;
-            left: 0;
-            width: 0%;
-            height: 2px;
-            background: var(--accent-gold);
-            transition: width 0.3s ease;
+        .tab-btn.active {
+            background: var(--accent);
+            color: #000;
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
         }
 
-        .tab:hover {
-            color: var(--text-main);
-        }
-
-        .tab.active {
-            color: var(--accent-gold);
-        }
-
-        .tab.active::after {
-            width: 100%;
-            box-shadow: 0 0 8px var(--accent-gold);
+        /* --- CONTENT --- */
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
         }
 
         .tab-content {
@@ -220,1467 +120,347 @@
             }
         }
 
-        /* ===== GLASS COMPONENTS ===== */
-        .glass-card {
-            background: var(--bg-surface);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-            border: 1px solid var(--border-subtle);
-            border-radius: 12px;
-            padding: 24px;
-            transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+        /* --- CARD STYLES --- */
+        .card {
+            background: var(--surface);
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            backdrop-filter: var(--glass);
+            -webkit-backdrop-filter: var(--glass);
         }
 
-        .glass-card:hover {
-            transform: translateY(-4px);
-            border-color: rgba(255, 255, 255, 0.15);
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5), 0 0 15px var(--glow-gold);
+        .tag {
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 700;
+            padding: 4px 8px;
+            border-radius: 4px;
+            display: inline-block;
+            margin-bottom: 12px;
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--text-dim);
         }
 
-        /* ===== INTEL ===== */
-        .news-wall {
-            display: flex;
-            flex-direction: column;
-            gap: 24px;
+        .card-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            line-height: 1.4;
+            color: var(--text);
         }
 
-        .news-header {
+        .card-summary {
+            color: var(--text-dim);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* --- SPECIFIC UTILITIES --- */
+        .trading-signal {
+            border-left: 4px solid var(--accent);
+        }
+
+        .signal-header {
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
-            margin-bottom: 16px;
+            margin-bottom: 10px;
         }
 
-        .news-source {
-            font-family: var(--font-display);
-            font-size: 11px;
+        .signal-value {
+            font-size: 1.6rem;
             font-weight: 700;
-            color: var(--accent-gold);
-            letter-spacing: 0.2em;
-            text-transform: uppercase;
-            padding: 4px 10px;
-            border: 1px solid var(--border-gold);
-            border-radius: 4px;
-            background: var(--glow-gold);
         }
 
-        .news-time {
-            color: var(--text-muted);
-            font-size: 13px;
-            font-weight: 500;
-        }
-
-        .news-title {
-            font-size: 24px;
-            font-weight: 600;
-            line-height: 1.4;
-            color: var(--text-main);
-            margin-bottom: 12px;
-        }
-
-        .news-summary {
-            color: var(--text-muted);
-            font-size: 18px;
-            line-height: 1.6;
-        }
-
-        /* ===== MARKETS ===== */
-        .market-section {
-            margin-bottom: 32px;
-        }
-
-        .section-title {
-            font-family: var(--font-display);
-            font-size: 20px;
-            color: var(--text-main);
-            margin-bottom: 24px;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .section-title::before {
-            content: '';
-            width: 3px;
-            height: 18px;
-            background: var(--accent-gold);
-            border-radius: 2px;
-        }
-
-        .targets-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-            gap: 24px;
-        }
-
-        .target-card {
+        .flex-between {
             display: flex;
             justify-content: space-between;
             align-items: center;
-        }
-
-        .target-symbol {
-            font-family: var(--font-display);
-            font-weight: 700;
-            font-size: 18px;
-        }
-
-        .target-name {
-            font-size: 12px;
-            color: var(--text-muted);
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            margin-bottom: 8px;
-        }
-
-        .target-meta {
-            font-size: 12px;
-            margin-top: 4px;
-        }
-
-        .status-bar {
-            width: 120px;
-            height: 4px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 2px;
-            overflow: hidden;
-            margin-top: 8px;
-            float: right;
-        }
-
-        .status-fill {
-            height: 100%;
-            transition: width 1s ease-in-out;
-        }
-
-        .text-mint {
-            color: var(--accent-green);
-        }
-
-        .text-red {
-            color: var(--accent-red);
-        }
-
-        .text-gray {
-            color: var(--text-muted);
-        }
-
-        .text-gold {
-            color: var(--accent-gold);
-        }
-
-        /* ===== VENTURE ===== */
-        .venture-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-            gap: 24px;
-        }
-
-        .idea-card {
-            position: relative;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-        }
-
-        .idea-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 2px;
-            background: linear-gradient(90deg, transparent, var(--accent-gold), transparent);
-            opacity: 0;
-            transition: opacity 0.3s;
-        }
-
-        .idea-card:hover::before {
-            opacity: 1;
-        }
-
-        .idea-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .idea-title {
-            font-family: var(--font-display);
-            font-size: 20px;
-            font-weight: 700;
-        }
-
-        .idea-score {
-            background: var(--glow-gold);
-            color: var(--accent-gold);
-            padding: 4px 10px;
-            border-radius: 4px;
-            font-size: 14px;
-            font-weight: 700;
-            border: 1px solid var(--border-gold);
-        }
-
-        .idea-summary {
-            font-size: 15px;
-            color: var(--text-muted);
-            flex-grow: 1;
-            line-height: 1.6;
-        }
-
-        .idea-meta {
-            display: flex;
-            justify-content: space-between;
-            font-size: 12px;
-            background: rgba(0, 0, 0, 0.3);
-            padding: 12px;
-            border-radius: 6px;
-        }
-
-        .idea-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-        }
-
-        .idea-tag {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid var(--border-subtle);
-            padding: 4px 12px;
-            border-radius: 100px;
-            font-size: 11px;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            color: var(--text-muted);
         }
     </style>
 </head>
 
 <body>
+
+    <header>
+        <div class="logo">EMPIRE</div>
+        <div style="font-size: 0.75rem; color: var(--text-dim); text-align: right;">
+            UPDATED<br>
+            <span style="color: var(--accent); font-weight: 600;">01:13 JST</span>
+        </div>
+    </header>
+
     <div class="container">
-        <!-- HEADER -->
-        <div class="header-controls">
-            <div class="page-title">Empire Telemetry</div>
-            <div class="controls-right">
-                <input type="text" class="search-bar" id="search-input"
-                    placeholder="Search intel, markets, ventures...">
-                <button class="refresh-btn" id="refresh-btn" onclick="refreshData()">Refresh</button>
+        <section id="intel" class="tab-content active">
+            <h2 style="color: var(--accent); margin-bottom: 20px; font-weight: 400; letter-spacing: 1px;">The Morning
+                Brief</h2>
+            
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #0A84FF22; color: #0A84FF;">SaaS</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <div class="card-title">Bluesky CEO Jay Graber steps down</div>
+            <div class="card-summary">Graber explained that, as a more mature company, Bluesky needs a &quot;seasoned operator focused on scaling and execution.&quot; Graber said she feels better su...</div>
+        </div>
+
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #0A84FF22; color: #0A84FF;">SaaS</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <div class="card-title">Periwinkle is making self-hosted social media on Bluesky’s AT Protocol even easier</div>
+            <div class="card-summary">Periwinkle offers managed hosting for AT Protocol users who want social media accounts on their own domains, with backups, storage, and migration tools.</div>
+        </div>
+
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #0A84FF22; color: #0A84FF;">SaaS</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <div class="card-title">Palmer Luckey’s retro gaming startup ModRetro reportedly seeks funding at $1B valuation</div>
+            <div class="card-summary">The company launched its first product, a Game Boy-style handheld device called the Chromatic, in 2024.</div>
+        </div>
+
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #0A84FF22; color: #0A84FF;">SaaS</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <div class="card-title">Uzbekistan’s Uzum valuation leaps over 50% in seven months to $2.3B</div>
+            <div class="card-summary">Uzum now reaches 20 million users and processes $11B in payments as it expands its e-commerce and fintech ecosystem across Uzbekistan.</div>
+        </div>
+
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #FF3B3022; color: #FF3B30;">Japan</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <div class="card-title">Spritzer EcoPark Offers Nature-Inspired Raya Celebration</div>
+            <div class="card-summary">p style=&quot;float: right; margin: 0 0 10px 15px; width: 240px; height: auto;&quot;
+		img src=&quot;https://www.japanindustrynews.com/wp-content/uploads/2026/0...</div>
+        </div>
+
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #FF3B3022; color: #FF3B30;">Japan</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <div class="card-title">Fujitsu and DT-Axis Collaborate to Advance Digital Health Through SaMD Development</div>
+            <div class="card-summary">p style=&quot;float: right; margin: 0 0 10px 15px; width: 240px; height: auto;&quot;
+		img src=&quot;https://www.japanindustrynews.com/wp-content/uploads/2026/0...</div>
+        </div>
+
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #FF3B3022; color: #FF3B30;">Japan</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <div class="card-title">Fosun International Reports Significant Loss Due to Impairments</div>
+            <div class="card-summary">p style=&quot;float: right; margin: 0 0 10px 15px; width: 240px; height: auto;&quot;
+		img src=&quot;https://www.japanindustrynews.com/wp-content/uploads/2026/0...</div>
+        </div>
+
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #FF3B3022; color: #FF3B30;">Japan</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <div class="card-title">Fujitsu Launches Accelerator Program for Defense Tech Innovation</div>
+            <div class="card-summary">p style=&quot;float: right; margin: 0 0 10px 15px; width: 240px; height: auto;&quot;
+		img src=&quot;https://www.japanindustrynews.com/wp-content/uploads/2026/0...</div>
+        </div>
+
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #D4AF3722; color: #D4AF37;">Markets</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <div class="card-title">investingLive European markets wrap: Oil prices come off the boil, eyes on G7/IEA action</div>
+            <div class="card-summary">pHeadlines:/pullia href=&quot;https://investinglive.com/commodities/g7-members-iea-reportedly-to-discuss-on-joint-release-of-emergency-oil-reserves-20260309/&qu...</div>
+        </div>
+
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #D4AF3722; color: #D4AF37;">Markets</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <div class="card-title">Rate cut bets evaporate amid surging oil prices but rate hike expectations are overblown</div>
+            <div class="card-summary">pBefore the war started, I a href=&quot;https://investinglive.com/news/a-war-between-us-and-iran-would-have-disastrous-effects-on-the-market-and-the-economy-202...</div>
+        </div>
+
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #D4AF3722; color: #D4AF37;">Markets</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <div class="card-title">Indian Rupee hits fresh record low despite RBI intervention amid continuing US-Iran war</div>
+            <div class="card-summary">p class=&quot;MsoNormal&quot;FUNDAMENTAL
+OVERVIEW/ppUSD:/ppThe US
+dollar opened higher today after a href=&quot;https://investinglive.com/news/trump-unhappy-abo...</div>
+        </div>
+
+        </section>
+
+        <section id="trading" class="tab-content">
+            <h2 style="color: var(--accent); margin-bottom: 20px; font-weight: 400; letter-spacing: 1px;">Gold Shield &
+                Quant</h2>
+            
+        <div class="card trading-signal" style="border-left-color: #34C759;">
+            <div class="signal-header">
+                <div>
+                    <span class="tag" style="background: #34C75922; color: #34C759;">GOLD SHIELD</span>
+                    <div class="card-title">Trading Protection</div>
+                </div>
+                <div class="signal-value" style="color: #34C759;">100%</div>
+            </div>
+            <div class="card-summary">✅ TRADING ACTIVE - Strategy execution enabled. No immediate risks detected.</div>
+        </div>
+        <div class="card trading-signal" style="border-left-color: #34C759;">
+            <div class="signal-header">
+                <div>
+                    <span class="tag" style="background: #34C75922; color: #34C759;">XAUUSD</span>
+                    <div class="card-title">Quant Agent #1 • <span style="color: #34C759;">LONG</span></div>
+                </div>
+                <div class="signal-value" style="color: #34C759;">65%</div>
+            </div>
+            <div class="card-summary">Recent optimization cycle complete. Evaluating entry protocols based on current volume.</div>
+        </div>
+
+        <div class="card trading-signal" style="border-left-color: #FF3B30;">
+            <div class="signal-header">
+                <div>
+                    <span class="tag" style="background: #FF3B3022; color: #FF3B30;">NAS100</span>
+                    <div class="card-title">Quant Agent #2 • <span style="color: #FF3B30;">SHORT</span></div>
+                </div>
+                <div class="signal-value" style="color: #FF3B30;">42%</div>
+            </div>
+            <div class="card-summary">Recent optimization cycle complete. Evaluating entry protocols based on current volume.</div>
+        </div>
+
+        </section>
+
+        <section id="venture" class="tab-content">
+            <h2 style="color: var(--accent); margin-bottom: 20px; font-weight: 400; letter-spacing: 1px;">Venture Desk
+            </h2>
+            
+        <div class="card">
+            <div class="signal-header">
+                <div>
+                    <span class="tag" style="background: #34C75922; color: #34C759;">Hoarded</span>
+                    <div class="card-title">Titan-Fit</div>
+                </div>
+                <div class="signal-value" style="color: var(--accent);">92</div>
+            </div>
+            <div class="card-summary">E-commerce platform for athletic apparel and supplements, leveraging athlete network for authentic marketing and Japanese market localization. Currently in &#x27;hoarded&#x27; status with $2.1M Empire Score.</div>
+            <div style="margin-top: 15px; font-size: 0.85rem; color: var(--text-dim); border-top: 1px solid rgba(255,255,255,0.05); padding-top: 10px;">
+                Empire Projection: <strong style="color: var(--text);">$2,100,000</strong> | 
+                Cap Required: <strong style="color: var(--text);">$5,000</strong>
             </div>
         </div>
 
-        <!-- TABS NAV -->
-        <div class="tab-bar">
-            <button class="tab active" data-tab="intel">The Morning Brief</button>
-            <button class="tab" data-tab="markets">The Pulse</button>
-            <button class="tab" data-tab="venture">Venture Desk</button>
-        </div>
-
-        <!-- INTEL TAB -->
-        <div id="tab-intel" class="tab-content active">
-                                                            <div class="news-wall" id="news-wall">
-
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">SAAS</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Bluesky CEO Jay Graber steps down</div>
-                    <div class="news-summary">Graber explained that, as a more mature company, Bluesky needs a &quot;seasoned operator focused on scaling and execution.&quot; Graber said she feels better suited to building Bluesky&#x27;s technology itself.</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">SAAS</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Periwinkle is making self-hosted social media on Bluesky’s AT Protocol even easier</div>
-                    <div class="news-summary">Periwinkle offers managed hosting for AT Protocol users who want social media accounts on their own domains, with backups, storage, and migration tools.</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">SAAS</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Palmer Luckey’s retro gaming startup ModRetro reportedly seeks funding at $1B valuation</div>
-                    <div class="news-summary">The company launched its first product, a Game Boy-style handheld device called the Chromatic, in 2024.</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">SAAS</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Uzbekistan’s Uzum valuation leaps over 50% in seven months to $2.3B</div>
-                    <div class="news-summary">Uzum now reaches 20 million users and processes $11B in payments as it expands its e-commerce and fintech ecosystem across Uzbekistan.</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">SAAS</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Yann LeCun’s AMI Labs raises $1.03 billion to build world models</div>
-                    <div class="news-summary">AMI Labs, the new venture cofounded by Turing Prize winner Yann LeCun after he left Meta, has raised $1.03 billion at a $3.5 billion pre-money valuation.</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">JAPAN</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Spritzer EcoPark Offers Nature-Inspired Raya Celebration</div>
-                    <div class="news-summary">
-		
-		Spritzer EcoPark in Taiping, Malaysia, is inviting visitors to celebrate Hari Raya Aidilfitri in a natural setting, offering a vibrant, nature-inspired experience that combines traditional Ma...</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">JAPAN</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Fujitsu and DT-Axis Collaborate to Advance Digital Health Through SaMD Development</div>
-                    <div class="news-summary">
-		
-		Fujitsu Limited and DT-Axis Co., Ltd. have announced a collaboration to enhance digital health by developing Software as Medical Device (SaMD) solutions. The partnership aims to support resea...</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">JAPAN</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Fosun International Reports Significant Loss Due to Impairments</div>
-                    <div class="news-summary">
-		
-		Fosun International has issued a profit warning, projecting a loss attributable to owners of the parent company of between RMB21.5 billion and RMB23.5 billion for the year ending December 31,...</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">JAPAN</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Hong Kong Completes First Green Methanol Bunkering for World’s First Dual-Fuel Vessel</div>
-                    <div class="news-summary">
-		
-		The world&#x27;s first methanol dual-fuel roll-on/roll-off vessel, CM HONG KONG, has successfully completed its inaugural green methanol bunkering operation in Hong Kong. This event marks a signif...</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">JAPAN</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Fujitsu Launches Accelerator Program for Defense Tech Innovation</div>
-                    <div class="news-summary">
-		
-		Fujitsu Limited has announced the launch of its Accelerator Program for Defense Tech, a collaborative initiative designed to drive innovation within the defense sector. This program is part o...</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">NZ</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">&#x27;Rockets and feathers&#x27; effect: The phenomenon behind soaring gas prices</div>
-                    <div class="news-summary">Do petrol prices rise faster when oil increases, than they fall when it drops?</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">NZ</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Airlines may look to cut flights as fuel prices soar, airline boss says</div>
-                    <div class="news-summary">The rising cost of oil is costing one small airline around $140,000 a month.</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">NZ</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Asian and New Zealand share markets tumble</div>
-                    <div class="news-summary">The New Zealand share market just had its worst session since April last year.</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">NZ</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Iran conflict sparks freight chaos: New Zealand faces soaring costs and months‑long delays</div>
-                    <div class="news-summary">One freight company says local road transport carriers have already increased fuel charges by more than 30 percent.</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">NZ</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Fine handed down after acquisition of wood shavings company lessened competition</div>
-                    <div class="news-summary">The Commerce Commission filed proceedings against Alderson Logistics and associated company Supa Shavings, over the acquisition of ABS Carriers in 2022.</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">MARKETS</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">investingLive European markets wrap: Oil prices come off the boil, eyes on G7/IEA action</div>
-                    <div class="news-summary">Headlines:G7 members, IEA reportedly to discuss on joint release of emergency oil reservesOil price surge relents as G7 mulls coordination with IEA to release emergency oil reservesOil prices ease ...</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">MARKETS</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Rate cut bets evaporate amid surging oil prices but rate hike expectations are overblown</div>
-                    <div class="news-summary">Before the war started, I mentioned that a US-Iran conflict would likely have disastrous effects on the markets and the global economy due to stagflation risks. The reason is simple: severe oil sup...</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">MARKETS</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Indian Rupee hits fresh record low despite RBI intervention amid continuing US-Iran war</div>
-                    <div class="news-summary">FUNDAMENTAL
-OVERVIEWUSD:The US
-dollar opened higher today after Israel bombed 30 Iranian fuel depots on Saturday and
-oil prices surged above 100$ per barrel. The greenback continues to be
-supported...</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">AI</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Ring’s Jamie Siminoff has been trying to calm privacy fears since the Super Bowl, but his answers may not help</div>
-                    <div class="news-summary">The facial recognition question is where things get more tangled.</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">AI</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Will the Pentagon’s Anthropic controversy scare startups away from defense work?</div>
-                    <div class="news-summary">On the latest episode of TechCrunch’s Equity podcast, we discussed what the controversy means for other startups seeking to work with the federal government.</div>
-                </div>
-        </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">SAAS</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Periwinkle is making self-hosted social media on Bluesky’s AT Protocol even easier</div>
-                    <div class="news-summary">Periwinkle offers managed hosting for AT Protocol users who want social media accounts on their own domains, with backups, storage, and migration tools.</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">SAAS</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Palmer Luckey’s retro gaming startup ModRetro reportedly seeks funding at $1B valuation</div>
-                    <div class="news-summary">The company launched its first product, a Game Boy-style handheld device called the Chromatic, in 2024.</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">JAPAN</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Spritzer EcoPark Offers Nature-Inspired Raya Celebration</div>
-                    <div class="news-summary">
-		
-		Spritzer EcoPark in Taiping, Malaysia, is inviting visitors to celebrate Hari Raya Aidilfitri in a natural setting, offering a vibrant, nature-inspired experience that combines traditional Ma...</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">JAPAN</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Fujitsu and DT-Axis Collaborate to Advance Digital Health Through SaMD Development</div>
-                    <div class="news-summary">
-		
-		Fujitsu Limited and DT-Axis Co., Ltd. have announced a collaboration to enhance digital health by developing Software as Medical Device (SaMD) solutions. The partnership aims to support resea...</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">JAPAN</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Fosun International Reports Significant Loss Due to Impairments</div>
-                    <div class="news-summary">
-		
-		Fosun International has issued a profit warning, projecting a loss attributable to owners of the parent company of between RMB21.5 billion and RMB23.5 billion for the year ending December 31,...</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">JAPAN</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Hong Kong Completes First Green Methanol Bunkering for World’s First Dual-Fuel Vessel</div>
-                    <div class="news-summary">
-		
-		The world&#x27;s first methanol dual-fuel roll-on/roll-off vessel, CM HONG KONG, has successfully completed its inaugural green methanol bunkering operation in Hong Kong. This event marks a signif...</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">NZ</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">&#x27;Rockets and feathers&#x27; effect: The phenomenon behind soaring gas prices</div>
-                    <div class="news-summary">Do petrol prices rise faster when oil increases, than they fall when it drops?</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">NZ</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Airlines may look to cut flights as fuel prices soar, airline boss says</div>
-                    <div class="news-summary">The rising cost of oil is costing one small airline around $140,000 a month.</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">NZ</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Asian and New Zealand share markets tumble</div>
-                    <div class="news-summary">The New Zealand share market just had its worst session since April last year.</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">NZ</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Iran conflict sparks freight chaos: New Zealand faces soaring costs and months‑long delays</div>
-                    <div class="news-summary">One freight company says local road transport carriers have already increased fuel charges by more than 30 percent.</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">NZ</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Fine handed down after acquisition of wood shavings company lessened competition</div>
-                    <div class="news-summary">The Commerce Commission filed proceedings against Alderson Logistics and associated company Supa Shavings, over the acquisition of ABS Carriers in 2022.</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">MARKETS</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">investingLive European markets wrap: Oil prices come off the boil, eyes on G7/IEA action</div>
-                    <div class="news-summary">Headlines:G7 members, IEA reportedly to discuss on joint release of emergency oil reservesOil price surge relents as G7 mulls coordination with IEA to release emergency oil reservesOil prices ease ...</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">MARKETS</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Rate cut bets evaporate amid surging oil prices but rate hike expectations are overblown</div>
-                    <div class="news-summary">Before the war started, I mentioned that a US-Iran conflict would likely have disastrous effects on the markets and the global economy due to stagflation risks. The reason is simple: severe oil sup...</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">MARKETS</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Indian Rupee hits fresh record low despite RBI intervention amid continuing US-Iran war</div>
-                    <div class="news-summary">FUNDAMENTAL
-OVERVIEWUSD:The US
-dollar opened higher today after Israel bombed 30 Iranian fuel depots on Saturday and
-oil prices surged above 100$ per barrel. The greenback continues to be
-supported...</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">AI</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Google just gave Sundar Pichai a $692M pay package</div>
-                    <div class="news-summary">Most of it is tied to performance, including new stock incentives linked to Waymo and Wing, its drone delivery venture.</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">AI</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Grammarly’s ‘expert review’ is just missing the actual experts</div>
-                    <div class="news-summary">A recently-added feature in Grammarly purports to improve users’ writing with help from the world&#x27;s great writers and thinkers — and some tech journalists, too.</div>
-                </div>
-        </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">JAPAN</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Fujitsu and DT-Axis Collaborate to Advance Digital Health Through SaMD Development</div>
-                    <div class="news-summary">
-		
-		Fujitsu Limited and DT-Axis Co., Ltd. have announced a collaboration to enhance digital health by developing Software as Medical Device (SaMD) solutions. The partnership aims to support resea...</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">JAPAN</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Fosun International Reports Significant Loss Due to Impairments</div>
-                    <div class="news-summary">
-		
-		Fosun International has issued a profit warning, projecting a loss attributable to owners of the parent company of between RMB21.5 billion and RMB23.5 billion for the year ending December 31,...</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">JAPAN</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Hong Kong Completes First Green Methanol Bunkering for World’s First Dual-Fuel Vessel</div>
-                    <div class="news-summary">
-		
-		The world&#x27;s first methanol dual-fuel roll-on/roll-off vessel, CM HONG KONG, has successfully completed its inaugural green methanol bunkering operation in Hong Kong. This event marks a signif...</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">NZ</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Why do high earners get the pension? - Ask Susan</div>
-                    <div class="news-summary">Money corespondent Susan Edmunds tackles questions around pensions and KiwiSaver.</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">NZ</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">&#x27;Rockets and feathers&#x27; effect: The phenomenon behind soaring gas prices</div>
-                    <div class="news-summary">Do petrol prices rise faster when oil increases, than they fall when it drops?</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">NZ</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Airlines may look to cut flights as fuel prices soar, airline boss says</div>
-                    <div class="news-summary">The rising cost of oil is costing one small airline around $140,000 a month.</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">NZ</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Asian and New Zealand share markets tumble</div>
-                    <div class="news-summary">The New Zealand share market just had its worst session since April last year.</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">NZ</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Iran conflict sparks freight chaos: New Zealand faces soaring costs and months‑long delays</div>
-                    <div class="news-summary">One freight company says local road transport carriers have already increased fuel charges by more than 30 percent.</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">MARKETS</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">investingLive European markets wrap: Oil prices come off the boil, eyes on G7/IEA action</div>
-                    <div class="news-summary">Headlines:G7 members, IEA reportedly to discuss on joint release of emergency oil reservesOil price surge relents as G7 mulls coordination with IEA to release emergency oil reservesOil prices ease ...</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">MARKETS</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Rate cut bets evaporate amid surging oil prices but rate hike expectations are overblown</div>
-                    <div class="news-summary">Before the war started, I mentioned that a US-Iran conflict would likely have disastrous effects on the markets and the global economy due to stagflation risks. The reason is simple: severe oil sup...</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">MARKETS</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Indian Rupee hits fresh record low despite RBI intervention amid continuing US-Iran war</div>
-                    <div class="news-summary">FUNDAMENTAL
-OVERVIEWUSD:The US
-dollar opened higher today after Israel bombed 30 Iranian fuel depots on Saturday and
-oil prices surged above 100$ per barrel. The greenback continues to be
-supported...</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">AI</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Google just gave Sundar Pichai a $692M pay package</div>
-                    <div class="news-summary">Most of it is tied to performance, including new stock incentives linked to Waymo and Wing, its drone delivery venture.</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">AI</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Grammarly’s ‘expert review’ is just missing the actual experts</div>
-                    <div class="news-summary">A recently-added feature in Grammarly purports to improve users’ writing with help from the world&#x27;s great writers and thinkers — and some tech journalists, too.</div>
-                </div>
-        </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">SAAS</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Cluely CEO Roy Lee admits to publicly lying about revenue numbers last year</div>
-                    <div class="news-summary">The $7 million in annual recurring revenue that Cluely CEO Roy Lee shared last summer was a lie, its founder and CEO Roy Lee admitted on Thursday on X.</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">SAAS</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Hardware testing startup Nominal hits $1B valuation, raises $155M in 10 months</div>
-                    <div class="news-summary">Nominal provides hardware testing equipment to defense tech companies. Founders Fund led the preemptive deal.</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">SAAS</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Luma launches creative AI agents powered by its new ‘Unified Intelligence’ models</div>
-                    <div class="news-summary">Luma introduced Luma Agents, powered by its new “Unified Intelligence” models, designed to coordinate multiple AI systems and generate end-to-end creative work across text, images, video and audio.</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">SAAS</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Zeno raises $25M to speed up production of its battery-swap motorbikes</div>
-                    <div class="news-summary">The startup, co-founded by Tesla and Apple alumni, has sold nearly 1,000 of its motorbikes so far.</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">JAPAN</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">OMRON Healthcare Highlights Menopause-Related Cardiovascular Risks in New Factbook</div>
-                    <div class="news-summary">
-		
-		OMRON Healthcare has released a new Women’s Heart Health Factbook, drawing attention to the critical intersection between menopause, hypertension, and long-term cardiovascular risk. This rele...</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">JAPAN</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">TANAKA Develops Groundbreaking Palladium Hydrogen Membrane</div>
-                    <div class="news-summary">
-		
-		TANAKA PRECIOUS METAL TECHNOLOGIES Co., Ltd. has announced the development of HPM-L111, the world&#x27;s first palladium hydrogen permeable membrane capable of high performance at low temperatures...</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">NZ</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Petrol prices jump past $3 a litre at the pump</div>
-                    <div class="news-summary">The price of 95 petrol has hit $3 in some parts of the country as conflict in the Middle East pushes up oil prices.</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">NZ</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">It could be NZ&#x27;s tallest residential tower, but will Seascape ever be finished?</div>
-                    <div class="news-summary">Two years since construction halted and its owner went into receivership, the future of the 56-storey Seascape is up in the air.</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">NZ</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">The businesses failing most frequently and what can you do to avoid joining them</div>
-                    <div class="news-summary">The number of liquidations is up 16 percent compared to last year as the economy grinds to recovery.</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">NZ</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Reverse mortgage or retirement village: Which will give you the retirement you want?</div>
-                    <div class="news-summary">Jo Murphy says she sold her home and moved into a retirement village 15 years too soon. &quot;Maybe I was simply lonelier than I thought.&quot;</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">NZ</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">US-funded group sues SkyCity over Malta-based online gambling platform</div>
-                    <div class="news-summary">The class action is over gambling monies lost to SkyCity Online over a six-year period.</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">MARKETS</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">US Non-farm Payroll takes center stage. What are the technicals telling traders?</div>
-                    <div class="news-summary">In the video above, I take a look at the technicals driving the 3 major currency pairs - the EURUSD, USDJPY and GBPUSD - as the price action defines the bias, the risk and targets during the news d...</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">MARKETS</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">A coming hot PCE and a solid jobs report would signal the Fed should wait, says Waller</div>
-                    <div class="news-summary">Will find out today if the labour market is turning a cornerJanuary job gains were concentrated, did not give comfort that economy as a whole was doing wellExpect January jobs number to be revised ...</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">MARKETS</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">investingLive European markets wrap: Oil prices surge higher on prolonged disruption fears</div>
-                    <div class="news-summary">Headlines:Oil prices resume climb to start European morning tradeQatar warns that the Middle East conflict could disrupt energy exports for weeks to monthsQatar reportedly offers to lease LNG tanke...</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">AI</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Anthropic to challenge DOD’s supply-chain label in court</div>
-                    <div class="news-summary">Anthropic CEO Dario Amodei said he plans to challenge the Department of Defense&#x27;s designation of the AI firm as a supply-chain risk. He claims most Anthropic customers are unaffected by the label.</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">AI</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">DiligenceSquared uses AI, voice agents to make M&amp;A research affordable</div>
-                    <div class="news-summary">Instead of relying on expensive management consultants, the startup uses AI voice agents to conduct interviews with customers of the companies the PE firms are considering buying.</div>
-                </div>
-        </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">SAAS</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Cluely CEO Roy Lee admits to publicly lying about revenue numbers last year</div>
-                    <div class="news-summary">The $7 million in annual recurring revenue that Cluely CEO Roy Lee shared last summer was a lie, its founder and CEO Roy Lee admitted on Thursday on X.</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">SAAS</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Hardware testing startup Nominal hits $1B valuation, raises $155M in 10 months</div>
-                    <div class="news-summary">Nominal provides hardware testing equipment to defense tech companies. Founders Fund led the preemptive deal.</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">SAAS</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Luma launches creative AI agents powered by its new ‘Unified Intelligence’ models</div>
-                    <div class="news-summary">Luma introduced Luma Agents, powered by its new “Unified Intelligence” models, designed to coordinate multiple AI systems and generate end-to-end creative work across text, images, video and audio.</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">SAAS</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Zeno raises $25M to speed up production of its battery-swap motorbikes</div>
-                    <div class="news-summary">The startup, co-founded by Tesla and Apple alumni, has sold nearly 1,000 of its motorbikes so far.</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">JAPAN</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">OMRON Healthcare Highlights Menopause-Related Cardiovascular Risks in New Factbook</div>
-                    <div class="news-summary">
-		
-		OMRON Healthcare has released a new Women’s Heart Health Factbook, drawing attention to the critical intersection between menopause, hypertension, and long-term cardiovascular risk. This rele...</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">JAPAN</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">TANAKA Develops Groundbreaking Palladium Hydrogen Membrane</div>
-                    <div class="news-summary">
-		
-		TANAKA PRECIOUS METAL TECHNOLOGIES Co., Ltd. has announced the development of HPM-L111, the world&#x27;s first palladium hydrogen permeable membrane capable of high performance at low temperatures...</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">NZ</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Petrol prices jump past $3 a litre at the pump</div>
-                    <div class="news-summary">The price of 95 petrol has hit $3 in some parts of the country as conflict in the Middle East pushes up oil prices.</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">NZ</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">It could be NZ&#x27;s tallest residential tower, but will Seascape ever be finished?</div>
-                    <div class="news-summary">Two years since construction halted and its owner went into receivership, the future of the 56-storey Seascape is up in the air.</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">NZ</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">The businesses failing most frequently and what can you do to avoid joining them</div>
-                    <div class="news-summary">The number of liquidations is up 16 percent compared to last year as the economy grinds to recovery.</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">NZ</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Reverse mortgage or retirement village: Which will give you the retirement you want?</div>
-                    <div class="news-summary">Jo Murphy says she sold her home and moved into a retirement village 15 years too soon. &quot;Maybe I was simply lonelier than I thought.&quot;</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">NZ</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">US-funded group sues SkyCity over Malta-based online gambling platform</div>
-                    <div class="news-summary">The class action is over gambling monies lost to SkyCity Online over a six-year period.</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">MARKETS</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">US Non-farm Payroll takes center stage. What are the technicals telling traders?</div>
-                    <div class="news-summary">In the video above, I take a look at the technicals driving the 3 major currency pairs - the EURUSD, USDJPY and GBPUSD - as the price action defines the bias, the risk and targets during the news d...</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">MARKETS</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">A coming hot PCE and a solid jobs report would signal the Fed should wait, says Waller</div>
-                    <div class="news-summary">Will find out today if the labour market is turning a cornerJanuary job gains were concentrated, did not give comfort that economy as a whole was doing wellExpect January jobs number to be revised ...</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">MARKETS</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">investingLive European markets wrap: Oil prices surge higher on prolonged disruption fears</div>
-                    <div class="news-summary">Headlines:Oil prices resume climb to start European morning tradeQatar warns that the Middle East conflict could disrupt energy exports for weeks to monthsQatar reportedly offers to lease LNG tanke...</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">AI</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Anthropic to challenge DOD’s supply-chain label in court</div>
-                    <div class="news-summary">Anthropic CEO Dario Amodei said he plans to challenge the Department of Defense&#x27;s designation of the AI firm as a supply-chain risk. He claims most Anthropic customers are unaffected by the label.</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">AI</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">DiligenceSquared uses AI, voice agents to make M&amp;A research affordable</div>
-                    <div class="news-summary">Instead of relying on expensive management consultants, the startup uses AI voice agents to conduct interviews with customers of the companies the PE firms are considering buying.</div>
-                </div>
-        </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">SAAS</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Cluely CEO Roy Lee admits to publicly lying about revenue numbers last year</div>
-                    <div class="news-summary">The $7 million in annual recurring revenue that Cluely CEO Roy Lee shared last summer was a lie, its founder and CEO Roy Lee admitted on Thursday on X.</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">SAAS</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Hardware testing startup Nominal hits $1B valuation, raises $155M in 10 months</div>
-                    <div class="news-summary">Nominal provides hardware testing equipment to defense tech companies. Founders Fund led the preemptive deal.</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">SAAS</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Luma launches creative AI agents powered by its new ‘Unified Intelligence’ models</div>
-                    <div class="news-summary">Luma introduced Luma Agents, powered by its new “Unified Intelligence” models, designed to coordinate multiple AI systems and generate end-to-end creative work across text, images, video and audio.</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">SAAS</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Zeno raises $25M to speed up production of its battery-swap motorbikes</div>
-                    <div class="news-summary">The startup, co-founded by Tesla and Apple alumni, has sold nearly 1,000 of its motorbikes so far.</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">JAPAN</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">OMRON Healthcare Highlights Menopause-Related Cardiovascular Risks in New Factbook</div>
-                    <div class="news-summary">
-		
-		OMRON Healthcare has released a new Women’s Heart Health Factbook, drawing attention to the critical intersection between menopause, hypertension, and long-term cardiovascular risk. This rele...</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">JAPAN</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">TANAKA Develops Groundbreaking Palladium Hydrogen Membrane</div>
-                    <div class="news-summary">
-		
-		TANAKA PRECIOUS METAL TECHNOLOGIES Co., Ltd. has announced the development of HPM-L111, the world&#x27;s first palladium hydrogen permeable membrane capable of high performance at low temperatures...</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">NZ</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Petrol prices jump past $3 a litre at the pump</div>
-                    <div class="news-summary">The price of 95 petrol has hit $3 in some parts of the country as conflict in the Middle East pushes up oil prices.</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">NZ</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">It could be NZ&#x27;s tallest residential tower, but will Seascape ever be finished?</div>
-                    <div class="news-summary">Two years since construction halted and its owner went into receivership, the future of the 56-storey Seascape is up in the air.</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">NZ</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">The businesses failing most frequently and what can you do to avoid joining them</div>
-                    <div class="news-summary">The number of liquidations is up 16 percent compared to last year as the economy grinds to recovery.</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">NZ</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Reverse mortgage or retirement village: Which will give you the retirement you want?</div>
-                    <div class="news-summary">Jo Murphy says she sold her home and moved into a retirement village 15 years too soon. &quot;Maybe I was simply lonelier than I thought.&quot;</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">NZ</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">US-funded group sues SkyCity over Malta-based online gambling platform</div>
-                    <div class="news-summary">The class action is over gambling monies lost to SkyCity Online over a six-year period.</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">MARKETS</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">US Non-farm Payroll takes center stage. What are the technicals telling traders?</div>
-                    <div class="news-summary">In the video above, I take a look at the technicals driving the 3 major currency pairs - the EURUSD, USDJPY and GBPUSD - as the price action defines the bias, the risk and targets during the news d...</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">MARKETS</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">A coming hot PCE and a solid jobs report would signal the Fed should wait, says Waller</div>
-                    <div class="news-summary">Will find out today if the labour market is turning a cornerJanuary job gains were concentrated, did not give comfort that economy as a whole was doing wellExpect January jobs number to be revised ...</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">MARKETS</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">investingLive European markets wrap: Oil prices surge higher on prolonged disruption fears</div>
-                    <div class="news-summary">Headlines:Oil prices resume climb to start European morning tradeQatar warns that the Middle East conflict could disrupt energy exports for weeks to monthsQatar reportedly offers to lease LNG tanke...</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">AI</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Anthropic to challenge DOD’s supply-chain label in court</div>
-                    <div class="news-summary">Anthropic CEO Dario Amodei said he plans to challenge the Department of Defense&#x27;s designation of the AI firm as a supply-chain risk. He claims most Anthropic customers are unaffected by the label.</div>
-                </div>
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">AI</span>
-                        <span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">DiligenceSquared uses AI, voice agents to make M&amp;A research affordable</div>
-                    <div class="news-summary">Instead of relying on expensive management consultants, the startup uses AI voice agents to conduct interviews with customers of the companies the PE firms are considering buying.</div>
-                </div>
-        </div>
-                <div class="news-card glass-card">
-                    <div class="news-header"><span class="news-source">SAAS</span><span
-                            class="news-time">Recently</span></div>
-                    <div class="news-title">His house burned down. He used the insurance money to build PopSockets.
-                    </div>
-                    <div class="news-summary">Does a consumer hardware company need to get on the VC treadmill to
-                        succeed? Eleven years and 290 million products sold across 115 countries later, PopSockets has
-                        proven that the bootstrapped, low...</div>
-                </div>
-                <div class="news-card glass-card">
-                    <div class="news-header"><span class="news-source">SAAS</span><span
-                            class="news-time">Recently</span></div>
-                    <div class="news-title">How PopSockets broke the VC-backed consumer hardware mold</div>
-                    <div class="news-summary">Does a consumer hardware company need to get on the VC treadmill to
-                        succeed? Eleven years and 290 million products sold across 115 countries later, PopSockets has
-                        proven that the bootstrapped, low...</div>
-                </div>
-                <div class="news-card glass-card">
-                    <div class="news-header"><span class="news-source">SAAS</span><span
-                            class="news-time">Recently</span></div>
-                    <div class="news-title">Decagon completes first tender offer at $4.5B valuation</div>
-                    <div class="news-summary">The AI-powered customer support startup is the latest example of a
-                        fast-growing, young company that's providing employee liquidity.</div>
-                </div>
-                <div class="news-card glass-card">
-                    <div class="news-header"><span class="news-source">SAAS</span><span
-                            class="news-time">Recently</span></div>
-                    <div class="news-title">Host a Side Event during TechCrunch Founder Summit Week in Boston</div>
-                    <div class="news-summary">Want to tap into the energy of 1,100+ startup founders, investors, and
-                        tech leaders descending on Boston for the Founder Summit 2026 on June 9? Host your own Side
-                        Event during “Founder Summit Week,...</div>
-                </div>
-
-                <!-- Japan -->
-                <div class="news-card glass-card">
-                    <div class="news-header"><span class="news-source">JAPAN</span><span
-                            class="news-time">Recently</span></div>
-                    <div class="news-title">Honda to Introduce U.S.-Built Models in Japan by Late 2026</div>
-                    <div class="news-summary">Honda Motor Co., Ltd. announced plans to introduce two U.S.-built models,
-                        the Acura Integra Type S and Honda Passport TrailSport Elite, to the Japanese market in the
-                        second half of 2026.</div>
-                </div>
-                <div class="news-card glass-card">
-                    <div class="news-header"><span class="news-source">JAPAN</span><span
-                            class="news-time">Recently</span></div>
-                    <div class="news-title">NTT DOCOMO Unveils Haptic Technology to Enhance Fan Experience</div>
-                    <div class="news-summary">NTT DOCOMO, INC. has introduced a new system utilizing FEEL TECH™ haptic
-                        technology, designed to elevate fan experiences by transmitting physical sensations from
-                        artists.</div>
-                </div>
-
-                <!-- NZ -->
-                <div class="news-card glass-card">
-                    <div class="news-header"><span class="news-source">NZ</span><span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Call for politicians to confirm KiwiSaver members can have their money at 65
-                    </div>
-                    <div class="news-summary">A prominent investor and director is calling for politicians to confirm
-                        that New Zealanders can count on getting their KiwiSaver when they turn 65.</div>
-                </div>
-                <div class="news-card glass-card">
-                    <div class="news-header"><span class="news-source">NZ</span><span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Finance Minister Nicola Willis says economic impact from Middle East war
-                        isn't clear</div>
-                    <div class="news-summary">The finance minister said she hasn't received formal Treasury scenarios on
-                        the impacts of the conflict.</div>
-                </div>
-                <div class="news-card glass-card">
-                    <div class="news-header"><span class="news-source">NZ</span><span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Why Air NZ is in the red while rivals soar</div>
-                    <div class="news-summary">The national carrier is caught in turbulent skies, with grounded planes,
-                        global conflict, and growing criticism from politicians and passengers</div>
-                </div>
-                <div class="news-card glass-card">
-                    <div class="news-header"><span class="news-source">NZ</span><span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Commissioner of Inland Revenue latest scam target</div>
-                    <div class="news-summary">Inland Revenue had received more than 3000 reports of scams from the
-                        public in the three months to the end of February.</div>
-                </div>
-                <div class="news-card glass-card">
-                    <div class="news-header"><span class="news-source">NZ</span><span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">What are New Zealand's global supply chains being disrupted by the US-Iran
-                        conflict?</div>
-                    <div class="news-summary">Explainer - The war raging in the Middle East is disrupting supply chains,
-                        but what exactly does that mean?</div>
-                </div>
-
-                <!-- Markets -->
-                <div class="news-card glass-card">
-                    <div class="news-header"><span class="news-source">MARKETS</span><span
-                            class="news-time">Recently</span></div>
-                    <div class="news-title">investingLive European markets wrap: Caution holds as focus stays on US-Iran
-                        conflict</div>
-                    <div class="news-summary">Headlines: Iran is ready to abandon its nuclear program if the US makes a
-                        satisfactory offer. Is this a hint that the US-Iran conflict might stretch on for much longer?
-                    </div>
-                </div>
-                <div class="news-card glass-card">
-                    <div class="news-header"><span class="news-source">MARKETS</span><span
-                            class="news-time">Recently</span></div>
-                    <div class="news-title">ETH analysis: Order flow hints post-breakout rotation past $2,000 (Score:
-                        +3/10)</div>
-                    <div class="news-summary">Shifting focus to crypto, Bitcoin’s breakout earlier this week has paused
-                        near $69K as short-term pressure builds...</div>
-                </div>
-                <div class="news-card glass-card">
-                    <div class="news-header"><span class="news-source">MARKETS</span><span
-                            class="news-time">Recently</span></div>
-                    <div class="news-title">US February Challenger layoffs 48.307k vs 108.435k prior</div>
-                    <div class="news-summary">US-based employers announced 48,307 job cuts in February 2026, and that is
-                        down ~72% compared to the same month last year.</div>
-                </div>
-
-                <!-- AI -->
-                <div class="news-card glass-card">
-                    <div class="news-header"><span class="news-source">AI</span><span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Jensen Huang says Nvidia is pulling back from OpenAI and Anthropic, but his
-                        explanation raises more questions than it answers</div>
-                    <div class="news-summary">Nvidia CEO Jensen Huang said Wednesday that his company's investments in
-                        OpenAI and Anthropic will likely be its last — but his explanation may not tell the whole story.
-                    </div>
-                </div>
-                <div class="news-card glass-card">
-                    <div class="news-header"><span class="news-source">AI</span><span class="news-time">Recently</span>
-                    </div>
-                    <div class="news-title">Anthropic CEO Dario Amodei calls OpenAI’s messaging around military deal
-                        ‘straight up lies,’ report says</div>
-                    <div class="news-summary">Anthropic gave up its contract with the Pentagon over AI safety
-                        disagreements -- then, OpenAI swooped in.</div>
-                </div>
+        <div class="card">
+            <div class="signal-header">
+                <div>
+                    <span class="tag" style="background: #34C75922; color: #34C759;">Hoarded</span>
+                    <div class="card-title">Tate-AI</div>
+                </div>
+                <div class="signal-value" style="color: var(--accent);">90</div>
+            </div>
+            <div class="card-summary">AI-driven construction site progress and safety monitoring for Tier-2/3 Japanese firms, automating daily &#x27;Nippo&#x27; reports using computer vision. West → Japan geo-arbitrage play.</div>
+            <div style="margin-top: 15px; font-size: 0.85rem; color: var(--text-dim); border-top: 1px solid rgba(255,255,255,0.05); padding-top: 10px;">
+                Empire Projection: <strong style="color: var(--text);">$1,832,700</strong> | 
+                Cap Required: <strong style="color: var(--text);">$100</strong>
             </div>
         </div>
 
-        <!-- MARKETS TAB -->
-        <div id="tab-markets" class="tab-content">
-            <div class="market-section">
-                <div class="section-title">Gold Shield Protection</div>
-                <div class="targets-grid">
-                    <div class="target-card glass-card" style="border-left: 4px solid var(--accent-gold);">
-                        <div class="target-info">
-                            <div class="target-symbol">GOLD SHIELD</div>
-                            <div class="target-name">Trading Protection System</div>
-                            <div class="target-meta">07:20 JST • <strong class="text-red">🛡️ KILLSWITCH ACTIVE</strong>
-                            </div>
-                        </div>
-                        <div style="text-align: right;">
-                            <div style="font-size: 24px; font-weight: 700;">60%</div>
-                            <div style="font-size: 11px; color: var(--text-muted); margin-bottom: 4px;">⛔ No trades
-                                executed - capital preserved</div>
-                            <div class="status-bar">
-                                <div class="status-fill" style="width: 60%; background: var(--accent-gold);"></div>
-                            </div>
-                        </div>
-                    </div>
+        <div class="card">
+            <div class="signal-header">
+                <div>
+                    <span class="tag" style="background: #D4AF3722; color: #D4AF37;">Validating</span>
+                    <div class="card-title">SaaS Construction Material Platform</div>
                 </div>
-                <div
-                    style="margin-top: 16px; padding: 16px; background: rgba(212, 175, 55, 0.05); border: 1px solid var(--border-gold); border-radius: 8px;">
-                    <div
-                        style="font-size: 12px; color: var(--accent-gold); font-weight: 600; letter-spacing: 0.1em; margin-bottom: 8px;">
-                        PROTECTION LOGIC</div>
-                    <div style="font-size: 12px; color: var(--text-muted); line-height: 1.8;">
-                        • Kill-switch activates when conviction < 70<br>
-                            • Preserves capital during uncertainty<br>
-                            • Auto-resumes when conditions improve
-                    </div>
-                </div>
+                <div class="signal-value" style="color: var(--accent);">88</div>
             </div>
-
-            <div class="market-section">
-                <div class="section-title">Quant Agent Iterations</div>
-                <div class="targets-grid">
-                    <div class="target-card glass-card">
-                        <div class="target-info">
-                            <div class="target-symbol">XAUUSD</div>
-                            <div class="target-name">Quant Agent #1</div>
-                            <div class="target-meta">07:20 JST • <strong class="text-mint">LONG</strong></div>
-                        </div>
-                        <div style="text-align: right;">
-                            <div style="font-size: 24px; font-weight: 700;">65%</div>
-                            <div style="font-size: 11px; color: var(--text-muted); margin-bottom: 4px;">Fed dovish
-                                signals, geopolitical tension...</div>
-                            <div class="status-bar">
-                                <div class="status-fill" style="width: 65%; background: var(--accent-green);"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="target-card glass-card">
-                        <div class="target-info">
-                            <div class="target-symbol">NAS100</div>
-                            <div class="target-name">Quant Agent #2</div>
-                            <div class="target-meta">07:20 JST • <strong class="text-red">SHORT</strong></div>
-                        </div>
-                        <div style="text-align: right;">
-                            <div style="font-size: 24px; font-weight: 700;">42%</div>
-                            <div style="font-size: 11px; color: var(--text-muted); margin-bottom: 4px;">Tech earnings
-                                concerns...</div>
-                            <div class="status-bar">
-                                <div class="status-fill" style="width: 42%; background: var(--accent-red);"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="target-card glass-card">
-                        <div class="target-info">
-                            <div class="target-symbol">USDJPY</div>
-                            <div class="target-name">Quant Agent #3</div>
-                            <div class="target-meta">07:20 JST • <strong class="text-gray">NO TRADE</strong></div>
-                        </div>
-                        <div style="text-align: right;">
-                            <div style="font-size: 24px; font-weight: 700;">60%</div>
-                            <div style="font-size: 11px; color: var(--text-muted); margin-bottom: 4px;">BOJ policy
-                                uncertainty...</div>
-                            <div class="status-bar">
-                                <div class="status-fill" style="width: 60%; background: var(--text-muted);"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="card-summary">Platform connecting Japanese SME contractors with NZ suppliers for streamlined procurement, real-time inventory management, and automated order scheduling. Targets Japan&#x27;s complex construction supply chain.</div>
+            <div style="margin-top: 15px; font-size: 0.85rem; color: var(--text-dim); border-top: 1px solid rgba(255,255,255,0.05); padding-top: 10px;">
+                Empire Projection: <strong style="color: var(--text);">TBD</strong> | 
+                Cap Required: <strong style="color: var(--text);">$10,000</strong>
             </div>
         </div>
 
-        <!-- VENTURE TAB -->
-        <div id="tab-venture" class="tab-content">
-            <div class="venture-grid">
-                <div class="idea-card glass-card">
-                    <div class="idea-header">
-                        <div class="idea-title">Titan-Fit</div>
-                        <div class="idea-score">92</div>
-                    </div>
-                    <div class="idea-summary">E-commerce platform for athletic apparel and supplements, leveraging
-                        athlete network for authentic marketing and Japanese market localization. Currently in 'hoarded'
-                        status with $2.1M Empire Score.</div>
-                    <div class="idea-meta">
-                        <span>Empire: <strong class="text-main">$2,100,000</strong></span>
-                        <span>Capital: <strong class="text-main">$5,000</strong></span>
-                        <strong class="text-mint">Hoarded</strong>
-                    </div>
-                    <div class="idea-tags"><span class="idea-tag">E-commerce</span><span
-                            class="idea-tag">Fashion</span><span class="idea-tag">Sports</span><span
-                            class="idea-tag">Japan</span></div>
+        <div class="card">
+            <div class="signal-header">
+                <div>
+                    <span class="tag" style="background: #D4AF3722; color: #D4AF37;">Validating</span>
+                    <div class="card-title">Construction Workforce SaaS + NZ Recruitment</div>
                 </div>
-
-                <div class="idea-card glass-card">
-                    <div class="idea-header">
-                        <div class="idea-title">Tate-AI</div>
-                        <div class="idea-score">90</div>
-                    </div>
-                    <div class="idea-summary">AI-driven construction site progress and safety monitoring for Tier-2/3
-                        Japanese firms, automating daily 'Nippo' reports using computer vision. West → Japan
-                        geo-arbitrage play.</div>
-                    <div class="idea-meta">
-                        <span>Empire: <strong class="text-main">$1,832,700</strong></span>
-                        <span>Capital: <strong class="text-main">$100</strong></span>
-                        <strong class="text-mint">Hoarded</strong>
-                    </div>
-                    <div class="idea-tags"><span class="idea-tag">AI</span><span class="idea-tag">SaaS</span><span
-                            class="idea-tag">Construction</span><span class="idea-tag">Japan</span></div>
-                </div>
-
-                <div class="idea-card glass-card">
-                    <div class="idea-header">
-                        <div class="idea-title">SaaS Construction Material Platform</div>
-                        <div class="idea-score">88</div>
-                    </div>
-                    <div class="idea-summary">Platform connecting Japanese SME contractors with NZ suppliers for
-                        streamlined procurement, real-time inventory management, and automated order scheduling. Targets
-                        Japan's complex construction supply chain.</div>
-                    <div class="idea-meta">
-                        <span>Empire: <strong class="text-main">TBD</strong></span>
-                        <span>Capital: <strong class="text-main">$10,000</strong></span>
-                        <strong class="text-gold">Validating</strong>
-                    </div>
-                    <div class="idea-tags"><span class="idea-tag">SaaS</span><span
-                            class="idea-tag">Construction</span><span class="idea-tag">B2B</span><span
-                            class="idea-tag">Japan</span></div>
-                </div>
-
-                <div class="idea-card glass-card">
-                    <div class="idea-header">
-                        <div class="idea-title">Construction Workforce SaaS + NZ Recruitment</div>
-                        <div class="idea-score">85</div>
-                    </div>
-                    <div class="idea-summary">SaaS platform for Japanese contractors to manage workforce scheduling,
-                        payroll, and compliance, integrated with NZ skilled labor recruitment to address Japan's
-                        construction labor shortage.</div>
-                    <div class="idea-meta">
-                        <span>Empire: <strong class="text-main">TBD</strong></span>
-                        <span>Capital: <strong class="text-main">$15,000</strong></span>
-                        <strong class="text-gold">Validating</strong>
-                    </div>
-                    <div class="idea-tags"><span class="idea-tag">SaaS</span><span
-                            class="idea-tag">Recruitment</span><span class="idea-tag">Workforce</span><span
-                            class="idea-tag">Japan</span></div>
-                </div>
-
-                <div class="idea-card glass-card">
-                    <div class="idea-header">
-                        <div class="idea-title">Athlete Finance SaaS</div>
-                        <div class="idea-score">87</div>
-                    </div>
-                    <div class="idea-summary">Automated financial management for professional athletes with
-                        contract-based income, sponsorship tracking, and Japanese tax optimization.</div>
-                    <div class="idea-meta">
-                        <span>Empire: <strong class="text-main">TBD</strong></span>
-                        <span>Capital: <strong class="text-main">$20,000</strong></span>
-                        <strong class="text-blue">Research</strong>
-                    </div>
-                    <div class="idea-tags"><span class="idea-tag">SaaS</span><span class="idea-tag">FinTech</span><span
-                            class="idea-tag">Sports</span><span class="idea-tag">Japan</span></div>
-                </div>
-
-                <div class="idea-card glass-card">
-                    <div class="idea-header">
-                        <div class="idea-title">AI Property Scout</div>
-                        <div class="idea-score">86</div>
-                    </div>
-                    <div class="idea-summary">ML-powered property analysis for NZ/JP markets with automated valuation,
-                        rental yield prediction, and investment scoring for cross-border investors.</div>
-                    <div class="idea-meta">
-                        <span>Empire: <strong class="text-main">TBD</strong></span>
-                        <span>Capital: <strong class="text-main">$25,000</strong></span>
-                        <strong class="text-blue">Research</strong>
-                    </div>
-                    <div class="idea-tags"><span class="idea-tag">AI</span><span class="idea-tag">Real
-                            Estate</span><span class="idea-tag">Analytics</span><span class="idea-tag">Japan</span>
-                    </div>
-                </div>
+                <div class="signal-value" style="color: var(--accent);">85</div>
+            </div>
+            <div class="card-summary">SaaS platform for Japanese contractors to manage workforce scheduling, payroll, and compliance, integrated with NZ skilled labor recruitment to address Japan&#x27;s construction labor shortage.</div>
+            <div style="margin-top: 15px; font-size: 0.85rem; color: var(--text-dim); border-top: 1px solid rgba(255,255,255,0.05); padding-top: 10px;">
+                Empire Projection: <strong style="color: var(--text);">TBD</strong> | 
+                Cap Required: <strong style="color: var(--text);">$15,000</strong>
             </div>
         </div>
+
+        <div class="card">
+            <div class="signal-header">
+                <div>
+                    <span class="tag" style="background: #0A84FF22; color: #0A84FF;">Research</span>
+                    <div class="card-title">Athlete Finance SaaS</div>
+                </div>
+                <div class="signal-value" style="color: var(--accent);">87</div>
+            </div>
+            <div class="card-summary">Automated financial management for professional athletes with contract-based income, sponsorship tracking, and Japanese tax optimization.</div>
+            <div style="margin-top: 15px; font-size: 0.85rem; color: var(--text-dim); border-top: 1px solid rgba(255,255,255,0.05); padding-top: 10px;">
+                Empire Projection: <strong style="color: var(--text);">TBD</strong> | 
+                Cap Required: <strong style="color: var(--text);">$20,000</strong>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="signal-header">
+                <div>
+                    <span class="tag" style="background: #0A84FF22; color: #0A84FF;">Research</span>
+                    <div class="card-title">AI Property Scout</div>
+                </div>
+                <div class="signal-value" style="color: var(--accent);">86</div>
+            </div>
+            <div class="card-summary">ML-powered property analysis for NZ/JP markets with automated valuation, rental yield prediction, and investment scoring for cross-border investors.</div>
+            <div style="margin-top: 15px; font-size: 0.85rem; color: var(--text-dim); border-top: 1px solid rgba(255,255,255,0.05); padding-top: 10px;">
+                Empire Projection: <strong style="color: var(--text);">TBD</strong> | 
+                Cap Required: <strong style="color: var(--text);">$25,000</strong>
+            </div>
+        </div>
+
+        </section>
     </div>
 
+    <nav class="tab-nav">
+        <button class="tab-btn active" onclick="switchTab('intel', this)">Intel</button>
+        <button class="tab-btn" onclick="switchTab('trading', this)">Trading</button>
+        <button class="tab-btn" onclick="switchTab('venture', this)">Venture</button>
+    </nav>
+
     <script>
-        // Custom Tab switching
-        const tabs = document.querySelectorAll('.tab');
-        const contents = document.querySelectorAll('.tab-content');
+        function switchTab(tabId, btnElement) {
+            // Hide all content and remove active class from buttons
+            document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
 
-        tabs.forEach(tab => {
-            tab.addEventListener('click', () => {
-                tabs.forEach(t => t.classList.remove('active'));
-                contents.forEach(c => c.classList.remove('active'));
+            // Show selected content and activate button
+            document.getElementById(tabId).classList.add('active');
+            btnElement.classList.add('active');
 
-                tab.classList.add('active');
-                document.getElementById('tab-' + tab.dataset.tab).classList.add('active');
-            });
-        });
-
-        // Search filtering (basic)
-        const searchInput = document.getElementById('search-input');
-        searchInput.addEventListener('input', (e) => {
-            const term = e.target.value.toLowerCase();
-            const activeContent = document.querySelector('.tab-content.active');
-
-            // depending on active tab, we filter items
-            let items = [];
-            if (activeContent.id === 'tab-intel') items = activeContent.querySelectorAll('.news-card');
-            if (activeContent.id === 'tab-markets') items = activeContent.querySelectorAll('.target-card');
-            if (activeContent.id === 'tab-venture') items = activeContent.querySelectorAll('.idea-card');
-
-            items.forEach(item => {
-                const text = item.innerText.toLowerCase();
-                item.style.display = text.includes(term) ? 'flex' : 'none'; // Some are display: flex
-                if (activeContent.id === 'tab-intel' || activeContent.id === 'tab-venture') {
-                    item.style.display = text.includes(term) ? 'flex' : 'none';
-                }
-            });
-        });
+            // Scroll to top smoothly for mobile UX
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
     </script>
+
 </body>
 
 </html>
