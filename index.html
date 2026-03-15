@@ -1,210 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Empire Telemetry | Obsidian Midnight</title>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Cinzel:wght@700&display=swap"
-        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telemetry Dashboard</title>
     <style>
-        :root {
-            --bg: #0A0A0B;
-            --surface: rgba(22, 22, 26, 0.8);
-            --accent: #D4AF37;
-            /* Empire Gold */
-            --mint: #34C759;
-            --crimson: #FF3B30;
-            --blue: #0A84FF;
-            --text: #F2F2F7;
-            --text-dim: #8E8E93;
-            --glass: blur(20px) saturate(180%);
-        }
-
-        body {
-            background: var(--bg);
-            color: var(--text);
-            font-family: 'Outfit', sans-serif;
-            margin: 0;
-            padding-bottom: 90px;
-            overflow-x: hidden;
-            background-image: radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.05) 0%, transparent 50%);
-        }
-
-        /* --- STICKY HEADER --- */
-        header {
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            background: var(--surface);
-            backdrop-filter: var(--glass);
-            -webkit-backdrop-filter: var(--glass);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-            padding: 16px 24px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-family: 'Cinzel', serif;
-            color: var(--accent);
-            font-size: 1.2rem;
-            letter-spacing: 2px;
-        }
-
-        /* --- MOBILE NAV --- */
-        .tab-nav {
-            position: fixed;
-            bottom: 24px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: var(--surface);
-            backdrop-filter: var(--glass);
-            -webkit-backdrop-filter: var(--glass);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 40px;
-            display: flex;
-            padding: 6px;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
-            z-index: 1000;
-            width: 90%;
-            max-width: 400px;
-            justify-content: space-between;
-        }
-
-        .tab-btn {
-            flex: 1;
-            padding: 12px 0;
-            border: none;
-            background: transparent;
-            color: var(--text-dim);
-            font-weight: 600;
-            font-size: 0.9rem;
-            border-radius: 30px;
-            transition: all 0.3s ease;
-            cursor: pointer;
-        }
-
-        .tab-btn.active {
-            background: var(--accent);
-            color: #000;
-            box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
-        }
-
-        /* --- CONTENT --- */
-        .container {
-            padding: 20px;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .tab-content {
-            display: none;
-            animation: fadeIn 0.4s ease;
-        }
-
-        .tab-content.active {
-            display: block;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(10px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* --- CARD STYLES --- */
-        .card {
-            background: var(--surface);
-            border-radius: 16px;
-            padding: 20px;
-            margin-bottom: 16px;
-            border: 1px solid rgba(255, 255, 255, 0.06);
-            backdrop-filter: var(--glass);
-            -webkit-backdrop-filter: var(--glass);
-        }
-
-        .tag {
-            font-size: 0.65rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            font-weight: 700;
-            padding: 4px 8px;
-            border-radius: 4px;
-            display: inline-block;
-            margin-bottom: 12px;
-            background: rgba(255, 255, 255, 0.1);
-            color: var(--text-dim);
-        }
-
-        .card-title {
-            font-size: 1.2rem;
-            font-weight: 600;
-            margin-bottom: 8px;
-            line-height: 1.4;
-            color: var(--text);
-        }
-
-        .card-summary {
-            color: var(--text-dim);
-            font-size: 0.95rem;
-            line-height: 1.6;
-        }
-
-        /* --- SPECIFIC UTILITIES --- */
-        .trading-signal {
-            border-left: 4px solid var(--accent);
-        }
-
-        .signal-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 10px;
-        }
-
-        .signal-value {
-            font-size: 1.6rem;
-            font-weight: 700;
-        }
-
-        .flex-between {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; margin: 0; padding: 20px; background: #f5f5f5; }
+        .container { max-width: 1200px; margin: 0 auto; }
+        .header { background: white; padding: 20px; border-radius: 10px; margin-bottom: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .sector { background: white; padding: 20px; border-radius: 10px; margin-bottom: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .article { border-bottom: 1px solid #eee; padding: 15px 0; }
+        .article:last-child { border-bottom: none; }
+        .title { font-weight: bold; margin-bottom: 5px; }
+        .summary { color: #666; font-size: 14px; margin-bottom: 5px; }
+        .meta { color: #999; font-size: 12px; }
+        .timestamp { float: right; color: #999; }
     </style>
 </head>
-
 <body>
-
-    <header>
-        <div class="logo">EMPIRE</div>
-        <div style="font-size: 0.75rem; color: var(--text-dim); text-align: right;">
-            UPDATED<br>
-            <span style="color: var(--accent); font-weight: 600;">01:13 JST</span>
-        </div>
-    </header>
-
     <div class="container">
-        <section id="intel" class="tab-content active">
-            <h2 style="color: var(--accent); margin-bottom: 20px; font-weight: 400; letter-spacing: 1px;">The Morning
-                Brief</h2>
-            
+        <div class="header">
+            <h1>📊 Telemetry Dashboard</h1>
+            <p>Last updated: 14:48 JST</p>
+        </div>
+        
+        
         <div class="card">
             <div class="flex-between">
                 <span class="tag" style="background: #0A84FF22; color: #0A84FF;">SaaS</span>
                 <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
             </div>
-            <div class="card-title">Bluesky CEO Jay Graber steps down</div>
-            <div class="card-summary">Graber explained that, as a more mature company, Bluesky needs a &quot;seasoned operator focused on scaling and execution.&quot; Graber said she feels better su...</div>
+            <div class="card-title">The $32B acquisition that one VC is calling the ‘Deal of the Decade’</div>
+            <div class="card-summary">According to Index Ventures Partner Shardul Shah, cybersecurity startup Wiz sits “at the center of three tailwinds: AI, cloud, and security spend.” Those tailwi...</div>
         </div>
 
         <div class="card">
@@ -212,8 +39,8 @@
                 <span class="tag" style="background: #0A84FF22; color: #0A84FF;">SaaS</span>
                 <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
             </div>
-            <div class="card-title">Periwinkle is making self-hosted social media on Bluesky’s AT Protocol even easier</div>
-            <div class="card-summary">Periwinkle offers managed hosting for AT Protocol users who want social media accounts on their own domains, with backups, storage, and migration tools.</div>
+            <div class="card-title">The biggest AI stories of the year (so far)</div>
+            <div class="card-summary">The AI industry is constantly churning out news, like major acquisitions, indie developer successes, public outcry, and existentially dangerous contract negotia...</div>
         </div>
 
         <div class="card">
@@ -221,8 +48,8 @@
                 <span class="tag" style="background: #0A84FF22; color: #0A84FF;">SaaS</span>
                 <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
             </div>
-            <div class="card-title">Palmer Luckey’s retro gaming startup ModRetro reportedly seeks funding at $1B valuation</div>
-            <div class="card-summary">The company launched its first product, a Game Boy-style handheld device called the Chromatic, in 2024.</div>
+            <div class="card-title">Wiz’s first investor breaks down Google’s $32B acquisition</div>
+            <div class="card-summary">According to Index Ventures Partner&amp;#160;Shardul Shah, cybersecurity startup Wiz sits “at the center of three tailwinds: AI, cloud, and security spend.” Tho...</div>
         </div>
 
         <div class="card">
@@ -230,8 +57,8 @@
                 <span class="tag" style="background: #0A84FF22; color: #0A84FF;">SaaS</span>
                 <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
             </div>
-            <div class="card-title">Uzbekistan’s Uzum valuation leaps over 50% in seven months to $2.3B</div>
-            <div class="card-summary">Uzum now reaches 20 million users and processes $11B in payments as it expands its e-commerce and fintech ecosystem across Uzbekistan.</div>
+            <div class="card-title">Digg lays off staff and shuts down app as company retools</div>
+            <div class="card-summary">Digg laid off a significant number of staff and shut down its app, but says it&#x27;s not giving up on the startup.</div>
         </div>
 
         <div class="card">
@@ -239,7 +66,7 @@
                 <span class="tag" style="background: #FF3B3022; color: #FF3B30;">Japan</span>
                 <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
             </div>
-            <div class="card-title">Spritzer EcoPark Offers Nature-Inspired Raya Celebration</div>
+            <div class="card-title">Mitsubishi Shipbuilding Delivers New Training Ship to Toyama College</div>
             <div class="card-summary">p style=&quot;float: right; margin: 0 0 10px 15px; width: 240px; height: auto;&quot;
 		img src=&quot;https://www.japanindustrynews.com/wp-content/uploads/2026/0...</div>
         </div>
@@ -249,7 +76,7 @@
                 <span class="tag" style="background: #FF3B3022; color: #FF3B30;">Japan</span>
                 <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
             </div>
-            <div class="card-title">Fujitsu and DT-Axis Collaborate to Advance Digital Health Through SaMD Development</div>
+            <div class="card-title">Mitsubishi Heavy Industries Targets North American AI Data Centers with New Cooling Solution</div>
             <div class="card-summary">p style=&quot;float: right; margin: 0 0 10px 15px; width: 240px; height: auto;&quot;
 		img src=&quot;https://www.japanindustrynews.com/wp-content/uploads/2026/0...</div>
         </div>
@@ -259,7 +86,7 @@
                 <span class="tag" style="background: #FF3B3022; color: #FF3B30;">Japan</span>
                 <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
             </div>
-            <div class="card-title">Fosun International Reports Significant Loss Due to Impairments</div>
+            <div class="card-title">Saga Prefecture to Host Major Events and Openings in 2026</div>
             <div class="card-summary">p style=&quot;float: right; margin: 0 0 10px 15px; width: 240px; height: auto;&quot;
 		img src=&quot;https://www.japanindustrynews.com/wp-content/uploads/2026/0...</div>
         </div>
@@ -269,7 +96,7 @@
                 <span class="tag" style="background: #FF3B3022; color: #FF3B30;">Japan</span>
                 <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
             </div>
-            <div class="card-title">Fujitsu Launches Accelerator Program for Defense Tech Innovation</div>
+            <div class="card-title">Hitachi Secures Order for World’s First SF6-Free 550 kV Gas-Insulated Switchgear</div>
             <div class="card-summary">p style=&quot;float: right; margin: 0 0 10px 15px; width: 240px; height: auto;&quot;
 		img src=&quot;https://www.japanindustrynews.com/wp-content/uploads/2026/0...</div>
         </div>
@@ -279,8 +106,8 @@
                 <span class="tag" style="background: #D4AF3722; color: #D4AF37;">Markets</span>
                 <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
             </div>
-            <div class="card-title">investingLive European markets wrap: Oil prices come off the boil, eyes on G7/IEA action</div>
-            <div class="card-summary">pHeadlines:/pullia href=&quot;https://investinglive.com/commodities/g7-members-iea-reportedly-to-discuss-on-joint-release-of-emergency-oil-reserves-20260309/&qu...</div>
+            <div class="card-title">US PCE inflation +2.8% y/y vs +2.9% expected</div>
+            <div class="card-summary">ul class=&quot;-mt-1 list-disc space-y-2 pl-8&quot;li class=&quot;whitespace-normal break-words&quot;Prior was +2.9% /lili class=&quot;whitespace-normal break-w...</div>
         </div>
 
         <div class="card">
@@ -288,8 +115,8 @@
                 <span class="tag" style="background: #D4AF3722; color: #D4AF37;">Markets</span>
                 <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
             </div>
-            <div class="card-title">Rate cut bets evaporate amid surging oil prices but rate hike expectations are overblown</div>
-            <div class="card-summary">pBefore the war started, I a href=&quot;https://investinglive.com/news/a-war-between-us-and-iran-would-have-disastrous-effects-on-the-market-and-the-economy-202...</div>
+            <div class="card-title">US GDP for Q4 (2nd revision) 0.7% vs 1.4% estimate and prior</div>
+            <div class="card-summary">ulliPrior estimate 1.4%/li/ululliGDP 2nd estimate 0.7% versus 1.4% preliminary. This is well below the expectations going into the 1st cut of the GDP (was expec...</div>
         </div>
 
         <div class="card">
@@ -297,18 +124,10 @@
                 <span class="tag" style="background: #D4AF3722; color: #D4AF37;">Markets</span>
                 <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
             </div>
-            <div class="card-title">Indian Rupee hits fresh record low despite RBI intervention amid continuing US-Iran war</div>
-            <div class="card-summary">p class=&quot;MsoNormal&quot;FUNDAMENTAL
-OVERVIEW/ppUSD:/ppThe US
-dollar opened higher today after a href=&quot;https://investinglive.com/news/trump-unhappy-abo...</div>
+            <div class="card-title">Canada February employment change -83.9K vs +10K expected</div>
+            <div class="card-summary">ulliPrior -24.8K/li/ulullipUnemployment rate: 6.7% vs 6.6% expected/p/lilipPrior 6.5%/p/lilipFull-time employment change: -108.4K vs +44.9k last month/p/lilipPa...</div>
         </div>
 
-        </section>
-
-        <section id="trading" class="tab-content">
-            <h2 style="color: var(--accent); margin-bottom: 20px; font-weight: 400; letter-spacing: 1px;">Gold Shield &
-                Quant</h2>
-            
         <div class="card trading-signal" style="border-left-color: #34C759;">
             <div class="signal-header">
                 <div>
@@ -341,12 +160,6 @@ dollar opened higher today after a href=&quot;https://investinglive.com/news/tru
             <div class="card-summary">Recent optimization cycle complete. Evaluating entry protocols based on current volume.</div>
         </div>
 
-        </section>
-
-        <section id="venture" class="tab-content">
-            <h2 style="color: var(--accent); margin-bottom: 20px; font-weight: 400; letter-spacing: 1px;">Venture Desk
-            </h2>
-            
         <div class="card">
             <div class="signal-header">
                 <div>
@@ -437,30 +250,6 @@ dollar opened higher today after a href=&quot;https://investinglive.com/news/tru
             </div>
         </div>
 
-        </section>
     </div>
-
-    <nav class="tab-nav">
-        <button class="tab-btn active" onclick="switchTab('intel', this)">Intel</button>
-        <button class="tab-btn" onclick="switchTab('trading', this)">Trading</button>
-        <button class="tab-btn" onclick="switchTab('venture', this)">Venture</button>
-    </nav>
-
-    <script>
-        function switchTab(tabId, btnElement) {
-            // Hide all content and remove active class from buttons
-            document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
-            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-
-            // Show selected content and activate button
-            document.getElementById(tabId).classList.add('active');
-            btnElement.classList.add('active');
-
-            // Scroll to top smoothly for mobile UX
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-    </script>
-
 </body>
-
 </html>
