@@ -65,6 +65,39 @@
         .card:hover {
             border-color: var(--accent-mint);
         }
+        
+        .card-title {
+            color: var(--text-main);
+            font-family: var(--font-primary);
+            font-weight: 600;
+            font-size: 16px;
+            margin: 8px 0 4px 0;
+            line-height: 1.3;
+        }
+        
+        .card-title-link {
+            color: var(--text-main);
+            font-family: var(--font-primary);
+            font-weight: 600;
+            font-size: 16px;
+            margin: 8px 0 4px 0;
+            line-height: 1.3;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .card-title-link:hover {
+            color: var(--accent-mint);
+            text-decoration: underline;
+        }
+        
+        .card-summary {
+            color: var(--text-muted);
+            font-family: var(--font-primary);
+            font-size: 14px;
+            line-height: 1.4;
+            margin-top: 4px;
+        }
 
         /* ===== STICKY TAB BAR ===== */
         .tab-bar {
@@ -534,7 +567,7 @@
     <div class="container">
         <!-- Header with Controls -->
         <div class="header-controls">
-            <div class="page-title">Empire Telemetry Terminal <span class="timestamp">14:53 JST</span></div>
+            <div class="page-title">Empire Telemetry Terminal <span class="timestamp">15:04 JST</span></div>
             <div class="controls-right">
                 <input type="text" class="search-bar" placeholder="Search news, markets, ventures..." id="search-input">
                 <button class="refresh-btn" id="refresh-btn" onclick="refreshData()">
@@ -557,46 +590,10 @@
                 
         <div class="card">
             <div class="flex-between">
-                <span class="tag" style="background: #0A84FF22; color: #0A84FF;">SaaS</span>
-                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
-            </div>
-            <div class="card-title">The $32B acquisition that one VC is calling the ‘Deal of the Decade’</div>
-            <div class="card-summary">According to Index Ventures Partner Shardul Shah, cybersecurity startup Wiz sits “at the center of three tailwinds: AI, cloud, and security spend.” Those tailwi...</div>
-        </div>
-
-        <div class="card">
-            <div class="flex-between">
-                <span class="tag" style="background: #0A84FF22; color: #0A84FF;">SaaS</span>
-                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
-            </div>
-            <div class="card-title">The biggest AI stories of the year (so far)</div>
-            <div class="card-summary">The AI industry is constantly churning out news, like major acquisitions, indie developer successes, public outcry, and existentially dangerous contract negotia...</div>
-        </div>
-
-        <div class="card">
-            <div class="flex-between">
-                <span class="tag" style="background: #0A84FF22; color: #0A84FF;">SaaS</span>
-                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
-            </div>
-            <div class="card-title">Wiz’s first investor breaks down Google’s $32B acquisition</div>
-            <div class="card-summary">According to Index Ventures Partner&amp;#160;Shardul Shah, cybersecurity startup Wiz sits “at the center of three tailwinds: AI, cloud, and security spend.” Tho...</div>
-        </div>
-
-        <div class="card">
-            <div class="flex-between">
-                <span class="tag" style="background: #0A84FF22; color: #0A84FF;">SaaS</span>
-                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
-            </div>
-            <div class="card-title">Digg lays off staff and shuts down app as company retools</div>
-            <div class="card-summary">Digg laid off a significant number of staff and shut down its app, but says it&#x27;s not giving up on the startup.</div>
-        </div>
-
-        <div class="card">
-            <div class="flex-between">
                 <span class="tag" style="background: #FF3B3022; color: #FF3B30;">Japan</span>
                 <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
             </div>
-            <div class="card-title">Mitsubishi Shipbuilding Delivers New Training Ship to Toyama College</div>
+            <a href="https://www.japanindustrynews.com/2026/03/mitsubishi-shipbuilding-delivers-new-training-ship-to-toyama-college/" target="_blank" class="card-title-link">Mitsubishi Shipbuilding Delivers New Training Ship to Toyama College</a>
             <div class="card-summary">p style=&quot;float: right; margin: 0 0 10px 15px; width: 240px; height: auto;&quot;
 		img src=&quot;https://www.japanindustrynews.com/wp-content/uploads/2026/0...</div>
         </div>
@@ -606,7 +603,7 @@
                 <span class="tag" style="background: #FF3B3022; color: #FF3B30;">Japan</span>
                 <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
             </div>
-            <div class="card-title">Mitsubishi Heavy Industries Targets North American AI Data Centers with New Cooling Solution</div>
+            <a href="https://www.japanindustrynews.com/2026/03/mitsubishi-heavy-industries-targets-north-american-ai-data-centers-with-new-cooling-solution/" target="_blank" class="card-title-link">Mitsubishi Heavy Industries Targets North American AI Data Centers with New Cooling Solution</a>
             <div class="card-summary">p style=&quot;float: right; margin: 0 0 10px 15px; width: 240px; height: auto;&quot;
 		img src=&quot;https://www.japanindustrynews.com/wp-content/uploads/2026/0...</div>
         </div>
@@ -616,7 +613,7 @@
                 <span class="tag" style="background: #FF3B3022; color: #FF3B30;">Japan</span>
                 <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
             </div>
-            <div class="card-title">Saga Prefecture to Host Major Events and Openings in 2026</div>
+            <a href="https://www.japanindustrynews.com/2026/03/saga-prefecture-to-host-major-events-and-openings-in-2026/" target="_blank" class="card-title-link">Saga Prefecture to Host Major Events and Openings in 2026</a>
             <div class="card-summary">p style=&quot;float: right; margin: 0 0 10px 15px; width: 240px; height: auto;&quot;
 		img src=&quot;https://www.japanindustrynews.com/wp-content/uploads/2026/0...</div>
         </div>
@@ -626,36 +623,9 @@
                 <span class="tag" style="background: #FF3B3022; color: #FF3B30;">Japan</span>
                 <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
             </div>
-            <div class="card-title">Hitachi Secures Order for World’s First SF6-Free 550 kV Gas-Insulated Switchgear</div>
+            <a href="https://www.japanindustrynews.com/2026/03/hitachi-secures-order-for-worlds-first-sf6-free-550-kv-gas-insulated-switchgear/" target="_blank" class="card-title-link">Hitachi Secures Order for World’s First SF6-Free 550 kV Gas-Insulated Switchgear</a>
             <div class="card-summary">p style=&quot;float: right; margin: 0 0 10px 15px; width: 240px; height: auto;&quot;
 		img src=&quot;https://www.japanindustrynews.com/wp-content/uploads/2026/0...</div>
-        </div>
-
-        <div class="card">
-            <div class="flex-between">
-                <span class="tag" style="background: #D4AF3722; color: #D4AF37;">Markets</span>
-                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
-            </div>
-            <div class="card-title">US PCE inflation +2.8% y/y vs +2.9% expected</div>
-            <div class="card-summary">ul class=&quot;-mt-1 list-disc space-y-2 pl-8&quot;li class=&quot;whitespace-normal break-words&quot;Prior was +2.9% /lili class=&quot;whitespace-normal break-w...</div>
-        </div>
-
-        <div class="card">
-            <div class="flex-between">
-                <span class="tag" style="background: #D4AF3722; color: #D4AF37;">Markets</span>
-                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
-            </div>
-            <div class="card-title">US GDP for Q4 (2nd revision) 0.7% vs 1.4% estimate and prior</div>
-            <div class="card-summary">ulliPrior estimate 1.4%/li/ululliGDP 2nd estimate 0.7% versus 1.4% preliminary. This is well below the expectations going into the 1st cut of the GDP (was expec...</div>
-        </div>
-
-        <div class="card">
-            <div class="flex-between">
-                <span class="tag" style="background: #D4AF3722; color: #D4AF37;">Markets</span>
-                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
-            </div>
-            <div class="card-title">Canada February employment change -83.9K vs +10K expected</div>
-            <div class="card-summary">ulliPrior -24.8K/li/ulullipUnemployment rate: 6.7% vs 6.6% expected/p/lilipPrior 6.5%/p/lilipFull-time employment change: -108.4K vs +44.9k last month/p/lilipPa...</div>
         </div>
 
         <div class="card trading-signal" style="border-left-color: #34C759;">
