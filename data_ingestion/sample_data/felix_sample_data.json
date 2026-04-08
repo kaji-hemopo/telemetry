@@ -1,0 +1,167 @@
+{
+  "source": "felix_research",
+  "version": "1.0",
+  "generated_at": "2026-03-21T22:40:00+09:00",
+  "description": "Sample Airbnb research data matching expected Felix format",
+  "areas": [
+    {
+      "name": "Shonan",
+      "region": "Kanagawa",
+      "property_count": 15,
+      "avg_price": 85000000,
+      "competition_score": 7.5,
+      "regulation_score": 6.0,
+      "notes": "Beach area with high seasonal demand. Strong summer tourism but winter slowdown. Good train access to Tokyo."
+    },
+    {
+      "name": "Hakone",
+      "region": "Kanagawa",
+      "property_count": 22,
+      "avg_price": 65000000,
+      "competition_score": 8.2,
+      "regulation_score": 7.5,
+      "notes": "Year-round hot spring tourism. Higher regulation due to national park status. Consistent demand."
+    },
+    {
+      "name": "Shizuoka",
+      "region": "Shizuoka",
+      "property_count": 18,
+      "avg_price": 55000000,
+      "competition_score": 6.8,
+      "regulation_score": 5.5,
+      "notes": "Mix of beach and mountain properties. Growing popularity with domestic tourists. Lower prices than Kanagawa."
+    },
+    {
+      "name": "Western Tokyo",
+      "region": "Tokyo",
+      "property_count": 12,
+      "avg_price": 95000000,
+      "competition_score": 9.0,
+      "regulation_score": 8.0,
+      "notes": "Highest prices but also highest competition. Strict Tokyo regulations. Business traveler market."
+    }
+  ],
+  "cost_breakdown": [
+    {
+      "category": "Property Acquisition",
+      "item": "Down Payment (20%)",
+      "estimated_cost": 17000000,
+      "frequency": "one_time",
+      "notes": "Based on ¥85M average property in Shonan"
+    },
+    {
+      "category": "Property Acquisition",
+      "item": "Registration & Taxes",
+      "estimated_cost": 2000000,
+      "frequency": "one_time",
+      "notes": "Property registration, acquisition tax, etc."
+    },
+    {
+      "category": "Renovation",
+      "item": "Basic Furnishing",
+      "estimated_cost": 3000000,
+      "frequency": "one_time",
+      "notes": "Furniture, appliances, basic renovations"
+    },
+    {
+      "category": "Renovation",
+      "item": "Airbnb Compliance",
+      "estimated_cost": 1000000,
+      "frequency": "one_time",
+      "notes": "Safety equipment, signage, compliance updates"
+    },
+    {
+      "category": "Monthly Operations",
+      "item": "Mortgage Payment",
+      "estimated_cost": 300000,
+      "frequency": "monthly",
+      "notes": "Based on 35-year loan at 2.5% interest"
+    },
+    {
+      "category": "Monthly Operations",
+      "item": "Property Management",
+      "estimated_cost": 80000,
+      "frequency": "monthly",
+      "notes": "Cleaning, maintenance, guest communication"
+    },
+    {
+      "category": "Monthly Operations",
+      "item": "Utilities & Insurance",
+      "estimated_cost": 40000,
+      "frequency": "monthly",
+      "notes": "Electricity, water, gas, property insurance"
+    }
+  ],
+  "timeline": [
+    {
+      "phase": "Research & Planning",
+      "task": "Complete area comparison analysis",
+      "estimated_days": 7,
+      "dependencies": [],
+      "status": "in_progress"
+    },
+    {
+      "phase": "Research & Planning",
+      "task": "Finalize target area selection",
+      "estimated_days": 3,
+      "dependencies": ["Complete area comparison analysis"],
+      "status": "pending"
+    },
+    {
+      "phase": "Property Search",
+      "task": "Identify potential properties",
+      "estimated_days": 14,
+      "dependencies": ["Finalize target area selection"],
+      "status": "pending"
+    },
+    {
+      "phase": "Property Search",
+      "task": "Property viewing & evaluation",
+      "estimated_days": 7,
+      "dependencies": ["Identify potential properties"],
+      "status": "pending"
+    },
+    {
+      "phase": "Acquisition",
+      "task": "Make offer & negotiate",
+      "estimated_days": 10,
+      "dependencies": ["Property viewing & evaluation"],
+      "status": "pending"
+    },
+    {
+      "phase": "Acquisition",
+      "task": "Complete purchase process",
+      "estimated_days": 30,
+      "dependencies": ["Make offer & negotiate"],
+      "status": "pending"
+    },
+    {
+      "phase": "Setup",
+      "task": "Renovation & furnishing",
+      "estimated_days": 21,
+      "dependencies": ["Complete purchase process"],
+      "status": "pending"
+    },
+    {
+      "phase": "Setup",
+      "task": "Airbnb registration & compliance",
+      "estimated_days": 14,
+      "dependencies": ["Renovation & furnishing"],
+      "status": "pending"
+    },
+    {
+      "phase": "Launch",
+      "task": "List property & start bookings",
+      "estimated_days": 3,
+      "dependencies": ["Airbnb registration & compliance"],
+      "status": "pending"
+    }
+  ],
+  "metadata": {
+    "research_completeness": 0.65,
+    "data_confidence": 0.8,
+    "next_update_expected": "2026-03-22T18:00:00+09:00",
+    "researcher": "Felix",
+    "priority": "high"
+  }
+}

@@ -1,0 +1,21 @@
+FROM python:3.12-alpine
+
+# Non-root user for security
+RUN addgroup -g 1001 -S openclaw && \
+    adduser -S openclaw -u 1001 -G openclaw
+
+# Create workspace
+WORKDIR /workspace
+USER openclaw
+
+# Copy agent script from empire directory
+COPY --chown=openclaw:openclaw empire/agent.py .
+
+# Install Python dependencies
+RUN pip install --no-cache-dir requests
+
+# Create input/output directories
+RUN mkdir -p /input /output
+
+# Entrypoint - agent.py reads from /input/task.txt and writes to /output/result.json
+ENTRYPOINT ["python", "agent.py"]
