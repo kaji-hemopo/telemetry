@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-12 04:38 JST
+Generated: 2026-04-12 07:49 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -53,6 +53,7 @@ Generated: 2026-04-12 04:38 JST
 | Score | Platform | Keyword | Title | Budget/Rate | URL |
 |---:|---|---|---|---|---|
 | 85 | Freelancer | Make.com automation | 26. AI-Driven City Cloud Brain Evaluation | $500.00 | https://www.freelancer.com/projects/ai-development/Driven-City-Cloud-Brain-Evaluation.html |
+| 85 | Freelancer | Data processing API | Interactive Tokenomics Character Website | $3,000.00 | https://www.freelancer.com/projects/web-development/Interactive-Tokenomics-Character-Website.html |
 | 75 | Freelancer | Python scraper | AI Systems Engineer for OpenClaw Integration | $250.00 | https://www.freelancer.com/projects/ai-development/Systems-Engineer-for-OpenClaw.html |
 | 75 | Freelancer | Make.com automation | Square Site &amp; Retainer Automation | $250.00 | https://www.freelancer.com/projects/web-design/Square-Site-Retainer-Automation.html |
 | 75 | Freelancer | Make.com automation | Legal Automation/Auction System Development (Phase 2) | $250.00 | https://www.freelancer.com/projects/web-scraping/Legal-Automation-Auction-System.html |
@@ -65,13 +66,12 @@ Generated: 2026-04-12 04:38 JST
 | 65 | Freelancer | Python scraper | Football Player Bio Scraping Script | I need a clean, well-documented script that automatically gathers publicly avail | https://www.freelancer.com/projects/beautifulsoup/Football-Player-Bio-Scraping-Script.html |
 | 65 | Freelancer | Python scraper | Portugal Restaurant Data Scraper | I want to build a clean, well-structured dataset of restaurants throughout Portu | https://www.freelancer.com/projects/beautifulsoup/Portugal-Restaurant-Data-Scraper.html |
 | 65 | Freelancer | Python scraper | VN Template Metadata API | I’m looking for a Python-based service that, when given a vn template UUID, retu | https://www.freelancer.com/projects/fastapi/Template-Metadata-API.html |
+| 65 | Freelancer | Make.com automation | HighGrave: Revolutionary AI Business Platform | $10.00 | https://www.freelancer.com/projects/freelancer-api/HighGrave-Revolutionary-Business.html |
+| 65 | Freelancer | Make.com automation | Talented AI Agent Builder &amp; Automation Specialist | Attention Required: Please read this job post thoroughly. Automated messages or  | https://www.freelancer.com/projects/ai-agent-swarms/Talented-Agent-Builder-Automation.html |
 | 65 | Freelancer | Make.com automation | Create professional PPT File for Course Demo | I have the full written content for an AI Automation &amp; Freelancing course an | https://www.freelancer.com/projects/data-entry/Create-professional-PPT-File-for-40364863.html |
 | 65 | Freelancer | Make.com automation | HubSpot CRM Setup &amp; Optimization | $30.00 | https://www.freelancer.com/projects/api/HubSpot-CRM-Setup-Optimization.html |
 | 65 | Freelancer | Make.com automation | Advanced n8n Integration Workflow Development | I am building a series of n8n workflows that must bring together databases, mult | https://www.freelancer.com/projects/n8n/Advanced-Integration-Workflow.html |
 | 65 | Freelancer | Make.com automation | GHL CRM &amp; AI Integration | $8.00 | https://www.freelancer.com/projects/ai-chatbot-development/GHL-CRM-Integration.html |
-| 65 | Freelancer | Make.com automation | Mechanical Design Engineer Required (AutoCAD/SolidWorks) | Title: Mechanical / Pneumatic Engineer Needed (AutoCAD / SolidWorks) – Freelance | https://www.freelancer.com/projects/3d-modelling/Mechanical-Design-Engineer-Required.html |
-| 65 | Freelancer | Make.com automation | Pneumatic Design Engineer | Title: Pneumatic Design Engineer | Machine Design | AutoCAD SolidWorks | Automat | https://www.freelancer.com/projects/autocad/Pneumatic-Design-Engineer.html |
-| 65 | Freelancer | Make.com automation | 24-Hour Phone Support Automation | $2.00 | https://www.freelancer.com/projects/voice-over/Hour-Phone-Support-Automation.html |
 
 ## Notes
 - Scores prioritize: (1) simple automation/scripting fit, (2) payout magnitude, (3) keyword relevance.
