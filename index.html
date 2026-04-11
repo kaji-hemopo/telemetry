@@ -1,452 +1,1652 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kaji · Empire COO</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,600;9..40,700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>ITO TERMINAL | Empire Intel Feed</title>
+    <!-- Fonts + icons (Oracle Terminal design language — see ~/.openclaw/telemetry_design.md) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
     <style>
+        /* ===== ORACLE TERMINAL THEME (aligned with telemetry_design.md) ===== */
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
         :root {
-            --bg: #121416; --surface: rgba(30, 32, 34, 0.92);
-            --border: rgba(255,255,255,0.06); --border-accent: rgba(34,211,238,0.25);
-            --text: #e2e2e5; --muted: #bac9cc; --dim: #849396;
-            --accent: #22d3ee; --violet: #a78bfa;
-            --green: #4ade80; --red: #f87171; --yellow: #fbbf24;
-            --font-d: "Syne", system-ui, sans-serif; --font-b: "DM Sans", system-ui, sans-serif;
-            --radius: 14px;
+            --bg-deep: #121416;
+            --surface-card: #1e2022;
+            --border-subtle: #3b494c;
+            --text-main: #e2e2e5;
+            --text-muted: #bac9cc;
+            --text-dim: #849396;
+            --text: #e2e2e5;
+            --accent-mint: #22d3ee;
+            --accent-mint-glow: rgba(34, 211, 238, 0.12);
+            --oracle-cyan: #22d3ee;
+            --glass: rgba(51, 53, 55, 0.65);
+            
+            /* Typography */
+            --font-primary: 'Inter', sans-serif;
+            --letter-spacing-headers: 0.02em;
+            --letter-spacing-body: -0.01em;
         }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: var(--font-b); color: var(--text); min-height: 100vh; background: var(--bg); -webkit-font-smoothing: antialiased; line-height: 1.55; }
-        body::before { content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none;
-            background: radial-gradient(ellipse 90% 55% at 50% -25%, rgba(34,211,238,0.07), transparent 50%),
-                radial-gradient(ellipse 45% 40% at 100% 0%, rgba(167,139,250,0.06), transparent 45%),
-                linear-gradient(180deg, #1a1c1e, var(--bg)); }
-        .container { max-width: 1100px; margin: 0 auto; padding: 28px 20px 56px; }
-        header {
-            background: linear-gradient(135deg, rgba(28, 32, 48, 0.95), rgba(12, 14, 22, 0.98));
-            border: 1px solid rgba(255,255,255,0.1); border-radius: 20px;
-            padding: 24px 28px; margin-bottom: 24px;
-            display: flex; justify-content: space-between; align-items: flex-start;
-            box-shadow: 0 24px 48px -16px rgba(0,0,0,0.5), 0 0 0 1px rgba(34,211,238,0.06) inset;
-            position: relative; overflow: hidden;
-        }
-        header::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 1px;
-            background: linear-gradient(90deg, transparent, var(--accent), transparent); opacity: 0.5; }
-        .header-left h1 { font-family: var(--font-d); font-size: 1.5rem; font-weight: 800; letter-spacing: -0.03em; margin-bottom: 6px;
-            background: linear-gradient(95deg, #fff, #9ca3b8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-        .header-left p { color: var(--muted); font-size: 14px; max-width: 42ch; }
-        .header-right { text-align: right; }
-        .header-right .role-tag { display: inline-block; padding: 5px 14px; border-radius: 999px; font-size: 11px; font-weight: 700;
-            text-transform: uppercase; letter-spacing: 0.1em; background: rgba(34,211,238,0.12); color: var(--accent);
-            border: 1px solid rgba(34,211,238,0.25); margin-bottom: 8px; }
-        .header-right .updated { font-size: 11px; color: var(--dim); font-variant-numeric: tabular-nums; }
-        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
-        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-bottom: 20px; }
-        .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 18px; margin-bottom: 20px; }
-        .card { background: var(--surface); border-radius: var(--radius); padding: 20px 20px 18px;
-            border: 1px solid var(--border); backdrop-filter: blur(12px);
-            transition: transform 0.2s, border-color 0.2s, box-shadow 0.25s; }
-        .card:hover { transform: translateY(-3px); border-color: var(--border-accent); }
-        .card.full { grid-column: 1 / -1; }
-        .card h3 { font-family: var(--font-d); font-size: 0.85rem; font-weight: 700; letter-spacing: 0.04em;
-            text-transform: uppercase; color: var(--accent); margin-bottom: 14px;
-            display: flex; align-items: center; gap: 7px; }
-        .card h3 .material-symbols-outlined { font-size: 16px; }
-        .badge { display: inline-block; padding: 3px 10px; border-radius: 999px; font-size: 11px; font-weight: 600; }
-        .badge-ok { background: rgba(74,222,128,0.12); color: var(--green); border: 1px solid rgba(74,222,128,0.25); }
-        .badge-err { background: rgba(248,113,113,0.12); color: var(--red); border: 1px solid rgba(248,113,113,0.25); }
-        .badge-warn { background: rgba(251,191,36,0.12); color: var(--yellow); border: 1px solid rgba(251,191,36,0.25); }
-        .badge-run { background: rgba(34,211,238,0.12); color: var(--accent); border: 1px solid rgba(34,211,238,0.25); }
-        .badge-muted { background: rgba(255,255,255,0.05); color: var(--dim); border: 1px solid rgba(255,255,255,0.08); }
-        .badge-off { background: rgba(255,255,255,0.04); color: var(--dim); border: 1px solid rgba(255,255,255,0.08); text-decoration: line-through; }
-        .task-list { list-style: none; }
-        .task-list li { display: flex; align-items: flex-start; gap: 10px; padding: 9px 0;
-            border-bottom: 1px solid rgba(255,255,255,0.04); font-size: 13.5px; }
-        .task-list li:last-child { border-bottom: none; }
-        .task-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); flex-shrink: 0; margin-top: 6px; }
-        .task-dot.done { background: var(--green); }
-        .task-dot.blocked { background: var(--yellow); }
-        .task-dot.err { background: var(--red); }
-        .task-dot.active { background: var(--accent); }
-        .task-label { color: var(--dim); font-size: 12px; min-width: 70px; flex-shrink: 0; margin-top: 2px; }
-        .request-item { padding: 10px 14px; background: rgba(0,0,0,0.2); border-radius: 10px;
-            border: 1px solid rgba(255,255,255,0.05); margin-bottom: 8px; font-size: 13.5px; }
-        .request-item:last-child { margin-bottom: 0; }
-        .request-meta { font-size: 11px; color: var(--dim); margin-top: 3px; }
-        .cron-table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
-        .cron-table th { text-align: left; padding: 6px 10px; color: var(--dim); font-size: 11px;
-            text-transform: uppercase; letter-spacing: 0.06em; border-bottom: 1px solid rgba(255,255,255,0.06); }
-        .cron-table td { padding: 8px 10px; border-bottom: 1px solid rgba(255,255,255,0.04); }
-        .cron-table tr:last-child td { border-bottom: none; }
-        .cron-name { font-weight: 600; color: var(--text); }
-        .cron-sched { color: var(--dim); font-size: 11px; }
-        .links-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-        .link-card { display: flex; align-items: center; gap: 10px; padding: 11px 14px;
-            background: rgba(0,0,0,0.25); border: 1px solid rgba(255,255,255,0.06); border-radius: 10px;
-            text-decoration: none; color: var(--text); font-size: 13.5px; font-weight: 500;
-            transition: border-color 0.2s, background 0.2s, color 0.2s; }
-        .link-card:hover { border-color: rgba(34,211,238,0.3); background: rgba(34,211,238,0.06); color: var(--accent); }
-        .link-card .icon { font-size: 1.2rem; }
-        .output-item { display: flex; align-items: center; gap: 10px; padding: 8px 0;
-            border-bottom: 1px solid rgba(255,255,255,0.04); font-size: 13px; }
-        .output-item:last-child { border-bottom: none; }
-        .output-icon { font-size: 14px; }
-        .output-name { color: var(--text); font-weight: 500; }
-        .output-desc { color: var(--dim); font-size: 11.5px; }
-        .agent-row { display: flex; align-items: center; justify-content: space-between; padding: 8px 0;
-            border-bottom: 1px solid rgba(255,255,255,0.04); font-size: 13px; }
-        .agent-row:last-child { border-bottom: none; }
-        .agent-name { font-weight: 600; }
-        .agent-role { color: var(--dim); font-size: 11.5px; }
-        .initiative-tag { display: inline-block; padding: 3px 9px; border-radius: 6px; font-size: 10.5px;
-            font-weight: 600; background: rgba(167,139,250,0.12); color: var(--violet);
-            border: 1px solid rgba(167,139,250,0.25); margin-right: 5px; }
-        .alert-row { display: flex; align-items: center; gap: 10px; padding: 9px 12px;
-            background: rgba(248,113,113,0.08); border: 1px solid rgba(248,113,113,0.2);
-            border-radius: 10px; margin-bottom: 8px; font-size: 13px; color: var(--red); }
-        .alert-row:last-child { margin-bottom: 0; }
-        .alert-row.warn { background: rgba(251,191,36,0.08); border-color: rgba(251,191,36,0.2); color: var(--yellow); }
-        .alert-row.info { background: rgba(34,211,238,0.06); border-color: rgba(34,211,238,0.2); color: var(--accent); }
-        footer { text-align: center; padding: 24px 16px; color: var(--dim); font-size: 12px;
-            border-top: 1px solid rgba(255,255,255,0.06); margin-top: 8px; }
-        footer a { color: var(--accent); text-decoration: none; }
-        @media (max-width: 700px) { .grid, .grid-3 { grid-template-columns: 1fr; } header { flex-direction: column; gap: 14px; }
-            .header-right { text-align: left; } .links-grid { grid-template-columns: 1fr; } }
-    </style>
-</head>
-<body>
-<div class="container">
 
-    <header>
-        <div class="header-left">
-            <h1>Kaji · COO Dashboard</h1>
-            <p>Chief Operating Officer — Jackson Hemopo's empire orchestrator. Initiative-driven: audits, improves, and scales the empire every 30min beat.</p>
+        /* ===== RESET & BASE ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-deep);
+            color: var(--text-main);
+            font-family: var(--font-primary);
+            letter-spacing: var(--letter-spacing-body);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            min-height: 100vh;
+            padding-top: 64px;
+        }
+
+        .oracle-topbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 200;
+            height: 56px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            background: rgba(18, 20, 22, 0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(59, 73, 76, 0.5);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
+        }
+        .oracle-brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .oracle-brand h1 {
+            font-size: 0.95rem;
+            font-weight: 800;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--oracle-cyan);
+            text-shadow: 0 0 12px rgba(34, 211, 238, 0.35);
+            margin: 0;
+        }
+        .oracle-feed-pill {
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            border: 1px solid rgba(34, 211, 238, 0.25);
+            padding: 4px 10px;
+            border-radius: 4px;
+            background: rgba(34, 211, 238, 0.06);
+        }
+        .oracle-status {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-family: ui-monospace, monospace;
+            font-size: 11px;
+            color: var(--oracle-cyan);
+        }
+        .oracle-pulse {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--oracle-cyan);
+            box-shadow: 0 0 8px var(--oracle-cyan);
+            animation: oraclePulse 2s ease-in-out infinite;
+        }
+        @keyframes oraclePulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.35; }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 16px;
+        }
+
+        /* ===== UTILITIES ===== */
+        .text-muted { color: var(--text-muted); }
+        .text-mint { color: var(--accent-mint); }
+        .text-bold { font-weight: 600; }
+        .text-uppercase { text-transform: uppercase; letter-spacing: 0.05em; }
+        
+        .card {
+            background: var(--glass);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 10px;
+            padding: 16px;
+            transition: border-color 0.25s, box-shadow 0.25s;
+        }
+        
+        .card:hover {
+            border-color: rgba(34, 211, 238, 0.35);
+            box-shadow: 0 0 0 1px rgba(34, 211, 238, 0.08);
+        }
+        
+        .card-title {
+            color: var(--text-main);
+            font-family: var(--font-primary);
+            font-weight: 600;
+            font-size: 16px;
+            margin: 8px 0 4px 0;
+            line-height: 1.3;
+        }
+        
+        .card-title-link {
+            color: var(--text-main);
+            font-family: var(--font-primary);
+            font-weight: 600;
+            font-size: 16px;
+            margin: 8px 0 4px 0;
+            line-height: 1.3;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .card-title-link:hover {
+            color: var(--accent-mint);
+            text-decoration: underline;
+        }
+        
+        .card-summary {
+            color: var(--text-muted);
+            font-family: var(--font-primary);
+            font-size: 14px;
+            line-height: 1.4;
+            margin-top: 4px;
+        }
+
+        /* ===== HEADER & CONTROLS ===== */
+        .header-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .page-title {
+            color: var(--text-main);
+            font-family: var(--font-primary);
+            font-weight: 700;
+            font-size: 24px;
+            letter-spacing: var(--letter-spacing-headers);
+        }
+        
+        .timestamp {
+            color: var(--accent-mint);
+            font-weight: 500;
+            font-size: 14px;
+            margin-left: 8px;
+        }
+        
+        .controls-right {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+        
+        .search-bar {
+            background: var(--surface-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: 6px;
+            padding: 8px 12px;
+            color: var(--text-main);
+            font-family: var(--font-primary);
+            font-size: 14px;
+            min-width: 240px;
+        }
+        
+        .search-bar:focus {
+            outline: none;
+            border-color: var(--accent-mint);
+        }
+        
+        .search-bar::placeholder {
+            color: var(--text-muted);
+        }
+        
+        .refresh-btn {
+            background: var(--accent-mint);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            padding: 8px 16px;
+            font-family: var(--font-primary);
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            transition: background 0.2s;
+        }
+        
+        .refresh-btn:hover {
+            background: #06b6d4;
+        }
+        
+        .refresh-icon {
+            font-size: 16px;
+        }
+
+        /* ===== TAB BAR ===== */
+        .tab-bar {
+            display: flex;
+            gap: 1px;
+            background: var(--border-subtle);
+            border-radius: 8px;
+            padding: 4px;
+            margin-bottom: 20px;
+            position: sticky;
+            top: 16px;
+            z-index: 100;
+        }
+        
+        .tab {
+            flex: 1;
+            background: transparent;
+            border: none;
+            color: var(--text-muted);
+            font-family: var(--font-primary);
+            font-weight: 600;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 12px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .tab:hover {
+            color: var(--text-main);
+            background: rgba(255, 255, 255, 0.05);
+        }
+        
+        .tab.active {
+            background: var(--surface-card);
+            color: var(--accent-mint);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* ===== TAB CONTENT ===== */
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.3s;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* ===== SUB-TABS (Intel Tab Categories) ===== */
+        .sub-tab-bar {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid var(--border-subtle);
+            padding-bottom: 12px;
+            flex-wrap: wrap;
+        }
+        
+        .sub-tab {
+            background: var(--surface-card);
+            color: var(--text-muted);
+            border: 1px solid var(--border-subtle);
+            border-radius: 6px;
+            padding: 8px 16px;
+            font-size: 13px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+            white-space: nowrap;
+        }
+        
+        .sub-tab:hover {
+            border-color: var(--accent-mint);
+            color: var(--text-main);
+        }
+        
+        .sub-tab.active {
+            background: var(--accent-mint-glow);
+            color: var(--accent-mint);
+            border-color: var(--accent-mint);
+            font-weight: 600;
+        }
+        
+        .sub-tab-content {
+            display: none;
+            animation: fadeIn 0.3s;
+        }
+        
+        .sub-tab-content.active {
+            display: block;
+        }
+
+        /* ===== NEWS WALL (Intel Tab) ===== */
+        .news-wall {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 16px;
+        }
+        
+        .news-card {
+            background: var(--surface-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: 8px;
+            padding: 16px;
+            transition: all 0.2s;
+        }
+        
+        .news-card:hover {
+            border-color: var(--accent-mint);
+            transform: translateY(-2px);
+        }
+        
+        .news-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        
+        .news-source {
+            background: var(--accent-mint-glow);
+            color: var(--accent-mint);
+            font-family: var(--font-primary);
+            font-weight: 600;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+        
+        .news-time {
+            color: var(--text-muted);
+            font-family: var(--font-primary);
+            font-size: 12px;
+        }
+        
+        .news-title {
+            color: var(--text-main);
+            font-family: var(--font-primary);
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 1.4;
+            margin-bottom: 4px;
+        }
+        
+        .news-summary {
+            color: var(--text-muted);
+            font-family: var(--font-primary);
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        
+        .news-priority {
+            background: rgba(239, 68, 68, 0.1);
+            color: #EF4444;
+            font-size: 11px;
+            font-weight: 600;
+            padding: 2px 6px;
+            border-radius: 4px;
+            margin-top: 8px;
+            display: inline-block;
+        }
+
+        /* ===== MARKETS GRID (Markets Tab) ===== */
+        .markets-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 16px;
+        }
+        
+        .market-section {
+            background: var(--surface-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: 8px;
+            padding: 16px;
+        }
+        
+        .section-title {
+            color: var(--text-main);
+            font-family: var(--font-primary);
+            font-weight: 600;
+            font-size: 16px;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        .tickers-container {
+            display: grid;
+            gap: 12px;
+        }
+        
+        .ticker-widget {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 6px;
+            padding: 12px;
+        }
+
+        /* ===== VENTURES GRID (Venture Tab) ===== */
+        .ventures-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 16px;
+        }
+        
+        .venture-card {
+            background: var(--surface-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: 8px;
+            padding: 16px;
+            transition: all 0.2s;
+        }
+        
+        .venture-card:hover {
+            border-color: var(--accent-mint);
+            transform: translateY(-2px);
+        }
+        
+        .venture-score {
+            background: var(--accent-mint);
+            color: white;
+            font-family: var(--font-primary);
+            font-weight: 700;
+            font-size: 24px;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 12px;
+        }
+        
+        .venture-title {
+            color: var(--text-main);
+            font-family: var(--font-primary);
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 1.4;
+            margin-bottom: 8px;
+        }
+        
+        .venture-summary {
+            color: var(--text-muted);
+            font-family: var(--font-primary);
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 12px;
+        }
+        
+        .venture-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+        
+        .venture-tag {
+            background: var(--accent-mint-glow);
+            color: var(--accent-mint);
+            font-family: var(--font-primary);
+            font-weight: 500;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+
+        /* ===== NOTIFICATIONS ===== */
+        .notification-toast {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: var(--surface-card);
+            border: 1px solid var(--accent-mint);
+            border-radius: 8px;
+            padding: 12px 16px;
+            color: var(--text-main);
+            font-family: var(--font-primary);
+            font-size: 14px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            transform: translateY(100px);
+            opacity: 0;
+            transition: all 0.3s;
+            z-index: 1000;
+        }
+        
+        .notification-toast.show {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        /* ===== MOBILE OPTIMIZATIONS ===== */
+        @media (max-width: 768px) {
+            .container {
+                padding: 12px;
+            }
+            
+            .header-controls {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            
+            .controls-right {
+                width: 100%;
+            }
+            
+            .search-bar {
+                min-width: 0;
+            }
+            
+            .tab-bar {
+                padding: 8px 0;
+            }
+            
+            .tab {
+                padding: 10px 16px;
+                font-size: 13px;
+            }
+            
+            /* Grid adjustments for tablet */
+            .news-wall,
+            .markets-grid,
+            .ventures-grid {
+                grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            }
+            
+            .sub-tab-bar {
+                overflow-x: auto;
+                padding-bottom: 8px;
+                flex-wrap: nowrap;
+                -webkit-overflow-scrolling: touch;
+            }
+            
+            .sub-tab {
+                white-space: nowrap;
+                flex-shrink: 0;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 8px;
+            }
+            
+            .page-title {
+                font-size: 20px;
+            }
+            
+            .tab {
+                padding: 8px 12px;
+                font-size: 12px;
+            }
+            
+            /* Single column layout for very small screens */
+            .news-wall,
+            .markets-grid,
+            .ventures-grid {
+                grid-template-columns: 1fr !important;
+            }
+            
+            .card {
+                padding: 12px;
+            }
+            
+            .card-title {
+                font-size: 15px;
+            }
+            
+            .card-summary {
+                font-size: 13px;
+            }
+            
+            .sub-tab-bar {
+                gap: 6px;
+            }
+            
+            .sub-tab {
+                padding: 6px 12px;
+                font-size: 12px;
+            }
+            
+            /* Ensure minimum tap target size */
+            button, .tab, .sub-tab, .refresh-btn {
+                min-height: 44px;
+                min-width: 44px;
+            }
+        }
+        
+        /* ===== ADDITIONAL STYLES FOR DYNAMIC DATA ===== */
+        .score-high {
+            background: var(--accent-mint);
+        }
+        
+        .score-medium {
+            background: #F59E0B; /* Amber */
+        }
+        
+        .score-low {
+            background: #EF4444; /* Red */
+        }
+        
+        .news-priority {
+            background: rgba(239, 68, 68, 0.1);
+            color: #EF4444;
+            font-size: 11px;
+            font-weight: 600;
+            padding: 2px 6px;
+            border-radius: 4px;
+            margin-top: 8px;
+            display: inline-block;
+        }
+        
+        .venture-status {
+            color: var(--text-muted);
+            font-size: 12px;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        .venture-progress {
+            background: rgba(16, 185, 129, 0.1);
+            color: var(--accent-mint);
+            font-size: 13px;
+            padding: 4px 8px;
+            border-radius: 4px;
+            margin: 8px 0;
+            display: inline-block;
+        }
+        
+        .venture-next {
+            color: var(--text-muted);
+            font-size: 13px;
+            margin: 8px 0;
+            font-style: italic;
+        }
+        
+        .venture-team {
+            color: var(--text-muted);
+            font-size: 12px;
+            margin-top: 12px;
+            border-top: 1px solid var(--border-subtle);
+            padding-top: 8px;
+        }
+        
+        .ticker-symbol {
+            font-weight: 600;
+            font-size: 16px;
+            color: var(--text-main);
+        }
+        
+        .ticker-name {
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-bottom: 4px;
+        }
+        
+        .ticker-price {
+            font-size: 20px;
+            font-weight: 700;
+            margin: 4px 0;
+        }
+        
+        .ticker-change {
+            font-size: 14px;
+            font-weight: 600;
+        }
+        
+        .ticker-price.up, .ticker-change.up {
+            color: var(--accent-mint);
+        }
+        
+        .ticker-price.down, .ticker-change.down {
+            color: #EF4444;
+        }
+    </style>
+        <style>
+            .view-full-btn {
+                background: rgba(139, 92, 246, 0.15);
+                color: #8B5CF6;
+                border: 1px solid rgba(139, 92, 246, 0.3);
+                padding: 6px 12px;
+                border-radius: 6px;
+                font-size: 0.85rem;
+                cursor: pointer;
+                transition: all 0.2s ease;
+                font-family: 'SF Mono', Monaco, monospace;
+            }
+            .view-full-btn:hover {
+                background: rgba(139, 92, 246, 0.25);
+                border-color: #8B5CF6;
+            }
+            .view-full-btn.active {
+                background: rgba(139, 92, 246, 0.3);
+                border-color: #8B5CF6;
+                box-shadow: 0 0 10px rgba(139, 92, 246, 0.2);
+            }
+            .heartbeat-full pre {
+                margin: 0;
+                font-family: 'SF Mono', Monaco, monospace;
+                line-height: 1.4;
+            }
+        </style>
+</head>
+
+<body>
+    <header class="oracle-topbar" role="banner">
+        <div class="oracle-brand">
+            <span class="material-symbols-outlined" style="color: var(--oracle-cyan); font-size: 22px;">terminal</span>
+            <h1>ITO TERMINAL</h1>
+            <span class="oracle-feed-pill">Empire Intel</span>
         </div>
-        <div class="header-right">
-            <div class="role-tag">Active · 30min beats</div>
-            <div class="updated">Updated: <span id="ts">Loading…</span> JST · <strong style="color:#22d3ee;">EMPIRE AUDIT BEAT 2026-04-12 ~02:24 JST</strong></div>
+        <div class="oracle-status">
+            <span class="oracle-pulse" aria-hidden="true"></span>
+            <span>LIVE_FEED</span>
         </div>
     </header>
-
-    <!-- ALERTS -->
-    <div class="card full" style="margin-bottom:20px; border-color: rgba(34,211,238,0.25);">
-        <h3 style="color:#22d3ee;"><span class="material-symbols-outlined">verified</span> Empire Alerts — Sunday 02:24 JST · Empire Audit Beat</h3>
-        <div class="alert-row info">
-            <span>✅</span>
-            <div><strong>Saito Deploy Monitor DISABLED ✅</strong> · Cron 6039efb7... disabled 01:54 JST · portfolio permanently LIVE · 3-consec error was gateway announcement layer (not agent bug)</div>
-        </div>
-        <div class="alert-row info">
-            <span>✅</span>
-            <div><strong>Titan 21min Telegram FIXED ✅</strong> · delivery patched to <code>mode:none, channel:none</code> · 0-consec confirmed live scan 02:23 JST · Monday 07:30 launch monitoring intact</div>
-        </div>
-        <div class="alert-row info">
-            <span>✅</span>
-            <div><strong>Makoto 21min heartbeat — RECOVERED ✅</strong> · Live scan 02:17 JST shows 0-consec · fully self-healed from 01:33 JST edit failure</div>
-        </div>
-        <div class="alert-row info">
-            <span>✅</span>
-            <div><strong>Saito Sunday AM Scan DUPLICATE REMOVED ✅</strong> · Cron a00a1e1b (cron expr) removed · was duplicate of already-fired one-shot 183c06f0 (deleteAfterRun) · both targeted 09:00 JST · no collision</div>
-        </div>
-        <div class="alert-row warn">
-            <span>⏰</span>
-            <div><strong>Saito CrowdWorks #13049491 — 4 DAYS LEFT (Apr 16)</strong> · 17 applicants · Proposal at outputs/proposal_13049491.md · <strong>Jackson: SUBMIT first thing Sunday AM (T-6h36m)</strong></div>
-        </div>
-        <div class="alert-row warn">
-            <span>🏋️</span>
-            <div><strong>Titan Carrd + Gumroad — MONDAY 07:30 JST LAUNCH</strong> · All assets ready ✅ · Jax publishes PT_Landing_Page.html → carrd.co + Gumroad ¥150k product before 08:30 JST</div>
-        </div>
-        <div class="alert-row info">
-            <span>💡</span>
-            <div><strong>Empire Morning Briefing proposal filed</strong> · outputs/empire_morning_briefing.md · Daily 07:00 JST digest · Jackson: thumbs up/down?</div>
-        </div>
-        <div class="alert-row info">
-            <span>🔒</span>
-            <div><strong>xAI credits exhausted</strong> — Twitter intel offline since ~Apr 6 · No fix available · Needs Jackson top-up at x.ai</div>
-        </div>
-    </div>
-
-    <!-- STATS ROW -->
-    <div class="grid-3" style="margin-bottom:20px;">
-        <div class="card" style="border-left:3px solid #4ade80;">
-            <h3><span class="material-symbols-outlined">check_circle</span> Tasks Done</h3>
-            <p style="font-size:2rem;font-weight:800;color:#4ade80;margin-top:4px;">30</p>
-            <p style="color:var(--dim);font-size:12px;margin-top:4px;">+ Empire Audit: Saito Sunday AM Scan duplicate removed · Makoto recovered · Titan fix holding · dashboard updated</p>
-        </div>
-        <div class="card" style="border-left:3px solid #22d3ee;">
-            <h3><span class="material-symbols-outlined">psychology</span> Empire Agents</h3>
-            <p style="font-size:2rem;font-weight:800;color:#22d3ee;margin-top:4px;">7</p>
-            <p style="color:var(--dim);font-size:12px;margin-top:4px;">Kaji · Ito · Saito · Makoto · Felix · Titan · Odie</p>
-        </div>
-        <div class="card" style="border-left:3px solid #4ade80;">
-            <h3><span class="material-symbols-outlined">schedule</span> Cron Health</h3>
-            <p style="font-size:2rem;font-weight:800;color:#4ade80;margin-top:4px;">12/12 ✅</p>
-            <p style="color:var(--dim);font-size:12px;margin-top:4px;">12 active · Saito Deploy Monitor DISABLED · Saito Sunday AM Scan duplicate REMOVED · all others clean · live scan 02:24 JST</p>
-        </div>
-    </div>
-
-    <div class="grid">
-
-        <!-- NEXT BEAT INITIATIVE -->
-        <div class="card">
-            <h3><span class="material-symbols-outlined">flag</span> Initiative Queue</h3>
-            <p style="color:var(--muted);font-size:13px;margin-bottom:12px;">Kaji rotates through 5 domains: Empire Audit, New Ideas, Improve Existing, Tidy Operations, Delegation Prep.</p>
-            <ul class="task-list">
-                <li>
-                    <span class="task-dot active"></span>
-                    <div>
-                        <span class="initiative-tag">Empire Audit</span> <strong>Beat 2026-04-12 ~02:24 JST — RUNNING:</strong> Live cron scan 12/12 ✅ · Saito dedup (a00a1e1b removed) · Makoto recovered ✅ · Titan fix holding ✅ · Titan workspace Monday-ready confirmed ✅
-                        <div class="task-label">RUNNING</div>
-                    </div>
-                </li>
-                <li>
-                    <span class="task-dot blocked"></span>
-                    <div>
-                        <span class="initiative-tag">Delegation Prep</span> <strong>Next beat</strong> — per algorithm: Empire Audit (just ran, Rule 1 blocks), Improve Existing (1 beat ago, Rule 1 blocks), New Ideas (2 beats ago), Delegation Prep (4 beats ago, eligible by elimination) wins. Prepare Ito Phase 2 brief or Makoto Phase 2.
-                        <div class="task-label">Next beat</div>
-                    </div>
-                </li>
-                <li>
-                    <span class="task-dot done"></span>
-                    <div>
-                        <span class="initiative-tag">Tidy Operations</span> <strong>Beat 2026-04-12 ~01:55 JST:</strong> Dashboard git sync · telemetry clean · Makoto 1-consec flagged · no pruning needed
-                        <div class="task-label">Prev beat 01:55</div>
-                    </div>
-                </li>
-                <li>
-                    <span class="task-dot done"></span>
-                    <div>
-                        <span class="initiative-tag">Improve Existing</span> <strong>Beat 2026-04-12 ~01:54 JST:</strong> Saito Deploy Monitor DISABLED · Titan delivery patched
-                        <div class="task-label">Prev beat 01:54</div>
-                    </div>
-                </li>
-                <li>
-                    <span class="task-dot blocked"></span>
-                    <div>
-                        🏋️ <strong>Titan Carrd + Gumroad — MONDAY 07:30 JST LAUNCH</strong> · All assets ready ✅ · Jax publishes to carrd.co + Gumroad before 08:30 JST · 1 client = ¥150k before X-156 May 19
-                        <div class="task-label">BLOCKED — Jax action</div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-
-        <!-- REQUESTS FROM JAX -->
-        <div class="card">
-            <h3><span class="material-symbols-outlined">inbox</span> Open Requests from Jax</h3>
-            <div class="request-item" style="border-left:3px solid #f87171;">
-                <div>⏰ <strong>Saito CrowdWorks #13049491 — DEADLINE APRIL 16 (4 days!)</strong></div>
-                <div class="request-meta">17 applicants · Proposal at outputs/proposal_13049491.md · <strong>Jackson: SUBMIT first thing Sunday AM</strong></div>
-            </div>
-            <div class="request-item" style="border-left:3px solid #fbbf24;">
-                <div>🏋️ <strong>Titan Carrd + Gumroad — PUBLISH MONDAY 07:30 JST</strong></div>
-                <div class="request-meta">All assets ready ✅ · Carrd: PT_Landing_Page.html → carrd.co · Gumroad: ¥150k product · publish before 08:30 JST</div>
-            </div>
-            <div class="request-item" style="border-left:3px solid var(--accent);">
-                <div>💡 <strong>Venture Decisions — Jax must decide NOW</strong></div>
-                <div class="request-meta">All 6 ideas in Ito IDEAS_VAULT.md pending · Intel Brief recommended #1 SaaS Integration Health Monitor</div>
-            </div>
-            <div class="request-item" style="border-left:3px solid #4ade80;">
-                <div>👍 <strong>Empire Morning Briefing — Jackson: thumbs up/down?</strong></div>
-                <div class="request-meta">outputs/empire_morning_briefing.md · Daily 07:00 JST · One Telegram digest: urgent + revenue + agents + today</div>
-            </div>
-            <div class="request-item">
-                <div>🌐 Makoto GBP landing page — deploy to Neocities</div>
-                <div class="request-meta">⏳ Waiting on Jax · ~30+ days stale</div>
+    <div class="container">
+        <!-- Header with Controls -->
+        <div class="header-controls">
+            <div class="page-title">Intelligence Stream <span class="timestamp">03:33 JST</span></div>
+            <div class="controls-right">
+                <input type="text" class="search-bar" placeholder="Search news, markets, ventures..." id="search-input">
+                <button class="refresh-btn" id="refresh-btn" onclick="refreshData()">
+                    <span class="refresh-icon">↻</span>
+                    <span>Refresh</span>
+                </button>
             </div>
         </div>
 
-        <!-- RECENT WORK -->
-        <div class="card">
-            <h3><span class="material-symbols-outlined">history</span> Recent Work</h3>
-            <div class="output-item">
-                <span class="output-icon">🔍</span>
-                <div style="flex:1">
-                    <div class="output-name">Empire Audit — Beat 2026-04-12 ~02:24 JST</div>
-                    <div class="output-desc">Live scan 12/12 ✅ · Saito dedup removed (a00a1e1b) · Makoto recovered ✅ · Titan fix holding ✅ · Titan Monday-ready confirmed · Saito ledger Cycle 111 confirmed</div>
-                </div>
-                <span class="badge badge-run">RUNNING · 02:24 JST</span>
-            </div>
-            <div class="output-item">
-                <span class="output-icon">🔧</span>
-                <div style="flex:1">
-                    <div class="output-name">Tidy Operations — Beat 2026-04-12 ~01:55 JST</div>
-                    <div class="output-desc">Dashboard git sync · telemetry clean · Makoto 1-consec flagged · no pruning needed</div>
-                </div>
-                <span class="badge badge-ok">DONE · 01:55 JST</span>
-            </div>
-            <div class="output-item">
-                <span class="output-icon">🔧</span>
-                <div style="flex:1">
-                    <div class="output-name">Improve Existing — Beat 2026-04-12 ~01:54 JST</div>
-                    <div class="output-desc">Saito Deploy Monitor DISABLED (portfolio permanently LIVE) · Titan 21min delivery patched to mode:none/channel:none · Empire Audit subagent result consumed</div>
-                </div>
-                <span class="badge badge-ok">DONE · 01:54 JST</span>
-            </div>
-            <div class="output-item">
-                <span class="output-icon">💡</span>
-                <div style="flex:1">
-                    <div class="output-name">New Ideas — Beat 2026-04-12 01:24 JST</div>
-                    <div class="output-desc">Empire Morning Briefing proposal filed (outputs/empire_morning_briefing.md) · Titan 3-consec root cause identified · Empire Audit sub spawned</div>
-                </div>
-                <span class="badge badge-ok">DONE · 01:24 JST</span>
-            </div>
-        </div>
-
-        <!-- QUICK LINKS -->
-        <div class="card">
-            <h3><span class="material-symbols-outlined">link</span> Quick Links</h3>
-            <div class="links-grid">
-                <a href="https://kaji-hemopo.github.io/telemetry/empire-home.html" class="link-card"><span class="icon">🏠</span> Empire Home</a>
-                <a href="https://kaji-hemopo.github.io/telemetry/" class="link-card"><span class="icon">🦅</span> Ito Intel Terminal</a>
-                <a href="https://kaji-hemopo.github.io/telemetry/agents/makoto/" class="link-card"><span class="icon">⚡</span> Makoto</a>
-                <a href="https://kaji-hemopo.github.io/telemetry/agents/felix/" class="link-card"><span class="icon">🎌</span> Felix</a>
-                <a href="https://kaji-hemopo.github.io/telemetry/agents/titan/" class="link-card"><span class="icon">🏋️</span> Titan</a>
-                <a href="https://kaji-hemopo.github.io/telemetry/agents/saito/" class="link-card"><span class="icon">⚙️</span> Saito</a>
-            </div>
-        </div>
-
-    </div>
-
-    <!-- CRON HEALTH -->
-    <div class="card full" style="margin-bottom:20px;">
-        <h3><span class="material-symbols-outlined">schedule</span> Empire Cron Status — LIVE SCAN 2026-04-12 02:24 JST</h3>
-        <table class="cron-table">
-            <thead><tr><th>Agent</th><th>Job</th><th>Schedule</th><th>Last Run</th><th>Status</th></tr></thead>
-            <tbody>
-                <tr>
-                    <td><span class="cron-name">Kaji</span></td>
-                    <td class="cron-sched">30min Initiative Beat</td>
-                    <td class="cron-sched">every 30m</td>
-                    <td><span class="badge badge-ok">ok · 02:24 JST</span></td>
-                    <td><span class="badge badge-ok">✅ Running clean · Empire Audit beat executing now</span></td>
-                </tr>
-                <tr>
-                    <td><span class="cron-name">Ito</span></td>
-                    <td class="cron-sched">20min Heartbeat</td>
-                    <td class="cron-sched">every 20m</td>
-                    <td><span class="badge badge-ok">ok · 02:23 JST</span></td>
-                    <td><span class="badge badge-ok">✅ 0-consec · pipeline fresh · RSS/intel healthy</span></td>
-                </tr>
-                <tr>
-                    <td><span class="cron-name">Ito</span></td>
-                    <td class="cron-sched">Gold Oracle</td>
-                    <td class="cron-sched">every 2h</td>
-                    <td><span class="badge badge-ok">ok · 01:52 JST</span></td>
-                    <td><span class="badge badge-ok">✅ markets closed Sunday</span></td>
-                </tr>
-                <tr>
-                    <td><span class="cron-name">Ito</span></td>
-                    <td class="cron-sched">Twitter/X Intel</td>
-                    <td class="cron-sched">every 30m</td>
-                    <td><span class="badge badge-muted">no X data</span></td>
-                    <td><span class="badge badge-muted">❌ BLOCKED · xAI credits exhausted since Apr 6</span></td>
-                </tr>
-                <tr>
-                    <td><span class="cron-name">Felix</span></td>
-                    <td class="cron-sched">21min Heartbeat</td>
-                    <td class="cron-sched">every 21m</td>
-                    <td><span class="badge badge-ok">ok · 02:15 JST</span></td>
-                    <td><span class="badge badge-ok">✅ ok</span></td>
-                </tr>
-                <tr>
-                    <td><span class="cron-name">Titan</span></td>
-                    <td class="cron-sched">21min Heartbeat</td>
-                    <td class="cron-sched">every 21m</td>
-                    <td><span class="badge badge-ok">ok · 02:23 JST</span></td>
-                    <td><span class="badge badge-ok">✅ FIXED · delivery mode:none/channel:none · 0-consec confirmed · Monday 07:30 launch ready</span></td>
-                </tr>
-                <tr>
-                    <td><span class="cron-name">Makoto</span></td>
-                    <td class="cron-sched">21min Heartbeat</td>
-                    <td class="cron-sched">every 21m</td>
-                    <td><span class="badge badge-ok">ok · 02:17 JST</span></td>
-                    <td><span class="badge badge-ok">✅ RECOVERED · 0-consec · self-healed from edit failure</span></td>
-                </tr>
-                <tr>
-                    <td><span class="cron-name">Saito</span></td>
-                    <td class="cron-sched">20min Heartbeat</td>
-                    <td class="cron-sched">every 20m</td>
-                    <td><span class="badge badge-ok">ok · 02:19 JST</span></td>
-                    <td><span class="badge badge-ok">✅ 0-consec · Sunday dead · Cycle 111 · #13049491 (17 applicants, 4 days)</span></td>
-                </tr>
-                <tr>
-                    <td><span class="cron-name">Saito</span></td>
-                    <td class="cron-sched">Deploy Monitor</td>
-                    <td class="cron-sched">every 1h</td>
-                    <td><span class="badge badge-off">⛔ DISABLED</span></td>
-                    <td><span class="badge badge-off">⛔ DISABLED 01:54 JST · portfolio permanently LIVE · no monitoring value</span></td>
-                </tr>
-                <tr>
-                    <td><span class="cron-name">Saito</span></td>
-                    <td class="cron-sched">C98 Pulse — Sat Night</td>
-                    <td class="cron-sched">Sat 21:30 JST</span></td>
-                    <td><span class="badge badge-warn">⚠️ 1-consec</span></td>
-                    <td><span class="badge badge-warn">⚠️ 1-consec · MiniMax timeout · non-critical · next run Sat Apr 18 21:30 JST</span></td>
-                </tr>
-                <tr>
-                    <td><span class="cron-name">Saito</span></td>
-                    <td class="cron-sched">Sunday AM Scan</td>
-                    <td class="cron-sched">Sun 09:00 JST</td>
-                    <td><span class="badge badge-ok">fired</span></td>
-                    <td><span class="badge badge-ok">✅ one-shot 183c06f0 already fired 09:00 JST · deleteAfterRun cleans up · duplicate cron removed</span></td>
-                </tr>
-                <tr>
-                    <td><span class="cron-name">TradePass</span></td>
-                    <td class="cron-sched">20min Heartbeat</td>
-                    <td class="cron-sched">every 20m</td>
-                    <td><span class="badge badge-ok">ok · 02:16 JST</span></td>
-                    <td><span class="badge badge-ok">✅ ok</span></td>
-                </tr>
-                <tr>
-                    <td><span class="cron-name">Ito</span></td>
-                    <td class="cron-sched">Weekly Reddit (Mon 00:00 JST)</td>
-                    <td class="cron-sched">weekly Mon</td>
-                    <td><span class="badge badge-ok">scheduled</span></td>
-                    <td><span class="badge badge-ok">✅ Next run Mon Apr 13 00:00 JST</span></td>
-                </tr>
-            </tbody>
-        </table>
-        <p style="color:var(--dim);font-size:11.5px;margin-top:12px;">
-            ✅ <strong>12/12 active + 1 DISABLED</strong> · Live scan 2026-04-12 02:24 JST · All crons clean except Saito C98 Pulse 1-consec (non-critical, next Sat Apr 18) · Saito Deploy Monitor disabled · Saito Sunday AM Scan duplicate removed
-        </p>
-    </div>
-
-    <!-- AGENT DIRECTORY -->
-    <div class="card full">
-        <h3><span class="material-symbols-outlined">groups</span> Empire Agent Directory</h3>
-        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;">
-            <div>
-                <div class="agent-row"><div><span class="agent-name">🧭 Kaji (me)</span><div class="agent-role">COO / Orchestrator</div></div><span class="badge badge-run">🔧 Empire Audit beat 02:24 JST</span></div>
-                <div class="agent-row"><div><span class="agent-name">🦅 Ito</span><div class="agent-role">Intel & Pipeline</div></div><span class="badge badge-ok">✅ Property Intel Phase 1 complete · heartbeat clean ✅</span></div>
-                <div class="agent-row"><div><span class="agent-name">⚙️ Saito</span><div class="agent-role">Digital Strategy</div></div><span class="badge badge-ok">✅ Deploy Monitor DISABLED · 20min ✅ Sunday stable · Cycle 111</span></div>
-            </div>
-            <div>
-                <div class="agent-row"><div><span class="agent-name">⚡ Makoto</span><div class="agent-role">Arbitrage Scout</div></div><span class="badge badge-ok">✅ RECOVERED · 0-consec · self-healed from edit failure</span></div>
-                <div class="agent-row"><div><span class="agent-name">🎌 Felix</span><div class="agent-role">N3 Vault & X</div></div><span class="badge badge-ok">✅ All clear</span></div>
-                <div class="agent-row"><div><span class="agent-name">🏋️ Titan</span><div class="agent-role">Athlete Forge</div></div><span class="badge badge-ok">✅ Telegram FIXED · delivery mode:none/channel:none · Monday 07:30 launch ready</span></div>
-                <div class="agent-row"><div><span class="agent-name">🤖 Odie</span><div class="agent-role">TradePass Development</div></div><span class="badge badge-ok">✅ TradePass 20min Heartbeat healthy · Dev Ideation 20min healthy</span></div>
-            </div>
-        </div>
-    </div>
-
+        <!-- Sticky Tab Bar -->
+        <div class="tab-bar">
+            <button class="tab active" onclick="switchTab('intel')" id="btn-tab-intel">INTEL</button>
+            <button class="tab" onclick="switchTab('markets')" id="btn-tab-markets">MARKETS</button>
+            <button class="tab" onclick="switchTab('venture')" id="btn-tab-venture">VENTURE</button>
 </div>
 
-<footer>
-    <p><a href="https://kaji-hemopo.github.io/telemetry/empire-home.html">🏠 Empire Home</a> · Kaji COO Dashboard · <a href="https://kaji-hemopo.github.io/telemetry/kaji/">kaji-hemopo.github.io/telemetry/kaji/</a></p>
-</footer>
+        <!-- TAB 1: INTEL (Default View) -->
+        <div id="tab-intel" class="tab-content active">
+            <div class="news-wall" id="news-wall">
+                <div class="sub-tab-bar">
+        <button class="sub-tab active" onclick="switchSubTab('intel', 0)" 
+                id="btn-subtab-intel-0" 
+                style="background: #22D3EE22; color: #22D3EE; border: 1px solid #22D3EE44;">
+            Intel Brief
+        </button>
+        <button class="sub-tab " onclick="switchSubTab('intel', 1)" 
+                id="btn-subtab-intel-1" 
+                style="background: #6366F122; color: #6366F1; border: 1px solid #6366F144;">
+            Trends
+        </button>
+        <button class="sub-tab " onclick="switchSubTab('intel', 2)" 
+                id="btn-subtab-intel-2" 
+                style="background: #0A84FF22; color: #0A84FF; border: 1px solid #0A84FF44;">
+            SaaS
+        </button>
+        <button class="sub-tab " onclick="switchSubTab('intel', 3)" 
+                id="btn-subtab-intel-3" 
+                style="background: #FF3B3022; color: #FF3B30; border: 1px solid #FF3B3044;">
+            Japan Business
+        </button>
+        <button class="sub-tab " onclick="switchSubTab('intel', 4)" 
+                id="btn-subtab-intel-4" 
+                style="background: #8B5CF622; color: #8B5CF6; border: 1px solid #8B5CF644;">
+            Property
+        </button>
+        <button class="sub-tab " onclick="switchSubTab('intel', 5)" 
+                id="btn-subtab-intel-5" 
+                style="background: #10B98122; color: #10B981; border: 1px solid #10B98144;">
+            Sports
+        </button>
+        <button class="sub-tab " onclick="switchSubTab('intel', 6)" 
+                id="btn-subtab-intel-6" 
+                style="background: #F59E0B22; color: #F59E0B; border: 1px solid #F59E0B44;">
+            Tech
+        </button>
+        <button class="sub-tab " onclick="switchSubTab('intel', 7)" 
+                id="btn-subtab-intel-7" 
+                style="background: #EC489922; color: #EC4899; border: 1px solid #EC489944;">
+            AI
+        </button>
+        <button class="sub-tab " onclick="switchSubTab('intel', 8)" 
+                id="btn-subtab-intel-8" 
+                style="background: #D4AF3722; color: #D4AF37; border: 1px solid #D4AF3744;">
+            Finance
+        </button>
+        <button class="sub-tab " onclick="switchSubTab('intel', 9)" 
+                id="btn-subtab-intel-9" 
+                style="background: #3B82F622; color: #3B82F6; border: 1px solid #3B82F644;">
+            NZ
+        </button>
+        <button class="sub-tab " onclick="switchSubTab('intel', 10)" 
+                id="btn-subtab-intel-10" 
+                style="background: #EF444422; color: #EF4444; border: 1px solid #EF444444;">
+            Regulatory
+        </button>
+        <button class="sub-tab " onclick="switchSubTab('intel', 11)" 
+                id="btn-subtab-intel-11" 
+                style="background: #1DA1F222; color: #1DA1F2; border: 1px solid #1DA1F244;">
+            X/Twitter
+        </button></div><div class="sub-tab-contents"><div id="subtab-intel-0" class="sub-tab-content active"><div style="display: grid; gap: 16px;">
+                            <div class="card" style="border-left: 3px solid #FF3B30; padding: 14px 16px;">
+                                <div style="display:flex; align-items:center; gap:8px; margin-bottom:10px;">
+                                    <span class="tag" style="background:#FF3B3022; color:#FF3B30; font-size:0.72rem; padding:2px 8px; border-radius:4px; font-weight:600;">JAPAN BUSINESS</span>
+                                </div>
+                                <ul style="list-style:none; padding:0; margin:0;"><li style="margin-bottom:6px; color: var(--text-main);">停戦仲介のキーマンか パキスタン軍トップ ムニール氏とは</li>
+<li style="margin-bottom:6px; color: var(--text-main);">郵便受けに「逮捕状」、新たな詐欺に注意　アナログな方法のワケとは</li></ul>
+                            </div>
+                            <div class="card" style="border-left: 3px solid #EC4899; padding: 14px 16px;">
+                                <div style="display:flex; align-items:center; gap:8px; margin-bottom:10px;">
+                                    <span class="tag" style="background:#EC489922; color:#EC4899; font-size:0.72rem; padding:2px 8px; border-radius:4px; font-weight:600;">AI</span>
+                                </div>
+                                <ul style="list-style:none; padding:0; margin:0;"><li style="margin-bottom:6px; color: var(--text-main);">Anthropic temporarily banned OpenClaw’s creator from accessing Claude</li>
+<li style="margin-bottom:6px; color: var(--text-main);">Sam Altman responds to ‘incendiary’ New Yorker article after attack on his home</li></ul>
+                            </div>
+                            <div class="card" style="border-left: 3px solid #D4AF37; padding: 14px 16px;">
+                                <div style="display:flex; align-items:center; gap:8px; margin-bottom:10px;">
+                                    <span class="tag" style="background:#D4AF3722; color:#D4AF37; font-size:0.72rem; padding:2px 8px; border-radius:4px; font-weight:600;">FINANCE</span>
+                                </div>
+                                <ul style="list-style:none; padding:0; margin:0;"><li style="margin-bottom:6px; color: var(--text-main);">Credit Markets Are Resilient: BofA's Khonda</li>
+<li style="margin-bottom:6px; color: var(--text-main);">Treasuries Fall as Inflation Data Erode Fed Rate-Cut Wager</li></ul>
+                            </div>
+                            <div class="card" style="border-left: 3px solid #3B82F6; padding: 14px 16px;">
+                                <div style="display:flex; align-items:center; gap:8px; margin-bottom:10px;">
+                                    <span class="tag" style="background:#3B82F622; color:#3B82F6; font-size:0.72rem; padding:2px 8px; border-radius:4px; font-weight:600;">NZ</span>
+                                </div>
+                                <ul style="list-style:none; padding:0; margin:0;"><li style="margin-bottom:6px; color: var(--text-main);">Gold market primer: Market size and structure</li>
+<li style="margin-bottom:6px; color: var(--text-main);">Why antibiotics matter far beyond the farm gate</li></ul>
+                            </div>
+                            <div class="card" style="border-left: 3px solid #0A84FF; padding: 14px 16px;">
+                                <div style="display:flex; align-items:center; gap:8px; margin-bottom:10px;">
+                                    <span class="tag" style="background:#0A84FF22; color:#0A84FF; font-size:0.72rem; padding:2px 8px; border-radius:4px; font-weight:600;">SAAS</span>
+                                </div>
+                                <ul style="list-style:none; padding:0; margin:0;"><li style="margin-bottom:6px; color: var(--text-main);">Databricks: Only 19% of Organizations Have Deployed AI Agents. But They’re Already Cr…</li>
+<li style="margin-bottom:6px; color: var(--text-main);">The Leading Public Software Companies Are Now Down -50% in the Last 6 Months</li></ul>
+                            </div>
+                            <div class="card" style="border-left: 3px solid #8B5CF6; padding: 14px 16px;">
+                                <div style="display:flex; align-items:center; gap:8px; margin-bottom:10px;">
+                                    <span class="tag" style="background:#8B5CF622; color:#8B5CF6; font-size:0.72rem; padding:2px 8px; border-radius:4px; font-weight:600;">PROPERTY</span>
+                                </div>
+                                <ul style="list-style:none; padding:0; margin:0;"><li style="margin-bottom:6px; color: var(--text-main);">Kazuyo Sejima – Redefining Space Through Light and Transparency</li>
+<li style="margin-bottom:6px; color: var(--text-main);">Housing Japan Podcast Episode 4: Japan’s 2028 Crypto Tax Cut & Tokyo Property</li></ul>
+                            </div></div></div><div id="subtab-intel-1" class="sub-tab-content ">
+                <div class="card" style="border-left-color: #6366F1; margin-bottom: 20px;">
+                    <div class="signal-header">
+                        <div>
+                            <span class="tag" style="background: #6366F122; color: #6366F1;">TRENDS</span>
+                            <div class="card-title">Market Trends from Weekend Intel Scan</div>
+                        </div>
+                        <div class="signal-value" style="color: #6366F1;">📈</div>
+                    </div>
+                    <div style="margin-top: 8px; font-size: 0.85rem; color: var(--text-dim);">
+                        📅 2026-04-11 12:00 JST
+                    </div>
+                    <div class="card-summary" style="margin-top: 12px; line-height: 1.6;">
+                        ## TRENDS SPOTTED (from weekend intel scan — 2026-04-11)<br><br>1. **AI dominance** — 188 keyword hits this week. No sector话题<br>2. **US-Iran conflict + Oil** — 39 oil articles, 15 US-Iran mentions. Hormuz strait tensions driving energy volatility.<br>3. **Startup funding active** — 38 startup + 15 funding hits. VC market still open for B2B/infra.<br>4. **Inflation + Trump** — 28 inflation + 22 Trump mentions. Tariff uncertainty + rate policy ambiguity.<br>5. **Gold as hedge** — 16 gold mentions. Risk-off positioning visible.<br>6. **Japan market** — 23 Japan hits. Local biz + regulatory coverage steady.<br>7. **NZ Property** — 11 Auckland hits. Market monitoring active.<br>8. **China** — 21 China mentions. Geopolitical risk factor.<br>9. **Anthropic** — 4 mentions. AI infrastructure play.<br>10. **Volatility** — 4 volatility mentions (low reading — weekend filter may suppress).
+                    </div>
+                </div></div><div id="subtab-intel-2" class="sub-tab-content ">
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #0A84FF22; color: #0A84FF;">SaaS</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <a href="https://www.saastr.com/databricks-only-19-of-organizations-have-deployed-ai-agents-but-theyre-already-creating-97-of-databases/" target="_blank" class="card-title-link">Databricks: Only 19% of Organizations Have Deployed AI Agents. But They’re Already Creating 97% of Databases.</a>
+            <div class="card-summary">10 Interesting Learnings from Databricks&amp;#8217; State of AI Agents 2026 Databricks recently released their State of AI Agents report, built from data across...</div>
+        </div>
 
-<script>
-    function updateTimestamp() {
-        const now = new Date();
-        const o = { timeZone: 'Asia/Tokyo', year:'numeric', month:'2-digit', day:'2-digit', hour:'2-digit', minute:'2-digit', hour12:false };
-        const p = new Intl.DateTimeFormat('en-US', o).formatToParts(now);
-        const y=p.find(x=>x.type==='year').value, m=p.find(x=>x.type==='month').value, d=p.find(x=>x.type==='day').value;
-        const h=p.find(x=>x.type==='hour').value, min=p.find(x=>x.type==='minute').value;
-        document.getElementById('ts').textContent = `${y}-${m}-${d} ${h}:${min}`;
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #0A84FF22; color: #0A84FF;">SaaS</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <a href="https://www.saastr.com/the-leading-public-software-companies-are-now-down-50-in-the-last-6-months/" target="_blank" class="card-title-link">The Leading Public Software Companies Are Now Down -50% in the Last 6 Months</a>
+            <div class="card-summary">The SaaStr.ai Index of the Top 25 Public Software Companies just hit -50.5% over the past six months. October 2025 to April 2026. Half the market cap of the lea...</div>
+        </div>
+</div><div id="subtab-intel-3" class="sub-tab-content ">
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #FF3B3022; color: #FF3B30;">Japan Business</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <a href="http://www3.nhk.or.jp/news/html/20260411/k10015096711000.html" target="_blank" class="card-title-link">停戦仲介のキーマンか パキスタン軍トップ ムニール氏とは</a>
+            <div class="card-summary">“停戦を仲介したキーマン”とみられています。イラン情勢をめぐり、アメリカのトランプ大統領は今月7日、SNSで、パキスタン側との協議に基づき停戦を決めたと明らかにしましたが、この投稿で、シャリフ首相とともに名前を挙げたのが、パキスタン軍のトップ、ムニール陸軍参謀長です。イラン側ともトランプ大統領とも緊密な関係を築いていま...</div>
+        </div>
+
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #FF3B3022; color: #FF3B30;">Japan Business</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">22h ago</span>
+            </div>
+            <a href="http://www.asahi.com/articles/ASV4B14HGV4BUTIL007M.html?ref=rss" target="_blank" class="card-title-link">郵便受けに「逮捕状」、新たな詐欺に注意　アナログな方法のワケとは</a>
+            <div class="card-summary"></div>
+        </div>
+
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #FF3B3022; color: #FF3B30;">Japan Business</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">22h ago</span>
+            </div>
+            <a href="http://www.asahi.com/articles/ASV4B13H4V4BUTIL00QM.html?ref=rss" target="_blank" class="card-title-link">「あなたは容疑者」届いた緊急の逮捕状　郵便受けから通帳は消えた</a>
+            <div class="card-summary"></div>
+        </div>
+
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #FF3B3022; color: #FF3B30;">Japan Business</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">22h ago</span>
+            </div>
+            <a href="http://www.asahi.com/articles/ASV4B434YV4BUTIL028M.html?ref=rss" target="_blank" class="card-title-link">検察の不服申し立て、審理期間を制限　再審見直し、政府修正案が判明</a>
+            <div class="card-summary"></div>
+        </div>
+</div><div id="subtab-intel-4" class="sub-tab-content ">
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #8B5CF622; color: #8B5CF6;">Property</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <a href="https://housingjapan.com/blog/kazuyo-sejima/" target="_blank" class="card-title-link">Kazuyo Sejima – Redefining Space Through Light and Transparency</a>
+            <div class="card-summary">pThis is the sixth article in Housing Japan&amp;#8217;s &amp;#8216;Japan&amp;#8217;s Best Architects Series&amp;#8217; In a city defined by density and walls, K...</div>
+        </div>
+
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #8B5CF622; color: #8B5CF6;">Property</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <a href="https://housingjapan.com/blog/housing-japan-podcast-episode-4/" target="_blank" class="card-title-link">Housing Japan Podcast Episode 4: Japan’s 2028 Crypto Tax Cut &amp; Tokyo Property</a>
+            <div class="card-summary">pIn this episode of the Housing Japan Podcast, we unpack Japan&amp;#8217;s landmark 2026 cryptocurrency tax reform blueprint and explore how it could trigger a ...</div>
+        </div>
+
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #8B5CF622; color: #8B5CF6;">Property</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <a href="https://housingjapan.com/blog/why-japans-earthquake-resistant-buildings-are-the-future-of-real-estate/" target="_blank" class="card-title-link">Japan’s Earthquake-Resistant Buildings Explained: A 2026 Guide for Buyers</a>
+            <div class="card-summary">pKey Facts at a Glance Why earthquake safety matters when buying in Tokyo Earthquake resistance is one of the first questions most buyers ask about a Tokyo prop...</div>
+        </div>
+</div><div id="subtab-intel-5" class="sub-tab-content "><p style="color: var(--text-dim);">No Sports news in the last 48 hours.</p></div><div id="subtab-intel-6" class="sub-tab-content "><p style="color: var(--text-dim);">No Tech news in the last 48 hours.</p></div><div id="subtab-intel-7" class="sub-tab-content ">
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #EC489922; color: #EC4899;">AI</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <a href="https://techcrunch.com/2026/04/10/anthropic-temporarily-banned-openclaws-creator-from-accessing-claude/" target="_blank" class="card-title-link">Anthropic temporarily banned OpenClaw’s creator from accessing Claude</a>
+            <div class="card-summary">This ban took place after Claude&#x27;s pricing changed for OpenClaw users last week.</div>
+        </div>
+
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #EC489922; color: #EC4899;">AI</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <a href="https://techcrunch.com/2026/04/11/sam-altman-responds-to-incendiary-new-yorker-article-after-attack-on-his-home/" target="_blank" class="card-title-link">Sam Altman responds to ‘incendiary’ New Yorker article after attack on his home</a>
+            <div class="card-summary">The OpenAI CEO&#x27;s new blog post responds to both an apparent attack on his home and an in-depth New Yorker profile raising questions about his trustworthine</div>
+        </div>
+</div><div id="subtab-intel-8" class="sub-tab-content ">
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #D4AF3722; color: #D4AF37;">Finance</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <a href="https://www.bloomberg.com/news/videos/2026-04-10/credit-markets-are-resilient-bofa-s-khonda-video" target="_blank" class="card-title-link">Credit Markets Are Resilient: BofA&#x27;s Khonda</a>
+            <div class="card-summary">Neha Khoda, head of credit strategy at BofA Securities, joins Katie Greifeld on &quot;Bloomberg Real Yield.&quot; A measure of perceived risk in US corporate cr...</div>
+        </div>
+
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #D4AF3722; color: #D4AF37;">Finance</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <a href="https://www.bloomberg.com/news/videos/2026-04-10/bonds-fall-as-inflation-data-erode-fed-rate-cut-wager-video" target="_blank" class="card-title-link">Treasuries Fall as Inflation Data Erode Fed Rate-Cut Wager</a>
+            <div class="card-summary">Treasuries fell as quickening inflation stemming from the US war on Iran &amp;mdash; and the prospect of escalation &amp;mdash; eroded wagers that the Federal R...</div>
+        </div>
+
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #D4AF3722; color: #D4AF37;">Finance</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <a href="https://www.bloomberg.com/news/articles/2026-04-10/senators-push-cftc-to-probe-oil-trading-before-trump-iran-news" target="_blank" class="card-title-link">Senators Push CFTC to Probe Oil Trading Before Trump Iran News</a>
+            <div class="card-summary">Two Democratic US Senators pressed the federal derivatives regulator to investigate suspicious oil futures trading in the lead up to President Donald Trump maki...</div>
+        </div>
+</div><div id="subtab-intel-9" class="sub-tab-content ">
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #3B82F622; color: #3B82F6;">NZ</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <a href="https://www.interest.co.nz/investing/137939/primer-outlines-gold-market%E2%80%99s-size-structure-and-essential-characteristics" target="_blank" class="card-title-link">Gold market primer: Market size and structure</a>
+            <div class="card-summary">This primer outlines the gold market’s size, structure, and essential characteristics, providing a foundation for understanding gold’s ongoing relevance in the ...</div>
+        </div>
+
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #3B82F622; color: #3B82F6;">NZ</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <a href="https://www.interest.co.nz/rural-news/137944/angus-kebbells-second-report-irish-investigation-brazilian-beef-industry-one" target="_blank" class="card-title-link">Why antibiotics matter far beyond the farm gate</a>
+            <div class="card-summary">Angus Kebbell&#x27;s second report of the Irish investigation into the Brazilian beef industry, one of the largest livestock industries in the world and one whe...</div>
+        </div>
+
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #3B82F622; color: #3B82F6;">NZ</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <a href="https://www.interest.co.nz/public-policy/137943/keyu-jin-assesses-chinas-15th-five-year-plan-first-place-higher-domestic" target="_blank" class="card-title-link">Can China grow from within?</a>
+            <div class="card-summary">Keyu Jin assesses China&#x27;s 15th Five-Year Plan, the first to place higher domestic consumption at the top of their agenda</div>
+        </div>
+
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #3B82F622; color: #3B82F6;">NZ</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <a href="https://www.interest.co.nz/personal-finance/137928/australias-surcharge-ban-will-make-paying-simpler-%E2%80%93-not-necessarily%C2%A0cheaper" target="_blank" class="card-title-link">How costs could shift, rather than fall, when Australia&#x27;s surcharge ban is implemented</a>
+            <div class="card-summary">Australia&#x27;s surcharge ban will make paying simpler – but not necessarily cheaper, Vibhu Arya and Wen Helena Li say</div>
+        </div>
+</div><div id="subtab-intel-10" class="sub-tab-content ">
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #EF444422; color: #EF4444;">Regulatory</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">23h ago</span>
+            </div>
+            <a href="https://www.reddit.com/r/JapanFinance/comments/1shvsgu/building_a_contentbased_secondary_income_as_a/" target="_blank" class="card-title-link">Building a content-based secondary income as a side project while in Japan — 2-year experience</a>
+            <div class="card-summary">!-- SC_OFF --div class=&quot;md&quot;pSharing a 2-year experience building a content-based secondary income for anyone in Japan looking to build additional inco...</div>
+        </div>
+
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #EF444422; color: #EF4444;">Regulatory</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">18h ago</span>
+            </div>
+            <a href="https://www.reddit.com/r/JapanFinance/comments/1si3428/23m_job_offer_but_full_time_office_12m_full/" target="_blank" class="card-title-link">23M job offer but full time office. 12M full remote ATM. Worth it?</a>
+            <div class="card-summary">!-- SC_OFF --div class=&quot;md&quot;pMade a similar post over a year ago but was 10M to 14M back then. Decided to stay and eventually got a bump up to 12M, sti...</div>
+        </div>
+
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #EF444422; color: #EF4444;">Regulatory</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">15h ago</span>
+            </div>
+            <a href="https://www.reddit.com/r/JapanFinance/comments/1si80qy/loan_as_定住者/" target="_blank" class="card-title-link">Loan as 定住者？</a>
+            <div class="card-summary">!-- SC_OFF --div class=&quot;md&quot;pHi everyone I always seen post about people getting loan with PR or just working Visa. I am a long term resident holder, w...</div>
+        </div>
+
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #EF444422; color: #EF4444;">Regulatory</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">9h ago</span>
+            </div>
+            <a href="https://www.reddit.com/r/JapanFinance/comments/1sidjm7/best_etfs_for_a_japanese_expat_using_interactive/" target="_blank" class="card-title-link">Best ETFs for a Japanese expat using Interactive Brokers before returning to Japan and starting NISA?</a>
+            <div class="card-summary">!-- SC_OFF --div class=&quot;md&quot;pI’m a Japanese living Thailand , and I’m completely new to investing./p pI’m planning to start long-term investing with mo...</div>
+        </div>
+</div><div id="subtab-intel-11" class="sub-tab-content ">
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #1DA1F222; color: #1DA1F2;">X/Twitter</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <div class="card-title">No Title</div>
+            <div class="card-summary"></div>
+        </div>
+</div></div>
+    <script>
+    function switchSubTab(parentTab, subIndex) {
+        // Hide all sub‑tab contents for this parent tab
+        const subContents = document.querySelectorAll(`#tab-${parentTab} .sub-tab-content`);
+        subContents.forEach(el => el.classList.remove('active'));
+        
+        // Show selected sub‑tab content
+        const selected = document.getElementById(`subtab-${parentTab}-${subIndex}`);
+        if (selected) selected.classList.add('active');
+        
+        // Update sub‑tab button styles
+        const subButtons = document.querySelectorAll(`#tab-${parentTab} .sub-tab`);
+        subButtons.forEach(btn => btn.classList.remove('active'));
+        const selectedBtn = document.getElementById(`btn-subtab-${parentTab}-${subIndex}`);
+        if (selectedBtn) selectedBtn.classList.add('active');
     }
-    updateTimestamp(); setInterval(updateTimestamp, 60000);
-</script>
+    </script>
+    
+                <div class="news-card">
+                    <div class="news-header">
+                        <span class="news-source">SYSTEM</span>
+                        <span class="news-time">Just now</span>
+                    </div>
+                    <div class="news-title">Loading real-time intelligence...</div>
+                    <div class="news-summary">The dashboard is fetching the latest RSS feeds from SaaS, Japan, NZ, Finance, and AI sources. This placeholder will be replaced with real data.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB 2: MARKETS -->
+        <div id="tab-markets" class="tab-content">
+            <div class="markets-grid">
+                <!-- Instrument News Section -->
+                <div class="market-section">
+                    <div class="section-title">Instrument News</div>
+                    <div class="tickers-container" id="trading-signals-container">
+                        <div class="card" style="border-left-color: #D4AF37; margin-bottom: 20px; background: linear-gradient(135deg, rgba(212, 175, 55, 0.05) 0%, transparent 100%);">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div>
+                <span style="background: #D4AF3722; color: #D4AF37; font-weight: 600; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem;">GOLD & MACRO</span>
+                <div style="font-size: 1.2rem; font-weight: 600; margin-top: 4px;">XAU/USD: 4761.90 <span style="color: #6B7280; font-size: 0.9rem;">(+0.00%)</span></div>
+            </div>
+            <div style="font-size: 1rem; color: #10B981; font-weight: 600;">BULLISH</div>
+        </div>
+        <div style="margin-top: 8px; font-size: 0.85rem; color: var(--text-dim);">
+            📅 2026-04-12 01:42 JST | 🏛️ DXY: 98.65 | 📈 US10Y: 4.32% | 💴 USD/JPY: 159.24
+        </div>
+        <div style="margin-top: 12px; font-size: 0.9rem; line-height: 1.4;">
+            <strong>Key Levels:</strong> Pivot 4765.93 | R1 4786.97 | S1 4740.87
+        </div>
+        <div style="margin-top: 8px; font-size: 0.9rem; line-height: 1.4;">
+            <strong>Narrative:</strong> Weak USD tailwind; yields neutral; JPY weakness; Chinese gold demand moderate; bullish bias.
+        </div>
+    </div>
+        <div class="card" style="border-left-color: #D4AF37; margin-bottom: 20px; background: linear-gradient(135deg, rgba(212, 175, 55, 0.05) 0%, transparent 100%);">
+            <div class="signal-header">
+                <div>
+                    <span class="tag" style="background: #D4AF3722; color: #D4AF37; font-weight: 600;">TRADER'S ROUNDUP</span>
+                    <div class="card-title">Trader's Roundup - 2026-04-10</div>
+                </div>
+                <div class="signal-value" style="color: #D4AF37;">8</div>
+            </div>
+            <div style="margin-top: 8px; font-size: 0.85rem; color: var(--text-dim);">
+                📅 2026-04-10 | 📊 8 instruments covered
+            </div>
+        
+                <div style="margin-top: 16px;">
+                    <div style="font-weight: 600; color: #D4AF37; font-size: 14px; margin-bottom: 4px;">MARKET OVERVIEW</div>
+                    <div class="card-summary" style="font-size: 13px; line-height: 1.5;">The market mood is cautiously defensive, with a clear focus on geopolitical risk in the Middle East and its implications for energy and safe-haven assets. While there are glimmers of optimism from central bank commentary, the dominant narrative is one of supply chain disruption and inflationary pres...</div>
+                </div>
+                <div style="margin-top: 16px;">
+                    <div style="font-weight: 600; color: #D4AF37; font-size: 14px; margin-bottom: 4px;">KEY EVENTS & CATALYSTS</div>
+                    <div class="card-summary" style="font-size: 13px; line-height: 1.5;">1. Hormuz Strait Disruption: The US oil industry warning of a $2.5mn per shipment toll and reports of zero tanker traffic post-ceasefire are critical for crude oil and global inflation expectations.<br>2. RBNZ&#x27;s Hawkish Stance: The RBNZ&#x27;s commitment to &quot;act decisively&quot; if core inflation picks up provid...</div>
+                </div>
+                <div style="margin-top: 16px;">
+                    <div style="font-weight: 600; color: #D4AF37; font-size: 14px; margin-bottom: 4px;">VOLATILITY EXPECTATIONS</div>
+                    <div class="card-summary" style="font-size: 13px; line-height: 1.5;">*   Higher Volatility: Crude Oil (directly impacted by Hormuz news), XAUUSD (Gold will see volatility from both safe-haven flows and oil-driven inflation fears), and JPY crosses (GBP/JPY, EUR/JPY) due to the risk-off/risk-on swings.<br>*   Lower Volatility: US30 and NAS100 may see contained, range-boun...</div>
+                </div>
+                <div style="margin-top: 16px;">
+                    <div style="font-weight: 600; color: #D4AF37; font-size: 14px; margin-bottom: 4px;">WHAT TO WATCH</div>
+                    <div class="card-summary" style="font-size: 13px; line-height: 1.5;">*   XAUUSD (Gold): Monitor for breaks above recent resistance on any escalation headlines. The oil-driven inflation narrative is a secondary tailwind.<br>*   Crude Oil: Price action around the $90 level (Brent) is key. Any confirmation of prolonged Hormuz disruption will spike prices.<br>*   NZD/JPY: This...</div>
+                </div>
+                <div style="margin-top: 16px;">
+                    <div style="font-weight: 600; color: #D4AF37; font-size: 14px; margin-bottom: 4px;">WHAT TO AVOID</div>
+                    <div class="card-summary" style="font-size: 13px; line-height: 1.5;">*   Low-Conviction Tech Longs: Avoid aggressive long positions in NAS100. The index is facing headwinds from higher energy costs and risk-off flows, lacking a clear bullish catalyst.<br>*   GBP/JPY Breakout Trades: While volatile, the pair is being pulled by conflicting forces (global risk sentiment vs...</div>
+                </div>
+                <div style="margin-top: 16px;">
+                    <div style="font-weight: 600; color: #D4AF37; font-size: 14px; margin-bottom: 4px;">SENTIMENT INDICATORS</div>
+                    <div class="card-summary" style="font-size: 13px; line-height: 1.5;">Reddit&#x27;s overall &quot;Bullish&quot; reading is misleading and should be ignored. The relevant, market-specific sentiment is deeply negative, dominated by the highly bearish (-0.98) reaction to the Iran-Saudi pipeline story. This aligns with professional market concerns and confirms a risk-averse, defensive b...</div>
+                </div>
+        </div>
+        <div class="card" style="border-left-color: #0A84FF; margin-bottom: 10px; background: rgba(10, 132, 255, 0.05);">
+            <div class="signal-header">
+                <div>
+                    <span class="tag" style="background: #0A84FF22; color: #0A84FF; font-weight: 600;">INSTRUMENT NEWS</span>
+                    <div class="card-title">Latest Articles by Trading Pair</div>
+                </div>
+                <div class="signal-value" style="color: #0A84FF;">4</div>
+            </div>
+        </div>
+        
+        <div class="card" style="border-left-color: #0A84FF; margin-bottom: 20px;">
+            <div class="signal-header">
+                <div>
+                    <span class="tag" style="background: #0A84FF22; color: #0A84FF;">XAUUSD (Gold)</span>
+                    <div class="card-title">Latest News & Analysis</div>
+                </div>
+                <div class="signal-value" style="color: #0A84FF;">3</div>
+            </div>
+        
+            <div style="margin-top: 12px; padding-left: 12px; border-left: 2px solid rgba(10, 132, 255, 0.3);">
+                <a href="https://www.bloomberg.com/news/videos/2026-04-10/bonds-fall-as-inflation-data-erode-fed-rate-cut-wager-video" target="_blank" class="card-title-link" style="font-size: 14px;">Treasuries Fall as Inflation Data Erode Fed Rate-Cut Wager</a>
+                <div class="card-summary" style="font-size: 13px; margin-top: 4px;">Treasuries fell as quickening inflation stemming from the US war on Iran &amp;mdash; and the prospect of escalation &amp...</div>
+                <div style="font-size: 11px; color: var(--text-dim); margin-top: 4px;">Recently</div>
+            </div>
+            <div style="margin-top: 12px; padding-left: 12px; border-left: 2px solid rgba(10, 132, 255, 0.3);">
+                <a href="https://www.bloomberg.com/news/articles/2026-04-10/senators-push-cftc-to-probe-oil-trading-before-trump-iran-news" target="_blank" class="card-title-link" style="font-size: 14px;">Senators Push CFTC to Probe Oil Trading Before Trump Iran News</a>
+                <div class="card-summary" style="font-size: 13px; margin-top: 4px;">Two Democratic US Senators pressed the federal derivatives regulator to investigate suspicious oil futures trading in th...</div>
+                <div style="font-size: 11px; color: var(--text-dim); margin-top: 4px;">Recently</div>
+            </div>
+            <div style="margin-top: 12px; padding-left: 12px; border-left: 2px solid rgba(10, 132, 255, 0.3);">
+                <a href="https://www.bloomberg.com/news/articles/2026-04-10/goldman-traders-see-record-fast-money-heading-into-us-stocks" target="_blank" class="card-title-link" style="font-size: 14px;">Goldman Traders See Record Fast-Money Heading Into US Stocks</a>
+                <div class="card-summary" style="font-size: 13px; margin-top: 4px;">For equity bulls searching for the next catalyst to drive the market higher, Goldman Sachs Group Inc. traders have a mes...</div>
+                <div style="font-size: 11px; color: var(--text-dim); margin-top: 4px;">Recently</div>
+            </div></div>
+
+        <div class="card" style="border-left-color: #0A84FF; margin-bottom: 20px;">
+            <div class="signal-header">
+                <div>
+                    <span class="tag" style="background: #0A84FF22; color: #0A84FF;">NAS100 (Tech)</span>
+                    <div class="card-title">Latest News & Analysis</div>
+                </div>
+                <div class="signal-value" style="color: #0A84FF;">3</div>
+            </div>
+        
+            <div style="margin-top: 12px; padding-left: 12px; border-left: 2px solid rgba(10, 132, 255, 0.3);">
+                <a href="https://www.bloomberg.com/news/videos/2026-04-10/credit-markets-are-resilient-bofa-s-khonda-video" target="_blank" class="card-title-link" style="font-size: 14px;">Credit Markets Are Resilient: BofA&#x27;s Khonda</a>
+                <div class="card-summary" style="font-size: 13px; margin-top: 4px;">Neha Khoda, head of credit strategy at BofA Securities, joins Katie Greifeld on &quot;Bloomberg Real Yield.&quot; A meas...</div>
+                <div style="font-size: 11px; color: var(--text-dim); margin-top: 4px;">Recently</div>
+            </div>
+            <div style="margin-top: 12px; padding-left: 12px; border-left: 2px solid rgba(10, 132, 255, 0.3);">
+                <a href="https://investinglive.com/news/crude-oil-futures-settle-at-9657-20260410/" target="_blank" class="card-title-link" style="font-size: 14px;">Crude oil futures settle at $96.57</a>
+                <div class="card-summary" style="font-size: 13px; margin-top: 4px;">pThe price of crude oil is settling at $96.57. That is down $-1.30 or -1.33% on the day./ppFor the week, the price is do...</div>
+                <div style="font-size: 11px; color: var(--text-dim); margin-top: 4px;">Recently</div>
+            </div>
+            <div style="margin-top: 12px; padding-left: 12px; border-left: 2px solid rgba(10, 132, 255, 0.3);">
+                <a href="https://www.bloomberg.com/news/videos/2026-04-10/private-credit-concerns-hit-muni-market-video" target="_blank" class="card-title-link" style="font-size: 14px;">Private-Credit Concerns Hit Muni Market</a>
+                <div class="card-summary" style="font-size: 13px; margin-top: 4px;">Bloomberg&#x27;s Erin Hudson joins Katie Greifeld on &quot;Bloomberg Real Yield.&quot; The concerns building in the priv...</div>
+                <div style="font-size: 11px; color: var(--text-dim); margin-top: 4px;">Recently</div>
+            </div></div>
+
+        <div class="card" style="border-left-color: #0A84FF; margin-bottom: 20px;">
+            <div class="signal-header">
+                <div>
+                    <span class="tag" style="background: #0A84FF22; color: #0A84FF;">US30 (Dow)</span>
+                    <div class="card-title">Latest News & Analysis</div>
+                </div>
+                <div class="signal-value" style="color: #0A84FF;">3</div>
+            </div>
+        
+            <div style="margin-top: 12px; padding-left: 12px; border-left: 2px solid rgba(10, 132, 255, 0.3);">
+                <a href="https://www.bloomberg.com/news/articles/2026-04-11/europe-energy-traders-brace-for-21-hour-day-as-volatility-surges" target="_blank" class="card-title-link" style="font-size: 14px;">Europe Energy Traders Brace for 21-Hour Day as Volatility Surges</a>
+                <div class="card-summary" style="font-size: 13px; margin-top: 4px;">European gas and power markets, once a niche corner of global energy trading, are in for a major change next week: Hours...</div>
+                <div style="font-size: 11px; color: var(--text-dim); margin-top: 4px;">Recently</div>
+            </div>
+            <div style="margin-top: 12px; padding-left: 12px; border-left: 2px solid rgba(10, 132, 255, 0.3);">
+                <a href="https://www.bloomberg.com/news/videos/2026-04-11/nasa-s-artemis-ii-crew-is-back-on-earth-video" target="_blank" class="card-title-link" style="font-size: 14px;">NASA’s Artemis II Crew Is Back on Earth</a>
+                <div class="card-summary" style="font-size: 13px; margin-top: 4px;">Four astronauts splashed down in the Pacific Ocean, marking humanity’s first return from the moon in more than 50 years....</div>
+                <div style="font-size: 11px; color: var(--text-dim); margin-top: 4px;">Recently</div>
+            </div>
+            <div style="margin-top: 12px; padding-left: 12px; border-left: 2px solid rgba(10, 132, 255, 0.3);">
+                <a href="https://www.bloomberg.com/news/videos/2026-04-11/new-era-for-space-dawns-as-artemis-ii-returns-video" target="_blank" class="card-title-link" style="font-size: 14px;">New Era For Space Dawns, As Artemis II Returns</a>
+                <div class="card-summary" style="font-size: 13px; margin-top: 4px;">NASA&#x27;s Artemis crew returned to Earth, splashing down in the Pacific Ocean and capping humanity&#x27;s first return...</div>
+                <div style="font-size: 11px; color: var(--text-dim); margin-top: 4px;">Recently</div>
+            </div></div>
+
+        <div class="card" style="border-left-color: #0A84FF; margin-bottom: 20px;">
+            <div class="signal-header">
+                <div>
+                    <span class="tag" style="background: #0A84FF22; color: #0A84FF;">OIL (Crude)</span>
+                    <div class="card-title">Latest News & Analysis</div>
+                </div>
+                <div class="signal-value" style="color: #0A84FF;">3</div>
+            </div>
+        
+            <div style="margin-top: 12px; padding-left: 12px; border-left: 2px solid rgba(10, 132, 255, 0.3);">
+                <a href="https://www.bloomberg.com/news/videos/2026-04-10/mike-pyle-on-the-importance-of-trust-video" target="_blank" class="card-title-link" style="font-size: 14px;">Mike Pyle on the Importance of Trust</a>
+                <div class="card-summary" style="font-size: 13px; margin-top: 4px;">Barry speaks with Mike Pyle, Senior Managing Director, is the Deputy Head of BlackRock’s Portfolio Management Group (PMG...</div>
+                <div style="font-size: 11px; color: var(--text-dim); margin-top: 4px;">Recently</div>
+            </div>
+            <div style="margin-top: 12px; padding-left: 12px; border-left: 2px solid rgba(10, 132, 255, 0.3);">
+                <a href="https://www.bloomberg.com/news/videos/2026-04-11/assessing-volatility-iran-war-masters-in-business-video" target="_blank" class="card-title-link" style="font-size: 14px;">Assessing Asset Volatility and Iran War Threats: Masters in Business with Mike Pyle</a>
+                <div class="card-summary" style="font-size: 13px; margin-top: 4px;">Barry speaks with Mike Pyle, Senior Managing Director, is the Deputy Head of BlackRock’s Portfolio Management Group (PMG...</div>
+                <div style="font-size: 11px; color: var(--text-dim); margin-top: 4px;">Recently</div>
+            </div>
+            <div style="margin-top: 12px; padding-left: 12px; border-left: 2px solid rgba(10, 132, 255, 0.3);">
+                <a href="https://www.bloomberg.com/news/videos/2026-04-11/-oil-demand-is-about-to-spike-says-schork-video" target="_blank" class="card-title-link" style="font-size: 14px;">&quot;Oil Demand Is About To Spike... We&#x27;re Looking At A Volatile Summer&quot; Says Schork</a>
+                <div class="card-summary" style="font-size: 13px; margin-top: 4px;">Oil prices may have decreased, but with hundreds of millions of barrels having been taken off the market due to the Iran...</div>
+                <div style="font-size: 11px; color: var(--text-dim); margin-top: 4px;">Recently</div>
+            </div></div>
+
+                        <div class="ticker-widget">
+                            <div class="ticker-name">Loading instrument news...</div>
+                        </div>
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+
+        <!-- TAB 3: VENTURE -->
+        <div id="tab-venture" class="tab-content">
+            <div class="ventures-grid" id="ventures-grid">
+                
+    <div style="margin: 30px 0 20px 0; border-bottom: 2px solid var(--accent); padding-bottom: 10px;">
+        <h3 style="color: var(--accent); font-size: 1.2rem; margin: 0;">🚨 ALERT FEED</h3>
+        <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 5px;">
+            Real-time keyword matches from 10 active sectors. 
+            <span style="color: var(--text-dim); font-size: 0.85rem;">
+                Last scan: 2026-04-12 03:12:12 UTC | 169 total matches
+            </span>
+        </p>
+    </div>
+    
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 20px;">
+        <div style="background: var(--glass); border: 1px solid var(--border); border-radius: 8px; padding: 14px; text-align: center;">
+            <div style="font-size: 24px; font-weight: 800; color: var(--accent);">169</div>
+            <div style="font-size: 11px; color: var(--text-dim); text-transform: uppercase;">Total Matches</div>
+        </div>
+        <div style="background: var(--glass); border: 1px solid var(--border); border-radius: 8px; padding: 14px; text-align: center;">
+            <div style="font-size: 24px; font-weight: 800; color: var(--accent);">10</div>
+            <div style="font-size: 11px; color: var(--text-dim); text-transform: uppercase;">Active Sectors</div>
+        </div>
+        <div style="background: var(--glass); border: 1px solid var(--border); border-radius: 8px; padding: 14px; text-align: center;">
+            <div style="font-size: 24px; font-weight: 800; color: var(--accent);">40+</div>
+            <div style="font-size: 11px; color: var(--text-dim); text-transform: uppercase;">RSS Feeds</div>
+        </div>
+    </div>
+    <div style="margin-bottom: 20px;"><span style="display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; background: rgba(0,218,243,0.12); color: var(--accent); margin-right: 4px; margin-bottom: 4px;">crisis</span><span style="display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; background: rgba(0,218,243,0.12); color: var(--accent); margin-right: 4px; margin-bottom: 4px;">BOJ</span><span style="display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; background: rgba(0,218,243,0.12); color: var(--accent); margin-right: 4px; margin-bottom: 4px;">Fed</span><span style="display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; background: rgba(0,218,243,0.12); color: var(--accent); margin-right: 4px; margin-bottom: 4px;">inflation</span><span style="display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; background: rgba(0,218,243,0.12); color: var(--accent); margin-right: 4px; margin-bottom: 4px;">rate hike</span><span style="display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; background: rgba(0,218,243,0.12); color: var(--accent); margin-right: 4px; margin-bottom: 4px;">gold</span><span style="display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; background: rgba(0,218,243,0.12); color: var(--accent); margin-right: 4px; margin-bottom: 4px;">oil</span><span style="display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; background: rgba(0,218,243,0.12); color: var(--accent); margin-right: 4px; margin-bottom: 4px;">USD/JPY</span><span style="display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; background: rgba(0,218,243,0.12); color: var(--accent); margin-right: 4px; margin-bottom: 4px;">NZD/JPY</span><span style="display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; background: rgba(0,218,243,0.12); color: var(--accent); margin-right: 4px; margin-bottom: 4px;">tariff</span><span style="display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; background: rgba(0,218,243,0.12); color: var(--accent); margin-right: 4px; margin-bottom: 4px;">Ukraine</span><span style="display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; background: rgba(0,218,243,0.12); color: var(--accent); margin-right: 4px; margin-bottom: 4px;">Taiwan</span></div>
+        <div style="background: var(--glass); border: 1px solid var(--border); border-radius: 10px; padding: 16px; margin-bottom: 14px;">
+            <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;">
+                <h4 style="color: var(--text); font-size: 14px; font-weight: 700; margin: 0;">Finance</h4>
+                <span style="font-size: 11px; color: var(--text-dim);">5 alerts</span>
+            </div>
+            <div style="margin-bottom: 8px;"></div>
+        
+            <div style="padding: 8px 0; border-top: 1px solid rgba(255,255,255,0.05);">
+                <a href="https://www.bloomberg.com/news/videos/2026-04-10/bonds-fall-as-inflation-data-erode-fed-rate-cut-wager-video" target="_blank" style="color: var(--text); text-decoration: none; font-size: 13px; font-weight: 500; display: block; margin-bottom: 4px;">Treasuries Fall as Inflation Data Erode Fed Rate-Cut Wager</a>
+                <span style="font-size: 10px; color: var(--text-dim);"></span>
+            </div>
+            <div style="padding: 8px 0; border-top: 1px solid rgba(255,255,255,0.05);">
+                <a href="https://www.bloomberg.com/news/articles/2026-04-10/senators-push-cftc-to-probe-oil-trading-before-trump-iran-news" target="_blank" style="color: var(--text); text-decoration: none; font-size: 13px; font-weight: 500; display: block; margin-bottom: 4px;">Senators Push CFTC to Probe Oil Trading Before Trump Iran News</a>
+                <span style="font-size: 10px; color: var(--text-dim);"></span>
+            </div>
+            <div style="padding: 8px 0; border-top: 1px solid rgba(255,255,255,0.05);">
+                <a href="https://investinglive.com/news/crude-oil-futures-settle-at-9657-20260410/" target="_blank" style="color: var(--text); text-decoration: none; font-size: 13px; font-weight: 500; display: block; margin-bottom: 4px;">Crude oil futures settle at $96.57</a>
+                <span style="font-size: 10px; color: var(--text-dim);"></span>
+            </div></div>
+        <div style="background: var(--glass); border: 1px solid var(--border); border-radius: 10px; padding: 16px; margin-bottom: 14px;">
+            <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;">
+                <h4 style="color: var(--text); font-size: 14px; font-weight: 700; margin: 0;">Japan Business</h4>
+                <span style="font-size: 11px; color: var(--text-dim);">5 alerts</span>
+            </div>
+            <div style="margin-bottom: 8px;"></div>
+        
+            <div style="padding: 8px 0; border-top: 1px solid rgba(255,255,255,0.05);">
+                <a href="https://japantoday.com/category/sports/the-nfl-faces-increased-federal-scrutiny-as-more-games-shift-to-streaming" target="_blank" style="color: var(--text); text-decoration: none; font-size: 13px; font-weight: 500; display: block; margin-bottom: 4px;">NFL faces increased federal scrutiny as more games shift to streaming</a>
+                <span style="font-size: 10px; color: var(--text-dim);"></span>
+            </div>
+            <div style="padding: 8px 0; border-top: 1px solid rgba(255,255,255,0.05);">
+                <a href="https://japantoday.com/category/world/trump%27s-washington-arch-plan-includes-golden-winged-figure-eagles-lions-and-%27one-nation-under-god%27" target="_blank" style="color: var(--text); text-decoration: none; font-size: 13px; font-weight: 500; display: block; margin-bottom: 4px;">Trump&#x27;s Washington arch plan includes golden-winged figure, eagles, lions and &#x27;One Nation </a>
+                <span style="font-size: 10px; color: var(--text-dim);"></span>
+            </div>
+            <div style="padding: 8px 0; border-top: 1px solid rgba(255,255,255,0.05);">
+                <a href="https://japantoday.com/category/business/china%27s-car-exports-surge-as-expectations-grow-for-ev-pivot-on-iran-war-energy-shock" target="_blank" style="color: var(--text); text-decoration: none; font-size: 13px; font-weight: 500; display: block; margin-bottom: 4px;">China&#x27;s car exports surge as expectations grow for EV pivot on Iran war energy shock</a>
+                <span style="font-size: 10px; color: var(--text-dim);"></span>
+            </div></div>
+        <div style="background: var(--glass); border: 1px solid var(--border); border-radius: 10px; padding: 16px; margin-bottom: 14px;">
+            <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;">
+                <h4 style="color: var(--text); font-size: 14px; font-weight: 700; margin: 0;">NZ Business</h4>
+                <span style="font-size: 11px; color: var(--text-dim);">5 alerts</span>
+            </div>
+            <div style="margin-bottom: 8px;"></div>
+        
+            <div style="padding: 8px 0; border-top: 1px solid rgba(255,255,255,0.05);">
+                <a href="https://www.interest.co.nz/investing/137939/primer-outlines-gold-market%E2%80%99s-size-structure-and-essential-characteristics" target="_blank" style="color: var(--text); text-decoration: none; font-size: 13px; font-weight: 500; display: block; margin-bottom: 4px;">Gold market primer: Market size and structure</a>
+                <span style="font-size: 10px; color: var(--text-dim);"></span>
+            </div>
+            <div style="padding: 8px 0; border-top: 1px solid rgba(255,255,255,0.05);">
+                <a href="https://www.interest.co.nz/economy/137942/mohamed-el-erian-warns-us-despite-its-strengths-their-economy-will-not-remain" target="_blank" style="color: var(--text); text-decoration: none; font-size: 13px; font-weight: 500; display: block; margin-bottom: 4px;">America should beware of economic hubris</a>
+                <span style="font-size: 10px; color: var(--text-dim);"></span>
+            </div>
+            <div style="padding: 8px 0; border-top: 1px solid rgba(255,255,255,0.05);">
+                <a href="https://www.interest.co.nz/economy/137941/%C5%9Febnem-kalemli-%C3%B6zcan-warns-americas-current-policies-are-turning-manageable-problems" target="_blank" style="color: var(--text); text-decoration: none; font-size: 13px; font-weight: 500; display: block; margin-bottom: 4px;">Interdependence bites back</a>
+                <span style="font-size: 10px; color: var(--text-dim);"></span>
+            </div></div>
+        <div style="background: var(--glass); border: 1px solid var(--border); border-radius: 10px; padding: 16px; margin-bottom: 14px;">
+            <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;">
+                <h4 style="color: var(--text); font-size: 14px; font-weight: 700; margin: 0;">Japan Times Business</h4>
+                <span style="font-size: 11px; color: var(--text-dim);">5 alerts</span>
+            </div>
+            <div style="margin-bottom: 8px;"></div>
+        
+            <div style="padding: 8px 0; border-top: 1px solid rgba(255,255,255,0.05);">
+                <a href="https://www.japantimes.co.jp/business/2026/04/11/tech/tesla-self-driving-software-netherlands/" target="_blank" style="color: var(--text); text-decoration: none; font-size: 13px; font-weight: 500; display: block; margin-bottom: 4px;">Tesla&#x27;s supervised self-driving software gets Dutch okay, first in Europe</a>
+                <span style="font-size: 10px; color: var(--text-dim);"></span>
+            </div>
+            <div style="padding: 8px 0; border-top: 1px solid rgba(255,255,255,0.05);">
+                <a href="https://www.japantimes.co.jp/business/2026/04/11/economy/confusion-naphtha-supply-industries-households/" target="_blank" style="color: var(--text); text-decoration: none; font-size: 13px; font-weight: 500; display: block; margin-bottom: 4px;">Confusion over naphtha supply hits industries and households</a>
+                <span style="font-size: 10px; color: var(--text-dim);"></span>
+            </div>
+            <div style="padding: 8px 0; border-top: 1px solid rgba(255,255,255,0.05);">
+                <a href="https://www.japantimes.co.jp/business/2026/04/11/economy/fuel-shortages-iran-asia-rice/" target="_blank" style="color: var(--text); text-decoration: none; font-size: 13px; font-weight: 500; display: block; margin-bottom: 4px;">Fuel shortages from Iran war threaten Asia’s biggest food staple</a>
+                <span style="font-size: 10px; color: var(--text-dim);"></span>
+            </div></div>
+        <div style="background: var(--glass); border: 1px solid var(--border); border-radius: 10px; padding: 16px; margin-bottom: 14px;">
+            <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;">
+                <h4 style="color: var(--text); font-size: 14px; font-weight: 700; margin: 0;">Japan Regulatory</h4>
+                <span style="font-size: 11px; color: var(--text-dim);">3 alerts</span>
+            </div>
+            <div style="margin-bottom: 8px;"></div>
+        
+            <div style="padding: 8px 0; border-top: 1px solid rgba(255,255,255,0.05);">
+                <a href="https://www.reddit.com/r/JapanFinance/comments/1shvsgu/building_a_contentbased_secondary_income_as_a/" target="_blank" style="color: var(--text); text-decoration: none; font-size: 13px; font-weight: 500; display: block; margin-bottom: 4px;">Building a content-based secondary income as a side project while in Japan — 2-year experi</a>
+                <span style="font-size: 10px; color: var(--text-dim);"></span>
+            </div>
+            <div style="padding: 8px 0; border-top: 1px solid rgba(255,255,255,0.05);">
+                <a href="https://www.reddit.com/r/JapanFinance/comments/1si3428/23m_job_offer_but_full_time_office_12m_full/" target="_blank" style="color: var(--text); text-decoration: none; font-size: 13px; font-weight: 500; display: block; margin-bottom: 4px;">23M job offer but full time office. 12M full remote ATM. Worth it?</a>
+                <span style="font-size: 10px; color: var(--text-dim);"></span>
+            </div>
+            <div style="padding: 8px 0; border-top: 1px solid rgba(255,255,255,0.05);">
+                <a href="https://www.reddit.com/r/JapanFinance/comments/1sictv6/trying_to_get_a_mortgage_in_slightly_unusual/" target="_blank" style="color: var(--text); text-decoration: none; font-size: 13px; font-weight: 500; display: block; margin-bottom: 4px;">Trying to get a mortgage in slightly unusual situation</a>
+                <span style="font-size: 10px; color: var(--text-dim);"></span>
+            </div></div>
+        <div style="background: var(--glass); border: 1px solid var(--border); border-radius: 10px; padding: 16px; margin-bottom: 14px;">
+            <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;">
+                <h4 style="color: var(--text); font-size: 14px; font-weight: 700; margin: 0;">Japan Startups</h4>
+                <span style="font-size: 11px; color: var(--text-dim);">5 alerts</span>
+            </div>
+            <div style="margin-bottom: 8px;"></div>
+        
+            <div style="padding: 8px 0; border-top: 1px solid rgba(255,255,255,0.05);">
+                <a href="https://www.techinasia.com/visual-story/japan-fintech-map" target="_blank" style="color: var(--text); text-decoration: none; font-size: 13px; font-weight: 500; display: block; margin-bottom: 4px;">Mapping Japan’s notable fintech startups</a>
+                <span style="font-size: 10px; color: var(--text-dim);"></span>
+            </div>
+            <div style="padding: 8px 0; border-top: 1px solid rgba(255,255,255,0.05);">
+                <a href="https://www.techinasia.com/visual-story/india-education-landscape-map" target="_blank" style="color: var(--text); text-decoration: none; font-size: 13px; font-weight: 500; display: block; margin-bottom: 4px;">Mapping India’s key education startups</a>
+                <span style="font-size: 10px; color: var(--text-dim);"></span>
+            </div>
+            <div style="padding: 8px 0; border-top: 1px solid rgba(255,255,255,0.05);">
+                <a href="https://www.techinasia.com/top-funded-startups-tech-companies-india" target="_blank" style="color: var(--text); text-decoration: none; font-size: 13px; font-weight: 500; display: block; margin-bottom: 4px;">Meet the 50 top-funded startups and tech companies in India</a>
+                <span style="font-size: 10px; color: var(--text-dim);"></span>
+            </div></div>
+        <div style="background: var(--glass); border: 1px solid var(--border); border-radius: 10px; padding: 16px; margin-bottom: 14px;">
+            <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;">
+                <h4 style="color: var(--text); font-size: 14px; font-weight: 700; margin: 0;">Australia Business</h4>
+                <span style="font-size: 11px; color: var(--text-dim);">5 alerts</span>
+            </div>
+            <div style="margin-bottom: 8px;"></div>
+        
+            <div style="padding: 8px 0; border-top: 1px solid rgba(255,255,255,0.05);">
+                <a href="https://www.abc.net.au/news/2026-04-11/australia-fuel-supply-strait-hormuz-crisis/106533982" target="_blank" style="color: var(--text); text-decoration: none; font-size: 13px; font-weight: 500; display: block; margin-bottom: 4px;">&#x27;It&#x27;s a cutthroat business&#x27;: Where Australia is sourcing oil right now</a>
+                <span style="font-size: 10px; color: var(--text-dim);"></span>
+            </div>
+            <div style="padding: 8px 0; border-top: 1px solid rgba(255,255,255,0.05);">
+                <a href="https://www.abc.net.au/news/2026-04-11/iran-war-reshaping-us-politics-trump-netanyahu/106552156" target="_blank" style="color: var(--text); text-decoration: none; font-size: 13px; font-weight: 500; display: block; margin-bottom: 4px;">&#x27;Sounds good to me&#x27;: How Trump was sold war in Iran</a>
+                <span style="font-size: 10px; color: var(--text-dim);"></span>
+            </div>
+            <div style="padding: 8px 0; border-top: 1px solid rgba(255,255,255,0.05);">
+                <a href="https://www.abc.net.au/news/2026-04-11/how-serious-is-iranian-sea-mine-threat-strait-of-hormuz/106550020" target="_blank" style="color: var(--text); text-decoration: none; font-size: 13px; font-weight: 500; display: block; margin-bottom: 4px;">How serious is the Iranian sea mine threat in the Strait of Hormuz?</a>
+                <span style="font-size: 10px; color: var(--text-dim);"></span>
+            </div></div>
+        <div style="background: var(--glass); border: 1px solid var(--border); border-radius: 10px; padding: 16px; margin-bottom: 14px;">
+            <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;">
+                <h4 style="color: var(--text); font-size: 14px; font-weight: 700; margin: 0;">SaaS</h4>
+                <span style="font-size: 11px; color: var(--text-dim);">1 alerts</span>
+            </div>
+            <div style="margin-bottom: 8px;"></div>
+        
+            <div style="padding: 8px 0; border-top: 1px solid rgba(255,255,255,0.05);">
+                <a href="https://www.saastr.com/the-leading-public-software-companies-are-now-down-50-in-the-last-6-months/" target="_blank" style="color: var(--text); text-decoration: none; font-size: 13px; font-weight: 500; display: block; margin-bottom: 4px;">The Leading Public Software Companies Are Now Down -50% in the Last 6 Months</a>
+                <span style="font-size: 10px; color: var(--text-dim);"></span>
+            </div></div>
+    <div style="margin: 40px 0 20px 0; border-bottom: 2px solid #6366F1; padding-bottom: 10px;">
+        <h3 style="color: #6366F1; font-size: 1.2rem; margin: 0;">📡 OPPORTUNITY RADAR</h3>
+        <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 5px;">
+            Emerging trends and strategic signals from RSS feeds.
+        </p>
+    </div>
+    
+                    <div style="background: rgba(99,102,241,0.08); border: 1px solid rgba(99,102,241,0.2); border-radius: 8px; padding: 12px; margin-bottom: 10px;">
+                        <p style="color: var(--text); font-size: 13px; margin: 0; line-height: 1.5;">**AI dominance** — 188 keyword hits this week. No sector话题</p>
+                    </div>
+                    <div style="background: rgba(99,102,241,0.08); border: 1px solid rgba(99,102,241,0.2); border-radius: 8px; padding: 12px; margin-bottom: 10px;">
+                        <p style="color: var(--text); font-size: 13px; margin: 0; line-height: 1.5;">**US-Iran conflict + Oil** — 39 oil articles, 15 US-Iran mentions. Hormuz strait tensions driving energy volatility.</p>
+                    </div>
+                    <div style="background: rgba(99,102,241,0.08); border: 1px solid rgba(99,102,241,0.2); border-radius: 8px; padding: 12px; margin-bottom: 10px;">
+                        <p style="color: var(--text); font-size: 13px; margin: 0; line-height: 1.5;">**Startup funding active** — 38 startup + 15 funding hits. VC market still open for B2B/infra.</p>
+                    </div>
+                    <div style="background: rgba(99,102,241,0.08); border: 1px solid rgba(99,102,241,0.2); border-radius: 8px; padding: 12px; margin-bottom: 10px;">
+                        <p style="color: var(--text); font-size: 13px; margin: 0; line-height: 1.5;">**Inflation + Trump** — 28 inflation + 22 Trump mentions. Tariff uncertainty + rate policy ambiguity.</p>
+                    </div>
+                    <div style="background: rgba(99,102,241,0.08); border: 1px solid rgba(99,102,241,0.2); border-radius: 8px; padding: 12px; margin-bottom: 10px;">
+                        <p style="color: var(--text); font-size: 13px; margin: 0; line-height: 1.5;">**Gold as hedge** — 16 gold mentions. Risk-off positioning visible.</p>
+                    </div>
+                    <div style="background: rgba(99,102,241,0.08); border: 1px solid rgba(99,102,241,0.2); border-radius: 8px; padding: 12px; margin-bottom: 10px;">
+                        <p style="color: var(--text); font-size: 13px; margin: 0; line-height: 1.5;">**Japan market** — 23 Japan hits. Local biz + regulatory coverage steady.</p>
+                    </div>
+                    <div style="background: rgba(99,102,241,0.08); border: 1px solid rgba(99,102,241,0.2); border-radius: 8px; padding: 12px; margin-bottom: 10px;">
+                        <p style="color: var(--text); font-size: 13px; margin: 0; line-height: 1.5;">**NZ Property** — 11 Auckland hits. Market monitoring active.</p>
+                    </div>
+                    <div style="background: rgba(99,102,241,0.08); border: 1px solid rgba(99,102,241,0.2); border-radius: 8px; padding: 12px; margin-bottom: 10px;">
+                        <p style="color: var(--text); font-size: 13px; margin: 0; line-height: 1.5;">**China** — 21 China mentions. Geopolitical risk factor.</p>
+                    </div>
+                    <div style="background: rgba(99,102,241,0.08); border: 1px solid rgba(99,102,241,0.2); border-radius: 8px; padding: 12px; margin-bottom: 10px;">
+                        <p style="color: var(--text); font-size: 13px; margin: 0; line-height: 1.5;">**Anthropic** — 4 mentions. AI infrastructure play.</p>
+                    </div>
+                    <div style="background: rgba(99,102,241,0.08); border: 1px solid rgba(99,102,241,0.2); border-radius: 8px; padding: 12px; margin-bottom: 10px;">
+                        <p style="color: var(--text); font-size: 13px; margin: 0; line-height: 1.5;">**Volatility** — 4 volatility mentions (low reading — weekend filter may suppress).</p>
+                    </div>
+                <!-- Venture ideas will be injected here -->
+                <div class="venture-card">
+                    <div class="venture-score">92</div>
+                    <div class="venture-title">Athlete Finance SaaS</div>
+                    <div class="venture-summary">Automated financial management for professional athletes with contract-based income, sponsorship tracking, and Japanese tax optimization.</div>
+                    <div class="venture-tags">
+                        <span class="venture-tag">SaaS</span>
+                        <span class="venture-tag">FinTech</span>
+                        <span class="venture-tag">Japan</span>
+                        <span class="venture-tag">Athletes</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+
+    <script>
+        // ===== TAB FUNCTIONALITY =====
+        function switchTab(tabId) {
+            // Hide all tab contents
+            const tabContents = document.querySelectorAll('.tab-content');
+            tabContents.forEach(tab => tab.classList.remove('active'));
+            
+            // Show selected tab content
+            const selectedTab = document.getElementById('tab-' + tabId);
+            if (selectedTab) {
+                selectedTab.classList.add('active');
+            }
+            
+            // Update tab buttons
+            const tabButtons = document.querySelectorAll('.tab');
+            tabButtons.forEach(btn => btn.classList.remove('active'));
+            
+            const selectedButton = document.getElementById('btn-tab-' + tabId);
+            if (selectedButton) {
+                selectedButton.classList.add('active');
+            }
+            
+            // Update URL hash for bookmarking
+            window.location.hash = tabId;
+            
+            // Show notification
+            showNotification(`Switched to ${tabId.toUpperCase()} tab`, 'success');
+        }
+
+        // ===== DATA REFRESH FUNCTION =====
+        function refreshData() {
+            const refreshBtn = document.getElementById('refresh-btn');
+            refreshBtn.innerHTML = '<span class="refresh-icon">⏳</span> Reloading...';
+            window.location.reload();
+        }
+
+        // ===== NOTIFICATION SYSTEM =====
+        function showNotification(message, type = 'info') {
+            const toast = document.createElement('div');
+            toast.className = 'notification-toast';
+            toast.textContent = message;
+            
+            if (type === 'success') {
+                toast.style.borderColor = 'var(--accent-mint)';
+            } else if (type === 'error') {
+                toast.style.borderColor = '#EF4444';
+            }
+            
+            document.body.appendChild(toast);
+            
+            // Trigger animation
+            setTimeout(() => toast.classList.add('show'), 10);
+            
+            // Remove after 3 seconds
+            setTimeout(() => {
+                toast.classList.remove('show');
+                setTimeout(() => toast.remove(), 300);
+            }, 3000);
+        }
+
+        // ===== SEARCH FUNCTIONALITY =====
+        document.getElementById('search-input').addEventListener('input', function(e) {
+            const searchTerm = e.target.value.toLowerCase();
+            if (searchTerm.length < 2) return;
+            
+            // Search across all tab contents
+            const cards = document.querySelectorAll('.news-card, .market-section, .venture-card');
+            cards.forEach(card => {
+                const text = card.textContent.toLowerCase();
+                card.style.display = text.includes(searchTerm) ? 'block' : 'none';
+            });
+            
+            if (searchTerm) {
+                showNotification(`Found ${document.querySelectorAll('[style="display: block;"]').length} results for "${searchTerm}"`, 'info');
+            }
+        });
+
+
+        // ===== INITIALIZATION =====
+        document.addEventListener('DOMContentLoaded', function() {
+            // Check URL hash for tab
+            const hash = window.location.hash.substring(1);
+            if (hash && ['intel', 'markets', 'venture'].includes(hash)) {
+                switchTab(hash);
+            } else {
+                // Default to intel tab
+                switchTab('intel');
+            }
+        });
+    </script>
 </body>
 </html>
