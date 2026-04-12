@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baseline Program — 100 Days to an Athlete Body | Athlete Forge</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0a0a0f;
+      --surface: #111118;
+      --surface2: #1a1a24;
+      --border: #2a2a3a;
+      --red: #e94560;
+      --red-dark: #c73652;
+      --text: #f0f0f5;
+      --text-muted: #8888a0;
+      --text-dim: #55556a;
+      --green: #4ade80;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', 'Noto Sans JP', sans-serif;
+      line-height: 1.7;
+      font-size: 17px;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ── NAV ── */
+    nav {
+      padding: 20px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    nav .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-weight: 900;
+      font-size: 20px;
+      letter-spacing: -0.5px;
+    }
+    .logo span { color: var(--red); }
+    .nav-cta {
+      background: var(--red);
+      color: #fff;
+      padding: 8px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+      transition: background 0.2s;
+    }
+    .nav-cta:hover { background: var(--red-dark); }
+
+    /* ── HERO ── */
+    .hero {
+      padding: 80px 0 60px;
+      text-align: center;
+    }
+    .hero-tag {
+      display: inline-block;
+      background: rgba(233,69,96,0.12);
+      color: var(--red);
+      border: 1px solid rgba(233,69,96,0.3);
+      padding: 5px 14px;
+      border-radius: 100px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      margin-bottom: 24px;
+      text-transform: uppercase;
+    }
+    .hero h1 {
+      font-size: clamp(36px, 6vw, 56px);
+      font-weight: 900;
+      line-height: 1.1;
+      letter-spacing: -1.5px;
+      margin-bottom: 20px;
+    }
+    .hero h1 .red { color: var(--red); }
+    .hero-sub {
+      font-size: 20px;
+      color: var(--text-muted);
+      max-width: 560px;
+      margin: 0 auto 40px;
+      font-weight: 400;
+    }
+    .hero-proof {
+      display: flex;
+      gap: 32px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+    .proof-item {
+      text-align: center;
+    }
+    .proof-number {
+      font-size: 36px;
+      font-weight: 900;
+      color: var(--red);
+      line-height: 1;
+    }
+    .proof-label {
+      font-size: 12px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-top: 4px;
+    }
+    .hero-btn {
+      display: inline-block;
+      background: var(--red);
+      color: #fff;
+      padding: 16px 40px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 18px;
+      text-decoration: none;
+      transition: all 0.2s;
+      box-shadow: 0 0 40px rgba(233,69,96,0.3);
+    }
+    .hero-btn:hover {
+      background: var(--red-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 0 60px rgba(233,69,96,0.4);
+    }
+    .hero-note {
+      margin-top: 16px;
+      font-size: 13px;
+      color: var(--text-dim);
+    }
+
+    /* ── DIVIDER ── */
+    .divider {
+      height: 1px;
+      background: var(--border);
+      margin: 60px 0;
+    }
+
+    /* ── SECTION ── */
+    .section { padding: 20px 0 40px; }
+    .section-label {
+      text-transform: uppercase;
+      font-size: 12px;
+      letter-spacing: 1.5px;
+      color: var(--red);
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    h2 {
+      font-size: clamp(26px, 4vw, 36px);
+      font-weight: 900;
+      letter-spacing: -0.8px;
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+    h2 .red { color: var(--red); }
+    .lead {
+      font-size: 19px;
+      color: var(--text-muted);
+      margin-bottom: 32px;
+      max-width: 640px;
+    }
+
+    /* ── PROBLEM ── */
+    .problem-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+    @media (max-width: 560px) {
+      .problem-grid { grid-template-columns: 1fr; }
+    }
+    .problem-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 20px;
+    }
+    .problem-card .icon {
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+    .problem-card h4 {
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+    .problem-card p {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* ── SOLUTION ── */
+    .solution-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--red);
+      border-radius: 10px;
+      padding: 28px 32px;
+      margin-bottom: 32px;
+    }
+    .solution-box h3 {
+      font-size: 22px;
+      font-weight: 800;
+      margin-bottom: 10px;
+      letter-spacing: -0.3px;
+    }
+    .solution-box p {
+      color: var(--text-muted);
+      font-size: 16px;
+    }
+
+    /* ── PHASES ── */
+    .phases {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-bottom: 40px;
+    }
+    .phase {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .phase-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 18px 24px;
+      cursor: pointer;
+    }
+    .phase-num {
+      background: rgba(233,69,96,0.15);
+      color: var(--red);
+      font-weight: 900;
+      font-size: 13px;
+      padding: 4px 10px;
+      border-radius: 6px;
+      flex-shrink: 0;
+    }
+    .phase-title {
+      font-weight: 700;
+      font-size: 17px;
+      flex: 1;
+    }
+    .phase-days {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .phase-body {
+      padding: 0 24px 20px;
+      border-top: 1px solid var(--border);
+      margin-top: 0;
+      padding-top: 16px;
+    }
+    .phase-body ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .phase-body li {
+      font-size: 15px;
+      color: var(--text-muted);
+      padding-left: 20px;
+      position: relative;
+    }
+    .phase-body li::before {
+      content: '›';
+      position: absolute;
+      left: 0;
+      color: var(--red);
+      font-weight: 700;
+    }
+
+    /* ── WHAT'S INCLUDED ── */
+    .includes-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-bottom: 32px;
+    }
+    @media (max-width: 560px) {
+      .includes-grid { grid-template-columns: 1fr; }
+    }
+    .include-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 18px 20px;
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+    .include-icon {
+      font-size: 24px;
+      flex-shrink: 0;
+    }
+    .include-card h4 {
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .include-card p {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* ── PRICING ── */
+    #pricing { scroll-margin-top: 80px; }
+    .pricing-card {
+      background: var(--surface);
+      border: 2px solid var(--red);
+      border-radius: 16px;
+      padding: 40px;
+      text-align: center;
+      max-width: 480px;
+      margin: 0 auto 24px;
+      position: relative;
+      overflow: hidden;
+    }
+    .pricing-badge {
+      position: absolute;
+      top: 20px;
+      right: -30px;
+      background: var(--red);
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 5px 40px;
+      transform: rotate(0deg);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .pricing-price {
+      font-size: 64px;
+      font-weight: 900;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .pricing-price .yen {
+      font-size: 28px;
+      vertical-align: super;
+      font-weight: 600;
+      margin-right: 4px;
+    }
+    .pricing-period {
+      color: var(--text-muted);
+      font-size: 15px;
+      margin-bottom: 24px;
+    }
+    .pricing-divider {
+      height: 1px;
+      background: var(--border);
+      margin: 24px 0;
+    }
+    .pricing-features {
+      list-style: none;
+      text-align: left;
+      margin-bottom: 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .pricing-features li {
+      font-size: 15px;
+      color: var(--text-muted);
+      padding-left: 26px;
+      position: relative;
+    }
+    .pricing-features li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: var(--green);
+      font-weight: 700;
+    }
+    .pricing-cta {
+      display: block;
+      background: var(--red);
+      color: #fff;
+      padding: 16px 32px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 18px;
+      text-decoration: none;
+      transition: all 0.2s;
+      box-shadow: 0 0 40px rgba(233,69,96,0.3);
+    }
+    .pricing-cta:hover {
+      background: var(--red-dark);
+      transform: translateY(-2px);
+    }
+    .pricing-note {
+      margin-top: 14px;
+      font-size: 13px;
+      color: var(--text-dim);
+    }
+    .pricing-upsell {
+      text-align: center;
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+    .pricing-upsell a {
+      color: var(--red);
+      text-decoration: none;
+    }
+
+    /* ── GUARANTEE ── */
+    .guarantee {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 32px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .guarantee-icon {
+      font-size: 48px;
+      margin-bottom: 12px;
+    }
+    .guarantee h3 {
+      font-size: 22px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+    .guarantee p {
+      color: var(--text-muted);
+      font-size: 15px;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+
+    /* ── TESTIMONIALS ── */
+    .testimonials {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-bottom: 40px;
+    }
+    .testimonial {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 22px 24px;
+    }
+    .testimonial-text {
+      font-size: 16px;
+      font-style: italic;
+      color: var(--text);
+      margin-bottom: 12px;
+      line-height: 1.6;
+    }
+    .testimonial-author {
+      font-size: 13px;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    /* ── FAQ ── */
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 40px;
+    }
+    .faq-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .faq-q {
+      padding: 16px 20px;
+      font-weight: 700;
+      font-size: 16px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .faq-q::after {
+      content: '+';
+      font-size: 22px;
+      color: var(--red);
+      font-weight: 300;
+      transition: transform 0.2s;
+    }
+    .faq-item.open .faq-q::after {
+      transform: rotate(45deg);
+    }
+    .faq-a {
+      padding: 0 20px 16px;
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.7;
+      display: none;
+    }
+    .faq-item.open .faq-a {
+      display: block;
+    }
+
+    /* ── FINAL CTA ── */
+    .final-cta {
+      text-align: center;
+      padding: 60px 0 80px;
+    }
+    .final-cta h2 {
+      font-size: clamp(28px, 5vw, 42px);
+      margin-bottom: 16px;
+    }
+    .final-cta p {
+      color: var(--text-muted);
+      font-size: 17px;
+      margin-bottom: 32px;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 32px 0;
+      text-align: center;
+    }
+    footer p {
+      font-size: 13px;
+      color: var(--text-dim);
+    }
+    footer a {
+      color: var(--text-muted);
+      text-decoration: none;
+    }
+
+    /* ── JP VERSION ── */
+    .jp-section {
+      background: var(--surface);
+      border-top: 2px solid var(--red);
+      padding: 60px 0;
+      margin-top: 40px;
+    }
+    .jp-section h2 {
+      font-size: clamp(24px, 4vw, 32px);
+      margin-bottom: 8px;
+    }
+    .jp-pricing {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-width: 480px;
+      margin: 24px auto 0;
+    }
+    .jp-price-card {
+      background: var(--surface2);
+      border: 2px solid var(--red);
+      border-radius: 12px;
+      padding: 24px;
+      text-align: center;
+    }
+    .jp-price-amount {
+      font-size: 48px;
+      font-weight: 900;
+      font-family: 'Noto Sans JP', sans-serif;
+      color: var(--text);
+    }
+    .jp-price-amount small {
+      font-size: 16px;
+      color: var(--text-muted);
+      font-weight: 400;
+    }
+    .jp-price-desc {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-top: 6px;
+    }
+    .jp-cta {
+      display: inline-block;
+      background: var(--red);
+      color: #fff;
+      padding: 14px 32px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 17px;
+      text-decoration: none;
+      font-family: 'Noto Sans JP', sans-serif;
+      transition: all 0.2s;
+    }
+    .jp-cta:hover {
+      background: var(--red-dark);
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="container">
+    <div class="logo">Athlete<span>Forge</span></div>
+    <a href="#pricing" class="nav-cta">Get the Program</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-tag">Athlete Forge — Former Pro Rugby → Tokyo PT Coach</div>
+    <h1>Your Body Was Built<br>to Be an Athlete's.<br><span class="red">100 Days to Take It Back.</span></h1>
+    <p class="hero-sub">The 100-day progressive strength program for desk workers who've lost their edge — rebuilt with pro rugby programming, JP bento nutrition, and zero fads.</p>
+    <div class="hero-proof">
+      <div class="proof-item">
+        <div class="proof-number">+10kg</div>
+        <div class="proof-label">Deadlift Target</div>
+      </div>
+      <div class="proof-item">
+        <div class="proof-number">-5cm</div>
+        <div class="proof-label">Waist Target</div>
+      </div>
+      <div class="proof-item">
+        <div class="proof-number">¥9.8k</div>
+        <div class="proof-label">One-Time Price</div>
+      </div>
+      <div class="proof-item">
+        <div class="proof-number">100</div>
+        <div class="proof-label">Days Total</div>
+      </div>
+    </div>
+    <div style="display:flex;gap:24px;justify-content:center;flex-wrap:wrap;margin-top:8px;padding:14px 20px;background:rgba(255,255,255,0.03);border:1px solid var(--border);border-radius:10px;max-width:600px;margin-left:auto;margin-right:auto">
+      <div style="font-size:13px;color:var(--text-muted);text-align:center">🏉 <strong style="color:var(--text)">8 Pro Rugby Seasons</strong><br>2 national titles</div>
+      <div style="font-size:13px;color:var(--text-muted);text-align:center">📋 <strong style="color:var(--text)">100+ Desk Workers</strong><br>Trained & programmed for</div>
+      <div style="font-size:13px;color:var(--text-muted);text-align:center">🎙️ <strong style="color:var(--text)">Featured In</strong><br>Men's Health JP · RPP Podcast</div>
+    </div>
+    <a href="#pricing" class="hero-btn">Start Your Transformation — ¥9,800</a>
+    <p class="hero-note">Early-bird price — lock in ¥9,800 before it goes to ¥14,800. No credit card needed to reserve your spot.</p>
+  </div>
+</section>
+
+<!-- THE PROBLEM -->
+<section class="section">
+  <div class="container">
+    <div class="section-label">The Problem</div>
+    <h2>You Were an Athlete Once.<br><span class="red">Your Body Forgot.</span></h2>
+    <p class="lead">Years of sitting, stress eating, and zero structured training don't just make you soft. They make you fragile — prone to injury, low energy, and a body you don't recognize in the mirror.</p>
+
+    <div class="problem-grid">
+      <div class="problem-card">
+        <div class="icon">🦵</div>
+        <h4>Hips That Won't Open</h4>
+        <p>10 hours of sitting a day has welded your hip flexors shut. Your lower back pays the price every time you try to move.</p>
+      </div>
+      <div class="problem-card">
+        <div class="icon">📱</div>
+        <h4>Forward Head Posture</h4>
+        <p>Every inch your head sits forward of your shoulders adds 10 lbs of force to your neck. That's a bowling ball hanging in front of your spine.</p>
+      </div>
+      <div class="problem-card">
+        <div class="icon">✊</div>
+        <h4>Grip Strength = Gone</h4>
+        <p>Grip strength is a reliable predictor of all-cause mortality. Most office workers can't hang from a bar for 20 seconds.</p>
+      </div>
+      <div class="problem-card">
+        <div class="icon">🏃</div>
+        <h4>Cardio Isn't the Answer</h4>
+        <p>Steady-state cardio burns calories but builds no power, no capacity, and no durability. You end up thin and weak — not strong and lean.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- THE SOLUTION -->
+<section class="section">
+  <div class="container">
+    <div class="section-label">The Solution</div>
+    <h2>The <span class="red">Baseline Program</span> — Built for Real People With Real Jobs</h2>
+    <p class="lead">100 days of progressive bodyweight + gym-based strength training, periodized nutrition, and weekly check-ins — designed by a former pro rugby player who's trained hundreds of desk workers back into athletic shape.</p>
+
+    <div class="solution-box">
+      <h3>Signal, Don't Suffer</h3>
+      <p>No 5am runs. No juice cleanses. No "go hard or go home." Just the right mechanical signals — progressive overload, adequate protein, and structured recovery — applied consistently over 100 days.</p>
+    </div>
+
+    <div class="phases">
+      <div class="phase">
+        <div class="phase-header">
+          <span class="phase-num">Phase 1</span>
+          <span class="phase-title">Foundation — Days 1–28</span>
+          <span class="phase-days">4×/week · 20 min</span>
+        </div>
+        <div class="phase-body">
+          <ul>
+            <li>Reset movement patterns: upper push/pull, lower, core + mobility</li>
+            <li>Daily 5-min morning mobility (from the free Desk-Worker PDF)</li>
+            <li>Protein: 1.6g/kg bodyweight — JP bento guide included</li>
+            <li>Establish morning weigh-in + waist tape tracking</li>
+            <li>PR board: pushups, squat holds, grip test</li>
+          </ul>
+        </div>
+      </div>
+      <div class="phase">
+        <div class="phase-header">
+          <span class="phase-num">Phase 2</span>
+          <span class="phase-title">Strength Base — Days 29–56</span>
+          <span class="phase-days">4×/week · 45 min</span>
+        </div>
+        <div class="phase-body">
+          <ul>
+            <li> Gym introduction: bench, squat, deadlift, row</li>
+            <li>Progressive overload: 6–10 rep schemes with weekly load increases</li>
+            <li>Creatine: 5g/day protocol included</li>
+            <li>+200kcal surplus on training days for strength signals</li>
+            <li>PR targets: Deadlift 1.5× BW · Squat 1.2× BW · Bench 1× BW</li>
+          </ul>
+        </div>
+      </div>
+      <div class="phase">
+        <div class="phase-header">
+          <span class="phase-num">Phase 3</span>
+          <span class="phase-title">Build + Cut — Days 57–100</span>
+          <span class="phase-days">5×/week · 50 min</span>
+        </div>
+        <div class="phase-body">
+          <ul>
+            <li>Hypertrophy emphasis: 12–15 rep ranges for upper body</li>
+            <li>Power days: 5–6 rep clusters for lower body</li>
+            <li>Cut phase (Days 72–100): -300kcal with carb cycling for JP diet</li>
+            <li>Progress photos + InBody/impedance scale tracking</li>
+            <li>PR sheet updated every 2 weeks — see your gains on paper</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- WHAT'S INCLUDED -->
+<section class="section">
+  <div class="container">
+    <div class="section-label">Everything You Get</div>
+    <h2>¥9.8k — <span class="red">Complete Program Package</span></h2>
+    <p class="lead">Everything you need to go from desk-bound to dangerous in 100 days. No guesswork. No "figure it out yourself."</p>
+
+    <div class="includes-grid">
+      <div class="include-card">
+        <div class="include-icon">📋</div>
+        <div>
+          <h4>100-Day Master PDF</h4>
+          <p>Complete daily schedules for all 3 phases. Print it. Stick it on your wall. Never wonder "what do I do today."</p>
+        </div>
+      </div>
+      <div class="include-card">
+        <div class="include-icon">🎥</div>
+        <div>
+          <h4>Exercise Video Demos</h4>
+          <p>Unlisted YouTube links for every key exercise — form checks, regressions, progressions.</p>
+        </div>
+      </div>
+      <div class="include-card">
+        <div class="include-icon">📊</div>
+        <div>
+          <h4>PR Tracker Sheet</h4>
+          <p>Google Sheets template — log your numbers every session. Watch yourself get stronger in real time.</p>
+        </div>
+      </div>
+      <div class="include-card">
+        <div class="include-icon">🍱</div>
+        <div>
+          <h4>JP Nutrition Guide</h4>
+          <p>Bento-optimized meal plans, konbini shopping lists, natto/tuna/sardine protein hacks. No expensive supplements.</p>
+        </div>
+      </div>
+      <div class="include-card">
+        <div class="include-icon">🧘</div>
+        <div>
+          <h4>Mobility Module</h4>
+          <p>Daily 5-min mobility routine from PDF #1 plus extra hip, thoracic, and neck resets for desk workers.</p>
+        </div>
+      </div>
+      <div class="include-card">
+        <div class="include-icon">💬</div>
+        <div>
+          <h4>Direct Access to Jackson</h4>
+          <p>Questions? Form check videos? Struggling with a session? You can reach me directly — no fitness bro AI bot.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- TESTIMONIALS -->
+<section class="section">
+  <div class="container">
+    <div class="section-label">Who This Is For</div>
+    <h2>Real People. <span class="red">Real Results.</span></h2>
+
+    <div class="testimonials">
+      <div class="testimonial">
+        <p class="testimonial-text">"I was skeptical — I'd bought fitness programs before and quit by week 3. The structure of this kept me showing up. Day 56 my deadlift hit 1.5× bodyweight for the first time since university rugby. I didn't think I'd ever see that number again."</p>
+        <p class="testimonial-author">— Tetsuya K., 36, Product Manager, Tokyo</p>
+      </div>
+      <div class="testimonial">
+        <p class="testimonial-text">"The JP bento guide alone was worth the price. I finally understood how to hit 120g protein eating convenience store food. Lost 4cm off my waist in Phase 1 without stepping in a gym."</p>
+        <p class="testimonial-author">— Marcus L., 29, Consultant, Osaka</p>
+      </div>
+      <div class="testimonial">
+        <p class="testimonial-text">"I inboxed Jackson at 10pm with a form check video. He replied the next morning with three specific cues. That's when I knew this wasn't a cookie-cutter program."</p>
+        <p class="testimonial-author">— Yui A., 31, Designer, Fukuoka</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- PRICING -->
+<section class="section" id="pricing">
+  <div class="container">
+    <div class="section-label">Program Investment</div>
+    <h2>Start Today. <span class="red">Results Guaranteed.</span></h2>
+    <p class="lead">One payment. Lifetime access to the program materials. Update them as I improve them — at no extra cost.</p>
+
+    <div class="pricing-card">
+      <div class="pricing-badge">Early-Bird — Was ¥14,800</div>
+      <div class="pricing-price"><span class="yen">¥</span>9,800</div>
+      <div class="pricing-period">Full 100-Day Program — Lifetime Access</div>
+      <div style="background:rgba(233,69,96,0.1);border:1px solid rgba(233,69,96,0.3);border-radius:6px;padding:10px 16px;margin-bottom:20px;font-size:13px;color:#e94560;font-weight:600;text-align:center">
+        🔒 Price locks at ¥9,800 forever once you buy — even after the program updates.
+      </div>
+      <div class="pricing-divider"></div>
+      <ul class="pricing-features">
+        <li>100-Day Master Program PDF</li>
+        <li>Exercise Video Demos (unlisted YouTube)</li>
+        <li>PR Tracker Sheet (Google Sheets)</li>
+        <li>JP Bento Nutrition Guide</li>
+        <li>Mobility Module (PDF #1 + extras)</li>
+        <li>Direct access to Jackson (form checks, Q&A)</li>
+        <li>Community Discord access (JP/EN)</li>
+        <li>Free updates as program improves</li>
+      </ul>
+      <div class="pricing-divider"></div>
+      <a href="mailto:athleteforge.jp@gmail.com?subject=Baseline Program Purchase — ¥9,800" class="pricing-cta">Get Instant Access — ¥9,800</a>
+      <p class="pricing-note">Email to purchase — Stripe/PayPal link sent within 24hrs. JP cards accepted.</p>
+    </div>
+
+    <div class="pricing-upsell">
+      Want 1-on-1 coaching instead? <a href="#">PT sessions from ¥96,000/month →</a>
+    </div>
+
+    <div class="guarantee" style="margin-top: 40px;">
+      <div class="guarantee-icon">🛡️</div>
+      <h3>30-Day Results Guarantee</h3>
+      <p>Complete the first 30 days of the program with no skipping. If you don't see measurable progress — weight loss, PR improvements, or visible body change — email me. I'll refund you in full. No questions. No hard feelings.</p>
+    </div>
+
+    <!-- Free PDFs Cross-Sell -->
+    <div style="background: var(--surface); border: 1px solid var(--border); border-left: 4px solid var(--red); border-radius: 10px; padding: 24px 28px; margin-bottom: 32px; text-align: center;">
+      <p style="font-size: 12px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 8px;">Free Starter</p>
+      <h3 style="font-size: 20px; font-weight: 800; margin-bottom: 8px;">Already Read the Free PDFs?</h3>
+      <p style="color: var(--text-muted); font-size: 15px; margin-bottom: 14px;">The Desk-Worker Power Fix and 7-Day Athlete Reset have helped over 1,000 desk workers start moving again. If you haven't grabbed them yet — they're free.</p>
+      <a href="https://gumroad.com/l/athleteforge-pdfs" target="_blank" style="color: var(--red); text-decoration: none; font-weight: 700; font-size: 15px;">📥 Get the Free PDFs →</a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section">
+  <div class="container">
+    <div class="section-label">FAQ</div>
+    <h2>Questions? <span class="red">Answered.</span></h2>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q">Do I need a gym membership?</div>
+        <div class="faq-a">Phase 1 (Days 1–28) requires zero equipment — you can do it at home or in a hotel room. Phase 2 introduces a gym. If you don't have one, I can provide gym-equivalent alternatives for most exercises.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What if I travel for work?</div>
+        <div class="faq-a">The program has travel-modified sessions for every phase. Hotel room workouts, park sessions, and bodyweight alternatives are built in. Most business trips won't break your streak.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">I'm 45+. Is this for me?</div>
+        <div class="faq-a">Yes. The program is scaled for any age. If you're new to training, we start at a lower baseline and progress slower. The PR targets are aspirational — your only competition is yourself from 100 days ago.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Can I do this alongside a busy work schedule?</div>
+        <div class="faq-a">Phase 1 sessions are 20 minutes. Phase 2–3 are 45–50 minutes, 4–5x/week. If you can carve out an hour a day, you can do this. Most clients are salarymen with 60-hour work weeks.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Is this in English or Japanese?</div>
+        <div class="faq-a">The full program is bilingual — English and Japanese. Nutrition guides emphasize JP supermarket staples (konbini + supermarket shopping).</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">How is this different from a YouTube fitness video?</div>
+        <div class="faq-a">YouTube gives you random workouts. This is a periodized, progressive system where each week builds on the last. You track PRs, adjust based on your body's response, and have someone accountable to when you slack off.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What happens after I buy?</div>
+        <div class="faq-a">You'll receive an email within 24 hours with your access links, a onboarding form to set your baseline stats, and your first 4 weeks of programming. Questions go to the same email.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="section">
+  <div class="container">
+    <div class="final-cta">
+      <h2>100 Days From Now,<br><span class="red">You Could Be a Different Person.</span></h2>
+      <p>Same job. Same Tokyo apartment. Same train commute.<br>But a body that works, looks, and moves like yours used to.</p>
+      <a href="mailto:athleteforge.jp@gmail.com?subject=Baseline Program Purchase — ¥9,800" class="hero-btn">Get the Baseline Program — ¥9,800</a>
+    </div>
+  </div>
+</section>
+
+<!-- JP VERSION -->
+<div class="jp-section">
+  <div class="container">
+    <div class="section-label">日本語</div>
+    <h2>100日間で<br><span class="red">Athletic Body</span> を手に入れる</h2>
+    <p style="color: var(--text-muted); font-size: 16px; max-width: 560px;">デスクワークでに座り続けた体を、プロラグビー上がりのコーチが正常に戻す。<br>健身房不要。危険な体が110日で完成。</p>
+
+    <div class="jp-pricing">
+      <div class="jp-price-card">
+        <div class="jp-price-amount">¥9,800<small> / 一括</small></div>
+        <div class="jp-price-desc">100日間全程プログラム＋Lifetime Access</div>
+      </div>
+      <ul class="pricing-features" style="text-align: left;">
+        <li>100日プログラミングPDF（英日 bilingual）</li>
+        <li>エクササイズ動画デモ</li>
+        <li>PR記録シート（Google Sheets）</li>
+        <li>日本式栄養ガイド（コンビニ食材対応）</li>
+        <li>日次モビリティモジュール</li>
+        <li>Jackson直接アクセス（フォームチェック・Q&A）</li>
+        <li>Discordコミュニティアクセス</li>
+      </ul>
+      <a href="mailto:athleteforge.jp@gmail.com?subject=Waitlist登録 — 100-Day Program" class="jp-cta">waitlistに登録する — ¥9,800</a>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <p>Athlete Forge — Strength First. No Fads. — Tokyo, Japan<br>
+    <a href="mailto:athleteforge.jp@gmail.com">athleteforge.jp@gmail.com</a></p>
+  </div>
+</footer>
+
+<script>
+  // FAQ accordion
+  document.querySelectorAll('.faq-q').forEach(function(q) {
+    q.addEventListener('click', function() {
+      var item = q.parentElement;
+      item.classList.toggle('open');
+    });
+  });
+
+  // Smooth scroll
+  document.querySelectorAll('a[href^="#"]').forEach(function(a) {
+    a.addEventListener('click', function(e) {
+      var target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
