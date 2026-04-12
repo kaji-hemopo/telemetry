@@ -36,7 +36,7 @@
             background: linear-gradient(90deg, transparent, var(--accent), transparent); opacity: 0.5; }
         .header-left h1 { font-family: var(--font-d); font-size: 1.5rem; font-weight: 800; letter-spacing: -0.03em; margin-bottom: 6px;
             background: linear-gradient(95deg, #fff, #9ca3b8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-        .header-left p { color: var(--muted); font-size: 14px; max-width: 46ch; }
+        .header-left p { color: var(--muted); font-size: 14px; max-width: 50ch; }
         .header-right { text-align: right; }
         .header-right .role-tag { display: inline-block; padding: 5px 14px; border-radius: 999px; font-size: 11px; font-weight: 700;
             text-transform: uppercase; letter-spacing: 0.1em; background: rgba(34,211,238,0.12); color: var(--accent);
@@ -130,36 +130,36 @@
     <header>
         <div class="header-left">
             <h1>Kaji · COO Dashboard</h1>
-            <p>Improve Existing beat: Empire Morning Briefing cron spec polished (outputs/morning_briefing_cron_spec.md 3,223 bytes) ✅ · MEMORY.md cron table corrected: 13/13 active (was 14/15 stale) ✅ · 10 orphaned Saito disabled crons cleaned 02:05 JST ✅</p>
+            <p>Tidy Operations beat: Agent dashboards verified ✅ · Delegation queue reviewed · Ito Ideas Vault stale (Property Intel #7 not confirmed added) ⚠️ · Jax decision queue ~24–30h stale · Next: Delegation Prep (forced Rule 4 rung 2)</p>
         </div>
         <div class="header-right">
             <div class="role-tag">Active · 45min beats</div>
-            <div class="updated">Updated: <span id="ts">Loading…</span> JST · <strong style="color:#a78bfa;">IMPROVE EXISTING BEAT 2026-04-13 02:10 JST</strong></div>
+            <div class="updated">Updated: <span id="ts">Loading…</span> JST · <strong style="color:#a78bfa;">TIDY OPERATIONS BEAT 2026-04-13 02:59 JST</strong></div>
         </div>
     </header>
 
     <!-- ALERTS -->
     <div class="card full" style="margin-bottom:20px; border-color: rgba(34,211,238,0.25);">
-        <h3 style="color:#a78bfa;"><span class="material-symbols-outlined">verified</span> Empire Alerts — Mon 02:10 JST · Improve Existing Beat</h3>
+        <h3 style="color:#a78bfa;"><span class="material-symbols-outlined">verified</span> Empire Alerts — Mon 02:59 JST · Tidy Operations Beat</h3>
         <div class="alert-row warn red-border">
             <span>⏰</span>
             <div><strong>Saito CrowdWorks #13049491 — 2 DAYS LEFT (Apr 16)</strong> · 17 applicants · Proposal at outputs/proposal_13049491.md · <strong>Jackson: SUBMIT NOW</strong></div>
         </div>
         <div class="alert-row warn">
             <span>🏋️</span>
-            <div><strong>Titan Carrd + Gumroad — TODAY Mon 07:00 JST (~5.25hr)</strong> · Titan sends launch step-by-step Telegram at 07:00 JST · Jax publishes to carrd.co + Gumroad by 07:30 JST · 1 client = ¥150k</div>
+            <div><strong>Titan Carrd + Gumroad — TODAY Mon 07:30 JST (~4.5hr)</strong> · Titan sends launch step-by-step Telegram at 07:00 JST · Jax publishes to carrd.co + Gumroad by 07:30 JST · 1 client = ¥150k</div>
+        </div>
+        <div class="alert-row warn">
+            <span>⚠️</span>
+            <div><strong>Ito Ideas Vault STALE — Property Intel NOT added</strong> · IDEAS_VAULT.md still shows 6 ideas (last updated 2026-04-12 18:11:56 JST) · last beat's task to add Property Intel as #7 NOT confirmed done · <strong>Re-dispatched to Ito next heartbeat</strong></div>
+        </div>
+        <div class="alert-row warn">
+            <span>⏳</span>
+            <div><strong>Jax Decision Queue — ~24–30h stale</strong> · Empire Morning Briefing + Monday Launch Kit both pending approval since ~2026-04-12 01:24–17:00 JST</div>
         </div>
         <div class="alert-row ok">
             <span>✅</span>
-            <div><strong>Tidy Ops: 10 Saito orphaned disabled crons removed</strong> · 057aa05f, 183c06f0, 8fcebb1d, aab0eeed, ab0dbfb0, af2a6a6d, b9ab42e8, e7882cbc, eca8f6e8, fdc9a33e · cron total: 26 → 13 active jobs</div>
-        </div>
-        <div class="alert-row ok">
-            <span>✅</span>
-            <div><strong>MEMORY.md Cron Table corrected</strong> · stale 01:16 JST → fresh 02:10 JST · 14/15 → 13/13 active · Kaji cron false-positive error (delivery layer artifact) noted · Felix N3 Phase 2b progress (391/2489) updated</div>
-        </div>
-        <div class="alert-row info">
-            <span>🌅</span>
-            <div><strong>Empire Morning Briefing — spec polished</strong> · outputs/morning_briefing_cron_spec.md (3,223 bytes) · step-by-step cron prompt, Telegram format template, data-source table · deploy-ready on Jax approval · <strong>👍 Empire Morning Briefing + 👍 Monday Launch Kit — Jax: approve/decline?</strong></div>
+            <div><strong>All agent dashboards verified clean</strong> · Titan ✅ (Beat X-304 02:40 JST) · Felix ✅ (N3 Phase 2b 391/2489) · Makoto ✅ · Saito ✅ (Cycle 181 #13049491 CRITICAL) · Odie ✅ (LINE Bot)</div>
         </div>
     </div>
 
@@ -167,18 +167,18 @@
     <div class="grid-3" style="margin-bottom:20px;">
         <div class="card" style="border-left:3px solid #4ade80;">
             <h3><span class="material-symbols-outlined">check_circle</span> Tasks Done</h3>
-            <p style="font-size:2rem;font-weight:800;color:#4ade80;margin-top:4px;">52</p>
-            <p style="color:var(--dim);font-size:12px;margin-top:4px;">+ Empire Morning Briefing cron spec · MEMORY.md cron table corrected · Tidy Ops: 10 Saito crons removed</p>
+            <p style="font-size:2rem;font-weight:800;color:#4ade80;margin-top:4px;">53</p>
+            <p style="color:var(--dim);font-size:12px;margin-top:4px;">+ Tidy Ops beat: dashboards verified ✅ · delegation queue reviewed ✅ · Ito Ideas Vault stale flag ⚠️</p>
         </div>
         <div class="card" style="border-left:3px solid #22d3ee;">
             <h3><span class="material-symbols-outlined">psychology</span> Empire Agents</h3>
             <p style="font-size:2rem;font-weight:800;color:#22d3ee;margin-top:4px;">7</p>
-            <p style="color:var(--dim);font-size:12px;margin-top:4px;">All 0-consec · clean scan 02:10 JST · Felix N3 Phase 2b running (391/2489)</p>
+            <p style="color:var(--dim);font-size:12px;margin-top:4px;">All 0-consec · clean scan 02:59 JST · Titan launch ~4.5hr · Saito #13049491 CRITICAL 2 DAYS</p>
         </div>
         <div class="card" style="border-left:3px solid #4ade80;">
             <h3><span class="material-symbols-outlined">schedule</span> Cron Health</h3>
             <p style="font-size:2rem;font-weight:800;color:#4ade80;margin-top:4px;">13/13</p>
-            <p style="color:var(--dim);font-size:12px;margin-top:4px;">active enabled · 26→13 after Tidy Ops · Kaji false-positive error cleared · live scan 02:10 JST</p>
+            <p style="color:var(--dim);font-size:12px;margin-top:4px;">active enabled · Kaji 2-consec is DELIVERY ARTIFACT only (cron itself running ✅) · Ito Weekly Reddit ⚠️ 1-consec</p>
         </div>
     </div>
 
@@ -192,22 +192,15 @@
                 <li>
                     <span class="task-dot done"></span>
                     <div>
-                        <span class="initiative-tag" style="background:rgba(34,211,238,0.1);color:#22d3ee;border-color:rgba(34,211,238,0.2);">Empire Audit</span> <strong>Beat 2026-04-13 02:05 JST:</strong> 10 Saito orphan crons removed · cron health scan clean · Kaji false-positive error documented · pipeline freshness verified
-                        <div class="task-label">prev beat · 02:05 JST</div>
+                        <span class="initiative-tag" style="background:rgba(34,211,238,0.1);color:#22d3ee;border-color:rgba(34,211,238,0.2);">Tidy Operations</span> <strong>Beat 2026-04-13 02:59 JST — THIS BEAT:</strong> Agent dashboards verified ✅ · delegation queue reviewed ✅ · Ito Ideas Vault stale ⚠️ (Property Intel #7 not confirmed added) · Jax decision queue ~24–30h stale
+                        <div class="task-label">this beat · 02:59 JST</div>
                     </div>
                 </li>
                 <li>
                     <span class="task-dot active"></span>
                     <div>
-                        <span class="initiative-tag" style="background:rgba(167,139,250,0.12);color:#a78bfa;border-color:rgba(167,139,250,0.25);">Improve Existing</span> <strong>Beat 2026-04-13 02:10 JST — THIS BEAT:</strong> Empire Morning Briefing cron spec polished outputs/morning_briefing_cron_spec.md (3,223 bytes) ✅ · MEMORY.md cron table corrected 13/13 ✅ · 10 Saito crons removed ✅
-                        <div class="task-label">this beat · 02:10 JST</div>
-                    </div>
-                </li>
-                <li>
-                    <span class="task-dot blocked"></span>
-                    <div>
-                        <span class="initiative-tag" style="background:rgba(34,211,238,0.1);color:#22d3ee;border-color:rgba(34,211,238,0.2);">Empire Audit</span> <strong>Beat ~02:50 JST — NEXT</strong> · Rule 4 rung 3: beatsAgo=3 ≥3 · Improve Existing just ran · Rule 3 cleared
-                        <div class="task-label">NEXT · ~02:50 JST</div>
+                        <span class="initiative-tag" style="background:rgba(167,139,250,0.12);color:#a78bfa;border-color:rgba(167,139,250,0.25);">Delegation Prep</span> <strong>Beat ~03:44 JST — NEXT (FORCED)</strong> · Rule 4 rung 2: beatsAgo=3 ≥3 · Saito #13049491 critical (2 DAYS) · Ito task re-dispatch · Felix N3 Phase 1 brief ready
+                        <div class="task-label">NEXT · ~03:44 JST</div>
                     </div>
                 </li>
             </ul>
@@ -221,23 +214,19 @@
                 <div class="request-meta">17 applicants · Proposal at outputs/proposal_13049491.md · <strong>Jackson: SUBMIT NOW</strong></div>
             </div>
             <div class="request-item" style="border-left:3px solid #fbbf24;">
-                <div>🏋️ <strong>Titan Carrd + Gumroad — TODAY Mon 07:00 JST (~5.25hr)</strong></div>
+                <div>🏋️ <strong>Titan Carrd + Gumroad — TODAY Mon 07:30 JST (~4.5hr)</strong></div>
                 <div class="request-meta">Titan sends step-by-step Telegram at 07:00 JST · Jax publishes to carrd.co + Gumroad by 07:30 JST · 1 client = ¥150k</div>
             </div>
-            <div class="request-item" style="border-left:3px solid #4ade80;">
-                <div>👍 <strong>Empire Morning Briefing — Jackson: thumbs up/down?</strong></div>
-                <div class="request-meta">outputs/empire_morning_briefing.md + spec: outputs/morning_briefing_cron_spec.md · Daily 07:00 JST · deploy-ready on approval · <strong>APPROVE and it runs TOMORROW 07:00 JST</strong></div>
-            </div>
-            <div class="request-item" style="border-left:3px solid #4ade80;">
-                <div>👍 <strong>Monday Launch Kit Telegram — Jackson: thumbs up/down?</strong></div>
-                <div class="request-meta">outputs/monday_launch_kit.md · Titan sends Mon 07:00 JST · Brief: outputs/brief_monday_launch_kit_telegram.md · P1 per master_ledger</div>
+            <div class="request-item" style="border-left:3px solid #fbbf24;">
+                <div>⚠️ <strong>Jax Decision Queue — APPROVE or DECLINE?</strong></div>
+                <div class="request-meta">👍 Empire Morning Briefing (pending ~24–30h) · 👍 Monday Launch Kit (pending ~24–30h) · 💡 Property Intelligence System (pending ~2d) — please review outputs/ and give thumbs up/down</div>
             </div>
         </div>
 
         <!-- BEAT DOMAIN STATE -->
         <div class="card">
             <h3><span class="material-symbols-outlined">psychology</span> Beat Domain State (live)</h3>
-            <p style="color:var(--muted);font-size:12px;margin-bottom:10px;">Updated 2026-04-13 02:10 JST after Improve Existing beat.</p>
+            <p style="color:var(--muted);font-size:12px;margin-bottom:10px;">Updated 2026-04-13 02:59 JST after Tidy Operations beat.</p>
             <table class="domain-table">
                 <thead><tr><th>Domain</th><th>Last Beat</th><th>Beats Ago</th><th>Rule Trigger</th></tr></thead>
                 <tbody>
@@ -251,7 +240,7 @@
                         <td><span class="domain-name">Delegation Prep</span></td>
                         <td>00:15 JST</td>
                         <td>2</td>
-                        <td><span class="badge badge-muted">Rule 1 blocked</span></td>
+                        <td><span class="badge badge-run">Rule 4 rung 2 · beatsAgo=3 ≥3</span></td>
                     </tr>
                     <tr>
                         <td><span class="domain-name">New Ideas</span></td>
@@ -263,45 +252,45 @@
                         <td><span class="domain-name">Improve Existing</span></td>
                         <td>02:10 JST</td>
                         <td>0</td>
-                        <td><span class="badge badge-muted">Rule 1 blocked next</span></td>
+                        <td><span class="badge badge-muted">Rule 1 blocked</span></td>
                     </tr>
                     <tr>
                         <td><span class="domain-name">Tidy Operations</span></td>
-                        <td>02:05 JST</td>
-                        <td>1</td>
-                        <td><span class="badge badge-muted">Rule 1 blocked</span></td>
+                        <td>02:59 JST</td>
+                        <td>0</td>
+                        <td><span class="badge badge-muted">Rule 1 blocked next</span></td>
                     </tr>
                 </tbody>
             </table>
-            <p style="color:var(--dim);font-size:11px;margin-top:10px;">Rule 3: Empire Audit beatsAgo=1 (<4, not forced). Rule 4: Delegation Prep beatsAgo=2, New Ideas beatsAgo=2. Next: Empire Audit (Rule 4 rung 1 beatsAgo=1 approaching ≥4 in 3 beats).</p>
+            <p style="color:var(--dim);font-size:11px;margin-top:10px;">Rule 3: Empire Audit beatsAgo=1 (<4, not forced). <strong>Rule 4 rung 2: Delegation Prep beatsAgo=3 ≥3 — FORCED next beat.</strong> Rule 3 floor: Empire Audit hits beatsAgo=4 in 3 beats.</p>
         </div>
 
         <!-- RECENT WORK -->
         <div class="card">
             <h3><span class="material-symbols-outlined">history</span> Recent Work</h3>
             <div class="output-item">
+                <span class="output-icon">🧹</span>
+                <div style="flex:1">
+                    <div class="output-name">Tidy Operations — Beat 2026-04-13 02:59 JST</div>
+                    <div class="output-desc">Agent dashboards verified ✅ (Titan/Felix/Makoto/Saito/Odie all clean) · delegation queue reviewed ✅ · Ito Ideas Vault ⚠️ stale (Property Intel #7 not confirmed added) · Jax decision queue ~24–30h stale flagged</div>
+                </div>
+                <span class="badge badge-run">DONE · 02:59 JST</span>
+            </div>
+            <div class="output-item">
                 <span class="output-icon">🔧</span>
                 <div style="flex:1">
                     <div class="output-name">Improve Existing — Beat 2026-04-13 02:10 JST</div>
-                    <div class="output-desc">Empire Morning Briefing cron spec polished outputs/morning_briefing_cron_spec.md (3,223 bytes) ✅ — step-by-step prompt, Telegram format, data-source table, deploy-ready on Jax approval. MEMORY.md cron table corrected: 14/15→13/13 active, fresh 02:10 JST scan, 10 Saito orphan crons removed.</div>
+                    <div class="output-desc">Empire Morning Briefing cron spec polished outputs/morning_briefing_cron_spec.md (3,223 bytes) ✅ · MEMORY.md cron table corrected 13/13 ✅ · 10 Saito crons removed ✅</div>
                 </div>
-                <span class="badge badge-run">DONE · 02:10 JST</span>
+                <span class="badge badge-ok">DONE · 02:10 JST</span>
             </div>
             <div class="output-item">
                 <span class="output-icon">🔍</span>
                 <div style="flex:1">
                     <div class="output-name">Empire Audit — Beat 2026-04-13 02:05 JST</div>
-                    <div class="output-desc">10 Saito orphaned disabled crons removed ✅ · cron health scan 13/13 active · Kaji cron false-positive error documented · pipeline freshness verified</div>
+                    <div class="output-desc">10 Saito orphaned disabled crons removed ✅ · cron health scan 13/13 active · Kaji false-positive error documented · pipeline freshness verified</div>
                 </div>
                 <span class="badge badge-ok">DONE · 02:05 JST</span>
-            </div>
-            <div class="output-item">
-                <span class="output-icon">💡</span>
-                <div style="flex:1">
-                    <div class="output-name">New Ideas — Beat 2026-04-13 01:16 JST</div>
-                    <div class="output-desc">Empire Master Ledger outputs/master_ledger.md (3,789 bytes) ✅ · Ito task: add Property Intel to IDEAS_VAULT as #7 ✅</div>
-                </div>
-                <span class="badge badge-ok">DONE · 01:16 JST</span>
             </div>
         </div>
 
@@ -322,7 +311,7 @@
 
     <!-- CRON HEALTH -->
     <div class="card full" style="margin-bottom:20px;">
-        <h3><span class="material-symbols-outlined">schedule</span> Empire Cron Status — LIVE SCAN 2026-04-13 02:10 JST</h3>
+        <h3><span class="material-symbols-outlined">schedule</span> Empire Cron Status — LIVE SCAN 2026-04-13 02:59 JST</h3>
         <table class="cron-table">
             <thead><tr><th>Agent</th><th>Job</th><th>Schedule</th><th>Last Run</th><th>Status</th></tr></thead>
             <tbody>
@@ -338,7 +327,7 @@
                     <td class="cron-sched">20min Heartbeat</td>
                     <td class="cron-sched">every 20m</td>
                     <td><span class="badge badge-ok">ok</span></td>
-                    <td><span class="badge badge-ok">✅ 0-consec · pipeline fresh</span></td>
+                    <td><span class="badge badge-ok">✅ 0-consec · pipeline fresh · ⚠️ Ideas Vault NOT updated with Property Intel as #7</span></td>
                 </tr>
                 <tr>
                     <td><span class="cron-name">Ito</span></td>
@@ -373,7 +362,7 @@
                     <td class="cron-sched">Ahipara Tracker</td>
                     <td class="cron-sched">daily 08:00 JST</td>
                     <td><span class="badge badge-ok">scheduled</span></td>
-                    <td><span class="badge badge-ok">✅ Next run Mon Apr 13 08:00 JST</span></td>
+                    <td><span class="badge badge-ok">✅ Next run Mon Apr 13 08:00 JST (~5h)</span></td>
                 </tr>
                 <tr>
                     <td><span class="cron-name">Felix</span></td>
@@ -387,7 +376,7 @@
                     <td class="cron-sched">21min Heartbeat</td>
                     <td class="cron-sched">every 21m</td>
                     <td><span class="badge badge-ok">✅ ok</span></td>
-                    <td><span class="badge badge-ok">✅ 0-consec · Mon 07:00 JST launch Telegram · Mon 07:30 JST X thread post</span></td>
+                    <td><span class="badge badge-ok">✅ 0-consec · Mon 07:00 JST launch Telegram · Mon 07:30 JST X post · ~4.5hr to Jackson wake</span></td>
                 </tr>
                 <tr>
                     <td><span class="cron-name">Makoto</span></td>
@@ -401,19 +390,19 @@
                     <td class="cron-sched">20min Heartbeat</td>
                     <td class="cron-sched">every 20m</td>
                     <td><span class="badge badge-ok">ok</span></td>
-                    <td><span class="badge badge-ok">✅ 0-consec · Cycle 178+ · #13049491 17 apps CRITICAL (2 DAYS!)</span></td>
+                    <td><span class="badge badge-ok">✅ 0-consec · Cycle 181+ · #13049491 17 apps CRITICAL (2 DAYS!)</span></td>
                 </tr>
                 <tr>
                     <td><span class="cron-name">Saito</span></td>
                     <td class="cron-sched">Monday Morning Prime Window Sweep</td>
                     <td class="cron-sched">Mon-Fri 09:00 JST</td>
                     <td><span class="badge badge-ok">scheduled</span></td>
-                    <td><span class="badge badge-ok">✅ Active · next Mon Apr 13 09:00 JST</span></td>
+                    <td><span class="badge badge-ok">✅ Active · next Mon Apr 13 09:00 JST (~6h)</span></td>
                 </tr>
                 <tr>
                     <td><span class="cron-name">Saito</span></td>
                     <td class="cron-sched">C98 Pulse — Sat Night</td>
-                    <td class="cron-sched">Sat 21:30 JST</td>
+                    <td class="cron-sched">Sat 21:30 JST</span></td>
                     <td><span class="badge badge-warn">⚠️ 1-consec</span></td>
                     <td><span class="badge badge-warn">⚠️ MiniMax timeout · non-critical · next run Sat Apr 18</span></td>
                 </tr>
@@ -427,7 +416,7 @@
             </tbody>
         </table>
         <p style="color:var(--dim);font-size:11.5px;margin-top:12px;">
-            ✅ <strong>13/13 active jobs · Tidy Ops: 10 Saito disabled orphan crons removed 02:05 JST</strong> · Ito Weekly Reddit ⚠️ 1-consec · Saito C98 Pulse ⚠️ 1-consec (Sat Apr 18) · live scan 02:10 JST · master_ledger: outputs/master_ledger.md
+            ✅ <strong>13/13 active jobs · live scan 02:59 JST</strong> · Kaji 2-consec = DELIVERY ARTIFACT (cron running fine) · Ito Weekly Reddit ⚠️ 1-consec · Saito C98 Pulse ⚠️ 1-consec (Sat Apr 18) · ⚠️ Ito Ideas Vault stale (Property Intel not added as #7) · master_ledger: outputs/master_ledger.md
         </p>
     </div>
 
@@ -436,14 +425,14 @@
         <h3><span class="material-symbols-outlined">groups</span> Empire Agent Directory</h3>
         <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;">
             <div>
-                <div class="agent-row"><div><span class="agent-name">🧭 Kaji (me)</span><div class="agent-role">COO / Orchestrator</div></div><span class="badge badge-ok">✅ healthy · Improve Existing beat DONE · next: Empire Audit</span></div>
-                <div class="agent-row"><div><span class="agent-name">🦅 Ito</span><div class="agent-role">Intel & Pipeline</div></div><span class="badge badge-ok">✅ 0-consec · Phase 2 complete · Weekly Reddit ⚠️ 1-consec · Ahipara 08:00 JST · task: add Property Intel to IDEAS_VAULT as #7</span></div>
-                <div class="agent-row"><div><span class="agent-name">⚙️ Saito</span><div class="agent-role">Digital Strategy</div></div><span class="badge badge-ok">✅ 0-consec · Cycle 178+ · #13049491 17 apps CRITICAL (2 DAYS!)</span></div>
+                <div class="agent-row"><div><span class="agent-name">🧭 Kaji (me)</span><div class="agent-role">COO / Orchestrator</div></div><span class="badge badge-ok">✅ healthy · Tidy Ops beat DONE · next: Delegation Prep (forced)</span></div>
+                <div class="agent-row"><div><span class="agent-name">🦅 Ito</span><div class="agent-role">Intel & Pipeline</div></div><span class="badge badge-warn">⚠️ Ideas Vault NOT updated with Property Intel #7 · 0-consec · Phase 2 complete</span></div>
+                <div class="agent-row"><div><span class="agent-name">⚙️ Saito</span><div class="agent-role">Digital Strategy</div></div><span class="badge badge-err">⏰ 0-consec · Cycle 181+ · #13049491 CRITICAL (2 DAYS!)</span></div>
             </div>
             <div>
                 <div class="agent-row"><div><span class="agent-name">⚡ Makoto</span><div class="agent-role">Arbitrage Scout</div></div><span class="badge badge-ok">✅ 0-consec · scout pipeline healthy</span></div>
                 <div class="agent-row"><div><span class="agent-name">🎌 Felix</span><div class="agent-role">N3 Vault & X</div></div><span class="badge badge-ok">✅ 0-consec · N3 DB Phase 2b running (391/2489 via bg PID 5004)</span></div>
-                <div class="agent-row"><div><span class="agent-name">🏋️ Titan</span><div class="agent-role">Athlete Forge</div></div><span class="badge badge-ok">✅ 0-consec · Mon 07:00 JST launch Telegram · 07:30 JST X post</span></div>
+                <div class="agent-row"><div><span class="agent-name">🏋️ Titan</span><div class="agent-role">Athlete Forge</div></div><span class="badge badge-ok">✅ 0-consec · Mon 07:00 JST launch Telegram · 07:30 JST X post · ~4.5hr</span></div>
                 <div class="agent-row"><div><span class="agent-name">🤖 Odie</span><div class="agent-role">TradePass Development</div></div><span class="badge badge-ok">✅ mode:none fixed · TMPL-1 LINE Bot in progress</span></div>
             </div>
         </div>
