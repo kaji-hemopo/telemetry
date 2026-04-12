@@ -775,7 +775,7 @@
     <div class="container">
         <!-- Header with Controls -->
         <div class="header-controls">
-            <div class="page-title">Intelligence Stream <span class="timestamp">11:19 JST</span></div>
+            <div class="page-title">Intelligence Stream <span class="timestamp">11:23 JST</span></div>
             <div class="controls-right">
                 <input type="text" class="search-bar" placeholder="Search news, markets, ventures..." id="search-input">
                 <button class="refresh-btn" id="refresh-btn" onclick="refreshData()">
@@ -1320,204 +1320,115 @@
         <div id="tab-venture" class="tab-content">
             <div class="ventures-grid" id="ventures-grid">
                 
-    <div style="margin: 30px 0 20px 0; border-bottom: 2px solid var(--accent); padding-bottom: 10px;">
-        <h3 style="color: var(--accent); font-size: 1.2rem; margin: 0;">🚨 ALERT FEED</h3>
+    <div style="margin: 30px 0 20px 0; border-bottom: 2px solid var(--accent-mint); padding-bottom: 10px;">
+        <h3 style="color: var(--accent-mint); font-size: 1.2rem; margin: 0;">🚀 VENTURE PIPELINE</h3>
         <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 5px;">
-            Real-time keyword matches from 10 active sectors. 
+            Ranked opportunities from intelligence analysis.
             <span style="color: var(--text-dim); font-size: 0.85rem;">
-                Last scan: 2026-04-12 10:37:42 UTC | 139 total matches
+                6 ventures tracked | Top score: 90 | Empire max: $900000
             </span>
         </p>
     </div>
     
-    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 20px;">
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 24px;">
         <div style="background: var(--glass); border: 1px solid var(--border); border-radius: 8px; padding: 14px; text-align: center;">
-            <div style="font-size: 24px; font-weight: 800; color: var(--accent);">139</div>
-            <div style="font-size: 11px; color: var(--text-dim); text-transform: uppercase;">Total Matches</div>
+            <div style="font-size: 24px; font-weight: 800; color: var(--accent-mint);">6</div>
+            <div style="font-size: 11px; color: var(--text-dim); text-transform: uppercase;">Ventures</div>
         </div>
         <div style="background: var(--glass); border: 1px solid var(--border); border-radius: 8px; padding: 14px; text-align: center;">
-            <div style="font-size: 24px; font-weight: 800; color: var(--accent);">10</div>
-            <div style="font-size: 11px; color: var(--text-dim); text-transform: uppercase;">Active Sectors</div>
+            <div style="font-size: 24px; font-weight: 800; color: var(--accent-mint);">90</div>
+            <div style="font-size: 11px; color: var(--text-dim); text-transform: uppercase;">Top Score</div>
         </div>
         <div style="background: var(--glass); border: 1px solid var(--border); border-radius: 8px; padding: 14px; text-align: center;">
-            <div style="font-size: 24px; font-weight: 800; color: var(--accent);">40+</div>
-            <div style="font-size: 11px; color: var(--text-dim); text-transform: uppercase;">RSS Feeds</div>
+            <div style="font-size: 24px; font-weight: 800; color: var(--accent-mint);">$900000</div>
+            <div style="font-size: 11px; color: var(--text-dim); text-transform: uppercase;">Empire Score</div>
         </div>
-    </div>
-    <div style="margin-bottom: 20px;"><span style="display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; background: rgba(0,218,243,0.12); color: var(--accent); margin-right: 4px; margin-bottom: 4px;">crisis</span><span style="display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; background: rgba(0,218,243,0.12); color: var(--accent); margin-right: 4px; margin-bottom: 4px;">BOJ</span><span style="display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; background: rgba(0,218,243,0.12); color: var(--accent); margin-right: 4px; margin-bottom: 4px;">Fed</span><span style="display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; background: rgba(0,218,243,0.12); color: var(--accent); margin-right: 4px; margin-bottom: 4px;">inflation</span><span style="display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; background: rgba(0,218,243,0.12); color: var(--accent); margin-right: 4px; margin-bottom: 4px;">rate hike</span><span style="display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; background: rgba(0,218,243,0.12); color: var(--accent); margin-right: 4px; margin-bottom: 4px;">gold</span><span style="display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; background: rgba(0,218,243,0.12); color: var(--accent); margin-right: 4px; margin-bottom: 4px;">oil</span><span style="display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; background: rgba(0,218,243,0.12); color: var(--accent); margin-right: 4px; margin-bottom: 4px;">USD/JPY</span><span style="display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; background: rgba(0,218,243,0.12); color: var(--accent); margin-right: 4px; margin-bottom: 4px;">NZD/JPY</span><span style="display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; background: rgba(0,218,243,0.12); color: var(--accent); margin-right: 4px; margin-bottom: 4px;">tariff</span><span style="display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; background: rgba(0,218,243,0.12); color: var(--accent); margin-right: 4px; margin-bottom: 4px;">Ukraine</span><span style="display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; background: rgba(0,218,243,0.12); color: var(--accent); margin-right: 4px; margin-bottom: 4px;">Taiwan</span></div>
-        <div style="background: var(--glass); border: 1px solid var(--border); border-radius: 10px; padding: 16px; margin-bottom: 14px;">
-            <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;">
-                <h4 style="color: var(--text); font-size: 14px; font-weight: 700; margin: 0;">Finance</h4>
-                <span style="font-size: 11px; color: var(--text-dim);">5 alerts</span>
-            </div>
-            <div style="margin-bottom: 8px;"></div>
-        
-            <div style="padding: 8px 0; border-top: 1px solid rgba(255,255,255,0.05);">
-                <a href="https://www.bloomberg.com/news/articles/2026-04-11/global-funds-flee-indian-stocks-at-record-pace-on-growth-fears" target="_blank" style="color: var(--text); text-decoration: none; font-size: 13px; font-weight: 500; display: block; margin-bottom: 4px;">Global Funds Flee Indian Stocks at Record Pace on Growth Fears</a>
-                <span style="font-size: 10px; color: var(--text-dim);"></span>
-            </div>
-            <div style="padding: 8px 0; border-top: 1px solid rgba(255,255,255,0.05);">
-                <a href="https://www.bloomberg.com/news/articles/2026-04-11/starmer-plots-higher-uk-defense-spending-in-bid-to-save-his-job" target="_blank" style="color: var(--text); text-decoration: none; font-size: 13px; font-weight: 500; display: block; margin-bottom: 4px;">Starmer Plots Higher UK Defense Spending in Bid to Save His Job</a>
-                <span style="font-size: 10px; color: var(--text-dim);"></span>
-            </div>
-            <div style="padding: 8px 0; border-top: 1px solid rgba(255,255,255,0.05);">
-                <a href="https://www.bloomberg.com/news/audio/2026-04-11/odd-lots-the-big-macro-force-that-s-kept-stocks-high-podcast" target="_blank" style="color: var(--text); text-decoration: none; font-size: 13px; font-weight: 500; display: block; margin-bottom: 4px;">Odd Lots: The Big Macro Force That’s Kept Stocks High (Podcast)</a>
-                <span style="font-size: 10px; color: var(--text-dim);"></span>
-            </div></div>
-        <div style="background: var(--glass); border: 1px solid var(--border); border-radius: 10px; padding: 16px; margin-bottom: 14px;">
-            <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;">
-                <h4 style="color: var(--text); font-size: 14px; font-weight: 700; margin: 0;">Japan Business</h4>
-                <span style="font-size: 11px; color: var(--text-dim);">5 alerts</span>
-            </div>
-            <div style="margin-bottom: 8px;"></div>
-        
-            <div style="padding: 8px 0; border-top: 1px solid rgba(255,255,255,0.05);">
-                <a href="https://newsonjapan.com/article/148886.php" target="_blank" style="color: var(--text); text-decoration: none; font-size: 13px; font-weight: 500; display: block; margin-bottom: 4px;">Hidden Kyoto Village Reaches Peak Cherry Bloom</a>
-                <span style="font-size: 10px; color: var(--text-dim);"></span>
-            </div>
-            <div style="padding: 8px 0; border-top: 1px solid rgba(255,255,255,0.05);">
-                <a href="https://newsonjapan.com/article/148885.php" target="_blank" style="color: var(--text); text-decoration: none; font-size: 13px; font-weight: 500; display: block; margin-bottom: 4px;">Osaka Shochikuza Theater Stages Final Kabuki Performances</a>
-                <span style="font-size: 10px; color: var(--text-dim);"></span>
-            </div>
-            <div style="padding: 8px 0; border-top: 1px solid rgba(255,255,255,0.05);">
-                <a href="https://japantoday.com/category/world/palestinian-killed-in-west-bank-as-violence-surges-during-iran-war" target="_blank" style="color: var(--text); text-decoration: none; font-size: 13px; font-weight: 500; display: block; margin-bottom: 4px;">Palestinian killed in West Bank as violence surges during Iran war</a>
-                <span style="font-size: 10px; color: var(--text-dim);"></span>
-            </div></div>
-        <div style="background: var(--glass); border: 1px solid var(--border); border-radius: 10px; padding: 16px; margin-bottom: 14px;">
-            <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;">
-                <h4 style="color: var(--text); font-size: 14px; font-weight: 700; margin: 0;">NZ Business</h4>
-                <span style="font-size: 11px; color: var(--text-dim);">5 alerts</span>
-            </div>
-            <div style="margin-bottom: 8px;"></div>
-        
-            <div style="padding: 8px 0; border-top: 1px solid rgba(255,255,255,0.05);">
-                <a href="https://www.interest.co.nz/investing/137939/primer-outlines-gold-market%E2%80%99s-size-structure-and-essential-characteristics" target="_blank" style="color: var(--text); text-decoration: none; font-size: 13px; font-weight: 500; display: block; margin-bottom: 4px;">Gold market primer: Market size and structure</a>
-                <span style="font-size: 10px; color: var(--text-dim);"></span>
-            </div>
-            <div style="padding: 8px 0; border-top: 1px solid rgba(255,255,255,0.05);">
-                <a href="https://www.interest.co.nz/economy/137942/mohamed-el-erian-warns-us-despite-its-strengths-their-economy-will-not-remain" target="_blank" style="color: var(--text); text-decoration: none; font-size: 13px; font-weight: 500; display: block; margin-bottom: 4px;">America should beware of economic hubris</a>
-                <span style="font-size: 10px; color: var(--text-dim);"></span>
-            </div>
-            <div style="padding: 8px 0; border-top: 1px solid rgba(255,255,255,0.05);">
-                <a href="https://www.interest.co.nz/economy/137941/%C5%9Febnem-kalemli-%C3%B6zcan-warns-americas-current-policies-are-turning-manageable-problems" target="_blank" style="color: var(--text); text-decoration: none; font-size: 13px; font-weight: 500; display: block; margin-bottom: 4px;">Interdependence bites back</a>
-                <span style="font-size: 10px; color: var(--text-dim);"></span>
-            </div></div>
-        <div style="background: var(--glass); border: 1px solid var(--border); border-radius: 10px; padding: 16px; margin-bottom: 14px;">
-            <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;">
-                <h4 style="color: var(--text); font-size: 14px; font-weight: 700; margin: 0;">Japan Times Business</h4>
-                <span style="font-size: 11px; color: var(--text-dim);">4 alerts</span>
-            </div>
-            <div style="margin-bottom: 8px;"></div>
-        
-            <div style="padding: 8px 0; border-top: 1px solid rgba(255,255,255,0.05);">
-                <a href="https://www.japantimes.co.jp/business/2026/04/11/economy/confusion-naphtha-supply-industries-households/" target="_blank" style="color: var(--text); text-decoration: none; font-size: 13px; font-weight: 500; display: block; margin-bottom: 4px;">Confusion over naphtha supply hits industries and households</a>
-                <span style="font-size: 10px; color: var(--text-dim);"></span>
-            </div>
-            <div style="padding: 8px 0; border-top: 1px solid rgba(255,255,255,0.05);">
-                <a href="https://www.japantimes.co.jp/business/2026/04/11/economy/fuel-shortages-iran-asia-rice/" target="_blank" style="color: var(--text); text-decoration: none; font-size: 13px; font-weight: 500; display: block; margin-bottom: 4px;">Fuel shortages from Iran war threaten Asia’s biggest food staple</a>
-                <span style="font-size: 10px; color: var(--text-dim);"></span>
-            </div>
-            <div style="padding: 8px 0; border-top: 1px solid rgba(255,255,255,0.05);">
-                <a href="https://www.japantimes.co.jp/business/2026/04/11/economy/iran-war-crisis-countries-analysis/" target="_blank" style="color: var(--text); text-decoration: none; font-size: 13px; font-weight: 500; display: block; margin-bottom: 4px;">Iran war leaves crisis-scarred countries counting the cost</a>
-                <span style="font-size: 10px; color: var(--text-dim);"></span>
-            </div></div>
-        <div style="background: var(--glass); border: 1px solid var(--border); border-radius: 10px; padding: 16px; margin-bottom: 14px;">
-            <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;">
-                <h4 style="color: var(--text); font-size: 14px; font-weight: 700; margin: 0;">Japan Regulatory</h4>
-                <span style="font-size: 11px; color: var(--text-dim);">1 alerts</span>
-            </div>
-            <div style="margin-bottom: 8px;"></div>
-        
-            <div style="padding: 8px 0; border-top: 1px solid rgba(255,255,255,0.05);">
-                <a href="https://www.reddit.com/r/JapanFinance/comments/1sictv6/trying_to_get_a_mortgage_in_slightly_unusual/" target="_blank" style="color: var(--text); text-decoration: none; font-size: 13px; font-weight: 500; display: block; margin-bottom: 4px;">Trying to get a mortgage in slightly unusual situation</a>
-                <span style="font-size: 10px; color: var(--text-dim);"></span>
-            </div></div>
-        <div style="background: var(--glass); border: 1px solid var(--border); border-radius: 10px; padding: 16px; margin-bottom: 14px;">
-            <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;">
-                <h4 style="color: var(--text); font-size: 14px; font-weight: 700; margin: 0;">Japan Startups</h4>
-                <span style="font-size: 11px; color: var(--text-dim);">5 alerts</span>
-            </div>
-            <div style="margin-bottom: 8px;"></div>
-        
-            <div style="padding: 8px 0; border-top: 1px solid rgba(255,255,255,0.05);">
-                <a href="https://www.techinasia.com/visual-story/japan-fintech-map" target="_blank" style="color: var(--text); text-decoration: none; font-size: 13px; font-weight: 500; display: block; margin-bottom: 4px;">Mapping Japan’s notable fintech startups</a>
-                <span style="font-size: 10px; color: var(--text-dim);"></span>
-            </div>
-            <div style="padding: 8px 0; border-top: 1px solid rgba(255,255,255,0.05);">
-                <a href="https://www.techinasia.com/top-funded-startups-tech-companies-india" target="_blank" style="color: var(--text); text-decoration: none; font-size: 13px; font-weight: 500; display: block; margin-bottom: 4px;">Meet the 50 top-funded startups and tech companies in India</a>
-                <span style="font-size: 10px; color: var(--text-dim);"></span>
-            </div>
-            <div style="padding: 8px 0; border-top: 1px solid rgba(255,255,255,0.05);">
-                <a href="https://www.techinasia.com/visual-story/mapping-japans-prominent-cleantech-startups" target="_blank" style="color: var(--text); text-decoration: none; font-size: 13px; font-weight: 500; display: block; margin-bottom: 4px;">Mapping Japan’s prominent cleantech startups</a>
-                <span style="font-size: 10px; color: var(--text-dim);"></span>
-            </div></div>
-        <div style="background: var(--glass); border: 1px solid var(--border); border-radius: 10px; padding: 16px; margin-bottom: 14px;">
-            <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;">
-                <h4 style="color: var(--text); font-size: 14px; font-weight: 700; margin: 0;">Australia Business</h4>
-                <span style="font-size: 11px; color: var(--text-dim);">5 alerts</span>
-            </div>
-            <div style="margin-bottom: 8px;"></div>
-        
-            <div style="padding: 8px 0; border-top: 1px solid rgba(255,255,255,0.05);">
-                <a href="https://www.abc.net.au/news/2026-04-11/ranger-recounts-nt-chopper-crash-rescue-careflight-anniversary/106553062" target="_blank" style="color: var(--text); text-decoration: none; font-size: 13px; font-weight: 500; display: block; margin-bottom: 4px;">When a chopper went down in Kakadu, this ranger was injured — but survived</a>
-                <span style="font-size: 10px; color: var(--text-dim);"></span>
-            </div>
-            <div style="padding: 8px 0; border-top: 1px solid rgba(255,255,255,0.05);">
-                <a href="https://www.abc.net.au/news/2026-04-11/middle-east-war-hits-thailand-fishing-industry/106554192" target="_blank" style="color: var(--text); text-decoration: none; font-size: 13px; font-weight: 500; display: block; margin-bottom: 4px;">Thai fishing port highlights &#x27;big trouble&#x27; caused by Middle East war</a>
-                <span style="font-size: 10px; color: var(--text-dim);"></span>
-            </div>
-            <div style="padding: 8px 0; border-top: 1px solid rgba(255,255,255,0.05);">
-                <a href="https://www.abc.net.au/news/2026-04-11/nrl-live-broncos-souths-raiders-sharks-roosters-storm-warriors/106554540" target="_blank" style="color: var(--text); text-decoration: none; font-size: 13px; font-weight: 500; display: block; margin-bottom: 4px;">Live: Broncos&#x27; crisis deepens as superstar faces ban</a>
-                <span style="font-size: 10px; color: var(--text-dim);"></span>
-            </div></div>
-        <div style="background: var(--glass); border: 1px solid var(--border); border-radius: 10px; padding: 16px; margin-bottom: 14px;">
-            <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;">
-                <h4 style="color: var(--text); font-size: 14px; font-weight: 700; margin: 0;">SaaS</h4>
-                <span style="font-size: 11px; color: var(--text-dim);">1 alerts</span>
-            </div>
-            <div style="margin-bottom: 8px;"></div>
-        
-            <div style="padding: 8px 0; border-top: 1px solid rgba(255,255,255,0.05);">
-                <a href="https://www.saastr.com/the-leading-public-software-companies-are-now-down-50-in-the-last-6-months/" target="_blank" style="color: var(--text); text-decoration: none; font-size: 13px; font-weight: 500; display: block; margin-bottom: 4px;">The Leading Public Software Companies Are Now Down -50% in the Last 6 Months</a>
-                <span style="font-size: 10px; color: var(--text-dim);"></span>
-            </div></div>
-    <div style="margin: 40px 0 20px 0; border-bottom: 2px solid #6366F1; padding-bottom: 10px;">
-        <h3 style="color: #6366F1; font-size: 1.2rem; margin: 0;">📡 OPPORTUNITY RADAR</h3>
-        <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 5px;">
-            Emerging trends and strategic signals from RSS feeds.
-        </p>
     </div>
     
-                    <div style="background: rgba(99,102,241,0.08); border: 1px solid rgba(99,102,241,0.2); border-radius: 8px; padding: 12px; margin-bottom: 10px;">
-                        <p style="color: var(--text); font-size: 13px; margin: 0; line-height: 1.5;">**AI dominance** — 188 keyword hits this week. No sector话题</p>
-                    </div>
-                    <div style="background: rgba(99,102,241,0.08); border: 1px solid rgba(99,102,241,0.2); border-radius: 8px; padding: 12px; margin-bottom: 10px;">
-                        <p style="color: var(--text); font-size: 13px; margin: 0; line-height: 1.5;">**US-Iran conflict + Oil** — 39 oil articles, 15 US-Iran mentions. Hormuz strait tensions driving energy volatility.</p>
-                    </div>
-                    <div style="background: rgba(99,102,241,0.08); border: 1px solid rgba(99,102,241,0.2); border-radius: 8px; padding: 12px; margin-bottom: 10px;">
-                        <p style="color: var(--text); font-size: 13px; margin: 0; line-height: 1.5;">**Startup funding active** — 38 startup + 15 funding hits. VC market still open for B2B/infra.</p>
-                    </div>
-                    <div style="background: rgba(99,102,241,0.08); border: 1px solid rgba(99,102,241,0.2); border-radius: 8px; padding: 12px; margin-bottom: 10px;">
-                        <p style="color: var(--text); font-size: 13px; margin: 0; line-height: 1.5;">**Inflation + Trump** — 28 inflation + 22 Trump mentions. Tariff uncertainty + rate policy ambiguity.</p>
-                    </div>
-                    <div style="background: rgba(99,102,241,0.08); border: 1px solid rgba(99,102,241,0.2); border-radius: 8px; padding: 12px; margin-bottom: 10px;">
-                        <p style="color: var(--text); font-size: 13px; margin: 0; line-height: 1.5;">**Gold as hedge** — 16 gold mentions. Risk-off positioning visible.</p>
-                    </div>
-                    <div style="background: rgba(99,102,241,0.08); border: 1px solid rgba(99,102,241,0.2); border-radius: 8px; padding: 12px; margin-bottom: 10px;">
-                        <p style="color: var(--text); font-size: 13px; margin: 0; line-height: 1.5;">**Japan market** — 23 Japan hits. Local biz + regulatory coverage steady.</p>
-                    </div>
-                    <div style="background: rgba(99,102,241,0.08); border: 1px solid rgba(99,102,241,0.2); border-radius: 8px; padding: 12px; margin-bottom: 10px;">
-                        <p style="color: var(--text); font-size: 13px; margin: 0; line-height: 1.5;">**NZ Property** — 11 Auckland hits. Market monitoring active.</p>
-                    </div>
-                    <div style="background: rgba(99,102,241,0.08); border: 1px solid rgba(99,102,241,0.2); border-radius: 8px; padding: 12px; margin-bottom: 10px;">
-                        <p style="color: var(--text); font-size: 13px; margin: 0; line-height: 1.5;">**China** — 21 China mentions. Geopolitical risk factor.</p>
-                    </div>
-                    <div style="background: rgba(99,102,241,0.08); border: 1px solid rgba(99,102,241,0.2); border-radius: 8px; padding: 12px; margin-bottom: 10px;">
-                        <p style="color: var(--text); font-size: 13px; margin: 0; line-height: 1.5;">**Anthropic** — 4 mentions. AI infrastructure play.</p>
-                    </div>
-                    <div style="background: rgba(99,102,241,0.08); border: 1px solid rgba(99,102,241,0.2); border-radius: 8px; padding: 12px; margin-bottom: 10px;">
-                        <p style="color: var(--text); font-size: 13px; margin: 0; line-height: 1.5;">**Volatility** — 4 volatility mentions (low reading — weekend filter may suppress).</p>
-                    </div>
+        <div class="venture-card">
+            <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 12px;">
+                <div class="venture-score">90</div>
+                <span style="font-size: 11px; color: #F59E0B; font-weight: 600;">#1 · Idea</span>
+            </div>
+            <div class="venture-title">SaaS Integration Health Monitor &amp; Alerting System</div>
+            <div class="venture-summary">A monitoring service that tracks the health and latency of critical B2B SaaS API integrations (e.g., Stripe -&gt; QuickBooks, Salesforce -&gt; HubSpot). Detects failures, schema...</div>
+            <div class="venture-tags"><span class="venture-tag">Integration</span><span class="venture-tag">API</span><span class="venture-tag">Monitoring</span><span class="venture-tag">DevOps</span></div>
+            <div style="margin-top: 12px; display: flex; gap: 16px; font-size: 12px; color: var(--text-dim);">
+                <span>💰 $900000</span>
+                <span>📊 $25,000</span>
+                <span>🕐 2026-04-12</span>
+            </div>
+        </div>
+        <div class="venture-card">
+            <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 12px;">
+                <div class="venture-score">88</div>
+                <span style="font-size: 11px; color: #F59E0B; font-weight: 600;">#2 · Idea</span>
+            </div>
+            <div class="venture-title">Legacy ERP to Modern SaaS Data Migration Bridge</div>
+            <div class="venture-summary">A specialized ETL (Extract, Transform, Load) tool focused on migrating specific, complex data objects (like customer records, inventory items, bills of materials) from legacy on...</div>
+            <div class="venture-tags"><span class="venture-tag">Integration</span><span class="venture-tag">Data Migration</span><span class="venture-tag">Legacy Systems</span><span class="venture-tag">ETL</span></div>
+            <div style="margin-top: 12px; display: flex; gap: 16px; font-size: 12px; color: var(--text-dim);">
+                <span>💰 $880000</span>
+                <span>📊 $25,000</span>
+                <span>🕐 2026-04-12</span>
+            </div>
+        </div>
+        <div class="venture-card">
+            <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 12px;">
+                <div class="venture-score">85</div>
+                <span style="font-size: 11px; color: #F59E0B; font-weight: 600;">#3 · Idea</span>
+            </div>
+            <div class="venture-title">Remote Work Hour Tracker API for Cross-Border Tax Compliance</div>
+            <div class="venture-summary">A micro-SaaS that provides a standardized API for remote workers to log billable hours with geolocation and activity tagging, generating audit-ready reports formatted for intern...</div>
+            <div class="venture-tags"><span class="venture-tag">Compliance</span><span class="venture-tag">Remote Work</span><span class="venture-tag">API</span><span class="venture-tag">Reporting</span></div>
+            <div style="margin-top: 12px; display: flex; gap: 16px; font-size: 12px; color: var(--text-dim);">
+                <span>💰 $850000</span>
+                <span>📊 $25,000</span>
+                <span>🕐 2026-04-12</span>
+            </div>
+        </div>
+        <div class="venture-card">
+            <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 12px;">
+                <div class="venture-score">82</div>
+                <span style="font-size: 11px; color: #F59E0B; font-weight: 600;">#4 · Idea</span>
+            </div>
+            <div class="venture-title">Multi-Currency Expense Reconciliation Engine for Nomadic Teams</div>
+            <div class="venture-summary">A backend service that automates the reconciliation of expenses submitted in multiple currencies (AUD, USD, NZD, JPY) against company budgets and bank feeds. Handles volatile ex...</div>
+            <div class="venture-tags"><span class="venture-tag">Workflow</span><span class="venture-tag">Finance</span><span class="venture-tag">Multi-Currency</span><span class="venture-tag">Automation</span></div>
+            <div style="margin-top: 12px; display: flex; gap: 16px; font-size: 12px; color: var(--text-dim);">
+                <span>💰 $820000</span>
+                <span>📊 $25,000</span>
+                <span>🕐 2026-04-12</span>
+            </div>
+        </div>
+        <div class="venture-card">
+            <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 12px;">
+                <div class="venture-score">80</div>
+                <span style="font-size: 11px; color: #F59E0B; font-weight: 600;">#5 · Idea</span>
+            </div>
+            <div class="venture-title">Fuel Cost Attribution &amp; Reconciliation Tool for Distributed Teams</div>
+            <div class="venture-summary">A tool that ingests fuel price APIs, commute distance data (from tools like Google Maps), and payroll/expense systems to automatically calculate and allocate fuel cost impacts o...</div>
+            <div class="venture-tags"><span class="venture-tag">Administrative</span><span class="venture-tag">API Integration</span><span class="venture-tag">Payroll</span><span class="venture-tag">Automation</span></div>
+            <div style="margin-top: 12px; display: flex; gap: 16px; font-size: 12px; color: var(--text-dim);">
+                <span>💰 $800000</span>
+                <span>📊 $25,000</span>
+                <span>🕐 2026-04-12</span>
+            </div>
+        </div>
+        <div class="venture-card">
+            <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 12px;">
+                <div class="venture-score">75</div>
+                <span style="font-size: 11px; color: #F59E0B; font-weight: 600;">#6 · Idea</span>
+            </div>
+            <div class="venture-title">Global Trade Data Normalizer &amp; API</div>
+            <div class="venture-summary">A service that ingests, cleans, and normalizes disparate national trade balance and economic indicator data (e.g., from US, Canada, Japan) into a single, consistent JSON/CSV sch...</div>
+            <div class="venture-tags"><span class="venture-tag">Data</span><span class="venture-tag">API</span><span class="venture-tag">Finance</span><span class="venture-tag">Automation</span></div>
+            <div style="margin-top: 12px; display: flex; gap: 16px; font-size: 12px; color: var(--text-dim);">
+                <span>💰 $750000</span>
+                <span>📊 $25,000</span>
+                <span>🕐 2026-04-12</span>
+            </div>
+        </div>
                 <!-- Venture ideas will be injected here -->
                 <div class="venture-card">
                     <div class="venture-score">92</div>
