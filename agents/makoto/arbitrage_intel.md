@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-12 16:24 JST
+Generated: 2026-04-12 19:32 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -53,25 +53,25 @@ Generated: 2026-04-12 16:24 JST
 | Score | Platform | Keyword | Title | Budget/Rate | URL |
 |---:|---|---|---|---|---|
 | 85 | Freelancer | Python scraper | AI Strategy Planner Web &amp; App NZ and AU based only | $5,000.00 | https://www.freelancer.com/projects/ai-development/Strategy-Planner-Web-App.html |
+| 75 | Freelancer | Make.com automation | Pneumatic Design Engineer Needed | $250.00 | https://www.freelancer.com/projects/autocad/Pneumatic-Design-Engineer-Needed-40365868.html |
 | 75 | Freelancer | Make.com automation | Develop AgwaCareOS &mdash; Homecare SaaS Platform (Part of the Ag | $250.00 | https://www.freelancer.com/projects/saas/Develop-AgwaCareOS-Homecare-SaaS-40365262.html |
-| 75 | Freelancer | Make.com automation | Square Site &amp; Retainer Automation | $250.00 | https://www.freelancer.com/projects/web-design/Square-Site-Retainer-Automation.html |
-| 75 | Freelancer | Data processing API | We are looking for an experienced freelance developer to build a  | $250.00 | https://www.freelancer.com/projects/web-development/are-looking-for-experienced-freelance.html |
+| 65 | Freelancer | Python scraper | Deploy Maintain React Python Invoice Tool | I have an AI-powered invoicing application (Emergent AI Caad Invoice – https://w | https://www.freelancer.com/projects/nextjs/Deploy-Maintain-React-Python-Invoice.html |
+| 65 | Freelancer | Python scraper | Satellite &amp; MMWave Signal Analysis | $15.00 | https://www.freelancer.com/projects/signal-processing/Satellite-MMWave-Signal-Analysis.html |
 | 65 | Freelancer | Python scraper | PDF Tables to Neat Excel | I have a sizeable PDF—well over 50 pages—filled with structured tables that I ne | https://www.freelancer.com/projects/data-extraction/PDF-Tables-Neat-Excel.html |
 | 65 | Freelancer | Python scraper | Full-Stack Java back and Front Development help | $8.00 | https://www.freelancer.com/projects/spring-boot/Full-Stack-Java-back-Front.html |
 | 65 | Freelancer | Python scraper | Swing Trading Automation Integration | I need an end-to-end workflow that lets me swing-trade with confidence while sti | https://www.freelancer.com/projects/api-integration/Swing-Trading-Automation-Integration.html |
 | 65 | Freelancer | Python scraper | Batch File Renaming Script | $30.00 | https://www.freelancer.com/projects/python/Batch-File-Renaming-Script.html |
 | 65 | Freelancer | Python scraper | Bulk MP4 Video Downloader Tool | $10.00 | https://www.freelancer.com/projects/nodejs/Bulk-Video-Downloader-Tool.html |
 | 65 | Freelancer | Python scraper | Optimize Python Scraper Storage -- 2 | $30.00 | https://www.freelancer.com/projects/python/Optimize-Python-Scraper-Storage.html |
-| 65 | Freelancer | Python scraper | Triển khai Chatbot AI tr&ecirc;n VPS | $30.00 | https://www.freelancer.com/projects/flask/Tri-khai-Chatbot-VPS.html |
+| 65 | Freelancer | Make.com automation | AI-Driven Social Media Automation System | I’m building an end-to-end social media agent inside n8n that can analyse trends | https://www.freelancer.com/projects/api-developmet/Driven-Social-Media-Automation-System.html |
+| 65 | Freelancer | Make.com automation | Comprehensive SaaS Web App Testing | $35.00 | https://www.freelancer.com/projects/selenium/Comprehensive-SaaS-Web-App-Testing.html |
 | 65 | Freelancer | Make.com automation | AI Newsletter Automation Setup | $30.00 | https://www.freelancer.com/projects/automation/Newsletter-Automation-Setup.html |
 | 65 | Freelancer | Make.com automation | Make.com Automation for Lead Generation | I’m looking for an experienced Make.com (Integromat) automation expert to build  | https://www.freelancer.com/projects/api/Make-com-Automation-for-Lead.html |
-| 65 | Freelancer | Make.com automation | HubSpot CRM Setup &amp; Optimization | $30.00 | https://www.freelancer.com/projects/api/HubSpot-CRM-Setup-Optimization.html |
 | 65 | Freelancer | Make.com automation | B2B Lead Generation Automation Build | $30.00 | https://www.freelancer.com/projects/lead-generation/Lead-Generation-Automation-Build.html |
 | 65 | Freelancer | Make.com automation | Coaching Session Agentic AI &amp; n8n | $15.00 | https://www.freelancer.com/projects/n8n/Installation-Coaching-Session-Agentic.html |
 | 65 | Freelancer | Make.com automation | Create professional PPT File for Course Demo | I have the full written content for an AI Automation &amp; Freelancing course an | https://www.freelancer.com/projects/data-entry/Create-professional-PPT-File-for-40365732.html |
 | 65 | Freelancer | Make.com automation | Validate &amp; Structure LOFTY CRM | $25.00 | https://www.freelancer.com/projects/automation/Validate-Structure-LOFTY-CRM.html |
 | 65 | Freelancer | Make.com automation | Node-RED, Home Assistant, OpenClaw Integration. | Node-RED is already running as a native integration inside my Home Assistant ins | https://www.freelancer.com/projects/api-integration/Node-RED-Home-Assistant-OpenClaw.html |
-| 65 | Freelancer | Make.com automation | Home Assistant Node-RED Automations | Node-RED is already running as a native integration inside my Home Assistant ins | https://www.freelancer.com/projects/automation/Home-Assistant-Node-RED-Automations.html |
 
 ## Notes
 - Scores prioritize: (1) simple automation/scripting fit, (2) payout magnitude, (3) keyword relevance.
