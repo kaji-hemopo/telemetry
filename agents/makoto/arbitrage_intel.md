@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-13 05:06 JST
+Generated: 2026-04-13 08:19 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -53,13 +53,13 @@ Generated: 2026-04-13 05:06 JST
 | Score | Platform | Keyword | Title | Budget/Rate | URL |
 |---:|---|---|---|---|---|
 | 85 | Freelancer | Make.com automation | Moodle LMS Implementation on Microsoft Azure for Technical Traini | $1,500.00 | https://www.freelancer.com/projects/microsoft-azure/Moodle-LMS-Implementation-Microsoft.html |
+| 85 | Freelancer | Data processing API | React Native Developer &mdash; Construction Photo App (Full Spec  | $750.00 | https://www.freelancer.com/projects/react-native/React-Native-Developer-Construction.html |
+| 85 | Freelancer | Data processing API | Architect Payment Fraud Alert System | $750.00 | https://www.freelancer.com/projects/data-analytics/Architect-Payment-Fraud-Alert-System.html |
 | 75 | Freelancer | Python scraper | OSINT Identity &amp; Network Correlation | $250.00 | https://www.freelancer.com/projects/data-analysis/OSINT-Identity-Network-Correlation.html |
 | 75 | Freelancer | Python scraper | Python RESTful API Backend Development | $250.00 | https://www.freelancer.com/projects/django/Python-RESTful-API-Backend-Development.html |
-| 75 | Freelancer | Python scraper | AI-Driven Coffee Cultivation Support System | $250.00 | https://www.freelancer.com/projects/computer-vision/Driven-Coffee-Cultivation-Support-System.html |
 | 75 | Freelancer | Python scraper | K-Means Workflow for Earthquake Data | $250.00 | https://www.freelancer.com/projects/data-visualization/Means-Workflow-for-Earthquake-Data.html |
 | 75 | Freelancer | Make.com automation | Pneumatic Design Engineer Needed | $250.00 | https://www.freelancer.com/projects/autocad/Pneumatic-Design-Engineer-Needed-40365868.html |
-| 75 | Freelancer | Data processing API | Cross-Platform Dancer Booking App | $250.00 | https://www.freelancer.com/projects/api-developmet/Cross-Platform-Dancer-Booking-App.html |
-| 75 | Freelancer | Data processing API | Access Database Completion for Dog Boarding | $250.00 | https://www.freelancer.com/projects/database-design/Access-Database-Completion-for-Dog.html |
+| 65 | Freelancer | Python scraper | World Location Content Generator | $30.00 | https://www.freelancer.com/projects/script-writing/World-Location-Content-Generator.html |
 | 65 | Freelancer | Python scraper | Car Rental Price Scraper | $10.00 | https://www.freelancer.com/projects/selenium/Car-Rental-Price-Scraper.html |
 | 65 | Freelancer | Python scraper | 10-Year NYSE/NASDAQ Backtest | $30.00 | https://www.freelancer.com/projects/data-analysis/Year-NYSE-NASDAQ-Backtest.html |
 | 65 | Freelancer | Python scraper | Integraci&oacute;n y Optimizaci&oacute;n en ComfyUI | Busco apoyo para ampliar ComfyUI añadiendo nuevas funcionalidades centradas en e | https://www.freelancer.com/projects/stable-diffusion/Integraci-Optimizaci-ComfyUI.html |
