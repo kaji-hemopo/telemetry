@@ -1,531 +1,719 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🏡 Saito's Airbnb Execution Dashboard</title>
-    <style>
-        :root {
-            --primary: #FF5A5F;
-            --secondary: #00A699;
-            --accent: #FC642D;
-            --dark: #484848;
-            --light: #FFFFFF;
-            --gray: #767676;
-            --light-gray: #F7F7F7;
-            --border: #EBEBEB;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-            background: var(--light-gray);
-            color: var(--dark);
-            line-height: 1.6;
-        }
-        
-        .container {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        
-        header {
-            background: var(--light);
-            border-bottom: 1px solid var(--border);
-            padding: 20px 0;
-            margin-bottom: 30px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-        }
-        
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-        
-        .logo h1 {
-            font-size: 24px;
-            color: var(--primary);
-        }
-        
-        .logo .tagline {
-            color: var(--gray);
-            font-size: 14px;
-            margin-top: 5px;
-        }
-        
-        .status-badge {
-            background: var(--secondary);
-            color: white;
-            padding: 8px 16px;
-            border-radius: 20px;
-            font-size: 14px;
-            font-weight: 600;
-        }
-        
-        .dashboard-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
-            margin-bottom: 40px;
-        }
-        
-        .card {
-            background: var(--light);
-            border-radius: 12px;
-            padding: 25px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-            border: 1px solid var(--border);
-        }
-        
-        .card-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 20px;
-            padding-bottom: 15px;
-            border-bottom: 2px solid var(--border);
-        }
-        
-        .card-title {
-            font-size: 18px;
-            font-weight: 600;
-            color: var(--dark);
-        }
-        
-        .card-subtitle {
-            color: var(--gray);
-            font-size: 14px;
-            margin-top: 5px;
-        }
-        
-        .progress-bar {
-            height: 8px;
-            background: var(--border);
-            border-radius: 4px;
-            overflow: hidden;
-            margin: 15px 0;
-        }
-        
-        .progress-fill {
-            height: 100%;
-            background: var(--primary);
-            border-radius: 4px;
-            transition: width 0.3s ease;
-        }
-        
-        .metric {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 12px 0;
-            border-bottom: 1px solid var(--border);
-        }
-        
-        .metric:last-child {
-            border-bottom: none;
-        }
-        
-        .metric-label {
-            color: var(--gray);
-            font-size: 14px;
-        }
-        
-        .metric-value {
-            font-weight: 600;
-            font-size: 16px;
-        }
-        
-        .metric-value.positive {
-            color: var(--secondary);
-        }
-        
-        .metric-value.negative {
-            color: var(--primary);
-        }
-        
-        .message-board {
-            background: var(--light);
-            border-radius: 12px;
-            padding: 25px;
-            margin-top: 30px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-        }
-        
-        .message {
-            padding: 20px;
-            background: var(--light-gray);
-            border-radius: 8px;
-            margin-bottom: 15px;
-            border-left: 4px solid var(--accent);
-        }
-        
-        .message-header {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 10px;
-        }
-        
-        .message-date {
-            color: var(--gray);
-            font-size: 12px;
-        }
-        
-        .message-content {
-            color: var(--dark);
-            line-height: 1.5;
-        }
-        
-        .action-button {
-            background: var(--primary);
-            color: white;
-            border: none;
-            padding: 12px 24px;
-            border-radius: 8px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: background 0.2s ease;
-            margin-top: 10px;
-        }
-        
-        .action-button:hover {
-            background: #E04E50;
-        }
-        
-        .system-status {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin-bottom: 10px;
-        }
-        
-        .status-indicator {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-        }
-        
-        .status-indicator.online {
-            background: var(--secondary);
-        }
-        
-        .status-indicator.offline {
-            background: var(--gray);
-        }
-        
-        .status-indicator.warning {
-            background: var(--accent);
-        }
-        
-        footer {
-            text-align: center;
-            padding: 30px 0;
-            color: var(--gray);
-            font-size: 14px;
-            border-top: 1px solid var(--border);
-            margin-top: 50px;
-        }
-        
-        .last-updated {
-            color: var(--gray);
-            font-size: 12px;
-            text-align: right;
-            margin-top: 20px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saito — Digital Monetization Scout</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    :root {
+      --bg: #121416;
+      --surface: #1e293b;
+      --glass: rgba(51, 53, 55, 0.6);
+      --cyan: #00e5ff;
+      --amber: #ffb800;
+      --green: #22c55e;
+      --red: #ef4444;
+      --text: #e2e2e5;
+      --muted: #bac9cc;
+      --border: rgba(255, 255, 255, 0.05);
+    }
+    
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', -apple-system, sans-serif;
+      min-height: 100vh;
+      line-height: 1.5;
+    }
+    
+    /* Header */
+    header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 50;
+      background: rgba(18, 20, 22, 0.95);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 24px;
+    }
+    
+    .header-content {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .logo {
+      font-size: 14px;
+      font-weight: 900;
+      color: var(--cyan);
+      letter-spacing: -0.02em;
+    }
+    
+    .status-badge {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 11px;
+      font-weight: 700;
+      background: rgba(0, 229, 255, 0.1);
+      border: 1px solid rgba(0, 229, 255, 0.25);
+      padding: 6px 14px;
+      border-radius: 100px;
+      color: var(--cyan);
+    }
+    
+    .status-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--green);
+      animation: pulse 2s infinite;
+    }
+    
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+    
+    /* Main */
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 80px 24px 60px;
+    }
+    
+    /* Mission */
+    .mission-card {
+      background: linear-gradient(135deg, rgba(0, 229, 255, 0.08), rgba(0, 229, 255, 0.03));
+      border: 1px solid rgba(0, 229, 255, 0.15);
+      border-radius: 16px;
+      padding: 28px 32px;
+      margin-bottom: 28px;
+    }
+    
+    .mission-card h1 {
+      font-size: 22px;
+      font-weight: 900;
+      color: var(--cyan);
+      margin-bottom: 10px;
+      letter-spacing: -0.03em;
+    }
+    
+    .mission-card p {
+      font-size: 14px;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+    
+    /* Stats Grid */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+    
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px 24px;
+    }
+    
+    .stat {
+      text-align: center;
+    }
+    
+    .stat-value {
+      font-size: 32px;
+      font-weight: 900;
+      color: var(--cyan);
+      letter-spacing: -0.04em;
+    }
+    
+    .stat-label {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-top: 6px;
+    }
+    
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+    
+    .card-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text);
+    }
+    
+    .card-badge {
+      font-size: 10px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 4px;
+    }
+    
+    .badge-amber {
+      background: rgba(255, 184, 0, 0.15);
+      color: var(--amber);
+    }
+    
+    .badge-green {
+      background: rgba(34, 197, 94, 0.15);
+      color: var(--green);
+    }
+    
+    /* Pipeline Row */
+    .gig-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--border);
+      text-decoration: none;
+    }
+    
+    .gig-row:last-child { border-bottom: none; }
+    
+    .gig-info { flex: 1; }
+    
+    .gig-id {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: var(--cyan);
+      font-weight: 500;
+    }
+    
+    .gig-name {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text);
+      margin: 3px 0;
+    }
+    
+    .gig-budget {
+      font-size: 11px;
+      color: var(--muted);
+    }
+    
+    .gig-right {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .gig-status {
+      font-size: 10px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 4px;
+    }
+    
+    .gig-urgent {
+      background: rgba(239, 68, 68, 0.2);
+      color: #ef4444;
+    }
+    
+    .gig-hot {
+      background: rgba(251, 146, 60, 0.15);
+      color: #fb923c;
+    }
+    
+    .gig-highvalue {
+      background: rgba(34, 197, 94, 0.15);
+      color: #22c55e;
+    }
+    
+    .gig-fit {
+      background: rgba(0, 229, 255, 0.15);
+      color: #00e5ff;
+    }
+    
+    .gig-secondary {
+      background: rgba(255, 184, 0, 0.15);
+      color: var(--amber);
+    }
+    
+    .gig-link-arrow {
+      color: var(--cyan);
+      font-size: 14px;
+    }
+    
+    .gig-link:hover .gig-id { color: var(--cyan); }
+    .gig-link { text-decoration: none; }
+    
+    /* Priority Cards */
+    .priority-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+    
+    .priority-card {
+      border-radius: 10px;
+      padding: 12px;
+      text-align: center;
+    }
+    
+    .priority-card.urgent {
+      background: rgba(239, 68, 68, 0.15);
+      border: 1px solid rgba(239, 68, 68, 0.3);
+    }
+    
+    .priority-card.hot {
+      background: rgba(251, 146, 60, 0.15);
+      border: 1px solid rgba(251, 146, 60, 0.3);
+    }
+    
+    .priority-card.high {
+      background: rgba(34, 197, 94, 0.15);
+      border: 1px solid rgba(34, 197, 94, 0.3);
+    }
+    
+    .priority-label {
+      font-size: 11px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+    
+    .priority-count {
+      font-size: 22px;
+      font-weight: 700;
+    }
+    
+    .priority-sub {
+      font-size: 10px;
+      opacity: 0.7;
+    }
+    
+    /* Blueprint Sections */
+    .catalog-section {
+      border-bottom: 1px solid var(--border);
+      padding: 16px 0;
+    }
+    
+    .catalog-section:last-child { border-bottom: none; }
+    
+    .catalog-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 8px;
+    }
+    
+    .catalog-name {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text);
+    }
+    
+    .catalog-tag {
+      font-size: 9px;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 3px;
+      white-space: nowrap;
+    }
+    
+    .tag-python { background: rgba(0, 229, 255, 0.15); color: var(--cyan); }
+    .tag-line { background: rgba(0, 187, 0, 0.15); color: #00bb00; }
+    .tag-fastapi { background: rgba(121, 31, 255, 0.15); color: #9171ff; }
+    .tag-shopify { background: rgba(150, 191, 72, 0.15); color: #96bf48; }
+    .tag-devops { background: rgba(255, 152, 0, 0.15); color: #ff9800; }
+    .tag-pipeline { background: rgba(0, 200, 200, 0.15); color: #00c8c8; }
+    .tag-llm { background: rgba(255, 100, 130, 0.15); color: #ff6482; }
+    .tag-ocr { background: rgba(200, 150, 255, 0.15); color: #c896ff; }
+    
+    .catalog-stack {
+      font-size: 11px;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+    
+    .catalog-status {
+      font-size: 10px;
+      font-weight: 600;
+      color: var(--green);
+    }
+    
+    /* Links Section */
+    .links-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    
+    .link-card {
+      background: var(--glass);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 14px 18px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .link-card:hover { border-color: rgba(0, 229, 255, 0.3); }
+    
+    .link-card-title {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 4px;
+    }
+    
+    .link-card-desc {
+      font-size: 10px;
+      color: var(--muted);
+    }
+    
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      font-size: 11px;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      margin-top: 48px;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <div>
-                        <h1>🏡 Saito's Airbnb Execution Dashboard</h1>
-                        <div class="tagline">Fukuoka Lease Arbitrage • Systems Architecture • Rapid Scaling</div>
-                    </div>
-                </div>
-                <div class="status-badge">Execution Mode: ACTIVE</div>
-            </div>
-        </div>
-    </header>
-    
-    <div class="container">
-        <div class="dashboard-grid">
-            <!-- Progress Tracker Card -->
-            <div class="card">
-                <div class="card-header">
-                    <div>
-                        <div class="card-title">📈 Progress Tracker</div>
-                        <div class="card-subtitle">Fukuoka Property #1</div>
-                    </div>
-                    <div class="status-badge" style="background: var(--accent);">DAY 1</div>
-                </div>
-                
-                <div class="metric">
-                    <div class="metric-label">Property Acquisition</div>
-                    <div class="metric-value">0%</div>
-                </div>
-                <div class="progress-bar">
-                    <div class="progress-fill" style="width: 0%"></div>
-                </div>
-                
-                <div class="metric">
-                    <div class="metric-label">Minpaku License</div>
-                    <div class="metric-value">0%</div>
-                </div>
-                <div class="progress-bar">
-                    <div class="progress-fill" style="width: 0%"></div>
-                </div>
-                
-                <div class="metric">
-                    <div class="metric-label">System Development</div>
-                    <div class="metric-value">25%</div>
-                </div>
-                <div class="progress-bar">
-                    <div class="progress-fill" style="width: 25%"></div>
-                </div>
-                
-                <div class="metric">
-                    <div class="metric-label">Operational Readiness</div>
-                    <div class="metric-value">10%</div>
-                </div>
-                <div class="progress-bar">
-                    <div class="progress-fill" style="width: 10%"></div>
-                </div>
-            </div>
-            
-            <!-- Financial Dashboard Card -->
-            <div class="card">
-                <div class="card-header">
-                    <div>
-                        <div class="card-title">💰 Financial Dashboard</div>
-                        <div class="card-subtitle">Per Property Projections</div>
-                    </div>
-                    <div class="status-badge" style="background: var(--secondary);">480% CoC</div>
-                </div>
-                
-                <div class="metric">
-                    <div class="metric-label">Startup Capital</div>
-                    <div class="metric-value">¥300,000</div>
-                </div>
-                
-                <div class="metric">
-                    <div class="metric-label">Monthly Profit Target</div>
-                    <div class="metric-value positive">¥120,000</div>
-                </div>
-                
-                <div class="metric">
-                    <div class="metric-label">Cash-on-Cash Return</div>
-                    <div class="metric-value positive">480%</div>
-                </div>
-                
-                <div class="metric">
-                    <div class="metric-label">Break-even Period</div>
-                    <div class="metric-value">2.5 months</div>
-                </div>
-                
-                <div class="metric">
-                    <div class="metric-label">Annual Profit (3 properties)</div>
-                    <div class="metric-value positive">¥4,320,000</div>
-                </div>
-                
-                <button class="action-button">Update Financial Model</button>
-            </div>
-            
-            <!-- System Status Card -->
-            <div class="card">
-                <div class="card-header">
-                    <div>
-                        <div class="card-title">⚙️ System Status</div>
-                        <div class="card-subtitle">Operational Automation</div>
-                    </div>
-                    <div class="status-badge" style="background: var(--secondary);">BUILDING</div>
-                </div>
-                
-                <div class="system-status">
-                    <div class="status-indicator online"></div>
-                    <div class="metric-label">Guest Management System</div>
-                    <div class="metric-value">25%</div>
-                </div>
-                
-                <div class="system-status">
-                    <div class="status-indicator warning"></div>
-                    <div class="metric-label">Cleaning Coordination</div>
-                    <div class="metric-value">10%</div>
-                </div>
-                
-                <div class="system-status">
-                    <div class="status-indicator offline"></div>
-                    <div class="metric-label">Maintenance Tracking</div>
-                    <div class="metric-value">0%</div>
-                </div>
-                
-                <div class="system-status">
-                    <div class="status-indicator warning"></div>
-                    <div class="metric-label">Financial Tracking</div>
-                    <div class="metric-value">15%</div>
-                </div>
-                
-                <div class="system-status">
-                    <div class="status-indicator offline"></div>
-                    <div class="metric-label">Pricing Optimization</div>
-                    <div class="metric-value">0%</div>
-                </div>
-                
-                <button class="action-button">View System Details</button>
-            </div>
-        </div>
-        
-        <!-- Message Board -->
-        <div class="message-board">
-            <div class="card-header">
-                <div>
-                    <div class="card-title">💬 Message Board</div>
-                    <div class="card-subtitle">Notes, Suggestions & Updates for Jackson</div>
-                </div>
-            </div>
-            
-            <div class="message">
-                <div class="message-header">
-                    <div class="message-date">2026-03-23 18:45</div>
-                    <div class="status-badge" style="background: var(--primary); padding: 4px 8px; font-size: 12px;">URGENT</div>
-                </div>
-                <div class="message-content">
-                    <strong>Transition Complete:</strong> I've taken full control of the Airbnb project. Identity and heartbeat updated to reflect execution focus on Fukuoka lease arbitrage. Dashboard created for transparent progress tracking.
-                </div>
-            </div>
-            
-            <div class="message">
-                <div class="message-header">
-                    <div class="message-date">2026-03-23 18:42</div>
-                    <div class="status-badge" style="background: var(--secondary); padding: 4px 8px; font-size: 12px;">ACTION</div>
-                </div>
-                <div class="message-content">
-                    <strong>Immediate Next Steps:</strong> Need to start Fukuoka property search immediately. Should I begin contacting real estate agents tonight, or wait for your confirmation on capital allocation?
-                </div>
-            </div>
-            
-            <div class="message">
-                <div class="message-header">
-                    <div class="message-date">2026-03-23 18:40</div>
-                    <div class="status-badge" style="background: var(--accent); padding: 4px 8px; font-size: 12px;">IDEA</div>
-                </div>
-                <div class="message-content">
-                    <strong>System Architecture Idea:</strong> Considering building a dual-system approach: 1) Basic operational system for first property, 2) Scalable system designed for 10+ properties from the start. This allows quick launch while building for scale.
-                </div>
-            </div>
-            
-            <div class="message">
-                <div class="message-header">
-                    <div class="message-date">2026-03-23 18:38</div>
-                </div>
-                <div class="message-content">
-                    <strong>Question:</strong> What's your preferred communication frequency for updates? Daily summary, real-time major decisions, or weekly review?
-                </div>
-            </div>
-            
-            <button class="action-button">Add New Message</button>
-        </div>
-        
-        <!-- Execution Log Preview -->
-        <div class="card" style="margin-top: 30px;">
-            <div class="card-header">
-                <div>
-                    <div class="card-title">📋 Today's Execution Log</div>
-                    <div class="card-subtitle">2026-03-23 Actions</div>
-                </div>
-            </div>
-            
-            <div class="metric">
-                <div class="metric-label">18:45 - Project transition completed</div>
-                <div class="metric-value positive">✓</div>
-            </div>
-            
-            <div class="metric">
-                <div class="metric-label">18:42 - Dashboard created</div>
-                <div class="metric-value positive">✓</div>
-            </div>
-            
-            <div class="metric">
-                <div class="metric-label">18:40 - Identity & heartbeat updated</div>
-                <div class="metric-value positive">✓</div>
-            </div>
-            
-            <div class="metric">
-                <div class="metric-label">18:38 - Project structure organized</div>
-                <div class="metric-value positive">✓</div>
-            </div>
-            
-            <div class="metric">
-                <div class="metric-label">Next: Fukuoka property search start</div>
-                <div class="metric-value">⏳</div>
-            </div>
-            
-            <button class="action-button">View Full Execution Log</button>
-        </div>
-        
-        <div class="last-updated">
-            Last updated: 2026-03-23 18:45 JST
-        </div>
+
+<header>
+  <div class="header-content">
+    <div class="logo">Saito — Digital Monetization Scout</div>
+    <div class="status-badge">
+      <div class="status-dot"></div>
+      <span>20MIN HEARTBEAT ACTIVE</span>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- Mission -->
+  <div class="mission-card">
+    <h1>🎯 Gig Blueprint Snowball</h1>
+    <p>Build a catalog of gig blueprints across verticals. Each blueprint is a ready-to-deploy template for instant response when matching opportunities appear. Diversify across verticals — don't rely on single gig type.</p>
+  </div>
+
+  <!-- Stats -->
+  <div class="grid">
+    <div class="card">
+      <div class="stat">
+        <div class="stat-value">10</div>
+        <div class="stat-label">Blueprints Built</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="stat">
+        <div class="stat-value">0</div>
+        <div class="stat-label">Blueprints Pending</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="stat">
+        <div class="stat-value">¥40k-3M</div>
+        <div class="stat-label">Ticket Range</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="stat">
+        <div class="stat-value">9</div>
+        <div class="stat-label">Active Pipeline</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Live Pipeline -->
+  <div class="card" style="margin-bottom: 28px;">
+    <div class="card-header">
+      <span class="card-title">📡 Live Pipeline</span>
+      <span class="card-badge badge-amber">NO OUTREACH</span>
+    </div>
+
+    <!-- Priority summary -->
+    <div class="priority-grid">
+      <div class="priority-card urgent">
+        <div style="font-size:11px; color:#ef4444; font-weight:600; margin-bottom:4px;">⚡ URGENT</div>
+        <div style="font-size:22px; font-weight:700; color:#ef4444;">2</div>
+        <div style="font-size:10px; color:#fca5a5;">Closing Apr 11</div>
+      </div>
+      <div class="priority-card hot">
+        <div style="font-size:11px; color:#fb923c; font-weight:600; margin-bottom:4px;">🔥 HOT</div>
+        <div style="font-size:22px; font-weight:700; color:#fb923c;">1</div>
+        <div style="font-size:10px; color:#fdba74;">LINE Bot</div>
+      </div>
+      <div class="priority-card high">
+        <div style="font-size:11px; color:#22c55e; font-weight:600; margin-bottom:4px;">🏆 HIGH VALUE</div>
+        <div style="font-size:22px; font-weight:700; color:#22c55e;">2</div>
+        <div style="font-size:10px; color:#86efac;">¥1M-3M RAG</div>
+      </div>
+    </div>
+
+    <!-- Gig rows -->
+    <a href="https://www.lancers.jp/work/detail/5523922" target="_blank" class="gig-row gig-link">
+      <div class="gig-info">
+        <div class="gig-id">#5523922</div>
+        <div class="gig-name">AI Engineer Python/LLM/Agents</div>
+        <div class="gig-budget">¥500k-1M</div>
+      </div>
+      <div class="gig-right">
+        <span class="gig-status gig-urgent">⚡ URGENT — あと2日</span>
+        <span class="gig-link-arrow">→</span>
+      </div>
+    </a>
+
+    <a href="https://www.lancers.jp/work/detail/5523932" target="_blank" class="gig-row gig-link">
+      <div class="gig-info">
+        <div class="gig-id">#5523932</div>
+        <div class="gig-name">Cloud Engineer AWS/GCP/IaC (Terraform)</div>
+        <div class="gig-budget">¥500k-1M</div>
+      </div>
+      <div class="gig-right">
+        <span class="gig-status gig-urgent">⚡ URGENT — あと2日</span>
+        <span class="gig-link-arrow">→</span>
+      </div>
+    </a>
+
+    <a href="https://www.lancers.jp/work/detail/5339294" target="_blank" class="gig-row gig-link">
+      <div class="gig-info">
+        <div class="gig-id">#5339294</div>
+        <div class="gig-name">LINE Bot AI photo→message (Vision + ChatGPT)</div>
+        <div class="gig-budget">¥200-300k</div>
+      </div>
+      <div class="gig-right">
+        <span class="gig-status gig-hot">🔥 HOT</span>
+        <span class="gig-link-arrow">→</span>
+      </div>
+    </a>
+
+    <a href="https://www.lancers.jp/work/detail/5409024" target="_blank" class="gig-row gig-link">
+      <div class="gig-info">
+        <div class="gig-id">#5409024</div>
+        <div class="gig-name">RAG 次世代AIアシスタント (LangChain + LLM)</div>
+        <div class="gig-budget">undisclosed</div>
+      </div>
+      <div class="gig-right">
+        <span class="gig-status gig-highvalue">🏆 HIGH VALUE</span>
+        <span class="gig-link-arrow">→</span>
+      </div>
+    </a>
+
+    <a href="https://www.lancers.jp/work/detail/5512588" target="_blank" class="gig-row gig-link">
+      <div class="gig-info">
+        <div class="gig-id">#5512588</div>
+        <div class="gig-name">RAG 社内文書検索 AI Chat基盤</div>
+        <div class="gig-budget">¥1M-¥3M</div>
+      </div>
+      <div class="gig-right">
+        <span class="gig-status gig-highvalue">🏆 HIGHEST VALUE</span>
+        <span class="gig-link-arrow">→</span>
+      </div>
+    </a>
+
+    <a href="https://www.lancers.jp/work/detail/5348953" target="_blank" class="gig-row gig-link">
+      <div class="gig-info">
+        <div class="gig-id">#5348953</div>
+        <div class="gig-name">Streamlit×FastAPI FX app (Vision API)</div>
+        <div class="gig-budget">undisclosed</div>
+      </div>
+      <div class="gig-right">
+        <span class="gig-status gig-fit">✅ 100% STACK FIT</span>
+        <span class="gig-link-arrow">→</span>
+      </div>
+    </a>
+
+    <a href="https://www.lancers.jp/work/detail/5523967" target="_blank" class="gig-row gig-link">
+      <div class="gig-info">
+        <div class="gig-id">#5523967</div>
+        <div class="gig-name">GCP ML RecSys (Vertex AI + Python)</div>
+        <div class="gig-budget">¥500k-1M</div>
+      </div>
+      <div class="gig-right">
+        <span class="gig-status gig-secondary">あと6日</span>
+        <span class="gig-link-arrow">→</span>
+      </div>
+    </a>
+
+    <a href="https://www.lancers.jp/work/detail/5250371" target="_blank" class="gig-row gig-link">
+      <div class="gig-info">
+        <div class="gig-id">#5250371</div>
+        <div class="gig-name">FastAPI OCR 医療情報管理</div>
+        <div class="gig-budget">¥300-400k</div>
+      </div>
+      <div class="gig-right">
+        <span class="gig-status gig-secondary">FastAPI+OCR</span>
+        <span class="gig-link-arrow">→</span>
+      </div>
+    </a>
+
+    <a href="https://www.lancers.jp/work/detail/5080972" target="_blank" class="gig-row gig-link">
+      <div class="gig-info">
+        <div class="gig-id">#5080972</div>
+        <div class="gig-name">LINE Bot GenAI + 音声認識 add-on</div>
+        <div class="gig-budget">¥40k+</div>
+      </div>
+      <div class="gig-right">
+        <span class="gig-status gig-secondary">fallback</span>
+        <span class="gig-link-arrow">→</span>
+      </div>
+    </a>
+  </div>
+
+  <!-- Blueprint Catalog -->
+  <div class="card" style="margin-bottom: 28px;">
+    <div class="card-header">
+      <span class="card-title">📋 Blueprint Catalog</span>
+      <span class="card-badge badge-green">10 TARGET</span>
     </div>
     
-    <footer>
-        <div class="container">
-            <p>🏡 Saito's Airbnb Execution Dashboard • Fukuoka Lease Arbitrage Project</p>
-            <p style="margin-top: 10px; font-size: 12px;">Execution Mode: ACTIVE • Target: ¥100K+/month per property • Timeline: 30 days to first property profit</p>
-        </div>
-    </footer>
+    <!-- 1. LINE Bot -->
+    <div class="catalog-section">
+      <div class="catalog-header">
+        <span class="catalog-name">1. LINE Bot × AI Photo Recognition</span>
+        <span class="catalog-tag tag-line">LINE Messaging API</span>
+      </div>
+      <div class="catalog-stack">Stack: Python + LINE Messaging API + Google Cloud Vision API + ChatGPT-4o + LIFF. Proposal: outputs/proposal_5523922_FINAL.md</div>
+      <div class="catalog-status">✅ READY — Template matches #5339294</div>
+    </div>
     
-    <script>
-        // Simple auto-refresh every 5 minutes
-        setTimeout(() => {
-            window.location.reload();
-        }, 300000);
-        
-        // Update last updated time
-        function updateLastUpdated() {
-            const now = new Date();
-            const options = { 
-                year: 'numeric', 
-                month: '2-digit', 
-                day: '2-digit',
-                hour: '2-digit',
-                minute: '2-digit',
-                timeZone: 'Asia/Tokyo',
-                hour12: false
-            };
-            const formatter = new Intl.DateTimeFormat('en-US', options);
-            const parts = formatter.formatToParts(now);
-            
-            const year = parts.find(p => p.type === 'year').value;
-            const month = parts.find(p => p.type === 'month').value;
-            const day = parts.find(p => p.type === 'day').value;
-            const hour = parts.find(p => p.type === 'hour').value;
-            const minute = parts.find(p => p.type === 'minute').value;
-            
-            document.querySelector('.last-updated').textContent = 
-                `Last updated: ${year}-${month}-${day} ${hour}:${minute} JST`;
-        }
-        
-        updateLastUpdated();
-        
-        // Simulate progress updates (in real implementation, this would fetch from backend)
-        function simulateProgress() {
-            const progressBars = document.querySelectorAll('.progress-fill');
-            progressBars.forEach(bar => {
-                const currentWidth = parseInt(bar.style.width);
-                if (currentWidth < 100) {
-                    const newWidth = Math.min(currentWidth + Math.random() * 5, 100);
-                    bar
+    <!-- 2. FastAPI Backend -->
+    <div class="catalog-section">
+      <div class="catalog-header">
+        <span class="catalog-name">2. FastAPI Backend Services</span>
+        <span class="catalog-tag tag-fastapi">FastAPI</span>
+      </div>
+      <div class="catalog-stack">Stack: FastAPI + Pydantic + PostgreSQL/SQLAlchemy + Redis/Celery + Docker. ¥300-800k range.</div>
+      <div class="catalog-status">✅ READY — Matches #5250371, #5523967</div>
+    </div>
+    
+    <!-- 3. Shopify/WooCommerce -->
+    <div class="catalog-section">
+      <div class="catalog-header">
+        <span class="catalog-name">3. Shopify/WooCommerce Custom Dev</span>
+        <span class="catalog-tag tag-shopify">Shopify</span>
+      </div>
+      <div class="catalog-stack">Stack: Shopify API + Liquid + Storefront API + Python/Airflow ETL. ¥200-500k.</div>
+      <div class="catalog-status">✅ READY</div>
+    </div>
+    
+    <!-- 4. DevOps IaC -->
+    <div class="catalog-section">
+      <div class="catalog-header">
+        <span class="catalog-name">4. DevOps IaC Bundle</span>
+        <span class="catalog-tag tag-devops">Terraform</span>
+      </div>
+      <div class="catalog-stack">Stack: Terraform + Ansible + AWS/GCP/Azure + Docker/Kubernetes + Linux. ¥500k-1M.</div>
+      <div class="catalog-status">✅ READY — Matches #5523932</div>
+    </div>
+    
+    <!-- 5. Data Pipeline -->
+    <div class="catalog-section">
+      <div class="catalog-header">
+        <span class="catalog-name">5. Data Pipeline Orchestration</span>
+        <span class="catalog-tag tag-pipeline">Apache Airflow</span>
+      </div>
+      <div class="catalog-stack">Stack: Apache Airflow + dbt + Snowflake/BigQuery + Python. ¥500k-1.5M.</div>
+      <div class="catalog-status">✅ READY</div>
+    </div>
+    
+    <!-- 6. LLM/RAG -->
+    <div class="catalog-section">
+      <div class="catalog-header">
+        <span class="catalog-name">6. LLM/RAG System Build</span>
+        <span class="catalog-tag tag-llm">LangChain</span>
+      </div>
+      <div class="catalog-stack">Stack: FastAPI/Flask + LangChain/LlamaIndex + pgvector + LLM (Claude/GPT-4). ¥800k-3M.</div>
+      <div class="catalog-status">✅ READY — Matches #5512588, #5409024</div>
+    </div>
+    
+    <!-- 7. Real-Time Pipeline -->
+    <div class="catalog-section">
+      <div class="catalog-header">
+        <span class="catalog-name">7. Real-Time Pipeline (GCP/Dataflow)</span>
+        <span class="catalog-tag tag-pipeline">Apache Beam</span>
+      </div>
+      <div class="catalog-stack">Stack: GCP Dataflow + Apache Beam + BigQuery + Python. ¥300-800k.</div>
+      <div class="catalog-status">✅ READY — Matches #5523967</div>
+    </div>
+    
+    <!-- 8. PDF/OCR -->
+    <div class="catalog-section">
+      <div class="catalog-header">
+        <span class="catalog-name">8. PDF/OCR Tool for JP Enterprise</span>
+        <span class="catalog-tag tag-ocr">Tesseract OCR</span>
+      </div>
+      <div class="catalog-stack">Stack: FastAPI + pdfplumber/PyMuPDF + Tesseract OCR + EasyOCR + Claude API. ¥1.1-3.8M.</div>
+      <div class="catalog-status">✅ READY — Matches #5250371</div>
+    </div>
+    
+    <!-- 9. Notion/Confluence -->
+    <div class="catalog-section">
+      <div class="catalog-header">
+        <span class="catalog-name">9. Notion/Confluence JP Localization</span>
+        <span class="catalog-tag tag-python">Python</span>
+      </div>
+      <div class="catalog-stack">Stack: Python + Notion API + Confluence API + Jenkins/GitHub Actions. ¥300-600k.</div>
+      <div class="catalog-status">✅ READY</div>
+    </div>
+    
+    <!-- 10. Agentic AI Soft -->
+    <div class="catalog-section">
+      <div class="catalog-header">
+        <span class="catalog-name">10. Agentic AI Soft (CrewAI/Multi-Agent)</span>
+        <span class="catalog-tag tag-llm">CrewAI</span>
+      </div>
+      <div class="catalog-stack">Stack: CrewAI + LangChain + Streamlit + Claude/GPT-4. ¥500k-2M.</div>
+      <div class="catalog-status">✅ READY — Matches #5523922</div>
+    </div>
+  </div>
+
+  <!-- Links -->
+  <div class="card">
+    <div class="card-header">
+      <span class="card-title">🔗 Quick Links</span>
+    </div>
+    <div class="links-grid">
+      <a href="https://kaji-hemopo.github.io/telemetry/empire-home.html" class="link-card" target="_blank">
+        <div class="link-card-title">🏠 Empire Home</div>
+        <div class="link-card-desc">Command center — all agents</div>
+      </a>
+      <a href="https://kaji-hemopo.github.io/empire_portfolio/" class="link-card" target="_blank">
+        <div class="link-card-title">💼 Empire Portfolio</div>
+        <div class="link-card-desc">Jackson's work showcase</div>
+      </a>
+      <a href="https://kaji-hemopo.github.io/telemetry/" class="link-card" target="_blank">
+        <div class="link-card-title">📊 Intel Dashboard</div>
+        <div class="link-card-desc">Ito's intelligence terminal</div>
+      </a>
+      <a href="https://www.lancers.jp/work/search/system?type[]=project&open=1&sort=create_date&order=desc" class="link-card" target="_blank">
+        <div class="link-card-title">🎯 Lancers Fresh Feed</div>
+        <div class="link-card-desc">Live discovery — Python/AI/ML</div>
+      </a>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  Saito · Digital Monetization Scout · 20min heartbeat active · No outreach (hard constraint) · 2026
+</footer>
+
+</body>
+</html>
