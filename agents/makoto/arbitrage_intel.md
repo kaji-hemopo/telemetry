@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-13 01:53 JST
+Generated: 2026-04-13 05:06 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -53,14 +53,16 @@ Generated: 2026-04-13 01:53 JST
 | Score | Platform | Keyword | Title | Budget/Rate | URL |
 |---:|---|---|---|---|---|
 | 85 | Freelancer | Make.com automation | Moodle LMS Implementation on Microsoft Azure for Technical Traini | $1,500.00 | https://www.freelancer.com/projects/microsoft-azure/Moodle-LMS-Implementation-Microsoft.html |
+| 75 | Freelancer | Python scraper | OSINT Identity &amp; Network Correlation | $250.00 | https://www.freelancer.com/projects/data-analysis/OSINT-Identity-Network-Correlation.html |
 | 75 | Freelancer | Python scraper | Python RESTful API Backend Development | $250.00 | https://www.freelancer.com/projects/django/Python-RESTful-API-Backend-Development.html |
 | 75 | Freelancer | Python scraper | AI-Driven Coffee Cultivation Support System | $250.00 | https://www.freelancer.com/projects/computer-vision/Driven-Coffee-Cultivation-Support-System.html |
 | 75 | Freelancer | Python scraper | K-Means Workflow for Earthquake Data | $250.00 | https://www.freelancer.com/projects/data-visualization/Means-Workflow-for-Earthquake-Data.html |
 | 75 | Freelancer | Make.com automation | Pneumatic Design Engineer Needed | $250.00 | https://www.freelancer.com/projects/autocad/Pneumatic-Design-Engineer-Needed-40365868.html |
-| 75 | Freelancer | Data processing API | Mixed Data Entry Compilation | $250.00 | https://www.freelancer.com/projects/data-analysis/Mixed-Data-Entry-Compilation-40366588.html |
-| 75 | Freelancer | Data processing API | Data Processing Assistant &ndash; Daily Text Entry &amp; Source T | $250.00 | https://www.freelancer.com/projects/data-entry/Data-Processing-Assistant-Daily-Text-40366539.html |
+| 75 | Freelancer | Data processing API | Cross-Platform Dancer Booking App | $250.00 | https://www.freelancer.com/projects/api-developmet/Cross-Platform-Dancer-Booking-App.html |
+| 75 | Freelancer | Data processing API | Access Database Completion for Dog Boarding | $250.00 | https://www.freelancer.com/projects/database-design/Access-Database-Completion-for-Dog.html |
+| 65 | Freelancer | Python scraper | Car Rental Price Scraper | $10.00 | https://www.freelancer.com/projects/selenium/Car-Rental-Price-Scraper.html |
+| 65 | Freelancer | Python scraper | 10-Year NYSE/NASDAQ Backtest | $30.00 | https://www.freelancer.com/projects/data-analysis/Year-NYSE-NASDAQ-Backtest.html |
 | 65 | Freelancer | Python scraper | Integraci&oacute;n y Optimizaci&oacute;n en ComfyUI | Busco apoyo para ampliar ComfyUI añadiendo nuevas funcionalidades centradas en e | https://www.freelancer.com/projects/stable-diffusion/Integraci-Optimizaci-ComfyUI.html |
-| 65 | Freelancer | Python scraper | Python E-commerce Data Scraper | $30.00 | https://www.freelancer.com/projects/data-extraction/Python-commerce-Data-Scraper.html |
 | 65 | Freelancer | Python scraper | Pocket Option Signal Bot | $10.00 | https://www.freelancer.com/projects/python/Pocket-Option-Signal-Bot.html |
 | 65 | Freelancer | Python scraper | Supervised ML Model, Numerical Data - 12/04/2026 07:21 EDT - 12/0 | I have a clean, structured numerical dataset and need a supervised machine-learn | https://www.freelancer.com/projects/algorithm/Supervised-Model-Numerical-Data-EDT-40366248.html |
 | 65 | Freelancer | Python scraper | Fix OpenAI API Configuration | $30.00 | https://www.freelancer.com/projects/openai/Fix-OpenAI-API-Configuration.html |
@@ -68,10 +70,8 @@ Generated: 2026-04-13 01:53 JST
 | 65 | Freelancer | Python scraper | Supervised ML Model, Numerical Data - 12/04/2026 07:21 EDT | I have a clean, structured numerical dataset and need a supervised machine-learn | https://www.freelancer.com/projects/algorithm/Supervised-Model-Numerical-Data-EDT.html |
 | 65 | Freelancer | Python scraper | Deploy Maintain React Python Invoice Tool | I have an AI-powered invoicing application (Emergent AI Caad Invoice – https://w | https://www.freelancer.com/projects/nextjs/Deploy-Maintain-React-Python-Invoice.html |
 | 65 | Freelancer | Python scraper | Satellite &amp; MMWave Signal Analysis | $15.00 | https://www.freelancer.com/projects/signal-processing/Satellite-MMWave-Signal-Analysis.html |
-| 65 | Freelancer | Python scraper | Full-Stack Java back and Front Development help | $8.00 | https://www.freelancer.com/projects/spring-boot/Full-Stack-Java-back-Front.html |
-| 65 | Freelancer | Make.com automation | AI Automation Specialist Needed for Process Improvement | $8.00 | https://www.freelancer.com/projects/ai-agents/Automation-Specialist-Needed-for-Process.html |
-| 65 | Freelancer | Make.com automation | Blue Prism Developer Needed for Healthcare Automation | I need an experienced Blue Prism developer to help automate various critical pro | https://www.freelancer.com/projects/process-automation/Blue-Prism-Developer-Needed-for.html |
-| 65 | Freelancer | Make.com automation | Custom Minecraft Technical Modpack | I need a Minecraft modpack focused on Technical and Automation. The modpack shou | https://www.freelancer.com/projects/game-development/Custom-Minecraft-Technical-Modpack.html |
+| 65 | Freelancer | Make.com automation | Financial Data Automation | $15.00 | https://www.freelancer.com/projects/n8n/Financial-Data-Automation.html |
+| 65 | Freelancer | Make.com automation | Agentic AI &amp; n8n | $15.00 | https://www.freelancer.com/projects/n8n/Installation-Coaching-Session-Agentic.html |
 
 ## Notes
 - Scores prioritize: (1) simple automation/scripting fit, (2) payout magnitude, (3) keyword relevance.
