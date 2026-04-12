@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert Feed — Intel Radar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { font-family: 'Inter', sans-serif; }
+        body { background: #0a0a0f; color: #e2e2e5; min-height: 100vh; }
+        .glass { background: rgba(30, 30, 40, 0.8); backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; }
+        .accent { color: #00daf3; }
+        .accent-bg { background: linear-gradient(135deg, #00daf3 0%, #0066cc 100%); }
+        .header { background: rgba(15, 15, 20, 0.9); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(255,255,255,0.05); }
+        .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; text-transform: uppercase; background: rgba(0, 218, 243, 0.15); color: #00daf3; margin-right: 4px; }
+        .badge-small { display: inline-block; padding: 1px 6px; border-radius: 3px; font-size: 10px; background: rgba(0, 218, 243, 0.1); color: #00daf3; }
+        .sector-card { margin-bottom: 16px; }
+        .sector-title { font-size: 16px; font-weight: 700; color: #e2e2e5; margin-bottom: 8px; }
+        .keywords { margin-bottom: 12px; }
+        .alert-item { padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
+        .alert-item:last-child { border-bottom: none; }
+        .alert-title { color: #e2e2e5; text-decoration: none; font-size: 13px; font-weight: 500; display: block; margin-bottom: 4px; }
+        .alert-title:hover { color: #00daf3; }
+        .alert-meta { display: flex; gap: 8px; flex-wrap: wrap; }
+        .stat-card { background: rgba(30,30,40,0.6); border: 1px solid rgba(255,255,255,0.05); border-radius: 8px; padding: 16px; text-align: center; }
+        .stat-value { font-size: 28px; font-weight: 800; color: #00daf3; }
+        .stat-label { font-size: 11px; color: #849396; text-transform: uppercase; margin-top: 4px; }
+        .empty-state { text-align: center; padding: 60px 20px; color: #849396; }
+        .status-live { display: inline-flex; align-items: center; gap: 6px; padding: 4px 12px; border-radius: 20px; background: rgba(34, 197, 94, 0.15); color: #22c55e; font-size: 12px; font-weight: 600; }
+        .status-live::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: #22c55e; animation: pulse 2s infinite; }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header fixed top-0 w-full z-50 px-6 py-4">
+        <div class="max-w-6xl mx-auto flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <span class="text-xl">🚨</span>
+                <h1 class="text-xl font-black tracking-tight accent">ALERT FEED</h1>
+            </div>
+            <div class="flex items-center gap-4">
+                <span class="status-live">LIVE</span>
+                <span class="text-sm text-neutral-400">Last scan: 2026-04-12 11:19:34 UTC</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-20 px-4 md:px-8 max-w-6xl mx-auto">
+        <!-- Stats -->
+        <div class="grid grid-cols-3 gap-4 mb-6">
+            <div class="stat-card">
+                <div class="stat-value">139</div>
+                <div class="stat-label">Total Matches</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">10</div>
+                <div class="stat-label">Active Sectors</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">40+</div>
+                <div class="stat-label">RSS Feeds Monitored</div>
+            </div>
+        </div>
+
+        <!-- Alert Source Info -->
+        <div class="glass rounded-xl p-4 mb-6">
+            <p class="text-sm text-neutral-400">
+                <span class="accent font-semibold">Keyword Alerting Active</span> — Scanning 40 RSS feeds across 15 sectors for:
+                <span class="text-neutral-300">crisis, recession, BOJ, Fed, ECB, RBNZ, inflation, rate hike, gold, oil, NZD/JPY, USD/JPY, tariff, Ukraine, Taiwan, Trump, Iran, China slowdown, emerging markets, property, rugby</span>
+            </p>
+        </div>
+
+        <!-- Alert Cards -->
+        <div class="mb-6">
+            <h2 class="text-lg font-bold mb-4">Active Alerts by Sector</h2>
+            
+        <div class="sector-card glass">
+            <h3 class="sector-title">Finance</h3>
+            <div class="keywords"></div>
+            <div class="articles">
+            <div class="alert-item">
+                <a href="https://www.bloomberg.com/news/articles/2026-04-11/global-funds-flee-indian-stocks-at-record-pace-on-growth-fears" target="_blank" class="alert-title">Global Funds Flee Indian Stocks at Record Pace on Growth Fears</a>
+                <div class="alert-meta">
+                    <span class="badge-small"></span>
+                </div>
+            </div>
+            <div class="alert-item">
+                <a href="https://www.bloomberg.com/news/articles/2026-04-11/starmer-plots-higher-uk-defense-spending-in-bid-to-save-his-job" target="_blank" class="alert-title">Starmer Plots Higher UK Defense Spending in Bid to Save His Job</a>
+                <div class="alert-meta">
+                    <span class="badge-small"></span>
+                </div>
+            </div>
+            <div class="alert-item">
+                <a href="https://www.bloomberg.com/news/audio/2026-04-11/odd-lots-the-big-macro-force-that-s-kept-stocks-high-podcast" target="_blank" class="alert-title">Odd Lots: The Big Macro Force That’s Kept Stocks High (Podcast)</a>
+                <div class="alert-meta">
+                    <span class="badge-small"></span>
+                </div>
+            </div>
+            <div class="alert-item">
+                <a href="https://www.bloomberg.com/news/videos/2026-04-11/assessing-volatility-iran-war-masters-in-business-video" target="_blank" class="alert-title">Assessing Asset Volatility and Iran War Threats: Masters in Business with Mike P</a>
+                <div class="alert-meta">
+                    <span class="badge-small"></span>
+                </div>
+            </div>
+            <div class="alert-item">
+                <a href="https://www.bloomberg.com/news/articles/2026-04-11/three-oil-supertankers-appear-to-make-move-through-hormuz-strait" target="_blank" class="alert-title">Three Oil Supertankers Appear to Make Move Through Hormuz Strait</a>
+                <div class="alert-meta">
+                    <span class="badge-small"></span>
+                </div>
+            </div></div>
+        </div>
+        <div class="sector-card glass">
+            <h3 class="sector-title">Japan Business</h3>
+            <div class="keywords"></div>
+            <div class="articles">
+            <div class="alert-item">
+                <a href="https://newsonjapan.com/article/148886.php" target="_blank" class="alert-title">Hidden Kyoto Village Reaches Peak Cherry Bloom</a>
+                <div class="alert-meta">
+                    <span class="badge-small"></span>
+                </div>
+            </div>
+            <div class="alert-item">
+                <a href="https://newsonjapan.com/article/148885.php" target="_blank" class="alert-title">Osaka Shochikuza Theater Stages Final Kabuki Performances</a>
+                <div class="alert-meta">
+                    <span class="badge-small"></span>
+                </div>
+            </div>
+            <div class="alert-item">
+                <a href="https://japantoday.com/category/world/palestinian-killed-in-west-bank-as-violence-surges-during-iran-war" target="_blank" class="alert-title">Palestinian killed in West Bank as violence surges during Iran war</a>
+                <div class="alert-meta">
+                    <span class="badge-small"></span>
+                </div>
+            </div>
+            <div class="alert-item">
+                <a href="https://japantoday.com/category/world/judge-told-to-reconsider-national-security-implications-of-halting-trump%27s-white-house-ballroom" target="_blank" class="alert-title">Judge told to reconsider national security implications of halting Trump's White</a>
+                <div class="alert-meta">
+                    <span class="badge-small"></span>
+                </div>
+            </div>
+            <div class="alert-item">
+                <a href="https://japantoday.com/category/world/us-iran-negotiations-underway-trump-says-strait-of-hormuz-being-cleared" target="_blank" class="alert-title">U.S.-Iran negotiations underway; Trump says Strait of Hormuz being cleared</a>
+                <div class="alert-meta">
+                    <span class="badge-small"></span>
+                </div>
+            </div></div>
+        </div>
+        <div class="sector-card glass">
+            <h3 class="sector-title">NZ Business</h3>
+            <div class="keywords"></div>
+            <div class="articles">
+            <div class="alert-item">
+                <a href="https://www.interest.co.nz/investing/137939/primer-outlines-gold-market%E2%80%99s-size-structure-and-essential-characteristics" target="_blank" class="alert-title">Gold market primer: Market size and structure</a>
+                <div class="alert-meta">
+                    <span class="badge-small"></span>
+                </div>
+            </div>
+            <div class="alert-item">
+                <a href="https://www.interest.co.nz/economy/137942/mohamed-el-erian-warns-us-despite-its-strengths-their-economy-will-not-remain" target="_blank" class="alert-title">America should beware of economic hubris</a>
+                <div class="alert-meta">
+                    <span class="badge-small"></span>
+                </div>
+            </div>
+            <div class="alert-item">
+                <a href="https://www.interest.co.nz/economy/137941/%C5%9Febnem-kalemli-%C3%B6zcan-warns-americas-current-policies-are-turning-manageable-problems" target="_blank" class="alert-title">Interdependence bites back</a>
+                <div class="alert-meta">
+                    <span class="badge-small"></span>
+                </div>
+            </div>
+            <div class="alert-item">
+                <a href="https://www.interest.co.nz/economy/137935/javier-milei%E2%80%99s-inflation-%E2%80%98miracle%E2%80%99-argentina-warning-world-not-%C2%A0blueprint-can-cinar" target="_blank" class="alert-title">When the cure for inflation is more lethal than the disease itself</a>
+                <div class="alert-meta">
+                    <span class="badge-small"></span>
+                </div>
+            </div>
+            <div class="alert-item">
+                <a href="https://www.interest.co.nz/economy/137940/us-jobs-rise-or-do-they-us-service-sector-contracts-us-private-credit-sector-wobbles" target="_blank" class="alert-title">Weekend briefing: US problems compound</a>
+                <div class="alert-meta">
+                    <span class="badge-small"></span>
+                </div>
+            </div></div>
+        </div>
+        <div class="sector-card glass">
+            <h3 class="sector-title">Japan Times Business</h3>
+            <div class="keywords"></div>
+            <div class="articles">
+            <div class="alert-item">
+                <a href="https://www.japantimes.co.jp/business/2026/04/11/economy/confusion-naphtha-supply-industries-households/" target="_blank" class="alert-title">Confusion over naphtha supply hits industries and households</a>
+                <div class="alert-meta">
+                    <span class="badge-small"></span>
+                </div>
+            </div>
+            <div class="alert-item">
+                <a href="https://www.japantimes.co.jp/business/2026/04/11/economy/fuel-shortages-iran-asia-rice/" target="_blank" class="alert-title">Fuel shortages from Iran war threaten Asia’s biggest food staple</a>
+                <div class="alert-meta">
+                    <span class="badge-small"></span>
+                </div>
+            </div>
+            <div class="alert-item">
+                <a href="https://www.japantimes.co.jp/business/2026/04/11/economy/iran-war-crisis-countries-analysis/" target="_blank" class="alert-title">Iran war leaves crisis-scarred countries counting the cost</a>
+                <div class="alert-meta">
+                    <span class="badge-small"></span>
+                </div>
+            </div>
+            <div class="alert-item">
+                <a href="https://www.japantimes.co.jp/business/2026/04/11/economy/boj-rate-policy-middle-east/" target="_blank" class="alert-title">Bank of Japan wary of inflation pressure amid war in Middle East</a>
+                <div class="alert-meta">
+                    <span class="badge-small"></span>
+                </div>
+            </div></div>
+        </div>
+        <div class="sector-card glass">
+            <h3 class="sector-title">Japan Regulatory</h3>
+            <div class="keywords"></div>
+            <div class="articles">
+            <div class="alert-item">
+                <a href="https://www.reddit.com/r/JapanFinance/comments/1sictv6/trying_to_get_a_mortgage_in_slightly_unusual/" target="_blank" class="alert-title">Trying to get a mortgage in slightly unusual situation</a>
+                <div class="alert-meta">
+                    <span class="badge-small"></span>
+                </div>
+            </div></div>
+        </div>
+        <div class="sector-card glass">
+            <h3 class="sector-title">Japan Startups</h3>
+            <div class="keywords"></div>
+            <div class="articles">
+            <div class="alert-item">
+                <a href="https://www.techinasia.com/visual-story/japan-fintech-map" target="_blank" class="alert-title">Mapping Japan’s notable fintech startups</a>
+                <div class="alert-meta">
+                    <span class="badge-small"></span>
+                </div>
+            </div>
+            <div class="alert-item">
+                <a href="https://www.techinasia.com/top-funded-startups-tech-companies-india" target="_blank" class="alert-title">Meet the 50 top-funded startups and tech companies in India</a>
+                <div class="alert-meta">
+                    <span class="badge-small"></span>
+                </div>
+            </div>
+            <div class="alert-item">
+                <a href="https://www.techinasia.com/visual-story/mapping-japans-prominent-cleantech-startups" target="_blank" class="alert-title">Mapping Japan’s prominent cleantech startups</a>
+                <div class="alert-meta">
+                    <span class="badge-small"></span>
+                </div>
+            </div>
+            <div class="alert-item">
+                <a href="https://www.techinasia.com/media-leader-murdochs-in-talks-on-tiktok-us-spinoff-deal" target="_blank" class="alert-title">Paramount nears $24b Gulf backing for Warner deal</a>
+                <div class="alert-meta">
+                    <span class="badge-small"></span>
+                </div>
+            </div>
+            <div class="alert-item">
+                <a href="https://www.techinasia.com/fintech-firm-block-posts-2b-btc-revenue-in-q3" target="_blank" class="alert-title">Indian crypto rewards fintech GoSats raises $5m in series A</a>
+                <div class="alert-meta">
+                    <span class="badge-small"></span>
+                </div>
+            </div></div>
+        </div>
+        <div class="sector-card glass">
+            <h3 class="sector-title">Australia Business</h3>
+            <div class="keywords"></div>
+            <div class="articles">
+            <div class="alert-item">
+                <a href="https://www.abc.net.au/news/2026-04-11/ranger-recounts-nt-chopper-crash-rescue-careflight-anniversary/106553062" target="_blank" class="alert-title">When a chopper went down in Kakadu, this ranger was injured — but survived</a>
+                <div class="alert-meta">
+                    <span class="badge-small"></span>
+                </div>
+            </div>
+            <div class="alert-item">
+                <a href="https://www.abc.net.au/news/2026-04-11/middle-east-war-hits-thailand-fishing-industry/106554192" target="_blank" class="alert-title">Thai fishing port highlights 'big trouble' caused by Middle East war</a>
+                <div class="alert-meta">
+                    <span class="badge-small"></span>
+                </div>
+            </div>
+            <div class="alert-item">
+                <a href="https://www.abc.net.au/news/2026-04-11/nrl-live-broncos-souths-raiders-sharks-roosters-storm-warriors/106554540" target="_blank" class="alert-title">Live: Broncos' crisis deepens as superstar faces ban</a>
+                <div class="alert-meta">
+                    <span class="badge-small"></span>
+                </div>
+            </div>
+            <div class="alert-item">
+                <a href="https://www.abc.net.au/news/2026-04-11/claudia-hollingsworth-jess-hull-australian-athletics-champs-1500/106554698" target="_blank" class="alert-title">Hollingsworth sensationally reinstated as national champion, after initial DQ</a>
+                <div class="alert-meta">
+                    <span class="badge-small"></span>
+                </div>
+            </div>
+            <div class="alert-item">
+                <a href="https://www.abc.net.au/news/2026-04-11/government-launches-multi-million-dollar-fuel-saving-campaign/106555004" target="_blank" class="alert-title">Government launches multi-million-dollar fuel saving campaign</a>
+                <div class="alert-meta">
+                    <span class="badge-small"></span>
+                </div>
+            </div></div>
+        </div>
+        <div class="sector-card glass">
+            <h3 class="sector-title">SaaS</h3>
+            <div class="keywords"></div>
+            <div class="articles">
+            <div class="alert-item">
+                <a href="https://www.saastr.com/the-leading-public-software-companies-are-now-down-50-in-the-last-6-months/" target="_blank" class="alert-title">The Leading Public Software Companies Are Now Down -50% in the Last 6 Months</a>
+                <div class="alert-meta">
+                    <span class="badge-small"></span>
+                </div>
+            </div></div>
+        </div>
+        <div class="sector-card glass">
+            <h3 class="sector-title">Gold News</h3>
+            <div class="keywords"></div>
+            <div class="articles">
+            <div class="alert-item">
+                <a href="https://www.constructionenquirer.com/2026/04/10/government-gives-380m-grant-to-agratas-gigafactory/" target="_blank" class="alert-title">Government gives £380m grant to Agratas gigafactory</a>
+                <div class="alert-meta">
+                    <span class="badge-small"></span>
+                </div>
+            </div></div>
+        </div>
+        <div class="sector-card glass">
+            <h3 class="sector-title">NZ Property</h3>
+            <div class="keywords"></div>
+            <div class="articles">
+            <div class="alert-item">
+                <a href="https://www.interest.co.nz/economy/137940/us-jobs-rise-or-do-they-us-service-sector-contracts-us-private-credit-sector-wobbles" target="_blank" class="alert-title">Weekend briefing: US problems compound</a>
+                <div class="alert-meta">
+                    <span class="badge-small"></span>
+                </div>
+            </div>
+            <div class="alert-item">
+                <a href="https://www.interest.co.nz/public-policy/137931/agencies-ministers-and-data-behind-new-zealand%E2%80%99s-fuel-crisis-response-and" target="_blank" class="alert-title">The fuel crisis: who, what, and on whose advice?</a>
+                <div class="alert-meta">
+                    <span class="badge-small"></span>
+                </div>
+            </div>
+            <div class="alert-item">
+                <a href="https://www.interest.co.nz/property/137916/implications-housing-demand-are-clearly-negative-bnz-chief-economist-says" target="_blank" class="alert-title">BNZ economist warns inflation-adjusted house prices might be back at 2016 levels</a>
+                <div class="alert-meta">
+                    <span class="badge-small"></span>
+                </div>
+            </div>
+            <div class="alert-item">
+                <a href="https://www.interest.co.nz/economy/137919/us-data-modest-heavy-inflation-signals-canada-pmis-stall-other-main-global-pmis" target="_blank" class="alert-title">Breakfast briefing: Contrasting national addresses</a>
+                <div class="alert-meta">
+                    <span class="badge-small"></span>
+                </div>
+            </div>
+            <div class="alert-item">
+                <a href="https://www.interest.co.nz/property/137909/middle-east-war-and-oil-shock-throwing-extra-layer-uncertainty-over-everything" target="_blank" class="alert-title">Cotality says housing market faces 'a testing period ahead'</a>
+                <div class="alert-meta">
+                    <span class="badge-small"></span>
+                </div>
+            </div></div>
+        </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-center text-neutral-500 text-sm py-8">
+            <p>Alert Feed — Auto-updated every 20 minutes via Ito Intel Sector</p>
+            <p class="mt-1">Keyword alerting runs on RSS scrape cadence</p>
+        </footer>
+    </main>
+</body>
+</html>
