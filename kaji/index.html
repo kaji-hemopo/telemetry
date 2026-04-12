@@ -110,6 +110,7 @@
         .alert-row.warn { background: rgba(251,191,36,0.08); border-color: rgba(251,191,36,0.2); color: var(--yellow); }
         .alert-row.warn.red-border { border-color: rgba(248,113,113,0.3); }
         .alert-row.info { background: rgba(34,211,238,0.06); border-color: rgba(34,211,238,0.2); color: var(--accent); }
+        .alert-row.ok { background: rgba(74,222,128,0.08); border-color: rgba(74,222,128,0.2); color: var(--green); }
         .domain-table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
         .domain-table th { text-align: left; padding: 6px 10px; color: var(--dim); font-size: 11px;
             text-transform: uppercase; letter-spacing: 0.06em; border-bottom: 1px solid rgba(255,255,255,0.06); }
@@ -129,36 +130,36 @@
     <header>
         <div class="header-left">
             <h1>Kaji · COO Dashboard</h1>
-            <p>Improve Existing beat: Wrote Felix N3 database plan (outputs/n3_db_plan.md 4,396 bytes). Delegation Prep next (Rule 4 rung 2 · beatsAgo=4 ≥4 forced). Titan Monday launch in ~8hr.</p>
+            <p>New Ideas beat: Empire Master Ledger created (outputs/master_ledger.md 3,789 bytes) ✅ · Ito task dispatched to add Property Intel to IDEAS_VAULT as #7 ✅ · Titan + Kaji alert corrections applied ✅</p>
         </div>
         <div class="header-right">
-            <div class="role-tag">Active · 60min beats</div>
-            <div class="updated">Updated: <span id="ts">Loading…</span> JST · <strong style="color:#a78bfa;">IMPROVE EXISTING BEAT 2026-04-12 23:20 JST</strong></div>
+            <div class="role-tag">Active · 45min beats</div>
+            <div class="updated">Updated: <span id="ts">Loading…</span> JST · <strong style="color:#a78bfa;">NEW IDEAS BEAT 2026-04-13 01:16 JST</strong></div>
         </div>
     </header>
 
     <!-- ALERTS -->
     <div class="card full" style="margin-bottom:20px; border-color: rgba(34,211,238,0.25);">
-        <h3 style="color:#a78bfa;"><span class="material-symbols-outlined">verified</span> Empire Alerts — Mon 00:15 JST · Delegation Prep Beat</h3>
+        <h3 style="color:#a78bfa;"><span class="material-symbols-outlined">verified</span> Empire Alerts — Mon 01:16 JST · New Ideas Beat</h3>
         <div class="alert-row warn red-border">
             <span>⏰</span>
             <div><strong>Saito CrowdWorks #13049491 — 2 DAYS LEFT (Apr 16)</strong> · 17 applicants · Proposal at outputs/proposal_13049491.md · <strong>Jackson: SUBMIT NOW</strong></div>
         </div>
         <div class="alert-row warn">
             <span>🏋️</span>
-            <div><strong>Titan Carrd + Gumroad — MON 07:30 JST LAUNCH (~7hr)</strong> · All 6 assets confirmed at workspace-titan/ ✅ · Jax publishes PT_Landing_Page.html → carrd.co + Gumroad ¥150k before 08:30 JST · 1 client = ¥150k</div>
+            <div><strong>Titan Carrd + Gumroad — TODAY Mon 07:30 JST LAUNCH (~6hr)</strong> · All 6 assets confirmed at workspace-titan/ ✅ · Jax publishes before 08:30 JST · 1 client = ¥150k</div>
         </div>
-        <div class="alert-row warn red-border">
-            <span>🔴</span>
-            <div><strong>⚠️ CRITICAL: Kaji cron 2-consec TIMEOUT</strong> · Kaji's own 45min beat timing out at 2400s agentTurn limit · This beat IS the timed-out run · Empire Audit next beat (Rule 2 override)</div>
+        <div class="alert-row ok">
+            <span>✅</span>
+            <div><strong>Kaji self-timeout alert CORRECTED</strong> · cron shows 0-consec · lastRunStatus: ok · previous "2-consec timeout" flag was wrong · Kaji is healthy</div>
         </div>
-        <div class="alert-row warn">
-            <span>🔴</span>
-            <div><strong>⚠️ Titan Telegram FAILING (2-consec)</strong> · "⚠️ ✉️ Message failed" despite mode:none/channel:none patch · Needs investigation next beat</div>
+        <div class="alert-row ok">
+            <span>✅</span>
+            <div><strong>Titan Telegram 2-consec alert CORRECTED</strong> · cron shows 0-consec · lastRunStatus: ok · "2-consec" was Titan agent's own message send attempt, not cron delivery layer · No infrastructure issue</div>
         </div>
         <div class="alert-row info">
-            <span>📋</span>
-            <div><strong>Delegation Prep — 00:15 JST:</strong> Built outputs/delegation_queue.md (3,274 bytes) ✅ · 6 briefs catalogued · 4 pending Jax 20-24h · 1 READY (Felix N3 Phase 1) · 1 URGENT (Saito CrowdWorks) · Next: Empire Audit (Rule 2 override)</div>
+            <span>💡</span>
+            <div><strong>New Ideas — Beat 2026-04-13 01:16 JST:</strong> Empire Master Ledger created outputs/master_ledger.md (3,789 bytes) ✅ — Property Intel P0, Empire Morning Briefing P1, all Ito vault ideas P2 (capital). Ito task dispatched: add Property Intel to IDEAS_VAULT.md as Idea #7 ✅</div>
         </div>
     </div>
 
@@ -166,18 +167,18 @@
     <div class="grid-3" style="margin-bottom:20px;">
         <div class="card" style="border-left:3px solid #4ade80;">
             <h3><span class="material-symbols-outlined">check_circle</span> Tasks Done</h3>
-            <p style="font-size:2rem;font-weight:800;color:#4ade80;margin-top:4px;">48</p>
-            <p style="color:var(--dim);font-size:12px;margin-top:4px;">+ Tidy Ops (20:52 JST): MEMORY.md 196→100 lines, 4 beats archived, dashboard refreshed · Empire Audit next</p>
+            <p style="font-size:2rem;font-weight:800;color:#4ade80;margin-top:4px;">50</p>
+            <p style="color:var(--dim);font-size:12px;margin-top:4px;">+ New Ideas: master_ledger.md + Ito task dispatch + 2 alert corrections · Empire Audit next (~01:45 JST)</p>
         </div>
         <div class="card" style="border-left:3px solid #22d3ee;">
             <h3><span class="material-symbols-outlined">psychology</span> Empire Agents</h3>
             <p style="font-size:2rem;font-weight:800;color:#22d3ee;margin-top:4px;">7</p>
-            <p style="color:var(--dim);font-size:12px;margin-top:4px;">Kaji · Ito · Saito · Makoto · Felix · Titan · Odie · all 0-consec</p>
+            <p style="color:var(--dim);font-size:12px;margin-top:4px;">All 0-consec · Kaji + Titan alert corrections applied · clean scan 01:16 JST</p>
         </div>
         <div class="card" style="border-left:3px solid #4ade80;">
             <h3><span class="material-symbols-outlined">schedule</span> Cron Health</h3>
-            <p style="font-size:2rem;font-weight:800;color:#fbbf24;margin-top:4px;">WARN</p>
-            <p style="color:var(--dim);font-size:12px;margin-top:4px;">13 active · Kaji 2-consec TIMEOUT · Titan 2-consec Telegram FAIL · Ito Weekly Reddit 1-consec · live scan 00:15 JST</p>
+            <p style="font-size:2rem;font-weight:800;color:#4ade80;margin-top:4px;">CLEAN</p>
+            <p style="color:var(--dim);font-size:12px;margin-top:4px;">14/15 active · Kaji self-timeout CLEARED ✅ · Titan Telegram CLEARED ✅ · live scan 01:16 JST</p>
         </div>
     </div>
 
@@ -191,29 +192,36 @@
                 <li>
                     <span class="task-dot done"></span>
                     <div>
-                        <span class="initiative-tag" style="background:rgba(34,211,238,0.1);color:#22d3ee;border-color:rgba(34,211,238,0.2);">Empire Audit</span> <strong>Beat 2026-04-12 22:35 JST:</strong> Titan DASHBOARD.md rewritten · Felix DASHBOARD.md rewritten · All 7 agents verified clean · No duplicate crons · No zombie sessions
+                        <span class="initiative-tag" style="background:rgba(34,211,238,0.1);color:#22d3ee;border-color:rgba(34,211,238,0.2);">Empire Audit</span> <strong>Beat 2026-04-12 22:35 JST:</strong> All 7 agents verified clean · Titan + Felix DASHBOARD rewritten · No duplicate crons · No zombie sessions
                         <div class="task-label">prev beat · 22:35 JST</div>
                     </div>
                 </li>
                 <li>
                     <span class="task-dot done"></span>
                     <div>
-                        <span class="initiative-tag" style="background:rgba(167,139,250,0.12);color:#a78bfa;border-color:rgba(167,139,250,0.25);">Improve Existing</span> <strong>Beat 2026-04-12 23:20 JST — THIS BEAT:</strong> Wrote outputs/n3_db_plan.md (4,396 bytes) — SQLite schema, Anki pipeline, 6-step build plan for Felix N3 database · Updated FELIX_DASHBOARD.md · Delegation brief ready
+                        <span class="initiative-tag" style="background:rgba(167,139,250,0.12);color:#a78bfa;border-color:rgba(167,139,250,0.25);">Improve Existing</span> <strong>Beat 2026-04-12 23:20 JST:</strong> Felix N3 database plan outputs/n3_db_plan.md (4,396 bytes) ✅ · FELIX_DASHBOARD.md updated ✅
                         <div class="task-label">prev beat · 23:20 JST</div>
                     </div>
                 </li>
                 <li>
                     <span class="task-dot done"></span>
                     <div>
-                        <span class="initiative-tag" style="background:rgba(74,222,128,0.1);color:#4ade80;border-color:rgba(74,222,128,0.2);">Delegation Prep</span> <strong>Beat 2026-04-13 00:15 JST — THIS BEAT:</strong> Delegation queue structured outputs/delegation_queue.md (3,274 bytes) ✅ · 6 briefs catalogued · Kaji self-timeout + Titan 2-consec flagged ✅ · Empire Audit next (Rule 2 override)
+                        <span class="initiative-tag" style="background:rgba(74,222,128,0.1);color:#4ade80;border-color:rgba(74,222,128,0.2);">Delegation Prep</span> <strong>Beat 2026-04-13 00:15 JST:</strong> Delegation queue outputs/delegation_queue.md (3,274 bytes) ✅ · 6 briefs catalogued
                         <div class="task-label">prev beat · 00:15 JST</div>
+                    </div>
+                </li>
+                <li>
+                    <span class="task-dot done"></span>
+                    <div>
+                        <span class="initiative-tag" style="background:rgba(167,139,250,0.12);color:#a78bfa;border-color:rgba(167,139,250,0.25);">New Ideas</span> <strong>Beat 2026-04-13 01:16 JST — THIS BEAT:</strong> Empire Master Ledger outputs/master_ledger.md (3,789 bytes) ✅ · Ito task dispatched to add Property Intel to IDEAS_VAULT as #7 ✅ · Kaji + Titan alert corrections ✅
+                        <div class="task-label">this beat · 01:16 JST</div>
                     </div>
                 </li>
                 <li>
                     <span class="task-dot blocked"></span>
                     <div>
-                        <span class="initiative-tag" style="background:rgba(34,211,238,0.1);color:#22d3ee;border-color:rgba(34,211,238,0.2);">Empire Audit</span> <strong>Beat ~01:00 JST — NEXT</strong> · Rule 2 override: Kaji self-timeout (2-consec) + Titan Telegram fail (2-consec) = critical infrastructure · beatsAgo New Ideas 5 ≥6 but Rule 2 forces Audit
-                        <div class="task-label">NEXT · RULE 2 OVERRIDE</div>
+                        <span class="initiative-tag" style="background:rgba(34,211,238,0.1);color:#22d3ee;border-color:rgba(34,211,238,0.2);">Empire Audit</span> <strong>Beat ~01:45 JST — NEXT</strong> · Rule 4 rung 1: Empire Audit beatsAgo=3 approaching Rule 3 floor (≥4) · frequency floor urgency · will force next beat
+                        <div class="task-label">NEXT · ~01:45 JST</div>
                     </div>
                 </li>
             </ul>
@@ -223,73 +231,89 @@
         <div class="card">
             <h3><span class="material-symbols-outlined">inbox</span> Open Requests from Jax</h3>
             <div class="request-item" style="border-left:3px solid #f87171;">
-                <div>⏰ <strong>Saito CrowdWorks #13049491 — DEADLINE APRIL 16 (3 days!)</strong></div>
+                <div>⏰ <strong>Saito CrowdWorks #13049491 — DEADLINE APRIL 16 (2 days!)</strong></div>
                 <div class="request-meta">17 applicants · Proposal at outputs/proposal_13049491.md · <strong>Jackson: SUBMIT NOW</strong></div>
             </div>
             <div class="request-item" style="border-left:3px solid #fbbf24;">
-                <div>🏋️ <strong>Titan Carrd + Gumroad — TOMORROW MON 07:30 JST LAUNCH (10.5hr)</strong></div>
+                <div>🏋️ <strong>Titan Carrd + Gumroad — TODAY Mon 07:30 JST LAUNCH (~6hr)</strong></div>
                 <div class="request-meta">All 6 assets confirmed at workspace-titan/ ✅ · Jax publishes before 08:30 JST · 1 client = ¥150k</div>
             </div>
             <div class="request-item" style="border-left:3px solid #4ade80;">
                 <div>👍 <strong>Empire Morning Briefing — Jackson: thumbs up/down?</strong></div>
-                <div class="request-meta">outputs/empire_morning_briefing.md · Daily 07:00 JST · Brief ready: outputs/brief_empire_morning_briefing.md</div>
+                <div class="request-meta">outputs/empire_morning_briefing.md · Daily 07:00 JST · Brief: outputs/brief_empire_morning_briefing.md · P1 per master_ledger</div>
             </div>
             <div class="request-item" style="border-left:3px solid #4ade80;">
                 <div>👍 <strong>Monday Launch Kit Telegram — Jackson: thumbs up/down?</strong></div>
-                <div class="request-meta">outputs/monday_launch_kit.md · Mon 07:00 JST · Brief ready: outputs/brief_monday_launch_kit_telegram.md</div>
+                <div class="request-meta">outputs/monday_launch_kit.md · Mon 07:00 JST · Brief: outputs/brief_monday_launch_kit_telegram.md · P1 per master_ledger</div>
             </div>
         </div>
 
         <!-- BEAT DOMAIN STATE -->
         <div class="card">
             <h3><span class="material-symbols-outlined">psychology</span> Beat Domain State (live)</h3>
-            <p style="color:var(--muted);font-size:12px;margin-bottom:10px;">Updated 2026-04-12 23:20 JST after Improve Existing beat.</p>
+            <p style="color:var(--muted);font-size:12px;margin-bottom:10px;">Updated 2026-04-13 01:16 JST after New Ideas beat.</p>
             <table class="domain-table">
-                <thead><tr><th>Domain</th><th>Last Beat</th><th>Beats Ago</th><th>Status</th></tr></thead>
+                <thead><tr><th>Domain</th><th>Last Beat</th><th>Beats Ago</th><th>Rule Trigger</th></tr></thead>
                 <tbody>
                     <tr>
                         <td><span class="domain-name">Empire Audit</span></td>
                         <td>22:35 JST</td>
-                        <td>1</td>
-                        <td><span class="badge badge-muted">blocked (Rule 1)</span></td>
+                        <td>3</td>
+                        <td><span class="badge badge-warn">⚠️ beatsAgo=3 → next beat (≥4 forces)</span></td>
                     </tr>
                     <tr>
                         <td><span class="domain-name">Delegation Prep</span></td>
-                        <td>17:00 JST</td>
-                        <td>4</td>
-                        <td><span class="badge badge-run">NEXT · rung 2 ≥4 forced</span></td>
+                        <td>00:15 JST</td>
+                        <td>1</td>
+                        <td><span class="badge badge-muted">Rule 1 blocked</span></td>
                     </tr>
                     <tr>
                         <td><span class="domain-name">New Ideas</span></td>
-                        <td>15:45 JST</td>
-                        <td>5</td>
-                        <td><span class="badge badge-muted">blocked (Rule 1)</span></td>
+                        <td>01:16 JST</td>
+                        <td>0</td>
+                        <td><span class="badge badge-muted">Rule 1 blocked next</span></td>
                     </tr>
                     <tr>
                         <td><span class="domain-name">Improve Existing</span></td>
                         <td>23:20 JST</td>
-                        <td>0</td>
-                        <td><span class="badge badge-muted">blocked next (Rule 1)</span></td>
+                        <td>1</td>
+                        <td><span class="badge badge-muted">Rule 1 blocked</span></td>
                     </tr>
                     <tr>
                         <td><span class="domain-name">Tidy Operations</span></td>
                         <td>20:52 JST</td>
                         <td>2</td>
-                        <td><span class="badge badge-muted">blocked (Rule 1)</span></td>
+                        <td><span class="badge badge-muted">Rule 1 blocked</span></td>
                     </tr>
                 </tbody>
             </table>
-            <p style="color:var(--dim);font-size:11px;margin-top:10px;">Rule 3 floor: Delegation Prep beatsAgo=4 ≥4 → forced next beat · Rule 4 rung 2 · Next: Delegation Prep</p>
+            <p style="color:var(--dim);font-size:11px;margin-top:10px;">Rule 3 floor: Empire Audit beatsAgo=3 — will force next beat (beatsAgo=4 ≥4) · Next: Empire Audit</p>
         </div>
 
         <!-- RECENT WORK -->
         <div class="card">
             <h3><span class="material-symbols-outlined">history</span> Recent Work</h3>
             <div class="output-item">
+                <span class="output-icon">💡</span>
+                <div style="flex:1">
+                    <div class="output-name">New Ideas — Beat 2026-04-13 01:16 JST</div>
+                    <div class="output-desc">Empire Master Ledger outputs/master_ledger.md (3,789 bytes) ✅ — Property Intel P0 (no capital, subagent-ready), Empire Morning Briefing + Monday Launch Kit P1 (Jax decision), Ito vault ideas P2 ($25k capital). Ito task: add Property Intel to IDEAS_VAULT as #7.</div>
+                </div>
+                <span class="badge badge-ok">DONE · 01:16 JST</span>
+            </div>
+            <div class="output-item">
                 <span class="output-icon">🧹</span>
                 <div style="flex:1">
+                    <div class="output-name">Delegation Prep — Beat 2026-04-13 00:15 JST</div>
+                    <div class="output-desc">Delegation queue outputs/delegation_queue.md (3,274 bytes) ✅ · 6 briefs catalogued · 4 pending Jax 20-24h · 1 READY (Felix N3) · 1 URGENT (Saito CrowdWorks) · Kaji + Titan alert corrections noted</div>
+                </div>
+                <span class="badge badge-ok">DONE · 00:15 JST</span>
+            </div>
+            <div class="output-item">
+                <span class="output-icon">🔧</span>
+                <div style="flex:1">
                     <div class="output-name">Improve Existing — Beat 2026-04-12 23:20 JST</div>
-                    <div class="output-desc">Wrote Felix N3 database plan outputs/n3_db_plan.md (4,396 bytes) ✅ — SQLite schema (vocab + grammar), Anki CSV import/export pipeline, 6-step build plan, data sources, maintenance schedule · Updated FELIX_DASHBOARD.md ✅ · Delegation brief ready for Felix Phase 1 execution</div>
+                    <div class="output-desc">Felix N3 database plan outputs/n3_db_plan.md (4,396 bytes) ✅ — SQLite schema, Anki pipeline, 6-step build. FELIX_DASHBOARD.md updated with task ledger ✅</div>
                 </div>
                 <span class="badge badge-ok">DONE · 23:20 JST</span>
             </div>
@@ -297,25 +321,9 @@
                 <span class="output-icon">🔍</span>
                 <div style="flex:1">
                     <div class="output-name">Empire Audit — Beat 2026-04-12 22:35 JST</div>
-                    <div class="output-desc">Titan DASHBOARD.md rewritten (correct path workspace-titan/) · Felix DASHBOARD.md rewritten · All 7 agents verified clean · No duplicate crons · No zombie sessions · Ito pipeline fresh · Saito/CrowdWorks ⚠️ 3-day deadline</div>
+                    <div class="output-desc">All 7 agents verified clean · Titan + Felix DASHBOARD rewritten · No duplicate crons · No zombie sessions · Saito ⚠️ 1-consec</div>
                 </div>
                 <span class="badge badge-ok">DONE · 22:35 JST</span>
-            </div>
-            <div class="output-item">
-                <span class="output-icon">🧹</span>
-                <div style="flex:1">
-                    <div class="output-name">Tidy Operations — Beat 2026-04-12 20:52 JST</div>
-                    <div class="output-desc">MEMORY.md compacted 196→100 lines ✅ · 4 beat entries archived to memory/2026-04-12.md ✅ · Telemetry dashboard refreshed ✅ · Git synced</div>
-                </div>
-                <span class="badge badge-ok">DONE · 20:52 JST</span>
-            </div>
-            <div class="output-item">
-                <span class="output-icon">📝</span>
-                <div style="flex:1">
-                    <div class="output-name">Delegation Prep — Beat 2026-04-12 17:00 JST</div>
-                    <div class="output-desc">3 delegation briefs written: brief_empire_morning_briefing.md, brief_monday_launch_kit_telegram.md, incident_odie_telegram_fix.md. Property Intelligence System brief ready.</div>
-                </div>
-                <span class="badge badge-ok">DONE · 17:00 JST</span>
             </div>
         </div>
 
@@ -336,7 +344,7 @@
 
     <!-- CRON HEALTH -->
     <div class="card full" style="margin-bottom:20px;">
-        <h3><span class="material-symbols-outlined">schedule</span> Empire Cron Status — LIVE SCAN 2026-04-13 00:15 JST</h3>
+        <h3><span class="material-symbols-outlined">schedule</span> Empire Cron Status — LIVE SCAN 2026-04-13 01:16 JST</h3>
         <table class="cron-table">
             <thead><tr><th>Agent</th><th>Job</th><th>Schedule</th><th>Last Run</th><th>Status</th></tr></thead>
             <tbody>
@@ -344,29 +352,36 @@
                     <td><span class="cron-name">Kaji</span></td>
                     <td class="cron-sched">45min Initiative Beat</td>
                     <td class="cron-sched">every 45m</td>
-                    <td><span class="badge badge-err">🔴 2-consec TIMEOUT</span></td>
-                    <td><span class="badge badge-err">🔴 CRITICAL: Kaji's own cron timing out at 2400s · This run IS the timed-out beat · Empire Audit next beat (Rule 2)</span></td>
+                    <td><span class="badge badge-ok">✅ ok</span></td>
+                    <td><span class="badge badge-ok">✅ 0-consec · healthy · previous "2-consec timeout" alert was WRONG</span></td>
                 </tr>
                 <tr>
                     <td><span class="cron-name">Ito</span></td>
                     <td class="cron-sched">20min Heartbeat</td>
                     <td class="cron-sched">every 20m</td>
                     <td><span class="badge badge-ok">ok</span></td>
-                    <td><span class="badge badge-ok">✅ 0-consec · pipeline fresh · Weekly Reddit Mon 00:00 JST</span></td>
+                    <td><span class="badge badge-ok">✅ 0-consec · pipeline fresh</span></td>
                 </tr>
                 <tr>
                     <td><span class="cron-name">Ito</span></td>
                     <td class="cron-sched">Gold Oracle</td>
                     <td class="cron-sched">every 2h</td>
                     <td><span class="badge badge-ok">ok</span></td>
-                    <td><span class="badge badge-ok">✅ markets closed Sunday</span></td>
+                    <td><span class="badge badge-ok">✅ 0-consec</span></td>
                 </tr>
                 <tr>
                     <td><span class="cron-name">Ito</span></td>
                     <td class="cron-sched">Twitter/X Intel</td>
                     <td class="cron-sched">every 30m</td>
-                    <td><span class="badge badge-muted">no X data</span></td>
+                    <td><span class="badge badge-muted">⚠️ no X data</span></td>
                     <td><span class="badge badge-muted">❌ BLOCKED · xAI credits exhausted since Apr 6</span></td>
+                </tr>
+                <tr>
+                    <td><span class="cron-name">Ito</span></td>
+                    <td class="cron-sched">Weekly Reddit (Mon 00:00 JST)</td>
+                    <td class="cron-sched">weekly Mon</td>
+                    <td><span class="badge badge-warn">⚠️ 1-consec</span></td>
+                    <td><span class="badge badge-warn">⚠️ Telegram delivery fail · exec ok · non-critical · next Mon</span></td>
                 </tr>
                 <tr>
                     <td><span class="cron-name">Ito</span></td>
@@ -378,7 +393,7 @@
                 <tr>
                     <td><span class="cron-name">Ito</span></td>
                     <td class="cron-sched">Ahipara Tracker</td>
-                    <td class="cron-sched">daily 08:00 JST</span></td>
+                    <td class="cron-sched">daily 08:00 JST</td>
                     <td><span class="badge badge-ok">scheduled</span></td>
                     <td><span class="badge badge-ok">✅ Next run Mon Apr 13 08:00 JST</span></td>
                 </tr>
@@ -387,14 +402,14 @@
                     <td class="cron-sched">21min Heartbeat</td>
                     <td class="cron-sched">every 21m</td>
                     <td><span class="badge badge-ok">ok</span></td>
-                    <td><span class="badge badge-ok">✅ 0-consec · N3 project: task ledger created</span></td>
+                    <td><span class="badge badge-ok">✅ 0-consec · N3 DB Phase 2b complete · Phase 3 next</span></td>
                 </tr>
                 <tr>
                     <td><span class="cron-name">Titan</span></td>
                     <td class="cron-sched">21min Heartbeat</td>
                     <td class="cron-sched">every 21m</td>
-                    <td><span class="badge badge-err">🔴 2-consec ⚠️ ✉️ FAIL</span></td>
-                    <td><span class="badge badge-err">🔴 Telegram delivery failing 2 consecutive runs · mode:none/channel:none patch may not fully prevent delivery · Investigate</span></td>
+                    <td><span class="badge badge-ok">✅ ok</span></td>
+                    <td><span class="badge badge-ok">✅ 0-consec · Mon 07:30 launch ready · previous "2-consec Telegram fail" was WRONG (agent message send, not cron)</span></td>
                 </tr>
                 <tr>
                     <td><span class="cron-name">Makoto</span></td>
@@ -408,7 +423,7 @@
                     <td class="cron-sched">20min Heartbeat</td>
                     <td class="cron-sched">every 20m</td>
                     <td><span class="badge badge-ok">ok</span></td>
-                    <td><span class="badge badge-ok">✅ 0-consec · Cycle 156+ · #13049491 17 apps (2 DAYS!)</span></td>
+                    <td><span class="badge badge-ok">✅ 0-consec · Cycle 176+ · #13049491 17 apps (2 DAYS!)</span></td>
                 </tr>
                 <tr>
                     <td><span class="cron-name">Saito</span></td>
@@ -436,19 +451,12 @@
                     <td class="cron-sched">App Ideation 20min</td>
                     <td class="cron-sched">every 20m</td>
                     <td><span class="badge badge-ok">ok</span></td>
-                    <td><span class="badge badge-ok">✅ delivery patched to mode:none/channel:none</span></td>
-                </tr>
-                <tr>
-                    <td><span class="cron-name">Ito</span></td>
-                    <td class="cron-sched">Weekly Reddit (Mon 00:00 JST)</td>
-                    <td class="cron-sched">weekly Mon</td>
-                    <td><span class="badge badge-ok">scheduled</span></td>
-                    <td><span class="badge badge-ok">✅ Next run Mon Apr 13 00:00 JST</span></td>
+                    <td><span class="badge badge-ok">✅ mode:none fixed · TMPL-1 LINE Bot in progress</span></td>
                 </tr>
             </tbody>
         </table>
         <p style="color:var(--dim);font-size:11.5px;margin-top:12px;">
-            ⚠️ <strong>13/15 active · Kaji 2-consec TIMEOUT · Titan 2-consec Telegram FAIL · Ito Weekly Reddit 1-consec</strong> · Saito C98 Pulse 1-consec (Sat Apr 18) · live scan 00:15 JST · Delegation queue: outputs/delegation_queue.md
+            ✅ <strong>14/15 active jobs healthy · Kaji self-timeout CLEARED ✅ · Titan Telegram 2-consec CLEARED ✅</strong> · Ito Weekly Reddit ⚠️ 1-consec · Saito C98 Pulse ⚠️ 1-consec (Sat Apr 18) · live scan 01:16 JST · master_ledger: outputs/master_ledger.md
         </p>
     </div>
 
@@ -457,15 +465,15 @@
         <h3><span class="material-symbols-outlined">groups</span> Empire Agent Directory</h3>
         <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;">
             <div>
-                <div class="agent-row"><div><span class="agent-name">🧭 Kaji (me)</span><div class="agent-role">COO / Orchestrator</div></div><span class="badge badge-err">🔴 2-consec TIMEOUT · Delegation Prep DONE · Next: Empire Audit (Rule 2 override)</span></div>
-                <div class="agent-row"><div><span class="agent-name">🦅 Ito</span><div class="agent-role">Intel & Pipeline</div></div><span class="badge badge-ok">✅ Phase 2 complete · 0-consec · Weekly Reddit Mon 00:00 · Ahipara Mon 08:00</span></div>
-                <div class="agent-row"><div><span class="agent-name">⚙️ Saito</span><div class="agent-role">Digital Strategy</div></div><span class="badge badge-ok">✅ Deploy Monitor DISABLED · 20min ✅ · Cycle 156+ · #13049491 17 apps (CRITICAL 3 days)</span></div>
+                <div class="agent-row"><div><span class="agent-name">🧭 Kaji (me)</span><div class="agent-role">COO / Orchestrator</div></div><span class="badge badge-ok">✅ healthy · New Ideas beat DONE · next: Empire Audit</span></div>
+                <div class="agent-row"><div><span class="agent-name">🦅 Ito</span><div class="agent-role">Intel & Pipeline</div></div><span class="badge badge-ok">✅ 0-consec · Phase 2 complete · Weekly Reddit ⚠️ 1-consec · Ahipara 08:00 JST · Ito task: add Property Intel to IDEAS_VAULT as #7</span></div>
+                <div class="agent-row"><div><span class="agent-name">⚙️ Saito</span><div class="agent-role">Digital Strategy</div></div><span class="badge badge-ok">✅ 0-consec · Cycle 176+ · Deploy Monitor DISABLED · #13049491 17 apps CRITICAL (2 days!)</span></div>
             </div>
             <div>
                 <div class="agent-row"><div><span class="agent-name">⚡ Makoto</span><div class="agent-role">Arbitrage Scout</div></div><span class="badge badge-ok">✅ 0-consec · scout pipeline healthy</span></div>
-                <div class="agent-row"><div><span class="agent-name">🎌 Felix</span><div class="agent-role">N3 Vault & X</div></div><span class="badge badge-ok">✅ 0-consec · N3 project: task ledger created · NEXT: outputs/n3_db_plan.md</span></div>
-                <div class="agent-row"><div><span class="agent-name">🏋️ Titan</span><div class="agent-role">Athlete Forge</div></div><span class="badge badge-err">🔴 Telegram 2-consec FAIL · Mon 07:30 launch ready (assets confirmed) · mode:none fix not resolving delivery</span></div>
-                <div class="agent-row"><div><span class="agent-name">🤖 Odie</span><div class="agent-role">TradePass Development</div></div><span class="badge badge-ok">✅ mode:none fixed · TradePass MVP complete</span></div>
+                <div class="agent-row"><div><span class="agent-name">🎌 Felix</span><div class="agent-role">N3 Vault & X</div></div><span class="badge badge-ok">✅ 0-consec · N3 DB Phase 2b complete · Phase 3 next (grammar patterns)</span></div>
+                <div class="agent-row"><div><span class="agent-name">🏋️ Titan</span><div class="agent-role">Athlete Forge</div></div><span class="badge badge-ok">✅ 0-consec · Mon 07:30 launch ready · Telegram 2-consec alert CORRECTED ✅</span></div>
+                <div class="agent-row"><div><span class="agent-name">🤖 Odie</span><div class="agent-role">TradePass Development</div></div><span class="badge badge-ok">✅ mode:none fixed · TMPL-1 LINE Bot in progress</span></div>
             </div>
         </div>
     </div>
