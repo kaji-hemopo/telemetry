@@ -1,1 +1,263 @@
-<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0;url=index.html"></head><body><a href="index.html">Titan Dashboard</a></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Titan — Athlete Forge</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@0..1,wght@400..700&display=swap" rel="stylesheet"/>
+<style>
+.material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+body { background-color: #121416; color: #e2e2e5; font-family: 'Inter', sans-serif; }
+.glass-panel { background: rgba(51, 53, 55, 0.6); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #121416; }
+::-webkit-scrollbar-thumb { background: #333; border-radius: 2px; }
+a { color: #00e5ff; text-decoration: none; }
+a:hover { text-decoration: underline; }
+</style>
+</head>
+<body class="min-h-screen">
+
+<!-- HEADER -->
+<header class="border-b border-[#333537] px-6 py-4 flex items-center justify-between">
+  <div class="flex items-center gap-4">
+    <div class="w-10 h-10 rounded-full bg-[#e94560] flex items-center justify-center font-bold text-xl">T</div>
+    <div>
+      <h1 class="text-lg font-bold tracking-tight">Athlete Forge</h1>
+      <p class="text-xs text-[#8b90a1]">Titan — PT Empire Builder</p>
+    </div>
+  </div>
+  <div class="flex items-center gap-4">
+    <a href="https://kaji-hemopo.github.io/telemetry/empire-home.html" class="text-xs text-[#8b90a1] hover:text-[#00e5ff]">← Empire Home</a>
+    <span class="text-xs text-[#8b90a1]">Updated: <span id="ts"></span></span>
+    <span class="px-3 py-1 rounded-full text-xs font-medium bg-[#22d3ee]/20 text-[#22d3ee]">LIVE</span>
+  </div>
+</header>
+
+<!-- HERO STATS -->
+<section class="grid grid-cols-2 md:grid-cols-4 gap-4 p-6">
+  <div class="glass-panel border border-[#333537] rounded-xl p-4">
+    <p class="text-xs text-[#8b90a1] mb-1">Revenue</p>
+    <p class="text-2xl font-bold text-[#e94560]">¥0</p>
+    <p class="text-xs text-[#8b90a1]">/ ¥900k goal</p>
+  </div>
+  <div class="glass-panel border border-[#333537] rounded-xl p-4">
+    <p class="text-xs text-[#8b90a1] mb-1">Beats Written</p>
+    <p class="text-2xl font-bold text-[#22d3ee]">91</p>
+    <p class="text-xs text-[#8b90a1]">pre-authored day plans</p>
+  </div>
+  <div class="glass-panel border border-[#333537] rounded-xl p-4">
+    <p class="text-xs text-[#8b90a1] mb-1">Heartbeat</p>
+    <p class="text-2xl font-bold text-[#22d3ee]">20min</p>
+    <p class="text-xs text-[#8b90a1]">Saito-style beats</p>
+  </div>
+  <div class="glass-panel border border-[#333537] rounded-xl p-4">
+    <p class="text-xs text-[#8b90a1] mb-1">Dashboard</p>
+    <p class="text-2xl font-bold text-[#a78bfa]">91+</p>
+    <p class="text-xs text-[#8b90a1]">beats deep</p>
+  </div>
+</section>
+
+<!-- MAIN GRID -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-6 px-6 pb-6">
+
+<!-- LEFT: STATUS + BEATS -->
+<div class="lg:col-span-2 space-y-6">
+
+  <!-- Beat Progress -->
+  <div class="glass-panel border border-[#333537] rounded-xl p-5">
+    <h2 class="text-sm font-semibold text-[#22d3ee] mb-4 flex items-center gap-2">
+      <span class="material-symbols-outlined text-sm">loop</span>
+      Beat Progress (91+ Deep)
+    </h2>
+    <div class="space-y-2 text-xs max-h-64 overflow-y-auto">
+      <div class="flex items-center justify-between p-2 rounded bg-[#22d3ee]/10 border border-[#22d3ee]/20">
+        <span class="text-[#22d3ee] font-mono">Beat X-91 ✅</span>
+        <span class="text-[#8b90a1]">Day 88 (Jul 5) — Week 1 Close</span>
+      </div>
+      <div class="flex items-center justify-between p-2 rounded bg-[#1e2022] border border-[#333]">
+        <span class="text-[#a78bfa] font-mono">Beat X-92 🔄 NEXT</span>
+        <span class="text-[#8b90a1]">Day 89 (Jul 6) — Heavy Outreach</span>
+      </div>
+      <div class="flex items-center justify-between p-2 rounded bg-[#1e2022] border border-[#333]">
+        <span class="text-[#555] font-mono">Beat X-93 →</span>
+        <span class="text-[#555]">Day 90 (Jul 7) — Content Day</span>
+      </div>
+      <div class="text-xs text-[#555] pt-2 border-t border-[#333] mt-2">
+        + 80+ more pre-written beats through Month 4
+      </div>
+    </div>
+  </div>
+
+  <!-- Revenue Path -->
+  <div class="glass-panel border border-[#333537] rounded-xl p-5">
+    <h2 class="text-sm font-semibold text-[#22d3ee] mb-4 flex items-center gap-2">
+      <span class="material-symbols-outlined text-sm">trending_up</span>
+      Revenue Path
+    </h2>
+    <div class="space-y-3">
+      <div class="flex items-center gap-3">
+        <span class="w-6 h-6 rounded-full bg-[#22d3ee]/20 text-[#22d3ee] text-xs flex items-center justify-center font-bold">1</span>
+        <div class="flex-1">
+          <p class="text-sm font-medium">Free PDFs → X (@kajiclaw) → leads</p>
+          <p class="text-xs text-[#8b90a1]">X account exists — first posts ready</p>
+        </div>
+        <span class="text-xs text-[#22d3ee]">Active</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <span class="w-6 h-6 rounded-full bg-[#e94560]/20 text-[#e94560] text-xs flex items-center justify-center font-bold">2</span>
+        <div class="flex-1">
+          <p class="text-sm font-medium">Carrd + Gumroad</p>
+          <p class="text-xs text-[#8b90a1]">Not live yet — planning done</p>
+        </div>
+        <span class="text-xs text-[#e94560]">Blocker</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <span class="w-6 h-6 rounded-full bg-[#a78bfa]/20 text-[#a78bfa] text-xs flex items-center justify-center font-bold">3</span>
+        <div class="flex-1">
+          <p class="text-sm font-medium">¥9,800 Digital Sale</p>
+          <p class="text-xs text-[#8b90a1]">100-day program, JP market</p>
+        </div>
+        <span class="text-xs text-[#8b90a1]">Pending</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <span class="w-6 h-6 rounded-full bg-[#a78bfa]/20 text-[#a78bfa] text-xs flex items-center justify-center font-bold">4</span>
+        <div class="flex-1">
+          <p class="text-sm font-medium">¥96k/mo PT Anchor</p>
+          <p class="text-xs text-[#8b90a1]">Shin-Maruko / Chigasaki, premium</p>
+        </div>
+        <span class="text-xs text-[#8b90a1]">Pending</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Platform Status -->
+  <div class="glass-panel border border-[#333537] rounded-xl p-5">
+    <h2 class="text-sm font-semibold text-[#22d3ee] mb-4 flex items-center gap-2">
+      <span class="material-symbols-outlined text-sm">workspace_premium</span>
+      Platform Status
+    </h2>
+    <div class="grid grid-cols-2 gap-3">
+      <div class="p-3 rounded-lg bg-[#1e2022] border border-[#333]">
+        <p class="text-xs font-medium mb-1">X Account</p>
+        <p class="text-sm text-[#22d3ee]">@kajiclaw</p>
+        <p class="text-xs text-[#8b90a1] mt-1">Exists — posts ready</p>
+      </div>
+      <div class="p-3 rounded-lg bg-[#1e2022] border border-[#333]">
+        <p class="text-xs font-medium mb-1">Carrd Landing</p>
+        <p class="text-sm text-[#e94560]">Not published</p>
+        <p class="text-xs text-[#8b90a1] mt-1">Guide ready, Jackson publishes</p>
+      </div>
+      <div class="p-3 rounded-lg bg-[#1e2022] border border-[#333]">
+        <p class="text-xs font-medium mb-1">Gumroad</p>
+        <p class="text-sm text-[#e94560]">Not live</p>
+        <p class="text-xs text-[#8b90a1] mt-1">Guide ready, Jackson sets up</p>
+      </div>
+      <div class="p-3 rounded-lg bg-[#1e2022] border border-[#333]">
+        <p class="text-xs font-medium mb-1">PDFs</p>
+        <p class="text-sm text-[#22d3ee]">Expanded + exported</p>
+        <p class="text-xs text-[#8b90a1] mt-1">Ready to host</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- RIGHT: ASSETS + BLOCKERS -->
+<div class="space-y-6">
+
+  <!-- Assets Complete -->
+  <div class="glass-panel border border-[#333537] rounded-xl p-5">
+    <h2 class="text-sm font-semibold text-[#22d3ee] mb-4 flex items-center gap-2">
+      <span class="material-symbols-outlined text-sm">check_circle</span>
+      Assets Complete (20+)
+    </h2>
+    <div class="space-y-1 text-xs">
+      <div class="flex items-center gap-2"><span class="text-[#22d3ee]">✅</span> Phase1_v2.md — Brand bible</div>
+      <div class="flex items-center gap-2"><span class="text-[#22d3ee]">✅</span> PDF1 + PDF2 — Expanded</div>
+      <div class="flex items-center gap-2"><span class="text-[#22d3ee]">✅</span> Athlete_Baseline_100Day.md</div>
+      <div class="flex items-center gap-2"><span class="text-[#22d3ee]">✅</span> TOFU_Threads.md — 5 posts</div>
+      <div class="flex items-center gap-2"><span class="text-[#22d3ee]">✅</span> X_Posting_Plan.md</div>
+      <div class="flex items-center gap-2"><span class="text-[#22d3ee]">✅</span> Carrd_Deploy_Guide.md</div>
+      <div class="flex items-center gap-2"><span class="text-[#22d3ee]">✅</span> Client_Tracker.md</div>
+      <div class="flex items-center gap-2"><span class="text-[#22d3ee]">✅</span> N3_Study_Plan.md</div>
+      <div class="flex items-center gap-2"><span class="text-[#22d3ee]">✅</span> Pricing_Page_Draft.md</div>
+      <div class="flex items-center gap-2"><span class="text-[#22d3ee]">✅</span> PT_Offer_Page.md</div>
+      <div class="flex items-center gap-2"><span class="text-[#22d3ee]">✅</span> Email_Sequence.md — Parked</div>
+      <div class="flex items-center gap-2"><span class="text-[#22d3ee]">✅</span> Beat_X* files — 91 pre-written</div>
+    </div>
+  </div>
+
+  <!-- Blockers -->
+  <div class="glass-panel border border-[#e94560]/30 rounded-xl p-5">
+    <h2 class="text-sm font-semibold text-[#e94560] mb-4 flex items-center gap-2">
+      <span class="material-symbols-outlined text-sm">block</span>
+      Blockers
+    </h2>
+    <div class="space-y-2 text-xs">
+      <div class="p-2 rounded bg-[#e94560]/10 border border-[#e94560]/20">
+        <p class="font-medium text-[#e94560]">Carrd not published</p>
+        <p class="text-[#8b90a1]">Jackson: 15 mins at carrd.co</p>
+      </div>
+      <div class="p-2 rounded bg-[#e94560]/10 border border-[#e94560]/20">
+        <p class="font-medium text-[#e94560]">Gumroad not live</p>
+        <p class="text-[#8b90a1]">Jackson: 5 mins setup</p>
+      </div>
+      <div class="p-2 rounded bg-[#e94560]/10 border border-[#e94560]/20">
+        <p class="font-medium text-[#e94560]">Zero revenue</p>
+        <p class="text-[#8b90a1]">Everything built, execution needed</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- What Jackson Needs To Do -->
+  <div class="glass-panel border border-[#a78bfa]/30 rounded-xl p-5">
+    <h2 class="text-sm font-semibold text-[#a78bfa] mb-4 flex items-center gap-2">
+      <span class="material-symbols-outlined text-sm">support_agent</span>
+      Jackson's Action Items
+    </h2>
+    <div class="space-y-2 text-xs">
+      <div class="flex items-start gap-2">
+        <span class="text-[#e94560] font-bold mt-0.5">1.</span>
+        <p class="text-[#e2e2e5]">Post first 5 X posts on @kajiclaw (copy-paste ready)</p>
+      </div>
+      <div class="flex items-start gap-2">
+        <span class="text-[#e94560] font-bold mt-0.5">2.</span>
+        <p class="text-[#e2e2e5]">Publish Carrd page at carrd.co (15 mins)</p>
+      </div>
+      <div class="flex items-start gap-2">
+        <span class="text-[#e94560] font-bold mt-0.5">3.</span>
+        <p class="text-[#e2e2e5]">Set up Gumroad product (5 mins)</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Links -->
+  <div class="glass-panel border border-[#333537] rounded-xl p-5">
+    <h2 class="text-sm font-semibold text-[#22d3ee] mb-4 flex items-center gap-2">
+      <span class="material-symbols-outlined text-sm">link</span>
+      Links
+    </h2>
+    <div class="space-y-2 text-xs">
+      <div><span class="text-[#8b90a1]">Empire Home:</span> <a href="https://kaji-hemopo.github.io/telemetry/empire-home.html">telemetry/empire-home</a></div>
+      <div><span class="text-[#8b90a1]">Local Dashboard:</span> <a href="DASHBOARD.md">workspace-titan/DASHBOARD.md</a></div>
+      <div><span class="text-[#8b90a1]">Heartbeat:</span> <a href="HEARTBEAT.md">workspace-titan/HEARTBEAT.md</a></div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<!-- FOOTER -->
+<footer class="border-t border-[#333537] px-6 py-3 flex items-center justify-between text-xs text-[#555]">
+  <span>Athlete Forge — Titan Agent</span>
+  <span>Strength First. No Fads. 91 beats deep.</span>
+</footer>
+
+<script>
+document.getElementById('ts').textContent = new Date().toLocaleString('en-US', { timeZone: 'Asia/Tokyo', hour12: false }) + ' JST';
+</script>
+</body>
+</html>
