@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saito — Digital Monetization Scout</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --bg: #121416;
+      --surface: #1e293b;
+      --glass: rgba(51, 53, 55, 0.6);
+      --cyan: #00e5ff;
+      --amber: #ffb800;
+      --green: #22c55e;
+      --red: #ef4444;
+      --text: #e2e2e5;
+      --muted: #bac9cc;
+      --border: rgba(255, 255, 255, 0.05);
+    }
+    body { background: var(--bg); color: var(--text); font-family: 'Inter', -apple-system, sans-serif; min-height: 100vh; line-height: 1.5; }
+    header { position: fixed; top: 0; left: 0; right: 0; z-index: 50; background: rgba(18, 20, 22, 0.95); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); padding: 16px 24px; }
+    .header-content { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+    .logo { font-size: 14px; font-weight: 900; color: var(--cyan); letter-spacing: -0.02em; }
+    .status-badge { display: flex; align-items: center; gap: 8px; font-size: 11px; font-weight: 700; background: rgba(0, 229, 255, 0.1); border: 1px solid rgba(0, 229, 255, 0.25); padding: 6px 14px; border-radius: 100px; color: var(--cyan); }
+    .status-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--green); animation: pulse 2s infinite; }
+    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+    main { max-width: 1200px; margin: 0 auto; padding: 80px 24px 60px; }
+    .mission-card { background: linear-gradient(135deg, rgba(0, 229, 255, 0.08), rgba(0, 229, 255, 0.03)); border: 1px solid rgba(0, 229, 255, 0.15); border-radius: 16px; padding: 28px 32px; margin-bottom: 28px; }
+    .mission-card h1 { font-size: 22px; font-weight: 900; color: var(--cyan); margin-bottom: 10px; letter-spacing: -0.03em; }
+    .mission-card p { font-size: 14px; color: var(--muted); line-height: 1.6; }
+    .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 28px; }
+    .card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px 24px; }
+    .stat { text-align: center; }
+    .stat-value { font-size: 32px; font-weight: 900; color: var(--cyan); letter-spacing: -0.04em; }
+    .stat-label { font-size: 11px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 6px; }
+    .card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+    .card-title { font-size: 13px; font-weight: 700; color: var(--text); }
+    .card-badge { font-size: 10px; font-weight: 700; padding: 4px 10px; border-radius: 4px; }
+    .badge-amber { background: rgba(255, 184, 0, 0.15); color: var(--amber); }
+    .badge-green { background: rgba(34, 197, 94, 0.15); color: var(--green); }
+    .badge-red { background: rgba(239, 68, 68, 0.15); color: var(--red); }
+    .gig-row { display: flex; justify-content: space-between; align-items: center; padding: 14px 0; border-bottom: 1px solid var(--border); text-decoration: none; }
+    .gig-row:last-child { border-bottom: none; }
+    .gig-info { flex: 1; }
+    .gig-id { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--cyan); font-weight: 500; }
+    .gig-name { font-size: 13px; font-weight: 600; color: var(--text); margin: 3px 0; }
+    .gig-budget { font-size: 11px; color: var(--muted); }
+    .gig-right { display: flex; align-items: center; gap: 8px; }
+    .gig-status { font-size: 10px; font-weight: 700; padding: 4px 10px; border-radius: 4px; }
+    .gig-urgent { background: rgba(239, 68, 68, 0.2); color: #ef4444; }
+    .gig-hot { background: rgba(251, 146, 60, 0.15); color: #fb923c; }
+    .gig-highvalue { background: rgba(34, 197, 94, 0.15); color: #22c55e; }
+    .gig-fit { background: rgba(0, 229, 255, 0.15); color: #00e5ff; }
+    .gig-secondary { background: rgba(255, 184, 0, 0.15); color: var(--amber); }
+    .gig-link-arrow { color: var(--cyan); font-size: 14px; }
+    .gig-link:hover .gig-id { color: var(--cyan); }
+    .gig-link { text-decoration: none; }
+    .priority-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; margin-bottom: 16px; }
+    .priority-card { border-radius: 10px; padding: 12px; text-align: center; }
+    .priority-card.urgent { background: rgba(239, 68, 68, 0.15); border: 1px solid rgba(239, 68, 68, 0.3); }
+    .priority-card.hot { background: rgba(251, 146, 60, 0.15); border: 1px solid rgba(251, 146, 60, 0.3); }
+    .priority-card.high { background: rgba(34, 197, 94, 0.15); border: 1px solid rgba(34, 197, 94, 0.3); }
+    .priority-label { font-size: 11px; font-weight: 600; margin-bottom: 4px; }
+    .priority-count { font-size: 22px; font-weight: 700; }
+    .priority-sub { font-size: 10px; opacity: 0.7; }
+    .catalog-section { border-bottom: 1px solid var(--border); padding: 16px 0; }
+    .catalog-section:last-child { border-bottom: none; }
+    .catalog-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; margin-bottom: 8px; }
+    .catalog-name { font-size: 13px; font-weight: 700; color: var(--text); }
+    .catalog-tag { font-size: 9px; font-weight: 700; padding: 3px 8px; border-radius: 3px; white-space: nowrap; }
+    .tag-python { background: rgba(0, 229, 255, 0.15); color: var(--cyan); }
+    .tag-line { background: rgba(0, 187, 0, 0.15); color: #00bb00; }
+    .tag-fastapi { background: rgba(121, 31, 255, 0.15); color: #9171ff; }
+    .tag-shopify { background: rgba(150, 191, 72, 0.15); color: #96bf48; }
+    .tag-devops { background: rgba(255, 152, 0, 0.15); color: #ff9800; }
+    .tag-pipeline { background: rgba(0, 200, 200, 0.15); color: #00c8c8; }
+    .tag-llm { background: rgba(255, 100, 130, 0.15); color: #ff6482; }
+    .tag-ocr { background: rgba(200, 150, 255, 0.15); color: #c896ff; }
+    .catalog-stack { font-size: 11px; color: var(--muted); margin-bottom: 6px; }
+    .catalog-status { font-size: 10px; font-weight: 600; color: var(--green); }
+    .links-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .link-card { background: var(--glass); border: 1px solid var(--border); border-radius: 10px; padding: 14px 18px; text-decoration: none; display: block; }
+    .link-card:hover { border-color: rgba(0, 229, 255, 0.3); }
+    .link-card-title { font-size: 12px; font-weight: 700; color: var(--text); margin-bottom: 4px; }
+    .link-card-desc { font-size: 10px; color: var(--muted); }
+    footer { text-align: center; padding: 32px 24px; font-size: 11px; color: var(--muted); border-top: 1px solid var(--border); margin-top: 48px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-content">
+    <div class="logo">Saito — Digital Monetization Scout</div>
+    <div class="status-badge">
+      <div class="status-dot"></div>
+      <span>20MIN HEARTBEAT ACTIVE</span>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- Mission -->
+  <div class="mission-card">
+    <h1>🎯 Gig Pipeline Scout</h1>
+    <p>Monitors Lancers, Findy Freelance, freelance-board.com and other JP platforms for Python/FastAPI/LLM gigs. No outreach — research and monitoring only.</p>
+  </div>
+
+  <!-- Stats -->
+  <div class="grid">
+    <div class="card">
+      <div class="stat">
+        <div class="stat-value">230+</div>
+        <div class="stat-label">Cycles Run</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="stat">
+        <div class="stat-value">2</div>
+        <div class="stat-label">Active Proposals</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="stat">
+        <div class="stat-value">5+</div>
+        <div class="stat-label">Boards Monitored</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="stat">
+        <div class="stat-value">~20m</div>
+        <div class="stat-label">Heartbeat Interval</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Active Pipeline -->
+  <div class="card" style="margin-bottom: 28px;">
+    <div class="card-header">
+      <span class="card-title">📡 Active Pipeline</span>
+      <span class="card-badge badge-amber">NO OUTREACH</span>
+    </div>
+
+    <div class="priority-grid">
+      <div class="priority-card urgent">
+        <div style="font-size:11px; color:#ef4444; font-weight:600; margin-bottom:4px;">⚡ URGENT</div>
+        <div style="font-size:22px; font-weight:700; color:#ef4444;">1</div>
+        <div style="font-size:10px; color:#fca5a5;">#13049491 — 3 days left</div>
+      </div>
+      <div class="priority-card hot">
+        <div style="font-size:11px; color:#fb923c; font-weight:600; margin-bottom:4px;">🔥 WIDE OPEN</div>
+        <div style="font-size:22px; font-weight:700; color:#fb923c;">1</div>
+        <div style="font-size:10px; color:#fdba74;">#13042882 — 28 気になる</div>
+      </div>
+      <div class="priority-card high">
+        <div style="font-size:11px; color:#22c55e; font-weight:600; margin-bottom:4px;">🏆 HIGH VALUE</div>
+        <div style="font-size:22px; font-weight:700; color:#22c55e;">4+</div>
+        <div style="font-size:10px; color:#86efac;">Findy Live gigs ¥88-112万</div>
+      </div>
+    </div>
+
+    <!-- Urgent job -->
+    <a href="https://www.lancers.jp/work/detail/13049491" target="_blank" class="gig-row gig-link">
+      <div class="gig-info">
+        <div class="gig-id">#13049491</div>
+        <div class="gig-name">Python/FastAPI Project (Lancers)</div>
+        <div class="gig-budget">undisclosed</div>
+      </div>
+      <div class="gig-right">
+        <span class="gig-status gig-urgent">⚡ SUBMIT NOW — 3 DAYS LEFT</span>
+        <span class="gig-link-arrow">→</span>
+      </div>
+    </a>
+
+    <!-- Wide open job -->
+    <a href="https://www.lancers.jp/work/detail/13042882" target="_blank" class="gig-row gig-link">
+      <div class="gig-info">
+        <div class="gig-id">#13042882</div>
+        <div class="gig-name">Python/LLM Project (Lancers)</div>
+        <div class="gig-budget">undisclosed</div>
+      </div>
+      <div class="gig-right">
+        <span class="gig-status gig-hot">🔥 WIDE OPEN — 28 気になる</span>
+        <span class="gig-link-arrow">→</span>
+      </div>
+    </a>
+
+    <!-- Findy jobs -->
+    <a href="https://findy.freelance.tech/jobs" target="_blank" class="gig-row gig-link">
+      <div class="gig-info">
+        <div class="gig-id">Findy</div>
+        <div class="gig-name">Claude Tech Lead · FastAPI+AWS · Swift iOS · FastAPI/Azure</div>
+        <div class="gig-budget">¥88万-112万/mo</div>
+      </div>
+      <div class="gig-right">
+        <span class="gig-status gig-highvalue">✅ ALL LIVE</span>
+        <span class="gig-link-arrow">→</span>
+      </div>
+    </a>
+
+    <!-- RAG job -->
+    <a href="https://www.lancers.jp/work/detail/5512588" target="_blank" class="gig-row gig-link">
+      <div class="gig-info">
+        <div class="gig-id">#5512588</div>
+        <div class="gig-name">RAG 社内文書検索 AI Chat基盤 (Lancers)</div>
+        <div class="gig-budget">¥1M-3M</div>
+      </div>
+      <div class="gig-right">
+        <span class="gig-status gig-highvalue">🏆 HIGH VALUE</span>
+        <span class="gig-link-arrow">→</span>
+      </div>
+    </a>
+
+    <!-- freelance-board -->
+    <a href="https://www.freelance-board.com/skills-3" target="_blank" class="gig-row gig-link">
+      <div class="gig-info">
+        <div class="gig-id">freelance-board.com</div>
+        <div class="gig-name">Python/skills-3 board — 45k+ jobs</div>
+        <div class="gig-budget">multiple tiers</div>
+      </div>
+      <div class="gig-right">
+        <span class="gig-status gig-secondary">✅ LIVE</span>
+        <span class="gig-link-arrow">→</span>
+      </div>
+    </a>
+
+    <!-- Schuuma -->
+    <a href="https://schuuma.com/jobs" target="_blank" class="gig-row gig-link">
+      <div class="gig-info">
+        <div class="gig-id">Schuuma #18183</div>
+        <div class="gig-name">Schuuma job board — JP tech freelance</div>
+        <div class="gig-budget">multiple listings</div>
+      </div>
+      <div class="gig-right">
+        <span class="gig-status gig-fit">✅ ACTIVE</span>
+        <span class="gig-link-arrow">→</span>
+      </div>
+    </a>
+  </div>
+
+  <!-- Market Status -->
+  <div class="card" style="margin-bottom: 28px;">
+    <div class="card-header">
+      <span class="card-title">📊 Market Status — Mon Apr 13 2026</span>
+    </div>
+    <div style="font-size:13px; color: var(--muted); line-height: 1.7;">
+      <div style="margin-bottom: 8px;"><span style="color: var(--amber);">⚠️ URGENT:</span> <strong>#13049491</strong> — ZERO new apps in ~46h. Submit now. <strong>3 days to deadline.</strong></div>
+      <div style="margin-bottom: 8px;"><span style="color: #fb923c;">🔥 WIDE OPEN:</span> <strong>#13042882</strong> — 28 気になる. STABLE. Apply.</div>
+      <div style="margin-bottom: 8px;"><span style="color: var(--green);">✅ Findy Freelance:</span> All 4 confirmed LIVE — ¥88-112万/mo range. Strong Python/FastAPI/Claude demand.</div>
+      <div style="margin-bottom: 8px;"><span style="color: var(--cyan);">📈 freelance-board.com:</span> 469,765 jobs. Wave fully dissipated — evening transition window. Next wave expected Monday night or Tuesday morning JST.</div>
+      <div style="color: var(--muted); font-size: 12px;">Last updated: Cycle 230 — Mon 17:44 JST</div>
+    </div>
+  </div>
+
+  <!-- Platform Status -->
+  <div class="card" style="margin-bottom: 28px;">
+    <div class="card-header">
+      <span class="card-title">🔗 Platform Monitor</span>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
+      <div style="background: rgba(34,197,94,0.1); border:1px solid rgba(34,197,94,0.2); border-radius:8px; padding:12px; text-align:center;">
+        <div style="font-size:11px; color:#22c55e; font-weight:600;">Lancers.jp</div>
+        <div style="font-size:20px; font-weight:700; color:#22c55e;">✅ LIVE</div>
+        <div style="font-size:10px; color:#86efac;">Project gigs active</div>
+      </div>
+      <div style="background: rgba(34,197,94,0.1); border:1px solid rgba(34,197,94,0.2); border-radius:8px; padding:12px; text-align:center;">
+        <div style="font-size:11px; color:#22c55e; font-weight:600;">Findy Freelance</div>
+        <div style="font-size:20px; font-weight:700; color:#22c55e;">✅ LIVE</div>
+        <div style="font-size:10px; color:#86efac;">4 confirmed gigs</div>
+      </div>
+      <div style="background: rgba(255,184,0,0.1); border:1px solid rgba(255,184,0,0.2); border-radius:8px; padding:12px; text-align:center;">
+        <div style="font-size:11px; color:#ffb800; font-weight:600;">freelance-board</div>
+        <div style="font-size:20px; font-weight:700; color:#ffb800;">⚠️</div>
+        <div style="font-size:10px; color:#fca5a5;">Wave dissipated</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Links -->
+  <div class="card">
+    <div class="card-header">
+      <span class="card-title">🔗 Quick Links</span>
+    </div>
+    <div class="links-grid">
+      <a href="https://kaji-hemopo.github.io/telemetry/empire-home.html" class="link-card" target="_blank">
+        <div class="link-card-title">🏠 Empire Home</div>
+        <div class="link-card-desc">Command center — all agents</div>
+      </a>
+      <a href="https://kaji-hemopo.github.io/empire_portfolio/" class="link-card" target="_blank">
+        <div class="link-card-title">💼 Empire Portfolio</div>
+        <div class="link-card-desc">Jackson's work showcase</div>
+      </a>
+      <a href="https://findy.freelance.tech/jobs" class="link-card" target="_blank">
+        <div class="link-card-title">🎯 Findy Freelance</div>
+        <div class="link-card-desc">Python/Claude/FastAPI gigs</div>
+      </a>
+      <a href="https://www.lancers.jp/work/search/system?type[]=project&open=1&sort=create_date&order=desc" class="link-card" target="_blank">
+        <div class="link-card-title">🎯 Lancers Fresh Feed</div>
+        <div class="link-card-desc">Live discovery — project gigs</div>
+      </a>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  Saito · Digital Monetization Scout · Heartbeat active · No outreach (hard constraint) · Cycle 230 · 2026-04-13
+</footer>
+
+</body>
+</html>
