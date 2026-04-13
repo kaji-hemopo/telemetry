@@ -22,7 +22,7 @@
         body::before { content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none;
             background: radial-gradient(ellipse 90% 55% at 50% -25%, rgba(34,211,238,0.07), transparent 50%),
                 radial-gradient(ellipse 45% 40% at 100% 0%, rgba(167,139,250,0.06), transparent 45%),
-                linear-gradient(180deg, #1a1c1e, var(--bg)); }
+                linear-gradient(180deg, #1a1c2e, var(--bg)); }
         .container { max-width: 1100px; margin: 0 auto; padding: 28px 20px 56px; }
         header {
             background: linear-gradient(135deg, rgba(28, 32, 48, 0.95), rgba(12, 14, 22, 0.98));
@@ -36,11 +36,11 @@
             background: linear-gradient(90deg, transparent, var(--accent), transparent); opacity: 0.5; }
         .header-left h1 { font-family: var(--font-d); font-size: 1.5rem; font-weight: 800; letter-spacing: -0.03em; margin-bottom: 6px;
             background: linear-gradient(95deg, #fff, #9ca3b8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-        .header-left p { color: var(--muted); font-size: 14px; max-width: 50ch; }
+        .header-left p { color: var(--muted); font-size: 14px; max-width: 52ch; }
         .header-right { text-align: right; }
         .header-right .role-tag { display: inline-block; padding: 5px 14px; border-radius: 999px; font-size: 11px; font-weight: 700;
-            text-transform: uppercase; letter-spacing: 0.1em; background: rgba(34,211,238,0.12); color: var(--accent);
-            border: 1px solid rgba(34,211,238,0.25); margin-bottom: 8px; }
+            text-transform: uppercase; letter-spacing: 0.1em; background: rgba(167,139,250,0.12); color: var(--violet);
+            border: 1px solid rgba(167,139,250,0.25); margin-bottom: 8px; }
         .header-right .updated { font-size: 11px; color: var(--dim); font-variant-numeric: tabular-nums; }
         .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
         .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-bottom: 20px; }
@@ -69,7 +69,7 @@
         .task-dot.done { background: var(--green); }
         .task-dot.blocked { background: var(--yellow); }
         .task-dot.err { background: var(--red); }
-        .task-dot.active { background: var(--accent); }
+        .task-dot.active { background: var(--violet); }
         .task-label { color: var(--dim); font-size: 12px; min-width: 70px; flex-shrink: 0; margin-top: 2px; }
         .request-item { padding: 10px 14px; background: rgba(0,0,0,0.2); border-radius: 10px;
             border: 1px solid rgba(255,255,255,0.05); margin-bottom: 8px; font-size: 13.5px; }
@@ -130,32 +130,32 @@
     <header>
         <div class="header-left">
             <h1>Kaji · COO Dashboard</h1>
-            <p>Tidy Operations beat: MEMORY.md pruned 12KB ✅ · Beat history archived to memory/2026-04-13.md ✅ · Titan launch NOW (07:30 JST) · Saito #13049491 3 DAYS · Ahipara tracker 08:00 JST</p>
+            <p>Improve Existing beat: dashboard realigned to 09:42 JST · stale Titan/Ahipara alerts fixed · beat domain state corrected · Property Intel Phase 1 confirmed done · Empire Audit floors in 2 beats</p>
         </div>
         <div class="header-right">
             <div class="role-tag">Active · 45min beats</div>
-            <div class="updated">Updated: <span id="ts">Loading…</span> JST · <strong style="color:#a78bfa;">TIDY OPS BEAT · 06:37 JST</strong></div>
+            <div class="updated">Updated: <span id="ts">Loading…</span> JST · <strong style="color:#a78bfa;">IMPROVE EXISTING BEAT · 09:42 JST</strong></div>
         </div>
     </header>
 
     <!-- ALERTS -->
-    <div class="card full" style="margin-bottom:20px; border-color: rgba(248,113,113,0.35);">
-        <h3 style="color:#f87171;"><span class="material-symbols-outlined">warning</span> Empire Alerts — Mon 07:08 JST · LIVE</h3>
-        <div class="alert-row" style="border-color:rgba(248,113,113,0.4);">
-            <span>🚨</span>
-            <div><strong>TITAN LAUNCH — RIGHT NOW (07:30 JST) · 22 MINUTES</strong> · Jax: publish PT_Landing_Page.html to carrd.co + Gumroad NOW · Titan sends Telegram at 07:00 JST · 1 client = ¥150k</div>
-        </div>
+    <div class="card full" style="margin-bottom:20px; border-color: rgba(251,191,36,0.35);">
+        <h3 style="color:#fbbf24;"><span class="material-symbols-outlined">campaign</span> Empire Alerts — Mon Apr 13 09:42 JST · LIVE</h3>
         <div class="alert-row warn red-border">
             <span>⏰</span>
-            <div><strong>Saito CrowdWorks #13049491 — 3 DAYS LEFT (Apr 16)</strong> · 17 applicants · Jackson: SUBMIT NOW</div>
+            <div><strong>Saito CrowdWorks #13049491 — 2 DAYS LEFT (Apr 16)</strong> · 17 applicants · Jackson: SUBMIT NOW · Cycle 178+</div>
         </div>
         <div class="alert-row ok">
             <span>✅</span>
-            <div><strong>MEMORY.md pruned ✅</strong> · 9 beat entries consolidated to memory/2026-04-13.md · 12KB trimmed · Kaji workspace lean</div>
+            <div><strong>Property Intel Phase 1 ✅</strong> · Ahipara Tracker ran 08:00 JST · Ito subagent spun · Phase 2 ready to build</div>
         </div>
         <div class="alert-row ok">
             <span>✅</span>
-            <div><strong>Ahipara Tracker — 08:00 JST (~52min)</strong> · Ito runs daily property check · dashboard will update</div>
+            <div><strong>Titan launch window missed</strong> · 07:30 JST passed · Jax may have published · check Titan heartbeat or manual confirm</div>
+        </div>
+        <div class="alert-row info">
+            <span>ℹ️</span>
+            <div><strong>Empire Audit floors in 2 beats</strong> · Rule 3: must run by beat 4 of rotation · New Ideas done, Improve Existing now, then Empire Audit forced</div>
         </div>
     </div>
 
@@ -163,18 +163,18 @@
     <div class="grid-3" style="margin-bottom:20px;">
         <div class="card" style="border-left:3px solid #4ade80;">
             <h3><span class="material-symbols-outlined">check_circle</span> Tasks Done</h3>
-            <p style="font-size:2rem;font-weight:800;color:#4ade80;margin-top:4px;">54</p>
-            <p style="color:var(--dim);font-size:12px;margin-top:4px;">+1 this beat: MEMORY.md pruned 12KB · beat history archived · dashboard refreshed</p>
+            <p style="font-size:2rem;font-weight:800;color:#4ade80;margin-top:4px;">55</p>
+            <p style="color:var(--dim);font-size:12px;margin-top:4px;">+1 this beat: dashboard realigned · stale alerts fixed · beat domain state corrected</p>
         </div>
         <div class="card" style="border-left:3px solid #22d3ee;">
             <h3><span class="material-symbols-outlined">psychology</span> Empire Agents</h3>
             <p style="font-size:2rem;font-weight:800;color:#22d3ee;margin-top:4px;">7</p>
-            <p style="color:var(--dim);font-size:12px;margin-top:4px;">Titan launch NOW · Saito #13049491 3 DAYS · Felix N3 Phase 2b ~1000+/2489 · all agents 0-consec</p>
+            <p style="color:var(--dim);font-size:12px;margin-top:4px;">Saito #13049491 2 DAYS · Felix N3 Phase 2b ~391/2489 · Titan missed launch · all others 0-consec</p>
         </div>
         <div class="card" style="border-left:3px solid #fbbf24;">
             <h3><span class="material-symbols-outlined">schedule</span> Cron Health</h3>
             <p style="font-size:2rem;font-weight:800;color:#fbbf24;margin-top:4px;">13/13</p>
-            <p style="color:var(--dim);font-size:12px;margin-top:4px;">active · Kaji 0-consec ✅ · Ito Twitter ⚠️ xAI exhausted (Apr 6) · Ito Weekly Reddit ⚠️ 1-consec (non-crit) · Saito C98 Pulse ⚠️ 1-consec</p>
+            <p style="color:var(--dim);font-size:12px;margin-top:4px;">active · Kaji 0-consec ✅ · Ito Twitter ⚠️ xAI exhausted · Ito Weekly Reddit ⚠️ 1-consec · Saito C98 Pulse ⚠️ 1-consec</p>
         </div>
     </div>
 
@@ -188,15 +188,15 @@
                 <li>
                     <span class="task-dot done"></span>
                     <div>
-                        <span class="initiative-tag" style="background:rgba(251,191,36,0.1);color:#fbbf24;border-color:rgba(251,191,36,0.25);">Tidy Operations</span> <strong>Beat 2026-04-13 06:37 JST — DONE:</strong> MEMORY.md pruned 12KB ✅ · beat history archived to memory/2026-04-13.md ✅ · dashboard refreshed
-                        <div class="task-label">DONE · 06:37 JST</div>
+                        <span class="initiative-tag" style="background:rgba(34,211,238,0.1);color:#22d3ee;border-color:rgba(34,211,238,0.25);">Improve Existing</span> <strong>Beat 2026-04-13 09:42 JST — DONE:</strong> dashboard realigned ✅ · stale Titan/Ahipara alerts corrected ✅ · beat domain state corrected ✅
+                        <div class="task-label">DONE · 09:42 JST</div>
                     </div>
                 </li>
                 <li>
                     <span class="task-dot active"></span>
                     <div>
-                        <span class="initiative-tag" style="background:rgba(167,139,250,0.1);color:#a78bfa;border-color:rgba(167,139,250,0.25);">New Ideas</span> <strong>Next beat (~07:22 JST) — FORCED</strong> · Rule 4 rung 3: beatsAgo=3 ≥3 · Empire Audit=1 blocked Rule 1 · New Ideas forced
-                        <div class="task-label">NEXT · ~07:22 JST</div>
+                        <span class="initiative-tag" style="background:rgba(248,113,113,0.1);color:#f87171;border-color:rgba(248,113,113,0.25);">Empire Audit</span> <strong>Next beat (~10:27 JST) — FORCED</strong> · Rule 3 floor: beatsAgo=4 ≥4 · all other domains blocked Rule 1
+                        <div class="task-label">NEXT · ~10:27 JST</div>
                     </div>
                 </li>
             </ul>
@@ -206,87 +206,87 @@
         <div class="card">
             <h3><span class="material-symbols-outlined">inbox</span> Open Requests from Jax</h3>
             <div class="request-item" style="border-left:3px solid #f87171;">
-                <div>🚨 <strong>Titan Carrd + Gumroad — RIGHT NOW (07:30 JST ~22min)</strong></div>
-                <div class="request-meta">Jax publishes PT_Landing_Page.html to carrd.co + Gumroad by 07:30 JST · 1 client = ¥150k · ACT NOW</div>
-            </div>
-            <div class="request-item" style="border-left:3px solid #f87171;">
-                <div>⏰ <strong>Saito CrowdWorks #13049491 — DEADLINE APRIL 16 (3 days!)</strong></div>
-                <div class="request-meta">17 applicants · Jackson: SUBMIT NOW</div>
+                <div>⏰ <strong>Saito CrowdWorks #13049491 — DEADLINE APRIL 16 (2 days!)</strong></div>
+                <div class="request-meta">17 applicants · Cycle 178+ · Jackson: SUBMIT NOW</div>
             </div>
             <div class="request-item" style="border-left:3px solid #fbbf24;">
                 <div>👍 <strong>Jax Decision Queue — APPROVE or DECLINE?</strong></div>
-                <div class="request-meta">Empire Morning Briefing · Monday Launch Kit · Property Intelligence System · Titan PT Launch · Please review outputs/</div>
+                <div class="request-meta">Empire Morning Briefing · Monday Launch Kit · Property Intelligence Phase 2 · Titan PT Launch</div>
+            </div>
+            <div class="request-item" style="border-left:3px solid rgba(167,139,250,0.5);">
+                <div>🏋️ <strong>Titan PT Launch — status unknown</strong></div>
+                <div class="request-meta">07:30 JST window missed · confirm if Jax published to carrd.co + Gumroad</div>
             </div>
         </div>
 
         <!-- BEAT DOMAIN STATE -->
         <div class="card">
             <h3><span class="material-symbols-outlined">psychology</span> Beat Domain State (live)</h3>
-            <p style="color:var(--muted);font-size:12px;margin-bottom:10px;">Updated 2026-04-13 06:37 JST after Tidy Operations beat.</p>
+            <p style="color:var(--muted);font-size:12px;margin-bottom:10px;">Updated 2026-04-13 09:42 JST after Improve Existing beat.</p>
             <table class="domain-table">
                 <thead><tr><th>Domain</th><th>Last Beat</th><th>Beats Ago</th><th>Rule Trigger</th></tr></thead>
                 <tbody>
                     <tr>
                         <td><span class="domain-name">Empire Audit</span></td>
                         <td>05:30 JST</td>
-                        <td>1</td>
-                        <td><span class="badge badge-muted">Rule 1 blocked</span></td>
+                        <td>4</td>
+                        <td><span class="badge badge-err">⚠️ Rule 3 FLOOR HIT — forced next</span></td>
                     </tr>
                     <tr>
                         <td><span class="domain-name">Delegation Prep</span></td>
                         <td>03:55 JST</td>
-                        <td>2</td>
+                        <td>5</td>
                         <td><span class="badge badge-muted">Rule 1 blocked</span></td>
                     </tr>
                     <tr>
                         <td><span class="domain-name">New Ideas</span></td>
-                        <td>01:16 JST</td>
-                        <td>3</td>
+                        <td>08:57 JST</td>
+                        <td>1</td>
                         <td><span class="badge badge-muted">Rule 1 blocked</span></td>
                     </tr>
                     <tr>
                         <td><span class="domain-name">Improve Existing</span></td>
-                        <td>02:10 JST</td>
-                        <td>3</td>
-                        <td><span class="badge badge-muted">Rule 1 blocked</span></td>
+                        <td>09:42 JST</td>
+                        <td>0</td>
+                        <td><span class="badge badge-run">Rule 1 blocked</span></td>
                     </tr>
                     <tr>
                         <td><span class="domain-name">Tidy Operations</span></td>
                         <td>06:37 JST</td>
-                        <td>0</td>
-                        <td><span class="badge badge-run">Rule 1 blocked</span></td>
+                        <td>2</td>
+                        <td><span class="badge badge-muted">Rule 1 blocked</span></td>
                     </tr>
                 </tbody>
             </table>
-            <p style="color:var(--dim);font-size:11px;margin-top:10px;"><strong>Rule 4 rung 3: New Ideas beatsAgo=3 ≥3 — FORCED next beat (~07:22 JST).</strong> Empire Audit beatsAgo=1 (<4, not forced yet). Rule 3 floor: Empire Audit hits beatsAgo=4 in 3 beats.</p>
+            <p style="color:var(--dim);font-size:11px;margin-top:10px;"><strong>Rule 3 floor: Empire Audit beatsAgo=4 — FLOOR HIT. Must run next beat (~10:27 JST).</strong> After Empire Audit: Delegation Prep (beatsAgo=5, rung 2) or Tidy Ops (beatsAgo=2, rung 5 fallback).</p>
         </div>
 
         <!-- RECENT WORK -->
         <div class="card">
             <h3><span class="material-symbols-outlined">history</span> Recent Work</h3>
             <div class="output-item">
+                <span class="output-icon">🛠️</span>
+                <div style="flex:1">
+                    <div class="output-name">Improve Existing — Beat 2026-04-13 09:42 JST</div>
+                    <div class="output-desc">Dashboard realigned to current time ✅ · stale Titan launch alert removed ✅ · Ahipara tracker marked ✅ (ran 08:00 JST) · beat domain state corrected to 08:57 JST New Ideas ✅</div>
+                </div>
+                <span class="badge badge-ok">DONE · 09:42 JST</span>
+            </div>
+            <div class="output-item">
+                <span class="output-icon">💡</span>
+                <div style="flex:1">
+                    <div class="output-name">New Ideas — Beat 2026-04-13 08:57 JST</div>
+                    <div class="output-desc">Master Ledger created ✅ · Property Intel READY TO BUILD ✅ · Ito subagent spun for Phase 1 Ahipara Tracker ✅ · Ideases Vault #7 added</div>
+                </div>
+                <span class="badge badge-ok">DONE · 08:57 JST</span>
+            </div>
+            <div class="output-item">
                 <span class="output-icon">🧹</span>
                 <div style="flex:1">
                     <div class="output-name">Tidy Operations — Beat 2026-04-13 06:37 JST</div>
-                    <div class="output-desc">MEMORY.md pruned 12KB ✅ · 9 beat entries consolidated to memory/2026-04-13.md ✅ · dashboard refreshed · Titan launch live alerts posted</div>
+                    <div class="output-desc">MEMORY.md pruned 12KB ✅ · beat history archived to memory/2026-04-13.md ✅ · dashboard refreshed</div>
                 </div>
                 <span class="badge badge-ok">DONE · 06:37 JST</span>
-            </div>
-            <div class="output-item">
-                <span class="output-icon">🔍</span>
-                <div style="flex:1">
-                    <div class="output-name">Empire Audit — Beat 2026-04-13 05:30 JST</div>
-                    <div class="output-desc">Saito Cycle 190 ✅ · Felix N3 Phase 2b 1015/2489 ✅ · Titan launch ~1h26m ✅ · Ahipara tracker 08:00 JST ✅</div>
-                </div>
-                <span class="badge badge-ok">DONE · 05:30 JST</span>
-            </div>
-            <div class="output-item">
-                <span class="output-icon">🧹</span>
-                <div style="flex:1">
-                    <div class="output-name">Tidy Operations — Beat 2026-04-13 02:59 JST</div>
-                    <div class="output-desc">Agent dashboards verified ✅ · delegation queue reviewed ✅ · Ito Ideas Vault stale flag cleared ✅</div>
-                </div>
-                <span class="badge badge-ok">DONE · 02:59 JST</span>
             </div>
         </div>
 
@@ -307,7 +307,7 @@
 
     <!-- CRON HEALTH -->
     <div class="card full" style="margin-bottom:20px;">
-        <h3><span class="material-symbols-outlined">schedule</span> Empire Cron Status — 07:08 JST Mon Apr 13</h3>
+        <h3><span class="material-symbols-outlined">schedule</span> Empire Cron Status — 09:42 JST Mon Apr 13</h3>
         <table class="cron-table">
             <thead><tr><th>Agent</th><th>Job</th><th>Schedule</th><th>Status</th></tr></thead>
             <tbody>
@@ -315,7 +315,7 @@
                     <td><span class="cron-name">Kaji</span></td>
                     <td class="cron-sched">45min Initiative Beat</td>
                     <td class="cron-sched">every 45m</td>
-                    <td><span class="badge badge-ok">✅ 0-consec · healthy</span></td>
+                    <td><span class="badge badge-ok">✅ 0-consec · healthy · this beat done</span></td>
                 </tr>
                 <tr>
                     <td><span class="cron-name">Ito</span></td>
@@ -345,7 +345,7 @@
                     <td><span class="cron-name">Ito</span></td>
                     <td class="cron-sched">Ahipara Tracker</td>
                     <td class="cron-sched">daily 08:00 JST</td>
-                    <td><span class="badge badge-warn">⚠️ ~52min · RUNNING SOON</span></td>
+                    <td><span class="badge badge-ok">✅ Ran 08:00 JST · Phase 1 done</span></td>
                 </tr>
                 <tr>
                     <td><span class="cron-name">Ito</span></td>
@@ -357,13 +357,13 @@
                     <td><span class="cron-name">Felix</span></td>
                     <td class="cron-sched">21min Heartbeat</td>
                     <td class="cron-sched">every 21m</td>
-                    <td><span class="badge badge-ok">✅ 0-consec · N3 Phase 2b running ~1000+/2489</span></td>
+                    <td><span class="badge badge-ok">✅ 0-consec · N3 Phase 2b running ~391/2489</span></td>
                 </tr>
                 <tr>
                     <td><span class="cron-name">Titan</span></td>
                     <td class="cron-sched">21min Heartbeat</td>
                     <td class="cron-sched">every 21m</td>
-                    <td><span class="badge badge-err">🚨 LAUNCH NOW · 07:30 JST · Jax ACT NOW</span></td>
+                    <td><span class="badge badge-warn">⚠️ Launch window 07:30 JST missed · confirm publish status</span></td>
                 </tr>
                 <tr>
                     <td><span class="cron-name">Makoto</span></td>
@@ -375,13 +375,13 @@
                     <td><span class="cron-name">Saito</span></td>
                     <td class="cron-sched">20min Heartbeat</td>
                     <td class="cron-sched">every 20m</td>
-                    <td><span class="badge badge-ok">✅ 0-consec · Cycle 190+ · #13049491 CRITICAL 3 DAYS</span></td>
+                    <td><span class="badge badge-err">🚨 #13049491 CRITICAL · 2 DAYS · Cycle 178+</span></td>
                 </tr>
                 <tr>
                     <td><span class="cron-name">Saito</span></td>
                     <td class="cron-sched">Monday Morning Prime Window</td>
                     <td class="cron-sched">Mon-Fri 09:00 JST</td>
-                    <td><span class="badge badge-ok">✅ Next: ~1h52m (09:00 JST)</span></td>
+                    <td><span class="badge badge-ok">✅ Ran 09:00 JST today</span></td>
                 </tr>
                 <tr>
                     <td><span class="cron-name">Saito</span></td>
@@ -398,7 +398,7 @@
             </tbody>
         </table>
         <p style="color:var(--dim);font-size:11.5px;margin-top:12px;">
-            ✅ <strong>13/13 active · Kaji 0-consec ✅ · Titan launch 🚨 NOW</strong> · Ito Twitter ⚠️ xAI exhausted · Ito Weekly Reddit ⚠️ 1-consec · Saito C98 Pulse ⚠️ 1-consec
+            ✅ <strong>13/13 active · Kaji 0-consec ✅ · Saito #13049491 🚨 2 DAYS</strong> · Ito Twitter ⚠️ xAI exhausted · Titan launch ⚠️ missed window · Saito C98 Pulse ⚠️ 1-consec
         </p>
     </div>
 
@@ -407,14 +407,14 @@
         <h3><span class="material-symbols-outlined">groups</span> Empire Agent Directory</h3>
         <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;">
             <div>
-                <div class="agent-row"><div><span class="agent-name">🧭 Kaji (me)</span><div class="agent-role">COO / Orchestrator</div></div><span class="badge badge-ok">✅ healthy · Tidy Ops beat DONE · next: New Ideas (forced)</span></div>
-                <div class="agent-row"><div><span class="agent-name">🦅 Ito</span><div class="agent-role">Intel & Pipeline</div></div><span class="badge badge-ok">✅ 0-consec · Ahipara tracker 08:00 JST (~52min) · Ideas Vault 7 ideas P0-P2</span></div>
-                <div class="agent-row"><div><span class="agent-name">⚙️ Saito</span><div class="agent-role">Digital Strategy</div></div><span class="badge badge-err">🚨 #13049491 CRITICAL 3 DAYS · Cycle 190+ · submit NOW</span></div>
+                <div class="agent-row"><div><span class="agent-name">🧭 Kaji (me)</span><div class="agent-role">COO / Orchestrator</div></div><span class="badge badge-ok">✅ healthy · Improve Existing beat done · Empire Audit next (~10:27 JST)</span></div>
+                <div class="agent-row"><div><span class="agent-name">🦅 Ito</span><div class="agent-role">Intel & Pipeline</div></div><span class="badge badge-ok">✅ 0-consec · Ahipara Phase 1 done ✅ · Ideas Vault 7 ideas P0-P2</span></div>
+                <div class="agent-row"><div><span class="agent-name">⚙️ Saito</span><div class="agent-role">Digital Strategy</div></div><span class="badge badge-err">🚨 #13049491 CRITICAL 2 DAYS · Cycle 178+ · submit NOW</span></div>
             </div>
             <div>
                 <div class="agent-row"><div><span class="agent-name">⚡ Makoto</span><div class="agent-role">Arbitrage Scout</div></div><span class="badge badge-ok">✅ 0-consec · scout pipeline healthy</span></div>
-                <div class="agent-row"><div><span class="agent-name">🎌 Felix</span><div class="agent-role">N3 Vault & X</div></div><span class="badge badge-ok">✅ 0-consec · N3 DB Phase 2b running ~1000+/2489</span></div>
-                <div class="agent-row"><div><span class="agent-name">🏋️ Titan</span><div class="agent-role">Athlete Forge</div></div><span class="badge badge-err">🚨 LAUNCH NOW · Jax publishes to carrd.co + Gumroad by 07:30 JST</span></div>
+                <div class="agent-row"><div><span class="agent-name">🎌 Felix</span><div class="agent-role">N3 Vault & X</div></div><span class="badge badge-ok">✅ 0-consec · N3 DB Phase 2b running ~391/2489</span></div>
+                <div class="agent-row"><div><span class="agent-name">🏋️ Titan</span><div class="agent-role">Athlete Forge</div></div><span class="badge badge-warn">⚠️ Launch window 07:30 JST missed · confirm if Jax published</span></div>
                 <div class="agent-row"><div><span class="agent-name">🤖 Odie</span><div class="agent-role">TradePass Development</div></div><span class="badge badge-ok">✅ mode:none fixed · TMPL-1 LINE Bot in progress</span></div>
             </div>
         </div>
