@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-14 21:15 JST
+Generated: 2026-04-14 23:29 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -52,26 +52,26 @@ Generated: 2026-04-14 21:15 JST
 
 | Score | Platform | Keyword | Title | Budget/Rate | URL |
 |---:|---|---|---|---|---|
+| 85 | Freelancer | Python scraper | Python Ingestion Service for Governmental Traffic Enforcement Sys | $500.00 | https://www.freelancer.com/projects/python/Python-Ingestion-Service-for.html |
+| 85 | Freelancer | Python scraper | Nationwide Contractor Data Scrape | $750.00 | https://www.freelancer.com/projects/python/Nationwide-Contractor-Data-Scrape.html |
+| 85 | Freelancer | Python scraper | Python Script for Tachograph Analysis | $750.00 | https://www.freelancer.com/projects/sql/Python-Script-for-Tachograph-Analysis.html |
 | 85 | Freelancer | Python scraper | AI Lead Gen: B2B &amp; B2C -- 2 | $1,500.00 | https://www.freelancer.com/projects/python/Lead-Gen.html |
 | 85 | Freelancer | Python scraper | AI Lead Gen: B2B &amp; B2C | $750.00 | https://www.freelancer.com/projects/lead-generation/Lead-Gen.html |
-| 85 | Freelancer | Python scraper | AI Marketing Platform for Lawyers | $5,000.00 | https://www.freelancer.com/projects/ai-development/Marketing-Platform-for-Lawyers.html |
-| 75 | Freelancer | Python scraper | 游戏网站漏洞挖掘脚本编写 | $250.00 | https://www.freelancer.com/projects/penetration-testing/project-40370546.html |
 | 75 | Freelancer | Make.com automation | Home Automation | $250.00 | https://www.freelancer.com/projects/wordpress-design/Home-Automation.html |
+| 65 | Freelancer | Python scraper | Automate Data Entry Workflow | I have several spreadsheets that currently require manual data entry before I ca | https://www.freelancer.com/projects/data-analysis/Automate-Data-Entry-Workflow.html |
+| 65 | Freelancer | Python scraper | Programador Junior para Automatizaci&oacute;n | $30.00 | https://www.freelancer.com/projects/automation/Programador-Junior-para-Automatizaci.html |
+| 65 | Freelancer | Python scraper | Predictive Mixed-Data LLM Design | I want to build a custom large-language model that goes beyond text-only chat. T | https://www.freelancer.com/projects/natural-language-processing/Predictive-Mixed-Data-LLM-Design.html |
 | 65 | Freelancer | Python scraper | Dynamic Workday Job Application Bot Creation | I need a Python-based automation bot that reads Workday job application URLs fro | https://www.freelancer.com/projects/automation/Dynamic-Workday-Job-Application-Bot.html |
 | 65 | Freelancer | Python scraper | PostGIS Expert for Mapping Platform Optimisation | Senior Geospatial Engineer (Python + PostGIS) Overview We’re building a high-per | https://www.freelancer.com/projects/database-management/PostGIS-Expert-for-Mapping-Platform.html |
 | 65 | Freelancer | Python scraper | Fix Login Issue in Existing Python Script (Alice Blue API) | I have a Python script that was previously working and is used to automate exit  | https://www.freelancer.com/projects/api/Fix-Login-Issue-Existing-Python.html |
 | 65 | Freelancer | Python scraper | WhatsApp Listing Bot Integration | I receive every property lead through multiple WhatsApp numbers, I would then fo | https://www.freelancer.com/projects/api-developmet/WhatsApp-Listing-Bot-Integration.html |
 | 65 | Freelancer | Python scraper | WhatsApp Marketing API Setup | I need the WhatsApp Business API wired into my existing customer-facing system s | https://www.freelancer.com/projects/api-developmet/WhatsApp-Marketing-API-Setup.html |
 | 65 | Freelancer | Python scraper | Zoom Attendance Tracker Setup | $10.00 | https://www.freelancer.com/projects/google-sheets/Zoom-Attendance-Tracker-Setup.html |
-| 65 | Freelancer | Python scraper | HubSpot-SingleComm API Integration | $30.00 | https://www.freelancer.com/projects/api-integration/HubSpot-SingleComm-API-Integration.html |
-| 65 | Freelancer | Python scraper | BTC/USDT Bot &amp; Dashboard | $30.00 | https://www.freelancer.com/projects/api-developmet/BTC-USDT-Bot-Dashboard.html |
-| 65 | Freelancer | Make.com automation | Zoho CRM Live Consultation | $15.00 | https://www.freelancer.com/projects/zoho-crm/Zoho-CRM-Live-Consultation.html |
-| 65 | Freelancer | Make.com automation | Instagram Username Sniper Development | $15.00 | https://www.freelancer.com/projects/api-developmet/Instagram-Username-Sniper-Development.html |
-| 65 | Freelancer | Make.com automation | n8n API Integration Automation | $30.00 | https://www.freelancer.com/projects/API-Integration-Automation-fix.html |
-| 65 | Freelancer | Make.com automation | URGENT! Nintex Developer for Workflow Automation | We’re on the lookout for a Nintex Developer / Workflow Automation Specialist to  | https://www.freelancer.com/projects/sharepoint/URGENT-Nintex-Developer-for-Workflow.html |
-| 65 | Freelancer | Make.com automation | AI-Powered tool for  Lead Generator | $14.00 | https://www.freelancer.com/projects/ai-development/Powered-tool-for-Lead-Generator.html |
-| 65 | Freelancer | Make.com automation | Interactive Brokers Algo Automation | I have a quantitative strategy that performs well in back-tests and now I’m read | https://www.freelancer.com/projects/api/Interactive-Brokers-Algo-Automation.html |
-| 65 | Freelancer | Make.com automation | NGO Website, Content &amp; Automation Plan | I’m ready to turn our NGO’s online presence into a streamlined engine for awaren | https://www.freelancer.com/projects/web-development/NGO-Website-Content-Automation-Plan.html |
+| 65 | Freelancer | Make.com automation | Looking for Sales Partner (20% Commission) - Dev Services -- 2 | $30.00 | https://www.freelancer.com/projects/mobile-app-development/Looking-for-Sales-Partner-Commission.html |
+| 65 | Freelancer | Make.com automation | Shopify Catalog Restructuring &amp; Automation Fix | Title: Shopify Technical Fix: Catalog Automation, Homepage Video &amp; UI Cleanu | https://www.freelancer.com/projects/shopify-development/Shopify-Catalog-Restructuring-Automation.html |
+| 65 | Freelancer | Make.com automation | Excel Automation &amp; Reporting Dashboard | I need an end-to-end Excel solution that starts with bullet-proof Data Cleaning  | https://www.freelancer.com/projects/data-analysis/Excel-Automation-Reporting-Dashboard.html |
+| 65 | Freelancer | Make.com automation | Automated B2C Social Media Lead Generator and Content Generator | I need a resourceful lead-gen specialist to uncover consumer prospects on Facebo | https://www.freelancer.com/projects/lead-generation/Automated-Social-Media-Lead-Generator.html |
+| 65 | Freelancer | Make.com automation | Develop Profitable AI Service Solution | $8.00 | https://www.freelancer.com/projects/ai-chatbot-development/Develop-Profitable-Service-Solution.html |
 
 ## Notes
 - Scores prioritize: (1) simple automation/scripting fit, (2) payout magnitude, (3) keyword relevance.
