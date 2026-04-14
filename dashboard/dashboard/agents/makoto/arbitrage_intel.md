@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-14 17:58 JST
+Generated: 2026-04-14 21:15 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -52,26 +52,26 @@ Generated: 2026-04-14 17:58 JST
 
 | Score | Platform | Keyword | Title | Budget/Rate | URL |
 |---:|---|---|---|---|---|
+| 85 | Freelancer | Python scraper | AI Lead Gen: B2B &amp; B2C -- 2 | $1,500.00 | https://www.freelancer.com/projects/python/Lead-Gen.html |
+| 85 | Freelancer | Python scraper | AI Lead Gen: B2B &amp; B2C | $750.00 | https://www.freelancer.com/projects/lead-generation/Lead-Gen.html |
 | 85 | Freelancer | Python scraper | AI Marketing Platform for Lawyers | $5,000.00 | https://www.freelancer.com/projects/ai-development/Marketing-Platform-for-Lawyers.html |
-| 85 | Freelancer | Python scraper | Polymarket Trading Bot Development | $1,500.00 | https://www.freelancer.com/projects/machine-learning/Polymarket-Trading-Bot-Development.html |
 | 75 | Freelancer | Python scraper | 游戏网站漏洞挖掘脚本编写 | $250.00 | https://www.freelancer.com/projects/penetration-testing/project-40370546.html |
-| 75 | Freelancer | Make.com automation | Amazon Relay Load Booking Extension | $250.00 | https://www.freelancer.com/projects/web-development/Amazon-Relay-Load-Booking-Extension.html |
-| 75 | Freelancer | Make.com automation | Online Course Aggregator Development | $250.00 | https://www.freelancer.com/projects/api-integration/Online-Course-Aggregator-Development.html |
-| 75 | Freelancer | Data processing API | Tailwind SaaS Dashboard Front-End Developer | $250.00 | https://www.freelancer.com/projects/tailwind-css/Tailwind-SaaS-Dashboard-Front-End.html |
+| 75 | Freelancer | Make.com automation | Home Automation | $250.00 | https://www.freelancer.com/projects/wordpress-design/Home-Automation.html |
+| 65 | Freelancer | Python scraper | Dynamic Workday Job Application Bot Creation | I need a Python-based automation bot that reads Workday job application URLs fro | https://www.freelancer.com/projects/automation/Dynamic-Workday-Job-Application-Bot.html |
+| 65 | Freelancer | Python scraper | PostGIS Expert for Mapping Platform Optimisation | Senior Geospatial Engineer (Python + PostGIS) Overview We’re building a high-per | https://www.freelancer.com/projects/database-management/PostGIS-Expert-for-Mapping-Platform.html |
+| 65 | Freelancer | Python scraper | Fix Login Issue in Existing Python Script (Alice Blue API) | I have a Python script that was previously working and is used to automate exit  | https://www.freelancer.com/projects/api/Fix-Login-Issue-Existing-Python.html |
+| 65 | Freelancer | Python scraper | WhatsApp Listing Bot Integration | I receive every property lead through multiple WhatsApp numbers, I would then fo | https://www.freelancer.com/projects/api-developmet/WhatsApp-Listing-Bot-Integration.html |
 | 65 | Freelancer | Python scraper | WhatsApp Marketing API Setup | I need the WhatsApp Business API wired into my existing customer-facing system s | https://www.freelancer.com/projects/api-developmet/WhatsApp-Marketing-API-Setup.html |
 | 65 | Freelancer | Python scraper | Zoom Attendance Tracker Setup | $10.00 | https://www.freelancer.com/projects/google-sheets/Zoom-Attendance-Tracker-Setup.html |
 | 65 | Freelancer | Python scraper | HubSpot-SingleComm API Integration | $30.00 | https://www.freelancer.com/projects/api-integration/HubSpot-SingleComm-API-Integration.html |
 | 65 | Freelancer | Python scraper | BTC/USDT Bot &amp; Dashboard | $30.00 | https://www.freelancer.com/projects/api-developmet/BTC-USDT-Bot-Dashboard.html |
-| 65 | Freelancer | Python scraper | Fix Quotex Bot Cloudflare Blocking Request | My existing Quotex trading bot is written in Python and opens a WebSocket connec | https://www.freelancer.com/projects/cloudflare/Fix-Quotex-Bot-Cloudflare-Blocking.html |
-| 65 | Freelancer | Python scraper | Scrape 7K Aliexpress Media -- 2 | $10.00 | https://www.freelancer.com/projects/python/Scrape-Aliexpress-Media-40369742.html |
-| 65 | Freelancer | Python scraper | Windows Laptop Voice Assistant Development | I have two parallel needs that can start immediately. First, I’m digitising a ba | https://www.freelancer.com/projects/python/Windows-Laptop-Voice-Assistant.html |
-| 65 | Freelancer | Python scraper | Personalizaci&oacute;n de Permisos en Odoo | $30.00 | https://www.freelancer.com/projects/odoo/Personalizaci-Permisos-Odoo.html |
-| 65 | Freelancer | Python scraper | Build Structured Web Crawling System | $2.00 | https://www.freelancer.com/projects/scrapy/Build-Structured-Web-Crawling-System.html |
-| 65 | Freelancer | Make.com automation | Google Form Conference Approval Automation | $30.00 | https://www.freelancer.com/projects/automation/Google-Form-Conference-Approval.html |
-| 65 | Freelancer | Make.com automation | URGENT: Versatile Online Marketing Expert Needed (SEO/GEO, link-b | $2.00 | https://www.freelancer.com/projects/link-building/URGENT-Versatile-Online-Marketing-Expert-40370028.html |
-| 65 | Freelancer | Make.com automation | Craft Engaging SaaS Promo Videos (Turkish) | $10.00 | https://www.freelancer.com/projects/video-editing/Craft-Engaging-SaaS-Promo-Videos.html |
-| 65 | Freelancer | Make.com automation | AI Automation Expert for some small initial jobs with long term c | $15.00 | https://www.freelancer.com/projects/ai-chatbot-development/Automation-Expert-for-some-small.html |
-| 65 | Freelancer | Make.com automation | Custom TallyPrime TDL Development and Automation | TallyPrime Custom TDL Development — Sales Invoice Automation with e-Invoice, e-W | https://www.freelancer.com/projects/api-integration/Custom-TallyPrime-TDL-Development.html |
+| 65 | Freelancer | Make.com automation | Zoho CRM Live Consultation | $15.00 | https://www.freelancer.com/projects/zoho-crm/Zoho-CRM-Live-Consultation.html |
+| 65 | Freelancer | Make.com automation | Instagram Username Sniper Development | $15.00 | https://www.freelancer.com/projects/api-developmet/Instagram-Username-Sniper-Development.html |
+| 65 | Freelancer | Make.com automation | n8n API Integration Automation | $30.00 | https://www.freelancer.com/projects/API-Integration-Automation-fix.html |
+| 65 | Freelancer | Make.com automation | URGENT! Nintex Developer for Workflow Automation | We’re on the lookout for a Nintex Developer / Workflow Automation Specialist to  | https://www.freelancer.com/projects/sharepoint/URGENT-Nintex-Developer-for-Workflow.html |
+| 65 | Freelancer | Make.com automation | AI-Powered tool for  Lead Generator | $14.00 | https://www.freelancer.com/projects/ai-development/Powered-tool-for-Lead-Generator.html |
+| 65 | Freelancer | Make.com automation | Interactive Brokers Algo Automation | I have a quantitative strategy that performs well in back-tests and now I’m read | https://www.freelancer.com/projects/api/Interactive-Brokers-Algo-Automation.html |
+| 65 | Freelancer | Make.com automation | NGO Website, Content &amp; Automation Plan | I’m ready to turn our NGO’s online presence into a streamlined engine for awaren | https://www.freelancer.com/projects/web-development/NGO-Website-Content-Automation-Plan.html |
 
 ## Notes
 - Scores prioritize: (1) simple automation/scripting fit, (2) payout magnitude, (3) keyword relevance.
