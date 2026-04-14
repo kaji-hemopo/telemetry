@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-15 06:50 JST
+Generated: 2026-04-15 08:45 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -56,7 +56,11 @@ Generated: 2026-04-15 06:50 JST
 | 85 | Freelancer | Python scraper | Python Script for Tachograph Analysis | $750.00 | https://www.freelancer.com/projects/sql/Python-Script-for-Tachograph-Analysis.html |
 | 85 | Freelancer | Make.com automation | Comprehensive Business Automation | $5,000.00 | https://www.freelancer.com/projects/automation/Comprehensive-Business-Automation.html |
 | 75 | Freelancer | Python scraper | AI Engineer for Automation Systems Design -- 2 | $250.00 | https://www.freelancer.com/projects/ai-development/Engineer-for-Automation-Systems-Design-40372214.html |
+| 75 | Freelancer | Make.com automation | n8n Image Transformation Automation Workflow | $250.00 | https://www.freelancer.com/projects/n8n/Image-Transformation-Automation-Workflow.html |
 | 75 | Freelancer | Make.com automation | Atera-Autotask Zapier Automation | $250.00 | https://www.freelancer.com/projects/zapier/Atera-Autotask-Zapier-Automation.html |
+| 75 | Freelancer | Data processing API | GA4 E-commerce Data Analyst | $250.00 | https://www.freelancer.com/projects/data-analysis/commerce-Data-Analyst-40372277.html |
+| 65 | Freelancer | Python scraper | Python-DevOps-AI GitHub Portfolio Creation | $30.00 | https://www.freelancer.com/projects/devops/Python-DevOps-GitHub-Portfolio-Creation.html |
+| 65 | Freelancer | Python scraper | Repair PhishTank URL Scanner | $30.00 | https://www.freelancer.com/projects/api/Repair-PhishTank-URL-Scanner.html |
 | 65 | Freelancer | Python scraper | Stealth Browser Automation Specialist | Undetectable Browser Automation: This is the most critical requirement. The deve | https://www.freelancer.com/projects/api-integration/Stealth-Browser-Automation-Specialist.html |
 | 65 | Freelancer | Python scraper | تطوير برنامج أتمتة واجهة المستخدم | $30.00 | https://www.freelancer.com/projects/python/project-40372056.html |
 | 65 | Freelancer | Python scraper | Multi-Vehicle GPRS Tracking System | $30.00 | https://www.freelancer.com/projects/embedded-systems/Multi-Vehicle-GPRS-Tracking-System.html |
@@ -66,12 +70,8 @@ Generated: 2026-04-15 06:50 JST
 | 65 | Freelancer | Python scraper | Automate Data Entry Workflow | I have several spreadsheets that currently require manual data entry before I ca | https://www.freelancer.com/projects/data-analysis/Automate-Data-Entry-Workflow.html |
 | 65 | Freelancer | Python scraper | Programador Junior para Automatizaci&oacute;n | $30.00 | https://www.freelancer.com/projects/automation/Programador-Junior-para-Automatizaci.html |
 | 65 | Freelancer | Python scraper | Predictive Mixed-Data LLM Design | I want to build a custom large-language model that goes beyond text-only chat. T | https://www.freelancer.com/projects/natural-language-processing/Predictive-Mixed-Data-LLM-Design.html |
-| 65 | Freelancer | Python scraper | Dynamic Workday Job Application Bot Creation | I need a Python-based automation bot that reads Workday job application URLs fro | https://www.freelancer.com/projects/automation/Dynamic-Workday-Job-Application-Bot.html |
+| 65 | Freelancer | Make.com automation | Looking for Sales Partner (20% Commission) - Dev Services -- 2 | $30.00 | https://www.freelancer.com/projects/mobile-app-development/Looking-for-Sales-Partner-Commission.html |
 | 65 | Freelancer | Make.com automation | Advanced Bot Developer for GOETHE SEAT BOOKING like Chennai and B | I am looking for an experienced automation/bot developer who has worked with com | https://www.freelancer.com/projects/php/Advanced-Bot-Developer-for-GOETHE.html |
-| 65 | Freelancer | Make.com automation | GoHighLevel Setup for Property Management | $30.00 | https://www.freelancer.com/projects/go-high-level/GoHighLevel-Setup-for-Property.html |
-| 65 | Freelancer | Make.com automation | Earn Commission Selling Automation Tool | We are looking for highly driven, results-oriented marketers or sales profession | https://www.freelancer.com/projects/lead-generation/Earn-Commission-Selling-Automation-Tool.html |
-| 65 | Freelancer | Make.com automation | Electronic Medical Assessment Form Automation | I need an electronic version of D4 medical assessment forms. These forms should  | https://www.freelancer.com/projects/web-development/Electronic-Medical-Assessment-Form.html |
-| 65 | Freelancer | Make.com automation | ElevenLabs Specialist for AI-Powered Telemarketing System | $30.00 | https://www.freelancer.com/projects/ai-agents/ElevenLabs-Specialist-for-Powered.html |
 
 ## Notes
 - Scores prioritize: (1) simple automation/scripting fit, (2) payout magnitude, (3) keyword relevance.
