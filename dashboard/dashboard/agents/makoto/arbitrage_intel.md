@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-15 06:08 JST
+Generated: 2026-04-15 06:50 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -57,7 +57,6 @@ Generated: 2026-04-15 06:08 JST
 | 85 | Freelancer | Make.com automation | Comprehensive Business Automation | $5,000.00 | https://www.freelancer.com/projects/automation/Comprehensive-Business-Automation.html |
 | 75 | Freelancer | Python scraper | AI Engineer for Automation Systems Design -- 2 | $250.00 | https://www.freelancer.com/projects/ai-development/Engineer-for-Automation-Systems-Design-40372214.html |
 | 75 | Freelancer | Make.com automation | Atera-Autotask Zapier Automation | $250.00 | https://www.freelancer.com/projects/zapier/Atera-Autotask-Zapier-Automation.html |
-| 75 | Freelancer | Data processing API | Business Management Web App Development | $250.00 | https://www.freelancer.com/projects/web-development/Business-Management-Web-App-Development-40372057.html |
 | 65 | Freelancer | Python scraper | Stealth Browser Automation Specialist | Undetectable Browser Automation: This is the most critical requirement. The deve | https://www.freelancer.com/projects/api-integration/Stealth-Browser-Automation-Specialist.html |
 | 65 | Freelancer | Python scraper | تطوير برنامج أتمتة واجهة المستخدم | $30.00 | https://www.freelancer.com/projects/python/project-40372056.html |
 | 65 | Freelancer | Python scraper | Multi-Vehicle GPRS Tracking System | $30.00 | https://www.freelancer.com/projects/embedded-systems/Multi-Vehicle-GPRS-Tracking-System.html |
@@ -72,6 +71,7 @@ Generated: 2026-04-15 06:08 JST
 | 65 | Freelancer | Make.com automation | GoHighLevel Setup for Property Management | $30.00 | https://www.freelancer.com/projects/go-high-level/GoHighLevel-Setup-for-Property.html |
 | 65 | Freelancer | Make.com automation | Earn Commission Selling Automation Tool | We are looking for highly driven, results-oriented marketers or sales profession | https://www.freelancer.com/projects/lead-generation/Earn-Commission-Selling-Automation-Tool.html |
 | 65 | Freelancer | Make.com automation | Electronic Medical Assessment Form Automation | I need an electronic version of D4 medical assessment forms. These forms should  | https://www.freelancer.com/projects/web-development/Electronic-Medical-Assessment-Form.html |
+| 65 | Freelancer | Make.com automation | ElevenLabs Specialist for AI-Powered Telemarketing System | $30.00 | https://www.freelancer.com/projects/ai-agents/ElevenLabs-Specialist-for-Powered.html |
 
 ## Notes
 - Scores prioritize: (1) simple automation/scripting fit, (2) payout magnitude, (3) keyword relevance.
