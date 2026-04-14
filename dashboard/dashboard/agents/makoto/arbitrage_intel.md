@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-14 23:29 JST
+Generated: 2026-04-15 06:08 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -42,36 +42,36 @@ Generated: 2026-04-14 23:29 JST
 | 90 | Lancers | API連携 | auキャリア決済の新仕様に基づく既存システムの修正、KDDIとの通信仕様に基づくAPI調整、疎通試験 | ¥200,000 | https://www.lancers.jp/work/detail/5326072 |
 | 90 | Lancers | API連携 | 【急募】ECストア注文データと出荷データを連携するシステム開発 | ¥50,000 | https://www.lancers.jp/work/detail/5189850 |
 | 90 | Lancers | スクレイピング | 【急募】求人サイトデータ収集のクローリング基盤開発 | ¥100,000 | https://www.lancers.jp/work/detail/5511487 |
-| 90 | Lancers | スクレイピング | 【急募】Googleリスティング広告監視システム開発のフリーランス募集 | ¥100,000 | https://www.lancers.jp/work/detail/5501773 |
 | 75 | Lancers | LP制作 | 【WEBサイトリニューアル】マーケティング会社のコーポレートサイト（SEO、BtoB） | ¥300,000 | https://www.lancers.jp/work/detail/5508434 |
 | 75 | Lancers | API連携 | 注目 限定公開 PR 限定公開の仕事 | ¥500,000 | https://www.lancers.jp/work/detail/5523468 |
 | 75 | Lancers | API連携 | 【買い切り20万円】Shopeeチャット管理・返信Webツール開発（複数国対応） | ¥200,000 | https://www.lancers.jp/work/detail/5492959 |
 | 75 | Lancers | スクレイピング | 【急募】紙の伝票をWEBシステムへ自動データ入力開発【AI使用可能】 | ¥100,000 | https://www.lancers.jp/work/detail/5411519 |
+| 35 | Lancers | LP制作 | 【LP制作】STUDIOでのランディングページ実装パートナー募集 | ¥20,000 | https://www.lancers.jp/work/detail/5521253 |
 
 ## Global Highlights (USD)
 
 | Score | Platform | Keyword | Title | Budget/Rate | URL |
 |---:|---|---|---|---|---|
-| 85 | Freelancer | Python scraper | Python Ingestion Service for Governmental Traffic Enforcement Sys | $500.00 | https://www.freelancer.com/projects/python/Python-Ingestion-Service-for.html |
-| 85 | Freelancer | Python scraper | Nationwide Contractor Data Scrape | $750.00 | https://www.freelancer.com/projects/python/Nationwide-Contractor-Data-Scrape.html |
+| 85 | Freelancer | Python scraper | AI Automation for Architectural Casework Drawings | $5,000.00 | https://www.freelancer.com/projects/machine-learning/Automation-for-Architectural-Casework.html |
 | 85 | Freelancer | Python scraper | Python Script for Tachograph Analysis | $750.00 | https://www.freelancer.com/projects/sql/Python-Script-for-Tachograph-Analysis.html |
-| 85 | Freelancer | Python scraper | AI Lead Gen: B2B &amp; B2C -- 2 | $1,500.00 | https://www.freelancer.com/projects/python/Lead-Gen.html |
-| 85 | Freelancer | Python scraper | AI Lead Gen: B2B &amp; B2C | $750.00 | https://www.freelancer.com/projects/lead-generation/Lead-Gen.html |
-| 75 | Freelancer | Make.com automation | Home Automation | $250.00 | https://www.freelancer.com/projects/wordpress-design/Home-Automation.html |
+| 85 | Freelancer | Make.com automation | Comprehensive Business Automation | $5,000.00 | https://www.freelancer.com/projects/automation/Comprehensive-Business-Automation.html |
+| 75 | Freelancer | Python scraper | AI Engineer for Automation Systems Design -- 2 | $250.00 | https://www.freelancer.com/projects/ai-development/Engineer-for-Automation-Systems-Design-40372214.html |
+| 75 | Freelancer | Make.com automation | Atera-Autotask Zapier Automation | $250.00 | https://www.freelancer.com/projects/zapier/Atera-Autotask-Zapier-Automation.html |
+| 75 | Freelancer | Data processing API | Business Management Web App Development | $250.00 | https://www.freelancer.com/projects/web-development/Business-Management-Web-App-Development-40372057.html |
+| 65 | Freelancer | Python scraper | Stealth Browser Automation Specialist | Undetectable Browser Automation: This is the most critical requirement. The deve | https://www.freelancer.com/projects/api-integration/Stealth-Browser-Automation-Specialist.html |
+| 65 | Freelancer | Python scraper | تطوير برنامج أتمتة واجهة المستخدم | $30.00 | https://www.freelancer.com/projects/python/project-40372056.html |
+| 65 | Freelancer | Python scraper | Multi-Vehicle GPRS Tracking System | $30.00 | https://www.freelancer.com/projects/embedded-systems/Multi-Vehicle-GPRS-Tracking-System.html |
+| 65 | Freelancer | Python scraper | ECU File Modification Automation | $30.00 | https://www.freelancer.com/projects/automation/ECU-File-Modification-Automation.html |
+| 65 | Freelancer | Python scraper | Aplikasi Komprehensif untuk Platform Olahraga | $2.00 | https://www.freelancer.com/projects/full-stack-development/Aplikasi-Komprehensif-untuk-Platform.html |
+| 65 | Freelancer | Python scraper | Dockerized TypeScript Web Service Development | I'm looking for an experienced developer to work with the following technologies | https://www.freelancer.com/projects/docker/Dockerized-TypeScript-Web-Service.html |
 | 65 | Freelancer | Python scraper | Automate Data Entry Workflow | I have several spreadsheets that currently require manual data entry before I ca | https://www.freelancer.com/projects/data-analysis/Automate-Data-Entry-Workflow.html |
 | 65 | Freelancer | Python scraper | Programador Junior para Automatizaci&oacute;n | $30.00 | https://www.freelancer.com/projects/automation/Programador-Junior-para-Automatizaci.html |
 | 65 | Freelancer | Python scraper | Predictive Mixed-Data LLM Design | I want to build a custom large-language model that goes beyond text-only chat. T | https://www.freelancer.com/projects/natural-language-processing/Predictive-Mixed-Data-LLM-Design.html |
 | 65 | Freelancer | Python scraper | Dynamic Workday Job Application Bot Creation | I need a Python-based automation bot that reads Workday job application URLs fro | https://www.freelancer.com/projects/automation/Dynamic-Workday-Job-Application-Bot.html |
-| 65 | Freelancer | Python scraper | PostGIS Expert for Mapping Platform Optimisation | Senior Geospatial Engineer (Python + PostGIS) Overview We’re building a high-per | https://www.freelancer.com/projects/database-management/PostGIS-Expert-for-Mapping-Platform.html |
-| 65 | Freelancer | Python scraper | Fix Login Issue in Existing Python Script (Alice Blue API) | I have a Python script that was previously working and is used to automate exit  | https://www.freelancer.com/projects/api/Fix-Login-Issue-Existing-Python.html |
-| 65 | Freelancer | Python scraper | WhatsApp Listing Bot Integration | I receive every property lead through multiple WhatsApp numbers, I would then fo | https://www.freelancer.com/projects/api-developmet/WhatsApp-Listing-Bot-Integration.html |
-| 65 | Freelancer | Python scraper | WhatsApp Marketing API Setup | I need the WhatsApp Business API wired into my existing customer-facing system s | https://www.freelancer.com/projects/api-developmet/WhatsApp-Marketing-API-Setup.html |
-| 65 | Freelancer | Python scraper | Zoom Attendance Tracker Setup | $10.00 | https://www.freelancer.com/projects/google-sheets/Zoom-Attendance-Tracker-Setup.html |
-| 65 | Freelancer | Make.com automation | Looking for Sales Partner (20% Commission) - Dev Services -- 2 | $30.00 | https://www.freelancer.com/projects/mobile-app-development/Looking-for-Sales-Partner-Commission.html |
-| 65 | Freelancer | Make.com automation | Shopify Catalog Restructuring &amp; Automation Fix | Title: Shopify Technical Fix: Catalog Automation, Homepage Video &amp; UI Cleanu | https://www.freelancer.com/projects/shopify-development/Shopify-Catalog-Restructuring-Automation.html |
-| 65 | Freelancer | Make.com automation | Excel Automation &amp; Reporting Dashboard | I need an end-to-end Excel solution that starts with bullet-proof Data Cleaning  | https://www.freelancer.com/projects/data-analysis/Excel-Automation-Reporting-Dashboard.html |
-| 65 | Freelancer | Make.com automation | Automated B2C Social Media Lead Generator and Content Generator | I need a resourceful lead-gen specialist to uncover consumer prospects on Facebo | https://www.freelancer.com/projects/lead-generation/Automated-Social-Media-Lead-Generator.html |
-| 65 | Freelancer | Make.com automation | Develop Profitable AI Service Solution | $8.00 | https://www.freelancer.com/projects/ai-chatbot-development/Develop-Profitable-Service-Solution.html |
+| 65 | Freelancer | Make.com automation | Advanced Bot Developer for GOETHE SEAT BOOKING like Chennai and B | I am looking for an experienced automation/bot developer who has worked with com | https://www.freelancer.com/projects/php/Advanced-Bot-Developer-for-GOETHE.html |
+| 65 | Freelancer | Make.com automation | GoHighLevel Setup for Property Management | $30.00 | https://www.freelancer.com/projects/go-high-level/GoHighLevel-Setup-for-Property.html |
+| 65 | Freelancer | Make.com automation | Earn Commission Selling Automation Tool | We are looking for highly driven, results-oriented marketers or sales profession | https://www.freelancer.com/projects/lead-generation/Earn-Commission-Selling-Automation-Tool.html |
+| 65 | Freelancer | Make.com automation | Electronic Medical Assessment Form Automation | I need an electronic version of D4 medical assessment forms. These forms should  | https://www.freelancer.com/projects/web-development/Electronic-Medical-Assessment-Form.html |
 
 ## Notes
 - Scores prioritize: (1) simple automation/scripting fit, (2) payout magnitude, (3) keyword relevance.
