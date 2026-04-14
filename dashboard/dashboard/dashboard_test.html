@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard Test</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+        .test { margin: 10px 0; padding: 10px; border: 1px solid #ccc; }
+        .pass { background: #d4edda; }
+        .fail { background: #f8d7da; }
+    </style>
+</head>
+<body>
+    <h1>Empire Telemetry Dashboard V4.0 Test</h1>
+    
+    <div class="test" id="test1">Test 1: Server running...</div>
+    <div class="test" id="test2">Test 2: API endpoints...</div>
+    <div class="test" id="test3">Test 3: Airbnb data...</div>
+    <div class="test" id="test4">Test 4: Dashboard accessible...</div>
+    
+    <script>
+        async function runTests() {
+            // Test 1: Server running
+            try {
+                const res = await fetch('http://localhost:8080/');
+                document.getElementById('test1').classList.add('pass');
+                document.getElementById('test1').innerHTML += ' ✓ Server responding (HTTP ' + res.status + ')';
+            } catch (e) {
+                document.getElementById('test1').classList.add('fail');
+                document.getElementById('test1').innerHTML += ' ✗ ' + e.message;
+            }
+            
+            // Test 2: API endpoints
+            const endpoints = ['/api/data', '/api/intel', '/api/markets', '/api/venture', '/api/airbnb'];
+            let apiTests = 0;
+            for (const endpoint of endpoints) {
+                try {
+                    const res = await fetch('http://localhost:8080' + endpoint);
+                    if (res.ok) apiTests++;
+                } catch (e) {}
+            }
+            const test2 = document.getElementById('test2');
+            if (apiTests === endpoints.length) {
+                test2.classList.add('pass');
+                test2.innerHTML += ' ✓ All API endpoints working (' + apiTests + '/' + endpoints.length + ')';
+            } else {
+                test2.classList.add('fail');
+                test2.innerHTML += ' ✗ Some API endpoints failed (' + apiTests + '/' + endpoints.length + ')';
+            }
+            
+            // Test 3: Airbnb data
+            try {
+                const res = await fetch('http://localhost:8080/api/airbnb');
+                const data = await res.json();
+                if (data.status === 'ok' && data.data.areas && data.data.areas.length > 0) {
+                    document.getElementById('test3').classList.add('pass');
+                    document.getElementById('test3').innerHTML += ' ✓ Airbnb data loaded (' + data.data.areas.length + ' areas)';
+                } else {
+                    throw new Error('Invalid data structure');
+                }
+            } catch (e) {
+                document.getElementById('test3').classList.add('fail');
+                document.getElementById('test3').innerHTML += ' ✗ ' + e.message;
+            }
+            
+            // Test 4: Dashboard HTML
+            try {
+                const res = await fetch('http://localhost:8080/');
+                const html = await res.text();
+                if (html.includes('Empire Telemetry Terminal V4.0') && html.includes('AIRBNB')) {
+                    document.getElementById('test4').classList.add('pass');
+                    document.getElementById('test4').innerHTML += ' ✓ Dashboard HTML includes Airbnb tab';
+                } else {
+                    throw new Error('Dashboard HTML missing expected content');
+                }
+            } catch (e) {
+                document.getElementById('test4').classList.add('fail');
+                document.getElementById('test4').innerHTML += ' ✗ ' + e.message;
+            }
+        }
+        
+        runTests();
+    </script>
+</body>
+</html>

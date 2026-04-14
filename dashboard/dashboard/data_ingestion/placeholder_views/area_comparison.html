@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area Comparison - Airbnb Research</title>
+    <style>
+        :root {
+            --bg-deep: #0F172A;
+            --surface-card: #1E293B;
+            --border-subtle: #334155;
+            --text-main: #F1F5F9;
+            --text-muted: #94A3B8;
+            --accent-mint: #10B981;
+            --accent-mint-glow: rgba(16, 185, 129, 0.15);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: var(--bg-deep);
+            color: var(--text-main);
+            font-family: 'Inter', sans-serif;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--border-subtle);
+        }
+        
+        .title {
+            font-size: 28px;
+            font-weight: 600;
+            color: var(--accent-mint);
+            margin-bottom: 8px;
+        }
+        
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        
+        .status-badge {
+            display: inline-block;
+            padding: 6px 16px;
+            background: var(--accent-mint-glow);
+            color: var(--accent-mint);
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        
+        .placeholder-container {
+            background: var(--surface-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .placeholder-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--border-subtle);
+        }
+        
+        .placeholder-title {
+            font-size: 18px;
+            font-weight: 600;
+        }
+        
+        .placeholder-status {
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+        
+        .placeholder-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .placeholder-table th {
+            text-align: left;
+            padding: 12px 16px;
+            color: var(--text-muted);
+            font-weight: 500;
+            font-size: 14px;
+            border-bottom: 1px solid var(--border-subtle);
+        }
+        
+        .placeholder-table td {
+            padding: 16px;
+            border-bottom: 1px solid var(--border-subtle);
+        }
+        
+        .placeholder-row {
+            opacity: 0.7;
+        }
+        
+        .placeholder-cell {
+            height: 20px;
+            background: linear-gradient(90deg, var(--border-subtle) 25%, #475569 50%, var(--border-subtle) 75%);
+            background-size: 200% 100%;
+            animation: shimmer 1.5s infinite;
+            border-radius: 4px;
+        }
+        
+        @keyframes shimmer {
+            0% { background-position: -200% 0; }
+            100% { background-position: 200% 0; }
+        }
+        
+        .placeholder-message {
+            text-align: center;
+            padding: 40px;
+            color: var(--text-muted);
+        }
+        
+        .placeholder-message i {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: var(--accent-mint);
+            opacity: 0.5;
+        }
+        
+        .integration-ready {
+            background: var(--surface-card);
+            border: 2px dashed var(--accent-mint);
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        .integration-title {
+            color: var(--accent-mint);
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .integration-desc {
+            color: var(--text-muted);
+            margin-bottom: 20px;
+        }
+        
+        .data-structure {
+            background: var(--bg-deep);
+            border: 1px solid var(--border-subtle);
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 20px;
+            font-family: monospace;
+            font-size: 14px;
+            color: var(--text-muted);
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">Airbnb Area Comparison Dashboard</h1>
+            <p class="subtitle">Comparative analysis of potential Airbnb locations</p>
+            <div class="status-badge">READY FOR DATA INTEGRATION</div>
+        </div>
+        
+        <div class="placeholder-container">
+            <div class="placeholder-header">
+                <div class="placeholder-title">Area Comparison Table</div>
+                <div class="placeholder-status">Awaiting Felix's research data</div>
+            </div>
+            
+            <table class="placeholder-table">
+                <thead>
+                    <tr>
+                        <th>Area Name</th>
+                        <th>Region</th>
+                        <th>Properties</th>
+                        <th>Avg Price (¥)</th>
+                        <th>Competition</th>
+                        <th>Regulation</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Placeholder rows -->
+                    <tr class="placeholder-row">
+                        <td><div class="placeholder-cell" style="width: 100px;"></div></td>
+                        <td><div class="placeholder-cell" style="width: 80px;"></div></td>
+                        <td><div class="placeholder-cell" style="width: 60px;"></div></td>
+                        <td><div class="placeholder-cell" style="width: 100px;"></div></td>
+                        <td><div class="placeholder-cell" style="width: 80px;"></div></td>
+                        <td><div class="placeholder-cell" style="width: 80px;"></div></td>
+                        <td><div class="placeholder-cell" style="width: 150px;"></div></td>
+                    </tr>
+                    <tr class="placeholder-row">
+                        <td><div class="placeholder-cell" style="width: 100px;"></div></td>
+                        <td><div class="placeholder-cell" style="width: 80px;"></div></td>
+                        <td><div class="placeholder-cell" style="width: 60px;"></div></td>
+                        <td><div class="placeholder-cell" style="width: 100px;"></div></td>
+                        <td><div class="placeholder-cell" style="width: 80px;"></div></td>
+                        <td><div class="placeholder-cell" style="width: 80px;"></div></td>
+                        <td><div class="placeholder-cell" style="width: 150px;"></div></td>
+                    </tr>
+                    <tr class="placeholder-row">
+                        <td><div class="placeholder-cell" style="width: 100px;"></div></td>
+                        <td><div class="placeholder-cell" style="width: 80px;"></div></td>
+                        <td><div class="placeholder-cell" style="width: 60px;"></div></td>
+                        <td><div class="placeholder-cell" style="width: 100px;"></div></td>
+                        <td><div class="placeholder-cell" style="width: 80px;"></div></td>
+                        <td><div class="placeholder-cell" style="width: 80px;"></div></td>
+                        <td><div class="placeholder-cell" style="width: 150px;"></div></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="placeholder-message">
+                <div>📊</div>
+                <h3>Data Integration Ready</h3>
+                <p>This table is prepared to display Felix's area comparison research.</p>
+                <p>Will show: Shonan, Hakone, Shizuoka, Western Tokyo analysis</p>
+            </div>
+        </div>
+        
+        <div class="integration-ready">
+            <div class="integration-title">Integration Status: READY</div>
+            <p class="integration-desc">
+                This dashboard view is prepared for Felix's research data integration.
+                The table structure matches expected data format.
+            </p>
+            
+            <div class="data-structure">
+                <strong>Expected Data Format:</strong><br>
+                {<br>
+                &nbsp;&nbsp;"areas": [<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;{<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"name": "Shonan",<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"region": "Kanagawa",<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"property_count": 15,<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"avg_price": 85000000,<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"competition_score": 7.5,<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"regulation_score": 6.0,<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"notes": "Beach area, high seasonal demand"<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                &nbsp;&nbsp;]<br>
+                }<br>
+                <br>
+                <strong>Integration Method:</strong> JSON file upload → Data validation → Table population
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Simulate data loading animation
+        setTimeout(() => {
+            document.querySelectorAll('.placeholder-row').forEach(row => {
+                row.style.opacity = '0.3';
+            });
+        }, 2000);
+        
+        // Check for data updates every 10 seconds
+        setInterval(() => {
+            console.log('Checking for Felix data updates...');
+            // This will be replaced with actual data check when integration is ready
+        }, 10000);
+    </script>
+</body>
+</html>

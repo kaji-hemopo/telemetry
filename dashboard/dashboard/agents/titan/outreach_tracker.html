@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Titan · Outreach Tracker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root { --bg: #050508; --surface: rgba(18,20,28,0.85); --border: rgba(255,255,255,0.08); --text: #f0f2f8; --muted: #8b90a1; --accent: #5eead4; --amber: #fbbf24; --red: #f87171; --violet: #a78bfa; --radius: 16px; --font-d: "Syne",system-ui,sans-serif; --font-b: "DM Sans",system-ui,sans-serif; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: var(--font-b); color: var(--text); line-height: 1.55; min-height: 100vh; background: var(--bg); -webkit-font-smoothing: antialiased; }
+    .page-bg { position: fixed; inset: 0; z-index: -1; background: radial-gradient(ellipse 100% 70% at 50% -25%, rgba(94,234,212,0.07),transparent 50%), radial-gradient(ellipse 50% 45% at 100% 10%, rgba(167,139,250,0.06),transparent 45%), linear-gradient(180deg,#0a0c12 0%,var(--bg) 100%); }
+    .container { max-width: 1080px; margin: 0 auto; padding: 28px 20px 48px; }
+    .nav-back { display: inline-flex; align-items: center; gap: 8px; padding: 10px 18px; border-radius: 10px; font-size: 13px; font-weight: 600; color: var(--muted); background: rgba(139,144,161,0.08); border: 1px solid rgba(139,144,161,0.15); text-decoration: none; margin-bottom: 24px; }
+    .nav-back:hover { background: rgba(139,144,161,0.14); color: var(--text); text-decoration: none; }
+    header.hero { text-align: center; padding: 36px 28px 40px; border-radius: calc(var(--radius)+4px); background: linear-gradient(145deg,rgba(22,26,38,0.95),rgba(12,14,22,0.98)); border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 24px 48px -16px rgba(0,0,0,0.55); margin-bottom: 28px; }
+    .eyebrow { font-family: var(--font-d); font-size: 11px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent); margin-bottom: 12px; }
+    h1 { font-family: var(--font-d); font-size: clamp(1.6rem,4vw,2.2rem); font-weight: 800; letter-spacing: -0.03em; line-height: 1.12; margin-bottom: 12px; background: linear-gradient(100deg,#fff 0%,#b8c0d4 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .subtitle { font-size: 1rem; color: var(--muted); max-width: 36rem; margin: 0 auto; }
+    .section-title { font-family: var(--font-d); font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin: 28px 0 16px; display: flex; align-items: center; gap: 10px; }
+    .section-title .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); }
+    .card { padding: 22px 24px 20px; border-radius: var(--radius); background: var(--surface); border: 1px solid var(--border); backdrop-filter: blur(20px); margin-bottom: 14px; }
+    .card h3 { font-family: var(--font-d); font-size: 15px; font-weight: 700; margin-bottom: 4px; }
+    .card .role { font-size: 11px; color: var(--accent); margin-bottom: 10px; font-weight: 500; }
+    .card p, .card li { font-size: 13px; color: var(--muted); }
+    .card ul { padding-left: 18px; margin-top: 8px; }
+    .card li { margin-bottom: 4px; }
+    .script-box { background: rgba(18,20,28,0.9); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 16px 20px; margin: 10px 0; font-size: 12px; color: var(--muted); font-family: ui-monospace,monospace; line-height: 1.7; }
+    .script-label { font-size: 11px; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 8px; display: block; }
+    .stats-row { display: grid; grid-template-columns: repeat(4,1fr); gap: 12px; margin-bottom: 28px; }
+    .stat-box { padding: 18px 20px; border-radius: var(--radius); background: var(--surface); border: 1px solid var(--border); text-align: center; }
+    .stat-num { font-family: var(--font-d); font-size: 1.8rem; font-weight: 800; color: var(--text); line-height: 1; margin-bottom: 4px; }
+    .stat-label { font-size: 11px; color: var(--muted); }
+    .stat-num.red { color: var(--red); }
+    .stat-num.amber { color: var(--amber); }
+    footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--border); text-align: center; font-size: 12px; color: var(--muted); }
+    a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <div class="page-bg"></div>
+  <div class="container">
+    <a href="titan.html" class="nav-back">← Titan Dashboard</a>
+    <header class="hero">
+      <div class="eyebrow">Titan · Outreach Tracker</div>
+      <h1>Pipeline & DM Scripts</h1>
+      <p class="subtitle">Outreach targets, warm lead pipeline, and copy-paste DM scripts. 200+ beats deep.</p>
+    </header>
+    <div class="stats-row">
+      <div class="stat-box"><div class="stat-num amber">0</div><div class="stat-label">Conversations started</div></div>
+      <div class="stat-box"><div class="stat-num amber">0</div><div class="stat-label">Warm DMs sent</div></div>
+      <div class="stat-box"><div class="stat-num amber">0</div><div class="stat-label">Hot leads</div></div>
+      <div class="stat-box"><div class="stat-num red">¥0</div><div class="stat-label">Revenue</div></div>
+    </div>
+    <div class="section-title"><span class="dot"></span>Decision Tree (by conversation count)</div>
+    <div class="card">
+      <h3>ONE Number: Total Conversations per Day</h3>
+      <div class="role">All decisions branch from this count</div>
+      <ul>
+        <li><strong>3+ conversations:</strong> On track — continue current day type</li>
+        <li><strong>1–2 conversations:</strong> Yellow — double warm DMs next day</li>
+        <li><strong>0 conversations:</strong> Rescue mode — send to everyone, all scripts, no filtering</li>
+        <li><strong>5+ new contacts/day:</strong> Strong — scale what works</li>
+        <li><strong>Revenue ≥¥9.8k:</strong> Scale — double posting, push Gumroad</li>
+      </ul>
+    </div>
+    <div class="section-title"><span class="dot"></span>DM Scripts</div>
+    <div class="card"><h3>Script A — First Cold DM</h3><div class="role">New contact — warm intro, no ask</div><div class="script-box"><span class="script-label">Script A</span>Hey [NAME] — been following your content. Solid points on [SPECIFIC THING THEY POSTED]. I'm a PT working with athletes and professionals here in Tokyo. Always good to connect with people who take training seriously. What brings you to Tokyo?</div></div>
+    <div class="card"><h3>Script B — Value-First DM</h3><div class="role">Engaged with their content first</div><div class="script-box"><span class="script-label">Script B</span>Hey [NAME] — just saw your post on [TOPIC]. Really well said. I've been helping a few guys here in Tokyo rebuild their strength after years of desk work. What's your training setup look like right now?</div></div>
+    <div class="card"><h3>Script C — Soft CTA</h3><div class="role">Warm lead — interested but not ready</div><div class="script-box"><span class="script-label">Script C</span>That makes total sense. Most guys I work with come to me after trying the usual gym routine and getting nowhere. I've got a free guide on here if you're ever curious: [LINK]. No pressure, just if you ever want to chat training, my DMs are open.</div></div>
+    <div class="card"><h3>Script G — Follow-Up DM</h3><div class="role">3–5 days after first contact</div><div class="script-box"><span class="script-label">Script G</span>Hey [NAME] — hope all good. Wanted to follow up. I've been working with a few clients on exactly what we talked about. If you're curious what's possible, I've got a free 30-page guide: [LINK]. Either way, happy to chat training anytime.</div></div>
+    <div class="card"><h3>Script H — Decision Push</h3><div class="role">Hot lead — conversation established</div><div class="script-box"><span class="script-label">Script H</span>[NAME] — short version: I run a 100-day athletic reset. It's ¥9,800. I work with guys who've tried everything and gotten nowhere. If that's interesting, here's the link: [GUMROAD LINK]. If not, no worries. Let me know either way and I'll close the loop.</div></div>
+    <div class="section-title"><span class="dot"></span>Target ICP</div>
+    <div class="card">
+      <h3>Tokyo Fitness Professional — ICP</h3>
+      <div class="role">Who we're looking for</div>
+      <ul>
+        <li>Male, 28–48, professional (office worker, remote, entrepreneur)</li>
+        <li>Has tried gym routines before, gotten inconsistent results</li>
+        <li>Interested in strength, performance, injury prevention</li>
+        <li>Values expertise over hype</li>
+        <li>Likely follows 3–5 fitness accounts already</li>
+        <li>Located in Tokyo (Shin-Maruko, Chigasaki, Shibuya, Shinjuku, Meguro)</li>
+      </ul>
+    </div>
+    <footer><p>Titan · Athlete Forge · <a href="titan.html">Dashboard</a> · <a href="../../empire-home.html">Empire Home</a></p></footer>
+  </div>
+</body>
+</html>

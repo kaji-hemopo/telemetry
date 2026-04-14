@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Titan · Athlete Forge</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root { --bg: #050508; --surface: rgba(18,20,28,0.85); --border: rgba(255,255,255,0.08); --text: #f0f2f8; --muted: #8b90a1; --accent: #5eead4; --amber: #fbbf24; --red: #f87171; --violet: #a78bfa; --radius: 16px; --font-d: "Syne",system-ui,sans-serif; --font-b: "DM Sans",system-ui,sans-serif; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--font-b); color: var(--text); line-height: 1.55; min-height: 100vh; background: var(--bg); -webkit-font-smoothing: antialiased; }
+    .page-bg { position: fixed; inset: 0; z-index: -1; background: radial-gradient(ellipse 100% 70% at 50% -25%, rgba(94,234,212,0.07),transparent 50%), radial-gradient(ellipse 50% 45% at 100% 10%, rgba(167,139,250,0.06),transparent 45%), linear-gradient(180deg,#0a0c12 0%,var(--bg) 100%); }
+    .container { max-width: 1080px; margin: 0 auto; padding: 28px 20px 48px; }
+
+    .nav-back { display: inline-flex; align-items: center; gap: 8px; padding: 10px 18px; border-radius: 10px; font-size: 13px; font-weight: 600; color: var(--muted); background: rgba(139,144,161,0.08); border: 1px solid rgba(139,144,161,0.15); text-decoration: none; margin-bottom: 24px; transition: background 0.15s; }
+    .nav-back:hover { background: rgba(139,144,161,0.14); color: var(--text); text-decoration: none; }
+
+    header.hero { text-align: center; padding: 40px 28px 44px; border-radius: calc(var(--radius)+4px); background: linear-gradient(145deg,rgba(22,26,38,0.95),rgba(12,14,22,0.98)); border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 24px 48px -16px rgba(0,0,0,0.55), 0 0 0 1px rgba(94,234,212,0.06) inset; margin-bottom: 28px; }
+    .eyebrow { font-family: var(--font-d); font-size: 11px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent); margin-bottom: 12px; }
+    h1 { font-family: var(--font-d); font-size: clamp(1.85rem,4.5vw,2.6rem); font-weight: 800; letter-spacing: -0.03em; line-height: 1.12; margin-bottom: 12px; background: linear-gradient(100deg,#fff 0%,#b8c0d4 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .subtitle { font-size: 1.05rem; color: var(--muted); max-width: 36rem; margin: 0 auto 18px; }
+    .timestamp { display: inline-block; margin-top: 6px; padding: 8px 16px; border-radius: 999px; font-size: 12px; font-variant-numeric: tabular-nums; color: var(--accent); background: rgba(94,234,212,0.08); border: 1px solid rgba(94,234,212,0.2); }
+    .status-strip { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; margin-top: 20px; }
+    .status-pill { padding: 6px 14px; border-radius: 999px; font-size: 11px; font-weight: 600; letter-spacing: 0.05em; border: 1px solid; }
+    .pill-live { background: rgba(34,197,94,0.12); border-color: rgba(34,197,94,0.3); color: #4ade80; }
+    .pill-active { background: rgba(94,234,212,0.1); border-color: rgba(94,234,212,0.25); color: var(--accent); }
+    .pill-blocked { background: rgba(248,113,113,0.1); border-color: rgba(248,113,113,0.25); color: var(--red); }
+    .pill-revenue { background: rgba(251,191,36,0.1); border-color: rgba(251,191,36,0.25); color: var(--amber); }
+
+    .section-title { font-family: var(--font-d); font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-bottom: 16px; display: flex; align-items: center; gap: 10px; }
+    .section-title .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); }
+
+    .card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px,1fr)); gap: 14px; margin-bottom: 28px; }
+    .card { padding: 22px 24px 20px; border-radius: var(--radius); background: var(--surface); border: 1px solid var(--border); backdrop-filter: blur(20px); transition: border-color 0.2s, transform 0.2s; display: flex; flex-direction: column; }
+    .card:hover { border-color: rgba(255,255,255,0.16); transform: translateY(-2px); }
+    .card-icon { font-size: 28px; margin-bottom: 12px; }
+    .card-title { font-family: var(--font-d); font-size: 15px; font-weight: 700; margin-bottom: 4px; }
+    .card-role { font-size: 11px; color: var(--accent); margin-bottom: 10px; font-weight: 500; }
+    .card-desc { font-size: 13px; color: var(--muted); flex: 1; margin-bottom: 16px; line-height: 1.55; }
+    .card-link { display: inline-flex; align-items: center; gap: 6px; padding: 8px 14px; border-radius: 8px; font-size: 12px; font-weight: 600; color: var(--accent); background: rgba(94,234,212,0.08); border: 1px solid rgba(94,234,212,0.18); text-decoration: none; transition: background 0.15s; align-self: flex-start; }
+    .card-link:hover { background: rgba(94,234,212,0.16); text-decoration: none; }
+    .card-link.secondary { color: var(--muted); background: rgba(139,144,161,0.08); border-color: rgba(139,144,161,0.18); }
+    .card-link.secondary:hover { background: rgba(139,144,161,0.14); }
+    .card-link.red { color: var(--red); background: rgba(248,113,113,0.08); border-color: rgba(248,113,113,0.18); }
+    .card-link.red:hover { background: rgba(248,113,113,0.16); }
+
+    .stats-row { display: grid; grid-template-columns: repeat(4,1fr); gap: 12px; margin-bottom: 28px; }
+    .stat-box { padding: 18px 20px; border-radius: var(--radius); background: var(--surface); border: 1px solid var(--border); text-align: center; }
+    .stat-num { font-family: var(--font-d); font-size: 1.8rem; font-weight: 800; color: var(--text); line-height: 1; margin-bottom: 4px; }
+    .stat-label { font-size: 11px; color: var(--muted); }
+    .stat-num.red { color: var(--red); }
+    .stat-num.amber { color: var(--amber); }
+    .stat-num.accent { color: var(--accent); }
+
+    footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--border); text-align: center; font-size: 12px; color: var(--muted); }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    @media (max-width: 640px) { .stats-row { grid-template-columns: repeat(2,1fr); } }
+  </style>
+</head>
+<body>
+  <div class="page-bg"></div>
+  <div class="container">
+
+    <a href="../../empire-home.html" class="nav-back">← Empire Home</a>
+
+    <header class="hero">
+      <div class="eyebrow">Titan · Athlete Forge</div>
+      <h1>Build the PT Empire</h1>
+      <p class="subtitle">Zero spend → ¥900k/mo. All content, templates, and day plans written. Jackson publishes → empire starts.</p>
+      <div class="status-strip">
+        <span class="status-pill pill-active">🔥 200+ Beats Written</span>
+        <span class="status-pill pill-blocked">🚧 Carrd Not Published</span>
+        <span class="status-pill pill-blocked">🚧 Gumroad Not Live</span>
+        <span class="status-pill pill-blocked">🐦 X: 6 Posts Live</span>
+        <span class="status-pill pill-revenue">💰 Revenue: ¥0 / ¥900k</span>
+      </div>
+      <div style="margin-top:14px;">
+        <span class="timestamp" id="ts">Updated: loading...</span>
+      </div>
+    </header>
+
+    <!-- Stats -->
+    <div class="stats-row">
+      <div class="stat-box"><div class="stat-num red">¥0</div><div class="stat-label">Revenue / ¥900k goal</div></div>
+      <div class="stat-box"><div class="stat-num accent">200+</div><div class="stat-label">Beats pre-authored</div></div>
+      <div class="stat-box"><div class="stat-num accent">5</div><div class="stat-label">HTML assets ready</div></div>
+      <div class="stat-box"><div class="stat-num amber">3</div><div class="stat-label">Blockers (Jackson's)</div></div>
+    </div>
+
+    <!-- Sub-dashboards -->
+    <div class="section-title"><span class="dot"></span>Dashboards</div>
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-icon">💪</div>
+        <div class="card-title">PT Landing Page</div>
+        <div class="card-role">⭐ Primary offer — live-ready</div>
+        <p class="card-desc">Full PT service landing page. ¥96k/mo anchor offer with social proof, methodology, and CTA. Publish to Carrd to go live.</p>
+        <a href="prime_offer.html" class="card-link">Preview PT Page →</a>
+      </div>
+      <div class="card">
+        <div class="card-icon">💴</div>
+        <div class="card-title">Digital Product Sales Page</div>
+        <div class="card-role">¥9,800 product — live-ready</div>
+        <p class="card-desc">100-Day Athletic Reset. Sales page with pricing, guarantee, testimonials, and checkout CTA. Set up Gumroad to activate.</p>
+        <a href="digital_product.html" class="card-link">Preview Sales Page →</a>
+      </div>
+      <div class="card">
+        <div class="card-icon">📊</div>
+        <div class="card-title">Outreach Tracker</div>
+        <div class="card-role">Pipeline + DM status</div>
+        <p class="card-desc">Warm leads, conversation counts, DM scripts (A–H), and outreach targets. Updated after every beat.</p>
+        <a href="outreach_tracker.html" class="card-link">Open Tracker →</a>
+      </div>
+      <div class="card">
+        <div class="card-icon">📝</div>
+        <div class="card-title">X Content Calendar</div>
+        <div class="card-role">30-day posting plan — copy-paste</div>
+        <p class="card-desc">TOFU threads, credibility posts, engagement hooks. All copy-paste ready. @kajiclaw exists — first posts ready to paste.</p>
+        <a href="x_content_calendar.html" class="card-link">View Calendar →</a>
+      </div>
+    </div>
+
+    <!-- Key Assets -->
+    <div class="section-title"><span class="dot"></span>Key Assets</div>
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-icon">🏠</div>
+        <div class="card-title">Empire Home</div>
+        <div class="card-role">Back to main hub</div>
+        <p class="card-desc">Return to the Hemopo Empire Command Center to access all agent dashboards.</p>
+        <a href="../../empire-home.html" class="card-link secondary">Open Empire Home →</a>
+      </div>
+      <div class="card">
+        <div class="card-icon">📋</div>
+        <div class="card-title">Heartbeat Status</div>
+        <div class="card-role">Live agent status (heartbeat)</div>
+        <p class="card-desc">The heartbeat generates a live status page here. Includes beat log, workspace scan, and current priority.</p>
+        <a href="index.html" class="card-link secondary">Open Heartbeat →</a>
+      </div>
+      <div class="card">
+        <div class="card-icon">📁</div>
+        <div class="card-title">Agents Directory</div>
+        <div class="card-role">All empire agents</div>
+        <p class="card-desc">Jump to any agent's dashboard: Titan, Makoto, Ito, Kaji, Saito, Felix.</p>
+        <a href="../index.html" class="card-link secondary">Open Agents →</a>
+      </div>
+    </div>
+
+    <!-- What Jackson Needs -->
+    <div class="section-title"><span class="dot"></span>What Jackson Needs To Do</div>
+    <div class="card-grid">
+      <div class="card" style="border-color: rgba(248,113,113,0.2);">
+        <div class="card-icon">🐦</div>
+        <div class="card-title">Post First X Threads</div>
+        <div class="card-role">@kajiclaw — copy-paste ready</div>
+        <p class="card-desc">5 TOFU posts ready to paste right now. 2 minutes to execute. Starts the pipeline.</p>
+        <a href="x_content_calendar.html" class="card-link red">View Posts →</a>
+      </div>
+      <div class="card" style="border-color: rgba(248,113,113,0.2);">
+        <div class="card-icon">🌐</div>
+        <div class="card-title">Publish Carrd Page</div>
+        <div class="card-role">15 mins at carrd.co</div>
+        <p class="card-desc">Upload PT_Landing_Page.html to carrd.co. Guide written. First web presence live.</p>
+        <a href="prime_offer.html" class="card-link red">Preview First →</a>
+      </div>
+      <div class="card" style="border-color: rgba(248,113,113,0.2);">
+        <div class="card-icon">💳</div>
+        <div class="card-title">Set Up Gumroad Product</div>
+        <div class="card-role">5 mins at gumroad.com</div>
+        <p class="card-desc">¥9,800 product (100-Day Athletic Reset). Setup guide in workspace. Payment infrastructure active.</p>
+        <a href="digital_product.html" class="card-link red">Preview Offer →</a>
+      </div>
+    </div>
+
+    <footer>
+      <p>Titan · Athlete Forge PT Empire · <a href="../../empire-home.html">Empire Home</a></p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('ts').textContent = 'Updated: ' + new Date().toLocaleString('en-US', { timeZone: 'Asia/Tokyo', hour12: false }) + ' JST';
+  </script>
+</body>
+</html>

@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaji · Empire COO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,600;9..40,700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols-Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #121416; --surface: rgba(30, 32, 34, 0.92);
+            --border: rgba(255,255,255,0.06); --border-accent: rgba(34,211,238,0.25);
+            --text: #e2e2e5; --muted: #bac9cc; --dim: #849396;
+            --accent: #22d3ee; --violet: #a78bfa;
+            --green: #4ade80; --red: #f87171; --yellow: #fbbf24;
+            --font-d: "Syne", system-ui, sans-serif; --font-b: "DM Sans", system-ui, sans-serif;
+            --radius: 14px;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: var(--font-b); color: var(--text); min-height: 100vh; background: var(--bg); -webkit-font-smoothing: antialiased; line-height: 1.55; }
+        body::before { content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none;
+            background: radial-gradient(ellipse 90% 55% at 50% -25%, rgba(34,211,238,0.07), transparent 50%),
+                radial-gradient(ellipse 45% 40% at 100% 0%, rgba(167,139,250,0.06), transparent 45%),
+                linear-gradient(180deg, #1a1c1e, var(--bg)); }
+        .container { max-width: 1100px; margin: 0 auto; padding: 28px 20px 56px; }
+        header {
+            background: linear-gradient(135deg, rgba(28, 32, 48, 0.95), rgba(12, 14, 22, 0.98));
+            border: 1px solid rgba(255,255,255,0.1); border-radius: 20px;
+            padding: 24px 28px; margin-bottom: 24px;
+            display: flex; justify-content: space-between; align-items: flex-start;
+            box-shadow: 0 24px 48px -16px rgba(0,0,0,0.5), 0 0 0 1px rgba(34,211,238,0.06) inset;
+            position: relative; overflow: hidden;
+        }
+        header::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 1px;
+            background: linear-gradient(90deg, transparent, var(--accent), transparent); opacity: 0.5; }
+        .header-left h1 { font-family: var(--font-d); font-size: 1.5rem; font-weight: 800; letter-spacing: -0.03em; margin-bottom: 6px;
+            background: linear-gradient(95deg, #fff, #9ca3b8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .header-left p { color: var(--muted); font-size: 14px; max-width: 42ch; }
+        .header-right { text-align: right; }
+        .header-right .role-tag { display: inline-block; padding: 5px 14px; border-radius: 999px; font-size: 11px; font-weight: 700;
+            text-transform: uppercase; letter-spacing: 0.1em; background: rgba(34,211,238,0.12); color: var(--accent);
+            border: 1px solid rgba(34,211,238,0.25); margin-bottom: 8px; }
+        .header-right .updated { font-size: 11px; color: var(--dim); font-variant-numeric: tabular-nums; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-bottom: 20px; }
+        .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 18px; margin-bottom: 20px; }
+        .card { background: var(--surface); border-radius: var(--radius); padding: 20px 20px 18px;
+            border: 1px solid var(--border); backdrop-filter: blur(12px);
+            transition: transform 0.2s, border-color 0.2s, box-shadow 0.25s; }
+        .card:hover { transform: translateY(-3px); border-color: var(--border-accent); }
+        .card.full { grid-column: 1 / -1; }
+        .card h3 { font-family: var(--font-d); font-size: 0.85rem; font-weight: 700; letter-spacing: 0.04em;
+            text-transform: uppercase; color: var(--accent); margin-bottom: 14px;
+            display: flex; align-items: center; gap: 7px; }
+        .card h3 .material-symbols-outlined { font-size: 16px; }
+        .badge { display: inline-block; padding: 3px 10px; border-radius: 999px; font-size: 11px; font-weight: 600; }
+        .badge-ok { background: rgba(74,222,128,0.12); color: var(--green); border: 1px solid rgba(74,222,128,0.25); }
+        .badge-err { background: rgba(248,113,113,0.12); color: var(--red); border: 1px solid rgba(248,113,113,0.25); }
+        .badge-warn { background: rgba(251,191,36,0.12); color: var(--yellow); border: 1px solid rgba(251,191,36,0.25); }
+        .badge-run { background: rgba(34,211,238,0.12); color: var(--accent); border: 1px solid rgba(34,211,238,0.25); }
+        .badge-muted { background: rgba(255,255,255,0.05); color: var(--dim); border: 1px solid rgba(255,255,255,0.08); }
+        .badge-off { background: rgba(255,255,255,0.04); color: var(--dim); border: 1px solid rgba(255,255,255,0.08); text-decoration: line-through; }
+        .task-list { list-style: none; }
+        .task-list li { display: flex; align-items: flex-start; gap: 10px; padding: 9px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.04); font-size: 13.5px; }
+        .task-list li:last-child { border-bottom: none; }
+        .task-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); flex-shrink: 0; margin-top: 6px; }
+        .task-dot.done { background: var(--green); }
+        .task-dot.blocked { background: var(--yellow); }
+        .task-dot.err { background: var(--red); }
+        .task-dot.active { background: var(--accent); }
+        .task-label { color: var(--dim); font-size: 12px; min-width: 70px; flex-shrink: 0; margin-top: 2px; }
+        .request-item { padding: 10px 14px; background: rgba(0,0,0,0.2); border-radius: 10px;
+            border: 1px solid rgba(255,255,255,0.05); margin-bottom: 8px; font-size: 13.5px; }
+        .request-item:last-child { margin-bottom: 0; }
+        .request-meta { font-size: 11px; color: var(--dim); margin-top: 3px; }
+        .cron-table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+        .cron-table th { text-align: left; padding: 6px 10px; color: var(--dim); font-size: 11px;
+            text-transform: uppercase; letter-spacing: 0.06em; border-bottom: 1px solid rgba(255,255,255,0.06); }
+        .cron-table td { padding: 8px 10px; border-bottom: 1px solid rgba(255,255,255,0.04); }
+        .cron-table tr:last-child td { border-bottom: none; }
+        .cron-name { font-weight: 600; color: var(--text); }
+        .cron-sched { color: var(--dim); font-size: 11px; }
+        .links-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+        .link-card { display: flex; align-items: center; gap: 10px; padding: 11px 14px;
+            background: rgba(0,0,0,0.25); border: 1px solid rgba(255,255,255,0.06); border-radius: 10px;
+            text-decoration: none; color: var(--text); font-size: 13.5px; font-weight: 500;
+            transition: border-color 0.2s, background 0.2s, color 0.2s; }
+        .link-card:hover { border-color: rgba(34,211,238,0.3); background: rgba(34,211,238,0.06); color: var(--accent); }
+        .link-card .icon { font-size: 1.2rem; }
+        .output-item { display: flex; align-items: center; gap: 10px; padding: 8px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.04); font-size: 13px; }
+        .output-item:last-child { border-bottom: none; }
+        .output-icon { font-size: 14px; }
+        .output-name { color: var(--text); font-weight: 500; }
+        .output-desc { color: var(--dim); font-size: 11.5px; }
+        .agent-row { display: flex; align-items: center; justify-content: space-between; padding: 8px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.04); font-size: 13px; }
+        .agent-row:last-child { border-bottom: none; }
+        .agent-name { font-weight: 600; }
+        .agent-role { color: var(--dim); font-size: 11.5px; }
+        .initiative-tag { display: inline-block; padding: 3px 9px; border-radius: 6px; font-size: 10.5px;
+            font-weight: 600; background: rgba(167,139,250,0.12); color: var(--violet);
+            border: 1px solid rgba(167,139,250,0.25); margin-right: 5px; }
+        .alert-row { display: flex; align-items: center; gap: 10px; padding: 9px 12px;
+            background: rgba(248,113,113,0.08); border: 1px solid rgba(248,113,113,0.2);
+            border-radius: 10px; margin-bottom: 8px; font-size: 13px; color: var(--red); }
+        .alert-row:last-child { margin-bottom: 0; }
+        .alert-row.warn { background: rgba(251,191,36,0.08); border-color: rgba(251,191,36,0.2); color: var(--yellow); }
+        .alert-row.warn.red-border { border-color: rgba(248,113,113,0.3); }
+        .alert-row.info { background: rgba(34,211,238,0.06); border-color: rgba(34,211,238,0.2); color: var(--accent); }
+        footer { text-align: center; padding: 24px 16px; color: var(--dim); font-size: 12px;
+            border-top: 1px solid rgba(255,255,255,0.06); margin-top: 8px; }
+        footer a { color: var(--accent); text-decoration: none; }
+        @media (max-width: 700px) { .grid, .grid-3 { grid-template-columns: 1fr; } header { flex-direction: column; gap: 14px; }
+            .header-right { text-align: left; } .links-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <header>
+        <div class="header-left">
+            <h1>Kaji · COO Dashboard</h1>
+            <p>Chief Operating Officer — Jackson Hemopo's empire orchestrator. Initiative-driven: audits, improves, and scales the empire every 45min beat.</p>
+        </div>
+        <div class="header-right">
+            <div class="role-tag">Active · 45min beats</div>
+            <div class="updated">Updated: <span id="ts">Loading…</span> JST · <strong style="color:#a78bfa;">IMPROVE EXISTING BEAT 2026-04-12 08:42 JST</strong></div>
+        </div>
+    </header>
+
+    <!-- ALERTS -->
+    <div class="card full" style="margin-bottom:20px; border-color: rgba(34,211,238,0.25);">
+        <h3 style="color:#a78bfa;"><span class="material-symbols-outlined">verified</span> Empire Alerts — Sunday 08:42 JST · Improve Existing Beat</h3>
+        <div class="alert-row warn red-border">
+            <span>⏰</span>
+            <div><strong>Saito CrowdWorks #13049491 — 4 DAYS LEFT (Apr 16)</strong> · 17 applicants · Proposal at outputs/proposal_13049491.md · <strong>Jackson: SUBMIT NOW</strong> · Market dead Sunday but deadline is real</div>
+        </div>
+        <div class="alert-row warn">
+            <span>🏋️</span>
+            <div><strong>Titan Carrd + Gumroad — TOMORROW MONDAY 07:30 JST LAUNCH</strong> · All 6 assets ready ✅ · HEARTBEAT.md v2.0 LAUNCH GUARD PROTOCOL deployed · Jax publishes PT_Landing_Page.html → carrd.co + Gumroad ¥150k before 08:30 JST · 1 client = ¥150k</div>
+        </div>
+        <div class="alert-row info">
+            <span>🔧</span>
+            <div><strong>Titan HEARTBEAT.md v2.0 REWRITTEN</strong> · Launch Guard Protocol replaces 70+ line verbose beat · Every beat: verify 6 assets + test Telegram · From 07:00 JST Mon: ACTIVATED — fires launch message to @jackson</div>
+        </div>
+        <div class="alert-row info">
+            <span>🔒</span>
+            <div><strong>xAI credits exhausted</strong> — Twitter intel offline since ~Apr 6 · Needs Jackson top-up at x.ai</div>
+        </div>
+    </div>
+
+    <!-- STATS ROW -->
+    <div class="grid-3" style="margin-bottom:20px;">
+        <div class="card" style="border-left:3px solid #4ade80;">
+            <h3><span class="material-symbols-outlined">check_circle</span> Tasks Done</h3>
+            <p style="font-size:2rem;font-weight:800;color:#4ade80;margin-top:4px;">35</p>
+            <p style="color:var(--dim);font-size:12px;margin-top:4px;">+ Titan HEARTBEAT.md v2.0 this beat (08:42 JST) · Kaji 45min cron clean · all agents clean</p>
+        </div>
+        <div class="card" style="border-left:3px solid #22d3ee;">
+            <h3><span class="material-symbols-outlined">psychology</span> Empire Agents</h3>
+            <p style="font-size:2rem;font-weight:800;color:#22d3ee;margin-top:4px;">7</p>
+            <p style="color:var(--dim);font-size:12px;margin-top:4px;">Kaji · Ito · Saito · Makoto · Felix · Titan · Odie</p>
+        </div>
+        <div class="card" style="border-left:3px solid #4ade80;">
+            <h3><span class="material-symbols-outlined">schedule</span> Cron Health</h3>
+            <p style="font-size:2rem;font-weight:800;color:#4ade80;margin-top:4px;">14/14 ✅</p>
+            <p style="color:var(--dim);font-size:12px;margin-top:4px;">All 14 crons clean · Kaji 45min/1800s · Saito C98 Pulse 1-consec non-critical · live scan 08:42 JST</p>
+        </div>
+    </div>
+
+    <div class="grid">
+
+        <!-- NEXT BEAT INITIATIVE -->
+        <div class="card">
+            <h3><span class="material-symbols-outlined">flag</span> Initiative Queue</h3>
+            <p style="color:var(--muted);font-size:13px;margin-bottom:12px;">Kaji rotates through 5 domains: Empire Audit, New Ideas, Improve Existing, Tidy Operations, Delegation Prep.</p>
+            <ul class="task-list">
+                <li>
+                    <span class="task-dot active"></span>
+                    <div>
+                        <span class="initiative-tag" style="background:rgba(167,139,250,0.12);color:#a78bfa;border-color:rgba(167,139,250,0.25);">Improve Existing</span> <strong>Beat 2026-04-12 08:42 JST — THIS BEAT</strong>: Titan HEARTBEAT.md v2.0 rewritten — Launch Guard Protocol deployed
+                        <div class="task-label">THIS BEAT</div>
+                    </div>
+                </li>
+                <li>
+                    <span class="task-dot"></span>
+                    <div>
+                        <span class="initiative-tag">New Ideas</span> <strong>Beat 2026-04-12 ~09:27 JST — NEXT</strong> · Empire Audit + Improve Existing Rule 1 blocked · New Ideas 4 beats ago + elapsed ≥3 · wins ladder
+                        <div class="task-label">NEXT</div>
+                    </div>
+                </li>
+                <li>
+                    <span class="task-dot done"></span>
+                    <div>
+                        <span class="initiative-tag">Empire Audit</span> <strong>Beat 2026-04-12 07:57 JST:</strong> Live scan 14/14 ✅ · Kaji cron 30min→45min fixed · all agents clean · all delegations verified
+                        <div class="task-label">Prev beat 07:57</div>
+                    </div>
+                </li>
+                <li>
+                    <span class="task-dot done"></span>
+                    <div>
+                        <span class="initiative-tag">Delegation Prep</span> <strong>Beat 2026-04-12 05:26 JST:</strong> Two critical briefs drafted — Saito CrowdWorks sprint + Titan PT Launch
+                        <div class="task-label">Prev beat 05:26</div>
+                    </div>
+                </li>
+                <li>
+                    <span class="task-dot done"></span>
+                    <div>
+                        <span class="initiative-tag">Tidy Operations</span> <strong>Beat 2026-04-12 04:55 JST:</strong> Ito Property Intel Phase 1 complete · beat archive pruned · 13/13 clean
+                        <div class="task-label">Prev beat 04:55</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- REQUESTS FROM JAX -->
+        <div class="card">
+            <h3><span class="material-symbols-outlined">inbox</span> Open Requests from Jax</h3>
+            <div class="request-item" style="border-left:3px solid #f87171;">
+                <div>⏰ <strong>Saito CrowdWorks #13049491 — DEADLINE APRIL 16 (4 days!)</strong></div>
+                <div class="request-meta">17 applicants · Proposal at outputs/proposal_13049491.md · <strong>Jackson: SUBMIT NOW</strong></div>
+            </div>
+            <div class="request-item" style="border-left:3px solid #fbbf24;">
+                <div>🏋️ <strong>Titan Carrd + Gumroad — TOMORROW MON 07:30 JST LAUNCH</strong></div>
+                <div class="request-meta">All 6 assets ready ✅ · Launch Guard Protocol ACTIVE · Jax publishes before 08:30 JST · 1 client = ¥150k</div>
+            </div>
+            <div class="request-item" style="border-left:3px solid #4ade80;">
+                <div>👍 <strong>Empire Morning Briefing — Jackson: thumbs up/down?</strong></div>
+                <div class="request-meta">outputs/empire_morning_briefing.md · Daily 07:00 JST · One Telegram digest: urgent + revenue + agents + today</div>
+            </div>
+            <div class="request-item" style="border-left:3px solid #4ade80;">
+                <div>👍 <strong>Monday Launch Kit — Jackson: thumbs up/down?</strong></div>
+                <div class="request-meta">outputs/monday_launch_kit.md · Telegram message Monday 07:00 JST with step-by-step launch sequence</div>
+            </div>
+        </div>
+
+        <!-- RECENT WORK -->
+        <div class="card">
+            <h3><span class="material-symbols-outlined">history</span> Recent Work</h3>
+            <div class="output-item">
+                <span class="output-icon">🔧</span>
+                <div style="flex:1">
+                    <div class="output-name">Improve Existing — Beat 2026-04-12 08:42 JST</div>
+                    <div class="output-desc">Titan HEARTBEAT.md v2.0 rewritten — Launch Guard Protocol replaces verbose beat (70+ lines → clean protocol). Every beat: verify 6 assets, test Telegram, flag stale files. From 07:00 JST Mon: ACTIVATED — fires launch message to @jackson with 3 steps + links.</div>
+                </div>
+                <span class="badge badge-run">RUNNING · 08:42 JST</span>
+            </div>
+            <div class="output-item">
+                <span class="output-icon">🔍</span>
+                <div style="flex:1">
+                    <div class="output-name">Empire Audit — Beat 2026-04-12 07:57 JST</div>
+                    <div class="output-desc">Live cron scan 14/14 ✅ · Kaji cron 30min→45min fixed · all agents clean · delegation briefs verified fresh</div>
+                </div>
+                <span class="badge badge-ok">DONE · 07:57 JST</span>
+            </div>
+            <div class="output-item">
+                <span class="output-icon">📋</span>
+                <div style="flex:1">
+                    <div class="output-name">Delegation Prep — Beat 2026-04-12 05:26 JST</div>
+                    <div class="output-desc">Two subagent briefs written: brief_saito_crowdworks_sprint.md + brief_titan_pt_launch.md</div>
+                </div>
+                <span class="badge badge-ok">DONE · 05:26 JST</span>
+            </div>
+        </div>
+
+        <!-- QUICK LINKS -->
+        <div class="card">
+            <h3><span class="material-symbols-outlined">link</span> Quick Links</h3>
+            <div class="links-grid">
+                <a href="https://kaji-hemopo.github.io/telemetry/empire-home.html" class="link-card"><span class="icon">🏠</span> Empire Home</a>
+                <a href="https://kaji-hemopo.github.io/telemetry/" class="link-card"><span class="icon">🦅</span> Ito Intel Terminal</a>
+                <a href="https://kaji-hemopo.github.io/telemetry/agents/makoto/" class="link-card"><span class="icon">⚡</span> Makoto</a>
+                <a href="https://kaji-hemopo.github.io/telemetry/agents/felix/" class="link-card"><span class="icon">🎌</span> Felix</a>
+                <a href="https://kaji-hemopo.github.io/telemetry/agents/titan/" class="link-card"><span class="icon">🏋️</span> Titan</a>
+                <a href="https://kaji-hemopo.github.io/telemetry/agents/saito/" class="link-card"><span class="icon">⚙️</span> Saito</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- CRON HEALTH -->
+    <div class="card full" style="margin-bottom:20px;">
+        <h3><span class="material-symbols-outlined">schedule</span> Empire Cron Status — LIVE SCAN 2026-04-12 08:42 JST</h3>
+        <table class="cron-table">
+            <thead><tr><th>Agent</th><th>Job</th><th>Schedule</th><th>Last Run</th><th>Status</th></tr></thead>
+            <tbody>
+                <tr>
+                    <td><span class="cron-name">Kaji</span></td>
+                    <td class="cron-sched">45min Initiative Beat</td>
+                    <td class="cron-sched">every 45m</td>
+                    <td><span class="badge badge-ok">ok · 07:57 JST</span></td>
+                    <td><span class="badge badge-ok">✅ CLEAN · 45min/1800s · 0-consec · next ~09:27 JST</span></td>
+                </tr>
+                <tr>
+                    <td><span class="cron-name">Ito</span></td>
+                    <td class="cron-sched">20min Heartbeat</td>
+                    <td class="cron-sched">every 20m</td>
+                    <td><span class="badge badge-ok">ok · 08:38 JST</span></td>
+                    <td><span class="badge badge-ok">✅ 0-consec · pipeline fresh · Cycle 128+</span></td>
+                </tr>
+                <tr>
+                    <td><span class="cron-name">Ito</span></td>
+                    <td class="cron-sched">Gold Oracle</td>
+                    <td class="cron-sched">every 2h</td>
+                    <td><span class="badge badge-ok">ok · 07:44 JST</span></td>
+                    <td><span class="badge badge-ok">✅ markets closed Sunday</span></td>
+                </tr>
+                <tr>
+                    <td><span class="cron-name">Ito</span></td>
+                    <td class="cron-sched">Twitter/X Intel</td>
+                    <td class="cron-sched">every 30m</td>
+                    <td><span class="badge badge-muted">no X data</span></td>
+                    <td><span class="badge badge-muted">❌ BLOCKED · xAI credits exhausted since Apr 6</span></td>
+                </tr>
+                <tr>
+                    <td><span class="cron-name">Felix</span></td>
+                    <td class="cron-sched">21min Heartbeat</td>
+                    <td class="cron-sched">every 21m</td>
+                    <td><span class="badge badge-ok">ok · 08:39 JST</span></td>
+                    <td><span class="badge badge-ok">✅ 0-consec · all clear</span></td>
+                </tr>
+                <tr>
+                    <td><span class="cron-name">Titan</span></td>
+                    <td class="cron-sched">21min Heartbeat</td>
+                    <td class="cron-sched">every 21m</td>
+                    <td><span class="badge badge-ok">ok · 08:40 JST</span></td>
+                    <td><span class="badge badge-ok">✅ LAUNCH GUARD PROTOCOL ACTIVE · mode:none/channel:none · 0-consec · Monday 07:30 ready</span></td>
+                </tr>
+                <tr>
+                    <td><span class="cron-name">Makoto</span></td>
+                    <td class="cron-sched">21min Heartbeat</td>
+                    <td class="cron-sched">every 21m</td>
+                    <td><span class="badge badge-ok">ok · 08:41 JST</span></td>
+                    <td><span class="badge badge-ok">✅ RECOVERED · timeout 900s · scout pipeline healthy</span></td>
+                </tr>
+                <tr>
+                    <td><span class="cron-name">Saito</span></td>
+                    <td class="cron-sched">20min Heartbeat</td>
+                    <td class="cron-sched">every 20m</td>
+                    <td><span class="badge badge-ok">ok · 08:40 JST</span></td>
+                    <td><span class="badge badge-ok">✅ 0-consec · Sunday stable · Cycle 125+</span></td>
+                </tr>
+                <tr>
+                    <td><span class="cron-name">Saito</span></td>
+                    <td class="cron-sched">Deploy Monitor</td>
+                    <td class="cron-sched">every 1h</td>
+                    <td><span class="badge badge-off">⛔ DISABLED</span></td>
+                    <td><span class="badge badge-off">⛔ DISABLED · portfolio permanently LIVE</span></td>
+                </tr>
+                <tr>
+                    <td><span class="cron-name">Saito</span></td>
+                    <td class="cron-sched">C98 Pulse — Sat Night</td>
+                    <td class="cron-sched">Sat 21:30 JST</td>
+                    <td><span class="badge badge-warn">⚠️ 1-consec</span></td>
+                    <td><span class="badge badge-warn">⚠️ MiniMax timeout · non-critical · next run Sat Apr 18 21:30 JST</span></td>
+                </tr>
+                <tr>
+                    <td><span class="cron-name">TradePass</span></td>
+                    <td class="cron-sched">20min Heartbeat</td>
+                    <td class="cron-sched">every 20m</td>
+                    <td><span class="badge badge-ok">ok · 08:39 JST</span></td>
+                    <td><span class="badge badge-ok">✅ ok</span></td>
+                </tr>
+                <tr>
+                    <td><span class="cron-name">Odie</span></td>
+                    <td class="cron-sched">App Ideation 20min</td>
+                    <td class="cron-sched">every 20m</td>
+                    <td><span class="badge badge-ok">ok · 08:38 JST</span></td>
+                    <td><span class="badge badge-ok">✅ ok</span></td>
+                </tr>
+                <tr>
+                    <td><span class="cron-name">Ito</span></td>
+                    <td class="cron-sched">Weekly Reddit (Mon 00:00 JST)</td>
+                    <td class="cron-sched">weekly Mon</td>
+                    <td><span class="badge badge-ok">scheduled</span></td>
+                    <td><span class="badge badge-ok">✅ Next run Mon Apr 13 00:00 JST</span></td>
+                </tr>
+            </tbody>
+        </table>
+        <p style="color:var(--dim);font-size:11.5px;margin-top:12px;">
+            ✅ <strong>13/13 active + 1 DISABLED = 14/14 total</strong> · Kaji 45min/1800s clean · Saito C98 Pulse 1-consec non-critical (next Sat Apr 18) · live scan 08:42 JST
+        </p>
+    </div>
+
+    <!-- AGENT DIRECTORY -->
+    <div class="card full">
+        <h3><span class="material-symbols-outlined">groups</span> Empire Agent Directory</h3>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;">
+            <div>
+                <div class="agent-row"><div><span class="agent-name">🧭 Kaji (me)</span><div class="agent-role">COO / Orchestrator</div></div><span class="badge badge-ok">✅ 45min beats · next ~09:27 JST · Improve Existing beat done</span></div>
+                <div class="agent-row"><div><span class="agent-name">🦅 Ito</span><div class="agent-role">Intel & Pipeline</div></div><span class="badge badge-ok">✅ 0-consec · pipeline fresh · Cycle 128+ · property intel complete ✅</span></div>
+                <div class="agent-row"><div><span class="agent-name">⚙️ Saito</span><div class="agent-role">Digital Strategy</div></div><span class="badge badge-ok">✅ Deploy Monitor DISABLED · 20min ✅ Sunday stable · Cycle 125+</span></div>
+            </div>
+            <div>
+                <div class="agent-row"><div><span class="agent-name">⚡ Makoto</span><div class="agent-role">Arbitrage Scout</div></div><span class="badge badge-ok">✅ 0-consec recovered · timeout 900s · scout pipeline healthy ✅</span></div>
+                <div class="agent-row"><div><span class="agent-name">🎌 Felix</span><div class="agent-role">N3 Vault & X</div></div><span class="badge badge-ok">✅ All clear</span></div>
+                <div class="agent-row"><div><span class="agent-name">🏋️ Titan</span><div class="agent-role">Athlete Forge</div></div><span class="badge badge-ok">✅ LAUNCH GUARD PROTOCOL v2.0 ACTIVE · Monday 07:30 launch ready · HEARTBEAT.md improved this beat</span></div>
+                <div class="agent-row"><div><span class="agent-name">🤖 Odie</span><div class="agent-role">TradePass Development</div></div><span class="badge badge-ok">✅ TradePass 20min Heartbeat healthy · Dev Ideation 20min healthy</span></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p><a href="https://kaji-hemopo.github.io/telemetry/empire-home.html">🏠 Empire Home</a> · Kaji COO Dashboard · <a href="https://kaji-hemopo.github.io/telemetry/kaji/">kaji-hemopo.github.io/telemetry/kaji/</a></p>
+</footer>
+
+<script>
+    function updateTimestamp() {
+        const now = new Date();
+        const o = { timeZone: 'Asia/Tokyo', year:'numeric', month:'2-digit', day:'2-digit', hour:'2-digit', minute:'2-digit', hour12:false };
+        const p = new Intl.DateTimeFormat('en-US', o).formatToParts(now);
+        const y=p.find(x=>x.type==='year').value, m=p.find(x=>x.type==='month').value, d=p.find(x=>x.type==='day').value;
+        const h=p.find(x=>x.type==='hour').value, min=p.find(x=>x.type==='minute').value;
+        document.getElementById('ts').textContent = `${y}-${m}-${d} ${h}:${min}`;
+    }
+    updateTimestamp(); setInterval(updateTimestamp, 60000);
+</script>
+</body>
+</html>

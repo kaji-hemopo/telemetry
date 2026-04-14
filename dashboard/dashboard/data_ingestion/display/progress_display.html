@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb Data Ingestion Progress</title>
+    <style>
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #0f172a;
+            color: #f1f5f9;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #1e293b;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #334155;
+        }
+        
+        .project-title {
+            font-size: 24px;
+            font-weight: 600;
+            color: #10b981;
+            margin-bottom: 8px;
+        }
+        
+        .status-badge {
+            display: inline-block;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 500;
+            margin-top: 10px;
+        }
+        
+        .status-waiting { background: #f59e0b22; color: #f59e0b; }
+        .status-completed { background: #10b98122; color: #10b981; }
+        .status-in_progress { background: #3b82f622; color: #3b82f6; }
+        .status-pending { background: #64748b22; color: #64748b; }
+        .status-failed { background: #ef444422; color: #ef4444; }
+        
+        .stages-container {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        
+        .stage-card {
+            background: #334155;
+            border-radius: 8px;
+            padding: 20px;
+            border-left: 4px solid;
+            transition: all 0.2s;
+        }
+        
+        .stage-card:hover {
+            background: #475569;
+            transform: translateX(4px);
+        }
+        
+        .stage-waiting { border-left-color: #f59e0b; }
+        .stage-completed { border-left-color: #10b981; }
+        .stage-in_progress { border-left-color: #3b82f6; }
+        .stage-pending { border-left-color: #64748b; }
+        .stage-failed { border-left-color: #ef4444; }
+        
+        .stage-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        
+        .stage-name {
+            font-weight: 600;
+            font-size: 16px;
+        }
+        
+        .stage-status {
+            font-size: 14px;
+            padding: 4px 10px;
+            border-radius: 12px;
+        }
+        
+        .stage-details {
+            color: #94a3b8;
+            font-size: 14px;
+            margin-top: 8px;
+        }
+        
+        .timestamp {
+            text-align: center;
+            color: #64748b;
+            font-size: 12px;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #334155;
+        }
+        
+        .progress-bar {
+            height: 6px;
+            background: #334155;
+            border-radius: 3px;
+            margin: 20px 0;
+            overflow: hidden;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: #10b981;
+            border-radius: 3px;
+            transition: width 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="project-title">Airbnb Research Data Integration</div>
+            <div class="status-badge status-in_progress">
+                In Progress
+            </div>
+        </div>
+        
+        <div class="progress-bar">
+            <div class="progress-fill" style="width: 13%"></div>
+        </div>
+        
+        <div class="stages-container">
+
+            <div class="stage-card stage-completed">
+                <div class="stage-header">
+                    <div class="stage-name">Framework Setup</div>
+                    <div class="stage-status status-completed">
+                        Completed
+                    </div>
+                </div>
+                <div class="stage-details">
+                    Data ingestion framework ready
+                </div>
+            </div>
+
+            <div class="stage-card stage-waiting">
+                <div class="stage-header">
+                    <div class="stage-name">Data Structure Specs</div>
+                    <div class="stage-status status-waiting">
+                        Waiting
+                    </div>
+                </div>
+                <div class="stage-details">
+                    Awaiting Felix's data structure specifications
+                </div>
+            </div>
+
+            <div class="stage-card stage-pending">
+                <div class="stage-header">
+                    <div class="stage-name">Data Ingestion</div>
+                    <div class="stage-status status-pending">
+                        Pending
+                    </div>
+                </div>
+                <div class="stage-details">
+                    Ready when specs received
+                </div>
+            </div>
+
+            <div class="stage-card stage-pending">
+                <div class="stage-header">
+                    <div class="stage-name">Validation</div>
+                    <div class="stage-status status-pending">
+                        Pending
+                    </div>
+                </div>
+                <div class="stage-details">
+                    Will validate against specs
+                </div>
+            </div>
+
+            <div class="stage-card stage-pending">
+                <div class="stage-header">
+                    <div class="stage-name">Dashboard Integration</div>
+                    <div class="stage-status status-pending">
+                        Pending
+                    </div>
+                </div>
+                <div class="stage-details">
+                    Will update dashboard with real data
+                </div>
+            </div>
+
+            <div class="stage-card stage-in_progress">
+                <div class="stage-header">
+                    <div class="stage-name">Framework Testing</div>
+                    <div class="stage-status status-in_progress">
+                        In Progress
+                    </div>
+                </div>
+                <div class="stage-details">
+                    Testing data parsing with sample data
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="timestamp">
+            Last updated: 2026-03-21 22:49:27
+        </div>
+    </div>
+    
+    <script>
+        // Auto-refresh every 30 seconds
+        setTimeout(() => {
+            location.reload();
+        }, 30000);
+    </script>
+</body>
+</html>
