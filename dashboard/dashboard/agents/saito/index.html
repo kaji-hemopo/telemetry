@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saito — Digital Monetization Scout</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root { --bg: #121416; --surface: #1e293b; --glass: rgba(51, 53, 55, 0.6); --cyan: #00e5ff; --amber: #ffb800; --green: #22c55e; --red: #ef4444; --text: #e2e2e5; --muted: #bac9cc; --border: rgba(255, 255, 255, 0.05); }
+    body { background: var(--bg); color: var(--text); font-family: 'Inter', -apple-system, sans-serif; min-height: 100vh; line-height: 1.5; }
+    header { position: fixed; top: 0; left: 0; right: 0; z-index: 50; background: rgba(18, 20, 22, 0.95); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); padding: 16px 24px; }
+    .header-content { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+    .logo { font-size: 14px; font-weight: 900; color: var(--cyan); letter-spacing: -0.02em; }
+    .status-badge { display: flex; align-items: center; gap: 8px; font-size: 11px; font-weight: 700; background: rgba(0, 229, 255, 0.1); border: 1px solid rgba(0, 229, 255, 0.25); padding: 6px 14px; border-radius: 100px; color: var(--cyan); }
+    .status-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--green); animation: pulse 2s infinite; }
+    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+    main { max-width: 1200px; margin: 0 auto; padding: 80px 24px 60px; }
+    .phase-card { background: linear-gradient(135deg, rgba(239, 68, 68, 0.08), rgba(255, 184, 0, 0.05)); border: 1px solid rgba(239, 68, 68, 0.2); border-radius: 16px; padding: 28px 32px; margin-bottom: 28px; }
+    .phase-card h1 { font-size: 22px; font-weight: 900; color: var(--amber); margin-bottom: 10px; letter-spacing: -0.03em; }
+    .phase-card p { font-size: 14px; color: var(--muted); line-height: 1.6; }
+    .phase-card strong { color: var(--text); }
+    .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 28px; }
+    .card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px 24px; }
+    .stat { text-align: center; }
+    .stat-value { font-size: 32px; font-weight: 900; color: var(--cyan); letter-spacing: -0.04em; }
+    .stat-label { font-size: 11px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 6px; }
+    .card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+    .card-title { font-size: 13px; font-weight: 700; color: var(--text); }
+    .card-badge { font-size: 10px; font-weight: 700; padding: 4px 10px; border-radius: 4px; }
+    .badge-amber { background: rgba(255, 184, 0, 0.15); color: var(--amber); }
+    .badge-green { background: rgba(34, 197, 94, 0.15); color: var(--green); }
+    .job-type-row { display: flex; justify-content: space-between; align-items: center; padding: 14px 0; border-bottom: 1px solid var(--border); }
+    .job-type-row:last-child { border-bottom: none; }
+    .job-type-info { flex: 1; }
+    .job-type-name { font-size: 13px; font-weight: 600; color: var(--text); margin-bottom: 3px; }
+    .job-type-stack { font-size: 11px; color: var(--muted); font-family: 'JetBrains Mono', monospace; }
+    .job-type-right { display: flex; align-items: center; gap: 10px; }
+    .job-type-status { font-size: 10px; font-weight: 700; padding: 4px 10px; border-radius: 4px; }
+    .status-build { background: rgba(251, 146, 60, 0.15); color: #fb923c; }
+    .status-done { background: rgba(34, 197, 94, 0.15); color: #22c55e; }
+    .status-next { background: rgba(0, 229, 255, 0.15); color: #00e5ff; }
+    .tag { font-size: 10px; font-weight: 700; padding: 3px 8px; border-radius: 3px; margin-right: 6px; }
+    .tag-python { background: rgba(0, 229, 255, 0.15); color: var(--cyan); }
+    .tag-line { background: rgba(0, 187, 0, 0.15); color: #00bb00; }
+    .tag-fastapi { background: rgba(121, 31, 255, 0.15); color: #9171ff; }
+    .tag-devops { background: rgba(255, 152, 0, 0.15); color: #ff9800; }
+    .tag-llm { background: rgba(255, 100, 130, 0.15); color: #ff6482; }
+    .tag-ocr { background: rgba(200, 150, 255, 0.15); color: #c896ff; }
+    .market-item { display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--border); font-size: 12px; }
+    .market-item:last-child { border-bottom: none; }
+    .market-item-name { color: var(--text); }
+    .market-item-status { font-weight: 600; }
+    .market-ok { color: var(--green); }
+    .market-slow { color: var(--amber); }
+    .market-down { color: var(--red); }
+    .links-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .link-card { background: var(--glass); border: 1px solid var(--border); border-radius: 10px; padding: 14px 18px; text-decoration: none; display: block; }
+    .link-card:hover { border-color: rgba(0, 229, 255, 0.3); }
+    .link-card-title { font-size: 12px; font-weight: 700; color: var(--text); margin-bottom: 4px; }
+    .link-card-desc { font-size: 10px; color: var(--muted); }
+    footer { text-align: center; padding: 32px 24px; font-size: 11px; color: var(--muted); border-top: 1px solid var(--border); margin-top: 48px; }
+  </style>
+</head>
+<body>
+<header>
+  <div class="header-content">
+    <div class="logo">Saito — Digital Strategy</div>
+    <div class="status-badge">
+      <div class="status-dot"></div>
+      <span>20MIN HEARTBEAT ACTIVE</span>
+    </div>
+  </div>
+</header>
+<main>
+
+  <!-- Phase Banner -->
+  <div class="phase-card">
+    <h1>🔴 SKILL BUILDING FIRST — NO PROPOSALS FOR 3 MONTHS</h1>
+    <p>Jax has directed: <strong>no proposals for the first 3 months.</strong> Priority is to identify the most common job types, build quality software/templates for each, and be ready to execute fast when proposals open. Monitoring continues — job type tracking feeds the build queue.</p>
+  </div>
+
+  <!-- Stats -->
+  <div class="grid">
+    <div class="card"><div class="stat"><div class="stat-value">280+</div><div class="stat-label">Cycles Run</div></div></div>
+    <div class="card"><div class="stat"><div class="stat-value">5</div><div class="stat-label">Build Targets</div></div></div>
+    <div class="card"><div class="stat"><div class="stat-value">~3mo</div><div class="stat-label">Prep Phase</div></div></div>
+    <div class="card"><div class="stat"><div class="stat-value">20m</div><div class="stat-label">Heartbeat</div></div></div>
+  </div>
+
+  <!-- Build Queue -->
+  <div class="card" style="margin-bottom: 28px;">
+    <div class="card-header">
+      <span class="card-title">🔨 Build Queue — Most Common Job Types</span>
+      <span class="card-badge badge-amber">PRIORITY ORDER</span>
+    </div>
+
+    <div class="job-type-row">
+      <div class="job-type-info">
+        <div class="job-type-name"><span class="tag tag-line">#1</span>LINE Bot × AI Photo Recognition</div>
+        <div class="job-type-stack">Python + LINE Messaging API + Google Cloud Vision + ChatGPT-4o + LIFF</div>
+      </div>
+      <div class="job-type-right">
+        <span class="job-type-status status-next">NEXT UP</span>
+      </div>
+    </div>
+
+    <div class="job-type-row">
+      <div class="job-type-info">
+        <div class="job-type-name"><span class="tag tag-fastapi">#2</span>FastAPI Backend Services</div>
+        <div class="job-type-stack">FastAPI + Pydantic + PostgreSQL + Redis/Celery + Docker</div>
+      </div>
+      <div class="job-type-right">
+        <span class="job-type-status status-build">IN QUEUE</span>
+      </div>
+    </div>
+
+    <div class="job-type-row">
+      <div class="job-type-info">
+        <div class="job-type-name"><span class="tag tag-llm">#3</span>Python/LLM RAG Systems</div>
+        <div class="job-type-stack">FastAPI + LangChain/LlamaIndex + pgvector + Claude/GPT-4</div>
+      </div>
+      <div class="job-type-right">
+        <span class="job-type-status status-build">IN QUEUE</span>
+      </div>
+    </div>
+
+    <div class="job-type-row">
+      <div class="job-type-info">
+        <div class="job-type-name"><span class="tag tag-devops">#4</span>DevOps IaC Bundle (Terraform)</div>
+        <div class="job-type-stack">Terraform + Ansible + AWS/GCP/Azure + Docker/K8s + Linux</div>
+      </div>
+      <div class="job-type-right">
+        <span class="job-type-status status-build">IN QUEUE</span>
+      </div>
+    </div>
+
+    <div class="job-type-row">
+      <div class="job-type-info">
+        <div class="job-type-name"><span class="tag tag-ocr">#5</span>PDF/OCR Enterprise Tool</div>
+        <div class="job-type-stack">FastAPI + pdfplumber + Tesseract/EasyOCR + Claude API</div>
+      </div>
+      <div class="job-type-right">
+        <span class="job-type-status status-build">IN QUEUE</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Market Snapshot -->
+  <div class="card" style="margin-bottom: 28px;">
+    <div class="card-header">
+      <span class="card-title">📊 Market Snapshot — Tue Apr 14 2026</span>
+    </div>
+    <div class="market-item">
+      <span class="market-item-name">CrowdWorks #13049491 (Python/FastAPI)</span>
+      <span class="market-item-status market-ok">18 applicants — stagnant pool — monitoring only, no submission</span>
+    </div>
+    <div class="market-item">
+      <span class="market-item-name">freelance-board.com wave</span>
+      <span class="market-item-status market-slow">Morning wave dissipating — next wave PM/evening</span>
+    </div>
+    <div class="market-item">
+      <span class="market-item-name">Findy Freelance / Lancers</span>
+      <span class="market-item-status market-ok">Multiple ¥88-112万/mo Python/AI gigs — monitoring for type patterns</span>
+    </div>
+    <div class="market-item">
+      <span class="market-item-name">Engineer-factory.com</span>
+      <span class="market-item-status market-ok">2x ¥108万 RAG/VLM jobs found — 登録 required</span>
+    </div>
+  </div>
+
+  <!-- Links -->
+  <div class="card">
+    <div class="card-header"><span class="card-title">🔗 Quick Links</span></div>
+    <div class="links-grid">
+      <a href="https://kaji-hemopo.github.io/telemetry/empire-home.html" class="link-card" target="_blank">
+        <div class="link-card-title">🏠 Empire Home</div>
+        <div class="link-card-desc">Command center — all agents</div>
+      </a>
+      <a href="https://kaji-hemopo.github.io/empire_portfolio/" class="link-card" target="_blank">
+        <div class="link-card-title">💼 Empire Portfolio</div>
+        <div class="link-card-desc">Jax's work showcase</div>
+      </a>
+      <a href="https://findy.freelance.tech/jobs" class="link-card" target="_blank">
+        <div class="link-card-title">🎯 Findy Freelance</div>
+        <div class="link-card-desc">Python/Claude/FastAPI gigs — study types</div>
+      </a>
+      <a href="https://www.lancers.jp/work/search/system?type[]=project&open=1&sort=create_date&order=desc" class="link-card" target="_blank">
+        <div class="link-card-title">🎯 Lancers Fresh Feed</div>
+        <div class="link-card-desc">Live discovery — study job types</div>
+      </a>
+    </div>
+  </div>
+</main>
+<footer>Saito · Digital Strategy · Skill Building Phase · 20min heartbeat · No proposals · 2026-04-14</footer>
+</body>
+</html>

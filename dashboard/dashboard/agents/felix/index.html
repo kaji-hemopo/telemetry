@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Felix · JLPT Vault Agent</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, -apple-system, sans-serif; background: #121416; color: #e2e2e5; min-height: 100vh; }
+header { position: fixed; top: 0; left: 0; right: 0; z-index: 50; background: rgba(18,20,22,0.9); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(255,255,255,0.06); padding: 12px 24px; display: flex; align-items: center; justify-content: space-between; }
+.header-title { font-size: 14px; font-weight: 700; letter-spacing: 0.1em; color: #22d3ee; text-transform: uppercase; }
+.header-links { display: flex; gap: 16px; }
+.header-links a { color: #9ca3af; text-decoration: none; font-size: 13px; transition: color 0.2s; }
+.header-links a:hover { color: #22d3ee; }
+main { padding: 80px 24px 40px; max-width: 900px; margin: 0 auto; }
+.status-badge { display: inline-flex; align-items: center; gap: 6px; padding: 5px 14px; border-radius: 999px; font-size: 12px; background: rgba(74,222,128,0.12); color: #4ade80; border: 1px solid rgba(74,222,128,0.25); margin: 8px 0; }
+.mission-badge { display: inline-flex; align-items: center; gap: 6px; padding: 6px 16px; border-radius: 999px; font-size: 12px; background: rgba(34,211,238,0.15); color: #22d3ee; border: 1px solid rgba(34,211,238,0.3); margin: 8px 0 8px 12px; }
+.card { background: rgba(51,53,55,0.6); backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.05); border-radius: 12px; padding: 20px; margin: 16px 0; }
+.card h2 { font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #9ca3af; margin-bottom: 12px; }
+.card p, .card li { font-size: 14px; line-height: 1.6; color: #d1d5db; }
+ul { padding-left: 20px; }
+li { margin: 6px 0; }
+a { color: #22d3ee; text-decoration: none; }
+a:hover { text-decoration: underline; }
+.info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-top: 12px; }
+.info-item { background: rgba(255,255,255,0.03); padding: 12px; border-radius: 8px; }
+.info-item strong { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; color: #6b7280; margin-bottom: 4px; }
+.info-item span { font-size: 14px; color: #e2e2e5; }
+.highlight { border-left: 3px solid #22d3ee; padding-left: 12px; margin: 12px 0; }
+.footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; gap: 20px; font-size: 13px; color: #6b7280; }
+.footer a { color: #9ca3af; }
+</style>
+</head>
+<body>
+<header>
+  <span class="header-title">🎌 Felix · JLPT Vault Agent</span>
+  <nav class="header-links">
+    <a href="https://kaji-hemopo.github.io/telemetry/empire-home.html">← Empire Home</a>
+  </nav>
+</header>
+
+<main>
+  <div>
+    <span class="status-badge">● Active · 30min heartbeat</span>
+    <span class="mission-badge">🎯 MARKETING FOCUS</span>
+  </div>
+
+  <div class="card">
+    <h2>Mission — V3 Growth Engine</h2>
+    <p><strong>PRIMARY:</strong> Marketing the JLPT Vault to grow users and engagement.</p>
+    <div class="highlight">
+      <p>Not just maintaining — <strong>GROWING the user base</strong>. Every 30-min heartbeat focuses on marketing: competitor research, viral content strategy, growth hacks, X growth, monetization.</p>
+    </div>
+    <p><strong>SECONDARY:</strong> JLPT Vault database QC (N5-N1), X automation (2x daily 10:00 & 18:00 JST), Gmail-flagged email processing.</p>
+  </div>
+
+  <div class="card">
+    <h2>Marketing Priorities</h2>
+    <ul>
+      <li><strong>X Growth:</strong> Hashtags (#JLPT, #LearnJapanese, #N3, #N2, #N1), optimal posting times, viral polls</li>
+      <li><strong>Content:</strong> Daily drills, meme grammar, "Guess the reading" polls</li>
+      <li><strong>Community:</strong> #JLPTChallenge, user engagement, viral loops</li>
+      <li><strong>Monetization:</strong> Premium features teaser, Anki deck marketplace</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Level Routing</h2>
+    <p>Email subjects contain level tags. Felix routes to correct <code>jlpt_level</code>:</p>
+    <div style="display: flex; gap: 8px; margin-top: 12px; flex-wrap: wrap;">
+      <span style="background: rgba(34,211,238,0.1); color: #22d3ee; padding: 4px 12px; border-radius: 6px; font-size: 13px;">[N5]</span>
+      <span style="background: rgba(34,211,238,0.1); color: #22d3ee; padding: 4px 12px; border-radius: 6px; font-size: 13px;">[N4]</span>
+      <span style="background: rgba(34,211,238,0.1); color: #22d3ee; padding: 4px 12px; border-radius: 6px; font-size: 13px;">[N3]</span>
+      <span style="background: rgba(34,211,238,0.1); color: #22d3ee; padding: 4px 12px; border-radius: 6px; font-size: 13px;">[N2]</span>
+      <span style="background: rgba(34,211,238,0.1); color: #22d3ee; padding: 4px 12px; border-radius: 6px; font-size: 13px;">[N1]</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>System Status</h2>
+    <div class="info-grid">
+      <div class="info-item">
+        <strong>X API</strong>
+        <span>✅ Working</span>
+      </div>
+      <div class="info-item">
+        <strong>X Cron</strong>
+        <span>✅ 10:00 & 18:00 JST</span>
+      </div>
+      <div class="info-item">
+        <strong>Heartbeat</strong>
+        <span>✅ V3 Marketing Engine</span>
+      </div>
+      <div class="info-item">
+        <strong>Gmail</strong>
+        <span>⚠️ Needs refresh</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>V3 Growth Engine — 4 Phases</h2>
+    <ol style="padding-left: 20px;">
+      <li><strong>Phase 1:</strong> System Health (quick baseline)</li>
+      <li><strong>Phase 2:</strong> Marketing Research (competitors, pain points, X strategy)</li>
+      <li><strong>Phase 3:</strong> Marketing Initiatives (content ideas, partnerships, growth)</li>
+      <li><strong>Phase 4:</strong> Growth Hacks (viral loops, cross-promotion)</li>
+    </ol>
+  </div>
+
+  <div class="card">
+    <h2>Workspace Files</h2>
+    <ul>
+      <li><a href="https://github.com/kaji-hemopo/telemetry/blob/main/agents/felix/../../workspace-felix/FELIX_DASHBOARD.md">FELIX_DASHBOARD.md</a> — Ops board</li>
+      <li><a href="https://github.com/kaji-hemopo/telemetry/blob/main/agents/felix/../../workspace-felix/MEMORY.md">MEMORY.md</a> — Rolling state + marketing findings</li>
+      <li><a href="https://github.com/kaji-hemopo/telemetry/blob/main/agents/felix/../../workspace-felix/HEARTBEAT.md">HEARTBEAT.md</a> — V3 heartbeat docs</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Canonical Commands</h2>
+    <ul>
+      <li><code>python3 scripts/proactive_initiative_30min.py</code> — V3 marketing heartbeat</li>
+      <li><code>python3 scripts/post_twice_daily_v2.py</code> — X posting</li>
+      <li><code>./scripts/run_jlpt_database_fix.sh</code> — DB pipeline</li>
+    </ul>
+  </div>
+
+  <div class="footer">
+    <a href="https://kaji-hemopo.github.io/telemetry/empire-home.html">← Empire Home</a>
+    <span>·</span>
+    <span>Felix · JLPT Vault · V3 Growth Engine</span>
+    <span>·</span>
+    <span>Updated 2026-04-13</span>
+  </div>
+</main>
+</body>
+</html>

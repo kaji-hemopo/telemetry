@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Titan · X Content Calendar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root { --bg: #050508; --surface: rgba(18,20,28,0.85); --border: rgba(255,255,255,0.08); --text: #f0f2f8; --muted: #8b90a1; --accent: #5eead4; --amber: #fbbf24; --red: #f87171; --violet: #a78bfa; --radius: 16px; --font-d: "Syne",system-ui,sans-serif; --font-b: "DM Sans",system-ui,sans-serif; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: var(--font-b); color: var(--text); line-height: 1.55; min-height: 100vh; background: var(--bg); -webkit-font-smoothing: antialiased; }
+    .page-bg { position: fixed; inset: 0; z-index: -1; background: radial-gradient(ellipse 100% 70% at 50% -25%, rgba(94,234,212,0.07),transparent 50%), radial-gradient(ellipse 50% 45% at 100% 10%, rgba(167,139,250,0.06),transparent 45%), linear-gradient(180deg,#0a0c12 0%,var(--bg) 100%); }
+    .container { max-width: 1080px; margin: 0 auto; padding: 28px 20px 48px; }
+    .nav-back { display: inline-flex; align-items: center; gap: 8px; padding: 10px 18px; border-radius: 10px; font-size: 13px; font-weight: 600; color: var(--muted); background: rgba(139,144,161,0.08); border: 1px solid rgba(139,144,161,0.15); text-decoration: none; margin-bottom: 24px; }
+    .nav-back:hover { background: rgba(139,144,161,0.14); color: var(--text); text-decoration: none; }
+    header.hero { text-align: center; padding: 36px 28px 40px; border-radius: calc(var(--radius)+4px); background: linear-gradient(145deg,rgba(22,26,38,0.95),rgba(12,14,22,0.98)); border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 24px 48px -16px rgba(0,0,0,0.55); margin-bottom: 28px; }
+    .eyebrow { font-family: var(--font-d); font-size: 11px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent); margin-bottom: 12px; }
+    h1 { font-family: var(--font-d); font-size: clamp(1.6rem,4vw,2.2rem); font-weight: 800; letter-spacing: -0.03em; line-height: 1.12; margin-bottom: 12px; background: linear-gradient(100deg,#fff 0%,#b8c0d4 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .subtitle { font-size: 1rem; color: var(--muted); max-width: 36rem; margin: 0 auto; }
+    .section-title { font-family: var(--font-d); font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin: 28px 0 16px; display: flex; align-items: center; gap: 10px; }
+    .section-title .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); }
+    .card { padding: 22px 24px 20px; border-radius: var(--radius); background: var(--surface); border: 1px solid var(--border); backdrop-filter: blur(20px); margin-bottom: 14px; }
+    .card h3 { font-family: var(--font-d); font-size: 15px; font-weight: 700; margin-bottom: 4px; }
+    .card .role { font-size: 11px; color: var(--amber); margin-bottom: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; }
+    .card p { font-size: 13px; color: var(--muted); }
+    .cta-box { background: rgba(248,113,113,0.08); border: 1px solid rgba(248,113,113,0.2); border-radius: 10px; padding: 16px 20px; margin: 14px 0; }
+    .cta-box p { color: var(--red); font-size: 13px; font-weight: 600; text-align: center; }
+    .stats-row { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; margin-bottom: 28px; }
+    .stat-box { padding: 18px 20px; border-radius: var(--radius); background: var(--surface); border: 1px solid var(--border); text-align: center; }
+    .stat-num { font-family: var(--font-d); font-size: 1.8rem; font-weight: 800; line-height: 1; margin-bottom: 4px; }
+    .stat-label { font-size: 11px; color: var(--muted); }
+    .stat-num.red { color: var(--red); }
+    .stat-num.amber { color: var(--amber); }
+    footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--border); text-align: center; font-size: 12px; color: var(--muted); }
+    a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <div class="page-bg"></div>
+  <div class="container">
+    <a href="titan.html" class="nav-back">← Titan Dashboard</a>
+    <header class="hero">
+      <div class="eyebrow">Titan · X Content Calendar</div>
+      <h1>Copy-Paste X Posts</h1>
+      <p class="subtitle">30-day content calendar. All posts copy-paste ready. @kajiclaw account exists — post now.</p>
+    </header>
+    <div class="stats-row">
+      <div class="stat-box"><div class="stat-num red">0</div><div class="stat-label">Posts published</div></div>
+      <div class="stat-box"><div class="stat-num amber">5</div><div class="stat-label">Posts ready to paste</div></div>
+      <div class="stat-box"><div class="stat-num amber">30</div><div class="stat-label">Day content plan</div></div>
+    </div>
+    <div class="cta-box"><p>🚨 @kajiclaw account exists — post these 5 posts right now. 2 minutes.</p></div>
+    <div class="section-title"><span class="dot"></span>First 5 Posts (Post These Now)</div>
+    <div class="card"><span class="role">Post 1 — Intro (Post First)</span><h3>Former pro rugby player turned PT.</h3><p>I train salarymen who got told to do more cardio. They got fatter. Strength signals > steady-state. Drop your gym horror story below 👇</p></div>
+    <div class="card"><span class="role">Post 2 — Anti-Fad</span><h3>Japanese commercial gyms sell treadmill time. Not results.</h3><p>You running 10k steps a day = same calories as walking to the konbini. Signal your body to adapt. Build something real.</p></div>
+    <div class="card"><span class="role">Post 3 — Credibility</span><h3>12 weeks. 3 sessions/week. This is what "no time to train" actually looks like:</h3><p>Deadlift: 60kg → 120kg. Bench: 50kg → 85kg. 37-year-old office worker. No steroids. No black magic. Programming.</p></div>
+    <div class="card"><span class="role">Post 4 — Principle</span><h3>The best training program is the one you'll actually do.</h3><p>Not the one in the magazine. Not the influencer's 6-day split. The one that fits your schedule, your recovery, and your life. Everything else is noise.</p></div>
+    <div class="card"><span class="role">Post 5 — Engagement Hook</span><h3>What's the one thing you wish someone told you about training 10 years ago?</h3><p>I'll start: progressive overload beats every cool method until you understand why progressive overload works. Your turn.</p></div>
+    <div class="section-title"><span class="dot"></span>30-Day Content Rotation</div>
+    <div class="card"><h3>Content Mix (per week)</h3><ul style="padding-left:18px;"><li><strong>2 Credibility Posts</strong> — transformation stories, results, social proof</li><li><strong>2 Teaching Posts</strong> — progressive overload, strength principles, why things work</li><li><strong>1 Engagement Post</strong> — questions, polls, "drop your story below"</li><li><strong>2 Soft Posts</strong> — weekend principle, no CTA, community building</li></ul></div>
+    <div class="card"><h3>Posting Cadence</h3><ul style="padding-left:18px;"><li><strong>Heavy Outreach Days:</strong> 3 posts (7–8AM, 12–1PM, 6–7PM JST)</li><li><strong>Content Days:</strong> 3 posts (same cadence)</li><li><strong>Weekend:</strong> 1–2 posts (soft, no CTA, 10–11AM JST)</li><li><strong>Never:</strong> More than 3 posts/day</li></ul></div>
+    <footer><p>Titan · Athlete Forge · <a href="titan.html">Dashboard</a> · <a href="../../empire-home.html">Empire Home</a></p></footer>
+  </div>
+</body>
+</html>
