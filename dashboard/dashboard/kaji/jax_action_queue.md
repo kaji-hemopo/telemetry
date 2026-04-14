@@ -1,89 +1,88 @@
-# Jax Action Queue — UPDATED 2026-04-14 13:50 JST
+# Jax Action Queue — UPDATED 2026-04-14 21:40 JST
 
-> Source: Kaji COO · auto-generated each beat · Telegram unreachable — check this dashboard
-
----
-
-## 🚨 CRITICAL — Submit NOW
-
-### Saito CrowdWorks #13049491 — ~26 HOURS LEFT (Apr 16 23:59 JST)
-- **Deadline:** Wed Apr 16 23:59 JST
-- **Status:** 18 applicants · ZERO new apps in 75h+ · 7 気になる
-- **Proposal:** `outputs/proposal_13049491.md` (confirmed complete ✅)
-- **Login:** crowdworks.co.jp → submit NOW
-- **Age:** First flagged ~Apr 12 — now ~4 days stale ⚠️
+> Source: Kaji COO · auto-generated · Telegram unreachable — check this dashboard
 
 ---
 
-## ✅ RESOLVED This Beat (Tidy Operations ~13:50 JST)
+## 🚨 CRITICAL — RIGHT NOW
 
-### Duplicate Cron Removed ✅
-- `1dbd1b34` one-shot Saito Tue Evening (at 2026-04-14T08:00 UTC = 17:00 JST) — was never needed since recurring cron `556e8459` handles it at 17:00 JST daily. One-shot already removed earlier, confirmed clean.
+### ⚠️ Saito MODEL RATE LIMITING (new — ~21:07 JST)
+Both MiniMax-M2.7 AND M2.7-highspeed are timing out simultaneously (332s). Pattern: multiple Saito sessions overlapping → API rate limit. **Cannot agent-fix.** Monitor next 2-3 beats. If persistent, Jax may need to reduce Saito cron frequency.
 
-### Felix HEARTBEAT.md Updated ✅
-- Added current priorities (N3 Phase 2b blocked by Gmail re-auth, X offline, Gmail re-auth action for Jax)
+### freelance-board.com WINDOW REOPENED (~20:37 JST) — APPLY NOW
+Window open at ~20:37 JST — **all 7 listings accessible** — could close any moment.
+- **#596617** (¥80-130万) — starts TOMORROW 4/15 — PERFECT FIT → apply NOW
+- **#595772** (¥100-130万+ major trading house) — May 1 start — PERFECT FIT → apply NOW
+- #596032, #586395, #588755, #596029, #430544 — all accessible — apply NOW
+→ https://freelance-board.com/jobs/detail/596617 | /595772
 
-### Odie Dashboard.md Updated ✅
-- Fixed stale date (was 2026-04-12) · cron ID corrected (was wrong agent name) · all links verified
+### Saito #13049491 — ~20h LEFT (Apr 16 23:59 JST)
+- **18 applicants · 0 new apps in 75h+ · 7 気になる**
+- **Proposal ready:** `outputs/proposal_13049491.md` ✅
+- **BUT:** Jax changed Saito to "NO PROPOSALS FOR 3 MONTHS" at 20:45 JST
+- **MODE CONFLICT:** Submit this one job despite mode? Or let it expire?
+- **Action needed:** Tell Kaji: (A) Submit #13049491 now, (B) Abandon, (C) Something else
 
-### Saito Ledger Status ✅
-- 257 lines / 21KB — lean and healthy · no compaction needed
-- All workspaces verified: Felix (24 lines) · Saito (24 lines) · Ito (74 lines) · Makoto (161 lines) · Titan (compact) · Kaji (healthy) · Odie (healthy)
+### Saito #13042882 — ~5 days (Apr 20 deadline)
+- **11 applicants · 0 new in 232h+ · 29 気になる**
+- Proposal `outputs/proposal_13042882.md` + skill sheet `outputs/skill_sheet_jackson.md` ready
+- **Same mode conflict applies**
 
 ---
 
 ## ⏳ Pending Your Thumbs Up/Down
 
-### Empire Morning Briefing (P1) — ~72h stale
+### Empire Morning Briefing — ~72h stale
 - **Brief:** `outputs/brief_empire_morning_briefing.md`
 - **Spec:** `outputs/empire_morning_briefing.md`
-- **Action:** Thumbs up → I activate daily 07:00 JST Telegram digest
-- **Action:** Thumbs down → I park it permanently
+- Thumbs up → daily 07:00 JST Telegram digest activates
+- Thumbs down → permanently parked
 
-### Monday Launch Kit Telegram (P1) — ~68h stale
-- **Brief:** `outputs/brief_monday_launch_kit_telegram.md`
-- **Spec:** `outputs/monday_launch_kit.md`
-- **Action:** Thumbs up → Titan/Kaji sends Telegram Monday 07:00 JST
-- **Action:** Thumbs down → I park it
+### Deploy GBP Landing Page to Neocities — ~62h stale
+- **Brief:** `outputs/brief_makoto_deploy_reminder.md`
+- Action: Upload GBP files to Neocities (~5 min) → Makoto goes live
 
-### Property Intelligence Phase 2 Dashboard (P0) — NEW
-- **Brief:** `outputs/property_intel_phase2_dashboard_brief.md`
-- **Spec:** `outputs/property_intel_phase2_nz_dashboard.md` (Phase 2 written)
-- **Status:** Phase 1 LIVE (ahipara_scraper.py + alerts.md from 06:14–06:15 JST today) ✅ — but NO dashboard visibility
-- **Gap:** Ito produces live data · Jackson can't see it without digging into Ito's workspace
-- **Proposal:** Build mini-dashboard bridging alerts.md to empire-home.html (~2-3hr subagent)
-- **Action:** Thumbs up → I spawn subagent · Thumbs down → Phase 2 parked
+### Property Intelligence Phase 3 or 4? — NEW
+- **Phase 3** = Japan tracker (Suumo/Homes/Athome Abe) + monitoring alerts
+- **Phase 4** = Renovation ROI calculator for Japan properties
+- **View:** https://kaji-hemopo.github.io/telemetry/kaji/property-intel.html
+- Reply "Phase 3" or "Phase 4"
 
 ---
 
 ## 🔒 Blocked — Needs Your Action
 
-### Deploy GBP Landing Page to Neocities — ~62h stale
-- **Brief:** `outputs/brief_makoto_deploy_reminder.md`
-- **Action:** Upload GBP files to Neocities (~5 min) → Makoto goes live
-
-### Felix Gmail Re-auth — ~106h stale ⚠️
+### Felix Gmail Re-auth — ~130h+ stale ⚠️
 - **Brief:** `outputs/brief_felix_gmail_reauth.md`
-- **Action:** Open Felix workspace → re-auth Gmail → Felix unblocks N3 DB Phase 2b + X posts
-- **Impact:** N3 DB Phase 2b stuck at ~1909/2489 entries · X posts offline
+- Blocks: N3 DB Phase 2b + X posts
+- Action: Open Felix workspace → re-auth Gmail
 
-### Titan PT Launch — Status: LAUNCH GUARD ACTIVE
-- **Spec:** `outputs/brief_titan_pt_launch.md`
-- **Status:** 31 items certified · family visiting · Jax says "go" → full launch executes instantly
-- **Action:** Tell Titan "go" → Titan executes · Tell Titan "pause" → stays on hold
-
----
-
-## ✅ Completed (this session)
-
-- MEMORY.md beat compaction: 7 beats (03:45–07:33 JST) archived → memory/2026-04-14.md
-- Dashboard full refresh: correct Beat Domain State, all timestamps synced to 09:05 JST
-- Titan workspace path verified: workspace-titan/ (hyphen) = live ✅
-- Saito countdown updated: ~38h remaining
-- Makoto MEMORY.md compaction: 699→148 lines, 49KB→11KB ✅
-- Titan Launch Guard 30→5 files archived ✅
+### Titan PT Launch — LAUNCH GUARD ACTIVE
+- Jax says "go" → full launch executes instantly
+- Jax says "pause" → stays on hold
 
 ---
 
-**Updated:** 2026-04-14 13:50 JST · Kaji COO
-**Next update:** Next beat (~14:30 JST)
+## ✅ RESOLVED This Beat (Empire Audit ~21:40 JST)
+
+### 2 ghost Saito crons found ✅
+- `17a7a896` (Cycle 316 · Tue 20:47) + `7ff3165f` (Cycle 310 · Tue 10:20)
+- Saito spawns ad-hoc cycles but never deletes them after use
+- Total crons corrected: 16/16 → 17/17
+- Next beat (Improve Existing) will remove them
+
+### Saito MODE CONFLICT flagged ✅
+- Jax "NO PROPOSALS FOR 3 MONTHS" (20:45 JST) conflicts with live #13049491 deadline (Apr 16 23:59 JST)
+- Options surfaced to Jax: Submit / Abandon / Other
+
+### freelance-board.com window SURFACED ✅
+- Window reopened ~20:37 JST — 7 listings accessible
+- Top two (#596617 starts tomorrow, #595772 major trading house) flagged as PERFECT FIT
+
+### Delegation queue reviewed ✅
+- #13049491 (~20h, mode conflict) · #13042882 (same conflict) · freelance-board.com window (now) · Empire Morning Briefing (~72h stale) · GBP deploy (~62h stale) · Property Intel Phase 3/4 (needs Jax reply) · Felix Gmail (~130h stale) · Titan PT Launch (on hold) · Saito model rate limit ⚠️ (new)
+
+---
+
+**Updated:** 2026-04-14 21:40 JST · Kaji COO · Empire Audit beat · Improve Existing next (~22:25 JST)
+**Next update:** Next beat (~22:25 JST · Improve Existing)
