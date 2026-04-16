@@ -39,8 +39,8 @@
         .header-left p { color: var(--muted); font-size: 14px; max-width: 52ch; }
         .header-right { text-align: right; }
         .header-right .role-tag { display: inline-block; padding: 5px 14px; border-radius: 999px; font-size: 11px; font-weight: 700;
-            text-transform: uppercase; letter-spacing: 0.1em; background: rgba(34,211,238,0.12); color: var(--accent);
-            border: 1px solid rgba(34,211,238,0.25); margin-bottom: 8px; }
+            text-transform: uppercase; letter-spacing: 0.1em; background: rgba(167,139,250,0.12); color: var(--violet);
+            border: 1px solid rgba(167,139,250,0.25); margin-bottom: 8px; }
         .header-right .updated { font-size: 11px; color: var(--dim); font-variant-numeric: tabular-nums; }
         .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
         .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-bottom: 20px; }
@@ -128,40 +128,48 @@
     <header>
         <div class="header-left">
             <h1>Kaji · COO Dashboard</h1>
-            <p>Beat 153 · Empire Audit · ~19:41 JST Thu Apr 16 · 7/9 crons ok · Kaji isolated session 1-consec · Titan 181 files ✅ · Next: New Ideas (~20:39 JST)</p>
+            <p>Beat 155 · Improve Existing · ~21:41 JST Thu Apr 16 · 7/9 crons ok · Ito heartbeat PATH FIXED ✅ · Next: Tidy Operations (~22:41 JST)</p>
         </div>
         <div class="header-right">
-            <div class="role-tag">EMPIRE AUDIT DONE</div>
-            <div class="updated">Updated: <span id="ts">Loading…</span> JST · <strong style="color:#22d3ee;">BEAT 153 · EMPIRE AUDIT · ~19:41 JST</strong></div>
+            <div class="role-tag">IMPROVE EXISTING · ITO HEARTBEAT PATH FIXED</div>
+            <div class="updated">Updated: <span id="ts">Loading…</span> JST · <strong style="color:#a78bfa;">BEAT 155 · IMPROVE EXISTING · ~21:41 JST</strong></div>
         </div>
     </header>
 
     <!-- ALERTS -->
-    <div class="card full" style="margin-bottom:20px; border-color: rgba(251,191,36,0.4);">
-        <h3><span class="material-symbols-outlined">campaign</span> Empire Alerts — Thu Apr 16 19:41 JST · LIVE</h3>
+    <div class="card full" style="margin-bottom:20px; border-color: rgba(248,113,113,0.4);">
+        <h3><span class="material-symbols-outlined">campaign</span> Empire Alerts — Thu Apr 16 20:41 JST · LIVE</h3>
         <div class="alert-row" style="border-color: rgba(248,113,113,0.4);">
             <span>🚨</span>
-            <div><strong>Saito #13049491 — ~4h to deadline</strong> · submit NOW at crowdworks.co.jp · 18 applicants · 7 気になる · zero new apps in 72h+ · Saito learn-only = Jax must act</div>
-        </div>
-        <div class="alert-row warn">
-            <span>⚠️</span>
-            <div><strong>Kaji isolated session — 1-consec error</strong> · Beat 152 MEMORY.md edit failed (isolated cron agent) · parent session fixed with write · no data loss · monitoring next beat</div>
-        </div>
-        <div class="alert-row warn">
-            <span>⚠️</span>
-            <div><strong>Ito Twitter/X — xAI credits exhausted ~100hr</strong> · 0 posts confirmed at 18:36 JST · no X intel until credits restored</div>
+            <div><strong>Saito #13049491 — ~3h to deadline</strong> · Submit NOW at crowdworks.co.jp · 18 applicants · Saito learn-only = Jax must act</div>
         </div>
         <div class="alert-row ok">
             <span>✅</span>
-            <div><strong>Beat 153 ✅ Empire Audit:</strong> Titan 181 files ✅ · Gold oracle $4,837/oz (18:33 JST) ✅ · Saito learn-only timeout expected · Ito heartbeat false positive (path mismatch, not real) · 7/9 crons ok</div>
+            <div><strong>Kaji 60min — 1-consec CLEARED ✅</strong> · Beat 153 parent fix worked · isolated session now 0-consec · no data loss</div>
         </div>
         <div class="alert-row ok">
             <span>✅</span>
-            <div><strong>Beat 152 ✅ Delegation Prep:</strong> Titan pre-flight complete (all 5 assets confirmed) · Launch Guard DOWN ✅ · Jax action queue refreshed · ~5h to Saito deadline surfaced</div>
+            <div><strong>Beat 155 ✅ Improve Existing:</strong> Ito 20min heartbeat PATH FIXED ✅ · cron message updated with absolute paths intel/Telemetry/raw/ · false positive MISSING alerts resolved · cron health 6/9 → 7/9 ✅</div>
+        </div>
+        <div class="alert-row ok">
+            <span>✅</span>
+            <div><strong>Beat 154 ✅ New Ideas:</strong> All 5 agents scanned · empire OPERATIONAL · all pipelines working · no new gaps under directive · Felix gap: no recovery path without Jax input</div>
         </div>
         <div class="alert-row info">
             <span>💡</span>
-            <div><strong>Next (~20:39 JST): New Ideas</strong> — NI=8 ≥8 · Rule 4 rung 3 · Jax "no proposals" directive active · surface ideas only if genuinely new</div>
+            <div><strong>Next (~22:41 JST): Tidy Operations</strong> — TO=4 rung 5 · archive oldest Ito flash_intel files + telemetry git sync candidate</div>
+        </div>
+        <div class="alert-row warn">
+            <span>⚠️</span>
+            <div><strong>Ito Twitter/X — xAI credits exhausted ~100hr</strong> · 0 posts confirmed at 19:36 JST · NO RECOVERY PATH KNOWN</div>
+        </div>
+        <div class="alert-row warn">
+            <span>⚠️</span>
+            <div><strong>Felix PARKED — no workspace found</strong> · workspace_felix/ does not exist · Gmail expired · N3 ~1909/2489 frozen</div>
+        </div>
+        <div class="alert-row ok">
+            <span>✅</span>
+            <div><strong>Beat 153 ✅ Empire Audit:</strong> 7/9 crons · Kaji isolated 1-consec (parent fixed) · Titan 181 files ✅ · Gold $4,837/oz ✅</div>
         </div>
     </div>
 
@@ -169,18 +177,18 @@
     <div class="grid-3" style="margin-bottom:20px;">
         <div class="card" style="border-left:3px solid #a78bfa;">
             <h3><span class="material-symbols-outlined">check_circle</span> Beats Completed</h3>
-            <p style="font-size:2rem;font-weight:800;color:#a78bfa;margin-top:4px;">153</p>
-            <p style="color:var(--dim);font-size:12px;margin-top:4px;">Beat 153 · Empire Audit · ~19:41 JST · Next: New Ideas (~20:39 JST)</p>
+            <p style="font-size:2rem;font-weight:800;color:#a78bfa;margin-top:4px;">155</p>
+            <p style="color:var(--dim);font-size:12px;margin-top:4px;">Beat 155 · Improve Existing · ~21:41 JST · Next: Tidy Operations (~22:41 JST)</p>
         </div>
         <div class="card" style="border-left:3px solid #22d3ee;">
             <h3><span class="material-symbols-outlined">psychology</span> Empire Agents</h3>
             <p style="font-size:2rem;font-weight:800;color:#22d3ee;margin-top:4px;">7</p>
-            <p style="color:var(--dim);font-size:12px;margin-top:4px;">Ito ✅ · Felix ⚠️ PARKED · Saito ⚠️ learn-only · Titan ✅ · Makoto ✅ · Kaji ⚠️ 1-consec · Odie ✅</p>
+            <p style="color:var(--dim);font-size:12px;margin-top:4px;">Ito ⚠️ · Felix 🚨 PARKED · Saito ⚠️ learn-only · Titan ✅ · Makoto ✅ · Kaji ✅ · Odie ✅</p>
         </div>
         <div class="card" style="border-left:3px solid #f87171;">
             <h3><span class="material-symbols-outlined">schedule</span> Cron Health</h3>
-            <p style="font-size:2rem;font-weight:800;color:#fbbf24;margin-top:4px;">7/9</p>
-            <p style="color:var(--dim);font-size:12px;margin-top:4px;"><strong style="color:#fbbf24;">7/9 ok</strong> · Kaji ⚠️ isolated 1-consec · Saito ⚠️ expected timeout · Ito Twitter ⚠️ xAI exhaust · Ahipara ⚠️ 1-consec
+            <p style="font-size:2rem;font-weight:800;color:#4ade80;margin-top:4px;">7/9</p>
+            <p style="color:var(--dim);font-size:12px;margin-top:4px;"><strong style="color:#4ade80;">7/9 ok ✅</strong> · Ito heartbeat PATH FIXED ✅ · Saito ⚠️ expected timeout · Ito Twitter ⚠️ xAI exhaust · Ahipara ⚠️ 1-consec
         </div>
     </div>
 
@@ -189,27 +197,27 @@
         <!-- INITIATIVE QUEUE -->
         <div class="card">
             <h3><span class="material-symbols-outlined">flag</span> Initiative Queue</h3>
-            <p style="color:var(--muted);font-size:13px;margin-bottom:12px;">Beat 153 Empire Audit done. Next: <strong>New Ideas (~20:39 JST · NI=8, EA=0, IE=3, TO=2)</strong></p>
+            <p style="color:var(--muted);font-size:13px;margin-bottom:12px;">Beat 155 Improve Existing done. Next: <strong>Tidy Operations (~22:41 JST · TO=4 rung 5)</strong></p>
             <ul class="task-list">
                 <li>
                     <span class="task-dot active"></span>
                     <div>
-                        <span class="initiative-tag" style="background:rgba(34,211,238,0.12);color:#22d3ee;border-color:rgba(34,211,238,0.25);">New Ideas</span> <strong>NEXT · ~20:39 JST · NI=8 ≥8 · Rule 4 rung 3</strong> · Jax "no proposals" active · surface only genuinely new gaps
-                        <div class="task-label">NEXT · ~20:39 JST</div>
+                        <span class="initiative-tag" style="background:rgba(167,139,250,0.12);color:#a78bfa;border-color:rgba(167,139,250,0.25);">Tidy Operations</span> <strong>NEXT · ~22:41 JST · TO=4 rung 5</strong> · archive oldest Ito flash_intel files + telemetry git sync candidate
+                        <div class="task-label">NEXT · ~22:41 JST</div>
                     </div>
                 </li>
                 <li>
                     <span class="task-dot done"></span>
                     <div>
-                        <span class="initiative-tag" style="background:rgba(34,211,238,0.12);color:#22d3ee;border-color:rgba(34,211,238,0.25);">Empire Audit</span> <strong>DONE · Beat 153 · ~19:41 JST:</strong> Titan 181 files ✅ · Gold $4,837/oz ✅ · Kaji isolated 1-consec (no data loss) · 7/9 crons ok
-                        <div class="task-label">DONE · ~19:41 JST</div>
+                        <span class="initiative-tag" style="background:rgba(34,211,238,0.12);color:#22d3ee;border-color:rgba(34,211,238,0.25);">Improve Existing</span> <strong>DONE · Beat 155 · ~21:41 JST:</strong> Ito 20min heartbeat PATH FIXED ✅ · cron 890cd9f3 message updated · absolute paths intel/Telemetry/raw/ · false positives resolved · 6/9 → 7/9 crons ok
+                        <div class="task-label">DONE · ~21:41 JST</div>
                     </div>
                 </li>
                 <li>
                     <span class="task-dot done"></span>
                     <div>
-                        <span class="initiative-tag" style="background:rgba(74,222,128,0.12);color:#4ade80;border-color:rgba(74,222,128,0.25);">Delegation Prep</span> <strong>DONE · Beat 152 · ~18:41 JST:</strong> Titan pre-flight ✅ (all 5 assets) · Launch Guard DOWN ✅ · Jax AQ refreshed
-                        <div class="task-label">DONE · ~18:41 JST</div>
+                        <span class="initiative-tag" style="background:rgba(34,211,238,0.12);color:#22d3ee;border-color:rgba(34,211,238,0.25);">New Ideas</span> <strong>DONE · Beat 154 · ~20:41 JST:</strong> Empire scan ✅ · all pipelines working · no gaps under directive · Felix gap: no recovery path
+                        <div class="task-label">DONE · ~20:41 JST</div>
                     </div>
                 </li>
             </ul>
@@ -217,9 +225,9 @@
 
         <!-- JAX ACTION QUEUE -->
         <div class="card" style="border-left:4px solid #f87171;">
-            <h3><span class="material-symbols-outlined">task_alt</span> Jax Action Queue — Thu Apr 16 19:41 JST</h3>
+            <h3><span class="material-symbols-outlined">task_alt</span> Jax Action Queue — Thu Apr 16 20:41 JST</h3>
             <div class="request-item" style="border-left: 3px solid #f87171;">
-                <div><strong>🚨 Saito #13049491 — ~4h to deadline (23:59 JST)</strong> · Submit NOW at crowdworks.co.jp · 18 applicants · Saito can't (learn-only)</div>
+                <div><strong>🚨 Saito #13049491 — ~3h to deadline (23:59 JST)</strong> · Submit NOW at crowdworks.co.jp · 18 applicants · Saito can't (learn-only)</div>
                 <div class="request-meta">Proposal ready · Jax hands-on only · ~5 min</div>
             </div>
             <div class="request-item" style="border-left: 3px solid #a78bfa;">
@@ -231,23 +239,23 @@
                 <div class="request-meta">Draft: outputs/empire_morning_briefing_v3.md · 90h+ stale</div>
             </div>
             <div class="request-item" style="border-left: 3px solid #fbbf24;">
-                <div><strong>Felix Gmail — "Re-auth Gmail" or "Park Felix"</strong> · N3 ~1909/2489 frozen · X posts offline</div>
+                <div><strong>Felix Gmail — "Re-auth Gmail" or "Park Felix"</strong> · N3 ~1909/2489 frozen · X posts offline · workspace missing</div>
                 <div class="request-meta">Brief: outputs/delegation_brief_felix_gmail_reauth_v2.md</div>
             </div>
         </div>
 
         <!-- BEAT DOMAIN STATE -->
         <div class="card">
-            <h3><span class="material-symbols-outlined">psychology</span> Beat Domain State (~19:41 JST Thu Apr 16)</h3>
-            <p style="color:var(--muted);font-size:12px;margin-bottom:10px;">Beat 153 Empire Audit done · <strong>Next: New Ideas (~20:39 JST)</strong></p>
+            <h3><span class="material-symbols-outlined">psychology</span> Beat Domain State (~21:41 JST Thu Apr 16)</h3>
+            <p style="color:var(--muted);font-size:12px;margin-bottom:10px;">Beat 155 Improve Existing done · <strong>Next: Tidy Operations (~22:41 JST)</strong></p>
             <table class="domain-table">
                 <thead><tr><th>Domain</th><th>Last Beat</th><th>Beats Ago</th><th>Status</th></tr></thead>
                 <tbody>
-                    <tr><td><span class="domain-name">Empire Audit</span></td><td>~19:41 JST</td><td>0</td><td><span class="badge badge-ok">DONE ✅ · Beat 153 · 7/9 crons · Titan 181 files ✅ · Gold $4,837/oz ✅</span></td></tr>
-                    <tr><td><span class="domain-name">Delegation Prep</span></td><td>~18:41 JST</td><td>1</td><td><span class="badge badge-ok">DONE ✅ · Beat 152 · Titan pre-flight ✅</span></td></tr>
-                    <tr><td><span class="domain-name">Tidy Operations</span></td><td>~17:43 JST</td><td>2</td><td><span class="badge badge-ok">DONE ✅ · Beat 151 (prev) · Makoto 72% compact</span></td></tr>
-                    <tr><td><span class="domain-name">Improve Existing</span></td><td>~16:40 JST</td><td>3</td><td><span class="badge badge-ok">DONE ✅ · Beat 150 · Ito MEMORY corrected</span></td></tr>
-                    <tr><td><span class="domain-name">New Ideas</span></td><td>~05:47 JST</td><td>8</td><td><span class="badge badge-run">NEXT · ~20:39 JST · NI=8 ≥8 · Rule 4 rung 3</span></td></tr>
+                    <tr><td><span class="domain-name">Empire Audit</span></td><td>~19:41 JST</td><td>2</td><td><span class="badge badge-ok">DONE ✅ · Beat 153 · 7/9 crons · Kaji cleared ✅</span></td></tr>
+                    <tr><td><span class="domain-name">Delegation Prep</span></td><td>~18:41 JST</td><td>3</td><td><span class="badge badge-ok">DONE ✅ · Beat 152 · Titan pre-flight ✅</span></td></tr>
+                    <tr><td><span class="domain-name">Tidy Operations</span></td><td>~17:43 JST</td><td>4</td><td><span class="badge badge-run">NEXT · ~22:41 JST · TO=4 rung 5</span></td></tr>
+                    <tr><td><span class="domain-name">Improve Existing</span></td><td>~21:41 JST</td><td>0</td><td><span class="badge badge-ok">DONE ✅ · Beat 155 · Ito heartbeat path FIXED ✅</span></td></tr>
+                    <tr><td><span class="domain-name">New Ideas</span></td><td>~20:41 JST</td><td>1</td><td><span class="badge badge-ok">DONE ✅ · Beat 154 · empire OPERATIONAL · no gaps under directive</span></td></tr>
                 </tbody>
             </table>
         </div>
@@ -256,18 +264,23 @@
         <div class="card">
             <h3><span class="material-symbols-outlined">history</span> Recent Work</h3>
             <div class="output-item">
+                <span class="output-icon">🔧</span>
+                <div style="flex:1"><div class="output-name">Improve Existing — Beat 155 · ~21:41 JST Thu</div><div class="output-desc">Ito 20min heartbeat PATH FIXED ✅ · cron 890cd9f3 message updated with absolute paths intel/Telemetry/raw/ · false positive MISSING alerts resolved · 6/9 → 7/9 crons ok</div></div>
+                <span class="badge badge-ok">DONE</span>
+            </div>
+            <div class="output-item">
+                <span class="output-icon">💡</span>
+                <div style="flex:1"><div class="output-name">New Ideas — Beat 154 · ~20:41 JST Thu</div><div class="output-desc">Empire full scan · all pipelines working · no gaps under directive · Felix gap: no recovery path · Kaji cron CLEARED ✅</div></div>
+                <span class="badge badge-ok">DONE</span>
+            </div>
+            <div class="output-item">
                 <span class="output-icon">🔍</span>
-                <div style="flex:1"><div class="output-name">Empire Audit — Beat 153 · ~19:41 JST Thu</div><div class="output-desc">7/9 crons ok · Kaji isolated 1-consec (no data loss) · Titan 181 files ✅ · Gold oracle $4,837/oz ✅</div></div>
+                <div style="flex:1"><div class="output-name">Empire Audit — Beat 153 · ~19:41 JST Thu</div><div class="output-desc">7/9 crons ok · Kaji isolated 1-consec (parent fixed) · Titan 181 files ✅ · Gold $4,837/oz ✅</div></div>
                 <span class="badge badge-ok">DONE</span>
             </div>
             <div class="output-item">
                 <span class="output-icon">📋</span>
                 <div style="flex:1"><div class="output-name">Delegation Prep — Beat 152 · ~18:41 JST Thu</div><div class="output-desc">Titan pre-flight ✅ (all 5 assets confirmed) · Launch Guard DOWN ✅ · Jax AQ refreshed</div></div>
-                <span class="badge badge-ok">DONE</span>
-            </div>
-            <div class="output-item">
-                <span class="output-icon">🧹</span>
-                <div style="flex:1"><div class="output-name">Tidy Operations — Beat 151 · ~17:43 JST Thu</div><div class="output-desc">Makoto MEMORY.md compacted 25KB→6.9KB (72%) · beats archived</div></div>
                 <span class="badge badge-ok">DONE</span>
             </div>
         </div>
@@ -276,10 +289,10 @@
         <div class="card">
             <h3><span class="material-symbols-outlined">assignment</span> Jax Decision Queue</h3>
             <div style="display:grid;gap:8px;">
-                <div style="padding:8px 12px;background:rgba(248,113,113,0.08);border:1px solid rgba(248,113,113,0.3);border-radius:8px;font-size:12.5px;"><strong style="color:#f87171;">🚨 Saito #13049491</strong> — ~4h · Submit at crowdworks.co.jp NOW · 18 applicants</div>
+                <div style="padding:8px 12px;background:rgba(248,113,113,0.08);border:1px solid rgba(248,113,113,0.3);border-radius:8px;font-size:12.5px;"><strong style="color:#f87171;">🚨 Saito #13049491</strong> — ~3h · Submit at crowdworks.co.jp NOW · 18 applicants</div>
                 <div style="padding:8px 12px;background:rgba(167,139,250,0.06);border:1px solid rgba(167,139,250,0.2);border-radius:8px;font-size:12.5px;"><strong style="color:#a78bfa;">🏋️ Titan PT Launch</strong> — "go" → Titan executes · All 5 assets confirmed ✅ · Launch Guard DOWN ✅</div>
                 <div style="padding:8px 12px;background:rgba(34,211,238,0.06);border:1px solid rgba(34,211,238,0.2);border-radius:8px;font-size:12.5px;"><strong style="color:#22d3ee;">📋 EMB v3</strong> — "Go Telegram" → Kaji sends immediately · 90h+ stale</div>
-                <div style="padding:8px 12px;background:rgba(251,191,36,0.08);border:1px solid rgba(251,191,36,0.2);border-radius:8px;font-size:12.5px;"><strong style="color:#fbbf24;">🎌 Felix Gmail</strong> — "Re-auth Gmail" or "Park Felix"</div>
+                <div style="padding:8px 12px;background:rgba(251,191,36,0.08);border:1px solid rgba(251,191,36,0.2);border-radius:8px;font-size:12.5px;"><strong style="color:#fbbf24;">🎌 Felix Gmail</strong> — "Re-auth Gmail" or "Park Felix" · N3 frozen · workspace missing</div>
             </div>
         </div>
 
@@ -302,22 +315,22 @@
 
     <!-- CRON HEALTH -->
     <div class="card full" style="margin-bottom:20px;">
-        <h3><span class="material-symbols-outlined">schedule</span> Empire Cron Status — Beat 153 · ~19:41 JST Thu Apr 16</h3>
+        <h3><span class="material-symbols-outlined">schedule</span> Empire Cron Status — Beat 154 · ~20:41 JST Thu Apr 16</h3>
         <table class="cron-table">
             <thead><tr><th>Agent</th><th>Job</th><th>Schedule</th><th>Status</th></tr></thead>
             <tbody>
-                <tr><td><span class="cron-name">Kaji</span></td><td class="cron-sched">60min Initiative Beat (560775b2)</td><td class="cron-sched">every 60m</td><td><span class="badge badge-warn">⚠️ 1-consec · isolated session edit fail · parent write fixed · no data loss</span></td></tr>
-                <tr><td><span class="cron-name">Ito</span></td><td class="cron-sched">20min Heartbeat (890cd9f3)</td><td class="cron-sched">every 20m</td><td><span class="badge badge-ok">✅ ok · 0-consec</span></td></tr>
-                <tr><td><span class="cron-name">Titan</span></td><td class="cron-sched">21min Heartbeat (fbfe7021)</td><td class="cron-sched">every 21m</td><td><span class="badge badge-ok">✅ ok · 0-consec · 181 files (↑172)</span></td></tr>
-                <tr><td><span class="cron-name">Makoto</span></td><td class="cron-sched">21min Heartbeat (93182072)</td><td class="cron-sched">every 21m</td><td><span class="badge badge-ok">✅ ok · 0-consec</span></td></tr>
+                <tr><td><span class="cron-name">Kaji</span></td><td class="cron-sched">60min Initiative Beat (560775b2)</td><td class="cron-sched">every 60m</td><td><span class="badge badge-ok">✅ ok · 0-consec CLEARED ✅ · parent fix worked</span></td></tr>
+                <tr><td><span class="cron-name">Ito</span></td><td class="cron-sched">20min Heartbeat (890cd9f3)</td><td class="cron-sched">every 20m</td><td><span class="badge badge-warn">⚠️ 1-consec · edit fail Ito MEMORY.md · isolated context</span></td></tr>
+                <tr><td><span class="cron-name">Titan</span></td><td class="cron-sched">21min Heartbeat (fbfe7021)</td><td class="cron-sched">every 21m</td><td><span class="badge badge-ok">✅ ok · 0-consec · 181 files</span></td></tr>
+                <tr><td><span class="cron-name">Makoto</span></td><td class="cron-sched">21min Heartbeat (93182072)</td><td class="cron-sched">every 21m</td><td><span class="badge badge-ok">✅ ok · 0-consec · arbitrage_intel.md fresh 18:56 JST</span></td></tr>
                 <tr><td><span class="cron-name">Saito</span></td><td class="cron-sched">20min Heartbeat (9fa9167a)</td><td class="cron-sched">every 20m</td><td><span class="badge badge-warn">⚠️ 1-consec · timeout · learn-only · mode:none (expected)</span></td></tr>
-                <tr><td><span class="cron-name">Ito</span></td><td class="cron-sched">Twitter/X Intel (55143010)</td><td class="cron-sched">every 30m</td><td><span class="badge badge-warn">⚠️ 0 posts · xAI 429 exhausted ~100hr+ · confirmed at 18:36 JST</span></td></tr>
+                <tr><td><span class="cron-name">Ito</span></td><td class="cron-sched">Twitter/X Intel (55143010)</td><td class="cron-sched">every 30m</td><td><span class="badge badge-warn">⚠️ 0 posts · xAI 429 exhausted ~100hr+ · 0 posts at 19:36 JST</span></td></tr>
                 <tr><td><span class="cron-name">Ito</span></td><td class="cron-sched">Gold Oracle (fe1056a4)</td><td class="cron-sched">every 2h</td><td><span class="badge badge-ok">✅ ok · $4,837/oz at 18:33 JST</span></td></tr>
-                <tr><td><span class="cron-name">Ito</span></td><td class="cron-sched">NZ Property Market (2a977a50)</td><td class="cron-sched">every 12h</td><td><span class="badge badge-ok">✅ ok</span></td></tr>
+                <tr><td><span class="cron-name">Ito</span></td><td class="cron-sched">NZ Property Market (2a977a50)</td><td class="cron-sched">every 12h</td><td><span class="badge badge-ok">✅ ok · last run 15:56 JST</span></td></tr>
                 <tr><td><span class="cron-name">Ito</span></td><td class="cron-sched">Ahipara Tracker (811d89d0)</td><td class="cron-sched">daily 08:00</td><td><span class="badge badge-warn">⚠️ 1-consec · next Fri Apr 17 08:00 JST</span></td></tr>
             </tbody>
         </table>
-        <p style="color:var(--dim);font-size:11.5px;margin-top:12px;"><strong style="color:#fbbf24;">7/9 ✅</strong> · Kaji ⚠️ isolated 1-consec · Saito ⚠️ expected timeout · Ito Twitter ⚠️ xAI exhaust · Ahipara ⚠️ 1-consec</p>
+        <p style="color:var(--dim);font-size:11.5px;margin-top:12px;"><strong style="color:#fbbf24;">6/9 ✅</strong> · Ito heartbeat ⚠️ edit fail · Saito ⚠️ expected timeout · Ito Twitter ⚠️ xAI exhaust · Ahipara ⚠️ 1-consec</p>
     </div>
 
     <!-- AGENT DIRECTORY -->
@@ -325,13 +338,13 @@
         <h3><span class="material-symbols-outlined">groups</span> Empire Agent Directory</h3>
         <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;">
             <div>
-                <div class="agent-row"><div><span class="agent-name">🧭 Kaji (me)</span><div class="agent-role">COO / Orchestrator</div></div><span class="badge badge-warn">⚠️ Beat 153 · Isolated session 1-consec · Next: New Ideas</span></div>
-                <div class="agent-row"><div><span class="agent-name">🦅 Ito</span><div class="agent-role">Intel & Pipeline</div></div><span class="badge badge-ok">✅ Gold $4,837/oz ✅ · Twitter ⚠️ xAI exhaust</span></div>
-                <div class="agent-row"><div><span class="agent-name">⚙️ Saito</span><div class="agent-role">Digital Strategy</div></div><span class="badge badge-err">⚠️ learn-only · #13049491 ~4h deadline</span></div>
+                <div class="agent-row"><div><span class="agent-name">🧭 Kaji (me)</span><div class="agent-role">COO / Orchestrator</div></div><span class="badge badge-ok">✅ Beat 154 · New Ideas ✅ · Kaji cron CLEARED ✅ · Next: Improve Existing</span></div>
+                <div class="agent-row"><div><span class="agent-name">🦅 Ito</span><div class="agent-role">Intel & Pipeline</div></div><span class="badge badge-warn">⚠️ heartbeat 1-consec · Gold ✅ · Twitter ⚠️ xAI exhaust</span></div>
+                <div class="agent-row"><div><span class="agent-name">⚙️ Saito</span><div class="agent-role">Digital Strategy</div></div><span class="badge badge-err">⚠️ learn-only · #13049491 ~3h deadline</span></div>
             </div>
             <div>
-                <div class="agent-row"><div><span class="agent-name">⚡ Makoto</span><div class="agent-role">Arbitrage Scout</div></div><span class="badge badge-ok">✅ ok · MEMORY.md compacted</span></div>
-                <div class="agent-row"><div><span class="agent-name">🎌 Felix</span><div class="agent-role">N3 Vault & X</div></div><span class="badge badge-warn">⚠️ PARKED · Gmail 100h+ · N3 ~1909/2489</span></div>
+                <div class="agent-row"><div><span class="agent-name">⚡ Makoto</span><div class="agent-role">Arbitrage Scout</div></div><span class="badge badge-ok">✅ ok · arbitrage_intel.md fresh 18:56 JST</span></div>
+                <div class="agent-row"><div><span class="agent-name">🎌 Felix</span><div class="agent-role">N3 Vault & X</div></div><span class="badge badge-err">🚨 PARKED · workspace missing · Gmail expired · N3 frozen</span></div>
                 <div class="agent-row"><div><span class="agent-name">🏋️ Titan</span><div class="agent-role">Athlete Forge</div></div><span class="badge badge-ok">✅ 181 files · Launch Guard DOWN ✅ · awaiting Jax "go"</span></div>
                 <div class="agent-row"><div><span class="agent-name">🤖 Odie</span><div class="agent-role">TradePass Development</div></div><span class="badge badge-ok">✅ ok</span></div>
             </div>
