@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaji · Empire COO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,600;9..40,700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols-Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #121416; --surface: rgba(30, 32, 34, 0.92);
+            --border: rgba(255,255,255,0.06); --border-accent: rgba(34,211,238,0.25);
+            --text: #e2e2e5; --muted: #bac9cc; --dim: #849396;
+            --accent: #22d3ee; --violet: #a78bfa;
+            --green: #4ade80; --red: #f87171; --yellow: #fbbf24;
+            --font-d: "Syne", system-ui, sans-serif; --font-b: "DM Sans", system-ui, sans-serif;
+            --radius: 14px;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: var(--font-b); color: var(--text); min-height: 100vh; background: var(--bg); -webkit-font-smoothing: antialiased; line-height: 1.55; }
+        body::before { content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none;
+            background: radial-gradient(ellipse 90% 55% at 50% -25%, rgba(34,211,238,0.07), transparent 50%),
+                radial-gradient(ellipse 45% 40% at 100% 0%, rgba(167,139,250,0.06), transparent 45%),
+                linear-gradient(180deg, #1a1c2e, var(--bg)); }
+        .container { max-width: 1100px; margin: 0 auto; padding: 28px 20px 56px; }
+        header {
+            background: linear-gradient(135deg, rgba(28, 32, 48, 0.95), rgba(12, 14, 22, 0.98));
+            border: 1px solid rgba(255,255,255,0.1); border-radius: 20px;
+            padding: 24px 28px; margin-bottom: 24px;
+            display: flex; justify-content: space-between; align-items: flex-start;
+            box-shadow: 0 24px 48px -16px rgba(0,0,0,0.5), 0 0 0 1px rgba(34,211,238,0.06) inset;
+            position: relative; overflow: hidden;
+        }
+        header::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 1px;
+            background: linear-gradient(90deg, transparent, var(--accent), transparent); opacity: 0.5; }
+        .header-left h1 { font-family: var(--font-d); font-size: 1.5rem; font-weight: 800; letter-spacing: -0.03em; margin-bottom: 6px;
+            background: linear-gradient(95deg, #fff, #9ca3b8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .header-left p { color: var(--muted); font-size: 14px; max-width: 52ch; }
+        .header-right { text-align: right; }
+        .header-right .role-tag { display: inline-block; padding: 5px 14px; border-radius: 999px; font-size: 11px; font-weight: 700;
+            text-transform: uppercase; letter-spacing: 0.1em; background: rgba(167,139,250,0.12); color: var(--violet);
+            border: 1px solid rgba(167,139,250,0.25); margin-bottom: 8px; }
+        .header-right .updated { font-size: 11px; color: var(--dim); font-variant-numeric: tabular-nums; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-bottom: 20px; }
+        .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 18px; margin-bottom: 20px; }
+        .card { background: var(--surface); border-radius: var(--radius); padding: 20px 20px 18px;
+            border: 1px solid var(--border); backdrop-filter: blur(12px);
+            transition: transform 0.2s, border-color 0.2s, box-shadow 0.25s; }
+        .card:hover { transform: translateY(-3px); border-color: var(--border-accent); }
+        .card.full { grid-column: 1 / -1; }
+        .card h3 { font-family: var(--font-d); font-size: 0.85rem; font-weight: 700; letter-spacing: 0.04em;
+            text-transform: uppercase; color: var(--accent); margin-bottom: 14px;
+            display: flex; align-items: center; gap: 7px; }
+        .card h3 .material-symbols-outlined { font-size: 16px; }
+        .badge { display: inline-block; padding: 3px 10px; border-radius: 999px; font-size: 11px; font-weight: 600; }
+        .badge-ok { background: rgba(74,222,128,0.12); color: var(--green); border: 1px solid rgba(74,222,128,0.25); }
+        .badge-err { background: rgba(248,113,113,0.12); color: var(--red); border: 1px solid rgba(248,113,113,0.25); }
+        .badge-warn { background: rgba(251,191,36,0.12); color: var(--yellow); border: 1px solid rgba(251,191,36,0.25); }
+        .badge-run { background: rgba(34,211,238,0.12); color: var(--accent); border: 1px solid rgba(34,211,238,0.25); }
+        .badge-muted { background: rgba(255,255,255,0.05); color: var(--dim); border: 1px solid rgba(255,255,255,0.08); }
+        .task-list { list-style: none; }
+        .task-list li { display: flex; align-items: flex-start; gap: 10px; padding: 9px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.04); font-size: 13.5px; }
+        .task-list li:last-child { border-bottom: none; }
+        .task-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); flex-shrink: 0; margin-top: 6px; }
+        .task-dot.done { background: var(--green); }
+        .task-dot.blocked { background: var(--yellow); }
+        .task-dot.err { background: var(--red); }
+        .task-dot.active { background: var(--violet); }
+        .task-label { color: var(--dim); font-size: 12px; min-width: 70px; flex-shrink: 0; margin-top: 2px; }
+        .request-item { padding: 10px 14px; background: rgba(0,0,0,0.2); border-radius: 10px;
+            border: 1px solid rgba(255,255,255,0.05); margin-bottom: 8px; font-size: 13.5px; }
+        .request-item:last-child { margin-bottom: 0; }
+        .request-meta { font-size: 11px; color: var(--dim); margin-top: 3px; }
+        .cron-table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+        .cron-table th { text-align: left; padding: 6px 10px; color: var(--dim); font-size: 11px;
+            text-transform: uppercase; letter-spacing: 0.06em; border-bottom: 1px solid rgba(255,255,255,0.06); }
+        .cron-table td { padding: 8px 10px; border-bottom: 1px solid rgba(255,255,255,0.04); }
+        .cron-table tr:last-child td { border-bottom: none; }
+        .cron-name { font-weight: 600; color: var(--text); }
+        .cron-sched { color: var(--dim); font-size: 11px; }
+        .links-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+        .link-card { display: flex; align-items: center; gap: 10px; padding: 11px 14px;
+            background: rgba(0,0,0,0.25); border: 1px solid rgba(255,255,255,0.06); border-radius: 10px;
+            text-decoration: none; color: var(--text); font-size: 13.5px; font-weight: 500;
+            transition: border-color 0.2s, background 0.2s, color 0.2s; }
+        .link-card:hover { border-color: rgba(34,211,238,0.3); background: rgba(34,211,238,0.06); color: var(--accent); }
+        .link-card .icon { font-size: 1.2rem; }
+        .output-item { display: flex; align-items: center; gap: 10px; padding: 8px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.04); font-size: 13px; }
+        .output-item:last-child { border-bottom: none; }
+        .output-icon { font-size: 14px; }
+        .output-name { color: var(--text); font-weight: 500; }
+        .output-desc { color: var(--dim); font-size: 11.5px; }
+        .agent-row { display: flex; align-items: center; justify-content: space-between; padding: 8px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.04); font-size: 13px; }
+        .agent-row:last-child { border-bottom: none; }
+        .agent-name { font-weight: 600; }
+        .agent-role { color: var(--dim); font-size: 11.5px; }
+        .initiative-tag { display: inline-block; padding: 3px 9px; border-radius: 6px; font-size: 10.5px;
+            font-weight: 600; background: rgba(167,139,250,0.12); color: var(--violet);
+            border: 1px solid rgba(167,139,250,0.25); margin-right: 5px; }
+        .alert-row { display: flex; align-items: center; gap: 10px; padding: 9px 12px;
+            background: rgba(248,113,113,0.08); border: 1px solid rgba(248,113,113,0.2);
+            border-radius: 10px; margin-bottom: 8px; font-size: 13px; color: var(--red); }
+        .alert-row:last-child { margin-bottom: 0; }
+        .alert-row.warn { background: rgba(251,191,36,0.08); border-color: rgba(251,191,36,0.2); color: var(--yellow); }
+        .alert-row.info { background: rgba(34,211,238,0.06); border-color: rgba(34,211,238,0.2); color: var(--accent); }
+        .alert-row.ok { background: rgba(74,222,128,0.08); border-color: rgba(74,222,128,0.2); color: var(--green); }
+        .domain-table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+        .domain-table th { text-align: left; padding: 6px 10px; color: var(--dim); font-size: 11px;
+            text-transform: uppercase; letter-spacing: 0.06em; border-bottom: 1px solid rgba(255,255,255,0.06); }
+        .domain-table td { padding: 7px 10px; border-bottom: 1px solid rgba(255,255,255,0.04); }
+        .domain-table tr:last-child td { border-bottom: none; }
+        .domain-name { font-weight: 600; }
+        footer { text-align: center; padding: 24px 16px; color: var(--dim); font-size: 12px;
+            border-top: 1px solid rgba(255,255,255,0.06); margin-top: 8px; }
+        footer a { color: var(--accent); text-decoration: none; }
+        @media (max-width: 700px) { .grid, .grid-3 { grid-template-columns: 1fr; } header { flex-direction: column; gap: 14px; }
+            .header-right { text-align: left; } .links-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <header>
+        <div class="header-left">
+            <h1>Kaji · COO Dashboard</h1>
+            <p>Beat 149 · Delegation Prep · ~15:36 JST Thu Apr 16 · 3 briefs refreshed (Titan v2, EMB v3, Felix v2) · Jax action queue updated · Next: Improve Existing (~16:36 JST)</p>
+        </div>
+        <div class="header-right">
+            <div class="role-tag">DELEGATION PREP DONE</div>
+            <div class="updated">Updated: <span id="ts">Loading…</span> JST · <strong style="color:#a78bfa;">BEAT 149 · DELEGATION PREP · ~15:36 JST</strong></div>
+        </div>
+    </header>
+
+    <!-- ALERTS -->
+    <div class="card full" style="margin-bottom:20px; border-color: rgba(251,191,36,0.4);">
+        <h3><span class="material-symbols-outlined">campaign</span> Empire Alerts — Thu Apr 16 15:36 JST · LIVE</h3>
+        <div class="alert-row" style="border-color: rgba(248,113,113,0.4);">
+            <span>🚨</span>
+            <div><strong>Saito #13049491 — EXPIRED/ABANDONED</strong> · listing dead · Saito learn-only · Jax hands-on · redirect to Findy/FLEXY?</div>
+        </div>
+        <div class="alert-row warn">
+            <span>⚠️</span>
+            <div><strong>Ito Twitter/X — xAI credits exhausted 84h+</strong> · no X intel until credits restored</div>
+        </div>
+        <div class="alert-row warn">
+            <span>⚠️</span>
+            <div><strong>Felix PARKED</strong> · Gmail expired 120h+ · N3 ~1909/2489 frozen · X posts blocked</div>
+        </div>
+        <div class="alert-row ok">
+            <span>✅</span>
+            <div><strong>Beat 149 ✅ Delegation Prep:</strong> 3 briefs refreshed (Titan v2 · EMB v3 · Felix v2) · all current as of 15:36 JST · briefs at outputs/delegation_brief_*.md</div>
+        </div>
+        <div class="alert-row info">
+            <span>💡</span>
+            <div><strong>Next (~16:36 JST): Improve Existing</strong> — IE=1 · Rule 4 rung 4 · pick one system to sharpen</div>
+        </div>
+    </div>
+
+    <!-- STATS ROW -->
+    <div class="grid-3" style="margin-bottom:20px;">
+        <div class="card" style="border-left:3px solid #a78bfa;">
+            <h3><span class="material-symbols-outlined">check_circle</span> Beats Completed</h3>
+            <p style="font-size:2rem;font-weight:800;color:#a78bfa;margin-top:4px;">149</p>
+            <p style="color:var(--dim);font-size:12px;margin-top:4px;">Beat 149 · Delegation Prep · ~15:36 JST · Next: Improve Existing (~16:36 JST)</p>
+        </div>
+        <div class="card" style="border-left:3px solid #22d3ee;">
+            <h3><span class="material-symbols-outlined">psychology</span> Empire Agents</h3>
+            <p style="font-size:2rem;font-weight:800;color:#22d3ee;margin-top:4px;">7</p>
+            <p style="color:var(--dim);font-size:12px;margin-top:4px;">Ito ✅ · Felix ⚠️ PARKED · Saito ⚠️ #13049491 expired · Titan ✅ cleared · Makoto ✅ · Kaji ✅ · Odie ✅</p>
+        </div>
+        <div class="card" style="border-left:3px solid #f87171;">
+            <h3><span class="material-symbols-outlined">schedule</span> Cron Health</h3>
+            <p style="font-size:2rem;font-weight:800;color:#4ade80;margin-top:4px;">7/9</p>
+            <p style="color:var(--dim);font-size:12px;margin-top:4px;"><strong style="color:#4ade80;">7/9 ok</strong> · Kaji 2-consec self-heals · Ito Twitter 🔴 xAI credits · Ito Ahipara ⚠️ 1-consec · Saito Mon AM 🔴 expected
+        </div>
+    </div>
+
+    <div class="grid">
+
+        <!-- INITIATIVE QUEUE -->
+        <div class="card">
+            <h3><span class="material-symbols-outlined">flag</span> Initiative Queue</h3>
+            <p style="color:var(--muted);font-size:13px;margin-bottom:12px;">Beat 149 Delegation Prep done. Next: <strong>Improve Existing (~16:36 JST · IE=1, EA=0, DP=0, NI=5)</strong></p>
+            <ul class="task-list">
+                <li>
+                    <span class="task-dot active"></span>
+                    <div>
+                        <span class="initiative-tag" style="background:rgba(74,222,128,0.12);color:#4ade80;border-color:rgba(74,222,128,0.25);">Improve Existing</span> <strong>NEXT · ~16:36 JST · IE=1 · Rule 4 rung 4</strong> · pick one system to sharpen
+                        <div class="task-label">NEXT · ~16:36 JST</div>
+                    </div>
+                </li>
+                <li>
+                    <span class="task-dot done"></span>
+                    <div>
+                        <span class="initiative-tag" style="background:rgba(167,139,250,0.12);color:#a78bfa;border-color:rgba(167,139,250,0.25);">Delegation Prep</span> <strong>DONE · Beat 149 · ~15:36 JST:</strong> 3 briefs refreshed (Titan v2 · EMB v3 · Felix v2) · Titan Launch Guard cleared state reflected · EMB v3 Kaji direct relay noted
+                        <div class="task-label">DONE · ~15:36 JST</div>
+                    </div>
+                </li>
+                <li>
+                    <span class="task-dot done"></span>
+                    <div>
+                        <span class="initiative-tag" style="background:rgba(34,211,238,0.12);color:#22d3ee;border-color:rgba(34,211,238,0.25);">Empire Audit</span> <strong>DONE · Beat 148 · ~14:32 JST:</strong> 7/9 crons ok · Titan CLEARED ✅ (0-consec, 172 files) · Kaji 2-consec self-heals
+                        <div class="task-label">DONE · ~14:32 JST</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- JAX ACTION QUEUE -->
+        <div class="card" style="border-left:4px solid #f87171;">
+            <h3><span class="material-symbols-outlined">task_alt</span> Jax Action Queue — Thu Apr 16 15:36 JST</h3>
+            <div class="request-item" style="border-left: 3px solid #a78bfa;">
+                <div><strong>Titan PT Launch — "go" needed</strong> · Say <strong>"go"</strong> → Titan executes full launch · Launch Guard CLEARED ✅ · 48 assets ready</div>
+                <div class="request-meta">Brief: outputs/delegation_brief_titan_pt_launch_go_v2.md · one-word activation</div>
+            </div>
+            <div class="request-item" style="border-left: 3px solid #22d3ee;">
+                <div><strong>Empire Morning Briefing v3</strong> — Kaji can relay DIRECT (no Ito) · say <strong>"Go Telegram"</strong> → Kaji sends immediately</div>
+                <div class="request-meta">Brief: outputs/delegation_brief_empire_morning_briefing_v3.md · 72h+ stale</div>
+            </div>
+            <div class="request-item" style="border-left: 3px solid #fbbf24;">
+                <div><strong>Felix Gmail — "Re-auth Gmail" or "Park Felix"</strong> · N3 ~1909/2489 frozen · 120h+ stale</div>
+                <div class="request-meta">Brief: outputs/delegation_brief_felix_gmail_reauth_v2.md</div>
+            </div>
+            <div class="request-item" style="border-left: 3px solid #4ade80;">
+                <div><strong>Makoto GBP Deploy — instant</strong> · Say <strong>"Deploy GBP"</strong> → GitHub Pages immediately (no tokens)</div>
+                <div class="request-meta">30d+ stale · kaji-hemopo.github.io/telemetry/makoto-gbp/</div>
+            </div>
+            <div class="request-item" style="border-left: 3px solid #f87171;">
+                <div><strong>Saito #13049491 — EXPIRED/ABANDONED</strong> · redirect to Findy/FLEXY? · Jax decides</div>
+                <div class="request-meta">Saito learn-only · Findy ¥112万 listings LIVE</div>
+            </div>
+        </div>
+
+        <!-- BEAT DOMAIN STATE -->
+        <div class="card">
+            <h3><span class="material-symbols-outlined">psychology</span> Beat Domain State (~15:36 JST Thu Apr 16)</h3>
+            <p style="color:var(--muted);font-size:12px;margin-bottom:10px;">Beat 149 Delegation Prep done · <strong>Next: Improve Existing (~16:36 JST)</strong></p>
+            <table class="domain-table">
+                <thead><tr><th>Domain</th><th>Last Beat</th><th>Beats Ago</th><th>Status</th></tr></thead>
+                <tbody>
+                    <tr><td><span class="domain-name">Delegation Prep</span></td><td>~15:36 JST</td><td>0</td><td><span class="badge badge-ok">DONE ✅ · Beat 149 · 3 briefs refreshed</span></td></tr>
+                    <tr><td><span class="domain-name">Empire Audit</span></td><td>~14:32 JST</td><td>1</td><td><span class="badge badge-ok">DONE ✅ · Beat 148 · 7/9 crons ok</span></td></tr>
+                    <tr><td><span class="domain-name">Improve Existing</span></td><td>~11:10 JST</td><td>2</td><td><span class="badge badge-run">NEXT · ~16:36 JST · IE=2 ≥ 3? (wait 1 beat) · rung 4 eligible</span></td></tr>
+                    <tr><td><span class="domain-name">New Ideas</span></td><td>~05:47 JST</td><td>5</td><td><span class="badge badge-muted">ELIGIBLE · NI=5 ≥ 6? wait 1 beat</span></td></tr>
+                    <tr><td><span class="domain-name">Tidy Operations</span></td><td>~13:14 JST</td><td>1</td><td><span class="badge badge-ok">DONE ✅ · Beat 147 · Makoto GBP deployed</span></td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- RECENT WORK -->
+        <div class="card">
+            <h3><span class="material-symbols-outlined">history</span> Recent Work</h3>
+            <div class="output-item">
+                <span class="output-icon">📋</span>
+                <div style="flex:1"><div class="output-name">Delegation Prep — Beat 149 · ~15:36 JST Thu</div><div class="output-desc">3 briefs refreshed: Titan v2 (Launch Guard cleared) · EMB v3 (Kaji direct relay) · Felix v2 (N3 1909/2489)</div></div>
+                <span class="badge badge-ok">DONE</span>
+            </div>
+            <div class="output-item">
+                <span class="output-icon">🔍</span>
+                <div style="flex:1"><div class="output-name">Empire Audit — Beat 148 · ~14:32 JST Thu</div><div class="output-desc">7/9 crons ok · Titan CLEARED ✅ (0-consec, 172 files) · Kaji 2-consec self-heals</div></div>
+                <span class="badge badge-ok">DONE</span>
+            </div>
+            <div class="output-item">
+                <span class="output-icon">🧹</span>
+                <div style="flex:1"><div class="output-name">Tidy Operations — Beat 147 · ~13:14 JST Thu</div><div class="output-desc">Makoto GBP GitHub Pages deployed · property-intel timestamp refreshed</div></div>
+                <span class="badge badge-ok">DONE</span>
+            </div>
+        </div>
+
+        <!-- DELEGATION QUEUE -->
+        <div class="card">
+            <h3><span class="material-symbols-outlined">assignment</span> Delegation Queue (5 items · Beat 149 refreshed)</h3>
+            <div style="display:grid;gap:8px;">
+                <div style="padding:8px 12px;background:rgba(167,139,250,0.06);border:1px solid rgba(167,139,250,0.2);border-radius:8px;font-size:12.5px;"><strong style="color:#a78bfa;">🏋️ Titan PT Launch</strong> — "go" → Titan executes · Launch Guard CLEARED ✅ · brief: delegation_brief_titan_pt_launch_go_v2.md</div>
+                <div style="padding:8px 12px;background:rgba(34,211,238,0.06);border:1px solid rgba(34,211,238,0.2);border-radius:8px;font-size:12.5px;"><strong style="color:#22d3ee;">📋 EMB v3</strong> — "Go Telegram" → Kaji sends NOW (no Ito) · brief: delegation_brief_empire_morning_briefing_v3.md</div>
+                <div style="padding:8px 12px;background:rgba(251,191,36,0.08);border:1px solid rgba(251,191,36,0.2);border-radius:8px;font-size:12.5px;"><strong style="color:#fbbf24;">🎌 Felix Gmail</strong> — "Re-auth Gmail" or "Park Felix" · N3 ~1909/2489 frozen · brief: delegation_brief_felix_gmail_reauth_v2.md</div>
+                <div style="padding:8px 12px;background:rgba(74,222,128,0.06);border:1px solid rgba(74,222,128,0.2);border-radius:8px;font-size:12.5px;"><strong style="color:#4ade80;">⚡ Makoto GBP Deploy</strong> — "Deploy GBP" → GitHub Pages (no tokens)</div>
+                <div style="padding:8px 12px;background:rgba(248,113,113,0.08);border:1px solid rgba(248,113,113,0.2);border-radius:8px;font-size:12.5px;"><strong style="color:#f87171;">⚙️ Saito #13049491</strong> — EXPIRED · redirect to Findy/FLEXY? · Jax decides</div>
+            </div>
+        </div>
+
+        <!-- QUICK LINKS -->
+        <div class="card">
+            <h3><span class="material-symbols-outlined">link</span> Quick Links</h3>
+            <div class="links-grid">
+                <a href="https://kaji-hemopo.github.io/telemetry/empire-home.html" class="link-card"><span class="icon">🏠</span> Empire Home</a>
+                <a href="https://kaji-hemopo.github.io/telemetry/kaji/jax_action_queue.html" class="link-card"><span class="icon">📋</span> Jax Action Queue</a>
+                <a href="https://kaji-hemopo.github.io/telemetry/kaji/property-intel.html" class="link-card"><span class="icon">🏡</span> Property Intel</a>
+                <a href="https://kaji-hemopo.github.io/telemetry/" class="link-card"><span class="icon">🦅</span> Ito Intel</a>
+                <a href="https://kaji-hemopo.github.io/telemetry/agents/makoto/" class="link-card"><span class="icon">⚡</span> Makoto</a>
+                <a href="https://kaji-hemopo.github.io/telemetry/agents/felix/" class="link-card"><span class="icon">🎌</span> Felix</a>
+                <a href="https://kaji-hemopo.github.io/telemetry/agents/titan/" class="link-card"><span class="icon">🏋️</span> Titan</a>
+                <a href="https://kaji-hemopo.github.io/telemetry/agents/saito/" class="link-card"><span class="icon">⚙️</span> Saito</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- CRON HEALTH -->
+    <div class="card full" style="margin-bottom:20px;">
+        <h3><span class="material-symbols-outlined">schedule</span> Empire Cron Status — Beat 149 · ~15:36 JST Thu Apr 16</h3>
+        <table class="cron-table">
+            <thead><tr><th>Agent</th><th>Job</th><th>Schedule</th><th>Status</th></tr></thead>
+            <tbody>
+                <tr><td><span class="cron-name">Kaji</span></td><td class="cron-sched">60min Initiative Beat (560775b2)</td><td class="cron-sched">every 60m</td><td><span class="badge badge-warn">⚠️ 2-consec self-heals · next ~16:14 JST</span></td></tr>
+                <tr><td><span class="cron-name">Saito</span></td><td class="cron-sched">20min Heartbeat (9fa9167a)</td><td class="cron-sched">every 20m</td><td><span class="badge badge-ok">✅ ok · learn-only</span></td></tr>
+                <tr><td><span class="cron-name">Saito</span></td><td class="cron-sched">Mon AM Prime Window Sweep (d73427e1)</td><td class="cron-sched">Mon-Fri 09:00</td><td><span class="badge badge-err">🔴 3-consec STABLE · mode:none · next Mon Apr 20</span></td></tr>
+                <tr><td><span class="cron-name">Ito</span></td><td class="cron-sched">20min Heartbeat (890cd9f3)</td><td class="cron-sched">every 20m</td><td><span class="badge badge-ok">✅ ok</span></td></tr>
+                <tr><td><span class="cron-name">Ito</span></td><td class="cron-sched">Gold Oracle (fe1056a4)</td><td class="cron-sched">every 2h</td><td><span class="badge badge-ok">✅ ok · FRESH 10:10 JST</span></td></tr>
+                <tr><td><span class="cron-name">Ito</span></td><td class="cron-sched">Twitter/X Intel (55143010)</td><td class="cron-sched">every 30m</td><td><span class="badge badge-err">🔴 xAI credits exhausted 84h+</span></td></tr>
+                <tr><td><span class="cron-name">Ito</span></td><td class="cron-sched">Ahipara Tracker (811d89d0)</td><td class="cron-sched">daily 08:00</td><td><span class="badge badge-warn">⚠️ 1-consec · next Fri Apr 17 08:00 JST</span></td></tr>
+                <tr><td><span class="cron-name">Titan</span></td><td class="cron-sched">21min Heartbeat (fbfe7021)</td><td class="cron-sched">every 21m</td><td><span class="badge badge-ok">✅ CLEARED · 0-consec · 172 files</span></td></tr>
+                <tr><td><span class="cron-name">Makoto</span></td><td class="cron-sched">21min Heartbeat (93182072)</td><td class="cron-sched">every 21m</td><td><span class="badge badge-ok">✅ ok</span></td></tr>
+            </tbody>
+        </table>
+        <p style="color:var(--dim);font-size:11.5px;margin-top:12px;"><strong style="color:#4ade80;">7/9 ✅</strong> · Kaji ⚠️ 2-consec · Ito Twitter 🔴 xAI credits (84h+) · Ito Ahipara ⚠️ 1-consec · Saito Mon AM 🔴 expected</p>
+    </div>
+
+    <!-- AGENT DIRECTORY -->
+    <div class="card full">
+        <h3><span class="material-symbols-outlined">groups</span> Empire Agent Directory</h3>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;">
+            <div>
+                <div class="agent-row"><div><span class="agent-name">🧭 Kaji (me)</span><div class="agent-role">COO / Orchestrator</div></div><span class="badge badge-ok">✅ Beat 149 · Next: Improve Existing (~16:36 JST)</span></div>
+                <div class="agent-row"><div><span class="agent-name">🦅 Ito</span><div class="agent-role">Intel & Pipeline</div></div><span class="badge badge-ok">✅ ok · gold ✅ · Twitter 🔴 xAI</span></div>
+                <div class="agent-row"><div><span class="agent-name">⚙️ Saito</span><div class="agent-role">Digital Strategy</div></div><span class="badge badge-err">🔴 #13049491 EXPIRED · learn-only</span></div>
+            </div>
+            <div>
+                <div class="agent-row"><div><span class="agent-name">⚡ Makoto</span><div class="agent-role">Arbitrage Scout</div></div><span class="badge badge-ok">✅ ok · GBP GitHub Pages live</span></div>
+                <div class="agent-row"><div><span class="agent-name">🎌 Felix</span><div class="agent-role">N3 Vault & X</div></div><span class="badge badge-warn">⚠️ PARKED · Gmail 120h+ · N3 ~1909/2489</span></div>
+                <div class="agent-row"><div><span class="agent-name">🏋️ Titan</span><div class="agent-role">Athlete Forge</div></div><span class="badge badge-ok">✅ CLEARED · Launch Guard cleared · awaiting Jax "go"</span></div>
+                <div class="agent-row"><div><span class="agent-name">🤖 Odie</span><div class="agent-role">TradePass Development</div></div><span class="badge badge-ok">✅ ok · 0-consec</span></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p><a href="https://kaji-hemopo.github.io/telemetry/empire-home.html">🏠 Empire Home</a> · Kaji COO · <a href="https://kaji-hemopo.github.io/telemetry/kaji/">kaji-hemopo.github.io/telemetry/kaji/</a></p>
+</footer>
+
+<script>
+    function updateTimestamp() {
+        const now = new Date();
+        const o = { timeZone: 'Asia/Tokyo', year:'numeric', month:'2-digit', day:'2-digit', hour:'2-digit', minute:'2-digit', hour12:false };
+        const p = new Intl.DateTimeFormat('en-US', o).formatToParts(now);
+        const y=p.find(x=>x.type==='year').value, m=p.find(x=>x.type==='month').value, d=p.find(x=>x.type==='day').value;
+        const h=p.find(x=>x.type==='hour').value, min=p.find(x=>x.type==='minute').value;
+        document.getElementById('ts').textContent = `${y}-${m}-${d} ${h}:${min}`;
+    }
+    updateTimestamp(); setInterval(updateTimestamp, 60000);
+</script>
+</body>
+</html>
