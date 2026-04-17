@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-17 20:27 JST
+Generated: 2026-04-17 21:51 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -52,11 +52,15 @@ Generated: 2026-04-17 20:27 JST
 
 | Score | Platform | Keyword | Title | Budget/Rate | URL |
 |---:|---|---|---|---|---|
+| 85 | Freelancer | Python scraper | Fast-Track Deployment: Uber-like App Customization | $750.00 | https://www.freelancer.com/projects/flutter/Fast-Track-Deployment-Uber-like.html |
+| 85 | Freelancer | Python scraper | Build Custom CRM + Ping/Post Lead Distribution System ( Please sh | $750.00 | https://www.freelancer.com/projects/api-developmet/Build-Custom-CRM-Ping-Post.html |
 | 85 | Freelancer | Python scraper | Stock Trading Bot Development | $1,500.00 | https://www.freelancer.com/projects/api-developmet/Stock-Trading-Bot-Development.html |
+| 75 | Freelancer | Python scraper | Senior Python Engineer for Web Automation | $50.00 | https://www.freelancer.com/projects/selenium/Senior-Python-Engineer-for-Web.html |
 | 75 | Freelancer | Python scraper | Bimbingan Flask Database Python | $250.00 | https://www.freelancer.com/projects/flask/Bimbingan-Flask-Database-Python.html |
 | 75 | Freelancer | Python scraper | Script para precios en Scryfall | $250.00 | https://www.freelancer.com/projects/api-integration/Script-para-precios-Scryfall.html |
-| 75 | Freelancer | Python scraper | AI Financial Compliance &amp; Risk Control System (Python / FastA | $250.00 | https://www.freelancer.com/projects/postgresql/Financial-Compliance-Risk-Control-System.html |
-| 65 | Freelancer | Python scraper | Project Title: Python Telegram Bot Expert - Security &amp; Logic  | $10.00 | https://www.freelancer.com/projects/python/Project-Title-Python-Telegram-Bot.html |
+| 75 | Freelancer | Data processing API | CodeIgniter 4 Developer for E-Commerce Rebuild (CI3 &rarr; CI4 Cl | $250.00 | https://www.freelancer.com/projects/tailwind-css/CodeIgniter-Developer-for-Commerce.html |
+| 75 | Freelancer | Data processing API | Foreclosure Prevention triage System Creation | $250.00 | https://www.freelancer.com/projects/api/Foreclosure-Prevention-triage-System.html |
+| 75 | Freelancer | Data processing API | ASP.NET Core Auth Webapp | $250.00 | https://www.freelancer.com/projects/dot-net-core/ASP-NET-Core-Auth-Webapp.html |
 | 65 | Freelancer | Python scraper | AI Trading Bot &amp; Guide | I need an end-to-end AI trading system that can operate across stocks, cryptocur | https://www.freelancer.com/projects/natural-language-processing/Trading-Bot-Guide.html |
 | 65 | Freelancer | Python scraper | Text Data CSV Encoding -- 2 | $15.00 | https://www.freelancer.com/projects/data-management/Text-Data-CSV-Encoding.html |
 | 65 | Freelancer | Python scraper | Python Script Maintenance Support | $30.00 | https://www.freelancer.com/projects/flask/Python-Script-Maintenance-Support.html |
@@ -66,12 +70,8 @@ Generated: 2026-04-17 20:27 JST
 | 65 | Freelancer | Python scraper | Automated PCR-Based Nifty Trading Strategy Development (v Apr&#03 | PCR based strategy on Nifty, India - Fetching PCR and then execution 1- I need h | https://www.freelancer.com/projects/api/Automated-PCR-Based-Nifty-Trading.html |
 | 65 | Freelancer | Python scraper | Build AI Multi-Agent Orchestration Platform | Role Purpose Build, enhance, and scale production-grade web applications and pla | https://www.freelancer.com/projects/nextjs/Build-Multi-Agent-Orchestration-Platform.html |
 | 65 | Freelancer | Python scraper | Palantir Foundry Developer (Python/SQL, PySpark, AIP, Ontology,Wo | We are looking for an experienced Palantir Foundry Developer to support data and | https://www.freelancer.com/projects/sql/Palantir-Foundry-Developer-Python-SQL.html |
-| 65 | Freelancer | Python scraper | Apify Specialist for Targeted Data Extraction | $30.00 | https://www.freelancer.com/projects/data-extraction/Apify-Specialist-for-Targeted-Data.html |
+| 65 | Freelancer | Make.com automation | Website &amp; Referral Flow Upgrade | $15.00 | https://www.freelancer.com/projects/web-design/Website-Referral-Flow-Upgrade.html |
 | 65 | Freelancer | Make.com automation | AI and n8n Automation | $2.00 | https://www.freelancer.com/projects/n8n/Automation-40378759.html |
-| 65 | Freelancer | Make.com automation | Bug Bounty Security Analyst Needed | Join our mission to make the digital world safer! As a Bug Bounty–Focused Securi | https://www.freelancer.com/projects/automation/Bug-Bounty-Security-Analyst-Needed.html |
-| 65 | Freelancer | Make.com automation | Machine Panel Schematics Package | I’m putting together a new set of industrial control panels /Automation panels w | https://www.freelancer.com/projects/electrical-engineering/Machine-Panel-Schematics-Package.html |
-| 65 | Freelancer | Make.com automation | Female Ai Animation Automation Specialist -- 3 | $30.00 | https://www.freelancer.com/projects/logo-design/Female-Animation-Automation-Specialist-40378256.html |
-| 65 | Freelancer | Make.com automation | Female Ai Animation Automation Specialist -- 2 | $30.00 | https://www.freelancer.com/projects/logo-design/Female-Animation-Automation-Specialist.html |
 
 ## Notes
 - Scores prioritize: (1) simple automation/scripting fit, (2) payout magnitude, (3) keyword relevance.
