@@ -74,11 +74,11 @@
     <header>
         <div class="header-left">
             <h1>Kaji · COO Dashboard</h1>
-            <p>Beat 169 · Delegation Prep · ~17:43 JST Fri Apr 17 · Ito Gold/NZ/Ahipara crons dead · Brief written · Next: Tidy Operations ~18:43 JST</p>
+            <p>Beat 170 · Tidy Operations · ~17:56 JST Fri Apr 17 · 4 duplicate crons removed · Cron health 5/9 · Ito pipeline dead (brief ready)</p>
         </div>
         <div class="header-right">
-            <div class="role-tag">⚠️ Beat 169 · DELEGATION PREP · ~17:43 JST</div>
-            <div class="updated">Updated: <span id="ts">Loading…</span> JST · <strong style="color:#fbbf24;">BEAT 169 · DELEGATION PREP · ~17:43 JST</strong></div>
+            <div class="role-tag">Beat 170 · TIDY OPERATIONS · ~17:56 JST</div>
+            <div class="updated">Updated: <span id="ts">Loading…</span> JST · <strong style="color:#22d3ee;">BEAT 170 · TIDY OPERATIONS · ~17:56 JST</strong></div>
         </div>
     </header>
 
@@ -93,9 +93,9 @@
             <span>🏋️</span>
             <div><strong>Titan Friday Launch Guard fires ~07:00 JST TOMORROW (Sat Apr 18)</strong> · Jax Telegram nudge incoming: "GO or SLEEP?" · 48 assets ready ✅</div>
         </div>
-        <div class="alert-row ok">
+        <div class="alert-row" style="background:rgba(34,211,238,0.08);border-color:rgba(34,211,238,0.25);color:#22d3ee;">
             <span>✅</span>
-            <div><strong>Beat 169 ✅ Delegation Prep:</strong> Ito pipeline diagnosis brief written · Titan/Makoto/Saito heartbeats recreated healthy · Cron health: <strong style="color:#fbbf24;">5/9 ok</strong></div>
+            <div><strong>Beat 170 ✅ Tidy Ops:</strong> 4 dead duplicate crons removed (fbfe7021 Titan×2, 9fa9167a Saito×2, 890cd9f3 Ito×2, 93182072 Makoto×2) · Cron health 5/9 ok · Ito Gold/NZ/Ahipara still ERROR · brief: outputs/delegation_brief_ito_pipeline_diagnosis.md</div>
         </div>
     </div>
 
@@ -177,11 +177,11 @@
             <table class="cron-table">
                 <thead><tr><th>Domain</th><th>Last Beat</th><th>Beats Ago</th><th>Status</th></tr></thead>
                 <tbody>
-                    <tr><td><span class="cron-name">Delegation Prep</span></td><td>Beat 169 ~17:43 JST</td><td>0</td><td><span class="badge badge-err">JUST RAN · Rule 1 blocks next</span></tr>
-                    <tr><td><span class="cron-name">Tidy Operations</span></td><td>Beat 165 ~03:53 JST</td><td>4</td><td><span class="badge badge-warn">NEXT · ~18:43 JST · TO=4≥2</span></tr>
-                    <tr><td><span class="cron-name">Empire Audit</span></td><td>Beat 167 ~17:13 JST</td><td>2</td><td><span class="badge badge-ok">eligible · EA=2 not ≥4</span></tr>
-                    <tr><td><span class="cron-name">New Ideas</span></td><td>Beat 166 ~05:06 JST</td><td>3</td><td><span class="badge badge-ok">eligible · NI=3</span></tr>
-                    <tr><td><span class="cron-name">Improve Existing</span></td><td>Beat 168 ~17:18 JST</td><td>1</td><td><span class="badge badge-err">blocked · IE=0 last beat</span></tr>
+                    <tr><td><span class="cron-name">Tidy Operations</span></td><td>Beat 170 ~17:56 JST</td><td>0</td><td><span class="badge badge-err">JUST RAN · Rule 1 blocks next</span></tr>
+                    <tr><td><span class="cron-name">New Ideas</span></td><td>Beat 166 ~05:06 JST</td><td>4</td><td><span class="badge badge-ok">eligible · NI=4 not ≥6</span></tr>
+                    <tr><td><span class="cron-name">Empire Audit</span></td><td>Beat 167 ~17:13 JST</td><td>3</td><td><span class="badge badge-ok">eligible · EA=3 not ≥4</span></tr>
+                    <tr><td><span class="cron-name">Improve Existing</span></td><td>Beat 168 ~17:18 JST</td><td>2</td><td><span class="badge badge-ok">eligible · IE=2 not ≥3</span></tr>
+                    <tr><td><span class="cron-name">Delegation Prep</span></td><td>Beat 169 ~17:43 JST</td><td>1</td><td><span class="badge badge-ok">eligible · DP=1</span></tr>
                 </tbody>
             </table>
         </div>
@@ -205,19 +205,20 @@
 
     <!-- CRON HEALTH -->
     <div class="card full" style="margin-bottom:20px;">
-        <h3><span class="material-symbols-outlined">schedule</span> Empire Cron Status — Beat 167 · ~17:13 JST Fri Apr 17 · MAJOR OUTAGE</h3>
+        <h3><span class="material-symbols-outlined">schedule</span> Empire Cron Status — Beat 170 · ~17:56 JST Fri Apr 17 · CLEANED</h3>
+        <p style="color:#4ade80;font-size:12px;margin-bottom:10px;">✅ 4 duplicate dead crons removed: fbfe7021 (Titan×2), 9fa9167a (Saito×2), 890cd9f3 (Ito×2), 93182072 (Makoto×2)</p>
         <table class="cron-table">
             <thead><tr><th>Agent</th><th>Job</th><th>Schedule</th><th>Status</th></tr></thead>
             <tbody>
-                <tr><td><span class="cron-name">Kaji</span></td><td class="cron-sched">60min Initiative Beat (560775b2)</td><td class="cron-sched">every 60m</td><td><span class="badge badge-ok">✅ ok · 0-consec · lightContext=true</span></td></tr>
-                <tr><td><span class="cron-name">Titan</span></td><td class="cron-sched">21min Heartbeat (f0c21c04)</td><td class="cron-sched">every 21m</td><td><span class="badge badge-ok">✅ ok · was 16-consec dead, recreated Beat 168</span></td></tr>
-                <tr><td><span class="cron-name">Ito</span></td><td class="cron-sched">20min Heartbeat (b59d1431)</td><td class="cron-sched">every 20m</td><td><span class="badge badge-ok">✅ RUNNING · healthy · was 890cd9f3</span></td></tr>
-                <tr><td><span class="cron-name">Makoto</span></td><td class="cron-sched">21min Heartbeat (07dbce5f)</td><td class="cron-sched">every 21m</td><td><span class="badge badge-ok">✅ ok · was 93182072</span></td></tr>
-                <tr><td><span class="cron-name">Saito</span></td><td class="cron-sched">20min Heartbeat (0b887027)</td><td class="cron-sched">every 20m</td><td><span class="badge badge-ok">✅ ok · learn-only · was 9fa9167a</span></td></tr>
+                <tr><td><span class="cron-name">Kaji</span></td><td class="cron-sched">60min Initiative Beat (560775b2)</td><td class="cron-sched">every 60m</td><td><span class="badge badge-ok">✅ ok · lightContext=true</span></td></tr>
+                <tr><td><span class="cron-name">Titan</span></td><td class="cron-sched">21min Heartbeat (f0c21c04)</td><td class="cron-sched">every 21m</td><td><span class="badge badge-ok">✅ ok · was fbfe7021 (dead duplicate)</span></td></tr>
+                <tr><td><span class="cron-name">Ito</span></td><td class="cron-sched">20min Heartbeat (b59d1431)</td><td class="cron-sched">every 20m</td><td><span class="badge badge-ok">✅ ok · was 890cd9f3 (dead duplicate)</span></td></tr>
+                <tr><td><span class="cron-name">Makoto</span></td><td class="cron-sched">21min Heartbeat (07dbce5f)</td><td class="cron-sched">every 21m</td><td><span class="badge badge-ok">✅ ok · was 93182072 (dead duplicate)</span></td></tr>
+                <tr><td><span class="cron-name">Saito</span></td><td class="cron-sched">20min Heartbeat (0b887027)</td><td class="cron-sched">every 20m</td><td><span class="badge badge-ok">✅ ok · learn-only · was 9fa9167a (dead duplicate)</span></td></tr>
                 <tr><td><span class="cron-name">Ito</span></td><td class="cron-sched">Twitter/X Intel (55143010)</td><td class="cron-sched">every 30m</td><td><span class="badge badge-warn">⚠️ ok · xAI 429 credits blocked ~103hr</span></td></tr>
                 <tr><td><span class="cron-name">Ito</span></td><td class="cron-sched">Gold Oracle (fe1056a4)</td><td class="cron-sched">every 2h</td><td><span class="badge badge-err">🔴 ERROR · needs diagnosis</span></td></tr>
                 <tr><td><span class="cron-name">Ito</span></td><td class="cron-sched">NZ Property Market (2a977a50)</td><td class="cron-sched">every 12h</td><td><span class="badge badge-err">🔴 ERROR · needs diagnosis</span></td></tr>
-                <tr><td><span class="cron-name">Ito</span></td><td class="cron-sched">Ahipara Tracker (811d89d0)</td><td class="cron-sched">daily 08:00</td><td><span class="badge badge-err">🔴 ERROR · missed today's 08:00 JST</span></td></tr>
+                <tr><td><span class="cron-name">Ito</span></td><td class="cron-sched">Ahipara Tracker (811d89d0)</td><td class="cron-sched">daily 08:00</td><td><span class="badge badge-err">🔴 ERROR · next run Sat 08:00 JST</span></td></tr>
             </tbody>
         </table>
         <p style="color:var(--dim);font-size:11.5px;margin-top:12px;"><strong style="color:#fbbf24;">5/9 ok</strong> · Ito heartbeat healthy ✅ · Titan ✅ · Makoto ✅ · Saito ✅ · Kaji ✅</p>
