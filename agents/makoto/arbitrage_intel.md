@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-17 19:41 JST
+Generated: 2026-04-17 20:27 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -56,6 +56,8 @@ Generated: 2026-04-17 19:41 JST
 | 75 | Freelancer | Python scraper | Bimbingan Flask Database Python | $250.00 | https://www.freelancer.com/projects/flask/Bimbingan-Flask-Database-Python.html |
 | 75 | Freelancer | Python scraper | Script para precios en Scryfall | $250.00 | https://www.freelancer.com/projects/api-integration/Script-para-precios-Scryfall.html |
 | 75 | Freelancer | Python scraper | AI Financial Compliance &amp; Risk Control System (Python / FastA | $250.00 | https://www.freelancer.com/projects/postgresql/Financial-Compliance-Risk-Control-System.html |
+| 65 | Freelancer | Python scraper | Project Title: Python Telegram Bot Expert - Security &amp; Logic  | $10.00 | https://www.freelancer.com/projects/python/Project-Title-Python-Telegram-Bot.html |
+| 65 | Freelancer | Python scraper | AI Trading Bot &amp; Guide | I need an end-to-end AI trading system that can operate across stocks, cryptocur | https://www.freelancer.com/projects/natural-language-processing/Trading-Bot-Guide.html |
 | 65 | Freelancer | Python scraper | Text Data CSV Encoding -- 2 | $15.00 | https://www.freelancer.com/projects/data-management/Text-Data-CSV-Encoding.html |
 | 65 | Freelancer | Python scraper | Python Script Maintenance Support | $30.00 | https://www.freelancer.com/projects/flask/Python-Script-Maintenance-Support.html |
 | 65 | Freelancer | Python scraper | Full-Stack Developer for Travel Data Debugging | $30.00 | https://www.freelancer.com/projects/data-analysis/Full-Stack-Developer-for-Travel.html |
@@ -63,15 +65,13 @@ Generated: 2026-04-17 19:41 JST
 | 65 | Freelancer | Python scraper | Cloud Zerodha Quantitative Trading Bot | I need a trading bot that runs entirely in the cloud and connects to Zerodha Kit | https://www.freelancer.com/projects/cloud-computing/Cloud-Zerodha-Quantitative-Trading-Bot.html |
 | 65 | Freelancer | Python scraper | Automated PCR-Based Nifty Trading Strategy Development (v Apr&#03 | PCR based strategy on Nifty, India - Fetching PCR and then execution 1- I need h | https://www.freelancer.com/projects/api/Automated-PCR-Based-Nifty-Trading.html |
 | 65 | Freelancer | Python scraper | Build AI Multi-Agent Orchestration Platform | Role Purpose Build, enhance, and scale production-grade web applications and pla | https://www.freelancer.com/projects/nextjs/Build-Multi-Agent-Orchestration-Platform.html |
-| 65 | Freelancer | Python scraper | Wikipedia Tool List Scraper | $30.00 | https://www.freelancer.com/projects/beautifulsoup/Wikipedia-Tool-List-Scraper.html |
 | 65 | Freelancer | Python scraper | Palantir Foundry Developer (Python/SQL, PySpark, AIP, Ontology,Wo | We are looking for an experienced Palantir Foundry Developer to support data and | https://www.freelancer.com/projects/sql/Palantir-Foundry-Developer-Python-SQL.html |
 | 65 | Freelancer | Python scraper | Apify Specialist for Targeted Data Extraction | $30.00 | https://www.freelancer.com/projects/data-extraction/Apify-Specialist-for-Targeted-Data.html |
+| 65 | Freelancer | Make.com automation | AI and n8n Automation | $2.00 | https://www.freelancer.com/projects/n8n/Automation-40378759.html |
 | 65 | Freelancer | Make.com automation | Bug Bounty Security Analyst Needed | Join our mission to make the digital world safer! As a Bug Bounty–Focused Securi | https://www.freelancer.com/projects/automation/Bug-Bounty-Security-Analyst-Needed.html |
 | 65 | Freelancer | Make.com automation | Machine Panel Schematics Package | I’m putting together a new set of industrial control panels /Automation panels w | https://www.freelancer.com/projects/electrical-engineering/Machine-Panel-Schematics-Package.html |
 | 65 | Freelancer | Make.com automation | Female Ai Animation Automation Specialist -- 3 | $30.00 | https://www.freelancer.com/projects/logo-design/Female-Animation-Automation-Specialist-40378256.html |
 | 65 | Freelancer | Make.com automation | Female Ai Animation Automation Specialist -- 2 | $30.00 | https://www.freelancer.com/projects/logo-design/Female-Animation-Automation-Specialist.html |
-| 65 | Freelancer | Make.com automation | Advanced UiPath Automation Specialist Needed | Several high-volume routines in my operation are ready to be handed over to UiPa | https://www.freelancer.com/projects/rpa-development/Advanced-UiPath-Automation-Specialist.html |
-| 65 | Freelancer | Make.com automation | Female Ai Animation Automation Specialist | $30.00 | https://www.freelancer.com/projects/seo/Female-Animation-Automation-Specialist.html |
 
 ## Notes
 - Scores prioritize: (1) simple automation/scripting fit, (2) payout magnitude, (3) keyword relevance.
