@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-17 21:51 JST
+Generated: 2026-04-17 22:12 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -70,8 +70,8 @@ Generated: 2026-04-17 21:51 JST
 | 65 | Freelancer | Python scraper | Automated PCR-Based Nifty Trading Strategy Development (v Apr&#03 | PCR based strategy on Nifty, India - Fetching PCR and then execution 1- I need h | https://www.freelancer.com/projects/api/Automated-PCR-Based-Nifty-Trading.html |
 | 65 | Freelancer | Python scraper | Build AI Multi-Agent Orchestration Platform | Role Purpose Build, enhance, and scale production-grade web applications and pla | https://www.freelancer.com/projects/nextjs/Build-Multi-Agent-Orchestration-Platform.html |
 | 65 | Freelancer | Python scraper | Palantir Foundry Developer (Python/SQL, PySpark, AIP, Ontology,Wo | We are looking for an experienced Palantir Foundry Developer to support data and | https://www.freelancer.com/projects/sql/Palantir-Foundry-Developer-Python-SQL.html |
+| 65 | Freelancer | Make.com automation | Comprehensive Automated Dashboard Creation | We want to build an automated, consolidated dashboard that acts as a single sour | https://www.freelancer.com/projects/data-visualization/Comprehensive-Automated-Dashboard.html |
 | 65 | Freelancer | Make.com automation | Website &amp; Referral Flow Upgrade | $15.00 | https://www.freelancer.com/projects/web-design/Website-Referral-Flow-Upgrade.html |
-| 65 | Freelancer | Make.com automation | AI and n8n Automation | $2.00 | https://www.freelancer.com/projects/n8n/Automation-40378759.html |
 
 ## Notes
 - Scores prioritize: (1) simple automation/scripting fit, (2) payout magnitude, (3) keyword relevance.
