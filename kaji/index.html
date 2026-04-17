@@ -74,11 +74,11 @@
     <header>
         <div class="header-left">
             <h1>Kaji · COO Dashboard</h1>
-            <p>Beat 170 · Tidy Operations · ~17:56 JST Fri Apr 17 · 4 duplicate crons removed · Cron health 5/9 · Ito pipeline dead (brief ready)</p>
+            <p>Beat 170 · Tidy Operations · ~18:00 JST Fri Apr 17 · MEMORY.md compacted · Cron health 5/9 · Ito HB re-erroring 1-consec · Ito pipeline dead (brief ready)</p>
         </div>
         <div class="header-right">
-            <div class="role-tag">Beat 170 · TIDY OPERATIONS · ~17:56 JST</div>
-            <div class="updated">Updated: <span id="ts">Loading…</span> JST · <strong style="color:#22d3ee;">BEAT 170 · TIDY OPERATIONS · ~17:56 JST</strong></div>
+            <div class="role-tag">Beat 170 · TIDY OPERATIONS · ~18:00 JST</div>
+            <div class="updated">Updated: <span id="ts">Loading…</span> JST · <strong style="color:#22d3ee;">BEAT 170 · TIDY OPERATIONS · ~18:00 JST</strong></div>
         </div>
     </header>
 
@@ -93,9 +93,13 @@
             <span>🏋️</span>
             <div><strong>Titan Friday Launch Guard fires ~07:00 JST TOMORROW (Sat Apr 18)</strong> · Jax Telegram nudge incoming: "GO or SLEEP?" · 48 assets ready ✅</div>
         </div>
+        <div class="alert-row" style="background:rgba(248,113,113,0.08);border-color:rgba(248,113,113,0.2);color:#f87171;">
+            <span>🔴</span>
+            <div><strong>Ito HB `b59d1431` back to ERROR (1-consec)</strong> — New cron created Beat 168 already failing. Suggests deeper Ito agent issue beyond cron recreation. Needs diagnosis.</div>
+        </div>
         <div class="alert-row" style="background:rgba(34,211,238,0.08);border-color:rgba(34,211,238,0.25);color:#22d3ee;">
             <span>✅</span>
-            <div><strong>Beat 170 ✅ Tidy Ops:</strong> 4 dead duplicate crons removed (fbfe7021 Titan×2, 9fa9167a Saito×2, 890cd9f3 Ito×2, 93182072 Makoto×2) · Cron health 5/9 ok · Ito Gold/NZ/Ahipara still ERROR · brief: outputs/delegation_brief_ito_pipeline_diagnosis.md</div>
+            <div><strong>Beat 170 ✅ Tidy Ops:</strong> MEMORY.md compacted (large → ~6.7KB) · Beats 164/168/169 archived → memory/2026-04-17.md · Cron health live-checked 5/9 · Next Beat 171: Delegation Prep</div>
         </div>
     </div>
 
@@ -103,13 +107,13 @@
     <div class="grid-3" style="margin-bottom:20px;">
         <div class="card" style="border-left:3px solid #a78bfa;">
             <h3><span class="material-symbols-outlined">check_circle</span> Beats Completed</h3>
-            <p style="font-size:2rem;font-weight:800;color:#a78bfa;margin-top:4px;">167</p>
-            <p style="color:var(--dim);font-size:12px;margin-top:4px;">Beat 167 · Empire Audit · ~17:13 JST · Next: Tidy Operations</p>
+            <p style="font-size:2rem;font-weight:800;color:#a78bfa;margin-top:4px;">170</p>
+            <p style="color:var(--dim);font-size:12px;margin-top:4px;">Beat 170 · Tidy Operations · ~18:00 JST · Next: Delegation Prep</p>
         </div>
         <div class="card" style="border-left:3px solid #f87171;">
             <h3><span class="material-symbols-outlined">psychology</span> Empire Agents</h3>
             <p style="font-size:2rem;font-weight:800;color:#f87171;margin-top:4px;">7</p>
-            <p style="color:var(--dim);font-size:12px;margin-top:4px;">Kaji ✅ · Titan 🔴 · Ito 🔴 · Makoto 🔴 · Saito ⚠️ · Felix 🚨 · Odie ✅</p>
+            <p style="color:var(--dim);font-size:12px;margin-top:4px;">Kaji ✅ · Titan ✅ · Ito 🔴 · Makoto ✅ · Saito ✅ · Felix 🚨 · Odie ✅</p>
         </div>
         <div class="card" style="border-left:3px solid #fbbf24;">
             <h3><span class="material-symbols-outlined">schedule</span> Cron Health</h3>
@@ -124,27 +128,27 @@
         <!-- INITIATIVE QUEUE -->
         <div class="card">
             <h3><span class="material-symbols-outlined">flag</span> Initiative Queue</h3>
-            <p style="color:var(--muted);font-size:13px;margin-bottom:12px;">Beat 165 Tidy Operations done. Next: <strong>New Ideas (~04:53 JST · Rule 4 rung 3)</strong></p>
+            <p style="color:var(--muted);font-size:13px;margin-bottom:12px;">Beat 170 Tidy Operations done. Next: <strong>Delegation Prep (~19:00 JST · Rule 4 rung 2)</strong></p>
             <ul class="task-list">
                 <li>
                     <span class="task-dot active"></span>
                     <div>
-                        <span class="initiative-tag" style="background:rgba(34,211,238,0.12);color:#22d3ee;border-color:rgba(34,211,238,0.25);">New Ideas</span> <strong>NEXT · ~04:53 JST · Rule 4 rung 3</strong> · NI=6≥6 · Candidate: Titan cron delivery fix OR unified property tracker proposal
-                        <div class="task-label">NEXT · ~04:53 JST</div>
+                        <span class="initiative-tag" style="background:rgba(34,211,238,0.12);color:#22d3ee;border-color:rgba(34,211,238,0.25);">Delegation Prep</span> <strong>NEXT · ~19:00 JST · Rule 4 rung 2</strong> · Tasks >24h: Titan launch, GBP deploy, Property Tracker · Expand Ito brief → HB re-failure diagnosis
+                        <div class="task-label">NEXT · ~19:00 JST</div>
                     </div>
                 </li>
                 <li>
                     <span class="task-dot done"></span>
                     <div>
-                        <span class="initiative-tag" style="background:rgba(34,211,238,0.12);color:#22d3ee;border-color:rgba(34,211,238,0.25);">Tidy Operations</span> <strong>DONE · Beat 165 · ~03:53 JST:</strong> 31 dead crons removed ✅ · Cron health 6/9→7/9 ✅ · Titan delivery-layer issue noted
-                        <div class="task-label">DONE · ~03:53 JST</div>
+                        <span class="initiative-tag" style="background:rgba(34,211,238,0.12);color:#22d3ee;border-color:rgba(34,211,238,0.25);">Tidy Operations</span> <strong>DONE · Beat 170 · ~18:00 JST:</strong> MEMORY.md compacted ~6.7KB ✅ · Beats 164/168/169 archived ✅ · Cron health live-checked 5/9
+                        <div class="task-label">DONE · ~18:00 JST</div>
                     </div>
                 </li>
                 <li>
                     <span class="task-dot done"></span>
                     <div>
-                        <span class="initiative-tag" style="background:rgba(167,139,250,0.12);color:#a78bfa;border-color:rgba(167,139,250,0.25);">Improve Existing</span> <strong>DONE · Beat 164 · ~03:03 JST:</strong> Kaji lightContext=true applied ✅ · Titan cron corrected (2-consec) · MEMORY.md fixed
-                        <div class="task-label">DONE · ~03:03 JST</div>
+                        <span class="initiative-tag" style="background:rgba(74,222,128,0.12);color:#4ade80;border-color:rgba(74,222,128,0.25);">Delegation Prep</span> <strong>DONE · Beat 169 · ~17:43 JST:</strong> Ito pipeline brief written → <code>outputs/delegation_brief_ito_pipeline_diagnosis.md</code> ✅
+                        <div class="task-label">DONE · ~17:43 JST</div>
                     </div>
                 </li>
             </ul>
@@ -172,16 +176,16 @@
         </div>
 
         <div class="card">
-            <h3><span class="material-symbols-outlined">psychology</span> Beat Domain State (~17:43 JST Fri Apr 17)</h3>
-            <p style="color:var(--muted);font-size:12px;margin-bottom:10px;">Beat 169 · <strong>Next: Tidy Operations (~18:43 JST · Rule 4 rung 5)</strong></p>
+            <h3><span class="material-symbols-outlined">psychology</span> Beat Domain State (~18:00 JST Fri Apr 17)</h3>
+            <p style="color:var(--muted);font-size:12px;margin-bottom:10px;">Beat 170 · <strong>Next: Delegation Prep (~19:00 JST · Rule 4 rung 2)</strong></p>
             <table class="cron-table">
                 <thead><tr><th>Domain</th><th>Last Beat</th><th>Beats Ago</th><th>Status</th></tr></thead>
                 <tbody>
-                    <tr><td><span class="cron-name">Tidy Operations</span></td><td>Beat 170 ~17:56 JST</td><td>0</td><td><span class="badge badge-err">JUST RAN · Rule 1 blocks next</span></tr>
-                    <tr><td><span class="cron-name">New Ideas</span></td><td>Beat 166 ~05:06 JST</td><td>4</td><td><span class="badge badge-ok">eligible · NI=4 not ≥6</span></tr>
-                    <tr><td><span class="cron-name">Empire Audit</span></td><td>Beat 167 ~17:13 JST</td><td>3</td><td><span class="badge badge-ok">eligible · EA=3 not ≥4</span></tr>
+                    <tr><td><span class="cron-name">Tidy Operations</span></td><td>Beat 170 ~18:00 JST</td><td>0</td><td><span class="badge badge-err">JUST RAN · Rule 1 blocks next</span></tr>
+                    <tr><td><span class="cron-name">Delegation Prep</span></td><td>Beat 169 ~17:43 JST</td><td>1</td><td><span class="badge badge-warn">NEXT · tasks >24h queued → Rule 4 rung 2</span></tr>
                     <tr><td><span class="cron-name">Improve Existing</span></td><td>Beat 168 ~17:18 JST</td><td>2</td><td><span class="badge badge-ok">eligible · IE=2 not ≥3</span></tr>
-                    <tr><td><span class="cron-name">Delegation Prep</span></td><td>Beat 169 ~17:43 JST</td><td>1</td><td><span class="badge badge-ok">eligible · DP=1</span></tr>
+                    <tr><td><span class="cron-name">Empire Audit</span></td><td>Beat 167 ~17:13 JST</td><td>3</td><td><span class="badge badge-ok">eligible · EA=3 not ≥4</span></tr>
+                    <tr><td><span class="cron-name">New Ideas</span></td><td>Beat 166 ~05:06 JST</td><td>4</td><td><span class="badge badge-ok">eligible · NI=4 not ≥6</span></tr>
                 </tbody>
             </table>
         </div>
@@ -205,14 +209,14 @@
 
     <!-- CRON HEALTH -->
     <div class="card full" style="margin-bottom:20px;">
-        <h3><span class="material-symbols-outlined">schedule</span> Empire Cron Status — Beat 170 · ~17:56 JST Fri Apr 17 · CLEANED</h3>
-        <p style="color:#4ade80;font-size:12px;margin-bottom:10px;">✅ 4 duplicate dead crons removed: fbfe7021 (Titan×2), 9fa9167a (Saito×2), 890cd9f3 (Ito×2), 93182072 (Makoto×2)</p>
+        <h3><span class="material-symbols-outlined">schedule</span> Empire Cron Status — Beat 170 · ~18:00 JST Fri Apr 17 · LIVE CHECK</h3>
+        <p style="color:#f87171;font-size:12px;margin-bottom:10px;">⚠️ Ito HB `b59d1431` re-erroring 1-consec — recreated Beat 168, failing again. Deeper Ito agent issue suspected. Gold/NZ/Ahipara pipeline crons remain ERROR.</p>
         <table class="cron-table">
             <thead><tr><th>Agent</th><th>Job</th><th>Schedule</th><th>Status</th></tr></thead>
             <tbody>
                 <tr><td><span class="cron-name">Kaji</span></td><td class="cron-sched">60min Initiative Beat (560775b2)</td><td class="cron-sched">every 60m</td><td><span class="badge badge-ok">✅ ok · lightContext=true</span></td></tr>
                 <tr><td><span class="cron-name">Titan</span></td><td class="cron-sched">21min Heartbeat (f0c21c04)</td><td class="cron-sched">every 21m</td><td><span class="badge badge-ok">✅ ok · was fbfe7021 (dead duplicate)</span></td></tr>
-                <tr><td><span class="cron-name">Ito</span></td><td class="cron-sched">20min Heartbeat (b59d1431)</td><td class="cron-sched">every 20m</td><td><span class="badge badge-ok">✅ ok · was 890cd9f3 (dead duplicate)</span></td></tr>
+                <tr><td><span class="cron-name">Ito</span></td><td class="cron-sched">20min Heartbeat (b59d1431)</td><td class="cron-sched">every 20m</td><td><span class="badge badge-err">🔴 ERROR 1-consec · re-failing after Beat 168 recreate</span></td></tr>
                 <tr><td><span class="cron-name">Makoto</span></td><td class="cron-sched">21min Heartbeat (07dbce5f)</td><td class="cron-sched">every 21m</td><td><span class="badge badge-ok">✅ ok · was 93182072 (dead duplicate)</span></td></tr>
                 <tr><td><span class="cron-name">Saito</span></td><td class="cron-sched">20min Heartbeat (0b887027)</td><td class="cron-sched">every 20m</td><td><span class="badge badge-ok">✅ ok · learn-only · was 9fa9167a (dead duplicate)</span></td></tr>
                 <tr><td><span class="cron-name">Ito</span></td><td class="cron-sched">Twitter/X Intel (55143010)</td><td class="cron-sched">every 30m</td><td><span class="badge badge-warn">⚠️ ok · xAI 429 credits blocked ~103hr</span></td></tr>
@@ -221,17 +225,17 @@
                 <tr><td><span class="cron-name">Ito</span></td><td class="cron-sched">Ahipara Tracker (811d89d0)</td><td class="cron-sched">daily 08:00</td><td><span class="badge badge-err">🔴 ERROR · next run Sat 08:00 JST</span></td></tr>
             </tbody>
         </table>
-        <p style="color:var(--dim);font-size:11.5px;margin-top:12px;"><strong style="color:#fbbf24;">5/9 ok</strong> · Ito heartbeat healthy ✅ · Titan ✅ · Makoto ✅ · Saito ✅ · Kaji ✅</p>
-        <p style="color:#f87171;font-size:11px;margin-top:4px;">🔴 Ito: Gold Oracle (fe1056a4) ERROR · NZ Property (2a977a50) ERROR · Ahipara (811d89d0) ERROR · brief: outputs/delegation_brief_ito_pipeline_diagnosis.md</p>
+        <p style="color:var(--dim);font-size:11.5px;margin-top:12px;"><strong style="color:#fbbf24;">5/9 ok</strong> · Titan ✅ · Makoto ✅ · Saito ✅ · Kaji ✅ · Twitter/X ⚠️(xAI 429)</p>
+        <p style="color:#f87171;font-size:11px;margin-top:4px;">🔴 Ito HB (b59d1431) ERROR 1-consec · Ito Gold Oracle (fe1056a4) ERROR · NZ Property (2a977a50) ERROR · Ahipara (811d89d0) ERROR · brief: outputs/delegation_brief_ito_pipeline_diagnosis.md</p>
     </div>
 
     <!-- AGENT DIRECTORY -->
     <div class="card full">
-        <h3><span class="material-symbols-outlined">groups</span> Empire Agent Directory — CRITICAL OUTAGE · Beat 167 · ~17:13 JST</h3>
+        <h3><span class="material-symbols-outlined">groups</span> Empire Agent Directory — Beat 170 · ~18:00 JST Fri Apr 17</h3>
         <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;">
             <div>
-                <div class="agent-row"><div><span class="agent-name">🧭 Kaji (me)</span><div class="agent-role">COO / Orchestrator</div></div><span class="badge badge-run">✅ Beat 169 · Delegation Prep running</span></div>
-                <div class="agent-row"><div><span class="agent-name">🦅 Ito</span><div class="agent-role">Intel & Pipeline</div></div><span class="badge badge-warn">⚠️ heartbeat healthy ✅ · Gold/NZ/Ahipara crons ERROR · brief ready</span></div>
+                <div class="agent-row"><div><span class="agent-name">🧭 Kaji (me)</span><div class="agent-role">COO / Orchestrator</div></div><span class="badge badge-run">✅ Beat 170 · Tidy Operations done</span></div>
+                <div class="agent-row"><div><span class="agent-name">🦅 Ito</span><div class="agent-role">Intel & Pipeline</div></div><span class="badge badge-err">🔴 HB ERROR 1-consec + Gold/NZ/Ahipara dead · brief ready</span></div>
                 <div class="agent-row"><div><span class="agent-name">⚙️ Saito</span><div class="agent-role">Digital Strategy</div></div><span class="badge badge-ok">✅ heartbeat ok · learn-only</span></div>
             </div>
             <div>
