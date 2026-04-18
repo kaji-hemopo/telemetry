@@ -19,7 +19,7 @@
         .header-left h1 { font-family: var(--font-d); font-size: 1.5rem; font-weight: 800; letter-spacing: -0.03em; margin-bottom: 6px; background: linear-gradient(95deg, #fff, #9ca3b8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
         .header-left p { color: var(--muted); font-size: 14px; max-width: 52ch; }
         .header-right { text-align: right; }
-        .header-right .role-tag { display: inline-block; padding: 5px 14px; border-radius: 999px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; background: rgba(52,211,153,0.12); color: #34d399; border: 1px solid rgba(52,211,153,0.25); margin-bottom: 8px; }
+        .header-right .role-tag { display: inline-block; padding: 5px 14px; border-radius: 999px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 8px; }
         .header-right .updated { font-size: 11px; color: var(--dim); font-variant-numeric: tabular-nums; }
         .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
         .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-bottom: 20px; }
@@ -36,6 +36,7 @@
         .badge-run { background: rgba(34,211,238,0.12); color: var(--accent); border: 1px solid rgba(34,211,238,0.25); }
         .badge-ea { background: rgba(52,211,153,0.12); color: #34d399; border: 1px solid rgba(52,211,153,0.25); }
         .badge-dp { background: rgba(167,139,250,0.12); color: var(--violet); border: 1px solid rgba(167,139,250,0.25); }
+        .badge-ni { background: rgba(251,191,36,0.12); color: var(--yellow); border: 1px solid rgba(251,191,36,0.25); }
         .task-list { list-style: none; }
         .task-list li { display: flex; align-items: flex-start; gap: 10px; padding: 9px 0; border-bottom: 1px solid rgba(255,255,255,0.04); font-size: 13.5px; }
         .task-list li:last-child { border-bottom: none; }
@@ -77,32 +78,32 @@
     <header>
         <div class="header-left">
             <h1>Kaji · COO Dashboard</h1>
-            <p>Beat 304 · Delegation Prep · ~04:04 JST Sun Apr 19 · Cron 6/6 OK ✅ · next: Empire Audit Beat 305 (Rule 5)
+            <p>Beat 306 · New Ideas · ~04:15 JST Sun Apr 19 · Cron 6/6 OK ✅ · next: Empire Audit Beat 307 (Rule 5)
         </div>
         <div class="header-right">
-            <div class="role-tag" style="background:rgba(167,139,250,0.12);color:#a78bfa;border-color:rgba(167,139,250,0.25);">Beat 304 · DELEGATION PREP · ~04:04 JST</div>
-            <div class="updated">Updated: <span id="ts">Loading…</span> JST · <strong style="color:#34d399;">6/6 CRON ✅</strong> · next: Empire Audit Beat 305 (Rule 5)</div>
+            <div class="role-tag" style="background:rgba(251,191,36,0.12);color:#fbbf24;border-color:rgba(251,191,36,0.25);">Beat 306 · NEW IDEAS · ~04:15 JST</div>
+            <div class="updated">Updated: <span id="ts">Loading…</span> JST · <strong style="color:#34d399;">6/6 CRON ✅</strong> · next: Empire Audit Beat 307 (Rule 5)</div>
         </div>
     </header>
 
     <!-- ALERTS -->
     <div class="card full" style="margin-bottom:20px; border-color:rgba(52,211,153,0.4);">
-        <h3><span class="material-symbols-outlined">campaign</span> Empire Alerts — Sun Apr 19 04:04 JST · LIVE</h3>
+        <h3><span class="material-symbols-outlined">campaign</span> Empire Alerts — Sun Apr 19 04:15 JST · LIVE</h3>
         <div class="alert-row" style="background:rgba(248,113,113,0.08);border-color:rgba(248,113,113,0.3);color:#f87171;">
             <span>🏋️</span>
-            <div><strong>Titan PT Launch — 🚨 WINDOW CLOSED (09:00 JST · 19h04m ago):</strong> <a href="titan_launch_status.html" style="color:#f87171;font-weight:700;">🔗 Live status page</a> · Jax "go" / "sleep" / "Park it" needed · <strong>30+ Telegram nudges</strong> sent · <strong>NO RESPONSE</strong> · pipeline 146wks/2,031 posts ✅ · window EXPIRED 09:00 JST Sat Apr 18</div>
+            <div><strong>Titan PT Launch — 🚨 WINDOW CLOSED (09:00 JST Sat Apr 18 · ~19h11m ago):</strong> <a href="titan_launch_status.html" style="color:#f87171;font-weight:700;">🔗 Live status page</a> · Jax "go" / "sleep" / "Park it" needed · <strong>30+ Telegram nudges</strong> sent · <strong>NO RESPONSE</strong> · pipeline 148wks/2,052 posts ✅ · window EXPIRED 09:00 JST Sat Apr 18 · <strong>⚠️ Titan still running — Jax Decision Registry says PARKED but enforcement gap: no mechanism translates silence into agent action</strong></div>
         </div>
         <div class="alert-row ok">
             <span>✅</span>
-            <div><strong>Beat 303 · Empire Audit DONE ✅:</strong> <strong>Titan MEMORY drift fixed ✅</strong> — X-649/X-650 extracted and added to MEMORY · drift:1 (structural) · 6/6 crons ALL OK ✅ · openclaw status confirmed · Beat Domain State: DP=0 ACTIVE · <strong>next: Empire Audit Beat 305 (Rule 5)</strong></div>
+            <div><strong>Beat 305 · Empire Audit DONE ✅:</strong> <strong>Full empire verification — 6/6 crons ALL OK ✅ · Titan MEMORY fully synced to X-652 ✅</strong> · DASHBOARD X-652 confirmed · Titan pipeline 148wks/2,052 posts ✅ · Ito pipeline intact (RSS 43src/2,521+art ✅ · Gold oracle stale weekend · XRP $1.4329 🚨 floor broken sustained · PUSH UNBLOCKED ✅ 83db6da) · Makoto scout ran 04:03 JST (21 opps) ✅ · next: New Ideas Beat 306 (Rule 5)</div>
         </div>
         <div class="alert-row ok">
             <span>✅</span>
-            <div><strong>Beat 302 · New Ideas DONE ✅:</strong> <strong>Jackson Feedback Signal gap identified ✅</strong> — empire produces outputs but Jackson's reactions generate zero structured signal back · Makoto/Titan/Felix/Ito all operate blind · 10 gap briefs now on record · brief filed → outputs/beat302_new_ideas_jackson_feedback_signal_gap.md (5.0KB · NO PROPOSALS respected)</div>
+            <div><strong>Beat 306 · New Ideas DONE ✅:</strong> <strong>Silence-to-Action Execution Gap identified ✅</strong> — Jax Decision Registry defines silence threshold policy (72h = Park it) but has NO enforcement mechanism · Titan PARKED per registry 19h ago but Titan doesn't know · Kaji keeps resetting 72h clock with nudges · policy exists but no execution path · brief filed → outputs/beat306_new_ideas_silence_execution_gap.md (4.5KB · NO PROPOSALS respected)</div>
         </div>
         <div class="alert-row ok">
             <span>✅</span>
-            <div><strong>Cron health 6/6 ALL OK ✅:</strong> Kaji ✅ · Titan ✅ · Ito ✅ · Twitter/X ✅ · Makoto ✅ · Gold Oracle ✅ · <strong>all 6 crons running normally</strong> · no errors</div>
+            <div><strong>Cron health 6/6 ALL OK ✅:</strong> Kaji ✅ · Titan ✅ · Ito ✅ · Twitter/X ✅ · Makoto ✅ · Gold Oracle ✅ · Makoto scout fresh (21 opps · 04:03 JST) ✅ · all 6 crons running normally</div>
         </div>
         <div class="alert-row warn">
             <span>⚠️</span>
@@ -110,7 +111,7 @@
         </div>
         <div class="alert-row ok">
             <span>✅</span>
-            <div><strong>Makoto scout fresh ✅ —</strong> scout ran 04:03 JST Apr 19 (update pushed 87dd16b) · 21 high-conviction opps · Telegram alert sent to Jackson · <strong>intel SILOED gap (Beat 295)</strong> — Titan sees nothing, EMB sees nothing, no structured intake</div>
+            <div><strong>Makoto scout fresh ✅ —</strong> scout ran 04:03 JST Apr 19 (21 high-conviction opps · Telegram alert sent to Jackson · <strong>intel SILOED gap (Beat 295)</strong> — Titan sees nothing, EMB sees nothing, no structured intake)</div>
         </div>
         <div class="alert-row warn">
             <span>⚠️</span>
@@ -118,7 +119,7 @@
         </div>
         <div class="alert-row info">
             <span>🆕</span>
-            <div><strong>10 Empire Gaps (Beats 229/239/246/256/271/279/287/293/295/302):</strong> (1) Titan zero lead capture · (2) Felix X→N3 undefined · (3) Ito intel no conversion layer · (4) Odie TradePass no exit · (5) Jax Decision Feedback Loop ✅ (6) Titan zero content analytics · (7) Makato intel SILOED · (8) EMB v3 no deploy mechanism · (9) Jax responsiveness/escalation · <strong>(10) Jackson Feedback Signal (Beat 302)</strong> · NO PROPOSALS respected</div>
+            <div><strong>11 Empire Gaps (Beats 229/239/246/256/271/279/287/293/295/302/306):</strong> (1) Titan zero lead capture · (2) Felix X→N3 undefined · (3) Ito intel no conversion layer · (4) Odie TradePass no exit · (5) Jax Decision Feedback Loop ✅ (6) Titan zero content analytics · (7) Makato intel SILOED · (8) EMB v3 no deploy mechanism · (9) Jax responsiveness/escalation · (10) Jackson Feedback Signal · <strong>(11) Silence-to-Action Execution (Beat 306)</strong> · NO PROPOSALS respected</div>
         </div>
     </div>
 
@@ -126,8 +127,8 @@
     <div class="grid-3" style="margin-bottom:20px;">
         <div class="card" style="border-left:3px solid #34d399;">
             <h3><span class="material-symbols-outlined">check_circle</span> Beats Completed</h3>
-            <p style="font-size:2rem;font-weight:800;color:#34d399;margin-top:4px;">303</p>
-            <p style="color:var(--dim);font-size:12px;margin-top:4px;">Beat 304 · Delegation Prep · ~04:04 JST · next: Empire Audit Beat 305 (Rule 5)</p>
+            <p style="font-size:2rem;font-weight:800;color:#34d399;margin-top:4px;">305</p>
+            <p style="color:var(--dim);font-size:12px;margin-top:4px;">Beat 306 · New Ideas · ~04:15 JST · next: Empire Audit Beat 307 (Rule 5)</p>
         </div>
         <div class="card" style="border-left:3px solid #f87175;">
             <h3><span class="material-symbols-outlined">psychology</span> Empire Agents</h3>
@@ -138,7 +139,7 @@
             <h3><span class="material-symbols-outlined">schedule</span> Cron Health</h3>
             <p style="font-size:2rem;font-weight:800;color:#34d399;margin-top:4px;">6/6</p>
             <p style="color:var(--dim);font-size:12px;margin-top:4px;"><strong style="color:#34d399;">6/6 crons ALL OK ✅</strong>: Kaji ✅ · Titan ✅ · Ito ✅ · Twitter/X ✅ · Makoto ✅ · Gold Oracle ✅</p>
-            <p style="color:var(--dim);font-size:11.5px;margin-top:6px;">All crons running normally · no errors · all isolated non-critical · Beat 304 DP · ~04:04 JST
+            <p style="color:var(--dim);font-size:11.5px;margin-top:6px;">All crons running normally · no errors · all isolated non-critical · Beat 306 NI · ~04:15 JST
         </div>
     </div>
 
@@ -147,20 +148,20 @@
         <!-- INITIATIVE QUEUE -->
         <div class="card">
             <h3><span class="material-symbols-outlined">flag</span> Initiative Queue</h3>
-            <p style="color:var(--muted);font-size:13px;margin-bottom:12px;">Beat 304 Delegation Prep running · next: <strong style="color:#34d399;">Empire Audit Beat 305 (Rule 5: oldest eligible at rung 5)</strong></p>
+            <p style="color:var(--muted);font-size:13px;margin-bottom:12px;">Beat 306 New Ideas running · next: <strong style="color:#34d399;">Empire Audit Beat 307 (Rule 5: oldest eligible at rung 5)</strong></p>
             <ul class="task-list">
                 <li>
                     <span class="task-dot done"></span>
                     <div>
-                        <span class="initiative-tag badge-ea">Empire Audit</span> <strong>DONE · Beat 303 · ~03:56 JST:</strong> <strong>Titan MEMORY drift fixed ✅</strong> — X-649/X-650 extracted and added to MEMORY · 6/6 crons ALL OK ✅ · openclaw status confirmed · Titan pipeline 146wks/2,031 posts ✅ · next: Delegation Prep Beat 304 (Rule 4 rung 2)
-                        <div class="task-label" style="color:#34d399;">DONE · ~03:56 JST</div>
+                        <span class="initiative-tag badge-ea">Empire Audit</span> <strong>DONE · Beat 305 · ~04:08 JST:</strong> <strong>Full empire verification — 6/6 crons ALL OK ✅ · Titan MEMORY fully synced to X-652 ✅</strong> · DASHBOARD X-652 confirmed by openclaw status (Titan cron 3m ago) · Titan pipeline 148wks/2,052 posts ✅ · Ito pipeline intact ✅ · next: New Ideas Beat 306 (Rule 5)
+                        <div class="task-label" style="color:#34d399;">DONE · ~04:08 JST</div>
                     </div>
                 </li>
                 <li>
                     <span class="task-dot"></span>
                     <div>
-                        <span class="initiative-tag badge-dp">Delegation Prep</span> <strong>RUNNING · Beat 304 · ~04:04 JST:</strong> <strong>Delegation queue refreshed to Beat 304 ✅</strong> — Titan window CLOSED ~19h04m ago · 30+ nudges · EMB ~213h+ · GBP 30d+ · Felix ~249h+ · Cron 6/6 ✅ · Titan PARKED ✅ · next: Empire Audit Beat 305 (Rule 5)
-                        <div class="task-label" style="color:#a78bfa;">RUNNING · ~04:04 JST</div>
+                        <span class="initiative-tag badge-ni">New Ideas</span> <strong>RUNNING · Beat 306 · ~04:15 JST:</strong> <strong>Silence-to-Action Execution Gap identified ✅</strong> — Jax Decision Registry defines 72h silence = Park it but has NO enforcement mechanism · Titan PARKED per registry 19h ago but Titan doesn't know · brief filed → outputs/beat306_new_ideas_silence_execution_gap.md (4.5KB · NO PROPOSALS) · next: Empire Audit Beat 307 (Rule 5)
+                        <div class="task-label" style="color:#fbbf24;">RUNNING · ~04:15 JST</div>
                     </div>
                 </li>
             </ul>
@@ -169,40 +170,40 @@
 
         <!-- JAX ACTION QUEUE -->
         <div class="card" style="border-left:4px solid #f87171;">
-            <h3><span class="material-symbols-outlined">task_alt</span> Jax Action Queue — Sun Apr 19 03:56 JST</h3>
+            <h3><span class="material-symbols-outlined">task_alt</span> Jax Action Queue — Sun Apr 19 04:15 JST</h3>
             <div class="request-item" style="border-left:3px solid #f87171;">
                 <div><strong>🏋️ Titan PT Launch — 🚨 WINDOW CLOSED · Jax decision needed:</strong> say <strong>"go"</strong> (late launch OK) / <strong>"sleep"</strong> / <strong>"Park it"</strong></div>
-                <div class="request-meta">Window CLOSED 09:00 JST Sat Apr 18 (19h04m ago) · <strong>30+ Telegram nudges</strong> · NO RESPONSE · 146wks/2,031 posts ✅ · all crons OK ✅</div>
+                <div class="request-meta">Window CLOSED 09:00 JST Sat Apr 18 (~19h11m ago) · <strong>30+ Telegram nudges</strong> · NO RESPONSE · 148wks/2,052 posts ✅ · all crons OK ✅ · <strong>⚠️ Enforcement gap: Jax Decision Registry says PARKED but no agent received park signal</strong></div>
             </div>
             <div class="request-item" style="border-left:3px solid #22d3ee;">
                 <div><strong>📋 Empire Morning Briefing v3 — "Go Telegram"</strong> → Kaji sends immediately</div>
-                <div class="request-meta">Draft ready at outputs/empire_morning_briefing_v3.md · Jax say "Go Telegram" · ~213h+ stale</div>
+                <div class="request-meta">Draft ready at outputs/empire_morning_briefing_v3.md · Jax say "Go Telegram" · ~220h+ stale</div>
             </div>
             <div class="request-item" style="border-left:3px solid #fbbf24;">
                 <div><strong>⚡ Makoto GBP deploy</strong> — "deploy GBP" → GitHub Pages · scout ran 04:03 JST (21 opps ✅) · Formspree placeholder</div>
-                <div class="request-meta">30d+ stale · GitHub Pages route available · Telegram @makoto numeric ID unresolved</div>
+                <div class="request-meta">30d+ stale · GitHub Pages route available</div>
             </div>
             <div class="request-item" style="border-left:3px solid #f87171;">
                 <div><strong>🎌 Felix Gmail — "Re-auth Gmail" or "Park Felix"</strong> · N3 Phase 2b frozen (580 entries) · X posts offline</div>
-                <div class="request-meta">~249h+ stale · workspace empty · Gmail expired</div>
+                <div class="request-meta">~256h+ stale · workspace empty · Gmail expired</div>
             </div>
         </div>
 
         <!-- BEAT DOMAIN STATE -->
         <div class="card">
-            <h3><span class="material-symbols-outlined">psychology</span> Beat Domain State (~04:04 JST Sun Apr 19)</h3>
-            <p style="color:var(--muted);font-size:12px;margin-bottom:10px;">Beat 304 · <strong style="color:#a78bfa;">Delegation Prep running</strong></p>
+            <h3><span class="material-symbols-outlined">psychology</span> Beat Domain State (~04:15 JST Sun Apr 19)</h3>
+            <p style="color:var(--muted);font-size:12px;margin-bottom:10px;">Beat 306 · <strong style="color:#fbbf24;">New Ideas running</strong></p>
             <table class="cron-table">
                 <thead><tr><th>Domain</th><th>Last Beat</th><th>Beats Ago</th><th>Status</th></tr></thead>
                 <tbody>
-                    <tr><td><span class="cron-name badge-dp">Delegation Prep</span></td><td>Beat 304 ~04:04 JST</td><td>0</td><td><span class="badge" style="background:rgba(167,139,250,0.12);color:#a78bfa;border-color:rgba(167,139,250,0.25);">ACTIVE</span></tr>
-                    <tr><td><span class="cron-name badge-ea">Empire Audit</span></td><td>Beat 303 ~03:56 JST</td><td>1</td><td><span class="badge badge-ok">LAST</span></tr>
-                    <tr><td><span class="cron-name" style="color:#bac9cc;">New Ideas</span></td><td>Beat 302 ~03:56 JST</td><td>2</td><td><span class="badge badge-ok">blocked</span></tr>
-                    <tr><td><span class="cron-name" style="color:#bac9cc;">Tidy Operations</span></td><td>Beat 297 ~02:36 JST</td><td>7</td><td><span class="badge badge-ok">blocked</span></tr>
-                    <tr><td><span class="cron-name" style="color:#fbbf24;">Improve Existing</span></td><td>Beat 290 ~00:16 JST</td><td>14</td><td><span class="badge badge-ok">blocked</span></tr>
+                    <tr><td><span class="cron-name badge-ni">New Ideas</span></td><td>Beat 306 ~04:15 JST</td><td>0</td><td><span class="badge badge-run">ACTIVE</span></tr>
+                    <tr><td><span class="cron-name badge-ea">Empire Audit</span></td><td>Beat 305 ~04:08 JST</td><td>1</td><td><span class="badge badge-ok">LAST</span></tr>
+                    <tr><td><span class="cron-name badge-dp">Delegation Prep</span></td><td>Beat 304 ~04:04 JST</td><td>2</td><td><span class="badge badge-ok">blocked</span></tr>
+                    <tr><td><span class="cron-name" style="color:#bac9cc;">Tidy Operations</span></td><td>Beat 297 ~02:36 JST</td><td>9</td><td><span class="badge badge-ok">blocked</span></tr>
+                    <tr><td><span class="cron-name" style="color:#bac9cc;">Improve Existing</span></td><td>Beat 290 ~00:16 JST</td><td>16</td><td><span class="badge badge-ok">blocked</span></tr>
                 </tbody>
             </table>
-            <p style="color:var(--dim);font-size:11.5px;margin-top:8px;"><strong>Algorithm Beat 305: EA=1 not ≥4 · DP=0 blocked · NI=2 not ≥6 · IE=14 not ≥3 · TO=7 not ≥4 → <span style="color:#34d399;">Empire Audit (Rule 5: oldest eligible at rung 5)</span></strong></p>
+            <p style="color:var(--dim);font-size:11.5px;margin-top:8px;"><strong>Algorithm Beat 307: EA=1 not ≥4 · DP=2 not ≥4 · NI=0 blocked · IE=16 not ≥3 · TO=9 not ≥4 → <span style="color:#34d399;">Empire Audit (Rule 5: oldest eligible at rung 5)</span></strong></p>
         </div>
 
         <!-- JAX DECISION REGISTRY QUICK-REF -->
@@ -216,7 +217,7 @@
                 <span class="badge badge-ok">Ito PUSH UNBLOCKED ✅</span>
                 <span class="badge badge-warn">Makoto DEPLOY-STALLED (GBP)</span>
             </div>
-            <p style="color:var(--dim);font-size:11px;margin-top:8px;">Silence threshold: 72h · Full registry: workspace_kaji/jax_decisions.md · Ito Vercel token: RESOLVED ✅ (83db6da)</p>
+            <p style="color:var(--dim);font-size:11px;margin-top:8px;">⚠️ Enforcement gap: Titan PARKED per registry but no agent received park signal · Titan cron still running · Jax Decision Registry has policy but no execution layer</p>
         </div>
 
         <!-- QUICK LINKS -->
@@ -234,20 +235,20 @@
 
     <!-- AGENT ROSTER -->
     <div class="card full">
-        <h3><span class="material-symbols-outlined">groups</span> Agent Roster — Beat 304 · ~04:04 JST Sun Apr 19</h3>
+        <h3><span class="material-symbols-outlined">groups</span> Agent Roster — Beat 306 · ~04:15 JST Sun Apr 19</h3>
         <div class="agent-row">
             <div>
                 <span class="agent-name">Kaji</span>
                 <span class="agent-role">COO · Orchestrator</span>
             </div>
-            <span class="badge badge-ea">✅ Beat 305 · Empire Audit running · ~04:08 JST</span>
+            <span class="badge badge-ni">✅ Beat 306 · New Ideas running · ~04:15 JST</span>
         </div>
         <div class="agent-row">
             <div>
                 <span class="agent-name">Titan</span>
                 <span class="agent-role">Athlete Forge · PT Empire</span>
             </div>
-            <span class="badge badge-ok">✅ HB ok · 🚨 Window CLOSED 19h08m ago · <strong>BEAT_NUM X-652</strong> · <strong>MEMORY X-652 (drift:0)</strong> · pipeline 148wks/2,052 posts ✅ · <strong>ZERO CONTENT ANALYTICS</strong> · <strong>PARKED (Jax Decision Registry)</strong> · Cron OK ✅</span>
+            <span class="badge badge-warn">✅ HB ok · 🚨 Window CLOSED ~19h11m ago · <strong>BEAT_NUM X-652</strong> · <strong>MEMORY X-652 (drift:0)</strong> · pipeline 148wks/2,052 posts ✅ · <strong>ZERO CONTENT ANALYTICS</strong> · <strong>PARKED (Jax Decision Registry) but ⚠️ ENFORCEMENT GAP: no agent received park signal</strong></span>
         </div>
         <div class="agent-row">
             <div>
@@ -261,7 +262,7 @@
                 <span class="agent-name">Makoto</span>
                 <span class="agent-role">Arbitrage Scout</span>
             </div>
-            <span class="badge badge-ok">✅ HB ok · <strong>scout fresh (21 opps · 04:03 JST Apr 19 · 87dd16b)</strong> · DASHBOARD.md fresh ✅ · Lancers ✅ · <strong>DEPLOY-STALLED (Jax Decision Registry)</strong></span>
+            <span class="badge badge-ok">✅ HB ok · <strong>scout fresh (21 opps · 04:03 JST Apr 19)</strong> · DASHBOARD.md fresh ✅ · Lancers ✅ · <strong>DEPLOY-STALLED (Jax Decision Registry)</strong></span>
         </div>
         <div class="agent-row">
             <div>
@@ -289,7 +290,7 @@
 </div>
 <script>function updateTime(){const e=new Date().toLocaleString("en-US",{timeZone:"Asia/Tokyo",weekday:"short",month:"short",day:"numeric",hour:"2-digit",minute:"2-digit",second:"2-digit"});document.getElementById("ts").textContent=e}updateTime();setInterval(updateTime,1000);</script>
 <footer>
-    Kaji COO · <a href="../empire-home.html">Empire Home</a> · Telemetry: <a href="https://github.com/kaji-hemopo/telemetry">kaji-hemopo/telemetry</a> · Beat 304 · Delegation Prep · 2026-04-19 ~04:04 JST
+    Kaji COO · <a href="../empire-home.html">Empire Home</a> · Telemetry: <a href="https://github.com/kaji-hemopo/telemetry">kaji-hemopo/telemetry</a> · Beat 306 · New Ideas · 2026-04-19 ~04:15 JST
 </footer>
 </body>
 </html>
