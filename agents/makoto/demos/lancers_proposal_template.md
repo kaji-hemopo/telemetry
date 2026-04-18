@@ -79,7 +79,7 @@ Jackson · Tokyo
 
 ## デプロイURL / Deploy URLs
 
-Replace `https://your-demo-url.com/` with actual deployed URLs once Jax deploys.
+
 
 **To get live URLs:**
 1. Railway deploy → get `*.up.railway.app` domain for LINE Bot + FastAPI scraper

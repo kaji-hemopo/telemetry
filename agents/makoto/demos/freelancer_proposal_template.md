@@ -60,8 +60,8 @@ Bid at 80% of budget if budget is listed — leave room for negotiation.
 
 ## Demo URLs to Include
 
-Replace placeholder URLs with actual deployed links:
-- **FastAPI scraper demo:** `https://your-app.up.railway.app/scrape` (Railway after deploy)
+Live demo URLs (verified on GitHub Pages):
+- **FastAPI scraper demo:** `https://kaji-hemopo.github.io/telemetry/agents/makoto/demos/fastapi_scraper/` (Railway after deploy)
 - **GitHub source:** `https://kaji-hemopo.github.io/telemetry/agents/makoto/demos/fastapi_scraper/`
 - **LP template:** `https://kaji-hemopo.github.io/telemetry/agents/makoto/demos/lp_template/` (Neocities after deploy)
 
