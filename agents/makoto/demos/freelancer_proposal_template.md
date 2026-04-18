@@ -19,8 +19,8 @@ I saw your project — {project_title_from_listing}.
 
 **Relevant experience / demo:**
 - Web scraping API: URL → structured JSON (title, price, description, key data)
-  Live demo: https://your-scraper-demo.up.railway.app/docs (try the /scrape endpoint)
-- Code sample: https://github.com/kaji-hemopo/fastapi-scraper-demo
+  Live demo: https://kaji-hemopo.github.io/telemetry/agents/makoto/demos/fastapi_scraper/ (try the /scrape endpoint)
+- Code sample: https://kaji-hemopo.github.io/telemetry/agents/makoto/demos/fastapi_scraper/
 
 **Delivery:** 2–5 days depending on scope. Flat rate from $150 USD for standard scrapers.
 
@@ -38,7 +38,7 @@ Jackson
 | Placeholder | What to put |
 |-------------|--------------|
 | `{project_title_from_listing}` | Exact title from job posting |
-| `https://your-scraper-demo.up.railway.app/docs` | Replace with actual Railway URL after deploy |
+| `https://kaji-hemopo.github.io/telemetry/agents/makoto/demos/fastapi_scraper/` | Replace with actual Railway URL after deploy |
 | `$150 USD` | Adjust based on job budget (if budget listed) or go flat-rate |
 | `2-5 days` | Match to complexity: simple = 2 days, complex = 5 days |
 
@@ -62,8 +62,8 @@ Bid at 80% of budget if budget is listed — leave room for negotiation.
 
 Replace placeholder URLs with actual deployed links:
 - **FastAPI scraper demo:** `https://your-app.up.railway.app/scrape` (Railway after deploy)
-- **GitHub source:** `https://github.com/kaji-hemopo/fastapi-scraper-demo`
-- **LP template:** `https://yoursite.neocities.org/lp_template/` (Neocities after deploy)
+- **GitHub source:** `https://kaji-hemopo.github.io/telemetry/agents/makoto/demos/fastapi_scraper/`
+- **LP template:** `https://kaji-hemopo.github.io/telemetry/agents/makoto/demos/lp_template/` (Neocities after deploy)
 
 If not yet deployed, say: "demo available on request — will share live URL before hire"
 

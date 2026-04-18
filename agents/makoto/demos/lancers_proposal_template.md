@@ -17,9 +17,9 @@ Use for LINE Bot, FastAPI, LP制作, スクレイピング jobs on Lancers.
 貴社の案件を拝見しました。{job_specific_intro}を感じており、ぜひお手伝いしたいと思ました。
 
 **実績・デモ:**
-- LINE Bot開発: https://your-demo-url.com/line-bot ( Eko + keyword routing / 自動返信Bot )
-- FastAPI API開発: https://your-demo-url.com/scraper-api ( URL → structured JSON )
-- LP制作例: https://your-demo-url.com/lp-template
+- LINE Bot開発: https://kaji-hemopo.github.io/telemetry/agents/makoto/demos/line_bot_echo/ ( Eko + keyword routing / 自動返信Bot )
+- FastAPI API開発: https://kaji-hemopo.github.io/telemetry/agents/makoto/demos/fastapi_scraper/ ( URL → structured JSON )
+- LP制作例: https://kaji-hemopo.github.io/telemetry/agents/makoto/demos/lp_template/
 
 **対応内容:**
 {具体的服务内容 — describe in JP}
@@ -45,9 +45,9 @@ Hi {client_name},
 I saw your project on Lancers — {job_specific_intro} is exactly the type of work I specialize in.
 
 **Demo links (live code you can test right now):**
-- LINE Bot demo: https://your-demo-url.com/line-bot
-- FastAPI scraper API: https://your-demo-url.com/scraper-api
-- Landing page template: https://your-demo-url.com/lp-template
+- LINE Bot demo: https://kaji-hemopo.github.io/telemetry/agents/makoto/demos/line_bot_echo/
+- FastAPI scraper API: https://kaji-hemopo.github.io/telemetry/agents/makoto/demos/fastapi_scraper/
+- Landing page template: https://kaji-hemopo.github.io/telemetry/agents/makoto/demos/lp_template/
 
 **My stack:** Python · FastAPI · LINE Messaging API · BeautifulSoup · Docker · GCP/Railway deploy
 
