@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Consulting & Web Development — Tokyo</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0a1628; color: #e6edf3; line-height: 1.6; }
+        .container { max-width: 780px; margin: 0 auto; padding: 48px 24px; }
+        .badge { display: inline-block; background: #1a1a2e; border: 1px solid #333; color: #888; font-size: 12px; padding: 4px 12px; border-radius: 20px; margin-bottom: 24px; }
+        h1 { font-size: 42px; font-weight: 800; line-height: 1.1; margin-bottom: 16px; }
+        h1 .accent { color: #22d3ee; }
+        h2 { font-size: 22px; font-weight: 600; margin: 40px 0 16px; color: #22d3ee; }
+        .sub { color: #888; font-size: 18px; margin-bottom: 40px; }
+        .services { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 32px 0; }
+        .service { background: #111; border: 1px solid #1e1e1e; border-radius: 12px; padding: 20px; }
+        .service h3 { font-size: 14px; color: #22d3ee; margin-bottom: 8px; }
+        .service p { font-size: 13px; color: #888; }
+        .price { font-size: 32px; font-weight: 700; margin: 32px 0 8px; color: #4ade80; }
+        .price span { font-size: 16px; color: #666; font-weight: 400; }
+        .cta { display: block; background: #22d3ee; color: #000; text-align: center; padding: 16px; border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 16px; margin: 32px 0; }
+        .cta:hover { background: #67e8f9; }
+        .pain { background: #0f0f14; border-left: 3px solid #22d3ee; padding: 16px 20px; margin: 24px 0; border-radius: 0 8px 8px 0; }
+        .pain p, .pain li { font-size: 14px; color: #aaa; }
+        .pain li { margin: 6px 0 6px 16px; }
+        .why { background: #111; border-radius: 12px; padding: 24px; margin: 24px 0; }
+        .why li { font-size: 14px; color: #ccc; margin: 8px 0; padding-left: 8px; }
+        .form-section { background: #111; border: 1px solid #1e1e1e; border-radius: 12px; padding: 32px; margin: 32px 0; }
+        .form-group { margin: 16px 0; }
+        label { display: block; font-size: 13px; color: #888; margin-bottom: 6px; }
+        input, textarea { width: 100%; background: #1a1a1a; border: 1px solid #333; color: #f5f5f5; padding: 12px; border-radius: 6px; font-size: 14px; }
+        input:focus, textarea:focus { outline: none; border-color: #22d3ee; }
+        textarea { resize: vertical; min-height: 80px; }
+        button { background: #22d3ee; color: #000; border: none; padding: 14px 32px; border-radius: 6px; font-size: 15px; font-weight: 700; cursor: pointer; width: 100%; }
+        button:hover { background: #67e8f9; }
+        .note { font-size: 12px; color: #555; margin-top: 12px; text-align: center; }
+        .lang-toggle { text-align: right; margin-bottom: 16px; }
+        .lang-toggle button { width: auto; padding: 6px 14px; font-size: 12px; background: #1a1a2e; color: #888; border: 1px solid #333; }
+        footer { text-align: center; font-size: 12px; color: #444; margin-top: 48px; }
+        .jp { display: none; }
+        .en { display: block; }
+        .lang-jp .jp { display: block; }
+        .lang-jp .en { display: none; }
+        @media(max-width:600px){ .services{grid-template-columns:1fr} h1{font-size:28px} }
+    </style>
+</head>
+<body class="en">
+
+<div class="container">
+
+    <!-- Language Toggle -->
+    <div class="lang-toggle">
+        <button onclick="document.body.classList.remove('lang-jp')">EN</button>
+        <button onclick="document.body.classList.add('lang-jp')">日本語</button>
+    </div>
+
+    <div class="badge">📍 Tokyo, Japan · Bilingual JP/EN</div>
+
+    <!-- HERO -->
+    <h1><span class="accent">Web</span> & IT solutions<br>built for your business</h1>
+    <p class="sub">Landing pages, LINE Bot integration, backend APIs — fast delivery, bilingual support.</p>
+
+    <div class="pain">
+        <p class="en">Your business needs an online presence but every freelancer quote is 3x your budget?</p>
+        <p class="en">You need something that actually works — not a template that breaks when you update it.</p>
+        <p class="jp">ウェブサイトを作りたいけど、制作者からの見積りが予算の3倍…</p>
+        <p class="jp">更新するたびに壊れるテンプレートじゃなくて、ちゃんと動くものが欲しい。</p>
+    </div>
+
+    <h2 class="en">What I Build</h2>
+    <h2 class="jp" style="color:#22d3ee;font-size:22px;font-weight:600;margin:40px 0 16px;">対応内容</h2>
+
+    <div class="services">
+        <div class="service">
+            <h3 class="en">📄 Landing Pages</h3>
+            <h3 class="jp" style="font-size:14px;color:#22d3ee;margin-bottom:8px;">📄 LP制作</h3>
+            <p class="en">One-page sites for clinics, salons, restaurants. Bilingual JP/EN. ¥50,000–¥150,000.</p>
+            <p class="jp">美容院・レストラン・医院专家向けLP制作。日英双语対応。¥50,000〜。</p>
+        </div>
+        <div class="service">
+            <h3 class="en">💬 LINE Bot Integration</h3>
+            <h3 class="jp" style="font-size:14px;color:#22d3ee;margin-bottom:8px;">💬 LINE Bot開発</h3>
+            <p class="en">Auto-reply, booking confirmation, notification bots. ¥80,000–¥300,000.</p>
+            <p class="jp">自動返信・予約管理・通知LINE Bot開発。¥80,000〜。</p>
+        </div>
+        <div class="service">
+            <h3 class="en">⚡ FastAPI Backends</h3>
+            <h3 class="jp" style="font-size:14px;color:#22d3ee;margin-bottom:8px;">⚡ FastAPI API開発</h3>
+            <p class="en">Data pipelines, webhook integrations, internal tools. ¥50,000–¥400,000.</p>
+            <p class="jp">データパイプライン、Webhook連携、内部ツール開発。¥50,000〜。</p>
+        </div>
+        <div class="service">
+            <h3 class="en">🕷️ Web Scraping</h3>
+            <h3 class="jp" style="font-size:14px;color:#22d3ee;margin-bottom:8px;">🕷️ スクレイピング</h3>
+            <p class="en">Price monitoring, competitor tracking, data collection. ¥30,000–¥200,000.</p>
+            <p class="jp">価格監視、競合調査、データ収集。¥30,000〜。</p>
+        </div>
+    </div>
+
+    <div class="price">
+        ¥80,000 <span>starting from</span>
+    </div>
+
+    <a href="#contact" class="cta" id="cta-en">Get a free consultation →</a>
+    <a href="#contact" class="cta" id="cta-jp" style="display:none;"> 무료 상담 받기 →</a>
+
+    <h2 class="en">Why Work With Me</h2>
+    <h2 class="jp" style="color:#22d3ee;font-size:22px;font-weight:600;margin:40px 0 16px;">なぜ私が作るのか</h2>
+
+    <div class="why">
+        <ul>
+            <li class="en">Tokyo-based · Japanese(N3+) + English —沟通没问题</li>
+            <li class="jp">東京在住 · 日本語(N3+) + 英語対応</li>
+            <li class="en">Fast delivery — most projects done in 1–2 weeks</li>
+            <li class="jp"> 빠른 제공 — 대부분의 프로젝트 1~2주 내 완료</li>
+            <li class="en">Code you own — deployed, documented, easy to update</li>
+            <li class="jp"> 소유권 보장 — 배포완료, 유지보수 쉬움</li>
+            <li class="en">Proof of capability — live demos available before you hire</li>
+            <li class="jp">실제 결과물 — 의뢰 전 라이브 데모 제공 가능</li>
+        </ul>
+    </div>
+
+    <!-- CONTACT FORM -->
+    <div class="form-section" id="contact">
+        <h2 class="en">Let's Talk</h2>
+        <h2 class="jp" style="color:#22d3ee;font-size:20px;font-weight:600;margin:0 0 20px;">お問い合わせ</h2>
+
+        <form id="contact-form">
+            <div class="form-group">
+                <label class="en">Your name / お名前</label>
+                <label class="jp">お名前</label>
+                <input type="text" name="name" placeholder="Tanaka" required>
+            </div>
+            <div class="form-group">
+                <label class="en">Email / メールアドレス</label>
+                <label class="jp">メールアドレス</label>
+                <input type="email" name="email" placeholder="tanaka@example.com" required>
+            </div>
+            <div class="form-group">
+                <label class="en">What do you need? / 必要するもの</label>
+                <label class="jp">必要するもの</label>
+                <textarea name="message" placeholder="Describe your project..." required></textarea>
+            </div>
+            <button type="submit" class="en">Send Message</button>
+            <button type="submit" class="jp" style="display:none;">送信する</button>
+            <p class="note en">Replies within 24 hours.</p>
+            <p class="note jp" style="display:none;">24時間以内にご連絡いたします。</p>
+        </form>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 Tokyo IT Services · Tokyo, Japan
+</footer>
+
+<script>
+    // Simple language toggle that updates CTA buttons + form submit text
+    const enBtns = document.querySelectorAll('.cta#cta-en, button[onclick*="remove(\'lang-jp\')"]');
+    const jpBtns = document.querySelectorAll('.cta#cta-jp, button[onclick*="add(\'lang-jp\')"]');
+    document.querySelector('#contact-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const isJP = document.body.classList.contains('lang-jp');
+        const msg = isJP ? ' ✅ メッセージを受け取りました！24時間以内にご連絡いたします。' : ' ✅ Message received! I\'ll reply within 24 hours.';
+        this.innerHTML = '<p style="font-size:16px;color:#4ade80;text-align:center;padding:20px;">' + msg + '</p>';
+    });
+</script>
+
+</body>
+</html>
