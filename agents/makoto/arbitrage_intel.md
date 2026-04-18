@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-19 00:34 JST
+Generated: 2026-04-19 01:56 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -52,10 +52,9 @@ Generated: 2026-04-19 00:34 JST
 
 | Score | Platform | Keyword | Title | Budget/Rate | URL |
 |---:|---|---|---|---|---|
+| 75 | Freelancer | Python scraper | Python Django Web App Development | $250.00 | https://www.freelancer.com/projects/flask/Python-Django-Web-App-Development.html |
 | 75 | Freelancer | Python scraper | PYTHON / REACT DEVELOPER TUYỂN DỤNG | $250.00 | https://www.freelancer.com/projects/docker/PYTHON-REACT-DEVELOPER-TUY.html |
 | 75 | Freelancer | Python scraper | Technical Sales Representative &ndash; Custom Software Solutions | $250.00 | https://www.freelancer.com/projects/sales/Technical-Sales-Representative-Custom.html |
-| 75 | Freelancer | Data processing API | Power BI Dashboard for HR Department (On-Site in Riyadh) | $75.00 | https://www.freelancer.com/projects/data-entry/Power-Dashboard-for-Department-Site.html |
-| 75 | Freelancer | Data processing API | One-Month Data Entry Project | $250.00 | https://www.freelancer.com/projects/google-sheets/One-Month-Data-Entry-Project.html |
 | 65 | Freelancer | Python scraper | Django/Flask Web App Development | $15.00 | https://www.freelancer.com/projects/flask/Django-Flask-Web-App-Development.html |
 | 65 | Freelancer | Python scraper | LISH Collaboration Platform Development Team | We are LISH, a platform where teams collaborate to deliver real-world projects.  | https://www.freelancer.com/projects/full-stack-development/LISH-Collaboration-Platform-Development.html |
 | 65 | Freelancer | Python scraper | AI-Powered Website Builder MVP | $25.00 | https://www.freelancer.com/projects/web-development/Powered-Website-Builder-MVP.html |
@@ -67,7 +66,8 @@ Generated: 2026-04-19 00:34 JST
 | 65 | Freelancer | Python scraper | 3-Day AI Automation Setup | $30.00 | https://www.freelancer.com/projects/ai-development/Day-Automation-Setup.html |
 | 65 | Freelancer | Python scraper | Autonomous Amazon &amp; Flipkart Crawler | I need two separate, non-blocking crawlers—one targeting Amazon, the other Flipk | https://www.freelancer.com/projects/web-scraping/Autonomous-Amazon-Flipkart-Crawler.html |
 | 65 | Freelancer | Python scraper | Python Application from Scratch - 18/04/2026 02:42 EDT | Here’s a clean, professional project description you can directly paste on Freel | https://www.freelancer.com/projects/automation/Python-Application-from-Scratch-EDT.html |
-| 65 | Freelancer | Python scraper | ByteFarm-Ai farm Intelligence | ByteFarm/ ├── ML/ # Machine Learning pipeline │ ├── src/ # Inference, weather cl | https://www.freelancer.com/projects/api-developmet/ByteFarm-farm-Intelligence.html |
+| 65 | Freelancer | Make.com automation | Full YouTube Automation via n8n | i want to be able to create long faceless videos in any style. I want the whole  | https://www.freelancer.com/projects/n8n/Full-YouTube-Automation-via.html |
+| 65 | Freelancer | Make.com automation | Build Automated Skool Course Community | I’ve designed an online course and chosen Skool as the home for my students. Wha | https://www.freelancer.com/projects/automation/Build-Automated-Skool-Course-Community.html |
 | 65 | Freelancer | Make.com automation | RSI Divergence Crypto Bot Automation | I want to turn my existing BTC / ETH strategy into a fully automated workflow: P | https://www.freelancer.com/projects/pine-script/RSI-Divergence-Crypto-Bot-Automation.html |
 | 65 | Freelancer | Make.com automation | RPA for Data Entry Automation | I want to streamline the way we handle data entry and ongoing data management wi | https://www.freelancer.com/projects/rpa-development/RPA-for-Data-Entry-Automation.html |
 | 65 | Freelancer | Make.com automation | StepWise / .NET Job Support Expert | StepWise / .NET Job Support Expert (REST/SOAP APIs | SQL | Excel) We are looking | https://www.freelancer.com/projects/rest-api/StepWise-NET-Job-Support-Expert.html |

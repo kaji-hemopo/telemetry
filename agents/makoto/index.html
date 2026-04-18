@@ -1,278 +1,57 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jackson · Tech Freelance Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,600;9..40,700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
-    <style>
-        :root { --bg: #0a1628; --surface: rgba(13,24,46,0.95); --border: rgba(255,255,255,0.07); --border-accent: rgba(34,211,238,0.2); --text: #e6edf3; --muted: #8b949e; --dim: #484f58; --accent: #22d3ee; --green: #4ade80; --red: #f87171; --yellow: #fbbf24; --violet: #a78bfa; --font-d: "Syne",system-ui,sans-serif; --font-b: "DM Sans",system-ui,sans-serif; --radius: 12px; }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: var(--font-b); color: var(--text); min-height: 100vh; background: var(--bg); -webkit-font-smoothing: antialiased; line-height: 1.55; }
-        body::before { content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none; background: radial-gradient(ellipse 80% 50% at 50% -5%, rgba(34,211,238,0.07), transparent 50%), radial-gradient(ellipse 40% 30% at 100% 0%, rgba(167,139,250,0.04), transparent 40%), linear-gradient(180deg, #0a1628, #060d18); }
-        .container { max-width: 1000px; margin: 0 auto; padding: 28px 20px 48px; }
-        header { background: linear-gradient(135deg, rgba(13,24,46,0.98), rgba(6,13,24,0.99)); border: 1px solid rgba(255,255,255,0.1); border-radius: 18px; padding: 22px 26px; margin-bottom: 22px; display: flex; justify-content: space-between; align-items: flex-start; box-shadow: 0 20px 40px -14px rgba(0,0,0,0.5), 0 0 0 1px rgba(34,211,238,0.06) inset; position: relative; overflow: hidden; }
-        header::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, var(--accent), transparent); opacity: 0.4; }
-        .header-left h1 { font-family: var(--font-d); font-size: 1.4rem; font-weight: 800; letter-spacing: -0.03em; margin-bottom: 5px; background: linear-gradient(95deg, #fff, #8b949e); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-        .header-left p { color: var(--muted); font-size: 13px; }
-        .header-right { text-align: right; }
-        .role-tag { display: inline-block; padding: 4px 12px; border-radius: 999px; font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; background: rgba(34,211,238,0.1); color: var(--accent); border: 1px solid rgba(34,211,238,0.22); margin-bottom: 7px; }
-        .updated { font-size: 11px; color: var(--dim); font-variant-numeric: tabular-nums; }
-        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 18px; }
-        .grid-4 { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 12px; margin-bottom: 18px; }
-        .card { background: var(--surface); border-radius: var(--radius); padding: 18px 18px 16px; border: 1px solid var(--border); backdrop-filter: blur(10px); }
-        .card.full { grid-column: 1 / -1; }
-        .card h3 { font-family: var(--font-d); font-size: 0.78rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent); margin-bottom: 12px; display: flex; align-items: center; gap: 6px; }
-        .badge { display: inline-block; padding: 2px 9px; border-radius: 999px; font-size: 10.5px; font-weight: 600; }
-        .badge-ok { background: rgba(74,222,128,0.1); color: var(--green); border: 1px solid rgba(74,222,128,0.2); }
-        .badge-warn { background: rgba(251,191,36,0.1); color: var(--yellow); border: 1px solid rgba(251,191,36,0.2); }
-        .badge-build { background: rgba(34,211,238,0.1); color: var(--accent); border: 1px solid rgba(34,211,238,0.2); }
-        .demo-card { background: var(--surface); border-radius: var(--radius); padding: 16px; border: 1px solid var(--border); }
-        .demo-card:hover { border-color: rgba(34,211,238,0.3); }
-        .demo-card .tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 10px; font-weight: 600; margin-bottom: 6px; }
-        .tag-py { background: rgba(34,211,238,0.1); color: var(--accent); }
-        .tag-line { background: rgba(74,222,128,0.1); color: var(--green); }
-        .tag-api { background: rgba(167,139,250,0.1); color: #a78bfa; }
-        .tag-lp { background: rgba(251,191,36,0.1); color: var(--yellow); }
-        .demo-card h4 { font-size: 14px; font-weight: 700; margin-bottom: 6px; }
-        .demo-card p { font-size: 11.5px; color: var(--muted); margin-bottom: 10px; line-height: 1.5; }
-        .demo-card .links { display: flex; gap: 8px; flex-wrap: wrap; }
-        .demo-card .links a { font-size: 11px; padding: 4px 10px; border-radius: 6px; text-decoration: none; font-weight: 600; }
-        .demo-card .links .btn-live { background: var(--accent); color: #000; }
-        .demo-card .links .btn-code { background: rgba(255,255,255,0.06); color: var(--muted); border: 1px solid rgba(255,255,255,0.1); }
-        .progress-bar { background: rgba(0,0,0,0.3); border-radius: 999px; height: 5px; overflow: hidden; margin-top: 8px; }
-        .progress-bar .fill { height: 100%; border-radius: 999px; background: linear-gradient(90deg, var(--accent), #a78bfa); }
-        .dash-card { background: var(--surface); border-radius: var(--radius); padding: 16px; border: 1px solid var(--border); text-align: center; transition: border-color 0.2s, transform 0.2s; }
-        .dash-card:hover { border-color: rgba(34,211,238,0.3); transform: translateY(-2px); }
-        .dash-card-icon { font-size: 2rem; margin-bottom: 8px; }
-        .dash-card-title { font-weight: 700; font-size: 13px; margin-bottom: 4px; }
-        .dash-card-desc { font-size: 11.5px; color: var(--dim); }
-        .dash-card a { text-decoration: none; color: var(--text); display: block; }
-        .stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-        .stat-box { background: rgba(0,0,0,0.2); border-radius: 9px; padding: 12px 14px; border: 1px solid rgba(255,255,255,0.05); }
-        .stat-box .val { font-size: 1.6rem; font-weight: 800; color: var(--accent); }
-        .stat-box .label { font-size: 11px; color: var(--dim); margin-top: 2px; }
-        .alert-box { padding: 10px 13px; background: rgba(251,191,36,0.07); border: 1px solid rgba(251,191,36,0.2); border-radius: 9px; font-size: 12.5px; margin-bottom: 8px; }
-        .alert-box:last-child { margin-bottom: 0; }
-        .alert-box.ok { background: rgba(74,222,128,0.07); border-color: rgba(74,222,128,0.2); }
-        .alert-box.build { background: rgba(34,211,238,0.07); border-color: rgba(34,211,238,0.2); }
-        .pipeline-row { display: flex; align-items: center; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.04); font-size: 13px; }
-        .pipeline-row:last-child { border-bottom: none; }
-        .pipeline-name { font-weight: 600; }
-        .pipeline-sub { font-size: 11.5px; color: var(--dim); }
-        footer { text-align: center; padding: 20px 16px; color: var(--dim); font-size: 11px; border-top: 1px solid rgba(255,255,255,0.06); margin-top: 8px; }
-        footer a { color: var(--accent); text-decoration: none; }
-        code { background: rgba(0,0,0,0.3); padding: 1px 5px; border-radius: 4px; font-size: 11px; }
-        @media(max-width:640px){ .grid,.grid-4,.stat-grid{grid-template-columns:1fr} header{flex-direction:column;gap:12px} .header-right{text-align:left} }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Makoto Arbitrage Dashboard</title>
+  <style>
+    :root { --bg:#0b1220; --card:#121a2b; --txt:#e8eefc; --muted:#9cb0d8; --accent:#4cc9f0; }
+    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; background:var(--bg); color:var(--txt); }
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 24px; }
+    .head { display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap; }
+    .card { background:var(--card); border:1px solid #23314f; border-radius:12px; padding:16px; }
+    h1 { margin:0 0 8px 0; }
+    .muted { color:var(--muted); margin:0; }
+    button { background:var(--accent); border:0; color:#002a3a; padding:10px 14px; border-radius:10px; font-weight:700; cursor:pointer; }
+    #content { margin-top:16px; overflow-x:auto; }
+    a { color:#7dd3fc; }
+    table { border-collapse: collapse; width:100%; }
+    th, td { border:1px solid #29406e; padding:8px; vertical-align: top; text-align:left; }
+    code { background:#1a2740; padding:2px 4px; border-radius:4px; }
+  </style>
 </head>
 <body>
-<div class="container">
-
-    <header>
-        <div class="header-left">
-            <h1>Jackson · Tech Freelance Portfolio</h1>
-            <p>Tokyo · Python, FastAPI, LINE Bot, web scraping · Bilingual JP/EN</p>
-        </div>
-        <div class="header-right">
-            <div class="role-tag">FREELANCE · BUILDING</div>
-            <div class="updated">Updated: <span id="ts">2026-04-18 14:33 JST</span></div>
-        </div>
-    </header>
-
-    <!-- DEMO PORTFOLIO -->
-    <div class="card full" style="margin-bottom:18px;">
-        <h3><span class="material-symbols-outlined">apps</span> Demo Portfolio — Live Proof of Capability</h3>
-        <div class="grid-4">
-
-            <!-- Demo 1: LINE Bot — Code Built -->
-            <div class="demo-card">
-                <span class="tag tag-line">CODE BUILT</span>
-                <h4>LINE Bot Echo + Keyword Router</h4>
-                <p>LINE Messaging API webhook · FastAPI · keyword routing · auto-reply logic</p>
-                <div class="progress-bar"><div class="fill" style="width:60%"></div></div>
-                <p style="font-size:10.5px;color:var(--dim);margin-top:4px;margin-bottom:10px;">Needs: LINE Channel credentials + Railway deploy</p>
-                <div class="links">
-                    <a href="demos/line_bot_echo/" class="btn-code">View Code</a>
-                </div>
-            </div>
-
-            <!-- Demo 2: FastAPI Scraper — Code Built -->
-            <div class="demo-card">
-                <span class="tag tag-py">CODE BUILT</span>
-                <h4>FastAPI Data Scraper API</h4>
-                <p>URL → structured JSON · BeautifulSoup · async FastAPI · price/title/description extraction</p>
-                <div class="progress-bar"><div class="fill" style="width:60%"></div></div>
-                <p style="font-size:10.5px;color:var(--dim);margin-top:4px;margin-bottom:10px;">Needs: Local test + Railway deploy</p>
-                <div class="links">
-                    <a href="demos/fastapi_scraper/" class="btn-code">View Code</a>
-                </div>
-            </div>
-
-            <!-- Demo 3: LP — CODE BUILT -->
-            <div class="demo-card">
-                <span class="tag tag-lp">CODE BUILT</span>
-                <h4>Landing Page Template</h4>
-                <p>Bilingual JP/EN service LP · language toggle · conversion-focused · pure HTML/CSS</p>
-                <div class="progress-bar"><div class="fill" style="width:80%"></div></div>
-                <p style="font-size:10.5px;color:var(--dim);margin-top:4px;margin-bottom:10px;">Needs: deploy to Neocities/GitHub Pages</p>
-                <div class="links">
-                    <a href="demos/lp_template/" class="btn-code">View Code</a>
-                </div>
-            </div>
-
-            <!-- Saito's Reference -->
-            <div class="demo-card">
-                <span class="tag tag-api">REFERENCE</span>
-                <h4>Saito's LINE+Invoice Demo</h4>
-                <p>FastAPI Invoice API + LINE webhook · pdfplumber · full-stack reference</p>
-                <div class="progress-bar"><div class="fill" style="width:100%"></div></div>
-                <p style="font-size:10.5px;color:var(--dim);margin-top:4px;margin-bottom:10px;">Ready · use as architecture reference</p>
-                <div class="links">
-                    <a href="https://kaji-hemopo.github.io/telemetry/agents/saito/" class="btn-code" target="_blank">Saito's Portfolio</a>
-                </div>
-            </div>
-
-        </div>
+  <div class="wrap">
+    <div class="head card">
+      <div>
+        <h1>Makoto — Global Digital Arbitrage Scout</h1>
+        <p class="muted">Live view of <code>workspace_makoto/outputs/arbitrage_intel.md</code></p>
+        <p class="muted" style="margin-top:8px;">
+          <a href="lancers_opportunities.html" style="color:#4cc9f0; font-weight:600;">⚡ Lancers Live Board</a> — actionable jobs with tech stack + strategy
+          &nbsp;|&nbsp;
+          <a href="https://kaji-hemopo.github.io/telemetry/empire-home.html" style="color:#888;">🏠 Empire Home</a>
+        </p>
+      </div>
+      <button id="reloadBtn">Reload Intel</button>
     </div>
+    <div id="content" class="card">Loading report...</div>
+  </div>
 
-    <!-- SUB-DASHBOARDS -->
-    <div class="card full" style="margin-bottom:18px;">
-        <h3><span class="material-symbols-outlined">dashboard</span> Scout Dashboards</h3>
-        <div class="grid-4">
-            <div class="dash-card">
-                <a href="lancers_opportunities.html">
-                    <div class="dash-card-icon">💼</div>
-                    <div class="dash-card-title">Lancers Live Board</div>
-                    <div class="dash-card-desc">20+ actionable Lancers jobs · auto-rebuilds on each scout</div>
-                </a>
-            </div>
-            <div class="dash-card">
-                <a href="arbitrage_intel.md">
-                    <div class="dash-card-icon">📊</div>
-                    <div class="dash-card-title">Arbitrage Intel</div>
-                    <div class="dash-card-desc">Full scout output · JPY + USD opportunities</div>
-                </a>
-            </div>
-            <div class="dash-card">
-                <a href="demos/line_bot_echo/">
-                    <div class="dash-card-icon">💬</div>
-                    <div class="dash-card-title">LINE Bot Code</div>
-                    <div class="dash-card-desc">Demo 1 source · FastAPI + LINE SDK</div>
-                </a>
-            </div>
-            <div class="dash-card">
-                <a href="../../empire-home.html">
-                    <div class="dash-card-icon">🏠</div>
-                    <div class="dash-card-title">Empire Home</div>
-                    <div class="dash-card-desc">All agents · live status · Jax action queue</div>
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <!-- STATS + STATUS -->
-    <div class="grid" style="margin-bottom:18px;">
-        <div class="card">
-            <h3><span class="material-symbols-outlined">analytics</span> Scout Pipeline</h3>
-            <div class="stat-grid">
-                <div class="stat-box">
-                    <div class="val">21+</div>
-                    <div class="label">High-conviction opps per run</div>
-                </div>
-                <div class="stat-box">
-                    <div class="val">60+</div>
-                    <div class="label">Global USD jobs (Freelancer RSS)</div>
-                </div>
-                <div class="stat-box">
-                    <div class="val">12h</div>
-                    <div class="label">Scout cycle</div>
-                </div>
-                <div class="stat-box">
-                    <div class="val">20min</div>
-                    <div class="label">Heartbeat cycle</div>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <h3><span class="material-symbols-outlined">warning</span> System Status</h3>
-            <div class="alert-box ok">
-                <strong>Freelancer RSS:</strong> 60 global USD confirmed ✅
-            </div>
-            <div class="alert-box ok">
-                <strong>Lancers board:</strong> Auto-rebuild on scout ✅
-            </div>
-            <div class="alert-box build">
-                <strong>Demo pipeline:</strong> 2/3 demos code-built · Demo 2 needs local test + Railway deploy
-            </div>
-        </div>
-    </div>
-
-    <!-- MARKET PATTERNS -->
-    <div class="card full" style="margin-bottom:18px;">
-        <h3><span class="material-symbols-outlined">trending_up</span> Market Patterns — What Clients Actually Pay For</h3>
-        <div class="grid">
-            <div>
-                <div class="pipeline-row">
-                    <div><span class="pipeline-name">LINE Bot + AI</span><div class="pipeline-sub">Vision/GPT/LIFF · ¥150-300k/project</div></div>
-                    <span class="badge badge-ok">Highest value</span>
-                </div>
-                <div class="pipeline-row">
-                    <div><span class="pipeline-name">FastAPI Backends</span><div class="pipeline-sub">Data APIs, webhooks · ¥50-400k</div></div>
-                    <span class="badge badge-ok">High demand</span>
-                </div>
-                <div class="pipeline-row">
-                    <div><span class="pipeline-name">Web Scrapers</span><div class="pipeline-sub">Price monitoring, data collection · ¥50-200k</div></div>
-                    <span class="badge badge-ok">High demand</span>
-                </div>
-            </div>
-            <div>
-                <div class="pipeline-row">
-                    <div><span class="pipeline-name">LP制作</span><div class="pipeline-sub">WordPress landing pages · ¥50-100k</div></div>
-                    <span class="badge badge-warn">Highest volume</span>
-                </div>
-                <div class="pipeline-row">
-                    <div><span class="pipeline-name">IaC / Terraform</span><div class="pipeline-sub">Cloud infrastructure · ¥150-800k</div></div>
-                    <span class="badge badge-ok">Premium tier</span>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- NEXT ACTIONS -->
-    <div class="card full" style="border-left:4px solid #f87171;">
-        <h3><span class="material-symbols-outlined">rocket_launch</span> Next Actions — Jax / Operator</h3>
-        <div class="grid" style="font-size:13px;">
-            <div>
-                <p style="margin-bottom:8px;"><strong>STEP 1 — Test Demo 2 locally (5 min):</strong></p>
-                <ol style="padding-left:18px;color:var(--muted);font-size:12.5px;">
-                    <li><code>cd demos/fastapi_scraper</code></li>
-                    <li><code>pip install -r requirements.txt && uvicorn main:app --reload --port 8000</code></li>
-                    <li>Test: <code>curl -X POST http://localhost:8000/scrape -H "Content-Type: application/json" -d '{"url":"https://example.com"}'</code></li>
-                </ol>
-            </div>
-            <div>
-                <p style="margin-bottom:8px;"><strong>STEP 2 — Deploy to Railway (10 min):</strong></p>
-                <ol style="padding-left:18px;color:var(--muted);font-size:12.5px;">
-                    <li>Push <code>demos/</code> to GitHub repo</li>
-                    <li>Connect repo to Railway → auto-deploy</li>
-                    <li>Update index.html with live URL (do this first)</li>
-                    <li>Then bid on Lancers with demo links in proposals</li>
-                </ol>
-            </div>
-        </div>
-    </div>
-
-</div>
-
-<footer>
-    Jackson Hemopo · Tokyo · Python/FastAPI/LINE Bot · <a href="../../empire-home.html">Empire Home</a> · Updated 2026-04-18
-</footer>
-
-<script>
-    document.getElementById('ts').textContent = new Date().toLocaleString('en-US', { timeZone: 'Asia/Tokyo', hour12: false }) + ' JST';
-</script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script>
+    async function loadIntel() {
+      const target = document.getElementById("content");
+      try {
+        const res = await fetch("../outputs/arbitrage_intel.md?ts=" + Date.now());
+        if (!res.ok) throw new Error("Report not found yet.");
+        const md = await res.text();
+        target.innerHTML = marked.parse(md);
+      } catch (e) {
+        target.innerHTML = "<p>No intel report yet. Run <code>python3 workspace_makoto/global_scout.py</code> first.</p>";
+      }
+    }
+    document.getElementById("reloadBtn").addEventListener("click", loadIntel);
+    loadIntel();
+  </script>
 </body>
 </html>
