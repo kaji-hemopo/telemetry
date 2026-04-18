@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-19 00:10 JST
+Generated: 2026-04-19 00:34 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -67,11 +67,11 @@ Generated: 2026-04-19 00:10 JST
 | 65 | Freelancer | Python scraper | 3-Day AI Automation Setup | $30.00 | https://www.freelancer.com/projects/ai-development/Day-Automation-Setup.html |
 | 65 | Freelancer | Python scraper | Autonomous Amazon &amp; Flipkart Crawler | I need two separate, non-blocking crawlers—one targeting Amazon, the other Flipk | https://www.freelancer.com/projects/web-scraping/Autonomous-Amazon-Flipkart-Crawler.html |
 | 65 | Freelancer | Python scraper | Python Application from Scratch - 18/04/2026 02:42 EDT | Here’s a clean, professional project description you can directly paste on Freel | https://www.freelancer.com/projects/automation/Python-Application-from-Scratch-EDT.html |
+| 65 | Freelancer | Python scraper | ByteFarm-Ai farm Intelligence | ByteFarm/ ├── ML/ # Machine Learning pipeline │ ├── src/ # Inference, weather cl | https://www.freelancer.com/projects/api-developmet/ByteFarm-farm-Intelligence.html |
 | 65 | Freelancer | Make.com automation | RSI Divergence Crypto Bot Automation | I want to turn my existing BTC / ETH strategy into a fully automated workflow: P | https://www.freelancer.com/projects/pine-script/RSI-Divergence-Crypto-Bot-Automation.html |
 | 65 | Freelancer | Make.com automation | RPA for Data Entry Automation | I want to streamline the way we handle data entry and ongoing data management wi | https://www.freelancer.com/projects/rpa-development/RPA-for-Data-Entry-Automation.html |
 | 65 | Freelancer | Make.com automation | StepWise / .NET Job Support Expert | StepWise / .NET Job Support Expert (REST/SOAP APIs | SQL | Excel) We are looking | https://www.freelancer.com/projects/rest-api/StepWise-NET-Job-Support-Expert.html |
 | 65 | Freelancer | Make.com automation | CAD Automation for CATIA | I need a solution to automate repetative tasks in CATIA, specifically in drawing | https://www.freelancer.com/projects/catia/CAD-Automation-for-CATIA.html |
-| 65 | Freelancer | Make.com automation | Comprehensive Web App Manual Testing | I need my client-facing web application put through a full round of manual testi | https://www.freelancer.com/projects/test-plan-writing/Comprehensive-Web-App-Manual-Testing.html |
 
 ## Notes
 - Scores prioritize: (1) simple automation/scripting fit, (2) payout magnitude, (3) keyword relevance.
