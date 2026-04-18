@@ -1,0 +1,19 @@
+{
+  "routes": [
+    { "src": "/api/price/xrp", "dest": "/api/price/xrp.js" },
+    { "src": "/api/price/btc", "dest": "/api/price/btc.js" },
+    { "src": "/api/price/eth", "dest": "/api/price/eth.js" },
+    { "src": "/api/price/gold", "dest": "/api/price/gold.js" },
+    { "src": "/api/market/summary", "dest": "/api/market/summary.js" },
+    { "src": "/(.*)", "dest": "/index.html" }
+  ],
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        { "key": "Access-Control-Allow-Origin", "value": "*" },
+        { "key": "Cache-Control", "value": "s-maxage=60, stale-while-revalidate" }
+      ]
+    }
+  ]
+}
