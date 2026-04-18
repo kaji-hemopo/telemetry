@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-19 01:56 JST
+Generated: 2026-04-19 05:48 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -52,26 +52,26 @@ Generated: 2026-04-19 01:56 JST
 
 | Score | Platform | Keyword | Title | Budget/Rate | URL |
 |---:|---|---|---|---|---|
+| 75 | Freelancer | Python scraper | Government Appointment Booking Automation Script | $250.00 | https://www.freelancer.com/projects/automation/Government-Appointment-Booking.html |
 | 75 | Freelancer | Python scraper | Python Django Web App Development | $250.00 | https://www.freelancer.com/projects/flask/Python-Django-Web-App-Development.html |
 | 75 | Freelancer | Python scraper | PYTHON / REACT DEVELOPER TUYỂN DỤNG | $250.00 | https://www.freelancer.com/projects/docker/PYTHON-REACT-DEVELOPER-TUY.html |
-| 75 | Freelancer | Python scraper | Technical Sales Representative &ndash; Custom Software Solutions | $250.00 | https://www.freelancer.com/projects/sales/Technical-Sales-Representative-Custom.html |
+| 75 | Freelancer | Make.com automation | Co-pilot App Development for Ride-Hailing Drivers | $250.00 | https://www.freelancer.com/projects/kotlin/pilot-App-Development-for-Ride.html |
+| 75 | Freelancer | Make.com automation | Technical Sales Representative &ndash; Custom Software Solutions | $250.00 | https://www.freelancer.com/projects/sales/Technical-Sales-Representative-Custom.html |
+| 75 | Freelancer | Data processing API | Amazon FBA Product Research Specialist Needed | $250.00 | https://www.freelancer.com/projects/amazon-fba/Amazon-FBA-Product-Research-Specialist.html |
+| 65 | Freelancer | Python scraper | Real Time Football Credit Platform -- 2 | $30.00 | https://www.freelancer.com/projects/php/Real-Time-Football-Credit-Platform.html |
+| 65 | Freelancer | Python scraper | Real Time Football Credit Platform | $30.00 | https://www.freelancer.com/projects/nodejs/Real-Time-Football-Credit-Platform.html |
 | 65 | Freelancer | Python scraper | Django/Flask Web App Development | $15.00 | https://www.freelancer.com/projects/flask/Django-Flask-Web-App-Development.html |
 | 65 | Freelancer | Python scraper | LISH Collaboration Platform Development Team | We are LISH, a platform where teams collaborate to deliver real-world projects.  | https://www.freelancer.com/projects/full-stack-development/LISH-Collaboration-Platform-Development.html |
 | 65 | Freelancer | Python scraper | AI-Powered Website Builder MVP | $25.00 | https://www.freelancer.com/projects/web-development/Powered-Website-Builder-MVP.html |
 | 65 | Freelancer | Python scraper | Scrape Kerala RERA Agents Data | I need a clean, one-time extraction of every registered agent listed on the Kera | https://www.freelancer.com/projects/data-scraping/Scrape-Kerala-RERA-Agents-Data.html |
 | 65 | Freelancer | Python scraper | 3-Day AI Automation Setup -- 4 | $10.00 | https://www.freelancer.com/projects/php/Day-Automation-Setup-40380661.html |
 | 65 | Freelancer | Python scraper | 3-Day AI Automation Setup -- 3 | $30.00 | https://www.freelancer.com/projects/php/Day-Automation-Setup-40380655.html |
-| 65 | Freelancer | Python scraper | 3-Day AI Automation Setup -- 2 | $30.00 | https://www.freelancer.com/projects/php/Day-Automation-Setup.html |
-| 65 | Freelancer | Python scraper | Automate PDF Phrase Extraction | I have a set of PDF files from which I need to pull out only certain phrases—no  | https://www.freelancer.com/projects/natural-language-processing/Automate-PDF-Phrase-Extraction.html |
-| 65 | Freelancer | Python scraper | 3-Day AI Automation Setup | $30.00 | https://www.freelancer.com/projects/ai-development/Day-Automation-Setup.html |
-| 65 | Freelancer | Python scraper | Autonomous Amazon &amp; Flipkart Crawler | I need two separate, non-blocking crawlers—one targeting Amazon, the other Flipk | https://www.freelancer.com/projects/web-scraping/Autonomous-Amazon-Flipkart-Crawler.html |
-| 65 | Freelancer | Python scraper | Python Application from Scratch - 18/04/2026 02:42 EDT | Here’s a clean, professional project description you can directly paste on Freel | https://www.freelancer.com/projects/automation/Python-Application-from-Scratch-EDT.html |
+| 65 | Freelancer | Make.com automation | StepWise / .NET Job Support Expert | StepWise / .NET Job Support Expert (REST/SOAP APIs | SQL | Excel) We are looking | https://www.freelancer.com/projects/rest-api/StepWise-NET-Job-Support-Expert.html |
+| 65 | Freelancer | Make.com automation | E-commerce Order&amp;Affiliate Rewards Platform Development | $30.00 | https://www.freelancer.com/projects/api-integration/commerce-Order-Affiliate-Rewards.html |
 | 65 | Freelancer | Make.com automation | Full YouTube Automation via n8n | i want to be able to create long faceless videos in any style. I want the whole  | https://www.freelancer.com/projects/n8n/Full-YouTube-Automation-via.html |
 | 65 | Freelancer | Make.com automation | Build Automated Skool Course Community | I’ve designed an online course and chosen Skool as the home for my students. Wha | https://www.freelancer.com/projects/automation/Build-Automated-Skool-Course-Community.html |
 | 65 | Freelancer | Make.com automation | RSI Divergence Crypto Bot Automation | I want to turn my existing BTC / ETH strategy into a fully automated workflow: P | https://www.freelancer.com/projects/pine-script/RSI-Divergence-Crypto-Bot-Automation.html |
 | 65 | Freelancer | Make.com automation | RPA for Data Entry Automation | I want to streamline the way we handle data entry and ongoing data management wi | https://www.freelancer.com/projects/rpa-development/RPA-for-Data-Entry-Automation.html |
-| 65 | Freelancer | Make.com automation | StepWise / .NET Job Support Expert | StepWise / .NET Job Support Expert (REST/SOAP APIs | SQL | Excel) We are looking | https://www.freelancer.com/projects/rest-api/StepWise-NET-Job-Support-Expert.html |
-| 65 | Freelancer | Make.com automation | CAD Automation for CATIA | I need a solution to automate repetative tasks in CATIA, specifically in drawing | https://www.freelancer.com/projects/catia/CAD-Automation-for-CATIA.html |
 
 ## Notes
 - Scores prioritize: (1) simple automation/scripting fit, (2) payout magnitude, (3) keyword relevance.
