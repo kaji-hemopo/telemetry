@@ -1,83 +1,68 @@
-# Jax Action Queue — REFRESHED 2026-04-18 16:56 JST · Beat 262
-
-> Source: Kaji COO · auto-generated · Beat 262 · Tidy Operations
-> Last full refresh: Sat Apr 18 16:56 JST · Telemetry: kaji-hemopo.github.io/telemetry/
-
----
-
-## 🏋️ Titan PT Launch — 🚨 WINDOW CLOSED ~7h56m ago · URGENT · Jax decision needed
-
-**What:** Titan Athlete Forge PT product launch — ¥150k/client · 48 digital assets · 660-post X pipeline
-**Status:** 🚨 **WINDOW CLOSED** — 09:00 JST Sat Apr 18 · **~7h56m ago**
-**Last Jax word:** 141h+ silent · 25+ Telegram nudges · NO RESPONSE
-**Options available:**
-- Say **"go"** → late launch (window closed but infrastructure ready)
-- Say **"sleep"** → pause until next window
-- Say **"Park it"** → shelve permanently
-
-**Assets confirmed ready:**
-- 48 digital products ✅
-- Gumroad product page ✅
-- Carrd landing page + Tally form ✅
-- 660-post X content calendar ✅
-- Outreach tracker ✅
-
-**Files:** `Beat_X335_Tally_Form_Content.md` · `Beat_X336_Gumroad_Product_Page_Content.md` · `Beat_X337_Gumroad_9_8k_Product_Page.md`
-
-**Launch status page:** [titan_launch_status.html](https://kaji-hemopo.github.io/telemetry/kaji/titan_launch_status.html)
+# Jax Action Queue — REFRESHED 2026-04-18 17:56 JST
+> Source: Kaji COO · Beat 265 · Improve Existing · ~17:56 JST Sat Apr 18
+> Status: Titan 🚨 WINDOW CLOSED 8h56m ago · 26+ nudges · NO RESPONSE · Felix PARKED · EMB v3 148h+ stale
 
 ---
 
-## 📋 Empire Morning Briefing v3 — "Go Telegram" UNBLOCKED
+## 🚨 CRITICAL — ACT NOW
 
-**What:** Automated morning briefing for Jackson (market pulse, empire health, action queue, pipeline status)
-**Status:** ✅ Draft REBUILT · `outputs/empire_morning_briefing_v3.md` · ready to send
-**Action needed:** Jax says **"Go Telegram"** → Kaji sends immediately via Telegram
-**Note:** EMB auto-trigger NOT active yet — requires Jax go-signal
-
----
-
-## ⚡ Makoto GBP Landing Page — GitHub Pages deploy
-
-**What:** Global Business Protocol landing page → GitHub Pages deployment
-**Status:** ⏳ BLOCKED — GitHub Pages route available, no new tokens needed
-**Action needed:** Jax says **"deploy GBP"** → immediate deploy
-**Current state:** Formspree `YOUR_FORM_ID` still placeholder · design complete
-**Pipeline:** Makoto arbitrage scout + Lancers live board ✅ running
+### 🏋️ Titan PT Launch — "go" URGENT · 🚨 WINDOW CLOSED 8h56m ago
+- **Launch window:** Sat Apr 18 07:00–09:00 JST 🚨 **CLOSED** (8h56m ago at 17:56 JST)
+- **Deadline for "go":** ~09:00 JST Sat Apr 18 (window expired · late "go" possible)
+- **Status:** Live status page ✅ → [titan_launch_status.html](https://kaji-hemopo.github.io/telemetry/kaji/titan_launch_status.html)
+- **Assets confirmed:** 48 ✅ · 127wk/1,615 posts pipeline ✅ · Titan HB running ✅
+- **Jax 3 actions:** (1) Publish PT_Landing_Page.html to carrd.co · (2) Create Gumroad ¥150k product · (3) Post X link · ~5-10 min hands-on
+- **Telegram nudges:** x26+ sent · **NO RESPONSE**
+- **Action:** `"go"` → Titan executes · `"pause"` → Titan stands down
 
 ---
 
-## 🎌 Felix Gmail Re-auth — Felix PARKED
+## ⏳ Pending Your Decision
 
-**What:** Felix N3 Vault + X post automation
-**Status:** 🚨 BLOCKED — Gmail app password expired (168h+ stale)
-**Impact:** N3 Phase 2b frozen (~580 entries) · X posts offline · **Felix PARKED**
-**Workspace:** Felix dir empty
-**Action needed:** Jax says **"Re-auth Gmail"** (provide app password) OR **"Park Felix"**
+### 📋 Empire Morning Briefing v3 — "Go Telegram" → Kaji sends immediately
+- **Draft:** `outputs/empire_morning_briefing_v3.md`
+- **Delivery:** Kaji direct Telegram relay (token confirmed)
+- **Staleness:** 148h+ · Jax "Go Telegram" not received
+- **Action:** `"Go Telegram"` → Kaji sends refreshed EMB to Telegram immediately
+
+### ⚡ Makoto GBP Deploy — GitHub Pages route available
+- **Brief:** `outputs/brief_makoto_deploy_reminder.md`
+- **Block:** Formspree YOUR_FORM_ID placeholder
+- **Staleness:** 30d+
+- **Action:** `"deploy GBP"` → Makoto executes
+
+### 🎌 Felix Gmail Re-auth — N3 Phase 2b frozen · X posts offline
+- **Brief:** `outputs/brief_felix_gmail_reauth.md`
+- **Impact:** N3 Phase 2b blocked (580 entries frozen) · X posts offline · workspace missing
+- **Staleness:** 176h+
+- **Action:** `"Re-auth Gmail"` (~3 min) OR `"Park Felix"`
 
 ---
 
-## Cron Health (Beat 262 · ~16:56 JST Sat Apr 18)
+## ✅ RESOLVED
+
+### ❌ Saito #13049491 — EXPIRED Thu Apr 16 23:59 JST
+- Jax silent ~28h · no override · Saito remains learn-only
+
+### ✅ Ito Pipeline PARTIAL (not critical)
+- Twitter/X ✅ · Gold Oracle ✅
+- NZ Property + Ahipara migrated to macOS crontab (Beat 196) ✅
+
+---
+
+## Cron Health Snapshot (Beat 265 · ~17:56 JST Sat Apr 18)
 
 | Agent | Job | ID | Status |
 |-------|-----|----|--------|
-| Kaji | 60min Initiative Beat | 560775b2 | ✅ ok · 46m ago |
-| Titan | 21min Heartbeat | 700eb064 | ✅ ok · 8m ago |
-| Ito | 20min Heartbeat | b59d1431 | ✅ ok · 6m ago |
-| Twitter/X | Twitter/X Intel | 55143010 | ✅ ok · 4m ago |
-| Gold Oracle | 2hr Update | fe1056a4 | ✅ ok · 20m ago |
-| Makoto | 21min Heartbeat | 07dbce5f | ✅ ok · 16m ago |
+| Kaji | 60min Initiative Beat | 560775b2 | ✅ ok · ~25m ago |
+| Titan | 21min Heartbeat | 700eb064 | ✅ ok · ~6m ago |
+| Ito | 20min Heartbeat | b59d1431 | ✅ ok · ~23m ago |
+| Twitter/X | Twitter/X Intel | 55143010 | ✅ ok · ~13m ago |
+| Gold Oracle Update | fe1056a4 | ✅ ok · ~59m ago |
+| Makoto | 21min Heartbeat | 07dbce5f | ✅ ok · ~14m ago |
 
-**6/6 crons ALL OK ✅.** All isolated non-critical.
-
----
-
-## Jax Directive: NO PROPOSALS FOR 3 MONTHS
-
-- **Active since:** Apr 14 20:45 JST
-- Saito shifted to learn-only Apr 15 ✅
-- All proposal submissions BLOCKED
+*6/6 OpenClaw crons healthy (all "ok" running). NZ Property + Ahipara → macOS crontab ✅ (08:00 JST daily). Saito HB not registered OpenClaw cron.*
 
 ---
 
-*Generated by Kaji COO · Beat 262 · Tidy Operations · ~16:56 JST Sat Apr 18*
+**Updated:** 2026-04-18 17:56 JST · Kaji COO · Beat 265 · Improve Existing · Dashboard algorithm corrected (IE=3 IS ≥3) · Titan elapsed: 8h36m→8h56m corrected · all timestamps refreshed · telemetry pushed ✅
