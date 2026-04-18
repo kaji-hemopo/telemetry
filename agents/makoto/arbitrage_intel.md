@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-17 22:12 JST
+Generated: 2026-04-18 21:36 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -14,12 +14,12 @@ Generated: 2026-04-17 22:12 JST
 |---:|---|---|---|---|---|
 | 90 | Domestic/JPY | Lancers | 運動講座LPのデザイン＋WordPress実装（構成・文章あり） | ¥80,000 | https://www.lancers.jp/work/detail/5523718 |
 | 90 | Domestic/JPY | Lancers | 【注目】クラウドファンディング用LP制作のプロを募集！ | ¥80,000 | https://www.lancers.jp/work/detail/5512575 |
+| 90 | Domestic/JPY | Lancers | 【急募】スキャン代行サービスLP制作！軽微な編集可能なシステム希望 | ¥200,000 | https://www.lancers.jp/work/detail/5518118 |
 | 90 | Domestic/JPY | Lancers | 【緊急】化粧品LP制作依頼！魅力的なサイトを3ページで | ¥80,000 | https://www.lancers.jp/work/detail/5467208 |
 | 90 | Domestic/JPY | Lancers | 【急募】弊社LPの内容修正作業をお手伝いください！ | ¥50,000 | https://www.lancers.jp/work/detail/5512382 |
 | 90 | Domestic/JPY | Lancers | 【急募】遺品整理会社設立に向けたLP制作・運用支援者募集 | ¥100,000 | https://www.lancers.jp/work/detail/5500364 |
 | 90 | Domestic/JPY | Lancers | Webデザイナー様募集中！LP制作など長期で継続依頼できるパートナーを探しています【構成案あり】 | ¥60,000 | https://www.lancers.jp/work/detail/5492411 |
 | 90 | Domestic/JPY | Lancers | 【急募】WordPressでのLP制作案件 | ¥100,000 | https://www.lancers.jp/work/detail/5501875 |
-| 90 | Domestic/JPY | Lancers | 【急募】マーケ支援サービスのLP制作をお任せできる方 | ¥100,000 | https://www.lancers.jp/work/detail/5294532 |
 | 90 | Domestic/JPY | Lancers | 【急募】カスタマーサポートを探しています | ¥80,000 | https://www.lancers.jp/work/detail/5465120 |
 | 90 | Domestic/JPY | Lancers | 2回目 ハローワークAPI連携による介護求人データ取得・格納システムの開発 | ¥50,000 | https://www.lancers.jp/work/detail/5518095 |
 
@@ -29,12 +29,12 @@ Generated: 2026-04-17 22:12 JST
 |---:|---|---|---|---|---|
 | 90 | Lancers | LP制作 | 運動講座LPのデザイン＋WordPress実装（構成・文章あり） | ¥80,000 | https://www.lancers.jp/work/detail/5523718 |
 | 90 | Lancers | LP制作 | 【注目】クラウドファンディング用LP制作のプロを募集！ | ¥80,000 | https://www.lancers.jp/work/detail/5512575 |
+| 90 | Lancers | LP制作 | 【急募】スキャン代行サービスLP制作！軽微な編集可能なシステム希望 | ¥200,000 | https://www.lancers.jp/work/detail/5518118 |
 | 90 | Lancers | LP制作 | 【緊急】化粧品LP制作依頼！魅力的なサイトを3ページで | ¥80,000 | https://www.lancers.jp/work/detail/5467208 |
 | 90 | Lancers | LP制作 | 【急募】弊社LPの内容修正作業をお手伝いください！ | ¥50,000 | https://www.lancers.jp/work/detail/5512382 |
 | 90 | Lancers | LP制作 | 【急募】遺品整理会社設立に向けたLP制作・運用支援者募集 | ¥100,000 | https://www.lancers.jp/work/detail/5500364 |
 | 90 | Lancers | LP制作 | Webデザイナー様募集中！LP制作など長期で継続依頼できるパートナーを探しています【構成案あり】 | ¥60,000 | https://www.lancers.jp/work/detail/5492411 |
 | 90 | Lancers | LP制作 | 【急募】WordPressでのLP制作案件 | ¥100,000 | https://www.lancers.jp/work/detail/5501875 |
-| 90 | Lancers | LP制作 | 【急募】マーケ支援サービスのLP制作をお任せできる方 | ¥100,000 | https://www.lancers.jp/work/detail/5294532 |
 | 90 | Lancers | LINE構築 | 【急募】カスタマーサポートを探しています | ¥80,000 | https://www.lancers.jp/work/detail/5465120 |
 | 90 | Lancers | API連携 | 2回目 ハローワークAPI連携による介護求人データ取得・格納システムの開発 | ¥50,000 | https://www.lancers.jp/work/detail/5518095 |
 | 90 | Lancers | API連携 | 【急募】既存システムの保守・改善ができるエンジニア募集 | ¥100,000 | https://www.lancers.jp/work/detail/5518756 |
@@ -52,26 +52,26 @@ Generated: 2026-04-17 22:12 JST
 
 | Score | Platform | Keyword | Title | Budget/Rate | URL |
 |---:|---|---|---|---|---|
-| 85 | Freelancer | Python scraper | Fast-Track Deployment: Uber-like App Customization | $750.00 | https://www.freelancer.com/projects/flutter/Fast-Track-Deployment-Uber-like.html |
-| 85 | Freelancer | Python scraper | Build Custom CRM + Ping/Post Lead Distribution System ( Please sh | $750.00 | https://www.freelancer.com/projects/api-developmet/Build-Custom-CRM-Ping-Post.html |
-| 85 | Freelancer | Python scraper | Stock Trading Bot Development | $1,500.00 | https://www.freelancer.com/projects/api-developmet/Stock-Trading-Bot-Development.html |
-| 75 | Freelancer | Python scraper | Senior Python Engineer for Web Automation | $50.00 | https://www.freelancer.com/projects/selenium/Senior-Python-Engineer-for-Web.html |
-| 75 | Freelancer | Python scraper | Bimbingan Flask Database Python | $250.00 | https://www.freelancer.com/projects/flask/Bimbingan-Flask-Database-Python.html |
-| 75 | Freelancer | Python scraper | Script para precios en Scryfall | $250.00 | https://www.freelancer.com/projects/api-integration/Script-para-precios-Scryfall.html |
-| 75 | Freelancer | Data processing API | CodeIgniter 4 Developer for E-Commerce Rebuild (CI3 &rarr; CI4 Cl | $250.00 | https://www.freelancer.com/projects/tailwind-css/CodeIgniter-Developer-for-Commerce.html |
-| 75 | Freelancer | Data processing API | Foreclosure Prevention triage System Creation | $250.00 | https://www.freelancer.com/projects/api/Foreclosure-Prevention-triage-System.html |
-| 75 | Freelancer | Data processing API | ASP.NET Core Auth Webapp | $250.00 | https://www.freelancer.com/projects/dot-net-core/ASP-NET-Core-Auth-Webapp.html |
-| 65 | Freelancer | Python scraper | AI Trading Bot &amp; Guide | I need an end-to-end AI trading system that can operate across stocks, cryptocur | https://www.freelancer.com/projects/natural-language-processing/Trading-Bot-Guide.html |
-| 65 | Freelancer | Python scraper | Text Data CSV Encoding -- 2 | $15.00 | https://www.freelancer.com/projects/data-management/Text-Data-CSV-Encoding.html |
-| 65 | Freelancer | Python scraper | Python Script Maintenance Support | $30.00 | https://www.freelancer.com/projects/flask/Python-Script-Maintenance-Support.html |
-| 65 | Freelancer | Python scraper | Full-Stack Developer for Travel Data Debugging | $30.00 | https://www.freelancer.com/projects/data-analysis/Full-Stack-Developer-for-Travel.html |
-| 65 | Freelancer | Python scraper | Explosion Debris Prediction Visualization | I am building a cinematic blast sequence and need solid data-driven support rath | https://www.freelancer.com/projects/numpy/Explosion-Debris-Prediction.html |
-| 65 | Freelancer | Python scraper | Cloud Zerodha Quantitative Trading Bot | I need a trading bot that runs entirely in the cloud and connects to Zerodha Kit | https://www.freelancer.com/projects/cloud-computing/Cloud-Zerodha-Quantitative-Trading-Bot.html |
-| 65 | Freelancer | Python scraper | Automated PCR-Based Nifty Trading Strategy Development (v Apr&#03 | PCR based strategy on Nifty, India - Fetching PCR and then execution 1- I need h | https://www.freelancer.com/projects/api/Automated-PCR-Based-Nifty-Trading.html |
-| 65 | Freelancer | Python scraper | Build AI Multi-Agent Orchestration Platform | Role Purpose Build, enhance, and scale production-grade web applications and pla | https://www.freelancer.com/projects/nextjs/Build-Multi-Agent-Orchestration-Platform.html |
-| 65 | Freelancer | Python scraper | Palantir Foundry Developer (Python/SQL, PySpark, AIP, Ontology,Wo | We are looking for an experienced Palantir Foundry Developer to support data and | https://www.freelancer.com/projects/sql/Palantir-Foundry-Developer-Python-SQL.html |
-| 65 | Freelancer | Make.com automation | Comprehensive Automated Dashboard Creation | We want to build an automated, consolidated dashboard that acts as a single sour | https://www.freelancer.com/projects/data-visualization/Comprehensive-Automated-Dashboard.html |
-| 65 | Freelancer | Make.com automation | Website &amp; Referral Flow Upgrade | $15.00 | https://www.freelancer.com/projects/web-design/Website-Referral-Flow-Upgrade.html |
+| 75 | Freelancer | Python scraper | Technical Sales Representative &ndash; Custom Software Solutions | $250.00 | https://www.freelancer.com/projects/sales/Technical-Sales-Representative-Custom.html |
+| 75 | Freelancer | Python scraper | Data Extraction &amp; Analysis Project | $250.00 | https://www.freelancer.com/projects/data-analysis/Data-Extraction-Analysis-Project.html |
+| 75 | Freelancer | Data processing API | Muslim matrimony app development | $250.00 | https://www.freelancer.com/projects/ios-development/Muslim-matrimony-app-development.html |
+| 75 | Freelancer | Data processing API | Power BI Dashboard for HR Department (On-Site in Riyadh) | $75.00 | https://www.freelancer.com/projects/data-entry/Power-Dashboard-for-Department-Site.html |
+| 65 | Freelancer | Python scraper | Scrape Kerala RERA Agents Data | I need a clean, one-time extraction of every registered agent listed on the Kera | https://www.freelancer.com/projects/data-scraping/Scrape-Kerala-RERA-Agents-Data.html |
+| 65 | Freelancer | Python scraper | 3-Day AI Automation Setup -- 4 | $10.00 | https://www.freelancer.com/projects/php/Day-Automation-Setup-40380661.html |
+| 65 | Freelancer | Python scraper | 3-Day AI Automation Setup -- 3 | $30.00 | https://www.freelancer.com/projects/php/Day-Automation-Setup-40380655.html |
+| 65 | Freelancer | Python scraper | 3-Day AI Automation Setup -- 2 | $30.00 | https://www.freelancer.com/projects/php/Day-Automation-Setup.html |
+| 65 | Freelancer | Python scraper | Automate PDF Phrase Extraction | I have a set of PDF files from which I need to pull out only certain phrases—no  | https://www.freelancer.com/projects/natural-language-processing/Automate-PDF-Phrase-Extraction.html |
+| 65 | Freelancer | Python scraper | 3-Day AI Automation Setup | $30.00 | https://www.freelancer.com/projects/ai-development/Day-Automation-Setup.html |
+| 65 | Freelancer | Python scraper | Autonomous Amazon &amp; Flipkart Crawler | I need two separate, non-blocking crawlers—one targeting Amazon, the other Flipk | https://www.freelancer.com/projects/web-scraping/Autonomous-Amazon-Flipkart-Crawler.html |
+| 65 | Freelancer | Python scraper | Python Application from Scratch - 18/04/2026 02:42 EDT | Here’s a clean, professional project description you can directly paste on Freel | https://www.freelancer.com/projects/automation/Python-Application-from-Scratch-EDT.html |
+| 65 | Freelancer | Python scraper | ByteFarm-Ai farm Intelligence | ByteFarm/ ├── ML/ # Machine Learning pipeline │ ├── src/ # Inference, weather cl | https://www.freelancer.com/projects/api-developmet/ByteFarm-farm-Intelligence.html |
+| 65 | Freelancer | Python scraper | Scraping Web con Cloudflare y reCAPTCHA | $10.00 | https://www.freelancer.com/projects/selenium/Scraping-Web-con-Cloudflare-reCAPTCHA.html |
+| 65 | Freelancer | Python scraper | Token Exposure Security Testing Tool | $30.00 | https://www.freelancer.com/projects/api/Token-Exposure-Security-Testing-Tool.html |
+| 65 | Freelancer | Python scraper | Zoho&ndash;Sage 100 Sync Bridge | $30.00 | https://www.freelancer.com/projects/zoho/Zoho-Sage-Sync-Bridge.html |
+| 65 | Freelancer | Python scraper | Full Stack + AI/ML Developer for PPC System | Full Stack + AI/ML Developer Needed – AI-Based Production Planning System (Fixed | https://www.freelancer.com/projects/full-stack-development/Full-Stack-Developer-for-PPC.html |
+| 65 | Freelancer | Make.com automation | RPA for Data Entry Automation | I want to streamline the way we handle data entry and ongoing data management wi | https://www.freelancer.com/projects/rpa-development/RPA-for-Data-Entry-Automation.html |
+| 65 | Freelancer | Make.com automation | StepWise / .NET Job Support Expert | StepWise / .NET Job Support Expert (REST/SOAP APIs | SQL | Excel) We are looking | https://www.freelancer.com/projects/rest-api/StepWise-NET-Job-Support-Expert.html |
+| 65 | Freelancer | Make.com automation | CAD Automation for CATIA | I need a solution to automate repetative tasks in CATIA, specifically in drawing | https://www.freelancer.com/projects/catia/CAD-Automation-for-CATIA.html |
 
 ## Notes
 - Scores prioritize: (1) simple automation/scripting fit, (2) payout magnitude, (3) keyword relevance.
