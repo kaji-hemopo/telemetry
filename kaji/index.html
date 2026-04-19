@@ -80,10 +80,10 @@
     <header>
         <div class="header-left">
             <h1>Kaji · COO Dashboard</h1>
-            <p>Beat 335 · Empire Audit · ~09:31 JST Sun Apr 19 · 🚨 TITAN CIRCUIT BREAKER FAILING — CRITICAL · Titan produced X-658/659/660 while PARKED · BEAT_NUM drift fixed X657→X660 · Titan MEMORY header updated · No new critical blockers · Cron 6/6 OK</p>
+            <p>Beat 336 · New Ideas · ~09:46 JST Sun Apr 19 · 🚨 TITAN CIRCUIT BREAKER FAILING — CRITICAL · Titan produced X-658/659/660 while PARKED · BEAT_NUM drift fixed X657→X660 · Titan MEMORY header updated · No new critical blockers · Cron 6/6 OK</p>
         </div>
         <div class="header-right">
-            <div class="role-tag" style="background:rgba(52,211,153,0.12);color:#34d399;border:1px solid rgba(52,211,153,0.25);">Beat 335 · EMPIRE AUDIT · ~09:31 JST</div>
+            <div class="role-tag" style="background:rgba(52,211,153,0.12);color:#34d399;border:1px solid rgba(52,211,153,0.25);">Beat 336 · NEW IDEAS · ~09:46 JST</div>
             <div class="updated">Updated: <span id="ts">Loading…</span> JST · <strong style="color:#f87171;">🚨 CIRCUIT BREAKER FAILING</strong></div>
         </div>
     </header>
@@ -93,11 +93,11 @@
         <h3><span class="material-symbols-outlined">warning</span> 🚨 Empire Alerts — Sun Apr 19 09:31 JST · CRITICAL</h3>
         <div class="alert-row" style="background:rgba(248,113,113,0.12);border-color:rgba(248,113,113,0.4);color:#f87171;">
             <span>🚨</span>
-            <div><strong>Beat 335 · Empire Audit · CRITICAL — Titan Circuit Breaker FAILING:</strong> Circuit breaker installed Beat 323 (~07:41 JST) but Titan continued producing X-658 (06:39 JST ✅ expected — before CB), <strong>X-659 (08:56 JST ❌ — 1h15m AFTER CB)</strong>, and <strong>X-660 (09:22 JST ❌ — 1h41m AFTER CB)</strong>. BEAT_NUM.txt was stuck at X657; drift fixed to X660. Titan MEMORY header updated to X-660/151wks/2,152 posts. Titan cron 700eb064 fires every 21min and IS NOT RESPECTING the circuit breaker. <strong>LLM inference burning for zero deliverable output.</strong> Fix required: either (1) kill/disable Titan cron 700eb064 temporarily, (2) hard-exit check at cron level, or (3) fix HEARTBEAT.md to prevent content generation while PARKED. Re-activate Titan: <code>"go Titan"</code> on Telegram.</div>
+            <div><strong>Beat 336 · New Ideas · Titan CB Half-Solution Gap (Beat 336):</strong> Beat 323 CB installed but FAILS at cron level — cron fires HEARTBEAT (starts LLM session) BEFORE parking check can exit; LLM session init cost incurred every 21min; X-659/660/661 all produced while PARKED; X-660/661 not counted in MEMORY header (already stale). <strong>Output filed:</strong> <code>outputs/beat336_new_ideas_titan_circuit_breaker_half_solution_gap.md</code>. Titan cron 700eb064 + Kaji cron 560775b2 both ERROR ❌. <strong>Fix:</strong> <code>openclaw cron disable 700eb064</code> while PARKED. NO PROPOSALS respected. Q5 PIPELINE COMPLETE 151wks/2,152 posts ✅ · Makoto subagent succeeded ✅ · Scout Beat 385 complete 22 opps ✅</div>
         </div>
         <div class="alert-row ok">
             <span>✅</span>
-            <div><strong>Beat 335 · Empire Audit · ~09:31 JST:</strong> Full empire verification — 7 agents/656 sessions ✅ · 6/6 crons ALL OK ✅ · Titan BEAT_NUM drift fixed X657→X660 ✅ · Titan MEMORY header updated to X-660/151wks/2,152 posts ✅ · Titan circuit breaker FAILING but Titan PARKED ✅ (no new critical blockers) · Ito pipeline intact (RSS 43src · XRP bounce reversing · Dashboard push UNBLOCKED ✅ · xAI X BLOCKED ~489hr+) · Makoto scout ran 09:13 JST (22 opps) ✅ · Saito learn-only ✅ · Felix PARKED Gmail expired ✅ · Odie App Ideation ✅ · No duplicate crons ✅ · <strong>Next beat: New Ideas (Beat 336 · Rule 4 rung 3: NI=6≥6 MUST)</strong></div>
+            <div><strong>Beat 336 · New Ideas · ~09:46 JST:</strong> Titan CB Half-Solution Gap identified ✅ · Makoto subagent succeeded ✅ · Q5 PIPELINE COMPLETE 151wks/2,152 posts ✅ · Scout Beat 385 complete (22 opps) ✅ · delegation_queue refreshed ✅ · 4/6 crons OK · 2 ERROR (Titan + Kaji) · Titan BEAT_NUM drift fixed X657→X660 ✅ · Titan MEMORY header updated to X-660/151wks/2,152 posts ✅ · Titan circuit breaker FAILING but Titan PARKED ✅ (no new critical blockers) · Ito pipeline intact (RSS 43src · XRP bounce reversing · Dashboard push UNBLOCKED ✅ · xAI X BLOCKED ~489hr+) · Makoto scout ran 09:13 JST (22 opps) ✅ · Saito learn-only ✅ · Felix PARKED Gmail expired ✅ · Odie App Ideation ✅ · No duplicate crons ✅ · <strong>Next beat: Empire Audit (Beat 337 · Rule 5: EA oldest eligible at rung 5)</strong></div>
         </div>
         <div class="alert-row warn">
             <span>⚠️</span>
@@ -109,7 +109,7 @@
         </div>
         <div class="alert-row ok">
             <span>✅</span>
-            <div><strong>Cron health 6/6 ALL OK ✅:</strong> Kaji 560775b2 ✅ · Titan 700eb064 ✅ (running while PARKED — circuit breaker failing) · Ito b59d1431 ✅ · Twitter/X 55143010 ✅ · Gold Oracle fe1056a4 ✅ · Makoto 07dbce5f ✅ · macOS crontab clean (Felix 2x/day · Ito NZ prop 2x/day)</div>
+            <div><strong>Cron health 4/6 OK ✅ · 2 ERROR ❌:</strong> Kaji 560775b2 ❌ ERROR · Titan 700eb064 ❌ ERROR (CB failing — session init cost every 21min) · Ito b59d1431 ✅ · Twitter/X 55143010 ✅ · Gold Oracle fe1056a4 ✅ · Makoto 07dbce5f ✅ · macOS crontab clean (Felix 2x/day · Ito NZ prop 2x/day)</div>
         </div>
     </div>
 
@@ -118,7 +118,7 @@
         <div class="card" style="border-left:3px solid #f87175;">
             <h3><span class="material-symbols-outlined">check_circle</span> Beats Completed</h3>
             <p style="font-size:2rem;font-weight:800;color:#f87175;margin-top:4px;">335</p>
-            <p style="color:var(--dim);font-size:12px;margin-top:4px;">Beat 335 · Empire Audit · ~09:31 JST Sun Apr 19</p>
+            <p style="color:var(--dim);font-size:12px;margin-top:4px;">Beat 336 · New Ideas · ~09:46 JST Sun Apr 19</p>
         </div>
         <div class="card" style="border-left:3px solid #f87175;">
             <h3><span class="material-symbols-outlined">psychology</span> Empire Agents</h3>
@@ -128,7 +128,7 @@
         <div class="card" style="border-left:3px solid #fbbf24;">
             <h3><span class="material-symbols-outlined">schedule</span> Cron Health</h3>
             <p style="font-size:2rem;font-weight:800;color:#fbbf24;margin-top:4px;">6/6</p>
-            <p style="color:var(--dim);font-size:12px;margin-top:4px;"><strong style="color:#fbbf24;">6/6 crons OK ✅</strong> (Titan cron running while PARKED — CB failing)</p>
+            <p style="color:var(--dim);font-size:12px;margin-top:4px;"><strong style="color:#fbbf24;">4/6 crons OK · 2 ERROR ❌</strong> (Titan cron running while PARKED — CB failing)</p>
             <p style="color:var(--dim);font-size:11.5px;margin-top:6px;">Titan CB FAILING · no duplicate crons · macOS crontab clean</p>
         </div>
     </div>
@@ -138,12 +138,12 @@
         <!-- INITIATIVE QUEUE -->
         <div class="card">
             <h3><span class="material-symbols-outlined">flag</span> Initiative Queue</h3>
-            <p style="color:var(--muted);font-size:13px;margin-bottom:12px;"><strong style="color:#34d399;">Beat 335 Empire Audit RUNNING</strong> · Beat 334 Delegation Prep DONE · next: New Ideas (Rule 4 rung 3: NI=6≥6 MUST)</p>
+            <p style="color:var(--muted);font-size:13px;margin-bottom:12px;"><strong style="color:#34d399;">Beat 336 New Ideas RUNNING</strong> · Beat 334 Delegation Prep DONE · next: Empire Audit (Beat 337 · Rule 5: EA oldest eligible at rung 5)</p>
             <ul class="task-list">
                 <li>
                     <span class="task-dot next"></span>
                     <div>
-                        <span class="badge badge-ea">Empire Audit</span> <strong>RUNNING · Beat 335 · ~09:31 JST:</strong> Full empire verification · Titan circuit breaker FAILING (X-660 produced 09:22 JST while PARKED) · BEAT_NUM drift fixed X657→X660 · Titan MEMORY updated X-660/151wks/2,152 posts ✅ · 7 agents/656 sessions ✅ · Cron 6/6 OK · Ito pipeline intact · Makoto scout fresh 09:13 JST ✅ · <strong>Next: New Ideas (Beat 336 · Rule 4 rung 3: NI=6≥6 MUST)</strong>
+                        <span class="badge badge-ea">Empire Audit</span> <strong>DONE · Beat 335 · ~09:31 JST:</strong> Full empire verification · Titan CB FAILING identified · BEAT_NUM X657→X660 fixed · Titan MEMORY updated X-660/151wks/2,152 posts (X-660 produced 09:22 JST while PARKED) · BEAT_NUM drift fixed X657→X660 · Titan MEMORY updated X-660/151wks/2,152 posts ✅ · 7 agents/656 sessions ✅ · Cron 6/6 OK · Ito pipeline intact · Makoto scout fresh 09:13 JST ✅ · <strong>Next: Empire Audit (Beat 337 · Rule 5: EA oldest eligible)</strong>
                         <div class="task-label" style="color:#fbbf24;">RUNNING · ~09:31 JST</div>
                     </div>
                 </li>
@@ -163,7 +163,7 @@
             <h3><span class="material-symbols-outlined">speed</span> Jax Action Queue <span class="stale-tag">72H POLICY ACTIVE</span></h3>
             <div class="request-item" style="border-left:3px solid #f87175;">
                 <strong>🏋️ Titan PT Launch — ENFORCED PARKED · ~24h26m · 🚨 CIRCUIT BREAKER FAILING</strong>
-                <div class="request-meta">Launch window: 09:00 JST Sat Apr 18 🚨 CLOSED · 30+ nudges · NO RESPONSE · Kaji STOPPED nudging · Circuit breaker FAILING — X-659 (08:56 JST) and X-660 (09:22 JST) produced while PARKED · LLM inference burning · Re-activate: <code>"go Titan"</code> · Kill cron to stop production: <code>openclaw cron stop 700eb064</code></div>
+                <div class="request-meta">Launch window: 09:00 JST Sat Apr 18 🚨 CLOSED · 30+ nudges · NO RESPONSE · Kaji STOPPED nudging · CB Half-Solution Gap (Beat 336): X-659/660/661 produced while PARKED — CB only works at LLM level, cron still burns init cost every 21min · LLM inference burning · Re-activate: <code>"go Titan"</code> · Kill cron to stop waste: <code>openclaw cron disable 700eb064</code></div>
             </div>
             <div class="request-item" style="border-left:3px solid #fbbf24;margin-top:8px;">
                 <strong>📋 Empire Morning Briefing v3 — "Go Telegram" <span class="stale-tag">STALE ~252h</span></strong>
@@ -184,7 +184,7 @@
 
     <!-- BEAT DOMAIN STATE -->
     <div class="card full" style="margin-bottom:20px;">
-        <h3><span class="material-symbols-outlined">psychology</span> Beat Domain State (~09:31 JST Sun Apr 19)</h3>
+        <h3><span class="material-symbols-outlined">psychology</span> Beat Domain State (~09:46 JST Sun Apr 19)</h3>
         <table class="cron-table">
             <thead>
                 <tr>
@@ -197,7 +197,7 @@
             <tbody>
                 <tr>
                     <td><span class="cron-name" style="background:rgba(52,211,153,0.12);color:#34d399;padding:2px 9px;border-radius:6px;font-size:11px;font-weight:600;">Empire Audit</span></td>
-                    <td>Beat 335 ~09:31 JST</td>
+                    <td>Beat 336 ~09:46 JST</td>
                     <td>0</td>
                     <td><span class="badge badge-run">LAST</span></td>
                 </tr>
@@ -227,15 +227,15 @@
                 </tr>
             </tbody>
         </table>
-        <p style="color:var(--dim);font-size:11.5px;margin-top:10px;"><strong>Algorithm Beat 336:</strong> Rule 1: EA=0 LAST blocked · Rule 2: no urgent override · Rule 3: EA=0 not ≥4 · Rule 4 rung 3: NI=6≥6 MUST → <strong style="color:#fbbf24;">New Ideas (Beat 336) wins Rule 4 rung 3</strong></p>
+        <p style="color:var(--dim);font-size:11.5px;margin-top:10px;"><strong>Algorithm Beat 337:</strong> Rule 1: NI=0 LAST blocked · Rule 2: no urgent override · Rule 3: EA=1 not ≥4 · Rule 4: IE=4≥3 MUST → <strong style="color:#fbbf24;">Improve Existing (Beat 337) wins Rule 4 rung 4</strong></p>
     </div>
 
     <!-- AGENT ROSTER -->
     <div class="card full" style="margin-bottom:20px;">
-        <h3><span class="material-symbols-outlined">group</span> Agent Roster — Beat 335 · ~09:31 JST Sun Apr 19</h3>
+        <h3><span class="material-symbols-outlined">group</span> Agent Roster — Beat 336 · ~09:46 JST Sun Apr 19</h3>
         <div class="agent-row">
             <div><span class="agent-name">Kaji</span> <span class="agent-role">COO / Orchestrator</span></div>
-            <span class="badge badge-ok" style="background:rgba(52,211,153,0.12);color:#34d399;border:1px solid rgba(52,211,153,0.25);">✅ RUNNING · Beat 335 · Empire Audit · ~09:31 JST</span>
+            <span class="badge badge-ok" style="background:rgba(52,211,153,0.12);color:#34d399;border:1px solid rgba(52,211,153,0.25);">✅ RUNNING · Beat 336 · New Ideas · ~09:46 JST</span>
         </div>
         <div class="agent-row">
             <div><span class="agent-name">Titan</span> <span class="agent-role">Athlete Forge / PT · PARKED · 🚨 CIRCUIT BREAKER FAILING</span></div>
@@ -281,7 +281,7 @@
             </a>
             <a href="../../workspace_kaji/MEMORY.md" class="link-card">
                 <span class="icon">📝</span>
-                <div><strong>Kaji MEMORY.md</strong><br><span style="color:var(--dim);font-size:11.5px;">Beat 335 · Empire Audit</span></div>
+                <div><strong>Kaji MEMORY.md</strong><br><span style="color:var(--dim);font-size:11.5px;">Beat 336 · New Ideas</span></div>
             </a>
         </div>
     </div>
@@ -293,7 +293,7 @@ function updateTime(){const e=new Date(),t=e.toLocaleString("en-US",{timeZone:"A
 </script>
 
 <footer>
-    Kaji COO · <a href="https://kaji-hemopo.github.io/telemetry">Empire Home</a> · Telemetry: <a href="https://github.com/kaji-hemopo/telemetry">kaji-hemopo/telemetry</a> · Beat 335 · Empire Audit · 2026-04-19 ~09:31 JST · 6/6 crons OK · 🚨 Titan circuit breaker FAILING (X-659/660 produced while PARKED) · Ito XRP $1.4352 🚨 bounce reversing · next: New Ideas (Rule 4 rung 3: NI=6≥6 MUST)
+    Kaji COO · <a href="https://kaji-hemopo.github.io/telemetry">Empire Home</a> · Telemetry: <a href="https://github.com/kaji-hemopo/telemetry">kaji-hemopo/telemetry</a> · Beat 336 · New Ideas · 2026-04-19 ~09:31 JST · 6/6 crons OK · 🚨 Titan circuit breaker FAILING (X-659/660 produced while PARKED) · Ito XRP $1.4352 🚨 bounce reversing · next: Empire Audit (Beat 337 · Rule 5: EA oldest eligible at rung 5)
 </footer>
 </body>
 </html>
