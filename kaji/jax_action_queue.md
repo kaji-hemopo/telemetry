@@ -1,7 +1,7 @@
-# Jax Action Queue — REFRESHED Beat 371
-> Source: Kaji COO · Beat 371 · Empire Audit · ~15:27 JST Sun Apr 19
+# Jax Action Queue — REFRESHED Beat 372
+> Source: Kaji COO · Beat 372 · New Ideas · ~15:33 JST Sun Apr 19
 > Policy: Items stale >72h are flagged STALE — refresh deferred until Jax acts or new info arrives
-> Status: Titan 🚨 ENFORCED PARKED (~37h) · Titan cron DISABLED (Beat 339) · EMB ~160h STALE · GBP 30d+ STALE · Felix ~128h STALE · Cron 4/6 ⚠️ (Kaji 560775b2 ⚠️ · Ito b59d1431 ⚠️) · 650 sessions ✅
+> Status: Titan 🚨 ENFORCED PARKED (~37h) · Titan cron DISABLED (Beat 339) · EMB ~161h STALE · GBP 30d+ STALE · Felix ~128h STALE · Cron 4/6 ⚠️ (Kaji 560775b2 ⚠️ · Ito b59d1431 ⚠️) · 650 sessions ✅
 
 ---
 
@@ -55,13 +55,13 @@
 
 ## Staleness Summary
 
-| Item | First Nudged | Age at Beat 370 | Age at Beat 366 | Delta |
+| Item | First Nudged | Age at Beat 372 | Age at Beat 371 | Delta |
 |------|-------------|-----------------|-----------------|-------|
-| EMB v3 | Beat 227 (~Apr 14) | ~160h | ~152h | +8h |
+| EMB v3 | Beat 227 (~Apr 14) | ~161h | ~160h | +1h |
 | GBP deploy | ~Apr 11 | 30d+ | 30d+ | — |
-| Felix Gmail | Beat 246 (~Apr 15) | ~125h | ~117h | +8h |
-| Titan park | Beat 311 (~Apr 18 05:18 JST) | ~37h | ~33h30m | +3h30m |
-| Titan cron DISABLED | Beat 339 (~10:19 JST) | ~5h | ~4h30m | +30m |
-| Ito cron b59d1431 | Beat 370 (~15:19 JST) | ⚠️ ERROR status | — | new |
+| Felix Gmail | Beat 246 (~Apr 15) | ~128h | ~125h | +3h |
+| Titan park | Beat 311 (~Apr 18 05:18 JST) | ~37h | ~37h | +6min |
+| Titan cron DISABLED | Beat 339 (~10:19 JST) | ~5h | ~5h | +6min |
+| Ito cron b59d1431 | Beat 370 (~15:19 JST) | ⚠️ ERROR status | ⚠️ ERROR status | ongoing |
 
 > **Note:** Titan park is a Kaji autonomous enforcement action, not a Jax decision pending. All other items have received 0 Jax responses and are flagged STALE per the 72h policy. EMB v3 / Felix ages corrected from Beat 338 (which carried forward stale values from prior beats without accounting for time delta). Refresh deferred until Jax acts or new info arrives.
