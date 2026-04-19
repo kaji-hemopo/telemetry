@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-19 05:48 JST
+Generated: 2026-04-19 14:59 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -52,26 +52,26 @@ Generated: 2026-04-19 05:48 JST
 
 | Score | Platform | Keyword | Title | Budget/Rate | URL |
 |---:|---|---|---|---|---|
-| 75 | Freelancer | Python scraper | Government Appointment Booking Automation Script | $250.00 | https://www.freelancer.com/projects/automation/Government-Appointment-Booking.html |
-| 75 | Freelancer | Python scraper | Python Django Web App Development | $250.00 | https://www.freelancer.com/projects/flask/Python-Django-Web-App-Development.html |
-| 75 | Freelancer | Python scraper | PYTHON / REACT DEVELOPER TUYỂN DỤNG | $250.00 | https://www.freelancer.com/projects/docker/PYTHON-REACT-DEVELOPER-TUY.html |
+| 75 | Freelancer | Python scraper | Integrasi Login Google untuk Aplikasi | $250.00 | https://www.freelancer.com/projects/oauth/Integrasi-Login-Google-untuk-Aplikasi.html |
+| 75 | Freelancer | Make.com automation | Microsoft Dynamics 365 Field Service Automation: Generate Complet | $250.00 | https://www.freelancer.com/projects/automation/Microsoft-Dynamics-Field-Service.html |
 | 75 | Freelancer | Make.com automation | Co-pilot App Development for Ride-Hailing Drivers | $250.00 | https://www.freelancer.com/projects/kotlin/pilot-App-Development-for-Ride.html |
-| 75 | Freelancer | Make.com automation | Technical Sales Representative &ndash; Custom Software Solutions | $250.00 | https://www.freelancer.com/projects/sales/Technical-Sales-Representative-Custom.html |
-| 75 | Freelancer | Data processing API | Amazon FBA Product Research Specialist Needed | $250.00 | https://www.freelancer.com/projects/amazon-fba/Amazon-FBA-Product-Research-Specialist.html |
+| 65 | Freelancer | Python scraper | 3-Day AI Automation Setup -- 7 | $30.00 | https://www.freelancer.com/projects/php/Day-Automation-Setup-40382248.html |
+| 65 | Freelancer | Python scraper | 3-Day AI Automation Setup -- 6 | $30.00 | https://www.freelancer.com/projects/php/Day-Automation-Setup-40382188.html |
+| 65 | Freelancer | Python scraper | 3-Day AI Automation Setup -- 5 | $30.00 | https://www.freelancer.com/projects/php/Day-Automation-Setup-40382139.html |
+| 65 | Freelancer | Python scraper | KiteTicker Trend-Follow Algo Development | $12.00 | https://www.freelancer.com/projects/data-analysis/KiteTicker-Trend-Follow-Algo-Development.html |
+| 65 | Freelancer | Python scraper | Web-Based Data Subscription Platform | I’m putting together a new web application and want one experienced pair of hand | https://www.freelancer.com/projects/nextjs/Web-Based-Data-Subscription-Platform.html |
+| 65 | Freelancer | Python scraper | Python Automation for Industrial Machinery -- 2 | I need a skilled Python programmer to develop a control system for industrial ma | https://www.freelancer.com/projects/automation/Python-Automation-for-Industrial.html |
 | 65 | Freelancer | Python scraper | Real Time Football Credit Platform -- 2 | $30.00 | https://www.freelancer.com/projects/php/Real-Time-Football-Credit-Platform.html |
 | 65 | Freelancer | Python scraper | Real Time Football Credit Platform | $30.00 | https://www.freelancer.com/projects/nodejs/Real-Time-Football-Credit-Platform.html |
-| 65 | Freelancer | Python scraper | Django/Flask Web App Development | $15.00 | https://www.freelancer.com/projects/flask/Django-Flask-Web-App-Development.html |
-| 65 | Freelancer | Python scraper | LISH Collaboration Platform Development Team | We are LISH, a platform where teams collaborate to deliver real-world projects.  | https://www.freelancer.com/projects/full-stack-development/LISH-Collaboration-Platform-Development.html |
-| 65 | Freelancer | Python scraper | AI-Powered Website Builder MVP | $25.00 | https://www.freelancer.com/projects/web-development/Powered-Website-Builder-MVP.html |
-| 65 | Freelancer | Python scraper | Scrape Kerala RERA Agents Data | I need a clean, one-time extraction of every registered agent listed on the Kera | https://www.freelancer.com/projects/data-scraping/Scrape-Kerala-RERA-Agents-Data.html |
-| 65 | Freelancer | Python scraper | 3-Day AI Automation Setup -- 4 | $10.00 | https://www.freelancer.com/projects/php/Day-Automation-Setup-40380661.html |
-| 65 | Freelancer | Python scraper | 3-Day AI Automation Setup -- 3 | $30.00 | https://www.freelancer.com/projects/php/Day-Automation-Setup-40380655.html |
-| 65 | Freelancer | Make.com automation | StepWise / .NET Job Support Expert | StepWise / .NET Job Support Expert (REST/SOAP APIs | SQL | Excel) We are looking | https://www.freelancer.com/projects/rest-api/StepWise-NET-Job-Support-Expert.html |
+| 65 | Freelancer | Make.com automation | AWS Infrastructure Setup &amp; Automation | I need a complete AWS infrastructure designed, deployed, and handed over so the  | https://www.freelancer.com/projects/amazon-web-services/AWS-Infrastructure-Setup-Automation.html |
+| 65 | Freelancer | Make.com automation | Grocery Data Scraping and WooCommerce Integration | $10.00 | https://www.freelancer.com/projects/data-integration/Grocery-Data-Scraping-WooCommerce.html |
+| 65 | Freelancer | Make.com automation | Result-Driven Virtual Assistant for LinkedIn &amp; CRM | $15.00 | https://www.freelancer.com/projects/activecampaign/Result-Driven-Virtual-Assistant-for-40381980.html |
+| 65 | Freelancer | Make.com automation | Experienced PLC Programmer for Automation Project | We are looking for an experienced PLC Programmer and Hardware Integrator with st | https://www.freelancer.com/projects/plc/Experienced-PLC-Programmer-for.html |
+| 65 | Freelancer | Make.com automation | Sales Person Needed for AI Agency &ndash; US Client Outreach &amp | $30.00 | https://www.freelancer.com/projects/ai-consulting/Sales-Person-Needed-for-Agency.html |
 | 65 | Freelancer | Make.com automation | E-commerce Order&amp;Affiliate Rewards Platform Development | $30.00 | https://www.freelancer.com/projects/api-integration/commerce-Order-Affiliate-Rewards.html |
-| 65 | Freelancer | Make.com automation | Full YouTube Automation via n8n | i want to be able to create long faceless videos in any style. I want the whole  | https://www.freelancer.com/projects/n8n/Full-YouTube-Automation-via.html |
-| 65 | Freelancer | Make.com automation | Build Automated Skool Course Community | I’ve designed an online course and chosen Skool as the home for my students. Wha | https://www.freelancer.com/projects/automation/Build-Automated-Skool-Course-Community.html |
-| 65 | Freelancer | Make.com automation | RSI Divergence Crypto Bot Automation | I want to turn my existing BTC / ETH strategy into a fully automated workflow: P | https://www.freelancer.com/projects/pine-script/RSI-Divergence-Crypto-Bot-Automation.html |
-| 65 | Freelancer | Make.com automation | RPA for Data Entry Automation | I want to streamline the way we handle data entry and ongoing data management wi | https://www.freelancer.com/projects/rpa-development/RPA-for-Data-Entry-Automation.html |
+| 65 | Freelancer | Data processing API | Tender SaaS Platform Build | Tender is the SaaS platform I’m bringing to market to simplify government-tender | https://www.freelancer.com/projects/nextjs/Tender-SaaS-Platform-Build.html |
+| 65 | Freelancer | Data processing API | Excel Mixed-Data Cleaning Project | I have several Excel spreadsheets that contain a mix of text and numerical field | https://www.freelancer.com/projects/visual-basic/Excel-Mixed-Data-Cleaning-Project-40382255.html |
+| 65 | Freelancer | Data processing API | Tailwind Front-End Build with APIs | I have all server-side APIs ready; what I now need is a clean, modern front end  | https://www.freelancer.com/projects/tailwind-css/Tailwind-Front-End-Build-with.html |
 
 ## Notes
 - Scores prioritize: (1) simple automation/scripting fit, (2) payout magnitude, (3) keyword relevance.
