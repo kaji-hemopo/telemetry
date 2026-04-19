@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-20 07:36 JST
+Generated: 2026-04-20 07:58 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -53,7 +53,6 @@ Generated: 2026-04-20 07:36 JST
 | Score | Platform | Keyword | Title | Budget/Rate | URL |
 |---:|---|---|---|---|---|
 | 85 | Freelancer | Make.com automation | Dental Procurement intelligence system | $1,500.00 | https://www.freelancer.com/projects/api-developmet/Dental-Procurement-intelligence-system.html |
-| 85 | Freelancer | Data processing API | Zapier &amp; Salesforce Chat Integration | $750.00 | https://www.freelancer.com/projects/zapier/Zapier-Salesforce-Chat-Integration.html |
 | 75 | Freelancer | Python scraper | Zynga Poker Chip Transfer Web Panel | $250.00 | https://www.freelancer.com/projects/web-development/Zynga-Poker-Chip-Transfer-Web.html |
 | 75 | Freelancer | Make.com automation | Full-Time AI Engineer for Government Automation | $250.00 | https://www.freelancer.com/projects/api-integration/Full-Time-Engineer-for-Government.html |
 | 75 | Freelancer | Make.com automation | Automated Case Processing System Creation | $250.00 | https://www.freelancer.com/projects/api-developmet/Automated-Case-Processing-System.html |
@@ -72,6 +71,7 @@ Generated: 2026-04-20 07:36 JST
 | 65 | Freelancer | Python scraper | English Text Files Cleanup | I have several plain-text files that contain only English prose. The material is | https://www.freelancer.com/projects/data-entry/English-Text-Files-Cleanup.html |
 | 65 | Freelancer | Make.com automation | WhatsApp Personalized Product Recommendation Campaign | I want to use WhatsApp Business purely for marketing campaigns that deliver pers | https://www.freelancer.com/projects/marketing/WhatsApp-Personalized-Product.html |
 | 65 | Freelancer | Make.com automation | ElevenLabs Appointment Agent Automation | I’m building a small voice-driven agent with ElevenLabs that can handle a single | https://www.freelancer.com/projects/ai-chatbot-development/ElevenLabs-Appointment-Agent-Automation.html |
+| 65 | Freelancer | Make.com automation | LinkedIn Outreach Specialist (B2B Tech Leads | $60/Week + $25 per | $30.00 | https://www.freelancer.com/projects/lead-generation/LinkedIn-Outreach-Specialist-Tech-Leads.html |
 
 ## Notes
 - Scores prioritize: (1) simple automation/scripting fit, (2) payout magnitude, (3) keyword relevance.
