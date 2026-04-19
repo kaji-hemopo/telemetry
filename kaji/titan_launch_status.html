@@ -175,14 +175,20 @@
         <div class="countdown-sub">Sat Apr 18 · 07:00 JST target</div>
         <div class="countdown-urgent">
             <span class="material-symbols-outlined" style="font-size:14px">warning</span>
-            <span id="urgency-msg">Window CLOSED — Jax decision still needed: "go" (late) / "sleep" / "Park it"</span>
+            <span id="urgency-msg">Window CLOSED · 🚨 CIRCUIT BREAKER FAILING · Jax: "go" (late) / "sleep" / "Park it"</span>
         </div>
+    </div>
+
+    <!-- CIRCUIT BREAKER FAILURE BANNER -->
+    <div class="urgent-banner" style="background:rgba(248,113,113,0.12);border-color:rgba(248,113,113,0.4);">
+        <div class="icon">🚨</div>
+        <p><strong>CIRCUIT BREAKER FAILING:</strong> X-659 (08:56 JST) and X-660 (09:22 JST) produced while PARKED — LLM inference burning. BEAT_NUM fixed X657→X660. Cron still firing every 21min. <strong>Fix:</strong> <code>openclaw cron stop 700eb064</code> to kill Titan cron. Re-activate: <code>"go Titan"</code> on Telegram.</p>
     </div>
 
     <!-- URGENT BANNER -->
     <div class="urgent-banner">
         <div class="icon">⚠️</div>
-        <p><strong>28+ Telegram nudges sent · 183h+ no response.</strong> Jax must publish Carrd + create Gumroad product + post X link. Nothing goes live without his word. Say <strong>"go"</strong> to launch.</p>
+        <p><strong>30+ Telegram nudges sent · ~24h26m since window closed.</strong> Jax must publish Carrd + create Gumroad product + post X link. Nothing goes live without his word. Say <strong>"go"</strong> to launch.</p>
     </div>
 
     <!-- PIPELINE STATUS -->
@@ -194,8 +200,8 @@
                 <div class="label">Assets in delivery/</div>
             </div>
             <div class="pipeline-stat">
-                <div class="num">660+</div>
-                <div class="label">X posts ready (74 wks)</div>
+                <div class="num">2,152+</div>
+                <div class="label">X posts ready (151 wks)</div>
             </div>
             <div class="pipeline-stat">
                 <div class="num">¥150k</div>
@@ -388,7 +394,7 @@
     <!-- FOOTER -->
     <footer>
         Titan PT Launch Status · Built by Kaji COO · Auto-refreshes every 5 min<br>
-        Last updated: <span id="last-updated">—</span> · Beat 254 · Tidy Operations · ~14:56 JST Sat
+        Last updated: <span id="last-updated">—</span> · Beat 335 · Empire Audit · ~09:31 JST Sun · 🚨 CB FAILING
     </footer>
 
 </div>
