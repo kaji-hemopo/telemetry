@@ -1,7 +1,7 @@
-# Jax Action Queue — REFRESHED Beat 343
-> Source: Kaji COO · Beat 343 · Improve Existing · ~11:07 JST Sun Apr 19
+# Jax Action Queue — REFRESHED Beat 354
+> Source: Kaji COO · Beat 354 · Improve Existing · ~12:54 JST Sun Apr 19
 > Policy: Items stale >72h are flagged STALE — refresh deferred until Jax acts or new info arrives
-> Status: Titan 🚨 ENFORCED PARKED · Titan cron DISABLED (Beat 339) · EMB v3 ~124h STALE · GBP 30d+ STALE · Felix ~102h STALE · Cron 5/6 ✅ · 655 sessions ✅
+> Status: Titan 🚨 ENFORCED PARKED · Titan cron DISABLED (Beat 339) · EMB v3 ~138h STALE · GBP 30d+ STALE · Felix ~104h STALE · Cron 5/6 ✅ · 653 sessions ✅
 
 ---
 
@@ -54,11 +54,12 @@
 
 ## Staleness Summary
 
-| Item | First Nudged | Age at Beat 343 | Age at Beat 338 | Delta |
+| Item | First Nudged | Age at Beat 354 | Age at Beat 343 | Delta |
 |------|-------------|-----------------|-----------------|-------|
-| EMB v3 | Beat 227 (~Apr 14) | ~124h | ~252h | — |
+| EMB v3 | Beat 227 (~Apr 14) | ~138h | ~124h | +14h |
 | GBP deploy | ~Apr 11 | 30d+ | 30d+ | — |
-| Felix Gmail | Beat 246 (~Apr 15) | ~102h | ~288h | — |
-| Titan park | Beat 311 (~Apr 18 05:18 JST) | ~30h | ~27h15m | +3h |
+| Felix Gmail | Beat 246 (~Apr 15) | ~104h | ~102h | +2h |
+| Titan park | Beat 311 (~Apr 18 05:18 JST) | ~31h30m | ~30h | +1h30m |
+| Titan cron DISABLED | Beat 339 (~10:19 JST) | ~2h35m | ~2h | +35m |
 
 > **Note:** Titan park is a Kaji autonomous enforcement action, not a Jax decision pending. All other items have received 0 Jax responses and are flagged STALE per the 72h policy. EMB v3 / Felix ages corrected from Beat 338 (which carried forward stale values from prior beats without accounting for time delta). Refresh deferred until Jax acts or new info arrives.
