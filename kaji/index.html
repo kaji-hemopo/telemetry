@@ -80,32 +80,32 @@
     <header>
         <div class="header-left">
             <h1>Kaji · COO Dashboard</h1>
-            <p>Beat 345 · Empire Audit · ~11:16 JST Sun Apr 19 · Full empire verified · 5/6 crons OK ✅ · XRP $1.4311 · Monday Asia open critical
+            <p>Beat 348 · Improve Existing · ~11:47 JST Sun Apr 19 · Ito RSS pipeline BLOCKED · exec preflight blocking all Python scripts · XRP $1.4311 · Monday Asia open critical
         </div>
         <div class="header-right">
-            <div class="role-tag" style="background:rgba(52,211,153,0.12);color:#34d399;border:1px solid rgba(52,211,153,0.25);">Beat 345 · EMPIRE AUDIT · ~11:16 JST</div>
-            <div class="updated">Updated: <span id="ts">Loading…</span> JST · <strong style="color:#34d399;">Beat 345 · Empire Audit · full empire verified</strong></div>
+            <div class="role-tag" style="background:rgba(251,191,36,0.12);color:#fbbf24;border:1px solid rgba(251,191,36,0.25);">Beat 348 · IMPROVE EXISTING · ~11:47 JST</div>
+            <div class="updated">Updated: <span id="ts">Loading…</span> JST · <strong style="color:#fbbf24;">Beat 348 · Improve Existing · Ito pipeline blocked</strong></div>
         </div>
     </header>
 
     <!-- ALERTS -->
     <div class="card full" style="margin-bottom:20px; border-color:rgba(248,113,113,0.5);">
-        <h3><span class="material-symbols-outlined">warning</span> 🚨 Empire Alerts — Sun Apr 19 11:16 JST</h3>
-        <div class="alert-row ok">
-            <span>✅</span>
-            <div><strong>Beat 340 · Empire Audit · ~10:39 JST:</strong> Full empire verification PASS ✅ — 5/6 crons OK (Titan DISABLED PARKED) · Ito RSS 43src fresh 10:14 JST · XRP $1.4305 ⚠️ declining ($1.4954 Fri peak → $1.4305 now; $0.0505 buffer from $1.38 stop; Monday Asia open critical) · Makoto cron 07dbce5f running ✅ · No duplicate crons ✅ · No broken links in dashboard ✅ · No new critical blockers ✅ · Ito MEMORY stale (Beat 321 Apr 16 · 3d) · Makoto arbitrage intel stale (Apr 14 · 5d) — structural, not new · <strong>Next: Tidy Operations (Beat 341 · Rule 5 tiebreak: oldest EA done 09:31 JST)</strong></div>
+        <h3><span class="material-symbols-outlined">warning</span> 🚨 Empire Alerts — Sun Apr 19 11:47 JST</h3>
+        <div class="alert-row err" style="background:rgba(248,113,113,0.12);border-color:rgba(248,113,113,0.3);">
+            <span>🚨</span>
+            <div><strong>🔴 Ito Pipeline CRITICAL: exec preflight blocking ALL Python scripts (~11:47 JST):</strong> OpenClaw exec security blocking <code>python3 script.py</code> invocations — <code>rss_scraper.py</code>, <code>build_dashboard.py</code>, <code>update_all_derived_data.py</code>, <code>run_pipeline.sh</code> all FAIL with "complex interpreter invocation detected" · inline <code>python3 -c</code> works · <code>/opt/homebrew/bin/python3</code> confirmed present · Cron fires ok (lastRunStatus: ok, 105s duration) but RSS scraper part silently skipped · RSS scraper last run: ~17hr ago · <strong>SYSTEMIC: OpenClaw security config review or script rewrite needed — flag to Jackson</strong></div>
         </div>
         <div class="alert-row warn">
             <span>⚠️</span>
-            <div><strong>Ito XRP $1.4352 🚨 BOUNCE REVERSING — MONDAY ASIA OPEN CRITICAL:</strong> $1.4441 RESISTANCE held ~15hr+ · ZERO CLARIFY ACT NEWS all weekend (30,000+ articles) · Senate returned Apr 18 · ZERO markup headlines · Monday Asia open = critical test — retest of $1.4270 floor if no CLARIFY markup confirmation</div>
+            <div><strong>Beat 347 · Tidy Operations · ~11:18 JST:</strong> Algorithm corrected ✅ — Beat 347 = TO (Rule 3: TO=5≥4) not EA · MEMORY.md compacted ✅ · delegation_queue.md refreshed ✅ · Cron 5/6 OK ✅ · telemetry clean · <strong>Next: Improve Existing (Beat 348 · Rule 3: IE=4≥4)</strong></div>
         </div>
         <div class="alert-row warn">
             <span>⚠️</span>
-            <div><strong>Felix Gmail expired</strong> — N3 Phase 2b frozen (~1909/2489 entries) · X posts offline · Felix FROZEN · ~102h stale</div>
+            <div><strong>Ito XRP $1.4311 🚨 BOUNCE REVERSING — MONDAY ASIA OPEN CRITICAL:</strong> $1.4441 RESISTANCE held all weekend (~20hr+) · ZERO CLARIFY ACT NEWS all weekend · Senate returned Apr 18 · ZERO markup headlines · Monday Asia open = critical test — retest of $1.4270 floor if no CLARIFY markup confirmation</div>
         </div>
-        <div class="alert-row info">
-            <span>ℹ️</span>
-            <div><strong>Titan cron DISABLED Beat 339 · LLM waste STOPPED:</strong> Circuit breaker (Beat 323) was preventing content output but cron still burned LLM session init cost every 21min (~7 burns/day at ~$0.10 each = ~$0.70/day waste). Titan cron re-enable: <code>openclaw cron enable 700eb064-e997-4611-8b76-cd7a24643e75</code></div>
+        <div class="alert-row warn">
+            <span>⚠️</span>
+            <div><strong>Felix Gmail expired</strong> — N3 Phase 2b frozen (~1909/2489 entries) · X posts offline · Felix FROZEN · ~106h stale</div>
         </div>
     </div>
 
@@ -113,8 +113,8 @@
     <div class="grid-3" style="margin-bottom:20px;">
         <div class="card" style="border-left:3px solid #a78bfa;">
             <h3><span class="material-symbols-outlined">check_circle</span> Beats Completed</h3>
-            <p style="font-size:2rem;font-weight:800;color:#22d3ee;margin-top:4px;">347</p>
-            <p style="color:var(--dim);font-size:12px;margin-top:4px;">Beat 347 · Tidy Ops · ~11:18 JST Sun Apr 19</p>
+            <p style="font-size:2rem;font-weight:800;color:#fbbf24;margin-top:4px;">348</p>
+            <p style="color:var(--dim);font-size:12px;margin-top:4px;">Beat 348 · Improve Existing · ~11:47 JST Sun Apr 19</p>
         </div>
         <div class="card" style="border-left:3px solid #22d3ee;">
             <h3><span class="material-symbols-outlined">psychology</span> Empire Agents</h3>
@@ -125,7 +125,7 @@
             <h3><span class="material-symbols-outlined">schedule</span> Cron Health</h3>
             <p style="font-size:2rem;font-weight:800;color:#4ade80;margin-top:4px;">5/6</p>
             <p style="color:var(--dim);font-size:12px;margin-top:4px;"><strong style="color:#4ade80;">5/6 crons OK ✅</strong> · Titan cron DISABLED (LLM waste STOPPED) · Ito/Twitter-X/Gold/Makoto/Kaji all ok</p>
-            <p style="color:var(--dim);font-size:11.5px;margin-top:6px;">Titan CB FAILING · Kaji/Titan/Ito/Makoto/Twitter-X/Gold all ok · macOS crontab clean</p>
+            <p style="color:var(--dim);font-size:11.5px;margin-top:6px;"><strong style="color:#f87171;">Ito pipeline BLOCKED</strong> · Kaji/Titan/Makoto/Twitter-X/Gold ok · macOS crontab clean</p>
         </div>
     </div>
 
@@ -134,7 +134,7 @@
         <!-- INITIATIVE QUEUE -->
         <div class="card">
             <h3><span class="material-symbols-outlined">flag</span> Initiative Queue</h3>
-            <p style="color:var(--muted);font-size:13px;margin-bottom:12px;"><strong style="color:#22d3ee;">Beat 347 Tidy Operations RUNNING</strong> · algorithm corrected: TO=5≥4 Rule 3 (EA=1 not 4) · Beat 345+346 completed by concurrent session · next: Improve Existing (Beat 348 · Rule 3: IE=4≥4)</p>
+            <p style="color:var(--muted);font-size:13px;margin-bottom:12px;"><strong style="color:#fbbf24;">Beat 348 Improve Existing RUNNING</strong> · Ito exec preflight CRITICAL identified ✅ — dashboard updated with Ito pipeline blockage alert · exec security blocks <code>python3 script.py</code>; inline <code>python3 -c</code> works · script files in <code>intel/Telemetry/</code> all fail · cron ok but RSS scraper silently skipped · <strong>Next: Tidy Operations (Beat 349 · Rule 3: TO=4≥4)</strong></p>
             <ul class="task-list">
                 <li>
                     <span class="task-dot next"></span>
@@ -208,7 +208,7 @@
 
     <!-- BEAT DOMAIN STATE -->
     <div class="card full" style="margin-bottom:20px;">
-        <h3><span class="material-symbols-outlined">psychology</span> Beat Domain State (~11:16 JST Sun Apr 19 · Beat 345)</h3>
+        <h3><span class="material-symbols-outlined">psychology</span> Beat Domain State (~11:47 JST Sun Apr 19 · Beat 348)</h3>
         <table class="cron-table">
             <thead>
                 <tr>
@@ -234,14 +234,14 @@
                 <tr>
                     <td><span class="cron-name" style="background:rgba(34,211,238,0.12);color:#22d3ee;padding:2px 9px;border-radius:6px;font-size:11px;font-weight:600;">Tidy Operations</span></td>
                     <td>Beat 347 ~11:18 JST</td>
-                    <td>0</td>
-                    <td><span class="badge badge-run">LAST · ACTIVE</span></td>
+                    <td>1</td>
+                    <td><span class="badge badge-ok">eligible · Rule 3: TO=4≥4 fires next</span></td>
                 </tr>
                 <tr>
                     <td><span class="cron-name" style="background:rgba(251,191,36,0.12);color:#fbbf24;padding:2px 9px;border-radius:6px;font-size:11px;font-weight:600;">Improve Existing</span></td>
-                    <td>Beat 343 ~11:07 JST</td>
-                    <td>4</td>
-                    <td><span class="badge badge-ok">eligible · Rule 3 FIRED (IE=4≥4)</span></td>
+                    <td>Beat 348 ~11:47 JST</td>
+                    <td>0</td>
+                    <td><span class="badge badge-run">LAST · ACTIVE · RUNNING</span></td>
                 </tr>
                 <tr>
                     <td><span class="cron-name" style="background:rgba(251,191,36,0.12);color:#fbbf24;padding:2px 9px;border-radius:6px;font-size:11px;font-weight:600;">New Ideas</span></td>
@@ -251,7 +251,7 @@
                 </tr>
             </tbody>
         </table>
-        <p style="color:var(--dim);font-size:11.5px;margin-top:10px;"><strong>Algorithm Beat 348:</strong> Rule 1: TO=0 LAST blocked · Rule 2: no urgent override · Rule 3: IE=4≥4 (IE last ran Beat 343 · Rule 3 fires for IE) · <strong>Improve Existing (Beat 348)</strong></p>
+        <p style="color:var(--dim);font-size:11.5px;margin-top:10px;"><strong>Algorithm Beat 349:</strong> Rule 1: IE=0 LAST blocked · Rule 2: no urgent override · Rule 3: TO=4≥4 MUST · <strong>Tidy Operations (Beat 349)</strong></p>
     </div>
 
     <!-- AGENT ROSTER -->
@@ -267,7 +267,7 @@
         </div>
         <div class="agent-row">
             <div><span class="agent-name">Ito</span> <span class="agent-role">Intel & Pipeline</span></div>
-            <span class="badge badge-ok">✅ OK · heartbeat 11:13 JST (3m ago) ✅ · RSS 43src intact ✅ · XRP $1.4311 ⚠️ ($1.4441 RESISTANCE held all weekend · $0.0511 buffer from $1.38 stop · Monday Asia open critical) · Gold stale weekend · xAI X BLOCKED ~512hr+</span>
+            <span class="badge badge-err">🚨 PIPELINE BLOCKED · exec preflight blocking ALL Python scripts · rss_scraper.py/build_dashboard.py/update_all_derived_data.py/run_pipeline.sh all FAIL · inline python3 -c works · cron ok (105s) but RSS scraper silently skipped · RSS stale ~17hr · <strong>SYSTEMIC — OpenClaw security config or script rewrite needed</strong></span>
         </div>
         <div class="agent-row">
             <div><span class="agent-name">Makoto</span> <span class="agent-role">Arbitrage Scout</span></div>
@@ -317,7 +317,7 @@ function updateTime(){const e=new Date(),t=e.toLocaleString("en-US",{timeZone:"A
 </script>
 
 <footer>
-    Kaji COO · <a href="https://kaji-hemopo.github.io/telemetry">Empire Home</a> · Telemetry: <a href="https://github.com/kaji-hemopo/telemetry">kaji-hemopo/telemetry</a> · Beat 339 · Delegation Prep · 2026-04-19 ~10:19 JST · 5/6 crons OK (Titan DISABLED) · Titan LLM waste STOPPED · Ito XRP Monday Asia open critical · next: Delegation Prep (Beat 342)
+    Kaji COO · <a href="https://kaji-hemopo.github.io/telemetry">Empire Home</a> · Telemetry: <a href="https://github.com/kaji-hemopo/telemetry">kaji-hemopo/telemetry</a> · Beat 348 · Improve Existing · 2026-04-19 ~11:47 JST · <strong style="color:#f87171;">Ito pipeline BLOCKED (exec preflight) ·</strong> 5/6 crons OK · Titan DISABLED · Ito XRP Monday Asia open critical · next: Tidy Operations (Beat 349)
 </footer>
 </body>
 </html>
