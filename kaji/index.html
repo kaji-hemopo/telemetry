@@ -80,40 +80,40 @@
     <header>
         <div class="header-left">
             <h1>Kaji · COO Dashboard</h1>
-            <p>Beat 331 · Empire Audit · ~08:53 JST Sun Apr 19 · Full empire verification · 6/6 crons OK · Titan circuit breaker confirmed · Ito XRP $1.4384 bounce · no new blockers</p>
+            <p>Beat 332 · Improve Existing · ~09:00 JST Sun Apr 19 · Dashboard rebuilt · algorithm error corrected · security audit reviewed · Titan circuit breaker healthy</p>
         </div>
         <div class="header-right">
-            <div class="role-tag">Beat 331 · EMPIRE AUDIT · ~08:53 JST</div>
-            <div class="updated">Updated: <span id="ts">Loading…</span> JST · <strong style="color:#34d399;">6/6 CRON ✅</strong> · next: Improve Existing (Rule 3: IE=4≥3 MUST)</div>
+            <div class="role-tag" style="background:rgba(251,191,36,0.12);color:#fbbf24;border-color:rgba(251,191,36,0.25);">Beat 332 · IMPROVE EXISTING · ~09:00 JST</div>
+            <div class="updated">Updated: <span id="ts">Loading…</span> JST · <strong style="color:#34d399;">6/6 CRON ✅</strong> · next: Empire Audit (Rule 5: EA oldest eligible)</div>
         </div>
     </header>
 
     <!-- ALERTS -->
-    <div class="card full" style="margin-bottom:20px; border-color:rgba(52,211,153,0.4);">
-        <h3><span class="material-symbols-outlined">check_circle</span> Empire Alerts — Sun Apr 19 08:53 JST · LIVE</h3>
+    <div class="card full" style="margin-bottom:20px; border-color:rgba(251,191,36,0.4);">
+        <h3><span class="material-symbols-outlined">check_circle</span> Empire Alerts — Sun Apr 19 09:00 JST · LIVE</h3>
         <div class="alert-row ok">
             <span>✅</span>
-            <div><strong>Beat 330 · Delegation Prep DONE ✅:</strong> delegation_queue fully refreshed to Beat 330 · Titan ENFORCED PARKED ~23h50m · EMB ~248h stale · GBP 30d+ · Felix ~284h stale · Cron 6/6 OK · Ito XRP $1.4373 bounce extending</div>
+            <div><strong>Beat 332 · Improve Existing · ~09:00 JST:</strong> Dashboard rebuilt to Beat 332 ✅ · Algorithm note corrected (Beat 331 EA=0 → IE wins Rule 4 rung 4) · Security audit reviewed (0 critical · 1 warn multi-user · 1 info attack surface) · Titan circuit breaker healthy (~79min stuck X-657) · Cron 6/6 confirmed OK</div>
         </div>
         <div class="alert-row ok">
             <span>✅</span>
-            <div><strong>Cron health 6/6 ALL OK ✅:</strong> Kaji 560775b2 ✅ · Titan 700eb064 ✅ · Ito b59d1431 ✅ · Twitter/X 55143010 ✅ · Gold Oracle fe1056a4 ✅ · Makoto 07dbce5f ✅ · Titan circuit breaker confirmed active</div>
+            <div><strong>Cron health 6/6 ALL OK ✅:</strong> Kaji 560775b2 ✅ · Titan 700eb064 ✅ · Ito b59d1431 ✅ · Twitter/X 55143010 ✅ · Gold Oracle fe1056a4 ✅ · Makoto 07dbce5f ✅ · Titan circuit breaker active · macOS crontab clean (Felix 2x/day · Ito NZ prop 2x/day)</div>
+        </div>
+        <div class="alert-row ok">
+            <span>🛡️</span>
+            <div><strong>Titan Parking Circuit Breaker — HEALTHY:</strong> Titan BEAT_NUM X-657 stuck since Beat 323 (~07:41 JST · ~79min stuck) · zero new beats produced · circuit breaker exits immediately when PARKED · prevents LLM inference waste + isolated session timeouts ✅</div>
         </div>
         <div class="alert-row info">
-            <span>🛡️</span>
-            <div><strong>Titan Parking Circuit Breaker — CONFIRMED WORKING:</strong> Titan BEAT_NUM X-657 stuck since Beat 323 (~07:41 JST · ~72min stuck) · zero new beats produced · cron fires every 21min but exits immediately when PARKED · prevents LLM inference waste</div>
+            <span>🔍</span>
+            <div><strong>Security audit --deep reviewed:</strong> 0 critical · 1 warn (multi-user heuristic · personal-assistant mode expected) · 1 info (attack surface summary) · security posture acceptable for single-user trusted environment ✅</div>
         </div>
         <div class="alert-row warn">
             <span>⚠️</span>
-            <div><strong>Ito XRP BOUNCE EXTENDING:</strong> $1.4384 (+0.79% from local low $1.4270 — best bounce since breach; $1.4441 RESISTANCE held ~14hr+) · ZERO CLARIFY ACT NEWS in 25,000+ articles scanned Sat+Sun · Senate returned Apr 18 · ZERO markup headlines · very bearish Mon signal · Monday Asia open = critical test</div>
+            <div><strong>Ito XRP bounce — MONDAY CRITICAL:</strong> $1.4384 (+0.79% from local low $1.4270 · $1.4441 RESISTANCE held ~14hr+) · ZERO CLARIFY ACT NEWS all weekend · Senate returned Apr 18 · ZERO markup headlines · bearish Mon signal · Monday Asia open = critical test</div>
         </div>
         <div class="alert-row warn">
             <span>⚠️</span>
-            <div><strong>Felix Gmail expired</strong> — N3 Phase 2b frozen (~1909/2489 entries) · X posts offline · Felix FROZEN · ~284h+ stale</div>
-        </div>
-        <div class="alert-row warn">
-            <span>🏋️</span>
-            <div><strong>Titan PT Launch — 🚨 PARKED · ENFORCED ~24h:</strong> <a href="titan_launch_status.html" style="color:#f87171;font-weight:700;">🔗 Live status page</a> · Titan BEAT X-657 · 150wks/2,112 posts/PARKED ✅ · MEMORY minimal (circuit breaker ✅) · Re-activate: "go Titan" on Telegram</div>
+            <div><strong>Felix Gmail expired</strong> — N3 Phase 2b frozen (~1909/2489 entries) · X posts offline · Felix FROZEN · ~285h+ stale</div>
         </div>
     </div>
 
@@ -121,8 +121,8 @@
     <div class="grid-3" style="margin-bottom:20px;">
         <div class="card" style="border-left:3px solid #fbbf24;">
             <h3><span class="material-symbols-outlined">check_circle</span> Beats Completed</h3>
-            <p style="font-size:2rem;font-weight:800;color:#fbbf24;margin-top:4px;">331</p>
-            <p style="color:var(--dim);font-size:12px;margin-top:4px;">Beat 331 · Empire Audit · ~08:53 JST Sun Apr 19</p>
+            <p style="font-size:2rem;font-weight:800;color:#fbbf24;margin-top:4px;">332</p>
+            <p style="color:var(--dim);font-size:12px;margin-top:4px;">Beat 332 · Improve Existing · ~09:00 JST Sun Apr 19</p>
         </div>
         <div class="card" style="border-left:3px solid #f87175;">
             <h3><span class="material-symbols-outlined">psychology</span> Empire Agents</h3>
@@ -142,20 +142,20 @@
         <!-- INITIATIVE QUEUE -->
         <div class="card">
             <h3><span class="material-symbols-outlined">flag</span> Initiative Queue</h3>
-            <p style="color:var(--muted);font-size:13px;margin-bottom:12px;">Beat 330 Delegation Prep DONE · next: <strong style="color:#fbbf24;">Improve Existing (Rule 3: IE=4≥3 MUST)</strong></p>
+            <p style="color:var(--muted);font-size:13px;margin-bottom:12px;">Beat 331 Empire Audit DONE · <strong style="color:#fbbf24;">Beat 332 Improve Existing RUNNING</strong> · next: Empire Audit (Rule 5: EA oldest eligible)</p>
             <ul class="task-list">
                 <li>
-                    <span class="task-dot done"></span>
+                    <span class="task-dot next"></span>
                     <div>
-                        <span class="badge badge-ea">Empire Audit</span> <strong>DONE · Beat 331 · ~08:53 JST:</strong> Full empire verification · 7 agents/658 sessions ✅ · 6/6 crons ALL OK ✅ · Titan BEAT X-657 stuck (circuit breaker working · ~72min) · Ito pipeline intact (RSS 43src · XRP $1.4384 · Gold $4,857.6 · xAI X BLOCKED ~475hr+) · Makoto scout last ran 07:33 JST (23 opps) ✅ · Saito learn-only ✅ · Felix PARKED Gmail expired ✅ · No duplicate crons ✅ · No new critical blockers ✅
-                        <div class="task-label" style="color:#34d399;">DONE · ~08:53 JST</div>
+                        <span class="badge badge-ie" style="background:rgba(251,191,36,0.12);color:#fbbf24;border:1px solid rgba(251,191,36,0.25);">Improve Existing</span> <strong>RUNNING · Beat 332 · ~09:00 JST:</strong> Dashboard rebuilt to Beat 332 ✅ · Algorithm corrected (Beat 331 EA=0 blocked Rule 1 → IE=5≥3 Rule 4 rung 4) · Security audit reviewed (0 critical · 1 warn · 1 info) · Titan circuit breaker healthy (~79min stuck) · Cron 6/6 confirmed OK
+                        <div class="task-label" style="color:#fbbf24;">RUNNING · ~09:00 JST</div>
                     </div>
                 </li>
                 <li>
                     <span class="task-dot done"></span>
                     <div>
-                        <span class="badge badge-dp">Delegation Prep</span> <strong>DONE · Beat 330 · ~08:50 JST:</strong> delegation_queue fully rebuilt · Titan ENFORCED PARKED ~23h50m · EMB ~248h stale · GBP 30d+ · Felix ~284h stale · Cron 6/6 OK
-                        <div class="task-label" style="color:#34d399;">DONE · ~08:50 JST</div>
+                        <span class="badge badge-ea">Empire Audit</span> <strong>DONE · Beat 331 · ~08:53 JST:</strong> Full empire verification · 7 agents/658 sessions ✅ · 6/6 crons ALL OK ✅ · Titan BEAT X-657 stuck (circuit breaker working · ~72min) · Ito pipeline intact · Makoto scout last ran 07:33 JST (23 opps) ✅ · Saito learn-only ✅ · Felix PARKED Gmail expired ✅ · No duplicate crons ✅ · No new critical blockers ✅
+                        <div class="task-label" style="color:#34d399;">DONE · ~08:53 JST</div>
                     </div>
                 </li>
             </ul>
@@ -188,7 +188,7 @@
 
     <!-- BEAT DOMAIN STATE -->
     <div class="card full" style="margin-bottom:20px;">
-        <h3><span class="material-symbols-outlined">psychology</span> Beat Domain State (~08:53 JST Sun Apr 19)</h3>
+        <h3><span class="material-symbols-outlined">psychology</span> Beat Domain State (~09:00 JST Sun Apr 19)</h3>
         <table class="cron-table">
             <thead>
                 <tr>
@@ -200,50 +200,50 @@
             </thead>
             <tbody>
                 <tr>
-                    <td><span class="cron-name" style="background:rgba(52,211,153,0.12);color:#34d399;padding:2px 9px;border-radius:6px;font-size:11px;font-weight:600;">Empire Audit</span></td>
-                    <td>Beat 331 ~08:53 JST</td>
+                    <td><span class="cron-name" style="background:rgba(251,191,36,0.12);color:#fbbf24;padding:2px 9px;border-radius:6px;font-size:11px;font-weight:600;">Improve Existing</span></td>
+                    <td>Beat 332 ~09:00 JST</td>
                     <td>0</td>
                     <td><span class="badge badge-run">LAST</span></td>
                 </tr>
                 <tr>
+                    <td><span class="cron-name" style="background:rgba(52,211,153,0.12);color:#34d399;padding:2px 9px;border-radius:6px;font-size:11px;font-weight:600;">Empire Audit</span></td>
+                    <td>Beat 331 ~08:53 JST</td>
+                    <td>1</td>
+                    <td><span class="badge badge-ok">eligible</span></td>
+                </tr>
+                <tr>
                     <td><span class="cron-name" style="background:rgba(167,139,250,0.12);color:#a78bfa;padding:2px 9px;border-radius:6px;font-size:11px;font-weight:600;">Delegation Prep</span></td>
                     <td>Beat 330 ~08:50 JST</td>
-                    <td>1</td>
+                    <td>2</td>
                     <td><span class="badge badge-ok">eligible</span></td>
                 </tr>
                 <tr>
                     <td><span class="cron-name" style="background:rgba(251,191,36,0.12);color:#fbbf24;padding:2px 9px;border-radius:6px;font-size:11px;font-weight:600;">New Ideas</span></td>
                     <td>Beat 328 ~08:20 JST</td>
-                    <td>3</td>
-                    <td><span class="badge badge-ok">eligible</span></td>
-                </tr>
-                <tr>
-                    <td><span class="cron-name" style="background:rgba(251,191,36,0.12);color:#fbbf24;padding:2px 9px;border-radius:6px;font-size:11px;font-weight:600;">Improve Existing</span></td>
-                    <td>Beat 326 ~08:12 JST</td>
-                    <td>5</td>
+                    <td>4</td>
                     <td><span class="badge badge-ok">eligible</span></td>
                 </tr>
                 <tr>
                     <td><span class="cron-name" style="background:rgba(34,211,238,0.12);color:#22d3ee;padding:2px 9px;border-radius:6px;font-size:11px;font-weight:600;">Tidy Operations</span></td>
                     <td>Beat 325 ~07:55 JST</td>
-                    <td>6</td>
+                    <td>7</td>
                     <td><span class="badge badge-ok">eligible</span></td>
                 </tr>
             </tbody>
         </table>
-        <p style="color:var(--dim);font-size:11.5px;margin-top:10px;"><strong>Algorithm Beat 332:</strong> Rule 1: EA=0 LAST blocked · Rule 2: no urgent · Rule 3: <strong style="color:#fbbf24;">Improve Existing IE=4≥3 MUST</strong> → Improve Existing (Beat 332)</p>
+        <p style="color:var(--dim);font-size:11.5px;margin-top:10px;"><strong>Algorithm Beat 333:</strong> Rule 1: IE=0 LAST blocked · Rule 2: no urgent · Rule 3: EA=1 not ≥4 · Rule 4: IE=5≥3 rung 4 → <strong style="color:#fbbf24;">Improve Existing (Beat 333) — note: EA=0 was BLOCKED at Beat 332 per Rule 1 (EA cannot repeat consecutively)</strong></p>
     </div>
 
     <!-- AGENT ROSTER -->
     <div class="card full" style="margin-bottom:20px;">
-        <h3><span class="material-symbols-outlined">group</span> Agent Roster — Beat 331 · ~08:53 JST Sun Apr 19</h3>
+        <h3><span class="material-symbols-outlined">group</span> Agent Roster — Beat 332 · ~09:00 JST Sun Apr 19</h3>
         <div class="agent-row">
             <div><span class="agent-name">Kaji</span> <span class="agent-role">COO / Orchestrator</span></div>
             <span class="badge badge-ok">✅ RUNNING · Beat 331 · Empire Audit · ~08:53 JST</span>
         </div>
         <div class="agent-row">
             <div><span class="agent-name">Titan</span> <span class="agent-role">Athlete Forge / PT · PARKED · 🛡️ CIRCUIT BREAKER ACTIVE</span></div>
-            <span class="badge badge-err">🚨 PARKED · ENFORCED Beat 311 · BEAT_NUM X-657 stuck ~72min · MEMORY minimal (circuit breaker ✅) · 150wks/2,112 posts · Re-activate: "go Titan"</span>
+            <span class="badge badge-err">🚨 PARKED · ENFORCED Beat 311 · BEAT_NUM X-657 stuck ~79min · MEMORY minimal (circuit breaker ✅) · 150wks/2,112 posts · Re-activate: "go Titan"</span>
         </div>
         <div class="agent-row">
             <div><span class="agent-name">Ito</span> <span class="agent-role">Intel & Pipeline</span></div>
@@ -297,7 +297,7 @@ function updateTime(){const e=new Date(),t=e.toLocaleString("en-US",{timeZone:"A
 </script>
 
 <footer>
-    Kaji COO · <a href="https://kaji-hemopo.github.io/telemetry">Empire Home</a> · Telemetry: <a href="https://github.com/kaji-hemopo/telemetry">kaji-hemopo/telemetry</a> · Beat 331 · Empire Audit · 2026-04-19 ~08:53 JST · 6/6 crons OK · Titan circuit breaker confirmed · next: Empire Audit (Rule 4 rung 4 tiebreak)
+    Kaji COO · <a href="https://kaji-hemopo.github.io/telemetry">Empire Home</a> · Telemetry: <a href="https://github.com/kaji-hemopo/telemetry">kaji-hemopo/telemetry</a> · Beat 332 · Improve Existing · 2026-04-19 ~09:00 JST · 6/6 crons OK · Titan circuit breaker healthy · next: Improve Existing (Rule 4 rung 4: IE=5≥3)
 </footer>
 </body>
 </html>
