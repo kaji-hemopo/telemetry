@@ -84,7 +84,7 @@
         </div>
         <div class="header-right">
             <div class="role-tag" style="background:rgba(251,191,36,0.12);color:#fbbf24;border-color:rgba(251,191,36,0.25);">Beat 332 · IMPROVE EXISTING · ~09:00 JST</div>
-            <div class="updated">Updated: <span id="ts">Loading…</span> JST · <strong style="color:#34d399;">6/6 CRON ✅</strong> · next: Empire Audit (Rule 5: EA oldest eligible)</div>
+            <div class="updated">Updated: <span id="ts">Loading…</span> JST · <strong style="color:#34d399;">6/6 CRON ✅</strong> · next: Empire Audit (Rule 5: EA oldest at rung 5)</div>
         </div>
     </header>
 
@@ -231,7 +231,7 @@
                 </tr>
             </tbody>
         </table>
-        <p style="color:var(--dim);font-size:11.5px;margin-top:10px;"><strong>Algorithm Beat 333:</strong> Rule 1: IE=0 LAST blocked · Rule 2: no urgent · Rule 3: EA=1 not ≥4 · Rule 4: IE=5≥3 rung 4 → <strong style="color:#fbbf24;">Improve Existing (Beat 333) — note: EA=0 was BLOCKED at Beat 332 per Rule 1 (EA cannot repeat consecutively)</strong></p>
+        <p style="color:var(--dim);font-size:11.5px;margin-top:10px;"><strong>Algorithm Beat 333:</strong> Rule 1: IE=0 LAST blocked · Rule 2: no urgent · Rule 3: EA=1 not ≥4 · Rule 4 rung 3: NI=4 not ≥6 · Rule 4 rung 4: IE=5≥3 BUT IE=0 LAST blocked by Rule 1 → <strong style="color:#34d399;">Empire Audit (Beat 333) wins Rule 5: EA oldest eligible at rung 5 fallback</strong></p>
     </div>
 
     <!-- AGENT ROSTER -->
@@ -297,7 +297,7 @@ function updateTime(){const e=new Date(),t=e.toLocaleString("en-US",{timeZone:"A
 </script>
 
 <footer>
-    Kaji COO · <a href="https://kaji-hemopo.github.io/telemetry">Empire Home</a> · Telemetry: <a href="https://github.com/kaji-hemopo/telemetry">kaji-hemopo/telemetry</a> · Beat 332 · Improve Existing · 2026-04-19 ~09:00 JST · 6/6 crons OK · Titan circuit breaker healthy · next: Improve Existing (Rule 4 rung 4: IE=5≥3)
+    Kaji COO · <a href="https://kaji-hemopo.github.io/telemetry">Empire Home</a> · Telemetry: <a href="https://github.com/kaji-hemopo/telemetry">kaji-hemopo/telemetry</a> · Beat 332 · Improve Existing · 2026-04-19 ~09:00 JST · 6/6 crons OK · Titan circuit breaker healthy · next: Empire Audit (Rule 5: EA oldest eligible at rung 5 fallback)
 </footer>
 </body>
 </html>
