@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-20 00:04 JST
+Generated: 2026-04-20 04:06 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -52,12 +52,16 @@ Generated: 2026-04-20 00:04 JST
 
 | Score | Platform | Keyword | Title | Budget/Rate | URL |
 |---:|---|---|---|---|---|
-| 85 | Freelancer | Data processing API | &quot;Konnect-Mondial&quot;: DRC Football World Cup Platform | $750.00 | https://www.freelancer.com/projects/web-development/Konnect-Mondial-DRC-Football-World.html |
+| 85 | Freelancer | Make.com automation | Dental Procurement intelligence system | $1,500.00 | https://www.freelancer.com/projects/api-developmet/Dental-Procurement-intelligence-system.html |
 | 75 | Freelancer | Python scraper | Zynga Poker Chip Transfer Web Panel | $250.00 | https://www.freelancer.com/projects/web-development/Zynga-Poker-Chip-Transfer-Web.html |
 | 75 | Freelancer | Python scraper | Text File Data Cleaning Expert | $250.00 | https://www.freelancer.com/projects/automation/Text-File-Data-Cleaning-Expert.html |
 | 75 | Freelancer | Python scraper | AI Systems Engineer for OpenClaw Integration | $250.00 | https://www.freelancer.com/projects/ai-development/Systems-Engineer-for-OpenClaw-40382443.html |
+| 75 | Freelancer | Make.com automation | Automated Case Processing System Creation | $250.00 | https://www.freelancer.com/projects/api-developmet/Automated-Case-Processing-System.html |
+| 75 | Freelancer | Make.com automation | Senior Moodle Developer | $250.00 | https://www.freelancer.com/projects/apache/Senior-Moodle-Developer.html |
 | 75 | Freelancer | Make.com automation | GoHighLevel CRM Migration | $250.00 | https://www.freelancer.com/projects/php/GoHighLevel-CRM-Migration.html |
-| 75 | Freelancer | Data processing API | Financial Spreadsheet Data Entry | $250.00 | https://www.freelancer.com/projects/data-entry/Financial-Spreadsheet-Data-Entry.html |
+| 75 | Freelancer | Data processing API | Edit and Improve Research Paper on Breast Cancer Medical Imaging  | $250.00 | https://www.freelancer.com/projects/reinforcement-learning/Edit-Improve-Research-Paper-Breast.html |
+| 65 | Freelancer | Python scraper | AI-Driven Tally Stock Reports | I need a small AI module that plugs into my existing Tally environment, pulls ra | https://www.freelancer.com/projects/ai-development/Driven-Tally-Stock-Reports.html |
+| 65 | Freelancer | Python scraper | Automating Data Processing | Looking for a Python developer to build a script that connects to an external AP | https://www.freelancer.com/projects/api/Automating-Data-Processing-Python-API.html |
 | 65 | Freelancer | Python scraper | Zerodha Trend-Following Algo Bot | I need a fully-automated trading bot that connects to my Zerodha stock-trading a | https://www.freelancer.com/projects/php/Zerodha-Trend-Following-Algo-Bot.html |
 | 65 | Freelancer | Python scraper | Live API &amp; Social Media Scraper | $10.00 | https://www.freelancer.com/projects/api-developmet/Live-API-Social-Media-Scraper.html |
 | 65 | Freelancer | Python scraper | Scanned PDF Text Extraction | $10.00 | https://www.freelancer.com/projects/data-extraction/Scanned-PDF-Text-Extraction.html |
@@ -66,12 +70,8 @@ Generated: 2026-04-20 00:04 JST
 | 65 | Freelancer | Python scraper | Zerodha Trend-Following Algo Bot | I need a fully-automated trading bot that connects to my Zerodha stock-trading a | https://www.freelancer.com/projects/api/Zerodha-Trend-Following-Algo-Bot.html |
 | 65 | Freelancer | Python scraper | WeChat Official Account Setup + Web Interface + Odoo CRM Integrat | We are looking for an experienced developer or team to help us set up and integr | https://www.freelancer.com/projects/odoo/WeChat-Official-Account-Setup-Web.html |
 | 65 | Freelancer | Python scraper | English Text Files Cleanup | I have several plain-text files that contain only English prose. The material is | https://www.freelancer.com/projects/data-entry/English-Text-Files-Cleanup.html |
-| 65 | Freelancer | Python scraper | 3-Day AI Automation Setup -- 7 | $30.00 | https://www.freelancer.com/projects/php/Day-Automation-Setup-40382248.html |
-| 65 | Freelancer | Python scraper | 3-Day AI Automation Setup -- 6 | $30.00 | https://www.freelancer.com/projects/php/Day-Automation-Setup-40382188.html |
-| 65 | Freelancer | Make.com automation | Experienced PLC Programmer for Automation Project | We are looking for an experienced PLC Programmer and Hardware Integrator with st | https://www.freelancer.com/projects/plc/Experienced-PLC-Programmer-for.html |
-| 65 | Freelancer | Make.com automation | Optimization of Zoho Desk Ticketing using WhatsApp Integration an | $35.00 | https://www.freelancer.com/projects/zoho/Optimization-Zoho-Desk-Ticketing-using.html |
-| 65 | Freelancer | Make.com automation | GoHighLevel CRM Migration -- 2 | $30.00 | https://www.freelancer.com/projects/php/GoHighLevel-CRM-Migration-40382923.html |
-| 65 | Freelancer | Make.com automation | AI Zapier and Slack Integration &amp; Alert Automation | $2.00 | https://www.freelancer.com/projects/zapier/Zapier-Slack-Integration-Alert.html |
+| 65 | Freelancer | Make.com automation | ElevenLabs Appointment Agent Automation | I’m building a small voice-driven agent with ElevenLabs that can handle a single | https://www.freelancer.com/projects/ai-chatbot-development/ElevenLabs-Appointment-Agent-Automation.html |
+| 65 | Freelancer | Make.com automation | LinkedIn Outreach Specialist (B2B Tech Leads | $60/Week + $25 per | $30.00 | https://www.freelancer.com/projects/lead-generation/LinkedIn-Outreach-Specialist-Tech-Leads.html |
 
 ## Notes
 - Scores prioritize: (1) simple automation/scripting fit, (2) payout magnitude, (3) keyword relevance.
