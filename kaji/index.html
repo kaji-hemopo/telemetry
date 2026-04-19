@@ -80,24 +80,20 @@
     <header>
         <div class="header-left">
             <h1>Kaji · COO Dashboard</h1>
-            <p>Beat 336 · New Ideas · ~09:46 JST Sun Apr 19 · 🚨 TITAN CIRCUIT BREAKER FAILING — CRITICAL · Titan produced X-658/659/660 while PARKED · BEAT_NUM drift fixed X657→X660 · Titan MEMORY header updated · No new critical blockers · Cron 6/6 OK</p>
+            <p>Beat 338 · Tidy Operations · ~10:16 JST Sun Apr 19 · Titan workspace CLEANED — 135 old beat files archived to archived_beats/ (1.0MB freed) · Titan MEMORY fully current X-661/152wks/2,172 posts · Cron 6/6 OK · Titan CB failing but Titan PARKED · No new critical blockers</p>
         </div>
         <div class="header-right">
-            <div class="role-tag" style="background:rgba(52,211,153,0.12);color:#34d399;border:1px solid rgba(52,211,153,0.25);">Beat 336 · NEW IDEAS · ~09:46 JST</div>
-            <div class="updated">Updated: <span id="ts">Loading…</span> JST · <strong style="color:#f87171;">🚨 CIRCUIT BREAKER FAILING</strong></div>
+            <div class="role-tag" style="background:rgba(34,211,238,0.12);color:#22d3ee;border:1px solid rgba(34,211,238,0.25);">Beat 338 · TIDY OPS · ~10:16 JST</div>
+            <div class="updated">Updated: <span id="ts">Loading…</span> JST · <strong style="color:#34d399;">✅ Titan workspace archived · 6/6 crons OK</strong></div>
         </div>
     </header>
 
     <!-- ALERTS -->
     <div class="card full" style="margin-bottom:20px; border-color:rgba(248,113,113,0.5);">
         <h3><span class="material-symbols-outlined">warning</span> 🚨 Empire Alerts — Sun Apr 19 09:31 JST · CRITICAL</h3>
-        <div class="alert-row" style="background:rgba(248,113,113,0.12);border-color:rgba(248,113,113,0.4);color:#f87171;">
-            <span>🚨</span>
-            <div><strong>Beat 336 · New Ideas · Titan CB Half-Solution Gap (Beat 336):</strong> Beat 323 CB installed but FAILS at cron level — cron fires HEARTBEAT (starts LLM session) BEFORE parking check can exit; LLM session init cost incurred every 21min; X-659/660/661 all produced while PARKED; X-660/661 not counted in MEMORY header (already stale). <strong>Output filed:</strong> <code>outputs/beat336_new_ideas_titan_circuit_breaker_half_solution_gap.md</code>. Titan cron 700eb064 + Kaji cron 560775b2 both ERROR ❌. <strong>Fix:</strong> <code>openclaw cron disable 700eb064</code> while PARKED. NO PROPOSALS respected. Q5 PIPELINE COMPLETE 151wks/2,152 posts ✅ · Makoto subagent succeeded ✅ · Scout Beat 385 complete 22 opps ✅</div>
-        </div>
         <div class="alert-row ok">
             <span>✅</span>
-            <div><strong>Beat 336 · New Ideas · ~09:46 JST:</strong> Titan CB Half-Solution Gap identified ✅ · Makoto subagent succeeded ✅ · Q5 PIPELINE COMPLETE 151wks/2,152 posts ✅ · Scout Beat 385 complete (22 opps) ✅ · delegation_queue refreshed ✅ · 4/6 crons OK · 2 ERROR (Titan + Kaji) · Titan BEAT_NUM drift fixed X657→X660 ✅ · Titan MEMORY header updated to X-660/151wks/2,152 posts ✅ · Titan circuit breaker FAILING but Titan PARKED ✅ (no new critical blockers) · Ito pipeline intact (RSS 43src · XRP bounce reversing · Dashboard push UNBLOCKED ✅ · xAI X BLOCKED ~489hr+) · Makoto scout ran 09:13 JST (22 opps) ✅ · Saito learn-only ✅ · Felix PARKED Gmail expired ✅ · Odie App Ideation ✅ · No duplicate crons ✅ · <strong>Next beat: Empire Audit (Beat 337 · Rule 5: EA oldest eligible at rung 5)</strong></div>
+            <div><strong>Beat 338 · Tidy Operations · ~10:16 JST:</strong> Titan workspace CLEANED ✅ — 135 old beat files (X226–X599) archived to <code>archived_beats/</code> (1.0MB freed) · Titan MEMORY fully current X-661/152wks/2,172 posts/drift:0 ✅ · Cron 6/6 OK ✅ · Titan circuit breaker FAILING but Titan PARKED ✅ · NO PROPOSALS respected · Beat Domain State: IE=0/NI=1/EA=2/DP=3/TO=12 · <strong>Next: Empire Audit (Beat 339 · Rule 3: EA=2 not ≥4 · Rule 4: NI=1/DP=3/IE=0/EA=2 none qualify · TO=12 rung 5 fallback → Tidy Operations again or rotate)</strong></div>
         </div>
         <div class="alert-row warn">
             <span>⚠️</span>
@@ -115,21 +111,21 @@
 
     <!-- STATS ROW -->
     <div class="grid-3" style="margin-bottom:20px;">
-        <div class="card" style="border-left:3px solid #f87175;">
+        <div class="card" style="border-left:3px solid #22d3ee;">
             <h3><span class="material-symbols-outlined">check_circle</span> Beats Completed</h3>
-            <p style="font-size:2rem;font-weight:800;color:#f87175;margin-top:4px;">335</p>
-            <p style="color:var(--dim);font-size:12px;margin-top:4px;">Beat 336 · New Ideas · ~09:46 JST Sun Apr 19</p>
+            <p style="font-size:2rem;font-weight:800;color:#22d3ee;margin-top:4px;">338</p>
+            <p style="color:var(--dim);font-size:12px;margin-top:4px;">Beat 338 · Tidy Ops · ~10:16 JST Sun Apr 19</p>
         </div>
-        <div class="card" style="border-left:3px solid #f87175;">
+        <div class="card" style="border-left:3px solid #22d3ee;">
             <h3><span class="material-symbols-outlined">psychology</span> Empire Agents</h3>
-            <p style="font-size:2rem;font-weight:800;color:#f87175;margin-top:4px;">7</p>
+            <p style="font-size:2rem;font-weight:800;color:#22d3ee;margin-top:4px;">7</p>
             <p style="color:var(--dim);font-size:12px;margin-top:4px;">Kaji ✅ · Titan 🚨 · Ito ✅ · Makoto ✅ · Saito ✅ · Felix 🚨 · Odie ✅</p>
         </div>
-        <div class="card" style="border-left:3px solid #fbbf24;">
+        <div class="card" style="border-left:3px solid #4ade80;">
             <h3><span class="material-symbols-outlined">schedule</span> Cron Health</h3>
-            <p style="font-size:2rem;font-weight:800;color:#fbbf24;margin-top:4px;">6/6</p>
-            <p style="color:var(--dim);font-size:12px;margin-top:4px;"><strong style="color:#fbbf24;">4/6 crons OK · 2 ERROR ❌</strong> (Titan cron running while PARKED — CB failing)</p>
-            <p style="color:var(--dim);font-size:11.5px;margin-top:6px;">Titan CB FAILING · no duplicate crons · macOS crontab clean</p>
+            <p style="font-size:2rem;font-weight:800;color:#4ade80;margin-top:4px;">6/6</p>
+            <p style="color:var(--dim);font-size:12px;margin-top:4px;"><strong style="color:#4ade80;">6/6 crons OK ✅</strong> · Titan CB still failing (PARKED · cron still fires) · no duplicate crons</p>
+            <p style="color:var(--dim);font-size:11.5px;margin-top:6px;">Titan CB FAILING · Kaji/Titan/Ito/Makoto/Twitter-X/Gold all ok · macOS crontab clean</p>
         </div>
     </div>
 
@@ -138,20 +134,20 @@
         <!-- INITIATIVE QUEUE -->
         <div class="card">
             <h3><span class="material-symbols-outlined">flag</span> Initiative Queue</h3>
-            <p style="color:var(--muted);font-size:13px;margin-bottom:12px;"><strong style="color:#34d399;">Beat 336 New Ideas RUNNING</strong> · Beat 334 Delegation Prep DONE · next: Empire Audit (Beat 337 · Rule 5: EA oldest eligible at rung 5)</p>
+            <p style="color:var(--muted);font-size:13px;margin-bottom:12px;"><strong style="color:#22d3ee;">Beat 338 Tidy Ops RUNNING</strong> · Beat 337 Improve Existing DONE · next: Empire Audit (Beat 339 · Rule 5: EA oldest eligible)</p>
             <ul class="task-list">
                 <li>
                     <span class="task-dot next"></span>
                     <div>
-                        <span class="badge badge-ea">Empire Audit</span> <strong>DONE · Beat 335 · ~09:31 JST:</strong> Full empire verification · Titan CB FAILING identified · BEAT_NUM X657→X660 fixed · Titan MEMORY updated X-660/151wks/2,152 posts (X-660 produced 09:22 JST while PARKED) · BEAT_NUM drift fixed X657→X660 · Titan MEMORY updated X-660/151wks/2,152 posts ✅ · 7 agents/656 sessions ✅ · Cron 6/6 OK · Ito pipeline intact · Makoto scout fresh 09:13 JST ✅ · <strong>Next: Empire Audit (Beat 337 · Rule 5: EA oldest eligible)</strong>
-                        <div class="task-label" style="color:#fbbf24;">RUNNING · ~09:31 JST</div>
+                        <span class="badge badge-to">Tidy Operations</span> <strong>DONE · Beat 338 · ~10:16 JST:</strong> Titan workspace CLEANED — 135 old beat files (X226–X599) archived to <code>archived_beats/</code> (1.0MB freed) · 44 recent beat files retained (X600–X661) · Titan MEMORY fully current X-661/152wks/2,172 posts ✅ · Cron 6/6 OK ✅ · Dashboard updated to Beat 338 ✅ · <strong>Next: Empire Audit (Beat 339 · Rule 5: EA oldest eligible at rung 5)</strong>
+                        <div class="task-label" style="color:#22d3ee;">RUNNING · ~10:16 JST</div>
                     </div>
                 </li>
                 <li>
                     <span class="task-dot done"></span>
                     <div>
-                        <span class="badge badge-dp" style="background:rgba(167,139,250,0.12);color:#a78bfa;border:1px solid rgba(167,139,250,0.25);">Delegation Prep</span> <strong>DONE · Beat 334 · ~09:15 JST:</strong> Delegation queue refreshed ✅ · Titan ENFORCED PARKED ~24h15m · EMB ~252h+ · GBP 30d+ · Felix ~292h+ · Cron 6/6 ✅ · Ito XRP $1.4352 🚨 bounce reversing · xAI 429 ~489hr+
-                        <div class="task-label" style="color:#34d399;">DONE · ~09:15 JST</div>
+                        <span class="badge badge-ie">Improve Existing</span> <strong>DONE · Beat 337 · ~10:06 JST:</strong> Circuit Breaker FORMALLY INSTALLED ✅ — Beat 323 claimed CB but it was NEVER present in workspace-titan HEARTBEAT.md; gap confirmed at Beat 336; CB now installed with pre-beat parking check; BEAT_NUM fixed X660→X661; Titan MEMORY header updated X-657→X-661 and pipeline 150wks/2,112posts→152wks/2,172posts; duplicate beat files flagged (179 total, Week 6 Q5 appears twice X649+X654); telemetry pushed ✅
+                        <div class="task-label" style="color:#34d399;">DONE · ~10:06 JST</div>
                     </div>
                 </li>
             </ul>
@@ -162,8 +158,8 @@
         <div class="card">
             <h3><span class="material-symbols-outlined">speed</span> Jax Action Queue <span class="stale-tag">72H POLICY ACTIVE</span></h3>
             <div class="request-item" style="border-left:3px solid #f87175;">
-                <strong>🏋️ Titan PT Launch — ENFORCED PARKED · ~24h26m · 🚨 CIRCUIT BREAKER FAILING</strong>
-                <div class="request-meta">Launch window: 09:00 JST Sat Apr 18 🚨 CLOSED · 30+ nudges · NO RESPONSE · Kaji STOPPED nudging · CB Half-Solution Gap (Beat 336): X-659/660/661 produced while PARKED — CB only works at LLM level, cron still burns init cost every 21min · LLM inference burning · Re-activate: <code>"go Titan"</code> · Kill cron to stop waste: <code>openclaw cron disable 700eb064</code></div>
+                <strong>🏋️ Titan PT Launch — ENFORCED PARKED · ~25h · 🚨 CIRCUIT BREAKER FAILING</strong>
+                <div class="request-meta">Launch window: 09:00 JST Sat Apr 18 🚨 CLOSED · 30+ nudges · NO RESPONSE · Kaji STOPPED nudging · CB installed (Beat 323) but FAILS at cron level — cron fires HEARTBEAT before parking check can exit; X-659/660/661 all produced while PARKED · Titan workspace now CLEANED: 135 beats archived · LLM inference burning every 21min · Re-activate: <code>"go Titan"</code> · Kill cron: <code>openclaw cron disable 700eb064</code></div>
             </div>
             <div class="request-item" style="border-left:3px solid #fbbf24;margin-top:8px;">
                 <strong>📋 Empire Morning Briefing v3 — "Go Telegram" <span class="stale-tag">STALE ~252h</span></strong>
@@ -184,7 +180,7 @@
 
     <!-- BEAT DOMAIN STATE -->
     <div class="card full" style="margin-bottom:20px;">
-        <h3><span class="material-symbols-outlined">psychology</span> Beat Domain State (~09:46 JST Sun Apr 19)</h3>
+        <h3><span class="material-symbols-outlined">psychology</span> Beat Domain State (~10:16 JST Sun Apr 19)</h3>
         <table class="cron-table">
             <thead>
                 <tr>
@@ -196,50 +192,50 @@
             </thead>
             <tbody>
                 <tr>
-                    <td><span class="cron-name" style="background:rgba(52,211,153,0.12);color:#34d399;padding:2px 9px;border-radius:6px;font-size:11px;font-weight:600;">Empire Audit</span></td>
-                    <td>Beat 336 ~09:46 JST</td>
+                    <td><span class="cron-name" style="background:rgba(34,211,238,0.12);color:#22d3ee;padding:2px 9px;border-radius:6px;font-size:11px;font-weight:600;">Tidy Operations</span></td>
+                    <td>Beat 338 ~10:16 JST</td>
                     <td>0</td>
-                    <td><span class="badge badge-run">LAST</span></td>
+                    <td><span class="badge badge-run">LAST · ACTIVE</span></td>
                 </tr>
                 <tr>
                     <td><span class="cron-name" style="background:rgba(251,191,36,0.12);color:#fbbf24;padding:2px 9px;border-radius:6px;font-size:11px;font-weight:600;">Improve Existing</span></td>
-                    <td>Beat 332 ~09:00 JST</td>
-                    <td>2</td>
+                    <td>Beat 337 ~10:06 JST</td>
+                    <td>1</td>
                     <td><span class="badge badge-ok">eligible</span></td>
                 </tr>
                 <tr>
-                    <td><span class="cron-name" style="background:rgba(34,211,238,0.12);color:#22d3ee;padding:2px 9px;border-radius:6px;font-size:11px;font-weight:600;">Tidy Operations</span></td>
-                    <td>Beat 325 ~07:55 JST</td>
-                    <td>9</td>
+                    <td><span class="cron-name" style="background:rgba(52,211,153,0.12);color:#34d399;padding:2px 9px;border-radius:6px;font-size:11px;font-weight:600;">Empire Audit</span></td>
+                    <td>Beat 335 ~09:31 JST</td>
+                    <td>2</td>
                     <td><span class="badge badge-ok">eligible</span></td>
                 </tr>
                 <tr>
                     <td><span class="cron-name" style="background:rgba(167,139,250,0.12);color:#a78bfa;padding:2px 9px;border-radius:6px;font-size:11px;font-weight:600;">Delegation Prep</span></td>
                     <td>Beat 334 ~09:15 JST</td>
-                    <td>1</td>
+                    <td>3</td>
                     <td><span class="badge badge-ok">eligible</span></td>
                 </tr>
                 <tr>
                     <td><span class="cron-name" style="background:rgba(251,191,36,0.12);color:#fbbf24;padding:2px 9px;border-radius:6px;font-size:11px;font-weight:600;">New Ideas</span></td>
-                    <td>Beat 328 ~08:20 JST</td>
-                    <td>6</td>
-                    <td><span class="badge badge-ok">eligible · rung 3</span></td>
+                    <td>Beat 336 ~09:46 JST</td>
+                    <td>1</td>
+                    <td><span class="badge badge-ok">eligible</span></td>
                 </tr>
             </tbody>
         </table>
-        <p style="color:var(--dim);font-size:11.5px;margin-top:10px;"><strong>Algorithm Beat 337:</strong> Rule 1: NI=0 LAST blocked · Rule 2: no urgent override · Rule 3: EA=1 not ≥4 · Rule 4: IE=4≥3 MUST → <strong style="color:#fbbf24;">Improve Existing (Beat 337) wins Rule 4 rung 4</strong></p>
+        <p style="color:var(--dim);font-size:11.5px;margin-top:10px;"><strong>Algorithm Beat 339:</strong> Rule 1: TO=0 LAST blocked · Rule 2: no urgent override · Rule 3: EA=2 not ≥4 · Rule 4: NI=1 not ≥6 · DP=3 not ≥4 · IE=1 not ≥3 · TO=12 rung 5 fallback → <strong style="color:#22d3ee;">Tidy Operations again (Beat 339) OR rotate per Rule 5</strong></p>
     </div>
 
     <!-- AGENT ROSTER -->
     <div class="card full" style="margin-bottom:20px;">
-        <h3><span class="material-symbols-outlined">group</span> Agent Roster — Beat 336 · ~09:46 JST Sun Apr 19</h3>
+        <h3><span class="material-symbols-outlined">group</span> Agent Roster — Beat 338 · ~10:16 JST Sun Apr 19</h3>
         <div class="agent-row">
             <div><span class="agent-name">Kaji</span> <span class="agent-role">COO / Orchestrator</span></div>
-            <span class="badge badge-ok" style="background:rgba(52,211,153,0.12);color:#34d399;border:1px solid rgba(52,211,153,0.25);">✅ RUNNING · Beat 336 · New Ideas · ~09:46 JST</span>
+            <span class="badge badge-run" style="background:rgba(34,211,238,0.12);color:#22d3ee;border:1px solid rgba(34,211,238,0.25);">✅ RUNNING · Beat 338 · Tidy Ops · ~10:16 JST</span>
         </div>
         <div class="agent-row">
             <div><span class="agent-name">Titan</span> <span class="agent-role">Athlete Forge / PT · PARKED · 🚨 CIRCUIT BREAKER FAILING</span></div>
-            <span class="badge badge-err">🚨 PARKED + CIRCUIT BREAKER FAILING · ENFORCED Beat 311 · BEAT_NUM X-660 (just fixed from X-657) · X-659 (08:56 JST) + X-660 (09:22 JST) produced while PARKED · LLM inference burning · Re-activate: "go Titan"</span>
+            <span class="badge badge-err">🚨 PARKED + CIRCUIT BREAKER FAILING · ENFORCED Beat 311 · BEAT_NUM X-661 ✅ · MEMORY fully current · 135 old beat files (X226–X599) archived to archived_beats/ · LLM inference burning every 21min · Re-activate: "go Titan"</span>
         </div>
         <div class="agent-row">
             <div><span class="agent-name">Ito</span> <span class="agent-role">Intel & Pipeline</span></div>
@@ -277,11 +273,11 @@
             </a>
             <a href="https://kaji-hemopo.github.io/telemetry/kaji/titan_launch_status.html" class="link-card" target="_blank">
                 <span class="icon">🏋️</span>
-                <div><strong>Titan PT Launch Status</strong><br><span style="color:var(--dim);font-size:11.5px;">🚨 CIRCUIT BREAKER FAILING · PARKED ENFORCED · X-660 just produced</span></div>
+                <div><strong>Titan PT Launch Status</strong><br><span style="color:var(--dim);font-size:11.5px;">🚨 CIRCUIT BREAKER FAILING · PARKED ENFORCED · X-661 current · 135 beats archived</span></div>
             </a>
             <a href="../../workspace_kaji/MEMORY.md" class="link-card">
                 <span class="icon">📝</span>
-                <div><strong>Kaji MEMORY.md</strong><br><span style="color:var(--dim);font-size:11.5px;">Beat 336 · New Ideas</span></div>
+                <div><strong>Kaji MEMORY.md</strong><br><span style="color:var(--dim);font-size:11.5px;">Beat 338 · Tidy Ops</span></div>
             </a>
         </div>
     </div>
@@ -293,7 +289,7 @@ function updateTime(){const e=new Date(),t=e.toLocaleString("en-US",{timeZone:"A
 </script>
 
 <footer>
-    Kaji COO · <a href="https://kaji-hemopo.github.io/telemetry">Empire Home</a> · Telemetry: <a href="https://github.com/kaji-hemopo/telemetry">kaji-hemopo/telemetry</a> · Beat 336 · New Ideas · 2026-04-19 ~09:31 JST · 6/6 crons OK · 🚨 Titan circuit breaker FAILING (X-659/660 produced while PARKED) · Ito XRP $1.4352 🚨 bounce reversing · next: Empire Audit (Beat 337 · Rule 5: EA oldest eligible at rung 5)
+    Kaji COO · <a href="https://kaji-hemopo.github.io/telemetry">Empire Home</a> · Telemetry: <a href="https://github.com/kaji-hemopo/telemetry">kaji-hemopo/telemetry</a> · Beat 338 · Tidy Ops · 2026-04-19 ~10:16 JST · 6/6 crons OK ✅ · Titan workspace cleaned (135 beats archived) · Titan CB FAILING but PARKED · Ito XRP bounce reversing · next: Tidy Ops/Empire Audit (Beat 339)
 </footer>
 </body>
 </html>
