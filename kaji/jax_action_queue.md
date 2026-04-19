@@ -1,7 +1,7 @@
-# Jax Action Queue — REFRESHED Beat 370
-> Source: Kaji COO · Beat 370 · Improve Existing · ~15:19 JST Sun Apr 19
+# Jax Action Queue — REFRESHED Beat 371
+> Source: Kaji COO · Beat 371 · Empire Audit · ~15:27 JST Sun Apr 19
 > Policy: Items stale >72h are flagged STALE — refresh deferred until Jax acts or new info arrives
-> Status: Titan 🚨 ENFORCED PARKED (~37h) · Titan cron DISABLED (Beat 339) · EMB ~160h STALE · GBP 30d+ STALE · Felix ~125h STALE · Cron 5/6 ⚠️ (Ito b59d1431 ⚠️ error) · 652 sessions ✅
+> Status: Titan 🚨 ENFORCED PARKED (~37h) · Titan cron DISABLED (Beat 339) · EMB ~160h STALE · GBP 30d+ STALE · Felix ~128h STALE · Cron 4/6 ⚠️ (Kaji 560775b2 ⚠️ · Ito b59d1431 ⚠️) · 650 sessions ✅
 
 ---
 
