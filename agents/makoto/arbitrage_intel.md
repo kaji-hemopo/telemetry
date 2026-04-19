@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-19 14:59 JST
+Generated: 2026-04-19 15:27 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -54,7 +54,6 @@ Generated: 2026-04-19 14:59 JST
 |---:|---|---|---|---|---|
 | 75 | Freelancer | Python scraper | Integrasi Login Google untuk Aplikasi | $250.00 | https://www.freelancer.com/projects/oauth/Integrasi-Login-Google-untuk-Aplikasi.html |
 | 75 | Freelancer | Make.com automation | Microsoft Dynamics 365 Field Service Automation: Generate Complet | $250.00 | https://www.freelancer.com/projects/automation/Microsoft-Dynamics-Field-Service.html |
-| 75 | Freelancer | Make.com automation | Co-pilot App Development for Ride-Hailing Drivers | $250.00 | https://www.freelancer.com/projects/kotlin/pilot-App-Development-for-Ride.html |
 | 65 | Freelancer | Python scraper | 3-Day AI Automation Setup -- 7 | $30.00 | https://www.freelancer.com/projects/php/Day-Automation-Setup-40382248.html |
 | 65 | Freelancer | Python scraper | 3-Day AI Automation Setup -- 6 | $30.00 | https://www.freelancer.com/projects/php/Day-Automation-Setup-40382188.html |
 | 65 | Freelancer | Python scraper | 3-Day AI Automation Setup -- 5 | $30.00 | https://www.freelancer.com/projects/php/Day-Automation-Setup-40382139.html |
@@ -63,15 +62,16 @@ Generated: 2026-04-19 14:59 JST
 | 65 | Freelancer | Python scraper | Python Automation for Industrial Machinery -- 2 | I need a skilled Python programmer to develop a control system for industrial ma | https://www.freelancer.com/projects/automation/Python-Automation-for-Industrial.html |
 | 65 | Freelancer | Python scraper | Real Time Football Credit Platform -- 2 | $30.00 | https://www.freelancer.com/projects/php/Real-Time-Football-Credit-Platform.html |
 | 65 | Freelancer | Python scraper | Real Time Football Credit Platform | $30.00 | https://www.freelancer.com/projects/nodejs/Real-Time-Football-Credit-Platform.html |
+| 65 | Freelancer | Make.com automation | Automated Data Extraction from Newspaper | I need a daily table extracted from a newspaper website I subscribe to. The tabl | https://www.freelancer.com/projects/automation/Automated-Data-Extraction-from-Newspaper.html |
 | 65 | Freelancer | Make.com automation | AWS Infrastructure Setup &amp; Automation | I need a complete AWS infrastructure designed, deployed, and handed over so the  | https://www.freelancer.com/projects/amazon-web-services/AWS-Infrastructure-Setup-Automation.html |
 | 65 | Freelancer | Make.com automation | Grocery Data Scraping and WooCommerce Integration | $10.00 | https://www.freelancer.com/projects/data-integration/Grocery-Data-Scraping-WooCommerce.html |
 | 65 | Freelancer | Make.com automation | Result-Driven Virtual Assistant for LinkedIn &amp; CRM | $15.00 | https://www.freelancer.com/projects/activecampaign/Result-Driven-Virtual-Assistant-for-40381980.html |
 | 65 | Freelancer | Make.com automation | Experienced PLC Programmer for Automation Project | We are looking for an experienced PLC Programmer and Hardware Integrator with st | https://www.freelancer.com/projects/plc/Experienced-PLC-Programmer-for.html |
 | 65 | Freelancer | Make.com automation | Sales Person Needed for AI Agency &ndash; US Client Outreach &amp | $30.00 | https://www.freelancer.com/projects/ai-consulting/Sales-Person-Needed-for-Agency.html |
 | 65 | Freelancer | Make.com automation | E-commerce Order&amp;Affiliate Rewards Platform Development | $30.00 | https://www.freelancer.com/projects/api-integration/commerce-Order-Affiliate-Rewards.html |
+| 65 | Freelancer | Data processing API | AI Chrome Product Autofill Extension | I need a Google Chrome extension that taps into an AI model to recognise any onl | https://www.freelancer.com/projects/web-development/Chrome-Product-Autofill-Extension.html |
 | 65 | Freelancer | Data processing API | Tender SaaS Platform Build | Tender is the SaaS platform I’m bringing to market to simplify government-tender | https://www.freelancer.com/projects/nextjs/Tender-SaaS-Platform-Build.html |
 | 65 | Freelancer | Data processing API | Excel Mixed-Data Cleaning Project | I have several Excel spreadsheets that contain a mix of text and numerical field | https://www.freelancer.com/projects/visual-basic/Excel-Mixed-Data-Cleaning-Project-40382255.html |
-| 65 | Freelancer | Data processing API | Tailwind Front-End Build with APIs | I have all server-side APIs ready; what I now need is a clean, modern front end  | https://www.freelancer.com/projects/tailwind-css/Tailwind-Front-End-Build-with.html |
 
 ## Notes
 - Scores prioritize: (1) simple automation/scripting fit, (2) payout magnitude, (3) keyword relevance.
