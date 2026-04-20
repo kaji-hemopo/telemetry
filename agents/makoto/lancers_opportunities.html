@@ -1,376 +1,57 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lancers Live Opps — Makoto</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Makoto Arbitrage Dashboard</title>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0a0a0a; color: #f5f5f5; line-height: 1.6; }
-    .container { max-width: 1100px; margin: 0 auto; padding: 24px 16px; }
-    header { margin-bottom: 32px; }
-    .badge { display: inline-block; background: #1a1a2e; border: 1px solid #333; color: #888; font-size: 11px; padding: 4px 12px; border-radius: 20px; margin-bottom: 12px; }
-    h1 { font-size: 28px; font-weight: 700; margin-bottom: 4px; }
-    .sub { color: #666; font-size: 14px; }
-    .filters { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 24px; }
-    .filter { background: #111; border: 1px solid #333; color: #888; padding: 6px 14px; border-radius: 20px; font-size: 12px; cursor: pointer; }
-    .filter.active { background: #f5c518; color: #000; border-color: #f5c518; font-weight: 600; }
-    .card { background: #111; border: 1px solid #1e1e1e; border-radius: 12px; padding: 20px; margin-bottom: 16px; }
-    .card-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 12px; flex-wrap: wrap; }
-    .card-title { font-size: 15px; font-weight: 600; color: #f5c518; flex: 1; }
-    .card-meta { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
-    .budget { font-size: 18px; font-weight: 700; color: #22c55e; }
-    .score { background: #1a3a1a; color: #22c55e; font-size: 11px; font-weight: 700; padding: 3px 8px; border-radius: 4px; }
-    .tag { background: #1a1a2e; color: #888; font-size: 10px; padding: 2px 8px; border-radius: 4px; }
-    .section-label { font-size: 11px; color: #555; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px; font-weight: 600; }
-    .overview { font-size: 13px; color: #aaa; margin-bottom: 8px; }
-    .tech-tags { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 10px; }
-    .tech-tag { background: #1a1a2e; border: 1px solid #2a2a3e; color: #7dd3fc; font-size: 11px; padding: 3px 8px; border-radius: 4px; }
-    .strategy-point { font-size: 12px; color: #aaa; padding-left: 12px; border-left: 2px solid #333; margin-bottom: 4px; }
-    .cta-row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 12px; }
-    .btn { display: inline-block; background: #f5c518; color: #000; text-decoration: none; padding: 8px 16px; border-radius: 6px; font-size: 12px; font-weight: 600; }
-    .btn:hover { background: #ffd740; }
-    .btn-outline { background: transparent; border: 1px solid #333; color: #888; }
-    .urgency { font-size: 10px; color: #ef4444; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; }
-    footer { text-align: center; font-size: 11px; color: #444; margin-top: 48px; padding-bottom: 24px; }
-    @media (max-width: 600px) { .card-title { font-size: 13px; } .budget { font-size: 15px; } }
+    :root { --bg:#0b1220; --card:#121a2b; --txt:#e8eefc; --muted:#9cb0d8; --accent:#4cc9f0; }
+    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; background:var(--bg); color:var(--txt); }
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 24px; }
+    .head { display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap; }
+    .card { background:var(--card); border:1px solid #23314f; border-radius:12px; padding:16px; }
+    h1 { margin:0 0 8px 0; }
+    .muted { color:var(--muted); margin:0; }
+    button { background:var(--accent); border:0; color:#002a3a; padding:10px 14px; border-radius:10px; font-weight:700; cursor:pointer; }
+    #content { margin-top:16px; overflow-x:auto; }
+    a { color:#7dd3fc; }
+    table { border-collapse: collapse; width:100%; }
+    th, td { border:1px solid #29406e; padding:8px; vertical-align: top; text-align:left; }
+    code { background:#1a2740; padding:2px 4px; border-radius:4px; }
   </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <div class="badge">📍 Tokyo · Bilingual JP/EN</div>
-      <h1>Lancers Live Opportunities</h1>
-      <p class="sub">Score ≥ 70 · Updated 2026-04-21 04:29 JST · 20 opps</p>
-    </header>
-
-    <div class="filters">
-      <button class="filter active" onclick="filter('all')">All (20)</button>
-      <button class="filter" onclick="filter('lp')">LP制作 (12)</button>
-      <button class="filter" onclick="filter('api')">API連携 (5)</button>
-      <button class="filter" onclick="filter('scrape')">スクレイピング (2)</button>
-      <button class="filter" onclick="filter('line')">LINE構築 (1)</button>
+  <div class="wrap">
+    <div class="head card">
+      <div>
+        <h1>Makoto — Global Digital Arbitrage Scout</h1>
+        <p class="muted">Live view of <code>workspace_makoto/outputs/arbitrage_intel.md</code></p>
+        <p class="muted" style="margin-top:8px;">
+          <a href="lancers_opportunities.html" style="color:#4cc9f0; font-weight:600;">⚡ Lancers Live Board</a> — actionable jobs with tech stack + strategy
+          &nbsp;|&nbsp;
+          <a href="https://kaji-hemopo.github.io/telemetry/empire-home.html" style="color:#888;">🏠 Empire Home</a>
+        </p>
+      </div>
+      <button id="reloadBtn">Reload Intel</button>
     </div>
-
-    <div class="card" data-category="lp">
-      <div class="card-header">
-        <div class="card-title">【急募】スキャン代行サービスLP制作！軽微な編集可能なシステム希望</div>
-        <div class="card-meta">
-          <span class="budget">¥200,000</span>
-          <span class="score">Score 90</span>
-          
-        </div>
-      </div>
-      <p class="overview" style="font-size:13px;color:#aaa;margin-bottom:8px">【急募】スキャン代行サービスLP制作！軽微な編集可能なシステム希望</p>
-      <div class="cta-row">
-        <a class="btn" href="https://www.lancers.jp/work/detail/5518118" target="_blank">View Job →</a>
-        <a class="btn btn-outline" href="https://www.lancers.jp/work/detail/5518118" target="_blank">Respond →</a>
-      </div>
-    </div>
-    <div class="card" data-category="api">
-      <div class="card-header">
-        <div class="card-title">auキャリア決済の新仕様に基づく既存システムの修正、KDDIとの通信仕様に基づくAPI調整、疎通試験</div>
-        <div class="card-meta">
-          <span class="budget">¥200,000</span>
-          <span class="score">Score 90</span>
-          
-        </div>
-      </div>
-      <p class="overview" style="font-size:13px;color:#aaa;margin-bottom:8px">auキャリア決済の新仕様に基づく既存システムの修正、KDDIとの通信仕様に基づくAPI調整、疎通試験</p>
-      <div class="cta-row">
-        <a class="btn" href="https://www.lancers.jp/work/detail/5326072" target="_blank">View Job →</a>
-        <a class="btn btn-outline" href="https://www.lancers.jp/work/detail/5326072" target="_blank">Respond →</a>
-      </div>
-    </div>
-    <div class="card" data-category="lp">
-      <div class="card-header">
-        <div class="card-title">【急募】個人クリーニングサービスLP制作（PC/SP各1ページ）</div>
-        <div class="card-meta">
-          <span class="budget">¥100,000</span>
-          <span class="score">Score 90</span>
-          
-        </div>
-      </div>
-      <p class="overview" style="font-size:13px;color:#aaa;margin-bottom:8px">【急募】個人クリーニングサービスLP制作（PC/SP各1ページ）</p>
-      <div class="cta-row">
-        <a class="btn" href="https://www.lancers.jp/work/detail/5527548" target="_blank">View Job →</a>
-        <a class="btn btn-outline" href="https://www.lancers.jp/work/detail/5527548" target="_blank">Respond →</a>
-      </div>
-    </div>
-    <div class="card" data-category="lp">
-      <div class="card-header">
-        <div class="card-title">【急募】遺品整理会社設立に向けたLP制作・運用支援者募集</div>
-        <div class="card-meta">
-          <span class="budget">¥100,000</span>
-          <span class="score">Score 90</span>
-          
-        </div>
-      </div>
-      <p class="overview" style="font-size:13px;color:#aaa;margin-bottom:8px">【急募】遺品整理会社設立に向けたLP制作・運用支援者募集</p>
-      <div class="cta-row">
-        <a class="btn" href="https://www.lancers.jp/work/detail/5500364" target="_blank">View Job →</a>
-        <a class="btn btn-outline" href="https://www.lancers.jp/work/detail/5500364" target="_blank">Respond →</a>
-      </div>
-    </div>
-    <div class="card" data-category="lp">
-      <div class="card-header">
-        <div class="card-title">【急募】WordPressでのLP制作案件</div>
-        <div class="card-meta">
-          <span class="budget">¥100,000</span>
-          <span class="score">Score 90</span>
-          
-        </div>
-      </div>
-      <p class="overview" style="font-size:13px;color:#aaa;margin-bottom:8px">【急募】WordPressでのLP制作案件</p>
-      <div class="cta-row">
-        <a class="btn" href="https://www.lancers.jp/work/detail/5501875" target="_blank">View Job →</a>
-        <a class="btn btn-outline" href="https://www.lancers.jp/work/detail/5501875" target="_blank">Respond →</a>
-      </div>
-    </div>
-    <div class="card" data-category="lp">
-      <div class="card-header">
-        <div class="card-title">【急募】マーケ支援サービスのLP制作をお任せできる方</div>
-        <div class="card-meta">
-          <span class="budget">¥100,000</span>
-          <span class="score">Score 90</span>
-          
-        </div>
-      </div>
-      <p class="overview" style="font-size:13px;color:#aaa;margin-bottom:8px">【急募】マーケ支援サービスのLP制作をお任せできる方</p>
-      <div class="cta-row">
-        <a class="btn" href="https://www.lancers.jp/work/detail/5294532" target="_blank">View Job →</a>
-        <a class="btn btn-outline" href="https://www.lancers.jp/work/detail/5294532" target="_blank">Respond →</a>
-      </div>
-    </div>
-    <div class="card" data-category="api">
-      <div class="card-header">
-        <div class="card-title">【急募】既存システムの保守・改善ができるエンジニア募集</div>
-        <div class="card-meta">
-          <span class="budget">¥100,000</span>
-          <span class="score">Score 90</span>
-          
-        </div>
-      </div>
-      <p class="overview" style="font-size:13px;color:#aaa;margin-bottom:8px">【急募】既存システムの保守・改善ができるエンジニア募集</p>
-      <div class="cta-row">
-        <a class="btn" href="https://www.lancers.jp/work/detail/5518756" target="_blank">View Job →</a>
-        <a class="btn btn-outline" href="https://www.lancers.jp/work/detail/5518756" target="_blank">Respond →</a>
-      </div>
-    </div>
-    <div class="card" data-category="api">
-      <div class="card-header">
-        <div class="card-title">【急募】ダウンロードスクリプト開発とBOXアップロード依頼</div>
-        <div class="card-meta">
-          <span class="budget">¥100,000</span>
-          <span class="score">Score 90</span>
-          
-        </div>
-      </div>
-      <p class="overview" style="font-size:13px;color:#aaa;margin-bottom:8px">【急募】ダウンロードスクリプト開発とBOXアップロード依頼</p>
-      <div class="cta-row">
-        <a class="btn" href="https://www.lancers.jp/work/detail/5492631" target="_blank">View Job →</a>
-        <a class="btn btn-outline" href="https://www.lancers.jp/work/detail/5492631" target="_blank">Respond →</a>
-      </div>
-    </div>
-    <div class="card" data-category="scrape">
-      <div class="card-header">
-        <div class="card-title">【急募】求人サイトデータ収集のクローリング基盤開発</div>
-        <div class="card-meta">
-          <span class="budget">¥100,000</span>
-          <span class="score">Score 90</span>
-          
-        </div>
-      </div>
-      <p class="overview" style="font-size:13px;color:#aaa;margin-bottom:8px">【急募】求人サイトデータ収集のクローリング基盤開発</p>
-      <div class="cta-row">
-        <a class="btn" href="https://www.lancers.jp/work/detail/5511487" target="_blank">View Job →</a>
-        <a class="btn btn-outline" href="https://www.lancers.jp/work/detail/5511487" target="_blank">Respond →</a>
-      </div>
-    </div>
-    <div class="card" data-category="lp">
-      <div class="card-header">
-        <div class="card-title">運動講座LPのデザイン＋WordPress実装（構成・文章あり）</div>
-        <div class="card-meta">
-          <span class="budget">¥80,000</span>
-          <span class="score">Score 90</span>
-          
-        </div>
-      </div>
-      <p class="overview" style="font-size:13px;color:#aaa;margin-bottom:8px">運動講座LPのデザイン＋WordPress実装（構成・文章あり）</p>
-      <div class="cta-row">
-        <a class="btn" href="https://www.lancers.jp/work/detail/5523718" target="_blank">View Job →</a>
-        <a class="btn btn-outline" href="https://www.lancers.jp/work/detail/5523718" target="_blank">Respond →</a>
-      </div>
-    </div>
-    <div class="card" data-category="lp">
-      <div class="card-header">
-        <div class="card-title">【注目】クラウドファンディング用LP制作のプロを募集！</div>
-        <div class="card-meta">
-          <span class="budget">¥80,000</span>
-          <span class="score">Score 90</span>
-          
-        </div>
-      </div>
-      <p class="overview" style="font-size:13px;color:#aaa;margin-bottom:8px">【注目】クラウドファンディング用LP制作のプロを募集！</p>
-      <div class="cta-row">
-        <a class="btn" href="https://www.lancers.jp/work/detail/5512575" target="_blank">View Job →</a>
-        <a class="btn btn-outline" href="https://www.lancers.jp/work/detail/5512575" target="_blank">Respond →</a>
-      </div>
-    </div>
-    <div class="card" data-category="line">
-      <div class="card-header">
-        <div class="card-title">【急募】カスタマーサポートを探しています</div>
-        <div class="card-meta">
-          <span class="budget">¥80,000</span>
-          <span class="score">Score 90</span>
-          
-        </div>
-      </div>
-      <p class="overview" style="font-size:13px;color:#aaa;margin-bottom:8px">【急募】カスタマーサポートを探しています</p>
-      <div class="cta-row">
-        <a class="btn" href="https://www.lancers.jp/work/detail/5465120" target="_blank">View Job →</a>
-        <a class="btn btn-outline" href="https://www.lancers.jp/work/detail/5465120" target="_blank">Respond →</a>
-      </div>
-    </div>
-    <div class="card" data-category="lp">
-      <div class="card-header">
-        <div class="card-title">Webデザイナー様募集中！LP制作など長期で継続依頼できるパートナーを探しています【構成案あり】</div>
-        <div class="card-meta">
-          <span class="budget">¥60,000</span>
-          <span class="score">Score 90</span>
-          
-        </div>
-      </div>
-      <p class="overview" style="font-size:13px;color:#aaa;margin-bottom:8px">Webデザイナー様募集中！LP制作など長期で継続依頼できるパートナーを探しています【構成案あり】</p>
-      <div class="cta-row">
-        <a class="btn" href="https://www.lancers.jp/work/detail/5492411" target="_blank">View Job →</a>
-        <a class="btn btn-outline" href="https://www.lancers.jp/work/detail/5492411" target="_blank">Respond →</a>
-      </div>
-    </div>
-    <div class="card" data-category="api">
-      <div class="card-header">
-        <div class="card-title">2回目 ハローワークAPI連携による介護求人データ取得・格納システムの開発</div>
-        <div class="card-meta">
-          <span class="budget">¥50,000</span>
-          <span class="score">Score 90</span>
-          
-        </div>
-      </div>
-      <p class="overview" style="font-size:13px;color:#aaa;margin-bottom:8px">2回目 ハローワークAPI連携による介護求人データ取得・格納システムの開発</p>
-      <div class="cta-row">
-        <a class="btn" href="https://www.lancers.jp/work/detail/5518095" target="_blank">View Job →</a>
-        <a class="btn btn-outline" href="https://www.lancers.jp/work/detail/5518095" target="_blank">Respond →</a>
-      </div>
-    </div>
-    <div class="card" data-category="api">
-      <div class="card-header">
-        <div class="card-title">【急募】ECストア注文データと出荷データを連携するシステム開発</div>
-        <div class="card-meta">
-          <span class="budget">¥50,000</span>
-          <span class="score">Score 90</span>
-          
-        </div>
-      </div>
-      <p class="overview" style="font-size:13px;color:#aaa;margin-bottom:8px">【急募】ECストア注文データと出荷データを連携するシステム開発</p>
-      <div class="cta-row">
-        <a class="btn" href="https://www.lancers.jp/work/detail/5189850" target="_blank">View Job →</a>
-        <a class="btn btn-outline" href="https://www.lancers.jp/work/detail/5189850" target="_blank">Respond →</a>
-      </div>
-    </div>
-    <div class="card" data-category="lp">
-      <div class="card-header">
-        <div class="card-title">【WEBサイトリニューアル】マーケティング会社のコーポレートサイト（SEO、BtoB）</div>
-        <div class="card-meta">
-          <span class="budget">¥300,000</span>
-          <span class="score">Score 75</span>
-          
-        </div>
-      </div>
-      <p class="overview" style="font-size:13px;color:#aaa;margin-bottom:8px">【WEBサイトリニューアル】マーケティング会社のコーポレートサイト（SEO、BtoB）</p>
-      <div class="cta-row">
-        <a class="btn" href="https://www.lancers.jp/work/detail/5508434" target="_blank">View Job →</a>
-        <a class="btn btn-outline" href="https://www.lancers.jp/work/detail/5508434" target="_blank">Respond →</a>
-      </div>
-    </div>
-    <div class="card" data-category="scrape">
-      <div class="card-header">
-        <div class="card-title">【急募】紙の伝票をWEBシステムへ自動データ入力開発【AI使用可能】</div>
-        <div class="card-meta">
-          <span class="budget">¥100,000</span>
-          <span class="score">Score 75</span>
-          
-        </div>
-      </div>
-      <p class="overview" style="font-size:13px;color:#aaa;margin-bottom:8px">【急募】紙の伝票をWEBシステムへ自動データ入力開発【AI使用可能】</p>
-      <div class="cta-row">
-        <a class="btn" href="https://www.lancers.jp/work/detail/5411519" target="_blank">View Job →</a>
-        <a class="btn btn-outline" href="https://www.lancers.jp/work/detail/5411519" target="_blank">Respond →</a>
-      </div>
-    </div>
-    <div class="card" data-category="lp">
-      <div class="card-header">
-        <div class="card-title">【急募】バスケットボール育成世代サービスのLP制作｜ノーコード希望</div>
-        <div class="card-meta">
-          <span class="budget">¥30,000</span>
-          <span class="score">Score 35</span>
-          
-        </div>
-      </div>
-      <p class="overview" style="font-size:13px;color:#aaa;margin-bottom:8px">【急募】バスケットボール育成世代サービスのLP制作｜ノーコード希望</p>
-      <div class="cta-row">
-        <a class="btn" href="https://www.lancers.jp/work/detail/5518909" target="_blank">View Job →</a>
-        <a class="btn btn-outline" href="https://www.lancers.jp/work/detail/5518909" target="_blank">Respond →</a>
-      </div>
-    </div>
-    <div class="card" data-category="lp">
-      <div class="card-header">
-        <div class="card-title">シンプルな1ページLP制作（タイポグラフィ中心 / 軽いアニメーションあり / WordPress）</div>
-        <div class="card-meta">
-          <span class="budget">¥30,000</span>
-          <span class="score">Score 35</span>
-          
-        </div>
-      </div>
-      <p class="overview" style="font-size:13px;color:#aaa;margin-bottom:8px">シンプルな1ページLP制作（タイポグラフィ中心 / 軽いアニメーションあり / WordPress）</p>
-      <div class="cta-row">
-        <a class="btn" href="https://www.lancers.jp/work/detail/5504832" target="_blank">View Job →</a>
-        <a class="btn btn-outline" href="https://www.lancers.jp/work/detail/5504832" target="_blank">Respond →</a>
-      </div>
-    </div>
-    <div class="card" data-category="lp">
-      <div class="card-header">
-        <div class="card-title">【LP制作】STUDIOでのランディングページ実装パートナー募集</div>
-        <div class="card-meta">
-          <span class="budget">¥20,000</span>
-          <span class="score">Score 35</span>
-          
-        </div>
-      </div>
-      <p class="overview" style="font-size:13px;color:#aaa;margin-bottom:8px">【LP制作】STUDIOでのランディングページ実装パートナー募集</p>
-      <div class="cta-row">
-        <a class="btn" href="https://www.lancers.jp/work/detail/5521253" target="_blank">View Job →</a>
-        <a class="btn btn-outline" href="https://www.lancers.jp/work/detail/5521253" target="_blank">Respond →</a>
-      </div>
-    </div>
-
-    <footer>
-      <p>Lancers Live Dashboard · Makoto Arbitrage Scout · Updated 2026-04-21 04:29 JST</p>
-      <p>Scout: global_scout.py · Telemetry: kaji-hemopo.github.io/telemetry/</p>
-    </footer>
+    <div id="content" class="card">Loading report...</div>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script>
-    function filter(category) {
-      document.querySelectorAll('.card').forEach(card => {
-        if (category === 'all' || card.dataset.category === category) {
-          card.style.display = 'block';
-        } else {
-          card.style.display = 'none';
-        }
-      });
-      document.querySelectorAll('.filter').forEach(btn => btn.classList.remove('active'));
-      event.target.classList.add('active');
+    async function loadIntel() {
+      const target = document.getElementById("content");
+      try {
+        const res = await fetch("../outputs/arbitrage_intel.md?ts=" + Date.now());
+        if (!res.ok) throw new Error("Report not found yet.");
+        const md = await res.text();
+        target.innerHTML = marked.parse(md);
+      } catch (e) {
+        target.innerHTML = "<p>No intel report yet. Run <code>python3 workspace_makoto/global_scout.py</code> first.</p>";
+      }
     }
+    document.getElementById("reloadBtn").addEventListener("click", loadIntel);
+    loadIntel();
   </script>
 </body>
 </html>
