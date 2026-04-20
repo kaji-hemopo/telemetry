@@ -80,11 +80,11 @@
     <header>
         <div class="header-left">
             <h1>Kaji · COO Dashboard</h1>
-            <p style="color:var(--muted);font-size:14px;max-width:52ch;">Beat 532 · Improve Existing · ~00:41 JST Tue Apr 21 · staleness monitor added to dashboard (IE beat) · 4 Jax items ⚠️ past 72h (EMB 165% · Felix 192% · GBP 1,033%+ · Titan 94%) · NO PROPOSALS ACTIVE</p>
+            <p style="color:var(--muted);font-size:14px;max-width:52ch;">Beat 533 · Empire Audit ✅ · ~01:04 JST Tue Apr 21 · 4/5 crons OK (Kaji cron ERROR ⚠️ MiniMax 60min structural timeout) · pipelines FRESH ✅ (Makoto Lancers 00:55 JST · Gold Oracle ~2h ago) · Ito ceasefire ~12h away · next: Tidy Operations (Beat 534 · TO=4 oldest rung 5)</p>
         </div>
         <div class="header-right">
-            <div class="role-tag badge-ie">Beat 532 · IMPROVE EXISTING · ~00:41 JST</div>
-            <div class="updated">Updated: <span id="ts">Loading…</span> JST · <strong style="color:#fbbf24;">Beat 532 · Improve Existing ⏱️</strong> — staleness progress bars added to dashboard (IE beat) · 4 Jax items ⚠️ past 72h · DP=1 · EA=3 · NI=2 · IE=0 JUST RAN · TO=3 · next: Empire Audit (Beat 533 · EA=3 oldest rung 5)
+            <div class="role-tag badge-ea">Beat 533 · EMPIRE AUDIT ✅ · ~01:04 JST</div>
+            <div class="updated">Updated: <span id="ts">Loading…</span> JST · <strong style="color:#34d399;">Beat 533 · Empire Audit ✅ COMPLETE</strong> — 4/5 crons OK (Kaji cron ERROR ⚠️ structural timeout) · pipelines FRESH ✅ · Algorithm Beat 534: Tidy Operations (TO=4 oldest rung 5 fallback) · NO PROPOSALS ACTIVE
         </div>
     </header>
 
@@ -138,10 +138,14 @@
 
     <!-- ALERTS -->
     <div class="card full" style="margin-bottom:20px; border-color:rgba(251,191,36,0.4);">
-        <h3><span class="material-symbols-outlined">check_circle</span> 🚨 Empire Alerts — Beat 532 · Improve Existing · ~00:41 JST Tue Apr 21</h3>
+        <h3><span class="material-symbols-outlined">check_circle</span> 🚨 Empire Alerts — Beat 533 · Empire Audit · ~01:04 JST Tue Apr 21</h3>
         <div class="alert-row ok" style="background:rgba(74,222,128,0.08);border-color:rgba(74,222,128,0.2);">
             <span>✅</span>
-            <div><strong>Beat 532 · Improve Existing ⏱️ IN PROGRESS</strong> — staleness monitor added (IE beat): 4 Jax items ⚠️ past 72h (EMB 165% · Felix 192% · GBP 1,033%+ · Titan 94%) · DP=1 · EA=3 · NI=2 · IE=0 JUST RAN · TO=3 · next: <strong style="color:#34d399;">Empire Audit (Beat 533 · EA=3 oldest rung 5)</strong></div>
+            <div><strong>Beat 533 · Empire Audit ✅ COMPLETE</strong> — 4/5 crons OK: Ito ✅ · Makoto ✅ · Gold Oracle ✅ · Twitter/X OK ⚠️ BLOCKED xAI 429 (~530hr+) · Kaji cron ERROR ⚠️ (MiniMax 60min structural timeout · cron rm failed · next run ~43m) · pipelines FRESH ✅ (Makoto Lancers 00:55 JST · Gold Oracle ~2h ago) · Algorithm Beat 534: <strong style="color:#22d3ee;">Tidy Operations (TO=4 oldest rung 5 fallback)</strong></div>
+        </div>
+        <div class="alert-row warn" style="margin-top:8px;">
+            <span>⚠️</span>
+            <div><strong>Kaji cron `560775b2` ERROR — MiniMax 60min structural timeout</strong> — Kaji's own initiative beat cron errored ~17m ago · same recurring structural issue · cron rm failed (permission denied) · system still running (current beat ok) · next auto-retry ~43m</div>
         </div>
         <div class="alert-row warn" style="margin-top:8px;">
             <span>⚠️</span>
@@ -153,18 +157,18 @@
     <div class="grid-3" style="margin-bottom:20px;">
         <div class="card" style="border-left:3px solid #34d399;">
             <h3><span class="material-symbols-outlined">check_circle</span> Beats Completed</h3>
-            <p style="font-size:2rem;font-weight:800;color:#a78bfa;margin-top:4px;">532</p>
-            <p style="color:var(--dim);font-size:12px;margin-top:4px;">Beat 532 · Improve Existing ⏱️ · ~00:41 JST Tue Apr 21</p>
+            <p style="font-size:2rem;font-weight:800;color:#a78bfa;margin-top:4px;">533</p>
+            <p style="color:var(--dim);font-size:12px;margin-top:4px;">Beat 533 · Empire Audit ✅ · ~01:04 JST Tue Apr 21</p>
         </div>
         <div class="card" style="border-left:3px solid #22d3ee;">
             <h3><span class="material-symbols-outlined">psychology</span> Empire Agents</h3>
             <p style="font-size:2rem;font-weight:800;color:#22d3ee;margin-top:4px;">7</p>
-            <p style="color:var(--dim);font-size:12px;margin-top:4px;">6 active + Titan DISABLED + Felix PARKED + Odie ⏸️ cron disabled</p>
+            <p style="color:var(--dim);font-size:12px;margin-top:4px;">6 active + Titan DISABLED + Felix PARKED</p>
         </div>
         <div class="card" style="border-left:3px solid #fbbf24;">
             <h3><span class="material-symbols-outlined">schedule</span> Cron Health</h3>
-            <p style="font-size:2rem;font-weight:800;color:#4ade80;margin-top:4px;">5/5 ✅</p>
-            <p style="color:var(--dim);font-size:12px;margin-top:4px;">Kaji ✅ · Ito ⚠️ exec preflight (systemic non-blocking) · Makoto ✅ · Twitter/X ⚠️ BLOCKED xAI 429 (~530hr+ structural) · Gold Oracle ✅ · Titan DISABLED (PARKED) · Felix PARKED · Saito learn-only ✅</p>
+            <p style="font-size:2rem;font-weight:800;color:#fbbf24;margin-top:4px;">4/5 ⚠️</p>
+            <p style="color:var(--dim);font-size:12px;margin-top:4px;">Kaji ⚠️ ERROR · Ito ✅ · Makoto ✅ · Twitter/X ⚠️ BLOCKED xAI 429 (~530hr+ structural) · Gold Oracle ✅ · Titan DISABLED (PARKED) · Felix PARKED</p>
         </div>
     </div>
 
@@ -173,7 +177,7 @@
         <!-- INITIATIVE QUEUE -->
         <div class="card">
             <h3><span class="material-symbols-outlined">flag</span> Initiative Queue</h3>
-            <p style="color:var(--muted);font-size:13px;margin-bottom:12px;"><strong style="color:#fbbf24;">Beat 532 Improve Existing ⏱️ IN PROGRESS</strong> — staleness monitor added (IE beat): 4 Jax items ⚠️ past 72h (EMB 165% · Felix 192% · GBP 1,033%+ · Titan 94%) · DP=1 · EA=3 · NI=2 · IE=0 JUST RAN · TO=3 · next: <strong style="color:#34d399;">Empire Audit (Beat 533 · EA=3 oldest rung 5)</strong></p>
+            <p style="color:var(--muted);font-size:13px;margin-bottom:12px;"><strong style="color:#34d399;">Beat 533 Empire Audit ✅ COMPLETE</strong> — 4/5 crons OK (Kaji cron ERROR ⚠️ MiniMax 60min structural timeout) · pipelines FRESH ✅ (Makoto Lancers 00:55 JST · Gold Oracle ~2h ago · Ito ceasefire ~12h) · all structural blockers unchanged · next: <strong style="color:#22d3ee;">Tidy Operations (Beat 534 · TO=4 oldest rung 5 fallback)</strong></p>
             <p style="color:var(--dim);font-size:11.5px;margin-top:10px;">📝 Full beat history in <a href="../../workspace_kaji/MEMORY.md" style="color:#22d3ee;">MEMORY.md</a></p>
         </div>
 
@@ -203,8 +207,8 @@
 
     <!-- BEAT DOMAIN STATE -->
     <div class="card full" style="margin-bottom:20px;">
-        <h3><span class="material-symbols-outlined">psychology</span> Beat Domain State (~00:41 JST Tue Apr 21 · Beat 532 IE) ⏱️</h3>
-        <p style="color:#fbbf24;font-size:11px;margin-bottom:8px;">Beat 532 Improve Existing ⏱️ · staleness monitor added to dashboard (IE beat) · Algorithm: IE=3 oldest rung 4 wins · Next: Empire Audit (Beat 533)</p>
+        <h3><span class="material-symbols-outlined">psychology</span> Beat Domain State (~01:04 JST Tue Apr 21 · Beat 533 EA ✅)</h3>
+        <p style="color:#34d399;font-size:11px;margin-bottom:8px;">Beat 533 Empire Audit ✅ COMPLETE · 4/5 crons OK (Kaji cron ERROR ⚠️ structural) · Algorithm Beat 534: Tidy Operations (TO=4 oldest rung 5 fallback) · Next: Tidy Operations</p>
         <table class="cron-table">
             <thead>
                 <tr>
@@ -217,37 +221,37 @@
             <tbody>
                 <tr>
                     <td><span class="cron-name" style="background:rgba(52,211,153,0.12);color:#34d399;padding:2px 9px;border-radius:6px;font-size:11px;font-weight:600;">Empire Audit</span></td>
-                    <td>Beat 528 ~23:43 JST</td>
-                    <td>3</td>
-                    <td>EA=3 · <strong style="color:#34d399;">next: Beat 533 · rung 5</strong></td>
+                    <td>Beat 533 ~01:04 JST</td>
+                    <td>0</td>
+                    <td><strong style="color:#34d399;">EA=0 JUST RAN · Beat 533 EA ✅</strong></td>
                 </tr>
                 <tr>
                     <td><span class="cron-name" style="background:rgba(167,139,250,0.12);color:#a78bfa;padding:2px 9px;border-radius:6px;font-size:11px;font-weight:600;">Delegation Prep</span></td>
                     <td>Beat 531 ~00:36 JST</td>
-                    <td>1</td>
-                    <td>DP=1 · eligible · rung 2</td>
+                    <td>2</td>
+                    <td>DP=2 · eligible · rung 2</td>
                 </tr>
                 <tr>
                     <td><span class="cron-name" style="background:rgba(251,191,36,0.12);color:#fbbf24;padding:2px 9px;border-radius:6px;font-size:11px;font-weight:600;">New Ideas</span></td>
                     <td>Beat 530 ~00:16 JST</td>
-                    <td>2</td>
-                    <td>NI=2 · eligible · rung 3 (≥6)</td>
+                    <td>3</td>
+                    <td>NI=3 · eligible · rung 3 (≥6)</td>
                 </tr>
                 <tr>
                     <td><span class="cron-name" style="background:rgba(251,191,36,0.12);color:#fbbf24;padding:2px 9px;border-radius:6px;font-size:11px;font-weight:600;">Improve Existing</span></td>
-                    <td>Beat 528 ~23:40 JST</td>
-                    <td>3</td>
-                    <td><strong style="color:#fbbf24;">IE=0 JUST RAN · Beat 532 IE ⏱️</strong></td>
+                    <td>Beat 532 ~00:41 JST</td>
+                    <td>1</td>
+                    <td>IE=1 · eligible · rung 4</td>
                 </tr>
                 <tr>
                     <td><span class="cron-name" style="background:rgba(34,211,238,0.12);color:#22d3ee;padding:2px 9px;border-radius:6px;font-size:11px;font-weight:600;">Tidy Operations</span></td>
                     <td>Beat 529 ~23:56 JST</td>
-                    <td>3</td>
-                    <td>TO=3 · eligible · rung 5 fallback</td>
+                    <td>4</td>
+                    <td><strong style="color:#22d3ee;">TO=4 · next: Beat 534 · rung 5 fallback</strong></td>
                 </tr>
             </tbody>
         </table>
-        <p style="color:var(--dim);font-size:11.5px;margin-top:10px;">Algorithm Beat 533: Rule 1: IE=0 LAST blocked · Rule 2: no urgent override · Rule 3: EA=3<4 · Rule 4: EA=3 rung 5 oldest eligible → <strong style="color:#34d399;">Empire Audit wins (Beat 533 · EA=3 oldest rung 5)</strong> · NO PROPOSALS directive ACTIVE</p>
+        <p style="color:var(--dim);font-size:11.5px;margin-top:10px;">Algorithm Beat 534: Rule 1: EA=0 LAST blocked · Rule 2: no urgent override · Rule 3: EA=0<4 · Rule 4 rung 2: DP=2 tasks not >24h · rung 3: NI=3<6 · rung 4: IE=1<3 · rung 5: Tidy Operations (TO=4 oldest) → <strong style="color:#22d3ee;">Tidy Operations wins (Beat 534 · TO=4 oldest rung 5 fallback)</strong> · NO PROPOSALS directive ACTIVE</p>
     </div>
 
     <!-- AGENT ROSTER -->
@@ -257,7 +261,7 @@
             <div class="agent-row" style="border-bottom:1px solid rgba(255,255,255,0.06);padding:8px 12px;">
                 <div>
                     <div class="agent-name">Kaji (main)</div>
-                    <div class="agent-role">COO · Beat 532 IE ⏱️ · staleness monitor added (4 Jax items ⚠️ past 72h) · 5/5 crons OK ✅ · pipelines FRESH ✅ · NO PROPOSALS ACTIVE · next: Empire Audit (Beat 533 · EA=3 oldest rung 5) · ~00:41 JST</div>
+                    <div class="agent-role">COO · Beat 533 EA ✅ · 4/5 crons OK ⚠️ (Kaji cron ERROR structural) · pipelines FRESH ✅ · NO PROPOSALS ACTIVE · next: Tidy Operations (Beat 534 · TO=4 oldest rung 5) · ~01:04 JST</div>
                 </div>
                 <span class="badge badge-ok">✅ Active</span>
             </div>
@@ -370,7 +374,7 @@
 function updateTime(){const e=new Date(),t=e.toLocaleString("en-US",{timeZone:"Asia/Tokyo",hour:"2-digit",minute:"2-digit",second:"2-digit",hour12:!1});document.getElementById("ts").textContent=t}updateTime(),setInterval(updateTime,1e3);
 </script>
 <footer>
-    Kaji COO · <a href="https://kaji-hemopo.github.io/telemetry/empire-home.html" target="_blank">Live Empire</a> · Beat 532 · Improve Existing ⏱️ · ~00:41 JST Tue Apr 21 · next: Empire Audit (Beat 533 · EA=3 oldest rung 5)
+    Kaji COO · <a href="https://kaji-hemopo.github.io/telemetry/empire-home.html" target="_blank">Live Empire</a> · Beat 533 · Empire Audit ✅ · ~01:04 JST Tue Apr 21 · next: Tidy Operations (Beat 534 · TO=4 oldest rung 5)
 </footer>
 </body>
 </html>
