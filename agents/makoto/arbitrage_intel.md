@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-20 14:03 JST
+Generated: 2026-04-20 15:26 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -44,8 +44,8 @@ Generated: 2026-04-20 14:03 JST
 | 90 | Lancers | スクレイピング | 【急募】求人サイトデータ収集のクローリング基盤開発 | ¥100,000 | https://www.lancers.jp/work/detail/5511487 |
 | 75 | Lancers | LP制作 | 【WEBサイトリニューアル】マーケティング会社のコーポレートサイト（SEO、BtoB） | ¥300,000 | https://www.lancers.jp/work/detail/5508434 |
 | 75 | Lancers | スクレイピング | 【急募】紙の伝票をWEBシステムへ自動データ入力開発【AI使用可能】 | ¥100,000 | https://www.lancers.jp/work/detail/5411519 |
-| 35 | Lancers | LP制作 | 【LP制作】STUDIOでのランディングページ実装パートナー募集 | ¥20,000 | https://www.lancers.jp/work/detail/5521253 |
 | 35 | Lancers | LP制作 | 【急募】バスケットボール育成世代サービスのLP制作｜ノーコード希望 | ¥30,000 | https://www.lancers.jp/work/detail/5518909 |
+| 35 | Lancers | LP制作 | 【LP制作】STUDIOでのランディングページ実装パートナー募集 | ¥20,000 | https://www.lancers.jp/work/detail/5521253 |
 | 35 | Lancers | LP制作 | シンプルな1ページLP制作（タイポグラフィ中心 / 軽いアニメーションあり / WordPress） | ¥30,000 | https://www.lancers.jp/work/detail/5504832 |
 
 ## Global Highlights (USD)
@@ -59,6 +59,7 @@ Generated: 2026-04-20 14:03 JST
 | 75 | Freelancer | Make.com automation | Advanced AI Voice &amp; Automation Development GHL | $250.00 | https://www.freelancer.com/projects/ai-chatbot-development/Advanced-Voice-Automation-Development.html |
 | 75 | Freelancer | Make.com automation | Full-Time AI Engineer for Government Automation | $250.00 | https://www.freelancer.com/projects/api-integration/Full-Time-Engineer-for-Government.html |
 | 75 | Freelancer | Make.com automation | Automated Case Processing System Creation | $250.00 | https://www.freelancer.com/projects/api-developmet/Automated-Case-Processing-System.html |
+| 65 | Freelancer | Python scraper | ATI.su User Data Scraping | $15.00 | https://www.freelancer.com/projects/python/ATI-User-Data-Scraping.html |
 | 65 | Freelancer | Python scraper | Hands-On AI Learning Mentor | I’m a complete beginner who wants to move well beyond theory and into practical, | https://www.freelancer.com/projects/flask/Hands-Learning-Mentor.html |
 | 65 | Freelancer | Python scraper | Looking for an Experienced AI Engineer (Freelance/Contract) | $15.00 | https://www.freelancer.com/projects/ai-development/Looking-for-Experienced-Engineer.html |
 | 65 | Freelancer | Python scraper | AI-Driven Tally Stock Reports | I need a small AI module that plugs into my existing Tally environment, pulls ra | https://www.freelancer.com/projects/ai-development/Driven-Tally-Stock-Reports.html |
@@ -67,11 +68,10 @@ Generated: 2026-04-20 14:03 JST
 | 65 | Freelancer | Python scraper | Live API &amp; Social Media Scraper | $10.00 | https://www.freelancer.com/projects/api-developmet/Live-API-Social-Media-Scraper.html |
 | 65 | Freelancer | Python scraper | Scanned PDF Text Extraction | $10.00 | https://www.freelancer.com/projects/data-extraction/Scanned-PDF-Text-Extraction.html |
 | 65 | Freelancer | Python scraper | Bulk Fabric Overlay Script | $15.00 | https://www.freelancer.com/projects/image-processing/Bulk-Fabric-Overlay-Script.html |
-| 65 | Freelancer | Python scraper | AI-Driven Excel Comparator | $10.00 | https://www.freelancer.com/projects/data-analysis/Driven-Excel-Comparator.html |
-| 65 | Freelancer | Python scraper | Zerodha Trend-Following Algo Bot | I need a fully-automated trading bot that connects to my Zerodha stock-trading a | https://www.freelancer.com/projects/api/Zerodha-Trend-Following-Algo-Bot.html |
+| 65 | Freelancer | Make.com automation | Result-Driven Virtual Assistant for LinkedIn &amp; CRM | XPERTUS Virtual Assistant I run a solo training practice and spend most of my da | https://www.freelancer.com/projects/activecampaign/Result-Driven-Virtual-Assistant-for-40384203.html |
+| 65 | Freelancer | Make.com automation | WhatsApp Business API (Interakt/WATI) + Zoho CRM Integration &nda | Project Description: This is a fast execution project. I need someone who has al | https://www.freelancer.com/projects/zoho-crm/WhatsApp-Business-API-Interakt-WATI.html |
 | 65 | Freelancer | Make.com automation | Zoho Lead Automation &amp; Email Alerts | I’m looking to tighten up our lead process in Zoho CRM so that everything that h | https://www.freelancer.com/projects/zoho-crm/Zoho-Lead-Automation-Email-Alerts.html |
 | 65 | Freelancer | Make.com automation | LOGO DESIGN &ndash; SMART LOA | $15.00 | https://www.freelancer.com/projects/adobe-illustrator/LOGO-DESIGN-SMART-LOA.html |
-| 65 | Freelancer | Make.com automation | Metro 2 Credit Repair SaaS Development | $30.00 | https://www.freelancer.com/projects/automation/Metro-Credit-Repair-SaaS-Development.html |
 
 ## Notes
 - Scores prioritize: (1) simple automation/scripting fit, (2) payout magnitude, (3) keyword relevance.
