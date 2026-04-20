@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-21 04:29 JST
+Generated: 2026-04-21 08:24 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -52,26 +52,26 @@ Generated: 2026-04-21 04:29 JST
 
 | Score | Platform | Keyword | Title | Budget/Rate | URL |
 |---:|---|---|---|---|---|
+| 85 | Freelancer | Make.com automation | GHL System Creation Specialist | $3,000.00 | https://www.freelancer.com/projects/automation/GHL-System-Creation-Specialist.html |
 | 85 | Freelancer | Make.com automation | CRM Pipeline &amp; Marketing Automation | $5,000.00 | https://www.freelancer.com/projects/email-marketing/CRM-Pipeline-Marketing-Automation.html |
-| 85 | Freelancer | Data processing API | QA Team Needed for SaaS Web App &mdash; Functional, Security &amp | $10,000.00 | https://www.freelancer.com/projects/saas/Team-Needed-for-SaaS-Web.html |
-| 85 | Freelancer | Data processing API | DBA Data Collection Specialist | $1,500.00 | https://www.freelancer.com/projects/data-collection/DBA-Data-Collection-Specialist.html |
-| 75 | Freelancer | Python scraper | Robust Web Scraping for Product Data Extraction | $200.00 | https://www.freelancer.com/projects/laravel/Robust-Web-Scraping-for-Product.html |
-| 75 | Freelancer | Python scraper | High-Performance Bulk Account Verifier &amp; Classifier (bulks Re | $250.00 | https://www.freelancer.com/projects/database-management/High-Performance-Bulk-Account-Verifier.html |
-| 75 | Freelancer | Data processing API | ECAM Quality Assurance Setup | $250.00 | https://www.freelancer.com/projects/cnc/ECAM-Quality-Assurance-Setup.html |
+| 75 | Freelancer | Python scraper | Rapid Amazon Shift Automation | $250.00 | https://www.freelancer.com/projects/automation/Rapid-Amazon-Shift-Automation.html |
+| 75 | Freelancer | Make.com automation | Reviewer for Business Automation Plans | $250.00 | https://www.freelancer.com/projects/api/Reviewer-for-Business-Automation-Plans.html |
+| 75 | Freelancer | Make.com automation | Lead Architect for Implementation Day | $250.00 | https://www.freelancer.com/projects/api-developmet/Lead-Architect-for-Implementation-Day.html |
+| 75 | Freelancer | Make.com automation | Automation Build Architect for Live Event | $250.00 | https://www.freelancer.com/projects/api/Automation-Build-Architect-for-Live.html |
+| 75 | Freelancer | Make.com automation | Automation Logic Specialist &mdash; 1-Day Project | $250.00 | https://www.freelancer.com/projects/automation/Automation-Logic-Specialist-Day-Project.html |
+| 75 | Freelancer | Data processing API | Integrate APIs for Real-Time Communication Platform | $250.00 | https://www.freelancer.com/projects/api-developmet/Integrate-APIs-for-Real-Time.html |
+| 65 | Freelancer | Python scraper | Python Ultra-Low-Latency Trading Engine - Alpha - 2 | Project Overview We are building a high-performance, low-latency trading engine  | https://www.freelancer.com/projects/python/Python-Ultra-Low-Latency-Trading-40386242.html |
+| 65 | Freelancer | Python scraper | Refine and improve a  Django Micro-Job website &amp; fixing the m | Django Micro-Job Platform - Final Polish &amp; Messaging System Tech Stack: Djan | https://www.freelancer.com/projects/sqlite/Refine-improve-Django-Micro-Job.html |
+| 65 | Freelancer | Python scraper | AI WhatsApp Assistant MVP Build | ConXbyte is moving into its MVP phase and over the next 4–6 weeks the aim is to  | https://www.freelancer.com/projects/api-developmet/WhatsApp-Assistant-MVP-Build.html |
+| 65 | Freelancer | Python scraper | Amazon Flex Offer Alert Script | $30.00 | https://www.freelancer.com/projects/api/Amazon-Flex-Offer-Alert-Script.html |
+| 65 | Freelancer | Python scraper | Title: Bridge Telegram Bot (PostgreSQL) to Web Dashboard with Hig | $10.00 | https://www.freelancer.com/projects/postgresql/Title-Bridge-Telegram-Bot-PostgreSQL.html |
 | 65 | Freelancer | Python scraper | Social Media Text Scraping | I need a reliable solution that automatically pulls public-facing text from spec | https://www.freelancer.com/projects/selenium/Social-Media-Text-Scraping.html |
 | 65 | Freelancer | Python scraper | Especialista en An&aacute;lisis de Datos Econ&oacute;micos y Mode | $15.00 | https://www.freelancer.com/projects/data-analysis/Especialista-lisis-Datos-Econ-micos.html |
-| 65 | Freelancer | Python scraper | Data Analysis Automation Scope | $30.00 | https://www.freelancer.com/projects/data-analysis/Data-Analysis-Automation-Scope.html |
 | 65 | Freelancer | Python scraper | Mentor Python para Scraping y Algoritmos | $8.00 | https://www.freelancer.com/projects/data-science/Mentor-Python-para-Scraping-Algoritmos.html |
 | 65 | Freelancer | Python scraper | X Growth Engine Development | $10.00 | https://www.freelancer.com/projects/twitter-api/Growth-Engine-Development.html |
 | 65 | Freelancer | Python scraper | Python Data Analyst &amp; Automation Specialist | I'm seeking an experienced Python developer to help with data analysis and autom | https://www.freelancer.com/projects/data-analysis/Python-Data-Analyst-Automation.html |
 | 65 | Freelancer | Python scraper | Python Automation &amp; API Scraper | $2.00 | https://www.freelancer.com/projects/api/Python-Automation-API-Scraper.html |
 | 65 | Freelancer | Python scraper | Google Calendar API Function Suite | $30.00 | https://www.freelancer.com/projects/api-developmet/Google-Calendar-API-Function-Suite.html |
-| 65 | Freelancer | Python scraper | Mentor &amp; Project Sourcing Guide | I’m a Python full-stack developer who also loves DevOps on AWS and the emerging  | https://www.freelancer.com/projects/devops/Mentor-Project-Sourcing-Guide.html |
-| 65 | Freelancer | Python scraper | Python Retail Sales Trend Analysis | I have a raw CSV export of customer-level transactions from our retail platform  | https://www.freelancer.com/projects/data-analysis/Python-Retail-Sales-Trend-Analysis.html |
-| 65 | Freelancer | Python scraper | AI-Powered Alert System - Full-Stack | Overview Building a real-time, data-driven alert system that integrates with thi | https://www.freelancer.com/projects/ai-development/Powered-Alert-System-Full-Stack.html |
-| 65 | Freelancer | Python scraper | Tally (Accounting) Sync to Mobile &amp; Web App ( like Bizanalyst | I need an MVP built in Google AI Studio that mirrors the core experience of BizA | https://www.freelancer.com/projects/python/Tally-Sync-Web-Mobile-MVP.html |
-| 65 | Freelancer | Make.com automation | Hotel Guest Self Check-in Workflow Creation | Title: Build a simple hotel guest self check-in flow with form, payment link and | https://www.freelancer.com/projects/zapier/Hotel-Guest-Self-Check-Workflow.html |
-| 65 | Freelancer | Make.com automation | Real Estate Offer Automation (Make.com) | $10.00 | https://www.freelancer.com/projects/automation/Real-Estate-Offer-Automation-Make.html |
 
 ## Notes
 - Scores prioritize: (1) simple automation/scripting fit, (2) payout magnitude, (3) keyword relevance.
