@@ -80,20 +80,68 @@
     <header>
         <div class="header-left">
             <h1>Kaji · COO Dashboard</h1>
-            <p style="color:var(--muted);font-size:14px;max-width:52ch;">Beat 531 · Delegation Prep ✅ · ~00:36 JST Tue Apr 21 · delegation queue refreshed (+20m) · next: Improve Existing (Beat 532 · IE=3 oldest rung 4)</p>
+            <p style="color:var(--muted);font-size:14px;max-width:52ch;">Beat 532 · Improve Existing · ~00:41 JST Tue Apr 21 · staleness monitor added to dashboard (IE beat) · 4 Jax items ⚠️ past 72h (EMB 165% · Felix 192% · GBP 1,033%+ · Titan 94%) · NO PROPOSALS ACTIVE</p>
         </div>
         <div class="header-right">
-            <div class="role-tag badge-dp">Beat 531 · DELEGATION PREP ✅ · ~00:36 JST</div>
-            <div class="updated">Updated: <span id="ts">Loading…</span> JST · <strong style="color:#a78bfa;">Beat 531 · Delegation Prep ✅ COMPLETE</strong> — delegation queue refreshed (+20m): Titan ~67.8h · cron DISABLED ~62.8h · EMB ~118.9h (5.0d+) ⚠️ · Felix ~138.0h (5.8d+) ⚠️ · GBP 31d+ ⚠️ · DP=0 JUST RAN · EA=2 · NI=1 · IE=3 · TO=2 · next: Improve Existing (Beat 532 · IE=3 oldest rung 4)</div>
+            <div class="role-tag badge-ie">Beat 532 · IMPROVE EXISTING · ~00:41 JST</div>
+            <div class="updated">Updated: <span id="ts">Loading…</span> JST · <strong style="color:#fbbf24;">Beat 532 · Improve Existing ⏱️</strong> — staleness progress bars added to dashboard (IE beat) · 4 Jax items ⚠️ past 72h · DP=1 · EA=3 · NI=2 · IE=0 JUST RAN · TO=3 · next: Empire Audit (Beat 533 · EA=3 oldest rung 5)
         </div>
     </header>
 
+    <!-- STALE ALERT BANNER -->
+    <div class="card full" style="margin-bottom:18px; border-color:rgba(248,113,113,0.5); background:rgba(248,113,113,0.06);">
+        <h3><span class="material-symbols-outlined">schedule</span> ⏱️ Jax Staleness Monitor — 72h Threshold</h3>
+        <p style="color:var(--dim);font-size:11.5px;margin-bottom:10px;">Progress bar = % of 72h threshold elapsed. Bar overflow = past threshold. EMB 163% = 5.0d stale. Felix 192% = 5.8d stale.</p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+            <div style="background:rgba(0,0,0,0.3);border-radius:10px;padding:10px 14px;border:1px solid rgba(255,255,255,0.05);">
+                <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:5px;">
+                    <span style="font-size:12.5px;font-weight:600;">📋 Empire Morning Briefing v3</span>
+                    <span style="font-size:11px;color:#fbbf24;font-weight:700;">~118.9h · 165% ⚠️</span>
+                </div>
+                <div style="background:rgba(255,255,255,0.08);border-radius:6px;height:8px;overflow:hidden;">
+                    <div style="width:165%;height:100%;background:linear-gradient(90deg,#fbbf24,#f87171);border-radius:6px;"></div>
+                </div>
+                <div style="font-size:10.5px;color:var(--dim);margin-top:4px;">Action: "Go Telegram" → Kaji sends immediately</div>
+            </div>
+            <div style="background:rgba(0,0,0,0.3);border-radius:10px;padding:10px 14px;border:1px solid rgba(255,255,255,0.05);">
+                <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:5px;">
+                    <span style="font-size:12.5px;font-weight:600;">🎌 Felix Gmail Re-auth</span>
+                    <span style="font-size:11px;color:#f87171;font-weight:700;">~138.0h · 192% 🔴</span>
+                </div>
+                <div style="background:rgba(255,255,255,0.08);border-radius:6px;height:8px;overflow:hidden;">
+                    <div style="width:192%;height:100%;background:linear-gradient(90deg,#fbbf24,#f87171);border-radius:6px;"></div>
+                </div>
+                <div style="font-size:10.5px;color:var(--dim);margin-top:4px;">Action: Gmail app password · or "Park Felix"</div>
+            </div>
+            <div style="background:rgba(0,0,0,0.3);border-radius:10px;padding:10px 14px;border:1px solid rgba(255,255,255,0.05);">
+                <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:5px;">
+                    <span style="font-size:12.5px;font-weight:600;">⚡ Makoto GBP Deploy</span>
+                    <span style="font-size:11px;color:#fbbf24;font-weight:700;">31d+ · 1,033%+ ⚠️</span>
+                </div>
+                <div style="background:rgba(255,255,255,0.08);border-radius:6px;height:8px;overflow:hidden;">
+                    <div style="width:100%;height:100%;background:#f87171;border-radius:6px;"></div>
+                </div>
+                <div style="font-size:10.5px;color:var(--dim);margin-top:4px;">Action: "deploy GBP" · Formspree YOUR_FORM_ID</div>
+            </div>
+            <div style="background:rgba(0,0,0,0.3);border-radius:10px;padding:10px 14px;border:1px solid rgba(255,255,255,0.05);">
+                <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:5px;">
+                    <span style="font-size:12.5px;font-weight:600;">🏋️ Titan ENFORCED PARKED</span>
+                    <span style="font-size:11px;color:#f87171;font-weight:700;">~67.8h · 94% ⚠️</span>
+                </div>
+                <div style="background:rgba(255,255,255,0.08);border-radius:6px;height:8px;overflow:hidden;">
+                    <div style="width:94%;height:100%;background:linear-gradient(90deg,#4ade80,#fbbf24);border-radius:6px;"></div>
+                </div>
+                <div style="font-size:10.5px;color:var(--dim);margin-top:4px;">Re-activate: "go Titan" · cron DISABLED ~62.8h</div>
+            </div>
+        </div>
+    </div>
+
     <!-- ALERTS -->
     <div class="card full" style="margin-bottom:20px; border-color:rgba(251,191,36,0.4);">
-        <h3><span class="material-symbols-outlined">check_circle</span> 🚨 Empire Alerts — Beat 531 DP · ~00:36 JST Tue Apr 21</h3>
+        <h3><span class="material-symbols-outlined">check_circle</span> 🚨 Empire Alerts — Beat 532 · Improve Existing · ~00:41 JST Tue Apr 21</h3>
         <div class="alert-row ok" style="background:rgba(74,222,128,0.08);border-color:rgba(74,222,128,0.2);">
             <span>✅</span>
-            <div><strong>Beat 531 · Delegation Prep COMPLETE ✅</strong> — delegation queue refreshed (+20m from ~00:16 JST): Titan ~67.8h · cron DISABLED ~62.8h · window CLOSED ~64.0h · EMB ~118.9h (5.0d+) ⚠️ · Felix ~138.0h (5.8d+) ⚠️ · GBP 31d+ ⚠️ · jax_action_queue.md + delegation_queue.md updated · DP=0 JUST RAN · EA=2 · NI=1 · IE=3 · TO=2 · next: <strong style="color:#fbbf24;">Improve Existing (Beat 532 · IE=3 oldest rung 4)</strong></div>
+            <div><strong>Beat 532 · Improve Existing ⏱️ IN PROGRESS</strong> — staleness monitor added (IE beat): 4 Jax items ⚠️ past 72h (EMB 165% · Felix 192% · GBP 1,033%+ · Titan 94%) · DP=1 · EA=3 · NI=2 · IE=0 JUST RAN · TO=3 · next: <strong style="color:#34d399;">Empire Audit (Beat 533 · EA=3 oldest rung 5)</strong></div>
         </div>
         <div class="alert-row warn" style="margin-top:8px;">
             <span>⚠️</span>
@@ -105,8 +153,8 @@
     <div class="grid-3" style="margin-bottom:20px;">
         <div class="card" style="border-left:3px solid #34d399;">
             <h3><span class="material-symbols-outlined">check_circle</span> Beats Completed</h3>
-            <p style="font-size:2rem;font-weight:800;color:#a78bfa;margin-top:4px;">531</p>
-            <p style="color:var(--dim);font-size:12px;margin-top:4px;">Beat 531 · Delegation Prep · ~00:36 JST Tue Apr 21</p>
+            <p style="font-size:2rem;font-weight:800;color:#a78bfa;margin-top:4px;">532</p>
+            <p style="color:var(--dim);font-size:12px;margin-top:4px;">Beat 532 · Improve Existing ⏱️ · ~00:41 JST Tue Apr 21</p>
         </div>
         <div class="card" style="border-left:3px solid #22d3ee;">
             <h3><span class="material-symbols-outlined">psychology</span> Empire Agents</h3>
@@ -125,7 +173,7 @@
         <!-- INITIATIVE QUEUE -->
         <div class="card">
             <h3><span class="material-symbols-outlined">flag</span> Initiative Queue</h3>
-            <p style="color:var(--muted);font-size:13px;margin-bottom:12px;"><strong style="color:#a78bfa;">Beat 531 Delegation Prep ✅ COMPLETE</strong> — delegation queue refreshed (+20m from ~00:16 JST): Titan ~67.8h · cron DISABLED ~62.8h · window CLOSED ~64.0h · EMB ~118.9h (5.0d+) ⚠️ · Felix ~138.0h (5.8d+) ⚠️ · GBP 31d+ ⚠️ · jax_action_queue.md + delegation_queue.md updated · DP=0 JUST RAN · EA=2 · NI=1 · IE=3 · TO=2 · next: <strong style="color:#fbbf24;">Improve Existing (Beat 532 · IE=3 oldest rung 4)</strong></p>
+            <p style="color:var(--muted);font-size:13px;margin-bottom:12px;"><strong style="color:#fbbf24;">Beat 532 Improve Existing ⏱️ IN PROGRESS</strong> — staleness monitor added (IE beat): 4 Jax items ⚠️ past 72h (EMB 165% · Felix 192% · GBP 1,033%+ · Titan 94%) · DP=1 · EA=3 · NI=2 · IE=0 JUST RAN · TO=3 · next: <strong style="color:#34d399;">Empire Audit (Beat 533 · EA=3 oldest rung 5)</strong></p>
             <p style="color:var(--dim);font-size:11.5px;margin-top:10px;">📝 Full beat history in <a href="../../workspace_kaji/MEMORY.md" style="color:#22d3ee;">MEMORY.md</a></p>
         </div>
 
@@ -155,8 +203,8 @@
 
     <!-- BEAT DOMAIN STATE -->
     <div class="card full" style="margin-bottom:20px;">
-        <h3><span class="material-symbols-outlined">psychology</span> Beat Domain State (~00:36 JST Tue Apr 21 · Beat 531 DP) ✅</h3>
-        <p style="color:#fbbf24;font-size:11px;margin-bottom:8px;">Beat 531 Delegation Prep ✅ · delegation queue refreshed (+20m) · Algorithm: DP=0 LAST blocked → IE=3 oldest rung 4</p>
+        <h3><span class="material-symbols-outlined">psychology</span> Beat Domain State (~00:41 JST Tue Apr 21 · Beat 532 IE) ⏱️</h3>
+        <p style="color:#fbbf24;font-size:11px;margin-bottom:8px;">Beat 532 Improve Existing ⏱️ · staleness monitor added to dashboard (IE beat) · Algorithm: IE=3 oldest rung 4 wins · Next: Empire Audit (Beat 533)</p>
         <table class="cron-table">
             <thead>
                 <tr>
@@ -170,36 +218,36 @@
                 <tr>
                     <td><span class="cron-name" style="background:rgba(52,211,153,0.12);color:#34d399;padding:2px 9px;border-radius:6px;font-size:11px;font-weight:600;">Empire Audit</span></td>
                     <td>Beat 528 ~23:43 JST</td>
-                    <td>2</td>
-                    <td>EA=2 · eligible · rung 5</td>
+                    <td>3</td>
+                    <td>EA=3 · <strong style="color:#34d399;">next: Beat 533 · rung 5</strong></td>
                 </tr>
                 <tr>
                     <td><span class="cron-name" style="background:rgba(167,139,250,0.12);color:#a78bfa;padding:2px 9px;border-radius:6px;font-size:11px;font-weight:600;">Delegation Prep</span></td>
                     <td>Beat 531 ~00:36 JST</td>
-                    <td>0</td>
-                    <td><strong style="color:#a78bfa;">DP=0 JUST RAN · Beat 531 DP ✅</strong></td>
+                    <td>1</td>
+                    <td>DP=1 · eligible · rung 2</td>
                 </tr>
                 <tr>
                     <td><span class="cron-name" style="background:rgba(251,191,36,0.12);color:#fbbf24;padding:2px 9px;border-radius:6px;font-size:11px;font-weight:600;">New Ideas</span></td>
                     <td>Beat 530 ~00:16 JST</td>
-                    <td>1</td>
-                    <td>NI=1 · eligible · rung 3 (≥6)</td>
+                    <td>2</td>
+                    <td>NI=2 · eligible · rung 3 (≥6)</td>
                 </tr>
                 <tr>
                     <td><span class="cron-name" style="background:rgba(251,191,36,0.12);color:#fbbf24;padding:2px 9px;border-radius:6px;font-size:11px;font-weight:600;">Improve Existing</span></td>
                     <td>Beat 528 ~23:40 JST</td>
                     <td>3</td>
-                    <td><strong style="color:#fbbf24;">IE=3 · next: Beat 532 · rung 4 (≥3)</strong></td>
+                    <td><strong style="color:#fbbf24;">IE=0 JUST RAN · Beat 532 IE ⏱️</strong></td>
                 </tr>
                 <tr>
                     <td><span class="cron-name" style="background:rgba(34,211,238,0.12);color:#22d3ee;padding:2px 9px;border-radius:6px;font-size:11px;font-weight:600;">Tidy Operations</span></td>
                     <td>Beat 529 ~23:56 JST</td>
-                    <td>2</td>
-                    <td>TO=2 · eligible · rung 5 fallback</td>
+                    <td>3</td>
+                    <td>TO=3 · eligible · rung 5 fallback</td>
                 </tr>
             </tbody>
         </table>
-        <p style="color:var(--dim);font-size:11.5px;margin-top:10px;">Algorithm Beat 532: Rule 1: DP=0 LAST blocked · Rule 2: no urgent override · Rule 3: EA=2<4 · Rule 4: IE=3 rung 4 + NI=1 rung 3 → <strong style="color:#fbbf24;">Improve Existing wins (Beat 532 · IE=3 oldest rung 4)</strong></p>
+        <p style="color:var(--dim);font-size:11.5px;margin-top:10px;">Algorithm Beat 533: Rule 1: IE=0 LAST blocked · Rule 2: no urgent override · Rule 3: EA=3<4 · Rule 4: EA=3 rung 5 oldest eligible → <strong style="color:#34d399;">Empire Audit wins (Beat 533 · EA=3 oldest rung 5)</strong> · NO PROPOSALS directive ACTIVE</p>
     </div>
 
     <!-- AGENT ROSTER -->
@@ -209,7 +257,7 @@
             <div class="agent-row" style="border-bottom:1px solid rgba(255,255,255,0.06);padding:8px 12px;">
                 <div>
                     <div class="agent-name">Kaji (main)</div>
-                    <div class="agent-role">COO · 7 agents · Beat 531 DP ✅ · delegation queue refreshed (+20m): Titan ~67.8h · EMB ~118.9h (5.0d+) ⚠️ · Felix ~138.0h (5.8d+) ⚠️ · GBP 31d+ ⚠️ · 5/5 crons OK ✅ · pipelines FRESH ✅ · NO PROPOSALS ACTIVE · next: Improve Existing (Beat 532 · IE=3 oldest rung 4) · ~00:36 JST</div>
+                    <div class="agent-role">COO · Beat 532 IE ⏱️ · staleness monitor added (4 Jax items ⚠️ past 72h) · 5/5 crons OK ✅ · pipelines FRESH ✅ · NO PROPOSALS ACTIVE · next: Empire Audit (Beat 533 · EA=3 oldest rung 5) · ~00:41 JST</div>
                 </div>
                 <span class="badge badge-ok">✅ Active</span>
             </div>
@@ -260,7 +308,7 @@
 
     <!-- CRON TABLE -->
     <div class="card full" style="margin-bottom:20px;">
-        <h3><span class="material-symbols-outlined">schedule</span> Cron Health — Beat 531 DP · ~00:36 JST Tue Apr 21</h3>
+        <h3><span class="material-symbols-outlined">schedule</span> Cron Health — Beat 532 IE · ~00:41 JST Tue Apr 21</h3>
         <table class="cron-table">
             <thead>
                 <tr>
@@ -322,7 +370,7 @@
 function updateTime(){const e=new Date(),t=e.toLocaleString("en-US",{timeZone:"Asia/Tokyo",hour:"2-digit",minute:"2-digit",second:"2-digit",hour12:!1});document.getElementById("ts").textContent=t}updateTime(),setInterval(updateTime,1e3);
 </script>
 <footer>
-    Kaji COO · <a href="https://kaji-hemopo.github.io/telemetry/empire-home.html" target="_blank">Live Empire</a> · Beat 531 · Delegation Prep ✅ · ~00:36 JST Tue Apr 21 · next: Improve Existing (Beat 532 · IE=3 oldest rung 4)
+    Kaji COO · <a href="https://kaji-hemopo.github.io/telemetry/empire-home.html" target="_blank">Live Empire</a> · Beat 532 · Improve Existing ⏱️ · ~00:41 JST Tue Apr 21 · next: Empire Audit (Beat 533 · EA=3 oldest rung 5)
 </footer>
 </body>
 </html>
