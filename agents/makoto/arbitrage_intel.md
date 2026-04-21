@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-22 00:03 JST
+Generated: 2026-04-22 03:34 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -54,12 +54,12 @@ Generated: 2026-04-22 00:03 JST
 |---:|---|---|---|---|---|
 | 85 | Freelancer | Python scraper | Sales Freelancer for ML &amp; Python Projects | $750.00 | https://www.freelancer.com/projects/sales/Sales-Freelancer-for-Python-Projects.html |
 | 85 | Freelancer | Make.com automation | Build a Trader Dashboard for a Funded Trading Platform + Zendesk  | $1,500.00 | https://www.freelancer.com/projects/web-development/Build-Trader-Dashboard-for-Funded.html |
-| 85 | Freelancer | Make.com automation | Build an AI-First Multilingual Marketing System for a Funded Trad | $1,500.00 | https://www.freelancer.com/projects/ai-hw-sw/Build-First-Multilingual-Marketing.html |
-| 85 | Freelancer | Make.com automation | Customer Success / Support Operations Specialist for Trading Plat | $750.00 | https://www.freelancer.com/projects/customer-service/Customer-Success-Support-Operations.html |
-| 75 | Freelancer | Python scraper | End-to-End RAG System Development | $250.00 | https://www.freelancer.com/projects/natural-language-processing/End-End-RAG-System-Development.html |
-| 75 | Freelancer | Data processing API | Revenue-Boosting Software Development | $250.00 | https://www.freelancer.com/projects/software-development/Revenue-Boosting-Software-Development.html |
-| 75 | Freelancer | Data processing API | Gostosadai Web Authentication App | $250.00 | https://www.freelancer.com/projects/web-development/Gostosadai-Web-Authentication-App.html |
-| 75 | Freelancer | Data processing API | Retail Service Platform: Web &amp; App | $250.00 | https://www.freelancer.com/projects/web-development/Retail-Service-Platform-Web-App.html |
+| 85 | Freelancer | Data processing API | ESP32 Truck Inspection Prototype | $3,000.00 | https://www.freelancer.com/projects/automation/ESP-Truck-Inspection-Prototype.html |
+| 75 | Freelancer | Python scraper | Rapid Amazon Shift Automation -- 2 | $250.00 | https://www.freelancer.com/projects/php/Rapid-Amazon-Shift-Automation.html |
+| 75 | Freelancer | Python scraper | Social Media Account Creation System | $250.00 | https://www.freelancer.com/projects/social-media-management/Social-Media-Account-Creation-System.html |
+| 75 | Freelancer | Make.com automation | Manual Data Entry &amp; Logo Design | $250.00 | https://www.freelancer.com/projects/data-entry/Manual-Data-Entry-Logo-Design.html |
+| 65 | Freelancer | Python scraper | Python Trading Algorithm Development | I’m building a fully automated trading system in Python that can execute both da | https://www.freelancer.com/projects/data-analysis/Python-Trading-Algorithm-Development-40388248.html |
+| 65 | Freelancer | Python scraper | &ldquo;AIIGr Automated Recon Engine &ndash; Packaging, Optimizati | $30.00 | https://www.freelancer.com/projects/automation/AIIGr-Automated-Recon-Engine-Packaging.html |
 | 65 | Freelancer | Python scraper | Precise OCR Developer for Poker Video | OCR System for Live Poker Video — Master's Research Project I'm looking for an e | https://www.freelancer.com/projects/optical-character-recognition/Precise-OCR-Developer-for-Poker.html |
 | 65 | Freelancer | Python scraper | Build Fully Automated AI Poster Generation System (Prompt &rarr;  | Project Title: Build Fully Automated AI Poster Generation System (Prompt → Image | https://www.freelancer.com/projects/automation/Build-Fully-Automated-Poster-Generation.html |
 | 65 | Freelancer | Python scraper | WhatsApp Message Extraction to CSV | $8.00 | https://www.freelancer.com/projects/nodejs/WhatsApp-Message-Extraction-CSV.html |
@@ -70,8 +70,8 @@ Generated: 2026-04-22 00:03 JST
 | 65 | Freelancer | Python scraper | E-Commerce Website Text Scraping | I need a robust yet straightforward solution that pulls only the text content fr | https://www.freelancer.com/projects/scrapy/Commerce-Website-Text-Scraping.html |
 | 65 | Freelancer | Python scraper | Mixed-Format PDF Data Extraction | $10.00 | https://www.freelancer.com/projects/data-entry/Mixed-Format-PDF-Data-Extraction.html |
 | 65 | Freelancer | Python scraper | Urgent Senior Backend Engineer: Code updates, RBAC &amp; Alibaba  | Title: Senior Backend Engineer Needed: RBAC + Alibaba Cloud Deployment (Urgent)  | https://www.freelancer.com/projects/api/Urgent-Senior-Backend-Engineer-Code.html |
-| 65 | Freelancer | Python scraper | AI Appointment Chatbot for Dentist | $30.00 | https://www.freelancer.com/projects/ai-chatbot-development/Appointment-Chatbot-for-Dentist.html |
-| 65 | Freelancer | Make.com automation | Finish Local AI Agent System | I want a freelancer to finalize, harden, connect, and future-proof my existing l | https://www.freelancer.com/projects/ai-agent-swarms/Finish-Local-Agent-System.html |
+| 65 | Freelancer | Make.com automation | Google Reviews Management System Enhancement | We are looking for a freelancer who can help us improve and strengthen our Googl | https://www.freelancer.com/projects/data-analysis/Google-Reviews-Management-System.html |
+| 65 | Freelancer | Make.com automation | GoHighLevel Account Migration | $8.00 | https://www.freelancer.com/projects/go-high-level/GoHighLevel-Account-Migration.html |
 
 ## Notes
 - Scores prioritize: (1) simple automation/scripting fit, (2) payout magnitude, (3) keyword relevance.
