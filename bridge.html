@@ -36,16 +36,27 @@
         .stat-label { font-size: 12px; color: #849396; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 4px; }
         .timeline { position: relative; padding-left: 24px; }
         .timeline::before { content: ''; position: absolute; left: 8px; top: 0; bottom: 0; width: 2px; background: rgba(255,255,255,0.1); }
+        .signal-card { background: rgba(30,30,40,0.6); border: 1px solid rgba(255,255,255,0.05); border-radius: 8px; padding: 16px; margin-bottom: 12px; }
+        .signal-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+        .signal-name { font-weight: 700; color: #e2e2e5; font-size: 14px; }
+        .signal-tier { font-size: 11px; font-weight: 700; }
+        .signal-headline { font-size: 13px; color: #bac9cc; margin-bottom: 8px; line-height: 1.4; }
+        .signal-meta { font-size: 12px; color: #00daf3; margin-bottom: 6px; }
+        .signal-why { font-size: 12px; color: #849396; margin-bottom: 10px; line-height: 1.4; }
+        .signal-footer { display: flex; justify-content: space-between; font-size: 11px; color: #849396; }
+        .signal-confidence { color: #00daf3; font-weight: 600; }
+        .radar-legend { display: flex; gap: 16px; flex-wrap: wrap; font-size: 11px; color: #849396; margin-bottom: 16px; }
+        .legend-item { display: flex; align-items: center; gap: 6px; }
     </style>
 </head>
 <body class="p-6 md:p-8">
     <!-- Header -->
     <header class="mb-8">
         <div class="flex items-center gap-3 mb-2">
-            <a href="empire-home.html" style="color: var(--text-dim); font-size: 12px; text-decoration: none; margin-right: 16px;">← Back to Home</a> <span class="text-2xl">🌉</span>
+            <span class="text-2xl">🌉</span>
             <h1 class="text-2xl font-black tracking-tight accent">BRIDGE PROGRESS</h1>
         </div>
-        <p class="text-neutral-400">36-Month Empire Plan • Started 2026-04-01 • Last updated 2026-04-12 04:24 UTC</p>
+        <p class="text-neutral-400">36-Month Empire Plan • Started 2026-04-01 • Last updated 2026-04-21 09:14 UTC</p>
     </header>
 
     <!-- Overview Stats -->
@@ -168,6 +179,96 @@
             <p class='empty'>No active ventures yet. Review pending ideas to promote.</p>
             <p class="text-sm text-neutral-500 mt-4">From master ledger. Review ideas vault for promotion candidates.</p>
         </div>
+    </div>
+
+    <!-- Signal Radar -->
+    <div class="glass rounded-xl p-6 mb-8">
+        <h2 class="text-lg font-bold mb-4">📡 Signal Radar — Opportunity Watch</h2>
+        <div class="radar-legend">
+            <span class="legend-item"><span style="color:#22c55e">●</span> Bullish</span>
+            <span class="legend-item"><span style="color:#f59e0b">●</span> Caution/Elevated</span>
+            <span class="legend-item"><span style="color:#ef4444">●</span> Bearish/Eliminated</span>
+            <span class="legend-item">🟢 Active</span>
+            <span class="legend-item">🟡 Watching</span>
+            <span class="legend-item">🔴 Eliminated</span>
+        </div>
+        
+        <div class="signal-card" style="border-left: 3px solid #22c55e">
+            <div class="signal-header">
+                <span class="signal-name">Japan Defense & Aerospace</span>
+                <span class="signal-tier">🟡 WATCHING</span>
+            </div>
+            <div class="signal-headline">Japan scraps lethal weapons export ban — historic pacifist policy reversal (AP, Apr 21)</div>
+            <div class="signal-meta">
+                <span class="signal-levels">MHI 7011.T | KHI 7012.T | Mitsubishi Electric 6503.T</span>
+            </div>
+            <div class="signal-why">$6.5B Australia frigate deal signed. Export rights to 17 countries. UK/Italy F-3 fighter joint program. Revenue lines that didn't exist 2 weeks ago.</div>
+            <div class="signal-footer">
+                <span class="signal-catalyst">📅 Ongoing — policy shift effective immediately</span>
+                <span class="signal-confidence">75% confidence</span>
+            </div>
+        </div>
+        <div class="signal-card" style="border-left: 3px solid #f59e0b">
+            <div class="signal-header">
+                <span class="signal-name">XRP — CLARITY Act</span>
+                <span class="signal-tier">🟡 WATCHING</span>
+            </div>
+            <div class="signal-headline">CLARITY Act REMOVED from Senate schedule — markup targeting Apr 25 still possible but uncertain</div>
+            <div class="signal-meta">
+                <span class="signal-levels">Entry $1.34 | Stop $1.38 | Target $1.60 | Current $1.43</span>
+            </div>
+            <div class="signal-why">Last major XRP catalyst for 2026. Garlinghouse 80-90% odds. Miss April window = no major catalyst until 2030.</div>
+            <div class="signal-footer">
+                <span class="signal-catalyst">📅 Apr 25 (Senate Banking Committee markup target)</span>
+                <span class="signal-confidence">60% confidence</span>
+            </div>
+        </div>
+        <div class="signal-card" style="border-left: 3px solid #22c55e">
+            <div class="signal-header">
+                <span class="signal-name">Gold Long</span>
+                <span class="signal-tier">🟢 ACTIVE</span>
+            </div>
+            <div class="signal-headline">Gold $4,822/oz — DXY weakness + Iran safe-haven bid + China 16-month buying streak</div>
+            <div class="signal-meta">
+                <span class="signal-levels">Floor $4,792 | Support $4,800 | R1 $4,867 | Target $5,000+</span>
+            </div>
+            <div class="signal-why">PBoC bought gold 16 consecutive months. Central banks added 1,237 tonnes in 2025. Post-correction entry at $4,822 vs $5,500 Jan peak.</div>
+            <div class="signal-footer">
+                <span class="signal-catalyst">📅 Ongoing — structural demand + geopolitical premium</span>
+                <span class="signal-confidence">82% confidence</span>
+            </div>
+        </div>
+        <div class="signal-card" style="border-left: 3px solid #f59e0b">
+            <div class="signal-header">
+                <span class="signal-name">Brent Crude — Hormuz Watch</span>
+                <span class="signal-tier">🟡 WATCHING</span>
+            </div>
+            <div class="signal-headline">Ceasefire expires Wed Apr 22 23:52 JST. Iran rejected talks. Trump: 'bombs start going off' if no deal.</div>
+            <div class="signal-meta">
+                <span class="signal-levels">Current $95 | Spike target $100+ if ceasefire collapses | Support $94.92</span>
+            </div>
+            <div class="signal-why">Hormuz = 20% of global oil. Ceasefire already violated. Energy longs on standby for post-deadline spike.</div>
+            <div class="signal-footer">
+                <span class="signal-catalyst">📅 Apr 22 23:52 JST (ceasefire expiry)</span>
+                <span class="signal-confidence">70% confidence</span>
+            </div>
+        </div>
+        <div class="signal-card" style="border-left: 3px solid #ef4444">
+            <div class="signal-header">
+                <span class="signal-name">NZD/JPY Long</span>
+                <span class="signal-tier">🔴 ELIMINATED</span>
+            </div>
+            <div class="signal-headline">ELIMINATED — Iran military escalation risk too high. ceasefire outcome determines restart.</div>
+            <div class="signal-meta">
+                <span class="signal-levels">Was entry ~94.50 | Stop triggered on escalation</span>
+            </div>
+            <div class="signal-why">Risk-off environment from Hormuz. Will revisit if ceasefire extends and risk-on resumes.</div>
+            <div class="signal-footer">
+                <span class="signal-catalyst">📅 Post-ceasefire resolution (Wed Apr 22+)</span>
+                <span class="signal-confidence">0% confidence</span>
+            </div>
+        </div>
+        <p class="text-xs text-neutral-600 mt-4">Auto-updated each beat · 2026-04-21T09:08:00+09:00</p>
     </div>
 
     <!-- Phase Breakdown -->
