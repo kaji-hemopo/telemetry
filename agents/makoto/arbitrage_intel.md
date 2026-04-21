@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-21 18:56 JST
+Generated: 2026-04-21 20:33 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -56,22 +56,22 @@ Generated: 2026-04-21 18:56 JST
 | 85 | Freelancer | Make.com automation | Build an AI-First Multilingual Marketing System for a Funded Trad | $1,500.00 | https://www.freelancer.com/projects/ai-hw-sw/Build-First-Multilingual-Marketing.html |
 | 85 | Freelancer | Make.com automation | Customer Success / Support Operations Specialist for Trading Plat | $750.00 | https://www.freelancer.com/projects/customer-service/Customer-Success-Support-Operations.html |
 | 75 | Freelancer | Python scraper | End-to-End RAG System Development | $250.00 | https://www.freelancer.com/projects/natural-language-processing/End-End-RAG-System-Development.html |
-| 75 | Freelancer | Python scraper | Implementaci&oacute;n de Sistema de Gesti&oacute;n Ciudadana What | $250.00 | https://www.freelancer.com/projects/django/Implementaci-Sistema-Gesti-Ciudadana.html |
-| 75 | Freelancer | Make.com automation | Reviewer for Business Automation Plans | $250.00 | https://www.freelancer.com/projects/api/Reviewer-for-Business-Automation-Plans.html |
-| 75 | Freelancer | Make.com automation | Lead Architect for Implementation Day | $250.00 | https://www.freelancer.com/projects/api-developmet/Lead-Architect-for-Implementation-Day.html |
-| 75 | Freelancer | Make.com automation | Automation Build Architect for Live Event | $250.00 | https://www.freelancer.com/projects/api/Automation-Build-Architect-for-Live.html |
-| 75 | Freelancer | Data processing API | Pharmacy &amp; Clinic Management System Creation | $250.00 | https://www.freelancer.com/projects/api-developmet/Pharmacy-Clinic-Management-System.html |
+| 65 | Freelancer | Python scraper | Backend Coding Interview Service | I am setting up a steady pipeline of hiring rounds and need a seasoned backend s | https://www.freelancer.com/projects/backend-development/Backend-Coding-Interview-Service.html |
+| 65 | Freelancer | Python scraper | Crypto-Enabled Telegram Store Bot | I want to launch a fully automated store inside Telegram where customers can bro | https://www.freelancer.com/projects/telegram-api/Crypto-Enabled-Telegram-Store-Bot.html |
+| 65 | Freelancer | Python scraper | LLM for Hierarchy &amp; Toxicity | I have a clear, formal definition of both “organizational hierarchy” and “toxici | https://www.freelancer.com/projects/natural-language-processing/LLM-for-Hierarchy-Toxicity.html |
+| 65 | Freelancer | Python scraper | Car Specs &amp; Images Database | $2.00 | https://www.freelancer.com/projects/data-scraping/Car-Specs-Images-Database.html |
+| 65 | Freelancer | Python scraper | E-Commerce Website Text Scraping | I need a robust yet straightforward solution that pulls only the text content fr | https://www.freelancer.com/projects/scrapy/Commerce-Website-Text-Scraping.html |
+| 65 | Freelancer | Python scraper | Mixed-Format PDF Data Extraction | $10.00 | https://www.freelancer.com/projects/data-entry/Mixed-Format-PDF-Data-Extraction.html |
 | 65 | Freelancer | Python scraper | Urgent Senior Backend Engineer: Code updates, RBAC &amp; Alibaba  | Title: Senior Backend Engineer Needed: RBAC + Alibaba Cloud Deployment (Urgent)  | https://www.freelancer.com/projects/api/Urgent-Senior-Backend-Engineer-Code.html |
 | 65 | Freelancer | Python scraper | AI Appointment Chatbot for Dentist | $30.00 | https://www.freelancer.com/projects/ai-chatbot-development/Appointment-Chatbot-for-Dentist.html |
 | 65 | Freelancer | Python scraper | Sales-Boosting WhatsApp Chatbot | I need a fully-functional WhatsApp chatbot focused on sales and marketing. The b | https://www.freelancer.com/projects/chatbot/Sales-Boosting-WhatsApp-Chatbot.html |
 | 65 | Freelancer | Python scraper | Especialista en An&aacute;lisis de Datos Econ&oacute;micos y Mode | $15.00 | https://www.freelancer.com/projects/data-analysis/Especialista-lisis-Datos-Econ-micos.html |
 | 65 | Freelancer | Python scraper | WeChat Mini Program Packet Analyzer | $10.00 | https://www.freelancer.com/projects/python/WeChat-Mini-Program-Packet-Analyzer.html |
-| 65 | Freelancer | Python scraper | Optimize Custom ERP Performance | My in-house development team built a fully functional ERP to manage our large-sc | https://www.freelancer.com/projects/postgresql/Optimize-Custom-ERP-Performance.html |
-| 65 | Freelancer | Make.com automation | Power Automate Workflow Automation | I'm looking for an expert in Microsoft Power Automate to help automate workflows | https://www.freelancer.com/projects/automation/Power-Automate-Workflow-Automation-40387305.html |
-| 65 | Freelancer | Make.com automation | Complete CCTV &amp; Network Automation | I’m rolling out a fully integrated security and networking solution for my busin | https://www.freelancer.com/projects/cctv/Complete-CCTV-Network-Automation.html |
-| 65 | Freelancer | Make.com automation | Self-Hosted WhatsApp CRM Automation with ai response. | I have been running all my WhatsApp engagement through Interakt, but I’m ready t | https://www.freelancer.com/projects/api/Self-Hosted-WhatsApp-CRM-Automation.html |
-| 65 | Freelancer | Make.com automation | Editor de an&uacute;ncios (transforma&ccedil;&atilde;o de imagens | Company Name: Imagens Mágica Smart LOA About the Company: Smart LOA is an AI-pow | https://www.freelancer.com/projects/editing/Editor-ncios-transforma-imagens-para.html |
-| 65 | Freelancer | Make.com automation | Custom n8n Triggers &amp; Integrations | I have an existing n8n automation that needs some targeted improvements so it fi | https://www.freelancer.com/projects/n8n/Custom-Triggers-Integrations.html |
+| 65 | Freelancer | Make.com automation | StepWise  and  .NET Job Support Expert | StepWise and .NET Job Support Expert (REST/SOAP APIs | SQL | Excel) We are looki | https://www.freelancer.com/projects/dot-net/StepWise-NET-Job-Support-Expert.html |
+| 65 | Freelancer | Make.com automation | Pharmacy Operations &amp; Marketing Upgrade | **Title:** Medical Shop Growth &amp; Automation Specialist (Pharmacy Operations  | https://www.freelancer.com/projects/marketing/Pharmacy-Operations-Marketing-Upgrade.html |
+| 65 | Freelancer | Make.com automation | Outlook Email Automation Specialist | I need an Outlook email workflow that can pull data from CVs and email bodies to | https://www.freelancer.com/projects/data-extraction/Outlook-Email-Automation-Specialist.html |
+| 65 | Freelancer | Make.com automation | Appium &amp; Playwright Automation Expert | 1) Must have Strong hands-on experience on - Appium (Mobile Automation) - Playwr | https://www.freelancer.com/projects/automation/Appium-Playwright-Automation-Expert.html |
+| 65 | Freelancer | Make.com automation | 2D/3D 2BHK Interior Design | I own a 2-bedroom flat in Wakad, five minutes from Bhumkar Chowk, and I need a c | https://www.freelancer.com/projects/home-design/BHK-Interior-Design.html |
 
 ## Notes
 - Scores prioritize: (1) simple automation/scripting fit, (2) payout magnitude, (3) keyword relevance.
