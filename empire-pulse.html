@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empire Pulse · Hemopo Empire</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #050508;
+            --surface: rgba(18, 20, 28, 0.85);
+            --surface-2: rgba(12, 14, 22, 0.95);
+            --border: rgba(255, 255, 255, 0.08);
+            --text: #f0f2f8;
+            --muted: #8b90a1;
+            --accent: #5eead4;
+            --accent-dim: rgba(94, 234, 212, 0.12);
+            --accent-border: rgba(94, 234, 212, 0.2);
+            --violet: #a78bfa;
+            --amber: #fbbf24;
+            --red: #f87171;
+            --green: #34d399;
+            --radius: 16px;
+            --font-d: "Syne", system-ui, sans-serif;
+            --font-b: "DM Sans", system-ui, sans-serif;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: var(--font-b);
+            color: var(--text);
+            line-height: 1.55;
+            min-height: 100vh;
+            background: var(--bg);
+            -webkit-font-smoothing: antialiased;
+        }
+        .page-bg {
+            position: fixed;
+            inset: 0;
+            z-index: -1;
+            background:
+                radial-gradient(ellipse 100% 70% at 50% -25%, rgba(94, 234, 212, 0.1), transparent 50%),
+                radial-gradient(ellipse 50% 45% at 100% 10%, rgba(167, 139, 250, 0.08), transparent 45%),
+                linear-gradient(180deg, #0a0c12 0%, var(--bg) 100%);
+        }
+        .container { max-width: 1080px; margin: 0 auto; padding: 28px 20px 56px; }
+
+        /* ─── HEADER ─── */
+        header.hero {
+            text-align: center;
+            padding: 32px 28px 36px;
+            border-radius: calc(var(--radius) + 4px);
+            background: linear-gradient(145deg, rgba(22, 26, 38, 0.95), rgba(12, 14, 22, 0.98));
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 24px 48px -16px rgba(0, 0, 0, 0.55), 0 0 0 1px rgba(94, 234, 212, 0.06) inset;
+            margin-bottom: 24px;
+            position: relative;
+            overflow: hidden;
+        }
+        header.hero::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--accent), transparent);
+            opacity: 0.55;
+        }
+        .eyebrow {
+            font-family: var(--font-d);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 10px;
+        }
+        h1 {
+            font-family: var(--font-d);
+            font-size: clamp(1.6rem, 4vw, 2.2rem);
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            line-height: 1.12;
+            margin-bottom: 10px;
+            background: linear-gradient(100deg, #fff 0%, #b8c0d4 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .subtitle {
+            font-size: 0.95rem;
+            color: var(--muted);
+            max-width: 36rem;
+            margin: 0 auto 16px;
+        }
+        .timestamp {
+            display: inline-block;
+            padding: 7px 16px;
+            border-radius: 999px;
+            font-size: 12px;
+            font-variant-numeric: tabular-nums;
+            color: var(--accent);
+            background: rgba(94, 234, 212, 0.08);
+            border: 1px solid rgba(94, 234, 212, 0.2);
+        }
+        .pulse-bar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            margin-top: 10px;
+            font-size: 11px;
+            color: var(--muted);
+        }
+        .pulse-dot {
+            width: 7px; height: 7px;
+            border-radius: 50%;
+            background: var(--accent);
+            animation: pulse 2s ease-in-out infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.4; transform: scale(0.8); }
+        }
+
+        /* ─── SECTION LABELS ─── */
+        .section-label {
+            font-family: var(--font-d);
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--muted);
+            margin-bottom: 10px;
+            padding-left: 2px;
+        }
+
+        /* ─── GRID LAYOUTS ─── */
+        .module-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 14px;
+            margin-bottom: 20px;
+        }
+        .full-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 14px;
+            margin-bottom: 20px;
+        }
+
+        /* ─── CARDS ─── */
+        .card {
+            background: var(--surface);
+            backdrop-filter: blur(14px);
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+            padding: 20px 20px 18px;
+            position: relative;
+            overflow: hidden;
+        }
+        .card.accent-top::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--accent), var(--violet));
+            opacity: 0.85;
+        }
+        .card.warning-top::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--amber), var(--red));
+            opacity: 0.85;
+        }
+        .card-header {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin-bottom: 14px;
+        }
+        .card-title {
+            font-family: var(--font-d);
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 3px;
+        }
+        .card-subtitle {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text);
+        }
+        .card-badge {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 999px;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            flex-shrink: 0;
+        }
+        .badge-green { background: rgba(52, 211, 153, 0.12); color: var(--green); border: 1px solid rgba(52, 211, 153, 0.25); }
+        .badge-amber { background: rgba(251, 191, 36, 0.12); color: var(--amber); border: 1px solid rgba(251, 191, 36, 0.25); }
+        .badge-red { background: rgba(248, 113, 113, 0.12); color: var(--red); border: 1px solid rgba(248, 113, 113, 0.25); }
+        .badge-muted { background: rgba(255, 255, 255, 0.05); color: var(--muted); border: 1px solid var(--border); }
+
+        /* ─── FINANCIAL DATA ─── */
+        .price-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        .price-item {
+            background: rgba(0, 0, 0, 0.25);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 12px 14px;
+        }
+        .price-symbol {
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--muted);
+            margin-bottom: 4px;
+        }
+        .price-value {
+            font-family: var(--font-d);
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--text);
+            letter-spacing: -0.02em;
+        }
+        .price-meta {
+            font-size: 10px;
+            color: var(--muted);
+            margin-top: 2px;
+        }
+        .price-warn { color: var(--amber); }
+        .price-stale { color: var(--red); }
+
+        /* ─── AGENT ROSTER ─── */
+        .agent-list { display: flex; flex-direction: column; gap: 8px; }
+        .agent-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 9px 12px;
+            background: rgba(0, 0, 0, 0.2);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+        }
+        .agent-avatar {
+            width: 32px; height: 32px;
+            border-radius: 8px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 16px;
+            flex-shrink: 0;
+        }
+        .agent-info { flex: 1; min-width: 0; }
+        .agent-name {
+            font-family: var(--font-d);
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--text);
+        }
+        .agent-role-small {
+            font-size: 10px;
+            color: var(--muted);
+            white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+        }
+        .agent-status-pill {
+            flex-shrink: 0;
+            padding: 3px 9px;
+            border-radius: 999px;
+            font-size: 10px;
+            font-weight: 700;
+        }
+
+        /* ─── ACTION ITEMS ─── */
+        .action-list { display: flex; flex-direction: column; gap: 8px; }
+        .action-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            padding: 10px 12px;
+            background: rgba(0, 0, 0, 0.2);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+        }
+        .action-icon { font-size: 14px; flex-shrink: 0; margin-top: 1px; }
+        .action-body { flex: 1; }
+        .action-title { font-size: 13px; font-weight: 600; color: var(--text); margin-bottom: 2px; }
+        .action-detail { font-size: 11px; color: var(--muted); }
+        .action-stale { color: var(--amber); }
+
+        /* ─── CEASEFIRE COUNTDOWN ─── */
+        .countdown-hero {
+            background: linear-gradient(135deg, rgba(167, 139, 250, 0.08), rgba(94, 234, 212, 0.06));
+            border: 1px solid rgba(167, 139, 250, 0.2);
+            border-radius: var(--radius);
+            padding: 24px 28px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .countdown-hero::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse at center, rgba(167, 139, 250, 0.06), transparent 70%);
+            pointer-events: none;
+        }
+        .ceasefire-label {
+            font-family: var(--font-d);
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--violet);
+            margin-bottom: 8px;
+        }
+        .ceasefire-target {
+            font-size: 12px;
+            color: var(--muted);
+            margin-bottom: 12px;
+        }
+        .countdown-display {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+        }
+        .countdown-unit {
+            text-align: center;
+        }
+        .countdown-num {
+            font-family: var(--font-d);
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: var(--text);
+            letter-spacing: -0.04em;
+            line-height: 1;
+            display: block;
+        }
+        .countdown-unit-label {
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--muted);
+        }
+        .countdown-sep {
+            font-family: var(--font-d);
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--violet);
+            opacity: 0.5;
+            line-height: 1;
+            margin-top: -4px;
+        }
+        .countdown-note {
+            margin-top: 12px;
+            font-size: 11px;
+            color: var(--muted);
+        }
+
+        /* ─── OPPORTUNITIES ─── */
+        .opp-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; }
+        .opp-tag {
+            padding: 4px 10px;
+            border-radius: 999px;
+            font-size: 10px;
+            font-weight: 600;
+            background: rgba(94, 234, 212, 0.08);
+            color: var(--accent);
+            border: 1px solid rgba(94, 234, 212, 0.2);
+        }
+        .opp-tag.warn {
+            background: rgba(251, 191, 36, 0.08);
+            color: var(--amber);
+            border-color: rgba(251, 191, 36, 0.2);
+        }
+
+        /* ─── DIVIDER ─── */
+        .section-divider {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 20px 0;
+        }
+
+        /* ─── FOOTER ─── */
+        footer {
+            text-align: center;
+            padding: 24px 16px 8px;
+            color: var(--muted);
+            font-size: 12px;
+            border-top: 1px solid var(--border);
+            margin-top: 8px;
+        }
+        footer a { color: var(--accent); text-decoration: none; border-bottom: 1px solid rgba(94, 234, 212, 0.35); }
+        footer a:hover { border-bottom-color: var(--accent); }
+
+        /* ─── RESPONSIVE ─── */
+        @media (max-width: 600px) {
+            .price-grid { grid-template-columns: 1fr 1fr; }
+            .countdown-num { font-size: 1.7rem; }
+            .countdown-display { gap: 8px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-bg" aria-hidden="true"></div>
+    <div class="container">
+
+        <!-- ── HEADER ── -->
+        <header class="hero">
+            <div class="eyebrow">OpenClaw · Private</div>
+            <h1>EMPIRE PULSE</h1>
+            <p class="subtitle">Unified status view · live data from local agent memory</p>
+            <div class="timestamp" id="ts">Loading…</div>
+            <div class="pulse-bar">
+                <div class="pulse-dot"></div>
+                <span>Beat 569 · NI running</span>
+            </div>
+        </header>
+
+        <!-- ── MODULE 1 · FINANCIAL POSITION ── -->
+        <div class="section-label">Module 1 · Financial Position</div>
+        <div class="module-grid">
+            <div class="card accent-top">
+                <div class="card-header">
+                    <div>
+                        <div class="card-title">Gold Oracle</div>
+                        <div class="card-subtitle">XAU / oz</div>
+                    </div>
+                    <span class="card-badge badge-amber">⚠ weekend data</span>
+                </div>
+                <div class="price-grid">
+                    <div class="price-item">
+                        <div class="price-symbol">Gold</div>
+                        <div class="price-value">$4,879</div>
+                        <div class="price-meta price-stale">Stale · weekend</div>
+                    </div>
+                    <div class="price-item">
+                        <div class="price-symbol">Brent</div>
+                        <div class="price-value">—</div>
+                        <div class="price-meta">No data</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card accent-top">
+                <div class="card-header">
+                    <div>
+                        <div class="card-title">Ito Intel</div>
+                        <div class="card-subtitle">Markets &amp; ceasefire</div>
+                    </div>
+                    <span class="card-badge badge-amber">Apr 20 · ~05:36 JST</span>
+                </div>
+                <div class="price-grid">
+                    <div class="price-item">
+                        <div class="price-symbol">XRP</div>
+                        <div class="price-value">$1.4305</div>
+                        <div class="price-meta price-warn">↓ declining · $1.4954 → $1.4305</div>
+                    </div>
+                    <div class="price-item">
+                        <div class="price-symbol">BTC</div>
+                        <div class="price-value">—</div>
+                        <div class="price-meta">No data</div>
+                    </div>
+                </div>
+                <div style="margin-top:10px; padding:7px 10px; background:rgba(251,191,36,0.07); border:1px solid rgba(251,191,36,0.2); border-radius:8px; font-size:11px; color:var(--amber);">
+                    🚨 $1.4441 resistance held · floor $1.38 buffer +$0.0505
+                </div>
+            </div>
+        </div>
+
+        <!-- ── MODULE 2 · ACTIVE OPPORTUNITIES ── -->
+        <div class="section-label">Module 2 · Active Opportunities</div>
+        <div class="module-grid">
+            <div class="card accent-top">
+                <div class="card-header">
+                    <div>
+                        <div class="card-title">Makoto · Lancers</div>
+                        <div class="card-subtitle">Global job scout</div>
+                    </div>
+                    <span class="card-badge badge-green">Fresh ~09:13 JST</span>
+                </div>
+                <div style="font-size:13px; color:var(--muted); margin-bottom:8px;">
+                    Last scout: <strong style="color:var(--text);">Beat 392 · Apr 20 09:13 JST</strong>
+                </div>
+                <div class="opp-tags">
+                    <span class="opp-tag">23 opps</span>
+                    <span class="opp-tag">Telegram sent</span>
+                    <span class="opp-tag">next scout ~17:06 JST</span>
+                </div>
+            </div>
+
+            <div class="card accent-top">
+                <div class="card-header">
+                    <div>
+                        <div class="card-title">Makoto · Arbitrage</div>
+                        <div class="card-subtitle">Global digital scout</div>
+                    </div>
+                    <span class="card-badge badge-green">Fresh ~05:36 JST</span>
+                </div>
+                <div style="font-size:13px; color:var(--muted); margin-bottom:8px;">
+                    Beat 438 EA · Apr 20 05:36 JST
+                </div>
+                <div class="opp-tags">
+                    <span class="opp-tag">Score-based signals</span>
+                    <span class="opp-tag">Domestic + global</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ── MODULE 3 · AGENT STATUS ── -->
+        <div class="section-label">Module 3 · Agent Status</div>
+        <div class="card">
+            <div class="agent-list">
+                <div class="agent-row">
+                    <div class="agent-avatar" style="background:rgba(94,234,212,0.12);">🧭</div>
+                    <div class="agent-info">
+                        <div class="agent-name">Kaji</div>
+                        <div class="agent-role-small">COO · Empire orchestrator · Beat 569 NI running</div>
+                    </div>
+                    <span class="agent-status-pill badge-green">● Active</span>
+                </div>
+                <div class="agent-row">
+                    <div class="agent-avatar" style="background:rgba(94,234,212,0.12);">🦅</div>
+                    <div class="agent-info">
+                        <div class="agent-name">Ito</div>
+                        <div class="agent-role-small">Intel engine · pipelines FRESH · last HB ~05:36 JST</div>
+                    </div>
+                    <span class="agent-status-pill badge-green">● Active</span>
+                </div>
+                <div class="agent-row">
+                    <div class="agent-avatar" style="background:rgba(94,234,212,0.12);">⚡</div>
+                    <div class="agent-info">
+                        <div class="agent-name">Makoto</div>
+                        <div class="agent-role-small">Arbitrage scout · Lancers fresh ~09:13 JST · 23 opps</div>
+                    </div>
+                    <span class="agent-status-pill badge-green">● Active</span>
+                </div>
+                <div class="agent-row">
+                    <div class="agent-avatar" style="background:rgba(167,139,250,0.12);">⚙️</div>
+                    <div class="agent-info">
+                        <div class="agent-name">Saito</div>
+                        <div class="agent-role-small">Minimal identity · NO PROPOSALS directive active</div>
+                    </div>
+                    <span class="agent-status-pill badge-muted">◎ Learn-only</span>
+                </div>
+                <div class="agent-row">
+                    <div class="agent-avatar" style="background:rgba(248,113,113,0.12);">🎌</div>
+                    <div class="agent-info">
+                        <div class="agent-name">Felix</div>
+                        <div class="agent-role-small">N3 Vault · Gmail expired · X offline</div>
+                    </div>
+                    <span class="agent-status-pill badge-red">◼ PARKED</span>
+                </div>
+                <div class="agent-row">
+                    <div class="agent-avatar" style="background:rgba(248,113,113,0.12);">🏋️</div>
+                    <div class="agent-info">
+                        <div class="agent-name">Titan</div>
+                        <div class="agent-role-small">Athlete Forge · 72h threshold breached · window closed Sat Apr 18 09:00 JST</div>
+                    </div>
+                    <span class="agent-status-pill badge-red">◼ PARKED</span>
+                </div>
+                <div class="agent-row">
+                    <div class="agent-avatar" style="background:rgba(251,191,36,0.12);">🐕</div>
+                    <div class="agent-info">
+                        <div class="agent-name">Odie</div>
+                        <div class="agent-role-small">Board Member · TradePass MVP · App Ideation mode</div>
+                    </div>
+                    <span class="agent-status-pill badge-green">● Active</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ── MODULE 4 · JAX ACTION ITEMS ── -->
+        <div class="section-label" style="margin-top:20px;">Module 4 · Jax Action Items</div>
+        <div class="card warning-top">
+            <div class="action-list">
+                <div class="action-item">
+                    <div class="action-icon">📋</div>
+                    <div class="action-body">
+                        <div class="action-title">EMB v3 — "Go Telegram"</div>
+                        <div class="action-detail action-stale">Draft ready · waiting 7+ days · say "Go Telegram" on Telegram → Kaji sends immediately</div>
+                    </div>
+                    <span class="card-badge badge-amber">⚠ 7d+</span>
+                </div>
+                <div class="action-item">
+                    <div class="action-icon">🏋️</div>
+                    <div class="action-body">
+                        <div class="action-title">Titan re-activate</div>
+                        <div class="action-detail action-stale">72h threshold breached · window closed Sat Apr 18 09:00 JST · say "go Titan" to resume</div>
+                    </div>
+                    <span class="card-badge badge-red">🚨 72h+</span>
+                </div>
+                <div class="action-item">
+                    <div class="action-icon">🎌</div>
+                    <div class="action-body">
+                        <div class="action-title">Felix Gmail re-auth</div>
+                        <div class="action-detail action-stale">Expired · N3 Phase 2b blocked · X posts offline · Felix FROZEN · ~136h stale</div>
+                    </div>
+                    <span class="card-badge badge-red">🚨 Expired</span>
+                </div>
+                <div class="action-item">
+                    <div class="action-icon">⚡</div>
+                    <div class="action-body">
+                        <div class="action-title">Makoto GBP deploy</div>
+                        <div class="action-detail action-stale">GitHub Pages route available · Formspree placeholder · 31d+ stale · say "deploy GBP"</div>
+                    </div>
+                    <span class="card-badge badge-amber">⚠ 31d+</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ── MODULE 5 · CEASEFIRE COUNTDOWN ── -->
+        <div class="section-label" style="margin-top:20px;">Module 5 · Ito Ceasefire Countdown</div>
+        <div class="countdown-hero">
+            <div class="ceasefire-label">Ceasefire · Ito Research Window</div>
+            <div class="ceasefire-target">Expires <strong>2026-04-22 08:52 JST</strong></div>
+            <div class="countdown-display" id="countdown">
+                <div class="countdown-unit">
+                    <span class="countdown-num" id="cd-d">—</span>
+                    <span class="countdown-unit-label">Days</span>
+                </div>
+                <div class="countdown-sep">:</div>
+                <div class="countdown-unit">
+                    <span class="countdown-num" id="cd-h">—</span>
+                    <span class="countdown-unit-label">Hrs</span>
+                </div>
+                <div class="countdown-sep">:</div>
+                <div class="countdown-unit">
+                    <span class="countdown-num" id="cd-m">—</span>
+                    <span class="countdown-unit-label">Min</span>
+                </div>
+                <div class="countdown-sep">:</div>
+                <div class="countdown-unit">
+                    <span class="countdown-num" id="cd-s">—</span>
+                    <span class="countdown-unit-label">Sec</span>
+                </div>
+            </div>
+            <div class="countdown-note" id="cd-note">Calculating…</div>
+        </div>
+
+        <hr class="section-divider">
+
+        <!-- ── FOOTER ── -->
+        <footer>
+            <p>
+                <a href="empire-home.html">← Empire Home</a>
+                ·
+                <a href="https://github.com/kaji-hemopo/telemetry">GitHub</a>
+                ·
+                Generated: <span id="ts-footer">—</span>
+            </p>
+            <p style="margin-top:8px; opacity:0.7;">© 2026 · All data from local agent memory · No external API calls</p>
+        </footer>
+
+    </div>
+
+    <script>
+        // ── Timestamp ──
+        function jstNow() {
+            return new Date(new Date().toLocaleString('en-US', { timeZone: 'Asia/Tokyo' }));
+        }
+        function fmt(o) {
+            return new Intl.DateTimeFormat('en-US', o).formatToParts(jstNow());
+        }
+        function pad(n) { return String(n).padStart(2, '0'); }
+
+        function updateTimestamp() {
+            const p = fmt({
+                timeZone: 'Asia/Tokyo', year: 'numeric', month: '2-digit', day: '2-digit',
+                hour: '2-digit', minute: '2-digit', hour12: false
+            });
+            const y = p.find(x => x.type === 'year').value;
+            const m = p.find(x => x.type === 'month').value;
+            const d = p.find(x => x.type === 'day').value;
+            const h = p.find(x => x.type === 'hour').value;
+            const min = p.find(x => x.type === 'minute').value;
+            const ts = `${y}-${m}-${d} ${h}:${min} JST`;
+            document.getElementById('ts').textContent = ts;
+            document.getElementById('ts-footer').textContent = ts;
+        }
+
+        // ── Ceasefire Countdown ──
+        function updateCountdown() {
+            const target = new Date('2026-04-22T08:52:00+09:00');
+            const now = jstNow();
+            const diff = target - now;
+
+            if (diff <= 0) {
+                document.getElementById('cd-d').textContent = '0';
+                document.getElementById('cd-h').textContent = '0';
+                document.getElementById('cd-m').textContent = '0';
+                document.getElementById('cd-s').textContent = '0';
+                document.getElementById('cd-note').textContent = '⏰ Ceasefire expired';
+                return;
+            }
+
+            const totalSec = Math.floor(diff / 1000);
+            const days  = Math.floor(totalSec / 86400);
+            const hrs   = Math.floor((totalSec % 86400) / 3600);
+            const mins  = Math.floor((totalSec % 3600) / 60);
+            const secs  = totalSec % 60;
+
+            document.getElementById('cd-d').textContent = days;
+            document.getElementById('cd-h').textContent = pad(hrs);
+            document.getElementById('cd-m').textContent = pad(mins);
+            document.getElementById('cd-s').textContent = pad(secs);
+
+            if (days === 0 && hrs < 24) {
+                document.getElementById('cd-note').textContent = '⏱ Less than 24 hours remaining — pre-dawn Asia open critical';
+            } else {
+                document.getElementById('cd-note').textContent = `⏱ ${days}d ${pad(hrs)}h ${pad(mins)}m remaining · Monday Asia open is the critical test`;
+            }
+        }
+
+        updateTimestamp();
+        updateCountdown();
+        setInterval(updateTimestamp, 60000);
+        setInterval(updateCountdown, 1000);
+    </script>
+</body>
+</html>
