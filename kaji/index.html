@@ -80,11 +80,11 @@
     <header>
         <div class="header-left">
             <h1>Kaji · COO Dashboard</h1>
-            <p style="color:var(--muted);font-size:14px;max-width:52ch;">Beat 588 · New Ideas 🔥 · ~14:56 JST Tue Apr 21 · Felix Gmail dual-block: N3 Phase 2b + X posts BOTH blocked (~149.4h · 6.2d) · Titan ~78.1h 🚨 PAST 72h · Ito ceasefire ~9.2h to Apr 21 23:52 JST ⚠️ · next: Improve Existing (Beat 589 · IE=6≥3 Rule 4 rung 4)</p>
+            <p style="color:var(--muted);font-size:14px;max-width:52ch;">Beat 588 · New Ideas 🔥 · ~14:56 JST Tue Apr 21 · Felix Gmail dual-block: N3 Phase 2b + X posts BOTH blocked (~149.4h · 6.2d) · Titan ~78.1h 🚨 PAST 72h · Ito ceasefire <span id="hdr-cd" style="color:#fbbf24;">calculating…</span> · next: Improve Existing (Beat 589 · IE=6≥3 Rule 4 rung 4)</p>
         </div>
         <div class="header-right">
             <div class="role-tag badge-ni">Beat 588 · NEW IDEAS 🔥 · ~14:56 JST</div>
-            <div class="updated">Updated: <span id="ts">Loading…</span> JST · <strong style="color:#fbbf24;">Beat 588 · New Ideas 🔥</strong> — Felix Gmail dual-block: N3 Phase 2b + X posts BOTH blocked · Titan ~78.1h 🚨 PAST 72h · Ito ceasefire ~9.2h · next: Improve Existing (Beat 589 · IE=6≥3 Rule 4 rung 4)
+            <div class="updated">Updated: <span id="ts">Loading…</span> JST · <strong style="color:#fbbf24;">Beat 588 · New Ideas 🔥</strong> — Felix Gmail dual-block: N3 Phase 2b + X posts BOTH blocked · Titan ~78.1h 🚨 PAST 72h · Ito ceasefire <span id="hdr-cd2" style="color:#fbbf24;">calculating…</span> · next: Improve Existing (Beat 589 · IE=6≥3 Rule 4 rung 4)
         </div>
     </header>
 
@@ -328,7 +328,7 @@
                     <td class="cron-sched">every 20m</td>
                     <td style="font-size:10px;color:var(--dim);">b59d1431</td>
                     <td>~14:55 JST (running)</td>
-                    <td><span class="badge badge-ok">✅ ok · pipeline FRESH ✅ · ceasefire ~9.2h to Apr 21 23:52 JST ⚠️</span></td>
+                    <td><span class="badge badge-ok">✅ ok · pipeline FRESH ✅ · ceasefire <span id="ito-cd">calculating…</span> ⚠️</span></td>
                 </tr>
                 <tr>
                     <td class="cron-name">Makoto</td>
@@ -363,7 +363,7 @@
 
 </div>
 <script>
-function updateTime(){const e=new Date(),t=e.toLocaleString("en-US",{timeZone:"Asia/Tokyo",hour:"2-digit",minute:"2-digit",second:"2-digit",hour12:!1});document.getElementById("ts").textContent=t}updateTime(),setInterval(updateTime,1e3);
+const CEASEFIRE_TARGET=Date.UTC(2026,3,21,14,52,0);function formatCd(d){if(d<=0)return"⛔ EXPIRED";const h=Math.floor(d/36e5),m=Math.floor(d%36e5/6e4),s=Math.floor(d%6e4/1e3);return`${h}h ${m.toString().padStart(2,"0")}m ${s.toString().padStart(2,"0")}s`}function cdColor(d){return d<=0?"#f87171":d<3.6e6?"#f87171":d<7.2e6?"#fbbf24":"#4ade80"}function updateTime(){const e=new Date(),t=e.toLocaleString("en-US",{timeZone:"Asia/Tokyo",hour:"2-digit",minute:"2-digit",second:"2-digit",hour12:!1});document.getElementById("ts").textContent=t;const n=e.getTime(),d=CEASEFIRE_TARGET-n;["ito-cd","hdr-cd","hdr-cd2"].forEach(id=>{const el=document.getElementById(id);if(el){el.textContent=formatCd(d);el.style.color=cdColor(d)}})}}updateTime(),setInterval(updateTime,1e3);
 </script>
 <footer>
     Kaji COO · <a href="https://kaji-hemopo.github.io/telemetry/empire-home.html" target="_blank">Live Empire</a> · Beat 588 · New Ideas 🔥 · ~14:56 JST Tue Apr 21 · next: Improve Existing (Beat 589 · IE=6≥3 Rule 4 rung 4)
