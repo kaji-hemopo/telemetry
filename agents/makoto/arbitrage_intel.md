@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-22 03:34 JST
+Generated: 2026-04-22 05:42 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -52,12 +52,15 @@ Generated: 2026-04-22 03:34 JST
 
 | Score | Platform | Keyword | Title | Budget/Rate | URL |
 |---:|---|---|---|---|---|
-| 85 | Freelancer | Python scraper | Sales Freelancer for ML &amp; Python Projects | $750.00 | https://www.freelancer.com/projects/sales/Sales-Freelancer-for-Python-Projects.html |
-| 85 | Freelancer | Make.com automation | Build a Trader Dashboard for a Funded Trading Platform + Zendesk  | $1,500.00 | https://www.freelancer.com/projects/web-development/Build-Trader-Dashboard-for-Funded.html |
-| 85 | Freelancer | Data processing API | ESP32 Truck Inspection Prototype | $3,000.00 | https://www.freelancer.com/projects/automation/ESP-Truck-Inspection-Prototype.html |
+| 85 | Freelancer | Make.com automation | Automated WordPress Intake Rebuild | $1,500.00 | https://www.freelancer.com/projects/zapier/Automated-WordPress-Intake-Rebuild.html |
+| 85 | Freelancer | Make.com automation | Fusion 360 Batch Rendering Plugin | $3,000.00 | https://www.freelancer.com/projects/rendering/Fusion-Batch-Rendering-Plugin.html |
+| 85 | Freelancer | Data processing API | Build API Integration Platform | $3,000.00 | https://www.freelancer.com/projects/api-developmet/Build-API-Integration-Platform.html |
 | 75 | Freelancer | Python scraper | Rapid Amazon Shift Automation -- 2 | $250.00 | https://www.freelancer.com/projects/php/Rapid-Amazon-Shift-Automation.html |
 | 75 | Freelancer | Python scraper | Social Media Account Creation System | $250.00 | https://www.freelancer.com/projects/social-media-management/Social-Media-Account-Creation-System.html |
+| 75 | Freelancer | Make.com automation | Comprehensive Audit for Inventory &amp; POS Systems | $250.00 | https://www.freelancer.com/projects/inventory-management/Comprehensive-Audit-for-Inventory-POS.html |
 | 75 | Freelancer | Make.com automation | Manual Data Entry &amp; Logo Design | $250.00 | https://www.freelancer.com/projects/data-entry/Manual-Data-Entry-Logo-Design.html |
+| 65 | Freelancer | Python scraper | Enhance &amp; Deploy Python Script | $10.00 | https://www.freelancer.com/projects/Enhance-Deploy-Python-Script-fix.html |
+| 65 | Freelancer | Python scraper | AI Agents for Workflow Automation | $15.00 | https://www.freelancer.com/projects/ai-agents/Agents-for-Workflow-Automation.html |
 | 65 | Freelancer | Python scraper | Python Trading Algorithm Development | I’m building a fully automated trading system in Python that can execute both da | https://www.freelancer.com/projects/data-analysis/Python-Trading-Algorithm-Development-40388248.html |
 | 65 | Freelancer | Python scraper | &ldquo;AIIGr Automated Recon Engine &ndash; Packaging, Optimizati | $30.00 | https://www.freelancer.com/projects/automation/AIIGr-Automated-Recon-Engine-Packaging.html |
 | 65 | Freelancer | Python scraper | Precise OCR Developer for Poker Video | OCR System for Live Poker Video — Master's Research Project I'm looking for an e | https://www.freelancer.com/projects/optical-character-recognition/Precise-OCR-Developer-for-Poker.html |
@@ -67,11 +70,8 @@ Generated: 2026-04-22 03:34 JST
 | 65 | Freelancer | Python scraper | Crypto-Enabled Telegram Store Bot | I want to launch a fully automated store inside Telegram where customers can bro | https://www.freelancer.com/projects/telegram-api/Crypto-Enabled-Telegram-Store-Bot.html |
 | 65 | Freelancer | Python scraper | LLM for Hierarchy &amp; Toxicity | I have a clear, formal definition of both “organizational hierarchy” and “toxici | https://www.freelancer.com/projects/natural-language-processing/LLM-for-Hierarchy-Toxicity.html |
 | 65 | Freelancer | Python scraper | Car Specs &amp; Images Database | $2.00 | https://www.freelancer.com/projects/data-scraping/Car-Specs-Images-Database.html |
-| 65 | Freelancer | Python scraper | E-Commerce Website Text Scraping | I need a robust yet straightforward solution that pulls only the text content fr | https://www.freelancer.com/projects/scrapy/Commerce-Website-Text-Scraping.html |
-| 65 | Freelancer | Python scraper | Mixed-Format PDF Data Extraction | $10.00 | https://www.freelancer.com/projects/data-entry/Mixed-Format-PDF-Data-Extraction.html |
-| 65 | Freelancer | Python scraper | Urgent Senior Backend Engineer: Code updates, RBAC &amp; Alibaba  | Title: Senior Backend Engineer Needed: RBAC + Alibaba Cloud Deployment (Urgent)  | https://www.freelancer.com/projects/api/Urgent-Senior-Backend-Engineer-Code.html |
-| 65 | Freelancer | Make.com automation | Google Reviews Management System Enhancement | We are looking for a freelancer who can help us improve and strengthen our Googl | https://www.freelancer.com/projects/data-analysis/Google-Reviews-Management-System.html |
-| 65 | Freelancer | Make.com automation | GoHighLevel Account Migration | $8.00 | https://www.freelancer.com/projects/go-high-level/GoHighLevel-Account-Migration.html |
+| 65 | Freelancer | Make.com automation | Meta Accounts Unrestriction &amp; WhatsApp API Setup | Project Title: Urgent Help Needed – Facebook Business Account Keeps Getting Rest | https://www.freelancer.com/projects/Make-com/Meta-Accounts-Unrestriction-WhatsApp-API.html |
+| 65 | Freelancer | Make.com automation | WhatsApp Business API Integration for Company | $10.00 | https://www.freelancer.com/projects/api-developmet/WhatsApp-Business-API-Integration-for.html |
 
 ## Notes
 - Scores prioritize: (1) simple automation/scripting fit, (2) payout magnitude, (3) keyword relevance.
