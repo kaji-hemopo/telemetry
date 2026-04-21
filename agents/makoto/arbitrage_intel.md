@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-21 22:39 JST
+Generated: 2026-04-22 00:03 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -53,11 +53,15 @@ Generated: 2026-04-21 22:39 JST
 | Score | Platform | Keyword | Title | Budget/Rate | URL |
 |---:|---|---|---|---|---|
 | 85 | Freelancer | Python scraper | Sales Freelancer for ML &amp; Python Projects | $750.00 | https://www.freelancer.com/projects/sales/Sales-Freelancer-for-Python-Projects.html |
+| 85 | Freelancer | Make.com automation | Build a Trader Dashboard for a Funded Trading Platform + Zendesk  | $1,500.00 | https://www.freelancer.com/projects/web-development/Build-Trader-Dashboard-for-Funded.html |
 | 85 | Freelancer | Make.com automation | Build an AI-First Multilingual Marketing System for a Funded Trad | $1,500.00 | https://www.freelancer.com/projects/ai-hw-sw/Build-First-Multilingual-Marketing.html |
 | 85 | Freelancer | Make.com automation | Customer Success / Support Operations Specialist for Trading Plat | $750.00 | https://www.freelancer.com/projects/customer-service/Customer-Success-Support-Operations.html |
 | 75 | Freelancer | Python scraper | End-to-End RAG System Development | $250.00 | https://www.freelancer.com/projects/natural-language-processing/End-End-RAG-System-Development.html |
+| 75 | Freelancer | Data processing API | Revenue-Boosting Software Development | $250.00 | https://www.freelancer.com/projects/software-development/Revenue-Boosting-Software-Development.html |
+| 75 | Freelancer | Data processing API | Gostosadai Web Authentication App | $250.00 | https://www.freelancer.com/projects/web-development/Gostosadai-Web-Authentication-App.html |
+| 75 | Freelancer | Data processing API | Retail Service Platform: Web &amp; App | $250.00 | https://www.freelancer.com/projects/web-development/Retail-Service-Platform-Web-App.html |
+| 65 | Freelancer | Python scraper | Precise OCR Developer for Poker Video | OCR System for Live Poker Video — Master's Research Project I'm looking for an e | https://www.freelancer.com/projects/optical-character-recognition/Precise-OCR-Developer-for-Poker.html |
 | 65 | Freelancer | Python scraper | Build Fully Automated AI Poster Generation System (Prompt &rarr;  | Project Title: Build Fully Automated AI Poster Generation System (Prompt → Image | https://www.freelancer.com/projects/automation/Build-Fully-Automated-Poster-Generation.html |
-| 65 | Freelancer | Python scraper | Finish Local AI Agent System | Need a freelancer to finish and harden my AI agent system on macOS Goal: fully l | https://www.freelancer.com/projects/ai-agent-swarms/Finish-Local-Agent-System.html |
 | 65 | Freelancer | Python scraper | WhatsApp Message Extraction to CSV | $8.00 | https://www.freelancer.com/projects/nodejs/WhatsApp-Message-Extraction-CSV.html |
 | 65 | Freelancer | Python scraper | Backend Coding Interview Service | I am setting up a steady pipeline of hiring rounds and need a seasoned backend s | https://www.freelancer.com/projects/backend-development/Backend-Coding-Interview-Service.html |
 | 65 | Freelancer | Python scraper | Crypto-Enabled Telegram Store Bot | I want to launch a fully automated store inside Telegram where customers can bro | https://www.freelancer.com/projects/telegram-api/Crypto-Enabled-Telegram-Store-Bot.html |
@@ -67,11 +71,7 @@ Generated: 2026-04-21 22:39 JST
 | 65 | Freelancer | Python scraper | Mixed-Format PDF Data Extraction | $10.00 | https://www.freelancer.com/projects/data-entry/Mixed-Format-PDF-Data-Extraction.html |
 | 65 | Freelancer | Python scraper | Urgent Senior Backend Engineer: Code updates, RBAC &amp; Alibaba  | Title: Senior Backend Engineer Needed: RBAC + Alibaba Cloud Deployment (Urgent)  | https://www.freelancer.com/projects/api/Urgent-Senior-Backend-Engineer-Code.html |
 | 65 | Freelancer | Python scraper | AI Appointment Chatbot for Dentist | $30.00 | https://www.freelancer.com/projects/ai-chatbot-development/Appointment-Chatbot-for-Dentist.html |
-| 65 | Freelancer | Make.com automation | AI Startup Logo Creation | $30.00 | https://www.freelancer.com/projects/adobe-illustrator/Startup-Logo-Creation.html |
-| 65 | Freelancer | Make.com automation | South African Cold Call Specialists | $2.00 | https://www.freelancer.com/projects/sales/South-African-Cold-Call-Specialists.html |
-| 65 | Freelancer | Make.com automation | StepWise  and  .NET Job Support Expert | StepWise and .NET Job Support Expert (REST/SOAP APIs | SQL | Excel) We are looki | https://www.freelancer.com/projects/dot-net/StepWise-NET-Job-Support-Expert.html |
-| 65 | Freelancer | Make.com automation | Pharmacy Operations &amp; Marketing Upgrade | **Title:** Medical Shop Growth &amp; Automation Specialist (Pharmacy Operations  | https://www.freelancer.com/projects/marketing/Pharmacy-Operations-Marketing-Upgrade.html |
-| 65 | Freelancer | Make.com automation | Outlook Email Automation Specialist | I need an Outlook email workflow that can pull data from CVs and email bodies to | https://www.freelancer.com/projects/data-extraction/Outlook-Email-Automation-Specialist.html |
+| 65 | Freelancer | Make.com automation | Finish Local AI Agent System | I want a freelancer to finalize, harden, connect, and future-proof my existing l | https://www.freelancer.com/projects/ai-agent-swarms/Finish-Local-Agent-System.html |
 
 ## Notes
 - Scores prioritize: (1) simple automation/scripting fit, (2) payout magnitude, (3) keyword relevance.
