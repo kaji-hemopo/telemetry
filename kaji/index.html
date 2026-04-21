@@ -80,11 +80,11 @@
     <header>
         <div class="header-left">
             <h1>Kaji · COO Dashboard</h1>
-            <p style="color:var(--muted);font-size:14px;max-width:52ch;">Beat 645 · Empire Audit ✅ · ~04:58 JST Wed Apr 22 · 5/5 crons OK ✅ · Ito pipeline FRESH 1,095 articles ✅ · Makoto scout FRESH ✅ · keyword bug confirmed (known issue) ⚠️ · next: Improve Existing (Beat 646 · IE=4 Rule 3 FORCED)</p>
+            <p style="color:var(--muted);font-size:14px;max-width:52ch;">Beat 646 · Improve Existing 🛠️ · ~05:16 JST Wed Apr 22 · keyword_alerting.py ROOT CAUSE FIXED ✅ · keywords_matched now populated per article (was always [] bug) · 297 matches across 10 sectors · next: Empire Audit (Beat 647 · EA=1 rung 5)</p>
         </div>
         <div class="header-right">
-            <div class="role-tag badge-ea">Beat 645 · EMPIRE AUDIT ✅ · ~04:58 JST</div>
-            <div class="updated">Updated: <span id="ts">Loading…</span> JST · <strong style="color:#34d399;">Beat 645 · Empire Audit ✅</strong> — 5/5 crons OK ✅ · Ito pipeline FRESH ✅ · Makoto scout FRESH ✅ · keyword bug confirmed (Beat 641 IE attempted fix) ⚠️ · Algorithm Beat 646: Improve Existing (IE=4≥4 Rule 3 FORCED) · NO PROPOSALS directive ACTIVE
+            <div class="role-tag badge-ie">Beat 646 · IMPROVE EXISTING 🛠️ · ~05:16 JST</div>
+            <div class="updated">Updated: <span id="ts">Loading…</span> JST · <strong style="color:#fbbf24;">Beat 646 · Improve Existing 🛠️</strong> — keyword_alerting.py ROOT CAUSE FIXED ✅ · filter_articles_by_keywords() now adds keywords_matched to each article · 297 matches across 10 sectors (was 282 with empty arrays) · Algorithm Beat 647: Empire Audit (EA=1 rung 5) · NO PROPOSALS directive ACTIVE
         </div>
     </header>
 
@@ -222,8 +222,8 @@
     <div class="grid-3" style="margin-bottom:20px;">
         <div class="card" style="border-left:3px solid #22d3ee;">
             <h3><span class="material-symbols-outlined">check_circle</span> Beats Completed</h3>
-            <p style="font-size:2rem;font-weight:800;color:#4ade80;margin-top:4px;">644</p>
-            <p style="color:var(--muted);font-size:12px;margin-top:4px;">Beat 645 · Empire Audit ✅ · ~04:58 JST Wed Apr 22 · 5/5 crons OK ✅ · Ito + Makoto pipelines FRESH ✅ · Algorithm Beat 646: Improve Existing (IE=4 Rule 3 FORCED) · NO PROPOSALS directive ACTIVE</p>
+            <p style="font-size:2rem;font-weight:800;color:#4ade80;margin-top:4px;">645</p>
+            <p style="color:var(--muted);font-size:12px;margin-top:4px;">Beat 646 · Improve Existing 🛠️ · ~05:16 JST Wed Apr 22 · keyword_alerting.py ROOT CAUSE FIXED ✅ · Algorithm Beat 647: Empire Audit (EA=1 rung 5) · NO PROPOSALS directive ACTIVE</p>
         </div>
         <div class="card" style="border-left:3px solid #22d3ee;">
             <h3><span class="material-symbols-outlined">psychology</span> Empire Agents</h3>
@@ -242,7 +242,7 @@
         <!-- INITIATIVE QUEUE -->
         <div class="card">
             <h3><span class="material-symbols-outlined">flag</span> Initiative Queue</h3>
-            <p style="color:var(--muted);font-size:13px;margin-bottom:12px;"><strong style="color:#34d399;">Beat 645 Empire Audit ✅</strong> — 5/5 OpenClaw crons OK ✅ · Ito pipeline FRESH (1,095 articles · dashboard 94KB · 04:38 JST) ✅ · Makoto scout FRESH (arbitrage_intel.md 04:37 JST ✅) ✅ · keyword_alerts.json: total_matches=282 · keywords_matched=[] per article (known bug · Beat 641 IE attempted fix) ⚠️ · all workspaces FRESH ✅ · Titan/Felix/Saito PARKED/learn-only ✅ · structural blockers unchanged ✅ · Algorithm Beat 646: Improve Existing (IE=4 Rule 3 FORCED) · NO PROPOSALS directive ACTIVE</p>
+            <p style="color:var(--muted);font-size:13px;margin-bottom:12px;"><strong style="color:#fbbf24;">Beat 646 Improve Existing 🛠️</strong> — keyword_alerting.py ROOT CAUSE FIXED ✅ · filter_articles_by_keywords() now adds keywords_matched to each matched article (was: always [] since function never populated it) · test: Islamabad+ceasefire article returns keywords_matched=['Islamabad','ceasefire'] ✅ · 297 matches across 10 sectors (vs 282 before with empty arrays) · keywords per article now show: ['Islamabad','ceasefire','oil'], ['tariff','war','Hormuz','oil'] etc ✅ · Algorithm Beat 647: Empire Audit (EA=1 rung 5) · NO PROPOSALS directive ACTIVE</p>
             <p style="color:var(--dim);font-size:11.5px;margin-top:10px;">📝 Full beat history in <a href="../../workspace_kaji/MEMORY.md" style="color:#22d3ee;">MEMORY.md</a></p>
         </div>
 
@@ -287,36 +287,36 @@
                 <tr>
                     <td><span class="cron-name" style="background:rgba(52,211,153,0.12);color:#34d399;padding:2px 9px;border-radius:6px;font-size:11px;font-weight:600;">Empire Audit</span></td>
                     <td>Beat 645 ~04:58 JST</td>
-                    <td>0</td>
-                    <td><strong style="color:#34d399;">EA=0 JUST RAN ✅</strong></td>
+                    <td>1</td>
+                    <td>EA=1 rung 5</td>
                 </tr>
                 <tr>
                     <td><span class="cron-name" style="background:rgba(167,139,250,0.12);color:#a78bfa;padding:2px 9px;border-radius:6px;font-size:11px;font-weight:600;">Delegation Prep</span></td>
                     <td>Beat 640 ~03:45 JST</td>
-                    <td>5</td>
-                    <td>DP=5</td>
+                    <td>6</td>
+                    <td>DP=6</td>
                 </tr>
                 <tr>
                     <td><span class="cron-name" style="background:rgba(251,191,36,0.12);color:#fbbf24;padding:2px 9px;border-radius:6px;font-size:11px;font-weight:600;">New Ideas</span></td>
                     <td>Beat 644 ~04:45 JST</td>
-                    <td>1</td>
-                    <td>NI=1</td>
+                    <td>2</td>
+                    <td>NI=2</td>
                 </tr>
                 <tr>
                     <td><span class="cron-name" style="background:rgba(251,191,36,0.12);color:#fbbf24;padding:2px 9px;border-radius:6px;font-size:11px;font-weight:600;">Improve Existing</span></td>
-                    <td>Beat 641 ~03:56 JST</td>
-                    <td>4</td>
-                    <td><strong style="color:#fbbf24;">IE=4 ≥4 Rule 3 FORCED</strong></td>
+                    <td>Beat 646 ~05:16 JST</td>
+                    <td>0</td>
+                    <td><strong style="color:#fbbf24;">IE=0 JUST RAN 🛠️</strong></td>
                 </tr>
                 <tr>
                     <td><span class="cron-name" style="background:rgba(34,211,238,0.12);color:#22d3ee;padding:2px 9px;border-radius:6px;font-size:11px;font-weight:600;">Tidy Operations</span></td>
                     <td>Beat 642 ~04:16 JST</td>
-                    <td>3</td>
-                    <td>TO=3</td>
+                    <td>4</td>
+                    <td>TO=4</td>
                 </tr>
             </tbody>
         </table>
-        <p style="color:var(--dim);font-size:11.5px;margin-top:10px;">Algorithm Beat 646: Rule 1: EA=0 JUST RAN ✅ blocked · Rule 2: no urgent override · Rule 3: <strong>IE=4≥4 Rule 3 FORCED</strong> · Rule 4: N/A (Rule 3 forced) → Improve Existing (Beat 646 · IE=4 Rule 3 FORCED) · NO PROPOSALS directive ACTIVE · next: Improve Existing (Beat 646 · IE=4 Rule 3 FORCED)
+        <p style="color:var(--dim);font-size:11.5px;margin-top:10px;">Algorithm Beat 647: Rule 1: IE=0 JUST RAN 🛠️ blocked · Rule 2: no urgent override · Rule 3: EA=1 not forced (EA=1<4) · Rule 4: Empire Audit (EA=1 rung 5) → Empire Audit (Beat 647 · EA=1 rung 5) · NO PROPOSALS directive ACTIVE · next: Empire Audit (Beat 647 · EA=1 rung 5)
     </div>
 
     <!-- AGENT ROSTER -->
