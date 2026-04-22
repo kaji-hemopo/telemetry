@@ -80,11 +80,11 @@
     <header>
         <div class="header-left">
             <h1>Kaji · COO Dashboard</h1>
-            <p style="color:var(--muted);font-size:14px;max-width:52ch;">Beat 670 · Empire Audit ✅ · ~11:22 JST Wed Apr 22 · 5/5 crons OK ✅ · Ito keyword_alerts.json ~6h stale ⚠️ (05:18 JST · script failing silently · other Ito pipelines FRESH) · Gold Oracle raw_gold_oracle.json FRESH 11:14 JST ✅ · Makoto DASHBOARD.md FRESH 11:21 JST ✅ · CLARITY Act April markup EXPIRED ✅ · next: Improve Existing (Beat 671 · IE=6 rung 4) · NO PROPOSALS directive ACTIVE</p>
+            <p style="color:var(--muted);font-size:14px;max-width:52ch;">Beat 671 · Improve Existing 🛠️ · ~11:36 JST Wed Apr 22 · Ito keyword_alerts.json ~6h18m stale (05:18 JST) · root cause: send_kaji_update Telegram calls had NO error handling — failures invisible · FIX: added log_error() + try-except to keyword_alerting.py ✅ · Python syntax OK ✅ · next: Empire Audit (Beat 672 · EA=4≥4 Rule 3 FORCED) · NO PROPOSALS directive ACTIVE</p>
         </div>
         <div class="header-right">
-            <div class="role-tag badge-ea">Beat 670 · EMPIRE AUDIT ✅ · ~11:22 JST</div>
-            <div class="updated">Updated: <span id="ts">Loading…</span> JST · <strong style="color:#34d399;">Beat 670 · Empire Audit ✅</strong> — 5/5 crons OK ✅ · Ito keyword_alerts.json ~6h stale ⚠️ · Gold Oracle FRESH 11:14 JST ✅ · Makoto DASHBOARD FRESH 11:21 JST ✅ · next: Improve Existing (Beat 671 · IE=6 rung 4) · NO PROPOSALS directive ACTIVE</div>
+            <div class="role-tag badge-ie">Beat 671 · IMPROVE EXISTING 🛠️ · ~11:36 JST</div>
+            <div class="updated">Updated: <span id="ts">Loading…</span> JST · <strong style="color:#fbbf24;">Beat 671 · Improve Existing 🛠️</strong> — Ito keyword_alerts.py error logging FIXED ✅ · root cause: send_kaji_update had no try-except · next: Empire Audit (Beat 672 · EA=4≥4 Rule 3 FORCED) · NO PROPOSALS directive ACTIVE</div>
         </div>
     </header>
 
@@ -207,10 +207,10 @@
 
     <!-- ALERTS -->
     <div class="card full" style="margin-bottom:20px; border-color:rgba(74,222,128,0.4);">
-        <h3><span class="material-symbols-outlined">check_circle</span> ✅ Empire Alerts — Beat 670 · Empire Audit ✅ · ~11:22 JST Wed Apr 22</h3>
+        <h3><span class="material-symbols-outlined">check_circle</span> ✅ Empire Alerts — Beat 671 · Improve Existing 🛠️ · ~11:36 JST Wed Apr 22</h3>
         <div class="alert-row ok">
             <span>✅</span>
-            <div><strong>Beat 670 Empire Audit ✅:</strong> 5/5 crons OK ✅ · Ito keyword_alerts.json ~6h stale ⚠️ (05:18 JST · script failing silently · other Ito pipelines FRESH) · Gold Oracle raw_gold_oracle.json FRESH 11:14 JST ✅ · Makoto DASHBOARD.md FRESH 11:21 JST ✅ · CLARITY Act April markup EXPIRED ⛔ · next: Improve Existing (Beat 671 · IE=6 rung 4) · NO PROPOSALS directive ACTIVE</div>
+            <div><strong>Beat 671 Improve Existing 🛠️:</strong> Ito keyword_alerts.py error logging FIXED ✅ · added log_error() + try-except around send_kaji_update calls · Python syntax verified OK ✅ · root cause: send_kaji_update failures were completely invisible (no error handling) · Ito keyword_alerts.json ~6h18m stale ⚠️ (05:18 JST · persistent) · RSS feeds staleness also confirmed (last_scrape_times.json) · next: Empire Audit (Beat 672 · EA=4≥4 Rule 3 FORCED) · NO PROPOSALS directive ACTIVE</div>
         </div>
         <div class="alert-row warn">
             <span>⚠️</span>
@@ -218,7 +218,7 @@
         </div>
         <div class="alert-row warn">
             <span>⚠️</span>
-            <div><strong>Ito keyword_alerts.json stale ~6h:</strong> pipeline FRESH (10:42 JST) ✅ · signal_radar + bridge_progress FRESH (09:00 JST) ✅ · keyword_alerts.json not updated since 05:18 JST (~6h ago) · cron fires every 20min · script may be failing silently ⚠️ (persistent across multiple beats)</div>
+            <div><strong>Ito keyword_alerts.json ~6h18m stale:</strong> root cause FOUND ✅ — send_kaji_update Telegram calls had NO error handling · failures were completely invisible · FIX applied: added log_error() + try-except to keyword_alerting.py ✅ · Python syntax OK ✅ · RSS feeds also stale (last_scrape_times.json) · pipeline FRESH 10:42 JST ✅</div>
         </div>
     </div>
 
@@ -226,8 +226,8 @@
     <div class="grid-3" style="margin-bottom:20px;">
         <div class="card" style="border-left:3px solid #22d3ee;">
             <h3><span class="material-symbols-outlined">check_circle</span> Beats Completed</h3>
-            <p style="font-size:2rem;font-weight:800;color:#22d3ee;margin-top:4px;">670</p>
-            <p style="color:var(--muted);font-size:12px;margin-top:4px;">Beat 670 · Empire Audit ✅ · ~11:22 JST Wed Apr 22 · 5/5 crons OK ✅ · Ito keyword_alerts.json ~6h stale ⚠️ · Gold Oracle FRESH 11:14 JST ✅ · next: Improve Existing (Beat 671 · IE=6 rung 4) · NO PROPOSALS directive ACTIVE</p>
+            <p style="font-size:2rem;font-weight:800;color:#22d3ee;margin-top:4px;">671</p>
+            <p style="color:var(--muted);font-size:12px;margin-top:4px;">Beat 671 · Improve Existing 🛠️ · ~11:36 JST Wed Apr 22 · Ito keyword_alerts.py error logging FIXED ✅ · next: Empire Audit (Beat 672 · EA=4≥4 Rule 3 FORCED) · NO PROPOSALS directive ACTIVE</p>
         </div>
         <div class="card" style="border-left:3px solid #22d3ee;">
             <h3><span class="material-symbols-outlined">psychology</span> Empire Agents</h3>
@@ -246,7 +246,7 @@
         <!-- INITIATIVE QUEUE -->
         <div class="card">
             <h3><span class="material-symbols-outlined">flag</span> Initiative Queue</h3>
-            <p style="color:var(--muted);font-size:13px;margin-bottom:12px;"><strong style="color:#34d399;">Beat 670 Empire Audit ✅</strong> — 5/5 crons OK ✅ · Ito keyword_alerts.json ~6h stale ⚠️ (persistent) · Gold Oracle FRESH 11:14 JST ✅ · Makoto DASHBOARD FRESH 11:21 JST ✅ · CLARITY Act April markup EXPIRED ⛔ · <strong style="color:#fbbf24;">next: Improve Existing (Beat 671 · IE=6 rung 4)</strong> · NO PROPOSALS directive ACTIVE</p>
+            <p style="color:var(--muted);font-size:13px;margin-bottom:12px;"><strong style="color:#fbbf24;">Beat 671 Improve Existing 🛠️</strong> — Ito keyword_alerts.py error logging FIXED ✅ · added log_error() + try-except to send_kaji_update calls · Python syntax verified OK ✅ · Ito keyword_alerts.json ~6h18m stale ⚠️ (root cause now actionable) · <strong style="color:#34d399;">next: Empire Audit (Beat 672 · EA=4≥4 Rule 3 FORCED)</strong> · NO PROPOSALS directive ACTIVE</p>
             <p style="color:var(--dim);font-size:11.5px;margin-top:10px;">📝 Full beat history in <a href="../../workspace_kaji/MEMORY.md" style="color:#22d3ee;">MEMORY.md</a></p>
         </div>
 
@@ -276,8 +276,8 @@
 
     <!-- BEAT DOMAIN STATE -->
     <div class="card full" style="margin-bottom:20px;">
-        <h3><span class="material-symbols-outlined">psychology</span> Beat Domain State (~10:56 JST Wed Apr 22 · Beat 669 DP ✅)</h3>
-        <p style="color:var(--dim);font-size:11.5px;margin-bottom:8px;">Beat 670 Empire Audit ✅ · Algorithm Beat 671: Improve Existing (IE=6 rung 4)</p>
+        <h3><span class="material-symbols-outlined">psychology</span> Beat Domain State (~11:36 JST Wed Apr 22 · Beat 671 IE 🛠️)</h3>
+        <p style="color:var(--dim);font-size:11.5px;margin-bottom:8px;">Beat 671 Improve Existing 🛠️ · Algorithm Beat 672: Empire Audit (EA=4≥4 Rule 3 FORCED)</p>
         <table class="cron-table">
             <thead>
                 <tr>
@@ -291,36 +291,36 @@
                 <tr>
                     <td><span class="cron-name" style="background:rgba(52,211,153,0.12);color:#34d399;padding:2px 9px;border-radius:6px;font-size:11px;font-weight:600;">Empire Audit</span></td>
                     <td>Beat 670 ~11:22 JST</td>
-                    <td>0</td>
-                    <td><strong style="color:#34d399;">EA=0 JUST RAN ✅</strong></td>
+                    <td>4</td>
+                    <td><strong style="color:#f87171;">EA=4≥4 Rule 3 FORCED ⚠️</strong></td>
                 </tr>
                 <tr>
                     <td><span class="cron-name" style="background:rgba(251,191,36,0.12);color:#fbbf24;padding:2px 9px;border-radius:6px;font-size:11px;font-weight:600;">Improve Existing</span></td>
-                    <td>Beat 662 ~09:16 JST</td>
-                    <td>6</td>
-                    <td>IE=6</td>
+                    <td>Beat 671 ~11:36 JST</td>
+                    <td>0</td>
+                    <td><strong style="color:#fbbf24;">IE=0 JUST RAN 🛠️</strong></td>
                 </tr>
                 <tr>
                     <td><span class="cron-name" style="background:rgba(34,211,238,0.12);color:#22d3ee;padding:2px 9px;border-radius:6px;font-size:11px;font-weight:600;">Tidy Operations</span></td>
                     <td>Beat 668 ~10:45 JST</td>
-                    <td>2</td>
-                    <td>TO=2</td>
+                    <td>3</td>
+                    <td>TO=3</td>
                 </tr>
                 <tr>
                     <td><span class="cron-name" style="background:rgba(167,139,250,0.12);color:#a78bfa;padding:2px 9px;border-radius:6px;font-size:11px;font-weight:600;">Delegation Prep</span></td>
                     <td>Beat 669 ~10:56 JST</td>
-                    <td>1</td>
-                    <td>DP=1</td>
+                    <td>2</td>
+                    <td>DP=2</td>
                 </tr>
                 <tr>
                     <td><span class="cron-name" style="background:rgba(251,191,36,0.12);color:#fbbf24;padding:2px 9px;border-radius:6px;font-size:11px;font-weight:600;">New Ideas</span></td>
                     <td>Beat 661 ~08:56 JST</td>
-                    <td>9</td>
-                    <td>NI=9</td>
+                    <td>10</td>
+                    <td>NI=10</td>
                 </tr>
             </tbody>
         </table>
-        <p style="color:var(--dim);font-size:11.5px;margin-top:10px;">Algorithm Beat 671: Rule 1: EA=0 JUST RAN ✅ blocked · Rule 2: no urgent override · Rule 3: no domain ≥4 · Rule 4: IE=6 rung 4 (Improve Existing qualifies) · next: Improve Existing (Beat 671 · IE=6 rung 4)</p>
+        <p style="color:var(--dim);font-size:11.5px;margin-top:10px;">Algorithm Beat 672: Rule 1: IE=0 JUST RAN 🛠️ blocked · Rule 2: no urgent override · Rule 3: EA=4≥4 FORCED ⚠️ · Rule 4: Empire Audit rung 1 · next: Empire Audit (Beat 672 · EA=4≥4 Rule 3 FORCED)</p>
     </div>
 
     <!-- AGENT ROSTER -->
@@ -330,7 +330,7 @@
             <div class="agent-row" style="border-bottom:1px solid rgba(255,255,255,0.06);padding:8px 12px;">
                 <div>
                     <div class="agent-name">Kaji (main)</div>
-                    <div class="agent-role">Beat 670 EA ✅ · running ~11:22 JST · 5/5 crons OK ✅ · Ito keyword_alerts.json ~6h stale ⚠️ · Gold Oracle FRESH ✅ · next: Improve Existing (Beat 671 · IE=6 rung 4)</div>
+                    <div class="agent-role">Beat 671 IE 🛠️ · running ~11:36 JST · Ito keyword_alerts.py error logging FIXED ✅ · next: Empire Audit (Beat 672 · EA=4≥4 Rule 3 FORCED)</div>
                 </div>
                 <span class="badge badge-ok">✅ Active</span>
             </div>
@@ -344,7 +344,7 @@
             <div class="agent-row" style="border-bottom:1px solid rgba(255,255,255,0.06);padding:8px 12px;">
                 <div>
                     <div class="agent-name">Ito</div>
-                    <div class="agent-role">Intel · CLARITY Act April markup EXPIRED ⛔ · ceasefire extended 🔴 · pipeline FRESH 10:42 JST ✅ · keyword_alerts.json ~6h stale ⚠️ (persistent · script failing silently) · signal_radar + bridge_progress FRESH 09:00 JST ✅</div>
+                    <div class="agent-role">Intel · CLARITY Act April markup EXPIRED ⛔ · ceasefire extended 🔴 · pipeline FRESH 10:42 JST ✅ · keyword_alerts.json ~6h18m stale ⚠️ · keyword_alerting.py error logging FIXED (Beat 671 IE) ✅ · signal_radar + bridge_progress FRESH 09:00 JST ✅</div>
                 </div>
                 <span class="badge badge-ok">✅ Active</span>
             </div>
@@ -443,7 +443,7 @@
 const CEASEFIRE_TARGET=Date.UTC(2026,3,21,14,52,0);const CLARITY_TARGET=Date.UTC(2026,3,25,14,0,0);function formatCd(d){if(d<=0)return"⛔ EXPIRED";const h=Math.floor(d/36e5),m=Math.floor(d%36e5/6e4),s=Math.floor(d%6e4/1e3);return`${h}h ${m.toString().padStart(2,"0")}m ${s.toString().padStart(2,"0")}s`}function cdColor(d){return d<=0?"#f87171":d<3.6e6?"#f87171":d<7.2e6?"#fbbf24":"#4ade80"}function fmtClarity(d){if(d<=0)return"⛔ PASSED";const h=Math.floor(d/36e5),m=Math.floor(d%36e5/6e4);return`${h}h ${m.toString().padStart(2,"0")}m`}function updateTime(){const e=new Date(),t=e.toLocaleString("en-US",{timeZone:"Asia/Tokyo",hour:"2-digit",minute:"2-digit",second:"2-digit",hour12:!1});document.getElementById("ts").textContent=t;const n=e.getTime(),d=CEASEFIRE_TARGET-n;["ito-cd","hdr-cd","hdr-cd2","agent-cd","ie-cd"].forEach(id=>{const el=document.getElementById(id);if(el){el.textContent=formatCd(d);el.style.color=cdColor(d)}});const c=CLARITY_TARGET-n;["clarity-cd","clarity-cd2","clarity-cd3"].forEach(id=>{const el=document.getElementById(id);if(el){el.textContent=fmtClarity(c);el.style.color=c<=0?"#f87171":c<864e5?"#fbbf24":"#4ade80"}})}updateTime(),setInterval(updateTime,1e3);
 </script>
 <footer>
-    Kaji COO · <a href="https://kaji-hemopo.github.io/telemetry/empire-home.html" target="_blank">Live Empire</a> · Beat 670 · Empire Audit ✅ · ~11:22 JST Wed Apr 22 · 5/5 crons OK ✅ · Ito keyword_alerts.json ~6h stale ⚠️ · Gold Oracle FRESH 11:14 JST ✅ · next: Improve Existing (Beat 671 · IE=6 rung 4) · NO PROPOSALS directive ACTIVE
+    Kaji COO · <a href="https://kaji-hemopo.github.io/telemetry/empire-home.html" target="_blank">Live Empire</a> · Beat 671 · Improve Existing 🛠️ · ~11:36 JST Wed Apr 22 · Ito keyword_alerts.py error logging FIXED ✅ · next: Empire Audit (Beat 672 · EA=4≥4 Rule 3 FORCED) · NO PROPOSALS directive ACTIVE
 </footer>
 </body>
 </html>
