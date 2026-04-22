@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-23 04:34 JST
+Generated: 2026-04-23 08:08 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -52,26 +52,26 @@ Generated: 2026-04-23 04:34 JST
 
 | Score | Platform | Keyword | Title | Budget/Rate | URL |
 |---:|---|---|---|---|---|
-| 75 | Freelancer | Python scraper | CSV to Excel Template Conversion | $250.00 | https://www.freelancer.com/projects/data-analysis/CSV-Excel-Template-Conversion.html |
 | 75 | Freelancer | Python scraper | Audit and Fix Football Prediction ML Pipeline | $250.00 | https://www.freelancer.com/projects/fastapi/Audit-Fix-Football-Prediction-Pipeline.html |
-| 75 | Freelancer | Make.com automation | Comprehensive Pipedrive CRM &amp; AI System Setup | $250.00 | https://www.freelancer.com/projects/ai-development/Comprehensive-Pipedrive-CRM-System-Setup.html |
-| 75 | Freelancer | Data processing API | Build On-Demand Roku Channel | $250.00 | https://www.freelancer.com/projects/video-streaming/Build-Demand-Roku-Channel.html |
+| 65 | Freelancer | Python scraper | News Site Scraping Bot | I need a reliable web-scraping bot that automatically pulls fresh content from a | https://www.freelancer.com/projects/beautifulsoup/News-Site-Scraping-Bot.html |
+| 65 | Freelancer | Python scraper | Docker IPTV Playlist Automation | I need a developer who can wrap Threadfin inside a rock-solid Docker architectur | https://www.freelancer.com/projects/automation/Docker-IPTV-Playlist-Automation.html |
+| 65 | Freelancer | Python scraper | Python Automated Stock Report Creation Arabic | $30.00 | https://www.freelancer.com/projects/data-scraping/Python-Automated-Stock-Report-Creation.html |
 | 65 | Freelancer | Python scraper | Python Developer for WebSocket &amp; RAG System | $30.00 | https://www.freelancer.com/projects/apache-kafka/Python-Developer-for-WebSocket-RAG.html |
 | 65 | Freelancer | Python scraper | Text Data, image data, numeric data Entry AI Automation | $30.00 | https://www.freelancer.com/projects/ai-development/Text-Data-image-data-numeric.html |
 | 65 | Freelancer | Python scraper | Trading Algo &ndash; Automated Crypto Trading System (Binance Tes | $30.00 | https://www.freelancer.com/projects/binance/Trading-Algo-Automated-Crypto-Trading.html |
 | 65 | Freelancer | Python scraper | Azure VAPT &amp; Infrastructure Hardening | required experienced professionals with strong expertise in VAPT patching and se | https://www.freelancer.com/projects/azure/Azure-VAPT-Infrastructure-Hardening.html |
 | 65 | Freelancer | Python scraper | WhatsApp Logistics Support Chatbot | I need a production-ready WhatsApp chatbot that becomes the first line of custom | https://www.freelancer.com/projects/chatbot/WhatsApp-Logistics-Support-Chatbot.html |
+| 65 | Freelancer | Make.com automation | Setup WhatsApp Business API | FREELANCER REQUIREMENT — ONE-TIME SETUP TASK HIRELAB Meta WhatsApp Business API  | https://www.freelancer.com/projects/api/Setup-WhatsApp-Business-API-40390079.html |
+| 65 | Freelancer | Make.com automation | Connect Custom Form to Monday.com | I run an estate-agency website built entirely with custom HTML/CSS and I collect | https://www.freelancer.com/projects/api/Connect-Custom-Form-Monday-com.html |
+| 65 | Freelancer | Make.com automation | I want code | I need an experienced C2000 developer to turn my detailed industrial-automation  | https://www.freelancer.com/projects/embedded-systems/want-code.html |
 | 65 | Freelancer | Make.com automation | HubSpot Document Generation Specialist | $30.00 | https://www.freelancer.com/projects/api-integration/HubSpot-Document-Generation-Specialist.html |
 | 65 | Freelancer | Make.com automation | Commission-Based Sales Closer Needed for AI Automation Agency | We are building an AI automation agency focused on helping businesses automate s | https://www.freelancer.com/projects/b2b-marketing/Commission-Based-Sales-Closer-Needed-40390563.html |
 | 65 | Freelancer | Make.com automation | Advanced Real Estate SaaS Platform Development - Build BookMyDish | We are building BookMyDisha.com, a modern, scalable real estate SaaS platform in | https://www.freelancer.com/projects/nextjs/Advanced-Real-Estate-SaaS-Platform.html |
-| 65 | Freelancer | Make.com automation | Setup WhatsApp Business API | FREELANCER REQUIREMENT — ONE-TIME SETUP TASK HIRELAB Meta WhatsApp Business API  | https://www.freelancer.com/projects/api/Setup-WhatsApp-Business-API-40390079.html |
-| 65 | Freelancer | Make.com automation | Simplify Angular 20 Navigation UX | Job Description: We are seeking a world-class UI/UX Architect and Designer to ad | https://www.freelancer.com/projects/ui-design/Simplify-Angular-Navigation.html |
-| 65 | Freelancer | Make.com automation | Saree brand - WhatsApp broadcast Automation | WhatsApp Marketing &amp; Automation Specialist We are looking for an experienced | https://www.freelancer.com/projects/automation/Saree-brand-WhatsApp-broadcast.html |
-| 65 | Freelancer | Make.com automation | WhatsApp Business&ndash;Facebook Integration | I need my existing Facebook presence fully connected to my WhatsApp Business acc | https://www.freelancer.com/projects/api/WhatsApp-Business-Facebook-Integration.html |
-| 45 | Freelancer | Data processing API | QuickBooks Bank Reconciliation Expert | $3,000.00 | https://www.freelancer.com/projects/bank-reconciliation/QuickBooks-Bank-Reconciliation-Expert-40391122.html |
+| 65 | Freelancer | Data processing API | Custom SaaS MVP: Refund Tracking Web App | Custom responsive web app with user accounts, dashboard, manual entry, email for | https://www.freelancer.com/projects/saas/Custom-SaaS-MVP-Refund-Tracking.html |
+| 65 | Freelancer | Data processing API | Consultant to Scale Online Coaching | I run an established online-course coaching brand and want a fresh, expert persp | https://www.freelancer.com/projects/marketing-strategy/Consultant-Scale-Online-Coaching.html |
+| 65 | Freelancer | Data processing API | Outdoor Gear Recommendation Chatbot | $30.00 | https://www.freelancer.com/projects/ai-chatbot-development/Outdoor-Gear-Recommendation-Chatbot.html |
+| 45 | Freelancer | Make.com automation | Freelancers Wanted for Partnership Opportunity | $3,000.00 | https://www.freelancer.com/projects/business-development/Freelancers-Wanted-for-Partnership.html |
 | 35 | Freelancer | Python scraper | Virtual Assistant for Internship Applications | $150.00 | https://www.freelancer.com/projects/virtual-assistant/Virtual-Assistant-for-Internship.html |
-| 35 | Freelancer | Make.com automation | Outbound SDR Specialist for Fable Fox | $250.00 | https://www.freelancer.com/projects/lead-generation/Outbound-SDR-Specialist-for-Fable.html |
-| 25 | Freelancer | Python scraper | InSAR Time-Series Analysis Expert Needed | Project Title: Full InSAR Time-Series Analysis (Sentinel-1, SNAP + StaMPS) Proje | https://www.freelancer.com/projects/remote-sensing/InSAR-Time-Series-Analysis-Expert.html |
 
 ## Notes
 - Scores prioritize: (1) simple automation/scripting fit, (2) payout magnitude, (3) keyword relevance.
