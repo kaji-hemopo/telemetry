@@ -192,26 +192,6 @@
             color: var(--muted);
             border-color: var(--border);
         }
-        .local-note {
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 16px 18px;
-            margin-top: 8px;
-            font-size: 13px;
-            color: var(--muted);
-        }
-        .local-note code {
-            display: block;
-            margin-top: 8px;
-            padding: 10px 12px;
-            background: rgba(0, 0, 0, 0.35);
-            border-radius: 8px;
-            font-size: 11px;
-            word-break: break-all;
-            color: #c4c9d4;
-            border: 1px solid var(--border);
-        }
         footer {
             text-align: center;
             padding: 28px 16px;
@@ -247,9 +227,9 @@
                 <p class="card-description">RSS &amp; social intel, trader roundup, venture signals, markets — updated by the Telemetry pipeline.</p>
                 <span class="card-link">Open Intel Tab →</span>
                 <div class="sub-links" style="margin-top:8px; font-size:11px; color:#00daf3;">
-                    ↳ <a href="alerts.html" style="color:#00daf3;">Alert Feed</a> · <a href="bridge.html" style="color:#00daf3;">Bridge Progress</a>
+                    ↳ <a href="alerts.html" style="color:#00daf3;">Alert Feed</a> · <a href="bridge.html" style="color:#00daf3;">Bridge Progress</a> · <a href="empire-pulse.html" style="color:#00daf3;">Empire Pulse</a>
                 </div>
-                <div class="status-badge">Active · ~3× daily automation</div>
+                <div class="status-badge">Active · 20min heartbeat</div>
                 <div style="margin-top:6px;"><a href="empire-home.html" style="font-size:11px; color:#849396;">← Back to Home</a></div>
             </a>
 
@@ -272,6 +252,7 @@
                 <p class="card-description">X automation for the N3 app, Gmail → Postgres fixers, JLPT content pipeline.</p>
                 <span class="card-link">Open Felix →</span>
                 <div style="margin-top:6px;"><a href="empire-home.html" style="font-size:11px; color:#849396;">← Back to Home</a></div>
+                <div class="status-badge muted">🔒 Gmail Expired · X blocked</div>
             </a>
 
             <a href="agents/titan/" class="dashboard-card">
@@ -281,25 +262,26 @@
                 <p class="card-description">Fitness empire builder. Rugby strength, hypertrophy, injury prevention, mindset systems.</p>
                 <span class="card-link">Open Titan →</span>
                 <div style="margin-top:6px;"><a href="empire-home.html" style="font-size:11px; color:#849396;">← Back to Home</a></div>
+                <div class="status-badge muted">🚧 PARKED · awaiting re-activation</div>
             </a>
 
             <a href="agents/saito/" class="dashboard-card">
                 <div class="card-icon">⚙️</div>
                 <h3 class="card-title">Saito</h3>
-                <div class="card-role">Standby · minimal identity</div>
-                <p class="card-description">Workspace kept minimal; dashboard shows last-known status. Heavy automation is off unless you turn it back on.</p>
+                <div class="card-role">Learn-Only · Proposal Pipeline</div>
+                <p class="card-description">Workspace kept minimal; heavy automation off per Jax directive. Learn-only mode — no proposals. To re-activate: "go Saito".</p>
                 <span class="card-link">Open Saito →</span>
                 <div style="margin-top:6px;"><a href="empire-home.html" style="font-size:11px; color:#849396;">← Back to Home</a></div>
+                <div class="status-badge muted">📖 Learn-Only · No proposals</div>
             </a>
 
             <a href="agents/odie/" class="dashboard-card">
                 <div class="card-icon">🐕</div>
                 <h3 class="card-title">Odie · Board Member</h3>
-                <div class="card-role">Investor & Critical Overseer</div>
-                <p class="card-description">Protects Jackson's investment — time, income, visa, health. Currently: TradePass MVP (NZ EWRB exam prep, SM-2 spaced repetition). Repo: github.com/kaji-hemopo/tradepass</p>
+                <div class="card-role">Investor &amp; Opportunity Scout</div>
+                <p class="card-description">Protects Jackson's investment. TradePass MVP building. Opportunity Radar active — 2hr cycles, ranked problem discovery.</p>
                 <span class="card-link">Open Odie →</span>
                 <div style="margin-top:6px;"><a href="empire-home.html" style="font-size:11px; color:#849396;">← Back to Home</a></div>
-                <div class="status-badge muted">Active (ideation paused)</div>
             </a>
 
             <a href="agents/kaji/" class="dashboard-card">

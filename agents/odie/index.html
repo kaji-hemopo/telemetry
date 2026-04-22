@@ -5,293 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odie · Board Member</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,600;9..40,700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --bg: #050508;
-            --surface: rgba(18, 20, 28, 0.85);
-            --border: rgba(255, 255, 255, 0.08);
-            --text: #f0f2f8;
-            --muted: #8b90a1;
-            --accent: #5eead4;
-            --amber: #fbbf24;
-            --red: #f87171;
-            --violet: #a78bfa;
-            --radius: 16px;
-            --font-d: "Syne", system-ui, sans-serif;
-            --font-b: "DM Sans", system-ui, sans-serif;
-        }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        html { scroll-behavior: smooth; }
-        body {
-            font-family: var(--font-b);
-            color: var(--text);
-            line-height: 1.55;
-            min-height: 100vh;
-            background: var(--bg);
-            -webkit-font-smoothing: antialiased;
-        }
-        .page-bg {
-            position: fixed; inset: 0; z-index: -1;
-            background:
-                radial-gradient(ellipse 100% 70% at 50% -25%, rgba(94, 234, 212, 0.08), transparent 50%),
-                radial-gradient(ellipse 50% 45% at 100% 10%, rgba(167, 139, 250, 0.06), transparent 45%),
-                linear-gradient(180deg, #0a0c12 0%, var(--bg) 100%);
-        }
-        .container { max-width: 1080px; margin: 0 auto; padding: 28px 20px 48px; }
-
-        .nav-back {
-            display: inline-flex; align-items: center; gap: 8px;
-            padding: 10px 18px; border-radius: 10px;
-            font-size: 13px; font-weight: 600;
-            color: var(--muted);
-            background: rgba(139, 144, 161, 0.08);
-            border: 1px solid rgba(139, 144, 161, 0.15);
-            text-decoration: none;
-            margin-bottom: 24px;
-            transition: background 0.15s, color 0.15s;
-        }
-        .nav-back:hover { background: rgba(139, 144, 161, 0.14); color: var(--text); text-decoration: none; }
-
-        header.hero {
-            text-align: center;
-            padding: 40px 28px 44px;
-            border-radius: calc(var(--radius) + 4px);
-            background: linear-gradient(145deg, rgba(22, 26, 38, 0.95), rgba(12, 14, 22, 0.98));
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            box-shadow: 0 24px 48px -16px rgba(0, 0, 0, 0.55), 0 0 0 1px rgba(94, 234, 212, 0.06) inset;
-            margin-bottom: 28px;
-            position: relative;
-            overflow: hidden;
-        }
-        header.hero::before {
-            content: "";
-            position: absolute;
-            top: 0; left: 0; right: 0;
-            height: 1px;
-            background: linear-gradient(90deg, transparent, var(--accent), transparent);
-            opacity: 0.55;
-        }
-        .eyebrow {
-            font-family: var(--font-d);
-            font-size: 11px; font-weight: 700;
-            letter-spacing: 0.16em; text-transform: uppercase;
-            color: var(--accent); margin-bottom: 12px;
-        }
-        h1 {
-            font-family: var(--font-d);
-            font-size: clamp(1.85rem, 4.5vw, 2.6rem);
-            font-weight: 800; letter-spacing: -0.03em;
-            line-height: 1.12; margin-bottom: 12px;
-            background: linear-gradient(100deg, #fff 0%, #b8c0d4 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        .subtitle { font-size: 1.05rem; color: var(--muted); max-width: 36rem; margin: 0 auto 18px; }
-        .timestamp {
-            display: inline-block; margin-top: 6px;
-            padding: 8px 16px; border-radius: 999px;
-            font-size: 12px; font-variant-numeric: tabular-nums;
-            color: var(--accent);
-            background: rgba(94, 234, 212, 0.08);
-            border: 1px solid rgba(94, 234, 212, 0.2);
-        }
-
-        .status-strip {
-            display: flex; gap: 12px; flex-wrap: wrap;
-            justify-content: center; margin-top: 20px;
-        }
-        .status-pill {
-            padding: 6px 14px; border-radius: 999px;
-            font-size: 11px; font-weight: 600; letter-spacing: 0.05em;
-            border: 1px solid;
-        }
-        .pill-active { background: rgba(94, 234, 212, 0.1); border-color: rgba(94, 234, 212, 0.25); color: var(--accent); }
-        .pill-paused { background: rgba(251, 191, 36, 0.1); border-color: rgba(251, 191, 36, 0.25); color: var(--amber); }
-        .pill-red { background: rgba(248, 113, 113, 0.1); border-color: rgba(248, 113, 113, 0.25); color: var(--red); }
-
-        .section-title {
-            font-family: var(--font-d);
-            font-size: 12px; font-weight: 700;
-            letter-spacing: 0.12em; text-transform: uppercase;
-            color: var(--muted); margin-bottom: 16px;
-            display: flex; align-items: center; gap: 10px;
-        }
-        .section-title .dot {
-            width: 6px; height: 6px; border-radius: 50%;
-            background: var(--accent);
-        }
-
-        .card-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 14px;
-            margin-bottom: 28px;
-        }
-        .card {
-            padding: 22px 24px 20px;
-            border-radius: var(--radius);
-            background: var(--surface);
-            border: 1px solid var(--border);
-            backdrop-filter: blur(20px);
-            transition: border-color 0.2s, transform 0.2s;
-            display: flex; flex-direction: column;
-        }
-        .card:hover { border-color: rgba(255,255,255,0.16); transform: translateY(-2px); }
-        .card-icon { font-size: 28px; margin-bottom: 12px; }
-        .card-title {
-            font-family: var(--font-d);
-            font-size: 15px; font-weight: 700;
-            color: var(--text); margin-bottom: 4px;
-        }
-        .card-role { font-size: 11px; color: var(--accent); margin-bottom: 10px; font-weight: 500; }
-        .card-desc { font-size: 13px; color: var(--muted); flex: 1; margin-bottom: 16px; line-height: 1.55; }
-        .card-link {
-            display: inline-flex; align-items: center; gap: 6px;
-            padding: 8px 14px; border-radius: 8px;
-            font-size: 12px; font-weight: 600;
-            color: var(--accent);
-            background: rgba(94, 234, 212, 0.08);
-            border: 1px solid rgba(94, 234, 212, 0.18);
-            text-decoration: none;
-            transition: background 0.15s;
-            align-self: flex-start;
-        }
-        .card-link:hover { background: rgba(94, 234, 212, 0.16); text-decoration: none; }
-        .card-link.secondary {
-            color: var(--muted);
-            background: rgba(139, 144, 161, 0.08);
-            border-color: rgba(139, 144, 161, 0.18);
-        }
-        .card-link.secondary:hover { background: rgba(139, 144, 161, 0.14); }
-
-        .control-box {
-            padding: 18px 22px;
-            border-radius: var(--radius);
-            background: var(--surface);
-            border: 1px solid var(--border);
-            margin-bottom: 12px;
-        }
-        .control-box h3 {
-            font-family: var(--font-d);
-            font-size: 14px; font-weight: 700;
-            color: var(--text); margin-bottom: 6px;
-        }
-        .control-box p { font-size: 13px; color: var(--muted); margin-bottom: 10px; }
-        .control-box code {
-            display: block;
-            padding: 10px 12px;
-            background: rgba(0, 0, 0, 0.35);
-            border-radius: 8px;
-            font-size: 11px;
-            word-break: break-all;
-            color: #c4c9d4;
-            border: 1px solid var(--border);
-            font-family: "SF Mono", "Fira Code", monospace;
-        }
-
-        footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--border); text-align: center; font-size: 12px; color: var(--muted); }
+        :root { --bg:#050508; --surface:rgba(18,20,28,0.85); --border:rgba(255,255,255,0.08); --text:#f0f2f8; --muted:#8b90a1; --accent:#5eead4; --amber:#fbbf24; --red:#f87171; --violet:#a78bfa; --font-d:"Syne",system-ui,sans-serif; --font-b:"DM Sans",system-ui,sans-serif; }
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body { font-family:var(--font-b); color:var(--text); min-height:100vh; background:var(--bg); }
+        .page-bg { position:fixed; inset:0; z-index:-1; background: radial-gradient(ellipse 100% 70% at 50% -25%, rgba(94,234,212,0.07), transparent 50%), radial-gradient(ellipse 50% 45% at 100% 10%, rgba(167,139,250,0.06), transparent 45%), linear-gradient(180deg,#0a0c12 0%,var(--bg) 100%); }
+        .container { max-width:1000px; margin:0 auto; padding:28px 20px 56px; }
+        header { background:linear-gradient(145deg,rgba(22,26,38,0.95),rgba(12,14,22,0.98)); border:1px solid rgba(255,255,255,0.1); border-radius:20px; padding:24px 28px; margin-bottom:24px; }
+        h1 { font-family:var(--font-d); font-size:1.8rem; font-weight:800; letter-spacing:-0.03em; background:linear-gradient(100deg,#fff 0%,#b8c0d4 100%); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+        .subtitle { color:var(--muted); font-size:14px; margin-top:8px; }
+        .badge { display:inline-block; padding:3px 10px; border-radius:999px; font-size:11px; font-weight:600; }
+        .badge-ok { background:rgba(52,211,153,0.12); color:var(--accent); border:1px solid rgba(52,211,153,0.25); }
+        .badge-run { background:rgba(94,234,212,0.1); color:var(--accent); border:1px solid rgba(94,234,212,0.25); }
+        .badge-warn { background:rgba(251,191,36,0.12); color:var(--amber); border:1px solid rgba(251,191,36,0.25); }
+        .nav-back { display:inline-flex; align-items:center; gap:8px; padding:10px 18px; border-radius:10px; font-size:13px; font-weight:600; color:var(--muted); background:rgba(139,144,161,0.08); border:1px solid rgba(139,144,161,0.15); text-decoration:none; margin-bottom:24px; }
+        .card { background:var(--surface); border:1px solid var(--border); border-radius:14px; padding:20px 24px; margin-bottom:16px; }
+        .card h3 { font-family:var(--font-d); font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:var(--accent); margin-bottom:14px; }
+        .card-link { display:inline-block; padding:8px 14px; border-radius:999px; font-weight:600; font-size:13px; color:var(--bg); background:linear-gradient(135deg,var(--accent),#2dd4bf); text-decoration:none; }
+        .card-link:hover { opacity:0.85; text-decoration:none; }
+        .opp-item { padding:10px 0; border-bottom:1px solid rgba(255,255,255,0.05); font-size:13px; }
+        .opp-item:last-child { border-bottom:none; }
+        .opp-domain { display:inline-block; padding:2px 8px; border-radius:999px; font-size:10px; font-weight:700; background:rgba(94,234,212,0.1); color:var(--accent); margin-right:8px; }
+        footer { text-align:center; padding:32px 24px; font-size:12px; color:var(--muted); border-top:1px solid var(--border); margin-top:40px; }
     </style>
 </head>
 <body>
-    <div class="page-bg"></div>
-    <div class="container">
-
-        <a href="https://kaji-hemopo.github.io/telemetry/empire-home.html" class="nav-back">← Empire Home</a>
-
-        <header class="hero">
-            <div class="eyebrow">🐕 Odie · Board Member</div>
-            <h1>Protect the Pack</h1>
-            <p class="subtitle">Investor & critical overseer. Protects Jackson's investment — time, income, visa, health, trajectory. Not a yes-man.</p>
-            <div class="status-strip">
-                <span class="status-pill pill-paused">⏸ Ideation PAUSED</span>
-                <span class="status-pill pill-active">🔥 TradePass MVP Shipped</span>
-            </div>
-            <div style="margin-top:14px;">
-                <span class="timestamp" id="ts">Loading...</span>
-            </div>
-        </header>
-
-        <!-- Current Project -->
-        <div class="section-title"><span class="dot"></span>Current Project</div>
-        <div class="card-grid">
-            <div class="card">
-                <div class="card-icon">⚡</div>
-                <div class="card-title">TradePass MVP</div>
-                <div class="card-role">NZ EWRB Electrician Exam Prep</div>
-                <p class="card-desc">SM-2 spaced repetition for NZ EWRB electrical exam prep. FastAPI + Streamlit stack. Supabase-ready. MVP shipped and live.</p>
-                <a href="https://github.com/kaji-hemopo/tradepass" class="card-link" target="_blank">View GitHub Repo →</a>
-            </div>
+<div class="page-bg"></div>
+<div class="container">
+    <a href="https://kaji-hemopo.github.io/telemetry/empire-home.html" class="nav-back">← Empire Home</a>
+    <header>
+        <div style="font-size:11px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:var(--accent); margin-bottom:10px;">Odie · Board Member</div>
+        <h1>Opportunity Scout &amp; TradePass</h1>
+        <p class="subtitle">Finds real problems worth solving · Builds TradePass trading journal. Jax reviews the radar when he wants — no pings.</p>
+        <div style="margin-top:12px;">
+            <span class="badge badge-run">🎯 Opportunity Radar Active · 2hr cycles</span>
+            <span class="badge badge-ok">⚡ TradePass MVP Building</span>
         </div>
+    </header>
 
-        <!-- Controls -->
-        <div class="section-title"><span class="dot"></span>Controls</div>
-
-        <div class="control-box">
-            <h3>Pause Heartbeat</h3>
-            <p>Stop the 20-min ideation cron until re-enabled.</p>
-            <code>openclaw cron pause 48cd209a</code>
-        </div>
-
-        <div class="control-box">
-            <h3>Resume Heartbeat</h3>
-            <p>Re-enable the 20-min ideation cron after Jackson picks a vertical.</p>
-            <code>openclaw cron resume 48cd209a</code>
-        </div>
-
-        <div class="control-box">
-            <h3>Fire Manual Scan</h3>
-            <p>Trigger a manual ideas scan outside the cron schedule.</p>
-            <code>openclaw cron fire 48cd209a</code>
-        </div>
-
-        <!-- Key Links -->
-        <div class="section-title"><span class="dot"></span>Key Links</div>
-        <div class="card-grid">
-            <div class="card">
-                <div class="card-icon">💻</div>
-                <div class="card-title">TradePass GitHub</div>
-                <div class="card-role">github.com/kaji-hemopo/tradepass</div>
-                <p class="card-desc">Full TradePass repo — FastAPI backend, Streamlit frontend, SM-2 engine, exam simulation mode.</p>
-                <a href="https://github.com/kaji-hemopo/tradepass" class="card-link" target="_blank">Open Repo →</a>
-            </div>
-            <div class="card">
-                <div class="card-icon">💡</div>
-                <div class="card-title">Ideas Folder</div>
-                <div class="card-role">10 ideas documented</div>
-                <p class="card-desc">IDEA 1–10 scoped and ranked. Ideas folder on desktop at ~/Desktop/workspace-odie/ideas/. Waiting on Jackson to pick verticals.</p>
-                <a href="https://github.com/kaji-hemopo/tradepass" class="card-link secondary" target="_blank">View Ideas →</a>
-            </div>
-            <div class="card">
-                <div class="card-icon">🏠</div>
-                <div class="card-title">Empire Home</div>
-                <div class="card-role">Back to main hub</div>
-                <p class="card-desc">Return to the Hemopo Empire Command Center to access all agent dashboards.</p>
-                <a href="https://kaji-hemopo.github.io/telemetry/empire-home.html" class="card-link secondary">Open Empire Home →</a>
-            </div>
-        </div>
-
-        <!-- Heartbeat Status -->
-        <div class="section-title"><span class="dot"></span>Heartbeat Status</div>
-        <div class="card-grid">
-            <div class="card">
-                <div class="card-icon">⏱</div>
-                <div class="card-title">20-min Cron · 48cd209a</div>
-                <div class="card-role">Mode: PAUSED</div>
-                <p class="card-desc">Ideation cycle complete. IDEA 1–10 documented and ranked. Heartbeat paused pending Jackson's decision on which vertical(s) to build. All crons fire normally; heartbeat checks mode before doing work.</p>
-                <span class="status-pill pill-paused">⏸ Ideation PAUSED</span>
-            </div>
-        </div>
-
-        <footer>
-            <p>Odie · Board Member / Investor · <a href="https://kaji-hemopo.github.io/telemetry/empire-home.html" style="color: var(--accent);">Empire Home</a></p>
-        </footer>
+    <div class="card">
+        <h3>🎯 Opportunity Radar — Latest Finds</h3>
+        <div id="radarContent" style="color:var(--muted); font-size:13px;">Loading radar...</div>
     </div>
 
-    <script>
-        document.getElementById('ts').textContent = 'Updated: ' + new Date().toLocaleString('en-US', { timeZone: 'Asia/Tokyo', hour12: false }) + ' JST';
-    </script>
+    <div class="card">
+        <h3>⚡ TradePass · Trading Journal MVP</h3>
+        <p style="color:var(--muted); font-size:13px; margin-bottom:12px;">FastAPI + React trading journal. Logs trades, reads market data, provides insights. Hosted on Railway.</p>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:12px;">
+            <div style="padding:10px; background:rgba(0,0,0,0.2); border-radius:8px; border:1px solid rgba(255,255,255,0.05);">
+                <div style="font-size:11px; color:var(--accent); font-weight:700; margin-bottom:4px;">Backend</div>
+                <div style="font-size:12px; color:var(--muted);">FastAPI · Python · SQLite/PostgreSQL</div>
+            </div>
+            <div style="padding:10px; background:rgba(0,0,0,0.2); border-radius:8px; border:1px solid rgba(255,255,255,0.05);">
+                <div style="font-size:11px; color:var(--accent); font-weight:700; margin-bottom:4px;">Frontend</div>
+                <div style="font-size:12px; color:var(--muted);">Vite/React</div>
+            </div>
+            <div style="padding:10px; background:rgba(0,0,0,0.2); border-radius:8px; border:1px solid rgba(255,255,255,0.05);">
+                <div style="font-size:11px; color:var(--accent); font-weight:700; margin-bottom:4px;">Data</div>
+                <div style="font-size:12px; color:var(--muted);">yfinance · live market data</div>
+            </div>
+            <div style="padding:10px; background:rgba(0,0,0,0.2); border-radius:8px; border:1px solid rgba(255,255,255,0.05);">
+                <div style="font-size:11px; color:var(--accent); font-weight:700; margin-bottom:4px;">Host</div>
+                <div style="font-size:12px; color:var(--muted);">Railway</div>
+            </div>
+        </div>
+        <a href="https://github.com/kaji-hemopo/tradepass" class="card-link" target="_blank">View GitHub Repo →</a>
+    </div>
+
+    <div class="card">
+        <h3>🔗 Quick Links</h3>
+        <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:10px;">
+            <a href="https://kaji-hemopo.github.io/telemetry/empire-home.html" style="color:var(--accent); font-size:13px; font-weight:600;">🏠 Empire Home</a>
+            <a href="https://kaji-hemopo.github.io/telemetry/kaji/" style="color:var(--accent); font-size:13px; font-weight:600;">🧭 Kaji Dashboard</a>
+            <a href="https://github.com/kaji-hemopo/tradepass" style="color:var(--accent); font-size:13px; font-weight:600;" target="_blank">📂 TradePass Repo</a>
+        </div>
+    </div>
+
+    <footer>
+        Odie · Opportunity Scout · Radar cycles every 2h · <a href="https://kaji-hemopo.github.io/telemetry/empire-home.html" style="color:var(--accent);">Empire Home</a>
+    </footer>
+</div>
+<script>
+async function loadRadar() {
+    const el = document.getElementById('radarContent');
+    try {
+        const res = await fetch('../outputs/odie_opportunity_radar.md?t=' + Date.now());
+        if (!res.ok) { el.innerHTML = 'Radar file not found yet — next cycle will produce it.'; return; }
+        const md = await res.text();
+        // Simple render: just show top 5 opportunities
+        const lines = md.split('\n').filter(l => l.match(/^\*\*[0-9]+\*\*/));
+        if (lines.length === 0) { el.innerHTML = 'No opportunities yet this cycle.'; return; }
+        el.innerHTML = '<div style="padding:8px 0;">' + lines.slice(0, 5).map(l => '<div class="opp-item">' + l.replace(/^\*\*[0-9]+\*\*/, '•') + '</div>').join('') + '</div>';
+    } catch(e) { el.innerHTML = 'Could not load radar: ' + e.message; }
+}
+loadRadar();
+</script>
 </body>
 </html>
