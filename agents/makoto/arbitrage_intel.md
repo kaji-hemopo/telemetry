@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-22 20:26 JST
+Generated: 2026-04-22 22:05 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -53,12 +53,11 @@ Generated: 2026-04-22 20:26 JST
 | Score | Platform | Keyword | Title | Budget/Rate | URL |
 |---:|---|---|---|---|---|
 | 85 | Freelancer | Python scraper | Senior Trading Bot Developer (IBKR Required) &mdash; Fix or Rebui | $750.00 | https://www.freelancer.com/projects/php/Senior-Trading-Bot-Developer-IBKR.html |
-| 85 | Freelancer | Make.com automation | Automated WordPress Intake Rebuild | $1,500.00 | https://www.freelancer.com/projects/zapier/Automated-WordPress-Intake-Rebuild.html |
 | 75 | Freelancer | Python scraper | Law360 PDF Data Extraction | $250.00 | https://www.freelancer.com/projects/data-extraction/Law-PDF-Data-Extraction.html |
-| 75 | Freelancer | Python scraper | Sales Freelancer for ML &amp; Python Projects | $250.00 | https://www.freelancer.com/projects/python/Sales-Freelancer-for-Python-Projects.html |
-| 75 | Freelancer | Python scraper | Responsive Website Development by Full Stack Expert | $250.00 | https://www.freelancer.com/projects/javascript/Responsive-Website-Development-Full.html |
-| 75 | Freelancer | Data processing API | PDF-to-Excel Data Entry | $250.00 | https://www.freelancer.com/projects/data-extraction/PDF-Excel-Data-Entry-40390063.html |
-| 75 | Freelancer | Data processing API | Asset Service Mobile App | $250.00 | https://www.freelancer.com/projects/flutter/Asset-Service-Mobile-App.html |
+| 75 | Freelancer | Make.com automation | Comprehensive Pipedrive CRM &amp; AI System Setup | $250.00 | https://www.freelancer.com/projects/ai-development/Comprehensive-Pipedrive-CRM-System-Setup.html |
+| 75 | Freelancer | Make.com automation | Sales Freelancer for ML &amp; Python Projects | $250.00 | https://www.freelancer.com/projects/python/Sales-Freelancer-for-Python-Projects.html |
+| 65 | Freelancer | Python scraper | Trading Algo &ndash; Automated Crypto Trading System (Binance Tes | $30.00 | https://www.freelancer.com/projects/binance/Trading-Algo-Automated-Crypto-Trading.html |
+| 65 | Freelancer | Python scraper | Azure VAPT &amp; Infrastructure Hardening | required experienced professionals with strong expertise in VAPT patching and se | https://www.freelancer.com/projects/azure/Azure-VAPT-Infrastructure-Hardening.html |
 | 65 | Freelancer | Python scraper | WhatsApp Logistics Support Chatbot | I need a production-ready WhatsApp chatbot that becomes the first line of custom | https://www.freelancer.com/projects/chatbot/WhatsApp-Logistics-Support-Chatbot.html |
 | 65 | Freelancer | Python scraper | Daily Walmart.ca Product Scraper | $10.00 | https://www.freelancer.com/projects/scrapy/Daily-Walmart-Product-Scraper.html |
 | 65 | Freelancer | Python scraper | Crawler de Odds Futuro Futebol | $30.00 | https://www.freelancer.com/projects/web-scraping/Crawler-Odds-Futuro-Futebol.html |
@@ -68,10 +67,11 @@ Generated: 2026-04-22 20:26 JST
 | 65 | Freelancer | Python scraper | Amazon.in Script to Detect Brands Offering &ldquo;Free Gift with  | I am looking for a Python developer to build a script that identifies brands on  | https://www.freelancer.com/projects/data-extraction/Amazon-Script-Detect-Brands-Offering-40389557.html |
 | 65 | Freelancer | Python scraper | Instagram Downloader Website Build | I want to launch a fully-featured Instagram reel, post and story downloader that | https://www.freelancer.com/projects/web-development/Instagram-Downloader-Website-Build.html |
 | 65 | Freelancer | Python scraper | Scalable Gardener Booking System Development | ## Tech Development – Gardener Booking Platform (MVP) ### Project Overview We ar | https://www.freelancer.com/projects/api-developmet/Scalable-Gardener-Booking-System.html |
-| 65 | Freelancer | Python scraper | Daily Python Web Scraper | I need a python code to run everyday that scrapes a website. (Budget: ₹1500 - ₹1 | https://www.freelancer.com/projects/data-extraction/Daily-Python-Web-Scraper.html |
 | 65 | Freelancer | Make.com automation | Setup WhatsApp Business API | FREELANCER REQUIREMENT — ONE-TIME SETUP TASK HIRELAB Meta WhatsApp Business API  | https://www.freelancer.com/projects/api/Setup-WhatsApp-Business-API-40390079.html |
 | 65 | Freelancer | Make.com automation | Simplify Angular 20 Navigation UX | Job Description: We are seeking a world-class UI/UX Architect and Designer to ad | https://www.freelancer.com/projects/ui-design/Simplify-Angular-Navigation.html |
 | 65 | Freelancer | Make.com automation | Saree brand - WhatsApp broadcast Automation | WhatsApp Marketing &amp; Automation Specialist We are looking for an experienced | https://www.freelancer.com/projects/automation/Saree-brand-WhatsApp-broadcast.html |
+| 65 | Freelancer | Make.com automation | WhatsApp Business&ndash;Facebook Integration | I need my existing Facebook presence fully connected to my WhatsApp Business acc | https://www.freelancer.com/projects/api/WhatsApp-Business-Facebook-Integration.html |
+| 65 | Freelancer | Make.com automation | Job Application Workflow Automation | $30.00 | https://www.freelancer.com/projects/automation/Job-Application-Workflow-Automation.html |
 
 ## Notes
 - Scores prioritize: (1) simple automation/scripting fit, (2) payout magnitude, (3) keyword relevance.
