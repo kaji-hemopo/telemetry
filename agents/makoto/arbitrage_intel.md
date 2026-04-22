@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-22 10:39 JST
+Generated: 2026-04-22 12:45 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -54,12 +54,13 @@ Generated: 2026-04-22 10:39 JST
 |---:|---|---|---|---|---|
 | 85 | Freelancer | Python scraper | Python Developer for Astronomical Data Engine | $350.00 | https://www.freelancer.com/projects/backend-development/Python-Developer-for-Astronomical-Data.html |
 | 85 | Freelancer | Make.com automation | Automated WordPress Intake Rebuild | $1,500.00 | https://www.freelancer.com/projects/zapier/Automated-WordPress-Intake-Rebuild.html |
-| 85 | Freelancer | Make.com automation | Fusion 360 Batch Rendering Plugin | $3,000.00 | https://www.freelancer.com/projects/rendering/Fusion-Batch-Rendering-Plugin.html |
+| 75 | Freelancer | Python scraper | Responsive Website Development by Full Stack Expert | $250.00 | https://www.freelancer.com/projects/javascript/Responsive-Website-Development-Full.html |
 | 75 | Freelancer | Python scraper | Social Media Account Creation System | $250.00 | https://www.freelancer.com/projects/social-media-management/Social-Media-Account-Creation-System.html |
 | 75 | Freelancer | Make.com automation | Email Automation Setup Guidance | $250.00 | https://www.freelancer.com/projects/automation/Email-Automation-Setup-Guidance.html |
 | 75 | Freelancer | Make.com automation | SolidWorks Expert for Automated Pizza Kiosk | $250.00 | https://www.freelancer.com/projects/cnc/SolidWorks-Expert-for-Automated-Pizza.html |
 | 75 | Freelancer | Make.com automation | AI Email Sales Automation Suite | $250.00 | https://www.freelancer.com/projects/ai-chatbot-development/Email-Sales-Automation-Suite.html |
 | 75 | Freelancer | Make.com automation | Comprehensive Audit for Inventory &amp; POS Systems | $250.00 | https://www.freelancer.com/projects/inventory-management/Comprehensive-Audit-for-Inventory-POS.html |
+| 65 | Freelancer | Python scraper | Sharekhan Trade Tiger API Developer | I need an experienced developer to integrate the Sharekhan Trade Tiger API. The  | https://www.freelancer.com/projects/api-developmet/Sharekhan-Trade-Tiger-API-Developer.html |
 | 65 | Freelancer | Python scraper | Analisis Kebijakan dan Tren Sosial | $30.00 | https://www.freelancer.com/projects/data-analysis/Analisis-Kebijakan-dan-Tren-Sosial.html |
 | 65 | Freelancer | Python scraper | Paperclip AI SEO Automation Setup -- 3 | I need an AI/ML specialist to turn my current SEO idea into a fully automated, a | https://www.freelancer.com/projects/machine-learning/Paperclip-SEO-Automation-Setup-40388822.html |
 | 65 | Freelancer | Python scraper | Paperclip AI SEO Automation Setup -- 2 | I need an AI/ML specialist to turn my current SEO idea into a fully automated, a | https://www.freelancer.com/projects/php/Paperclip-SEO-Automation-Setup.html |
@@ -70,8 +71,7 @@ Generated: 2026-04-22 10:39 JST
 | 65 | Freelancer | Python scraper | &ldquo;AIIGr Automated Recon Engine &ndash; Packaging, Optimizati | $30.00 | https://www.freelancer.com/projects/automation/AIIGr-Automated-Recon-Engine-Packaging.html |
 | 65 | Freelancer | Python scraper | Precise OCR Developer for Poker Video | OCR System for Live Poker Video — Master's Research Project I'm looking for an e | https://www.freelancer.com/projects/optical-character-recognition/Precise-OCR-Developer-for-Poker.html |
 | 65 | Freelancer | Python scraper | Build Fully Automated AI Poster Generation System (Prompt &rarr;  | Project Title: Build Fully Automated AI Poster Generation System (Prompt → Image | https://www.freelancer.com/projects/automation/Build-Fully-Automated-Poster-Generation.html |
-| 65 | Freelancer | Python scraper | WhatsApp Message Extraction to CSV | $8.00 | https://www.freelancer.com/projects/nodejs/WhatsApp-Message-Extraction-CSV.html |
-| 65 | Freelancer | Python scraper | Backend Coding Interview Service | I am setting up a steady pipeline of hiring rounds and need a seasoned backend s | https://www.freelancer.com/projects/backend-development/Backend-Coding-Interview-Service.html |
+| 65 | Freelancer | Make.com automation | AI &amp; ML Engineer Needed for Smart Automation and Custom Chatb | $30.00 | https://www.freelancer.com/projects/ai-chatbot-development/Engineer-Needed-for-Smart-Automation.html |
 
 ## Notes
 - Scores prioritize: (1) simple automation/scripting fit, (2) payout magnitude, (3) keyword relevance.
