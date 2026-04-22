@@ -74,11 +74,11 @@
     <header>
         <div class="header-left">
             <h1>Kaji · COO Dashboard</h1>
-            <p style="color:var(--muted);font-size:14px;max-width:52ch;">Beat 722 · Tidy Operations ✅ · ~01:56 JST Thu Apr 23 · Ito pipeline FRESH (venture 01:17 · brent_alert 01:22 · gold_oracle 01:22) ✅ · All 5 OpenClaw crons RUNNING ✅ · Crontab 2 active (Ito + Makoto) ✅ · Titan DISABLED PARKED (known) · Felix PARKED (known) · Gold Oracle Brent corrected $92.77 ✅ · next: Improve Existing (Beat 723 · IE=1 rung4)</p>
+            <p style="color:var(--muted);font-size:14px;max-width:52ch;">Beat 723 · Delegation Prep ✅ · ~02:16 JST Thu Apr 23 · Delegation queue refreshed (Titan 146.5h breach · EMB 210h · Felix 206.5h · Makoto GBP 31d+) · All pipelines operational ✅ · Titan ENFORCED PARKED · Felix PARKED · EMB v3 + GBP + Felix Gmail awaiting Jax action · next: Empire Audit (Beat 724 · EA=1 rung3)</p>
         </div>
         <div class="header-right">
-            <div class="role-tag" style="background:rgba(34,211,238,0.12);color:#22d3ee;border:1px solid rgba(34,211,238,0.25);">Beat 722 · TIDY OPERATIONS ✅ · ~01:56 JST</div>
-            <div class="updated">Updated: <span id="ts">Loading…</span> JST · <strong style="color:#22d3ee;">Beat 722 · Tidy Operations ✅</strong> — Ito pipeline FRESH (venture 01:17 · brent_alert 01:22 · gold_oracle 01:22) ✅ · All 5 OpenClaw crons RUNNING ✅ · Crontab 2 active (Ito + Makoto) ✅ · <strong style="color:#4ade80;">Gold Oracle Brent corrected $92.77 ✅</strong> · next: Improve Existing (Beat 723 · IE=1 rung4)</div>
+            <div class="role-tag" style="background:rgba(34,211,238,0.12);color:#22d3ee;border:1px solid rgba(34,211,238,0.25);">Beat 723 · DELEGATION PREP ✅ · ~02:16 JST</div>
+            <div class="updated">Updated: <span id="ts">Loading…</span> JST · <strong style="color:#22d3ee;">Beat 723 · Delegation Prep ✅</strong> — Delegation queue refreshed ✅ · Titan 146.5h breach (~74.5h over) · EMB 210h stale · Felix 206.5h stale · All pipelines operational ✅ · Titan ENFORCED PARKED · next: Empire Audit (Beat 724 · EA=1 rung3)</div>
         </div>
     </header>
 
@@ -120,12 +120,12 @@
             <div style="background:rgba(0,0,0,0.3);border-radius:10px;padding:10px 14px;border:1px solid rgba(248,113,113,0.5);">
                 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:5px;">
                     <span style="font-size:12.5px;font-weight:600;">🏋️ Titan ENFORCED — 72h threshold PAST</span>
-                    <span style="font-size:11px;color:#f87171;font-weight:700;">~117h · 162% 🚨 PAST</span>
+                    <span style="font-size:11px;color:#f87171;font-weight:700;">~146.5h · 203% 🚨 PAST</span>
                 </div>
                 <div style="background:rgba(255,255,255,0.08);border-radius:6px;height:8px;overflow:hidden;">
                     <div style="width:100%;height:100%;background:linear-gradient(90deg,#f87171,#dc2626);border-radius:6px;"></div>
                 </div>
-                <div style="font-size:10.5px;color:var(--dim);margin-top:4px;">🚨 72H BREACHED (~45h over) · "go Titan" or "Acknowledge" to re-activate</div>
+                <div style="font-size:10.5px;color:var(--dim);margin-top:4px;">🚨 72H BREACHED (~74.5h over) · "go Titan" or "Acknowledge" to re-activate</div>
             </div>
         </div>
     </div>
@@ -138,10 +138,10 @@
             <div style="background:rgba(0,0,0,0.3);border-radius:10px;padding:10px 14px;border:1px solid rgba(255,255,255,0.05);">
                 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:5px;">
                     <span style="font-size:12px;font-weight:600;">🛢️ Brent Crude</span>
-                    <span style="font-size:11px;color:#4ade80;font-weight:700;">$94.39 ✅ ↓</span>
+                    <span style="font-size:11px;color:#4ade80;font-weight:700;">$92.77 ✅ ↓</span>
                 </div>
                 <div style="background:rgba(255,255,255,0.08);border-radius:6px;height:8px;overflow:hidden;margin-bottom:5px;">
-                    <div style="width:94.39%;height:100%;background:linear-gradient(90deg,#4ade80,#22d3ee);border-radius:6px;"></div>
+                    <div style="width:92.77%;height:100%;background:linear-gradient(90deg,#4ade80,#22d3ee);border-radius:6px;"></div>
                 </div>
                 <div style="font-size:10.5px;color:#4ade80;">✅ Below $100 binary threshold — dropping</div>
                 <div style="font-size:10px;color:var(--dim);margin-top:3px;">Northwood Day 2 outcome signals expected TODAY · military vs talk</div>
@@ -372,7 +372,7 @@
 
     <!-- CRON TABLE -->
     <div class="card full" style="margin-bottom:20px;">
-        <h3><span class="material-symbols-outlined">schedule</span> Cron Health — Beat 721 EA 🚨 · ~01:36 JST Thu Apr 23</h3>
+        <h3><span class="material-symbols-outlined">schedule</span> Cron Health — Beat 723 DP ✅ · ~02:16 JST Thu Apr 23</h3>
         <table class="cron-table">
             <thead>
                 <tr>
@@ -434,7 +434,7 @@
 const CEASEFIRE_TARGET=Date.UTC(2026,3,21,14,52,0);const CLARITY_TARGET=Date.UTC(2026,3,25,14,0,0);function formatCd(d){if(d<=0)return"⛔ EXPIRED";const h=Math.floor(d/36e5),m=Math.floor(d%36e5/6e4),s=Math.floor(d%6e4/1e3);return`${h}h ${m.toString().padStart(2,"0")}m ${s.toString().padStart(2,"0")}s`}function cdColor(d){return d<=0?"#f87171":d<3.6e6?"#f87171":d<7.2e6?"#fbbf24":"#4ade80"}function fmtClarity(d){if(d<=0)return"⛔ PASSED";const h=Math.floor(d/36e5),m=Math.floor(d%36e5/6e4);return`${h}h ${m.toString().padStart(2,"0")}m`}function updateTime(){const e=new Date(),t=e.toLocaleString("en-US",{timeZone:"Asia/Tokyo",hour:"2-digit",minute:"2-digit",second:"2-digit",hour12:!1});document.getElementById("ts").textContent=t;const n=e.getTime(),d=CEASEFIRE_TARGET-n;["ito-cd","hdr-cd","hdr-cd2","agent-cd","ie-cd"].forEach(id=>{const el=document.getElementById(id);if(el){el.textContent=formatCd(d);el.style.color=cdColor(d)}});const c=CLARITY_TARGET-n;["clarity-cd","clarity-cd2","clarity-cd3"].forEach(id=>{const el=document.getElementById(id);if(el){el.textContent=fmtClarity(c);el.style.color=c<=0?"#f87171":c<864e5?"#fbbf24":"#4ade80"}})}updateTime(),setInterval(updateTime,1e3);
 </script>
 <footer>
-    Kaji COO · <a href="https://kaji-hemopo.github.io/telemetry/empire-home.html" target="_blank">Live Empire</a> · <strong style="color:#22d3ee;">Beat 722 · Tidy Operations ✅</strong> · ~01:56 JST Thu Apr 23 · Ito pipeline FRESH ✅ · All 5 OpenClaw crons RUNNING ✅ · Crontab 2 active (Ito + Makoto) ✅ · Gold Oracle Brent corrected $92.77 ✅ · next: Improve Existing (Beat 723 · IE=1 rung4)
+    Kaji COO · <a href="https://kaji-hemopo.github.io/telemetry/empire-home.html" target="_blank">Live Empire</a> · <strong style="color:#22d3ee;">Beat 723 · Delegation Prep ✅</strong> · ~02:16 JST Thu Apr 23 · Delegation queue refreshed ✅ · Titan 146.5h breach (~74.5h over) · EMB 210h stale · Felix 206.5h stale · All pipelines operational ✅ · next: Empire Audit (Beat 724 · EA=1 rung3)
 </footer>
 </body>
 </html>
