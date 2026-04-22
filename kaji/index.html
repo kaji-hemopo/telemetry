@@ -74,11 +74,11 @@
     <header>
         <div class="header-left">
             <h1>Kaji · COO Dashboard</h1>
-            <p style="color:var(--muted);font-size:14px;max-width:52ch;">Beat 721 · Empire Audit 🚨 · ~01:36 JST Thu Apr 23 · Ito pipeline FRESH (venture 01:17 · brent_alert 01:22 · gold_oracle 01:22) ✅ · All 5 OpenClaw crons RUNNING ✅ · Makoto MEMORY.md FRESH ✅ · Crontab 2 active (Ito + Makoto) ✅ · Titan DISABLED PARKED (known) · Felix PARKED (known) · next: Tidy Operations (Beat 722 · TO=1 rung5 fallback)</p>
+            <p style="color:var(--muted);font-size:14px;max-width:52ch;">Beat 722 · Tidy Operations ✅ · ~01:56 JST Thu Apr 23 · Ito pipeline FRESH (venture 01:17 · brent_alert 01:22 · gold_oracle 01:22) ✅ · All 5 OpenClaw crons RUNNING ✅ · Crontab 2 active (Ito + Makoto) ✅ · Titan DISABLED PARKED (known) · Felix PARKED (known) · Gold Oracle Brent corrected $92.77 ✅ · next: Improve Existing (Beat 723 · IE=1 rung4)</p>
         </div>
         <div class="header-right">
-            <div class="role-tag" style="background:rgba(248,113,113,0.12);color:#f87171;border:1px solid rgba(248,113,113,0.25);">Beat 721 · EMPIRE AUDIT 🚨 · ~01:36 JST</div>
-            <div class="updated">Updated: <span id="ts">Loading…</span> JST · <strong style="color:#f87171;">Beat 721 · Empire Audit 🚨</strong> — Ito pipeline FRESH (venture 01:17 · brent_alert 01:22 · gold_oracle 01:22) ✅ · All 5 OpenClaw crons RUNNING ✅ · Makoto MEMORY.md FRESH ✅ · <strong style="color:#4ade80;">next: Tidy Operations (Beat 722 · TO=1 rung5 fallback)</strong></div>
+            <div class="role-tag" style="background:rgba(34,211,238,0.12);color:#22d3ee;border:1px solid rgba(34,211,238,0.25);">Beat 722 · TIDY OPERATIONS ✅ · ~01:56 JST</div>
+            <div class="updated">Updated: <span id="ts">Loading…</span> JST · <strong style="color:#22d3ee;">Beat 722 · Tidy Operations ✅</strong> — Ito pipeline FRESH (venture 01:17 · brent_alert 01:22 · gold_oracle 01:22) ✅ · All 5 OpenClaw crons RUNNING ✅ · Crontab 2 active (Ito + Makoto) ✅ · <strong style="color:#4ade80;">Gold Oracle Brent corrected $92.77 ✅</strong> · next: Improve Existing (Beat 723 · IE=1 rung4)</div>
         </div>
     </header>
 
@@ -417,7 +417,7 @@
                     <td class="cron-sched">every 2h</td>
                     <td style="font-size:10px;color:var(--dim);">fe1056a4</td>
                     <td>~01:22 JST (~14m ago)</td>
-                    <td><span class="badge badge-ok">✅ ok · Brent $101.87 ⚠️ above $100 · gold $4748 ✅</span></td>
+                    <td><span class="badge badge-ok">✅ ok · Brent $92.77 ✅ below $100 · gold $4748 ✅</span></td>
                 </tr>
             </tbody>
         </table>
@@ -434,7 +434,7 @@
 const CEASEFIRE_TARGET=Date.UTC(2026,3,21,14,52,0);const CLARITY_TARGET=Date.UTC(2026,3,25,14,0,0);function formatCd(d){if(d<=0)return"⛔ EXPIRED";const h=Math.floor(d/36e5),m=Math.floor(d%36e5/6e4),s=Math.floor(d%6e4/1e3);return`${h}h ${m.toString().padStart(2,"0")}m ${s.toString().padStart(2,"0")}s`}function cdColor(d){return d<=0?"#f87171":d<3.6e6?"#f87171":d<7.2e6?"#fbbf24":"#4ade80"}function fmtClarity(d){if(d<=0)return"⛔ PASSED";const h=Math.floor(d/36e5),m=Math.floor(d%36e5/6e4);return`${h}h ${m.toString().padStart(2,"0")}m`}function updateTime(){const e=new Date(),t=e.toLocaleString("en-US",{timeZone:"Asia/Tokyo",hour:"2-digit",minute:"2-digit",second:"2-digit",hour12:!1});document.getElementById("ts").textContent=t;const n=e.getTime(),d=CEASEFIRE_TARGET-n;["ito-cd","hdr-cd","hdr-cd2","agent-cd","ie-cd"].forEach(id=>{const el=document.getElementById(id);if(el){el.textContent=formatCd(d);el.style.color=cdColor(d)}});const c=CLARITY_TARGET-n;["clarity-cd","clarity-cd2","clarity-cd3"].forEach(id=>{const el=document.getElementById(id);if(el){el.textContent=fmtClarity(c);el.style.color=c<=0?"#f87171":c<864e5?"#fbbf24":"#4ade80"}})}updateTime(),setInterval(updateTime,1e3);
 </script>
 <footer>
-    Kaji COO · <a href="https://kaji-hemopo.github.io/telemetry/empire-home.html" target="_blank">Live Empire</a> · <strong style="color:#f87171;">Beat 721 · Empire Audit 🚨</strong> · ~01:36 JST Thu Apr 23 · Ito pipeline FRESH (venture 01:17 · brent_alert 01:22 · gold_oracle 01:22) ✅ · All 5 OpenClaw crons RUNNING ✅ · Makoto MEMORY.md FRESH ✅ · crontab 2 active (Ito + Makoto) ✅ · next: Tidy Operations (Beat 722 · TO=1 rung5 fallback)
+    Kaji COO · <a href="https://kaji-hemopo.github.io/telemetry/empire-home.html" target="_blank">Live Empire</a> · <strong style="color:#22d3ee;">Beat 722 · Tidy Operations ✅</strong> · ~01:56 JST Thu Apr 23 · Ito pipeline FRESH ✅ · All 5 OpenClaw crons RUNNING ✅ · Crontab 2 active (Ito + Makoto) ✅ · Gold Oracle Brent corrected $92.77 ✅ · next: Improve Existing (Beat 723 · IE=1 rung4)
 </footer>
 </body>
 </html>
