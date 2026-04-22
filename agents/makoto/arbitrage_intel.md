@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-22 16:03 JST
+Generated: 2026-04-22 17:04 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -57,10 +57,7 @@ Generated: 2026-04-22 16:03 JST
 | 85 | Freelancer | Make.com automation | Automated WordPress Intake Rebuild | $1,500.00 | https://www.freelancer.com/projects/zapier/Automated-WordPress-Intake-Rebuild.html |
 | 75 | Freelancer | Python scraper | Sales Freelancer for ML &amp; Python Projects | $250.00 | https://www.freelancer.com/projects/python/Sales-Freelancer-for-Python-Projects.html |
 | 75 | Freelancer | Python scraper | Responsive Website Development by Full Stack Expert | $250.00 | https://www.freelancer.com/projects/javascript/Responsive-Website-Development-Full.html |
-| 75 | Freelancer | Make.com automation | Email Automation Setup Guidance | $250.00 | https://www.freelancer.com/projects/automation/Email-Automation-Setup-Guidance.html |
-| 75 | Freelancer | Make.com automation | SolidWorks Expert for Automated Pizza Kiosk | $250.00 | https://www.freelancer.com/projects/cnc/SolidWorks-Expert-for-Automated-Pizza.html |
-| 75 | Freelancer | Make.com automation | AI Email Sales Automation Suite | $250.00 | https://www.freelancer.com/projects/ai-chatbot-development/Email-Sales-Automation-Suite.html |
-| 75 | Freelancer | Data processing API | Excel Template for Visitor Data | $250.00 | https://www.freelancer.com/projects/excel-macros/Excel-Template-for-Visitor-Data.html |
+| 65 | Freelancer | Python scraper | AI Engineer Required for LLMs and AI Tools (12 weeks) | Looking for an AI Engineer who can work hands-on with LLMs and AI coding tools t | https://www.freelancer.com/projects/ai-development/Engineer-Required-for-LLMs-Tools.html |
 | 65 | Freelancer | Python scraper | Python Web Scraper for Products | I need a clean, well-documented Python solution that automatically visits the e- | https://www.freelancer.com/projects/beautifulsoup/Python-Web-Scraper-for-Products-40389561.html |
 | 65 | Freelancer | Python scraper | Amazon.in Script to Detect Brands Offering &ldquo;Free Gift with  | I am looking for a Python developer to build a script that identifies brands on  | https://www.freelancer.com/projects/data-extraction/Amazon-Script-Detect-Brands-Offering-40389557.html |
 | 65 | Freelancer | Python scraper | Instagram Downloader Website Build | I want to launch a fully-featured Instagram reel, post and story downloader that | https://www.freelancer.com/projects/web-development/Instagram-Downloader-Website-Build.html |
@@ -72,6 +69,9 @@ Generated: 2026-04-22 16:03 JST
 | 65 | Freelancer | Python scraper | Paperclip AI SEO Automation Setup -- 2 | I need an AI/ML specialist to turn my current SEO idea into a fully automated, a | https://www.freelancer.com/projects/php/Paperclip-SEO-Automation-Setup.html |
 | 65 | Freelancer | Python scraper | Paperclip AI SEO Automation Setup | I need an AI/ML specialist to turn my current SEO idea into a fully automated, a | https://www.freelancer.com/projects/machine-learning/Paperclip-SEO-Automation-Setup.html |
 | 65 | Freelancer | Python scraper | Telegram Meme Token Trading Bot | Ho bisogno di un bot Telegram capace di operare sia su Solana che su Ethereum, d | https://www.freelancer.com/projects/solana/Telegram-Meme-Token-Trading-Bot.html |
+| 65 | Freelancer | Make.com automation | Job Application Workflow Automation | $30.00 | https://www.freelancer.com/projects/automation/Job-Application-Workflow-Automation.html |
+| 65 | Freelancer | Make.com automation | Multi-Channel Sales Software (incl. CRM) Implementation | We are FMNAG, a Sales-Company. Who can proactively support the implementation of | https://www.freelancer.com/projects/ai-consulting/Multi-Channel-Sales-Software-incl.html |
+| 65 | Freelancer | Make.com automation | 7 Touch Quote System Automation | I need an Excel sheet to automate my 7 touch quote system. The goal is to minimi | https://www.freelancer.com/projects/automation/Touch-Quote-System-Automation-40389403.html |
 
 ## Notes
 - Scores prioritize: (1) simple automation/scripting fit, (2) payout magnitude, (3) keyword relevance.
