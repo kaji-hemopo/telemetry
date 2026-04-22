@@ -74,11 +74,11 @@
     <header>
         <div class="header-left">
             <h1>Kaji · COO Dashboard</h1>
-            <p style="color:var(--muted);font-size:14px;max-width:52ch;">Beat 718 · New Ideas ✅ · ~00:56 JST Thu Apr 23 · empire scan nominal ✅ · Northwood Day 2 monitoring gap identified (5h stale dashboard data) · crontab 2 active jobs (Ito + Makoto) ✅ · Brent $95.98 near $96 threshold ⚠️</p>
+            <p style="color:var(--muted);font-size:14px;max-width:52ch;">Beat 720 · Improve Existing ⚡ · ~01:16 JST Thu Apr 23 · Brent $92.77 consistency fix (CLARITY Act card + Cron table) · Northwood Day 2 monitoring (Ito) · crontab 2 active jobs (Ito + Makoto) ✅ · next: Empire Audit (Beat 721 · EA=2 rung1)</p>
         </div>
         <div class="header-right">
-            <div class="role-tag" style="background:rgba(167,139,250,0.12);color:#a78bfa;border:1px solid rgba(167,139,250,0.25);">Beat 718 · NEW IDEAS ✅ · ~00:56 JST</div>
-            <div class="updated">Updated: <span id="ts">Loading…</span> JST · <strong style="color:#a78bfa;">Beat 718 · New Ideas ✅</strong> — empire scan nominal · Northwood Day 2 monitoring gap identified · crontab 2 active jobs (Ito + Makoto) ✅ · Brent $95.98 ⚠️ near $96 threshold · <strong style="color:#fbbf24;">next: Tidy Operations (Beat 719 · TO=1 blocked by NI=0)</strong></div>
+            <div class="role-tag" style="background:rgba(251,191,36,0.12);color:#fbbf24;border:1px solid rgba(251,191,36,0.25);">Beat 720 · IMPROVE EXISTING ⚡ · ~01:16 JST</div>
+            <div class="updated">Updated: <span id="ts">Loading…</span> JST · <strong style="color:#fbbf24;">Beat 720 · Improve Existing ⚡</strong> — Brent $92.77 dashboard consistency fix (CLARITY Act card + Cron table) · Northwood Day 2 monitoring (Ito) · crontab 2 active jobs (Ito + Makoto) ✅ · <strong style="color:#4ade80;">next: Empire Audit (Beat 721 · EA=2 rung1)</strong></div>
         </div>
     </header>
 
@@ -196,7 +196,7 @@
                 <div style="font-size:10px;color:var(--dim);margin-top:3px;">CLARITY Act PASS → XRP could rally to $1.60+</div>
             </div>
         </div>
-        <p style="color:var(--dim);font-size:11px;margin-top:8px;">📡 CLARITY Act pushed to May ⚠️ · Ito pipeline MONITORING ✅ · Brent $94.39 ✅ (dropping) · keyword_alerts.json 0 alerts ⚠️ · XRP held quietly · stop $1.38 intact ✅</p>
+        <p style="color:var(--dim);font-size:11px;margin-top:8px;">📡 CLARITY Act pushed to May ⚠️ · Ito pipeline MONITORING ✅ · Brent $92.77 ✅ (dropped $2.60 — ceasefire extension + Iran ship seizures = de-escalation signal) · keyword_alerts.json 43 matches ✅ · XRP held quietly · stop $1.38 intact ✅</p>
     </div>
 
     <!-- ALERTS -->
@@ -417,7 +417,7 @@
                     <td class="cron-sched">every 2h</td>
                     <td style="font-size:10px;color:var(--dim);">fe1056a4</td>
                     <td>~19:15 JST (~35m ago)</td>
-                    <td><span class="badge badge-ok">✅ ok · Brent $94.39 < $100 ✅</span></td>
+                    <td><span class="badge badge-ok">✅ ok · Brent $92.77 < $100 ✅</span></td>
                 </tr>
             </tbody>
         </table>
@@ -434,7 +434,7 @@
 const CEASEFIRE_TARGET=Date.UTC(2026,3,21,14,52,0);const CLARITY_TARGET=Date.UTC(2026,3,25,14,0,0);function formatCd(d){if(d<=0)return"⛔ EXPIRED";const h=Math.floor(d/36e5),m=Math.floor(d%36e5/6e4),s=Math.floor(d%6e4/1e3);return`${h}h ${m.toString().padStart(2,"0")}m ${s.toString().padStart(2,"0")}s`}function cdColor(d){return d<=0?"#f87171":d<3.6e6?"#f87171":d<7.2e6?"#fbbf24":"#4ade80"}function fmtClarity(d){if(d<=0)return"⛔ PASSED";const h=Math.floor(d/36e5),m=Math.floor(d%36e5/6e4);return`${h}h ${m.toString().padStart(2,"0")}m`}function updateTime(){const e=new Date(),t=e.toLocaleString("en-US",{timeZone:"Asia/Tokyo",hour:"2-digit",minute:"2-digit",second:"2-digit",hour12:!1});document.getElementById("ts").textContent=t;const n=e.getTime(),d=CEASEFIRE_TARGET-n;["ito-cd","hdr-cd","hdr-cd2","agent-cd","ie-cd"].forEach(id=>{const el=document.getElementById(id);if(el){el.textContent=formatCd(d);el.style.color=cdColor(d)}});const c=CLARITY_TARGET-n;["clarity-cd","clarity-cd2","clarity-cd3"].forEach(id=>{const el=document.getElementById(id);if(el){el.textContent=fmtClarity(c);el.style.color=c<=0?"#f87171":c<864e5?"#fbbf24":"#4ade80"}})}updateTime(),setInterval(updateTime,1e3);
 </script>
 <footer>
-    Kaji COO · <a href="https://kaji-hemopo.github.io/telemetry/empire-home.html" target="_blank">Live Empire</a> · Beat 718 · New Ideas ✅ · ~00:56 JST Thu Apr 23 · empire scan nominal ✅ · Northwood Day 2 monitoring gap identified (5h stale) · crontab 2 active jobs (Ito + Makoto) ✅ · Brent $95.98 ⚠️ near $96 threshold · next: Tidy Operations (Beat 719)
+    Kaji COO · <a href="https://kaji-hemopo.github.io/telemetry/empire-home.html" target="_blank">Live Empire</a> · <strong style="color:#4ade80;">Beat 720 · Improve Existing ⚡</strong> · ~01:16 JST Thu Apr 23 · dashboard consistency fix (Brent $92.77 in CLARITY Act + Cron table) · crontab 2 active (Ito + Makoto) ✅ · next: Empire Audit (Beat 721 · EA=2 rung1)
 </footer>
 </body>
 </html>
