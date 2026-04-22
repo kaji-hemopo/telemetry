@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-22 12:45 JST
+Generated: 2026-04-22 15:39 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -37,8 +37,8 @@ Generated: 2026-04-22 12:45 JST
 | 90 | Lancers | LP制作 | スクロールで動く“バカ寄り”LPサイト制作（WordPress／公開まで） | ¥80,000 | https://www.lancers.jp/work/detail/5475415 |
 | 90 | Lancers | LINE構築 | 2回目 【予算30万以内】Amazon物販向けLINE公式アカウント初期構築（タグ付け・ステップ配信等） | ¥300,000 | https://www.lancers.jp/work/detail/5521293 |
 | 90 | Lancers | LINE構築 | 【急募】カスタマーサポートを探しています | ¥80,000 | https://www.lancers.jp/work/detail/5465120 |
-| 90 | Lancers | API連携 | 2回目 ハローワークAPI連携による介護求人データ取得・格納システムの開発 | ¥50,000 | https://www.lancers.jp/work/detail/5518095 |
 | 90 | Lancers | API連携 | 【急募】既存システムの保守・改善ができるエンジニア募集 | ¥100,000 | https://www.lancers.jp/work/detail/5518756 |
+| 90 | Lancers | API連携 | 2回目 ハローワークAPI連携による介護求人データ取得・格納システムの開発 | ¥50,000 | https://www.lancers.jp/work/detail/5518095 |
 | 90 | Lancers | API連携 | 【急募】ダウンロードスクリプト開発とBOXアップロード依頼 | ¥100,000 | https://www.lancers.jp/work/detail/5492631 |
 | 90 | Lancers | API連携 | auキャリア決済の新仕様に基づく既存システムの修正、KDDIとの通信仕様に基づくAPI調整、疎通試験 | ¥200,000 | https://www.lancers.jp/work/detail/5326072 |
 | 90 | Lancers | API連携 | 【急募】ECストア注文データと出荷データを連携するシステム開発 | ¥50,000 | https://www.lancers.jp/work/detail/5189850 |
@@ -52,14 +52,18 @@ Generated: 2026-04-22 12:45 JST
 
 | Score | Platform | Keyword | Title | Budget/Rate | URL |
 |---:|---|---|---|---|---|
+| 85 | Freelancer | Python scraper | Senior Trading Bot Developer (IBKR Required) &mdash; Fix or Rebui | $3,000.00 | https://www.freelancer.com/projects/ai-development/Senior-Trading-Bot-Developer-IBKR.html |
 | 85 | Freelancer | Python scraper | Python Developer for Astronomical Data Engine | $350.00 | https://www.freelancer.com/projects/backend-development/Python-Developer-for-Astronomical-Data.html |
 | 85 | Freelancer | Make.com automation | Automated WordPress Intake Rebuild | $1,500.00 | https://www.freelancer.com/projects/zapier/Automated-WordPress-Intake-Rebuild.html |
+| 75 | Freelancer | Python scraper | Sales Freelancer for ML &amp; Python Projects | $250.00 | https://www.freelancer.com/projects/python/Sales-Freelancer-for-Python-Projects.html |
 | 75 | Freelancer | Python scraper | Responsive Website Development by Full Stack Expert | $250.00 | https://www.freelancer.com/projects/javascript/Responsive-Website-Development-Full.html |
-| 75 | Freelancer | Python scraper | Social Media Account Creation System | $250.00 | https://www.freelancer.com/projects/social-media-management/Social-Media-Account-Creation-System.html |
 | 75 | Freelancer | Make.com automation | Email Automation Setup Guidance | $250.00 | https://www.freelancer.com/projects/automation/Email-Automation-Setup-Guidance.html |
 | 75 | Freelancer | Make.com automation | SolidWorks Expert for Automated Pizza Kiosk | $250.00 | https://www.freelancer.com/projects/cnc/SolidWorks-Expert-for-Automated-Pizza.html |
 | 75 | Freelancer | Make.com automation | AI Email Sales Automation Suite | $250.00 | https://www.freelancer.com/projects/ai-chatbot-development/Email-Sales-Automation-Suite.html |
-| 75 | Freelancer | Make.com automation | Comprehensive Audit for Inventory &amp; POS Systems | $250.00 | https://www.freelancer.com/projects/inventory-management/Comprehensive-Audit-for-Inventory-POS.html |
+| 75 | Freelancer | Data processing API | Excel Template for Visitor Data | $250.00 | https://www.freelancer.com/projects/excel-macros/Excel-Template-for-Visitor-Data.html |
+| 65 | Freelancer | Python scraper | Instagram Downloader Website Build | I want to launch a fully-featured Instagram reel, post and story downloader that | https://www.freelancer.com/projects/web-development/Instagram-Downloader-Website-Build.html |
+| 65 | Freelancer | Python scraper | Scalable Gardener Booking System Development | ## Tech Development – Gardener Booking Platform (MVP) ### Project Overview We ar | https://www.freelancer.com/projects/api-developmet/Scalable-Gardener-Booking-System.html |
+| 65 | Freelancer | Python scraper | Daily Python Web Scraper | I need a python code to run everyday that scrapes a website. (Budget: ₹1500 - ₹1 | https://www.freelancer.com/projects/data-extraction/Daily-Python-Web-Scraper.html |
 | 65 | Freelancer | Python scraper | Sharekhan Trade Tiger API Developer | I need an experienced developer to integrate the Sharekhan Trade Tiger API. The  | https://www.freelancer.com/projects/api-developmet/Sharekhan-Trade-Tiger-API-Developer.html |
 | 65 | Freelancer | Python scraper | Analisis Kebijakan dan Tren Sosial | $30.00 | https://www.freelancer.com/projects/data-analysis/Analisis-Kebijakan-dan-Tren-Sosial.html |
 | 65 | Freelancer | Python scraper | Paperclip AI SEO Automation Setup -- 3 | I need an AI/ML specialist to turn my current SEO idea into a fully automated, a | https://www.freelancer.com/projects/machine-learning/Paperclip-SEO-Automation-Setup-40388822.html |
@@ -67,11 +71,7 @@ Generated: 2026-04-22 12:45 JST
 | 65 | Freelancer | Python scraper | Paperclip AI SEO Automation Setup | I need an AI/ML specialist to turn my current SEO idea into a fully automated, a | https://www.freelancer.com/projects/machine-learning/Paperclip-SEO-Automation-Setup.html |
 | 65 | Freelancer | Python scraper | Telegram Meme Token Trading Bot | Ho bisogno di un bot Telegram capace di operare sia su Solana che su Ethereum, d | https://www.freelancer.com/projects/solana/Telegram-Meme-Token-Trading-Bot.html |
 | 65 | Freelancer | Python scraper | Enhance &amp; Deploy Python Script | $10.00 | https://www.freelancer.com/projects/Enhance-Deploy-Python-Script-fix.html |
-| 65 | Freelancer | Python scraper | Python Trading Algorithm Development | I’m building a fully automated trading system in Python that can execute both da | https://www.freelancer.com/projects/data-analysis/Python-Trading-Algorithm-Development-40388248.html |
-| 65 | Freelancer | Python scraper | &ldquo;AIIGr Automated Recon Engine &ndash; Packaging, Optimizati | $30.00 | https://www.freelancer.com/projects/automation/AIIGr-Automated-Recon-Engine-Packaging.html |
-| 65 | Freelancer | Python scraper | Precise OCR Developer for Poker Video | OCR System for Live Poker Video — Master's Research Project I'm looking for an e | https://www.freelancer.com/projects/optical-character-recognition/Precise-OCR-Developer-for-Poker.html |
-| 65 | Freelancer | Python scraper | Build Fully Automated AI Poster Generation System (Prompt &rarr;  | Project Title: Build Fully Automated AI Poster Generation System (Prompt → Image | https://www.freelancer.com/projects/automation/Build-Fully-Automated-Poster-Generation.html |
-| 65 | Freelancer | Make.com automation | AI &amp; ML Engineer Needed for Smart Automation and Custom Chatb | $30.00 | https://www.freelancer.com/projects/ai-chatbot-development/Engineer-Needed-for-Smart-Automation.html |
+| 65 | Freelancer | Make.com automation | Multi-Channel Sales Software (incl. CRM) Implementation | We are FMNAG, a Sales-Company. Who can proactively support the implementation of | https://www.freelancer.com/projects/ai-consulting/Multi-Channel-Sales-Software-incl.html |
 
 ## Notes
 - Scores prioritize: (1) simple automation/scripting fit, (2) payout magnitude, (3) keyword relevance.
