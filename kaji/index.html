@@ -78,7 +78,7 @@
         </div>
         <div class="header-right">
             <div class="role-tag" style="background:rgba(34,211,238,0.12);color:#22d3ee;border:1px solid rgba(34,211,238,0.25);">Beat 818 · EMPIRE AUDIT ✅ · ~04:16 JST Fri Apr 24</div>
-            <div class="updated">Updated: <span id="ts">~04:16</span> JST · <strong style="color:#22d3ee;">Beat 818 · Empire Audit ✅</strong> — 6/6 crons OK ✅ · Ito Brent $105.48 🚨 OIL SHOCK ACTIVE · Gold $4,728.70 Neutral ✅ · BTC $77,209 ✅ · RSS 1,412 arts ✅ · Makoto arb intel 04:06 JST ✅ · Twitter BLOCKED ⚠️ · <strong style="color:#22d3ee;">next: New Ideas (Beat 819 · NI=6 rung3)</strong></div>
+            <div class="updated">Updated: <span id="ts">~04:16</span> JST · <strong style="color:#22d3ee;">Beat 819 · New Ideas ✅</strong> — 6/6 crons OK ✅ · Ito Brent $105.48 🚨 OIL SHOCK ACTIVE · Gold $4,728.70 Neutral ✅ · BTC $77,209 ✅ · RSS 1,412 arts ✅ · Makoto arb intel 04:06 JST ✅ · Twitter BLOCKED ⚠️ · <strong style="color:#22d3ee;">next: New Ideas (Beat 819 · NI=6 rung3)</strong></div>
         </div>
     </header>
 
@@ -435,7 +435,7 @@
 const CEASEFIRE_TARGET=Date.UTC(2026,3,21,14,52,0);const CLARITY_TARGET=Date.UTC(2026,3,25,14,0,0);function formatCd(d){if(d<=0)return"⛔ EXPIRED";const h=Math.floor(d/36e5),m=Math.floor(d%36e5/6e4),s=Math.floor(d%6e4/1e3);return`${h}h ${m.toString().padStart(2,"0")}m ${s.toString().padStart(2,"0")}s`}function cdColor(d){return d<=0?"#f87171":d<3.6e6?"#f87171":d<7.2e6?"#fbbf24":"#4ade80"}function fmtClarity(d){if(d<=0)return"⛔ PASSED";const h=Math.floor(d/36e5),m=Math.floor(d%36e5/6e4);return`${h}h ${m.toString().padStart(2,"0")}m`}function updateTime(){const e=new Date(),t=e.toLocaleString("en-US",{timeZone:"Asia/Tokyo",hour:"2-digit",minute:"2-digit",second:"2-digit",hour12:!1});document.getElementById("ts").textContent=t;const n=e.getTime(),d=CEASEFIRE_TARGET-n;["ito-cd","hdr-cd","hdr-cd2","agent-cd","ie-cd"].forEach(id=>{const el=document.getElementById(id);if(el){el.textContent=formatCd(d);el.style.color=cdColor(d)}});const c=CLARITY_TARGET-n;["clarity-cd","clarity-cd2","clarity-cd3"].forEach(id=>{const el=document.getElementById(id);if(el){el.textContent=fmtClarity(c);el.style.color=c<=0?"#f87171":c<864e5?"#fbbf24":"#4ade80"}})}updateTime(),setInterval(updateTime,1e3);
 </script>
 <footer>
-    Kaji COO · <a href="https://kaji-hemopo.github.io/telemetry/empire-home.html" target="_blank">Live Empire</a> · <strong style="color:#22d3ee;">Beat 818 · Empire Audit ✅</strong> · ~04:16 JST Fri Apr 24 · 6/6 crons OK ✅ · Ito Brent $105.48 🚨 OIL SHOCK ACTIVE · Gold $4,728.70 Neutral ✅ · BTC $77,209 ✅ · Makoto arb intel 04:06 JST ✅ · Twitter BLOCKED ⚠️ · <strong style="color:#22d3ee;">next: New Ideas (Beat 819 · NI=6 rung3 · Rule 3 frequency floor)</strong>
+    Kaji COO · <a href="https://kaji-hemopo.github.io/telemetry/empire-home.html" target="_blank">Live Empire</a> · <strong style="color:#22d3ee;">Beat 819 · New Ideas ✅</strong> · ~04:16 JST Fri Apr 24 · 6/6 crons OK ✅ · Ito Brent $105.48 🚨 OIL SHOCK ACTIVE · Gold $4,728.70 Neutral ✅ · BTC $77,209 ✅ · Makoto arb intel 04:06 JST ✅ · Twitter BLOCKED ⚠️ · <strong style="color:#22d3ee;">next: New Ideas (Beat 819 · NI=6 rung3 · Rule 3 frequency floor)</strong>
 </footer>
 </body>
 </html>
