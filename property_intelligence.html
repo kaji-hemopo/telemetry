@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Intelligence · Hemopo Empire</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #050508;
+            --surface: rgba(18, 20, 28, 0.85);
+            --border: rgba(255, 255, 255, 0.08);
+            --text: #f0f2f8;
+            --muted: #8b90a1;
+            --accent: #5eead4;
+            --violet: #a78bfa;
+            --red: #f87171;
+            --amber: #fbbf24;
+            --green: #34d399;
+            --radius: 16px;
+            --font-d: "Syne", system-ui, sans-serif;
+            --font-b: "DM Sans", system-ui, sans-serif;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: var(--font-b);
+            color: var(--text);
+            line-height: 1.55;
+            min-height: 100vh;
+            background: var(--bg);
+            -webkit-font-smoothing: antialiased;
+        }
+        .page-bg {
+            position: fixed;
+            inset: 0;
+            z-index: -1;
+            background:
+                radial-gradient(ellipse 100% 70% at 50% -25%, rgba(94, 234, 212, 0.1), transparent 50%),
+                radial-gradient(ellipse 50% 45% at 100% 10%, rgba(167, 139, 250, 0.08), transparent 45%),
+                linear-gradient(180deg, #0a0c12 0%, var(--bg) 100%);
+        }
+        .container { max-width: 1060px; margin: 0 auto; padding: 28px 20px 48px; }
+
+        /* ── Header ─────────────────────────────────── */
+        header.hero {
+            text-align: center;
+            padding: 32px 28px 36px;
+            border-radius: calc(var(--radius) + 4px);
+            background: linear-gradient(145deg, rgba(22, 26, 38, 0.95), rgba(12, 14, 22, 0.98));
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 24px 48px -16px rgba(0, 0, 0, 0.55), 0 0 0 1px rgba(94, 234, 212, 0.06) inset;
+            margin-bottom: 28px;
+            position: relative;
+            overflow: hidden;
+        }
+        header.hero::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--accent), transparent);
+            opacity: 0.55;
+        }
+        .eyebrow {
+            font-family: var(--font-d);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 12px;
+        }
+        h1 {
+            font-family: var(--font-d);
+            font-size: clamp(1.6rem, 4vw, 2.2rem);
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            line-height: 1.12;
+            margin-bottom: 12px;
+            background: linear-gradient(100deg, #fff 0%, #b8c0d4 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .subtitle {
+            font-size: 1rem;
+            color: var(--muted);
+            max-width: 38rem;
+            margin: 0 auto;
+        }
+        .timestamp {
+            display: inline-block;
+            margin-top: 14px;
+            padding: 7px 16px;
+            border-radius: 999px;
+            font-size: 12px;
+            font-variant-numeric: tabular-nums;
+            color: var(--accent);
+            background: rgba(94, 234, 212, 0.08);
+            border: 1px solid rgba(94, 234, 212, 0.2);
+        }
+
+        /* ── Back nav ───────────────────────────────── */
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: var(--muted);
+            font-size: 13px;
+            text-decoration: none;
+            margin-bottom: 22px;
+            padding: 6px 12px;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            transition: border-color 0.2s, color 0.2s;
+        }
+        .back-link:hover { color: var(--accent); border-color: rgba(94, 234, 212, 0.3); }
+
+        /* ── Phase Banner ───────────────────────────── */
+        .phase-banner {
+            background: rgba(251, 191, 36, 0.06);
+            border: 1px solid rgba(251, 191, 36, 0.22);
+            border-radius: var(--radius);
+            padding: 16px 22px;
+            margin-bottom: 26px;
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+        }
+        .phase-banner .icon { font-size: 1.6rem; line-height: 1; flex-shrink: 0; }
+        .phase-banner h2 {
+            font-family: var(--font-d);
+            font-size: 0.98rem;
+            color: #fde68a;
+            margin-bottom: 4px;
+        }
+        .phase-banner p { font-size: 13.5px; color: var(--muted); }
+
+        /* ── Grid layout ─────────────────────────────── */
+        .top-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 18px;
+            margin-bottom: 18px;
+        }
+        .bottom-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+        @media (max-width: 700px) {
+            .top-grid, .bottom-grid { grid-template-columns: 1fr; }
+        }
+
+        /* ── Cards ──────────────────────────────────── */
+        .card {
+            background: var(--surface);
+            backdrop-filter: blur(14px);
+            border-radius: var(--radius);
+            padding: 22px;
+            border: 1px solid var(--border);
+            position: relative;
+            overflow: hidden;
+        }
+        .card-accent::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--accent), var(--violet));
+            opacity: 0.9;
+        }
+        .card-violet::before {
+            background: linear-gradient(90deg, var(--violet), #818cf8);
+        }
+        .card-amber::before {
+            background: linear-gradient(90deg, var(--amber), #f97316);
+        }
+        .card-red::before {
+            background: linear-gradient(90deg, var(--red), #fb7185);
+        }
+        .card-green::before {
+            background: linear-gradient(90deg, var(--green), #34d399);
+        }
+
+        .card-label {
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--accent);
+            margin-bottom: 10px;
+        }
+        .card-title {
+            font-family: var(--font-d);
+            font-size: 1.15rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 6px;
+        }
+        .card-sub { font-size: 13px; color: var(--muted); margin-bottom: 18px; }
+
+        .big-number {
+            font-family: var(--font-d);
+            font-size: 2.6rem;
+            font-weight: 800;
+            letter-spacing: -0.04em;
+            color: var(--accent);
+            line-height: 1;
+            margin-bottom: 6px;
+        }
+        .big-number.amber { color: var(--amber); }
+        .big-number.muted-number { color: var(--muted); font-size: 2rem; }
+        .big-number.red { color: var(--red); }
+        .big-label { font-size: 13px; color: var(--muted); }
+        .big-sub { font-size: 12px; color: var(--muted); margin-top: 4px; }
+
+        .divider { height: 1px; background: var(--border); margin: 14px 0; }
+
+        .metric-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 8px;
+        }
+        .metric-label { font-size: 13px; color: var(--muted); }
+        .metric-value { font-family: var(--font-d); font-size: 14px; font-weight: 700; color: var(--text); }
+        .metric-value.up { color: var(--green); }
+        .metric-value.down { color: var(--red); }
+        .metric-value.neutral { color: var(--amber); }
+
+        /* ── Listings table ──────────────────────────── */
+        .listings-note {
+            font-size: 12px;
+            color: var(--muted);
+            margin-bottom: 12px;
+            line-height: 1.5;
+        }
+        .listing-row {
+            display: grid;
+            grid-template-columns: 1fr auto auto;
+            gap: 10px;
+            padding: 7px 0;
+            border-bottom: 1px solid var(--border);
+            align-items: center;
+            font-size: 13px;
+        }
+        .listing-row:last-child { border-bottom: none; }
+        .listing-addr { color: var(--text); font-weight: 500; }
+        .listing-price { font-family: var(--font-d); font-weight: 700; color: var(--accent); font-size: 13px; }
+        .listing-dom { color: var(--muted); font-size: 12px; }
+        .listing-dom.stale { color: var(--red); }
+
+        /* ── Comp table ─────────────────────────────── */
+        .comp-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+        .comp-table th {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--muted);
+            font-weight: 600;
+            padding: 0 0 8px;
+            text-align: left;
+        }
+        .comp-table td { padding: 6px 0; border-bottom: 1px solid var(--border); color: var(--text); }
+        .comp-table tr:last-child td { border-bottom: none; }
+        .comp-price { font-family: var(--font-d); font-weight: 700; color: var(--accent); }
+        .comp-date { color: var(--muted); font-size: 12px; }
+
+        /* ── Timing callout ──────────────────────────── */
+        .callout {
+            background: rgba(94, 234, 212, 0.05);
+            border: 1px solid rgba(94, 234, 212, 0.18);
+            border-radius: 12px;
+            padding: 14px 18px;
+            font-size: 13px;
+            color: var(--muted);
+            line-height: 1.55;
+            margin-top: 12px;
+        }
+        .callout strong { color: var(--accent); }
+        .callout.red {
+            background: rgba(248, 113, 113, 0.05);
+            border-color: rgba(248, 113, 113, 0.18);
+        }
+        .callout.red strong { color: var(--red); }
+
+        /* ── Footer ─────────────────────────────────── */
+        footer {
+            text-align: center;
+            padding: 28px 16px;
+            color: var(--muted);
+            font-size: 12px;
+            border-top: 1px solid var(--border);
+            margin-top: 32px;
+        }
+        footer a { color: var(--accent); text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="page-bg" aria-hidden="true"></div>
+    <div class="container">
+
+        <!-- Header -->
+        <header class="hero">
+            <div class="eyebrow">Ito · Property Intelligence</div>
+            <h1>Hemopo Property Intel</h1>
+            <p class="subtitle">Ahipara holiday house · market context, comparables &amp; sell timing signals</p>
+            <div class="timestamp" id="timestamp">Loading…</div>
+        </header>
+
+        <a href="empire-home.html" class="back-link">← Back to Empire Home</a>
+
+        <!-- Pre-market Banner -->
+        <div class="phase-banner">
+            <div class="icon">🏠</div>
+            <div>
+                <h2>Jackson's Ahipara Property — Pre-Market</h2>
+                <p>Not yet listed. Ito's intel pipeline has active market data from 17 Ahipara listings + Russell comparable sales.</p>
+            </div>
+        </div>
+
+        <!-- Top row: Your Market + Comparables -->
+        <div class="top-grid">
+            <!-- Ahipara Market Snapshot -->
+            <div class="card card-accent">
+                <div class="card-label">Ahipara · Active Listings</div>
+                <div class="big-number">$890k</div>
+                <div class="big-label">Median asking price · 17 listings</div>
+                <div class="big-sub">Range $220k – $1.145M across houses &amp; sections</div>
+                <div class="divider"></div>
+                <div class="metric-row">
+                    <span class="metric-label">Avg Days on Market</span>
+                    <span class="metric-value neutral">133 days</span>
+                </div>
+                <div class="metric-row">
+                    <span class="metric-label">Median DOM</span>
+                    <span class="metric-value neutral">128 days</span>
+                </div>
+                <div class="metric-row">
+                    <span class="metric-label">Price reduced listings</span>
+                    <span class="metric-value down">2 found</span>
+                </div>
+                <div class="metric-row">
+                    <span class="metric-label">Negotiation / No price</span>
+                    <span class="metric-value">8 of 17</span>
+                </div>
+                <div class="callout red">
+                    <strong>⚠️ BNZ Warning:</strong> NZ real prices could return to <strong>2016 levels by mid-2027</strong> (–25% to –30% real). Market already –4.09% in last 3 months. Every month of delay = further erosion.
+                </div>
+            </div>
+
+            <!-- Russell Comparable Sales -->
+            <div class="card card-violet">
+                <div class="card-label">Russell · Confirmed Sales (90d)</div>
+                <div class="big-number">$950k</div>
+                <div class="big-label">Median comparable sale price</div>
+                <div class="big-sub">Range $629k – $2.5M · 6 confirmed transactions</div>
+                <div class="divider"></div>
+                <table class="comp-table">
+                    <thead>
+                        <tr>
+                            <th>Address</th>
+                            <th>Price</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>19 Du Fresne Pl</td>
+                            <td class="comp-price">$950k</td>
+                            <td class="comp-date">18 Feb 26</td>
+                        </tr>
+                        <tr>
+                            <td>28 Okiato Rd</td>
+                            <td class="comp-price">$780k</td>
+                            <td class="comp-date">5 Feb 26</td>
+                        </tr>
+                        <tr>
+                            <td>119 Long Beach Rd</td>
+                            <td class="comp-price">$2.5M</td>
+                            <td class="comp-date">30 Jan 26</td>
+                        </tr>
+                        <tr>
+                            <td>4 Tirairaka Tc</td>
+                            <td class="comp-price">$629k</td>
+                            <td class="comp-date">27 Jan 26</td>
+                        </tr>
+                        <tr>
+                            <td>6A Beresford St</td>
+                            <td class="comp-price">$860k</td>
+                            <td class="comp-date">16 Dec 25</td>
+                        </tr>
+                        <tr>
+                            <td>18 Lichen Grove</td>
+                            <td class="comp-price">$1.1M</td>
+                            <td class="comp-date">15 Dec 25</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="callout" style="margin-top:12px;">
+                    Holiday houses 3–4 bed on ~500–1,000m² sections in Far North premium market selling <strong>$780k–$950k</strong>. Russell commands premium over Ahipara for infrastructure reasons.
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom row: Far North + National + Sell Signal -->
+        <div class="bottom-grid">
+
+            <!-- Far North Market -->
+            <div class="card card-amber">
+                <div class="card-label">Far North · Market Context</div>
+                <div class="big-number amber">–4.09%</div>
+                <div class="big-label">Quarterly price change (REINZ Mar 26)</div>
+                <div class="big-sub">–1.49% over 12 months</div>
+                <div class="divider"></div>
+                <div class="metric-row">
+                    <span class="metric-label">Far North avg price</span>
+                    <span class="metric-value">$686k</span>
+                </div>
+                <div class="metric-row">
+                    <span class="metric-label">Market cycle position</span>
+                    <span class="metric-value neutral">0.08% overvalued</span>
+                </div>
+                <div class="metric-row">
+                    <span class="metric-label">vs CV (rateable value)</span>
+                    <span class="metric-value down">~6% below CV</span>
+                </div>
+                <div class="metric-row">
+                    <span class="metric-label">Avg rent (weekly)</span>
+                    <span class="metric-value up">$550/wk</span>
+                </div>
+                <div class="metric-row">
+                    <span class="metric-label">Rent change YoY</span>
+                    <span class="metric-value up">+19.57%</span>
+                </div>
+            </div>
+
+            <!-- National NZ Context -->
+            <div class="card">
+                <div class="card-label">National NZ · Price Benchmarks</div>
+                <div style="margin-bottom: 14px;">
+                    <div class="metric-row"><span class="metric-label">National median</span><span class="metric-value">$780k</span></div>
+                    <div class="metric-row"><span class="metric-label">Auckland</span><span class="metric-value">$1.05M</span></div>
+                    <div class="metric-row"><span class="metric-label">Wellington</span><span class="metric-value">$850k</span></div>
+                    <div class="metric-row"><span class="metric-label">Northland</span><span class="metric-value">$650k</span></div>
+                    <div class="metric-row"><span class="metric-label">Christchurch</span><span class="metric-value">$620k</span></div>
+                    <div class="metric-row"><span class="metric-label">Otago</span><span class="metric-value">$580k</span></div>
+                </div>
+                <div class="divider"></div>
+                <div class="metric-row">
+                    <span class="metric-label">Total listed NZ</span>
+                    <span class="metric-value">~28,000</span>
+                </div>
+                <div class="metric-row">
+                    <span class="metric-label">New listings/mo</span>
+                    <span class="metric-value">~8,200</span>
+                </div>
+                <div class="metric-row">
+                    <span class="metric-label">Avg DOM (national)</span>
+                    <span class="metric-value">45 days</span>
+                </div>
+            </div>
+
+            <!-- Sell Signal + Recommendations -->
+            <div class="card card-green">
+                <div class="card-label">Ito Recommendation</div>
+                <div class="card-title" style="color: var(--green);">Price &amp; List Before Winter</div>
+                <p class="card-sub">Soft seller's market — downward price cycle confirmed. Delay risks further erosion.</p>
+                <div class="divider"></div>
+                <div class="metric-row">
+                    <span class="metric-label">Suggested range</span>
+                    <span class="metric-value up">$900k–$1M</span>
+                </div>
+                <div class="metric-row">
+                    <span class="metric-label">Premium (beachfront/views)</span>
+                    <span class="metric-value up">$1.05M–$1.15M</span>
+                </div>
+                <div class="callout" style="margin-top:12px;">
+                    Spring/summer (Oct–Mar) is <strong>prime beach property season</strong>. Listing before June maximises buyer pool. Do <strong>NOT overprice</strong> — 17 active Ahipara listings give buyers strong negotiating leverage.
+                </div>
+            </div>
+        </div>
+
+        <!-- Live Listing Feed -->
+        <div style="margin-top: 18px;">
+            <div class="card card-accent" style="padding: 24px 24px 20px;">
+                <div class="card-label">Active Ahipara Listings — Price &amp; DOM Snapshot</div>
+                <p class="listings-note">17 listings scraped via realestate.co.nz + homes.co.nz (TradeMe blocked). Sorted by days on market. ⚠️ DOM &gt;100 days = stale.</p>
+                <div style="display: grid; grid-template-columns: 1fr auto auto; gap: 0 10px; margin-bottom: 4px; font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; padding-bottom: 6px; border-bottom: 1px solid var(--border);">
+                    <span>Address</span>
+                    <span>Price</span>
+                    <span>DOM</span>
+                </div>
+                <div class="listing-row">
+                    <span class="listing-addr">945 Kaitaia-Awaroa Rd</span>
+                    <span class="listing-price">Negotiation</span>
+                    <span class="listing-dom stale">164d</span>
+                </div>
+                <div class="listing-row">
+                    <span class="listing-addr">7 Albatross Alley (section)</span>
+                    <span class="listing-price">$235k</span>
+                    <span class="listing-dom stale">305d ⚠️</span>
+                </div>
+                <div class="listing-row">
+                    <span class="listing-addr">9 Tui St (studio)</span>
+                    <span class="listing-price">Negotiation</span>
+                    <span class="listing-dom stale">155d</span>
+                </div>
+                <div class="listing-row">
+                    <span class="listing-addr">77A Foreshore Rd</span>
+                    <span class="listing-price">Negotiation</span>
+                    <span class="listing-dom stale">128d</span>
+                </div>
+                <div class="listing-row">
+                    <span class="listing-addr">180 Takahe Rd</span>
+                    <span class="listing-price">$575k+</span>
+                    <span class="listing-dom stale">131d</span>
+                </div>
+                <div class="listing-row">
+                    <span class="listing-addr">125 Takahe Rd</span>
+                    <span class="listing-price">Negotiation</span>
+                    <span class="listing-dom stale">233d ⚠️</span>
+                </div>
+                <div class="listing-row">
+                    <span class="listing-addr">147 Foreshore Rd</span>
+                    <span class="listing-price">$935k</span>
+                    <span class="listing-dom stale">172d</span>
+                </div>
+                <div class="listing-row">
+                    <span class="listing-addr">4 Tasman Heights</span>
+                    <span class="listing-price">Negotiation</span>
+                    <span class="listing-dom stale">225d ⚠️</span>
+                </div>
+                <div class="listing-row">
+                    <span class="listing-addr">42 Tasman Heights 🔻</span>
+                    <span class="listing-price">$1.145M</span>
+                    <span class="listing-dom stale">115d</span>
+                </div>
+                <div class="listing-row">
+                    <span class="listing-addr">42 Kaka St</span>
+                    <span class="listing-price">$1.1M</span>
+                    <span class="listing-dom stale">107d</span>
+                </div>
+                <div class="listing-row">
+                    <span class="listing-addr">15 Wharo Way (section)</span>
+                    <span class="listing-price">$340k</span>
+                    <span class="listing-dom stale">107d</span>
+                </div>
+                <div class="listing-row">
+                    <span class="listing-addr">6 Korora St 🔻</span>
+                    <span class="listing-price">$890k</span>
+                    <span class="listing-dom">72d</span>
+                </div>
+                <div class="listing-row">
+                    <span class="listing-addr">4 Kakapo St</span>
+                    <span class="listing-price">Auction</span>
+                    <span class="listing-dom">44d</span>
+                </div>
+                <div class="listing-row">
+                    <span class="listing-addr">151 Foreshore Rd</span>
+                    <span class="listing-price">Negotiation</span>
+                    <span class="listing-dom">19d</span>
+                </div>
+                <div class="listing-row">
+                    <span class="listing-addr">44A Tasman Heights</span>
+                    <span class="listing-price">$1.1M</span>
+                    <span class="listing-dom">16d ✨ new</span>
+                </div>
+                <div class="listing-row">
+                    <span class="listing-addr">142 Takahe Rd / 2 Kaka St</span>
+                    <span class="listing-price">Negotiation</span>
+                    <span class="listing-dom">9d ✨ new</span>
+                </div>
+                <div class="listing-row">
+                    <span class="listing-addr">7 Karawaka St (section)</span>
+                    <span class="listing-price">$220k</span>
+                    <span class="listing-dom">257d ⚠️</span>
+                </div>
+                <div class="callout" style="margin-top:14px;">
+                    <strong>Key price signals:</strong> 6 Korora St price-reduced to $890k (vendor aware market is soft). 42 Tasman Heights also updated. 8 of 17 listings hide price — vendor uncertainty. <strong>Market is price-sensitive.</strong>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Property Intelligence · Ito pipeline · <a href="empire-home.html">← Back to Empire Home</a></p>
+            <p style="margin-top:6px; opacity:0.7;">Data: realestate.co.nz + homes.co.nz (Apr 2026) · Market cycle: Opes Partners · Rates: RBNZ</p>
+        </footer>
+    </div>
+
+    <script>
+        function updateTimestamp() {
+            const now = new Date();
+            const o = { timeZone: 'Asia/Tokyo', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', hour12: false };
+            const p = new Intl.DateTimeFormat('en-US', o).formatToParts(now);
+            const y = p.find(x => x.type === 'year').value;
+            const m = p.find(x => x.type === 'month').value;
+            const d = p.find(x => x.type === 'day').value;
+            const h = p.find(x => x.type === 'hour').value;
+            const min = p.find(x => x.type === 'minute').value;
+            document.getElementById('timestamp').textContent = `${y}-${m}-${d} ${h}:${min} JST · Updated Apr 17, 2026`;
+        }
+        updateTimestamp();
+    </script>
+</body>
+</html>
