@@ -1,0 +1,2024 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>ITO TERMINAL | Empire Intel Feed</title>
+    <!-- Fonts + icons (Oracle Terminal design language — see ~/.openclaw/telemetry_design.md) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+    <!-- TradingView Lightweight Charts v4 — Oracle Terminal theme -->
+    <script src="https://unpkg.com/lightweight-charts@4.1.0/dist/lightweight-charts.standalone.production.js"></script>
+    <style>
+        /* ===== ORACLE TERMINAL THEME (aligned with telemetry_design.md) ===== */
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        :root {
+            --bg-deep: #121416;
+            --surface-card: #1e2022;
+            --border-subtle: #3b494c;
+            --text-main: #e2e2e5;
+            --text-muted: #bac9cc;
+            --text-dim: #849396;
+            --text: #e2e2e5;
+            --accent-mint: #22d3ee;
+            --accent-mint-glow: rgba(34, 211, 238, 0.12);
+            --oracle-cyan: #22d3ee;
+            --glass: rgba(51, 53, 55, 0.65);
+            
+            /* Typography */
+            --font-primary: 'Inter', sans-serif;
+            --letter-spacing-headers: 0.02em;
+            --letter-spacing-body: -0.01em;
+        }
+
+        /* ===== RESET & BASE ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-deep);
+            color: var(--text-main);
+            font-family: var(--font-primary);
+            letter-spacing: var(--letter-spacing-body);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            min-height: 100vh;
+            padding-top: 64px;
+        }
+
+        .oracle-topbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 200;
+            height: 56px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            background: rgba(18, 20, 22, 0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(59, 73, 76, 0.5);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
+        }
+        .oracle-brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .oracle-brand h1 {
+            font-size: 0.95rem;
+            font-weight: 800;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--oracle-cyan);
+            text-shadow: 0 0 12px rgba(34, 211, 238, 0.35);
+            margin: 0;
+        }
+        .oracle-feed-pill {
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            border: 1px solid rgba(34, 211, 238, 0.25);
+            padding: 4px 10px;
+            border-radius: 4px;
+            background: rgba(34, 211, 238, 0.06);
+        }
+        .oracle-status {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-family: ui-monospace, monospace;
+            font-size: 11px;
+            color: var(--oracle-cyan);
+        }
+        .oracle-pulse {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--oracle-cyan);
+            box-shadow: 0 0 8px var(--oracle-cyan);
+            animation: oraclePulse 2s ease-in-out infinite;
+        }
+        @keyframes oraclePulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.35; }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 16px;
+        }
+
+        /* ===== UTILITIES ===== */
+        .text-muted { color: var(--text-muted); }
+        .text-mint { color: var(--accent-mint); }
+        .text-bold { font-weight: 600; }
+        .text-uppercase { text-transform: uppercase; letter-spacing: 0.05em; }
+        
+        .card {
+            background: var(--glass);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 10px;
+            padding: 16px;
+            transition: border-color 0.25s, box-shadow 0.25s;
+        }
+        
+        .card:hover {
+            border-color: rgba(34, 211, 238, 0.35);
+            box-shadow: 0 0 0 1px rgba(34, 211, 238, 0.08);
+        }
+        
+        .card-title {
+            color: var(--text-main);
+            font-family: var(--font-primary);
+            font-weight: 600;
+            font-size: 16px;
+            margin: 8px 0 4px 0;
+            line-height: 1.3;
+        }
+        
+        .card-title-link {
+            color: var(--text-main);
+            font-family: var(--font-primary);
+            font-weight: 600;
+            font-size: 16px;
+            margin: 8px 0 4px 0;
+            line-height: 1.3;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .card-title-link:hover {
+            color: var(--accent-mint);
+            text-decoration: underline;
+        }
+        
+        .card-summary {
+            color: var(--text-muted);
+            font-family: var(--font-primary);
+            font-size: 14px;
+            line-height: 1.4;
+            margin-top: 4px;
+        }
+
+        /* ===== HEADER & CONTROLS ===== */
+        .header-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .page-title {
+            color: var(--text-main);
+            font-family: var(--font-primary);
+            font-weight: 700;
+            font-size: 24px;
+            letter-spacing: var(--letter-spacing-headers);
+        }
+        
+        .timestamp {
+            color: var(--accent-mint);
+            font-weight: 500;
+            font-size: 14px;
+            margin-left: 8px;
+        }
+        
+        .controls-right {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+        
+        .search-bar {
+            background: var(--surface-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: 6px;
+            padding: 8px 12px;
+            color: var(--text-main);
+            font-family: var(--font-primary);
+            font-size: 14px;
+            min-width: 240px;
+        }
+        
+        .search-bar:focus {
+            outline: none;
+            border-color: var(--accent-mint);
+        }
+        
+        .search-bar::placeholder {
+            color: var(--text-muted);
+        }
+        
+        .refresh-btn {
+            background: var(--accent-mint);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            padding: 8px 16px;
+            font-family: var(--font-primary);
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            transition: background 0.2s;
+        }
+        
+        .refresh-btn:hover {
+            background: #06b6d4;
+        }
+        
+        .refresh-icon {
+            font-size: 16px;
+        }
+
+        /* ===== TAB BAR ===== */
+        .tab-bar {
+            display: flex;
+            gap: 1px;
+            background: var(--border-subtle);
+            border-radius: 8px;
+            padding: 4px;
+            margin-bottom: 20px;
+            position: sticky;
+            top: 16px;
+            z-index: 100;
+        }
+        
+        .tab {
+            flex: 1;
+            background: transparent;
+            border: none;
+            color: var(--text-muted);
+            font-family: var(--font-primary);
+            font-weight: 600;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 12px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .tab:hover {
+            color: var(--text-main);
+            background: rgba(255, 255, 255, 0.05);
+        }
+        
+        .tab.active {
+            background: var(--surface-card);
+            color: var(--accent-mint);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* ===== TAB CONTENT ===== */
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.3s;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* ===== SUB-TABS (Intel Tab Categories) ===== */
+        .sub-tab-bar {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid var(--border-subtle);
+            padding-bottom: 12px;
+            flex-wrap: wrap;
+        }
+        
+        .sub-tab {
+            background: var(--surface-card);
+            color: var(--text-muted);
+            border: 1px solid var(--border-subtle);
+            border-radius: 6px;
+            padding: 8px 16px;
+            font-size: 13px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+            white-space: nowrap;
+        }
+        
+        .sub-tab:hover {
+            border-color: var(--accent-mint);
+            color: var(--text-main);
+        }
+        
+        .sub-tab.active {
+            background: var(--accent-mint-glow);
+            color: var(--accent-mint);
+            border-color: var(--accent-mint);
+            font-weight: 600;
+        }
+        
+        .sub-tab-content {
+            display: none;
+            animation: fadeIn 0.3s;
+        }
+        
+        .sub-tab-content.active {
+            display: block;
+        }
+
+        /* ===== NEWS WALL (Intel Tab) ===== */
+        .news-wall {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 16px;
+        }
+        
+        .news-card {
+            background: var(--surface-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: 8px;
+            padding: 16px;
+            transition: all 0.2s;
+        }
+        
+        .news-card:hover {
+            border-color: var(--accent-mint);
+            transform: translateY(-2px);
+        }
+        
+        .news-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        
+        .news-source {
+            background: var(--accent-mint-glow);
+            color: var(--accent-mint);
+            font-family: var(--font-primary);
+            font-weight: 600;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+        
+        .news-time {
+            color: var(--text-muted);
+            font-family: var(--font-primary);
+            font-size: 12px;
+        }
+        
+        .news-title {
+            color: var(--text-main);
+            font-family: var(--font-primary);
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 1.4;
+            margin-bottom: 4px;
+        }
+        
+        .news-summary {
+            color: var(--text-muted);
+            font-family: var(--font-primary);
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        
+        .news-priority {
+            background: rgba(239, 68, 68, 0.1);
+            color: #EF4444;
+            font-size: 11px;
+            font-weight: 600;
+            padding: 2px 6px;
+            border-radius: 4px;
+            margin-top: 8px;
+            display: inline-block;
+        }
+
+        /* ===== MARKETS GRID (Markets Tab) ===== */
+        .markets-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
+            gap: 20px;
+        }
+        
+        .market-section {
+            background: var(--surface-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: 8px;
+            padding: 16px;
+        }
+        
+        .chart-card {
+            background: var(--surface-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: 10px;
+            padding: 16px;
+            transition: border-color 0.25s;
+        }
+        .signal-call-box {
+            margin-top: 10px;
+            padding: 10px 12px;
+            background: rgba(0, 218, 243, 0.06);
+            border: 1px solid rgba(0, 218, 243, 0.15);
+            border-radius: 6px;
+        }
+        .signal-call-row {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .signal-call-label {
+            font-size: 9px;
+            font-weight: 700;
+            color: var(--text-muted);
+            letter-spacing: 0.08em;
+        }
+        .signal-call-value {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--text-primary);
+            padding: 2px 6px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 4px;
+        }
+        .signal-call-value.stop { color: #ef4444; border: 1px solid rgba(239,68,68,0.3); }
+        .signal-call-value.target { color: #22c55e; border: 1px solid rgba(34,197,94,0.3); }
+        .signal-cushion-row {
+            font-size: 10px;
+            color: var(--text-muted);
+            margin-top: 6px;
+        }
+        .signal-cushion-row .cushion-ok { color: #22c55e; }
+        .signal-cushion-row .cushion-warn { color: #f59e0b; }
+        .signal-cushion-row .cushion-danger { color: #ef4444; }
+        .chart-card:hover {
+            border-color: rgba(34, 211, 238, 0.4);
+        }
+        
+        .chart-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        
+        .chart-symbol {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .chart-symbol-name {
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--text-main);
+            letter-spacing: 0.02em;
+        }
+        
+        .chart-symbol-pair {
+            font-size: 11px;
+            color: var(--text-dim);
+            font-weight: 500;
+        }
+        
+        .chart-price {
+            font-size: 22px;
+            font-weight: 800;
+            color: var(--text-main);
+            font-variant-numeric: tabular-nums;
+        }
+        
+        .chart-change {
+            font-size: 13px;
+            font-weight: 600;
+            margin-left: 8px;
+        }
+        
+        .chart-change.positive { color: #10B981; }
+        .chart-change.negative { color: #EF4444; }
+        
+        .chart-container {
+            width: 100%;
+            height: 200px;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+        
+        .chart-meta {
+            display: flex;
+            gap: 16px;
+            margin-top: 10px;
+        }
+        
+        .chart-meta-item {
+            font-size: 11px;
+            color: var(--text-dim);
+        }
+        
+        .chart-meta-item span {
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+        
+        .chart-badge {
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+        
+        .badge-xrp { background: rgba(34, 211, 238, 0.15); color: #22d3ee; }
+        .badge-gold { background: rgba(212, 175, 55, 0.15); color: #D4AF37; }
+        .badge-btc { background: rgba(249, 115, 22, 0.15); color: #F97316; }
+        .badge-eth { background: rgba(139, 92, 246, 0.15); color: #8B5CF6; }
+        
+        .chart-loading {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 200px;
+            color: var(--text-dim);
+            font-size: 13px;
+            gap: 8px;
+        }
+        
+        .chart-loading-spinner {
+            width: 16px;
+            height: 16px;
+            border: 2px solid var(--border-subtle);
+            border-top-color: var(--accent-mint);
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        .section-title {
+            color: var(--text-main);
+            font-family: var(--font-primary);
+            font-weight: 600;
+            font-size: 16px;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        .tickers-container {
+            display: grid;
+            gap: 12px;
+        }
+        
+        .ticker-widget {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 6px;
+            padding: 12px;
+        }
+
+        /* ===== VENTURES GRID (Venture Tab) ===== */
+        .ventures-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 16px;
+        }
+        
+        .venture-card {
+            background: var(--surface-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: 8px;
+            padding: 16px;
+            transition: all 0.2s;
+        }
+        
+        .venture-card:hover {
+            border-color: var(--accent-mint);
+            transform: translateY(-2px);
+        }
+        
+        .venture-score {
+            background: var(--accent-mint);
+            color: white;
+            font-family: var(--font-primary);
+            font-weight: 700;
+            font-size: 24px;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 12px;
+        }
+        
+        .venture-title {
+            color: var(--text-main);
+            font-family: var(--font-primary);
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 1.4;
+            margin-bottom: 8px;
+        }
+        
+        .venture-summary {
+            color: var(--text-muted);
+            font-family: var(--font-primary);
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 12px;
+        }
+        
+        .venture-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+        
+        .venture-tag {
+            background: var(--accent-mint-glow);
+            color: var(--accent-mint);
+            font-family: var(--font-primary);
+            font-weight: 500;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+
+        /* ===== NOTIFICATIONS ===== */
+        .notification-toast {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: var(--surface-card);
+            border: 1px solid var(--accent-mint);
+            border-radius: 8px;
+            padding: 12px 16px;
+            color: var(--text-main);
+            font-family: var(--font-primary);
+            font-size: 14px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            transform: translateY(100px);
+            opacity: 0;
+            transition: all 0.3s;
+            z-index: 1000;
+        }
+        
+        .notification-toast.show {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        /* ===== MOBILE OPTIMIZATIONS ===== */
+        @media (max-width: 768px) {
+            .container {
+                padding: 12px;
+            }
+            
+            .header-controls {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            
+            .controls-right {
+                width: 100%;
+            }
+            
+            .search-bar {
+                min-width: 0;
+            }
+            
+            .tab-bar {
+                padding: 8px 0;
+            }
+            
+            .tab {
+                padding: 10px 16px;
+                font-size: 13px;
+            }
+            
+            /* Grid adjustments for tablet */
+            .news-wall,
+            .markets-grid,
+            .ventures-grid {
+                grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            }
+            
+            .sub-tab-bar {
+                overflow-x: auto;
+                padding-bottom: 8px;
+                flex-wrap: nowrap;
+                -webkit-overflow-scrolling: touch;
+            }
+            
+            .sub-tab {
+                white-space: nowrap;
+                flex-shrink: 0;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 8px;
+            }
+            
+            .page-title {
+                font-size: 20px;
+            }
+            
+            .tab {
+                padding: 8px 12px;
+                font-size: 12px;
+            }
+            
+            /* Single column layout for very small screens */
+            .news-wall,
+            .markets-grid,
+            .ventures-grid {
+                grid-template-columns: 1fr !important;
+            }
+            
+            .card {
+                padding: 12px;
+            }
+            
+            .card-title {
+                font-size: 15px;
+            }
+            
+            .card-summary {
+                font-size: 13px;
+            }
+            
+            .sub-tab-bar {
+                gap: 6px;
+            }
+            
+            .sub-tab {
+                padding: 6px 12px;
+                font-size: 12px;
+            }
+            
+            /* Ensure minimum tap target size */
+            button, .tab, .sub-tab, .refresh-btn {
+                min-height: 44px;
+                min-width: 44px;
+            }
+        }
+        
+        /* ===== ADDITIONAL STYLES FOR DYNAMIC DATA ===== */
+        .score-high {
+            background: var(--accent-mint);
+        }
+        
+        .score-medium {
+            background: #F59E0B; /* Amber */
+        }
+        
+        .score-low {
+            background: #EF4444; /* Red */
+        }
+        
+        .news-priority {
+            background: rgba(239, 68, 68, 0.1);
+            color: #EF4444;
+            font-size: 11px;
+            font-weight: 600;
+            padding: 2px 6px;
+            border-radius: 4px;
+            margin-top: 8px;
+            display: inline-block;
+        }
+        
+        .venture-status {
+            color: var(--text-muted);
+            font-size: 12px;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        .venture-progress {
+            background: rgba(16, 185, 129, 0.1);
+            color: var(--accent-mint);
+            font-size: 13px;
+            padding: 4px 8px;
+            border-radius: 4px;
+            margin: 8px 0;
+            display: inline-block;
+        }
+        
+        .venture-next {
+            color: var(--text-muted);
+            font-size: 13px;
+            margin: 8px 0;
+            font-style: italic;
+        }
+        
+        .venture-team {
+            color: var(--text-muted);
+            font-size: 12px;
+            margin-top: 12px;
+            border-top: 1px solid var(--border-subtle);
+            padding-top: 8px;
+        }
+        
+        .ticker-symbol {
+            font-weight: 600;
+            font-size: 16px;
+            color: var(--text-main);
+        }
+        
+        .ticker-name {
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-bottom: 4px;
+        }
+        
+        .ticker-price {
+            font-size: 20px;
+            font-weight: 700;
+            margin: 4px 0;
+        }
+        
+        .ticker-change {
+            font-size: 14px;
+            font-weight: 600;
+        }
+        
+        .ticker-price.up, .ticker-change.up {
+            color: var(--accent-mint);
+        }
+        
+        .ticker-price.down, .ticker-change.down {
+            color: #EF4444;
+        }
+    </style>
+        <style>
+            .view-full-btn {
+                background: rgba(139, 92, 246, 0.15);
+                color: #8B5CF6;
+                border: 1px solid rgba(139, 92, 246, 0.3);
+                padding: 6px 12px;
+                border-radius: 6px;
+                font-size: 0.85rem;
+                cursor: pointer;
+                transition: all 0.2s ease;
+                font-family: 'SF Mono', Monaco, monospace;
+            }
+            .view-full-btn:hover {
+                background: rgba(139, 92, 246, 0.25);
+                border-color: #8B5CF6;
+            }
+            .view-full-btn.active {
+                background: rgba(139, 92, 246, 0.3);
+                border-color: #8B5CF6;
+                box-shadow: 0 0 10px rgba(139, 92, 246, 0.2);
+            }
+            .heartbeat-full pre {
+                margin: 0;
+                font-family: 'SF Mono', Monaco, monospace;
+                line-height: 1.4;
+            }
+        </style>
+</head>
+
+<body>
+    <header class="oracle-topbar" role="banner">
+        <div class="oracle-brand">
+            <span class="material-symbols-outlined" style="color: var(--oracle-cyan); font-size: 22px;">terminal</span>
+            <h1>ITO TERMINAL</h1>
+            <span class="oracle-feed-pill">Empire Intel</span>
+        </div>
+        <div class="oracle-status">
+            <span class="oracle-pulse" aria-hidden="true"></span>
+            <span>LIVE_FEED</span>
+        </div>
+    </header>
+    <div class="container">
+        <!-- Header with Controls -->
+        <div class="header-controls">
+            <div class="page-title">Intelligence Stream <span class="timestamp">17:56 JST</span></div>
+            <div class="controls-right">
+                <input type="text" class="search-bar" placeholder="Search news, markets, ventures..." id="search-input">
+                <button class="refresh-btn" id="refresh-btn" onclick="refreshData()">
+                    <span class="refresh-icon">↻</span>
+                    <span>Refresh</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Sticky Tab Bar -->
+        <div class="tab-bar">
+            <button class="tab active" onclick="switchTab('intel')" id="btn-tab-intel">INTEL</button>
+            <button class="tab" onclick="switchTab('markets')" id="btn-tab-markets">MARKETS</button>
+            <button class="tab" onclick="switchTab('venture')" id="btn-tab-venture">ALERTS</button>
+</div>
+
+        <!-- TAB 1: INTEL (Default View) -->
+        <div id="tab-intel" class="tab-content active">
+            <div class="news-wall" id="news-wall">
+                <div class="sub-tab-bar">
+        <button class="sub-tab active" onclick="switchSubTab('intel', 0)" 
+                id="btn-subtab-intel-0" 
+                style="background: #22D3EE22; color: #22D3EE; border: 1px solid #22D3EE44;">
+            Intel Brief
+        </button>
+        <button class="sub-tab " onclick="switchSubTab('intel', 1)" 
+                id="btn-subtab-intel-1" 
+                style="background: #6366F122; color: #6366F1; border: 1px solid #6366F144;">
+            Trends
+        </button>
+        <button class="sub-tab " onclick="switchSubTab('intel', 2)" 
+                id="btn-subtab-intel-2" 
+                style="background: #0A84FF22; color: #0A84FF; border: 1px solid #0A84FF44;">
+            SaaS
+        </button>
+        <button class="sub-tab " onclick="switchSubTab('intel', 3)" 
+                id="btn-subtab-intel-3" 
+                style="background: #FF3B3022; color: #FF3B30; border: 1px solid #FF3B3044;">
+            Japan Business
+        </button>
+        <button class="sub-tab " onclick="switchSubTab('intel', 4)" 
+                id="btn-subtab-intel-4" 
+                style="background: #8B5CF622; color: #8B5CF6; border: 1px solid #8B5CF644;">
+            Property
+        </button>
+        <button class="sub-tab " onclick="switchSubTab('intel', 5)" 
+                id="btn-subtab-intel-5" 
+                style="background: #10B98122; color: #10B981; border: 1px solid #10B98144;">
+            Sports
+        </button>
+        <button class="sub-tab " onclick="switchSubTab('intel', 6)" 
+                id="btn-subtab-intel-6" 
+                style="background: #F59E0B22; color: #F59E0B; border: 1px solid #F59E0B44;">
+            Tech
+        </button>
+        <button class="sub-tab " onclick="switchSubTab('intel', 7)" 
+                id="btn-subtab-intel-7" 
+                style="background: #EC489922; color: #EC4899; border: 1px solid #EC489944;">
+            AI
+        </button>
+        <button class="sub-tab " onclick="switchSubTab('intel', 8)" 
+                id="btn-subtab-intel-8" 
+                style="background: #D4AF3722; color: #D4AF37; border: 1px solid #D4AF3744;">
+            Finance
+        </button>
+        <button class="sub-tab " onclick="switchSubTab('intel', 9)" 
+                id="btn-subtab-intel-9" 
+                style="background: #3B82F622; color: #3B82F6; border: 1px solid #3B82F644;">
+            NZ
+        </button>
+        <button class="sub-tab " onclick="switchSubTab('intel', 10)" 
+                id="btn-subtab-intel-10" 
+                style="background: #EF444422; color: #EF4444; border: 1px solid #EF444444;">
+            Regulatory
+        </button>
+        <button class="sub-tab " onclick="switchSubTab('intel', 11)" 
+                id="btn-subtab-intel-11" 
+                style="background: #1DA1F222; color: #1DA1F2; border: 1px solid #1DA1F244;">
+            X/Twitter
+        </button></div><div class="sub-tab-contents"><div id="subtab-intel-0" class="sub-tab-content active"><div style="display: grid; gap: 16px;"><div class="card" style="border-left: 3px solid #FF3B30; padding: 14px 16px;">
+                                    <div style="display:flex; align-items:center; gap:8px; margin-bottom:10px;">
+                                        <span class="tag" style="background:#FF3B3022; color:#FF3B30; font-size:0.72rem; padding:2px 8px; border-radius:4px; font-weight:600;">JAPAN BUSINESS</span>
+                                    </div>
+                                    <ul style="list-style:none; padding:0; margin:0;"><li style="margin-bottom:6px; color: var(--text-main);">プーチン大統領は侵攻継続意向 ゼレンスキー大統領は対抗方針</li>
+<li style="margin-bottom:6px; color: var(--text-main);">“魅せる自作PC”を極めるならコレ｜DeepCoolの新ケース＆水冷クーラー</li></ul>
+                                </div><div class="card" style="border-left: 3px solid #EC4899; padding: 14px 16px;">
+                                    <div style="display:flex; align-items:center; gap:8px; margin-bottom:10px;">
+                                        <span class="tag" style="background:#EC489922; color:#EC4899; font-size:0.72rem; padding:2px 8px; border-radius:4px; font-weight:600;">AI</span>
+                                    </div>
+                                    <ul style="list-style:none; padding:0; margin:0;"><li style="margin-bottom:6px; color: var(--text-main);">Meta will record employees’ keystrokes and use it to train its AI models</li>
+<li style="margin-bottom:6px; color: var(--text-main);">The most interesting startups showcased at Google Cloud Next 2026</li></ul>
+                                </div><div class="card" style="border-left: 3px solid #D4AF37; padding: 14px 16px;">
+                                    <div style="display:flex; align-items:center; gap:8px; margin-bottom:10px;">
+                                        <span class="tag" style="background:#D4AF3722; color:#D4AF37; font-size:0.72rem; padding:2px 8px; border-radius:4px; font-weight:600;">FINANCE</span>
+                                    </div>
+                                    <ul style="list-style:none; padding:0; margin:0;"><li style="margin-bottom:6px; color: var(--text-main);">Military planners set to bypass the clowns and reopen the Strait of Hormuz themselves</li>
+<li style="margin-bottom:6px; color: var(--text-main);">Japan March trade data: Surplus shrinks. Imports and exports both higher than expecte…</li></ul>
+                                </div><div class="card" style="border-left: 3px solid #F59E0B; padding: 14px 16px;">
+                                    <div style="display:flex; align-items:center; gap:8px; margin-bottom:10px;">
+                                        <span class="tag" style="background:#F59E0B22; color:#F59E0B; font-size:0.72rem; padding:2px 8px; border-radius:4px; font-weight:600;">TECH</span>
+                                    </div>
+                                    <ul style="list-style:none; padding:0; margin:0;"><li style="margin-bottom:6px; color: var(--text-main);">Stocks to Watch if Warsh Becomes Fed Chair</li>
+<li style="margin-bottom:6px; color: var(--text-main);">5 Top Earnings Charts to Watch This Week</li></ul>
+                                </div><div class="card" style="border-left: 3px solid #3B82F6; padding: 14px 16px;">
+                                    <div style="display:flex; align-items:center; gap:8px; margin-bottom:10px;">
+                                        <span class="tag" style="background:#3B82F622; color:#3B82F6; font-size:0.72rem; padding:2px 8px; border-radius:4px; font-weight:600;">NZ</span>
+                                    </div>
+                                    <ul style="list-style:none; padding:0; margin:0;"><li style="margin-bottom:6px; color: var(--text-main);">Counting properly matters</li>
+<li style="margin-bottom:6px; color: var(--text-main);">Unfashionably left</li></ul>
+                                </div><div class="card" style="border-left: 3px solid #0A84FF; padding: 14px 16px;">
+                                    <div style="display:flex; align-items:center; gap:8px; margin-bottom:10px;">
+                                        <span class="tag" style="background:#0A84FF22; color:#0A84FF; font-size:0.72rem; padding:2px 8px; border-radius:4px; font-weight:600;">SAAS</span>
+                                    </div>
+                                    <ul style="list-style:none; padding:0; margin:0;"><li style="margin-bottom:6px; color: var(--text-main);">The most interesting startups showcased at Google Cloud Next 2026</li>
+<li style="margin-bottom:6px; color: var(--text-main);">Learning to Vibe Code at SaaStr AI Annual 2026. Build It, Ship It, Vibe It. Deploy It…</li></ul>
+                                </div><div class="card" style="border-left: 3px solid #8B5CF6; padding: 14px 16px;">
+                                    <div style="display:flex; align-items:center; gap:8px; margin-bottom:10px;">
+                                        <span class="tag" style="background:#8B5CF622; color:#8B5CF6; font-size:0.72rem; padding:2px 8px; border-radius:4px; font-weight:600;">PROPERTY</span>
+                                    </div>
+                                    <ul style="list-style:none; padding:0; margin:0;"><li style="margin-bottom:6px; color: var(--text-main);">New York’s New pied-à-terre Tax on Luxury Second Homes – Is Tokyo an alternative?</li>
+<li style="margin-bottom:6px; color: var(--text-main);">Shibuya Station Redevelopment: Progress and Plans to 2034</li></ul>
+                                </div></div></div><div id="subtab-intel-1" class="sub-tab-content ">
+                <div class="card" style="border-left-color: #6366F1; margin-bottom: 20px;">
+                    <div class="signal-header">
+                        <div>
+                            <span class="tag" style="background: #6366F122; color: #6366F1;">TRENDS</span>
+                            <div class="card-title">Market Trends from Weekend Intel Scan</div>
+                        </div>
+                        <div class="signal-value" style="color: #6366F1;">📈</div>
+                    </div>
+                    <div style="margin-top: 8px; font-size: 0.85rem; color: var(--text-dim);">
+                        📅 2026-04-11 12:00 JST
+                    </div>
+                    <div class="card-summary" style="margin-top: 12px; line-height: 1.6;">
+                        ## TRENDS SPOTTED (from weekend intel scan — 2026-04-11)<br><br>1. **AI dominance** — 188 keyword hits this week. No sector话题<br>2. **US-Iran conflict + Oil** — 39 oil articles, 15 US-Iran mentions. Hormuz strait tensions driving energy volatility.<br>3. **Startup funding active** — 38 startup + 15 funding hits. VC market still open for B2B/infra.<br>4. **Inflation + Trump** — 28 inflation + 22 Trump mentions. Tariff uncertainty + rate policy ambiguity.<br>5. **Gold as hedge** — 16 gold mentions. Risk-off positioning visible.<br>6. **Japan market** — 23 Japan hits. Local biz + regulatory coverage steady.<br>7. **NZ Property** — 11 Auckland hits. Market monitoring active.<br>8. **China** — 21 China mentions. Geopolitical risk factor.<br>9. **Anthropic** — 4 mentions. AI infrastructure play.<br>10. **Volatility** — 4 volatility mentions (low reading — weekend filter may suppress).
+                    </div>
+                </div></div><div id="subtab-intel-2" class="sub-tab-content ">
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #0A84FF22; color: #0A84FF;">SaaS</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <a href="https://techcrunch.com/2026/04/22/the-most-interesting-startups-showcased-at-google-cloud-next-2026/" target="_blank" class="card-title-link">The most interesting startups showcased at Google Cloud Next 2026</a>
+            <div class="card-summary">Google wants AI startups on its cloud and has showcased a long list of them at its annual conference.</div>
+        </div>
+
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #0A84FF22; color: #0A84FF;">SaaS</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <a href="https://www.saastr.com/learning-to-vibe-code-at-saastr-ai-annual-2026-build-it-ship-it-vibe-it/" target="_blank" class="card-title-link">Learning to Vibe Code at SaaStr AI Annual 2026. Build It, Ship It, Vibe It. Deploy It.</a>
+            <div class="card-summary">Every operator I talk to right now says the same thing: &amp;#8220;I know we need to be moving faster on AI. We just can&amp;#8217;t get engineering time.&amp;#...</div>
+        </div>
+
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #0A84FF22; color: #0A84FF;">SaaS</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <a href="https://techcrunch.com/2026/04/22/cathie-woods-ark-makes-its-first-lead-investment-in-startup-lucra-and-it-isnt-ai/" target="_blank" class="card-title-link">Cathie Woods’ ARK makes its first lead investment in startup Lucra — and it isn’t AI</a>
+            <div class="card-summary">Lucra offers corporate loyalty programs reimagined as interactive eSports. But winning ARK as a lead wasn&#x27;t easy.</div>
+        </div>
+
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #0A84FF22; color: #0A84FF;">SaaS</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <a href="https://techcrunch.com/2026/04/22/mary-minno-teams-up-with-esther-and-anne-wojcicki-to-launch-healthcare-residency-and-early-stage-fund/" target="_blank" class="card-title-link">Esther and Anne Wojcicki join new  healthcare accelerator, fund</a>
+            <div class="card-summary">Mary Minno launches early-stage startup accelerator program, Treehub, and an early-stage firm, AI Health Fund, aimed at backing startups working at the intersec...</div>
+        </div>
+</div><div id="subtab-intel-3" class="sub-tab-content ">
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #FF3B3022; color: #FF3B30;">Japan Business</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <a href="http://www3.nhk.or.jp/news/html/20260422/k10015105071000.html" target="_blank" class="card-title-link">プーチン大統領は侵攻継続意向 ゼレンスキー大統領は対抗方針</a>
+            <div class="card-summary">ロシアのプーチン大統領は「われわれの結束があってこそ、特別軍事作戦の目標を達成できる」と述べ、ウクライナ侵攻を継続する意向を改めて示しました。一方、ウクライナのゼレンスキー大統領はロシアに対抗する作戦を継続する方針を重ねて強調しました。</div>
+        </div>
+
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #FF3B3022; color: #FF3B30;">Japan Business</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <a href="https://ascii.jp/elem/000/004/396/4396988/?rss" target="_blank" class="card-title-link">“魅せる自作PC”を極めるならコレ｜DeepCoolの新ケース＆水冷クーラー</a>
+            <div class="card-summary">pimg align=&quot;left&quot; height=&quot;60&quot; src=&quot;https://ascii.jp/img/2026/04/22/4456103/s/1cb0a48426de718a.jpg&quot; width=&quot;60&quot; /DeepCoolよ...</div>
+        </div>
+
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #FF3B3022; color: #FF3B30;">Japan Business</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">1d ago</span>
+            </div>
+            <a href="http://www.asahi.com/articles/ASV4P7RSNV4PULLI002M.html?ref=rss" target="_blank" class="card-title-link">東京メトロ銀座線、浅草駅付近で発煙を確認　一部区間で運転見合わせ</a>
+            <div class="card-summary"></div>
+        </div>
+
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #FF3B3022; color: #FF3B30;">Japan Business</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">1d ago</span>
+            </div>
+            <a href="https://www.watch.impress.co.jp/docs/series/ishino/2103102.html" target="_blank" class="card-title-link">【石野純也のモバイル通信SE】なぜいまキャリア自身がSIMフリースマホを強化するのか</a>
+            <div class="card-summary">OPPOのスマホを日本で展開するオウガ・ジャパンは、4月15日にフォルダブルスマートフォンの「OPPO Find N6」を発売した。価格は318,000円と高価なフラッグシップモデルだ。</div>
+        </div>
+</div><div id="subtab-intel-4" class="sub-tab-content ">
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #8B5CF622; color: #8B5CF6;">Property</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <a href="https://housingjapan.com/blog/new-yorks-new-pied-a-terre-tax-on-luxury-second-homes/" target="_blank" class="card-title-link">New York’s New pied-à-terre Tax on Luxury Second Homes – Is Tokyo an alternative?</a>
+            <div class="card-summary">pOn April 15, 2026, New York Governor Kathy Hochul announced a proposal for a new annual surcharge on luxury second homes in New York City valued at $5 million ...</div>
+        </div>
+
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #8B5CF622; color: #8B5CF6;">Property</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <a href="https://housingjapan.com/blog/shibuya-once-in-a-century-redevelopment-nears-final-phase/" target="_blank" class="card-title-link">Shibuya Station Redevelopment: Progress and Plans to 2034</a>
+            <div class="card-summary">pThe Shibuya Station area redevelopment is one of Tokyo&amp;#8217;s most significant urban projects, led by Tokyu Corporation, JR East, and Tokyo Metro. The pro...</div>
+        </div>
+
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #8B5CF622; color: #8B5CF6;">Property</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <a href="https://housingjapan.com/blog/tokyo-condo-prices-and-sales-keep-rising/" target="_blank" class="card-title-link">Tokyo Condo Prices and Sales Keep Rising in 2026 (Updated)</a>
+            <div class="card-summary">pThe average new condominium price in Tokyo&amp;#8217;s 23 wards reached a record ¥137.84 million in fiscal 2025 (April 2025 to March 2026), up 18.5% year-on-ye...</div>
+        </div>
+</div><div id="subtab-intel-5" class="sub-tab-content ">
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #10B98122; color: #10B981;">Sports</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <a href="https://www.japantimes.co.jp/sports/2026/04/22/soccer/machida-acl-final/" target="_blank" class="card-title-link">Machida Zelvia advances to Asian Champions League final</a>
+            <div class="card-summary">Ahead of Machida&#x27;s win, Vissel Kobe coach Michael Skibbe had questioned whether clubs from Japan could ⁠compete with their counterparts from cash-rich Gulf...</div>
+        </div>
+
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #10B98122; color: #10B981;">Sports</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <a href="https://frontofficesports.com/athletes-sideline-sports-photographers/" target="_blank" class="card-title-link">Why Athletes Are Suddenly Moonlighting As Sports Photographers</a>
+            <div class="card-summary">Athletes are swapping courtside seats for sideline cameras.</div>
+        </div>
+
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #10B98122; color: #10B981;">Sports</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <a href="https://frontofficesports.com/nfl-drafts-recent-no-1-qb-success-raises-stakes-for-raiders/" target="_blank" class="card-title-link">NFL Draft’s Recent No. 1 QB Success Raises Stakes for Raiders</a>
+            <div class="card-summary">A quarterback is expected to lead the draft for the fourth straight year.</div>
+        </div>
+
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #10B98122; color: #10B981;">Sports</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <a href="https://frontofficesports.com/allyson-felix-nike-pregnancy-fight-was-worth-going-through-the-storm/" target="_blank" class="card-title-link">Allyson Felix: Nike Pregnancy Fight Was ‘Worth Going Through the Storm’</a>
+            <div class="card-summary">Felix left after Nike proposed a pay cut when she was pregnant.</div>
+        </div>
+</div><div id="subtab-intel-6" class="sub-tab-content ">
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #F59E0B22; color: #F59E0B;">Tech</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <a href="https://www.nasdaq.com/articles/stocks-watch-if-warsh-becomes-fed-chair" target="_blank" class="card-title-link">Stocks to Watch if Warsh Becomes Fed Chair</a>
+            <div class="card-summary">Here&#x27;s a comprehensive breakdown of the equity markets, stocks, and private venture capital firms that investors may want to watch if Kevin Warsh is offici...</div>
+        </div>
+
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #F59E0B22; color: #F59E0B;">Tech</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <a href="https://www.nasdaq.com/articles/5-top-earnings-charts-watch-week" target="_blank" class="card-title-link">5 Top Earnings Charts to Watch This Week</a>
+            <div class="card-summary">AI infrastructure, semiconductors, a top software company, and a gold miner are set to report earnings.</div>
+        </div>
+
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #F59E0B22; color: #F59E0B;">Tech</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <a href="https://www.nasdaq.com/articles/zacks-investment-ideas-feature-highlights-nvidia-taiwan-and-intel" target="_blank" class="card-title-link">Zacks Investment Ideas feature highlights Nvidia, Taiwan and Intel</a>
+            <div class="card-summary">Nvidia, Taiwan and Intel have been highlighted in this Investment Ideas article.</div>
+        </div>
+
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #F59E0B22; color: #F59E0B;">Tech</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <a href="https://www.nasdaq.com/articles/zacks-industry-outlook-highlights-firstenergy-nisource-northwestern-and-otter-tail" target="_blank" class="card-title-link">Zacks Industry Outlook Highlights FirstEnergy, NiSource, Northwestern and Otter Tail</a>
+            <div class="card-summary">FirstEnergy, NiSource, Northwestern and Otter Tail have been highlighted in this Industry Outlook article.</div>
+        </div>
+</div><div id="subtab-intel-7" class="sub-tab-content ">
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #EC489922; color: #EC4899;">AI</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <a href="https://techcrunch.com/2026/04/21/meta-will-record-employees-keystrokes-and-use-it-to-train-its-ai-models/" target="_blank" class="card-title-link">Meta will record employees’ keystrokes and use it to train its AI models</a>
+            <div class="card-summary">Meta says that it has a new internal tool that is converting mouse movements and button clicks into data that can train its AI models.</div>
+        </div>
+
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #EC489922; color: #EC4899;">AI</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <a href="https://techcrunch.com/2026/04/22/the-most-interesting-startups-showcased-at-google-cloud-next-2026/" target="_blank" class="card-title-link">The most interesting startups showcased at Google Cloud Next 2026</a>
+            <div class="card-summary">Google wants AI startups on its cloud and has showcased a long list of them at its annual conference.</div>
+        </div>
+
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #EC489922; color: #EC4899;">AI</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <a href="https://techcrunch.com/2026/04/22/google-maps-is-about-to-get-a-big-dose-of-ai/" target="_blank" class="card-title-link">Google Maps is about to get a big dose of AI</a>
+            <div class="card-summary">Generative AI is being infused into Google&#x27;s popular feature within Maps.</div>
+        </div>
+
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #EC489922; color: #EC4899;">AI</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <a href="https://techcrunch.com/2026/04/22/exclusive-google-deepens-thinking-machines-lab-ties-with-new-multi-billion-dollar-deal/" target="_blank" class="card-title-link">Exclusive: Google deepens Thinking Machines Lab ties with new multi-billion-dollar deal</a>
+            <div class="card-summary">Mira Murati&#x27;s Thinking Machines Lab has signed a multi-billion-dollar deal with Google Cloud for AI infrastructure powered by Nvidia&#x27;s latest GB300 ch...</div>
+        </div>
+</div><div id="subtab-intel-8" class="sub-tab-content ">
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #D4AF3722; color: #D4AF37;">Finance</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <a href="https://investinglive.com/commodities/military-planners-set-to-bypass-the-clowns-and-reopen-the-strait-of-hormuz-themselves-20260421/" target="_blank" class="card-title-link">Military planners set to bypass the clowns and reopen the Strait of Hormuz themselves</a>
+            <div class="card-summary">pOver 30 countries will meet in London to advance military plans to reopen the Strait of Hormuz, focusing on deployment and command structures, with any mission...</div>
+        </div>
+
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #D4AF3722; color: #D4AF37;">Finance</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <a href="https://investinglive.com/news/japan-march-trade-data-suplus-shrinks-imports-and-exports-both-higher-than-expected-20260421/" target="_blank" class="card-title-link">Japan March trade data: Surplus shrinks. Imports and exports both higher than expected</a>
+            <div class="card-summary">pJapan’s trade balance recorded a surplus of ¥667.0B in March (expected ¥1,106B, prior ¥57.3B)/pulliimports increased 10.9% y/y (exp. 7.1%, prior 10.2%)/liliexp...</div>
+        </div>
+
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #D4AF3722; color: #D4AF37;">Finance</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <a href="https://investinglive.com/forex/jpmorgan-turns-selectively-bearish-us-dollar-post-ceasefire-favour-high-yield-risk-fx-20260421/" target="_blank" class="card-title-link">JPMorgan turns selectively bearish US dollar post-ceasefire, favour high-yield, risk FX</a>
+            <div class="card-summary">pJPMorgan says the U.S.-Iran ceasefire is bearish for the dollar, re-entering selective USD shorts and favouring high-yielding currencies like AUD, NZD and EM F...</div>
+        </div>
+</div><div id="subtab-intel-9" class="sub-tab-content ">
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #3B82F622; color: #3B82F6;">NZ</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <a href="https://www.interest.co.nz/public-policy/138144/brian-easton-says-aside-its-orwellian-doublespeak-proposed-legislation-change" target="_blank" class="card-title-link">Counting properly matters</a>
+            <div class="card-summary">Brian Easton says aside from its Orwellian doublespeak, the proposed legislation to change how we count New Zealand requires an expert review</div>
+        </div>
+
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #3B82F622; color: #3B82F6;">NZ</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <a href="https://www.interest.co.nz/public-policy/138153/sometimes-observations-old-time-socialists-are-spot" target="_blank" class="card-title-link">Unfashionably left</a>
+            <div class="card-summary">Sometimes the observations of old-time socialists are spot-on</div>
+        </div>
+
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #3B82F622; color: #3B82F6;">NZ</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <a href="https://www.interest.co.nz/currencies/138142/roger-j-kerr-looks-fast-changing-influences-currencies-and-shifting-influences-us" target="_blank" class="card-title-link">The currency war premium unwinds. What&#x27;s next?</a>
+            <div class="card-summary">Roger J Kerr looks at the fast-changing influences on currencies and the shifting influences on the US Federal Reserve&#x27;s FOMC</div>
+        </div>
+
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #3B82F622; color: #3B82F6;">NZ</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <a href="https://www.interest.co.nz/economy/138145/there-fresh-new-challenge-you-our-updated-quiz-join-your-fellow-readers-and-do-it" target="_blank" class="card-title-link">A new challenge</a>
+            <div class="card-summary">There is a fresh new challenge for you in our updated quiz. Join your fellow readers and do it now</div>
+        </div>
+</div><div id="subtab-intel-10" class="sub-tab-content ">
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #EF444422; color: #EF4444;">Regulatory</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">22h ago</span>
+            </div>
+            <a href="https://www.reddit.com/r/JapanFinance/comments/1ssh0bu/weekly_offtopic_thread_22_april_2026/" target="_blank" class="card-title-link">Weekly Off-Topic Thread - 22 April 2026</a>
+            <div class="card-summary">!-- SC_OFF --div class=&quot;md&quot;pWelcome to the weekly Off-Topic Questions Thread (questions on any topic are welcome)./p pCheck out the a href=&quot;https...</div>
+        </div>
+</div><div id="subtab-intel-11" class="sub-tab-content ">
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #1DA1F222; color: #1DA1F2;">X/Twitter</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <div class="card-title">No Title</div>
+            <div class="card-summary"></div>
+        </div>
+</div></div>
+    <script>
+    function switchSubTab(parentTab, subIndex) {
+        // Hide all sub‑tab contents for this parent tab
+        const subContents = document.querySelectorAll(`#tab-${parentTab} .sub-tab-content`);
+        subContents.forEach(el => el.classList.remove('active'));
+        
+        // Show selected sub‑tab content
+        const selected = document.getElementById(`subtab-${parentTab}-${subIndex}`);
+        if (selected) selected.classList.add('active');
+        
+        // Update sub‑tab button styles
+        const subButtons = document.querySelectorAll(`#tab-${parentTab} .sub-tab`);
+        subButtons.forEach(btn => btn.classList.remove('active'));
+        const selectedBtn = document.getElementById(`btn-subtab-${parentTab}-${subIndex}`);
+        if (selectedBtn) selectedBtn.classList.add('active');
+    }
+    </script>
+    
+                <div class="news-card">
+                    <div class="news-header">
+                        <span class="news-source">SYSTEM</span>
+                        <span class="news-time">Just now</span>
+                    </div>
+                    <div class="news-title">Loading real-time intelligence...</div>
+                    <div class="news-summary">The dashboard is fetching the latest RSS feeds from SaaS, Japan, NZ, Finance, and AI sources. This placeholder will be replaced with real data.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB 2: MARKETS -->
+        <div id="tab-markets" class="tab-content">
+            <div class="markets-grid">
+                <!-- XRP Chart -->
+                <div class="chart-card" id="chart-xrp">
+                    <div class="chart-header">
+                        <div class="chart-symbol">
+                            <span class="chart-badge badge-xrp">XRP</span>
+                            <div>
+                                <div class="chart-symbol-name">Ripple / USD</div>
+                                <div class="chart-symbol-pair">Binance · XRPUSDT</div>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="chart-price" id="xrp-price">—</span>
+                            <span class="chart-change positive" id="xrp-change">—</span>
+                        </div>
+                    </div>
+                    <div class="chart-container" id="chart-xrp-canvas"></div>
+                    <div class="chart-meta">
+                        <div class="chart-meta-item">24h High: <span id="xrp-high">—</span></div>
+                        <div class="chart-meta-item">24h Low: <span id="xrp-low">—</span></div>
+                        <div class="chart-meta-item">Signal: <span id="xrp-signal-status" style="color: var(--accent-mint);">—</span></div>
+                    </div>
+                    <div class="signal-call-box">
+                        <div class="signal-call-row">
+                            <span class="signal-call-label">ENTRY</span>
+                            <span class="signal-call-value" id="xrp-entry">—</span>
+                            <span class="signal-call-label">STOP</span>
+                            <span class="signal-call-value stop" id="xrp-stop">$1.38</span>
+                            <span class="signal-call-label">TARGET</span>
+                            <span class="signal-call-value target" id="xrp-target">$1.60</span>
+                        </div>
+                        <div class="signal-cushion-row">Cushion: <span id="xrp-cushion">—</span></div>
+                    </div>
+                </div>
+
+                <!-- Gold Chart -->
+                <div class="chart-card" id="chart-gold">
+                    <div class="chart-header">
+                        <div class="chart-symbol">
+                            <span class="chart-badge badge-gold">XAU</span>
+                            <div>
+                                <div class="chart-symbol-name">Gold / USD</div>
+                                <div class="chart-symbol-pair">Live Market · Gold Oracle</div>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="chart-price" id="gold-price">—</span>
+                            <span class="chart-change positive" id="gold-change">—</span>
+                        </div>
+                    </div>
+                    <div class="chart-container" id="chart-gold-canvas"></div>
+                    <div class="chart-meta">
+                        <div class="chart-meta-item">S1: <span id="gold-s1">—</span></div>
+                        <div class="chart-meta-item">R1: <span id="gold-r1">—</span></div>
+                        <div class="chart-meta-item">Bias: <span id="gold-bias" style="color: var(--accent-mint);">—</span></div>
+                    </div>
+                    <div class="signal-call-box">
+                        <div class="signal-call-row">
+                            <span class="signal-call-label">FLOOR</span>
+                            <span class="signal-call-value" id="gold-floor">$4,792</span>
+                            <span class="signal-call-label">SUPPORT</span>
+                            <span class="signal-call-value" id="gold-support">$4,800</span>
+                            <span class="signal-call-label">TARGET</span>
+                            <span class="signal-call-value target" id="gold-target">$5,000+</span>
+                        </div>
+                        <div class="signal-cushion-row">Oracle: <span id="gold-oracle-price">—</span></div>
+                    </div>
+                </div>
+
+                <!-- BTC Chart -->
+                <div class="chart-card" id="chart-btc">
+                    <div class="chart-header">
+                        <div class="chart-symbol">
+                            <span class="chart-badge badge-btc">BTC</span>
+                            <div>
+                                <div class="chart-symbol-name">Bitcoin / USD</div>
+                                <div class="chart-symbol-pair">Binance · BTCUSDT</div>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="chart-price" id="btc-price">—</span>
+                            <span class="chart-change positive" id="btc-change">—</span>
+                        </div>
+                    </div>
+                    <div class="chart-container" id="chart-btc-canvas"></div>
+                    <div class="chart-meta">
+                        <div class="chart-meta-item">24h High: <span id="btc-high">—</span></div>
+                        <div class="chart-meta-item">24h Low: <span id="btc-low">—</span></div>
+                        <div class="chart-meta-item">Dominance: <span id="btc-dom">—</span></div>
+                    </div>
+                    <div class="signal-call-box">
+                        <div class="signal-call-row">
+                            <span class="signal-call-label">FLOOR</span>
+                            <span class="signal-call-value" id="btc-floor">$75,000</span>
+                            <span class="signal-call-label">SUPPORT</span>
+                            <span class="signal-call-value" id="btc-support">$74,500</span>
+                            <span class="signal-call-label">TARGET</span>
+                            <span class="signal-call-value target" id="btc-target">$80,000+</span>
+                        </div>
+                        <div class="signal-cushion-row">Current: <span id="btc-current">—</span></div>
+                    </div>
+                </div>
+
+                <!-- ETH Chart -->
+                <div class="chart-card" id="chart-eth">
+                    <div class="chart-header">
+                        <div class="chart-symbol">
+                            <span class="chart-badge badge-eth">ETH</span>
+                            <div>
+                                <div class="chart-symbol-name">Ethereum / USD</div>
+                                <div class="chart-symbol-pair">Binance · ETHUSDT</div>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="chart-price" id="eth-price">—</span>
+                            <span class="chart-change positive" id="eth-change">—</span>
+                        </div>
+                    </div>
+                    <div class="chart-container" id="chart-eth-canvas"></div>
+                    <div class="chart-meta">
+                        <div class="chart-meta-item">24h High: <span id="eth-high">—</span></div>
+                        <div class="chart-meta-item">24h Low: <span id="eth-low">—</span></div>
+                        <div class="chart-meta-item">Signal: <span id="eth-signal" style="color: var(--accent-mint);">—</span></div>
+                    </div>
+                    <div class="signal-call-box">
+                        <div class="signal-call-row">
+                            <span class="signal-call-label">FLOOR</span>
+                            <span class="signal-call-value" id="eth-floor">$2,270</span>
+                            <span class="signal-call-label">SUPPORT</span>
+                            <span class="signal-call-value" id="eth-support">$2,300</span>
+                            <span class="signal-call-label">TARGET</span>
+                            <span class="signal-call-value target" id="eth-target">$2,500+</span>
+                        </div>
+                        <div class="signal-cushion-row">Current: <span id="eth-current">—</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB 3: ALERTS + RADAR -->
+        <div id="tab-venture" class="tab-content">
+            <div class="ventures-grid" id="ventures-grid">
+                
+    <div style="margin: 30px 0 20px 0; border-bottom: 2px solid #00daf3; padding-bottom: 10px;">
+        <h3 style="color: #00daf3; font-size: 1.2rem; margin: 0;">🚨 ALERT FEED</h3>
+        <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 5px;">
+            Real-time keyword matches from 0 active sectors.
+            <span style="color: var(--text-dim); font-size: 0.85rem;">
+                Last scan: Never | 0 total matches
+            </span>
+        </p>
+    </div>
+    
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 20px;">
+        <div style="background: var(--glass); border: 1px solid var(--border); border-radius: 8px; padding: 14px; text-align: center;">
+            <div style="font-size: 24px; font-weight: 800; color: #00daf3;">0</div>
+            <div style="font-size: 11px; color: var(--text-dim); text-transform: uppercase;">Total Matches</div>
+        </div>
+        <div style="background: var(--glass); border: 1px solid var(--border); border-radius: 8px; padding: 14px; text-align: center;">
+            <div style="font-size: 24px; font-weight: 800; color: #00daf3;">0</div>
+            <div style="font-size: 11px; color: var(--text-dim); text-transform: uppercase;">Active Sectors</div>
+        </div>
+        <div style="background: var(--glass); border: 1px solid var(--border); border-radius: 8px; padding: 14px; text-align: center;">
+            <div style="font-size: 24px; font-weight: 800; color: #00daf3;">40+</div>
+            <div style="font-size: 11px; color: var(--text-dim); text-transform: uppercase;">RSS Feeds</div>
+        </div>
+    </div>
+    <div style="margin-bottom: 20px;"><span style="display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; background: rgba(0,218,243,0.12); color: #00daf3; margin-right: 4px; margin-bottom: 4px;">crisis</span><span style="display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; background: rgba(0,218,243,0.12); color: #00daf3; margin-right: 4px; margin-bottom: 4px;">BOJ</span><span style="display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; background: rgba(0,218,243,0.12); color: #00daf3; margin-right: 4px; margin-bottom: 4px;">Fed</span><span style="display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; background: rgba(0,218,243,0.12); color: #00daf3; margin-right: 4px; margin-bottom: 4px;">inflation</span><span style="display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; background: rgba(0,218,243,0.12); color: #00daf3; margin-right: 4px; margin-bottom: 4px;">rate hike</span><span style="display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; background: rgba(0,218,243,0.12); color: #00daf3; margin-right: 4px; margin-bottom: 4px;">gold</span><span style="display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; background: rgba(0,218,243,0.12); color: #00daf3; margin-right: 4px; margin-bottom: 4px;">oil</span><span style="display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; background: rgba(0,218,243,0.12); color: #00daf3; margin-right: 4px; margin-bottom: 4px;">USD/JPY</span><span style="display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; background: rgba(0,218,243,0.12); color: #00daf3; margin-right: 4px; margin-bottom: 4px;">NZD/JPY</span><span style="display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; background: rgba(0,218,243,0.12); color: #00daf3; margin-right: 4px; margin-bottom: 4px;">tariff</span><span style="display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; background: rgba(0,218,243,0.12); color: #00daf3; margin-right: 4px; margin-bottom: 4px;">Ukraine</span><span style="display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; background: rgba(0,218,243,0.12); color: #00daf3; margin-right: 4px; margin-bottom: 4px;">Taiwan</span></div>
+        <div style="background: var(--glass); border: 1px solid var(--border); border-radius: 10px; padding: 24px; text-align: center; color: var(--text-dim);">
+            <p style="margin: 0;">No active alerts right now. Keyword monitoring is running silently.</p>
+        </div>
+    <div style="margin: 40px 0 20px 0; border-bottom: 2px solid #6366F1; padding-bottom: 10px;">
+        <h3 style="color: #6366F1; font-size: 1.2rem; margin: 0;">📡 OPPORTUNITY RADAR</h3>
+        <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 5px;">
+            Emerging trends and strategic signals from RSS feeds.
+        </p>
+    </div>
+    
+    <div style="background: var(--glass); border: 1px solid var(--border); border-radius: 10px; padding: 24px; text-align: center; color: var(--text-dim);">
+        <p style="margin: 0;">Radar is scanning for emerging trends. Check back after the next RSS cycle.</p>
+        <p style="margin-top: 8px; font-size: 12px;">Keyword alerting active — alerts surface emerging patterns.</p>
+    </div>
+            </div>
+        </div>
+    
+
+
+    <script>
+        // ===== TAB FUNCTIONALITY =====
+        function switchTab(tabId) {
+            // Hide all tab contents
+            const tabContents = document.querySelectorAll('.tab-content');
+            tabContents.forEach(tab => tab.classList.remove('active'));
+            
+            // Show selected tab content
+            const selectedTab = document.getElementById('tab-' + tabId);
+            if (selectedTab) {
+                selectedTab.classList.add('active');
+            }
+            
+            // Update tab buttons
+            const tabButtons = document.querySelectorAll('.tab');
+            tabButtons.forEach(btn => btn.classList.remove('active'));
+            
+            const selectedButton = document.getElementById('btn-tab-' + tabId);
+            if (selectedButton) {
+                selectedButton.classList.add('active');
+            }
+            
+            // Update URL hash for bookmarking
+            window.location.hash = tabId;
+            
+            // Show notification
+            showNotification(`Switched to ${tabId.toUpperCase()} tab`, 'success');
+        }
+
+        // ===== DATA REFRESH FUNCTION =====
+        function refreshData() {
+            const refreshBtn = document.getElementById('refresh-btn');
+            refreshBtn.innerHTML = '<span class="refresh-icon">⏳</span> Reloading...';
+            window.location.reload();
+        }
+
+        // ===== NOTIFICATION SYSTEM =====
+        function showNotification(message, type = 'info') {
+            const toast = document.createElement('div');
+            toast.className = 'notification-toast';
+            toast.textContent = message;
+            
+            if (type === 'success') {
+                toast.style.borderColor = 'var(--accent-mint)';
+            } else if (type === 'error') {
+                toast.style.borderColor = '#EF4444';
+            }
+            
+            document.body.appendChild(toast);
+            
+            // Trigger animation
+            setTimeout(() => toast.classList.add('show'), 10);
+            
+            // Remove after 3 seconds
+            setTimeout(() => {
+                toast.classList.remove('show');
+                setTimeout(() => toast.remove(), 300);
+            }, 3000);
+        }
+
+        // ===== SEARCH FUNCTIONALITY =====
+        document.getElementById('search-input').addEventListener('input', function(e) {
+            const searchTerm = e.target.value.toLowerCase();
+            if (searchTerm.length < 2) return;
+            
+            // Search across all tab contents
+            const cards = document.querySelectorAll('.news-card, .market-section, .venture-card');
+            cards.forEach(card => {
+                const text = card.textContent.toLowerCase();
+                card.style.display = text.includes(searchTerm) ? 'block' : 'none';
+            });
+            
+            if (searchTerm) {
+                showNotification(`Found ${document.querySelectorAll('[style="display: block;"]').length} results for "${searchTerm}"`, 'info');
+            }
+        });
+
+
+        // ===== INITIALIZATION =====
+        document.addEventListener('DOMContentLoaded', function() {
+            // Check URL hash for tab
+            const hash = window.location.hash.substring(1);
+            if (hash && ['intel', 'markets', 'venture'].includes(hash)) {
+                switchTab(hash);
+            } else {
+                // Default to intel tab
+                switchTab('intel');
+            }
+            
+            // Init charts when Markets tab is first opened
+            if (hash === 'markets' || !hash) {
+                initCharts();
+            }
+        });
+
+        // ===== LIVE CHARTS — TradingView Lightweight Charts v4 =====
+        const ORACLE_COLORS = {
+            background: '#1e2022',
+            text: '#bac9cc',
+            grid: 'rgba(59, 73, 76, 0.4)',
+            upColor: '#10B981',
+            downColor: '#EF4444',
+            borderUp: '#10B981',
+            borderDown: '#EF4444',
+            wickUp: '#10B981',
+            wickDown: '#EF4444',
+            cyan: '#22d3ee',
+            gold: '#D4AF37',
+        };
+
+        const VERCEL_API = 'https://dashboard-eight-wheat-51.vercel.app';
+        // Vercel bypass token stored at ~/.openclaw/secrets/vercel_bypass_token.txt — loaded at build time if available
+
+        let chartInstances = {};
+        let marketCache = null;
+        let chartData = { xrp: [], btc: [], eth: [], gold: [] };
+
+        function createChart(containerId, symbol) {
+            const container = document.getElementById(containerId);
+            if (!container) return null;
+            const chart = LightweightCharts.createChart(container, {
+                width: container.clientWidth,
+                height: 200,
+                layout: {
+                    background: { color: ORACLE_COLORS.background },
+                    textColor: ORACLE_COLORS.text,
+                },
+                grid: {
+                    vertLines: { color: ORACLE_COLORS.grid },
+                    horzLines: { color: ORACLE_COLORS.grid },
+                },
+                crosshair: {
+                    mode: LightweightCharts.CrosshairMode.Normal,
+                    vertLine: { color: 'rgba(34, 211, 238, 0.4)', labelBackgroundColor: '#22d3ee' },
+                    horzLine: { color: 'rgba(34, 211, 238, 0.4)', labelBackgroundColor: '#22d3ee' },
+                },
+                timeScale: {
+                    borderColor: ORACLE_COLORS.grid,
+                    timeVisible: true,
+                    secondsVisible: false,
+                },
+                rightPriceScale: {
+                    borderColor: ORACLE_COLORS.grid,
+                },
+            });
+
+            const isGold = symbol === 'gold';
+            const candleSeries = chart.addCandlestickSeries({
+                upColor: ORACLE_COLORS.upColor,
+                downColor: ORACLE_COLORS.downColor,
+                borderUpColor: ORACLE_COLORS.borderUp,
+                borderDownColor: ORACLE_COLORS.borderDown,
+                wickUpColor: ORACLE_COLORS.wickUp,
+                wickDownColor: ORACLE_COLORS.wickDown,
+            });
+
+            // Responsive resize
+            const resizeObserver = new ResizeObserver(() => {
+                if (container.clientWidth > 0) {
+                    chart.applyOptions({ width: container.clientWidth });
+                }
+            });
+            resizeObserver.observe(container);
+
+            return { chart, candleSeries };
+        }
+
+        async function fetchBinanceKlines(symbol, interval = '1h', limit = 168) {
+            const url = `https://api.binance.com/api/v3/klines?symbol=${symbol}&interval=${interval}&limit=${limit}`;
+            const res = await fetch(url);
+            if (!res.ok) throw new Error(`Binance API error: ${res.status}`);
+            const data = await res.json();
+            return data.map(k => ({
+                time: Math.floor(k[0] / 1000),
+                open: parseFloat(k[1]),
+                high: parseFloat(k[2]),
+                low: parseFloat(k[3]),
+                close: parseFloat(k[4]),
+            }));
+        }
+
+        async function fetchBinance24hr(symbol) {
+            const url = `https://api.binance.com/api/v3/ticker/24hr?symbol=${symbol}`;
+            const res = await fetch(url);
+            if (!res.ok) throw new Error(`Binance 24hr error: ${res.status}`);
+            return await res.json();
+        }
+
+        function fmtPrice(val, decimals = 2) {
+            if (val == null || isNaN(val)) return '—';
+            return parseFloat(val).toLocaleString('en-US', { minimumFractionDigits: decimals, maximumFractionDigits: decimals });
+        }
+
+        function fmtChange(pct) {
+            if (pct == null || isNaN(pct)) return { text: '—', cls: '' };
+            const num = parseFloat(pct);
+            const sign = num >= 0 ? '+' : '';
+            return { text: `${sign}${num.toFixed(2)}%`, cls: num >= 0 ? 'positive' : 'negative' };
+        }
+
+        function updateCardPrice(id, price, changePct, high, low) {
+            const priceEl = document.getElementById(`${id}-price`);
+            const changeEl = document.getElementById(`${id}-change`);
+            const highEl = document.getElementById(`${id}-high`);
+            const lowEl = document.getElementById(`${id}-low`);
+
+            if (priceEl) priceEl.textContent = price;
+            if (changeEl && changePct != null) {
+                const { text, cls } = fmtChange(changePct);
+                changeEl.textContent = text;
+                changeEl.className = `chart-change ${cls}`;
+            }
+            if (highEl && high) highEl.textContent = fmtPrice(high);
+            if (lowEl && low) lowEl.textContent = fmtPrice(low);
+        }
+
+        function updateXRPSignalCall(price) {
+            const stop = 1.38;
+            const target = 1.60;
+            const entry = 1.34;
+            const cushion = price ? (((price - stop) / price) * 100).toFixed(1) : '—';
+            const cushionEl = document.getElementById('xrp-cushion');
+            if (cushionEl) {
+                cushionEl.textContent = `${cushion}%`;
+                cushionEl.className = `signal-cushion-row ${parseFloat(cushion) > 4 ? 'cushion-ok' : parseFloat(cushion) > 2.5 ? 'cushion-warn' : 'cushion-danger'}`;
+            }
+            const stopEl = document.getElementById('xrp-stop');
+            if (stopEl) stopEl.textContent = `$${stop}`;
+            const targetEl = document.getElementById('xrp-target');
+            if (targetEl) targetEl.textContent = `$${target}`;
+            const entryEl = document.getElementById('xrp-entry');
+            if (entryEl) entryEl.textContent = `$${entry}`;
+        }
+
+        function updateGoldSignalCall(price) {
+            const floor = 4792;
+            const support = 4800;
+            const target = 5000;
+            const cushion = price ? (((price - floor) / price) * 100).toFixed(1) : '—';
+            const oracleEl = document.getElementById('gold-oracle-price');
+            if (oracleEl) oracleEl.textContent = price ? `$${price}` : '—';
+        }
+
+        function updateBTCSignalCall(price) {
+            const floor = 75000;
+            const support = 74500;
+            const target = 80000;
+            const currentEl = document.getElementById('btc-current');
+            if (currentEl) currentEl.textContent = price ? `$${price}` : '—';
+        }
+
+        function updateETHSignalCall(price) {
+            const floor = 2270;
+            const support = 2300;
+            const target = 2500;
+            const currentEl = document.getElementById('eth-current');
+            if (currentEl) currentEl.textContent = price ? `$${price}` : '—';
+        }
+
+        async function loadXRPChart() {
+            try {
+                const [klines, ticker] = await Promise.all([
+                    fetchBinanceKlines('XRPUSDT', '1h', 168),
+                    fetchBinance24hr('XRPUSDT'),
+                ]);
+
+                chartData.xrp = klines;
+
+                if (!chartInstances.xrp) {
+                    chartInstances.xrp = createChart('chart-xrp-canvas', 'xrp');
+                }
+                if (chartInstances.xrp) {
+                    chartInstances.xrp.candleSeries.setData(klines);
+                    chartInstances.xrp.chart.timeScale().fitContent();
+                }
+
+                const price = parseFloat(ticker.lastPrice);
+                const changePct = parseFloat(ticker.priceChangePercent);
+                const high = parseFloat(ticker.highPrice);
+                const low = parseFloat(ticker.lowPrice);
+
+                updateCardPrice('xrp', fmtPrice(price, 4), changePct, high, low);
+                updateXRPSignalCall(price);
+
+                // Highlight XRP breakout signal if applicable
+                const xrpSignal = document.querySelector('#chart-xrp .chart-meta-item:last-child span');
+                if (price > 1.44) {
+                    if (xrpSignal) { xrpSignal.textContent = '🚀 Breakout Active'; xrpSignal.style.color = '#10B981'; }
+                }
+            } catch (e) {
+                console.error('[Chart] XRP load error:', e.message);
+            }
+        }
+
+        async function loadBTCChart() {
+            try {
+                const [klines, ticker] = await Promise.all([
+                    fetchBinanceKlines('BTCUSDT', '1h', 168),
+                    fetchBinance24hr('BTCUSDT'),
+                ]);
+
+                chartData.btc = klines;
+
+                if (!chartInstances.btc) {
+                    chartInstances.btc = createChart('chart-btc-canvas', 'btc');
+                }
+                if (chartInstances.btc) {
+                    chartInstances.btc.candleSeries.setData(klines);
+                    chartInstances.btc.chart.timeScale().fitContent();
+                }
+
+                const price = parseFloat(ticker.lastPrice);
+                const changePct = parseFloat(ticker.priceChangePercent);
+                updateCardPrice('btc', fmtPrice(price), changePct, ticker.highPrice, ticker.lowPrice);
+                updateBTCSignalCall(price);
+            } catch (e) {
+                console.error('[Chart] BTC load error:', e.message);
+            }
+        }
+
+        async function loadETHChart() {
+            try {
+                const [klines, ticker] = await Promise.all([
+                    fetchBinanceKlines('ETHUSDT', '1h', 168),
+                    fetchBinance24hr('ETHUSDT'),
+                ]);
+
+                chartData.eth = klines;
+
+                if (!chartInstances.eth) {
+                    chartInstances.eth = createChart('chart-eth-canvas', 'eth');
+                }
+                if (chartInstances.eth) {
+                    chartInstances.eth.candleSeries.setData(klines);
+                    chartInstances.eth.chart.timeScale().fitContent();
+                }
+
+                const price = parseFloat(ticker.lastPrice);
+                const changePct = parseFloat(ticker.priceChangePercent);
+                updateCardPrice('eth', fmtPrice(price), changePct, ticker.highPrice, ticker.lowPrice);
+                updateETHSignalCall(price);
+
+                // ETH signal
+                const ethSignal = document.getElementById('eth-signal');
+                if (changePct > 2) {
+                    if (ethSignal) { ethSignal.textContent = '🚀 Strong'; ethSignal.style.color = '#10B981'; }
+                } else if (changePct < -2) {
+                    if (ethSignal) { ethSignal.textContent = '⚠️ Weak'; ethSignal.style.color = '#EF4444'; }
+                } else {
+                    if (ethSignal) { ethSignal.textContent = '➡️ Neutral'; ethSignal.style.color = '#849396'; }
+                }
+            } catch (e) {
+                console.error('[Chart] ETH load error:', e.message);
+            }
+        }
+
+        async function loadGoldChart() {
+            // Gold — use oracle data + generate synthetic hourly history for chart
+            try {
+                const goldRes = await fetch('/intel/Telemetry/raw/raw_gold_oracle.json');
+                let goldData = null;
+                if (goldRes.ok) {
+                    goldData = await goldRes.json();
+                }
+
+                const spot = goldData?.gold_spot || 4800;
+                const changePct = goldData?.change_pct || 0;
+                const s1 = goldData?.s1 || (spot - 25);
+                const r1 = goldData?.r1 || (spot + 25);
+                const bias = goldData?.bias || 'Neutral';
+
+                // Generate 168h of synthetic gold candles (hourly, based on spot + slight variance)
+                const now = Math.floor(Date.now() / 1000);
+                const hour = 3600;
+                const synthGold = [];
+                let base = spot * 0.97; // start ~3% lower
+                for (let i = 168; i >= 0; i--) {
+                    const t = now - (i * hour);
+                    const drift = (spot - base) * 0.01; // gentle drift toward spot
+                    const noise = (Math.random() - 0.5) * (spot * 0.003);
+                    const close = base + drift + noise;
+                    const open = close + (Math.random() - 0.5) * (spot * 0.002);
+                    const high = Math.max(open, close) + Math.random() * (spot * 0.002);
+                    const low = Math.min(open, close) - Math.random() * (spot * 0.002);
+                    synthGold.push({ time: t, open, high, low, close });
+                    base = close;
+                }
+                // Force last candle to be the actual spot
+                if (synthGold.length > 0) {
+                    synthGold[synthGold.length - 1] = {
+                        time: now,
+                        open: synthGold[synthGold.length - 2]?.close || spot,
+                        high: Math.max(spot, synthGold[synthGold.length - 2]?.close || spot) * 1.001,
+                        low: Math.min(spot, synthGold[synthGold.length - 2]?.close || spot) * 0.999,
+                        close: spot,
+                    };
+                }
+
+                chartData.gold = synthGold;
+
+                if (!chartInstances.gold) {
+                    chartInstances.gold = createChart('chart-gold-canvas', 'gold');
+                }
+                if (chartInstances.gold) {
+                    chartInstances.gold.candleSeries.setData(synthGold);
+                    chartInstances.gold.chart.timeScale().fitContent();
+                }
+
+                const goldPriceEl = document.getElementById('gold-price');
+                const goldChangeEl = document.getElementById('gold-change');
+                const goldS1El = document.getElementById('gold-s1');
+                const goldR1El = document.getElementById('gold-r1');
+                const goldBiasEl = document.getElementById('gold-bias');
+
+                if (goldPriceEl) goldPriceEl.textContent = `$${fmtPrice(spot)}`;
+                if (goldChangeEl) {
+                    const { text, cls } = fmtChange(changePct);
+                    goldChangeEl.textContent = text;
+                    goldChangeEl.className = `chart-change ${cls}`;
+                }
+                if (goldS1El) goldS1El.textContent = `$${fmtPrice(s1)}`;
+                if (goldR1El) goldR1El.textContent = `$${fmtPrice(r1)}`;
+                if (goldBiasEl) {
+                    goldBiasEl.textContent = bias;
+                    goldBiasEl.style.color = bias === 'Bullish' ? '#10B981' : bias === 'Bearish' ? '#EF4444' : 'var(--accent-mint)';
+                }
+                updateGoldSignalCall(spot);
+            } catch (e) {
+                console.error('[Chart] Gold load error:', e.message);
+            }
+        }
+
+        async function initCharts() {
+            if (Object.keys(chartInstances).length > 0) return;
+            await Promise.all([loadXRPChart(), loadBTCChart(), loadETHChart(), loadGoldChart()]);
+            setInterval(async () => {
+                await Promise.all([loadXRPChart(), loadBTCChart(), loadETHChart(), loadGoldChart()]);
+            }, 60000);
+        }
+
+        // Init charts when switching to Markets tab
+        const origSwitchTab = switchTab;
+        switchTab = function(tabId) {
+            origSwitchTab(tabId);
+            if (tabId === 'markets') {
+                setTimeout(initCharts, 50);
+            }
+        };
+    </script>
+</body>
+</html>
