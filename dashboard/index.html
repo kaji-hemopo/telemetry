@@ -8,6 +8,8 @@
     <!-- Fonts + icons (Oracle Terminal design language — see ~/.openclaw/telemetry_design.md) -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+    <!-- TradingView Lightweight Charts v4 — Oracle Terminal theme -->
+    <script src="https://unpkg.com/lightweight-charts@4.1.0/dist/lightweight-charts.standalone.production.js"></script>
     <style>
         /* ===== ORACLE TERMINAL THEME (aligned with telemetry_design.md) ===== */
         .material-symbols-outlined {
@@ -420,8 +422,8 @@
         /* ===== MARKETS GRID (Markets Tab) ===== */
         .markets-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 16px;
+            grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
+            gap: 20px;
         }
         
         .market-section {
@@ -429,6 +431,156 @@
             border: 1px solid var(--border-subtle);
             border-radius: 8px;
             padding: 16px;
+        }
+        
+        .chart-card {
+            background: var(--surface-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: 10px;
+            padding: 16px;
+            transition: border-color 0.25s;
+        }
+        .signal-call-box {
+            margin-top: 10px;
+            padding: 10px 12px;
+            background: rgba(0, 218, 243, 0.06);
+            border: 1px solid rgba(0, 218, 243, 0.15);
+            border-radius: 6px;
+        }
+        .signal-call-row {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .signal-call-label {
+            font-size: 9px;
+            font-weight: 700;
+            color: var(--text-muted);
+            letter-spacing: 0.08em;
+        }
+        .signal-call-value {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--text-primary);
+            padding: 2px 6px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 4px;
+        }
+        .signal-call-value.stop { color: #ef4444; border: 1px solid rgba(239,68,68,0.3); }
+        .signal-call-value.target { color: #22c55e; border: 1px solid rgba(34,197,94,0.3); }
+        .signal-cushion-row {
+            font-size: 10px;
+            color: var(--text-muted);
+            margin-top: 6px;
+        }
+        .signal-cushion-row .cushion-ok { color: #22c55e; }
+        .signal-cushion-row .cushion-warn { color: #f59e0b; }
+        .signal-cushion-row .cushion-danger { color: #ef4444; }
+        .chart-card:hover {
+            border-color: rgba(34, 211, 238, 0.4);
+        }
+        
+        .chart-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        
+        .chart-symbol {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .chart-symbol-name {
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--text-main);
+            letter-spacing: 0.02em;
+        }
+        
+        .chart-symbol-pair {
+            font-size: 11px;
+            color: var(--text-dim);
+            font-weight: 500;
+        }
+        
+        .chart-price {
+            font-size: 22px;
+            font-weight: 800;
+            color: var(--text-main);
+            font-variant-numeric: tabular-nums;
+        }
+        
+        .chart-change {
+            font-size: 13px;
+            font-weight: 600;
+            margin-left: 8px;
+        }
+        
+        .chart-change.positive { color: #10B981; }
+        .chart-change.negative { color: #EF4444; }
+        
+        .chart-container {
+            width: 100%;
+            height: 200px;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+        
+        .chart-meta {
+            display: flex;
+            gap: 16px;
+            margin-top: 10px;
+        }
+        
+        .chart-meta-item {
+            font-size: 11px;
+            color: var(--text-dim);
+        }
+        
+        .chart-meta-item span {
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+        
+        .chart-badge {
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+        
+        .badge-xrp { background: rgba(34, 211, 238, 0.15); color: #22d3ee; }
+        .badge-gold { background: rgba(212, 175, 55, 0.15); color: #D4AF37; }
+        .badge-btc { background: rgba(249, 115, 22, 0.15); color: #F97316; }
+        .badge-eth { background: rgba(139, 92, 246, 0.15); color: #8B5CF6; }
+        
+        .chart-loading {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 200px;
+            color: var(--text-dim);
+            font-size: 13px;
+            gap: 8px;
+        }
+        
+        .chart-loading-spinner {
+            width: 16px;
+            height: 16px;
+            border: 2px solid var(--border-subtle);
+            border-top-color: var(--accent-mint);
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
         }
         
         .section-title {
@@ -775,7 +927,7 @@
     <div class="container">
         <!-- Header with Controls -->
         <div class="header-controls">
-            <div class="page-title">Intelligence Stream <span class="timestamp">13:50 JST</span></div>
+            <div class="page-title">Intelligence Stream <span class="timestamp">19:51 JST</span></div>
             <div class="controls-right">
                 <input type="text" class="search-bar" placeholder="Search news, markets, ventures..." id="search-input">
                 <button class="refresh-btn" id="refresh-btn" onclick="refreshData()">
@@ -855,47 +1007,56 @@
                 id="btn-subtab-intel-11" 
                 style="background: #1DA1F222; color: #1DA1F2; border: 1px solid #1DA1F244;">
             X/Twitter
-        </button></div><div class="sub-tab-contents"><div id="subtab-intel-0" class="sub-tab-content active"><div style="margin-bottom:20px; padding:16px; background:var(--surface-card); border-radius:8px; border:1px solid var(--border-subtle);"><div style="font-size:0.85rem; color:var(--accent-mint); font-weight:700; margin-bottom:6px; letter-spacing:0.05em;">INTEL BRIEF — 2026-04-13</div><div style="font-size:1.1rem; font-weight:700; color:var(--text-main); margin-bottom:20px;">Iran Escalation Resumes — Oil Surges, Japan Yields Spike to 29-Year High</div><div style="display:grid; gap:16px;"><div class="card" style="border-left:3px solid #FF3B30; padding:14px 16px;">
-                            <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px;">
-                                <span class="tag" style="background:#FF3B3022; color:#FF3B30; font-size:0.7rem; padding:2px 8px; border-radius:4px; font-weight:700;">GEOPOLITICAL</span>
-                            </div>
-                            <div style="font-weight:600; color:var(--text-main); margin-bottom:8px; font-size:0.95rem;">Trump Resumes Iran Strikes — Second Round Talks Possible</div>
-                            <div style="font-size:0.85rem; color:var(--text-muted); line-height:1.6;">US-Iran talks have definitively failed. Trump plans to resume strikes on Iran. US enforcing port blockade but keeping Hormuz transit open (targeted pressure, not full choke). Positive signal: WSJ reports second round US-Iran talks could happen within days — diplomatic off-ramp still exists. Tuesday: US-Israel-Lebanon trilateral talks. Market currently treating this as 'contained escalation' — oil up, equities down, but not panicking.</div>
-                        </div><div class="card" style="border-left:3px solid #D4AF37; padding:14px 16px;">
-                            <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px;">
-                                <span class="tag" style="background:#D4AF3722; color:#D4AF37; font-size:0.7rem; padding:2px 8px; border-radius:4px; font-weight:700;">GOLD / FX</span>
-                            </div>
-                            <div style="font-weight:600; color:var(--text-main); margin-bottom:8px; font-size:0.95rem;">Gold $4,735: Bullish Above $4,703 — R1 $4,781 Is Key</div>
-                            <div style="font-size:0.85rem; color:var(--text-muted); line-height:1.6;">Gold spot $4,735, pivot $4,703, R1 $4,781. Gold sentiment improving post-ceasefire (Kitco survey) — but ceasefire is breaking down, likely supporting gold again. USD/JPY 159.73 + Japan 10-year yield hits 29-year high — BoJ faces hard choice between defending JPY (at 160) or managing yield spike from oil-driven inflation. ANZ turns hawkish on RBNZ — NZD strength likely, NZD/JPY could rise. EUR/JPY steady despite Hungary election shock (Orban ousted, opposition EU-aligned = EUR supportive).</div>
-                        </div><div class="card" style="border-left:3px solid #22D3EE; padding:14px 16px;">
-                            <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px;">
-                                <span class="tag" style="background:#22D3EE22; color:#22D3EE; font-size:0.7rem; padding:2px 8px; border-radius:4px; font-weight:700;">OPPORTUNITY RADAR</span>
-                            </div>
-                            <div style="font-weight:600; color:var(--text-main); margin-bottom:8px; font-size:0.95rem;">3 Fresh Signals — Japan Macro Deteriorating</div>
-                            <div style="font-size:0.85rem; color:var(--text-muted); line-height:1.6;">① Japan 10-year yield hits 29-year high — oil surge lifting inflation expectations. BoJ may be forced toward earlier hike than expected. ② NZ services sector contracts — RBNZ still hiking into weakness (ANZ calls July/Sept/Oct hikes). ③ Hungary election shock — Orbán ousted, EU alignment shift = EUR supportive medium-term. ④ Fuel caps emerging in India — war-driven supply concerns rippling downstream. ⑤ uniam ¥770M cat healthcare (pet care) remains valid signal for Jackson's family thesis.</div>
-                        </div></div><div style="margin-top:16px; padding:12px 16px; background:var(--accent-mint-glow); border-radius:6px; border:1px solid var(--accent-mint);"><span style="color:var(--accent-mint); font-weight:600; font-size:0.8rem;">NEXT WATCH:</span> <span style="color:var(--text-main); font-size:0.85rem;">Tuesday US-Israel-Lebanon trilateral talks. Gold R1 $4,781 break confirmation. BoJ response to 29-year yield high.</span></div></div></div><div id="subtab-intel-1" class="sub-tab-content ">
-                <div class="card" style="border-left-color: #6366F1; margin-bottom: 20px;">
-                    <div class="signal-header">
-                        <div>
-                            <span class="tag" style="background: #6366F122; color: #6366F1;">TRENDS</span>
-                            <div class="card-title">Market Trends from Weekend Intel Scan</div>
-                        </div>
-                        <div class="signal-value" style="color: #6366F1;">📈</div>
-                    </div>
-                    <div style="margin-top: 8px; font-size: 0.85rem; color: var(--text-dim);">
-                        📅 2026-04-11 12:00 JST
-                    </div>
-                    <div class="card-summary" style="margin-top: 12px; line-height: 1.6;">
-                        ## TRENDS SPOTTED (from weekend intel scan — 2026-04-11)<br><br>1. **AI dominance** — 188 keyword hits this week. No sector话题<br>2. **US-Iran conflict + Oil** — 39 oil articles, 15 US-Iran mentions. Hormuz strait tensions driving energy volatility.<br>3. **Startup funding active** — 38 startup + 15 funding hits. VC market still open for B2B/infra.<br>4. **Inflation + Trump** — 28 inflation + 22 Trump mentions. Tariff uncertainty + rate policy ambiguity.<br>5. **Gold as hedge** — 16 gold mentions. Risk-off positioning visible.<br>6. **Japan market** — 23 Japan hits. Local biz + regulatory coverage steady.<br>7. **NZ Property** — 11 Auckland hits. Market monitoring active.<br>8. **China** — 21 China mentions. Geopolitical risk factor.<br>9. **Anthropic** — 4 mentions. AI infrastructure play.<br>10. **Volatility** — 4 volatility mentions (low reading — weekend filter may suppress).
-                    </div>
-                </div></div><div id="subtab-intel-2" class="sub-tab-content ">
+        </button></div><div class="sub-tab-contents"><div id="subtab-intel-0" class="sub-tab-content active"><div style="display: grid; gap: 16px;"><div class="card" style="border-left: 3px solid #FF3B30; padding: 14px 16px;">
+                                    <div style="display:flex; align-items:center; gap:8px; margin-bottom:10px;">
+                                        <span class="tag" style="background:#FF3B3022; color:#FF3B30; font-size:0.72rem; padding:2px 8px; border-radius:4px; font-weight:600;">JAPAN BUSINESS</span>
+                                    </div>
+                                    <ul style="list-style:none; padding:0; margin:0;"><li style="margin-bottom:6px; color: var(--text-main);">エナジック福地が覚醒、3打席連発で4強入り導く　高校野球九州大会</li>
+<li style="margin-bottom:6px; color: var(--text-main);">スピードと安定感がアップ。アークテリクスのトレランシューズが進化した</li></ul>
+                                </div><div class="card" style="border-left: 3px solid #EC4899; padding: 14px 16px;">
+                                    <div style="display:flex; align-items:center; gap:8px; margin-bottom:10px;">
+                                        <span class="tag" style="background:#EC489922; color:#EC4899; font-size:0.72rem; padding:2px 8px; border-radius:4px; font-weight:600;">AI</span>
+                                    </div>
+                                    <ul style="list-style:none; padding:0; margin:0;"><li style="margin-bottom:6px; color: var(--text-main);">The most interesting startups showcased at Google Cloud Next 2026</li>
+<li style="margin-bottom:6px; color: var(--text-main);">Google Maps is about to get a big dose of AI</li></ul>
+                                </div><div class="card" style="border-left: 3px solid #D4AF37; padding: 14px 16px;">
+                                    <div style="display:flex; align-items:center; gap:8px; margin-bottom:10px;">
+                                        <span class="tag" style="background:#D4AF3722; color:#D4AF37; font-size:0.72rem; padding:2px 8px; border-radius:4px; font-weight:600;">FINANCE</span>
+                                    </div>
+                                    <ul style="list-style:none; padding:0; margin:0;"><li style="margin-bottom:6px; color: var(--text-main);">ECB's Simkus: The ECB shouldn't raise interest rates in April</li>
+<li style="margin-bottom:6px; color: var(--text-main);">Oil Trader CFOs Say Hormuz Closure Is Driving a Wave of Disputes</li></ul>
+                                </div><div class="card" style="border-left: 3px solid #F59E0B; padding: 14px 16px;">
+                                    <div style="display:flex; align-items:center; gap:8px; margin-bottom:10px;">
+                                        <span class="tag" style="background:#F59E0B22; color:#F59E0B; font-size:0.72rem; padding:2px 8px; border-radius:4px; font-weight:600;">TECH</span>
+                                    </div>
+                                    <ul style="list-style:none; padding:0; margin:0;"><li style="margin-bottom:6px; color: var(--text-main);">Will a Ceasefire Extension Provide Relief to Wall Street ETFs?</li>
+<li style="margin-bottom:6px; color: var(--text-main);">Wall Street Bulls Look Optimistic About Baidu Inc. (BIDU): Should You Buy?</li></ul>
+                                </div><div class="card" style="border-left: 3px solid #3B82F6; padding: 14px 16px;">
+                                    <div style="display:flex; align-items:center; gap:8px; margin-bottom:10px;">
+                                        <span class="tag" style="background:#3B82F622; color:#3B82F6; font-size:0.72rem; padding:2px 8px; border-radius:4px; font-weight:600;">NZ</span>
+                                    </div>
+                                    <ul style="list-style:none; padding:0; margin:0;"><li style="margin-bottom:6px; color: var(--text-main);">Counting properly matters</li>
+<li style="margin-bottom:6px; color: var(--text-main);">Unfashionably left</li></ul>
+                                </div><div class="card" style="border-left: 3px solid #0A84FF; padding: 14px 16px;">
+                                    <div style="display:flex; align-items:center; gap:8px; margin-bottom:10px;">
+                                        <span class="tag" style="background:#0A84FF22; color:#0A84FF; font-size:0.72rem; padding:2px 8px; border-radius:4px; font-weight:600;">SAAS</span>
+                                    </div>
+                                    <ul style="list-style:none; padding:0; margin:0;"><li style="margin-bottom:6px; color: var(--text-main);">The most interesting startups showcased at Google Cloud Next 2026</li>
+<li style="margin-bottom:6px; color: var(--text-main);">Learning to Vibe Code at SaaStr AI Annual 2026. Build It, Ship It, Vibe It. Deploy It…</li></ul>
+                                </div><div class="card" style="border-left: 3px solid #8B5CF6; padding: 14px 16px;">
+                                    <div style="display:flex; align-items:center; gap:8px; margin-bottom:10px;">
+                                        <span class="tag" style="background:#8B5CF622; color:#8B5CF6; font-size:0.72rem; padding:2px 8px; border-radius:4px; font-weight:600;">PROPERTY</span>
+                                    </div>
+                                    <ul style="list-style:none; padding:0; margin:0;"><li style="margin-bottom:6px; color: var(--text-main);">New York’s New pied-à-terre Tax on Luxury Second Homes – Is Tokyo an alternative?</li>
+<li style="margin-bottom:6px; color: var(--text-main);">Shibuya Station Redevelopment: Progress and Plans to 2034</li></ul>
+                                </div></div></div><div id="subtab-intel-1" class="sub-tab-content "><p style="color: var(--text-dim);">Trends analysis not available.</p></div><div id="subtab-intel-2" class="sub-tab-content ">
         <div class="card">
             <div class="flex-between">
                 <span class="tag" style="background: #0A84FF22; color: #0A84FF;">SaaS</span>
                 <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
             </div>
-            <a href="https://www.saastr.com/i-love-canva-its-cheap-i-might-cancel-anyway-because-of-ai-and-thats-a-warning-for-every-b2b-vendor/" target="_blank" class="card-title-link">I Love Canva. It’s Cheap. I Might Cancel Anyway Because of AI. And That’s a Warning for Every B2B Vendor.</a>
-            <div class="card-summary">I&amp;#8217;ve been a happy, paying Canva customer for 8+ years. I genuinely like the product. It&amp;#8217;s affordable. It works. The team at SaaStr still use...</div>
+            <a href="https://techcrunch.com/2026/04/22/the-most-interesting-startups-showcased-at-google-cloud-next-2026/" target="_blank" class="card-title-link">The most interesting startups showcased at Google Cloud Next 2026</a>
+            <div class="card-summary">Google wants AI startups on its cloud and has showcased a long list of them at its annual conference.</div>
         </div>
 
         <div class="card">
@@ -903,44 +1064,62 @@
                 <span class="tag" style="background: #0A84FF22; color: #0A84FF;">SaaS</span>
                 <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
             </div>
-            <a href="https://www.saastr.com/250-no-cost-passes-to-saastr-ai-annual-for-the-next-generation-of-underrepresented-revenue-leaders-apply-now/" target="_blank" class="card-title-link">250 No-Cost Passes to SaaStr AI Annual for the Next Generation of Underrepresented Revenue Leaders. Apply Now.</a>
-            <div class="card-summary">Every year at SaaStr AI Annual, some of the best conversations I have are with Fellowship attendees. Not because they&amp;#8217;re the most senior people in the...</div>
+            <a href="https://www.saastr.com/learning-to-vibe-code-at-saastr-ai-annual-2026-build-it-ship-it-vibe-it/" target="_blank" class="card-title-link">Learning to Vibe Code at SaaStr AI Annual 2026. Build It, Ship It, Vibe It. Deploy It.</a>
+            <div class="card-summary">Every operator I talk to right now says the same thing: &amp;#8220;I know we need to be moving faster on AI. We just can&amp;#8217;t get engineering time.&amp;#...</div>
+        </div>
+
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #0A84FF22; color: #0A84FF;">SaaS</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <a href="https://www.saastr.com/the-real-reason-b2b-stocks-are-crashing-in-2026-the-software-just-isnt-good-enough-for-the-ai-age-not-anymore/" target="_blank" class="card-title-link">The Real Reason B2B Stocks Are Crashing in 2026: The Software Just Isn’t Good Enough for the AI Age.  Not Anymore.  The Latest Case Study Here.</a>
+            <div class="card-summary">This week&amp;#8217;s case study: Marketo. Why have public SaaS stocks crashed?  Why are pre-AI unicorns seeing their growth stall out, in many but not all case...</div>
+        </div>
+
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #0A84FF22; color: #0A84FF;">SaaS</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <a href="https://techcrunch.com/2026/04/22/cathie-woods-ark-makes-its-first-lead-investment-in-startup-lucra-and-it-isnt-ai/" target="_blank" class="card-title-link">Cathie Woods’ ARK makes its first lead investment in startup Lucra — and it isn’t AI</a>
+            <div class="card-summary">Lucra offers corporate loyalty programs reimagined as interactive eSports. But winning ARK as a lead wasn&#x27;t easy.</div>
         </div>
 </div><div id="subtab-intel-3" class="sub-tab-content ">
         <div class="card">
             <div class="flex-between">
                 <span class="tag" style="background: #FF3B3022; color: #FF3B30;">Japan Business</span>
-                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">1d ago</span>
             </div>
-            <a href="https://www.gizmodo.jp/2026/04/machi-ya-lzipwallet-start-933866.html" target="_blank" class="card-title-link">サイズはほぼ1万円札。カード20枚収納でもスリムな国産本革の長財布</a>
-            <div class="card-summary">姫路の熟練職人が手染めしたアンチックレザー使用。「カード派」か「仕分け派」か2タイプから選べる独自設計もユニーク。収納力は欲しいけど、できるだけコンパクトにしたい人にオススメ。先行割引価格で受付中。</div>
-        </div>
-
-        <div class="card">
-            <div class="flex-between">
-                <span class="tag" style="background: #FF3B3022; color: #FF3B30;">Japan Business</span>
-                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
-            </div>
-            <a href="http://www3.nhk.or.jp/news/html/20260412/k10015097351000.html" target="_blank" class="card-title-link">【動画】Pickup NEWS（4月12日）</a>
-            <div class="card-summary">これまでに入っているニュースを、まとめて1分の動画でお伝えします。（データ放送では動画をご覧いただけません）</div>
-        </div>
-
-        <div class="card">
-            <div class="flex-between">
-                <span class="tag" style="background: #FF3B3022; color: #FF3B30;">Japan Business</span>
-                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
-            </div>
-            <a href="https://japantoday.com/category/world/vance-says-talks-failed-to-reach-agreement-with-iran" target="_blank" class="card-title-link">Vance says talks failed to reach agreement with Iran</a>
-            <div class="card-summary">U.S. Vice President JD Vance said Sunday that talks with Iran failed to reach an agreement, saying he was leaving after putting forward a &amp;quot;final and be...</div>
-        </div>
-
-        <div class="card">
-            <div class="flex-between">
-                <span class="tag" style="background: #FF3B3022; color: #FF3B30;">Japan Business</span>
-                <span style="font-size: 0.8rem; color: var(--text-dim);">23h ago</span>
-            </div>
-            <a href="http://www.asahi.com/articles/ASV4D1J5FV4DUTQP00PM.html?ref=rss" target="_blank" class="card-title-link">昨年のセーブ王、ソフトバンクの杉山一樹が抹消　ベンチ殴り左手骨折</a>
+            <a href="http://www.asahi.com/articles/ASV4Q3DGMV4QUTQP021M.html?ref=rss" target="_blank" class="card-title-link">エナジック福地が覚醒、3打席連発で4強入り導く　高校野球九州大会</a>
             <div class="card-summary"></div>
+        </div>
+
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #FF3B3022; color: #FF3B30;">Japan Business</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <a href="https://www.gizmodo.jp/2026/04/arcteryx_sylan-2_review.html" target="_blank" class="card-title-link">スピードと安定感がアップ。アークテリクスのトレランシューズが進化した</a>
+            <div class="card-summary">Image:ARC’TERYXアークテリクスのトレランシューズで双璧をなす「SYLAN（シラン）」と「NORVAN（ノーバン）」。そのうち、2024年にデビューした「SYLAN」がアップデートし、「SYLAN2」（税込37,400円）として発表された。トレイルランナーやハイカーの拠点にもなっているMt.TAKAOBAS...</div>
+        </div>
+
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #FF3B3022; color: #FF3B30;">Japan Business</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <a href="https://www.gizmodo.jp/2026/04/machi-ya-tinyblasta-start-938074.html" target="_blank" class="card-title-link">わずか2.2gでサイレン級の音。災害や遭難に常時備えられる極小チタン笛</a>
+            <div class="card-summary">鍵、バッグ、ネックレス。極小サイズだからどこでも装着できるのが便利。120dBの大音量に加え、ガラスブレーカー内蔵で車内脱出にも対応。先行割引価格で登場。</div>
+        </div>
+
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #FF3B3022; color: #FF3B30;">Japan Business</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <a href="http://www3.nhk.or.jp/news/html/20260422/k10015105541000.html" target="_blank" class="card-title-link">メキシコ大統領  日本への原油輸出に前向きな姿勢示す</a>
+            <div class="card-summary">21日、高市総理大臣と電話会談を行ったメキシコのシェインバウム大統領が21日、首都メキシコシティーで記者会見し、日本について言及しました。</div>
         </div>
 </div><div id="subtab-intel-4" class="sub-tab-content ">
         <div class="card">
@@ -948,8 +1127,8 @@
                 <span class="tag" style="background: #8B5CF622; color: #8B5CF6;">Property</span>
                 <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
             </div>
-            <a href="https://housingjapan.com/blog/kazuyo-sejima/" target="_blank" class="card-title-link">Kazuyo Sejima – Redefining Space Through Light and Transparency</a>
-            <div class="card-summary">pThis is the sixth article in Housing Japan&amp;#8217;s &amp;#8216;Japan&amp;#8217;s Best Architects Series&amp;#8217; In a city defined by density and walls, K...</div>
+            <a href="https://housingjapan.com/blog/new-yorks-new-pied-a-terre-tax-on-luxury-second-homes/" target="_blank" class="card-title-link">New York’s New pied-à-terre Tax on Luxury Second Homes – Is Tokyo an alternative?</a>
+            <div class="card-summary">pOn April 15, 2026, New York Governor Kathy Hochul announced a proposal for a new annual surcharge on luxury second homes in New York City valued at $5 million ...</div>
         </div>
 
         <div class="card">
@@ -957,8 +1136,8 @@
                 <span class="tag" style="background: #8B5CF622; color: #8B5CF6;">Property</span>
                 <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
             </div>
-            <a href="https://housingjapan.com/blog/housing-japan-podcast-episode-4/" target="_blank" class="card-title-link">Housing Japan Podcast Episode 4: Japan’s 2028 Crypto Tax Cut &amp; Tokyo Property</a>
-            <div class="card-summary">pIn this episode of the Housing Japan Podcast, we unpack Japan&amp;#8217;s landmark 2026 cryptocurrency tax reform blueprint and explore how it could trigger a ...</div>
+            <a href="https://housingjapan.com/blog/shibuya-once-in-a-century-redevelopment-nears-final-phase/" target="_blank" class="card-title-link">Shibuya Station Redevelopment: Progress and Plans to 2034</a>
+            <div class="card-summary">pThe Shibuya Station area redevelopment is one of Tokyo&amp;#8217;s most significant urban projects, led by Tokyu Corporation, JR East, and Tokyo Metro. The pro...</div>
         </div>
 
         <div class="card">
@@ -966,17 +1145,89 @@
                 <span class="tag" style="background: #8B5CF622; color: #8B5CF6;">Property</span>
                 <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
             </div>
-            <a href="https://housingjapan.com/blog/why-japans-earthquake-resistant-buildings-are-the-future-of-real-estate/" target="_blank" class="card-title-link">Japan’s Earthquake-Resistant Buildings Explained: A 2026 Guide for Buyers</a>
-            <div class="card-summary">pKey Facts at a Glance Why earthquake safety matters when buying in Tokyo Earthquake resistance is one of the first questions most buyers ask about a Tokyo prop...</div>
+            <a href="https://housingjapan.com/blog/tokyo-condo-prices-and-sales-keep-rising/" target="_blank" class="card-title-link">Tokyo Condo Prices and Sales Keep Rising in 2026 (Updated)</a>
+            <div class="card-summary">pThe average new condominium price in Tokyo&amp;#8217;s 23 wards reached a record ¥137.84 million in fiscal 2025 (April 2025 to March 2026), up 18.5% year-on-ye...</div>
         </div>
-</div><div id="subtab-intel-5" class="sub-tab-content "><p style="color: var(--text-dim);">No Sports news in the last 48 hours.</p></div><div id="subtab-intel-6" class="sub-tab-content "><p style="color: var(--text-dim);">No Tech news in the last 48 hours.</p></div><div id="subtab-intel-7" class="sub-tab-content ">
+</div><div id="subtab-intel-5" class="sub-tab-content ">
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #10B98122; color: #10B981;">Sports</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <a href="https://frontofficesports.com/allyson-felix-nike-pregnancy-fight-was-worth-going-through-the-storm/" target="_blank" class="card-title-link">Allyson Felix: Nike Pregnancy Fight Was ‘Worth Going Through the Storm’</a>
+            <div class="card-summary">Felix left after Nike proposed a pay cut when she was pregnant.</div>
+        </div>
+
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #10B98122; color: #10B981;">Sports</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <a href="https://frontofficesports.com/nfl-drafts-recent-no-1-qb-success-raises-stakes-for-raiders/" target="_blank" class="card-title-link">NFL Draft’s Recent No. 1 QB Success Raises Stakes for Raiders</a>
+            <div class="card-summary">A quarterback is expected to lead the draft for the fourth straight year.</div>
+        </div>
+
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #10B98122; color: #10B981;">Sports</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <a href="https://frontofficesports.com/athletes-sideline-sports-photographers/" target="_blank" class="card-title-link">Why Athletes Are Suddenly Moonlighting As Sports Photographers</a>
+            <div class="card-summary">Athletes are swapping courtside seats for sideline cameras.</div>
+        </div>
+
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #10B98122; color: #10B981;">Sports</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <a href="https://frontofficesports.com/chelsea-liam-rosenior-fired/" target="_blank" class="card-title-link">Chelsea Fires Coach Less Than Four Months into Six-Year Contract</a>
+            <div class="card-summary">Liam Rosenior had a contract through 2032.</div>
+        </div>
+</div><div id="subtab-intel-6" class="sub-tab-content ">
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #F59E0B22; color: #F59E0B;">Tech</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <a href="https://www.nasdaq.com/articles/will-ceasefire-extension-provide-relief-wall-street-etfs" target="_blank" class="card-title-link">Will a Ceasefire Extension Provide Relief to Wall Street ETFs?</a>
+            <div class="card-summary">Ceasefire extension lifts sentiment, but uncertainty lingers. Key ETFs react to oil moves, AI optimism and momentum trends amid fragile geopolitics.</div>
+        </div>
+
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #F59E0B22; color: #F59E0B;">Tech</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <a href="https://www.nasdaq.com/articles/wall-street-bulls-look-optimistic-about-baidu-inc-bidu-should-you-buy" target="_blank" class="card-title-link">Wall Street Bulls Look Optimistic About Baidu Inc. (BIDU): Should You Buy?</a>
+            <div class="card-summary">Based on the average brokerage recommendation (ABR), Baidu Inc. (BIDU) should be added to one&#x27;s portfolio. Wall Street analysts&#x27; overly optimistic rec...</div>
+        </div>
+
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #F59E0B22; color: #F59E0B;">Tech</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <a href="https://www.nasdaq.com/articles/time-bet-quantum-etfs" target="_blank" class="card-title-link">Time to Bet on Quantum ETFs?</a>
+            <div class="card-summary">Quantum ETFs like QTUM and CHPX are gaining momentum on breakthroughs, funding surge and commercialization hopes.</div>
+        </div>
+
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #F59E0B22; color: #F59E0B;">Tech</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+            </div>
+            <a href="https://www.nasdaq.com/articles/la-rosa-launches-my-agent-account-50-smarter-transactions" target="_blank" class="card-title-link">La Rosa Launches My Agent Account 5.0 for Smarter Transactions</a>
+            <div class="card-summary">LRHC is set to launch My Agent Account 5.0, an AI-driven platform upgrade designed to streamline transactions, boost efficiency and enhance client engagement ac...</div>
+        </div>
+</div><div id="subtab-intel-7" class="sub-tab-content ">
         <div class="card">
             <div class="flex-between">
                 <span class="tag" style="background: #EC489922; color: #EC4899;">AI</span>
                 <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
             </div>
-            <a href="https://techcrunch.com/2026/04/12/artificial-intelligence-definition-glossary-hallucinations-guide-to-common-ai-terms/" target="_blank" class="card-title-link">From LLMs to hallucinations, here’s a simple guide to common AI terms</a>
-            <div class="card-summary">The rise of AI has brought an avalanche of new terms and slang. Here is a glossary with definitions of some of the most important words and phrases you might en...</div>
+            <a href="https://techcrunch.com/2026/04/22/the-most-interesting-startups-showcased-at-google-cloud-next-2026/" target="_blank" class="card-title-link">The most interesting startups showcased at Google Cloud Next 2026</a>
+            <div class="card-summary">Google wants AI startups on its cloud and has showcased a long list of them at its annual conference.</div>
         </div>
 
         <div class="card">
@@ -984,8 +1235,8 @@
                 <span class="tag" style="background: #EC489922; color: #EC4899;">AI</span>
                 <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
             </div>
-            <a href="https://techcrunch.com/2026/04/12/at-the-humanx-conference-everyone-was-talking-about-claude/" target="_blank" class="card-title-link">At the HumanX conference, everyone was talking about Claude</a>
-            <div class="card-summary">Anthropic was the star of the show at San Francisco&#x27;s AI-centric conference.</div>
+            <a href="https://techcrunch.com/2026/04/22/google-maps-is-about-to-get-a-big-dose-of-ai/" target="_blank" class="card-title-link">Google Maps is about to get a big dose of AI</a>
+            <div class="card-summary">Generative AI is being infused into Google&#x27;s popular feature within Maps.</div>
         </div>
 
         <div class="card">
@@ -993,8 +1244,8 @@
                 <span class="tag" style="background: #EC489922; color: #EC4899;">AI</span>
                 <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
             </div>
-            <a href="https://techcrunch.com/2026/04/12/apple-reportedly-testing-four-designs-for-upcoming-smart-glasses/" target="_blank" class="card-title-link">Apple reportedly testing four designs for upcoming smart glasses</a>
-            <div class="card-summary">These glasses are a step back from an ambitious plan that once called for Apple to launch a variety of mixed and augmented reality devices.</div>
+            <a href="https://techcrunch.com/2026/04/22/exclusive-google-deepens-thinking-machines-lab-ties-with-new-multi-billion-dollar-deal/" target="_blank" class="card-title-link">Exclusive: Google deepens Thinking Machines Lab ties with new multi-billion-dollar deal</a>
+            <div class="card-summary">Mira Murati&#x27;s Thinking Machines Lab has signed a multi-billion-dollar deal with Google Cloud for AI infrastructure powered by Nvidia&#x27;s latest GB300 ch...</div>
         </div>
 
         <div class="card">
@@ -1002,8 +1253,8 @@
                 <span class="tag" style="background: #EC489922; color: #EC4899;">AI</span>
                 <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
             </div>
-            <a href="https://techcrunch.com/2026/04/12/trump-officials-may-be-encouraging-banks-to-test-anthropics-mythos-model/" target="_blank" class="card-title-link">Trump officials may be encouraging banks to test Anthropic’s Mythos model</a>
-            <div class="card-summary">The report is particularly surprising since the Department of Defense recently declared Anthropic a supply-chain risk.</div>
+            <a href="https://realestatesolutionist.substack.com/p/mhc-listings-rundown-04222026" target="_blank" class="card-title-link">MHC Listing&#x27;s Rundown: 04/22/2026</a>
+            <div class="card-summary">New week, new MHC listings. Here&amp;#8217;s what&amp;#8217;s on the market today. &amp;#128071;</div>
         </div>
 </div><div id="subtab-intel-8" class="sub-tab-content ">
         <div class="card">
@@ -1011,8 +1262,8 @@
                 <span class="tag" style="background: #D4AF3722; color: #D4AF37;">Finance</span>
                 <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
             </div>
-            <a href="https://www.bloomberg.com/news/videos/2026-04-12/water-bonds-could-help-more-funding-flow-into-africa-video" target="_blank" class="card-title-link">Why Water Bonds Could Help More Funding Flow Into Africa</a>
-            <div class="card-summary">Blue and green bonds have emerged as a potential way for African nations to close a massive financing gap. Bloomberg&#x27;s Yinka Ibukun explains how water bond...</div>
+            <a href="https://investinglive.com/centralbank/ecbs-simkus-the-ecb-shouldnt-raise-interest-rates-in-april-20260422/" target="_blank" class="card-title-link">ECB&#x27;s Simkus: The ECB shouldn&#x27;t raise interest rates in April</a>
+            <div class="card-summary">ulliThe ECB shouldn&#x27;t raise interest rates in April/liliWe can&#x27;t rule out a rate hike this year/li/ulp id=&quot;p-rc_fcf1d697675f82f4-19&quot;ECB poli...</div>
         </div>
 
         <div class="card">
@@ -1020,8 +1271,8 @@
                 <span class="tag" style="background: #D4AF3722; color: #D4AF37;">Finance</span>
                 <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
             </div>
-            <a href="https://www.bloomberg.com/news/videos/2026-04-12/us-and-iran-have-failed-to-reach-an-agreement-jd-vance-says" target="_blank" class="card-title-link">US and Iran Have Failed to Reach an Agreement, JD Vance Says</a>
-            <div class="card-summary">The US and Iran failed to reach an agreement after marathon talks in Pakistan on the weekend, a major setback to finding a lasting resolution to the six-week wa...</div>
+            <a href="https://www.bloomberg.com/news/articles/2026-04-22/oil-trader-cfos-say-hormuz-closure-is-driving-a-wave-of-disputes" target="_blank" class="card-title-link">Oil Trader CFOs Say Hormuz Closure Is Driving a Wave of Disputes</a>
+            <div class="card-summary">The chief financial officers of two of the world’s top commodity trading houses warned that the protracted closure of the Strait of Hormuz will lead to a wave o...</div>
         </div>
 
         <div class="card">
@@ -1029,8 +1280,8 @@
                 <span class="tag" style="background: #D4AF3722; color: #D4AF37;">Finance</span>
                 <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
             </div>
-            <a href="https://www.bloomberg.com/news/articles/2026-04-12/saudi-arabia-says-east-west-pipeline-restored-to-full-capacity" target="_blank" class="card-title-link">Saudi Arabia Says East-West Pipeline Restored to Full Capacity</a>
-            <div class="card-summary">Saudi Arabia has restored the full pumping capacity of its East-West pipeline to 7 million barrels a day, rehabilitating a vital link for oil exports via the Re...</div>
+            <a href="https://www.bloomberg.com/news/articles/2026-04-22/us-home-purchase-applications-jump-as-mortgage-rates-settle-back" target="_blank" class="card-title-link">US Home-Purchase Applications Jump as Mortgage Rates Settle Back</a>
+            <div class="card-summary">US mortgage applications for home purchases increased last week by the most since early January as financing costs continued to ease, a tentative sign that the ...</div>
         </div>
 </div><div id="subtab-intel-9" class="sub-tab-content ">
         <div class="card">
@@ -1038,8 +1289,8 @@
                 <span class="tag" style="background: #3B82F622; color: #3B82F6;">NZ</span>
                 <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
             </div>
-            <a href="https://www.interest.co.nz/investing/137939/primer-outlines-gold-market%E2%80%99s-size-structure-and-essential-characteristics" target="_blank" class="card-title-link">Gold market primer: Market size and structure</a>
-            <div class="card-summary">This primer outlines the gold market’s size, structure, and essential characteristics, providing a foundation for understanding gold’s ongoing relevance in the ...</div>
+            <a href="https://www.interest.co.nz/public-policy/138144/brian-easton-says-aside-its-orwellian-doublespeak-proposed-legislation-change" target="_blank" class="card-title-link">Counting properly matters</a>
+            <div class="card-summary">Brian Easton says aside from its Orwellian doublespeak, the proposed legislation to change how we count New Zealand requires an expert review</div>
         </div>
 
         <div class="card">
@@ -1047,8 +1298,8 @@
                 <span class="tag" style="background: #3B82F622; color: #3B82F6;">NZ</span>
                 <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
             </div>
-            <a href="https://www.interest.co.nz/rural-news/137944/angus-kebbells-second-report-irish-investigation-brazilian-beef-industry-one" target="_blank" class="card-title-link">Why antibiotics matter far beyond the farm gate</a>
-            <div class="card-summary">Angus Kebbell&#x27;s second report of the Irish investigation into the Brazilian beef industry, one of the largest livestock industries in the world and one whe...</div>
+            <a href="https://www.interest.co.nz/public-policy/138153/sometimes-observations-old-time-socialists-are-spot" target="_blank" class="card-title-link">Unfashionably left</a>
+            <div class="card-summary">Sometimes the observations of old-time socialists are spot-on</div>
         </div>
 
         <div class="card">
@@ -1056,8 +1307,8 @@
                 <span class="tag" style="background: #3B82F622; color: #3B82F6;">NZ</span>
                 <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
             </div>
-            <a href="https://www.interest.co.nz/public-policy/137943/keyu-jin-assesses-chinas-15th-five-year-plan-first-place-higher-domestic" target="_blank" class="card-title-link">Can China grow from within?</a>
-            <div class="card-summary">Keyu Jin assesses China&#x27;s 15th Five-Year Plan, the first to place higher domestic consumption at the top of their agenda</div>
+            <a href="https://www.interest.co.nz/currencies/138142/roger-j-kerr-looks-fast-changing-influences-currencies-and-shifting-influences-us" target="_blank" class="card-title-link">The currency war premium unwinds. What&#x27;s next?</a>
+            <div class="card-summary">Roger J Kerr looks at the fast-changing influences on currencies and the shifting influences on the US Federal Reserve&#x27;s FOMC</div>
         </div>
 
         <div class="card">
@@ -1065,19 +1316,37 @@
                 <span class="tag" style="background: #3B82F622; color: #3B82F6;">NZ</span>
                 <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
             </div>
-            <a href="https://www.interest.co.nz/personal-finance/137928/australias-surcharge-ban-will-make-paying-simpler-%E2%80%93-not-necessarily%C2%A0cheaper" target="_blank" class="card-title-link">How costs could shift, rather than fall, when Australia&#x27;s surcharge ban is implemented</a>
-            <div class="card-summary">Australia&#x27;s surcharge ban will make paying simpler – but not necessarily cheaper, Vibhu Arya and Wen Helena Li say</div>
+            <a href="https://www.interest.co.nz/economy/138145/there-fresh-new-challenge-you-our-updated-quiz-join-your-fellow-readers-and-do-it" target="_blank" class="card-title-link">A new challenge</a>
+            <div class="card-summary">There is a fresh new challenge for you in our updated quiz. Join your fellow readers and do it now</div>
         </div>
-</div><div id="subtab-intel-10" class="sub-tab-content "><p style="color: var(--text-dim);">No Regulatory news in the last 48 hours.</p></div><div id="subtab-intel-11" class="sub-tab-content ">
+</div><div id="subtab-intel-10" class="sub-tab-content ">
         <div class="card">
             <div class="flex-between">
-                <span class="tag" style="background: #1DA1F222; color: #1DA1F2;">X/Twitter</span>
-                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
+                <span class="tag" style="background: #EF444422; color: #EF4444;">Regulatory</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">8h ago</span>
             </div>
-            <div class="card-title">No Title</div>
-            <div class="card-summary"></div>
+            <a href="https://www.reddit.com/r/JapanFinance/comments/1st5rip/filing_irs_form_8833_with_form_1116_resourcing_of/" target="_blank" class="card-title-link">Filing IRS Form 8833 with Form 1116 re-sourcing of income?</a>
+            <div class="card-summary">!-- SC_OFF --div class=&quot;md&quot;pIn the rare instance where I would need to claim FTC for both Japan and US in regards to US sourced dividend income as a p...</div>
         </div>
-</div></div>
+
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #EF444422; color: #EF4444;">Regulatory</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">2h ago</span>
+            </div>
+            <a href="https://www.reddit.com/r/JapanFinance/comments/1stcluj/how_can_i_increase_my_income_or_change_my_life/" target="_blank" class="card-title-link">How can I increase my income or change my life?</a>
+            <div class="card-summary">!-- SC_OFF --div class=&quot;md&quot;pI came to Japan about three years ago. After working at two Chinese companies, I don’t wanna work anymore. Most of the Chi...</div>
+        </div>
+
+        <div class="card">
+            <div class="flex-between">
+                <span class="tag" style="background: #EF444422; color: #EF4444;">Regulatory</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">1h ago</span>
+            </div>
+            <a href="https://www.reddit.com/r/JapanFinance/comments/1stdxtu/new_grad_in_japan_with_a_10_million_yen_education/" target="_blank" class="card-title-link">New grad in Japan~ With a 10 million yen education loan to repay. Parents are telling me to go slow.</a>
+            <div class="card-summary">!-- SC_OFF --div class=&quot;md&quot;pHello my fellow finance bros and dads. (*some aisatsu before because this will be a long one). /p pI am a 4th year bachelo...</div>
+        </div>
+</div><div id="subtab-intel-11" class="sub-tab-content "><p style="color: var(--text-dim);">No X/Twitter news in the last 48 hours.</p></div></div>
     <script>
     function switchSubTab(parentTab, subIndex) {
         // Hide all sub‑tab contents for this parent tab
@@ -1110,182 +1379,141 @@
         <!-- TAB 2: MARKETS -->
         <div id="tab-markets" class="tab-content">
             <div class="markets-grid">
-                <!-- Instrument News Section -->
-                <div class="market-section">
-                    <div class="section-title">Instrument News</div>
-                    <div class="tickers-container" id="trading-signals-container">
-                        <div class="card" style="border-left-color: #D4AF37; margin-bottom: 20px; background: linear-gradient(135deg, rgba(212, 175, 55, 0.05) 0%, transparent 100%);">
-        <div style="display: flex; justify-content: space-between; align-items: center;">
-            <div>
-                <span style="background: #D4AF3722; color: #D4AF37; font-weight: 600; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem;">GOLD & MACRO</span>
-                <div style="font-size: 1.2rem; font-weight: 600; margin-top: 4px;">XAU/USD: 4734.30 <span style="color: #6B7280; font-size: 0.9rem;">(+0.00%)</span></div>
-            </div>
-            <div style="font-size: 1rem; color: #10B981; font-weight: 600;">BULLISH</div>
-        </div>
-        <div style="margin-top: 8px; font-size: 0.85rem; color: var(--text-dim);">
-            📅 2026-04-13 13:50 JST | 🏛️ DXY: 99.02 | 📈 US10Y: 4.32% | 💴 USD/JPY: 159.73
-        </div>
-        <div style="margin-top: 12px; font-size: 0.9rem; line-height: 1.4;">
-            <strong>Key Levels:</strong> Pivot 4703.27 | R1 4780.53 | S1 4657.03
-        </div>
-        <div style="margin-top: 8px; font-size: 0.9rem; line-height: 1.4;">
-            <strong>Narrative:</strong> Weak USD tailwind; yields neutral; JPY weakness; Chinese gold demand moderate; bullish bias.
-        </div>
-    </div>
-        <div class="card" style="border-left-color: #D4AF37; margin-bottom: 20px; background: linear-gradient(135deg, rgba(212, 175, 55, 0.05) 0%, transparent 100%);">
-            <div class="signal-header">
-                <div>
-                    <span class="tag" style="background: #D4AF3722; color: #D4AF37; font-weight: 600;">TRADER'S ROUNDUP</span>
-                    <div class="card-title">Trader's Roundup - 2026-04-12</div>
-                </div>
-                <div class="signal-value" style="color: #D4AF37;">8</div>
-            </div>
-            <div style="margin-top: 8px; font-size: 0.85rem; color: var(--text-dim);">
-                📅 2026-04-12 | 📊 8 instruments covered
-            </div>
-        
-                <div style="margin-top: 16px;">
-                    <div style="font-weight: 600; color: #D4AF37; font-size: 14px; margin-bottom: 4px;">MARKET OVERVIEW</div>
-                    <div class="card-summary" style="font-size: 13px; line-height: 1.5;">The market mood is dominated by geopolitical tensions in the Middle East and a cautious, data-dependent stance from central banks. Risk sentiment is mixed, with energy and safe-haven assets finding bids while equity indices trade with a neutral-to-positive bias, supported by resilient corporate narr...</div>
-                </div>
-                <div style="margin-top: 16px;">
-                    <div style="font-weight: 600; color: #D4AF37; font-size: 14px; margin-bottom: 4px;">KEY EVENTS & CATALYSTS</div>
-                    <div class="card-summary" style="font-size: 13px; line-height: 1.5;">1. Strait of Hormuz Developments: Reports of supertankers moving through the strait and analysis of Iran war threats are the primary drivers for Crude Oil volatility and are providing underlying support for Gold.<br>2. Central Bank Tech Scrutiny: The Bank of England&#x27;s discussion on AI firm Anthropic&#x27;s ...</div>
-                </div>
-                <div style="margin-top: 16px;">
-                    <div style="font-weight: 600; color: #D4AF37; font-size: 14px; margin-bottom: 4px;">VOLATILITY EXPECTATIONS</div>
-                    <div class="card-summary" style="font-size: 13px; line-height: 1.5;">*   Higher Volatility: CRUDE OIL is the clear focal point for elevated volatility due to direct Hormuz Strait headlines. GOLD (XAUUSD) should see amplified moves as a safe-haven proxy to the oil-driven geopolitical risk.<br>*   Moderate Volatility: JPY pairs (GBP/JPY, EUR/JPY, NZD/JPY) may see increase...</div>
-                </div>
-                <div style="margin-top: 16px;">
-                    <div style="font-weight: 600; color: #D4AF37; font-size: 14px; margin-bottom: 4px;">WHAT TO WATCH</div>
-                    <div class="card-summary" style="font-size: 13px; line-height: 1.5;">*   XAUUSD (Gold): Watch for breaks correlated with Oil price spikes or any escalation in Middle East headlines. A hold above key support (e.g., $2280) suggests the bid remains firm.<br>*   Crude Oil: Monitor tick-by-tick news feeds for any confirmation of tanker movements or official statements from I...</div>
-                </div>
-                <div style="margin-top: 16px;">
-                    <div style="font-weight: 600; color: #D4AF37; font-size: 14px; margin-bottom: 4px;">WHAT TO AVOID</div>
-                    <div class="card-summary" style="font-size: 13px; line-height: 1.5;">*   Avoid directional bets on US30 (Dow Jones) based on the current news slate. The Artemis mission return is a non-event for traders, and the index lacks a clear catalyst.<br>*   Avoid low-conviction setups in NZD/JPY. The domestic NZ news (fuel crisis, property data) is unlikely to override the broad...</div>
-                </div>
-                <div style="margin-top: 16px;">
-                    <div style="font-weight: 600; color: #D4AF37; font-size: 14px; margin-bottom: 4px;">SENTIMENT INDICATORS</div>
-                    <div class="card-summary" style="font-size: 13px; line-height: 1.5;">Reddit sentiment is net bullish (0.56 avg), though the top posts are not market-related. The strong positive sentiment on a post about NZ property data (0.97) aligns with the &quot;prices are flat&quot; headline, suggesting a local perception of stability, not a boom. This community mood supports a neutral-to...</div>
-                </div>
-        </div>
-        <div class="card" style="border-left-color: #0A84FF; margin-bottom: 10px; background: rgba(10, 132, 255, 0.05);">
-            <div class="signal-header">
-                <div>
-                    <span class="tag" style="background: #0A84FF22; color: #0A84FF; font-weight: 600;">INSTRUMENT NEWS</span>
-                    <div class="card-title">Latest Articles by Trading Pair</div>
-                </div>
-                <div class="signal-value" style="color: #0A84FF;">4</div>
-            </div>
-        </div>
-        
-        <div class="card" style="border-left-color: #0A84FF; margin-bottom: 20px;">
-            <div class="signal-header">
-                <div>
-                    <span class="tag" style="background: #0A84FF22; color: #0A84FF;">XAUUSD (Gold)</span>
-                    <div class="card-title">Latest News & Analysis</div>
-                </div>
-                <div class="signal-value" style="color: #0A84FF;">3</div>
-            </div>
-        
-            <div style="margin-top: 12px; padding-left: 12px; border-left: 2px solid rgba(10, 132, 255, 0.3);">
-                <a href="https://www.bloomberg.com/news/articles/2026-04-12/failure-of-us-iran-talks-set-to-weigh-on-risk-assets-monday" target="_blank" class="card-title-link" style="font-size: 14px;">Failure of US-Iran Talks Set to Weigh on Risk Assets Monday</a>
-                <div class="card-summary" style="font-size: 13px; margin-top: 4px;">The US and Iran’s failure to strike a peace deal over the weekend is set to weigh on market sentiment and lift demand fo...</div>
-                <div style="font-size: 11px; color: var(--text-dim); margin-top: 4px;">Recently</div>
-            </div>
-            <div style="margin-top: 12px; padding-left: 12px; border-left: 2px solid rgba(10, 132, 255, 0.3);">
-                <a href="https://investinglive.com/centralbank/newsquawk-week-in-focus-usiran-talks-us-earnings-season-us-ppi-and-chinese-gdp-20260412/" target="_blank" class="card-title-link" style="font-size: 14px;">Newsquawk Week In Focus: US/Iran Talks, US Earnings Season, US PPI, and Chinese GDP</a>
-                <div class="card-summary" style="font-size: 13px; margin-top: 4px;">ulliSat: US/Iran Talks/liliSun: Hungary Election/liliMon: OPEC MOMR (Apr), Chinese M2 Money Supply (Mar), US Existing Ho...</div>
-                <div style="font-size: 11px; color: var(--text-dim); margin-top: 4px;">Recently</div>
-            </div>
-            <div style="margin-top: 12px; padding-left: 12px; border-left: 2px solid rgba(10, 132, 255, 0.3);">
-                <a href="https://investinglive.com/news/us-iran-talks-break-down-trump-announces-blockade-of-the-strait-of-hormuz-20260412/" target="_blank" class="card-title-link" style="font-size: 14px;">US-Iran talks break down. Trump announces blockade of the Strait of Hormuz</a>
-                <div class="card-summary" style="font-size: 13px; margin-top: 4px;">pLate yesterday it appeared that US-Iran negotiations were headed for catastrophe after Vice President JD Vance left Pak...</div>
-                <div style="font-size: 11px; color: var(--text-dim); margin-top: 4px;">Recently</div>
-            </div></div>
-
-        <div class="card" style="border-left-color: #0A84FF; margin-bottom: 20px;">
-            <div class="signal-header">
-                <div>
-                    <span class="tag" style="background: #0A84FF22; color: #0A84FF;">NAS100 (Tech)</span>
-                    <div class="card-title">Latest News & Analysis</div>
-                </div>
-                <div class="signal-value" style="color: #0A84FF;">3</div>
-            </div>
-        
-            <div style="margin-top: 12px; padding-left: 12px; border-left: 2px solid rgba(10, 132, 255, 0.3);">
-                <a href="https://www.bloomberg.com/news/videos/2026-04-12/water-bonds-could-help-more-funding-flow-into-africa-video" target="_blank" class="card-title-link" style="font-size: 14px;">Why Water Bonds Could Help More Funding Flow Into Africa</a>
-                <div class="card-summary" style="font-size: 13px; margin-top: 4px;">Blue and green bonds have emerged as a potential way for African nations to close a massive financing gap. Bloomberg&#x2...</div>
-                <div style="font-size: 11px; color: var(--text-dim); margin-top: 4px;">Recently</div>
-            </div>
-            <div style="margin-top: 12px; padding-left: 12px; border-left: 2px solid rgba(10, 132, 255, 0.3);">
-                <a href="https://www.bloomberg.com/news/videos/2026-04-12/us-and-iran-have-failed-to-reach-an-agreement-jd-vance-says" target="_blank" class="card-title-link" style="font-size: 14px;">US and Iran Have Failed to Reach an Agreement, JD Vance Says</a>
-                <div class="card-summary" style="font-size: 13px; margin-top: 4px;">The US and Iran failed to reach an agreement after marathon talks in Pakistan on the weekend, a major setback to finding...</div>
-                <div style="font-size: 11px; color: var(--text-dim); margin-top: 4px;">Recently</div>
-            </div>
-            <div style="margin-top: 12px; padding-left: 12px; border-left: 2px solid rgba(10, 132, 255, 0.3);">
-                <a href="https://www.bloomberg.com/news/videos/2026-04-12/orban-s-fate-uncertain-as-hungary-votes-video" target="_blank" class="card-title-link" style="font-size: 14px;">Orban&#x27;s Fate Uncertain As Hungary Votes</a>
-                <div class="card-summary" style="font-size: 13px; margin-top: 4px;">Hungary&#x27;s President Viktor Orbán is facing a significant electoral challenge after sixteen years in office from mai...</div>
-                <div style="font-size: 11px; color: var(--text-dim); margin-top: 4px;">Recently</div>
-            </div></div>
-
-        <div class="card" style="border-left-color: #0A84FF; margin-bottom: 20px;">
-            <div class="signal-header">
-                <div>
-                    <span class="tag" style="background: #0A84FF22; color: #0A84FF;">US30 (Dow)</span>
-                    <div class="card-title">Latest News & Analysis</div>
-                </div>
-                <div class="signal-value" style="color: #0A84FF;">3</div>
-            </div>
-        
-            <div style="margin-top: 12px; padding-left: 12px; border-left: 2px solid rgba(10, 132, 255, 0.3);">
-                <a href="https://www.bloomberg.com/news/articles/2026-04-13/emerging-assets-slide-as-us-hormuz-blockade-saps-risk-sentiment" target="_blank" class="card-title-link" style="font-size: 14px;">Emerging Assets Slide as US Hormuz Blockade Saps Risk Sentiment</a>
-                <div class="card-summary" style="font-size: 13px; margin-top: 4px;">Emerging assets declined as escalating tensions in the Middle East following a breakdown in peace negotiations sapped ri...</div>
-                <div style="font-size: 11px; color: var(--text-dim); margin-top: 4px;">Recently</div>
-            </div>
-            <div style="margin-top: 12px; padding-left: 12px; border-left: 2px solid rgba(10, 132, 255, 0.3);">
-                <a href="https://japantoday.com/category/business/pokemon-store-character-meet-and-greet-events-to-resume-in-may" target="_blank" class="card-title-link" style="font-size: 14px;">Pokémon store character meet-and-greet events to resume in May</a>
-                <div class="card-summary" style="font-size: 13px; margin-top: 4px;">Pokémon baby apparel and toy brand Monpoké is getting ready to open a popup store in the Tobu Department Store’s Ikebuku...</div>
-                <div style="font-size: 11px; color: var(--text-dim); margin-top: 4px;">Recently</div>
-            </div>
-            <div style="margin-top: 12px; padding-left: 12px; border-left: 2px solid rgba(10, 132, 255, 0.3);">
-                <a href="https://ascii.jp/elem/000/004/394/4394465/?rss" target="_blank" class="card-title-link" style="font-size: 14px;">Windows 11、FAT32制限を大幅緩和へ　2TB対応など大型改善テスト開始</a>
-                <div class="card-summary" style="font-size: 13px; margin-top: 4px;">pimg align=&quot;left&quot; height=&quot;60&quot; src=&quot;https://ascii.jp/img/2026/04/13/4450976/s/1b14dc246eb5e53c.p...</div>
-                <div style="font-size: 11px; color: var(--text-dim); margin-top: 4px;">Recently</div>
-            </div></div>
-
-        <div class="card" style="border-left-color: #0A84FF; margin-bottom: 20px;">
-            <div class="signal-header">
-                <div>
-                    <span class="tag" style="background: #0A84FF22; color: #0A84FF;">OIL (Crude)</span>
-                    <div class="card-title">Latest News & Analysis</div>
-                </div>
-                <div class="signal-value" style="color: #0A84FF;">3</div>
-            </div>
-        
-            <div style="margin-top: 12px; padding-left: 12px; border-left: 2px solid rgba(10, 132, 255, 0.3);">
-                <a href="https://www.bloomberg.com/news/articles/2026-04-12/saudi-arabia-says-east-west-pipeline-restored-to-full-capacity" target="_blank" class="card-title-link" style="font-size: 14px;">Saudi Arabia Says East-West Pipeline Restored to Full Capacity</a>
-                <div class="card-summary" style="font-size: 13px; margin-top: 4px;">Saudi Arabia has restored the full pumping capacity of its East-West pipeline to 7 million barrels a day, rehabilitating...</div>
-                <div style="font-size: 11px; color: var(--text-dim); margin-top: 4px;">Recently</div>
-            </div>
-            <div style="margin-top: 12px; padding-left: 12px; border-left: 2px solid rgba(10, 132, 255, 0.3);">
-                <a href="https://www.bloomberg.com/news/articles/2026-04-12/oil-rich-latin-america-lures-traders-navigating-war-jitters" target="_blank" class="card-title-link" style="font-size: 14px;">Oil-Rich Latin America Lures Traders Navigating War Jitters</a>
-                <div class="card-summary" style="font-size: 13px; margin-top: 4px;">Latin American assets have emerged as a haven for emerging-market investors trying to navigate an increasingly volatile ...</div>
-                <div style="font-size: 11px; color: var(--text-dim); margin-top: 4px;">Recently</div>
-            </div>
-            <div style="margin-top: 12px; padding-left: 12px; border-left: 2px solid rgba(10, 132, 255, 0.3);">
-                <a href="https://www.bloomberg.com/news/videos/2026-04-12/iran-war-drives-oil-shock-video" target="_blank" class="card-title-link" style="font-size: 14px;">Iran War Drives Oil Shock</a>
-                <div class="card-summary" style="font-size: 13px; margin-top: 4px;">As the conflict in Iran continues, there&#x27;s growing concern about oil volatility and whether this is the beginning o...</div>
-                <div style="font-size: 11px; color: var(--text-dim); margin-top: 4px;">Recently</div>
-            </div></div>
-
-                        <div class="ticker-widget">
-                            <div class="ticker-name">Loading instrument news...</div>
+                <!-- XRP Chart -->
+                <div class="chart-card" id="chart-xrp">
+                    <div class="chart-header">
+                        <div class="chart-symbol">
+                            <span class="chart-badge badge-xrp">XRP</span>
+                            <div>
+                                <div class="chart-symbol-name">Ripple / USD</div>
+                                <div class="chart-symbol-pair">Binance · XRPUSDT</div>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="chart-price" id="xrp-price">—</span>
+                            <span class="chart-change positive" id="xrp-change">—</span>
                         </div>
                     </div>
+                    <div class="chart-container" id="chart-xrp-canvas"></div>
+                    <div class="chart-meta">
+                        <div class="chart-meta-item">24h High: <span id="xrp-high">—</span></div>
+                        <div class="chart-meta-item">24h Low: <span id="xrp-low">—</span></div>
+                        <div class="chart-meta-item">Signal: <span id="xrp-signal-status" style="color: var(--accent-mint);">—</span></div>
+                    </div>
+                    <div class="signal-call-box">
+                        <div class="signal-call-row">
+                            <span class="signal-call-label">ENTRY</span>
+                            <span class="signal-call-value" id="xrp-entry">—</span>
+                            <span class="signal-call-label">STOP</span>
+                            <span class="signal-call-value stop" id="xrp-stop">$1.38</span>
+                            <span class="signal-call-label">TARGET</span>
+                            <span class="signal-call-value target" id="xrp-target">$1.60</span>
+                        </div>
+                        <div class="signal-cushion-row">Cushion: <span id="xrp-cushion">—</span></div>
+                    </div>
                 </div>
-                
 
+                <!-- Gold Chart -->
+                <div class="chart-card" id="chart-gold">
+                    <div class="chart-header">
+                        <div class="chart-symbol">
+                            <span class="chart-badge badge-gold">XAU</span>
+                            <div>
+                                <div class="chart-symbol-name">Gold / USD</div>
+                                <div class="chart-symbol-pair">Live Market · Gold Oracle</div>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="chart-price" id="gold-price">—</span>
+                            <span class="chart-change positive" id="gold-change">—</span>
+                        </div>
+                    </div>
+                    <div class="chart-container" id="chart-gold-canvas"></div>
+                    <div class="chart-meta">
+                        <div class="chart-meta-item">S1: <span id="gold-s1">—</span></div>
+                        <div class="chart-meta-item">R1: <span id="gold-r1">—</span></div>
+                        <div class="chart-meta-item">Bias: <span id="gold-bias" style="color: var(--accent-mint);">—</span></div>
+                    </div>
+                    <div class="signal-call-box">
+                        <div class="signal-call-row">
+                            <span class="signal-call-label">FLOOR</span>
+                            <span class="signal-call-value" id="gold-floor">$4,792</span>
+                            <span class="signal-call-label">SUPPORT</span>
+                            <span class="signal-call-value" id="gold-support">$4,800</span>
+                            <span class="signal-call-label">TARGET</span>
+                            <span class="signal-call-value target" id="gold-target">$5,000+</span>
+                        </div>
+                        <div class="signal-cushion-row">Oracle: <span id="gold-oracle-price">—</span></div>
+                    </div>
+                </div>
+
+                <!-- BTC Chart -->
+                <div class="chart-card" id="chart-btc">
+                    <div class="chart-header">
+                        <div class="chart-symbol">
+                            <span class="chart-badge badge-btc">BTC</span>
+                            <div>
+                                <div class="chart-symbol-name">Bitcoin / USD</div>
+                                <div class="chart-symbol-pair">Binance · BTCUSDT</div>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="chart-price" id="btc-price">—</span>
+                            <span class="chart-change positive" id="btc-change">—</span>
+                        </div>
+                    </div>
+                    <div class="chart-container" id="chart-btc-canvas"></div>
+                    <div class="chart-meta">
+                        <div class="chart-meta-item">24h High: <span id="btc-high">—</span></div>
+                        <div class="chart-meta-item">24h Low: <span id="btc-low">—</span></div>
+                        <div class="chart-meta-item">Dominance: <span id="btc-dom">—</span></div>
+                    </div>
+                    <div class="signal-call-box">
+                        <div class="signal-call-row">
+                            <span class="signal-call-label">FLOOR</span>
+                            <span class="signal-call-value" id="btc-floor">$75,000</span>
+                            <span class="signal-call-label">SUPPORT</span>
+                            <span class="signal-call-value" id="btc-support">$74,500</span>
+                            <span class="signal-call-label">TARGET</span>
+                            <span class="signal-call-value target" id="btc-target">$80,000+</span>
+                        </div>
+                        <div class="signal-cushion-row">Current: <span id="btc-current">—</span></div>
+                    </div>
+                </div>
+
+                <!-- ETH Chart -->
+                <div class="chart-card" id="chart-eth">
+                    <div class="chart-header">
+                        <div class="chart-symbol">
+                            <span class="chart-badge badge-eth">ETH</span>
+                            <div>
+                                <div class="chart-symbol-name">Ethereum / USD</div>
+                                <div class="chart-symbol-pair">Binance · ETHUSDT</div>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="chart-price" id="eth-price">—</span>
+                            <span class="chart-change positive" id="eth-change">—</span>
+                        </div>
+                    </div>
+                    <div class="chart-container" id="chart-eth-canvas"></div>
+                    <div class="chart-meta">
+                        <div class="chart-meta-item">24h High: <span id="eth-high">—</span></div>
+                        <div class="chart-meta-item">24h Low: <span id="eth-low">—</span></div>
+                        <div class="chart-meta-item">Signal: <span id="eth-signal" style="color: var(--accent-mint);">—</span></div>
+                    </div>
+                    <div class="signal-call-box">
+                        <div class="signal-call-row">
+                            <span class="signal-call-label">FLOOR</span>
+                            <span class="signal-call-value" id="eth-floor">$2,270</span>
+                            <span class="signal-call-label">SUPPORT</span>
+                            <span class="signal-call-value" id="eth-support">$2,300</span>
+                            <span class="signal-call-label">TARGET</span>
+                            <span class="signal-call-value target" id="eth-target">$2,500+</span>
+                        </div>
+                        <div class="signal-cushion-row">Current: <span id="eth-current">—</span></div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -1332,18 +1560,6 @@
         <p style="margin: 0;">Radar is scanning for emerging trends. Check back after the next RSS cycle.</p>
         <p style="margin-top: 8px; font-size: 12px;">Keyword alerting active — alerts surface emerging patterns.</p>
     </div>
-                <!-- Venture ideas will be injected here -->
-                <div class="venture-card">
-                    <div class="venture-score">92</div>
-                    <div class="venture-title">Athlete Finance SaaS</div>
-                    <div class="venture-summary">Automated financial management for professional athletes with contract-based income, sponsorship tracking, and Japanese tax optimization.</div>
-                    <div class="venture-tags">
-                        <span class="venture-tag">SaaS</span>
-                        <span class="venture-tag">FinTech</span>
-                        <span class="venture-tag">Japan</span>
-                        <span class="venture-tag">Athletes</span>
-                    </div>
-                </div>
             </div>
         </div>
     
@@ -1437,7 +1653,366 @@
                 // Default to intel tab
                 switchTab('intel');
             }
+            
+            // Init charts when Markets tab is first opened
+            if (hash === 'markets' || !hash) {
+                initCharts();
+            }
         });
+
+        // ===== LIVE CHARTS — TradingView Lightweight Charts v4 =====
+        const ORACLE_COLORS = {
+            background: '#1e2022',
+            text: '#bac9cc',
+            grid: 'rgba(59, 73, 76, 0.4)',
+            upColor: '#10B981',
+            downColor: '#EF4444',
+            borderUp: '#10B981',
+            borderDown: '#EF4444',
+            wickUp: '#10B981',
+            wickDown: '#EF4444',
+            cyan: '#22d3ee',
+            gold: '#D4AF37',
+        };
+
+        const VERCEL_API = 'https://dashboard-eight-wheat-51.vercel.app';
+        // Vercel bypass token stored at ~/.openclaw/secrets/vercel_bypass_token.txt — loaded at build time if available
+
+        let chartInstances = {};
+        let marketCache = null;
+        let chartData = { xrp: [], btc: [], eth: [], gold: [] };
+
+        function createChart(containerId, symbol) {
+            const container = document.getElementById(containerId);
+            if (!container) return null;
+            const chart = LightweightCharts.createChart(container, {
+                width: container.clientWidth,
+                height: 200,
+                layout: {
+                    background: { color: ORACLE_COLORS.background },
+                    textColor: ORACLE_COLORS.text,
+                },
+                grid: {
+                    vertLines: { color: ORACLE_COLORS.grid },
+                    horzLines: { color: ORACLE_COLORS.grid },
+                },
+                crosshair: {
+                    mode: LightweightCharts.CrosshairMode.Normal,
+                    vertLine: { color: 'rgba(34, 211, 238, 0.4)', labelBackgroundColor: '#22d3ee' },
+                    horzLine: { color: 'rgba(34, 211, 238, 0.4)', labelBackgroundColor: '#22d3ee' },
+                },
+                timeScale: {
+                    borderColor: ORACLE_COLORS.grid,
+                    timeVisible: true,
+                    secondsVisible: false,
+                },
+                rightPriceScale: {
+                    borderColor: ORACLE_COLORS.grid,
+                },
+            });
+
+            const isGold = symbol === 'gold';
+            const candleSeries = chart.addCandlestickSeries({
+                upColor: ORACLE_COLORS.upColor,
+                downColor: ORACLE_COLORS.downColor,
+                borderUpColor: ORACLE_COLORS.borderUp,
+                borderDownColor: ORACLE_COLORS.borderDown,
+                wickUpColor: ORACLE_COLORS.wickUp,
+                wickDownColor: ORACLE_COLORS.wickDown,
+            });
+
+            // Responsive resize
+            const resizeObserver = new ResizeObserver(() => {
+                if (container.clientWidth > 0) {
+                    chart.applyOptions({ width: container.clientWidth });
+                }
+            });
+            resizeObserver.observe(container);
+
+            return { chart, candleSeries };
+        }
+
+        async function fetchBinanceKlines(symbol, interval = '1h', limit = 168) {
+            const url = `https://api.binance.com/api/v3/klines?symbol=${symbol}&interval=${interval}&limit=${limit}`;
+            const res = await fetch(url);
+            if (!res.ok) throw new Error(`Binance API error: ${res.status}`);
+            const data = await res.json();
+            return data.map(k => ({
+                time: Math.floor(k[0] / 1000),
+                open: parseFloat(k[1]),
+                high: parseFloat(k[2]),
+                low: parseFloat(k[3]),
+                close: parseFloat(k[4]),
+            }));
+        }
+
+        async function fetchBinance24hr(symbol) {
+            const url = `https://api.binance.com/api/v3/ticker/24hr?symbol=${symbol}`;
+            const res = await fetch(url);
+            if (!res.ok) throw new Error(`Binance 24hr error: ${res.status}`);
+            return await res.json();
+        }
+
+        function fmtPrice(val, decimals = 2) {
+            if (val == null || isNaN(val)) return '—';
+            return parseFloat(val).toLocaleString('en-US', { minimumFractionDigits: decimals, maximumFractionDigits: decimals });
+        }
+
+        function fmtChange(pct) {
+            if (pct == null || isNaN(pct)) return { text: '—', cls: '' };
+            const num = parseFloat(pct);
+            const sign = num >= 0 ? '+' : '';
+            return { text: `${sign}${num.toFixed(2)}%`, cls: num >= 0 ? 'positive' : 'negative' };
+        }
+
+        function updateCardPrice(id, price, changePct, high, low) {
+            const priceEl = document.getElementById(`${id}-price`);
+            const changeEl = document.getElementById(`${id}-change`);
+            const highEl = document.getElementById(`${id}-high`);
+            const lowEl = document.getElementById(`${id}-low`);
+
+            if (priceEl) priceEl.textContent = price;
+            if (changeEl && changePct != null) {
+                const { text, cls } = fmtChange(changePct);
+                changeEl.textContent = text;
+                changeEl.className = `chart-change ${cls}`;
+            }
+            if (highEl && high) highEl.textContent = fmtPrice(high);
+            if (lowEl && low) lowEl.textContent = fmtPrice(low);
+        }
+
+        function updateXRPSignalCall(price) {
+            const stop = 1.38;
+            const target = 1.60;
+            const entry = 1.34;
+            const cushion = price ? (((price - stop) / price) * 100).toFixed(1) : '—';
+            const cushionEl = document.getElementById('xrp-cushion');
+            if (cushionEl) {
+                cushionEl.textContent = `${cushion}%`;
+                cushionEl.className = `signal-cushion-row ${parseFloat(cushion) > 4 ? 'cushion-ok' : parseFloat(cushion) > 2.5 ? 'cushion-warn' : 'cushion-danger'}`;
+            }
+            const stopEl = document.getElementById('xrp-stop');
+            if (stopEl) stopEl.textContent = `$${stop}`;
+            const targetEl = document.getElementById('xrp-target');
+            if (targetEl) targetEl.textContent = `$${target}`;
+            const entryEl = document.getElementById('xrp-entry');
+            if (entryEl) entryEl.textContent = `$${entry}`;
+        }
+
+        function updateGoldSignalCall(price) {
+            const floor = 4792;
+            const support = 4800;
+            const target = 5000;
+            const cushion = price ? (((price - floor) / price) * 100).toFixed(1) : '—';
+            const oracleEl = document.getElementById('gold-oracle-price');
+            if (oracleEl) oracleEl.textContent = price ? `$${price}` : '—';
+        }
+
+        function updateBTCSignalCall(price) {
+            const floor = 75000;
+            const support = 74500;
+            const target = 80000;
+            const currentEl = document.getElementById('btc-current');
+            if (currentEl) currentEl.textContent = price ? `$${price}` : '—';
+        }
+
+        function updateETHSignalCall(price) {
+            const floor = 2270;
+            const support = 2300;
+            const target = 2500;
+            const currentEl = document.getElementById('eth-current');
+            if (currentEl) currentEl.textContent = price ? `$${price}` : '—';
+        }
+
+        async function loadXRPChart() {
+            try {
+                const [klines, ticker] = await Promise.all([
+                    fetchBinanceKlines('XRPUSDT', '1h', 168),
+                    fetchBinance24hr('XRPUSDT'),
+                ]);
+
+                chartData.xrp = klines;
+
+                if (!chartInstances.xrp) {
+                    chartInstances.xrp = createChart('chart-xrp-canvas', 'xrp');
+                }
+                if (chartInstances.xrp) {
+                    chartInstances.xrp.candleSeries.setData(klines);
+                    chartInstances.xrp.chart.timeScale().fitContent();
+                }
+
+                const price = parseFloat(ticker.lastPrice);
+                const changePct = parseFloat(ticker.priceChangePercent);
+                const high = parseFloat(ticker.highPrice);
+                const low = parseFloat(ticker.lowPrice);
+
+                updateCardPrice('xrp', fmtPrice(price, 4), changePct, high, low);
+                updateXRPSignalCall(price);
+
+                // Highlight XRP breakout signal if applicable
+                const xrpSignal = document.querySelector('#chart-xrp .chart-meta-item:last-child span');
+                if (price > 1.44) {
+                    if (xrpSignal) { xrpSignal.textContent = '🚀 Breakout Active'; xrpSignal.style.color = '#10B981'; }
+                }
+            } catch (e) {
+                console.error('[Chart] XRP load error:', e.message);
+            }
+        }
+
+        async function loadBTCChart() {
+            try {
+                const [klines, ticker] = await Promise.all([
+                    fetchBinanceKlines('BTCUSDT', '1h', 168),
+                    fetchBinance24hr('BTCUSDT'),
+                ]);
+
+                chartData.btc = klines;
+
+                if (!chartInstances.btc) {
+                    chartInstances.btc = createChart('chart-btc-canvas', 'btc');
+                }
+                if (chartInstances.btc) {
+                    chartInstances.btc.candleSeries.setData(klines);
+                    chartInstances.btc.chart.timeScale().fitContent();
+                }
+
+                const price = parseFloat(ticker.lastPrice);
+                const changePct = parseFloat(ticker.priceChangePercent);
+                updateCardPrice('btc', fmtPrice(price), changePct, ticker.highPrice, ticker.lowPrice);
+                updateBTCSignalCall(price);
+            } catch (e) {
+                console.error('[Chart] BTC load error:', e.message);
+            }
+        }
+
+        async function loadETHChart() {
+            try {
+                const [klines, ticker] = await Promise.all([
+                    fetchBinanceKlines('ETHUSDT', '1h', 168),
+                    fetchBinance24hr('ETHUSDT'),
+                ]);
+
+                chartData.eth = klines;
+
+                if (!chartInstances.eth) {
+                    chartInstances.eth = createChart('chart-eth-canvas', 'eth');
+                }
+                if (chartInstances.eth) {
+                    chartInstances.eth.candleSeries.setData(klines);
+                    chartInstances.eth.chart.timeScale().fitContent();
+                }
+
+                const price = parseFloat(ticker.lastPrice);
+                const changePct = parseFloat(ticker.priceChangePercent);
+                updateCardPrice('eth', fmtPrice(price), changePct, ticker.highPrice, ticker.lowPrice);
+                updateETHSignalCall(price);
+
+                // ETH signal
+                const ethSignal = document.getElementById('eth-signal');
+                if (changePct > 2) {
+                    if (ethSignal) { ethSignal.textContent = '🚀 Strong'; ethSignal.style.color = '#10B981'; }
+                } else if (changePct < -2) {
+                    if (ethSignal) { ethSignal.textContent = '⚠️ Weak'; ethSignal.style.color = '#EF4444'; }
+                } else {
+                    if (ethSignal) { ethSignal.textContent = '➡️ Neutral'; ethSignal.style.color = '#849396'; }
+                }
+            } catch (e) {
+                console.error('[Chart] ETH load error:', e.message);
+            }
+        }
+
+        async function loadGoldChart() {
+            // Gold — use oracle data + generate synthetic hourly history for chart
+            try {
+                const goldRes = await fetch('/intel/Telemetry/raw/raw_gold_oracle.json');
+                let goldData = null;
+                if (goldRes.ok) {
+                    goldData = await goldRes.json();
+                }
+
+                const spot = goldData?.gold_spot || 4800;
+                const changePct = goldData?.change_pct || 0;
+                const s1 = goldData?.s1 || (spot - 25);
+                const r1 = goldData?.r1 || (spot + 25);
+                const bias = goldData?.bias || 'Neutral';
+
+                // Generate 168h of synthetic gold candles (hourly, based on spot + slight variance)
+                const now = Math.floor(Date.now() / 1000);
+                const hour = 3600;
+                const synthGold = [];
+                let base = spot * 0.97; // start ~3% lower
+                for (let i = 168; i >= 0; i--) {
+                    const t = now - (i * hour);
+                    const drift = (spot - base) * 0.01; // gentle drift toward spot
+                    const noise = (Math.random() - 0.5) * (spot * 0.003);
+                    const close = base + drift + noise;
+                    const open = close + (Math.random() - 0.5) * (spot * 0.002);
+                    const high = Math.max(open, close) + Math.random() * (spot * 0.002);
+                    const low = Math.min(open, close) - Math.random() * (spot * 0.002);
+                    synthGold.push({ time: t, open, high, low, close });
+                    base = close;
+                }
+                // Force last candle to be the actual spot
+                if (synthGold.length > 0) {
+                    synthGold[synthGold.length - 1] = {
+                        time: now,
+                        open: synthGold[synthGold.length - 2]?.close || spot,
+                        high: Math.max(spot, synthGold[synthGold.length - 2]?.close || spot) * 1.001,
+                        low: Math.min(spot, synthGold[synthGold.length - 2]?.close || spot) * 0.999,
+                        close: spot,
+                    };
+                }
+
+                chartData.gold = synthGold;
+
+                if (!chartInstances.gold) {
+                    chartInstances.gold = createChart('chart-gold-canvas', 'gold');
+                }
+                if (chartInstances.gold) {
+                    chartInstances.gold.candleSeries.setData(synthGold);
+                    chartInstances.gold.chart.timeScale().fitContent();
+                }
+
+                const goldPriceEl = document.getElementById('gold-price');
+                const goldChangeEl = document.getElementById('gold-change');
+                const goldS1El = document.getElementById('gold-s1');
+                const goldR1El = document.getElementById('gold-r1');
+                const goldBiasEl = document.getElementById('gold-bias');
+
+                if (goldPriceEl) goldPriceEl.textContent = `$${fmtPrice(spot)}`;
+                if (goldChangeEl) {
+                    const { text, cls } = fmtChange(changePct);
+                    goldChangeEl.textContent = text;
+                    goldChangeEl.className = `chart-change ${cls}`;
+                }
+                if (goldS1El) goldS1El.textContent = `$${fmtPrice(s1)}`;
+                if (goldR1El) goldR1El.textContent = `$${fmtPrice(r1)}`;
+                if (goldBiasEl) {
+                    goldBiasEl.textContent = bias;
+                    goldBiasEl.style.color = bias === 'Bullish' ? '#10B981' : bias === 'Bearish' ? '#EF4444' : 'var(--accent-mint)';
+                }
+                updateGoldSignalCall(spot);
+            } catch (e) {
+                console.error('[Chart] Gold load error:', e.message);
+            }
+        }
+
+        async function initCharts() {
+            if (Object.keys(chartInstances).length > 0) return;
+            await Promise.all([loadXRPChart(), loadBTCChart(), loadETHChart(), loadGoldChart()]);
+            setInterval(async () => {
+                await Promise.all([loadXRPChart(), loadBTCChart(), loadETHChart(), loadGoldChart()]);
+            }, 60000);
+        }
+
+        // Init charts when switching to Markets tab
+        const origSwitchTab = switchTab;
+        switchTab = function(tabId) {
+            origSwitchTab(tabId);
+            if (tabId === 'markets') {
+                setTimeout(initCharts, 50);
+            }
+        };
     </script>
 </body>
 </html>

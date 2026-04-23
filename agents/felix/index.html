@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felix · N3 Vault</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,600;9..40,700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root { --bg:#050508; --surface:rgba(18,20,28,0.85); --border:rgba(255,255,255,0.08); --text:#f0f2f8; --muted:#8b90a1; --accent:#5eead4; --red:#f87171; --amber:#fbbf24; --font-d:"Syne",system-ui,sans-serif; --font-b:"DM Sans",system-ui,sans-serif; }
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body { font-family:var(--font-b); color:var(--text); min-height:100vh; background:var(--bg); }
+        .page-bg { position:fixed; inset:0; z-index:-1; background: radial-gradient(ellipse 100% 70% at 50% -25%, rgba(94,234,212,0.07), transparent 50%); }
+        .container { max-width:1000px; margin:0 auto; padding:28px 20px 56px; }
+        header { background:linear-gradient(145deg,rgba(22,26,38,0.95),rgba(12,14,22,0.98)); border:1px solid rgba(255,255,255,0.1); border-radius:20px; padding:24px 28px; margin-bottom:24px; }
+        h1 { font-family:var(--font-d); font-size:1.8rem; font-weight:800; letter-spacing:-0.03em; background:linear-gradient(100deg,#fff 0%,#b8c0d4 100%); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+        .subtitle { color:var(--muted); font-size:14px; margin-top:8px; }
+        .badge { display:inline-block; padding:3px 10px; border-radius:999px; font-size:11px; font-weight:600; }
+        .badge-ok { background:rgba(52,211,153,0.12); color:var(--accent); border:1px solid rgba(52,211,153,0.25); }
+        .badge-err { background:rgba(248,113,113,0.12); color:var(--red); border:1px solid rgba(248,113,113,0.25); }
+        .badge-warn { background:rgba(251,191,36,0.12); color:var(--amber); border:1px solid rgba(251,191,36,0.25); }
+        .badge-park { background:rgba(139,144,161,0.12); color:var(--muted); border:1px solid rgba(139,144,161,0.25); }
+        .nav-back { display:inline-flex; align-items:center; gap:8px; padding:10px 18px; border-radius:10px; font-size:13px; font-weight:600; color:var(--muted); background:rgba(139,144,161,0.08); border:1px solid rgba(139,144,161,0.15); text-decoration:none; margin-bottom:24px; }
+        .nav-back:hover { background:rgba(139,144,161,0.14); color:var(--text); text-decoration:none; }
+        .card { background:var(--surface); border:1px solid var(--border); border-radius:14px; padding:20px 24px; margin-bottom:16px; }
+        .card h3 { font-family:var(--font-d); font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:var(--accent); margin-bottom:14px; }
+        .alert-row { display:flex; align-items:center; gap:10px; padding:12px 16px; background:rgba(248,113,113,0.08); border:1px solid rgba(248,113,113,0.2); border-radius:10px; margin-bottom:10px; font-size:13.5px; }
+        .alert-row.warn { background:rgba(251,191,36,0.08); border-color:rgba(251,191,36,0.2); }
+        footer { text-align:center; padding:32px 24px; font-size:12px; color:var(--muted); border-top:1px solid var(--border); margin-top:40px; }
+        footer a { color:var(--accent); text-decoration:none; }
+    </style>
+</head>
+<body>
+<div class="page-bg"></div>
+<div class="container">
+    <a href="https://kaji-hemopo.github.io/telemetry/empire-home.html" class="nav-back">← Empire Home</a>
+    <header>
+        <div style="font-size:11px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:var(--accent); margin-bottom:10px;">Felix · N3 Vault</div>
+        <h1>N3 Vault &amp; X Agent</h1>
+        <p class="subtitle">Vault intelligence monitoring, X content posting, digital asset tracking.</p>
+        <div style="margin-top:14px; display:flex; gap:8px; flex-wrap:wrap;">
+            <span class="badge badge-err">🚨 PARKED — Gmail Expired</span>
+            <span class="badge badge-err">🚨 X Blocked</span>
+            <span class="badge badge-park">⏸️ Workspace: workspace_felix_PARKED_2026-04-15</span>
+        </div>
+    </header>
+
+    <div class="card">
+        <h3>⚠️ Parked Status — Action Required</h3>
+        <div class="alert-row">
+            <span>🚨</span>
+            <div><strong>Gmail expired</strong> — Felix cannot send emails. Re-authenticate with Gmail app password to reactivate.</div>
+        </div>
+        <div class="alert-row warn">
+            <span>⚠️</span>
+            <div><strong>X posts offline</strong> — blocked due to Gmail auth failure. Social pipeline stalled.</div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>📋 Action Queue</h3>
+        <div style="padding:10px 14px; background:rgba(0,0,0,0.2); border-radius:10px; border:1px solid rgba(255,255,255,0.05); margin-bottom:10px;">
+            <strong style="font-size:13.5px;">🎌 Felix Gmail Re-auth — N3 Phase 2b frozen · X posts offline</strong>
+            <div style="font-size:12px; color:var(--muted); margin-top:4px;">
+                Stale: ~207h+ (8.7d+) · Action: Gmail app password · or "Park Felix" to confirm parking
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>📁 Workspace</h3>
+        <p style="font-size:13.5px; color:var(--muted);">
+            Parked workspace: <code>~/.openclaw/workspace_felix_PARKED_2026-04-15/</code><br>
+            Cron: <strong style="color:var(--amber);">DISABLED</strong><br>
+            Last active: ~2026-04-15
+        </p>
+    </div>
+
+</div>
+<footer>
+    Felix · N3 Vault · <a href="https://kaji-hemopo.github.io/telemetry/empire-home.html">Empire Home</a> · PARKED since 2026-04-15 · Gmail re-auth required
+</footer>
+</body>
+</html>

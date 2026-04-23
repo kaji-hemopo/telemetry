@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ito · Intelligence Terminal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols-Outlined:opsz,FILL,GRAD@24,400,0,0" rel="stylesheet">
+    <style>
+        :root { --bg:#121416; --surface:rgba(30,32,34,0.92); --border:rgba(255,255,255,0.06); --text:#e2e2f5; --muted:#bac9cc; --accent:#22d3ee; --green:#34d399; --amber:#fbbf24; --red:#f87171; --violet:#a78bfa; }
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body { font-family:'Inter',system-ui,sans-serif; background:var(--bg); color:var(--text); min-height:100vh; }
+        .page-bg { position:fixed; inset:0; z-index:-1; background:radial-gradient(ellipse 90% 55% at 50% -25%,rgba(34,211,238,0.07),transparent 50%); }
+        .container { max-width:1100px; margin:0 auto; padding:28px 20px 56px; }
+        .nav-back { display:inline-flex; align-items:center; gap:8px; padding:10px 18px; border-radius:10px; font-size:13px; font-weight:600; color:var(--muted); background:rgba(139,144,161,0.08); border:1px solid rgba(139,144,161,0.15); text-decoration:none; margin-bottom:24px; }
+        .nav-back:hover { background:rgba(139,144,161,0.14); color:var(--text); text-decoration:none; }
+        header { background:linear-gradient(135deg,rgba(28,32,48,0.95),rgba(12,14,22,0.98)); border:1px solid rgba(255,255,255,0.1); border-radius:20px; padding:24px 28px; margin-bottom:24px; }
+        h1 { font-size:1.5rem; font-weight:800; color:var(--text); letter-spacing:-0.03em; }
+        .subtitle { color:var(--muted); font-size:14px; margin-top:6px; }
+        .badge { display:inline-block; padding:3px 10px; border-radius:999px; font-size:11px; font-weight:600; }
+        .badge-ok { background:rgba(52,211,153,0.12); color:var(--green); border:1px solid rgba(52,211,153,0.25); }
+        .badge-err { background:rgba(248,113,113,0.12); color:var(--red); border:1px solid rgba(248,113,113,0.25); }
+        .badge-run { background:rgba(34,211,238,0.12); color:var(--accent); border:1px solid rgba(34,211,238,0.25); }
+        .badge-warn { background:rgba(251,191,36,0.12); color:var(--amber); border:1px solid rgba(251,191,36,0.25); }
+        .card { background:var(--surface); border:1px solid var(--border); border-radius:14px; padding:20px 24px; margin-bottom:16px; }
+        .card h3 { font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:var(--accent); margin-bottom:14px; }
+        .material-symbols-outlined { font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24; font-size:16px; }
+        .links { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
+        .link-card { background:rgba(0,0,0,0.25); border:1px solid rgba(255,255,255,0.06); border-radius:14px; padding:16px 20px; text-decoration:none; display:block; transition:transform 0.2s,border-color 0.2s; }
+        .link-card:hover { transform:translateY(-3px); border-color:rgba(34,211,238,0.25); }
+        .link-card-title { font-size:14px; font-weight:700; color:var(--text); margin-bottom:6px; }
+        .link-card-desc { font-size:12px; color:var(--muted); }
+        footer { text-align:center; padding:32px 24px; font-size:12px; color:var(--muted); border-top:1px solid var(--border); margin-top:40px; }
+        footer a { color:var(--accent); text-decoration:none; }
+        @media(max-width:640px) { .links { grid-template-columns:1fr; } }
+    </style>
+</head>
+<body>
+<div class="page-bg"></div>
+<div class="container">
+    <a href="https://kaji-hemopo.github.io/telemetry/empire-home.html" class="nav-back">← Empire Home</a>
+    <header>
+        <h1>🦅 Ito · Intelligence Terminal</h1>
+        <p class="subtitle">RSS & social intel, trader roundup, venture signals, markets — updated by the Telemetry pipeline.</p>
+        <div style="margin-top:12px; display:flex; gap:8px; flex-wrap:wrap;">
+            <span class="badge badge-run">Pipeline FRESH · ~02:05 JST</span>
+            <span class="badge badge-warn">🛢️ Brent $103.48 🚨 ALERT ≥$100</span>
+            <span class="badge badge-ok">Gold $4,737/oz ⚠️</span>
+            <span class="badge badge-ok">RSS 1,401 arts · 16 sectors</span>
+            <span class="badge badge-err">Twitter/X Blocked (xAI credits)</span>
+        </div>
+    </header>
+
+    <div class="card">
+        <h3>🛢️ Oil Shock Alert — Binary ≥$100 BREACHED</h3>
+        <div style="padding:12px 16px; background:rgba(248,113,113,0.08); border:1px solid rgba(248,113,113,0.25); border-radius:10px; font-size:13.5px;">
+            <strong style="color:var(--red);">🚨 BINARY ALERT LIVE</strong> — Brent $103.48/bbl (web search · 01:24 JST)<br>
+            <span style="color:var(--muted); font-size:12px;">
+                ≥$100 threshold BREACHED · Iran/Hormuz risk ACTIVE · ceasefire expired Apr 22 · Northwood 30+ nation military planning underway<br>
+                Was $92.48 at ceasefire · spiked +$10.45 · still elevated · CLARITY Act pushed to May ⚠️
+            </span>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>📡 Pipeline Status</h3>
+        <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:10px;">
+            <div style="padding:10px 14px; background:rgba(0,0,0,0.2); border-radius:10px; border:1px solid rgba(255,255,255,0.05);">
+                <div style="font-size:12px; font-weight:700; margin-bottom:4px;">📰 RSS Intel</div>
+                <div style="font-size:11px; color:var(--muted);">1,401 articles · 16 sectors ✅</div>
+                <div style="font-size:11px; color:var(--green); margin-top:4px;">FRESH ✅</div>
+            </div>
+            <div style="padding:10px 14px; background:rgba(0,0,0,0.2); border-radius:10px; border:1px solid rgba(255,255,255,0.05);">
+                <div style="font-size:12px; font-weight:700; margin-bottom:4px;">📊 Brent Oracle</div>
+                <div style="font-size:11px; color:var(--red);">$103.48 🚨 ALERT</div>
+                <div style="font-size:11px; color:var(--muted); margin-top:4px;">web search (oracle fixed)</div>
+            </div>
+            <div style="padding:10px 14px; background:rgba(0,0,0,0.2); border-radius:10px; border:1px solid rgba(255,255,255,0.05);">
+                <div style="font-size:12px; font-weight:700; margin-bottom:4px;">🥇 Gold Oracle</div>
+                <div style="font-size:11px; color:var(--amber);">$4,737/oz ⚠️</div>
+                <div style="font-size:11px; color:var(--muted); margin-top:4px;">-$85 from $4,822 · pivot $4,736</div>
+            </div>
+            <div style="padding:10px 14px; background:rgba(0,0,0,0.2); border-radius:10px; border:1px solid rgba(255,255,255,0.05);">
+                <div style="font-size:12px; font-weight:700; margin-bottom:4px;">🐦 Twitter/X</div>
+                <div style="font-size:11px; color:var(--red);">BLOCKED ⚠️</div>
+                <div style="font-size:11px; color:var(--muted); margin-top:4px;">xAI credits exhausted · cron OK</div>
+            </div>
+            <div style="padding:10px 14px; background:rgba(0,0,0,0.2); border-radius:10px; border:1px solid rgba(255,255,255,0.05);">
+                <div style="font-size:12px; font-weight:700; margin-bottom:4px;">📡 signal_radar</div>
+                <div style="font-size:11px; color:var(--amber);">⚠️ STALE ~3.7h</div>
+                <div style="font-size:11px; color:var(--muted); margin-top:4px;">needs manual curation</div>
+            </div>
+            <div style="padding:10px 14px; background:rgba(0,0,0,0.2); border-radius:10px; border:1px solid rgba(255,255,255,0.05);">
+                <div style="font-size:12px; font-weight:700; margin-bottom:4px;">🌉 bridge_progress</div>
+                <div style="font-size:11px; color:var(--amber);">⚠️ STALE ~16h</div>
+                <div style="font-size:11px; color:var(--muted); margin-top:4px;">needs Jackson input</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>🔗 Key Links</h3>
+        <div class="links">
+            <a href="https://kaji-hemopo.github.io/telemetry/" class="link-card" target="_blank">
+                <div class="link-card-title">📊 Dashboard</div>
+                <div class="link-card-desc">Intel dashboard · pipeline view</div>
+            </a>
+            <a href="https://kaji-hemopo.github.io/telemetry/empire-home.html" class="link-card" target="_blank">
+                <div class="link-card-title">🏛️ Empire Home</div>
+                <div class="link-card-desc">Full empire status · alerts</div>
+            </a>
+            <a href="https://kaji-hemopo.github.io/telemetry/bridge.html" class="link-card" target="_blank">
+                <div class="link-card-title">🌉 Bridge Progress</div>
+                <div class="link-card-desc">Monthly income vs $10k target</div>
+            </a>
+        </div>
+    </div>
+
+</div>
+<footer>
+    Ito Intelligence · <a href="https://kaji-hemopo.github.io/telemetry/empire-home.html">Empire Home</a> · Brent $103.48 🚨 ALERT LIVE · Pipeline FRESH ✅ · Twitter BLOCKED ⚠️
+</footer>
+</body>
+</html>

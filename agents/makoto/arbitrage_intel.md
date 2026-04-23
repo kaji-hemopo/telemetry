@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-23 22:43 JST
+Generated: 2026-04-24 01:54 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -53,25 +53,25 @@ Generated: 2026-04-23 22:43 JST
 | Score | Platform | Keyword | Title | Budget/Rate | URL |
 |---:|---|---|---|---|---|
 | 85 | Freelancer | Make.com automation | Automated Publishing System for Newspaper | $20,000.00 | https://www.freelancer.com/projects/web-development/Automated-Publishing-System-for.html |
-| 75 | Freelancer | Python scraper | AI Engineer for Realistic Product Images | $250.00 | https://www.freelancer.com/projects/midjourney/Engineer-for-Realistic-Product-Images.html |
-| 75 | Freelancer | Python scraper | Long-Term Full-Stack Developer Needed | $250.00 | https://www.freelancer.com/projects/full-stack-development/Long-Term-Full-Stack-Developer-40392237.html |
-| 75 | Freelancer | Python scraper | Senior Full-Stack Development Contract | $250.00 | https://www.freelancer.com/projects/full-stack-development/Senior-Full-Stack-Development-Contract.html |
+| 85 | Freelancer | Data processing API | Real-Time Sales Tracking App -- 2 | $750.00 | https://www.freelancer.com/projects/react-native/Real-Time-Sales-Tracking-App.html |
+| 75 | Freelancer | Make.com automation | eBay Listing Automation Bot Development | $250.00 | https://www.freelancer.com/projects/api-developmet/eBay-Listing-Automation-Bot-Development.html |
 | 75 | Freelancer | Make.com automation | Make.com specialist &mdash; build 3 pre-designed scenarios (Midtr | $250.00 | https://www.freelancer.com/projects/Make-com/Make-com-specialist-build-pre.html |
 | 75 | Freelancer | Make.com automation | AI RevOps Operator (Funnels, CRM, Automation) | $250.00 | https://www.freelancer.com/projects/ai-hw-sw/RevOps-Operator-Funnels-CRM-Automation.html |
+| 65 | Freelancer | Python scraper | AI-Fueled Local Business Marketing App Development | Project Title: AI Marketing App for Local Businesses (Google + Social Media Auto | https://www.freelancer.com/projects/mobile-app-development/Fueled-Local-Business-Marketing-App.html |
+| 65 | Freelancer | Python scraper | WeChat Mini Program Protocol-Level Auto-Purchasing (Sniping) Tool | $30.00 | https://www.freelancer.com/projects/api-developmet/WeChat-Mini-Program-Protocol-Level.html |
+| 65 | Freelancer | Python scraper | Gambio FTP Stock Sync Script | My Gambio-based shop needs a small automation layer that pulls product data and  | https://www.freelancer.com/projects/Gambio-FTP-Stock-Sync-Script.html |
 | 65 | Freelancer | Python scraper | Python Socket Game Automation CMD Tool | I am looking for a Python developer to create a high-performance command-line (C | https://www.freelancer.com/projects/game-development/Python-Socket-Game-Automation-CMD.html |
 | 65 | Freelancer | Python scraper | Automate TradingView Strategy with Indian Broker | I have a, rule-based strategy on TradingView that fires clear buy/sell signals t | https://www.freelancer.com/projects/python/Automate-TradingView-Strategy-with.html |
 | 65 | Freelancer | Python scraper | Delinea SecretServer DB Onboarding | I run Delinea Secret Server Cloud (full Secrets Suite) and need someone who alre | https://www.freelancer.com/projects/api/Delinea-SecretServer-Onboarding.html |
 | 65 | Freelancer | Python scraper | Commodity Analytics Aggregator Website | I am building a web-based data aggregator focused on commodity trading analytics | https://www.freelancer.com/projects/api/Commodity-Analytics-Aggregator-Website.html |
-| 65 | Freelancer | Python scraper | Excel Customer Data &amp; Python Basics | $10.00 | https://www.freelancer.com/projects/data-entry/Excel-Customer-Data-Python-Basics.html |
+| 65 | Freelancer | Make.com automation | Salesforce Techno-Functional Consultant Needed | Salesforce Techno functional resource. We are seeking a Salesforce Techno-Functi | https://www.freelancer.com/projects/mulesoft/Salesforce-Techno-Functional-Consultant.html |
+| 65 | Freelancer | Make.com automation | Zoho Inventory Setup &amp; Channel Integration | $15.00 | https://www.freelancer.com/projects/api/Zoho-Inventory-Setup-Channel-Integration.html |
+| 65 | Freelancer | Make.com automation | Web &amp; Mobile App Manual Tester Needed | Job Title: Freelance Web &amp; Mobile App Manual Tester Job Description: We are  | https://www.freelancer.com/projects/web-testing/Web-Mobile-App-Manual-Tester.html |
 | 65 | Freelancer | Make.com automation | Freelance GoHighLevel (GHL) CRM Designer &ndash; Real Estate Whol | Key Responsibilities Build and customize GoHighLevel CRM for real estate workflo | https://www.freelancer.com/projects/go-high-level/Freelance-GoHighLevel-GHL-CRM-Designer.html |
 | 65 | Freelancer | Make.com automation | Help needed to secure BLS Spain visa appointment (Tangier - Moroc | $30.00 | https://www.freelancer.com/projects/automation/Help-needed-secure-BLS-Spain.html |
 | 65 | Freelancer | Make.com automation | StepWise  and  .NET Job Support Expert -- 2 | StepWise and .NET Job Support Expert (REST/SOAP APIs | SQL | Excel) We are looki | https://www.freelancer.com/projects/dot-net/StepWise-NET-Job-Support-Expert-40392689.html |
 | 65 | Freelancer | Make.com automation | Kundali Razorpay Integration in WordPress (SVGNAN) | Title: WordPress – Razorpay Payment Integration with DB &amp; Unlock Logic (SVGN | https://www.freelancer.com/projects/payment-gateway-integration/Kundali-Razorpay-Integration-WordPress.html |
 | 65 | Freelancer | Make.com automation | Senior QA Engineer for SAP eCommerce Platform Testing | $2.00 | https://www.freelancer.com/projects/software-testing/Senior-Engineer-for-SAP-eCommerce.html |
-| 65 | Freelancer | Make.com automation | UiPath Automation Specialist Needed | I'm seeking an UiPath automation expert to streamline processes on desktop appli | https://www.freelancer.com/projects/automation/UiPath-Automation-Specialist-Needed.html |
-| 65 | Freelancer | Make.com automation | Zerodha Kite Intraday Automation | I need a small, no-frills script that logs into Zerodha Kite and executes an int | https://www.freelancer.com/projects/api-developmet/Zerodha-Kite-Intraday-Automation.html |
-| 65 | Freelancer | Make.com automation | Basic Zoho CRM Setup Needed | $15.00 | https://www.freelancer.com/projects/zoho-crm/Basic-Zoho-CRM-Setup-Needed.html |
-| 65 | Freelancer | Data processing API | Excel Data Entry &amp; Formulas | I need help transferring mixed text and numerical data from a set of digital fil | https://www.freelancer.com/projects/excel-vba/Excel-Data-Entry-Formulas-40392972.html |
 
 ## Notes
 - Scores prioritize: (1) simple automation/scripting fit, (2) payout magnitude, (3) keyword relevance.

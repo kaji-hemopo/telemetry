@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaji · COO Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,600;9..40,700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols-Outlined:opsz,FILL,GRAD@24,400,0,0" rel="stylesheet">
+    <style>
+        :root { --bg:#121416; --surface:rgba(30,32,34,0.92); --border:rgba(255,255,255,0.06); --text:#e2e2f5; --muted:#bac9cc; --dim:#849396; --accent:#22d3ee; --violet:#a78bfa; --green:#4ade80; --red:#f87171; --yellow:#fbbf24; --font-d:"Syne",system-ui,sans-serif; --font-b:"DM Sans",system-ui,sans-serif; }
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body { font-family:var(--font-b); color:var(--text); min-height:100vh; background:var(--bg); -webkit-font-smoothing:antialiased; }
+        .page-bg { position:fixed; inset:0; z-index:-1; pointer-events:none; background:radial-gradient(ellipse 90% 55% at 50% -25%, rgba(34,211,238,0.07), transparent 50%), radial-gradient(ellipse 45% 40% at 100% 0%, rgba(167,139,250,0.06), transparent 45%), linear-gradient(180deg,#1a1c2e,var(--bg)); }
+        .container { max-width:1000px; margin:0 auto; padding:28px 20px 56px; }
+        .nav-back { display:inline-flex; align-items:center; gap:8px; padding:10px 18px; border-radius:10px; font-size:13px; font-weight:600; color:var(--muted); background:rgba(139,144,161,0.08); border:1px solid rgba(139,144,161,0.15); text-decoration:none; margin-bottom:24px; }
+        .nav-back:hover { background:rgba(139,144,161,0.14); color:var(--text); text-decoration:none; }
+        header { background:linear-gradient(135deg,rgba(28,32,48,0.95),rgba(12,14,22,0.98)); border:1px solid rgba(255,255,255,0.1); border-radius:20px; padding:24px 28px; margin-bottom:24px; }
+        h1 { font-family:var(--font-d); font-size:1.5rem; font-weight:800; letter-spacing:-0.03em; background:linear-gradient(95deg,#fff,#9ca3b8); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+        .subtitle { color:var(--muted); font-size:14px; max-width:52ch; margin-top:6px; }
+        .badge { display:inline-block; padding:3px 10px; border-radius:999px; font-size:11px; font-weight:600; }
+        .badge-ok { background:rgba(74,222,128,0.12); color:var(--green); border:1px solid rgba(74,222,128,0.25); }
+        .badge-err { background:rgba(248,113,113,0.12); color:var(--red); border:1px solid rgba(248,113,113,0.25); }
+        .badge-warn { background:rgba(251,191,36,0.12); color:var(--yellow); border:1px solid rgba(251,191,36,0.25); }
+        .badge-run { background:rgba(34,211,238,0.12); color:var(--accent); border:1px solid rgba(34,211,238,0.25); }
+        .card { background:var(--surface); border:1px solid var(--border); border-radius:14px; padding:20px 24px; margin-bottom:16px; }
+        .card h3 { font-family:var(--font-d); font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:var(--accent); margin-bottom:14px; display:flex; align-items:center; gap:7px; }
+        .material-symbols-outlined { font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24; font-size:16px; }
+        .stat-row { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-bottom:16px; }
+        .stat { text-align:center; padding:14px 8px; background:var(--surface); border:1px solid var(--border); border-radius:12px; }
+        .stat-num { font-family:var(--font-d); font-size:1.8rem; font-weight:800; color:var(--accent); }
+        .stat-label { font-size:11px; color:var(--muted); margin-top:4px; }
+        .cron-table { width:100%; border-collapse:collapse; font-size:12.5px; }
+        .cron-table th { text-align:left; padding:6px 10px; color:var(--dim); font-size:11px; text-transform:uppercase; letter-spacing:0.06em; border-bottom:1px solid rgba(255,255,255,0.06); }
+        .cron-table td { padding:8px 10px; border-bottom:1px solid rgba(255,255,255,0.04); }
+        .cron-table tr:last-child td { border-bottom:none; }
+        footer { text-align:center; padding:32px 24px; font-size:12px; color:var(--muted); border-top:1px solid var(--border); margin-top:40px; }
+        footer a { color:var(--accent); text-decoration:none; }
+        @media(max-width:640px) { .stat-row { grid-template-columns:repeat(2,1fr); } }
+    </style>
+</head>
+<body>
+<div class="page-bg"></div>
+<div class="container">
+    <a href="https://kaji-hemopo.github.io/telemetry/empire-home.html" class="nav-back">← Empire Home</a>
+    <header>
+        <div style="font-size:11px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:var(--violet); margin-bottom:10px;">Kaji · COO Dashboard</div>
+        <h1>Kaji · Chief Operating Officer</h1>
+        <p class="subtitle">Empire oversight, 60-min initiative beats, stale action management, cron health, New Ideas.</p>
+        <div style="margin-top:14px; display:flex; gap:8px; flex-wrap:wrap;">
+            <span class="badge badge-ok">✅ Active · Beat 808 Improve Existing</span>
+            <span class="badge badge-run">📡 60min Heartbeat</span>
+            <span class="badge badge-warn">🛢️ Brent $103.48 🚨 ALERT LIVE</span>
+        </div>
+    </header>
+
+    <div class="stat-row">
+        <div class="stat">
+            <div class="stat-num" style="color:var(--violet);">808</div>
+            <div class="stat-label">Beats Completed</div>
+        </div>
+        <div class="stat">
+            <div class="stat-num" style="color:var(--green);">6/6</div>
+            <div class="stat-label">Crons Healthy</div>
+        </div>
+        <div class="stat">
+            <div class="stat-num" style="color:var(--yellow);">4</div>
+            <div class="stat-label">Stale Jax Actions</div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3><span class="material-symbols-outlined">schedule</span> Cron Status</h3>
+        <table class="cron-table">
+            <thead><tr><th>Agent</th><th>Schedule</th><th>Status</th></tr></thead>
+            <tbody>
+                <tr><td><strong>Kaji 60min HB</strong></td><td>every 1h</td><td><span class="badge badge-ok">✅ Running</span></td></tr>
+                <tr><td>Ito 20min HB</td><td>every 20m</td><td><span class="badge badge-ok">✅ OK</span></td></tr>
+                <tr><td>Ito infra-pulse</td><td>10/30/50m</td><td><span class="badge badge-ok">✅ OK</span></td></tr>
+                <tr><td>Makoto 21min HB</td><td>every 21m</td><td><span class="badge badge-ok">✅ OK</span></td></tr>
+                <tr><td>Twitter/X Intel</td><td>every 30m</td><td><span class="badge badge-warn">⚠️ BLOCKED — xAI credits</span></td></tr>
+                <tr><td>Gold Oracle</td><td>every 2h</td><td><span class="badge badge-ok">✅ OK · $4,737/oz</span></td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="card">
+        <h3><span class="material-symbols-outlined">flag</span> Current Beat</h3>
+        <p style="font-size:13.5px; color:var(--muted);">
+            Beat 808 <strong>Improve Existing</strong> ✅ · ~01:52 JST Fri Apr 24<br>
+            6/6 crons confirmed ✅ · Ito pipeline FRESH (1,401 arts · Brent $103.48 🚨 · Gold $4,737 ⚠️)<br>
+            Makoto scout 25 opps ✅ · Twitter BLOCKED ⚠️ · 4 stale Jax actions unchanged<br>
+            <strong style="color:var(--accent);">next: Empire Audit (Beat 809 · EA=1 rung3)</strong>
+        </p>
+    </div>
+
+    <div class="card">
+        <h3><span class="material-symbols-outlined">speed</span> Jax Action Queue</h3>
+        <div style="padding:10px 14px; background:rgba(248,113,113,0.06); border:1px solid rgba(248,113,113,0.2); border-radius:10px; margin-bottom:8px; font-size:13px;">
+            <strong>🏋️ Titan ENFORCED PARKED</strong> · ~162h 🚨 PAST 72h threshold · cron DISABLED
+        </div>
+        <div style="padding:10px 14px; background:rgba(251,191,36,0.06); border:1px solid rgba(251,191,36,0.2); border-radius:10px; margin-bottom:8px; font-size:13px;">
+            <strong>📋 Empire Morning Brief v3</strong> · "Go Telegram" · ~225h (9.4d+) stale ⚠️
+        </div>
+        <div style="padding:10px 14px; background:rgba(251,191,36,0.06); border:1px solid rgba(251,191,36,0.2); border-radius:10px; margin-bottom:8px; font-size:13px;">
+            <strong>⚡ Makoto GBP Deploy</strong> · Formspree BLOCKER · 31d+ stale ⚠️
+        </div>
+        <div style="padding:10px 14px; background:rgba(248,113,113,0.06); border:1px solid rgba(248,113,113,0.2); border-radius:10px; font-size:13px;">
+            <strong>🎌 Felix Gmail Re-auth</strong> · N3 Phase 2b frozen · ~207h 🚨
+        </div>
+    </div>
+
+</div>
+<footer>
+    Kaji COO · <a href="https://kaji-hemopo.github.io/telemetry/empire-home.html">Empire Home</a> · <strong style="color:var(--violet);">Beat 808 · Improve Existing ✅</strong> · Brent $103.48 🚨 ALERT LIVE · next: Empire Audit (Beat 809)
+</footer>
+</body>
+</html>
