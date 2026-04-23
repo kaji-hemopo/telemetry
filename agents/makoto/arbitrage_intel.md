@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-23 11:53 JST
+Generated: 2026-04-23 13:48 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -53,25 +53,25 @@ Generated: 2026-04-23 11:53 JST
 | Score | Platform | Keyword | Title | Budget/Rate | URL |
 |---:|---|---|---|---|---|
 | 75 | Freelancer | Python scraper | Audit and Fix Football Prediction ML Pipeline | $250.00 | https://www.freelancer.com/projects/fastapi/Audit-Fix-Football-Prediction-Pipeline.html |
-| 75 | Freelancer | Data processing API | Teams Data Extraction App for Windows - 22/04/2026 21:39 EDT | $100.00 | https://www.freelancer.com/projects/api-integration/Teams-Data-Extraction-App-for.html |
+| 75 | Freelancer | Data processing API | New Group &amp; Event Merge | $250.00 | https://www.freelancer.com/projects/project-management/New-Group-Event-Merge.html |
+| 75 | Freelancer | Data processing API | SwiftUI iPad Developer (High-Performance, Apple-Grade UX) | $250.00 | https://www.freelancer.com/projects/api-integration/SwiftUI-iPad-Developer-High-Performance.html |
 | 65 | Freelancer | Python scraper | Archive.org Video Autouploader Script | I want a lean, command-line script that automatically uploads videos from WWW.TV | https://www.freelancer.com/projects/bash/Archive-org-Video-Autouploader-Script.html |
 | 65 | Freelancer | Python scraper | News Site Scraping Bot | I need a reliable web-scraping bot that automatically pulls fresh content from a | https://www.freelancer.com/projects/beautifulsoup/News-Site-Scraping-Bot.html |
 | 65 | Freelancer | Python scraper | Docker IPTV Playlist Automation | I need a developer who can wrap Threadfin inside a rock-solid Docker architectur | https://www.freelancer.com/projects/automation/Docker-IPTV-Playlist-Automation.html |
 | 65 | Freelancer | Python scraper | Python Automated Stock Report Creation Arabic | $30.00 | https://www.freelancer.com/projects/data-scraping/Python-Automated-Stock-Report-Creation.html |
 | 65 | Freelancer | Python scraper | Python Developer for WebSocket &amp; RAG System | $30.00 | https://www.freelancer.com/projects/apache-kafka/Python-Developer-for-WebSocket-RAG.html |
 | 65 | Freelancer | Python scraper | Text Data, image data, numeric data Entry AI Automation | $30.00 | https://www.freelancer.com/projects/ai-development/Text-Data-image-data-numeric.html |
-| 65 | Freelancer | Python scraper | Trading Algo &ndash; Automated Crypto Trading System (Binance Tes | $30.00 | https://www.freelancer.com/projects/binance/Trading-Algo-Automated-Crypto-Trading.html |
+| 65 | Freelancer | Make.com automation | WhatsApp Business &amp; Zoho CRM Integration | Looking for setup of WhatsApp Business API (Interakt/WATI) + Zoho CRM integratio | https://www.freelancer.com/projects/api-integration/WhatsApp-Business-Zoho-CRM-Integration.html |
+| 65 | Freelancer | Make.com automation | Automated Daily Bank Reconciliation Flow | I need a Microsoft Power Automate Desktop (PAD) flow that runs every morning aga | https://www.freelancer.com/projects/power-automate/Automated-Daily-Bank-Reconciliation-Flow.html |
+| 65 | Freelancer | Make.com automation | PAD Bank Reconciliation Automation | I keep each account’s transactions in separate Excel spreadsheets and want the r | https://www.freelancer.com/projects/automation/PAD-Bank-Reconciliation-Automation.html |
 | 65 | Freelancer | Make.com automation | Social Media Integration Specialist Needed | $30.00 | https://www.freelancer.com/projects/api-integration/Social-Media-Integration-Specialist-40391656.html |
-| 65 | Freelancer | Make.com automation | I want code | I need an experienced C2000 developer to turn my detailed industrial-automation  | https://www.freelancer.com/projects/embedded-systems/want-code.html |
 | 65 | Freelancer | Make.com automation | Social Media Integration via Respond.io | $12.00 | https://www.freelancer.com/projects/api-integration/Social-Media-Integration-via-Respond.html |
 | 65 | Freelancer | Make.com automation | Streamlined Automation &amp; Integration Solution | Automation plus integration project (Budget: ₹37500 - ₹75000 INR, Jobs: API, Aut | https://www.freelancer.com/projects/automation/Streamlined-Automation-Integration.html |
 | 65 | Freelancer | Make.com automation | Connect Custom Form to Monday.com | I run an estate-agency website built entirely with custom HTML/CSS and I collect | https://www.freelancer.com/projects/api/Connect-Custom-Form-Monday-com.html |
-| 65 | Freelancer | Make.com automation | HubSpot Document Generation Specialist | $30.00 | https://www.freelancer.com/projects/api-integration/HubSpot-Document-Generation-Specialist.html |
-| 65 | Freelancer | Make.com automation | Commission-Based Sales Closer Needed for AI Automation Agency | We are building an AI automation agency focused on helping businesses automate s | https://www.freelancer.com/projects/b2b-marketing/Commission-Based-Sales-Closer-Needed-40390563.html |
-| 65 | Freelancer | Data processing API | Bulk .edu Email Deployment | I have a clean, permission-based list of U.S. university addresses (all ending i | https://www.freelancer.com/projects/email-campaign/Bulk-edu-Email-Deployment.html |
-| 65 | Freelancer | Data processing API | Xiaozhi Firmware Endpoint Update | I maintain the open-source XiaoZhi—Xiaolong intelligent chat toy shown at https: | https://www.freelancer.com/projects/firmware/Xiaozhi-Firmware-Endpoint-Update.html |
-| 65 | Freelancer | Data processing API | Custody Case Exhibit Organization | $15.00 | https://www.freelancer.com/projects/legal/Custody-Case-Exhibit-Organization.html |
-| 65 | Freelancer | Data processing API | Billing Tracking Workbook | $30.00 | https://www.freelancer.com/projects/data-management/Billing-Tracking-Workbook.html |
+| 65 | Freelancer | Make.com automation | I want code | I need an experienced C2000 developer to turn my detailed industrial-automation  | https://www.freelancer.com/projects/embedded-systems/want-code.html |
+| 65 | Freelancer | Data processing API | Redesign Excel Erasmus+ Dashboard | BACKGROUND I maintain an Excel‑based dashboard used by International Office staf | https://www.freelancer.com/projects/data-processing/Redesign-Excel-Erasmus-Dashboard.html |
+| 65 | Freelancer | Data processing API | Bloomberg Nasdaq Data Analysis | $8.00 | https://www.freelancer.com/projects/bloomberg-api/Bloomberg-Nasdaq-Data-Analysis.html |
+| 65 | Freelancer | Data processing API | Microsoft PAD Flow for Bank Reconciliation | I need a Microsoft Power Automate Desktop (PAD) flow designed specifically for d | https://www.freelancer.com/projects/automation/Microsoft-PAD-Flow-for-Bank.html |
 
 ## Notes
 - Scores prioritize: (1) simple automation/scripting fit, (2) payout magnitude, (3) keyword relevance.
