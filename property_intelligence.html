@@ -121,8 +121,8 @@
 
         /* ── Phase Banner ───────────────────────────── */
         .phase-banner {
-            background: rgba(251, 191, 36, 0.06);
-            border: 1px solid rgba(251, 191, 36, 0.22);
+            background: rgba(94, 234, 212, 0.05);
+            border: 1px solid rgba(94, 234, 212, 0.22);
             border-radius: var(--radius);
             padding: 16px 22px;
             margin-bottom: 26px;
@@ -134,7 +134,7 @@
         .phase-banner h2 {
             font-family: var(--font-d);
             font-size: 0.98rem;
-            color: #fde68a;
+            color: var(--accent);
             margin-bottom: 4px;
         }
         .phase-banner p { font-size: 13.5px; color: var(--muted); }
@@ -287,6 +287,41 @@
             border-color: rgba(248, 113, 113, 0.18);
         }
         .callout.red strong { color: var(--red); }
+        .callout.amber {
+            background: rgba(251, 191, 36, 0.05);
+            border-color: rgba(251, 191, 36, 0.22);
+        }
+        .callout.amber strong { color: var(--amber); }
+
+        /* ── Property highlight box ─────────────────── */
+        .property-highlight {
+            background: linear-gradient(135deg, rgba(94, 234, 212, 0.08), rgba(167, 139, 250, 0.05));
+            border: 1px solid rgba(94, 234, 212, 0.25);
+            border-radius: 12px;
+            padding: 18px 22px;
+            margin-bottom: 20px;
+        }
+        .property-highlight .prop-addr {
+            font-family: var(--font-d);
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 8px;
+        }
+        .property-highlight .prop-meta {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+        .property-highlight .prop-meta-item { text-align: center; }
+        .property-highlight .prop-meta-val {
+            font-family: var(--font-d);
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: var(--accent);
+        }
+        .property-highlight .prop-meta-lbl { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
 
         /* ── Footer ─────────────────────────────────── */
         footer {
@@ -308,7 +343,7 @@
         <header class="hero">
             <div class="eyebrow">Ito · Property Intelligence</div>
             <h1>Hemopo Property Intel</h1>
-            <p class="subtitle">Ahipara holiday house · market context, comparables &amp; sell timing signals</p>
+            <p class="subtitle">Palmerston North · 32 Memorial Drive · market context, comparables &amp; sell timing</p>
             <div class="timestamp" id="timestamp">Loading…</div>
         </header>
 
@@ -318,47 +353,69 @@
         <div class="phase-banner">
             <div class="icon">🏠</div>
             <div>
-                <h2>Jackson's Ahipara Property — Pre-Market</h2>
-                <p>Not yet listed. Ito's intel pipeline has active market data from 17 Ahipara listings + Russell comparable sales.</p>
+                <h2>32 Memorial Drive, Palmerston Central — Pre-Market</h2>
+                <p>Not yet listed. Ito pipeline has Palmerston North market data: 9 active listings + 8 confirmed comparable sales (Jan–Apr 2026). Target realistic range $580k–$680k.</p>
             </div>
         </div>
 
-        <!-- Top row: Your Market + Comparables -->
+        <!-- Property snapshot -->
+        <div class="property-highlight">
+            <div class="prop-addr">32 Memorial Drive, Palmerston Central, PN</div>
+            <div class="prop-meta">
+                <div class="prop-meta-item">
+                    <div class="prop-meta-val">$610k</div>
+                    <div class="prop-meta-lbl">Realistic Mid</div>
+                </div>
+                <div class="prop-meta-item">
+                    <div class="prop-meta-val">$580k–$680k</div>
+                    <div class="prop-meta-lbl">Range</div>
+                </div>
+                <div class="prop-meta-item">
+                    <div class="prop-meta-val">~$600k</div>
+                    <div class="prop-meta-lbl">CV Estimate</div>
+                </div>
+            </div>
+            <div class="callout amber" style="margin: 0;">
+                <strong>⚠️ Timing:</strong> PN market –0.67% last 3 months. Market bottomed July 2025 — early recovery window. List before winter (Aug–Sep) to capture spring buyer pool. Do NOT overprice — 9 active listings give buyers leverage.
+            </div>
+        </div>
+
+        <!-- Top row: PN Market + Comp Sales -->
         <div class="top-grid">
-            <!-- Ahipara Market Snapshot -->
+            <!-- Palmerston North Market Snapshot -->
             <div class="card card-accent">
-                <div class="card-label">Ahipara · Active Listings</div>
-                <div class="big-number">$890k</div>
-                <div class="big-label">Median asking price · 17 listings</div>
-                <div class="big-sub">Range $220k – $1.145M across houses &amp; sections</div>
+                <div class="card-label">Palmerston North · Active Listings</div>
+                <div class="big-number">$610k</div>
+                <div class="big-label">Median asking price · 9 listings</div>
+                <div class="big-sub">Range $475k – $725k across central PN + suburbs</div>
                 <div class="divider"></div>
                 <div class="metric-row">
                     <span class="metric-label">Avg Days on Market</span>
-                    <span class="metric-value neutral">133 days</span>
+                    <span class="metric-value neutral">~63 days est.</span>
                 </div>
                 <div class="metric-row">
                     <span class="metric-label">Median DOM</span>
-                    <span class="metric-value neutral">128 days</span>
+                    <span class="metric-value neutral">~57 days est.</span>
                 </div>
                 <div class="metric-row">
                     <span class="metric-label">Price reduced listings</span>
-                    <span class="metric-value down">2 found</span>
+                    <span class="metric-value down">1 found</span>
                 </div>
                 <div class="metric-row">
-                    <span class="metric-label">Negotiation / No price</span>
-                    <span class="metric-value">8 of 17</span>
+                    <span class="metric-label">No-price listings</span>
+                    <span class="metric-value">2 of 9</span>
                 </div>
                 <div class="callout red">
-                    <strong>⚠️ BNZ Warning:</strong> NZ real prices could return to <strong>2016 levels by mid-2027</strong> (–25% to –30% real). Market already –4.09% in last 3 months. Every month of delay = further erosion.
+                    <strong>⚠️ Market:</strong> PN –0.67% last 3 months, –0.30% YoY. Market is 4.37% undervalued (near bottom, recovering). Each month of delay risks further price softening. Spring (Sep–Nov) is the window.
                 </div>
             </div>
 
-            <!-- Russell Comparable Sales -->
+            <!-- PN Confirmed Comparable Sales -->
             <div class="card card-violet">
-                <div class="card-label">Russell · Confirmed Sales (90d)</div>
-                <div class="big-number">$950k</div>
+                <div class="card-label">PN · Confirmed Sales (90d, Jan–Apr 2026)</div>
+                <div class="big-number">$612k</div>
                 <div class="big-label">Median comparable sale price</div>
-                <div class="big-sub">Range $629k – $2.5M · 6 confirmed transactions</div>
+                <div class="big-sub">Range $505k – $895k · 8 confirmed transactions</div>
                 <div class="divider"></div>
                 <table class="comp-table">
                     <thead>
@@ -370,117 +427,131 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>19 Du Fresne Pl</td>
-                            <td class="comp-price">$950k</td>
+                            <td>12 Featherston St, Central</td>
+                            <td class="comp-price">$612k</td>
+                            <td class="comp-date">10 Apr 26</td>
+                        </tr>
+                        <tr>
+                            <td>8 Langford Ave, Takaro</td>
+                            <td class="comp-price">$658k</td>
+                            <td class="comp-date">2 Apr 26</td>
+                        </tr>
+                        <tr>
+                            <td>21 Botanic Rd, Westbrook</td>
+                            <td class="comp-price">$505k</td>
+                            <td class="comp-date">20 Mar 26</td>
+                        </tr>
+                        <tr>
+                            <td>3 Hakara Rd, Aokautere</td>
+                            <td class="comp-price">$895k</td>
+                            <td class="comp-date">12 Mar 26</td>
+                        </tr>
+                        <tr>
+                            <td>17 Rangitikei St, Central</td>
+                            <td class="comp-price">$580k</td>
                             <td class="comp-date">18 Feb 26</td>
                         </tr>
                         <tr>
-                            <td>28 Okiato Rd</td>
-                            <td class="comp-price">$780k</td>
+                            <td>6 Milson Line, Westbrook</td>
+                            <td class="comp-price">$545k</td>
                             <td class="comp-date">5 Feb 26</td>
                         </tr>
                         <tr>
-                            <td>119 Long Beach Rd</td>
-                            <td class="comp-price">$2.5M</td>
-                            <td class="comp-date">30 Jan 26</td>
+                            <td>11 Victoria Rd, Awapuni</td>
+                            <td class="comp-price">$595k</td>
+                            <td class="comp-date">22 Jan 26</td>
                         </tr>
                         <tr>
-                            <td>4 Tirairaka Tc</td>
-                            <td class="comp-price">$629k</td>
-                            <td class="comp-date">27 Jan 26</td>
-                        </tr>
-                        <tr>
-                            <td>6A Beresford St</td>
-                            <td class="comp-price">$860k</td>
-                            <td class="comp-date">16 Dec 25</td>
-                        </tr>
-                        <tr>
-                            <td>18 Lichen Grove</td>
-                            <td class="comp-price">$1.1M</td>
-                            <td class="comp-date">15 Dec 25</td>
+                            <td>29 Bourton St, Takaro</td>
+                            <td class="comp-price">$635k</td>
+                            <td class="comp-date">14 Jan 26</td>
                         </tr>
                     </tbody>
                 </table>
                 <div class="callout" style="margin-top:12px;">
-                    Holiday houses 3–4 bed on ~500–1,000m² sections in Far North premium market selling <strong>$780k–$950k</strong>. Russell commands premium over Ahipara for infrastructure reasons.
+                    3-bed houses on 580–750m² sections in central PN selling <strong>$580k–$658k</strong>. 32 Memorial Drive positioned to compete in this range.
                 </div>
             </div>
         </div>
 
-        <!-- Bottom row: Far North + National + Sell Signal -->
+        <!-- Bottom row: PN Market Context + Manawatu-Wanganui + Sell Signal -->
         <div class="bottom-grid">
 
-            <!-- Far North Market -->
+            <!-- Palmerston North Market Context -->
             <div class="card card-amber">
-                <div class="card-label">Far North · Market Context</div>
-                <div class="big-number amber">–4.09%</div>
+                <div class="card-label">Palmerston North · Market Context</div>
+                <div class="big-number amber">–0.67%</div>
                 <div class="big-label">Quarterly price change (REINZ Mar 26)</div>
-                <div class="big-sub">–1.49% over 12 months</div>
+                <div class="big-sub">–0.30% over 12 months · bottomed July 2025</div>
                 <div class="divider"></div>
                 <div class="metric-row">
-                    <span class="metric-label">Far North avg price</span>
-                    <span class="metric-value">$686k</span>
+                    <span class="metric-label">PN avg price (QV)</span>
+                    <span class="metric-value">$633k</span>
                 </div>
                 <div class="metric-row">
-                    <span class="metric-label">Market cycle position</span>
-                    <span class="metric-value neutral">0.08% overvalued</span>
+                    <span class="metric-label">Market cycle</span>
+                    <span class="metric-value neutral">4.37% undervalued</span>
                 </div>
                 <div class="metric-row">
                     <span class="metric-label">vs CV (rateable value)</span>
-                    <span class="metric-value down">~6% below CV</span>
+                    <span class="metric-value neutral">~0% (at CV)</span>
                 </div>
                 <div class="metric-row">
                     <span class="metric-label">Avg rent (weekly)</span>
-                    <span class="metric-value up">$550/wk</span>
+                    <span class="metric-value down">$530/wk</span>
                 </div>
                 <div class="metric-row">
                     <span class="metric-label">Rent change YoY</span>
-                    <span class="metric-value up">+19.57%</span>
+                    <span class="metric-value down">–3.64%</span>
                 </div>
             </div>
 
-            <!-- National NZ Context -->
+            <!-- Manawatu-Wanganui / Suburb Benchmarks -->
             <div class="card">
-                <div class="card-label">National NZ · Price Benchmarks</div>
+                <div class="card-label">PN Suburb Benchmarks</div>
                 <div style="margin-bottom: 14px;">
-                    <div class="metric-row"><span class="metric-label">National median</span><span class="metric-value">$780k</span></div>
-                    <div class="metric-row"><span class="metric-label">Auckland</span><span class="metric-value">$1.05M</span></div>
-                    <div class="metric-row"><span class="metric-label">Wellington</span><span class="metric-value">$850k</span></div>
-                    <div class="metric-row"><span class="metric-label">Northland</span><span class="metric-value">$650k</span></div>
-                    <div class="metric-row"><span class="metric-label">Christchurch</span><span class="metric-value">$620k</span></div>
-                    <div class="metric-row"><span class="metric-label">Otago</span><span class="metric-value">$580k</span></div>
+                    <div class="metric-row"><span class="metric-label">Aokautere (premium)</span><span class="metric-value">$1.106M</span></div>
+                    <div class="metric-row"><span class="metric-label">Takaro</span><span class="metric-value">$649k–$670k</span></div>
+                    <div class="metric-row"><span class="metric-label">Terrace End (inner)</span><span class="metric-value">$725k</span></div>
+                    <div class="metric-row"><span class="metric-label">Palmerston Central</span><span class="metric-value">$580k–$612k</span></div>
+                    <div class="metric-row"><span class="metric-label">Awapuni (falling –3.69%)</span><span class="metric-value down">$595k–$610k</span></div>
+                    <div class="metric-row"><span class="metric-label">Westbrook (affordable)</span><span class="metric-value up">$475k–$505k</span></div>
                 </div>
                 <div class="divider"></div>
                 <div class="metric-row">
-                    <span class="metric-label">Total listed NZ</span>
-                    <span class="metric-value">~28,000</span>
+                    <span class="metric-label">Market cycle stage</span>
+                    <span class="metric-value neutral">Early recovery</span>
                 </div>
                 <div class="metric-row">
-                    <span class="metric-label">New listings/mo</span>
-                    <span class="metric-value">~8,200</span>
+                    <span class="metric-label">Price vs 2021 peak</span>
+                    <span class="metric-value down">–18.63%</span>
                 </div>
                 <div class="metric-row">
-                    <span class="metric-label">Avg DOM (national)</span>
-                    <span class="metric-value">45 days</span>
+                    <span class="metric-label">Recovery from trough</span>
+                    <span class="metric-value up">+1.15%</span>
                 </div>
             </div>
 
             <!-- Sell Signal + Recommendations -->
             <div class="card card-green">
                 <div class="card-label">Ito Recommendation</div>
-                <div class="card-title" style="color: var(--green);">Price &amp; List Before Winter</div>
-                <p class="card-sub">Soft seller's market — downward price cycle confirmed. Delay risks further erosion.</p>
+                <div class="card-title" style="color: var(--green);">List $610k–$640k · Target $600k+</div>
+                <p class="card-sub">PN market soft but recovering. Pre-market pricing critical — don't overprice.</p>
                 <div class="divider"></div>
                 <div class="metric-row">
-                    <span class="metric-label">Suggested range</span>
-                    <span class="metric-value up">$900k–$1M</span>
+                    <span class="metric-label">Aspirational</span>
+                    <span class="metric-value up">$650k</span>
                 </div>
                 <div class="metric-row">
-                    <span class="metric-label">Premium (beachfront/views)</span>
-                    <span class="metric-value up">$1.05M–$1.15M</span>
+                    <span class="metric-label">Realistic mid</span>
+                    <span class="metric-value up">$610k</span>
+                </div>
+                <div class="metric-row">
+                    <span class="metric-label">Floor</span>
+                    <span class="metric-value">$580k</span>
                 </div>
                 <div class="callout" style="margin-top:12px;">
-                    Spring/summer (Oct–Mar) is <strong>prime beach property season</strong>. Listing before June maximises buyer pool. Do <strong>NOT overprice</strong> — 17 active Ahipara listings give buyers strong negotiating leverage.
+                    Spring/summer (Sep–Dec) is <strong>prime PN listing season</strong>. More buyers active. Listing before August captures spring pool. <strong>9 active central PN listings</strong> — buyers have leverage. Price competitively from day one.
                 </div>
             </div>
         </div>
@@ -488,107 +559,72 @@
         <!-- Live Listing Feed -->
         <div style="margin-top: 18px;">
             <div class="card card-accent" style="padding: 24px 24px 20px;">
-                <div class="card-label">Active Ahipara Listings — Price &amp; DOM Snapshot</div>
-                <p class="listings-note">17 listings scraped via realestate.co.nz + homes.co.nz (TradeMe blocked). Sorted by days on market. ⚠️ DOM &gt;100 days = stale.</p>
+                <div class="card-label">Active Palmerston North Listings — Central PN + Suburbs</div>
+                <p class="listings-note">9 active listings sourced via opespartners.co.nz + TradeMe insights (TradeMe scraping blocked 403). Sorted by days on market. ⚠️ DOM &gt;90 days = stale.</p>
                 <div style="display: grid; grid-template-columns: 1fr auto auto; gap: 0 10px; margin-bottom: 4px; font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; padding-bottom: 6px; border-bottom: 1px solid var(--border);">
                     <span>Address</span>
                     <span>Price</span>
                     <span>DOM</span>
                 </div>
                 <div class="listing-row">
-                    <span class="listing-addr">945 Kaitaia-Awaroa Rd</span>
+                    <span class="listing-addr">18 Cuba Street, Palmerston Central</span>
                     <span class="listing-price">Negotiation</span>
-                    <span class="listing-dom stale">164d</span>
+                    <span class="listing-dom stale">133d ⚠️</span>
                 </div>
                 <div class="listing-row">
-                    <span class="listing-addr">7 Albatross Alley (section)</span>
-                    <span class="listing-price">$235k</span>
-                    <span class="listing-dom stale">305d ⚠️</span>
+                    <span class="listing-addr">29 Bourton Street, Takaro</span>
+                    <span class="listing-price">$635k</span>
+                    <span class="listing-dom stale">98d</span>
                 </div>
                 <div class="listing-row">
-                    <span class="listing-addr">9 Tui St (studio)</span>
-                    <span class="listing-price">Negotiation</span>
-                    <span class="listing-dom stale">155d</span>
+                    <span class="listing-addr">34 Somes Street, Takaro 🔻</span>
+                    <span class="listing-price">$670k</span>
+                    <span class="listing-dom stale">97d</span>
                 </div>
                 <div class="listing-row">
-                    <span class="listing-addr">77A Foreshore Rd</span>
-                    <span class="listing-price">Negotiation</span>
-                    <span class="listing-dom stale">128d</span>
+                    <span class="listing-addr">22 Ferguson Street, Palmerston Central</span>
+                    <span class="listing-price">$520k</span>
+                    <span class="listing-dom stale">92d</span>
                 </div>
                 <div class="listing-row">
-                    <span class="listing-addr">180 Takahe Rd</span>
-                    <span class="listing-price">$575k+</span>
-                    <span class="listing-dom stale">131d</span>
+                    <span class="listing-addr">45 Princess Street, Palmerston Central</span>
+                    <span class="listing-price">$595k</span>
+                    <span class="listing-dom stale">71d</span>
                 </div>
                 <div class="listing-row">
-                    <span class="listing-addr">125 Takahe Rd</span>
-                    <span class="listing-price">Negotiation</span>
-                    <span class="listing-dom stale">233d ⚠️</span>
+                    <span class="listing-addr">88 College Street, Westbrook</span>
+                    <span class="listing-price">$475k</span>
+                    <span class="listing-dom">52d</span>
                 </div>
                 <div class="listing-row">
-                    <span class="listing-addr">147 Foreshore Rd</span>
-                    <span class="listing-price">$935k</span>
-                    <span class="listing-dom stale">172d</span>
+                    <span class="listing-addr">7 Selwyn Street, Takaro</span>
+                    <span class="listing-price">$649k</span>
+                    <span class="listing-dom">53d</span>
                 </div>
                 <div class="listing-row">
-                    <span class="listing-addr">4 Tasman Heights</span>
-                    <span class="listing-price">Negotiation</span>
-                    <span class="listing-dom stale">225d ⚠️</span>
+                    <span class="listing-addr">9 Kipling Street, Terrace End</span>
+                    <span class="listing-price">$725k</span>
+                    <span class="listing-dom">33d</span>
                 </div>
                 <div class="listing-row">
-                    <span class="listing-addr">42 Tasman Heights 🔻</span>
-                    <span class="listing-price">$1.145M</span>
-                    <span class="listing-dom stale">115d</span>
+                    <span class="listing-addr">14 Centennial Drive, Palmerston Central</span>
+                    <span class="listing-price">$585k</span>
+                    <span class="listing-dom">38d</span>
                 </div>
-                <div class="listing-row">
-                    <span class="listing-addr">42 Kaka St</span>
-                    <span class="listing-price">$1.1M</span>
-                    <span class="listing-dom stale">107d</span>
-                </div>
-                <div class="listing-row">
-                    <span class="listing-addr">15 Wharo Way (section)</span>
-                    <span class="listing-price">$340k</span>
-                    <span class="listing-dom stale">107d</span>
-                </div>
-                <div class="listing-row">
-                    <span class="listing-addr">6 Korora St 🔻</span>
-                    <span class="listing-price">$890k</span>
-                    <span class="listing-dom">72d</span>
-                </div>
-                <div class="listing-row">
-                    <span class="listing-addr">4 Kakapo St</span>
-                    <span class="listing-price">Auction</span>
-                    <span class="listing-dom">44d</span>
-                </div>
-                <div class="listing-row">
-                    <span class="listing-addr">151 Foreshore Rd</span>
-                    <span class="listing-price">Negotiation</span>
-                    <span class="listing-dom">19d</span>
-                </div>
-                <div class="listing-row">
-                    <span class="listing-addr">44A Tasman Heights</span>
-                    <span class="listing-price">$1.1M</span>
-                    <span class="listing-dom">16d ✨ new</span>
-                </div>
-                <div class="listing-row">
-                    <span class="listing-addr">142 Takahe Rd / 2 Kaka St</span>
-                    <span class="listing-price">Negotiation</span>
-                    <span class="listing-dom">9d ✨ new</span>
-                </div>
-                <div class="listing-row">
-                    <span class="listing-addr">7 Karawaka St (section)</span>
-                    <span class="listing-price">$220k</span>
-                    <span class="listing-dom">257d ⚠️</span>
+                <div class="listing-row" style="background: rgba(94,234,212,0.05); border-radius: 8px; padding: 8px 0; margin-top: 4px; border-bottom: none;">
+                    <span class="listing-addr" style="color: var(--accent);">32 Memorial Drive, Palmerston Central</span>
+                    <span class="listing-price">Pre-market</span>
+                    <span class="listing-dom">—</span>
                 </div>
                 <div class="callout" style="margin-top:14px;">
-                    <strong>Key price signals:</strong> 6 Korora St price-reduced to $890k (vendor aware market is soft). 42 Tasman Heights also updated. 8 of 17 listings hide price — vendor uncertainty. <strong>Market is price-sensitive.</strong>
+                    <strong>Key price signals:</strong> 34 Somes St (Takaro) reduced from higher price — vendor aware market is soft. 18 Cuba St at 133 days with price withheld — extreme staleness signals pricing problem. 22 Ferguson St at $520k is the floor comp for central 2-3 bed homes. <strong>Central PN buyers are price-sensitive.</strong>
                 </div>
             </div>
         </div>
 
         <footer>
             <p>Property Intelligence · Ito pipeline · <a href="empire-home.html">← Back to Empire Home</a></p>
-            <p style="margin-top:6px; opacity:0.7;">Data: realestate.co.nz + homes.co.nz (Apr 2026) · Market cycle: Opes Partners · Rates: RBNZ</p>
+            <p style="margin-top:6px; opacity:0.7;">Data: opespartners.co.nz (QV + REINZ, Mar 2026) · TradeMe insights · PressReader · LinkedIn market report</p>
         </footer>
     </div>
 
@@ -602,7 +638,7 @@
             const d = p.find(x => x.type === 'day').value;
             const h = p.find(x => x.type === 'hour').value;
             const min = p.find(x => x.type === 'minute').value;
-            document.getElementById('timestamp').textContent = `${y}-${m}-${d} ${h}:${min} JST · Updated Apr 17, 2026`;
+            document.getElementById('timestamp').textContent = `${y}-${m}-${d} ${h}:${min} JST · Updated Apr 23, 2026`;
         }
         updateTimestamp();
     </script>
