@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-23 11:11 JST
+Generated: 2026-04-23 11:53 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -61,14 +61,14 @@ Generated: 2026-04-23 11:11 JST
 | 65 | Freelancer | Python scraper | Python Developer for WebSocket &amp; RAG System | $30.00 | https://www.freelancer.com/projects/apache-kafka/Python-Developer-for-WebSocket-RAG.html |
 | 65 | Freelancer | Python scraper | Text Data, image data, numeric data Entry AI Automation | $30.00 | https://www.freelancer.com/projects/ai-development/Text-Data-image-data-numeric.html |
 | 65 | Freelancer | Python scraper | Trading Algo &ndash; Automated Crypto Trading System (Binance Tes | $30.00 | https://www.freelancer.com/projects/binance/Trading-Algo-Automated-Crypto-Trading.html |
+| 65 | Freelancer | Make.com automation | Social Media Integration Specialist Needed | $30.00 | https://www.freelancer.com/projects/api-integration/Social-Media-Integration-Specialist-40391656.html |
 | 65 | Freelancer | Make.com automation | I want code | I need an experienced C2000 developer to turn my detailed industrial-automation  | https://www.freelancer.com/projects/embedded-systems/want-code.html |
 | 65 | Freelancer | Make.com automation | Social Media Integration via Respond.io | $12.00 | https://www.freelancer.com/projects/api-integration/Social-Media-Integration-via-Respond.html |
 | 65 | Freelancer | Make.com automation | Streamlined Automation &amp; Integration Solution | Automation plus integration project (Budget: ₹37500 - ₹75000 INR, Jobs: API, Aut | https://www.freelancer.com/projects/automation/Streamlined-Automation-Integration.html |
 | 65 | Freelancer | Make.com automation | Connect Custom Form to Monday.com | I run an estate-agency website built entirely with custom HTML/CSS and I collect | https://www.freelancer.com/projects/api/Connect-Custom-Form-Monday-com.html |
 | 65 | Freelancer | Make.com automation | HubSpot Document Generation Specialist | $30.00 | https://www.freelancer.com/projects/api-integration/HubSpot-Document-Generation-Specialist.html |
 | 65 | Freelancer | Make.com automation | Commission-Based Sales Closer Needed for AI Automation Agency | We are building an AI automation agency focused on helping businesses automate s | https://www.freelancer.com/projects/b2b-marketing/Commission-Based-Sales-Closer-Needed-40390563.html |
-| 65 | Freelancer | Make.com automation | Advanced Real Estate SaaS Platform Development - Build BookMyDish | We are building BookMyDisha.com, a modern, scalable real estate SaaS platform in | https://www.freelancer.com/projects/nextjs/Advanced-Real-Estate-SaaS-Platform.html |
-| 65 | Freelancer | Data processing API | LinkedIn URL &amp; Country Scrape | $10.00 | https://www.freelancer.com/projects/data-scraping/LinkedIn-URL-Country-Scrape.html |
+| 65 | Freelancer | Data processing API | Bulk .edu Email Deployment | I have a clean, permission-based list of U.S. university addresses (all ending i | https://www.freelancer.com/projects/email-campaign/Bulk-edu-Email-Deployment.html |
 | 65 | Freelancer | Data processing API | Xiaozhi Firmware Endpoint Update | I maintain the open-source XiaoZhi—Xiaolong intelligent chat toy shown at https: | https://www.freelancer.com/projects/firmware/Xiaozhi-Firmware-Endpoint-Update.html |
 | 65 | Freelancer | Data processing API | Custody Case Exhibit Organization | $15.00 | https://www.freelancer.com/projects/legal/Custody-Case-Exhibit-Organization.html |
 | 65 | Freelancer | Data processing API | Billing Tracking Workbook | $30.00 | https://www.freelancer.com/projects/data-management/Billing-Tracking-Workbook.html |
