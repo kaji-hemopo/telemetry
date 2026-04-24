@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-24 01:54 JST
+Generated: 2026-04-24 16:46 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -52,26 +52,26 @@ Generated: 2026-04-24 01:54 JST
 
 | Score | Platform | Keyword | Title | Budget/Rate | URL |
 |---:|---|---|---|---|---|
-| 85 | Freelancer | Make.com automation | Automated Publishing System for Newspaper | $20,000.00 | https://www.freelancer.com/projects/web-development/Automated-Publishing-System-for.html |
-| 85 | Freelancer | Data processing API | Real-Time Sales Tracking App -- 2 | $750.00 | https://www.freelancer.com/projects/react-native/Real-Time-Sales-Tracking-App.html |
-| 75 | Freelancer | Make.com automation | eBay Listing Automation Bot Development | $250.00 | https://www.freelancer.com/projects/api-developmet/eBay-Listing-Automation-Bot-Development.html |
-| 75 | Freelancer | Make.com automation | Make.com specialist &mdash; build 3 pre-designed scenarios (Midtr | $250.00 | https://www.freelancer.com/projects/Make-com/Make-com-specialist-build-pre.html |
-| 75 | Freelancer | Make.com automation | AI RevOps Operator (Funnels, CRM, Automation) | $250.00 | https://www.freelancer.com/projects/ai-hw-sw/RevOps-Operator-Funnels-CRM-Automation.html |
-| 65 | Freelancer | Python scraper | AI-Fueled Local Business Marketing App Development | Project Title: AI Marketing App for Local Businesses (Google + Social Media Auto | https://www.freelancer.com/projects/mobile-app-development/Fueled-Local-Business-Marketing-App.html |
-| 65 | Freelancer | Python scraper | WeChat Mini Program Protocol-Level Auto-Purchasing (Sniping) Tool | $30.00 | https://www.freelancer.com/projects/api-developmet/WeChat-Mini-Program-Protocol-Level.html |
-| 65 | Freelancer | Python scraper | Gambio FTP Stock Sync Script | My Gambio-based shop needs a small automation layer that pulls product data and  | https://www.freelancer.com/projects/Gambio-FTP-Stock-Sync-Script.html |
-| 65 | Freelancer | Python scraper | Python Socket Game Automation CMD Tool | I am looking for a Python developer to create a high-performance command-line (C | https://www.freelancer.com/projects/game-development/Python-Socket-Game-Automation-CMD.html |
-| 65 | Freelancer | Python scraper | Automate TradingView Strategy with Indian Broker | I have a, rule-based strategy on TradingView that fires clear buy/sell signals t | https://www.freelancer.com/projects/python/Automate-TradingView-Strategy-with.html |
-| 65 | Freelancer | Python scraper | Delinea SecretServer DB Onboarding | I run Delinea Secret Server Cloud (full Secrets Suite) and need someone who alre | https://www.freelancer.com/projects/api/Delinea-SecretServer-Onboarding.html |
-| 65 | Freelancer | Python scraper | Commodity Analytics Aggregator Website | I am building a web-based data aggregator focused on commodity trading analytics | https://www.freelancer.com/projects/api/Commodity-Analytics-Aggregator-Website.html |
-| 65 | Freelancer | Make.com automation | Salesforce Techno-Functional Consultant Needed | Salesforce Techno functional resource. We are seeking a Salesforce Techno-Functi | https://www.freelancer.com/projects/mulesoft/Salesforce-Techno-Functional-Consultant.html |
-| 65 | Freelancer | Make.com automation | Zoho Inventory Setup &amp; Channel Integration | $15.00 | https://www.freelancer.com/projects/api/Zoho-Inventory-Setup-Channel-Integration.html |
-| 65 | Freelancer | Make.com automation | Web &amp; Mobile App Manual Tester Needed | Job Title: Freelance Web &amp; Mobile App Manual Tester Job Description: We are  | https://www.freelancer.com/projects/web-testing/Web-Mobile-App-Manual-Tester.html |
-| 65 | Freelancer | Make.com automation | Freelance GoHighLevel (GHL) CRM Designer &ndash; Real Estate Whol | Key Responsibilities Build and customize GoHighLevel CRM for real estate workflo | https://www.freelancer.com/projects/go-high-level/Freelance-GoHighLevel-GHL-CRM-Designer.html |
-| 65 | Freelancer | Make.com automation | Help needed to secure BLS Spain visa appointment (Tangier - Moroc | $30.00 | https://www.freelancer.com/projects/automation/Help-needed-secure-BLS-Spain.html |
-| 65 | Freelancer | Make.com automation | StepWise  and  .NET Job Support Expert -- 2 | StepWise and .NET Job Support Expert (REST/SOAP APIs | SQL | Excel) We are looki | https://www.freelancer.com/projects/dot-net/StepWise-NET-Job-Support-Expert-40392689.html |
-| 65 | Freelancer | Make.com automation | Kundali Razorpay Integration in WordPress (SVGNAN) | Title: WordPress – Razorpay Payment Integration with DB &amp; Unlock Logic (SVGN | https://www.freelancer.com/projects/payment-gateway-integration/Kundali-Razorpay-Integration-WordPress.html |
-| 65 | Freelancer | Make.com automation | Senior QA Engineer for SAP eCommerce Platform Testing | $2.00 | https://www.freelancer.com/projects/software-testing/Senior-Engineer-for-SAP-eCommerce.html |
+| 85 | Freelancer | Python scraper | AI-Driven Communication and CRM System | $1,500.00 | https://www.freelancer.com/projects/ai-chatbot-development/Driven-Communication-CRM-System.html |
+| 85 | Freelancer | Make.com automation | EspoCRM Integrations &amp; UI Upgrade | $750.00 | https://www.freelancer.com/projects/api/EspoCRM-Integrations-Upgrade.html |
+| 75 | Freelancer | Python scraper | Python Automation Script for File Creation | $250.00 | https://www.freelancer.com/projects/automation/Python-Automation-Script-for-File.html |
+| 75 | Freelancer | Python scraper | Weather Forecast Website for Travelers | $100.00 | https://www.freelancer.com/projects/web-development/Weather-Forecast-Website-for-Travelers.html |
+| 75 | Freelancer | Data processing API | Gamified Shopping App Development | $250.00 | https://www.freelancer.com/projects/gamification/Gamified-Shopping-App-Development.html |
+| 75 | Freelancer | Data processing API | Solar Power Monitoring System Development | $250.00 | https://www.freelancer.com/projects/javascript/Solar-Power-Monitoring-System.html |
+| 75 | Freelancer | Data processing API | Data Engineering: Munging XML Fields | $250.00 | https://www.freelancer.com/projects/data-processing/Data-Engineering-Munging-XML-Fields.html |
+| 65 | Freelancer | Python scraper | Decode Encrypted XLSM Stock Feeder | I’m working with a macro-enabled Excel workbook that arrives fully obfuscated. I | https://www.freelancer.com/projects/api/Decode-Encrypted-XLSM-Stock-Feeder.html |
+| 65 | Freelancer | Python scraper | High-Speed Python Booking Assistant Application | We are looking for an experienced Python developer to build a desktop-based appl | https://www.freelancer.com/projects/selenium/High-Speed-Python-Booking-Assistant.html |
+| 65 | Freelancer | Python scraper | Edit Python Scraper data from Google Shopping | $10.00 | https://www.freelancer.com/projects/python/Edit-Python-Scraper-data-from.html |
+| 65 | Freelancer | Python scraper | Bulk MCQ Data Entry - 28/03/2026 23:49 EDT | I have more than 2,400 multiple-choice questions sitting across several websites | https://www.freelancer.com/projects/data-analysis/Bulk-MCQ-Data-Entry-EDT-40394467.html |
+| 65 | Freelancer | Python scraper | OKX-Binance Copy Trading Bot | $30.00 | https://www.freelancer.com/projects/api/OKX-Binance-Copy-Trading-Bot.html |
+| 65 | Freelancer | Python scraper | Web3 Token Signals Platform Development | We are building a Web3 token signals platform and looking for a strong freelance | https://www.freelancer.com/projects/python/Web-Token-Signals-Platform-Development.html |
+| 65 | Freelancer | Python scraper | Vacancy search &amp; MVP AI Agent | I’m building an automated Agent that can read a candidate’s CV, LinkedIn profile | https://www.freelancer.com/projects/natural-language-processing/Vacancy-search-MVP-Agent.html |
+| 65 | Freelancer | Python scraper | Marketing API &amp; Scraper SaaS Build | I’m building a SaaS platform that blends three pillars—an interaction-focused ma | https://www.freelancer.com/projects/api-developmet/Marketing-API-Scraper-SaaS-Build.html |
+| 65 | Freelancer | Make.com automation | Odoo Invoice-PO Reconciliation Automation | I run our purchasing and accounts-payable flow entirely in Odoo, yet the three-w | https://www.freelancer.com/projects/odoo/Odoo-Invoice-Reconciliation-Automation.html |
+| 65 | Freelancer | Make.com automation | Discord Bot for Freelancer Platform | $30.00 | https://www.freelancer.com/projects/discord/Discord-Bot-for-Freelancer-Platform.html |
+| 65 | Freelancer | Make.com automation | Optimize JazzHR Recruitment Automation | $10.00 | https://www.freelancer.com/projects/zapier/Optimize-JazzHR-Recruitment-Automation.html |
+| 65 | Freelancer | Make.com automation | Quick Automation Setup (Zapier / Make) &ndash; Simple Workflow | $30.00 | https://www.freelancer.com/projects/api-developmet/Quick-Automation-Setup-Zapier-Make.html |
+| 65 | Freelancer | Make.com automation | Ongoing HR Site QA Testing | $10.00 | https://www.freelancer.com/projects/regression-testing/Ongoing-Site-Testing.html |
 
 ## Notes
 - Scores prioritize: (1) simple automation/scripting fit, (2) payout magnitude, (3) keyword relevance.
