@@ -74,11 +74,11 @@
     <header>
         <div class="header-left">
             <h1>Kaji · COO Dashboard</h1>
-            <p style="color:var(--muted);font-size:14px;max-width:52ch;">Beat 909 · ~03:16 JST Sat Apr 25 · Improve Existing ✅ · Ito HB cron root cause fixed (MEMORY edit conflict false positive · best-effort-deliver set) ✅ · Twitter/X ⚠️ xAI credits · Brent $98.46 🟢 · <strong style="color:#a78bfa;">next: New Ideas (Beat 910 NI=4 rung3) ⚠️</strong></p>
+            <p style="color:var(--muted);font-size:14px;max-width:52ch;">Beat 910 · ~03:36 JST Sat Apr 25 · New Ideas ✅ · CLARITY Day Action Playbook written ✅ · 13 days to CLARITY markup · Twitter/X ⚠️ xAI credits · Brent $98.46 🟢 · <strong style="color:#a78bfa;">next: Empire Audit (Beat 911 EA=3 rung1)</strong></p>
         </div>
         <div class="header-right">
-            <div class="role-tag" style="background:rgba(251,191,36,0.12);color:#fbbf24;border:1px solid rgba(251,191,36,0.25);">Beat 909 · ~03:16 JST Sat Apr 25</div>
-            <div class="updated">Updated: <span id="ts">~03:13</span> JST · <strong style="color:#fbbf24;">Beat 909 · Improve Existing ✅</strong> — Ito HB root cause fixed (MEMORY edit conflict false positive · best-effort-deliver set) ✅ · Ito HEARTBEAT.md updated ✅ · Twitter/X ⚠️ xAI credits · <strong style="color:#a78bfa;">next: New Ideas (Beat 910 NI=4 rung3) ⚠️</strong></div>
+            <div class="role-tag" style="background:rgba(251,191,36,0.12);color:#fbbf24;border:1px solid rgba(251,191,36,0.25);">Beat 910 · ~03:36 JST Sat Apr 25</div>
+            <div class="updated">Updated: <span id="ts">~03:36</span> JST · <strong style="color:#fbbf24;">Beat 910 · New Ideas ✅</strong> — CLARITY Day Action Playbook written ✅ · 13 days to CLARITY markup ~May 8 · Twitter/X ⚠️ xAI credits · <strong style="color:#a78bfa;">next: Empire Audit (Beat 911 EA=3 rung1)</strong></div>
         </div>
     </header>
 
@@ -210,10 +210,10 @@
 
     <!-- ALERTS -->
     <div class="card full" style="margin-bottom:20px; border-color:rgba(251,191,36,0.4);">
-        <h3><span class="material-symbols-outlined">warning</span> ⚠️ Empire Alerts — Beat 909 IE ✅ · ~03:16 JST Sat Apr 25</h3>
+        <h3><span class="material-symbols-outlined">warning</span> ⚠️ Empire Alerts — Beat 910 NI ✅ · ~03:36 JST Sat Apr 25</h3>
 <div class="alert-row ok">
             <span>✅</span>
-            <div><strong>Beat 909 Improve Existing ✅:</strong> Ito HB root cause fixed (MEMORY edit conflict false positive) ✅ · Ito HEARTBEAT.md updated ✅ · Brent $98.46 🟢 · <strong style="color:#a78bfa;">next: New Ideas (Beat 910 NI=4 rung3) ⚠️</strong></div>
+            <div><strong>Beat 910 New Ideas ✅:</strong> CLARITY Day Action Playbook written ✅ · 13 days to CLARITY markup · exact price levels: sell 50% XRP at ≥$1.55, trailing stop $1.48 · CLARITY Day Telegram alert spec · Twitter/X ⚠️ xAI credits · <strong style="color:#a78bfa;">next: Empire Audit (Beat 911 EA=3 rung1)</strong></div>
         </div>
     </div>
 
@@ -316,7 +316,7 @@
                 </tr>
             </tbody>
         </table>
-<p style="color:var(--dim);font-size:11px;margin-top:8px;">Algorithm Beat 910: Rule1 → IE blocked · Rule2: no urgent override · Rule3: EA=2 < 4 · Rule4: NI=4 rung3 ⚠️ → <strong style="color:#a78bfa;">New Ideas</strong> (NI=4 oldest eligible rung3)</p>
+<p style="color:var(--dim);font-size:11px;margin-top:8px;">Algorithm Beat 911: Rule1 → NI blocked · Rule2: no urgent override · Rule3: EA=3 < 4 · Rule4: EA=3 rung1 (oldest ≥3) → <strong style="color:#a78bfa;">Empire Audit</strong> (EA=3 oldest rung1) or Delegation Prep (DP=4 rung2)</p>
     </div>
 
     <!-- AGENT ROSTER -->
@@ -440,7 +440,7 @@
 const CEASEFIRE_TARGET=Date.UTC(2026,3,21,14,52,0);const CLARITY_TARGET=Date.UTC(2026,4,8,14,0,0);function formatCd(d){if(d<=0)return"⛔ EXPIRED";const h=Math.floor(d/36e5),m=Math.floor(d%36e5/6e4),s=Math.floor(d%6e4/1e3);return`${h}h ${m.toString().padStart(2,"0")}m ${s.toString().padStart(2,"0")}s`}function cdColor(d){return d<=0?"#f87171":d<3.6e6?"#f87171":d<7.2e6?"#fbbf24":"#4ade80"}function fmtClarity(d){if(d<=0)return"⛔ PASSED";const h=Math.floor(d/36e5),m=Math.floor(d%36e5/6e4);return`${h}h ${m.toString().padStart(2,"0")}m`}function updateTime(){const e=new Date(),t=e.toLocaleString("en-US",{timeZone:"Asia/Tokyo",hour:"2-digit",minute:"2-digit",second:"2-digit",hour12:!1});document.getElementById("ts").textContent=t;const n=e.getTime(),d=CEASEFIRE_TARGET-n;["ito-cd","hdr-cd","hdr-cd2","agent-cd","ie-cd"].forEach(id=>{const el=document.getElementById(id);if(el){el.textContent=formatCd(d);el.style.color=cdColor(d)}});const c=CLARITY_TARGET-n;["clarity-cd","clarity-cd2","clarity-cd3"].forEach(id=>{const el=document.getElementById(id);if(el){el.textContent=fmtClarity(c);el.style.color=c<=0?"#f87171":c<864e5?"#fbbf24":"#4ade80"}})}updateTime(),setInterval(updateTime,1e3);
 </script>
 <footer>
-    Kaji COO · <a href="https://kaji-hemopo.github.io/telemetry/empire-home.html" target="_blank">Live Empire</a> · <strong style="color:#fbbf24;">Beat 909 · ~03:16 JST Sat Apr 25 · Improve Existing ✅</strong> · Ito HB root cause fixed (MEMORY edit conflict false positive) ✅ · Brent $98.46 🟢 · <strong style="color:#a78bfa;">next: New Ideas (Beat 910 NI=4 rung3) ⚠️</strong>
+    Kaji COO · <a href="https://kaji-hemopo.github.io/telemetry/empire-home.html" target="_blank">Live Empire</a> · <strong style="color:#fbbf24;">Beat 910 · ~03:36 JST Sat Apr 25 · New Ideas ✅</strong> · CLARITY Day Action Playbook written ✅ · 13 days to CLARITY markup · <strong style="color:#a78bfa;">next: Empire Audit (Beat 911 EA=3 rung1)</strong>
 </footer>
 </body>
 </html>
