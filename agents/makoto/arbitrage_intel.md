@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-24 19:26 JST
+Generated: 2026-04-24 19:51 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -57,6 +57,7 @@ Generated: 2026-04-24 19:26 JST
 | 75 | Freelancer | Python scraper | Weather Forecast Website for Travelers | $100.00 | https://www.freelancer.com/projects/web-development/Weather-Forecast-Website-for-Travelers.html |
 | 75 | Freelancer | Make.com automation | N8N Order Quote Automation | $250.00 | https://www.freelancer.com/projects/n8n/Order-Quote-Automation.html |
 | 75 | Freelancer | Data processing API | AI Customer Support Chatbot Builder | $250.00 | https://www.freelancer.com/projects/ai-chatbot-development/Customer-Support-Chatbot-Builder.html |
+| 65 | Freelancer | Python scraper | Automate Badminton Court Lighting | Sportomic already handles every booking for my two indoor badminton courts over  | https://www.freelancer.com/projects/rest-api/Automate-Badminton-Court-Lighting.html |
 | 65 | Freelancer | Python scraper | EfficientNet ViT Potato Disease Model | I already have a well-labeled image set of potato leaves in JPG and PNG format,  | https://www.freelancer.com/projects/data-augmentation/EfficientNet-ViT-Potato-Disease-Model.html |
 | 65 | Freelancer | Python scraper | AI Workflow for Inventory Automation | My day-to-day inventory work still revolves around Busy and endless Excel sheets | https://www.freelancer.com/projects/rpa-development/Workflow-for-Inventory-Automation.html |
 | 65 | Freelancer | Python scraper | Java/Python Backend Integration Engineer | $30.00 | https://www.freelancer.com/projects/rest-api/Java-Python-Backend-Integration-Engineer.html |
@@ -65,13 +66,12 @@ Generated: 2026-04-24 19:26 JST
 | 65 | Freelancer | Python scraper | High-Speed Python Booking Assistant Application | We are looking for an experienced Python developer to build a desktop-based appl | https://www.freelancer.com/projects/selenium/High-Speed-Python-Booking-Assistant.html |
 | 65 | Freelancer | Python scraper | Edit Python Scraper data from Google Shopping | $10.00 | https://www.freelancer.com/projects/python/Edit-Python-Scraper-data-from.html |
 | 65 | Freelancer | Python scraper | Bulk MCQ Data Entry - 28/03/2026 23:49 EDT | I have more than 2,400 multiple-choice questions sitting across several websites | https://www.freelancer.com/projects/data-analysis/Bulk-MCQ-Data-Entry-EDT-40394467.html |
+| 65 | Freelancer | Make.com automation | Google AI Studio / Gemin Expert for Custom App Development | Job Title: Google Gemini / Google AI Studio Expert Needed for App Development (F | https://www.freelancer.com/projects/ai-development/Google-Studio-Gemin-Expert-for.html |
 | 65 | Freelancer | Make.com automation | Odoo Invoice-PO Reconciliation Automation | I run our purchasing and accounts-payable flow entirely in Odoo, yet the three-w | https://www.freelancer.com/projects/odoo/Odoo-Invoice-Reconciliation-Automation.html |
 | 65 | Freelancer | Make.com automation | Discord Bot for Freelancer Platform | $30.00 | https://www.freelancer.com/projects/discord/Discord-Bot-for-Freelancer-Platform.html |
 | 65 | Freelancer | Make.com automation | Optimize JazzHR Recruitment Automation | $10.00 | https://www.freelancer.com/projects/zapier/Optimize-JazzHR-Recruitment-Automation.html |
 | 65 | Freelancer | Make.com automation | Quick Automation Setup (Zapier / Make) &ndash; Simple Workflow | $30.00 | https://www.freelancer.com/projects/api-developmet/Quick-Automation-Setup-Zapier-Make.html |
 | 65 | Freelancer | Data processing API | Virtual Assistant for Data Research &amp; Administrative Support | Asistente Virtual (Investigación de datos y soporte administrativo) Estamos busc | https://www.freelancer.com/projects/data-management/Virtual-Assistant-for-Data-Research.html |
-| 65 | Freelancer | Data processing API | create  shopify store and transfer send products from my wordpres | Project Description: I am looking for an experienced Shopify developer to create | https://www.freelancer.com/projects/api-integration/create-shopify-store-transfer-send.html |
-| 65 | Freelancer | Data processing API | Accountant | Project Title: Data Entry for More than 500 Entries I am looking for a freelance | https://www.freelancer.com/projects/data-entry/Accountant-40394978.html |
 
 ## Notes
 - Scores prioritize: (1) simple automation/scripting fit, (2) payout magnitude, (3) keyword relevance.
