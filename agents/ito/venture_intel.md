@@ -1,59 +1,63 @@
 # Venture Intelligence
 
-**Generated:** 2026-04-25 01:49 JST
+**Generated:** 2026-04-25 02:13 JST (Beat 861 IE)
 
 ## Market Oracles
 
-- 🛢️ **Brent Crude:** $98.88 ⚠️ Brent elevated
-- 🥇 **Gold:** $4,743.70 (+0.01%)
+- 🛢️ **Brent Crude:** $98.88 (near alert threshold — elevated)
+- 🥇 **Gold:** $4,739.40 (+0.00%) — within normal range
+- ₿ **Bitcoin:** $77,860.64
+
+## Keyword Match Alerts
+
+- 🔴 **Hormuz Strait:** Iran war ongoing; Goldman Sachs sees Gulf production rebound if Hormuz reopens. Asia refiners slashing runs, diesel/jet supply at risk. NZ inflation risk elevated.
+- 🔴 **Ceasefire:** Lebanon-Israel ceasefire extended 3 weeks after Oval Office meeting. Israel UN envoy warns extension "not 100%."
+- ⚠️ **Stagflation:** NZ economists warn stagflation baked in; prolonged Middle East conflict could trigger stagflation in NZ.
 
 ## Top Venture Opportunities
 
 ### 90 — SaaS Integration Health Monitor & Alerting System
-█████████░ `90/100`
-⭐ High score
-- **Summary:** A monitoring service that tracks the health and latency of critical B2B SaaS API integrations (e.g., Stripe -> QuickBooks, Salesforce -> HubSpot). Detects failures, schema changes, or rate limit issue...
+**Score:** 90/100 ⭐
+- **Summary:** A monitoring service that tracks health/latency of critical B2B SaaS API integrations (e.g., Stripe→QuickBooks, Salesforce→HubSpot). Detects failures, schema changes, rate limit issues.
 - **Tags:** Integration, API, Monitoring, DevOps, Automation
-- **Empire Score:** $900000 · **Capital:** $25,000
+- **Empire Score:** $900,000 · **Capital:** $25,000
 - **Status:** Idea
 
 ### 88 — Legacy ERP to Modern SaaS Data Migration Bridge
-████████░░ `88/100`
-⭐ High score
-- **Summary:** A specialized ETL (Extract, Transform, Load) tool focused on migrating specific, complex data objects (like customer records, inventory items, bills of materials) from legacy on-premise ERP systems (e...
+**Score:** 88/100 ⭐
+- **Summary:** Specialized ETL tool for migrating complex data objects (customer records, inventory, BOMs) from legacy on-premise ERP systems to modern SaaS.
 - **Tags:** Integration, Data Migration, Legacy Systems, ETL, B2B
-- **Empire Score:** $880000 · **Capital:** $25,000
+- **Empire Score:** $880,000 · **Capital:** $25,000
 - **Status:** Idea
 
 ### 85 — Remote Work Hour Tracker API for Cross-Border Tax Compliance
-████████░░ `85/100`
-⭐ High score
-- **Summary:** A micro-SaaS that provides a standardized API for remote workers to log billable hours with geolocation and activity tagging, generating audit-ready reports formatted for international tax jurisdictio...
+**Score:** 85/100 ⭐
+- **Summary:** Micro-SaaS providing standardized API for remote workers to log billable hours with geolocation + activity tagging, generating audit-ready reports for international tax jurisdictions.
 - **Tags:** Compliance, Remote Work, API, Reporting, Automation
-- **Empire Score:** $850000 · **Capital:** $25,000
+- **Empire Score:** $850,000 · **Capital:** $25,000
 - **Status:** Idea
 
 ### 82 — Multi-Currency Expense Reconciliation Engine for Nomadic Teams
-████████░░ `82/100`
-⭐ High score
-- **Summary:** A backend service that automates the reconciliation of expenses submitted in multiple currencies (AUD, USD, NZD, JPY) against company budgets and bank feeds. Handles volatile exchange rates, calculate...
+**Score:** 82/100 ⭐
+- **Summary:** Backend service that automates expense reconciliation across AUD/USD/NZD/JPY against company budgets and bank feeds. Handles volatile FX, calculates true cost.
 - **Tags:** Workflow, Finance, Multi-Currency, Automation, SaaS
-- **Empire Score:** $820000 · **Capital:** $25,000
+- **Empire Score:** $820,000 · **Capital:** $25,000
 - **Status:** Idea
 
 ### 80 — Fuel Cost Attribution & Reconciliation Tool for Distributed Teams
-████████░░ `80/100`
-⭐ High score
-- **Summary:** A tool that ingests fuel price APIs, commute distance data (from tools like Google Maps), and payroll/expense systems to automatically calculate and allocate fuel cost impacts or support allowances fo...
+**Score:** 80/100 ⭐
+- **Summary:** Tool that ingests fuel price APIs, commute data (Google Maps), payroll/expense systems to auto-calculate fuel cost impacts or distribute fuel allowances for distributed/nomadic teams.
 - **Tags:** Administrative, API Integration, Payroll, Automation, Data
-- **Empire Score:** $800000 · **Capital:** $25,000
+- **Empire Score:** $800,000 · **Capital:** $25,000
 - **Status:** Idea
 
 ### 75 — Global Trade Data Normalizer & API
-███████░░░ `75/100`
-
-- **Summary:** A service that ingests, cleans, and normalizes disparate national trade balance and economic indicator data (e.g., from US, Canada, Japan) into a single, consistent JSON/CSV schema with clear metadata...
+**Score:** 75/100
+- **Summary:** Service that ingests, cleans, and normalizes national trade balance + economic indicator data (US, Canada, Japan) into consistent JSON/CSV schema with metadata.
 - **Tags:** Data, API, Finance, Automation, ETL
-- **Empire Score:** $750000 · **Capital:** $25,000
+- **Empire Score:** $750,000 · **Capital:** $25,000
 - **Status:** Idea
 
+---
+
+*Pipeline: 1,396 articles / 16 sectors | Brent $98.88 | Gold $4,739.40 | BTC $77,860.64 | No CLARITY Act signals this beat*
