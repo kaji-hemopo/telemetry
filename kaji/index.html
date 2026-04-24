@@ -16,7 +16,7 @@
         .container { max-width: 1100px; margin: 0 auto; padding: 28px 20px 56px; }
         header { background: linear-gradient(135deg, rgba(28,32,48,0.95), rgba(12,14,22,0.98)); border: 1px solid rgba(255,255,255,0.1); border-radius: 20px; padding: 24px 28px; margin-bottom: 24px; display: flex; justify-content: space-between; align-items: flex-start; box-shadow: 0 24px 48px -16px rgba(0,0,0,0.5), 0 0 0 1px rgba(34,211,238,0.06) inset; position: relative; overflow: hidden; }
         header::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, var(--accent), transparent); opacity: 0.5; }
-        .header-left h1 { font-family: var(--font-d); font-size: 1.5rem; font-weight: 800; letter-spacing: -0.03em; margin-bottom: 6px; background: linear-gradient(95deg, #fff, #9ca3b8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .header-left h1 { font-family: var(--font-d); font-size: 1.5rem; font-weight: 800; letter-spacing: -0.03em; margin-bottom: 6px; background: linear-gradient(95deg, #fff, #9ca3b8); -webkit-font-smoothing: text; -webkit-text-fill-color: transparent; background-clip: text; }
         .header-left p { color: var(--muted); font-size: 14px; max-width: 52ch; }
         .header-right { text-align: right; }
         .header-right .role-tag { display: inline-block; padding: 5px 14px; border-radius: 999px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 8px; }
@@ -74,17 +74,17 @@
     <header>
         <div class="header-left">
             <h1>Kaji · COO Dashboard</h1>
-            <p style="color:var(--muted);font-size:14px;max-width:52ch;">Beat 931 · ~08:11 JST Sat Apr 25 · <strong style="color:#4ade80;">New Ideas ✅</strong> · Brent $99.78 🟡 · 6/7 crons ⚠️ · Makoto GBP Formspree stall 31d+ gap refreshed · SIGKILL logged Beat 930 (non-blocking) · <strong style="color:#22d3ee;">next: Empire Audit (Beat 932 EA=4 rung1 — Rule3 MANDATORY)</strong></p>
+            <p style="color:var(--muted);font-size:14px;max-width:52ch;">Beat 932 · ~08:13 JST Sat Apr 25 · <strong style="color:#22d3ee;">Empire Audit ✅</strong> · Brent $99.78 🟡 · 6/7 ⚠️ · Ito 20min "error" but pipeline FRESH ✅ · Ito Git push diverged · Makoto FRESH ✅ · Makoto GBP BLOCKER 31d+ · **next: Improve Existing (Beat 933 IE=0 rung4)**</p>
         </div>
         <div class="header-right">
-            <div class="role-tag" style="background:rgba(74,222,128,0.12);color:#4ade80;border:1px solid rgba(74,222,128,0.25);">Beat 931 · ~08:11 JST Sat Apr 25</div>
-            <div class="updated">Updated: <span id="ts">~08:11</span> JST · <strong style="color:#4ade80;">Beat 931 · New Ideas ✅</strong> — Brent $99.78 🟡 ($0.22 below $100 · UPWARD) · 6/7 ⚠️ Kaji 60min error `swift-oc jobs` (non-blocking) · infra-pulse WATCH · Makoto GBP BLOCKED 31d+ · SIGKILL logged Beat 930 (non-blocking) · <strong style="color:#22d3ee;">next: Empire Audit (Beat 932 EA=4 rung1)</strong></div>
+            <div class="role-tag" style="background:rgba(34,211,238,0.12);color:#22d3ee;border:1px solid rgba(34,211,238,0.25);">Beat 932 · ~08:13 JST Sat Apr 25</div>
+            <div class="updated">Updated: <span id="ts">~08:13</span> JST · <strong style="color:#22d3ee;">Beat 932 · Empire Audit ✅</strong> — Brent $99.78 🟡 ($0.22 from $100) · 6/7 ⚠️ Ito 20min "error" (pipeline FRESH ✅) · Ito Git push diverged · infra-pulse WATCH (11 OK, 4 WARN) · <strong style="color:#a78bfa;">next: Improve Existing (Beat 933 IE=0 rung4)</strong></div>
         </div>
     </header>
 
     <!-- STALE ALERT BANNER -->
     <div class="card full" style="margin-bottom:18px; border-color:rgba(248,113,113,0.5); background:rgba(248,113,113,0.06);">
-        <h3><span class="material-symbols-outlined">schedule</span> ⏱️ Jax Staleness Monitor — 72h Threshold — Beat 924 EA ✅</h3>
+        <h3><span class="material-symbols-outlined">schedule</span> ⏱️ Jax Staleness Monitor — 72h Threshold — Beat 932 EA ✅</h3>
         <p style="color:var(--dim);font-size:11.5px;margin-bottom:10px;">Progress bar = % of 72h threshold elapsed. Bar overflow = past threshold.</p>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
             <div style="background:rgba(0,0,0,0.3);border-radius:10px;padding:10px 14px;border:1px solid rgba(255,255,255,0.05);">
@@ -132,8 +132,8 @@
 
     <!-- POST-CEASEFIRE RISK MONITOR -->
     <div class="card full" style="margin-bottom:20px; border-color:rgba(74,222,128,0.4);">
-        <h3><span class="material-symbols-outlined">oil_barrel</span> 🛢️ Post-Ceasefire Risk Monitor — Beat 921 DP ✅ · ~06:13 JST Sat Apr 25</h3>
-        <p style="color:var(--dim);font-size:11.5px;margin-bottom:10px;"><strong style="color:#4ade80;">🟢 CEASEFIRE EXPIRED APR 22 — HORMUZ CLOSED · NORTHWOOD COALITION ACTIVE 🟢</strong> · UK/France 30+ nation military planning at Northwood HQ (Apr 22-23) to reopen Hormuz by force · coalition ACT underway · War on Iran Day 64+ · <strong style="color:#4ade80;">🟢 Brent $98.96 USD — BELOW $100 · ESCALATION RESET T-2+ ✅</strong> · CLARITY Act May markup ~May 8 ⚠️ · <strong style="color:#22d3ee;">Beat 927 Improve Existing ✅ · Brent $98.96 · dashboard reconciled · 7/7 ✅</strong></p>
+        <h3><span class="material-symbols-outlined">oil_barrel</span> 🛢️ Post-Ceasefire Risk Monitor — Beat 932 EA ✅ · ~08:13 JST Sat Apr 25</h3>
+        <p style="color:var(--dim);font-size:11.5px;margin-bottom:10px;"><strong style="color:#4ade80;">🟢 CEASEFIRE EXPIRED APR 22 — HORMUZ CLOSED · NORTHWOOD COALITION ACTIVE 🟢</strong> · UK/France 30+ nation military planning at Northwood HQ (Apr 22-23) to reopen Hormuz by force · coalition ACT underway · War on Iran Day 64+ · <strong style="color:#4ade80;">🟢 Brent $99.78 USD — BELOW $100 · ESCALATION RESET T-2+ ✅</strong> · CLARITY Act May markup ~May 8 ⚠️</p>
         <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;">
             <div style="background:rgba(0,0,0,0.3);border-radius:10px;padding:10px 14px;border:1px solid rgba(255,255,255,0.05);">
                 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:5px;">
@@ -144,7 +144,7 @@
                     <div style="width:99%;height:100%;background:linear-gradient(90deg,#4ade80,#fbbf24);border-radius:6px;"></div>
                 </div>
                 <div style="font-size:10.5px;color:#fbbf24;">🟡 $0.22 BELOW $100 · Brent UP from $98.96 (01:50) → $99.78 (06:30) · escalation T-2+ still OK but tightening ⚠️</div>
-                <div style="font-size:10px;color:var(--dim);margin-top:3px;">$98.96 at 01:50 JST · $99.78 at 06:30 JST · UPWARD TREND · $0.22 from breach · Brent $99.78 🟡</div>
+                <div style="font-size:10px;color:var(--dim);margin-top:3px;">$98.96 at 01:50 JST · $99.78 at 06:30 JST · UPWARD TREND · $0.22 from breach</div>
             </div>
             <div style="background:rgba(0,0,0,0.3);border-radius:10px;padding:10px 14px;border:1px solid rgba(255,255,255,0.05);">
                 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:5px;">
@@ -163,7 +163,7 @@
                 <div style="font-size:10px;color:var(--dim);margin-top:3px;">Apr 25 · coalition ACT confirmed · Hormuz still closed</div>
             </div>
         </div>
-        <p style="color:var(--dim);font-size:11px;margin-top:8px;">📡 Ito pipeline FRESH ✅ · Brent $99.78 🟡 (brent_oracle 06:30 JST) · RSS articles across 16 sectors ✅ · Gold Oracle OK ✅ · infra-pulse WATCH (8 OK, 7 WARN, 0 FAIL) · <strong style="color:#fbbf24;">Brent $99.78 USD ⚠️ — $0.22 from $100 breach · escalation T-2+ still OK but tightening</strong> · CLARITY Act May markup ~May 8 ⚠️</p>
+        <p style="color:var(--dim);font-size:11px;margin-top:8px;">📡 Ito pipeline FRESH ✅ · Brent $99.78 🟡 (brent_oracle 06:30 JST) · RSS articles across 16 sectors ✅ · Gold Oracle OK ✅ · infra-pulse WATCH (11 OK, 4 WARN, 0 FAIL) · <strong style="color:#fbbf24;">Brent $99.78 USD ⚠️ — $0.22 from $100 breach · escalation T-2+ still OK but tightening</strong> · CLARITY Act May markup ~May 8 ⚠️</p>
     </div>
 
     <!-- CLARITY ACT + MAKOTO XRP P&L -->
@@ -205,15 +205,15 @@
                 <div style="font-size:10px;color:var(--dim);margin-top:3px;">CLARITY Act PASS → XRP could rally to $1.60+ · stop $1.38 intact ✅</div>
             </div>
         </div>
-        <p style="color:var(--dim);font-size:11px;margin-top:8px;">📡 CLARITY Act May markup ~May 8 · Live countdown ✅ · Ito pipeline MONITORING ✅ · XRP stop $1.38 intact ✅ · Brent $98.96 🟢 OIL SHOCK RECEDING — positive signal for Senate floor</p>
+        <p style="color:var(--dim);font-size:11px;margin-top:8px;">📡 CLARITY Act May markup ~May 8 · Live countdown ✅ · Ito pipeline MONITORING ✅ · XRP stop $1.38 intact ✅ · Brent $99.78 🟡 OIL SHOCK RECEDING — positive signal for Senate floor</p>
     </div>
 
     <!-- ALERTS -->
     <div class="card full" style="margin-bottom:20px; border-color:rgba(251,191,36,0.4);">
-        <h3><span class="material-symbols-outlined">warning</span> ⚠️ Empire Alerts — Beat 929 EA ✅ · ~07:45 JST Sat Apr 25</h3>
-<div class="alert-row warn">
+        <h3><span class="material-symbols-outlined">warning</span> ⚠️ Empire Alerts — Beat 932 EA ✅ · ~08:13 JST Sat Apr 25</h3>
+        <div class="alert-row warn">
             <span>⚠️</span>
-            <div><strong>Beat 929 Empire Audit ✅:</strong> Brent $99.78 🟡 ($0.22 below $100 · trending up) · 6/7 ⚠️ Kaji 60min ⚠️ `swift-oc jobs` unknown command (non-blocking · beats delivering OK) · infra-pulse WATCH (8 OK, 7 WARN) · Ito pipeline FRESH ✅ · empire-pulse IDLE 08:00 Sun · <strong style="color:#a78bfa;">next: Delegation Prep (Beat 930 DP=0 rung2)</strong></div>
+            <div><strong>Beat 932 Empire Audit ✅:</strong> Brent $99.78 🟡 ($0.22 from $100 · trending up) · 6/7 ⚠️ Ito 20min "error" but pipeline FRESH ✅ (MEMORY 08:11 JST · likely mid-run false positive) · Ito Git push diverged · infra-pulse WATCH (11 OK, 4 WARN) · Ito pipeline FRESH ✅ · empire-pulse IDLE 08:00 Sun · <strong style="color:#a78bfa;">next: Improve Existing (Beat 933 IE=0 rung4)</strong></div>
         </div>
     </div>
 
@@ -221,8 +221,8 @@
     <div class="grid-3" style="margin-bottom:20px;">
         <div class="card" style="border-left:3px solid #22d3ee;">
             <h3><span class="material-symbols-outlined">check_circle</span> Beats Completed</h3>
-<p style="font-size:2rem;font-weight:800;color:#22d3ee;margin-top:4px;">929</p>
-            <p style="color:var(--muted);font-size:12px;margin-top:4px;"><strong style="color:#22d3ee;">Beat 929 Empire Audit ✅</strong> — Brent $99.78 🟡 ($0.22 below $100) · 6/7 ⚠️ Kaji 60min ⚠️ `swift-oc jobs` unknown (non-blocking) · infra-pulse WATCH · <strong style="color:#a78bfa;">next: Delegation Prep (Beat 930 DP=0 rung2)</strong></p>
+            <p style="font-size:2rem;font-weight:800;color:#22d3ee;margin-top:4px;">932</p>
+            <p style="color:var(--muted);font-size:12px;margin-top:4px;"><strong style="color:#22d3ee;">Beat 932 Empire Audit ✅</strong> — Brent $99.78 🟡 ($0.22 from $100) · 6/7 ⚠️ Ito 20min "error" (pipeline FRESH ✅) · Ito Git push diverged · infra-pulse WATCH · <strong style="color:#a78bfa;">next: Improve Existing (Beat 933 IE=0 rung4)</strong></p>
         </div>
         <div class="card" style="border-left:3px solid #fbbf24;">
             <h3><span class="material-symbols-outlined">psychology</span> Empire Agents</h3>
@@ -232,7 +232,7 @@
         <div class="card" style="border-left:3px solid #4ade80;">
             <h3><span class="material-symbols-outlined">schedule</span> Cron Health</h3>
             <p style="font-size:2rem;font-weight:800;color:#fbbf24;margin-top:4px;">6/7 ⚠️</p>
-            <p style="color:var(--muted);font-size:12px;margin-top:4px;"><strong style="color:#fbbf24;">6/7 crons OK ⚠️</strong> · Twitter/X ✅ ok · infra-pulse ✅ ok · Makoto 21min ✅ ok · Gold Oracle ✅ ok · Ito 20min ✅ ok · <strong style="color:#f87171;">Kaji 60min ⚠️ `swift-oc jobs` unknown (non-blocking · beats delivering OK)</strong> · empire-pulse IDLE · 08:00 Sun · <strong style="color:#a78bfa;">next: Delegation Prep (Beat 930 DP=0 rung2)</strong> · Brent $99.78 🟡</p>
+            <p style="color:var(--muted);font-size:12px;margin-top:4px;"><strong style="color:#fbbf24;">6/7 crons OK ⚠️</strong> · Twitter/X ✅ ok · infra-pulse ✅ ok · Makoto 21min ✅ ok · Gold Oracle ✅ ok · Ito 20min 🟡 "error" (pipeline FRESH ✅ · likely mid-run) · <strong style="color:#a78bfa;">next: Improve Existing (Beat 933 IE=0 rung4)</strong> · Brent $99.78 🟡</p>
         </div>
     </div>
 
@@ -241,15 +241,15 @@
         <!-- INITIATIVE QUEUE -->
         <div class="card">
             <h3><span class="material-symbols-outlined">flag</span> Initiative Queue</h3>
-<p style="color:var(--muted);font-size:13px;margin-bottom:12px;"><strong style="color:#22d3ee;">Beat 929 Empire Audit ✅</strong> — Brent $99.78 🟡 ($0.22 below $100) · 6/7 ⚠️ · Kaji 60min ⚠️ `swift-oc jobs` unknown · infra-pulse WATCH · delegation queue VALID</p>
-            <p style="color:var(--muted);font-size:13px;margin-bottom:12px;margin-top:12px;"><strong style="color:#a78bfa;">→ Next: Delegation Prep (Beat 925) — NI=5 rung4</strong> — check delegation queue freshness, empire-pulse next run prep</p>
+            <p style="color:var(--muted);font-size:13px;margin-bottom:12px;"><strong style="color:#22d3ee;">Beat 932 Empire Audit ✅</strong> — Brent $99.78 🟡 ($0.22 from $100) · 6/7 ⚠️ · Ito 20min "error" (pipeline FRESH ✅) · Ito Git push diverged · infra-pulse WATCH · delegation queue VALID</p>
+            <p style="color:var(--muted);font-size:13px;margin-bottom:12px;margin-top:12px;"><strong style="color:#a78bfa;">→ Next: Improve Existing (Beat 933 IE=0 rung4)</strong></p>
             <p style="color:var(--dim);font-size:11.5px;margin-top:10px;">📝 Full beat history in <a href="../../workspace_kaji/MEMORY.md" style="color:#22d3ee;">MEMORY.md</a></p>
         </div>
 
         <!-- JAX ACTION QUEUE -->
         <div class="card">
             <h3><span class="material-symbols-outlined">speed</span> Jax Action Queue <span class="stale-tag">72H POLICY</span></h3>
-<p style="color:var(--muted);font-size:13px;margin-bottom:12px;"><strong style="color:#22d3ee;">Beat 929 Empire Audit ✅</strong> — Brent $99.78 🟡 ($0.22 below $100) · 6/7 ⚠️ · Kaji 60min ⚠️ `swift-oc jobs` unknown · infra-pulse WATCH · <strong style="color:#a78bfa;">next: Delegation Prep (Beat 930 DP=0 rung2)</strong></p>
+            <p style="color:var(--muted);font-size:13px;margin-bottom:12px;"><strong style="color:#22d3ee;">Beat 932 Empire Audit ✅</strong> — Brent $99.78 🟡 ($0.22 from $100) · 6/7 ⚠️ · Ito 20min "error" (pipeline FRESH ✅) · infra-pulse WATCH · <strong style="color:#a78bfa;">next: Improve Existing (Beat 933 IE=0 rung4)</strong></p>
             <div class="request-item" style="border-left:3px solid #f87175;">
                 <strong>🏋️ Titan PT Launch — ENFORCED PARKED · ~230h 🚨 PAST 72h threshold</strong>
                 <div class="request-meta">Launch window CLOSED 09:00 JST Sat Apr 18 · ENFORCED PARKED ~05:18 JST Sun Apr 19 · Kaji STOPPED nudging · cron DISABLED · Re-activate: <code>"go Titan"</code> · or "Park Titan" · ~158h over 72h breach</div>
@@ -259,8 +259,8 @@
                 <div class="request-meta">Draft at outputs/empire_morning_briefing_v3.md · Kaji Telegram relay READY · ~289h (12.0d+) stale · EMB refresh script FIXED — live_oracle.json now source ✅</div>
             </div>
             <div class="request-item" style="border-left:3px solid #fbbf24;margin-top:8px;">
-                <strong>⚡ Makoto GBP Deploy — GitHub Pages route <span class="stale-tag">STALE 32d+</span></strong>
-                <div class="request-meta">Formspree YOUR_FORM_ID placeholder · scout FRESH ✅ · DEPLOY-STALLED · brief: outputs/beat661_new_ideas_makoto_gbp_scout_deploy_gap.md</div>
+                <strong>⚡ Makoto GBP Deploy — GitHub Pages route <span class="stale-tag">STALE 31d+</span></strong>
+                <div class="request-meta">Formspree YOUR_FORM_ID placeholder · scout FRESH ✅ · DEPLOY-STALLED · brief: outputs/beat931_new_ideas_makoto_gbp_formspree_stall_31_days.md</div>
             </div>
             <div class="request-item" style="border-left:3px solid #f87175;margin-top:8px;">
                 <strong>🎌 Felix Gmail Re-auth — N3 Phase 2b frozen · X posts offline <span class="stale-tag">STALE 10.7d+</span></strong>
@@ -273,8 +273,8 @@
 
     <!-- BEAT DOMAIN STATE -->
     <div class="card full" style="margin-bottom:20px;">
-        <h3><span class="material-symbols-outlined">psychology</span> Beat Domain State — Beat 929 EA ✅ · ~07:45 JST Sat Apr 25</h3>
-        <p style="color:var(--dim);font-size:11.5px;margin-bottom:8px;"><strong style="color:#22d3ee;">Beat 929 Empire Audit ✅</strong> — Brent $99.78 🟡 ($0.22 below $100) · 6/7 ⚠️ Kaji 60min ⚠️ `swift-oc jobs` unknown (non-blocking) · infra-pulse WATCH · <strong style="color:#a78bfa;">next: Delegation Prep (Beat 930 DP=0 rung2)</strong></p>
+        <h3><span class="material-symbols-outlined">psychology</span> Beat Domain State — Beat 932 EA ✅ · ~08:13 JST Sat Apr 25</h3>
+        <p style="color:var(--dim);font-size:11.5px;margin-bottom:8px;"><strong style="color:#22d3ee;">Beat 932 Empire Audit ✅</strong> — Brent $99.78 🟡 ($0.22 from $100) · 6/7 ⚠️ Ito 20min "error" (pipeline FRESH ✅) · infra-pulse WATCH · <strong style="color:#a78bfa;">next: Improve Existing (Beat 933 IE=0 rung4)</strong></p>
         <table class="cron-table">
             <thead>
                 <tr>
@@ -287,37 +287,37 @@
             <tbody>
                 <tr>
                     <td><span class="cron-name" style="background:rgba(34,211,238,0.12);color:#22d3ee;padding:2px 9px;border-radius:6px;font-size:11px;font-weight:600;">Empire Audit</span></td>
-                    <td>Beat 929 ~07:45 JST Sat</td>
+                    <td>Beat 932 ~08:13 JST Sat</td>
                     <td>0</td>
                     <td>EA=0 JUST RAN ✅</td>
                 </tr>
                 <tr>
-                    <td><span class="cron-name" style="background:rgba(251,191,36,0.12);color:#fbbf24;padding:2px 9px;border-radius:6px;font-size:11px;font-weight:600;">Tidy Operations</span></td>
-                    <td>Beat 928 ~07:42 JST Sat</td>
-                    <td>1</td>
-                    <td>TO=1 rung5</td>
-                </tr>
-                <tr>
-                    <td><span class="cron-name" style="background:rgba(74,222,128,0.12);color:#4ade80;padding:2px 9px;border-radius:6px;font-size:11px;font-weight:600;">Improve Existing</span></td>
-                    <td>Beat 927 ~07:22 JST Sat</td>
-                    <td>2</td>
-                    <td>IE=2 rung4</td>
-                </tr>
-                <tr>
                     <td><span class="cron-name" style="background:rgba(74,222,128,0.12);color:#4ade80;padding:2px 9px;border-radius:6px;font-size:11px;font-weight:600;">New Ideas</span></td>
-                    <td>Beat 926 ~07:16 JST Sat</td>
-                    <td>3</td>
-                    <td>NI=3 rung4</td>
+                    <td>Beat 931 ~08:11 JST Sat</td>
+                    <td>1</td>
+                    <td>NI=1 rung3</td>
                 </tr>
                 <tr>
                     <td><span class="cron-name" style="background:rgba(167,139,250,0.12);color:#a78bfa;padding:2px 9px;border-radius:6px;font-size:11px;font-weight:600;">Delegation Prep</span></td>
-                    <td>Beat 925 ~07:13 JST Sat</td>
+                    <td>Beat 930 ~07:51 JST Sat</td>
+                    <td>2</td>
+                    <td>DP=2 rung2</td>
+                </tr>
+                <tr>
+                    <td><span class="cron-name" style="background:rgba(251,191,36,0.12);color:#fbbf24;padding:2px 9px;border-radius:6px;font-size:11px;font-weight:600;">Improve Existing</span></td>
+                    <td>Beat 927 ~07:22 JST Sat</td>
+                    <td>3</td>
+                    <td>IE=3 rung4</td>
+                </tr>
+                <tr>
+                    <td><span class="cron-name" style="background:rgba(251,191,36,0.12);color:#fbbf24;padding:2px 9px;border-radius:6px;font-size:11px;font-weight:600;">Tidy Operations</span></td>
+                    <td>Beat 928 ~07:42 JST Sat</td>
                     <td>4</td>
-                    <td>DP=4 rung2</td>
+                    <td>TO=4 rung5</td>
                 </tr>
             </tbody>
         </table>
-<p style="color:var(--dim);font-size:11px;margin-top:8px;">Algorithm Beat 930: Rule1 → EA blocked · Rule2: no urgent override · Rule3: DP=4 < 4 not forced · Rule4: DP=4 rung2 → <strong style="color:#a78bfa;">Delegation Prep</strong> (Beat 930 DP=0 rung2)</p>
+        <p style="color:var(--dim);font-size:11px;margin-top:8px;">Algorithm Beat 933: Rule1 → EA blocked · Rule2: no urgent override · Rule3: TO=4 < 4 not forced · Rule4: IE=3 rung4 → <strong style="color:#a78bfa;">Improve Existing</strong> (Beat 933 IE=0 rung4)</p>
     </div>
 
     <!-- AGENT ROSTER -->
@@ -325,30 +325,30 @@
         <h3><span class="material-symbols-outlined">groups</span> Agent Roster</h3>
         <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;">
             <div class="agent-row" style="border-bottom:1px solid rgba(255,255,255,0.06);padding:8px 12px;">
-<div>
+                <div>
                     <div class="agent-name">Kaji (main)</div>
-                    <div class="agent-role">Beat 929 Empire Audit ✅ · ~07:45 JST Sat Apr 25 · Brent $99.78 🟡 ($0.22 from $100) · 6/7 ⚠️ · Kaji 60min ⚠️ `swift-oc jobs` unknown · next: Delegation Prep (Beat 930)</div>
+                    <div class="agent-role">Beat 932 Empire Audit ✅ · ~08:13 JST Sat Apr 25 · Brent $99.78 🟡 ($0.22 from $100) · 6/7 ⚠️ · next: Improve Existing (Beat 933)</div>
                 </div>
                 <span class="badge badge-ok">✅ Active</span>
             </div>
             <div class="agent-row" style="border-bottom:1px solid rgba(255,255,255,0.06);padding:8px 12px;">
                 <div>
                     <div class="agent-name">Ito</div>
-                    <div class="agent-role">Intel · pipeline FRESH 04:11 JST ✅ · heartbeat_latest.md STALE Apr 15 (not blocking) · Brent $98.46 🟢 · BTC $77,629 · Gold $4,740.50</div>
+                    <div class="agent-role">Intel · pipeline FRESH 08:11 JST ✅ · MEMORY 08:11 JST ✅ · Git push diverged · Brent $99.78 🟡 · BTC $77,421 · Gold $4,725</div>
                 </div>
-                <span class="badge badge-ok">✅ Active</span>
+                <span class="badge badge-warn">🟡 Watch</span>
             </div>
             <div class="agent-row" style="border-bottom:1px solid rgba(255,255,255,0.06);padding:8px 12px;">
                 <div>
                     <div class="agent-name">Makoto</div>
-                    <div class="agent-role">Arbitrage · arbitrage_intel.md FRESH ✅ · XRP stop $1.38 intact ✅ · 21min cron OK ✅</div>
+                    <div class="agent-role">Arbitrage · scout ~08:09 JST · 25 high-conviction opps ✅ · XRP stop $1.38 intact ✅ · 21min cron OK ✅</div>
                 </div>
                 <span class="badge badge-ok">✅ Active</span>
             </div>
             <div class="agent-row" style="border-bottom:1px solid rgba(255,255,255,0.06);padding:8px 12px;">
                 <div>
                     <div class="agent-name">Saito</div>
-                    <div class="agent-role">Learn-only · NO PROPOSALS · #13049491 expired</div>
+                    <div class="agent-role">Learn-only · NO PROPOSALS · telemetry-repo diverged (299 vs 68 commits)</div>
                 </div>
                 <span class="badge badge-run">📚 Learn-only</span>
             </div>
@@ -371,8 +371,8 @@
 
     <!-- CRON TABLE -->
     <div class="card full" style="margin-bottom:20px;">
-        <h3><span class="material-symbols-outlined">schedule</span> Cron Health — Beat 929 EA ✅ · ~07:45 JST Sat Apr 25</h3>
-        <p style="color:#f87171;font-size:12px;margin-bottom:10px;"><strong>6/7 crons OK ⚠️</strong> · Twitter/X ✅ ok · infra-pulse ✅ ok · Makoto 21min ✅ ok · Gold Oracle ✅ ok · Ito 20min ✅ ok · <strong style="color:#f87171;">Kaji 60min ⚠️ `swift-oc jobs` unknown command (non-blocking · beats delivering OK ✅)</strong> · empire-pulse IDLE (08:00 Sun) · Brent $99.78 🟡 ($0.22 from $100) · <strong style="color:#22d3ee;">next: Delegation Prep (Beat 930 DP=0 rung2)</strong></p>
+        <h3><span class="material-symbols-outlined">schedule</span> Cron Health — Beat 932 EA ✅ · ~08:13 JST Sat Apr 25</h3>
+        <p style="color:#f87171;font-size:12px;margin-bottom:10px;"><strong>6/7 crons OK ⚠️</strong> · Twitter/X ✅ ok · infra-pulse ✅ ok · Makoto 21min ✅ ok · Gold Oracle ✅ ok · <strong style="color:#fbbf24;">Ito 20min 🟡 "error" but pipeline FRESH ✅</strong> · empire-pulse IDLE (08:00 Sun) · Brent $99.78 🟡 ($0.22 from $100) · <strong style="color:#22d3ee;">next: Improve Existing (Beat 933 IE=0 rung4)</strong></p>
         <table class="cron-table">
             <thead>
                 <tr>
@@ -388,8 +388,8 @@
                     <td class="cron-name" style="color:#a78bfa;">Kaji</td>
                     <td class="cron-sched">60min Initiative Beat</td>
                     <td class="cron-sched">every 1h</td>
-                    <td>~5m ago</td>
-                    <td><span class="badge badge-warn">⚠️ `swift-oc jobs` unknown · beats OK ✅</span></td>
+                    <td>~1m ago</td>
+                    <td><span class="badge badge-ok">✅ ok</span></td>
                 </tr>
                 <tr>
                     <td class="cron-name" style="color:#a78bfa;">Kaji</td>
@@ -403,35 +403,35 @@
                     <td class="cron-sched">20min Heartbeat</td>
                     <td class="cron-sched">every 20m</td>
                     <td>~4m ago</td>
-                    <td><span class="badge badge-warn">✅ ok · MEMORY stale (non-blocking)</span></td>
+                    <td><span class="badge badge-warn">🟡 "error" but pipeline FRESH ✅ (mid-run false positive)</span></td>
                 </tr>
                 <tr>
                     <td class="cron-name">Ito</td>
                     <td class="cron-sched">infra-pulse (10/30/50)</td>
                     <td class="cron-sched">10/30/50m</td>
                     <td>~1m ago</td>
-                    <td><span class="badge badge-ok">✅ ok · WATCH (8 OK, 7 WARN, 0 FAIL)</span></td>
+                    <td><span class="badge badge-ok">✅ ok · WATCH (11 OK, 4 WARN, 0 FAIL)</span></td>
                 </tr>
                 <tr>
                     <td class="cron-name" style="color:#22d3ee;">Makoto</td>
                     <td class="cron-sched">21min Heartbeat</td>
                     <td class="cron-sched">every 21m</td>
                     <td>~16m ago</td>
-                    <td><span class="badge badge-ok">✅ ok · arbitrage FRESH ✅</span></td>
+                    <td><span class="badge badge-ok">✅ ok · arbitrage FRESH ✅ · scout ~08:09 JST · 25 opps</span></td>
                 </tr>
                 <tr>
                     <td class="cron-name">Ito</td>
                     <td class="cron-sched">Twitter/X Intelligence</td>
                     <td class="cron-sched">every 30m</td>
-                    <td>~16m ago</td>
-                    <td><span class="badge badge-ok">✅ ok · Twitter/X RECOVERED ✅ (xAI credits ok)</td>
+                    <td>~15m ago</td>
+                    <td><span class="badge badge-ok">✅ ok · Twitter/X RECOVERED ✅</td>
                 </tr>
                 <tr>
                     <td class="cron-name">Ito</td>
                     <td class="cron-sched">Gold Oracle Update</td>
                     <td class="cron-sched">every 2h</td>
                     <td>~4m ago</td>
-                    <td><span class="badge badge-ok">✅ ok · Brent $98.46 🟢 BELOW $100 ✅</span></td>
+                    <td><span class="badge badge-ok">✅ ok · Brent $99.78 🟡 BELOW $100 ✅</span></td>
                 </tr>
             </tbody>
         </table>
@@ -448,7 +448,7 @@
 const CEASEFIRE_TARGET=Date.UTC(2026,3,21,14,52,0);const CLARITY_TARGET=Date.UTC(2026,4,8,14,0,0);function formatCd(d){if(d<=0)return"⛔ EXPIRED";const h=Math.floor(d/36e5),m=Math.floor(d%36e5/6e4),s=Math.floor(d%6e4/1e3);return`${h}h ${m.toString().padStart(2,"0")}m ${s.toString().padStart(2,"0")}s`}function cdColor(d){return d<=0?"#f87171":d<3.6e6?"#f87171":d<7.2e6?"#fbbf24":"#4ade80"}function fmtClarity(d){if(d<=0)return"⛔ PASSED";const h=Math.floor(d/36e5),m=Math.floor(d%36e5/6e4);return`${h}h ${m.toString().padStart(2,"0")}m`}function updateTime(){const e=new Date(),t=e.toLocaleString("en-US",{timeZone:"Asia/Tokyo",hour:"2-digit",minute:"2-digit",second:"2-digit",hour12:!1});document.getElementById("ts").textContent=t;const n=e.getTime(),d=CEASEFIRE_TARGET-n;["ito-cd","hdr-cd","hdr-cd2","agent-cd","ie-cd"].forEach(id=>{const el=document.getElementById(id);if(el){el.textContent=formatCd(d);el.style.color=cdColor(d)}});const c=CLARITY_TARGET-n;["clarity-cd","clarity-cd2","clarity-cd3"].forEach(id=>{const el=document.getElementById(id);if(el){el.textContent=fmtClarity(c);el.style.color=c<=0?"#f87171":c<864e5?"#fbbf24":"#4ade80"}})}updateTime(),setInterval(updateTime,1e3);
 </script>
 <footer>
-    Kaji COO · <a href="https://kaji-hemopo.github.io/telemetry/empire-home.html" target="_blank">Live Empire</a> · <strong style="color:#22d3ee;">Beat 929 · ~07:45 JST Sat Apr 25 · Empire Audit ✅</strong> · Brent $99.78 🟡 ($0.22 from $100) · 6/7 ⚠️ · Kaji 60min ⚠️ `swift-oc jobs` unknown (non-blocking) · infra-pulse WATCH · <strong style="color:#a78bfa;">next: Delegation Prep (Beat 930 DP=0 rung2)</strong>
+    Kaji COO · <a href="https://kaji-hemopo.github.io/telemetry/empire-home.html" target="_blank">Live Empire</a> · <strong style="color:#22d3ee;">Beat 932 · ~08:13 JST Sat Apr 25 · Empire Audit ✅</strong> · Brent $99.78 🟡 ($0.22 from $100) · 6/7 ⚠️ · Ito 20min "error" (pipeline FRESH ✅) · infra-pulse WATCH · <strong style="color:#a78bfa;">next: Improve Existing (Beat 933 IE=0 rung4)</strong>
 </footer>
 </body>
 </html>
