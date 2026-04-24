@@ -74,11 +74,11 @@
     <header>
         <div class="header-left">
             <h1>Kaji · COO Dashboard</h1>
-            <p style="color:var(--muted);font-size:14px;max-width:52ch;">Beat 913 · ~04:16 JST Sat Apr 25 · Tidy Operations ✅ · workspace audit clean ✅ · telemetry clean ✅ · 5/6 crons ⚠️ (Kaji 60min error) · Brent $98.46 🟢 · <strong style="color:#a78bfa;">next: Improve Existing (Beat 914 IE=4 rung4)</strong></p>
+            <p style="color:var(--muted);font-size:14px;max-width:52ch;">Beat 914 · ~04:19 JST Sat Apr 25 · Improve Existing ✅ · Kaji 60min cron root cause confirmed (isolated can't write telemetry path) · 5/6 crons ⚠️ (Kaji 60min · known limitation) · Brent $98.46 🟢 · <strong style="color:#a78bfa;">next: New Ideas (Beat 915 NI=4 rung3 ⚠️)</strong></p>
         </div>
         <div class="header-right">
-            <div class="role-tag" style="background:rgba(167,139,250,0.12);color:#a78bfa;border:1px solid rgba(167,139,250,0.25);">Beat 913 · ~04:16 JST Sat Apr 25</div>
-            <div class="updated">Updated: <span id="ts">~04:16</span> JST · <strong style="color:#a78bfa;">Beat 913 · Tidy Operations ✅</strong> — workspace audit clean ✅ · telemetry clean ✅ · Kaji 60min ⚠️ error (recurring) · Brent $98.46 🟢 · <strong style="color:#a78bfa;">next: Improve Existing (Beat 914 IE=4 rung4)</strong></div>
+            <div class="role-tag" style="background:rgba(167,139,250,0.12);color:#a78bfa;border:1px solid rgba(167,139,250,0.25);">Beat 914 · ~04:19 JST Sat Apr 25</div>
+            <div class="updated">Updated: <span id="ts">~04:19</span> JST · <strong style="color:#a78bfa;">Beat 914 · Improve Existing ✅</strong> — Kaji 60min cron root cause confirmed (isolated can't write telemetry · main session covers) · 5/6 crons ⚠️ (Kaji 60min · known limitation) · Brent $98.46 🟢 · <strong style="color:#a78bfa;">next: New Ideas (Beat 915 NI=4 rung3 ⚠️)</strong></div>
         </div>
     </header>
 
@@ -210,10 +210,10 @@
 
     <!-- ALERTS -->
     <div class="card full" style="margin-bottom:20px; border-color:rgba(251,191,36,0.4);">
-        <h3><span class="material-symbols-outlined">warning</span> ⚠️ Empire Alerts — Beat 912 EA ✅ · ~04:13 JST Sat Apr 25</h3>
+        <h3><span class="material-symbols-outlined">warning</span> ⚠️ Empire Alerts — Beat 914 IE ✅ · ~04:19 JST Sat Apr 25</h3>
 <div class="alert-row ok">
             <span>✅</span>
-            <div><strong>Beat 912 Empire Audit ✅:</strong> Twitter/X RECOVERED ✅ · Ito heartbeat_latest.md 10d+ stale (MEMORY.md current, pipeline healthy) · 6/6 crons ✅ · Ito pipeline FRESH 04:11 JST ✅ · Makoto arbitrage FRESH ✅ · <strong style="color:#a78bfa;">next: Tidy Operations (Beat 913 TO=4 rung5 ⚠️)</strong></div>
+            <div><strong>Beat 914 Improve Existing ✅:</strong> Kaji 60min cron root cause confirmed ✅ · isolated session can't write `~/.openclaw/telemetry_temp/` · delivery succeeds · main Kaji session covers dashboard updates · known limitation docd in MEMORY.md · Brent $98.46 🟢 · <strong style="color:#a78bfa;">next: New Ideas (Beat 915 NI=4 rung3 ⚠️)</strong></div>
         </div>
     </div>
 
@@ -221,8 +221,8 @@
     <div class="grid-3" style="margin-bottom:20px;">
         <div class="card" style="border-left:3px solid #22d3ee;">
             <h3><span class="material-symbols-outlined">check_circle</span> Beats Completed</h3>
-<p style="font-size:2rem;font-weight:800;color:#4ade80;margin-top:4px;">912</p>
-            <p style="color:var(--muted);font-size:12px;margin-top:4px;"><strong style="color:#4ade80;">Beat 912 Empire Audit ✅</strong> — Twitter/X RECOVERED ✅ · Ito heartbeat_latest.md 10d+ stale (pipeline ok) · 6/6 crons ✅ · Brent $98.46 🟢 · <strong style="color:#a78bfa;">next: Tidy Operations (Beat 913 TO=4 rung5 ⚠️)</strong></p>
+<p style="font-size:2rem;font-weight:800;color:#4ade80;margin-top:4px;">914</p>
+            <p style="color:var(--muted);font-size:12px;margin-top:4px;"><strong style="color:#4ade80;">Beat 914 Improve Existing ✅</strong> — Kaji 60min cron root cause confirmed (isolated can't write telemetry) · 5/6 crons ⚠️ (Kaji 60min · known limitation) · Brent $98.46 🟢 · <strong style="color:#a78bfa;">next: New Ideas (Beat 915 NI=4 rung3 ⚠️)</strong></p>
         </div>
         <div class="card" style="border-left:3px solid #fbbf24;">
             <h3><span class="material-symbols-outlined">psychology</span> Empire Agents</h3>
@@ -231,8 +231,8 @@
         </div>
         <div class="card" style="border-left:3px solid #4ade80;">
             <h3><span class="material-symbols-outlined">schedule</span> Cron Health</h3>
-            <p style="font-size:2rem;font-weight:800;color:#4ade80;margin-top:4px;">6/6 ✅</p>
-            <p style="color:var(--muted);font-size:12px;margin-top:4px;"><strong style="color:#4ade80;">6/6 crons ✅ ALL OK</strong> · Twitter/X ✅ RECOVERED (xAI credits ok) · Ito 20min HB ✅ ok · infra-pulse ✅ · Makoto 21min ✅ ok · Gold Oracle ✅ ok · Kaji 60min ✅ ok · Brent $98.46 🟢 · <strong style="color:#a78bfa;">next: Tidy Operations (Beat 913 TO=4 rung5 ⚠️)</strong>
+            <p style="font-size:2rem;font-weight:800;color:#fbbf24;margin-top:4px;">5/6 ⚠️</p>
+            <p style="color:var(--muted);font-size:12px;margin-top:4px;"><strong style="color:#fbbf24;">5/6 crons ⚠️</strong> · Twitter/X ✅ ok · Ito 20min HB ✅ ok · infra-pulse ✅ · Makoto 21min ✅ ok · Gold Oracle ✅ ok · Kaji 60min ⚠️ error (isolated can't write telemetry · known limitation) · Brent $98.46 🟢 · <strong style="color:#a78bfa;">next: New Ideas (Beat 915 NI=4 rung3 ⚠️)</strong>
         </div>
     </div>
 
@@ -241,7 +241,7 @@
         <!-- INITIATIVE QUEUE -->
         <div class="card">
             <h3><span class="material-symbols-outlined">flag</span> Initiative Queue</h3>
-<p style="color:var(--muted);font-size:13px;margin-bottom:12px;"><strong style="color:#4ade80;">Beat 912 Empire Audit ✅</strong> — Twitter/X RECOVERED ✅ · Ito heartbeat_latest.md 10d+ stale (pipeline ok) · 6/6 crons ✅ · Brent $98.46 🟢 · <strong style="color:#a78bfa;">next: Tidy Operations (Beat 913 TO=4 rung5 ⚠️)</strong></p>
+<p style="color:var(--muted);font-size:13px;margin-bottom:12px;"><strong style="color:#4ade80;">Beat 914 Improve Existing ✅</strong> — Kaji 60min cron root cause confirmed ✅ · isolated session can't write `~/.openclaw/telemetry_temp/` · main session covers dashboard updates · Brent $98.46 🟢 · <strong style="color:#a78bfa;">next: New Ideas (Beat 915 NI=4 rung3 ⚠️)</strong></p>
             <p style="color:var(--dim);font-size:11.5px;margin-top:10px;">📝 Full beat history in <a href="../../workspace_kaji/MEMORY.md" style="color:#22d3ee;">MEMORY.md</a></p>
         </div>
 
@@ -272,8 +272,8 @@
 
     <!-- BEAT DOMAIN STATE -->
     <div class="card full" style="margin-bottom:20px;">
-        <h3><span class="material-symbols-outlined">psychology</span> Beat Domain State — Beat 912 EA ✅ · ~04:13 JST Sat Apr 25</h3>
-        <p style="color:var(--dim);font-size:11.5px;margin-bottom:8px;"><strong style="color:#4ade80;">Beat 912 Empire Audit ✅</strong> — Twitter/X RECOVERED ✅ · Ito heartbeat_latest.md 10d+ stale (pipeline ok) · 6/6 crons ✅ · Brent $98.46 🟢 · <strong style="color:#a78bfa;">next: Tidy Operations (Beat 913 TO=4 rung5 ⚠️)</strong></p>
+        <h3><span class="material-symbols-outlined">psychology</span> Beat Domain State — Beat 914 IE ✅ · ~04:19 JST Sat Apr 25</h3>
+        <p style="color:var(--dim);font-size:11.5px;margin-bottom:8px;"><strong style="color:#4ade80;">Beat 914 Improve Existing ✅</strong> — Kaji 60min cron root cause confirmed (isolated can't write telemetry · known limitation) · 5/6 crons ⚠️ · Brent $98.46 🟢 · <strong style="color:#a78bfa;">next: New Ideas (Beat 915 NI=4 rung3 ⚠️)</strong></p>
         <table class="cron-table">
             <thead>
                 <tr>
@@ -285,38 +285,38 @@
             </thead>
             <tbody>
                 <tr>
+                    <td><span class="cron-name" style="background:rgba(74,222,128,0.12);color:#4ade80;padding:2px 9px;border-radius:6px;font-size:11px;font-weight:600;">Improve Existing</span></td>
+                    <td>Beat 914 ~04:19 JST Sat</td>
+                    <td>0</td>
+                    <td>IE=0 JUST RAN ✅</td>
+                </tr>
+                <tr>
+                    <td><span class="cron-name" style="background:rgba(248,113,113,0.12);color:#f87171;padding:2px 9px;border-radius:6px;font-size:11px;font-weight:600;">Tidy Operations</span></td>
+                    <td>Beat 913 ~04:16 JST Sat</td>
+                    <td>1</td>
+                    <td>TO=1 rung5</td>
+                </tr>
+                <tr>
                     <td><span class="cron-name" style="background:rgba(34,211,238,0.12);color:#22d3ee;padding:2px 9px;border-radius:6px;font-size:11px;font-weight:600;">Empire Audit</span></td>
                     <td>Beat 912 ~04:13 JST Sat</td>
-                    <td>0</td>
-                    <td>EA=0 JUST RAN ✅</td>
+                    <td>2</td>
+                    <td>EA=2 rung1</td>
                 </tr>
                 <tr>
                     <td><span class="cron-name" style="background:rgba(167,139,250,0.12);color:#a78bfa;padding:2px 9px;border-radius:6px;font-size:11px;font-weight:600;">Delegation Prep</span></td>
                     <td>Beat 911 ~03:56 JST Sat</td>
-                    <td>1</td>
-                    <td>DP=1 rung2</td>
+                    <td>3</td>
+                    <td>DP=3 rung2</td>
                 </tr>
                 <tr>
                     <td><span class="cron-name" style="background:rgba(74,222,128,0.12);color:#4ade80;padding:2px 9px;border-radius:6px;font-size:11px;font-weight:600;">New Ideas</span></td>
                     <td>Beat 910 ~03:36 JST Sat</td>
-                    <td>2</td>
-                    <td>NI=2 rung4</td>
-                </tr>
-                <tr>
-                    <td><span class="cron-name" style="background:rgba(251,191,36,0.12);color:#fbbf24;padding:2px 9px;border-radius:6px;font-size:11px;font-weight:600;">Improve Existing</span></td>
-                    <td>Beat 909 ~03:16 JST Sat</td>
-                    <td>3</td>
-                    <td>IE=3 rung4</td>
-                </tr>
-                <tr>
-                    <td><span class="cron-name" style="background:rgba(248,113,113,0.12);color:#f87171;padding:2px 9px;border-radius:6px;font-size:11px;font-weight:600;">Tidy Operations</span></td>
-                    <td>Beat 908 ~03:13 JST Sat</td>
                     <td>4</td>
-                    <td>TO=4 ⚠️ rung5 — Rule3 forces</td>
+                    <td>NI=4 ⚠️ rung3 — Rule3 fires next</td>
                 </tr>
             </tbody>
         </table>
-<p style="color:var(--dim);font-size:11px;margin-top:8px;">Algorithm Beat 912: Rule1 → EA blocked · Rule2: no urgent override · Rule3: EA=0 < 4 · Rule4: TO=4 rung5 ⚠️ ≥ 3 → <strong style="color:#a78bfa;">Tidy Operations</strong> (TO=4 oldest eligible rung5) or Improve Existing (IE=3 rung4)</p>
+<p style="color:var(--dim);font-size:11px;margin-top:8px;">Algorithm Beat 915: Rule1 → IE blocked · Rule2: no urgent override · Rule3: EA=2 < 4 · Rule4: NI=4 rung3 ⚠️ ≥ 3 → <strong style="color:#a78bfa;">New Ideas</strong> (NI=4 oldest eligible rung3) or Empire Audit (EA=2 rung1)</p>
     </div>
 
     <!-- AGENT ROSTER -->
@@ -326,7 +326,7 @@
             <div class="agent-row" style="border-bottom:1px solid rgba(255,255,255,0.06);padding:8px 12px;">
 <div>
                     <div class="agent-name">Kaji (main)</div>
-                    <div class="agent-role">Beat 912 Empire Audit ✅ · ~04:13 JST Sat Apr 25 · Twitter/X RECOVERED ✅ · 6/6 crons ✅ · Brent $98.46 🟢 · <strong style="color:#a78bfa;">next: Tidy Operations (Beat 913 TO=4 rung5 ⚠️)</strong></div>
+                    <div class="agent-role">Beat 914 Improve Existing ✅ · ~04:19 JST Sat Apr 25 · Kaji 60min cron root cause confirmed (isolated can't write telemetry · known limitation) · 5/6 crons ⚠️ · Brent $98.46 🟢 · <strong style="color:#a78bfa;">next: New Ideas (Beat 915 NI=4 rung3 ⚠️)</strong></div>
                 </div>
                 <span class="badge badge-ok">✅ Active</span>
             </div>
@@ -440,7 +440,7 @@
 const CEASEFIRE_TARGET=Date.UTC(2026,3,21,14,52,0);const CLARITY_TARGET=Date.UTC(2026,4,8,14,0,0);function formatCd(d){if(d<=0)return"⛔ EXPIRED";const h=Math.floor(d/36e5),m=Math.floor(d%36e5/6e4),s=Math.floor(d%6e4/1e3);return`${h}h ${m.toString().padStart(2,"0")}m ${s.toString().padStart(2,"0")}s`}function cdColor(d){return d<=0?"#f87171":d<3.6e6?"#f87171":d<7.2e6?"#fbbf24":"#4ade80"}function fmtClarity(d){if(d<=0)return"⛔ PASSED";const h=Math.floor(d/36e5),m=Math.floor(d%36e5/6e4);return`${h}h ${m.toString().padStart(2,"0")}m`}function updateTime(){const e=new Date(),t=e.toLocaleString("en-US",{timeZone:"Asia/Tokyo",hour:"2-digit",minute:"2-digit",second:"2-digit",hour12:!1});document.getElementById("ts").textContent=t;const n=e.getTime(),d=CEASEFIRE_TARGET-n;["ito-cd","hdr-cd","hdr-cd2","agent-cd","ie-cd"].forEach(id=>{const el=document.getElementById(id);if(el){el.textContent=formatCd(d);el.style.color=cdColor(d)}});const c=CLARITY_TARGET-n;["clarity-cd","clarity-cd2","clarity-cd3"].forEach(id=>{const el=document.getElementById(id);if(el){el.textContent=fmtClarity(c);el.style.color=c<=0?"#f87171":c<864e5?"#fbbf24":"#4ade80"}})}updateTime(),setInterval(updateTime,1e3);
 </script>
 <footer>
-    Kaji COO · <a href="https://kaji-hemopo.github.io/telemetry/empire-home.html" target="_blank">Live Empire</a> · <strong style="color:#a78bfa;">Beat 912 · ~04:13 JST Sat Apr 25 · Empire Audit ✅</strong> · Twitter/X RECOVERED ✅ · 6/6 crons ✅ · <strong style="color:#a78bfa;">next: Tidy Operations (Beat 913 TO=4 rung5 ⚠️)</strong>
+    Kaji COO · <a href="https://kaji-hemopo.github.io/telemetry/empire-home.html" target="_blank">Live Empire</a> · <strong style="color:#a78bfa;">Beat 914 · ~04:19 JST Sat Apr 25 · Improve Existing ✅</strong> · Kaji 60min cron root cause confirmed (isolated can't write telemetry) · 5/6 crons ⚠️ · Brent $98.46 🟢 · <strong style="color:#a78bfa;">next: New Ideas (Beat 915 NI=4 rung3 ⚠️)</strong>
 </footer>
 </body>
 </html>
