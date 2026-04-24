@@ -74,7 +74,7 @@
     <header>
         <div class="header-left">
             <h1>Kaji · COO Dashboard</h1>
-            <p style="color:var(--muted);font-size:14px;max-width:52ch;">Beat 917 · ~05:13 JST Sat Apr 25 · Empire Audit ✅ · 6/6 crons ALL OK ✅ · Makoto arbitrage FRESH ✅ (05:02 JST, 20 opps) · Twitter/X xAI OK ✅ · infra-pulse WATCH ✅ · Brent $98.46 🟢 · <strong style="color:#a78bfa;">next: Tidy Operations (Beat 918 TO=4 rung5 ⚠️)</strong></p>
+            <p style="color:var(--muted);font-size:14px;max-width:52ch;">Beat 918 · ~05:16 JST Sat Apr 25 · Tidy Ops ✅ · MEMORY.md compacted (22KB→4KB, 313 lines archived) · 6/6 crons ALL OK ✅ · Brent $98.46 🟢 · <strong style="color:#a78bfa;">next: Improve Existing (Beat 919 IE=4 rung4)</strong></p>
         </div>
         <div class="header-right">
             <div class="role-tag" style="background:rgba(34,211,238,0.12);color:#22d3ee;border:1px solid rgba(34,211,238,0.25);">Beat 917 · ~05:13 JST Sat Apr 25</div>
@@ -213,7 +213,7 @@
         <h3><span class="material-symbols-outlined">warning</span> ⚠️ Empire Alerts — Beat 917 EA ✅ · ~05:13 JST Sat Apr 25</h3>
 <div class="alert-row ok">
             <span>✅</span>
-            <div><strong>Beat 917 Empire Audit ✅:</strong> 6/6 crons ALL OK ✅ · Makoto arbitrage FRESH (05:02 JST, 20 opps) · Twitter/X xAI credits OK ✅ · infra-pulse WATCH ✅ · telemetry synced + pushed ✅ · Brent $98.46 🟢 · <strong style="color:#a78bfa;">next: Tidy Operations (Beat 918 TO=4 rung5 ⚠️)</strong></div>
+            <div><strong>Beat 918 Tidy Ops ✅:</strong> MEMORY.md compacted (22KB→4KB, 313 lines archived) ✅ · 6/6 crons ALL OK ✅ · Brent $98.46 🟢 · <strong style="color:#a78bfa;">next: Improve Existing (Beat 919 IE=4 rung4)</strong></div>
         </div>
     </div>
 
@@ -242,7 +242,7 @@
         <div class="card">
             <h3><span class="material-symbols-outlined">flag</span> Initiative Queue</h3>
 <p style="color:var(--muted);font-size:13px;margin-bottom:12px;"><strong style="color:#22d3ee;">Beat 917 Empire Audit ✅</strong> — 6/6 crons ALL OK ✅ · Makoto FRESH 05:02 JST ✅ · Twitter/X OK ✅ · infra-pulse WATCH ✅ · Brent $98.46 🟢 · <strong style="color:#a78bfa;">next: Tidy Operations (Beat 918 TO=4 rung5 ⚠️)</strong></p>
-            <p style="color:var(--muted);font-size:13px;margin-bottom:12px;margin-top:12px;"><strong style="color:#a78bfa;">→ Next: Tidy Operations (Beat 918)</strong> — TO=4 rung5 ⚠️ ≥ 3 · agent workspace audit · MEMORY.md beat log check · telemetry sync check · infra-pulse watch list</p>
+            <p style="color:var(--muted);font-size:13px;margin-bottom:12px;margin-top:12px;"><strong style="color:#a78bfa;">→ Next: Improve Existing (Beat 919)</strong> — IE=4 rung4 ⚠️ ≥ 3 · MEMORY.md compact complete ✅ · telemetry synced ✅</p>
             <p style="color:var(--dim);font-size:11.5px;margin-top:10px;">📝 Full beat history in <a href="../../workspace_kaji/MEMORY.md" style="color:#22d3ee;">MEMORY.md</a></p>
         </div>
 
@@ -317,7 +317,7 @@
                 </tr>
             </tbody>
         </table>
-<p style="color:var(--dim);font-size:11px;margin-top:8px;">Algorithm Beat 918: Rule1 → EA blocked · Rule2: no urgent override · Rule3: EA=0 < 4 · Rule4: TO=4 rung5 ⚠️ ≥ 3 → <strong style="color:#a78bfa;">Tidy Operations</strong> (TO=4 oldest eligible rung5) or Improve Existing (IE=3 rung4)</p>
+<p style="color:var(--dim);font-size:11px;margin-top:8px;">Algorithm Beat 919: Rule1 → TO blocked · Rule2: no urgent override · Rule3: EA=1 < 4 · Rule4: IE=4 rung4 ⚠️ ≥ 3 → <strong style="color:#a78bfa;">Improve Existing</strong> (IE=4 oldest eligible rung4) or New Ideas (NI=3 rung4)</p>
     </div>
 
     <!-- AGENT ROSTER -->
@@ -441,7 +441,7 @@
 const CEASEFIRE_TARGET=Date.UTC(2026,3,21,14,52,0);const CLARITY_TARGET=Date.UTC(2026,4,8,14,0,0);function formatCd(d){if(d<=0)return"⛔ EXPIRED";const h=Math.floor(d/36e5),m=Math.floor(d%36e5/6e4),s=Math.floor(d%6e4/1e3);return`${h}h ${m.toString().padStart(2,"0")}m ${s.toString().padStart(2,"0")}s`}function cdColor(d){return d<=0?"#f87171":d<3.6e6?"#f87171":d<7.2e6?"#fbbf24":"#4ade80"}function fmtClarity(d){if(d<=0)return"⛔ PASSED";const h=Math.floor(d/36e5),m=Math.floor(d%36e5/6e4);return`${h}h ${m.toString().padStart(2,"0")}m`}function updateTime(){const e=new Date(),t=e.toLocaleString("en-US",{timeZone:"Asia/Tokyo",hour:"2-digit",minute:"2-digit",second:"2-digit",hour12:!1});document.getElementById("ts").textContent=t;const n=e.getTime(),d=CEASEFIRE_TARGET-n;["ito-cd","hdr-cd","hdr-cd2","agent-cd","ie-cd"].forEach(id=>{const el=document.getElementById(id);if(el){el.textContent=formatCd(d);el.style.color=cdColor(d)}});const c=CLARITY_TARGET-n;["clarity-cd","clarity-cd2","clarity-cd3"].forEach(id=>{const el=document.getElementById(id);if(el){el.textContent=fmtClarity(c);el.style.color=c<=0?"#f87171":c<864e5?"#fbbf24":"#4ade80"}})}updateTime(),setInterval(updateTime,1e3);
 </script>
 <footer>
-    Kaji COO · <a href="https://kaji-hemopo.github.io/telemetry/empire-home.html" target="_blank">Live Empire</a> · <strong style="color:#22d3ee;">Beat 917 · ~05:13 JST Sat Apr 25 · Empire Audit ✅</strong> · 6/6 crons ALL OK ✅ · Makoto FRESH 05:02 JST ✅ · Brent $98.46 🟢 · <strong style="color:#a78bfa;">next: Tidy Operations (Beat 918 TO=4 rung5 ⚠️)</strong>
+    Kaji COO · <a href="https://kaji-hemopo.github.io/telemetry/empire-home.html" target="_blank">Live Empire</a> · <strong style="color:#22d3ee;">Beat 918 · ~05:16 JST Sat Apr 25 · Tidy Ops ✅</strong> · 6/6 crons ALL OK ✅ · Makoto FRESH 05:02 JST ✅ · Brent $98.46 🟢 · <strong style="color:#a78bfa;">next: Tidy Operations (Beat 918 TO=4 rung5 ⚠️)</strong>
 </footer>
 </body>
 </html>
