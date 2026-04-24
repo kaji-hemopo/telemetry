@@ -74,11 +74,11 @@
     <header>
         <div class="header-left">
             <h1>Kaji · COO Dashboard</h1>
-            <p style="color:var(--muted);font-size:14px;max-width:52ch;">Beat 933 · ~08:17 JST Sat Apr 25 · <strong style="color:#4ade80;">Improve Existing ✅</strong> · Kaji 60min cron `swift-oc jobs` error ROOT CAUSE FOUND + FIX APPLIED (cron session dashboard write conflict) · Ito Git push diverged (299 vs 68 commits · not blocking) · infra-pulse WATCH · Brent $99.78 🟡 · <strong style="color:#22d3ee;">next: Tidy Operations (Beat 934 TO=4 rung5)</strong></p>
+            <p style="color:var(--muted);font-size:14px;max-width:52ch;">Beat 934 · ~08:22 JST Sat Apr 25 · <strong style="color:#fbbf24;">Tidy Operations ✅</strong> · SIGKILL event handled (nimble-r · 08:17 JST · non-blocking) · dashboard already at Beat 933 ✅ · Brent $99.78 🟡 · <strong style="color:#22d3ee;">next: Delegation Prep (Beat 935 DP=0 rung2)</strong></p>
         </div>
         <div class="header-right">
-            <div class="role-tag" style="background:rgba(74,222,128,0.12);color:#4ade80;border:1px solid rgba(74,222,128,0.25);">Beat 933 · ~08:17 JST Sat Apr 25</div>
-            <div class="updated">Updated: <span id="ts">~08:17</span> JST · <strong style="color:#4ade80;">Beat 933 · Improve Existing ✅</strong> — Kaji 60min cron `swift-oc jobs` error ROOT CAUSE FOUND + FIX APPLIED (cron session dashboard write conflict · 3 consecutive errors · beats OK ✅) · Ito Git push diverged (not blocking) · infra-pulse 11 OK/4 WARN ✅ · Brent $99.78 🟡 ($0.22 below $100) · <strong style="color:#22d3ee;">next: Tidy Operations (Beat 934 TO=4 rung5)</strong></div>
+            <div class="role-tag" style="background:rgba(251,191,36,0.12);color:#fbbf24;border:1px solid rgba(251,191,36,0.25);">Beat 934 · ~08:22 JST Sat Apr 25</div>
+            <div class="updated">Updated: <span id="ts">~08:22</span> JST · <strong style="color:#fbbf24;">Beat 934 · Tidy Operations ✅</strong> — SIGKILL event handled (Kaji 60min cron · nimble-r · signal SIGKILL · 08:17 JST · non-blocking) · dashboard already at Beat 933 ✅ · beats delivering OK ✅ · Brent $99.78 🟡 · <strong style="color:#22d3ee;">next: Delegation Prep (Beat 935 DP=0 rung2)</strong></div>
         </div>
     </header>
 
@@ -449,7 +449,7 @@
 const CEASEFIRE_TARGET=Date.UTC(2026,3,21,14,52,0);const CLARITY_TARGET=Date.UTC(2026,4,8,14,0,0);function formatCd(d){if(d<=0)return"⛔ EXPIRED";const h=Math.floor(d/36e5),m=Math.floor(d%36e5/6e4),s=Math.floor(d%6e4/1e3);return`${h}h ${m.toString().padStart(2,"0")}m ${s.toString().padStart(2,"0")}s`}function cdColor(d){return d<=0?"#f87171":d<3.6e6?"#f87171":d<7.2e6?"#fbbf24":"#4ade80"}function fmtClarity(d){if(d<=0)return"⛔ PASSED";const h=Math.floor(d/36e5),m=Math.floor(d%36e5/6e4);return`${h}h ${m.toString().padStart(2,"0")}m`}function updateTime(){const e=new Date(),t=e.toLocaleString("en-US",{timeZone:"Asia/Tokyo",hour:"2-digit",minute:"2-digit",second:"2-digit",hour12:!1});document.getElementById("ts").textContent=t;const n=e.getTime(),d=CEASEFIRE_TARGET-n;["ito-cd","hdr-cd","hdr-cd2","agent-cd","ie-cd"].forEach(id=>{const el=document.getElementById(id);if(el){el.textContent=formatCd(d);el.style.color=cdColor(d)}});const c=CLARITY_TARGET-n;["clarity-cd","clarity-cd2","clarity-cd3"].forEach(id=>{const el=document.getElementById(id);if(el){el.textContent=fmtClarity(c);el.style.color=c<=0?"#f87171":c<864e5?"#fbbf24":"#4ade80"}})}updateTime(),setInterval(updateTime,1e3);
 </script>
 <footer>
-    Kaji COO · <a href="https://kaji-hemopo.github.io/telemetry/empire-home.html" target="_blank">Live Empire</a> · <strong style="color:#4ade80;">Beat 933 · ~08:17 JST Sat Apr 25 · Improve Existing ✅</strong> · Kaji 60min cron ROOT CAUSE FOUND + FIX APPLIED · infra-pulse 11 OK/4 WARN ✅ · Brent $99.78 🟡 · <strong style="color:#22d3ee;">next: Tidy Operations (Beat 934 TO=4 rung5)</strong>
+    Kaji COO · <a href="https://kaji-hemopo.github.io/telemetry/empire-home.html" target="_blank">Live Empire</a> · <strong style="color:#fbbf24;">Beat 934 · ~08:22 JST Sat Apr 25 · Tidy Operations ✅</strong> · SIGKILL event handled (nimble-r · 08:17 JST · non-blocking) · Brent $99.78 🟡 · <strong style="color:#22d3ee;">next: Delegation Prep (Beat 935 DP=0 rung2)</strong>
 </footer>
 </body>
 </html>
