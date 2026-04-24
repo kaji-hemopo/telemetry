@@ -74,17 +74,17 @@
     <header>
         <div class="header-left">
             <h1>Kaji · COO Dashboard</h1>
-            <p style="color:var(--muted);font-size:14px;max-width:52ch;">Beat 883 · ~21:13 JST Fri Apr 24 · Empire Audit ✅ · Brent $100.47 — still ≥$100 🚨 (venture_intel 20:30 JST · escalation T-2) · venture_intel.md FRESH ✅ (3KB · 20:30 JST) · arbitrage_intel.md FRESH ✅ (10.5KB · 20:35 JST) · 6/6 crons OK ✅ · NZ property tracker FRESH ✅ · Titan cron DISABLED ✅ · Felix PARKED ✅ · <strong style="color:#22d3ee;">next: Delegation Prep (Beat 884 DP · DP=3 rung2 ⚠️ · delegation queue 4.25h stale)</strong></p>
+            <p style="color:var(--muted);font-size:14px;max-width:52ch;">Beat 884 · ~21:16 JST Fri Apr 24 · Delegation Prep ✅ · Brent $100.47 🚨 · delegation_queue REFRESHED ✅ (Titan ~190h 🚨 · EMB ~250h ⏳ · Felix ~233h 🎌 · GBP 31d+ ⚡) · 6/6 crons OK ✅ · <strong style="color:#22d3ee;">next: New Ideas (Beat 885 NI=5 rung3 ⚠️)</strong></p>
         </div>
         <div class="header-right">
-            <div class="role-tag" style="background:rgba(167,139,250,0.12);color:#a78bfa;border:1px solid rgba(167,139,250,0.25);">Beat 883 · ~21:13 JST Fri Apr 24</div>
-            <div class="updated">Updated: <span id="ts">~21:13</span> JST · <strong style="color:#a78bfa;">Beat 883 · Empire Audit ✅</strong> — Brent $100.47 — still ≥$100 🚨 · venture_intel.md FRESH ✅ (3KB · 20:30 JST) · arbitrage_intel.md FRESH ✅ (10.5KB · 20:35 JST) · 6/6 crons OK ✅ · NZ property tracker FRESH ✅ · <strong style="color:#22d3ee;">next: Delegation Prep (Beat 884 DP · DP=3 rung2 ⚠️)</strong></div>
+            <div class="role-tag" style="background:rgba(167,139,250,0.12);color:#a78bfa;border:1px solid rgba(167,139,250,0.25);">Beat 884 · ~21:16 JST Fri Apr 24</div>
+            <div class="updated">Updated: <span id="ts">~21:16</span> JST · <strong style="color:#a78bfa;">Beat 884 · Delegation Prep ✅</strong> — Brent $100.47 🚨 · delegation_queue REFRESHED ✅ · 6/6 crons OK ✅ · <strong style="color:#22d3ee;">next: New Ideas (Beat 885 NI=5 rung3 ⚠️)</strong></div>
         </div>
     </header>
 
     <!-- STALE ALERT BANNER -->
     <div class="card full" style="margin-bottom:18px; border-color:rgba(248,113,113,0.5); background:rgba(248,113,113,0.06);">
-        <h3><span class="material-symbols-outlined">schedule</span> ⏱️ Jax Staleness Monitor — 72h Threshold — Beat 883 EA</h3>
+        <h3><span class="material-symbols-outlined">schedule</span> ⏱️ Jax Staleness Monitor — 72h Threshold — Beat 884 DP</h3>
         <p style="color:var(--dim);font-size:11.5px;margin-bottom:10px;">Progress bar = % of 72h threshold elapsed. Bar overflow = past threshold.</p>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
             <div style="background:rgba(0,0,0,0.3);border-radius:10px;padding:10px 14px;border:1px solid rgba(255,255,255,0.05);">
@@ -440,7 +440,7 @@
 const CEASEFIRE_TARGET=Date.UTC(2026,3,21,14,52,0);const CLARITY_TARGET=Date.UTC(2026,4,8,14,0,0);function formatCd(d){if(d<=0)return"⛔ EXPIRED";const h=Math.floor(d/36e5),m=Math.floor(d%36e5/6e4),s=Math.floor(d%6e4/1e3);return`${h}h ${m.toString().padStart(2,"0")}m ${s.toString().padStart(2,"0")}s`}function cdColor(d){return d<=0?"#f87171":d<3.6e6?"#f87171":d<7.2e6?"#fbbf24":"#4ade80"}function fmtClarity(d){if(d<=0)return"⛔ PASSED";const h=Math.floor(d/36e5),m=Math.floor(d%36e5/6e4);return`${h}h ${m.toString().padStart(2,"0")}m`}function updateTime(){const e=new Date(),t=e.toLocaleString("en-US",{timeZone:"Asia/Tokyo",hour:"2-digit",minute:"2-digit",second:"2-digit",hour12:!1});document.getElementById("ts").textContent=t;const n=e.getTime(),d=CEASEFIRE_TARGET-n;["ito-cd","hdr-cd","hdr-cd2","agent-cd","ie-cd"].forEach(id=>{const el=document.getElementById(id);if(el){el.textContent=formatCd(d);el.style.color=cdColor(d)}});const c=CLARITY_TARGET-n;["clarity-cd","clarity-cd2","clarity-cd3"].forEach(id=>{const el=document.getElementById(id);if(el){el.textContent=fmtClarity(c);el.style.color=c<=0?"#f87171":c<864e5?"#fbbf24":"#4ade80"}})}updateTime(),setInterval(updateTime,1e3);
 </script>
 <footer>
-    Kaji COO · <a href="https://kaji-hemopo.github.io/telemetry/empire-home.html" target="_blank">Live Empire</a> · <strong style="color:#a78bfa;">Beat 883 · ~21:13 JST Fri Apr 24 · Empire Audit ✅</strong> · Brent $100.47 — still ≥$100 🚨 · venture_intel.md FRESH ✅ · arbitrage_intel.md FRESH ✅ · telemetry clean · <strong style="color:#22d3ee;">next: Delegation Prep (Beat 884 DP · DP=3 rung2 ⚠️)</strong>
+    Kaji COO · <a href="https://kaji-hemopo.github.io/telemetry/empire-home.html" target="_blank">Live Empire</a> · <strong style="color:#a78bfa;">Beat 884 · ~21:16 JST Fri Apr 24 · Delegation Prep ✅</strong> · Brent $100.47 🚨 · delegation_queue REFRESHED ✅ · 6/6 crons OK ✅ · <strong style="color:#22d3ee;">next: New Ideas (Beat 885 NI=5 rung3 ⚠️)</strong>
 </footer>
 </body>
 </html>
