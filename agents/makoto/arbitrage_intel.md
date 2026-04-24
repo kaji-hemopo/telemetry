@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-24 19:51 JST
+Generated: 2026-04-24 20:35 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -66,12 +66,12 @@ Generated: 2026-04-24 19:51 JST
 | 65 | Freelancer | Python scraper | High-Speed Python Booking Assistant Application | We are looking for an experienced Python developer to build a desktop-based appl | https://www.freelancer.com/projects/selenium/High-Speed-Python-Booking-Assistant.html |
 | 65 | Freelancer | Python scraper | Edit Python Scraper data from Google Shopping | $10.00 | https://www.freelancer.com/projects/python/Edit-Python-Scraper-data-from.html |
 | 65 | Freelancer | Python scraper | Bulk MCQ Data Entry - 28/03/2026 23:49 EDT | I have more than 2,400 multiple-choice questions sitting across several websites | https://www.freelancer.com/projects/data-analysis/Bulk-MCQ-Data-Entry-EDT-40394467.html |
+| 65 | Freelancer | Make.com automation | Argentina Website QA Tester $40 | $10.00 | https://www.freelancer.com/projects/regression-testing/Argentina-Website-Tester.html |
 | 65 | Freelancer | Make.com automation | Google AI Studio / Gemin Expert for Custom App Development | Job Title: Google Gemini / Google AI Studio Expert Needed for App Development (F | https://www.freelancer.com/projects/ai-development/Google-Studio-Gemin-Expert-for.html |
 | 65 | Freelancer | Make.com automation | Odoo Invoice-PO Reconciliation Automation | I run our purchasing and accounts-payable flow entirely in Odoo, yet the three-w | https://www.freelancer.com/projects/odoo/Odoo-Invoice-Reconciliation-Automation.html |
 | 65 | Freelancer | Make.com automation | Discord Bot for Freelancer Platform | $30.00 | https://www.freelancer.com/projects/discord/Discord-Bot-for-Freelancer-Platform.html |
 | 65 | Freelancer | Make.com automation | Optimize JazzHR Recruitment Automation | $10.00 | https://www.freelancer.com/projects/zapier/Optimize-JazzHR-Recruitment-Automation.html |
 | 65 | Freelancer | Make.com automation | Quick Automation Setup (Zapier / Make) &ndash; Simple Workflow | $30.00 | https://www.freelancer.com/projects/api-developmet/Quick-Automation-Setup-Zapier-Make.html |
-| 65 | Freelancer | Data processing API | Virtual Assistant for Data Research &amp; Administrative Support | Asistente Virtual (Investigación de datos y soporte administrativo) Estamos busc | https://www.freelancer.com/projects/data-management/Virtual-Assistant-for-Data-Research.html |
 
 ## Notes
 - Scores prioritize: (1) simple automation/scripting fit, (2) payout magnitude, (3) keyword relevance.
