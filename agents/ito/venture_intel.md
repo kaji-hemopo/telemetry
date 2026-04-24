@@ -1,59 +1,24 @@
-# Venture Intelligence
+# Venture Intel — 2026-04-25 00:28 JST
 
-**Generated:** 2026-04-24 22:11 JST
+## Oracle Prices
+| Instrument | Price | Bias | Change |
+|------------|-------|------|--------|
+| Gold | $4,746.40/oz | 🟡 Neutral | ↑ from $4,726.70 |
+| Brent Crude | $99.19/bbl | 🟡 Neutral | ↓ below $100 pivot |
+| BTC | $77,746.87 | 🟢 BULLISH | consolidating above $74.5k |
+| USD/JPY | 159.48 | — | range 157.86–159.80 |
 
-## Market Oracles
+## Pipeline Status
+- RSS: 1,475 articles across 16 sectors ✅
+- Reddit: ✅ Fresh
+- Venture data: ✅ Fresh (0min)
+- Twitter/X via mmx: ✅ Fresh (0min)
+- Dashboard: ✅ Built (92.7KB)
 
-- 🛢️ **Brent Crude:** $99.31 ⚠️ Brent elevated
-- 🥇 **Gold:** $4,717.40 (+0.00%)
+## Top Ventures (NZ/Japan/Australia Focus)
+> 0 qualified ventures (score ≥70) this beat. Venture data pipeline showing sample data — not production-grade deal flow.
 
-## Top Venture Opportunities
+No keyword alerts. Brent below $100 pivot — tail risk resolved. Pipeline stable.
 
-### 90 — SaaS Integration Health Monitor & Alerting System
-█████████░ `90/100`
-⭐ High score
-- **Summary:** A monitoring service that tracks the health and latency of critical B2B SaaS API integrations (e.g., Stripe -> QuickBooks, Salesforce -> HubSpot). Detects failures, schema changes, or rate limit issue...
-- **Tags:** Integration, API, Monitoring, DevOps, Automation
-- **Empire Score:** $900000 · **Capital:** $25,000
-- **Status:** Idea
-
-### 88 — Legacy ERP to Modern SaaS Data Migration Bridge
-████████░░ `88/100`
-⭐ High score
-- **Summary:** A specialized ETL (Extract, Transform, Load) tool focused on migrating specific, complex data objects (like customer records, inventory items, bills of materials) from legacy on-premise ERP systems (e...
-- **Tags:** Integration, Data Migration, Legacy Systems, ETL, B2B
-- **Empire Score:** $880000 · **Capital:** $25,000
-- **Status:** Idea
-
-### 85 — Remote Work Hour Tracker API for Cross-Border Tax Compliance
-████████░░ `85/100`
-⭐ High score
-- **Summary:** A micro-SaaS that provides a standardized API for remote workers to log billable hours with geolocation and activity tagging, generating audit-ready reports formatted for international tax jurisdictio...
-- **Tags:** Compliance, Remote Work, API, Reporting, Automation
-- **Empire Score:** $850000 · **Capital:** $25,000
-- **Status:** Idea
-
-### 82 — Multi-Currency Expense Reconciliation Engine for Nomadic Teams
-████████░░ `82/100`
-⭐ High score
-- **Summary:** A backend service that automates the reconciliation of expenses submitted in multiple currencies (AUD, USD, NZD, JPY) against company budgets and bank feeds. Handles volatile exchange rates, calculate...
-- **Tags:** Workflow, Finance, Multi-Currency, Automation, SaaS
-- **Empire Score:** $820000 · **Capital:** $25,000
-- **Status:** Idea
-
-### 80 — Fuel Cost Attribution & Reconciliation Tool for Distributed Teams
-████████░░ `80/100`
-⭐ High score
-- **Summary:** A tool that ingests fuel price APIs, commute distance data (from tools like Google Maps), and payroll/expense systems to automatically calculate and allocate fuel cost impacts or support allowances fo...
-- **Tags:** Administrative, API Integration, Payroll, Automation, Data
-- **Empire Score:** $800000 · **Capital:** $25,000
-- **Status:** Idea
-
-### 75 — Global Trade Data Normalizer & API
-███████░░░ `75/100`
-
-- **Summary:** A service that ingests, cleans, and normalizes disparate national trade balance and economic indicator data (e.g., from US, Canada, Japan) into a single, consistent JSON/CSV schema with clear metadata...
-- **Tags:** Data, API, Finance, Automation, ETL
-- **Empire Score:** $750000 · **Capital:** $25,000
-- **Status:** Idea
-
+---
+*See further. Understand deeper. Serve better.*
