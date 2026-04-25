@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-25 19:55 JST
+Generated: 2026-04-25 21:01 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -59,14 +59,14 @@ Generated: 2026-04-25 19:55 JST
 | 75 | Freelancer | Make.com automation | Robotic Caf&eacute; Motor &amp; Gear Design | $250.00 | https://www.freelancer.com/projects/3d-cad/Robotic-Caf-Motor-Gear-Design.html |
 | 75 | Freelancer | Make.com automation | Sequential Jotform + WooCommerce Checkout Automation | $250.00 | https://www.freelancer.com/projects/api-integration/Sequential-Jotform-WooCommerce-Checkout.html |
 | 75 | Freelancer | Make.com automation | Lead Generation &amp; Client Nurturing Consultant | $250.00 | https://www.freelancer.com/projects/lead-generation/Lead-Generation-Client-Nurturing.html |
+| 65 | Freelancer | Python scraper | Custom Python Video Campaign Software | Project Title: Python Developer — Personalised WhatsApp Video Campaign System Pr | https://www.freelancer.com/projects/api-integration/Custom-Python-Video-Campaign-Software.html |
 | 65 | Freelancer | Python scraper | JS Web Scraping Specialist Required | Title: Playwright Expert Needed for Complex JS UI Scraping (Nested Modals, Scrol | https://www.freelancer.com/projects/data-extraction/Web-Scraping-Specialist-Required.html |
 | 65 | Freelancer | Python scraper | Bulk MCQ Data Entry - 28/03/2026 23:49 EDT | I have more than 2,400 multiple-choice questions sitting across several websites | https://www.freelancer.com/projects/data-analysis/Bulk-MCQ-Data-Entry-EDT-40396908.html |
 | 65 | Freelancer | Python scraper | Real-Time AI Monitoring &amp; Prediction | I’m kicking off an end-to-end AI project that ingests streaming textual data, tr | https://www.freelancer.com/projects/ai-development/Real-Time-Monitoring-Prediction.html |
 | 65 | Freelancer | Python scraper | AI Analyzer for Scientific Articles | I have a growing collection of peer-reviewed papers that I need to turn into str | https://www.freelancer.com/projects/natural-language-processing/Analyzer-for-Scientific-Articles.html |
 | 65 | Freelancer | Python scraper | iPhone Stock &amp; Price Tracker Bot | I need a small utility that keeps an eye on Big Basket and instantly tells me, t | https://www.freelancer.com/projects/python/iPhone-Stock-Price-Tracker-Bot.html |
 | 65 | Freelancer | Python scraper | Bot de Discord de Econom&iacute;a de Cartas | $10.00 | https://www.freelancer.com/projects/game-development/Bot-Discord-Econom-Cartas.html |
-| 65 | Freelancer | Python scraper | Python/Go Ethereum Perps API | $30.00 | https://www.freelancer.com/projects/api-developmet/Python-Ethereum-Perps-API.html |
-| 65 | Freelancer | Python scraper | Spotify Streaming Insights Dashboard | I need an end-to-end Spotify analytics dashboard, ready for production use betwe | https://www.freelancer.com/projects/power-bi/Spotify-Streaming-Insights-Dashboard.html |
+| 65 | Freelancer | Make.com automation | Excel Order Tracking Automation | I’m overhauling our order spreadsheet and need a true Excel power-user to turn i | https://www.freelancer.com/projects/excel-vba/Excel-Order-Tracking-Automation.html |
 | 65 | Freelancer | Make.com automation | Urgent Ai Automation Setup | $30.00 | https://www.freelancer.com/projects/ai-hw-sw/Urgent-Automation-Setup.html |
 | 65 | Freelancer | Make.com automation | Automated NIFTY50 Options Trading System Development | I am looking for an experienced algorithmic trading developer to build a fully a | https://www.freelancer.com/projects/api-developmet/Automated-NIFTY-Options-Trading-System.html |
 | 65 | Freelancer | Make.com automation | Wix-Google Sales Tracking Integration | $30.00 | https://www.freelancer.com/projects/zapier/Wix-Google-Sales-Tracking-Integration.html |
