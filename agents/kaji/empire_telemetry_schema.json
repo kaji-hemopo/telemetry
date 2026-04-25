@@ -1,0 +1,195 @@
+{
+  "_meta": {
+    "version": "1.0.0",
+    "created": "2026-04-25",
+    "owner": "Kaji",
+    "purpose": "Unified data dictionary for Jackson's empire. Documents all oracle/telemetry files, freshness thresholds, ownership, and consumer agents.",
+    "usage": "Read by agents on startup. Used by empire-telemetry-health.sh for staleness alerting. New agents read this to understand the empire's data landscape.",
+    "review_cycle": "Monthly or when new oracles are added."
+  },
+
+  "oracles": {
+
+    "brent_oracle": {
+      "path": "workspace_ito/intel/Telemetry/brent_oracle.json",
+      "owner": "Ito",
+      "consumers": ["Kaji", "Titan"],
+      "critical": true,
+      "freshness_threshold_min": 120,
+      "stale_behavior": "WARN — weekend/holiday not refreshing (API key gap). External check via oilcrudeprice.com if stale.",
+      "schema": {
+        "price":    "float — USD/barrel",
+        "signal":   "string — BULLISH|BEARISH|NEUTRAL",
+        "pivot":    "float — USD/barrel",
+        "r1":       "float — resistance level 1",
+        "s1":       "float — support level 1",
+        "source":   "string — data source name",
+        "updated":  "string — YYYY-MM-DD HH:MM:SS JST",
+        "note":     "string — optional trading note"
+      },
+      "last_seen": "2026-04-25 07:11 JST",
+      "note": "Weekend staleness confirmed — Beat 968 EA caught Brent at $105.30 while oracle showed $99.78 (10.5h stale). No alerting existed. Schema now enforces 120min threshold."
+    },
+
+    "btc_oracle": {
+      "path": "workspace_ito/intel/Telemetry/btc_oracle.json",
+      "owner": "Ito",
+      "consumers": ["Kaji", "Titan"],
+      "critical": false,
+      "freshness_threshold_min": 60,
+      "stale_behavior": "WARN",
+      "schema": {
+        "btc_usd":  "int — BTC/USD price (bitFlyer via mmx)",
+        "source":   "string — exchange or data source",
+        "timestamp": "int — Unix epoch seconds"
+      },
+      "last_seen": "2026-04-25 17:46 JST (session check)"
+    },
+
+    "gold_oracle": {
+      "path": "workspace_ito/intel/Telemetry/gold_oracle.json",
+      "owner": "Ito",
+      "consumers": ["Kaji"],
+      "critical": false,
+      "freshness_threshold_min": 180,
+      "stale_behavior": "WARN",
+      "schema": {
+        "price":    "float — USD/troy oz",
+        "signal":   "string — BULLISH|BEARISH|NEUTRAL",
+        "timestamp": "string — YYYY-MM-DD HH:MM JST"
+      },
+      "last_seen": "2026-04-25 08:36 JST"
+    },
+
+    "usdjpy_oracle": {
+      "path": "workspace_ito/intel/Telemetry/usdjpy_oracle.json",
+      "owner": "Ito",
+      "consumers": ["Kaji"],
+      "critical": false,
+      "freshness_threshold_min": 180,
+      "stale_behavior": "WARN",
+      "schema": {
+        "price":    "float — JPY per USD",
+        "signal":   "string — BULLISH|BEARISH|NEUTRAL",
+        "timestamp": "string — YYYY-MM-DD HH:MM JST"
+      },
+      "last_seen": "2026-04-25 11:35 JST"
+    },
+
+    "brent_alert_status": {
+      "path": "workspace_ito/intel/Telemetry/brent_alert_status.json",
+      "owner": "Ito",
+      "consumers": ["Kaji"],
+      "critical": false,
+      "freshness_threshold_min": 240,
+      "stale_behavior": "WARN",
+      "schema": {
+        "price":           "float — last alert price",
+        "alert_triggered": "bool — whether >$100 alert fired",
+        "bias":            "string — BEARISH|BULLISH|NEUTRAL",
+        "updated":         "string — ISO8601 timestamp"
+      },
+      "last_seen": "2026-04-24 21:28 JST"
+    },
+
+    "signal_radar": {
+      "path": "workspace_ito/intel/Telemetry/signal_radar.json",
+      "owner": "Ito",
+      "consumers": ["Kaji"],
+      "critical": false,
+      "freshness_threshold_min": 1440,
+      "stale_behavior": "INFO — non-critical intelligence, low priority",
+      "schema": {
+        "updated":  "string — ISO8601 +09:00",
+        "signals":  "array — list of signal objects with {file, age_h, articles}"
+      },
+      "note": "Staleness here is expected for minor sectors. Not a critical failure."
+    },
+
+    "remote_jobs_apify": {
+      "path": "workspace_makoto/intel/remote_jobs_apify.json",
+      "owner": "Makoto",
+      "consumers": ["Makoto", "Kaji"],
+      "critical": false,
+      "freshness_threshold_min": 360,
+      "stale_behavior": "WARN — Apify scrape results",
+      "schema": {
+        "jobs": "array — list of remote job objects (structure varies)"
+      }
+    },
+
+    "makoto_data": {
+      "path": "workspace_makoto/makoto_data.json",
+      "owner": "Makoto",
+      "consumers": ["Makoto", "Kaji"],
+      "critical": false,
+      "freshness_threshold_min": 1440,
+      "stale_behavior": "INFO",
+      "schema": {
+        "arbitrage_opportunities": "int — current count",
+        "last_updated": "string — ISO8601"
+      }
+    },
+
+    "lancers_scout": {
+      "path": "workspace_makoto/intel/lancers_scout.json",
+      "owner": "Makoto",
+      "consumers": ["Makoto", "Kaji"],
+      "critical": true,
+      "freshness_threshold_min": 60,
+      "stale_behavior": "ALERT — Lancers board monitoring is primary Makoto function",
+      "schema": {
+        "opportunities": "array — Lancers job listings with score, price, title",
+        "last_scraped": "string — YYYY-MM-DD HH:MM JST",
+        "count": "int — number of active opportunities"
+      },
+      "note": "Referenced in Beat 964 NI gap brief. Path assumed — verify on next Makoto heartbeat."
+    },
+
+    "arbitrage_intel": {
+      "path": "workspace_makoto/intel/arbitrage_intel.json",
+      "owner": "Makoto",
+      "consumers": ["Kaji"],
+      "critical": true,
+      "freshness_threshold_min": 30,
+      "stale_behavior": "ALERT — used for Kaji opportunity surfacing",
+      "schema": {
+        "opportunities": "array — arbitrage opps with source, score, price, age",
+        "generated": "string — YYYY-MM-DD HH:MM JST"
+      },
+      "note": "Beat 964 NI identified silent staleness risk. Verify actual file path — may not exist as named."
+    },
+
+    "kaji_state_brent_oracle": {
+      "path": "workspace_kaji/state/brent_oracle.json",
+      "owner": "Kaji",
+      "consumers": ["Kaji"],
+      "critical": true,
+      "freshness_threshold_min": 60,
+      "stale_behavior": "ALERT — Kaji's own Brent oracle for dashboard and escalation decisions",
+      "schema": {
+        "price":    "float — USD/barrel",
+        "source":   "string — data source",
+        "timestamp": "string — ISO8601 JST"
+      },
+      "note": "Kaji maintains its own Brent copy for the dashboard. Synced from Ito pipeline."
+    }
+
+  },
+
+  "critical_oracles": [
+    "brent_oracle",
+    "lancers_scout",
+    "arbitrage_intel",
+    "kaji_state_brent_oracle"
+  ],
+
+  "stale_alert_tiers": {
+    "RED":     { "threshold_min": 60,  "action": "Immediate Telegram alert to Kaji + log to dashboard" },
+    "YELLOW":  { "threshold_min": 240, "action": "Dashboard warning + log to MEMORY.md" },
+    "GREEN":   { "threshold_min": null, "action": "Freshness OK — no action needed" }
+  },
+
+  "monitoring_script": "empire-telemetry-health.sh",
+  "monitoring_cron": "0,30 * * * * (optional — Option B enhancement)"
+}
