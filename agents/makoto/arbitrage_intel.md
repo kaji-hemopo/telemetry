@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-25 12:06 JST
+Generated: 2026-04-25 13:09 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -53,14 +53,14 @@ Generated: 2026-04-25 12:06 JST
 | Score | Platform | Keyword | Title | Budget/Rate | URL |
 |---:|---|---|---|---|---|
 | 75 | Freelancer | Python scraper | Scraper de cuotas de futbol con Telegram | $250.00 | https://www.freelancer.com/projects/selenium/Scraper-cuotas-futbol-con-Telegram.html |
+| 75 | Freelancer | Python scraper | High-Volume Website Scraping Automation - Scrape 90,000 symbols o | $250.00 | https://www.freelancer.com/projects/python/High-Volume-Website-Scraping-Automation.html |
 | 75 | Freelancer | Make.com automation | Aussie Racing Challenge Website Development | $250.00 | https://www.freelancer.com/projects/web-development/Aussie-Racing-Challenge-Website.html |
 | 75 | Freelancer | Make.com automation | Robotic Caf&eacute; Motor &amp; Gear Design | $250.00 | https://www.freelancer.com/projects/3d-cad/Robotic-Caf-Motor-Gear-Design.html |
 | 75 | Freelancer | Make.com automation | Sequential Jotform + WooCommerce Checkout Automation | $250.00 | https://www.freelancer.com/projects/api-integration/Sequential-Jotform-WooCommerce-Checkout.html |
 | 75 | Freelancer | Make.com automation | Lead Generation &amp; Client Nurturing Consultant | $250.00 | https://www.freelancer.com/projects/lead-generation/Lead-Generation-Client-Nurturing.html |
 | 75 | Freelancer | Make.com automation | Ai Powered UI responsive boost | $250.00 | https://www.freelancer.com/projects/saas/Powered-responsive-boost.html |
 | 75 | Freelancer | Make.com automation | Crestron Home Automation Integration | $250.00 | https://www.freelancer.com/projects/home-automation/Crestron-Home-Automation-Integration.html |
-| 75 | Freelancer | Make.com automation | High-Volume Website Scraping Automation - Scrape 90,000 symbols o | $250.00 | https://www.freelancer.com/projects/python/High-Volume-Website-Scraping-Automation.html |
-| 65 | Freelancer | Python scraper | Enhancing AI-Based Gesture Controlled RC Car -- 2 | Project Title: AI-Based Gesture Controlled RC Car using ESP32 &amp; MediaPipe (P | https://www.freelancer.com/projects/computer-vision/Enhancing-Based-Gesture-Controlled-Car.html |
+| 75 | Freelancer | Data processing API | Health Wellness B2C Email List | $200.00 | https://www.freelancer.com/projects/data-scraping/Health-Wellness-Email-List.html |
 | 65 | Freelancer | Python scraper | iPhone Stock &amp; Price Tracker Bot | I need a small utility that keeps an eye on Big Basket and instantly tells me, t | https://www.freelancer.com/projects/python/iPhone-Stock-Price-Tracker-Bot.html |
 | 65 | Freelancer | Python scraper | Bot de Discord de Econom&iacute;a de Cartas | $10.00 | https://www.freelancer.com/projects/game-development/Bot-Discord-Econom-Cartas.html |
 | 65 | Freelancer | Python scraper | Python/Go Ethereum Perps API | $30.00 | https://www.freelancer.com/projects/api-developmet/Python-Ethereum-Perps-API.html |
