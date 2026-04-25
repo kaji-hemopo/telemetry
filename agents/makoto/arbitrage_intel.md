@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-25 13:09 JST
+Generated: 2026-04-25 13:33 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -60,6 +60,7 @@ Generated: 2026-04-25 13:09 JST
 | 75 | Freelancer | Make.com automation | Lead Generation &amp; Client Nurturing Consultant | $250.00 | https://www.freelancer.com/projects/lead-generation/Lead-Generation-Client-Nurturing.html |
 | 75 | Freelancer | Make.com automation | Ai Powered UI responsive boost | $250.00 | https://www.freelancer.com/projects/saas/Powered-responsive-boost.html |
 | 75 | Freelancer | Make.com automation | Crestron Home Automation Integration | $250.00 | https://www.freelancer.com/projects/home-automation/Crestron-Home-Automation-Integration.html |
+| 75 | Freelancer | Data processing API | Full-Source Manufacturing ERP Solution | $250.00 | https://www.freelancer.com/projects/erp/Full-Source-Manufacturing-ERP-Solution.html |
 | 75 | Freelancer | Data processing API | Health Wellness B2C Email List | $200.00 | https://www.freelancer.com/projects/data-scraping/Health-Wellness-Email-List.html |
 | 65 | Freelancer | Python scraper | iPhone Stock &amp; Price Tracker Bot | I need a small utility that keeps an eye on Big Basket and instantly tells me, t | https://www.freelancer.com/projects/python/iPhone-Stock-Price-Tracker-Bot.html |
 | 65 | Freelancer | Python scraper | Bot de Discord de Econom&iacute;a de Cartas | $10.00 | https://www.freelancer.com/projects/game-development/Bot-Discord-Econom-Cartas.html |
@@ -68,7 +69,6 @@ Generated: 2026-04-25 13:09 JST
 | 65 | Freelancer | Python scraper | Colorado Insurance Phone Number Scraping | $30.00 | https://www.freelancer.com/projects/data-collection/Colorado-Insurance-Phone-Number-Scraping.html |
 | 65 | Freelancer | Python scraper | Gaming Website Dev: UI + API Integration | Job Title Web Developer for Gaming Website (UI + API Basics) Job Description We  | https://www.freelancer.com/projects/api-integration/Gaming-Website-Dev-API-Integration.html |
 | 65 | Freelancer | Python scraper | Lumo &ndash; AI Chat Full Stack Web Application | Developed Lumo, a full stack AI chat web application with multiple interactive p | https://www.freelancer.com/projects/full-stack-development/Lumo-Chat-Full-Stack-Web.html |
-| 65 | Freelancer | Make.com automation | Open-Source Automation Intern Needed. | We are looking for a TECH INTERN with hands-on skills to work on multiple open-s | https://www.freelancer.com/projects/erp/Open-Source-Automation-Intern-Needed.html |
 | 65 | Freelancer | Make.com automation | Automated Citrix CVAD Upgrade Script -- 2 | I need a fully unattended Windows-friendly script that will upgrade our VDAs fro | https://www.freelancer.com/projects/scripting/Automated-Citrix-CVAD-Upgrade-Script.html |
 | 65 | Freelancer | Make.com automation | Docker IPTV Backend Development | Docker IPTV Backend System – Multi-User, Single URL, Proxy-Ready Description: I  | https://www.freelancer.com/projects/docker/Docker-IPTV-Backend-Development.html |
 | 65 | Freelancer | Make.com automation | OpenClaw Set-up for Financial News Website | $30.00 | https://www.freelancer.com/projects/ai-development/OpenClaw-Set-for-Financial-News.html |
