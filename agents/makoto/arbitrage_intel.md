@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-26 05:33 JST
+Generated: 2026-04-26 06:36 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -58,7 +58,8 @@ Generated: 2026-04-26 05:33 JST
 | 75 | Freelancer | Python scraper | GRC SaaS App with DeepSeeQ Integration | $250.00 | https://www.freelancer.com/projects/ai-development/GRC-SaaS-App-with-DeepSeeQ.html |
 | 75 | Freelancer | Python scraper | OSINT Identity &amp; Network Correlation -- 2 | $250.00 | https://www.freelancer.com/projects/python/OSINT-Identity-Network-Correlation.html |
 | 75 | Freelancer | Make.com automation | Hotel Upgrade Bidding System | $250.00 | https://www.freelancer.com/projects/stripe/Hotel-Upgrade-Bidding-System.html |
-| 75 | Freelancer | Make.com automation | Zoho CRM &amp; Telephony System Implementation | $250.00 | https://www.freelancer.com/projects/zoho-crm/Zoho-CRM-Telephony-System-Implementation.html |
+| 75 | Freelancer | Data processing API | Microsoft 365 Platform Setup &amp; Migration | $250.00 | https://www.freelancer.com/projects/microsoft-365/Microsoft-Platform-Setup-Migration.html |
+| 75 | Freelancer | Data processing API | Build Twilio Towing Call Flow | $250.00 | https://www.freelancer.com/projects/airtable/Build-Twilio-Towing-Call-Flow.html |
 | 65 | Freelancer | Python scraper | React, Data, UI Design Hiring | I’m expanding several engineering teams for top-tier MNCs and rapidly scaling te | https://www.freelancer.com/projects/data-analysis/React-Data-Design-Hiring.html |
 | 65 | Freelancer | Python scraper | Tutor en espa&ntilde;ol para proyecto con Browser Use Cloud y aut | Estoy arrancando desde cero con cloud.browser-use.com y quiero dominar la plataf | https://www.freelancer.com/projects/selenium/Tutor-espa-para-proyecto-con.html |
 | 65 | Freelancer | Python scraper | Multi-disciplinary team for Novel AI Project | 1. AI / ML Engineer (MOST IMPORTANT) Role: Work with LLMs (APIs or open-source)  | https://www.freelancer.com/projects/machine-learning/Multi-disciplinary-team-for-Novel.html |
@@ -71,7 +72,6 @@ Generated: 2026-04-26 05:33 JST
 | 65 | Freelancer | Make.com automation | n8n Avatar Automation Pipeline | Hi, I am Ankit, founder of Evoline Digital — an AI avatar content agency based i | https://www.freelancer.com/projects/n8n/Avatar-Automation-Pipeline.html |
 | 65 | Freelancer | Make.com automation | Playwright Automation with Claude, AWS | $8.00 | https://www.freelancer.com/projects/docker/Playwright-Automation-with-Claude-AWS.html |
 | 65 | Freelancer | Make.com automation | Excel Sales Data Accuracy Optimization | I’m working with a growing sales dataset that has started to show mismatches, hi | https://www.freelancer.com/projects/data-analysis/Excel-Sales-Data-Accuracy-Optimization.html |
-| 65 | Freelancer | Make.com automation | n8n Expert Needed: Build Automated Social Media Publishing Workfl | $10.00 | https://www.freelancer.com/projects/n8n/Expert-Needed-Build-Automated-Social.html |
 
 ## Notes
 - Scores prioritize: (1) simple automation/scripting fit, (2) payout magnitude, (3) keyword relevance.
