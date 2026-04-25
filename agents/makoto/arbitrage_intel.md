@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-25 10:42 JST
+Generated: 2026-04-25 12:06 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -53,11 +53,14 @@ Generated: 2026-04-25 10:42 JST
 | Score | Platform | Keyword | Title | Budget/Rate | URL |
 |---:|---|---|---|---|---|
 | 75 | Freelancer | Python scraper | Scraper de cuotas de futbol con Telegram | $250.00 | https://www.freelancer.com/projects/selenium/Scraper-cuotas-futbol-con-Telegram.html |
-| 75 | Freelancer | Python scraper | High-Volume Website Scraping Automation - Scrape 90,000 symbols o | $250.00 | https://www.freelancer.com/projects/python/High-Volume-Website-Scraping-Automation.html |
+| 75 | Freelancer | Make.com automation | Aussie Racing Challenge Website Development | $250.00 | https://www.freelancer.com/projects/web-development/Aussie-Racing-Challenge-Website.html |
+| 75 | Freelancer | Make.com automation | Robotic Caf&eacute; Motor &amp; Gear Design | $250.00 | https://www.freelancer.com/projects/3d-cad/Robotic-Caf-Motor-Gear-Design.html |
 | 75 | Freelancer | Make.com automation | Sequential Jotform + WooCommerce Checkout Automation | $250.00 | https://www.freelancer.com/projects/api-integration/Sequential-Jotform-WooCommerce-Checkout.html |
 | 75 | Freelancer | Make.com automation | Lead Generation &amp; Client Nurturing Consultant | $250.00 | https://www.freelancer.com/projects/lead-generation/Lead-Generation-Client-Nurturing.html |
 | 75 | Freelancer | Make.com automation | Ai Powered UI responsive boost | $250.00 | https://www.freelancer.com/projects/saas/Powered-responsive-boost.html |
 | 75 | Freelancer | Make.com automation | Crestron Home Automation Integration | $250.00 | https://www.freelancer.com/projects/home-automation/Crestron-Home-Automation-Integration.html |
+| 75 | Freelancer | Make.com automation | High-Volume Website Scraping Automation - Scrape 90,000 symbols o | $250.00 | https://www.freelancer.com/projects/python/High-Volume-Website-Scraping-Automation.html |
+| 65 | Freelancer | Python scraper | Enhancing AI-Based Gesture Controlled RC Car -- 2 | Project Title: AI-Based Gesture Controlled RC Car using ESP32 &amp; MediaPipe (P | https://www.freelancer.com/projects/computer-vision/Enhancing-Based-Gesture-Controlled-Car.html |
 | 65 | Freelancer | Python scraper | iPhone Stock &amp; Price Tracker Bot | I need a small utility that keeps an eye on Big Basket and instantly tells me, t | https://www.freelancer.com/projects/python/iPhone-Stock-Price-Tracker-Bot.html |
 | 65 | Freelancer | Python scraper | Bot de Discord de Econom&iacute;a de Cartas | $10.00 | https://www.freelancer.com/projects/game-development/Bot-Discord-Econom-Cartas.html |
 | 65 | Freelancer | Python scraper | Python/Go Ethereum Perps API | $30.00 | https://www.freelancer.com/projects/api-developmet/Python-Ethereum-Perps-API.html |
@@ -65,13 +68,10 @@ Generated: 2026-04-25 10:42 JST
 | 65 | Freelancer | Python scraper | Colorado Insurance Phone Number Scraping | $30.00 | https://www.freelancer.com/projects/data-collection/Colorado-Insurance-Phone-Number-Scraping.html |
 | 65 | Freelancer | Python scraper | Gaming Website Dev: UI + API Integration | Job Title Web Developer for Gaming Website (UI + API Basics) Job Description We  | https://www.freelancer.com/projects/api-integration/Gaming-Website-Dev-API-Integration.html |
 | 65 | Freelancer | Python scraper | Lumo &ndash; AI Chat Full Stack Web Application | Developed Lumo, a full stack AI chat web application with multiple interactive p | https://www.freelancer.com/projects/full-stack-development/Lumo-Chat-Full-Stack-Web.html |
-| 65 | Freelancer | Python scraper | Automate Badminton Court Lighting | Sportomic already handles every booking for my two indoor badminton courts over  | https://www.freelancer.com/projects/rest-api/Automate-Badminton-Court-Lighting.html |
 | 65 | Freelancer | Make.com automation | Open-Source Automation Intern Needed. | We are looking for a TECH INTERN with hands-on skills to work on multiple open-s | https://www.freelancer.com/projects/erp/Open-Source-Automation-Intern-Needed.html |
 | 65 | Freelancer | Make.com automation | Automated Citrix CVAD Upgrade Script -- 2 | I need a fully unattended Windows-friendly script that will upgrade our VDAs fro | https://www.freelancer.com/projects/scripting/Automated-Citrix-CVAD-Upgrade-Script.html |
 | 65 | Freelancer | Make.com automation | Docker IPTV Backend Development | Docker IPTV Backend System – Multi-User, Single URL, Proxy-Ready Description: I  | https://www.freelancer.com/projects/docker/Docker-IPTV-Backend-Development.html |
 | 65 | Freelancer | Make.com automation | OpenClaw Set-up for Financial News Website | $30.00 | https://www.freelancer.com/projects/ai-development/OpenClaw-Set-for-Financial-News.html |
-| 65 | Freelancer | Make.com automation | Home Assistant &amp; OpenClaw Integration | Home Assistant instance - https://www.home-assistant.io/ Home Assistant MCP Serv | https://www.freelancer.com/projects/open-claw/Home-Assistant-OpenClaw-Integration.html |
-| 65 | Freelancer | Make.com automation | PHP Real Estate Feed Automation | $15.00 | https://www.freelancer.com/projects/api-integration/PHP-Real-Estate-Feed-Automation.html |
 
 ## Notes
 - Scores prioritize: (1) simple automation/scripting fit, (2) payout magnitude, (3) keyword relevance.
