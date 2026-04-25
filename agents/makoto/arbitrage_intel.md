@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-25 19:34 JST
+Generated: 2026-04-25 19:55 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -52,7 +52,6 @@ Generated: 2026-04-25 19:34 JST
 
 | Score | Platform | Keyword | Title | Budget/Rate | URL |
 |---:|---|---|---|---|---|
-| 85 | Freelancer | Data processing API | Expat Social Connection Mobile App | $3,000.00 | https://www.freelancer.com/projects/mobile-app-development/Expat-Social-Connection-Mobile-App.html |
 | 75 | Freelancer | Make.com automation | Zoho CRM &amp; Telephony System Implementation | $250.00 | https://www.freelancer.com/projects/zoho-crm/Zoho-CRM-Telephony-System-Implementation.html |
 | 75 | Freelancer | Make.com automation | Zoho One Workflow Automation | $200.00 | https://www.freelancer.com/projects/zoho/Zoho-One-Workflow-Automation.html |
 | 75 | Freelancer | Make.com automation | Zoho CRM Architect for Property Management | $250.00 | https://www.freelancer.com/projects/zoho-crm/Zoho-CRM-Architect-for-Property.html |
@@ -60,7 +59,6 @@ Generated: 2026-04-25 19:34 JST
 | 75 | Freelancer | Make.com automation | Robotic Caf&eacute; Motor &amp; Gear Design | $250.00 | https://www.freelancer.com/projects/3d-cad/Robotic-Caf-Motor-Gear-Design.html |
 | 75 | Freelancer | Make.com automation | Sequential Jotform + WooCommerce Checkout Automation | $250.00 | https://www.freelancer.com/projects/api-integration/Sequential-Jotform-WooCommerce-Checkout.html |
 | 75 | Freelancer | Make.com automation | Lead Generation &amp; Client Nurturing Consultant | $250.00 | https://www.freelancer.com/projects/lead-generation/Lead-Generation-Client-Nurturing.html |
-| 75 | Freelancer | Data processing API | Secure Cloud Laser Cutting Platform | $250.00 | https://www.freelancer.com/projects/cloud-computing/Secure-Cloud-Laser-Cutting-Platform.html |
 | 65 | Freelancer | Python scraper | JS Web Scraping Specialist Required | Title: Playwright Expert Needed for Complex JS UI Scraping (Nested Modals, Scrol | https://www.freelancer.com/projects/data-extraction/Web-Scraping-Specialist-Required.html |
 | 65 | Freelancer | Python scraper | Bulk MCQ Data Entry - 28/03/2026 23:49 EDT | I have more than 2,400 multiple-choice questions sitting across several websites | https://www.freelancer.com/projects/data-analysis/Bulk-MCQ-Data-Entry-EDT-40396908.html |
 | 65 | Freelancer | Python scraper | Real-Time AI Monitoring &amp; Prediction | I’m kicking off an end-to-end AI project that ingests streaming textual data, tr | https://www.freelancer.com/projects/ai-development/Real-Time-Monitoring-Prediction.html |
@@ -72,6 +70,8 @@ Generated: 2026-04-25 19:34 JST
 | 65 | Freelancer | Make.com automation | Urgent Ai Automation Setup | $30.00 | https://www.freelancer.com/projects/ai-hw-sw/Urgent-Automation-Setup.html |
 | 65 | Freelancer | Make.com automation | Automated NIFTY50 Options Trading System Development | I am looking for an experienced algorithmic trading developer to build a fully a | https://www.freelancer.com/projects/api-developmet/Automated-NIFTY-Options-Trading-System.html |
 | 65 | Freelancer | Make.com automation | Wix-Google Sales Tracking Integration | $30.00 | https://www.freelancer.com/projects/zapier/Wix-Google-Sales-Tracking-Integration.html |
+| 65 | Freelancer | Make.com automation | NDIS Onboarding Automation Setup | $2.00 | https://www.freelancer.com/projects/automation/NDIS-Onboarding-Automation-Setup.html |
+| 65 | Freelancer | Make.com automation | Full-Stack Developer for LinkedIn Automation Platform | Project Title: Full-Stack Developer Needed for Advanced LinkedIn Automation &amp | https://www.freelancer.com/projects/nodejs/Full-Stack-Developer-for-LinkedIn.html |
 
 ## Notes
 - Scores prioritize: (1) simple automation/scripting fit, (2) payout magnitude, (3) keyword relevance.
