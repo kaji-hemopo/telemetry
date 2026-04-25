@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-25 22:05 JST
+Generated: 2026-04-26 01:38 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -54,24 +54,24 @@ Generated: 2026-04-25 22:05 JST
 |---:|---|---|---|---|---|
 | 85 | Freelancer | Python scraper | Secure AI Algo Trading Platform | $3,000.00 | https://www.freelancer.com/projects/ai-development/Secure-Algo-Trading-Platform.html |
 | 85 | Freelancer | Make.com automation | Sales Partner Wanted for AI Legal Platform &amp; Business eco sys | $500.00 | https://www.freelancer.com/projects/sales/Sales-Partner-Wanted-for-Legal.html |
+| 75 | Freelancer | Python scraper | OSINT Identity &amp; Network Correlation -- 2 | $250.00 | https://www.freelancer.com/projects/python/OSINT-Identity-Network-Correlation.html |
+| 75 | Freelancer | Make.com automation | Hotel Upgrade Bidding System | $250.00 | https://www.freelancer.com/projects/stripe/Hotel-Upgrade-Bidding-System.html |
 | 75 | Freelancer | Make.com automation | Zoho CRM &amp; Telephony System Implementation | $250.00 | https://www.freelancer.com/projects/zoho-crm/Zoho-CRM-Telephony-System-Implementation.html |
 | 75 | Freelancer | Make.com automation | Zoho One Workflow Automation | $200.00 | https://www.freelancer.com/projects/zoho/Zoho-One-Workflow-Automation.html |
-| 75 | Freelancer | Make.com automation | Zoho CRM Architect for Property Management | $250.00 | https://www.freelancer.com/projects/zoho-crm/Zoho-CRM-Architect-for-Property.html |
-| 75 | Freelancer | Make.com automation | Aussie Racing Challenge Website Development | $250.00 | https://www.freelancer.com/projects/web-development/Aussie-Racing-Challenge-Website.html |
+| 75 | Freelancer | Data processing API | Next.js Real Estate Backend Maintenance | $250.00 | https://www.freelancer.com/projects/nextjs/Next-Real-Estate-Backend-Maintenance.html |
+| 65 | Freelancer | Python scraper | Shopify-Otto API Integration | $30.00 | https://www.freelancer.com/projects/api-developmet/Shopify-Otto-API-Integration.html |
+| 65 | Freelancer | Python scraper | Ethical Credit Card Fraud Detection | $30.00 | https://www.freelancer.com/projects/deep-learning/Ethical-Credit-Card-Fraud-Detection.html |
+| 65 | Freelancer | Python scraper | ### **Title: Full Stack Developer (Freelance | 3&ndash;6 Months | | **Project Type:** Contract (3–6 Months) **Location:** Remote (India preferred) * | https://www.freelancer.com/projects/ai-development/Title-Full-Stack-Developer-Freelance.html |
 | 65 | Freelancer | Python scraper | Shopify Store Sync with Google Calendar | Shopify booking shop + Google calendar 2 way sync ## Project Title Shopify Bowli | https://www.freelancer.com/projects/api-integration/Shopify-Store-Sync-with-Google.html |
 | 65 | Freelancer | Python scraper | Python + Web Developer &mdash; Bulk Video Processing &amp; WhatsA | Project Title: Python + Web Developer — Bulk Video Processing &amp; WhatsApp Mes | https://www.freelancer.com/projects/api-integration/Custom-Python-Video-Campaign-Software.html |
 | 65 | Freelancer | Python scraper | JS Web Scraping Specialist Required | Title: Playwright Expert Needed for Complex JS UI Scraping (Nested Modals, Scrol | https://www.freelancer.com/projects/data-extraction/Web-Scraping-Specialist-Required.html |
 | 65 | Freelancer | Python scraper | Bulk MCQ Data Entry - 28/03/2026 23:49 EDT | I have more than 2,400 multiple-choice questions sitting across several websites | https://www.freelancer.com/projects/data-analysis/Bulk-MCQ-Data-Entry-EDT-40396908.html |
 | 65 | Freelancer | Python scraper | Real-Time AI Monitoring &amp; Prediction | I’m kicking off an end-to-end AI project that ingests streaming textual data, tr | https://www.freelancer.com/projects/ai-development/Real-Time-Monitoring-Prediction.html |
-| 65 | Freelancer | Python scraper | AI Analyzer for Scientific Articles | I have a growing collection of peer-reviewed papers that I need to turn into str | https://www.freelancer.com/projects/natural-language-processing/Analyzer-for-Scientific-Articles.html |
-| 65 | Freelancer | Python scraper | iPhone Stock &amp; Price Tracker Bot | I need a small utility that keeps an eye on Big Basket and instantly tells me, t | https://www.freelancer.com/projects/python/iPhone-Stock-Price-Tracker-Bot.html |
-| 65 | Freelancer | Python scraper | Bot de Discord de Econom&iacute;a de Cartas | $10.00 | https://www.freelancer.com/projects/game-development/Bot-Discord-Econom-Cartas.html |
+| 65 | Freelancer | Make.com automation | WhatsApp (Interakt) + Zoho CRM Integration with Automation (MVP & | We are looking for an experienced freelancer to set up a WhatsApp automation sys | https://www.freelancer.com/projects/zoho-crm/WhatsApp-Interakt-Zoho-CRM-Integration.html |
+| 65 | Freelancer | Make.com automation | Playwright Automation with Claude, AWS | $8.00 | https://www.freelancer.com/projects/docker/Playwright-Automation-with-Claude-AWS.html |
 | 65 | Freelancer | Make.com automation | Excel Sales Data Accuracy Optimization | I’m working with a growing sales dataset that has started to show mismatches, hi | https://www.freelancer.com/projects/data-analysis/Excel-Sales-Data-Accuracy-Optimization.html |
 | 65 | Freelancer | Make.com automation | n8n Expert Needed: Build Automated Social Media Publishing Workfl | $10.00 | https://www.freelancer.com/projects/n8n/Expert-Needed-Build-Automated-Social.html |
-| 65 | Freelancer | Make.com automation | Excel Order Tracking Automation | I’m overhauling our order spreadsheet and need a true Excel power-user to turn i | https://www.freelancer.com/projects/excel-vba/Excel-Order-Tracking-Automation.html |
 | 65 | Freelancer | Make.com automation | Urgent Ai Automation Setup | $30.00 | https://www.freelancer.com/projects/ai-hw-sw/Urgent-Automation-Setup.html |
-| 65 | Freelancer | Make.com automation | Automated NIFTY50 Options Trading System Development | I am looking for an experienced algorithmic trading developer to build a fully a | https://www.freelancer.com/projects/api-developmet/Automated-NIFTY-Options-Trading-System.html |
-| 65 | Freelancer | Make.com automation | Wix-Google Sales Tracking Integration | $30.00 | https://www.freelancer.com/projects/zapier/Wix-Google-Sales-Tracking-Integration.html |
 
 ## Notes
 - Scores prioritize: (1) simple automation/scripting fit, (2) payout magnitude, (3) keyword relevance.
