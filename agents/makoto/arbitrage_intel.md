@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-24 20:35 JST
+Generated: 2026-04-25 10:42 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -20,8 +20,8 @@ Generated: 2026-04-24 20:35 JST
 | 90 | Domestic/JPY | Lancers | 【急募】WordPressでのLP制作案件 | ¥100,000 | https://www.lancers.jp/work/detail/5501875 |
 | 90 | Domestic/JPY | Lancers | 【急募】マーケ支援サービスのLP制作をお任せできる方 | ¥100,000 | https://www.lancers.jp/work/detail/5294532 |
 | 90 | Domestic/JPY | Lancers | スクロールで動く“バカ寄り”LPサイト制作（WordPress／公開まで） | ¥80,000 | https://www.lancers.jp/work/detail/5475415 |
+| 90 | Domestic/JPY | Lancers | 【法律セミナー】申込用LP制作及びQRコード依頼！安心感清潔感のある申込ページデザイン | ¥100,000 | https://www.lancers.jp/work/detail/5345612 |
 | 90 | Domestic/JPY | Lancers | 2回目 【予算30万以内】Amazon物販向けLINE公式アカウント初期構築（タグ付け・ステップ配信等） | ¥300,000 | https://www.lancers.jp/work/detail/5521293 |
-| 90 | Domestic/JPY | Lancers | 【急募】カスタマーサポートを探しています | ¥80,000 | https://www.lancers.jp/work/detail/5465120 |
 
 ## Domestic Highlights (JPY)
 
@@ -35,6 +35,7 @@ Generated: 2026-04-24 20:35 JST
 | 90 | Lancers | LP制作 | 【急募】WordPressでのLP制作案件 | ¥100,000 | https://www.lancers.jp/work/detail/5501875 |
 | 90 | Lancers | LP制作 | 【急募】マーケ支援サービスのLP制作をお任せできる方 | ¥100,000 | https://www.lancers.jp/work/detail/5294532 |
 | 90 | Lancers | LP制作 | スクロールで動く“バカ寄り”LPサイト制作（WordPress／公開まで） | ¥80,000 | https://www.lancers.jp/work/detail/5475415 |
+| 90 | Lancers | LP制作 | 【法律セミナー】申込用LP制作及びQRコード依頼！安心感清潔感のある申込ページデザイン | ¥100,000 | https://www.lancers.jp/work/detail/5345612 |
 | 90 | Lancers | LINE構築 | 2回目 【予算30万以内】Amazon物販向けLINE公式アカウント初期構築（タグ付け・ステップ配信等） | ¥300,000 | https://www.lancers.jp/work/detail/5521293 |
 | 90 | Lancers | LINE構築 | 【急募】カスタマーサポートを探しています | ¥80,000 | https://www.lancers.jp/work/detail/5465120 |
 | 90 | Lancers | API連携 | 【急募】既存システムの保守・改善ができるエンジニア募集 | ¥100,000 | https://www.lancers.jp/work/detail/5518756 |
@@ -46,32 +47,31 @@ Generated: 2026-04-24 20:35 JST
 | 75 | Lancers | スクレイピング | 【急募】紙の伝票をWEBシステムへ自動データ入力開発【AI使用可能】 | ¥100,000 | https://www.lancers.jp/work/detail/5411519 |
 | 35 | Lancers | LP制作 | 【LP制作】STUDIOでのランディングページ実装パートナー募集 | ¥20,000 | https://www.lancers.jp/work/detail/5521253 |
 | 35 | Lancers | LP制作 | 【急募】バスケットボール育成世代サービスのLP制作｜ノーコード希望 | ¥30,000 | https://www.lancers.jp/work/detail/5518909 |
-| 35 | Lancers | LP制作 | 【WordPress】美容クリニックLPのブラッシュアップ制作（LPcoloful使用） | ¥20,000 | https://www.lancers.jp/work/detail/5503136 |
 
 ## Global Highlights (USD)
 
 | Score | Platform | Keyword | Title | Budget/Rate | URL |
 |---:|---|---|---|---|---|
-| 85 | Freelancer | Make.com automation | EspoCRM Integrations &amp; UI Upgrade | $750.00 | https://www.freelancer.com/projects/api/EspoCRM-Integrations-Upgrade.html |
-| 75 | Freelancer | Python scraper | Python Automation Script for File Creation | $250.00 | https://www.freelancer.com/projects/automation/Python-Automation-Script-for-File.html |
-| 75 | Freelancer | Python scraper | Weather Forecast Website for Travelers | $100.00 | https://www.freelancer.com/projects/web-development/Weather-Forecast-Website-for-Travelers.html |
-| 75 | Freelancer | Make.com automation | N8N Order Quote Automation | $250.00 | https://www.freelancer.com/projects/n8n/Order-Quote-Automation.html |
-| 75 | Freelancer | Data processing API | AI Customer Support Chatbot Builder | $250.00 | https://www.freelancer.com/projects/ai-chatbot-development/Customer-Support-Chatbot-Builder.html |
+| 75 | Freelancer | Python scraper | Scraper de cuotas de futbol con Telegram | $250.00 | https://www.freelancer.com/projects/selenium/Scraper-cuotas-futbol-con-Telegram.html |
+| 75 | Freelancer | Python scraper | High-Volume Website Scraping Automation - Scrape 90,000 symbols o | $250.00 | https://www.freelancer.com/projects/python/High-Volume-Website-Scraping-Automation.html |
+| 75 | Freelancer | Make.com automation | Sequential Jotform + WooCommerce Checkout Automation | $250.00 | https://www.freelancer.com/projects/api-integration/Sequential-Jotform-WooCommerce-Checkout.html |
+| 75 | Freelancer | Make.com automation | Lead Generation &amp; Client Nurturing Consultant | $250.00 | https://www.freelancer.com/projects/lead-generation/Lead-Generation-Client-Nurturing.html |
+| 75 | Freelancer | Make.com automation | Ai Powered UI responsive boost | $250.00 | https://www.freelancer.com/projects/saas/Powered-responsive-boost.html |
+| 75 | Freelancer | Make.com automation | Crestron Home Automation Integration | $250.00 | https://www.freelancer.com/projects/home-automation/Crestron-Home-Automation-Integration.html |
+| 65 | Freelancer | Python scraper | iPhone Stock &amp; Price Tracker Bot | I need a small utility that keeps an eye on Big Basket and instantly tells me, t | https://www.freelancer.com/projects/python/iPhone-Stock-Price-Tracker-Bot.html |
+| 65 | Freelancer | Python scraper | Bot de Discord de Econom&iacute;a de Cartas | $10.00 | https://www.freelancer.com/projects/game-development/Bot-Discord-Econom-Cartas.html |
+| 65 | Freelancer | Python scraper | Python/Go Ethereum Perps API | $30.00 | https://www.freelancer.com/projects/api-developmet/Python-Ethereum-Perps-API.html |
+| 65 | Freelancer | Python scraper | Spotify Streaming Insights Dashboard | I need an end-to-end Spotify analytics dashboard, ready for production use betwe | https://www.freelancer.com/projects/power-bi/Spotify-Streaming-Insights-Dashboard.html |
+| 65 | Freelancer | Python scraper | Colorado Insurance Phone Number Scraping | $30.00 | https://www.freelancer.com/projects/data-collection/Colorado-Insurance-Phone-Number-Scraping.html |
+| 65 | Freelancer | Python scraper | Gaming Website Dev: UI + API Integration | Job Title Web Developer for Gaming Website (UI + API Basics) Job Description We  | https://www.freelancer.com/projects/api-integration/Gaming-Website-Dev-API-Integration.html |
+| 65 | Freelancer | Python scraper | Lumo &ndash; AI Chat Full Stack Web Application | Developed Lumo, a full stack AI chat web application with multiple interactive p | https://www.freelancer.com/projects/full-stack-development/Lumo-Chat-Full-Stack-Web.html |
 | 65 | Freelancer | Python scraper | Automate Badminton Court Lighting | Sportomic already handles every booking for my two indoor badminton courts over  | https://www.freelancer.com/projects/rest-api/Automate-Badminton-Court-Lighting.html |
-| 65 | Freelancer | Python scraper | EfficientNet ViT Potato Disease Model | I already have a well-labeled image set of potato leaves in JPG and PNG format,  | https://www.freelancer.com/projects/data-augmentation/EfficientNet-ViT-Potato-Disease-Model.html |
-| 65 | Freelancer | Python scraper | AI Workflow for Inventory Automation | My day-to-day inventory work still revolves around Busy and endless Excel sheets | https://www.freelancer.com/projects/rpa-development/Workflow-for-Inventory-Automation.html |
-| 65 | Freelancer | Python scraper | Java/Python Backend Integration Engineer | $30.00 | https://www.freelancer.com/projects/rest-api/Java-Python-Backend-Integration-Engineer.html |
-| 65 | Freelancer | Python scraper | Interactive Data Analysis Web Platform -- 2 | I need a browser-based platform that lets me load raw datasets, run meaningful a | https://www.freelancer.com/projects/data-analysis/Interactive-Data-Analysis-Web-Platform.html |
-| 65 | Freelancer | Python scraper | Decode Encrypted XLSM Stock Feeder | I’m working with a macro-enabled Excel workbook that arrives fully obfuscated. I | https://www.freelancer.com/projects/api/Decode-Encrypted-XLSM-Stock-Feeder.html |
-| 65 | Freelancer | Python scraper | High-Speed Python Booking Assistant Application | We are looking for an experienced Python developer to build a desktop-based appl | https://www.freelancer.com/projects/selenium/High-Speed-Python-Booking-Assistant.html |
-| 65 | Freelancer | Python scraper | Edit Python Scraper data from Google Shopping | $10.00 | https://www.freelancer.com/projects/python/Edit-Python-Scraper-data-from.html |
-| 65 | Freelancer | Python scraper | Bulk MCQ Data Entry - 28/03/2026 23:49 EDT | I have more than 2,400 multiple-choice questions sitting across several websites | https://www.freelancer.com/projects/data-analysis/Bulk-MCQ-Data-Entry-EDT-40394467.html |
-| 65 | Freelancer | Make.com automation | Argentina Website QA Tester $40 | $10.00 | https://www.freelancer.com/projects/regression-testing/Argentina-Website-Tester.html |
-| 65 | Freelancer | Make.com automation | Google AI Studio / Gemin Expert for Custom App Development | Job Title: Google Gemini / Google AI Studio Expert Needed for App Development (F | https://www.freelancer.com/projects/ai-development/Google-Studio-Gemin-Expert-for.html |
-| 65 | Freelancer | Make.com automation | Odoo Invoice-PO Reconciliation Automation | I run our purchasing and accounts-payable flow entirely in Odoo, yet the three-w | https://www.freelancer.com/projects/odoo/Odoo-Invoice-Reconciliation-Automation.html |
-| 65 | Freelancer | Make.com automation | Discord Bot for Freelancer Platform | $30.00 | https://www.freelancer.com/projects/discord/Discord-Bot-for-Freelancer-Platform.html |
-| 65 | Freelancer | Make.com automation | Optimize JazzHR Recruitment Automation | $10.00 | https://www.freelancer.com/projects/zapier/Optimize-JazzHR-Recruitment-Automation.html |
-| 65 | Freelancer | Make.com automation | Quick Automation Setup (Zapier / Make) &ndash; Simple Workflow | $30.00 | https://www.freelancer.com/projects/api-developmet/Quick-Automation-Setup-Zapier-Make.html |
+| 65 | Freelancer | Make.com automation | Open-Source Automation Intern Needed. | We are looking for a TECH INTERN with hands-on skills to work on multiple open-s | https://www.freelancer.com/projects/erp/Open-Source-Automation-Intern-Needed.html |
+| 65 | Freelancer | Make.com automation | Automated Citrix CVAD Upgrade Script -- 2 | I need a fully unattended Windows-friendly script that will upgrade our VDAs fro | https://www.freelancer.com/projects/scripting/Automated-Citrix-CVAD-Upgrade-Script.html |
+| 65 | Freelancer | Make.com automation | Docker IPTV Backend Development | Docker IPTV Backend System – Multi-User, Single URL, Proxy-Ready Description: I  | https://www.freelancer.com/projects/docker/Docker-IPTV-Backend-Development.html |
+| 65 | Freelancer | Make.com automation | OpenClaw Set-up for Financial News Website | $30.00 | https://www.freelancer.com/projects/ai-development/OpenClaw-Set-for-Financial-News.html |
+| 65 | Freelancer | Make.com automation | Home Assistant &amp; OpenClaw Integration | Home Assistant instance - https://www.home-assistant.io/ Home Assistant MCP Serv | https://www.freelancer.com/projects/open-claw/Home-Assistant-OpenClaw-Integration.html |
+| 65 | Freelancer | Make.com automation | PHP Real Estate Feed Automation | $15.00 | https://www.freelancer.com/projects/api-integration/PHP-Real-Estate-Feed-Automation.html |
 
 ## Notes
 - Scores prioritize: (1) simple automation/scripting fit, (2) payout magnitude, (3) keyword relevance.
