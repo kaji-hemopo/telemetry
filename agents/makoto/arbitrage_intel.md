@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-26 06:57 JST
+Generated: 2026-04-26 07:39 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -60,6 +60,7 @@ Generated: 2026-04-26 06:57 JST
 | 75 | Freelancer | Make.com automation | Hotel Upgrade Bidding System | $250.00 | https://www.freelancer.com/projects/stripe/Hotel-Upgrade-Bidding-System.html |
 | 75 | Freelancer | Data processing API | Microsoft 365 Platform Setup &amp; Migration | $250.00 | https://www.freelancer.com/projects/microsoft-365/Microsoft-Platform-Setup-Migration.html |
 | 75 | Freelancer | Data processing API | Build Twilio Towing Call Flow | $250.00 | https://www.freelancer.com/projects/airtable/Build-Twilio-Towing-Call-Flow.html |
+| 65 | Freelancer | Python scraper | QA Engineer for SaaS Platform - API Testing &amp; Automation | $2.00 | https://www.freelancer.com/projects/api-testing/Engineer-for-SaaS-Platform-API.html |
 | 65 | Freelancer | Python scraper | React, Data, UI Design Hiring | I’m expanding several engineering teams for top-tier MNCs and rapidly scaling te | https://www.freelancer.com/projects/data-analysis/React-Data-Design-Hiring.html |
 | 65 | Freelancer | Python scraper | Tutor en espa&ntilde;ol para proyecto con Browser Use Cloud y aut | Estoy arrancando desde cero con cloud.browser-use.com y quiero dominar la plataf | https://www.freelancer.com/projects/selenium/Tutor-espa-para-proyecto-con.html |
 | 65 | Freelancer | Python scraper | Multi-disciplinary team for Novel AI Project | 1. AI / ML Engineer (MOST IMPORTANT) Role: Work with LLMs (APIs or open-source)  | https://www.freelancer.com/projects/machine-learning/Multi-disciplinary-team-for-Novel.html |
@@ -67,7 +68,6 @@ Generated: 2026-04-26 06:57 JST
 | 65 | Freelancer | Python scraper | ### **Title: Full Stack Developer (Freelance | 3&ndash;6 Months | | **Project Type:** Contract (3–6 Months) **Location:** Remote (India preferred) * | https://www.freelancer.com/projects/ai-development/Title-Full-Stack-Developer-Freelance.html |
 | 65 | Freelancer | Python scraper | Shopify Store Sync with Google Calendar | Shopify booking shop + Google calendar 2 way sync ## Project Title Shopify Bowli | https://www.freelancer.com/projects/api-integration/Shopify-Store-Sync-with-Google.html |
 | 65 | Freelancer | Python scraper | Python + Web Developer &mdash; Bulk Video Processing &amp; WhatsA | Project Title: Python + Web Developer — Bulk Video Processing &amp; WhatsApp Mes | https://www.freelancer.com/projects/api-integration/Custom-Python-Video-Campaign-Software.html |
-| 65 | Freelancer | Python scraper | JS Web Scraping Specialist Required | Title: Playwright Expert Needed for Complex JS UI Scraping (Nested Modals, Scrol | https://www.freelancer.com/projects/data-extraction/Web-Scraping-Specialist-Required.html |
 | 65 | Freelancer | Make.com automation | Manual Database Data Entry | I have a set of records housed in an online database that I need transferred man | https://www.freelancer.com/projects/google-sheets/Manual-Database-Data-Entry-40397987.html |
 | 65 | Freelancer | Make.com automation | n8n Avatar Automation Pipeline | Hi, I am Ankit, founder of Evoline Digital — an AI avatar content agency based i | https://www.freelancer.com/projects/n8n/Avatar-Automation-Pipeline.html |
 | 65 | Freelancer | Make.com automation | Playwright Automation with Claude, AWS | $8.00 | https://www.freelancer.com/projects/docker/Playwright-Automation-with-Claude-AWS.html |
