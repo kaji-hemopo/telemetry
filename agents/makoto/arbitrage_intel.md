@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-26 12:25 JST
+Generated: 2026-04-26 13:28 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -52,11 +52,12 @@ Generated: 2026-04-26 12:25 JST
 
 | Score | Platform | Keyword | Title | Budget/Rate | URL |
 |---:|---|---|---|---|---|
-| 85 | Freelancer | Python scraper | Secure AI Algo Trading Platform | $3,000.00 | https://www.freelancer.com/projects/ai-development/Secure-Algo-Trading-Platform.html |
 | 85 | Freelancer | Make.com automation | Multi-Market PIM/DAM/CMS Platform (OpenDXP/Pimcore) | $5,000.00 | https://www.freelancer.com/projects/api-developmet/Multi-Market-PIM-DAM-CMS.html |
 | 75 | Freelancer | Python scraper | GRC SaaS App with DeepSeeQ Integration | $250.00 | https://www.freelancer.com/projects/ai-development/GRC-SaaS-App-with-DeepSeeQ.html |
 | 75 | Freelancer | Python scraper | OSINT Identity &amp; Network Correlation -- 2 | $250.00 | https://www.freelancer.com/projects/python/OSINT-Identity-Network-Correlation.html |
 | 75 | Freelancer | Make.com automation | Hotel Upgrade Bidding System | $250.00 | https://www.freelancer.com/projects/stripe/Hotel-Upgrade-Bidding-System.html |
+| 65 | Freelancer | Python scraper | Full-Stack Java back and Front Development help -- 2 | $8.00 | https://www.freelancer.com/projects/java/Full-Stack-Java-back-Front.html |
+| 65 | Freelancer | Python scraper | Automate Daily Tender &amp; Bid Reports | I need a dependable way to pull every new tender or GeM bid that appears each da | https://www.freelancer.com/projects/data-processing/Automate-Daily-Tender-Bid-Reports.html |
 | 65 | Freelancer | Python scraper | Python Automation Project Enhancement | Enhance the existing Python-based automation project to improve performance, eff | https://www.freelancer.com/projects/excel/Python-Automation-Project-Enhancement.html |
 | 65 | Freelancer | Python scraper | QA Engineer for SaaS Platform - API Testing &amp; Automation | $2.00 | https://www.freelancer.com/projects/api-testing/Engineer-for-SaaS-Platform-API.html |
 | 65 | Freelancer | Python scraper | React, Data, UI Design Hiring | I’m expanding several engineering teams for top-tier MNCs and rapidly scaling te | https://www.freelancer.com/projects/data-analysis/React-Data-Design-Hiring.html |
@@ -64,14 +65,13 @@ Generated: 2026-04-26 12:25 JST
 | 65 | Freelancer | Python scraper | Multi-disciplinary team for Novel AI Project | 1. AI / ML Engineer (MOST IMPORTANT) Role: Work with LLMs (APIs or open-source)  | https://www.freelancer.com/projects/machine-learning/Multi-disciplinary-team-for-Novel.html |
 | 65 | Freelancer | Python scraper | Ethical Credit Card Fraud Detection | $30.00 | https://www.freelancer.com/projects/deep-learning/Ethical-Credit-Card-Fraud-Detection.html |
 | 65 | Freelancer | Python scraper | ### **Title: Full Stack Developer (Freelance | 3&ndash;6 Months | | **Project Type:** Contract (3–6 Months) **Location:** Remote (India preferred) * | https://www.freelancer.com/projects/ai-development/Title-Full-Stack-Developer-Freelance.html |
-| 65 | Freelancer | Python scraper | Shopify Store Sync with Google Calendar | Shopify booking shop + Google calendar 2 way sync ## Project Title Shopify Bowli | https://www.freelancer.com/projects/api-integration/Shopify-Store-Sync-with-Google.html |
 | 65 | Freelancer | Make.com automation | WhatsApp (Interakt) + Zoho CRM Integration with Automation (Phase | Project Description: We are looking for an experienced freelancer to set up a Wh | https://www.freelancer.com/projects/lead-generation/WhatsApp-Interakt-Zoho-CRM-Integration.html |
 | 65 | Freelancer | Make.com automation | Automated Accounting System Development via OpenClaw | AI-Based Zero-Touch Accounting System (OpenClaw / OpenClaude) Please read the pr | https://www.freelancer.com/projects/optical-character-recognition/Automated-Accounting-System-Development.html |
 | 65 | Freelancer | Make.com automation | Strategi Monetisasi Media Sosial dngan mengedit vidio | $15.00 | https://www.freelancer.com/projects/social-media-marketing/Strategi-Monetisasi-Media-Sosial-dngan.html |
 | 65 | Freelancer | Make.com automation | Manual Database Data Entry | I have a set of records housed in an online database that I need transferred man | https://www.freelancer.com/projects/google-sheets/Manual-Database-Data-Entry-40397987.html |
 | 65 | Freelancer | Make.com automation | n8n Avatar Automation Pipeline | Hi, I am Ankit, founder of Evoline Digital — an AI avatar content agency based i | https://www.freelancer.com/projects/n8n/Avatar-Automation-Pipeline.html |
+| 65 | Freelancer | Make.com automation | WhatsApp (Interakt) + Zoho CRM Integration with Automation (MVP & | We are looking for an experienced freelancer to set up a WhatsApp automation sys | https://www.freelancer.com/projects/zoho-crm/WhatsApp-Interakt-Zoho-CRM-Integration.html |
 | 65 | Freelancer | Make.com automation | Playwright Automation with Claude, AWS | $8.00 | https://www.freelancer.com/projects/docker/Playwright-Automation-with-Claude-AWS.html |
-| 65 | Freelancer | Data processing API | One-Way Shopify&ndash;eBay Sync | $30.00 | https://www.freelancer.com/projects/api-integration/One-Way-Shopify-eBay-Sync.html |
 
 ## Notes
 - Scores prioritize: (1) simple automation/scripting fit, (2) payout magnitude, (3) keyword relevance.
