@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-26 14:55 JST
+Generated: 2026-04-26 17:02 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -52,11 +52,15 @@ Generated: 2026-04-26 14:55 JST
 
 | Score | Platform | Keyword | Title | Budget/Rate | URL |
 |---:|---|---|---|---|---|
+| 85 | Freelancer | Make.com automation | Dual-Station Screwdriving Automation -- 2 | $5,000.00 | https://www.freelancer.com/projects/automation/Dual-Station-Screwdriving-Automation.html |
 | 85 | Freelancer | Make.com automation | Sales Partners Needed for AI Legal Platform | $500.00 | https://www.freelancer.com/projects/sales/Sales-Partners-Needed-for-Legal.html |
 | 85 | Freelancer | Make.com automation | Multi-Market PIM/DAM/CMS Platform (OpenDXP/Pimcore) | $5,000.00 | https://www.freelancer.com/projects/api-developmet/Multi-Market-PIM-DAM-CMS.html |
+| 75 | Freelancer | Python scraper | Build Professional Web Dashboard &amp; Sync with Existing Python  | $50.00 | https://www.freelancer.com/projects/web-development/Build-Professional-Web-Dashboard-Sync.html |
 | 75 | Freelancer | Python scraper | GRC SaaS App with DeepSeeQ Integration | $250.00 | https://www.freelancer.com/projects/ai-development/GRC-SaaS-App-with-DeepSeeQ.html |
-| 75 | Freelancer | Python scraper | OSINT Identity &amp; Network Correlation -- 2 | $250.00 | https://www.freelancer.com/projects/python/OSINT-Identity-Network-Correlation.html |
-| 75 | Freelancer | Make.com automation | Hotel Upgrade Bidding System | $250.00 | https://www.freelancer.com/projects/stripe/Hotel-Upgrade-Bidding-System.html |
+| 75 | Freelancer | Make.com automation | Dynamic AI-Assisted Telephony System Development | $250.00 | https://www.freelancer.com/projects/n8n/Dynamic-Assisted-Telephony-System.html |
+| 65 | Freelancer | Python scraper | Python RTSP Camera Ingestion Service | I am building the camera-ingestion layer of a wider retail analytics platform an | https://www.freelancer.com/projects/api-developmet/Python-RTSP-Camera-Ingestion-Service.html |
+| 65 | Freelancer | Python scraper | Python Social Media Data Analyzer | I’m Alex, and I need a Python solution that pulls data from a social-media platf | https://www.freelancer.com/projects/data-analysis/Python-Social-Media-Data-Analyzer.html |
+| 65 | Freelancer | Python scraper | Python backend -- 2 | $10.00 | https://www.freelancer.com/projects/python/Python-backend-40398803.html |
 | 65 | Freelancer | Python scraper | Full-Stack Java back and Front Development help -- 2 | $8.00 | https://www.freelancer.com/projects/java/Full-Stack-Java-back-Front.html |
 | 65 | Freelancer | Python scraper | Automate Daily Tender &amp; Bid Reports | I need a dependable way to pull every new tender or GeM bid that appears each da | https://www.freelancer.com/projects/data-processing/Automate-Daily-Tender-Bid-Reports.html |
 | 65 | Freelancer | Python scraper | Python Automation Project Enhancement | Enhance the existing Python-based automation project to improve performance, eff | https://www.freelancer.com/projects/excel/Python-Automation-Project-Enhancement.html |
@@ -64,14 +68,10 @@ Generated: 2026-04-26 14:55 JST
 | 65 | Freelancer | Python scraper | React, Data, UI Design Hiring | I’m expanding several engineering teams for top-tier MNCs and rapidly scaling te | https://www.freelancer.com/projects/data-analysis/React-Data-Design-Hiring.html |
 | 65 | Freelancer | Python scraper | Tutor en espa&ntilde;ol para proyecto con Browser Use Cloud y aut | Estoy arrancando desde cero con cloud.browser-use.com y quiero dominar la plataf | https://www.freelancer.com/projects/selenium/Tutor-espa-para-proyecto-con.html |
 | 65 | Freelancer | Python scraper | Multi-disciplinary team for Novel AI Project | 1. AI / ML Engineer (MOST IMPORTANT) Role: Work with LLMs (APIs or open-source)  | https://www.freelancer.com/projects/machine-learning/Multi-disciplinary-team-for-Novel.html |
-| 65 | Freelancer | Python scraper | Ethical Credit Card Fraud Detection | $30.00 | https://www.freelancer.com/projects/deep-learning/Ethical-Credit-Card-Fraud-Detection.html |
-| 65 | Freelancer | Python scraper | ### **Title: Full Stack Developer (Freelance | 3&ndash;6 Months | | **Project Type:** Contract (3–6 Months) **Location:** Remote (India preferred) * | https://www.freelancer.com/projects/ai-development/Title-Full-Stack-Developer-Freelance.html |
+| 65 | Freelancer | Make.com automation | Selenium Automation using .net for Angular Website | Expert test automation engineer is needed for creating automated test cases for  | https://www.freelancer.com/projects/test-automation/Selenium-Automation-using-net-for.html |
+| 65 | Freelancer | Make.com automation | GoHighLevel CRM System Creation | $2.00 | https://www.freelancer.com/projects/go-high-level/GoHighLevel-CRM-System-Creation.html |
 | 65 | Freelancer | Make.com automation | Carbonated Drink Filling Machine Development | I need a skilled developer to create a bottle filling machine specifically desig | https://www.freelancer.com/projects/automation/Carbonated-Drink-Filling-Machine.html |
 | 65 | Freelancer | Make.com automation | NDIS Onboarding Automation Setup | We are seeking an experienced technical freelancer to design and implement a ful | https://www.freelancer.com/projects/project-management/NDIS-Onboarding-Automation-Setup.html |
-| 65 | Freelancer | Make.com automation | WhatsApp (Interakt) + Zoho CRM Integration with Automation (Phase | Project Description: We are looking for an experienced freelancer to set up a Wh | https://www.freelancer.com/projects/lead-generation/WhatsApp-Interakt-Zoho-CRM-Integration.html |
-| 65 | Freelancer | Make.com automation | Automated Accounting System Development via OpenClaw | AI-Based Zero-Touch Accounting System (OpenClaw / OpenClaude) Please read the pr | https://www.freelancer.com/projects/optical-character-recognition/Automated-Accounting-System-Development.html |
-| 65 | Freelancer | Make.com automation | Strategi Monetisasi Media Sosial dngan mengedit vidio | $15.00 | https://www.freelancer.com/projects/social-media-marketing/Strategi-Monetisasi-Media-Sosial-dngan.html |
-| 65 | Freelancer | Make.com automation | n8n Avatar Automation Pipeline | Hi, I am Ankit, founder of Evoline Digital — an AI avatar content agency based i | https://www.freelancer.com/projects/n8n/Avatar-Automation-Pipeline.html |
 
 ## Notes
 - Scores prioritize: (1) simple automation/scripting fit, (2) payout magnitude, (3) keyword relevance.
