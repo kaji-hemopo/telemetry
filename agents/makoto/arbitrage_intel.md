@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-26 17:26 JST
+Generated: 2026-04-26 21:35 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -54,10 +54,14 @@ Generated: 2026-04-26 17:26 JST
 |---:|---|---|---|---|---|
 | 85 | Freelancer | Make.com automation | Dual-Station Screwdriving Automation -- 2 | $5,000.00 | https://www.freelancer.com/projects/automation/Dual-Station-Screwdriving-Automation.html |
 | 85 | Freelancer | Make.com automation | Sales Partners Needed for AI Legal Platform | $500.00 | https://www.freelancer.com/projects/sales/Sales-Partners-Needed-for-Legal.html |
-| 85 | Freelancer | Make.com automation | Multi-Market PIM/DAM/CMS Platform (OpenDXP/Pimcore) | $5,000.00 | https://www.freelancer.com/projects/api-developmet/Multi-Market-PIM-DAM-CMS.html |
+| 75 | Freelancer | Python scraper | AI Radio Host Automation | $250.00 | https://www.freelancer.com/projects/ai-chatbot/Radio-Host-Automation.html |
 | 75 | Freelancer | Python scraper | Build Professional Web Dashboard &amp; Sync with Existing Python  | $50.00 | https://www.freelancer.com/projects/web-development/Build-Professional-Web-Dashboard-Sync.html |
-| 75 | Freelancer | Python scraper | GRC SaaS App with DeepSeeQ Integration | $250.00 | https://www.freelancer.com/projects/ai-development/GRC-SaaS-App-with-DeepSeeQ.html |
 | 75 | Freelancer | Make.com automation | Dynamic AI-Assisted Telephony System Development | $250.00 | https://www.freelancer.com/projects/n8n/Dynamic-Assisted-Telephony-System.html |
+| 65 | Freelancer | Python scraper | TripAdvisor Hotel Review Scraper &mdash; Sample Test Required | $30.00 | https://www.freelancer.com/projects/python/TripAdvisor-Hotel-Review-Scraper-Sample.html |
+| 65 | Freelancer | Python scraper | Excel Text Automation Task | I need help automating the insertion of specific text strings from a source Exce | https://www.freelancer.com/projects/data-entry/Excel-Text-Automation-Task-40399159.html |
+| 65 | Freelancer | Python scraper | AI Engineer for Workflow Automation | I am an AI Engineer specializing in building intelligent systems that automate w | https://www.freelancer.com/projects/ai-development/Engineer-for-Workflow-Automation.html |
+| 65 | Freelancer | Python scraper | I need someone for developing a financial platform like sensibull | I am developing a financial platform similar to Sensibull. I will provide you wi | https://www.freelancer.com/projects/machine-learning/need-someone-for-developing-financial.html |
+| 65 | Freelancer | Python scraper | Targeted Email/contact Web Scrape -- 2 | $1.00 | https://www.freelancer.com/projects/python/Targeted-Email-contact-Web-Scrape.html |
 | 65 | Freelancer | Python scraper | Python RTSP Camera Ingestion Service | I am building the camera-ingestion layer of a wider retail analytics platform an | https://www.freelancer.com/projects/api-developmet/Python-RTSP-Camera-Ingestion-Service.html |
 | 65 | Freelancer | Python scraper | Python Social Media Data Analyzer | I’m Alex, and I need a Python solution that pulls data from a social-media platf | https://www.freelancer.com/projects/data-analysis/Python-Social-Media-Data-Analyzer.html |
 | 65 | Freelancer | Python scraper | Python backend -- 2 | $10.00 | https://www.freelancer.com/projects/python/Python-backend-40398803.html |
@@ -65,13 +69,9 @@ Generated: 2026-04-26 17:26 JST
 | 65 | Freelancer | Python scraper | Automate Daily Tender &amp; Bid Reports | I need a dependable way to pull every new tender or GeM bid that appears each da | https://www.freelancer.com/projects/data-processing/Automate-Daily-Tender-Bid-Reports.html |
 | 65 | Freelancer | Python scraper | Python Automation Project Enhancement | Enhance the existing Python-based automation project to improve performance, eff | https://www.freelancer.com/projects/excel/Python-Automation-Project-Enhancement.html |
 | 65 | Freelancer | Python scraper | QA Engineer for SaaS Platform - API Testing &amp; Automation | $2.00 | https://www.freelancer.com/projects/api-testing/Engineer-for-SaaS-Platform-API.html |
-| 65 | Freelancer | Python scraper | React, Data, UI Design Hiring | I’m expanding several engineering teams for top-tier MNCs and rapidly scaling te | https://www.freelancer.com/projects/data-analysis/React-Data-Design-Hiring.html |
-| 65 | Freelancer | Python scraper | Tutor en espa&ntilde;ol para proyecto con Browser Use Cloud y aut | Estoy arrancando desde cero con cloud.browser-use.com y quiero dominar la plataf | https://www.freelancer.com/projects/selenium/Tutor-espa-para-proyecto-con.html |
-| 65 | Freelancer | Python scraper | Multi-disciplinary team for Novel AI Project | 1. AI / ML Engineer (MOST IMPORTANT) Role: Work with LLMs (APIs or open-source)  | https://www.freelancer.com/projects/machine-learning/Multi-disciplinary-team-for-Novel.html |
-| 65 | Freelancer | Make.com automation | Cybersecurity SOC Setup with Wazuh | $30.00 | https://www.freelancer.com/projects/network-security/Cybersecurity-SOC-Setup-with-Wazuh.html |
-| 65 | Freelancer | Make.com automation | Selenium Automation using .net for Angular Website | Expert test automation engineer is needed for creating automated test cases for  | https://www.freelancer.com/projects/test-automation/Selenium-Automation-using-net-for.html |
-| 65 | Freelancer | Make.com automation | GoHighLevel CRM System Creation | $2.00 | https://www.freelancer.com/projects/go-high-level/GoHighLevel-CRM-System-Creation.html |
-| 65 | Freelancer | Make.com automation | Carbonated Drink Filling Machine Development | I need a skilled developer to create a bottle filling machine specifically desig | https://www.freelancer.com/projects/automation/Carbonated-Drink-Filling-Machine.html |
+| 65 | Freelancer | Make.com automation | YouTube &amp; Facebook Viral Automation | I run both a YouTube and a Facebook page aimed at a U-S audience and I want the  | https://www.freelancer.com/projects/api/YouTube-Facebook-Viral-Automation.html |
+| 65 | Freelancer | Make.com automation | Comprehensive IA Automation Design | I want to bring intelligent automation into my current operations but have not p | https://www.freelancer.com/projects/ai-hw-sw/Comprehensive-Automation-Design.html |
+| 65 | Freelancer | Make.com automation | React WhatsApp Cloud API Automation | $10.00 | https://www.freelancer.com/projects/rest-api/React-WhatsApp-Cloud-API-Automation.html |
 
 ## Notes
 - Scores prioritize: (1) simple automation/scripting fit, (2) payout magnitude, (3) keyword relevance.
