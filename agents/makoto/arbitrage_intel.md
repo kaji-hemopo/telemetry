@@ -1,6 +1,10 @@
 # Makoto Arbitrage Intel
 
+<<<<<<< HEAD
 Generated: 2026-04-26 21:35 JST
+=======
+Generated: 2026-04-26 21:56 JST
+>>>>>>> 9f6f3eb (makoto scout 2026-04-26 21:56 JST — 22 opps)
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
