@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-26 14:34 JST
+Generated: 2026-04-26 14:55 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -52,6 +52,7 @@ Generated: 2026-04-26 14:34 JST
 
 | Score | Platform | Keyword | Title | Budget/Rate | URL |
 |---:|---|---|---|---|---|
+| 85 | Freelancer | Make.com automation | Sales Partners Needed for AI Legal Platform | $500.00 | https://www.freelancer.com/projects/sales/Sales-Partners-Needed-for-Legal.html |
 | 85 | Freelancer | Make.com automation | Multi-Market PIM/DAM/CMS Platform (OpenDXP/Pimcore) | $5,000.00 | https://www.freelancer.com/projects/api-developmet/Multi-Market-PIM-DAM-CMS.html |
 | 75 | Freelancer | Python scraper | GRC SaaS App with DeepSeeQ Integration | $250.00 | https://www.freelancer.com/projects/ai-development/GRC-SaaS-App-with-DeepSeeQ.html |
 | 75 | Freelancer | Python scraper | OSINT Identity &amp; Network Correlation -- 2 | $250.00 | https://www.freelancer.com/projects/python/OSINT-Identity-Network-Correlation.html |
@@ -71,7 +72,6 @@ Generated: 2026-04-26 14:34 JST
 | 65 | Freelancer | Make.com automation | Automated Accounting System Development via OpenClaw | AI-Based Zero-Touch Accounting System (OpenClaw / OpenClaude) Please read the pr | https://www.freelancer.com/projects/optical-character-recognition/Automated-Accounting-System-Development.html |
 | 65 | Freelancer | Make.com automation | Strategi Monetisasi Media Sosial dngan mengedit vidio | $15.00 | https://www.freelancer.com/projects/social-media-marketing/Strategi-Monetisasi-Media-Sosial-dngan.html |
 | 65 | Freelancer | Make.com automation | n8n Avatar Automation Pipeline | Hi, I am Ankit, founder of Evoline Digital — an AI avatar content agency based i | https://www.freelancer.com/projects/n8n/Avatar-Automation-Pipeline.html |
-| 65 | Freelancer | Make.com automation | WhatsApp (Interakt) + Zoho CRM Integration with Automation (MVP & | We are looking for an experienced freelancer to set up a WhatsApp automation sys | https://www.freelancer.com/projects/zoho-crm/WhatsApp-Interakt-Zoho-CRM-Integration.html |
 
 ## Notes
 - Scores prioritize: (1) simple automation/scripting fit, (2) payout magnitude, (3) keyword relevance.
