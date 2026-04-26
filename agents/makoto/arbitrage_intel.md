@@ -1,10 +1,6 @@
 # Makoto Arbitrage Intel
 
-<<<<<<< HEAD
-Generated: 2026-04-26 21:35 JST
-=======
-Generated: 2026-04-26 21:56 JST
->>>>>>> 9f6f3eb (makoto scout 2026-04-26 21:56 JST — 22 opps)
+Generated: 2026-04-27 05:40 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -56,26 +52,26 @@ Generated: 2026-04-26 21:56 JST
 
 | Score | Platform | Keyword | Title | Budget/Rate | URL |
 |---:|---|---|---|---|---|
-| 85 | Freelancer | Make.com automation | Dual-Station Screwdriving Automation -- 2 | $5,000.00 | https://www.freelancer.com/projects/automation/Dual-Station-Screwdriving-Automation.html |
-| 85 | Freelancer | Make.com automation | Sales Partners Needed for AI Legal Platform | $500.00 | https://www.freelancer.com/projects/sales/Sales-Partners-Needed-for-Legal.html |
+| 85 | Freelancer | Make.com automation | Oracle Flexcube REST API Automation | $750.00 | https://www.freelancer.com/projects/api-developmet/Oracle-Flexcube-REST-API-Automation.html |
+| 85 | Freelancer | Data processing API | Comprehensive .NET-Angular ERP With Integrations | $1,500.00 | https://www.freelancer.com/projects/dot-net/Comprehensive-NET-Angular-ERP-With.html |
+| 85 | Freelancer | Data processing API | Pengembangan Aplikasi Web | $5,000.00 | https://www.freelancer.com/projects/web-development/Pengembangan-Aplikasi-Web.html |
+| 75 | Freelancer | Python scraper | Oil &amp; Gas Services Database | $250.00 | https://www.freelancer.com/projects/data-scraping/Oil-Gas-Services-Database.html |
+| 75 | Freelancer | Python scraper | Cloud-Native OSS Contribution Help | $250.00 | https://www.freelancer.com/projects/amazon-web-services/Cloud-Native-OSS-Contribution-Help.html |
 | 75 | Freelancer | Python scraper | AI Radio Host Automation | $250.00 | https://www.freelancer.com/projects/ai-chatbot/Radio-Host-Automation.html |
 | 75 | Freelancer | Python scraper | Build Professional Web Dashboard &amp; Sync with Existing Python  | $50.00 | https://www.freelancer.com/projects/web-development/Build-Professional-Web-Dashboard-Sync.html |
-| 75 | Freelancer | Make.com automation | Dynamic AI-Assisted Telephony System Development | $250.00 | https://www.freelancer.com/projects/n8n/Dynamic-Assisted-Telephony-System.html |
+| 75 | Freelancer | Make.com automation | Aussie Racing Challenge Website Development | $250.00 | https://www.freelancer.com/projects/ai-development/Aussie-Racing-Challenge-Website-40399769.html |
+| 75 | Freelancer | Data processing API | Integrate AffiliateWP With Railway | $250.00 | https://www.freelancer.com/projects/api-developmet/Integrate-AffiliateWP-With-Railway.html |
+| 65 | Freelancer | Python scraper | Weekly Product Data Scraping | $30.00 | https://www.freelancer.com/projects/selenium/Weekly-Product-Data-Scraping.html |
+| 65 | Freelancer | Python scraper | Clean CSV Data with Python | $10.00 | https://www.freelancer.com/projects/data-analysis/Clean-CSV-Data-with-Python.html |
+| 65 | Freelancer | Python scraper | WhatsApp Auto-Reply Setup | I need to put a simple yet reliable auto-reply system on my WhatsApp account so  | https://www.freelancer.com/projects/api/WhatsApp-Auto-Reply-Setup-40399636.html |
+| 65 | Freelancer | Python scraper | Backend Developer (Python / FastAPI) &ndash; Admin Panel for Flut | $8.00 | https://www.freelancer.com/projects/fastapi/Backend-Developer-Python-FastAPI-Admin.html |
+| 65 | Freelancer | Python scraper | Taxi Service Flutter App | $2.00 | https://www.freelancer.com/projects/flutter/Taxi-Service-Flutter-App.html |
+| 65 | Freelancer | Python scraper | Automated Zerodha Options Trading Bot | I am looking for an experienced developer to build a fully automated intraday op | https://www.freelancer.com/projects/python/Automated-Zerodha-Options-Trading-Bot.html |
 | 65 | Freelancer | Python scraper | TripAdvisor Hotel Review Scraper &mdash; Sample Test Required | $30.00 | https://www.freelancer.com/projects/python/TripAdvisor-Hotel-Review-Scraper-Sample.html |
 | 65 | Freelancer | Python scraper | Excel Text Automation Task | I need help automating the insertion of specific text strings from a source Exce | https://www.freelancer.com/projects/data-entry/Excel-Text-Automation-Task-40399159.html |
-| 65 | Freelancer | Python scraper | AI Engineer for Workflow Automation | I am an AI Engineer specializing in building intelligent systems that automate w | https://www.freelancer.com/projects/ai-development/Engineer-for-Workflow-Automation.html |
 | 65 | Freelancer | Python scraper | I need someone for developing a financial platform like sensibull | I am developing a financial platform similar to Sensibull. I will provide you wi | https://www.freelancer.com/projects/machine-learning/need-someone-for-developing-financial.html |
 | 65 | Freelancer | Python scraper | Targeted Email/contact Web Scrape -- 2 | $1.00 | https://www.freelancer.com/projects/python/Targeted-Email-contact-Web-Scrape.html |
-| 65 | Freelancer | Python scraper | Python RTSP Camera Ingestion Service | I am building the camera-ingestion layer of a wider retail analytics platform an | https://www.freelancer.com/projects/api-developmet/Python-RTSP-Camera-Ingestion-Service.html |
-| 65 | Freelancer | Python scraper | Python Social Media Data Analyzer | I’m Alex, and I need a Python solution that pulls data from a social-media platf | https://www.freelancer.com/projects/data-analysis/Python-Social-Media-Data-Analyzer.html |
-| 65 | Freelancer | Python scraper | Python backend -- 2 | $10.00 | https://www.freelancer.com/projects/python/Python-backend-40398803.html |
-| 65 | Freelancer | Python scraper | Full-Stack Java back and Front Development help -- 2 | $8.00 | https://www.freelancer.com/projects/java/Full-Stack-Java-back-Front.html |
-| 65 | Freelancer | Python scraper | Automate Daily Tender &amp; Bid Reports | I need a dependable way to pull every new tender or GeM bid that appears each da | https://www.freelancer.com/projects/data-processing/Automate-Daily-Tender-Bid-Reports.html |
-| 65 | Freelancer | Python scraper | Python Automation Project Enhancement | Enhance the existing Python-based automation project to improve performance, eff | https://www.freelancer.com/projects/excel/Python-Automation-Project-Enhancement.html |
-| 65 | Freelancer | Python scraper | QA Engineer for SaaS Platform - API Testing &amp; Automation | $2.00 | https://www.freelancer.com/projects/api-testing/Engineer-for-SaaS-Platform-API.html |
-| 65 | Freelancer | Make.com automation | YouTube &amp; Facebook Viral Automation | I run both a YouTube and a Facebook page aimed at a U-S audience and I want the  | https://www.freelancer.com/projects/api/YouTube-Facebook-Viral-Automation.html |
-| 65 | Freelancer | Make.com automation | Comprehensive IA Automation Design | I want to bring intelligent automation into my current operations but have not p | https://www.freelancer.com/projects/ai-hw-sw/Comprehensive-Automation-Design.html |
-| 65 | Freelancer | Make.com automation | React WhatsApp Cloud API Automation | $10.00 | https://www.freelancer.com/projects/rest-api/React-WhatsApp-Cloud-API-Automation.html |
+| 65 | Freelancer | Make.com automation | JazzHR SMS Workflow Implementation | $15.00 | https://www.freelancer.com/projects/api-integration/JazzHR-SMS-Workflow-Implementation.html |
 
 ## Notes
 - Scores prioritize: (1) simple automation/scripting fit, (2) payout magnitude, (3) keyword relevance.
