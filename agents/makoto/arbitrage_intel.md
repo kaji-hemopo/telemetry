@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-26 13:28 JST
+Generated: 2026-04-26 14:10 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -65,10 +65,10 @@ Generated: 2026-04-26 13:28 JST
 | 65 | Freelancer | Python scraper | Multi-disciplinary team for Novel AI Project | 1. AI / ML Engineer (MOST IMPORTANT) Role: Work with LLMs (APIs or open-source)  | https://www.freelancer.com/projects/machine-learning/Multi-disciplinary-team-for-Novel.html |
 | 65 | Freelancer | Python scraper | Ethical Credit Card Fraud Detection | $30.00 | https://www.freelancer.com/projects/deep-learning/Ethical-Credit-Card-Fraud-Detection.html |
 | 65 | Freelancer | Python scraper | ### **Title: Full Stack Developer (Freelance | 3&ndash;6 Months | | **Project Type:** Contract (3–6 Months) **Location:** Remote (India preferred) * | https://www.freelancer.com/projects/ai-development/Title-Full-Stack-Developer-Freelance.html |
+| 65 | Freelancer | Make.com automation | NDIS Onboarding Automation Setup | We are seeking an experienced technical freelancer to design and implement a ful | https://www.freelancer.com/projects/project-management/NDIS-Onboarding-Automation-Setup.html |
 | 65 | Freelancer | Make.com automation | WhatsApp (Interakt) + Zoho CRM Integration with Automation (Phase | Project Description: We are looking for an experienced freelancer to set up a Wh | https://www.freelancer.com/projects/lead-generation/WhatsApp-Interakt-Zoho-CRM-Integration.html |
 | 65 | Freelancer | Make.com automation | Automated Accounting System Development via OpenClaw | AI-Based Zero-Touch Accounting System (OpenClaw / OpenClaude) Please read the pr | https://www.freelancer.com/projects/optical-character-recognition/Automated-Accounting-System-Development.html |
 | 65 | Freelancer | Make.com automation | Strategi Monetisasi Media Sosial dngan mengedit vidio | $15.00 | https://www.freelancer.com/projects/social-media-marketing/Strategi-Monetisasi-Media-Sosial-dngan.html |
-| 65 | Freelancer | Make.com automation | Manual Database Data Entry | I have a set of records housed in an online database that I need transferred man | https://www.freelancer.com/projects/google-sheets/Manual-Database-Data-Entry-40397987.html |
 | 65 | Freelancer | Make.com automation | n8n Avatar Automation Pipeline | Hi, I am Ankit, founder of Evoline Digital — an AI avatar content agency based i | https://www.freelancer.com/projects/n8n/Avatar-Automation-Pipeline.html |
 | 65 | Freelancer | Make.com automation | WhatsApp (Interakt) + Zoho CRM Integration with Automation (MVP & | We are looking for an experienced freelancer to set up a WhatsApp automation sys | https://www.freelancer.com/projects/zoho-crm/WhatsApp-Interakt-Zoho-CRM-Integration.html |
 | 65 | Freelancer | Make.com automation | Playwright Automation with Claude, AWS | $8.00 | https://www.freelancer.com/projects/docker/Playwright-Automation-with-Claude-AWS.html |
