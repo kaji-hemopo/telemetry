@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-26 17:02 JST
+Generated: 2026-04-26 17:26 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -68,10 +68,10 @@ Generated: 2026-04-26 17:02 JST
 | 65 | Freelancer | Python scraper | React, Data, UI Design Hiring | I’m expanding several engineering teams for top-tier MNCs and rapidly scaling te | https://www.freelancer.com/projects/data-analysis/React-Data-Design-Hiring.html |
 | 65 | Freelancer | Python scraper | Tutor en espa&ntilde;ol para proyecto con Browser Use Cloud y aut | Estoy arrancando desde cero con cloud.browser-use.com y quiero dominar la plataf | https://www.freelancer.com/projects/selenium/Tutor-espa-para-proyecto-con.html |
 | 65 | Freelancer | Python scraper | Multi-disciplinary team for Novel AI Project | 1. AI / ML Engineer (MOST IMPORTANT) Role: Work with LLMs (APIs or open-source)  | https://www.freelancer.com/projects/machine-learning/Multi-disciplinary-team-for-Novel.html |
+| 65 | Freelancer | Make.com automation | Cybersecurity SOC Setup with Wazuh | $30.00 | https://www.freelancer.com/projects/network-security/Cybersecurity-SOC-Setup-with-Wazuh.html |
 | 65 | Freelancer | Make.com automation | Selenium Automation using .net for Angular Website | Expert test automation engineer is needed for creating automated test cases for  | https://www.freelancer.com/projects/test-automation/Selenium-Automation-using-net-for.html |
 | 65 | Freelancer | Make.com automation | GoHighLevel CRM System Creation | $2.00 | https://www.freelancer.com/projects/go-high-level/GoHighLevel-CRM-System-Creation.html |
 | 65 | Freelancer | Make.com automation | Carbonated Drink Filling Machine Development | I need a skilled developer to create a bottle filling machine specifically desig | https://www.freelancer.com/projects/automation/Carbonated-Drink-Filling-Machine.html |
-| 65 | Freelancer | Make.com automation | NDIS Onboarding Automation Setup | We are seeking an experienced technical freelancer to design and implement a ful | https://www.freelancer.com/projects/project-management/NDIS-Onboarding-Automation-Setup.html |
 
 ## Notes
 - Scores prioritize: (1) simple automation/scripting fit, (2) payout magnitude, (3) keyword relevance.
