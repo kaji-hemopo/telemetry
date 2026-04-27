@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-27 13:27 JST
+Generated: 2026-04-27 16:05 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -52,26 +52,26 @@ Generated: 2026-04-27 13:27 JST
 
 | Score | Platform | Keyword | Title | Budget/Rate | URL |
 |---:|---|---|---|---|---|
+| 85 | Freelancer | Make.com automation | Full‑Funnel Marketer Needed &ndash; 1,000 Sales for a $997 Digita | $997.00 | https://www.freelancer.com/projects/digital-marketing/Full-Funnel-Marketer-Needed-Sales.html |
+| 85 | Freelancer | Make.com automation | Commissioned Sales Partner for AI Legal SaaS, Business Tools | $500.00 | https://www.freelancer.com/projects/business-development/Commissioned-Sales-Partner-for-Legal.html |
 | 85 | Freelancer | Make.com automation | Oracle Flexcube REST API Automation | $750.00 | https://www.freelancer.com/projects/api-developmet/Oracle-Flexcube-REST-API-Automation.html |
 | 75 | Freelancer | Python scraper | Full-Stack AI/ML Engineer, CST Hours | $250.00 | https://www.freelancer.com/projects/ai-development/Full-Stack-Engineer-CST-Hours.html |
 | 75 | Freelancer | Python scraper | Oil &amp; Gas Services Database | $250.00 | https://www.freelancer.com/projects/data-scraping/Oil-Gas-Services-Database.html |
 | 75 | Freelancer | Python scraper | Cloud-Native OSS Contribution Help | $250.00 | https://www.freelancer.com/projects/amazon-web-services/Cloud-Native-OSS-Contribution-Help.html |
-| 75 | Freelancer | Make.com automation | Aussie Racing Challenge Website Development | $250.00 | https://www.freelancer.com/projects/ai-development/Aussie-Racing-Challenge-Website-40399769.html |
+| 65 | Freelancer | Python scraper | Full-Stack Developer Needed to update dashboard (FastAPI + Next.j | $10.00 | https://www.freelancer.com/projects/fastapi/Full-Stack-Developer-Needed-update.html |
+| 65 | Freelancer | Python scraper | Python Automation Project Enhancement | Enhance the existing Python-based automation project to improve performance, eff | https://www.freelancer.com/projects/automation/Python-Automation-Project-Enhancement.html |
 | 65 | Freelancer | Python scraper | Weekly Product Data Scraping | $30.00 | https://www.freelancer.com/projects/selenium/Weekly-Product-Data-Scraping.html |
 | 65 | Freelancer | Python scraper | Clean CSV Data with Python | $10.00 | https://www.freelancer.com/projects/data-analysis/Clean-CSV-Data-with-Python.html |
 | 65 | Freelancer | Python scraper | WhatsApp Auto-Reply Setup | I need to put a simple yet reliable auto-reply system on my WhatsApp account so  | https://www.freelancer.com/projects/api/WhatsApp-Auto-Reply-Setup-40399636.html |
 | 65 | Freelancer | Python scraper | Backend Developer (Python / FastAPI) &ndash; Admin Panel for Flut | $8.00 | https://www.freelancer.com/projects/fastapi/Backend-Developer-Python-FastAPI-Admin.html |
 | 65 | Freelancer | Python scraper | Taxi Service Flutter App | $2.00 | https://www.freelancer.com/projects/flutter/Taxi-Service-Flutter-App.html |
 | 65 | Freelancer | Python scraper | Automated Zerodha Options Trading Bot | I am looking for an experienced developer to build a fully automated intraday op | https://www.freelancer.com/projects/python/Automated-Zerodha-Options-Trading-Bot.html |
-| 65 | Freelancer | Python scraper | TripAdvisor Hotel Review Scraper &mdash; Sample Test Required | $30.00 | https://www.freelancer.com/projects/python/TripAdvisor-Hotel-Review-Scraper-Sample.html |
-| 65 | Freelancer | Python scraper | Excel Text Automation Task | I need help automating the insertion of specific text strings from a source Exce | https://www.freelancer.com/projects/data-entry/Excel-Text-Automation-Task-40399159.html |
-| 65 | Freelancer | Make.com automation | URGENT: Versatile FLUENT ENGLISH Online Marketing Expert Needed ( | $2.00 | https://www.freelancer.com/projects/link-building/URGENT-Versatile-FLUENT-ENGLISH-Online-40400544.html |
+| 65 | Freelancer | Make.com automation | Hands-off Apify Data Pipeline Development | $10.00 | https://www.freelancer.com/projects/web-scraping/Hands-off-Apify-Data-Pipeline.html |
+| 65 | Freelancer | Make.com automation | URGENT: Versatile FLUENT ENGLISH Online Marketing Expert Needed ( | $2.00 | https://www.freelancer.com/projects/link-building/URGENT-Versatile-FLUENT-ENGLISH-Online-40400788.html |
+| 65 | Freelancer | Make.com automation | Zapier Automation Enhancement for Structured Notes | $30.00 | https://www.freelancer.com/projects/zapier/Zapier-Automation-Enhancement-for.html |
+| 65 | Freelancer | Make.com automation | Winch Tension &amp; Power Monitoring Automation | I’m upgrading a winch so it can look after itself. The end-goal is a single PLC- | https://www.freelancer.com/projects/plc/Winch-Tension-Power-Monitoring.html |
 | 65 | Freelancer | Make.com automation | Excel &amp; Power BI Booking Dashboard | $30.00 | https://www.freelancer.com/projects/power-bi/Excel-Power-Booking-Dashboard.html |
 | 65 | Freelancer | Make.com automation | Shopify Order Automation Setup | $30.00 | https://www.freelancer.com/projects/api-integration/Shopify-Order-Automation-Setup.html |
-| 65 | Freelancer | Make.com automation | JazzHR SMS Workflow Implementation | $15.00 | https://www.freelancer.com/projects/api-integration/JazzHR-SMS-Workflow-Implementation.html |
-| 65 | Freelancer | Make.com automation | ManyChat-ChatGPT Integration Tutorial | $10.00 | https://www.freelancer.com/projects/ai-chatbot-development/ManyChat-ChatGPT-Integration-Tutorial.html |
-| 65 | Freelancer | Make.com automation | Automate Zoho CRM Workflows | Zoho Setup &amp; B2B Website Integration Requirement We are currently using Zoho | https://www.freelancer.com/projects/zoho-crm/Automate-Zoho-CRM-Workflows.html |
-| 65 | Freelancer | Make.com automation | iOS (Swift/SwiftUI) Developer Needed for AI Image Recognition App | Title: iOS (Swift/SwiftUI) Developer Needed for AI Image Recognition App (App St | https://www.freelancer.com/projects/ios-development/iOS-Swift-SwiftUI-Developer-Needed.html |
 
 ## Notes
 - Scores prioritize: (1) simple automation/scripting fit, (2) payout magnitude, (3) keyword relevance.
