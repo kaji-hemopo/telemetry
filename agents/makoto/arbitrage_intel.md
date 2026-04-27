@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-27 20:20 JST
+Generated: 2026-04-27 21:02 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -57,10 +57,10 @@ Generated: 2026-04-27 20:20 JST
 | 85 | Freelancer | Make.com automation | Full‑Funnel Marketer Needed &ndash; 1,000 Sales for a $997 Digita | $997.00 | https://www.freelancer.com/projects/digital-marketing/Full-Funnel-Marketer-Needed-Sales.html |
 | 85 | Freelancer | Make.com automation | Commissioned Sales Partner for AI Legal SaaS, Business Tools | $500.00 | https://www.freelancer.com/projects/business-development/Commissioned-Sales-Partner-for-Legal.html |
 | 75 | Freelancer | Python scraper | EPC Sz&aacute;mla QR-k&oacute;d Integr&aacute;ci&oacute; | $250.00 | https://www.freelancer.com/projects/api-developmet/EPC-mla-Integr.html |
-| 75 | Freelancer | Python scraper | Full-Stack AI/ML Engineer, CST Hours | $250.00 | https://www.freelancer.com/projects/ai-development/Full-Stack-Engineer-CST-Hours.html |
 | 75 | Freelancer | Make.com automation | TrueFlow &amp; Equios Print Workflow Configuration | $250.00 | https://www.freelancer.com/projects/automation/TrueFlow-Equios-Print-Workflow.html |
+| 75 | Freelancer | Data processing API | Bus/Coach Data Collection &amp; Editing | $250.00 | https://www.freelancer.com/projects/data-collection/Bus-Coach-Data-Collection-Editing.html |
 | 75 | Freelancer | Data processing API | Tally-Prime AI Assistant Development | $250.00 | https://www.freelancer.com/projects/ai-chatbot-development/Tally-Prime-Assistant-Development.html |
-| 75 | Freelancer | Data processing API | Convert Mobile APIs to Node | $250.00 | https://www.freelancer.com/projects/nodejs/Convert-Mobile-APIs-Node.html |
+| 65 | Freelancer | Python scraper | AI/ML Expert for Cybersecurity Startup | Senior Python AI/ML Developer Needed – Cybersecurity Startup We’re building ZEX, | https://www.freelancer.com/projects/nlp/Expert-for-Cybersecurity-Startup.html |
 | 65 | Freelancer | Python scraper | Long-Term Backend API Developer | $8.00 | https://www.freelancer.com/projects/Long-Term-Backend-API-Developer.html |
 | 65 | Freelancer | Python scraper | Full Stack Developer (React + Django + PostgreSQL) &ndash; Telugu | $15.00 | https://www.freelancer.com/projects/javascript/Full-Stack-Developer-React-Django-40401126.html |
 | 65 | Freelancer | Python scraper | Full Stack Developer (React + Django + PostgreSQL) &ndash; Telugu | Description: I’m looking for a reliable developer or team for a long-term collab | https://www.freelancer.com/projects/react-js/Full-Stack-Developer-React-Django-40401099.html |
