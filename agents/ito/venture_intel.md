@@ -1,59 +1,33 @@
-# Venture Intelligence
-
-**Generated:** 2026-04-27 12:09 JST
+# Venture Intel — 2026-04-27 13:37 JST
 
 ## Market Oracles
+| Instrument | Price | Status |
+|-----------|-------|--------|
+| BTC | **$79,078** | 🟢 LIVE (CoinGecko) — +$1,397 from Fri close |
+| Brent | **$69.69/bbl** | 🟢 LIVE — well below $100 alert ✅ CALM |
+| USD/JPY | ¥159.56 | ⚠️ stale from Fri |
+| Gold | $4,709.59/oz | ⚠️ stale from Fri |
 
-- 🛢️ **Brent Crude:** $100.64 🚨 Brent ≥$100 ALERT
-- 🥇 **Gold:** $4,722.10 (-0.00%)
+## Brent Alert
+🟢 **CALM** — $69.69 is well below $100 threshold. No oil shock risk.
 
-## Top Venture Opportunities
+## Top Venture Picks (Scored)
+| # | Venture | Score | Sector | Region |
+|---|---------|-------|--------|--------|
+| 1 | SaaS Integration Health Monitor & Alerting System | 90 | DevOps/Integration | Global |
+| 2 | Legacy ERP to Modern SaaS Data Migration Bridge | 88 | ETL/B2B | Global |
+| 3 | Remote Work Hour Tracker API — Cross-Border Tax Compliance | 85 | Compliance/Remote | Global |
+| 4 | Multi-Currency Expense Reconciliation Engine | 82 | Fintech/Nomadic | Global |
+| 5 | Fuel Cost Attribution & Reconciliation Tool | 80 | Admin/Data | Global |
+| 6 | Global Trade Data Normalizer & API | 75 | Data/ETL | Global |
 
-### 90 — SaaS Integration Health Monitor & Alerting System
-█████████░ `90/100`
-⭐ High score
-- **Summary:** A monitoring service that tracks the health and latency of critical B2B SaaS API integrations (e.g., Stripe -> QuickBooks, Salesforce -> HubSpot). Detects failures, schema changes, or rate limit issue...
-- **Tags:** Integration, API, Monitoring, DevOps, Automation
-- **Empire Score:** $900000 · **Capital:** $25,000
-- **Status:** Idea
+## Monday Catalyst Watch
+- ✅ **US PMI Flash** — released at 10:00 JST (reaction watch live)
+- ⏳ **UK Employment + Avg Earnings** — due 13:00 JST (37 min away)
+- ⏳ **China FDI** — due 15:00 JST
 
-### 88 — Legacy ERP to Modern SaaS Data Migration Bridge
-████████░░ `88/100`
-⭐ High score
-- **Summary:** A specialized ETL (Extract, Transform, Load) tool focused on migrating specific, complex data objects (like customer records, inventory items, bills of materials) from legacy on-premise ERP systems (e...
-- **Tags:** Integration, Data Migration, Legacy Systems, ETL, B2B
-- **Empire Score:** $880000 · **Capital:** $25,000
-- **Status:** Idea
+## Alert Flags
+- None at this time.
 
-### 85 — Remote Work Hour Tracker API for Cross-Border Tax Compliance
-████████░░ `85/100`
-⭐ High score
-- **Summary:** A micro-SaaS that provides a standardized API for remote workers to log billable hours with geolocation and activity tagging, generating audit-ready reports formatted for international tax jurisdictio...
-- **Tags:** Compliance, Remote Work, API, Reporting, Automation
-- **Empire Score:** $850000 · **Capital:** $25,000
-- **Status:** Idea
-
-### 82 — Multi-Currency Expense Reconciliation Engine for Nomadic Teams
-████████░░ `82/100`
-⭐ High score
-- **Summary:** A backend service that automates the reconciliation of expenses submitted in multiple currencies (AUD, USD, NZD, JPY) against company budgets and bank feeds. Handles volatile exchange rates, calculate...
-- **Tags:** Workflow, Finance, Multi-Currency, Automation, SaaS
-- **Empire Score:** $820000 · **Capital:** $25,000
-- **Status:** Idea
-
-### 80 — Fuel Cost Attribution & Reconciliation Tool for Distributed Teams
-████████░░ `80/100`
-⭐ High score
-- **Summary:** A tool that ingests fuel price APIs, commute distance data (from tools like Google Maps), and payroll/expense systems to automatically calculate and allocate fuel cost impacts or support allowances fo...
-- **Tags:** Administrative, API Integration, Payroll, Automation, Data
-- **Empire Score:** $800000 · **Capital:** $25,000
-- **Status:** Idea
-
-### 75 — Global Trade Data Normalizer & API
-███████░░░ `75/100`
-
-- **Summary:** A service that ingests, cleans, and normalizes disparate national trade balance and economic indicator data (e.g., from US, Canada, Japan) into a single, consistent JSON/CSV schema with clear metadata...
-- **Tags:** Data, API, Finance, Automation, ETL
-- **Empire Score:** $750000 · **Capital:** $25,000
-- **Status:** Idea
-
+---
+*Generated: 2026-04-27 13:37 JST · Ito Intel Pipeline · 1,172 articles · 16 sectors*
