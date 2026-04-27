@@ -13,7 +13,7 @@ import sys
 from datetime import datetime
 
 WORKSPACE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-OUTPUT_PATH = os.path.join(WORKSPACE, "agents", "ito", "venture_intel.md")
+OUTPUT_PATH = os.path.join(WORKSPACE, "outputs", "venture_intel.md")
 
 # ---------------------------------------------------------------------------
 # Venture Ideas — Ito's vetted micro-SaaS database (curated for Jackson)

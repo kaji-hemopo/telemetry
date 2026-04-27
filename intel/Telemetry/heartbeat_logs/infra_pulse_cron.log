@@ -1,0 +1,21 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    exec(open('/Users/jacksonhemopo/.openclaw/workspace_ito/intel/Telemetry/infra_pulse.py').read())
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 11, in <module>
+NameError: name '__file__' is not defined. Did you mean: '__name__'?
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    exec(open('/Users/jacksonhemopo/.openclaw/workspace_ito/intel/Telemetry/infra_pulse.py').read())
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 11, in <module>
+NameError: name '__file__' is not defined. Did you mean: '__name__'?
+[infra_pulse] WARN — OK:9 WARN:1 FAIL:0
+[infra_pulse] WARN — OK:9 WARN:1 FAIL:0
+[infra_pulse] WARN — OK:9 WARN:1 FAIL:0
+[infra_pulse] WARN — OK:9 WARN:1 FAIL:0
+[infra_pulse] WARN — OK:9 WARN:1 FAIL:0
+[infra_pulse] WARN — OK:9 WARN:1 FAIL:0
+[infra_pulse] WARN — OK:9 WARN:1 FAIL:0
+[infra_pulse] WARN — OK:9 WARN:1 FAIL:0
+[infra_pulse] WARN — OK:9 WARN:1 FAIL:0

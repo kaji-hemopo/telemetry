@@ -1,32 +1,32 @@
 {
-  "generated_at_jst": "2026-04-28 01:21 JST",
+  "generated_at_jst": "2026-04-28 05:59 JST",
   "btc": {
     "symbol": "BTC/USD",
-    "price": 76780.93,
-    "change_24h_pct": -1.61,
+    "price": 76960.44,
+    "change_24h_pct": -1.586,
     "high_24h": 79485.66,
-    "low_24h": 76564.33,
+    "low_24h": 76459.64,
     "source": "Binance"
   },
   "eth": {
     "symbol": "ETH/USD",
-    "price": 2277.69,
-    "change_24h_pct": -2.912,
+    "price": 2291.69,
+    "change_24h_pct": -3.024,
     "high_24h": 2404.37,
     "low_24h": 2266.09,
     "source": "Binance"
   },
   "xrp": {
     "symbol": "XRP/USD",
-    "price": 1.3898,
-    "change_24h_pct": -2.58,
+    "price": 1.3927,
+    "change_24h_pct": -2.458,
     "high_24h": 1.4466,
     "low_24h": 1.3836,
     "source": "Binance"
   },
   "usd_jpy": {
     "symbol": "USD/JPY",
-    "price": 159.326,
+    "price": 159.412,
     "change_24h_pct": 0.0,
     "source": "Yahoo Finance"
   }
