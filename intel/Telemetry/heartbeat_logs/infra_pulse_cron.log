@@ -19,3 +19,4 @@ NameError: name '__file__' is not defined. Did you mean: '__name__'?
 [infra_pulse] WARN — OK:9 WARN:1 FAIL:0
 [infra_pulse] WARN — OK:9 WARN:1 FAIL:0
 [infra_pulse] WARN — OK:9 WARN:1 FAIL:0
+[infra_pulse] WARN — OK:9 WARN:1 FAIL:0

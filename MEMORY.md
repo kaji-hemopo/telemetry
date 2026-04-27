@@ -1,9 +1,9 @@
 # MEMORY.md — Saito / Ito
-### Beat #20 (05:58 JST) — Pipeline Healthy. Niches #37-38 Delivered
+### Beat #22 (06:38 JST) — Pipeline Healthy. Niches #41-42 Delivered
 - infra_pulse: OK:9 WARN:1 FAIL:0 ✅
-- Niches #37-38: Datadog Monitor Alert Fatigue Predictor + Terraform State File Corruption Early Warning System
+- Niches #41-42: GitHub Actions Runner Pool Saturation Forecaster + Zapier/Make Workflow Execution Latency Regression Detector
 
-**Last Heartbeat:** 2026-04-28 05:58 JST — Beat #20
+**Last Heartbeat:** 2026-04-28 06:38 JST — Beat #22
 **Status:** ACTIVE — Hunter-Killer heartbeat running
 
 ---
@@ -695,71 +695,3 @@ Per IDENTITY.md — Hunter-Killer mandate: identify **2 micro-SaaS niches per he
 
 **Why >$10k/mo:** 25 companies × $400-1000/mo. Increases experimentation throughput 20-40%.
 **Capex:** ~$10k. Infra: ~$80/mo. **Effort:** <3 hrs/week.
-**Competitors:** LaunchDarkly/Optimizely show flag status but no velocity benchmarking, stuck experiment detection, or throughput prediction.
-
-
----
-## 🔴 STALE CONTEXT — EMPPIRE DELEGATION SYSTEM (Kaji/Titan)
-*SAITO-processor items — tracked here for context*
-
-- **Titan PT Launch:** ENFORCED PARKED · window closed Sat Apr 18 09:00 JST · cron DISABLED · 30+ nudges · ZERO response · reactivate: `"go Titan"`
-- **Empire Morning Briefing v3:** ⏳ PENDING JAX ~202h (8.4d+) · draft ready · deliver with `"Go Telegram"`
-- **Makoto GBP Deploy:** ⏳ PENDING JAX 31d+ · Formspree placeholder · GitHub Pages route ready
-- **Felix Gmail Re-auth:** 🔴 BLOCKED ~172h (7.2d+) · N3 Phase 2b frozen · X posts offline
-- **Airbnb Minpaku Project:** Archived March 30. Decision pending (Options 1-4). Never resolved.
-- **saito_tasks.json:** Last updated 2026-03-21, all tasks overdue.
-
----
-
-
----
-
----
-## 📅 CURRENT SESSION: 2026-04-28 05:38 JST — Beat #20
-
-### Beat #20 (05:38 JST) — Pipeline Healthy. Niches #37-38 Delivered
-- infra_pulse: OK:9 WARN:1 FAIL:0 ✅
-
-### Beat #19 (05:18 JST) — Pipeline Healthy. Niches #35-36 Delivered
-- infra_pulse: OK:9 WARN:1 FAIL:0 ✅
-
----
-
-## 🏹 NICHE #37: Datadog Monitor Alert Fatigue Predictor
-**B2B Problem:** SRE/DevOps teams with 200-2000+ Datadog monitors accumulate alert noise — 60-80% of pages are non-actionable, caused by cascading failures, flapping thresholds, or monitors firing on already-failing services. Alert fatigue desensitizes teams, causing real incidents to be missed or delayed.
-
-**Target Market:** Mid-large SaaS with heavy Datadog usage (>$10k/mo Datadog bill), 50+ engineers, on-call rotations
-
-**Technical Architecture:**
-- Go collector via Datadog REST API (monitors, monitor groups, audit logs, downtime schedules)
-- Alert fatigue engine: tracks per-monitor page rate, flapping frequency, noise-to-signal ratio
-- Correlation analyzer: groups monitors by service/dashboard, identifies root-cause vs symptom monitors
-- Suppression opportunity finder: suggests mute windows or composite monitors to reduce noise
-- PostgreSQL, Docker, Slack alerts highlighting top offenders + suggested consolidations
-- Dashboard: team alert load, monitor efficiency scores, noise trend over time
-
-**Why >$10k/mo:** 25 companies × $400-1200/mo. Reduces 30-50% of non-actionable pages.
-**Capex:** ~$15k. Infra: ~$120/mo. **Effort:** <4 hrs/week.
-**Competitors:** Datadog itself has monitor management but no alert fatigue prediction or correlation engine.
-
----
-
-## 🏹 NICHE #38: Snowflake Materialized View Refresh Failure Silent Killer
-**B2B Problem:** Data engineering and analytics teams running Snowflake with 20-200+ materialized views face silent refresh failures — a refresh fails due to underlying table locks, warehouse size mismatches, or SQL errors, and the view serves stale data until someone notices (hours or days later). Downstream dashboards, dbt models, and BI tools propagate wrong numbers. No failure alerts, no refresh lag tracking, no stale data detection.
-
-**Target Market:** Mid-large SaaS with $50k+/yr Snowflake spend, active materialized view dependencies, dbt/BI pipelines
-
-**Technical Architecture:**
-- Go collector via Snowflake Information Schema (MATERIALIZED_VIEWS, VIEW_REFRESH_HISTORY) + Query History
-- Refresh failure detector: tracks failed refresh events, error types, and downstream impact
-- Stale data engine: monitors last_refreshed_successful_time vs refresh interval, flags views exceeding stale threshold
-- Dependency chain mapper: correlates view failures with downstream dbt models, dashboards, and BI tools
-- PostgreSQL, Docker, Slack alerts with view name, failure reason, stale duration, and affected dependents
-- Dashboard: materialized view health, refresh failure history, stale data timeline, dependency map
-
-**Why >$10k/mo:** 25 companies × $400-1200/mo. Prevents $10k-$100k in decision errors from stale view data per incident.
-**Capex:** ~$10k. Infra: ~$80/mo. **Effort:** <3 hrs/week.
-**Competitors:** Snowflake shows view definitions but doesn't track refresh failures, stale lag, or downstream impact.
-
-- Niches #35-36: OpenTelemetry Collector Pipeline Health Analyzer + Feature Flag Experimentation Velocity Analyzer
-- Pipeline: infra_pulse ✅ | heartbeat_logs ✅ | MEMORY.md ✅
