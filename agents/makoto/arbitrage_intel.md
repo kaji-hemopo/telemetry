@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-27 19:34 JST
+Generated: 2026-04-27 20:20 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -59,6 +59,7 @@ Generated: 2026-04-27 19:34 JST
 | 75 | Freelancer | Python scraper | EPC Sz&aacute;mla QR-k&oacute;d Integr&aacute;ci&oacute; | $250.00 | https://www.freelancer.com/projects/api-developmet/EPC-mla-Integr.html |
 | 75 | Freelancer | Python scraper | Full-Stack AI/ML Engineer, CST Hours | $250.00 | https://www.freelancer.com/projects/ai-development/Full-Stack-Engineer-CST-Hours.html |
 | 75 | Freelancer | Make.com automation | TrueFlow &amp; Equios Print Workflow Configuration | $250.00 | https://www.freelancer.com/projects/automation/TrueFlow-Equios-Print-Workflow.html |
+| 75 | Freelancer | Data processing API | Tally-Prime AI Assistant Development | $250.00 | https://www.freelancer.com/projects/ai-chatbot-development/Tally-Prime-Assistant-Development.html |
 | 75 | Freelancer | Data processing API | Convert Mobile APIs to Node | $250.00 | https://www.freelancer.com/projects/nodejs/Convert-Mobile-APIs-Node.html |
 | 65 | Freelancer | Python scraper | Long-Term Backend API Developer | $8.00 | https://www.freelancer.com/projects/Long-Term-Backend-API-Developer.html |
 | 65 | Freelancer | Python scraper | Full Stack Developer (React + Django + PostgreSQL) &ndash; Telugu | $15.00 | https://www.freelancer.com/projects/javascript/Full-Stack-Developer-React-Django-40401126.html |
@@ -71,7 +72,6 @@ Generated: 2026-04-27 19:34 JST
 | 65 | Freelancer | Make.com automation | WhatsApp Business Account Restriction Resolution | Project Overview: Seeking a Meta Business Manager expert to resolve a WhatsApp B | https://www.freelancer.com/projects/twilio/WhatsApp-Business-Account-Restriction.html |
 | 65 | Freelancer | Make.com automation | AI-Based Social Media Lead Generator | Project Opportunity: Lead Generation Automation SystemI am looking for a special | https://www.freelancer.com/projects/ai-content-creation/Based-Social-Media-Lead-Generator.html |
 | 65 | Freelancer | Make.com automation | Hands-off Apify Data Pipeline Development | $10.00 | https://www.freelancer.com/projects/web-scraping/Hands-off-Apify-Data-Pipeline.html |
-| 65 | Freelancer | Make.com automation | URGENT: Versatile FLUENT ENGLISH Online Marketing Expert Needed ( | $2.00 | https://www.freelancer.com/projects/link-building/URGENT-Versatile-FLUENT-ENGLISH-Online-40400788.html |
 
 ## Notes
 - Scores prioritize: (1) simple automation/scripting fit, (2) payout magnitude, (3) keyword relevance.
