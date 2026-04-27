@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-27 08:40 JST
+Generated: 2026-04-27 09:46 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -56,7 +56,6 @@ Generated: 2026-04-27 08:40 JST
 | 75 | Freelancer | Python scraper | Oil &amp; Gas Services Database | $250.00 | https://www.freelancer.com/projects/data-scraping/Oil-Gas-Services-Database.html |
 | 75 | Freelancer | Python scraper | Cloud-Native OSS Contribution Help | $250.00 | https://www.freelancer.com/projects/amazon-web-services/Cloud-Native-OSS-Contribution-Help.html |
 | 75 | Freelancer | Python scraper | AI Radio Host Automation | $250.00 | https://www.freelancer.com/projects/ai-chatbot/Radio-Host-Automation.html |
-| 75 | Freelancer | Python scraper | Build Professional Web Dashboard &amp; Sync with Existing Python  | $50.00 | https://www.freelancer.com/projects/web-development/Build-Professional-Web-Dashboard-Sync.html |
 | 75 | Freelancer | Make.com automation | Aussie Racing Challenge Website Development | $250.00 | https://www.freelancer.com/projects/ai-development/Aussie-Racing-Challenge-Website-40399769.html |
 | 75 | Freelancer | Data processing API | Integrate AffiliateWP With Railway Emergency need in 24hrs or les | $250.00 | https://www.freelancer.com/projects/api-developmet/Integrate-AffiliateWP-With-Railway.html |
 | 65 | Freelancer | Python scraper | Weekly Product Data Scraping | $30.00 | https://www.freelancer.com/projects/selenium/Weekly-Product-Data-Scraping.html |
@@ -72,6 +71,7 @@ Generated: 2026-04-27 08:40 JST
 | 65 | Freelancer | Make.com automation | Shopify Order Automation Setup | $30.00 | https://www.freelancer.com/projects/api-integration/Shopify-Order-Automation-Setup.html |
 | 65 | Freelancer | Make.com automation | JazzHR SMS Workflow Implementation | $15.00 | https://www.freelancer.com/projects/api-integration/JazzHR-SMS-Workflow-Implementation.html |
 | 65 | Freelancer | Make.com automation | ManyChat-ChatGPT Integration Tutorial | $10.00 | https://www.freelancer.com/projects/ai-chatbot-development/ManyChat-ChatGPT-Integration-Tutorial.html |
+| 65 | Freelancer | Make.com automation | Automate Zoho CRM Workflows | Zoho Setup &amp; B2B Website Integration Requirement We are currently using Zoho | https://www.freelancer.com/projects/zoho-crm/Automate-Zoho-CRM-Workflows.html |
 
 ## Notes
 - Scores prioritize: (1) simple automation/scripting fit, (2) payout magnitude, (3) keyword relevance.
