@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-28 05:26 JST
+Generated: 2026-04-28 08:19 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -52,14 +52,15 @@ Generated: 2026-04-28 05:26 JST
 
 | Score | Platform | Keyword | Title | Budget/Rate | URL |
 |---:|---|---|---|---|---|
+| 85 | Freelancer | Python scraper | Backtesting Framework | $3,000.00 | https://www.freelancer.com/projects/data-analysis/Backtesting-Framework.html |
 | 85 | Freelancer | Python scraper | Senior Full-Stack Scale Engineer | $5,000.00 | https://www.freelancer.com/projects/full-stack-development/Senior-Full-Stack-Scale-Engineer.html |
 | 85 | Freelancer | Python scraper | Computer Vision Developer | $3,000.00 | https://www.freelancer.com/projects/computer-vision/Computer-Vision-Developer-40401827.html |
 | 85 | Freelancer | Python scraper | Hiddify/Xray VPN System Deployment | $3,000.00 | https://www.freelancer.com/projects/linux/Hiddify-Xray-VPN-System-Deployment.html |
-| 85 | Freelancer | Python scraper | Internal RAG Chatbot Development | $800.00 | https://www.freelancer.com/projects/ai-chatbot-development/Internal-RAG-Chatbot-Development.html |
-| 85 | Freelancer | Data processing API | &quot;BK-280 BIOBASE / MS-H655 MedicalSystem / U500 Mission Exper | $750.00 | https://www.freelancer.com/projects/api-developmet/BIOBASE-MedicalSystem-Mission-Expert.html |
-| 85 | Freelancer | Data processing API | 30,000 Verified Creator, Journalist &amp; Newsletter Contacts (He | $599.00 | https://www.freelancer.com/projects/research/Verified-Creator-Journalist-Newsletter.html |
+| 85 | Freelancer | Make.com automation | AI Sales Closer (US Market) Commission-Only&ndash; Up to 20% Comm | $3,000.00 | https://www.freelancer.com/projects/b2b-marketing/Sales-Closer-Market-Commission-Only-40402556.html |
 | 75 | Freelancer | Make.com automation | Marketing Material &amp; Social Growth | $250.00 | https://www.freelancer.com/projects/content-marketing/Marketing-Material-Social-Growth.html |
-| 75 | Freelancer | Data processing API | Active Georgia Email List Needed | $100.00 | https://www.freelancer.com/projects/data-management/Active-Georgia-Email-List-Needed.html |
+| 75 | Freelancer | Make.com automation | Automated Jotform to Canva Guest Pass Emailer | $250.00 | https://www.freelancer.com/projects/automation/Automated-Jotform-Canva-Guest-Pass.html |
+| 65 | Freelancer | Python scraper | Mk21 Engineering Education Software Development | $30.00 | https://www.freelancer.com/projects/fastapi/Engineering-Education-Software.html |
+| 65 | Freelancer | Python scraper | Financial Data Analysis &amp; Visualization -- 2 | $15.00 | https://www.freelancer.com/projects/data-analysis/Financial-Data-Analysis-Visualization.html |
 | 65 | Freelancer | Python scraper | Bulk Forward Geocoding for 200k Addresses | I have a spreadsheet (Excel/CSV) containing roughly two-lakh Indian addresses an | https://www.freelancer.com/projects/data-processing/Bulk-Forward-Geocoding-for-Addresses.html |
 | 65 | Freelancer | Python scraper | Mobile Buyback Price Comparison Tool | ## 1. Project Title **&quot;Real-Time Mobile Price Aggregator &amp; Buyback Calc | https://www.freelancer.com/projects/python/Mobile-Buyback-Price-Comparison-Tool.html |
 | 65 | Freelancer | Python scraper | Smart Home Person Tracking System Development | Multi-Person Indoor Tracking System for Smart Home — Raspberry Pi 5, Python, Loc | https://www.freelancer.com/projects/python/Smart-Home-Person-Tracking-System.html |
@@ -67,11 +68,10 @@ Generated: 2026-04-28 05:26 JST
 | 65 | Freelancer | Python scraper | Daily MCA Company Data Scraper | Each morning I need a fresh Excel workbook that lists every company incorporated | https://www.freelancer.com/projects/beautifulsoup/Daily-MCA-Company-Data-Scraper.html |
 | 65 | Freelancer | Python scraper | Python Learner, AI Enthusiast, Creative Designer | • Python learner with growing knowledge in automation and problem-solving. • Ski | https://www.freelancer.com/projects/ai-content-creation/Python-Learner-Enthusiast-Creative.html |
 | 65 | Freelancer | Python scraper | AI/ML Expert for Cybersecurity Startup | Senior Python AI/ML Developer Needed – Cybersecurity Startup We’re building ZEX, | https://www.freelancer.com/projects/nlp/Expert-for-Cybersecurity-Startup.html |
-| 65 | Freelancer | Python scraper | Long-Term Backend API Developer | $8.00 | https://www.freelancer.com/projects/Long-Term-Backend-API-Developer.html |
+| 65 | Freelancer | Make.com automation | Instant Flow: AI Summary Automation | $30.00 | https://www.freelancer.com/projects/chatgpt/Instant-Flow-Summary-Automation.html |
+| 65 | Freelancer | Make.com automation | 9-AI System Build for 180K Gone Brand | BUILD A COMPLETE 9-AGENT AI AUTOMATION EMPIRE — 180K GONE BRAND *** **WHO WE ARE | https://www.freelancer.com/projects/n8n/System-Build-for-Gone-Brand.html |
 | 65 | Freelancer | Make.com automation | Bilingual AI Voice Receptionist Integration | Job Description I want to build an AI voice receptionist system that works with  | https://www.freelancer.com/projects/ai-hw-sw/Bilingual-Voice-Receptionist-Integration.html |
 | 65 | Freelancer | Make.com automation | Insurance Verification Automation Bot | $30.00 | https://www.freelancer.com/projects/web-scraping/Insurance-Verification-Automation-Bot.html |
-| 65 | Freelancer | Make.com automation | AI Developers Wanted (claude &amp; openclaw) | $8.00 | https://www.freelancer.com/projects/ai-development/Developers-Wanted-claude-openclaw.html |
-| 65 | Freelancer | Make.com automation | Headline: Hiring n8n &amp; WhatsApp Automation Developer (Chat Mi | Hiring n8n &amp; WhatsApp Automation Developer (Chat Mitra + Razorpay) – Fixed P | https://www.freelancer.com/projects/api/Headline-Hiring-WhatsApp-Automation.html |
 
 ## Notes
 - Scores prioritize: (1) simple automation/scripting fit, (2) payout magnitude, (3) keyword relevance.
