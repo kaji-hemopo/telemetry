@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-28 04:23 JST
+Generated: 2026-04-28 05:26 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -58,8 +58,8 @@ Generated: 2026-04-28 04:23 JST
 | 85 | Freelancer | Python scraper | Internal RAG Chatbot Development | $800.00 | https://www.freelancer.com/projects/ai-chatbot-development/Internal-RAG-Chatbot-Development.html |
 | 85 | Freelancer | Data processing API | &quot;BK-280 BIOBASE / MS-H655 MedicalSystem / U500 Mission Exper | $750.00 | https://www.freelancer.com/projects/api-developmet/BIOBASE-MedicalSystem-Mission-Expert.html |
 | 85 | Freelancer | Data processing API | 30,000 Verified Creator, Journalist &amp; Newsletter Contacts (He | $599.00 | https://www.freelancer.com/projects/research/Verified-Creator-Journalist-Newsletter.html |
-| 75 | Freelancer | Python scraper | EPC Sz&aacute;mla QR-k&oacute;d Integr&aacute;ci&oacute; | $250.00 | https://www.freelancer.com/projects/api-developmet/EPC-mla-Integr.html |
 | 75 | Freelancer | Make.com automation | Marketing Material &amp; Social Growth | $250.00 | https://www.freelancer.com/projects/content-marketing/Marketing-Material-Social-Growth.html |
+| 75 | Freelancer | Data processing API | Active Georgia Email List Needed | $100.00 | https://www.freelancer.com/projects/data-management/Active-Georgia-Email-List-Needed.html |
 | 65 | Freelancer | Python scraper | Bulk Forward Geocoding for 200k Addresses | I have a spreadsheet (Excel/CSV) containing roughly two-lakh Indian addresses an | https://www.freelancer.com/projects/data-processing/Bulk-Forward-Geocoding-for-Addresses.html |
 | 65 | Freelancer | Python scraper | Mobile Buyback Price Comparison Tool | ## 1. Project Title **&quot;Real-Time Mobile Price Aggregator &amp; Buyback Calc | https://www.freelancer.com/projects/python/Mobile-Buyback-Price-Comparison-Tool.html |
 | 65 | Freelancer | Python scraper | Smart Home Person Tracking System Development | Multi-Person Indoor Tracking System for Smart Home — Raspberry Pi 5, Python, Loc | https://www.freelancer.com/projects/python/Smart-Home-Person-Tracking-System.html |
