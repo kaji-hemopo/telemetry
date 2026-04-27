@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-27 18:43 JST
+Generated: 2026-04-27 19:34 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -42,36 +42,36 @@ Generated: 2026-04-27 18:43 JST
 | 90 | Lancers | API連携 | 【急募】ダウンロードスクリプト開発とBOXアップロード依頼 | ¥100,000 | https://www.lancers.jp/work/detail/5492631 |
 | 90 | Lancers | API連携 | auキャリア決済の新仕様に基づく既存システムの修正、KDDIとの通信仕様に基づくAPI調整、疎通試験 | ¥200,000 | https://www.lancers.jp/work/detail/5326072 |
 | 90 | Lancers | API連携 | 【急募】ECストア注文データと出荷データを連携するシステム開発 | ¥50,000 | https://www.lancers.jp/work/detail/5189850 |
+| 90 | Lancers | API連携 | 【Lステップ×デジコ（API）連携】自動抽選システム構築依頼 | ¥50,000 | https://www.lancers.jp/work/detail/5503694 |
 | 75 | Lancers | LP制作 | 【WEBサイトリニューアル】マーケティング会社のコーポレートサイト（SEO、BtoB） | ¥300,000 | https://www.lancers.jp/work/detail/5508434 |
 | 75 | Lancers | スクレイピング | 【急募】紙の伝票をWEBシステムへ自動データ入力開発【AI使用可能】 | ¥100,000 | https://www.lancers.jp/work/detail/5411519 |
 | 35 | Lancers | LP制作 | 【LP制作】STUDIOでのランディングページ実装パートナー募集 | ¥20,000 | https://www.lancers.jp/work/detail/5521253 |
 | 35 | Lancers | LP制作 | 【急募】バスケットボール育成世代サービスのLP制作｜ノーコード希望 | ¥30,000 | https://www.lancers.jp/work/detail/5518909 |
-| 35 | Lancers | LP制作 | 【フィットネスジムLP制作】DIVERテーマでの実装者募集。デザイン完成済み。(Photoshop) | ¥40,000 | https://www.lancers.jp/work/detail/5519086 |
 
 ## Global Highlights (USD)
 
 | Score | Platform | Keyword | Title | Budget/Rate | URL |
 |---:|---|---|---|---|---|
+| 85 | Freelancer | Python scraper | Internal RAG Chatbot Development | $800.00 | https://www.freelancer.com/projects/ai-chatbot-development/Internal-RAG-Chatbot-Development.html |
 | 85 | Freelancer | Python scraper | NerionX Multi-Tenant Commerce Hub (Medusa.js v2) | $5,000.00 | https://www.freelancer.com/projects/api-developmet/NerionX-Multi-Tenant-Commerce-Hub.html |
 | 85 | Freelancer | Make.com automation | Full‑Funnel Marketer Needed &ndash; 1,000 Sales for a $997 Digita | $997.00 | https://www.freelancer.com/projects/digital-marketing/Full-Funnel-Marketer-Needed-Sales.html |
 | 85 | Freelancer | Make.com automation | Commissioned Sales Partner for AI Legal SaaS, Business Tools | $500.00 | https://www.freelancer.com/projects/business-development/Commissioned-Sales-Partner-for-Legal.html |
-| 85 | Freelancer | Data processing API | Internal RAG Chatbot Development | $800.00 | https://www.freelancer.com/projects/ai-chatbot-development/Internal-RAG-Chatbot-Development.html |
 | 75 | Freelancer | Python scraper | EPC Sz&aacute;mla QR-k&oacute;d Integr&aacute;ci&oacute; | $250.00 | https://www.freelancer.com/projects/api-developmet/EPC-mla-Integr.html |
 | 75 | Freelancer | Python scraper | Full-Stack AI/ML Engineer, CST Hours | $250.00 | https://www.freelancer.com/projects/ai-development/Full-Stack-Engineer-CST-Hours.html |
 | 75 | Freelancer | Make.com automation | TrueFlow &amp; Equios Print Workflow Configuration | $250.00 | https://www.freelancer.com/projects/automation/TrueFlow-Equios-Print-Workflow.html |
+| 75 | Freelancer | Data processing API | Convert Mobile APIs to Node | $250.00 | https://www.freelancer.com/projects/nodejs/Convert-Mobile-APIs-Node.html |
 | 65 | Freelancer | Python scraper | Long-Term Backend API Developer | $8.00 | https://www.freelancer.com/projects/Long-Term-Backend-API-Developer.html |
 | 65 | Freelancer | Python scraper | Full Stack Developer (React + Django + PostgreSQL) &ndash; Telugu | $15.00 | https://www.freelancer.com/projects/javascript/Full-Stack-Developer-React-Django-40401126.html |
 | 65 | Freelancer | Python scraper | Full Stack Developer (React + Django + PostgreSQL) &ndash; Telugu | Description: I’m looking for a reliable developer or team for a long-term collab | https://www.freelancer.com/projects/react-js/Full-Stack-Developer-React-Django-40401099.html |
 | 65 | Freelancer | Python scraper | Full-Stack Developer Needed to update dashboard (FastAPI + Next.j | $10.00 | https://www.freelancer.com/projects/fastapi/Full-Stack-Developer-Needed-update.html |
 | 65 | Freelancer | Python scraper | Python Automation Project Enhancement | Enhance the existing Python-based automation project to improve performance, eff | https://www.freelancer.com/projects/automation/Python-Automation-Project-Enhancement.html |
-| 65 | Freelancer | Python scraper | Weekly Product Data Scraping | $30.00 | https://www.freelancer.com/projects/selenium/Weekly-Product-Data-Scraping.html |
+| 65 | Freelancer | Make.com automation | AI-Powered Desktop Email Automation Agent | Here is the detailed AI agent requirements for automation. 1. Objective Develop  | https://www.freelancer.com/projects/natural-language-processing/Powered-Desktop-Email-Automation-Agent.html |
+| 65 | Freelancer | Make.com automation | Automated Volunteer Recruitment System | I need an automated system to streamline volunteer recruitment using Eventbrite  | https://www.freelancer.com/projects/eventbrite/Automated-Volunteer-Recruitment-System.html |
 | 65 | Freelancer | Make.com automation | Siemens TIA PLC &amp; HMI Automation | $30.00 | https://www.freelancer.com/projects/plc/Siemens-TIA-PLC-HMI-Automation.html |
 | 65 | Freelancer | Make.com automation | WhatsApp Business Account Restriction Resolution | Project Overview: Seeking a Meta Business Manager expert to resolve a WhatsApp B | https://www.freelancer.com/projects/twilio/WhatsApp-Business-Account-Restriction.html |
 | 65 | Freelancer | Make.com automation | AI-Based Social Media Lead Generator | Project Opportunity: Lead Generation Automation SystemI am looking for a special | https://www.freelancer.com/projects/ai-content-creation/Based-Social-Media-Lead-Generator.html |
 | 65 | Freelancer | Make.com automation | Hands-off Apify Data Pipeline Development | $10.00 | https://www.freelancer.com/projects/web-scraping/Hands-off-Apify-Data-Pipeline.html |
 | 65 | Freelancer | Make.com automation | URGENT: Versatile FLUENT ENGLISH Online Marketing Expert Needed ( | $2.00 | https://www.freelancer.com/projects/link-building/URGENT-Versatile-FLUENT-ENGLISH-Online-40400788.html |
-| 65 | Freelancer | Make.com automation | Zapier Automation Enhancement for Structured Notes | $30.00 | https://www.freelancer.com/projects/zapier/Zapier-Automation-Enhancement-for.html |
-| 65 | Freelancer | Make.com automation | Winch Tension &amp; Power Monitoring Automation | I’m upgrading a winch so it can look after itself. The end-goal is a single PLC- | https://www.freelancer.com/projects/plc/Winch-Tension-Power-Monitoring.html |
 
 ## Notes
 - Scores prioritize: (1) simple automation/scripting fit, (2) payout magnitude, (3) keyword relevance.
