@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-27 21:02 JST
+Generated: 2026-04-27 23:02 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -55,23 +55,23 @@ Generated: 2026-04-27 21:02 JST
 | 85 | Freelancer | Python scraper | Internal RAG Chatbot Development | $800.00 | https://www.freelancer.com/projects/ai-chatbot-development/Internal-RAG-Chatbot-Development.html |
 | 85 | Freelancer | Python scraper | NerionX Multi-Tenant Commerce Hub (Medusa.js v2) | $5,000.00 | https://www.freelancer.com/projects/api-developmet/NerionX-Multi-Tenant-Commerce-Hub.html |
 | 85 | Freelancer | Make.com automation | Full‑Funnel Marketer Needed &ndash; 1,000 Sales for a $997 Digita | $997.00 | https://www.freelancer.com/projects/digital-marketing/Full-Funnel-Marketer-Needed-Sales.html |
-| 85 | Freelancer | Make.com automation | Commissioned Sales Partner for AI Legal SaaS, Business Tools | $500.00 | https://www.freelancer.com/projects/business-development/Commissioned-Sales-Partner-for-Legal.html |
 | 75 | Freelancer | Python scraper | EPC Sz&aacute;mla QR-k&oacute;d Integr&aacute;ci&oacute; | $250.00 | https://www.freelancer.com/projects/api-developmet/EPC-mla-Integr.html |
 | 75 | Freelancer | Make.com automation | TrueFlow &amp; Equios Print Workflow Configuration | $250.00 | https://www.freelancer.com/projects/automation/TrueFlow-Equios-Print-Workflow.html |
-| 75 | Freelancer | Data processing API | Bus/Coach Data Collection &amp; Editing | $250.00 | https://www.freelancer.com/projects/data-collection/Bus-Coach-Data-Collection-Editing.html |
-| 75 | Freelancer | Data processing API | Tally-Prime AI Assistant Development | $250.00 | https://www.freelancer.com/projects/ai-chatbot-development/Tally-Prime-Assistant-Development.html |
+| 75 | Freelancer | Data processing API | Odoo Van Sales Mobile App | $250.00 | https://www.freelancer.com/projects/odoo/Odoo-Van-Sales-Mobile-App.html |
+| 65 | Freelancer | Python scraper | Daily MCA Company Data Scraper | Each morning I need a fresh Excel workbook that lists every company incorporated | https://www.freelancer.com/projects/beautifulsoup/Daily-MCA-Company-Data-Scraper.html |
+| 65 | Freelancer | Python scraper | Python Learner, AI Enthusiast, Creative Designer | • Python learner with growing knowledge in automation and problem-solving. • Ski | https://www.freelancer.com/projects/ai-content-creation/Python-Learner-Enthusiast-Creative.html |
+| 65 | Freelancer | Python scraper | Clean Mixed Online Form Data | I have a collection of submissions that were captured through online forms and n | https://www.freelancer.com/projects/data-analysis/Clean-Mixed-Online-Form-Data.html |
 | 65 | Freelancer | Python scraper | AI/ML Expert for Cybersecurity Startup | Senior Python AI/ML Developer Needed – Cybersecurity Startup We’re building ZEX, | https://www.freelancer.com/projects/nlp/Expert-for-Cybersecurity-Startup.html |
 | 65 | Freelancer | Python scraper | Long-Term Backend API Developer | $8.00 | https://www.freelancer.com/projects/Long-Term-Backend-API-Developer.html |
 | 65 | Freelancer | Python scraper | Full Stack Developer (React + Django + PostgreSQL) &ndash; Telugu | $15.00 | https://www.freelancer.com/projects/javascript/Full-Stack-Developer-React-Django-40401126.html |
 | 65 | Freelancer | Python scraper | Full Stack Developer (React + Django + PostgreSQL) &ndash; Telugu | Description: I’m looking for a reliable developer or team for a long-term collab | https://www.freelancer.com/projects/react-js/Full-Stack-Developer-React-Django-40401099.html |
 | 65 | Freelancer | Python scraper | Full-Stack Developer Needed to update dashboard (FastAPI + Next.j | $10.00 | https://www.freelancer.com/projects/fastapi/Full-Stack-Developer-Needed-update.html |
-| 65 | Freelancer | Python scraper | Python Automation Project Enhancement | Enhance the existing Python-based automation project to improve performance, eff | https://www.freelancer.com/projects/automation/Python-Automation-Project-Enhancement.html |
+| 65 | Freelancer | Make.com automation | Ongoing Zoho CRM Optimization &amp; Support | My Zoho One environment is already fully set up and operational. I am not lookin | https://www.freelancer.com/projects/automation/Ongoing-Zoho-CRM-Optimization-Support.html |
+| 65 | Freelancer | Make.com automation | Beckhoff Smart Home Ecosystem Development | I want to bring an end-to-end home-automation solution to life on top of Beckhof | https://www.freelancer.com/projects/automation/Beckhoff-Smart-Home-Ecosystem.html |
 | 65 | Freelancer | Make.com automation | AI-Powered Desktop Email Automation Agent | Here is the detailed AI agent requirements for automation. 1. Objective Develop  | https://www.freelancer.com/projects/natural-language-processing/Powered-Desktop-Email-Automation-Agent.html |
 | 65 | Freelancer | Make.com automation | Automated Volunteer Recruitment System | I need an automated system to streamline volunteer recruitment using Eventbrite  | https://www.freelancer.com/projects/eventbrite/Automated-Volunteer-Recruitment-System.html |
 | 65 | Freelancer | Make.com automation | Siemens TIA PLC &amp; HMI Automation | $30.00 | https://www.freelancer.com/projects/plc/Siemens-TIA-PLC-HMI-Automation.html |
 | 65 | Freelancer | Make.com automation | WhatsApp Business Account Restriction Resolution | Project Overview: Seeking a Meta Business Manager expert to resolve a WhatsApp B | https://www.freelancer.com/projects/twilio/WhatsApp-Business-Account-Restriction.html |
-| 65 | Freelancer | Make.com automation | AI-Based Social Media Lead Generator | Project Opportunity: Lead Generation Automation SystemI am looking for a special | https://www.freelancer.com/projects/ai-content-creation/Based-Social-Media-Lead-Generator.html |
-| 65 | Freelancer | Make.com automation | Hands-off Apify Data Pipeline Development | $10.00 | https://www.freelancer.com/projects/web-scraping/Hands-off-Apify-Data-Pipeline.html |
 
 ## Notes
 - Scores prioritize: (1) simple automation/scripting fit, (2) payout magnitude, (3) keyword relevance.
