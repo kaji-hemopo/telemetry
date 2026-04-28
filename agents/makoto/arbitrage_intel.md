@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-28 04:23 JST
+Generated: 2026-04-28 17:49 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -52,26 +52,26 @@ Generated: 2026-04-28 04:23 JST
 
 | Score | Platform | Keyword | Title | Budget/Rate | URL |
 |---:|---|---|---|---|---|
-| 85 | Freelancer | Python scraper | Senior Full-Stack Scale Engineer | $5,000.00 | https://www.freelancer.com/projects/full-stack-development/Senior-Full-Stack-Scale-Engineer.html |
-| 85 | Freelancer | Python scraper | Computer Vision Developer | $3,000.00 | https://www.freelancer.com/projects/computer-vision/Computer-Vision-Developer-40401827.html |
-| 85 | Freelancer | Python scraper | Hiddify/Xray VPN System Deployment | $3,000.00 | https://www.freelancer.com/projects/linux/Hiddify-Xray-VPN-System-Deployment.html |
-| 85 | Freelancer | Python scraper | Internal RAG Chatbot Development | $800.00 | https://www.freelancer.com/projects/ai-chatbot-development/Internal-RAG-Chatbot-Development.html |
-| 85 | Freelancer | Data processing API | &quot;BK-280 BIOBASE / MS-H655 MedicalSystem / U500 Mission Exper | $750.00 | https://www.freelancer.com/projects/api-developmet/BIOBASE-MedicalSystem-Mission-Expert.html |
-| 85 | Freelancer | Data processing API | 30,000 Verified Creator, Journalist &amp; Newsletter Contacts (He | $599.00 | https://www.freelancer.com/projects/research/Verified-Creator-Journalist-Newsletter.html |
-| 75 | Freelancer | Python scraper | EPC Sz&aacute;mla QR-k&oacute;d Integr&aacute;ci&oacute; | $250.00 | https://www.freelancer.com/projects/api-developmet/EPC-mla-Integr.html |
+| 85 | Freelancer | Python scraper | Backtesting Framework | $3,000.00 | https://www.freelancer.com/projects/data-analysis/Backtesting-Framework.html |
+| 85 | Freelancer | Make.com automation | Commissioned Sales Partner for AI Legal SaaS, Business Tools | $500.00 | https://www.freelancer.com/projects/internet-marketing/Commissioned-Sales-Partner-for-Legal.html |
+| 85 | Freelancer | Make.com automation | AI Sales Closer (US Market) Commission-Only&ndash; Up to 20% Comm | $3,000.00 | https://www.freelancer.com/projects/b2b-marketing/Sales-Closer-Market-Commission-Only-40402556.html |
+| 75 | Freelancer | Python scraper | Generate 870k Realistic Synthetic Images | $150.00 | https://www.freelancer.com/projects/3d-modelling/Generate-Realistic-Synthetic-Images.html |
+| 75 | Freelancer | Make.com automation | Industrial Automation Engineers Needed at SCOPSIS | $250.00 | https://www.freelancer.com/projects/automation/Industrial-Automation-Engineers-Needed.html |
 | 75 | Freelancer | Make.com automation | Marketing Material &amp; Social Growth | $250.00 | https://www.freelancer.com/projects/content-marketing/Marketing-Material-Social-Growth.html |
-| 65 | Freelancer | Python scraper | Bulk Forward Geocoding for 200k Addresses | I have a spreadsheet (Excel/CSV) containing roughly two-lakh Indian addresses an | https://www.freelancer.com/projects/data-processing/Bulk-Forward-Geocoding-for-Addresses.html |
-| 65 | Freelancer | Python scraper | Mobile Buyback Price Comparison Tool | ## 1. Project Title **&quot;Real-Time Mobile Price Aggregator &amp; Buyback Calc | https://www.freelancer.com/projects/python/Mobile-Buyback-Price-Comparison-Tool.html |
-| 65 | Freelancer | Python scraper | Smart Home Person Tracking System Development | Multi-Person Indoor Tracking System for Smart Home — Raspberry Pi 5, Python, Loc | https://www.freelancer.com/projects/python/Smart-Home-Person-Tracking-System.html |
-| 65 | Freelancer | Python scraper | AI-Driven Communication and CRM System -- 2 | $10.00 | https://www.freelancer.com/projects/php/Driven-Communication-CRM-System.html |
-| 65 | Freelancer | Python scraper | Daily MCA Company Data Scraper | Each morning I need a fresh Excel workbook that lists every company incorporated | https://www.freelancer.com/projects/beautifulsoup/Daily-MCA-Company-Data-Scraper.html |
-| 65 | Freelancer | Python scraper | Python Learner, AI Enthusiast, Creative Designer | • Python learner with growing knowledge in automation and problem-solving. • Ski | https://www.freelancer.com/projects/ai-content-creation/Python-Learner-Enthusiast-Creative.html |
-| 65 | Freelancer | Python scraper | AI/ML Expert for Cybersecurity Startup | Senior Python AI/ML Developer Needed – Cybersecurity Startup We’re building ZEX, | https://www.freelancer.com/projects/nlp/Expert-for-Cybersecurity-Startup.html |
-| 65 | Freelancer | Python scraper | Long-Term Backend API Developer | $8.00 | https://www.freelancer.com/projects/Long-Term-Backend-API-Developer.html |
-| 65 | Freelancer | Make.com automation | Bilingual AI Voice Receptionist Integration | Job Description I want to build an AI voice receptionist system that works with  | https://www.freelancer.com/projects/ai-hw-sw/Bilingual-Voice-Receptionist-Integration.html |
-| 65 | Freelancer | Make.com automation | Insurance Verification Automation Bot | $30.00 | https://www.freelancer.com/projects/web-scraping/Insurance-Verification-Automation-Bot.html |
-| 65 | Freelancer | Make.com automation | AI Developers Wanted (claude &amp; openclaw) | $8.00 | https://www.freelancer.com/projects/ai-development/Developers-Wanted-claude-openclaw.html |
-| 65 | Freelancer | Make.com automation | Headline: Hiring n8n &amp; WhatsApp Automation Developer (Chat Mi | Hiring n8n &amp; WhatsApp Automation Developer (Chat Mitra + Razorpay) – Fixed P | https://www.freelancer.com/projects/api/Headline-Hiring-WhatsApp-Automation.html |
+| 65 | Freelancer | Python scraper | Python Full-Stack Web &amp; Analytics | I am building a production-grade web application that leans heavily on a Python  | https://www.freelancer.com/projects/fastapi/Python-Full-Stack-Web-Analytics.html |
+| 65 | Freelancer | Python scraper | Kick View Bot With Proxies | $30.00 | https://www.freelancer.com/projects/nodejs/Kick-View-Bot-With-Proxies.html |
+| 65 | Freelancer | Python scraper | Resolve Python Scraper Missing Text | $10.00 | https://www.freelancer.com/projects/beautifulsoup/Resolve-Python-Scraper-Missing-Text.html |
+| 65 | Freelancer | Python scraper | Python Heikin Ashi Trading Bot | I already have the trading logic sketched out: every decision is built from Heik | https://www.freelancer.com/projects/api-developmet/Python-Heikin-Ashi-Trading-Bot.html |
+| 65 | Freelancer | Python scraper | Custom Agentic AI Development for Travel | I'm seeking an expert to build a custom Agentic AI for our travel organization.  | https://www.freelancer.com/projects/ai-development/Custom-Agentic-Development-for-Travel.html |
+| 65 | Freelancer | Python scraper | Automate PDF Merge &amp; Indexing | I have a folder that receives multiple PDFs whose file-names carry key informati | https://www.freelancer.com/projects/power-automate/Automate-PDF-Merge-Indexing.html |
+| 65 | Freelancer | Python scraper | Pocket &amp; Quotex Trading Bot | $10.00 | https://www.freelancer.com/projects/api/Pocket-Quotex-Trading-Bot.html |
+| 65 | Freelancer | Python scraper | Competitor E-commerce Data Scraping | $10.00 | https://www.freelancer.com/projects/scrapy/Competitor-commerce-Data-Scraping.html |
+| 65 | Freelancer | Python scraper | OPC UA SCADA expert | We are looking for an **OPC UA / SCADA Integration Expert** to support our Solar | https://www.freelancer.com/projects/rest-api/OPC-SCADA-expert.html |
+| 65 | Freelancer | Python scraper | Mk21 Engineering Education Software Development | $30.00 | https://www.freelancer.com/projects/fastapi/Engineering-Education-Software.html |
+| 65 | Freelancer | Python scraper | Financial Data Analysis &amp; Visualization -- 2 | $15.00 | https://www.freelancer.com/projects/data-analysis/Financial-Data-Analysis-Visualization.html |
+| 65 | Freelancer | Make.com automation | Lead Data Automation Specialist Needed | $30.00 | https://www.freelancer.com/projects/lead-generation/Lead-Data-Automation-Specialist-Needed.html |
+| 65 | Freelancer | Make.com automation | All-in-One Social Automation Platform (Post + DM + AI + Scheduler | All-in-One Social Automation Platform (Post + DM + AI + Scheduler) Now powered w | https://www.freelancer.com/projects/api/All-One-Social-Automation-Platform.html |
+| 65 | Freelancer | Make.com automation | Excel Supply Chain Report Automation | I manage several supply-chain spreadsheets and need them transformed into a sing | https://www.freelancer.com/projects/data-analysis/Excel-Supply-Chain-Report-Automation.html |
 
 ## Notes
 - Scores prioritize: (1) simple automation/scripting fit, (2) payout magnitude, (3) keyword relevance.
