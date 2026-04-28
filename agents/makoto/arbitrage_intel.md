@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-28 08:19 JST
+Generated: 2026-04-28 10:09 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -59,6 +59,8 @@ Generated: 2026-04-28 08:19 JST
 | 85 | Freelancer | Make.com automation | AI Sales Closer (US Market) Commission-Only&ndash; Up to 20% Comm | $3,000.00 | https://www.freelancer.com/projects/b2b-marketing/Sales-Closer-Market-Commission-Only-40402556.html |
 | 75 | Freelancer | Make.com automation | Marketing Material &amp; Social Growth | $250.00 | https://www.freelancer.com/projects/content-marketing/Marketing-Material-Social-Growth.html |
 | 75 | Freelancer | Make.com automation | Automated Jotform to Canva Guest Pass Emailer | $250.00 | https://www.freelancer.com/projects/automation/Automated-Jotform-Canva-Guest-Pass.html |
+| 75 | Freelancer | Data processing API | Real-Time Peptide Price Integration | $250.00 | https://www.freelancer.com/projects/web-development/Real-Time-Peptide-Price-Integration.html |
+| 65 | Freelancer | Python scraper | I need a programmer to help me finish fixing my code. It&#039;s a | $30.00 | https://www.freelancer.com/projects/api/need-programmer-help-finish-fixing.html |
 | 65 | Freelancer | Python scraper | Mk21 Engineering Education Software Development | $30.00 | https://www.freelancer.com/projects/fastapi/Engineering-Education-Software.html |
 | 65 | Freelancer | Python scraper | Financial Data Analysis &amp; Visualization -- 2 | $15.00 | https://www.freelancer.com/projects/data-analysis/Financial-Data-Analysis-Visualization.html |
 | 65 | Freelancer | Python scraper | Bulk Forward Geocoding for 200k Addresses | I have a spreadsheet (Excel/CSV) containing roughly two-lakh Indian addresses an | https://www.freelancer.com/projects/data-processing/Bulk-Forward-Geocoding-for-Addresses.html |
@@ -70,8 +72,6 @@ Generated: 2026-04-28 08:19 JST
 | 65 | Freelancer | Python scraper | AI/ML Expert for Cybersecurity Startup | Senior Python AI/ML Developer Needed – Cybersecurity Startup We’re building ZEX, | https://www.freelancer.com/projects/nlp/Expert-for-Cybersecurity-Startup.html |
 | 65 | Freelancer | Make.com automation | Instant Flow: AI Summary Automation | $30.00 | https://www.freelancer.com/projects/chatgpt/Instant-Flow-Summary-Automation.html |
 | 65 | Freelancer | Make.com automation | 9-AI System Build for 180K Gone Brand | BUILD A COMPLETE 9-AGENT AI AUTOMATION EMPIRE — 180K GONE BRAND *** **WHO WE ARE | https://www.freelancer.com/projects/n8n/System-Build-for-Gone-Brand.html |
-| 65 | Freelancer | Make.com automation | Bilingual AI Voice Receptionist Integration | Job Description I want to build an AI voice receptionist system that works with  | https://www.freelancer.com/projects/ai-hw-sw/Bilingual-Voice-Receptionist-Integration.html |
-| 65 | Freelancer | Make.com automation | Insurance Verification Automation Bot | $30.00 | https://www.freelancer.com/projects/web-scraping/Insurance-Verification-Automation-Bot.html |
 
 ## Notes
 - Scores prioritize: (1) simple automation/scripting fit, (2) payout magnitude, (3) keyword relevance.
