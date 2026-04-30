@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-30T17:41:00.952Z",
+  "updatedAt": "2026-04-30T18:02:26.978Z",
   "entries": {
     "memory:memory/2026-04-28.md:407:421": {
       "key": "memory:memory/2026-04-28.md:407:421",
@@ -1498,13 +1498,13 @@
       "endLine": 824,
       "source": "memory",
       "snippet": "**Competitors:** AWS EventBridge console shows Pipe status but doesn't detect schema drift between enrichment and transformer, monitor silent pass-through failures, or forecast data loss from null fields. ### Beat #73 (16:40 JST) — Pipeline Healthy. Niches #135-136 Delivered - **Last Heartbeat:** 2026-04-29 16:40 JST — Beat #73 | **Status:** ACTIVE — Hunter-Killer heartbeat running - live_oracle: fresh @ 16:40 JST (BTC $77,157 | ETH $2,328 | USD/JPY 159.54) ✅ - Gateway: ✅ Running (LaunchAgent pid 12459, state active) - infra_pulse: script unavailable (manual check passed) ## 🏹 NICHE #135: Kubernetes CRD Version Drift Detector & Operator Upgrade Sequencing Planner",
-      "recallCount": 34,
+      "recallCount": 35,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 17.02838218808174,
-      "maxScore": 0.522993716597557,
+      "totalScore": 17.554377548396584,
+      "maxScore": 0.525995360314846,
       "firstRecalledAt": "2026-04-29T08:27:37.504Z",
-      "lastRecalledAt": "2026-04-30T15:36:38.023Z",
+      "lastRecalledAt": "2026-04-30T18:02:26.978Z",
       "queryHashes": [
         "2ba57f3c93b1",
         "164b60c99f70",
@@ -1527,7 +1527,8 @@
         "59e9c25a6052",
         "ec5f01354bce",
         "d40f73a14350",
-        "b3d8fe4dc408"
+        "b3d8fe4dc408",
+        "3428562ae7ba"
       ],
       "recallDays": [
         "2026-04-29",
@@ -1552,15 +1553,14 @@
       "endLine": 1595,
       "source": "memory",
       "snippet": "**Competitors:** GitHub Actions shows runner status but doesn't track label drift, correlate job queue times with runner availability, or detect runner group permission drift from IaC baseline. --- **Last Heartbeat: 2026-04-29 08:52 JST — Beat #61 **Status:** ACTIVE — Hunter-Killer heartbeat running --- ### Beat #63 (09:37 JST) — Pipeline Healthy. Niches #115-116 Delivered - infra_pulse: OK @ 09:37 JST (9 OK, 1 WARN, 0 FAIL) ✅ - Gateway: ✅ Running (LaunchAgent pid 95567, state active) - live_oracle: BTC $76,288 | ETH $2,285.37 | JPY ~159.58 ✅ ## 🏹 NICHE #115: Multi-Cloud Kubernetes ResourceQuota Theft Detector & Cross-Namespace Phantom Exhaustion Forecaster",
-      "recallCount": 45,
+      "recallCount": 46,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 22.616576187312603,
+      "totalScore": 23.143704073131083,
       "maxScore": 0.5403134867548942,
       "firstRecalledAt": "2026-04-29T08:27:37.504Z",
-      "lastRecalledAt": "2026-04-30T16:26:22.531Z",
+      "lastRecalledAt": "2026-04-30T18:02:26.978Z",
       "queryHashes": [
-        "2ba57f3c93b1",
         "164b60c99f70",
         "dc8e2f7449fd",
         "c22ea582af59",
@@ -1591,7 +1591,8 @@
         "d40f73a14350",
         "55619a767db8",
         "ccdee4a33b36",
-        "84b43d60d791"
+        "84b43d60d791",
+        "3428562ae7ba"
       ],
       "recallDays": [
         "2026-04-29",

@@ -1,6 +1,20 @@
 {
-  "timestamp": "2026-05-01 02:42 JST",
+  "timestamp": "2026-05-01 03:00 JST",
   "items": [
+    {
+      "category": "AI",
+      "title": "FDA approval, fundraising, and the reality of building in healthcare according to BioticsAI founder",
+      "link": "https://techcrunch.com/?p=3117965",
+      "description": "BioticsAI CEO Robhy Bustami joined Isabelle Johannessen on Build Mode to discuss how the company has navigated a highly regulated space and kept the team motivated while cutting th",
+      "pub_date": ""
+    },
+    {
+      "category": "AI",
+      "title": "Google\u2019s Gemini AI assistant is hitting the road in millions of vehicles",
+      "link": "https://techcrunch.com/?p=3117992",
+      "description": "Google announced on Thursday that it will begin rolling out Gemini to cars with Google built-in, marking a significant upgrade from the current Google Assistant. The move signals G",
+      "pub_date": ""
+    },
     {
       "category": "AI",
       "title": "Stripe introduces Link, a digital wallet that autonomous AI agents can use, too",
@@ -13,20 +27,6 @@
       "title": "Salesforce is crowdsourcing its AI roadmap \u2014 with customers",
       "link": "https://techcrunch.com/?p=3114813",
       "description": "Salesforce lets its customers lead its product roadmap with the thinking that if one enterprise customer has a problem, the others likely do too.",
-      "pub_date": ""
-    },
-    {
-      "category": "AI",
-      "title": "SpaceX backer 137 Ventures raises $700M for two growth-stage funds",
-      "link": "https://techcrunch.com/?p=3117905",
-      "description": "VC firm 137 Ventures has raised over $700 million to back growth-stage startups. Its portfolio includes SpaceX, Anduril, Hadrian.",
-      "pub_date": ""
-    },
-    {
-      "category": "AI",
-      "title": "Dental practice software maker fixes bug that exposed patients\u2019 medical records",
-      "link": "https://techcrunch.com/?p=3117885",
-      "description": "The security bug is now fixed, but the patient who found it said it was challenging to alert the software company about the issue.",
       "pub_date": ""
     },
     {
@@ -73,35 +73,35 @@
     },
     {
       "category": "AI",
-      "title": "<![CDATA[Live updates from Elon Musk and Sam Altman\u2019s court battle over the future of OpenAI]]>",
+      "title": "Live updates from Elon Musk and Sam Altman\u2019s court battle over the future of OpenAI",
       "link": "https://www.theverge.com/tech/917225/sam-altman-elon-musk-openai-lawsuit",
       "description": "Sam Altman and Elon Musk are facing off in a high-stakes trial that could alter the future of OpenAI and its most well-known product, ChatGPT. In 2024, Musk filed a lawsuit accusin",
       "pub_date": "2026-04-30T12:57:14-04:00"
     },
     {
       "category": "AI",
-      "title": "<![CDATA[Meta is running get-rich-quick ads for its AI tools]]>",
+      "title": "Meta is running get-rich-quick ads for its AI tools",
       "link": "https://www.theverge.com/ai-artificial-intelligence/915970/meta-manus-ai-ads-website-slop",
       "description": "Manus, an AI company Meta acquired for $2 billion last year is running ads promising quick, easy money with AI: Find local businesses without websites or with bad websites, have AI",
       "pub_date": "2026-04-30T12:48:13-04:00"
     },
     {
       "category": "AI",
-      "title": "<![CDATA[Microsoft\u2019s DLSS competitor is now available on the Xbox Ally X handheld]]>",
+      "title": "Microsoft\u2019s DLSS competitor is now available on the Xbox Ally X handheld",
       "link": "https://www.theverge.com/news/921112/microsoft-auto-sr-xbox-ally-x-preview",
       "description": "Microsoft is starting to test its Automatic Super Resolution (Auto SR) feature with the Xbox Ally X. Auto SR first debuted on some Copilot Plus PCs nearly two years ago, improving ",
       "pub_date": "2026-04-30T12:00:00-04:00"
     },
     {
       "category": "AI",
-      "title": "<![CDATA[Gemini is rolling out to cars with Google built-in]]>",
+      "title": "Gemini is rolling out to cars with Google built-in",
       "link": "https://www.theverge.com/tech/921117/google-gemini-ai-assistant-cars-upgrade",
       "description": "Google is preparing to update vehicles that have Google built-in with its Gemini AI assistant. This will be an upgrade from the current Google Assistant according to Google's annou",
       "pub_date": "2026-04-30T12:00:00-04:00"
     },
     {
       "category": "AI",
-      "title": "<![CDATA[Here\u2019s how the new Microsoft and OpenAI deal breaks down]]>",
+      "title": "Here&#8217;s how the new Microsoft and OpenAI deal breaks down",
       "link": "https://www.theverge.com/tech/921210/microsoft-openai-partnership-divorce-notepad",
       "description": "Microsoft's relationship with OpenAI has always been complicated, so I expected the close partnership-turned-situationship to end in tears. After all, executive disagreements, rear",
       "pub_date": "2026-04-30T12:00:00-04:00"
@@ -122,7 +122,7 @@
     },
     {
       "category": "World",
-      "title": "<![CDATA[Cricut\u2019s Joy 2 makes creating stickers easier for beginners, and it\u2019s on sale]]>",
+      "title": "Cricut\u2019s Joy 2 makes creating stickers easier for beginners, and it\u2019s on sale",
       "link": "https://www.theverge.com/gadgets/921355/cricut-joy-2-mothers-day-deal-sale",
       "description": "If you\u2019ve ever thought about making your own stickers for Etsy or just for fun but don\u2019t know where to begin, I\u2019d recommend taking a look at the Cricut Joy 2. I\u2019ve been testing one",
       "pub_date": "2026-04-30T12:45:06-04:00"

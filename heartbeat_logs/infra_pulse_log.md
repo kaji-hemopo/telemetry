@@ -1,21 +1,36 @@
 # Infra Pulse Log
 
-**Timestamp:** 2026-04-30 17:30 UTC (2026-05-01 02:30 Asia/Tokyo)  
-**Script:** intel/Telemetry/infra_pulse.py  
-**Result:** OK:9 | WARN:1 | FAIL:0
+**Timestamp:** 2026-05-01 02:50 UTC  
+**Status:** WARN
 
 ## Summary
-
-All checks passed with a single warning. No critical failures.
+- **OK:** 9
+- **Warn:** 1
+- **Fail:** 0
 
 ## Findings
+- **Dir: scripts:** ✅ OK — found
+- **Dir: kaji:** ✅ OK — found
+- **Dir: memory:** ✅ OK — found
+- **Dir: heartbeat_logs:** ✅ OK — found
+- **File: MEMORY.md:** ✅ OK — found
+- **File: IDENTITY.md:** ✅ OK — found
+- **File: SOUL.md:** ✅ OK — found
+- **File: HEARTBEAT.md:** ✅ OK — found
+- **Cron PID file:** 🔴 FAIL — not found (may not apply)
+- **Tier1 Scripts:** ✅ OK — 7 scripts
 
-| Status | Count | Notes |
-|--------|-------|-------|
-| OK | 9 | All nominal checks healthy |
-| WARN | 1 | One check flagged a warning (details in script output) |
-| FAIL | 0 | No failures detected |
+## Notes
+Ito workspace heartbeat active. Cron session: b59d1431-e95f-4d6a-a6c3-c8850a96f793
+## infra_pulse — 2026-04-30 17:50 UTC
 
-## Critical Issues
+**Status:** OK (with warning)
 
-None. Infrastructure is reporting nominal status.
+| Metric | Count |
+|--------|-------|
+| OK     | 9     |
+| WARN   | 1     |
+| FAIL   | 0     |
+
+**Critical Issues:** None
+
