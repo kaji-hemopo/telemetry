@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-30 12:55 JST
+Generated: 2026-04-30 14:20 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -58,7 +58,10 @@ Generated: 2026-04-30 12:55 JST
 | 85 | Freelancer | Data processing API | AI Program For Employment Agency | $750.00 | https://www.freelancer.com/projects/ai-chatbot/Program-For-Employment-Agency.html |
 | 75 | Freelancer | Python scraper | Optimize AI-Driven Academic Writing Assistant | $250.00 | https://www.freelancer.com/projects/ai-development/Optimize-Driven-Academic-Writing.html |
 | 75 | Freelancer | Python scraper | MVP Plataforma Salud Mental | $250.00 | https://www.freelancer.com/projects/mobile-app-development/MVP-Plataforma-Salud-Mental.html |
+| 75 | Freelancer | Make.com automation | Multi-Step Lead Funnel with CRM Automation | $250.00 | https://www.freelancer.com/projects/crm/Multi-Step-Lead-Funnel-with.html |
 | 75 | Freelancer | Make.com automation | Build an AI-Powered Film &amp; TV Casting Operations Platform (Co | $250.00 | https://www.freelancer.com/projects/ai-development/Build-Powered-Film-Casting-Operations.html |
+| 75 | Freelancer | Data processing API | Cross-Platform Madressa Portal App | $250.00 | https://www.freelancer.com/projects/flutter/Cross-Platform-Madressa-Portal-App.html |
+| 65 | Freelancer | Python scraper | Robust WhatsApp Voice AI Integration | $30.00 | https://www.freelancer.com/projects/n8n/Robust-WhatsApp-Voice-Integration.html |
 | 65 | Freelancer | Python scraper | Phone Number Scraping Specialist Needed | $30.00 | https://www.freelancer.com/projects/data-scraping/Phone-Number-Scraping-Specialist-Needed.html |
 | 65 | Freelancer | Python scraper | Fix &amp; Deploy Automation Script | $10.00 | https://www.freelancer.com/projects/automation/Fix-Deploy-Automation-Script.html |
 | 65 | Freelancer | Python scraper | Remove Duplicate Email Contacts Now | $10.00 | https://www.freelancer.com/projects/data-cleansing/Remove-Duplicate-Email-Contacts-Now.html |
@@ -69,9 +72,6 @@ Generated: 2026-04-30 12:55 JST
 | 65 | Freelancer | Python scraper | Crypto Trading Automation Algorithm | I need an algorithm to automate swing trading for the Bitcoin/Ethereum pair. Key | https://www.freelancer.com/projects/cryptocurrency/Crypto-Trading-Automation-Algorithm.html |
 | 65 | Freelancer | Python scraper | Cliniko Payment Automation via Claude | I need a small, reliable API integration that lets Anthropic Claude log “manual” | https://www.freelancer.com/projects/api-integration/Cliniko-Payment-Automation-via-Claude.html |
 | 65 | Freelancer | Python scraper | Full-Stack Dev for AI Image Analytics | We are building a product (not a project) and looking for a passionate developer | https://www.freelancer.com/projects/ai-hw-sw/Full-Stack-Dev-for-Image.html |
-| 65 | Freelancer | Make.com automation | On-Demand n8n Workflow Automations | $10.00 | https://www.freelancer.com/projects/n8n/Demand-Workflow-Automations.html |
-| 65 | Freelancer | Make.com automation | Influencer Outreach Automation Setup | $30.00 | https://www.freelancer.com/projects/ai-chatbot-development/Influencer-Outreach-Automation-Setup.html |
-| 65 | Freelancer | Make.com automation | ClickFunnels &amp; AI Advantage Implementation | I’m rolling out the combined frameworks taught in Russell Brunson’s AI Secrets C | https://www.freelancer.com/projects/automation/ClickFunnels-Advantage-Implementation.html |
 
 ## Notes
 - Scores prioritize: (1) simple automation/scripting fit, (2) payout magnitude, (3) keyword relevance.
