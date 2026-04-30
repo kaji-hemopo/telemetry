@@ -1,8 +1,33 @@
 # MEMORY.md — Ito Empire Intel Agent
-> Last updated: 2026-05-01 06:32 JST (Beat #158)
+> Last updated: 2026-05-01 06:50 JST (Beat #159)
 
 ---
-### Beat #158 (06:32 JST May 1) — Pipeline Active. Friday Morning. Markets Steady. Weekend Watch.
+### Beat #159 (06:50 JST May 1) — Pipeline Active. Brent Surging to $114+. Weekend Risk Elevated.
+- **Last Heartbeat:** 2026-05-01 06:50 JST — Beat #159 | **Status:** ACTIVE
+- live_oracle: ✅ fresh @ 06:50 JST (BTC $76,280 | ETH $2,256.41 | XRP $1.37 | USD/JPY **156.56** | Gold $4,616.76) — Brent CRITICAL (see below)
+- Gateway: ✅ Running (LaunchAgent pid 65643, state active)
+- infra_pulse: Gateway probe ok, connectivity ok ✅
+
+### INTEL SUMMARY — May 1 06:50 JST (Friday 6:50AM Tokyo)
+- **🚨 OIL MARKET SURGING — BRENT $114+:*** Yahoo Finance Markets (1 day ago): "Oil surges as White House signals it will continue Hormuz blockade." Brent gained roughly **3.3% to trade above $114/bbl** (Bloomberg). White House signal: blockade stays. Trump told Defence Secretary to maintain Hormuz posture. 1News (4hrs ago): Trump signals Hormuz blockade will stay. US blockade squeezing Iran's oil industry — 6 tankers with Iranian oil forced back to Iran by US in recent days (Reuters). US seeking international help to reopen Hormuz — no deal in sight.
+- **🚨 CRITICAL: Weekend Risk HIGH — US Markets Closed Sat-Sun:** No cushion if Iran escalates. Hormuz remains contested. If US strikes Iranian nuclear facilities → Hormuz disruption + OPEC+ fractured (UAE exit) → $150+ scenario amplified. Friday in Tokyo — weekend starts in ~36 hours.
+- **Markets:** BTC $76,280 (-0.21% 24h), ETH $2,256.41 (-0.23%), XRP $1.37 (-0.24%). Minor crypto cooling after overnight steady. USD/JPY **156.56** — yen stable, slightly stronger from 156.532 at 06:32 beat. Brent **$114+** — SURGING, up from $111 at last beat. White House confirms blockade stays. Gold **$4,616.76** (Investing.com — down from $4,636 at 06:32). Markets thin pre-weekend JST Friday morning.
+- **Big Tech $650B AI Spend:** CONFIRMED — eWeek/Reuters: Alphabet, Microsoft, Amazon, Meta on track for **$635-665B combined** in FY2026. Four companies collectively investing ~$650B to scale AI infrastructure. Bridgewater: "Big Tech to invest about $650 billion in AI in 2026." Fueling data center expansion. Investor concern rising. Microsoft expects to spend nearly $200B in 2026, driven by AI.
+- **Iran/Oil Watch:** White House signals continued Hormuz blockade. Trump rejects Iran Hormuz-for-nuclear offer. US-Iran military briefing pending — no action taken yet. Khamenei threats ongoing (Fox News). UAE OPEC exit effective today — structural oil market shift. OPEC+ discipline damaged at peak Middle East risk. 6 Iranian oil tankers forced back by US blockade (Reuters Apr 27). No ceasefire extension confirmed.
+- **Japan Business:** USD/JPY 156.56 — stable. BoJ watching oil surge to $114+ as FY26 growth headwind. Brent at $114+ is materially higher than recent $110 levels — oil shock intensifying. Vanguard maintains BoJ rate forecast: 1.25% by year-end (two hikes in 2026).
+
+### INFRASTRUCTURE STATUS
+- Gateway: ✅ active (pid 65643, port 49273)
+- live_oracle.json: ✅ fresh @ 06:50 JST — all 6 assets populated
+- infra_pulse: Gateway probe ok, connectivity ok ✅
+- Hunter-Killer: MISSION CONCLUDED — pure intel pipeline only
+
+---
+### ⚠️ BEARS WATCH — May 1 06:50 JST
+- Brent $114+ — SURGING (+3.3%) after White House signals continued Hormuz blockade
+- Weekend gap risk: US markets closed Sat-Sun, no cushion if Iran escalates
+- Oil at $114+ is a significant escalation from $110 at last beat
+
 - **Last Heartbeat:** 2026-05-01 06:29 JST — Beat #158 | **Status:** ACTIVE
 - live_oracle: ✅ fresh @ 06:20 JST (BTC $76,442.6 | ETH $2,261.64 | XRP $1.3698 | USD/JPY **156.532** | Brent **$111.23** | Gold $4,636.0)
 - Gateway: ✅ Running (LaunchAgent pid 65643, state active)
