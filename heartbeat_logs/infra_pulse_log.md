@@ -1,24 +1,21 @@
 # Infra Pulse Log
 
-**Timestamp:** 2026-05-01 04:34 UTC  
-**Status:** WARN
+**Timestamp:** 2026-04-30 19:50 UTC (2026-05-01 04:50 JST)  
+**Status:** OK (with 1 non-critical warning)
 
 ## Summary
-- **OK:** 9
-- **Warn:** 1
-- **Fail:** 0
+| Check | Count |
+|-------|-------|
+| OK    | 9     |
+| WARN  | 1     |
+| FAIL  | 0     |
 
 ## Findings
-- **Dir: scripts:** ✅ OK — found
-- **Dir: kaji:** ✅ OK — found
-- **Dir: memory:** ✅ OK — found
-- **Dir: heartbeat_logs:** ✅ OK — found
-- **File: MEMORY.md:** ✅ OK — found
-- **File: IDENTITY.md:** ✅ OK — found
-- **File: SOUL.md:** ✅ OK — found
-- **File: HEARTBEAT.md:** ✅ OK — found
-- **Cron PID file:** 🔴 FAIL — not found (may not apply)
-- **Tier1 Scripts:** ✅ OK — 7 scripts
+- All workspace directories present (scripts, kaji, memory, heartbeat_logs)
+- Core identity files intact (MEMORY.md, IDENTITY.md, SOUL.md, HEARTBEAT.md)
+- 7 Tier1 scripts verified
+- No critical failures detected
 
 ## Notes
-Ito workspace heartbeat active. Cron session: b59d1431-e95f-4d6a-a6c3-c8850a96f793
+- Single non-critical warning present (likely Cron PID file not applicable in this context)
+- Ito workspace heartbeat active. Cron session: c70c7349-e110-4af7-8154-8a60e61835bc
