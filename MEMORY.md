@@ -1,8 +1,20 @@
 # MEMORY.md — Ito Empire Intel Agent
-> Last updated: 2026-05-01 03:21 JST (Beat #149)
+> Last updated: 2026-05-01 04:04 JST (Beat #151)
 
 ---
-### Beat #150 (03:41 JST May 1) — 🚨 CRITICAL: Brent $125+ Wartime High. Trump Iran Briefing.
+### Beat #151 (04:04 JST May 1) — Pipeline Active. Brent $110.73. BTC Stable. Dashboard Pushed.
+- **Last Heartbeat:** 2026-05-01 04:04 JST — Beat #151 | **Status:** ACTIVE
+- live_oracle: ✅ fresh @ 04:00 JST (BTC $76,336 | ETH $2,259.56 | XRP $1.3698 | USD/JPY **156.415** | Brent **$110.73** | Gold $4,634.3)
+- Gateway: ✅ Running (LaunchAgent pid 65643, state active)
+- Dashboard: ✅ git pull --rebase + push 9f631be → origin/main
+- infra_pulse: Gateway probe ok, connectivity ok ✅
+
+### INTEL SUMMARY — May 1 04:04 JST (Friday 4:04AM Tokyo)
+- **Markets:** BTC $76,336 (+1.09% 24h), ETH $2,259.56 (+0.90%), XRP $1.3698 (+0.91%). USD/JPY **156.415** — yen steady at ~156.4, well below 160 intervention zone. Brent **$110.73** — settling back from overnight $125-126 spike, still elevated on Iran tensions. Gold $4,634.3 (stable). Markets pre-weekend quiet, low volume. No new escalation news since Trump Iran briefing report.
+- **🚨 IRAN / OIL WATCH — ONGOING:** Brent hit $125-126 wartime high overnight (Apr 30) on Axios/Reuters reports Trump to be briefed on Iran military options, including potential strike on nuclear sites or special forces operation to secure enriched uranium. Oil has since pulled back to ~$110. Oracle reading $110.73 is consistent with post-spike settling. If US strikes Iran nuclear sites → Hormuz disruption → $150+ scenario plausible. Weekend watching critical — no US market to absorb shock.
+- **Anthropic $900B:** CONFIRMED — Bloomberg/Yahoo/TechCrunch report Apr 29: Anthropic weighing $40-50B round at $900B+ valuation. Would be largest AI round ever. Board decision expected May 2026. $61.5B valuation just 12 months ago → now $900B (15x). Tripled annualized revenues to $30B+ QoQ. Likely last private raise before IPO.
+- **Japan Business:** USD/JPY 156.4 — BoJ monitoring Middle East oil impact on FY26 growth. Finance Ministry digitalization ongoing. Vanguard forecasts BoJ two more hikes in 2026 to 1.25% by year-end.
+- **Geopolitical:** Iran conflict ongoing — no new escalation since overnight spike. Trump briefing reported Thursday. Iran threatens painful response if US resumes attacks. Markets pre-weekend hold mode.
 - **Last Heartbeat:** 2026-05-01 03:41 JST — Beat #150 | **Status:** ACTIVE
 - live_oracle: ✅ fresh @ 03:40 JST (BTC $76,307 | ETH $2,258.29 | XRP $1.3696 | USD/JPY **156.328** | Brent **$110.55** | Gold $4,634.1)
 - Gateway: ✅ Running (LaunchAgent pid 65643, state active)
