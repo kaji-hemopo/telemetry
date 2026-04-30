@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>ITO TERMINAL | Empire Intel Feed</title>
-    <!-- Fonts + icons (Oracle Terminal design language — see ~/.openclaw/telemetry_design.md) -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
-    <!-- TradingView Lightweight Charts v4 — Oracle Terminal theme -->
-    <script src="https://unpkg.com/lightweight-charts@4.1.0/dist/lightweight-charts.standalone.production.js"></script>
-    <style>
-        /* ===== ORACLE TERMINAL THEME (aligned with telemetry_design.md) ===== */
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+  <title>
+   ITO TERMINAL | Empire Intel Feed
+  </title>
+  <!-- Fonts + icons (Oracle Terminal design language — see ~/.openclaw/telemetry_design.md) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+  <!-- TradingView Lightweight Charts v4 — Oracle Terminal theme -->
+  <script src="https://unpkg.com/lightweight-charts@4.1.0/dist/lightweight-charts.standalone.production.js">
+  </script>
+  <style>
+   /* ===== ORACLE TERMINAL THEME (aligned with telemetry_design.md) ===== */
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
@@ -882,9 +884,9 @@
         .ticker-price.down, .ticker-change.down {
             color: #EF4444;
         }
-    </style>
-        <style>
-            .view-full-btn {
+  </style>
+  <style>
+   .view-full-btn {
                 background: rgba(139, 92, 246, 0.15);
                 color: #8B5CF6;
                 border: 1px solid rgba(139, 92, 246, 0.3);
@@ -909,410 +911,730 @@
                 font-family: 'SF Mono', Monaco, monospace;
                 line-height: 1.4;
             }
-        </style>
-</head>
-
-<body>
-    <header class="oracle-topbar" role="banner">
-        <div class="oracle-brand">
-            <span class="material-symbols-outlined" style="color: var(--oracle-cyan); font-size: 22px;">terminal</span>
-            <h1>ITO TERMINAL</h1>
-            <span class="oracle-feed-pill">Empire Intel</span>
-        </div>
-        <div class="oracle-status">
-            <span class="oracle-pulse" aria-hidden="true"></span>
-            <span>LIVE_FEED</span>
-        </div>
-    </header>
-    <div class="container">
-        <!-- Header with Controls -->
-        <div class="header-controls">
-            <div class="page-title">Intelligence Stream <span class="timestamp">2026-04-30 17:01 JST</span></div>
-            <div class="controls-right">
-                <input type="text" class="search-bar" placeholder="Search news, markets, ventures..." id="search-input">
-                <button class="refresh-btn" id="refresh-btn" onclick="refreshData()">
-                    <span class="refresh-icon">↻</span>
-                    <span>Refresh</span>
-                </button>
-            </div>
-        </div>
-
-        <!-- Sticky Tab Bar -->
-        <div class="tab-bar">
-            <button class="tab active" onclick="switchTab('intel')" id="btn-tab-intel">INTEL</button>
-            <button class="tab" onclick="switchTab('markets')" id="btn-tab-markets">MARKETS</button>
-            <button class="tab" onclick="switchTab('venture')" id="btn-tab-venture">ALERTS</button>
-</div>
-
-        <!-- TAB 1: INTEL (Default View) -->
-        <div id="tab-intel" class="tab-content active">
-            <div class="news-wall" id="news-wall">
-                <div class="sub-tab-bar">
-        <button class="sub-tab active" onclick="switchSubTab('intel', 0)" 
-                id="btn-subtab-intel-0" 
-                style="background: #22D3EE22; color: #22D3EE; border: 1px solid #22D3EE44;">
-            Intel Brief
-        </button>
-        <button class="sub-tab " onclick="switchSubTab('intel', 1)" 
-                id="btn-subtab-intel-1" 
-                style="background: #6366F122; color: #6366F1; border: 1px solid #6366F144;">
-            Trends
-        </button>
-        <button class="sub-tab " onclick="switchSubTab('intel', 2)" 
-                id="btn-subtab-intel-2" 
-                style="background: #0A84FF22; color: #0A84FF; border: 1px solid #0A84FF44;">
-            SaaS
-        </button>
-        <button class="sub-tab " onclick="switchSubTab('intel', 3)" 
-                id="btn-subtab-intel-3" 
-                style="background: #FF3B3022; color: #FF3B30; border: 1px solid #FF3B3044;">
-            Japan Business
-        </button>
-        <button class="sub-tab " onclick="switchSubTab('intel', 4)" 
-                id="btn-subtab-intel-4" 
-                style="background: #8B5CF622; color: #8B5CF6; border: 1px solid #8B5CF644;">
-            Property
-        </button>
-        <button class="sub-tab " onclick="switchSubTab('intel', 5)" 
-                id="btn-subtab-intel-5" 
-                style="background: #10B98122; color: #10B981; border: 1px solid #10B98144;">
-            Sports
-        </button>
-        <button class="sub-tab " onclick="switchSubTab('intel', 6)" 
-                id="btn-subtab-intel-6" 
-                style="background: #F59E0B22; color: #F59E0B; border: 1px solid #F59E0B44;">
-            Tech
-        </button>
-        <button class="sub-tab " onclick="switchSubTab('intel', 7)" 
-                id="btn-subtab-intel-7" 
-                style="background: #EC489922; color: #EC4899; border: 1px solid #EC489944;">
-            AI
-        </button>
-        <button class="sub-tab " onclick="switchSubTab('intel', 8)" 
-                id="btn-subtab-intel-8" 
-                style="background: #D4AF3722; color: #D4AF37; border: 1px solid #D4AF3744;">
-            Finance
-        </button>
-        <button class="sub-tab " onclick="switchSubTab('intel', 9)" 
-                id="btn-subtab-intel-9" 
-                style="background: #3B82F622; color: #3B82F6; border: 1px solid #3B82F644;">
-            NZ
-        </button>
-        <button class="sub-tab " onclick="switchSubTab('intel', 10)" 
-                id="btn-subtab-intel-10" 
-                style="background: #EF444422; color: #EF4444; border: 1px solid #EF444444;">
-            Regulatory
-        </button>
-        <button class="sub-tab " onclick="switchSubTab('intel', 11)" 
-                id="btn-subtab-intel-11" 
-                style="background: #1DA1F222; color: #1DA1F2; border: 1px solid #1DA1F244;">
-            X/Twitter
-        </button></div><div class="sub-tab-contents"><div id="subtab-intel-0" class="sub-tab-content active"><div style="display: grid; gap: 16px;"><div class="card" style="border-left: 3px solid #FF3B30; padding: 14px 16px;">
-                                    <div style="display:flex; align-items:center; gap:8px; margin-bottom:10px;">
-                                        <span class="tag" style="background:#FF3B3022; color:#FF3B30; font-size:0.72rem; padding:2px 8px; border-radius:4px; font-weight:600;">JAPAN BUSINESS</span>
-                                    </div>
-                                    <ul style="list-style:none; padding:0; margin:0;"><li style="margin-bottom:6px; color: var(--text-main);">【速報中】早指しの糸谷九段が長考　藤井名人の消費時間を上回る</li>
-<li style="margin-bottom:6px; color: var(--text-main);">水滴が残らないからすぐ収納OK。強撥水な折りたたみ傘で雨の日のストレスも減るね</li></ul>
-                                </div><div class="card" style="border-left: 3px solid #EC4899; padding: 14px 16px;">
-                                    <div style="display:flex; align-items:center; gap:8px; margin-bottom:10px;">
-                                        <span class="tag" style="background:#EC489922; color:#EC4899; font-size:0.72rem; padding:2px 8px; border-radius:4px; font-weight:600;">AI</span>
-                                    </div>
-                                    <ul style="list-style:none; padding:0; margin:0;"><li style="margin-bottom:6px; color: var(--text-main);">Why Tokyo is the most important tech destination of 2026</li>
-<li style="margin-bottom:6px; color: var(--text-main);">Apple under Ternus: what comes next for the tech giant’s hardware strategy</li></ul>
-                                </div><div class="card" style="border-left: 3px solid #D4AF37; padding: 14px 16px;">
-                                    <div style="display:flex; align-items:center; gap:8px; margin-bottom:10px;">
-                                        <span class="tag" style="background:#D4AF3722; color:#D4AF37; font-size:0.72rem; padding:2px 8px; border-radius:4px; font-weight:600;">FINANCE</span>
-                                    </div>
-                                    <ul style="list-style:none; padding:0; margin:0;"><li style="margin-bottom:6px; color: var(--text-main);">Russian Attack on Ukrainian Cities Kills Four People, Zelenskiy Says</li>
-<li style="margin-bottom:6px; color: var(--text-main);"><strong>Understanding the Most Viral Chart in Artificial Intelligence</strong></li></ul>
-                                </div><div class="card" style="border-left: 3px solid #3B82F6; padding: 14px 16px;">
-                                    <div style="display:flex; align-items:center; gap:8px; margin-bottom:10px;">
-                                        <span class="tag" style="background:#3B82F622; color:#3B82F6; font-size:0.72rem; padding:2px 8px; border-radius:4px; font-weight:600;">NZ</span>
-                                    </div>
-                                    <ul style="list-style:none; padding:0; margin:0;"><li style="margin-bottom:6px; color: var(--text-main);">Counting properly matters</li>
-<li style="margin-bottom:6px; color: var(--text-main);">Unfashionably left</li></ul>
-                                </div><div class="card" style="border-left: 3px solid #0A84FF; padding: 14px 16px;">
-                                    <div style="display:flex; align-items:center; gap:8px; margin-bottom:10px;">
-                                        <span class="tag" style="background:#0A84FF22; color:#0A84FF; font-size:0.72rem; padding:2px 8px; border-radius:4px; font-weight:600;">SAAS</span>
-                                    </div>
-                                    <ul style="list-style:none; padding:0; margin:0;"><li style="margin-bottom:6px; color: var(--text-main);">A Terrible, Terrible Week in Software Stocks. But Not Necessarily a Terrible 12 Month…</li>
-<li style="margin-bottom:6px; color: var(--text-main);">If You Are at Scale, You Now Have 2 Full-Time Jobs: Keep Your Installed Base Happy. A…</li></ul>
-                                </div><div class="card" style="border-left: 3px solid #8B5CF6; padding: 14px 16px;">
-                                    <div style="display:flex; align-items:center; gap:8px; margin-bottom:10px;">
-                                        <span class="tag" style="background:#8B5CF622; color:#8B5CF6; font-size:0.72rem; padding:2px 8px; border-radius:4px; font-weight:600;">PROPERTY</span>
-                                    </div>
-                                    <ul style="list-style:none; padding:0; margin:0;"><li style="margin-bottom:6px; color: var(--text-main);">Shibuya Station Redevelopment: Progress and Plans to 2034</li>
-<li style="margin-bottom:6px; color: var(--text-main);">Tokyo Condo Prices and Sales Keep Rising in 2026 (Updated)</li></ul>
-                                </div></div></div><div id="subtab-intel-1" class="sub-tab-content ">
-                <div class="card" style="border-left-color: #6366F1; margin-bottom: 20px;">
-                    <div class="signal-header">
-                        <div>
-                            <span class="tag" style="background: #6366F122; color: #6366F1;">TRENDS</span>
-                            <div class="card-title">Trends Analysis</div>
-                        </div>
-                        <div class="signal-value" style="color: #6366F1;">📈</div>
-                    </div>
-                    <div style="margin-top: 8px; font-size: 0.85rem; color: var(--text-dim);">
-                        📅 
-                    </div>
-                    <div class="card-summary" style="margin-top: 12px; line-height: 1.6;">
-                        No trend analysis written yet.
-                    </div>
-                </div></div><div id="subtab-intel-2" class="sub-tab-content ">
+  </style>
+ </head>
+ <body>
+  <header class="oracle-topbar" role="banner">
+   <div class="oracle-brand">
+    <span class="material-symbols-outlined" style="color: var(--oracle-cyan); font-size: 22px;">
+     terminal
+    </span>
+    <h1>
+     ITO TERMINAL
+    </h1>
+    <span class="oracle-feed-pill">
+     Empire Intel
+    </span>
+   </div>
+   <div class="oracle-status">
+    <span aria-hidden="true" class="oracle-pulse">
+    </span>
+    <span>
+     LIVE_FEED
+    </span>
+   </div>
+  </header>
+  <div class="container">
+   <!-- Header with Controls -->
+   <div class="header-controls">
+    <div class="page-title">
+     Intelligence Stream
+     <span class="timestamp">
+      2026-04-30 17:05 JST
+     </span>
+    </div>
+    <div class="controls-right">
+     <input class="search-bar" id="search-input" placeholder="Search news, markets, ventures..." type="text"/>
+     <button class="refresh-btn" id="refresh-btn" onclick="refreshData()">
+      <span class="refresh-icon">
+       ↻
+      </span>
+      <span>
+       Refresh
+      </span>
+     </button>
+    </div>
+   </div>
+   <!-- Sticky Tab Bar -->
+   <div class="tab-bar">
+    <button class="tab active" id="btn-tab-intel" onclick="switchTab('intel')">
+     INTEL
+    </button>
+    <button class="tab" id="btn-tab-markets" onclick="switchTab('markets')">
+     MARKETS
+    </button>
+    <button class="tab" id="btn-tab-venture" onclick="switchTab('venture')">
+     ALERTS
+    </button>
+   </div>
+   <!-- TAB 1: INTEL (Default View) -->
+   <div class="tab-content active" id="tab-intel">
+    <div class="news-wall" id="news-wall">
+     <div class="sub-tab-bar">
+      <button class="sub-tab active" id="btn-subtab-intel-0" onclick="switchSubTab('intel', 0)" style="background: #22D3EE22; color: #22D3EE; border: 1px solid #22D3EE44;">
+       Intel Brief
+      </button>
+      <button class="sub-tab" id="btn-subtab-intel-1" onclick="switchSubTab('intel', 1)" style="background: #6366F122; color: #6366F1; border: 1px solid #6366F144;">
+       Trends
+      </button>
+      <button class="sub-tab" id="btn-subtab-intel-2" onclick="switchSubTab('intel', 2)" style="background: #0A84FF22; color: #0A84FF; border: 1px solid #0A84FF44;">
+       SaaS
+      </button>
+      <button class="sub-tab" id="btn-subtab-intel-3" onclick="switchSubTab('intel', 3)" style="background: #FF3B3022; color: #FF3B30; border: 1px solid #FF3B3044;">
+       Japan Business
+      </button>
+      <button class="sub-tab" id="btn-subtab-intel-4" onclick="switchSubTab('intel', 4)" style="background: #8B5CF622; color: #8B5CF6; border: 1px solid #8B5CF644;">
+       Property
+      </button>
+      <button class="sub-tab" id="btn-subtab-intel-5" onclick="switchSubTab('intel', 5)" style="background: #10B98122; color: #10B981; border: 1px solid #10B98144;">
+       Sports
+      </button>
+      <button class="sub-tab" id="btn-subtab-intel-6" onclick="switchSubTab('intel', 6)" style="background: #F59E0B22; color: #F59E0B; border: 1px solid #F59E0B44;">
+       Tech
+      </button>
+      <button class="sub-tab" id="btn-subtab-intel-7" onclick="switchSubTab('intel', 7)" style="background: #EC489922; color: #EC4899; border: 1px solid #EC489944;">
+       AI
+      </button>
+      <button class="sub-tab" id="btn-subtab-intel-8" onclick="switchSubTab('intel', 8)" style="background: #D4AF3722; color: #D4AF37; border: 1px solid #D4AF3744;">
+       Finance
+      </button>
+      <button class="sub-tab" id="btn-subtab-intel-9" onclick="switchSubTab('intel', 9)" style="background: #3B82F622; color: #3B82F6; border: 1px solid #3B82F644;">
+       NZ
+      </button>
+      <button class="sub-tab" id="btn-subtab-intel-10" onclick="switchSubTab('intel', 10)" style="background: #EF444422; color: #EF4444; border: 1px solid #EF444444;">
+       Regulatory
+      </button>
+      <button class="sub-tab" id="btn-subtab-intel-11" onclick="switchSubTab('intel', 11)" style="background: #1DA1F222; color: #1DA1F2; border: 1px solid #1DA1F244;">
+       X/Twitter
+      </button>
+     </div>
+     <div class="sub-tab-contents">
+      <div class="sub-tab-content active" id="subtab-intel-0">
+       <div style="display: grid; gap: 16px;">
         <div class="card">
-            <div class="flex-between">
-                <span class="tag" style="background: #0A84FF22; color: #0A84FF;">SaaS</span>
-                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
-            </div>
-            <a href="https://www.saastr.com/a-terrible-terrible-week-in-software-stocks-but-not-necessarily-a-terrible-12-months/" target="_blank" class="card-title-link">A Terrible, Terrible Week in Software Stocks. But Not Necessarily a Terrible 12 Months.</a>
-            <div class="card-summary">This week was bad. Really bad. And Thursday was particularly brutal. ServiceNow was down 15-17% at the open. IBM off 10%. Salesforce down 7%. Oracle down 5%. In...</div>
+         <div class="flex-between">
+          <span class="tag" style="background:#EC489922; color:#EC4899;">
+           AI
+          </span>
+          <span style="font-size:0.8rem; color:var(--text-dim);">
+           Recent
+          </span>
+         </div>
+         <a class="card-title-link" href="https://techcrunch.com/?p=3117844" target="_blank">
+          SoftBank is creating a robotics company that builds data centers — and already eyeing a $100B IPO
+         </a>
+         <div class="card-summary">
+          You need infrastructure to build AI a and robots, but apparently you also need AI and robots to build infrastructure.
+         </div>
         </div>
-
         <div class="card">
-            <div class="flex-between">
-                <span class="tag" style="background: #0A84FF22; color: #0A84FF;">SaaS</span>
-                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
-            </div>
-            <a href="https://www.saastr.com/if-you-are-at-scale-you-now-have-2-full-time-jobs-keep-your-installed-base-happy-and-win-the-ai-agent-war-in-your-space/" target="_blank" class="card-title-link">If You Are at Scale, You Now Have 2 Full-Time Jobs: Keep Your Installed Base Happy. And Winning the AI Agent War in Your Space.</a>
-            <div class="card-summary">Here&amp;#8217;s what I see at almost every B2B company that has crossed $50M ARR right now: The CEO is running two completely different, completely demanding b...</div>
+         <div class="flex-between">
+          <span class="tag" style="background:#EC489922; color:#EC4899;">
+           AI
+          </span>
+          <span style="font-size:0.8rem; color:var(--text-dim);">
+           Recent
+          </span>
+         </div>
+         <a class="card-title-link" href="https://techcrunch.com/?p=3117647" target="_blank">
+          Amazon’s cloud business is surging — and so is its capital spending
+         </a>
+         <div class="card-summary">
+          The e-commerce giant is making more money than expected from AWS but it's also spending a lot, and will continue to do so in the near term, its chief ...
+         </div>
         </div>
-
         <div class="card">
-            <div class="flex-between">
-                <span class="tag" style="background: #0A84FF22; color: #0A84FF;">SaaS</span>
-                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
-            </div>
-            <a href="https://techcrunch.com/2026/04/25/why-tokyo-is-the-most-important-tech-destination-of-2026/" target="_blank" class="card-title-link">Why Tokyo is the most important tech destination of 2026</a>
-            <div class="card-summary">SusHi Tech Tokyo 2026 has four tightly defined technology domains, each backed by live demonstrations, dedicated exhibit floors, and sessions featuring the peop...</div>
+         <div class="flex-between">
+          <span class="tag" style="background:#EC489922; color:#EC4899;">
+           AI
+          </span>
+          <span style="font-size:0.8rem; color:var(--text-dim);">
+           Recent
+          </span>
+         </div>
+         <a class="card-title-link" href="https://techcrunch.com/?p=3117638" target="_blank">
+          Sources: Anthropic could raise a new $50B round at a valuation of $900B
+         </a>
+         <div class="card-summary">
+          The maker of Claude has received multiple pre-emptive offers at valuations in the $850 billion to $900 billion range, according to sources familiar wi...
+         </div>
         </div>
-
         <div class="card">
-            <div class="flex-between">
-                <span class="tag" style="background: #0A84FF22; color: #0A84FF;">SaaS</span>
-                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
-            </div>
-            <a href="https://techcrunch.com/2026/04/25/indias-snabbit-seeks-fresh-funding-at-a-400m-valuation-sources-say/" target="_blank" class="card-title-link">India’s Snabbit seeks fresh funding at a $400M valuation, sources say</a>
-            <div class="card-summary">Snabbit has scaled rapidly, crossing one million jobs in March, amid growing investor interest.</div>
+         <div class="flex-between">
+          <span class="tag" style="background:#EC489922; color:#EC4899;">
+           AI
+          </span>
+          <span style="font-size:0.8rem; color:var(--text-dim);">
+           Recent
+          </span>
+         </div>
+         <a class="card-title-link" href="https://techcrunch.com/?p=3117736" target="_blank">
+          On the stand, Elon Musk can’t escape his own tweets
+         </a>
+         <div class="card-summary">
+          Elon Musk took the stand for the second day for his attempt to legally dismantle OpenAI.
+         </div>
         </div>
-</div><div id="subtab-intel-3" class="sub-tab-content ">
         <div class="card">
-            <div class="flex-between">
-                <span class="tag" style="background: #FF3B3022; color: #FF3B30;">Japan Business</span>
-                <span style="font-size: 0.8rem; color: var(--text-dim);">23h ago</span>
-            </div>
-            <a href="http://www.asahi.com/articles/ASV4S3SHKV4SUQIP04JM.html?ref=rss" target="_blank" class="card-title-link">【速報中】早指しの糸谷九段が長考　藤井名人の消費時間を上回る</a>
-            <div class="card-summary"></div>
+         <div class="flex-between">
+          <span class="tag" style="background:#EC489922; color:#EC4899;">
+           AI
+          </span>
+          <span style="font-size:0.8rem; color:var(--text-dim);">
+           Recent
+          </span>
+         </div>
+         <a class="card-title-link" href="https://techcrunch.com/?p=3117680" target="_blank">
+          Meta is still burning money on AR/VR
+         </a>
+         <div class="card-summary">
+          Meta is losing billions on Reality Labs each quarter, and its AI expenditures are only going to increase its spending.
+         </div>
         </div>
-
         <div class="card">
-            <div class="flex-between">
-                <span class="tag" style="background: #FF3B3022; color: #FF3B30;">Japan Business</span>
-                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
-            </div>
-            <a href="https://www.gizmodo.jp/2026/04/machi-ya-nexrainzero-review-894707.html" target="_blank" class="card-title-link">水滴が残らないからすぐ収納OK。強撥水な折りたたみ傘で雨の日のストレスも減るね</a>
-            <div class="card-summary">ナノコーティングによる強力撥水は想像以上。サッと振るだけで水滴はほぼゼロに。風にも強い工夫もあり、UV99%カットで日傘としても使えるから常備しておきたい1本かも。</div>
+         <div class="flex-between">
+          <span class="tag" style="background:#EC489922; color:#EC4899;">
+           AI
+          </span>
+          <span style="font-size:0.8rem; color:var(--text-dim);">
+           Recent
+          </span>
+         </div>
+         <a class="card-title-link" href="https://www.saastr.com/?p=324381" target="_blank">
+          Our Salesforce Bill Went UP 80%, Marketo Can’t Honor Its Own Unsubscribes, and We Stealth-Churned Off Notion: The Agents #003
+         </a>
+         <div class="card-summary">
+          Amelia and I just released Episode #003 of The Agents. Three humans, 20+ agents, revenue went from -19% to +47% YoY, and every week we get into what&amp;#...&lt;/div&gt;
+        &lt;/div&gt;
+         </div>
         </div>
-
         <div class="card">
-            <div class="flex-between">
-                <span class="tag" style="background: #FF3B3022; color: #FF3B30;">Japan Business</span>
-                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
-            </div>
-            <a href="http://www3.nhk.or.jp/news/html/20260425/k10015107981000.html" target="_blank" class="card-title-link">中国 火星探査機で2031年ごろにサンプルを地球に持ち帰る計画</a>
-            <div class="card-summary">宇宙開発を強化している中国は、新たな火星探査機を2年後の2028年ごろに打ち上げ、2031年ごろにはサンプルを地球に持ち帰る計画を明らかにしました。</div>
+         <div class="flex-between">
+          <span class="tag" style="background:#EC489922; color:#EC4899;">
+           AI
+          </span>
+          <span style="font-size:0.8rem; color:var(--text-dim);">
+           Recent
+          </span>
+         </div>
+         <a class="card-title-link" href="https://www.saastr.com/?p=322924" target="_blank">
+          We Vibe Coded Our Own AI VP of Marketing and Customer Success Platform. Two Vendors Just Lost $20k+ Each. And They’ll Never Know Why.
+         </a>
+         <div class="card-summary">
+          We’ve now vibe coded 12+ apps into production at SaaStr. Some replaced things we were paying for. Some filled genuine white space where nothing ...
+         </div>
         </div>
-
         <div class="card">
-            <div class="flex-between">
-                <span class="tag" style="background: #FF3B3022; color: #FF3B30;">Japan Business</span>
-                <span style="font-size: 0.8rem; color: var(--text-dim);">23h ago</span>
-            </div>
-            <a href="http://www.asahi.com/articles/ASV4S3FLHV4SUTIL015M.html?ref=rss" target="_blank" class="card-title-link">マレーシアから帰国の男、殺人容疑で逮捕　8年前に六本木で女性死亡</a>
-            <div class="card-summary"></div>
+         <div class="flex-between">
+          <span class="tag" style="background:#EC489922; color:#EC4899;">
+           AI
+          </span>
+          <span style="font-size:0.8rem; color:var(--text-dim);">
+           Recent
+          </span>
+         </div>
+         <a class="card-title-link" href="https://www.saastr.com/?p=324144" target="_blank">
+          I Need Agentic Email. Claude Said Try AgentMail For a New Project. So I Did. And Never Looked At Anything Else.
+         </a>
+         <div class="card-summary">
+          Welcome to the Winner-Take-All Reality of “AEO” Let me tell you exactly what happened. Last week I needed email inboxes for our AI agents....
+         </div>
         </div>
-</div><div id="subtab-intel-4" class="sub-tab-content ">
-        <div class="card">
-            <div class="flex-between">
-                <span class="tag" style="background: #8B5CF622; color: #8B5CF6;">Property</span>
-                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
-            </div>
-            <a href="https://housingjapan.com/blog/shibuya-once-in-a-century-redevelopment-nears-final-phase/" target="_blank" class="card-title-link">Shibuya Station Redevelopment: Progress and Plans to 2034</a>
-            <div class="card-summary">pThe Shibuya Station area redevelopment is one of Tokyo&amp;#8217;s most significant urban projects, led by Tokyu Corporation, JR East, and Tokyo Metro. The pro...</div>
+       </div>
+      </div>
+      <div class="sub-tab-content" id="subtab-intel-1">
+       <div class="card" style="border-left-color: #6366F1; margin-bottom: 20px;">
+        <div class="signal-header">
+         <div>
+          <span class="tag" style="background: #6366F122; color: #6366F1;">
+           TRENDS
+          </span>
+          <div class="card-title">
+           Trends Analysis
+          </div>
+         </div>
+         <div class="signal-value" style="color: #6366F1;">
+          📈
+         </div>
         </div>
-
-        <div class="card">
-            <div class="flex-between">
-                <span class="tag" style="background: #8B5CF622; color: #8B5CF6;">Property</span>
-                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
-            </div>
-            <a href="https://housingjapan.com/blog/tokyo-condo-prices-and-sales-keep-rising/" target="_blank" class="card-title-link">Tokyo Condo Prices and Sales Keep Rising in 2026 (Updated)</a>
-            <div class="card-summary">pThe average new condominium price in Tokyo&amp;#8217;s 23 wards reached a record ¥137.84 million in fiscal 2025 (April 2025 to March 2026), up 18.5% year-on-ye...</div>
+        <div style="margin-top: 8px; font-size: 0.85rem; color: var(--text-dim);">
+         📅
         </div>
-
-        <div class="card">
-            <div class="flex-between">
-                <span class="tag" style="background: #8B5CF622; color: #8B5CF6;">Property</span>
-                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
-            </div>
-            <a href="https://housingjapan.com/blog/guide-to-public-holidays-in-japan/" target="_blank" class="card-title-link">Japan Public Holidays 2026 &amp; 2027: Golden Week, Silver Week and Key Dates</a>
-            <div class="card-summary">pGolden Week 2026 runs from April 29 to May 6, combining four national holidays: Showa Day, Constitution Day, Greenery Day, and Children&amp;#8217;s Day. Most J...</div>
+        <div class="card-summary" style="margin-top: 12px; line-height: 1.6;">
+         No trend analysis written yet.
         </div>
-</div><div id="subtab-intel-5" class="sub-tab-content ">
-        <div class="card">
-            <div class="flex-between">
-                <span class="tag" style="background: #10B98122; color: #10B981;">Sports</span>
-                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
-            </div>
-            <a href="https://www.japantimes.co.jp/sports/2026/04/26/soccer/asian-champions-league-final-match/" target="_blank" class="card-title-link">Machida Zelvia falls against Al-Ahli in extra time in Asian Champions League final</a>
-            <div class="card-summary">Matthias Jaissle&#x27;s side became only the second team to retain the trophy in the ​Asian Champions League era.</div>
+       </div>
+      </div>
+      <div class="sub-tab-content" id="subtab-intel-2">
+       <div class="card">
+        <div class="flex-between">
+         <span class="tag" style="background: #0A84FF22; color: #0A84FF;">
+          SaaS
+         </span>
+         <span style="font-size: 0.8rem; color: var(--text-dim);">
+          Recently
+         </span>
         </div>
-
-        <div class="card">
-            <div class="flex-between">
-                <span class="tag" style="background: #10B98122; color: #10B981;">Sports</span>
-                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
-            </div>
-            <a href="https://www.japantimes.co.jp/sports/2026/04/26/baseball/mlb/red-sox-fire-cora/" target="_blank" class="card-title-link">Red Sox fire manager Alex Cora</a>
-            <div class="card-summary">The Red Sox are off to a 10-17 start to the MLB season.</div>
+        <a class="card-title-link" href="https://www.saastr.com/a-terrible-terrible-week-in-software-stocks-but-not-necessarily-a-terrible-12-months/" target="_blank">
+         A Terrible, Terrible Week in Software Stocks. But Not Necessarily a Terrible 12 Months.
+        </a>
+        <div class="card-summary">
+         This week was bad. Really bad. And Thursday was particularly brutal. ServiceNow was down 15-17% at the open. IBM off 10%. Salesforce down 7%. Oracle down 5%. In...
         </div>
-</div><div id="subtab-intel-6" class="sub-tab-content "><p style="color: var(--text-dim);">No Tech news in the last 48 hours.</p></div><div id="subtab-intel-7" class="sub-tab-content ">
-        <div class="card">
-            <div class="flex-between">
-                <span class="tag" style="background: #EC489922; color: #EC4899;">AI</span>
-                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
-            </div>
-            <a href="https://techcrunch.com/2026/04/25/why-tokyo-is-the-most-important-tech-destination-of-2026/" target="_blank" class="card-title-link">Why Tokyo is the most important tech destination of 2026</a>
-            <div class="card-summary">SusHi Tech Tokyo 2026 has four tightly defined technology domains, each backed by live demonstrations, dedicated exhibit floors, and sessions featuring the peop...</div>
+       </div>
+       <div class="card">
+        <div class="flex-between">
+         <span class="tag" style="background: #0A84FF22; color: #0A84FF;">
+          SaaS
+         </span>
+         <span style="font-size: 0.8rem; color: var(--text-dim);">
+          Recently
+         </span>
         </div>
-
-        <div class="card">
-            <div class="flex-between">
-                <span class="tag" style="background: #EC489922; color: #EC4899;">AI</span>
-                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
-            </div>
-            <a href="https://techcrunch.com/2026/04/25/apple-under-ternus-what-comes-next-for-the-tech-giants-hardware-strategy/" target="_blank" class="card-title-link">Apple under Ternus: what comes next for the tech giant’s hardware strategy</a>
-            <div class="card-summary">John Ternus, Apple&#x27;s incoming CEO, is a hardware guy, signaling Apple may be putting devices back at the center of its strategy.</div>
+        <a class="card-title-link" href="https://www.saastr.com/if-you-are-at-scale-you-now-have-2-full-time-jobs-keep-your-installed-base-happy-and-win-the-ai-agent-war-in-your-space/" target="_blank">
+         If You Are at Scale, You Now Have 2 Full-Time Jobs: Keep Your Installed Base Happy. And Winning the AI Agent War in Your Space.
+        </a>
+        <div class="card-summary">
+         Here&amp;#8217;s what I see at almost every B2B company that has crossed $50M ARR right now: The CEO is running two completely different, completely demanding b...
         </div>
-
-        <div class="card">
-            <div class="flex-between">
-                <span class="tag" style="background: #EC489922; color: #EC4899;">AI</span>
-                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
-            </div>
-            <a href="https://techcrunch.com/2026/04/25/why-cohere-is-merging-with-aleph-alpha/" target="_blank" class="card-title-link">Why Cohere is merging with Aleph Alpha</a>
-            <div class="card-summary">Canadian AI startup Cohere is taking over Germany-based Aleph Alpha with support from Lidl’s owner, Schwarz Group. With the blessing of their governments, the c...</div>
+       </div>
+       <div class="card">
+        <div class="flex-between">
+         <span class="tag" style="background: #0A84FF22; color: #0A84FF;">
+          SaaS
+         </span>
+         <span style="font-size: 0.8rem; color: var(--text-dim);">
+          Recently
+         </span>
         </div>
-
-        <div class="card">
-            <div class="flex-between">
-                <span class="tag" style="background: #EC489922; color: #EC4899;">AI</span>
-                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
-            </div>
-            <a href="https://techcrunch.com/2026/04/25/maines-governor-vetoes-data-center-moratorium/" target="_blank" class="card-title-link">Maine’s governor vetoes data center moratorium</a>
-            <div class="card-summary">L.D. 307 would have imposed the country’s first statewide moratorium on new data centers — lasting, in this case, until November 1, 2027.</div>
+        <a class="card-title-link" href="https://techcrunch.com/2026/04/25/why-tokyo-is-the-most-important-tech-destination-of-2026/" target="_blank">
+         Why Tokyo is the most important tech destination of 2026
+        </a>
+        <div class="card-summary">
+         SusHi Tech Tokyo 2026 has four tightly defined technology domains, each backed by live demonstrations, dedicated exhibit floors, and sessions featuring the peop...
         </div>
-</div><div id="subtab-intel-8" class="sub-tab-content ">
-        <div class="card">
-            <div class="flex-between">
-                <span class="tag" style="background: #D4AF3722; color: #D4AF37;">Finance</span>
-                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
-            </div>
-            <a href="https://www.bloomberg.com/news/articles/2026-04-25/russian-attack-on-ukrainian-cities-kills-four-people-zelenskiy-says" target="_blank" class="card-title-link">Russian Attack on Ukrainian Cities Kills Four People, Zelenskiy Says</a>
-            <div class="card-summary">Russia carried out one of the largest attacks on Ukraine overnight, killing four people and leaving over 30 wounded across the country, Ukrainian President Volo...</div>
+       </div>
+       <div class="card">
+        <div class="flex-between">
+         <span class="tag" style="background: #0A84FF22; color: #0A84FF;">
+          SaaS
+         </span>
+         <span style="font-size: 0.8rem; color: var(--text-dim);">
+          Recently
+         </span>
         </div>
-
-        <div class="card">
-            <div class="flex-between">
-                <span class="tag" style="background: #D4AF3722; color: #D4AF37;">Finance</span>
-                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
-            </div>
-            <a href="https://www.bloomberg.com/news/articles/2026-04-25/understanding-the-most-viral-chart-in-artificial-intelligence" target="_blank" class="card-title-link">&lt;strong&gt;Understanding the Most Viral Chart in Artificial Intelligence&lt;/strong&gt;</a>
-            <div class="card-summary">pstrongAnother chart that goes up and to the right./strong/p</div>
+        <a class="card-title-link" href="https://techcrunch.com/2026/04/25/indias-snabbit-seeks-fresh-funding-at-a-400m-valuation-sources-say/" target="_blank">
+         India’s Snabbit seeks fresh funding at a $400M valuation, sources say
+        </a>
+        <div class="card-summary">
+         Snabbit has scaled rapidly, crossing one million jobs in March, amid growing investor interest.
         </div>
-
-        <div class="card">
-            <div class="flex-between">
-                <span class="tag" style="background: #D4AF3722; color: #D4AF37;">Finance</span>
-                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
-            </div>
-            <a href="https://www.bloomberg.com/news/audio/2026-04-25/odd-lots-understanding-the-most-viral-chart-in-ai-podcast" target="_blank" class="card-title-link">Odd Lots: Understanding the Most Viral Chart in AI (Podcast)</a>
-            <div class="card-summary"></div>
+       </div>
+      </div>
+      <div class="sub-tab-content" id="subtab-intel-3">
+       <div class="card">
+        <div class="flex-between">
+         <span class="tag" style="background: #FF3B3022; color: #FF3B30;">
+          Japan Business
+         </span>
+         <span style="font-size: 0.8rem; color: var(--text-dim);">
+          23h ago
+         </span>
         </div>
-</div><div id="subtab-intel-9" class="sub-tab-content ">
-        <div class="card">
-            <div class="flex-between">
-                <span class="tag" style="background: #3B82F622; color: #3B82F6;">NZ</span>
-                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
-            </div>
-            <a href="https://www.interest.co.nz/public-policy/138144/brian-easton-says-aside-its-orwellian-doublespeak-proposed-legislation-change" target="_blank" class="card-title-link">Counting properly matters</a>
-            <div class="card-summary">Brian Easton says aside from its Orwellian doublespeak, the proposed legislation to change how we count New Zealand requires an expert review</div>
+        <a class="card-title-link" href="http://www.asahi.com/articles/ASV4S3SHKV4SUQIP04JM.html?ref=rss" target="_blank">
+         【速報中】早指しの糸谷九段が長考　藤井名人の消費時間を上回る
+        </a>
+        <div class="card-summary">
         </div>
-
-        <div class="card">
-            <div class="flex-between">
-                <span class="tag" style="background: #3B82F622; color: #3B82F6;">NZ</span>
-                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
-            </div>
-            <a href="https://www.interest.co.nz/public-policy/138153/sometimes-observations-old-time-socialists-are-spot" target="_blank" class="card-title-link">Unfashionably left</a>
-            <div class="card-summary">Sometimes the observations of old-time socialists are spot-on</div>
+       </div>
+       <div class="card">
+        <div class="flex-between">
+         <span class="tag" style="background: #FF3B3022; color: #FF3B30;">
+          Japan Business
+         </span>
+         <span style="font-size: 0.8rem; color: var(--text-dim);">
+          Recently
+         </span>
         </div>
-
-        <div class="card">
-            <div class="flex-between">
-                <span class="tag" style="background: #3B82F622; color: #3B82F6;">NZ</span>
-                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
-            </div>
-            <a href="https://www.interest.co.nz/currencies/138142/roger-j-kerr-looks-fast-changing-influences-currencies-and-shifting-influences-us" target="_blank" class="card-title-link">The currency war premium unwinds. What&#x27;s next?</a>
-            <div class="card-summary">Roger J Kerr looks at the fast-changing influences on currencies and the shifting influences on the US Federal Reserve&#x27;s FOMC</div>
+        <a class="card-title-link" href="https://www.gizmodo.jp/2026/04/machi-ya-nexrainzero-review-894707.html" target="_blank">
+         水滴が残らないからすぐ収納OK。強撥水な折りたたみ傘で雨の日のストレスも減るね
+        </a>
+        <div class="card-summary">
+         ナノコーティングによる強力撥水は想像以上。サッと振るだけで水滴はほぼゼロに。風にも強い工夫もあり、UV99%カットで日傘としても使えるから常備しておきたい1本かも。
         </div>
-
-        <div class="card">
-            <div class="flex-between">
-                <span class="tag" style="background: #3B82F622; color: #3B82F6;">NZ</span>
-                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
-            </div>
-            <a href="https://www.interest.co.nz/economy/138145/there-fresh-new-challenge-you-our-updated-quiz-join-your-fellow-readers-and-do-it" target="_blank" class="card-title-link">A new challenge</a>
-            <div class="card-summary">There is a fresh new challenge for you in our updated quiz. Join your fellow readers and do it now</div>
+       </div>
+       <div class="card">
+        <div class="flex-between">
+         <span class="tag" style="background: #FF3B3022; color: #FF3B30;">
+          Japan Business
+         </span>
+         <span style="font-size: 0.8rem; color: var(--text-dim);">
+          Recently
+         </span>
         </div>
-</div><div id="subtab-intel-10" class="sub-tab-content ">
-        <div class="card">
-            <div class="flex-between">
-                <span class="tag" style="background: #EF444422; color: #EF4444;">Regulatory</span>
-                <span style="font-size: 0.8rem; color: var(--text-dim);">19h ago</span>
-            </div>
-            <a href="https://www.reddit.com/r/JapanFinance/comments/1sv74lz/nonpermanent_tax_resident_definition/" target="_blank" class="card-title-link">&#x27;Non-permanent tax resident&#x27; definition clarification , for PR(immigration) via J-skip</a>
-            <div class="card-summary">!-- SC_OFF --div class=&quot;md&quot;pI read the wiki, but couldn&#x27;t find this. Apologies, if this has been asked/answered before./p pI am a Permanent Resid...</div>
+        <a class="card-title-link" href="http://www3.nhk.or.jp/news/html/20260425/k10015107981000.html" target="_blank">
+         中国 火星探査機で2031年ごろにサンプルを地球に持ち帰る計画
+        </a>
+        <div class="card-summary">
+         宇宙開発を強化している中国は、新たな火星探査機を2年後の2028年ごろに打ち上げ、2031年ごろにはサンプルを地球に持ち帰る計画を明らかにしました。
         </div>
-
-        <div class="card">
-            <div class="flex-between">
-                <span class="tag" style="background: #EF444422; color: #EF4444;">Regulatory</span>
-                <span style="font-size: 0.8rem; color: var(--text-dim);">15h ago</span>
-            </div>
-            <a href="https://www.reddit.com/r/JapanFinance/comments/1svbmlt/fund_investing_in_home_country_and_taxes/" target="_blank" class="card-title-link">Fund investing in home country and taxes</a>
-            <div class="card-summary">!-- SC_OFF --div class=&quot;md&quot;pI apologise for not knowing the correct words for everything, I hope it is intelligible. /p pI have lived in Japan for 11 ...</div>
+       </div>
+       <div class="card">
+        <div class="flex-between">
+         <span class="tag" style="background: #FF3B3022; color: #FF3B30;">
+          Japan Business
+         </span>
+         <span style="font-size: 0.8rem; color: var(--text-dim);">
+          23h ago
+         </span>
         </div>
-
-        <div class="card">
-            <div class="flex-between">
-                <span class="tag" style="background: #EF444422; color: #EF4444;">Regulatory</span>
-                <span style="font-size: 0.8rem; color: var(--text-dim);">12h ago</span>
-            </div>
-            <a href="https://www.reddit.com/r/JapanFinance/comments/1svezyv/clarification_on_npr_foreign_stock_capital_gains/" target="_blank" class="card-title-link">Clarification on NPR foreign stock capital gains laws and the need to file a 修正申告/期限後申告 (revised tax return/post-deadline tax return)</a>
-            <div class="card-summary">!-- SC_OFF --div class=&quot;md&quot;pShort version: I may have to a file revised tax return/post-deadline tax return 修正申告/期限後申告 for 2024 and 2025, due to not r...</div>
+        <a class="card-title-link" href="http://www.asahi.com/articles/ASV4S3FLHV4SUTIL015M.html?ref=rss" target="_blank">
+         マレーシアから帰国の男、殺人容疑で逮捕　8年前に六本木で女性死亡
+        </a>
+        <div class="card-summary">
         </div>
-</div><div id="subtab-intel-11" class="sub-tab-content ">
-        <div class="card">
-            <div class="flex-between">
-                <span class="tag" style="background: #1DA1F222; color: #1DA1F2;">X/Twitter</span>
-                <span style="font-size: 0.8rem; color: var(--text-dim);">Recently</span>
-            </div>
-            <div class="card-title">No Title</div>
-            <div class="card-summary"></div>
+       </div>
+      </div>
+      <div class="sub-tab-content" id="subtab-intel-4">
+       <div class="card">
+        <div class="flex-between">
+         <span class="tag" style="background: #8B5CF622; color: #8B5CF6;">
+          Property
+         </span>
+         <span style="font-size: 0.8rem; color: var(--text-dim);">
+          Recently
+         </span>
         </div>
-</div></div>
-    <script>
-    function switchSubTab(parentTab, subIndex) {
+        <a class="card-title-link" href="https://housingjapan.com/blog/shibuya-once-in-a-century-redevelopment-nears-final-phase/" target="_blank">
+         Shibuya Station Redevelopment: Progress and Plans to 2034
+        </a>
+        <div class="card-summary">
+         pThe Shibuya Station area redevelopment is one of Tokyo&amp;#8217;s most significant urban projects, led by Tokyu Corporation, JR East, and Tokyo Metro. The pro...
+        </div>
+       </div>
+       <div class="card">
+        <div class="flex-between">
+         <span class="tag" style="background: #8B5CF622; color: #8B5CF6;">
+          Property
+         </span>
+         <span style="font-size: 0.8rem; color: var(--text-dim);">
+          Recently
+         </span>
+        </div>
+        <a class="card-title-link" href="https://housingjapan.com/blog/tokyo-condo-prices-and-sales-keep-rising/" target="_blank">
+         Tokyo Condo Prices and Sales Keep Rising in 2026 (Updated)
+        </a>
+        <div class="card-summary">
+         pThe average new condominium price in Tokyo&amp;#8217;s 23 wards reached a record ¥137.84 million in fiscal 2025 (April 2025 to March 2026), up 18.5% year-on-ye...
+        </div>
+       </div>
+       <div class="card">
+        <div class="flex-between">
+         <span class="tag" style="background: #8B5CF622; color: #8B5CF6;">
+          Property
+         </span>
+         <span style="font-size: 0.8rem; color: var(--text-dim);">
+          Recently
+         </span>
+        </div>
+        <a class="card-title-link" href="https://housingjapan.com/blog/guide-to-public-holidays-in-japan/" target="_blank">
+         Japan Public Holidays 2026 &amp; 2027: Golden Week, Silver Week and Key Dates
+        </a>
+        <div class="card-summary">
+         pGolden Week 2026 runs from April 29 to May 6, combining four national holidays: Showa Day, Constitution Day, Greenery Day, and Children&amp;#8217;s Day. Most J...
+        </div>
+       </div>
+      </div>
+      <div class="sub-tab-content" id="subtab-intel-5">
+       <div class="card">
+        <div class="flex-between">
+         <span class="tag" style="background: #10B98122; color: #10B981;">
+          Sports
+         </span>
+         <span style="font-size: 0.8rem; color: var(--text-dim);">
+          Recently
+         </span>
+        </div>
+        <a class="card-title-link" href="https://www.japantimes.co.jp/sports/2026/04/26/soccer/asian-champions-league-final-match/" target="_blank">
+         Machida Zelvia falls against Al-Ahli in extra time in Asian Champions League final
+        </a>
+        <div class="card-summary">
+         Matthias Jaissle's side became only the second team to retain the trophy in the ​Asian Champions League era.
+        </div>
+       </div>
+       <div class="card">
+        <div class="flex-between">
+         <span class="tag" style="background: #10B98122; color: #10B981;">
+          Sports
+         </span>
+         <span style="font-size: 0.8rem; color: var(--text-dim);">
+          Recently
+         </span>
+        </div>
+        <a class="card-title-link" href="https://www.japantimes.co.jp/sports/2026/04/26/baseball/mlb/red-sox-fire-cora/" target="_blank">
+         Red Sox fire manager Alex Cora
+        </a>
+        <div class="card-summary">
+         The Red Sox are off to a 10-17 start to the MLB season.
+        </div>
+       </div>
+      </div>
+      <div class="sub-tab-content" id="subtab-intel-6">
+       <p style="color: var(--text-dim);">
+        No Tech news in the last 48 hours.
+       </p>
+      </div>
+      <div class="sub-tab-content" id="subtab-intel-7">
+       <div class="card">
+        <div class="flex-between">
+         <span class="tag" style="background: #EC489922; color: #EC4899;">
+          AI
+         </span>
+         <span style="font-size: 0.8rem; color: var(--text-dim);">
+          Recently
+         </span>
+        </div>
+        <a class="card-title-link" href="https://techcrunch.com/2026/04/25/why-tokyo-is-the-most-important-tech-destination-of-2026/" target="_blank">
+         Why Tokyo is the most important tech destination of 2026
+        </a>
+        <div class="card-summary">
+         SusHi Tech Tokyo 2026 has four tightly defined technology domains, each backed by live demonstrations, dedicated exhibit floors, and sessions featuring the peop...
+        </div>
+       </div>
+       <div class="card">
+        <div class="flex-between">
+         <span class="tag" style="background: #EC489922; color: #EC4899;">
+          AI
+         </span>
+         <span style="font-size: 0.8rem; color: var(--text-dim);">
+          Recently
+         </span>
+        </div>
+        <a class="card-title-link" href="https://techcrunch.com/2026/04/25/apple-under-ternus-what-comes-next-for-the-tech-giants-hardware-strategy/" target="_blank">
+         Apple under Ternus: what comes next for the tech giant’s hardware strategy
+        </a>
+        <div class="card-summary">
+         John Ternus, Apple's incoming CEO, is a hardware guy, signaling Apple may be putting devices back at the center of its strategy.
+        </div>
+       </div>
+       <div class="card">
+        <div class="flex-between">
+         <span class="tag" style="background: #EC489922; color: #EC4899;">
+          AI
+         </span>
+         <span style="font-size: 0.8rem; color: var(--text-dim);">
+          Recently
+         </span>
+        </div>
+        <a class="card-title-link" href="https://techcrunch.com/2026/04/25/why-cohere-is-merging-with-aleph-alpha/" target="_blank">
+         Why Cohere is merging with Aleph Alpha
+        </a>
+        <div class="card-summary">
+         Canadian AI startup Cohere is taking over Germany-based Aleph Alpha with support from Lidl’s owner, Schwarz Group. With the blessing of their governments, the c...
+        </div>
+       </div>
+       <div class="card">
+        <div class="flex-between">
+         <span class="tag" style="background: #EC489922; color: #EC4899;">
+          AI
+         </span>
+         <span style="font-size: 0.8rem; color: var(--text-dim);">
+          Recently
+         </span>
+        </div>
+        <a class="card-title-link" href="https://techcrunch.com/2026/04/25/maines-governor-vetoes-data-center-moratorium/" target="_blank">
+         Maine’s governor vetoes data center moratorium
+        </a>
+        <div class="card-summary">
+         L.D. 307 would have imposed the country’s first statewide moratorium on new data centers — lasting, in this case, until November 1, 2027.
+        </div>
+       </div>
+      </div>
+      <div class="sub-tab-content" id="subtab-intel-8">
+       <div class="card">
+        <div class="flex-between">
+         <span class="tag" style="background: #D4AF3722; color: #D4AF37;">
+          Finance
+         </span>
+         <span style="font-size: 0.8rem; color: var(--text-dim);">
+          Recently
+         </span>
+        </div>
+        <a class="card-title-link" href="https://www.bloomberg.com/news/articles/2026-04-25/russian-attack-on-ukrainian-cities-kills-four-people-zelenskiy-says" target="_blank">
+         Russian Attack on Ukrainian Cities Kills Four People, Zelenskiy Says
+        </a>
+        <div class="card-summary">
+         Russia carried out one of the largest attacks on Ukraine overnight, killing four people and leaving over 30 wounded across the country, Ukrainian President Volo...
+        </div>
+       </div>
+       <div class="card">
+        <div class="flex-between">
+         <span class="tag" style="background: #D4AF3722; color: #D4AF37;">
+          Finance
+         </span>
+         <span style="font-size: 0.8rem; color: var(--text-dim);">
+          Recently
+         </span>
+        </div>
+        <a class="card-title-link" href="https://www.bloomberg.com/news/articles/2026-04-25/understanding-the-most-viral-chart-in-artificial-intelligence" target="_blank">
+         &lt;strong&gt;Understanding the Most Viral Chart in Artificial Intelligence&lt;/strong&gt;
+        </a>
+        <div class="card-summary">
+         pstrongAnother chart that goes up and to the right./strong/p
+        </div>
+       </div>
+       <div class="card">
+        <div class="flex-between">
+         <span class="tag" style="background: #D4AF3722; color: #D4AF37;">
+          Finance
+         </span>
+         <span style="font-size: 0.8rem; color: var(--text-dim);">
+          Recently
+         </span>
+        </div>
+        <a class="card-title-link" href="https://www.bloomberg.com/news/audio/2026-04-25/odd-lots-understanding-the-most-viral-chart-in-ai-podcast" target="_blank">
+         Odd Lots: Understanding the Most Viral Chart in AI (Podcast)
+        </a>
+        <div class="card-summary">
+        </div>
+       </div>
+      </div>
+      <div class="sub-tab-content" id="subtab-intel-9">
+       <div class="card">
+        <div class="flex-between">
+         <span class="tag" style="background: #3B82F622; color: #3B82F6;">
+          NZ
+         </span>
+         <span style="font-size: 0.8rem; color: var(--text-dim);">
+          Recently
+         </span>
+        </div>
+        <a class="card-title-link" href="https://www.interest.co.nz/public-policy/138144/brian-easton-says-aside-its-orwellian-doublespeak-proposed-legislation-change" target="_blank">
+         Counting properly matters
+        </a>
+        <div class="card-summary">
+         Brian Easton says aside from its Orwellian doublespeak, the proposed legislation to change how we count New Zealand requires an expert review
+        </div>
+       </div>
+       <div class="card">
+        <div class="flex-between">
+         <span class="tag" style="background: #3B82F622; color: #3B82F6;">
+          NZ
+         </span>
+         <span style="font-size: 0.8rem; color: var(--text-dim);">
+          Recently
+         </span>
+        </div>
+        <a class="card-title-link" href="https://www.interest.co.nz/public-policy/138153/sometimes-observations-old-time-socialists-are-spot" target="_blank">
+         Unfashionably left
+        </a>
+        <div class="card-summary">
+         Sometimes the observations of old-time socialists are spot-on
+        </div>
+       </div>
+       <div class="card">
+        <div class="flex-between">
+         <span class="tag" style="background: #3B82F622; color: #3B82F6;">
+          NZ
+         </span>
+         <span style="font-size: 0.8rem; color: var(--text-dim);">
+          Recently
+         </span>
+        </div>
+        <a class="card-title-link" href="https://www.interest.co.nz/currencies/138142/roger-j-kerr-looks-fast-changing-influences-currencies-and-shifting-influences-us" target="_blank">
+         The currency war premium unwinds. What's next?
+        </a>
+        <div class="card-summary">
+         Roger J Kerr looks at the fast-changing influences on currencies and the shifting influences on the US Federal Reserve's FOMC
+        </div>
+       </div>
+       <div class="card">
+        <div class="flex-between">
+         <span class="tag" style="background: #3B82F622; color: #3B82F6;">
+          NZ
+         </span>
+         <span style="font-size: 0.8rem; color: var(--text-dim);">
+          Recently
+         </span>
+        </div>
+        <a class="card-title-link" href="https://www.interest.co.nz/economy/138145/there-fresh-new-challenge-you-our-updated-quiz-join-your-fellow-readers-and-do-it" target="_blank">
+         A new challenge
+        </a>
+        <div class="card-summary">
+         There is a fresh new challenge for you in our updated quiz. Join your fellow readers and do it now
+        </div>
+       </div>
+      </div>
+      <div class="sub-tab-content" id="subtab-intel-10">
+       <div class="card">
+        <div class="flex-between">
+         <span class="tag" style="background: #EF444422; color: #EF4444;">
+          Regulatory
+         </span>
+         <span style="font-size: 0.8rem; color: var(--text-dim);">
+          19h ago
+         </span>
+        </div>
+        <a class="card-title-link" href="https://www.reddit.com/r/JapanFinance/comments/1sv74lz/nonpermanent_tax_resident_definition/" target="_blank">
+         'Non-permanent tax resident' definition clarification , for PR(immigration) via J-skip
+        </a>
+        <div class="card-summary">
+         !-- SC_OFF --div class="md"pI read the wiki, but couldn't find this. Apologies, if this has been asked/answered before./p pI am a Permanent Resid...
+        </div>
+       </div>
+       <div class="card">
+        <div class="flex-between">
+         <span class="tag" style="background: #EF444422; color: #EF4444;">
+          Regulatory
+         </span>
+         <span style="font-size: 0.8rem; color: var(--text-dim);">
+          15h ago
+         </span>
+        </div>
+        <a class="card-title-link" href="https://www.reddit.com/r/JapanFinance/comments/1svbmlt/fund_investing_in_home_country_and_taxes/" target="_blank">
+         Fund investing in home country and taxes
+        </a>
+        <div class="card-summary">
+         !-- SC_OFF --div class="md"pI apologise for not knowing the correct words for everything, I hope it is intelligible. /p pI have lived in Japan for 11 ...
+        </div>
+       </div>
+       <div class="card">
+        <div class="flex-between">
+         <span class="tag" style="background: #EF444422; color: #EF4444;">
+          Regulatory
+         </span>
+         <span style="font-size: 0.8rem; color: var(--text-dim);">
+          12h ago
+         </span>
+        </div>
+        <a class="card-title-link" href="https://www.reddit.com/r/JapanFinance/comments/1svezyv/clarification_on_npr_foreign_stock_capital_gains/" target="_blank">
+         Clarification on NPR foreign stock capital gains laws and the need to file a 修正申告/期限後申告 (revised tax return/post-deadline tax return)
+        </a>
+        <div class="card-summary">
+         !-- SC_OFF --div class="md"pShort version: I may have to a file revised tax return/post-deadline tax return 修正申告/期限後申告 for 2024 and 2025, due to not r...
+        </div>
+       </div>
+      </div>
+      <div class="sub-tab-content" id="subtab-intel-11">
+       <div class="card">
+        <div class="flex-between">
+         <span class="tag" style="background: #1DA1F222; color: #1DA1F2;">
+          X/Twitter
+         </span>
+         <span style="font-size: 0.8rem; color: var(--text-dim);">
+          Recently
+         </span>
+        </div>
+        <div class="card-title">
+         No Title
+        </div>
+        <div class="card-summary">
+        </div>
+       </div>
+      </div>
+     </div>
+     <script>
+      function switchSubTab(parentTab, subIndex) {
         // Hide all sub‑tab contents for this parent tab
         const subContents = document.querySelectorAll(`#tab-${parentTab} .sub-tab-content`);
         subContents.forEach(el => el.classList.remove('active'));
@@ -1327,210 +1649,437 @@
         const selectedBtn = document.getElementById(`btn-subtab-${parentTab}-${subIndex}`);
         if (selectedBtn) selectedBtn.classList.add('active');
     }
-    </script>
-    
-                <div class="news-card">
-                    <div class="news-header">
-                        <span class="news-source">SYSTEM</span>
-                        <span class="news-time">Just now</span>
-                    </div>
-                    <div class="news-title">Loading real-time intelligence...</div>
-                    <div class="news-summary">The dashboard is fetching the latest RSS feeds from SaaS, Japan, NZ, Finance, and AI sources. This placeholder will be replaced with real data.</div>
-                </div>
-            </div>
-        </div>
-
-        <!-- TAB 2: MARKETS -->
-        <div id="tab-markets" class="tab-content">
-            <div class="markets-grid">
-                <!-- XRP Chart -->
-                <div class="chart-card" id="chart-xrp">
-                    <div class="chart-header">
-                        <div class="chart-symbol">
-                            <span class="chart-badge badge-xrp">XRP</span>
-                            <div>
-                                <div class="chart-symbol-name">Ripple / USD</div>
-                                <div class="chart-symbol-pair">Binance · XRPUSDT</div>
-                            </div>
-                        </div>
-                        <div>
-                            <span class="chart-price" id="xrp-price">—</span>
-                            <span class="chart-change positive" id="xrp-change">—</span>
-                        </div>
-                    </div>
-                    <div class="chart-container" id="chart-xrp-canvas"></div>
-                    <div class="chart-meta">
-                        <div class="chart-meta-item">24h High: <span id="xrp-high">—</span></div>
-                        <div class="chart-meta-item">24h Low: <span id="xrp-low">—</span></div>
-                        <div class="chart-meta-item">Signal: <span id="xrp-signal-status" style="color: var(--accent-mint);">—</span></div>
-                    </div>
-                    <div class="signal-call-box">
-                        <div class="signal-call-row">
-                            <span class="signal-call-label">ENTRY</span>
-                            <span class="signal-call-value" id="xrp-entry">—</span>
-                            <span class="signal-call-label">STOP</span>
-                            <span class="signal-call-value stop" id="xrp-stop">$1.38</span>
-                            <span class="signal-call-label">TARGET</span>
-                            <span class="signal-call-value target" id="xrp-target">$1.60</span>
-                        </div>
-                        <div class="signal-cushion-row">Cushion: <span id="xrp-cushion">—</span></div>
-                    </div>
-                </div>
-
-                <!-- Gold Chart -->
-                <div class="chart-card" id="chart-gold">
-                    <div class="chart-header">
-                        <div class="chart-symbol">
-                            <span class="chart-badge badge-gold">XAU</span>
-                            <div>
-                                <div class="chart-symbol-name">Gold / USD</div>
-                                <div class="chart-symbol-pair">Live Market · Gold Oracle</div>
-                            </div>
-                        </div>
-                        <div>
-                            <span class="chart-price" id="gold-price">—</span>
-                            <span class="chart-change positive" id="gold-change">—</span>
-                        </div>
-                    </div>
-                    <div class="chart-container" id="chart-gold-canvas"></div>
-                    <div class="chart-meta">
-                        <div class="chart-meta-item">S1: <span id="gold-s1">—</span></div>
-                        <div class="chart-meta-item">R1: <span id="gold-r1">—</span></div>
-                        <div class="chart-meta-item">Bias: <span id="gold-bias" style="color: var(--accent-mint);">—</span></div>
-                    </div>
-                    <div class="signal-call-box">
-                        <div class="signal-call-row">
-                            <span class="signal-call-label">FLOOR</span>
-                            <span class="signal-call-value" id="gold-floor">$4,792</span>
-                            <span class="signal-call-label">SUPPORT</span>
-                            <span class="signal-call-value" id="gold-support">$4,800</span>
-                            <span class="signal-call-label">TARGET</span>
-                            <span class="signal-call-value target" id="gold-target">$5,000+</span>
-                        </div>
-                        <div class="signal-cushion-row">Oracle: <span id="gold-oracle-price">—</span></div>
-                    </div>
-                </div>
-
-                <!-- BTC Chart -->
-                <div class="chart-card" id="chart-btc">
-                    <div class="chart-header">
-                        <div class="chart-symbol">
-                            <span class="chart-badge badge-btc">BTC</span>
-                            <div>
-                                <div class="chart-symbol-name">Bitcoin / USD</div>
-                                <div class="chart-symbol-pair">Binance · BTCUSDT</div>
-                            </div>
-                        </div>
-                        <div>
-                            <span class="chart-price" id="btc-price">—</span>
-                            <span class="chart-change positive" id="btc-change">—</span>
-                        </div>
-                    </div>
-                    <div class="chart-container" id="chart-btc-canvas"></div>
-                    <div class="chart-meta">
-                        <div class="chart-meta-item">24h High: <span id="btc-high">—</span></div>
-                        <div class="chart-meta-item">24h Low: <span id="btc-low">—</span></div>
-                        <div class="chart-meta-item">Dominance: <span id="btc-dom">—</span></div>
-                    </div>
-                    <div class="signal-call-box">
-                        <div class="signal-call-row">
-                            <span class="signal-call-label">FLOOR</span>
-                            <span class="signal-call-value" id="btc-floor">$75,000</span>
-                            <span class="signal-call-label">SUPPORT</span>
-                            <span class="signal-call-value" id="btc-support">$74,500</span>
-                            <span class="signal-call-label">TARGET</span>
-                            <span class="signal-call-value target" id="btc-target">$80,000+</span>
-                        </div>
-                        <div class="signal-cushion-row">Current: <span id="btc-current">—</span></div>
-                    </div>
-                </div>
-
-                <!-- ETH Chart -->
-                <div class="chart-card" id="chart-eth">
-                    <div class="chart-header">
-                        <div class="chart-symbol">
-                            <span class="chart-badge badge-eth">ETH</span>
-                            <div>
-                                <div class="chart-symbol-name">Ethereum / USD</div>
-                                <div class="chart-symbol-pair">Binance · ETHUSDT</div>
-                            </div>
-                        </div>
-                        <div>
-                            <span class="chart-price" id="eth-price">—</span>
-                            <span class="chart-change positive" id="eth-change">—</span>
-                        </div>
-                    </div>
-                    <div class="chart-container" id="chart-eth-canvas"></div>
-                    <div class="chart-meta">
-                        <div class="chart-meta-item">24h High: <span id="eth-high">—</span></div>
-                        <div class="chart-meta-item">24h Low: <span id="eth-low">—</span></div>
-                        <div class="chart-meta-item">Signal: <span id="eth-signal" style="color: var(--accent-mint);">—</span></div>
-                    </div>
-                    <div class="signal-call-box">
-                        <div class="signal-call-row">
-                            <span class="signal-call-label">FLOOR</span>
-                            <span class="signal-call-value" id="eth-floor">$2,270</span>
-                            <span class="signal-call-label">SUPPORT</span>
-                            <span class="signal-call-value" id="eth-support">$2,300</span>
-                            <span class="signal-call-label">TARGET</span>
-                            <span class="signal-call-value target" id="eth-target">$2,500+</span>
-                        </div>
-                        <div class="signal-cushion-row">Current: <span id="eth-current">—</span></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- TAB 3: ALERTS + RADAR -->
-        <div id="tab-venture" class="tab-content">
-            <div class="ventures-grid" id="ventures-grid">
-                
-    <div style="margin: 30px 0 20px 0; border-bottom: 2px solid #00daf3; padding-bottom: 10px;">
-        <h3 style="color: #00daf3; font-size: 1.2rem; margin: 0;">🚨 ALERT FEED</h3>
-        <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 5px;">
-            Real-time keyword matches from 0 active sectors.
-            <span style="color: var(--text-dim); font-size: 0.85rem;">
-                Last scan: Never | 0 total matches
-            </span>
-        </p>
+     </script>
+     <div class="news-card">
+      <div class="news-header">
+       <span class="news-source">
+        SYSTEM
+       </span>
+       <span class="news-time">
+        Just now
+       </span>
+      </div>
+      <div class="news-title">
+       Loading real-time intelligence...
+      </div>
+      <div class="news-summary">
+       The dashboard is fetching the latest RSS feeds from SaaS, Japan, NZ, Finance, and AI sources. This placeholder will be replaced with real data.
+      </div>
+     </div>
     </div>
-    
-    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 20px;">
-        <div style="background: var(--glass); border: 1px solid var(--border); border-radius: 8px; padding: 14px; text-align: center;">
-            <div style="font-size: 24px; font-weight: 800; color: #00daf3;">0</div>
-            <div style="font-size: 11px; color: var(--text-dim); text-transform: uppercase;">Total Matches</div>
+   </div>
+   <!-- TAB 2: MARKETS -->
+   <div class="tab-content" id="tab-markets">
+    <div class="markets-grid">
+     <!-- XRP Chart -->
+     <div class="chart-card" id="chart-xrp">
+      <div class="chart-header">
+       <div class="chart-symbol">
+        <span class="chart-badge badge-xrp">
+         XRP
+        </span>
+        <div>
+         <div class="chart-symbol-name">
+          Ripple / USD
+         </div>
+         <div class="chart-symbol-pair">
+          Binance · XRPUSDT
+         </div>
         </div>
-        <div style="background: var(--glass); border: 1px solid var(--border); border-radius: 8px; padding: 14px; text-align: center;">
-            <div style="font-size: 24px; font-weight: 800; color: #00daf3;">0</div>
-            <div style="font-size: 11px; color: var(--text-dim); text-transform: uppercase;">Active Sectors</div>
+       </div>
+       <div>
+        <span class="chart-price" id="xrp-price">
+         —
+        </span>
+        <span class="chart-change positive" id="xrp-change">
+         —
+        </span>
+       </div>
+      </div>
+      <div class="chart-container" id="chart-xrp-canvas">
+      </div>
+      <div class="chart-meta">
+       <div class="chart-meta-item">
+        24h High:
+        <span id="xrp-high">
+         —
+        </span>
+       </div>
+       <div class="chart-meta-item">
+        24h Low:
+        <span id="xrp-low">
+         —
+        </span>
+       </div>
+       <div class="chart-meta-item">
+        Signal:
+        <span id="xrp-signal-status" style="color: var(--accent-mint);">
+         —
+        </span>
+       </div>
+      </div>
+      <div class="signal-call-box">
+       <div class="signal-call-row">
+        <span class="signal-call-label">
+         ENTRY
+        </span>
+        <span class="signal-call-value" id="xrp-entry">
+         —
+        </span>
+        <span class="signal-call-label">
+         STOP
+        </span>
+        <span class="signal-call-value stop" id="xrp-stop">
+         $1.38
+        </span>
+        <span class="signal-call-label">
+         TARGET
+        </span>
+        <span class="signal-call-value target" id="xrp-target">
+         $1.60
+        </span>
+       </div>
+       <div class="signal-cushion-row">
+        Cushion:
+        <span id="xrp-cushion">
+         —
+        </span>
+       </div>
+      </div>
+     </div>
+     <!-- Gold Chart -->
+     <div class="chart-card" id="chart-gold">
+      <div class="chart-header">
+       <div class="chart-symbol">
+        <span class="chart-badge badge-gold">
+         XAU
+        </span>
+        <div>
+         <div class="chart-symbol-name">
+          Gold / USD
+         </div>
+         <div class="chart-symbol-pair">
+          Live Market · Gold Oracle
+         </div>
         </div>
-        <div style="background: var(--glass); border: 1px solid var(--border); border-radius: 8px; padding: 14px; text-align: center;">
-            <div style="font-size: 24px; font-weight: 800; color: #00daf3;">40+</div>
-            <div style="font-size: 11px; color: var(--text-dim); text-transform: uppercase;">RSS Feeds</div>
+       </div>
+       <div>
+        <span class="chart-price" id="gold-price">
+         —
+        </span>
+        <span class="chart-change positive" id="gold-change">
+         —
+        </span>
+       </div>
+      </div>
+      <div class="chart-container" id="chart-gold-canvas">
+      </div>
+      <div class="chart-meta">
+       <div class="chart-meta-item">
+        S1:
+        <span id="gold-s1">
+         —
+        </span>
+       </div>
+       <div class="chart-meta-item">
+        R1:
+        <span id="gold-r1">
+         —
+        </span>
+       </div>
+       <div class="chart-meta-item">
+        Bias:
+        <span id="gold-bias" style="color: var(--accent-mint);">
+         —
+        </span>
+       </div>
+      </div>
+      <div class="signal-call-box">
+       <div class="signal-call-row">
+        <span class="signal-call-label">
+         FLOOR
+        </span>
+        <span class="signal-call-value" id="gold-floor">
+         $4,792
+        </span>
+        <span class="signal-call-label">
+         SUPPORT
+        </span>
+        <span class="signal-call-value" id="gold-support">
+         $4,800
+        </span>
+        <span class="signal-call-label">
+         TARGET
+        </span>
+        <span class="signal-call-value target" id="gold-target">
+         $5,000+
+        </span>
+       </div>
+       <div class="signal-cushion-row">
+        Oracle:
+        <span id="gold-oracle-price">
+         —
+        </span>
+       </div>
+      </div>
+     </div>
+     <!-- BTC Chart -->
+     <div class="chart-card" id="chart-btc">
+      <div class="chart-header">
+       <div class="chart-symbol">
+        <span class="chart-badge badge-btc">
+         BTC
+        </span>
+        <div>
+         <div class="chart-symbol-name">
+          Bitcoin / USD
+         </div>
+         <div class="chart-symbol-pair">
+          Binance · BTCUSDT
+         </div>
         </div>
+       </div>
+       <div>
+        <span class="chart-price" id="btc-price">
+         —
+        </span>
+        <span class="chart-change positive" id="btc-change">
+         —
+        </span>
+       </div>
+      </div>
+      <div class="chart-container" id="chart-btc-canvas">
+      </div>
+      <div class="chart-meta">
+       <div class="chart-meta-item">
+        24h High:
+        <span id="btc-high">
+         —
+        </span>
+       </div>
+       <div class="chart-meta-item">
+        24h Low:
+        <span id="btc-low">
+         —
+        </span>
+       </div>
+       <div class="chart-meta-item">
+        Dominance:
+        <span id="btc-dom">
+         —
+        </span>
+       </div>
+      </div>
+      <div class="signal-call-box">
+       <div class="signal-call-row">
+        <span class="signal-call-label">
+         FLOOR
+        </span>
+        <span class="signal-call-value" id="btc-floor">
+         $75,000
+        </span>
+        <span class="signal-call-label">
+         SUPPORT
+        </span>
+        <span class="signal-call-value" id="btc-support">
+         $74,500
+        </span>
+        <span class="signal-call-label">
+         TARGET
+        </span>
+        <span class="signal-call-value target" id="btc-target">
+         $80,000+
+        </span>
+       </div>
+       <div class="signal-cushion-row">
+        Current:
+        <span id="btc-current">
+         —
+        </span>
+       </div>
+      </div>
+     </div>
+     <!-- ETH Chart -->
+     <div class="chart-card" id="chart-eth">
+      <div class="chart-header">
+       <div class="chart-symbol">
+        <span class="chart-badge badge-eth">
+         ETH
+        </span>
+        <div>
+         <div class="chart-symbol-name">
+          Ethereum / USD
+         </div>
+         <div class="chart-symbol-pair">
+          Binance · ETHUSDT
+         </div>
+        </div>
+       </div>
+       <div>
+        <span class="chart-price" id="eth-price">
+         —
+        </span>
+        <span class="chart-change positive" id="eth-change">
+         —
+        </span>
+       </div>
+      </div>
+      <div class="chart-container" id="chart-eth-canvas">
+      </div>
+      <div class="chart-meta">
+       <div class="chart-meta-item">
+        24h High:
+        <span id="eth-high">
+         —
+        </span>
+       </div>
+       <div class="chart-meta-item">
+        24h Low:
+        <span id="eth-low">
+         —
+        </span>
+       </div>
+       <div class="chart-meta-item">
+        Signal:
+        <span id="eth-signal" style="color: var(--accent-mint);">
+         —
+        </span>
+       </div>
+      </div>
+      <div class="signal-call-box">
+       <div class="signal-call-row">
+        <span class="signal-call-label">
+         FLOOR
+        </span>
+        <span class="signal-call-value" id="eth-floor">
+         $2,270
+        </span>
+        <span class="signal-call-label">
+         SUPPORT
+        </span>
+        <span class="signal-call-value" id="eth-support">
+         $2,300
+        </span>
+        <span class="signal-call-label">
+         TARGET
+        </span>
+        <span class="signal-call-value target" id="eth-target">
+         $2,500+
+        </span>
+       </div>
+       <div class="signal-cushion-row">
+        Current:
+        <span id="eth-current">
+         —
+        </span>
+       </div>
+      </div>
+     </div>
     </div>
-    <div style="margin-bottom: 20px;"><span style="display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; background: rgba(0,218,243,0.12); color: #00daf3; margin-right: 4px; margin-bottom: 4px;">crisis</span><span style="display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; background: rgba(0,218,243,0.12); color: #00daf3; margin-right: 4px; margin-bottom: 4px;">BOJ</span><span style="display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; background: rgba(0,218,243,0.12); color: #00daf3; margin-right: 4px; margin-bottom: 4px;">Fed</span><span style="display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; background: rgba(0,218,243,0.12); color: #00daf3; margin-right: 4px; margin-bottom: 4px;">inflation</span><span style="display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; background: rgba(0,218,243,0.12); color: #00daf3; margin-right: 4px; margin-bottom: 4px;">rate hike</span><span style="display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; background: rgba(0,218,243,0.12); color: #00daf3; margin-right: 4px; margin-bottom: 4px;">gold</span><span style="display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; background: rgba(0,218,243,0.12); color: #00daf3; margin-right: 4px; margin-bottom: 4px;">oil</span><span style="display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; background: rgba(0,218,243,0.12); color: #00daf3; margin-right: 4px; margin-bottom: 4px;">USD/JPY</span><span style="display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; background: rgba(0,218,243,0.12); color: #00daf3; margin-right: 4px; margin-bottom: 4px;">NZD/JPY</span><span style="display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; background: rgba(0,218,243,0.12); color: #00daf3; margin-right: 4px; margin-bottom: 4px;">tariff</span><span style="display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; background: rgba(0,218,243,0.12); color: #00daf3; margin-right: 4px; margin-bottom: 4px;">Ukraine</span><span style="display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; background: rgba(0,218,243,0.12); color: #00daf3; margin-right: 4px; margin-bottom: 4px;">Taiwan</span></div>
-        <div style="background: var(--glass); border: 1px solid var(--border); border-radius: 10px; padding: 24px; text-align: center; color: var(--text-dim);">
-            <p style="margin: 0;">No active alerts right now. Keyword monitoring is running silently.</p>
-        </div>
-    <div style="margin: 40px 0 20px 0; border-bottom: 2px solid #6366F1; padding-bottom: 10px;">
-        <h3 style="color: #6366F1; font-size: 1.2rem; margin: 0;">📡 OPPORTUNITY RADAR</h3>
-        <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 5px;">
-            Emerging trends and strategic signals from RSS feeds.
-        </p>
+   </div>
+   <!-- TAB 3: ALERTS + RADAR -->
+   <div class="tab-content" id="tab-venture">
+    <div class="ventures-grid" id="ventures-grid">
+     <div style="margin: 30px 0 20px 0; border-bottom: 2px solid #00daf3; padding-bottom: 10px;">
+      <h3 style="color: #00daf3; font-size: 1.2rem; margin: 0;">
+       🚨 ALERT FEED
+      </h3>
+      <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 5px;">
+       Real-time keyword matches from 0 active sectors.
+       <span style="color: var(--text-dim); font-size: 0.85rem;">
+        Last scan: Never | 0 total matches
+       </span>
+      </p>
+     </div>
+     <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 20px;">
+      <div style="background: var(--glass); border: 1px solid var(--border); border-radius: 8px; padding: 14px; text-align: center;">
+       <div style="font-size: 24px; font-weight: 800; color: #00daf3;">
+        0
+       </div>
+       <div style="font-size: 11px; color: var(--text-dim); text-transform: uppercase;">
+        Total Matches
+       </div>
+      </div>
+      <div style="background: var(--glass); border: 1px solid var(--border); border-radius: 8px; padding: 14px; text-align: center;">
+       <div style="font-size: 24px; font-weight: 800; color: #00daf3;">
+        0
+       </div>
+       <div style="font-size: 11px; color: var(--text-dim); text-transform: uppercase;">
+        Active Sectors
+       </div>
+      </div>
+      <div style="background: var(--glass); border: 1px solid var(--border); border-radius: 8px; padding: 14px; text-align: center;">
+       <div style="font-size: 24px; font-weight: 800; color: #00daf3;">
+        40+
+       </div>
+       <div style="font-size: 11px; color: var(--text-dim); text-transform: uppercase;">
+        RSS Feeds
+       </div>
+      </div>
+     </div>
+     <div style="margin-bottom: 20px;">
+      <span style="display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; background: rgba(0,218,243,0.12); color: #00daf3; margin-right: 4px; margin-bottom: 4px;">
+       crisis
+      </span>
+      <span style="display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; background: rgba(0,218,243,0.12); color: #00daf3; margin-right: 4px; margin-bottom: 4px;">
+       BOJ
+      </span>
+      <span style="display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; background: rgba(0,218,243,0.12); color: #00daf3; margin-right: 4px; margin-bottom: 4px;">
+       Fed
+      </span>
+      <span style="display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; background: rgba(0,218,243,0.12); color: #00daf3; margin-right: 4px; margin-bottom: 4px;">
+       inflation
+      </span>
+      <span style="display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; background: rgba(0,218,243,0.12); color: #00daf3; margin-right: 4px; margin-bottom: 4px;">
+       rate hike
+      </span>
+      <span style="display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; background: rgba(0,218,243,0.12); color: #00daf3; margin-right: 4px; margin-bottom: 4px;">
+       gold
+      </span>
+      <span style="display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; background: rgba(0,218,243,0.12); color: #00daf3; margin-right: 4px; margin-bottom: 4px;">
+       oil
+      </span>
+      <span style="display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; background: rgba(0,218,243,0.12); color: #00daf3; margin-right: 4px; margin-bottom: 4px;">
+       USD/JPY
+      </span>
+      <span style="display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; background: rgba(0,218,243,0.12); color: #00daf3; margin-right: 4px; margin-bottom: 4px;">
+       NZD/JPY
+      </span>
+      <span style="display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; background: rgba(0,218,243,0.12); color: #00daf3; margin-right: 4px; margin-bottom: 4px;">
+       tariff
+      </span>
+      <span style="display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; background: rgba(0,218,243,0.12); color: #00daf3; margin-right: 4px; margin-bottom: 4px;">
+       Ukraine
+      </span>
+      <span style="display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; background: rgba(0,218,243,0.12); color: #00daf3; margin-right: 4px; margin-bottom: 4px;">
+       Taiwan
+      </span>
+     </div>
+     <div style="background: var(--glass); border: 1px solid var(--border); border-radius: 10px; padding: 24px; text-align: center; color: var(--text-dim);">
+      <p style="margin: 0;">
+       No active alerts right now. Keyword monitoring is running silently.
+      </p>
+     </div>
+     <div style="margin: 40px 0 20px 0; border-bottom: 2px solid #6366F1; padding-bottom: 10px;">
+      <h3 style="color: #6366F1; font-size: 1.2rem; margin: 0;">
+       📡 OPPORTUNITY RADAR
+      </h3>
+      <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 5px;">
+       Emerging trends and strategic signals from RSS feeds.
+      </p>
+     </div>
+     <div style="background: var(--glass); border: 1px solid var(--border); border-radius: 10px; padding: 24px; text-align: center; color: var(--text-dim);">
+      <p style="margin: 0;">
+       Radar is scanning for emerging trends. Check back after the next RSS cycle.
+      </p>
+      <p style="margin-top: 8px; font-size: 12px;">
+       Keyword alerting active — alerts surface emerging patterns.
+      </p>
+     </div>
     </div>
-    
-    <div style="background: var(--glass); border: 1px solid var(--border); border-radius: 10px; padding: 24px; text-align: center; color: var(--text-dim);">
-        <p style="margin: 0;">Radar is scanning for emerging trends. Check back after the next RSS cycle.</p>
-        <p style="margin-top: 8px; font-size: 12px;">Keyword alerting active — alerts surface emerging patterns.</p>
-    </div>
-            </div>
-        </div>
-    
-
-
-    <script>
-        // ===== TAB FUNCTIONALITY =====
+   </div>
+   <script>
+    // ===== TAB FUNCTIONALITY =====
         function switchTab(tabId) {
             // Hide all tab contents
             const tabContents = document.querySelectorAll('.tab-content');
@@ -1977,6 +2526,7 @@
                 setTimeout(initCharts, 50);
             }
         };
-    </script>
-</body>
+   </script>
+  </div>
+ </body>
 </html>
