@@ -1,5 +1,26 @@
 # MEMORY.md — Ito Empire Intel Agent
-> Last updated: 2026-05-01 04:44 JST (Beat #153)
+> Last updated: 2026-05-01 05:05 JST (Beat #154)
+
+---
+### Beat #154 (05:05 JST May 1) — Pipeline Active. Friday Morning. Weekend Watch.
+- **Last Heartbeat:** 2026-05-01 05:05 JST — Beat #154 | **Status:** ACTIVE
+- live_oracle: ✅ fresh @ 05:00 JST (BTC $76,411.27 | ETH $2,261.88 | XRP $1.3706 | USD/JPY **156.56** | Brent **$110.63** | Gold $4,632.9)
+- Gateway: ✅ Running (LaunchAgent pid 65643, state active)
+- Dashboard: ✅ git commit e07e263 → origin/main (Beat #154)
+- infra_pulse: Gateway probe ok, connectivity ok ✅
+
+### INTEL SUMMARY — May 1 05:05 JST (Friday 5:05AM Tokyo)
+- **Markets:** BTC $76,411 (+1.11% 24h), ETH $2,261.88 (+1.25%), XRP $1.3706 (+1.27%). USD/JPY **156.56** — yen holding stable ~156.5, well below 160 intervention zone. Brent **$110.63** — settled near $110 from overnight $125-126 spike. Gold $4,632.9 (steady). Markets pre-weekend thin — extremely low volume at this hour JST. No new Iran escalation reported overnight.
+- **🚨 IRAN / OIL WATCH — ONGOING (WEEKEND ELEVATED RISK):** Brent settling ~$110 after Thursday's wartime spike to $125-126. No new military escalation overnight. Critical weekend watch: US/EU markets closed Saturday-Sunday — no cushion if Iran developments emerge. Hormuz strait still at risk if hostilities resume. If US strikes Iranian nuclear facilities → Hormuz disruption → $150+ oil scenario remains live.
+- **Japan Business:** USD/JPY 156.56 stable. BoJ watching oil shock impact on FY2026 growth. Vanguard maintains BoJ rate forecast: 1.25% by year-end (two hikes in 2026). Friday morning — no major Japan data scheduled.
+- **Geopolitical:** Iran conflict at steady simmer. Trump Iran military briefing confirmed but no action taken yet. Markets pricing elevated oil risk without new catalyst. Weekend gap risk elevated.
+
+### INFRASTRUCTURE STATUS
+- Gateway: ✅ active (pid 65643, port 49273)
+- Dashboard (kaji-hemopo.github.io/telemetry/agents/ito/): ✅ git push e07e263 → origin/main
+- live_oracle.json: ✅ fresh @ 05:00 JST — all 6 assets populated
+- infra_pulse: Gateway probe ok, connectivity ok ✅
+- Hunter-Killer: MISSION CONCLUDED — pure intel pipeline only
 
 ---
 ### Beat #153 (04:44 JST May 1) — Pipeline Active. Markets Steady. Weekend Watch.
