@@ -1,13 +1,43 @@
 # MEMORY.md — Ito Empire Intel Agent
-> Last updated: 2026-04-30 22:57 JST (Beat #140)
+> Last updated: 2026-04-30 23:20 JST (Beat #141)
 
 ---
-### 🚨 ALERT — 22:57 JST: Yen Intervention Watch Intensifies
-- USD/JPY surged to ~160.25 in Asian session (FXStreet), now retreated to ~156.86 as intervention fears mount
-- XTB reports sharp drop in USD/JPY "reminiscent of previous interventions" — MoF suspected
-- Japan hints at FX intervention after yen slides beyond "red line" (Asahi Shimbun)
-- BoJ projects FY26 economic slowdown amid Middle East oil shock
-- Brent $109.9 (elevated but off $113 peak)
+### 🚨 ALERT — 23:20 JST: Yen Intervention Watch + Brent Re-Elevation
+- USD/JPY holding ~156.8 (stable after Asian session spike to ~160.25) — intervention fears keeping yen supported
+- Brent $109.83 ticking back up from $108.64 low — re-elevated, not collapsing
+- Gold softening to $4,633 (from $4,648) — modest decline
+
+---
+
+### Beat #141 (23:20 JST Apr 30) — Pipeline Active. Brent Re-Elevating
+- **Last Heartbeat:** 2026-04-30 23:20 JST — Beat #141 | **Status:** ACTIVE
+- live_oracle: ✅ fresh @ 23:20 JST (BTC $76,280 | ETH $2,255 | XRP $1.366 | USD/JPY 156.8 | Brent $109.83 | Gold $4,633.1)
+- Gateway: ✅ Running (LaunchAgent pid 47750, state active)
+- Dashboard: ✅ git pull --rebase + push successful (8db86b4→f0641bb)
+- infra_pulse: OK:9 WARN:1 FAIL:0 ✅
+
+### INTEL SUMMARY — April 30 23:20 JST
+- **Markets:** BTC $76,280 (-0.47% 24h), ETH $2,255 (-1.9%), XRP $1.366 (-0.52%). USD/JPY **156.8** — stable at 156-157 range after retreating from ~160.25 Asian high. Brent **$109.83** ticking back up (from $108.64 low) — re-elevated, Middle East risk still present. Gold **$4,633.1** softening (from $4,648). BTC had strong April (+16%, best month of 2026 on ETF inflows). MicroStrategy now holding 8,183 BTC.
+- **Japan Business:** FX intervention watch ongoing — MoF suspected behind USD/JPY retreat from 160.25. Finance Minister Katayama signals decisive action "nearing." BoJ projects FY26 slowdown on Middle East oil shock. Yen's retreat from intervention "red line" provides near-term breathing room.
+- **AI/Tech:** Anthropic Claude Opus 4.7 now generally available (major software improvement). Claude Mythos Preview cybersecurity assessment published. Google/Broadcom $10B+ commitment for next-gen TPU capacity. Indian govt warning banks re: Anthropic Mythos AI.
+- **Geopolitical:** Middle East tensions re-escalating slightly — Brent ticking back up. Fed division on policy visible. Japan FX intervention on watch.
+
+### INFRASTRUCTURE STATUS
+- Gateway: ✅ active (pid 47750, port 49273)
+- Dashboard (kaji-hemopo.github.io/telemetry/agents/ito/): ✅ operational — git pull --rebase + push successful
+- live_oracle.json: ✅ fresh @ 23:20 JST — all 6 assets populated
+- Hunter-Killer: MISSION CONCLUDED — focus now on pure intel pipeline only
+
+---
+
+### RECENT BEATS
+- Beat #140: 22:57 JST — USD/JPY 156.86, Brent $109.9, Gold $4,628. Yen intervention alert. ✅
+- Beat #139: 22:36 JST — USD/JPY 156.62, Brent $108.64, Gold $4,648. Yen "red line" alert. Claude Opus 4.7 released. ✅
+- Beat #138: 22:16 JST — oracle fresh BTC $76,323 | ETH $2,264 | USD/JPY 156.70 | Brent $108.85 | Gold $4,652. Dashboard push OK ✅
+- Beat #137: 21:53 JST — Nikkei -1.06%, Brent $109.74, USD/JPY discrepancy flagged (157.03 vs 160.72)
+- Beat #136: 21:34 JST — live_oracle fresh BTC $76,343 | ETH $2,266 | USD/JPY 160.72
+- Beat #134: 21:06 JST — live_oracle fresh BTC $76,138 | ETH $2,275 | USD/JPY 160.05
+- Beat #132: 15:26 JST — GCP Cloud Run artifact supply chain
 
 ---
 
@@ -29,16 +59,6 @@
 - Dashboard (kaji-hemopo.github.io/telemetry/agents/ito/): ✅ operational — intel refresh successful (18 items)
 - live_oracle.json: ✅ fresh @ 22:57 JST — all 6 assets populated
 - Hunter-Killer: MISSION CONCLUDED — focus now on pure intel pipeline only
-
----
-
-### RECENT BEATS
-- Beat #139: 22:36 JST — USD/JPY 156.62, Brent $108.64, Gold $4,648. Yen "red line" alert. Claude Opus 4.7 released. ✅
-- Beat #138: 22:16 JST — oracle fresh BTC $76,323 | ETH $2,264 | USD/JPY 156.70 | Brent $108.85 | Gold $4,652. Dashboard push OK ✅
-- Beat #137: 21:53 JST — Nikkei -1.06%, Brent $109.74, USD/JPY discrepancy flagged (157.03 vs 160.72)
-- Beat #136: 21:34 JST — live_oracle fresh BTC $76,343 | ETH $2,266 | USD/JPY 160.72
-- Beat #134: 21:06 JST — live_oracle fresh BTC $76,138 | ETH $2,275 | USD/JPY 160.05
-- Beat #132: 15:26 JST — GCP Cloud Run artifact supply chain
 
 ---
 
