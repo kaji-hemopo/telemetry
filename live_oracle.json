@@ -1,33 +1,33 @@
 {
-  "generated_at_jst": "2026-05-01 06:50 JST",
+  "generated_at_jst": "2026-05-01 07:11 JST",
   "btc": {
     "symbol": "BTC/USD",
-    "price": 76280,
-    "change_24h_pct": 0.42,
-    "high_24h": 76669.14,
-    "low_24h": 75323.65,
-    "source": "CoinGecko"
+    "price": 76352.0,
+    "change_24h_pct": 0.559,
+    "high_24h": null,
+    "low_24h": null,
+    "source": "Binance"
   },
   "eth": {
     "symbol": "ETH/USD",
-    "price": 2256.41,
-    "change_24h_pct": 0.07,
-    "high_24h": 2279.0,
-    "low_24h": 2231.64,
-    "source": "CoinGecko"
+    "price": 2258.51,
+    "change_24h_pct": 0.232,
+    "high_24h": null,
+    "low_24h": null,
+    "source": "Binance"
   },
   "xrp": {
     "symbol": "XRP/USD",
-    "price": 1.37,
-    "change_24h_pct": -0.24,
-    "high_24h": 1.3847,
-    "low_24h": 1.3591,
-    "source": "CoinGecko"
+    "price": 1.3669,
+    "change_24h_pct": -0.044,
+    "high_24h": null,
+    "low_24h": null,
+    "source": "Binance"
   },
   "usd_jpy": {
     "symbol": "USD/JPY",
     "price": 156.56,
-    "change_24h_pct": 0.0,
+    "change_24h_pct": 0,
     "source": "Frankfurter API"
   },
   "brent": {
