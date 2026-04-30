@@ -1,5 +1,27 @@
 # MEMORY.md — Ito Empire Intel Agent
-> Last updated: 2026-05-01 06:08 JST (Beat #157)
+> Last updated: 2026-05-01 06:32 JST (Beat #158)
+
+---
+### Beat #158 (06:32 JST May 1) — Pipeline Active. Friday Morning. Markets Steady. Weekend Watch.
+- **Last Heartbeat:** 2026-05-01 06:29 JST — Beat #158 | **Status:** ACTIVE
+- live_oracle: ✅ fresh @ 06:20 JST (BTC $76,442.6 | ETH $2,261.64 | XRP $1.3698 | USD/JPY **156.532** | Brent **$111.23** | Gold $4,636.0)
+- Gateway: ✅ Running (LaunchAgent pid 65643, state active)
+- Dashboard: git commit f9e71c1 → workspace_ito
+- infra_pulse: Gateway probe ok, connectivity ok ✅
+
+### INTEL SUMMARY — May 1 06:32 JST (Friday 6:32AM Tokyo)
+- **Markets:** BTC $76,442.6 (+0.75% 24h), ETH $2,261.64 (+0.62%), XRP $1.3698 (+0.31%). Slight crypto cooling after overnight spike. USD/JPY **156.532** — yen stable at ~156.5, well below 160 intervention zone. Brent **$111.23** — steady at $111+, holding firm. Gold $4,636.0 — slight uptick. Markets thin pre-weekend, low volume JST morning.
+- **🚨 IRAN / OIL WATCH — ONGOING (ELEVATED):** Trump warns of extended blockade in Strait of Hormuz (YouTube/East Asia Tonight, 7 hours ago). Khamenei issuing ominous new threats on Hormuz blockade. New threats and attacks in Strait of Hormuz — further strain on ceasefire (YouTube, 1 week ago but context ongoing). No ceasefire extension confirmed. Brent holding $111+ — oil market pricing in sustained elevated risk. Weekend: US markets closed Sat-Sun, no cushion if Iran escalates.
+- **Anthropic $900B:** CONFIRMED — SeekingAlpha (23hrs ago): Anthropic discusses raising funds at $900B+ valuation. Threads (4hrs ago): AI startup weighing $850B-$900B round. Board decision expected May 2026. $61.5B → $900B in 12 months. Likely last private raise before IPO.
+- **Japan Business:** USD/JPY 156.532 — stable. BoJ watching oil at $111+ as FY26 growth headwind. High oil + weak yen keeping core inflation ~3% (futunn research). Vanguard maintains BoJ rate forecast: 1.25% by year-end (two hikes in 2026).
+- **Geopolitical:** Iran conflict at elevated simmer heading into weekend. Trump extended Hormuz blockade confirmed. No diplomatic off-ramp after Trump rejected Iran's Hormuz-for-nuclear deal. UAE OPEC exit effective today — structural shift in oil markets.
+
+### INFRASTRUCTURE STATUS
+- Gateway: ✅ active (pid 65643, port 49273)
+- Dashboard: git commit f9e71c1 pushed to workspace_ito
+- live_oracle.json: ✅ fresh @ 06:20 JST — all 6 assets populated
+- infra_pulse: Gateway probe ok, connectivity ok ✅
+- Hunter-Killer: MISSION CONCLUDED — pure intel pipeline only
 
 ---
 ### Beat #157 (06:08 JST May 1) — Pipeline Active. Brent $111.21 Climbing. Fox News: Khamenei New Threats.
