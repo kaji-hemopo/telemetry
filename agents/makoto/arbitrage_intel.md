@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-30 20:27 JST
+Generated: 2026-05-01 03:20 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -52,26 +52,26 @@ Generated: 2026-04-30 20:27 JST
 
 | Score | Platform | Keyword | Title | Budget/Rate | URL |
 |---:|---|---|---|---|---|
-| 85 | Freelancer | Python scraper | Desarrollo MVP para Plataforma PropTech Inmobiliaria | $5,000.00 | https://www.freelancer.com/projects/flutter/Desarrollo-MVP-para-Plataforma-PropTech.html |
-| 85 | Freelancer | Make.com automation | GrowthBotz AI Platform Development | $750.00 | https://www.freelancer.com/projects/ai-writing/GrowthBotz-Platform-Development.html |
-| 75 | Freelancer | Python scraper | Custom ERPNext Loan Automation | $250.00 | https://www.freelancer.com/projects/python/Custom-ERPNext-Loan-Automation.html |
-| 75 | Freelancer | Python scraper | Optimize AI-Driven Academic Writing Assistant | $250.00 | https://www.freelancer.com/projects/ai-development/Optimize-Driven-Academic-Writing.html |
-| 75 | Freelancer | Make.com automation | Multi-Step Lead Funnel with CRM Automation | $250.00 | https://www.freelancer.com/projects/crm/Multi-Step-Lead-Funnel-with.html |
-| 75 | Freelancer | Make.com automation | Build an AI-Powered Film &amp; TV Casting Operations Platform (Co | $250.00 | https://www.freelancer.com/projects/ai-development/Build-Powered-Film-Casting-Operations.html |
-| 65 | Freelancer | Python scraper | Telegram AI Data Fetching Bot | I need a Telegram-based AI bot that can receive a user’s query, pull the relevan | https://www.freelancer.com/projects/api-integration/Telegram-Data-Fetching-Bot.html |
+| 85 | Freelancer | Python scraper | Custom Programming Solution Needed | $2,000.00 | https://www.freelancer.com/projects/software-development/Custom-Programming-Solution-Needed.html |
+| 75 | Freelancer | Python scraper | AI Automation Developer Needed for Ongoing Work | $250.00 | https://www.freelancer.com/projects/openai/Automation-Developer-Needed-for-Ongoing.html |
+| 75 | Freelancer | Python scraper | Python B2B Scraper &amp; Outreach Automation | $250.00 | https://www.freelancer.com/projects/rest-api/Python-Scraper-Outreach-Automation.html |
+| 75 | Freelancer | Make.com automation | NDIS Intake Forms Digitisation &ndash; Smart Web Form + Auto-Fill | $250.00 | https://www.freelancer.com/projects/content-creation/NDIS-Intake-Forms-Digitisation-Smart.html |
+| 65 | Freelancer | Python scraper | Excel-Claude Integration Script | I need a compact Python workflow that reads a list of company names from an Exce | https://www.freelancer.com/projects/api/Excel-Claude-Integration-Script-40409876.html |
+| 65 | Freelancer | Python scraper | AI Support Chatbox Integration | $10.00 | https://www.freelancer.com/projects/ai-chatbot-development/Support-Chatbox-Integration.html |
+| 65 | Freelancer | Python scraper | Python Excel Automation Script | Every month I have to pour fresh sales data into multiple Excel workbooks, clean | https://www.freelancer.com/projects/data-analysis/Python-Excel-Automation-Script.html |
+| 65 | Freelancer | Python scraper | Excel-Claude Integration Script | I need a compact Python workflow that reads a list of company names from an Exce | https://www.freelancer.com/projects/api/Excel-Claude-Integration-Script.html |
+| 65 | Freelancer | Python scraper | Convert Python Script Into AWS Bot | $10.00 | https://www.freelancer.com/projects/aws-lambda/Convert-Python-Script-Into-AWS.html |
+| 65 | Freelancer | Python scraper | Visa Slot Check system | I need a Python-based solution that books Indian visa appointment from Banglades | https://www.freelancer.com/projects/php/Visa-Slot-Check-system.html |
 | 65 | Freelancer | Python scraper | AI-Powered Forex News Dashboard | I need a real-time dashboard that mirrors the layout in my reference images and  | https://www.freelancer.com/projects/sentiment-analysis/Powered-Forex-News-Dashboard.html |
-| 65 | Freelancer | Python scraper | Hire Expert Data Analyst | Data Analyst – Job Description Overview We are seeking a detail-oriented and ana | https://www.freelancer.com/projects/big-data-sales/Hire-Expert-Data-Analyst.html |
-| 65 | Freelancer | Python scraper | Robust WhatsApp Voice AI Integration | $30.00 | https://www.freelancer.com/projects/n8n/Robust-WhatsApp-Voice-Integration.html |
-| 65 | Freelancer | Python scraper | Phone Number Scraping Specialist Needed | $30.00 | https://www.freelancer.com/projects/data-scraping/Phone-Number-Scraping-Specialist-Needed.html |
-| 65 | Freelancer | Python scraper | Fix &amp; Deploy Automation Script | $10.00 | https://www.freelancer.com/projects/automation/Fix-Deploy-Automation-Script.html |
-| 65 | Freelancer | Python scraper | Remove Duplicate Email Contacts Now | $10.00 | https://www.freelancer.com/projects/data-cleansing/Remove-Duplicate-Email-Contacts-Now.html |
+| 65 | Freelancer | Make.com automation | Business Account Integration &amp; Workflow Automation ( AI Parse | $15.00 | https://www.freelancer.com/projects/ai-hw-sw/Business-Account-Integration-Workflow.html |
+| 65 | Freelancer | Make.com automation | Web DIN Lookup Automation Tool | I need a small, web-based utility that lets anyone type a Director Identificatio | https://www.freelancer.com/projects/web-development/Web-DIN-Lookup-Automation-Tool.html |
+| 65 | Freelancer | Make.com automation | Bulk Application Form Filling | I have 51–100 online application forms that must be completed quickly and accura | https://www.freelancer.com/projects/data-processing/Bulk-Application-Form-Filling.html |
+| 65 | Freelancer | Make.com automation | WhatsApp Setter Automation in n8n | $10.00 | https://www.freelancer.com/projects/n8n/WhatsApp-Setter-Automation.html |
+| 65 | Freelancer | Make.com automation | Clone Enfieldshop.ru to English Site | I need Enfieldshop.ru duplicated onto Enfieldshop.com, keeping the current look  | https://www.freelancer.com/projects/web-development/Clone-Enfieldshop-English-Site.html |
+| 65 | Freelancer | Make.com automation | Fintech Marketing Automation &amp; Campaigns | I run a credit-management fintech (www.credityoda.ai) and I’m ready to tighten e | https://www.freelancer.com/projects/digital-marketing/Fintech-Marketing-Automation-Campaigns.html |
 | 65 | Freelancer | Make.com automation | TikTok Automation Setup | I need an automation setup for social media management, specifically on TikTok.  | https://www.freelancer.com/projects/automation/TikTok-Automation-Setup.html |
 | 65 | Freelancer | Make.com automation | Ongoing Google Sheets Workflow Automation | I run an e-commerce operation that lives inside Google Sheets. Right now a lot o | https://www.freelancer.com/projects/google-sheets/Ongoing-Google-Sheets-Workflow.html |
-| 65 | Freelancer | Make.com automation | WordPress Sliced Invoices + Stripe Integration with Zoho CRM Auto | $10.00 | https://www.freelancer.com/projects/zoho-crm/WordPress-Sliced-Invoices-Stripe.html |
-| 65 | Freelancer | Make.com automation | Build AI-Enhanced SaaS Platform | $15.00 | https://www.freelancer.com/projects/nodejs/Build-Enhanced-SaaS-Platform.html |
-| 65 | Freelancer | Make.com automation | Based B2B Sales Executive &mdash; IT Services (StaxMinds) | Looking for a Commission-Based B2B Sales Executive — IT Services (StaxMinds) We  | https://www.freelancer.com/projects/lead-generation/Based-Sales-Executive-Services-StaxMinds.html |
-| 65 | Freelancer | Make.com automation | n8n Automation Expert Needed (API, XML, Web Integration + UI/UX) | I need a developer who can take full ownership of several n8n workflows that mov | https://www.freelancer.com/projects/n8n/Automation-Expert-Needed-API-XML.html |
-| 65 | Freelancer | Make.com automation | Create Engaging Video Reels for Social Media App | Freelance Project: Create 20 Short Reel Ads for Social Media App (Foxli) Project | https://www.freelancer.com/projects/content-creation/Create-Engaging-Video-Reels-for.html |
+| 65 | Freelancer | Data processing API | MahaRERA Data Extraction &amp; Processing | I am an independent professional reaching out to enquire about your data extract | https://www.freelancer.com/projects/data-extraction/MahaRERA-Data-Extraction-Processing.html |
 
 ## Notes
 - Scores prioritize: (1) simple automation/scripting fit, (2) payout magnitude, (3) keyword relevance.
