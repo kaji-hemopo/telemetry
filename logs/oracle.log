@@ -650,3 +650,15 @@ Fetching live oracle data...
 
 Written to /Users/jacksonhemopo/.openclaw/workspace_ito/live_oracle.json
 Done. BTC=$76307.23, ETH=$2258.29, XRP=$1.3696, USD/JPY=156.328, Brent=$110.55, Gold=$4634.1
+/Users/jacksonhemopo/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+Fetching live oracle data...
+  BTC... $76336.04
+  ETH... $2259.56
+  XRP... $1.3698
+  USD/JPY... 156.415
+  Brent... $110.73
+  Gold... $4634.3
+
+Written to /Users/jacksonhemopo/.openclaw/workspace_ito/live_oracle.json
+Done. BTC=$76336.04, ETH=$2259.56, XRP=$1.3698, USD/JPY=156.415, Brent=$110.73, Gold=$4634.3

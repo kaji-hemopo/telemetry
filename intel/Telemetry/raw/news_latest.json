@@ -1,6 +1,13 @@
 {
-  "timestamp": "2026-05-01 03:40 JST",
+  "timestamp": "2026-05-01 04:00 JST",
   "items": [
+    {
+      "category": "AI",
+      "title": "EV startup Faraday Future paid $7.5M to company tied to founder Jia Yueting",
+      "link": "https://techcrunch.com/?p=3117883",
+      "description": "The perpetually-struggling EV company made the payments while being investigated by the SEC. That four-year-long probe was ultimately closed in March.",
+      "pub_date": ""
+    },
     {
       "category": "AI",
       "title": "OpenAI announces new advanced security for ChatGPT accounts, including a partnership with Yubico",
@@ -26,14 +33,7 @@
       "category": "AI",
       "title": "Google\u2019s Gemini AI assistant is hitting the road in millions of vehicles",
       "link": "https://techcrunch.com/?p=3117992",
-      "description": "Google announced on Thursday that it will begin rolling out Gemini to cars with Google built-in, marking a significant upgrade from the current Google Assistant. The move signals G",
-      "pub_date": ""
-    },
-    {
-      "category": "AI",
-      "title": "Stripe introduces Link, a digital wallet that autonomous AI agents can use, too",
-      "link": "https://techcrunch.com/?p=3117968",
-      "description": "Link lets users connect cards, banks, and subscriptions, then authorize AI agents to spend securely via approval flows.",
+      "description": "The move signals Google\u2019s push to bring more advanced, conversational AI into the driving experience.",
       "pub_date": ""
     },
     {
