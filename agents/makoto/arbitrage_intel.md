@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-30 14:40 JST
+Generated: 2026-04-30 15:22 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -17,8 +17,8 @@ Generated: 2026-04-30 14:40 JST
 | 90 | Domestic/JPY | Lancers | Word PressのＬＰ制作：水道トラブル集客トップページ制作ご依頼 | ¥300,000 | https://www.lancers.jp/work/detail/5525728 |
 | 90 | Domestic/JPY | Lancers | 運動講座LPのデザイン＋WordPress実装（構成・文章あり） | ¥80,000 | https://www.lancers.jp/work/detail/5523718 |
 | 90 | Domestic/JPY | Lancers | 【注目】クラウドファンディング用LP制作のプロを募集！ | ¥80,000 | https://www.lancers.jp/work/detail/5512575 |
-| 90 | Domestic/JPY | Lancers | 【急募】makeshopでのLPページ制作（デザイン＆実装）依頼 | ¥200,000 | https://www.lancers.jp/work/detail/5524800 |
 | 90 | Domestic/JPY | Lancers | 【急募】スキャン代行サービスLP制作！軽微な編集可能なシステム希望 | ¥200,000 | https://www.lancers.jp/work/detail/5518118 |
+| 90 | Domestic/JPY | Lancers | 【急募】makeshopでのLPページ制作（デザイン＆実装）依頼 | ¥200,000 | https://www.lancers.jp/work/detail/5524800 |
 | 90 | Domestic/JPY | Lancers | 【急募】遺品整理会社設立に向けたLP制作・運用支援者募集 | ¥100,000 | https://www.lancers.jp/work/detail/5500364 |
 | 90 | Domestic/JPY | Lancers | 【急募】マーケ支援サービスのLP制作をお任せできる方 | ¥100,000 | https://www.lancers.jp/work/detail/5294532 |
 | 90 | Domestic/JPY | Lancers | 2回目 【予算30万以内】Amazon物販向けLINE公式アカウント初期構築（タグ付け・ステップ配信等） | ¥300,000 | https://www.lancers.jp/work/detail/5521293 |
@@ -32,8 +32,8 @@ Generated: 2026-04-30 14:40 JST
 | 90 | Lancers | LP制作 | Word PressのＬＰ制作：水道トラブル集客トップページ制作ご依頼 | ¥300,000 | https://www.lancers.jp/work/detail/5525728 |
 | 90 | Lancers | LP制作 | 運動講座LPのデザイン＋WordPress実装（構成・文章あり） | ¥80,000 | https://www.lancers.jp/work/detail/5523718 |
 | 90 | Lancers | LP制作 | 【注目】クラウドファンディング用LP制作のプロを募集！ | ¥80,000 | https://www.lancers.jp/work/detail/5512575 |
-| 90 | Lancers | LP制作 | 【急募】makeshopでのLPページ制作（デザイン＆実装）依頼 | ¥200,000 | https://www.lancers.jp/work/detail/5524800 |
 | 90 | Lancers | LP制作 | 【急募】スキャン代行サービスLP制作！軽微な編集可能なシステム希望 | ¥200,000 | https://www.lancers.jp/work/detail/5518118 |
+| 90 | Lancers | LP制作 | 【急募】makeshopでのLPページ制作（デザイン＆実装）依頼 | ¥200,000 | https://www.lancers.jp/work/detail/5524800 |
 | 90 | Lancers | LP制作 | 【急募】遺品整理会社設立に向けたLP制作・運用支援者募集 | ¥100,000 | https://www.lancers.jp/work/detail/5500364 |
 | 90 | Lancers | LP制作 | 【急募】マーケ支援サービスのLP制作をお任せできる方 | ¥100,000 | https://www.lancers.jp/work/detail/5294532 |
 | 90 | Lancers | LINE構築 | 2回目 【予算30万以内】Amazon物販向けLINE公式アカウント初期構築（タグ付け・ステップ配信等） | ¥300,000 | https://www.lancers.jp/work/detail/5521293 |
@@ -61,6 +61,7 @@ Generated: 2026-04-30 14:40 JST
 | 75 | Freelancer | Make.com automation | Multi-Step Lead Funnel with CRM Automation | $250.00 | https://www.freelancer.com/projects/crm/Multi-Step-Lead-Funnel-with.html |
 | 75 | Freelancer | Make.com automation | Build an AI-Powered Film &amp; TV Casting Operations Platform (Co | $250.00 | https://www.freelancer.com/projects/ai-development/Build-Powered-Film-Casting-Operations.html |
 | 75 | Freelancer | Data processing API | Cross-Platform Madressa Portal App | $250.00 | https://www.freelancer.com/projects/flutter/Cross-Platform-Madressa-Portal-App.html |
+| 65 | Freelancer | Python scraper | Investor Portal Mobile App | Our web-based investor portal already runs on an Angular front end with a Python | https://www.freelancer.com/projects/angular/Investor-Portal-Mobile-App.html |
 | 65 | Freelancer | Python scraper | Robust WhatsApp Voice AI Integration | $30.00 | https://www.freelancer.com/projects/n8n/Robust-WhatsApp-Voice-Integration.html |
 | 65 | Freelancer | Python scraper | Phone Number Scraping Specialist Needed | $30.00 | https://www.freelancer.com/projects/data-scraping/Phone-Number-Scraping-Specialist-Needed.html |
 | 65 | Freelancer | Python scraper | Fix &amp; Deploy Automation Script | $10.00 | https://www.freelancer.com/projects/automation/Fix-Deploy-Automation-Script.html |
@@ -71,7 +72,6 @@ Generated: 2026-04-30 14:40 JST
 | 65 | Freelancer | Python scraper | Semantische Analyse von Word-Dokumenten (Deutsch) - German native | +++ ONLY APPLY IF YOU ARE A NATIVE SPEAKER IN GERMAN+++ Ich suche einen Freelanc | https://www.freelancer.com/projects/natural-language-processing/Semantische-Analyse-von-Word-Dokumenten.html |
 | 65 | Freelancer | Python scraper | Crypto Trading Automation Algorithm | I need an algorithm to automate swing trading for the Bitcoin/Ethereum pair. Key | https://www.freelancer.com/projects/cryptocurrency/Crypto-Trading-Automation-Algorithm.html |
 | 65 | Freelancer | Python scraper | Cliniko Payment Automation via Claude | I need a small, reliable API integration that lets Anthropic Claude log “manual” | https://www.freelancer.com/projects/api-integration/Cliniko-Payment-Automation-via-Claude.html |
-| 65 | Freelancer | Python scraper | Full-Stack Dev for AI Image Analytics | We are building a product (not a project) and looking for a passionate developer | https://www.freelancer.com/projects/ai-hw-sw/Full-Stack-Dev-for-Image.html |
 
 ## Notes
 - Scores prioritize: (1) simple automation/scripting fit, (2) payout magnitude, (3) keyword relevance.
