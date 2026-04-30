@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-30 15:22 JST
+Generated: 2026-04-30 18:11 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -53,25 +53,25 @@ Generated: 2026-04-30 15:22 JST
 | Score | Platform | Keyword | Title | Budget/Rate | URL |
 |---:|---|---|---|---|---|
 | 85 | Freelancer | Python scraper | Desarrollo MVP para Plataforma PropTech Inmobiliaria | $5,000.00 | https://www.freelancer.com/projects/flutter/Desarrollo-MVP-para-Plataforma-PropTech.html |
-| 85 | Freelancer | Python scraper | Python/Django/C++ Developer Needed | $1,500.00 | https://www.freelancer.com/projects/software-development/Python-Django-Developer-Needed.html |
 | 85 | Freelancer | Make.com automation | GrowthBotz AI Platform Development | $750.00 | https://www.freelancer.com/projects/ai-writing/GrowthBotz-Platform-Development.html |
-| 85 | Freelancer | Data processing API | AI Program For Employment Agency | $750.00 | https://www.freelancer.com/projects/ai-chatbot/Program-For-Employment-Agency.html |
+| 75 | Freelancer | Python scraper | Custom ERPNext Loan Automation | $250.00 | https://www.freelancer.com/projects/python/Custom-ERPNext-Loan-Automation.html |
 | 75 | Freelancer | Python scraper | Optimize AI-Driven Academic Writing Assistant | $250.00 | https://www.freelancer.com/projects/ai-development/Optimize-Driven-Academic-Writing.html |
 | 75 | Freelancer | Python scraper | MVP Plataforma Salud Mental | $250.00 | https://www.freelancer.com/projects/mobile-app-development/MVP-Plataforma-Salud-Mental.html |
 | 75 | Freelancer | Make.com automation | Multi-Step Lead Funnel with CRM Automation | $250.00 | https://www.freelancer.com/projects/crm/Multi-Step-Lead-Funnel-with.html |
 | 75 | Freelancer | Make.com automation | Build an AI-Powered Film &amp; TV Casting Operations Platform (Co | $250.00 | https://www.freelancer.com/projects/ai-development/Build-Powered-Film-Casting-Operations.html |
-| 75 | Freelancer | Data processing API | Cross-Platform Madressa Portal App | $250.00 | https://www.freelancer.com/projects/flutter/Cross-Platform-Madressa-Portal-App.html |
-| 65 | Freelancer | Python scraper | Investor Portal Mobile App | Our web-based investor portal already runs on an Angular front end with a Python | https://www.freelancer.com/projects/angular/Investor-Portal-Mobile-App.html |
+| 65 | Freelancer | Python scraper | Convert Invoice JPEG to Editable Excel | $10.00 | https://www.freelancer.com/projects/optical-character-recognition/Convert-Invoice-JPEG-Editable-Excel.html |
+| 65 | Freelancer | Python scraper | AI-Powered Forex News Dashboard | I need a real-time dashboard that mirrors the layout in my reference images and  | https://www.freelancer.com/projects/sentiment-analysis/Powered-Forex-News-Dashboard.html |
+| 65 | Freelancer | Python scraper | Hire Expert Data Analyst | Data Analyst – Job Description Overview We are seeking a detail-oriented and ana | https://www.freelancer.com/projects/big-data-sales/Hire-Expert-Data-Analyst.html |
 | 65 | Freelancer | Python scraper | Robust WhatsApp Voice AI Integration | $30.00 | https://www.freelancer.com/projects/n8n/Robust-WhatsApp-Voice-Integration.html |
 | 65 | Freelancer | Python scraper | Phone Number Scraping Specialist Needed | $30.00 | https://www.freelancer.com/projects/data-scraping/Phone-Number-Scraping-Specialist-Needed.html |
 | 65 | Freelancer | Python scraper | Fix &amp; Deploy Automation Script | $10.00 | https://www.freelancer.com/projects/automation/Fix-Deploy-Automation-Script.html |
 | 65 | Freelancer | Python scraper | Remove Duplicate Email Contacts Now | $10.00 | https://www.freelancer.com/projects/data-cleansing/Remove-Duplicate-Email-Contacts-Now.html |
 | 65 | Freelancer | Python scraper | Scalable Python API Web Development | $20.00 | https://www.freelancer.com/projects/fastapi/Scalable-Python-API-Web-Development.html |
-| 65 | Freelancer | Python scraper | WhatsApp and Call AI Automation | $14.00 | https://www.freelancer.com/projects/ai-chatbot/WhatsApp-Call-Automation.html |
-| 65 | Freelancer | Python scraper | Goethe Institute Seat Availability Monitor | $10.00 | https://www.freelancer.com/projects/selenium/Goethe-Institute-Seat-Availability.html |
-| 65 | Freelancer | Python scraper | Semantische Analyse von Word-Dokumenten (Deutsch) - German native | +++ ONLY APPLY IF YOU ARE A NATIVE SPEAKER IN GERMAN+++ Ich suche einen Freelanc | https://www.freelancer.com/projects/natural-language-processing/Semantische-Analyse-von-Word-Dokumenten.html |
-| 65 | Freelancer | Python scraper | Crypto Trading Automation Algorithm | I need an algorithm to automate swing trading for the Bitcoin/Ethereum pair. Key | https://www.freelancer.com/projects/cryptocurrency/Crypto-Trading-Automation-Algorithm.html |
-| 65 | Freelancer | Python scraper | Cliniko Payment Automation via Claude | I need a small, reliable API integration that lets Anthropic Claude log “manual” | https://www.freelancer.com/projects/api-integration/Cliniko-Payment-Automation-via-Claude.html |
+| 65 | Freelancer | Make.com automation | Based B2B Sales Executive &mdash; IT Services (StaxMinds) | Looking for a Commission-Based B2B Sales Executive — IT Services (StaxMinds) We  | https://www.freelancer.com/projects/lead-generation/Based-Sales-Executive-Services-StaxMinds.html |
+| 65 | Freelancer | Make.com automation | n8n Automation Expert Needed (API, XML, Web Integration + UI/UX) | I need a developer who can take full ownership of several n8n workflows that mov | https://www.freelancer.com/projects/n8n/Automation-Expert-Needed-API-XML.html |
+| 65 | Freelancer | Make.com automation | AI/Video Streaming Debugging &amp; Optimization Expert | Job Title: Senior AI/Video Streaming Expert (Debugging &amp; Optimization) – Air | https://www.freelancer.com/projects/deep-learning/Video-Streaming-Debugging-Optimization.html |
+| 65 | Freelancer | Make.com automation | Create Engaging Video Reels for Social Media App | Freelance Project: Create 20 Short Reel Ads for Social Media App (Foxli) Project | https://www.freelancer.com/projects/content-creation/Create-Engaging-Video-Reels-for.html |
+| 65 | Freelancer | Make.com automation | Commission-Based IT Sales Executive Wanted | Looking for a Commission-Based B2B Sales Executive — IT Services (StaxMind) We a | https://www.freelancer.com/projects/b2b-marketing/Commission-Based-Sales-Executive-Wanted.html |
 
 ## Notes
 - Scores prioritize: (1) simple automation/scripting fit, (2) payout magnitude, (3) keyword relevance.
