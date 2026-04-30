@@ -1,45 +1,45 @@
 {
-  "generated_at_jst": "2026-05-01 07:11 JST",
+  "generated_at_jst": "2026-05-01 07:34 JST",
   "btc": {
     "symbol": "BTC/USD",
-    "price": 76352.0,
-    "change_24h_pct": 0.559,
-    "high_24h": null,
-    "low_24h": null,
+    "price": 76350.61,
+    "change_24h_pct": 0.533,
+    "high_24h": 76669.14,
+    "low_24h": 75323.65,
     "source": "Binance"
   },
   "eth": {
     "symbol": "ETH/USD",
-    "price": 2258.51,
-    "change_24h_pct": 0.232,
-    "high_24h": null,
-    "low_24h": null,
+    "price": 2257.83,
+    "change_24h_pct": 0.027,
+    "high_24h": 2279.0,
+    "low_24h": 2231.64,
     "source": "Binance"
   },
   "xrp": {
     "symbol": "XRP/USD",
-    "price": 1.3669,
-    "change_24h_pct": -0.044,
-    "high_24h": null,
-    "low_24h": null,
+    "price": 1.3665,
+    "change_24h_pct": -0.226,
+    "high_24h": 1.3847,
+    "low_24h": 1.3591,
     "source": "Binance"
   },
   "usd_jpy": {
     "symbol": "USD/JPY",
-    "price": 156.56,
-    "change_24h_pct": 0,
-    "source": "Frankfurter API"
+    "price": 156.694,
+    "change_24h_pct": 0.0,
+    "source": "Yahoo Finance"
   },
   "brent": {
     "symbol": "Brent",
-    "price": 114.00,
-    "change_24h_pct": 3.3,
-    "source": "Yahoo Finance / Bloomberg (BZ=F) — White House signals continued Hormuz blockade, +3.3% surge May 1"
+    "price": 111.22,
+    "change_24h_pct": 0.0,
+    "source": "Yahoo Finance (BZ=F)"
   },
   "gold": {
     "symbol": "Gold",
-    "price": 4616.76,
-    "change_24h_pct": -0.42,
-    "source": "Investing.com XAU/USD"
+    "price": 4643.5,
+    "change_24h_pct": 0.0,
+    "source": "Yahoo Finance (GC=F)"
   }
 }
