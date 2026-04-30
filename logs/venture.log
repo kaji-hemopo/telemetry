@@ -1,0 +1,300 @@
+/Users/jacksonhemopo/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+    CoinGecko returned suspicious Brent $69.69 — treating as stale, trying fallbacks
+Fetching Brent Crude from CoinGecko...
+    yfinance BZ=F (futures): $111.86
+  Brent: $111.86000061035156
+Fetching Gold from yfinance (GC=F)...
+  Gold: $4,563.70
+Generating report...
+  Written to /Users/jacksonhemopo/.openclaw/workspace_ito/outputs/venture_intel.md
+
+Done. Brent=$111.86000061035156, Gold=$4563.7, Ideas=5
+/Users/jacksonhemopo/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+    CoinGecko returned suspicious Brent $69.69 — treating as stale, trying fallbacks
+Fetching Brent Crude from CoinGecko...
+    yfinance BZ=F (futures): $111.64
+  Brent: $111.63999938964844
+Fetching Gold from yfinance (GC=F)...
+  Gold: $4,570.10
+Generating report...
+  Written to /Users/jacksonhemopo/.openclaw/workspace_ito/outputs/venture_intel.md
+
+Done. Brent=$111.63999938964844, Gold=$4570.1, Ideas=5
+/Users/jacksonhemopo/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+    CoinGecko returned suspicious Brent $69.69 — treating as stale, trying fallbacks
+Fetching Brent Crude from CoinGecko...
+    yfinance BZ=F (futures): $110.57
+  Brent: $110.56999969482422
+Fetching Gold from yfinance (GC=F)...
+  Gold: $4,574.50
+Generating report...
+  Written to /Users/jacksonhemopo/.openclaw/workspace_ito/outputs/venture_intel.md
+
+Done. Brent=$110.56999969482422, Gold=$4574.5, Ideas=5
+/Users/jacksonhemopo/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+    CoinGecko returned suspicious Brent $69.69 — treating as stale, trying fallbacks
+Fetching Brent Crude from CoinGecko...
+    yfinance BZ=F (futures): $110.81
+  Brent: $110.80999755859375
+Fetching Gold from yfinance (GC=F)...
+  Gold: $4,576.00
+Generating report...
+  Written to /Users/jacksonhemopo/.openclaw/workspace_ito/outputs/venture_intel.md
+
+Done. Brent=$110.80999755859375, Gold=$4576.0, Ideas=5
+/Users/jacksonhemopo/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+    CoinGecko returned suspicious Brent $69.69 — treating as stale, trying fallbacks
+Fetching Brent Crude from CoinGecko...
+    yfinance BZ=F (futures): $111.11
+  Brent: $111.11000061035156
+Fetching Gold from yfinance (GC=F)...
+  Gold: $4,585.80
+Generating report...
+  Written to /Users/jacksonhemopo/.openclaw/workspace_ito/outputs/venture_intel.md
+
+Done. Brent=$111.11000061035156, Gold=$4585.8, Ideas=5
+/Users/jacksonhemopo/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+    CoinGecko returned suspicious Brent $69.69 — treating as stale, trying fallbacks
+Fetching Brent Crude from CoinGecko...
+    yfinance BZ=F (futures): $111.11
+  Brent: $111.11000061035156
+Fetching Gold from yfinance (GC=F)...
+  Gold: $4,577.50
+Generating report...
+  Written to /Users/jacksonhemopo/.openclaw/workspace_ito/outputs/venture_intel.md
+
+Done. Brent=$111.11000061035156, Gold=$4577.5, Ideas=5
+/Users/jacksonhemopo/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+    CoinGecko returned suspicious Brent $69.69 — treating as stale, trying fallbacks
+Fetching Brent Crude from CoinGecko...
+    yfinance BZ=F (futures): $110.95
+  Brent: $110.94999694824219
+Fetching Gold from yfinance (GC=F)...
+  Gold: $4,592.10
+Generating report...
+  Written to /Users/jacksonhemopo/.openclaw/workspace_ito/outputs/venture_intel.md
+
+Done. Brent=$110.94999694824219, Gold=$4592.1, Ideas=5
+/Users/jacksonhemopo/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+    CoinGecko returned suspicious Brent $69.69 — treating as stale, trying fallbacks
+Fetching Brent Crude from CoinGecko...
+    yfinance BZ=F (futures): $110.97
+  Brent: $110.97000122070312
+Fetching Gold from yfinance (GC=F)...
+  Gold: $4,590.00
+Generating report...
+  Written to /Users/jacksonhemopo/.openclaw/workspace_ito/outputs/venture_intel.md
+
+Done. Brent=$110.97000122070312, Gold=$4590.0, Ideas=5
+/Users/jacksonhemopo/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+    CoinGecko returned suspicious Brent $69.69 — treating as stale, trying fallbacks
+Fetching Brent Crude from CoinGecko...
+    yfinance BZ=F (futures): $110.80
+  Brent: $110.80000305175781
+Fetching Gold from yfinance (GC=F)...
+  Gold: $4,588.50
+Generating report...
+  Written to /Users/jacksonhemopo/.openclaw/workspace_ito/outputs/venture_intel.md
+
+Done. Brent=$110.80000305175781, Gold=$4588.5, Ideas=5
+/Users/jacksonhemopo/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+    CoinGecko returned suspicious Brent $69.69 — treating as stale, trying fallbacks
+Fetching Brent Crude from CoinGecko...
+    yfinance BZ=F (futures): $111.76
+  Brent: $111.76000213623047
+Fetching Gold from yfinance (GC=F)...
+  Gold: $4,585.00
+Generating report...
+  Written to /Users/jacksonhemopo/.openclaw/workspace_ito/outputs/venture_intel.md
+
+Done. Brent=$111.76000213623047, Gold=$4585.0, Ideas=5
+/Users/jacksonhemopo/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+    CoinGecko returned suspicious Brent $69.69 — treating as stale, trying fallbacks
+Fetching Brent Crude from CoinGecko...
+    yfinance BZ=F (futures): $112.34
+  Brent: $112.33999633789062
+Fetching Gold from yfinance (GC=F)...
+  Gold: $4,572.80
+Generating report...
+  Written to /Users/jacksonhemopo/.openclaw/workspace_ito/outputs/venture_intel.md
+
+Done. Brent=$112.33999633789062, Gold=$4572.8, Ideas=5
+/Users/jacksonhemopo/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+    CoinGecko returned suspicious Brent $69.69 — treating as stale, trying fallbacks
+Fetching Brent Crude from CoinGecko...
+    yfinance BZ=F (futures): $112.31
+  Brent: $112.30999755859375
+Fetching Gold from yfinance (GC=F)...
+  Gold: $4,578.50
+Generating report...
+  Written to /Users/jacksonhemopo/.openclaw/workspace_ito/outputs/venture_intel.md
+
+Done. Brent=$112.30999755859375, Gold=$4578.5, Ideas=5
+/Users/jacksonhemopo/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+    CoinGecko returned suspicious Brent $69.69 — treating as stale, trying fallbacks
+Fetching Brent Crude from CoinGecko...
+    yfinance BZ=F (futures): $112.81
+  Brent: $112.80999755859375
+Fetching Gold from yfinance (GC=F)...
+  Gold: $4,575.10
+Generating report...
+  Written to /Users/jacksonhemopo/.openclaw/workspace_ito/outputs/venture_intel.md
+
+Done. Brent=$112.80999755859375, Gold=$4575.1, Ideas=5
+/Users/jacksonhemopo/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+    CoinGecko returned suspicious Brent $69.69 — treating as stale, trying fallbacks
+Fetching Brent Crude from CoinGecko...
+    yfinance BZ=F (futures): $113.08
+  Brent: $113.08000183105469
+Fetching Gold from yfinance (GC=F)...
+  Gold: $4,569.40
+Generating report...
+  Written to /Users/jacksonhemopo/.openclaw/workspace_ito/outputs/venture_intel.md
+
+Done. Brent=$113.08000183105469, Gold=$4569.4, Ideas=5
+/Users/jacksonhemopo/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+    CoinGecko returned suspicious Brent $69.69 — treating as stale, trying fallbacks
+Fetching Brent Crude from CoinGecko...
+    yfinance BZ=F (futures): $113.34
+  Brent: $113.33999633789062
+Fetching Gold from yfinance (GC=F)...
+  Gold: $4,565.30
+Generating report...
+  Written to /Users/jacksonhemopo/.openclaw/workspace_ito/outputs/venture_intel.md
+
+Done. Brent=$113.33999633789062, Gold=$4565.3, Ideas=5
+/Users/jacksonhemopo/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+    CoinGecko returned suspicious Brent $69.69 — treating as stale, trying fallbacks
+Fetching Brent Crude from CoinGecko...
+    yfinance BZ=F (futures): $113.96
+  Brent: $113.95999908447266
+Fetching Gold from yfinance (GC=F)...
+  Gold: $4,558.90
+Generating report...
+  Written to /Users/jacksonhemopo/.openclaw/workspace_ito/outputs/venture_intel.md
+
+Done. Brent=$113.95999908447266, Gold=$4558.9, Ideas=5
+/Users/jacksonhemopo/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+    CoinGecko returned suspicious Brent $69.69 — treating as stale, trying fallbacks
+Fetching Brent Crude from CoinGecko...
+    yfinance BZ=F (futures): $113.53
+  Brent: $113.52999877929688
+Fetching Gold from yfinance (GC=F)...
+  Gold: $4,558.10
+Generating report...
+  Written to /Users/jacksonhemopo/.openclaw/workspace_ito/outputs/venture_intel.md
+
+Done. Brent=$113.52999877929688, Gold=$4558.1, Ideas=5
+/Users/jacksonhemopo/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+    CoinGecko returned suspicious Brent $69.69 — treating as stale, trying fallbacks
+Fetching Brent Crude from CoinGecko...
+    yfinance BZ=F (futures): $113.10
+  Brent: $113.0999984741211
+Fetching Gold from yfinance (GC=F)...
+  Gold: $4,564.20
+Generating report...
+  Written to /Users/jacksonhemopo/.openclaw/workspace_ito/outputs/venture_intel.md
+
+Done. Brent=$113.0999984741211, Gold=$4564.2, Ideas=5
+/Users/jacksonhemopo/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+    CoinGecko returned suspicious Brent $69.69 — treating as stale, trying fallbacks
+Fetching Brent Crude from CoinGecko...
+    yfinance BZ=F (futures): $113.60
+  Brent: $113.5999984741211
+Fetching Gold from yfinance (GC=F)...
+  Gold: $4,566.40
+Generating report...
+  Written to /Users/jacksonhemopo/.openclaw/workspace_ito/outputs/venture_intel.md
+
+Done. Brent=$113.5999984741211, Gold=$4566.4, Ideas=5
+/Users/jacksonhemopo/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+    CoinGecko returned suspicious Brent $69.69 — treating as stale, trying fallbacks
+Fetching Brent Crude from CoinGecko...
+    yfinance BZ=F (futures): $113.47
+  Brent: $113.47000122070312
+Fetching Gold from yfinance (GC=F)...
+  Gold: $4,578.00
+Generating report...
+  Written to /Users/jacksonhemopo/.openclaw/workspace_ito/outputs/venture_intel.md
+
+Done. Brent=$113.47000122070312, Gold=$4578.0, Ideas=5
+/Users/jacksonhemopo/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+    CoinGecko returned suspicious Brent $69.69 — treating as stale, trying fallbacks
+Fetching Brent Crude from CoinGecko...
+    yfinance BZ=F (futures): $113.86
+  Brent: $113.86000061035156
+Fetching Gold from yfinance (GC=F)...
+  Gold: $4,576.10
+Generating report...
+  Written to /Users/jacksonhemopo/.openclaw/workspace_ito/outputs/venture_intel.md
+
+Done. Brent=$113.86000061035156, Gold=$4576.1, Ideas=5
+/Users/jacksonhemopo/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+    CoinGecko returned suspicious Brent $69.69 — treating as stale, trying fallbacks
+Fetching Brent Crude from CoinGecko...
+    yfinance BZ=F (futures): $114.08
+  Brent: $114.08000183105469
+Fetching Gold from yfinance (GC=F)...
+  Gold: $4,581.70
+Generating report...
+  Written to /Users/jacksonhemopo/.openclaw/workspace_ito/outputs/venture_intel.md
+
+Done. Brent=$114.08000183105469, Gold=$4581.7, Ideas=5
+/Users/jacksonhemopo/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+    CoinGecko returned suspicious Brent $69.69 — treating as stale, trying fallbacks
+Fetching Brent Crude from CoinGecko...
+    yfinance BZ=F (futures): $113.12
+  Brent: $113.12000274658203
+Fetching Gold from yfinance (GC=F)...
+  Gold: $4,590.10
+Generating report...
+  Written to /Users/jacksonhemopo/.openclaw/workspace_ito/outputs/venture_intel.md
+
+Done. Brent=$113.12000274658203, Gold=$4590.1, Ideas=5
+/Users/jacksonhemopo/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+    CoinGecko returned suspicious Brent $69.69 — treating as stale, trying fallbacks
+Fetching Brent Crude from CoinGecko...
+    yfinance BZ=F (futures): $111.87
+  Brent: $111.87000274658203
+Fetching Gold from yfinance (GC=F)...
+  Gold: $4,605.60
+Generating report...
+  Written to /Users/jacksonhemopo/.openclaw/workspace_ito/outputs/venture_intel.md
+
+Done. Brent=$111.87000274658203, Gold=$4605.6, Ideas=5
+/Users/jacksonhemopo/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+    CoinGecko returned suspicious Brent $69.69 — treating as stale, trying fallbacks
+Fetching Brent Crude from CoinGecko...
+    yfinance BZ=F (futures): $112.26
+  Brent: $112.26000213623047
+Fetching Gold from yfinance (GC=F)...
+  Gold: $4,603.60
+Generating report...
+  Written to /Users/jacksonhemopo/.openclaw/workspace_ito/outputs/venture_intel.md
+
+Done. Brent=$112.26000213623047, Gold=$4603.6, Ideas=5

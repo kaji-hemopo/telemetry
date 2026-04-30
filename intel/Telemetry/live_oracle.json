@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-04-30T12:34:00Z",
+  "timestamp_jst": "2026-04-30 21:34 JST",
+  "assets": {
+    "BTC": { "price_usd": 76343, "change_24h": -0.90, "source": "CoinGecko" },
+    "ETH": { "price_usd": 2265.95, "change_24h": -1.94, "source": "CoinGecko" },
+    "XRP": { "price_usd": 1.37, "change_24h": -0.45, "source": "CoinGecko" },
+    "USD_JPY": { "rate": 160.72, "direction": "weakening", "source": "Kyodo/Japan MoF" },
+    "Brent": { "price_usd": 113.11, "change_24h": null, "source": "MarketWatch" },
+    "Gold": { "price_usd": 4710, "change_24h": null, "source": "est" }
+  },
+  "status": "fresh",
+  "beat": 136
+}

@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
 Generate Live Oracle JSON
-Fetches live BTC, ETH, XRP (Binance) and USD/JPY (Yahoo Finance)
+Fetches live BTC, ETH, XRP (Binance), USD/JPY, Brent, Gold (Yahoo Finance)
 Outputs to workspace_ito/live_oracle.json
-Used by: EPD assembler, Empire Portfolio Dashboard
+Used by: EPD assembler, Empire Portfolio Dashboard, Kaji Oil Shock Monitor
 """
 
 import requests
@@ -109,6 +109,46 @@ def fetch_usd_jpy() -> dict:
     return {"symbol": "USD/JPY", "price": None, "change_24h_pct": None, "source": "Yahoo Finance"}
 
 
+def fetch_brent() -> dict:
+    """Fetch Brent Crude (BZ=F) from Yahoo Finance — primary source for Kaji oil shock monitor."""
+    try:
+        ticker = yf.Ticker("BZ=F")
+        hist = ticker.history(period="1d")
+        if not hist.empty:
+            price = float(hist["Close"].iloc[-1])
+            prev = float(hist["Open"].iloc[-1]) if len(hist) > 1 else price
+            change_pct = ((price - prev) / prev * 100) if prev else 0
+            return {
+                "symbol": "Brent",
+                "price": round(price, 2),
+                "change_24h_pct": round(change_pct, 3),
+                "source": "Yahoo Finance (BZ=F)",
+            }
+    except Exception as e:
+        print(f"  Brent fetch error: {e}", file=sys.stderr)
+    return {"symbol": "Brent", "price": None, "change_24h_pct": None, "source": "Yahoo Finance (BZ=F)"}
+
+
+def fetch_gold() -> dict:
+    """Fetch Gold (GC=F) from Yahoo Finance."""
+    try:
+        ticker = yf.Ticker("GC=F")
+        hist = ticker.history(period="1d")
+        if not hist.empty:
+            price = float(hist["Close"].iloc[-1])
+            prev = float(hist["Open"].iloc[-1]) if len(hist) > 1 else price
+            change_pct = ((price - prev) / prev * 100) if prev else 0
+            return {
+                "symbol": "Gold",
+                "price": round(price, 2),
+                "change_24h_pct": round(change_pct, 3),
+                "source": "Yahoo Finance (GC=F)",
+            }
+    except Exception as e:
+        print(f"  Gold fetch error: {e}", file=sys.stderr)
+    return {"symbol": "Gold", "price": None, "change_24h_pct": None, "source": "Yahoo Finance (GC=F)"}
+
+
 def main():
     print("Fetching live oracle data...")
     print("  BTC...", end=" ")
@@ -127,18 +167,28 @@ def main():
     jpy = fetch_usd_jpy()
     print(f"{jpy['price']}" if jpy["price"] else "FAILED")
 
+    print("  Brent...", end=" ")
+    brent = fetch_brent()
+    print(f"${brent['price']}" if brent["price"] else "FAILED")
+
+    print("  Gold...", end=" ")
+    gold = fetch_gold()
+    print(f"${gold['price']}" if gold["price"] else "FAILED")
+
     oracle = {
         "generated_at_jst": datetime.now().strftime("%Y-%m-%d %H:%M JST"),
         "btc": btc,
         "eth": eth,
         "xrp": xrp,
         "usd_jpy": jpy,
+        "brent": brent,
+        "gold": gold,
     }
 
     with open(OUTPUT_PATH, "w") as f:
         json.dump(oracle, f, indent=2)
     print(f"\nWritten to {OUTPUT_PATH}")
-    print(f"Done. BTC=${btc.get('price')}, ETH=${eth.get('price')}, XRP=${xrp.get('price')}, USD/JPY={jpy.get('price')}")
+    print(f"Done. BTC=${btc.get('price')}, ETH=${eth.get('price')}, XRP=${xrp.get('price')}, USD/JPY={jpy.get('price')}, Brent=${brent.get('price')}, Gold=${gold.get('price')}")
 
 
 if __name__ == "__main__":

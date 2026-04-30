@@ -71,7 +71,10 @@ VENTURE_IDEAS = [
 # ---------------------------------------------------------------------------
 
 def fetch_brent() -> tuple[float, float]:
-    """Fetch Brent Crude spot price from CoinGecko (spot, not futures)."""
+    """Fetch Brent Crude — primary: CoinGecko spot, fallback: yfinance BZ=F futures.
+    Sanity check: CoinGecko Brent below $80/bbl is considered stale/rate-limited.
+    """
+    # Primary: CoinGecko (spot Brent)
     try:
         resp = requests.get(
             "https://api.coingecko.com/api/v3/simple/price",
@@ -82,17 +85,23 @@ def fetch_brent() -> tuple[float, float]:
         if resp.ok:
             data = resp.json()
             price = float(data["crude-oil-brent"]["usd"])
-            return price, 0.0
+            # Sanity: Brent rarely drops below $40; $80 is a safe floor to detect stale/rate-limited responses
+            if price and price >= 80:
+                return price, 0.0
+            else:
+                print(f"    CoinGecko returned suspicious Brent ${price} — treating as stale, trying fallbacks", file=sys.stderr)
     except Exception as e:
         print(f"    CoinGecko error: {e}", file=sys.stderr)
-    # Fallback: yfinance BZ=F (futures — note: this is NOT spot, use CoinGecko primary)
+    # Fallback 1: yfinance BZ=F (Brent Crude Jun 2026 futures — approximate spot)
     try:
         bz = yf.Ticker("BZ=F")
         hist = bz.history(period="1d")
         if not hist.empty:
-            return float(hist["Close"].iloc[-1]), 0.0
-    except Exception:
-        pass
+            futures_price = float(hist["Close"].iloc[-1])
+            print(f"    yfinance BZ=F (futures): ${futures_price:.2f}")
+            return futures_price, 0.0
+    except Exception as e:
+        print(f"    yfinance BZ=F error: {e}", file=sys.stderr)
     return None, None
 
 

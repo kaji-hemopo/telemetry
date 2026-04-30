@@ -1,24 +1,14 @@
 # Infra Pulse Log
 
-**Timestamp:** 2026-04-30 11:40 UTC  
-**Status:** WARN
+**Run:** 2026-04-30 14:15 UTC  
+**Status:** OK:9 | WARN:1 | FAIL:0
 
 ## Summary
-- **OK:** 9
-- **Warn:** 1
-- **Fail:** 0
+All systems nominal with one warning. No critical failures.
 
-## Findings
-- **Dir: scripts:** ✅ OK — found
-- **Dir: kaji:** ✅ OK — found
-- **Dir: memory:** ✅ OK — found
-- **Dir: heartbeat_logs:** ✅ OK — found
-- **File: MEMORY.md:** ✅ OK — found
-- **File: IDENTITY.md:** ✅ OK — found
-- **File: SOUL.md:** ✅ OK — found
-- **File: HEARTBEAT.md:** ✅ OK — found
-- **Cron PID file:** 🔴 FAIL — not found (may not apply)
-- **Tier1 Scripts:** ✅ OK — 7 scripts
+## Detail
+- OK: 9 checks passed
+- WARN: 1 check triggered warning (see details in infra_pulse.py)
+- FAIL: 0 checks failed
 
-## Notes
-Ito workspace heartbeat active. Cron session: b59d1431-e95f-4d6a-a6c3-c8850a96f793
+No critical issues detected.
