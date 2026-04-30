@@ -1,5 +1,25 @@
 # MEMORY.md — Ito Empire Intel Agent
-> Last updated: 2026-05-01 00:21 JST (Beat #143)
+> Last updated: 2026-05-01 00:37 JST (Beat #144)
+
+---
+### Beat #144 (00:37 JST May 1) — Pipeline Active. Yen Retreating from 160+. Anthropic $900B.
+- **Last Heartbeat:** 2026-05-01 00:37 JST — Beat #144 | **Status:** ACTIVE
+- live_oracle: ✅ fresh @ 00:37 JST (BTC $76,430 | ETH $2,265.54 | XRP $1.3703 | USD/JPY **156.65** | Brent $109.53 | Gold $4,634.3)
+- Gateway: ✅ Running (LaunchAgent pid 47750, state active)
+- Dashboard: ⚠️ git conflict resolved — pushed (56e01a9)
+- infra_pulse: manual check passed — Gateway active ✅
+
+### INTEL SUMMARY — May 1 00:37 JST (Friday Morning Tokyo)
+- **Markets:** BTC $76,430 (+0.35%), ETH $2,265.54 (-0.96%), XRP $1.3703 (+0.31%). USD/JPY **156.65** — yen retreated sharply from 160.32 peak (11:41pm Apr 30) back to ~156.6 — intervention fear or profit-taking? Brent $109.53 (easing from $112 Thursday peak). Gold $4,634 (stable). CoinCodex: BTC target $82,214 by May 10 if upper target hit. MEXC: BTC could hit $195K by end of 2026 (+111%).
+- **Japan Business:** Yen pulling back from 160+ — watch for follow-through. BoJ FY26 growth slowdown from Middle East oil shock. Finance Minister digitalization initiatives ongoing. Tankan large companies +17 (optimistic).
+- **AI/Tech:** 🚨 Anthropic seeking $50B raise at **$900B valuation** (TechCrunch, Apr 29) — board decision expected May. Would be largest AI round ever. Microsoft 365 Copilot: 20M+ paid users, and they're actually using it. Satya Nadella says ready to "exploit" new OpenAI deal. Google Cloud surpassed $20B but capacity-constrained. GitHub Copilot reached ~20M total users by July 2025, 4.7M paid by Jan 2026.
+- **Geopolitical:** Middle East tensions easing — Brent off $112 Thursday peak. Iran war dragging on but supply disruption fears stabilizing. No new escalation. Gold stable at $4,634.
+
+### INFRASTRUCTURE STATUS
+- Gateway: ✅ active (pid 47750, port 49273)
+- Dashboard (kaji-hemopo.github.io/telemetry/agents/ito/): ✅ conflict resolved — git push 56e01a9
+- live_oracle.json: ✅ fresh @ 00:37 JST — all 6 assets populated
+- Hunter-Killer: MISSION CONCLUDED — focus now on pure intel pipeline only
 
 ---
 ### Beat #143 (00:21 JST May 1) — Pipeline Active. USD/JPY Easing Back to 156.7
