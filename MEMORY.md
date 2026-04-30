@@ -1,5 +1,26 @@
 # MEMORY.md — Ito Empire Intel Agent
-> Last updated: 2026-05-01 02:40 JST (Beat #148)
+> Last updated: 2026-05-01 03:21 JST (Beat #149)
+
+---
+### Beat #149 (03:21 JST May 1) — Pipeline Active. Markets Steady Pre-Weekend. Brent $109.4.
+- **Last Heartbeat:** 2026-05-01 03:21 JST — Beat #149 | **Status:** ACTIVE
+- live_oracle: ✅ fresh @ 03:22 JST (BTC $76,405 | ETH $2,259.49 | XRP $1.3697 | USD/JPY **156.348** | Brent **$109.36** | Gold $4,635.1)
+- Gateway: ✅ Running (LaunchAgent pid 65643, state active)
+- Dashboard: ✅ git status clean, up to date with origin/main
+- infra_pulse: OK:9 WARN:1 FAIL:0 ✅
+
+### INTEL SUMMARY — May 1 03:21 JST (Friday 3:21AM Tokyo)
+- **Markets:** BTC $76,405 (+1.68% 24h), ETH $2,259.49 (+1.16%), XRP $1.3697 (+1.51%). USD/JPY **156.348** — yen stable at ~156.3, well below 160 intervention zone. Brent **$109.36** — steady near $109, holding firm from $110+ Thursday peak. Gold $4,635.1 (stable). Markets quiet pre-weekend — very low volume, no major moves. No intervention signals.
+- **Japan Business:** Yen stable ~156.3 — intervention fear fully cooled overnight. BoJ kept rate at 0.75% assessing Middle East oil impact on FY26. Finance Minister Katayama signaled intervention preparedness but no action needed at current levels. Tankan large companies +17. Japan PM held phone talks with Iran President Pezeshkian. Small/midsize business sentiment at 3-year low. Japan's financial watchdog ordering MetLife Japan to respond to data breach allegations.
+- **AI/Tech:** Anthropic $900B raise CONFIRMED — decision expected May 2026. Fielding $40-50B offers at $850-900B valuation. Would be largest AI round ever, final private raise before IPO. $40B revenue run rate. Claude Connectors launched (9 integrations). AI coding agents deleting codebases — industry debate ongoing. 137 Ventures raised $700M (SpaceX, Anduril). Stripe Link launches digital wallet for AI agents. Microsoft 365 Copilot: 20M+ paying users. Spotify verified artist badges to distinguish humans from AI.
+- **Geopolitical:** Brent steady $109-110 — Iran conflict ongoing, no new escalation but no resolution. US-Iran talks deadlocked. Markets watching for weekend developments.
+
+### INFRASTRUCTURE STATUS
+- Gateway: ✅ active (pid 65643, port 49273)
+- Dashboard (kaji-hemopo.github.io/telemetry/agents/ito/): ✅ clean, up to date
+- live_oracle.json: ✅ fresh @ 03:22 JST — all 6 assets populated
+- infra_pulse: OK:9 WARN:1 FAIL:0 ✅
+- Hunter-Killer: MISSION CONCLUDED — pure intel pipeline only
 
 ---
 ### Beat #148 (02:40 JST May 1) — Pipeline Active. Brent Holds $109.5. Dashboard Rebased & Pushed.
@@ -70,6 +91,8 @@
 
 ---
 ### RECENT BEATS
+- Beat #149: 03:21 JST May 1 — BTC $76,405, Brent $109.36, USD/JPY 156.348. ✅
+- Beat #148: 02:40 JST May 1 — BTC $76,164, Brent $109.53, USD/JPY 156.468. ✅
 - Beat #147: 02:18 JST May 1 — BTC $76,250, Brent $109.91, USD/JPY 156.571. ✅
 - Beat #146: 01:43 JST May 1 — USD/JPY 156.667, Brent $110.01, Gold $4,620. ✅
 - Beat #145: 00:57 JST May 1 — USD/JPY 156.715, Brent $109.62, Anthropic $900B confirmed. ✅

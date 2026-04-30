@@ -1,6 +1,20 @@
 {
-  "timestamp": "2026-05-01 03:00 JST",
+  "timestamp": "2026-05-01 03:40 JST",
   "items": [
+    {
+      "category": "AI",
+      "title": "OpenAI announces new advanced security for ChatGPT accounts, including a partnership with Yubico",
+      "link": "https://techcrunch.com/?p=3117592",
+      "description": "OpenAI is launching additional opt-in protections for ChatGPT accounts. The new security initiative includes a new partnership with security key provider Yubico.",
+      "pub_date": ""
+    },
+    {
+      "category": "AI",
+      "title": "Elon Musk testifies that xAI trained Grok on OpenAI models",
+      "link": "https://techcrunch.com/?p=3118017",
+      "description": "\"Distillation\" is a hot topic as frontier labs try to prevent smaller competitors from copying their models.",
+      "pub_date": ""
+    },
     {
       "category": "AI",
       "title": "FDA approval, fundraising, and the reality of building in healthcare according to BioticsAI founder",
@@ -20,13 +34,6 @@
       "title": "Stripe introduces Link, a digital wallet that autonomous AI agents can use, too",
       "link": "https://techcrunch.com/?p=3117968",
       "description": "Link lets users connect cards, banks, and subscriptions, then authorize AI agents to spend securely via approval flows.",
-      "pub_date": ""
-    },
-    {
-      "category": "AI",
-      "title": "Salesforce is crowdsourcing its AI roadmap \u2014 with customers",
-      "link": "https://techcrunch.com/?p=3114813",
-      "description": "Salesforce lets its customers lead its product roadmap with the thinking that if one enterprise customer has a problem, the others likely do too.",
       "pub_date": ""
     },
     {
@@ -73,6 +80,13 @@
     },
     {
       "category": "AI",
+      "title": "Elon Musk confirms xAI used OpenAI\u2019s models to train Grok",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/921546/elon-musk-xai-openai-trial-model-distillation",
+      "description": "In a federal courtroom in California on Thursday, Elon Musk testified that his own AI startup, xAI, has used OpenAI's models to improve its own. The matter at question is model dis",
+      "pub_date": "2026-04-30T14:16:57-04:00"
+    },
+    {
+      "category": "AI",
       "title": "Live updates from Elon Musk and Sam Altman\u2019s court battle over the future of OpenAI",
       "link": "https://www.theverge.com/tech/917225/sam-altman-elon-musk-openai-lawsuit",
       "description": "Sam Altman and Elon Musk are facing off in a high-stakes trial that could alter the future of OpenAI and its most well-known product, ChatGPT. In 2024, Musk filed a lawsuit accusin",
@@ -93,31 +107,17 @@
       "pub_date": "2026-04-30T12:00:00-04:00"
     },
     {
-      "category": "AI",
-      "title": "Gemini is rolling out to cars with Google built-in",
-      "link": "https://www.theverge.com/tech/921117/google-gemini-ai-assistant-cars-upgrade",
-      "description": "Google is preparing to update vehicles that have Google built-in with its Gemini AI assistant. This will be an upgrade from the current Google Assistant according to Google's annou",
-      "pub_date": "2026-04-30T12:00:00-04:00"
-    },
-    {
-      "category": "AI",
-      "title": "Here&#8217;s how the new Microsoft and OpenAI deal breaks down",
-      "link": "https://www.theverge.com/tech/921210/microsoft-openai-partnership-divorce-notepad",
-      "description": "Microsoft's relationship with OpenAI has always been complicated, so I expected the close partnership-turned-situationship to end in tears. After all, executive disagreements, rear",
-      "pub_date": "2026-04-30T12:00:00-04:00"
+      "category": "Tech",
+      "title": "Xbox owners can now disable Quick Resume for specific games",
+      "link": "https://www.theverge.com/games/921504/xbox-update-quick-resume-disable",
+      "description": "Microsoft has released a new Xbox update that adds a bunch of new features, including the ability to disable Quick Resume for individual games. Quick Resume, which lets you swap be",
+      "pub_date": "2026-04-30T13:51:26-04:00"
     },
     {
       "category": "World",
       "title": "TikTok\u2019s new \u2018Campus Hub\u2019 features college group chats and feeds",
       "link": "https://techcrunch.com/?p=3117972",
       "description": "The new hub features dedicated college group chats and personalized feeds designed to help students stay connected with their campus communities, even while they\u2019re away for the su",
-      "pub_date": ""
-    },
-    {
-      "category": "World",
-      "title": "Uber taps Hertz to clean, charge, and fix its Lucid Motors robotaxis",
-      "link": "https://techcrunch.com/?p=3117913",
-      "description": "Hertz is creating a new affiliate company called \"Oro Mobility\" to provide fleet management solutions \"across a range of mobility segments.\"",
       "pub_date": ""
     },
     {
