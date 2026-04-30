@@ -1,5 +1,37 @@
 # MEMORY.md — Ito Empire Intel Agent
-> Last updated: 2026-05-01 05:26 JST (Beat #155)
+> Last updated: 2026-05-01 06:08 JST (Beat #157)
+
+---
+### Beat #157 (06:08 JST May 1) — Pipeline Active. Brent $111.21 Climbing. Fox News: Khamenei New Threats.
+- **Last Heartbeat:** 2026-05-01 06:08 JST — Beat #157 | **Status:** ACTIVE
+- live_oracle: ✅ fresh @ 06:00 JST (BTC $76,492.45 | ETH $2,264.12 | XRP $1.3699 | USD/JPY **156.493** | Brent **$111.21** | Gold $4,631.4)
+- Gateway: ✅ Running (LaunchAgent pid 65643, state active)
+- Dashboard: git commit 67de2d5 → origin/main
+- infra_pulse: Gateway probe ok, connectivity ok ✅
+
+### INTEL SUMMARY — May 1 06:08 JST (Friday 6:08AM Tokyo)
+- **Markets:** BTC $76,492.45 (+1.09% 24h), ETH $2,264.12 (+1.07%), XRP $1.3699 (+0.54%). USD/JPY **156.493** — yen stable at ~156.5, well below 160 intervention zone. Brent **$111.21** — CLIMBING from $110.63 at 05:47 beat (+$0.58 in 21 min). Gold $4,631.4 (stable). Markets thin pre-weekend JST Friday morning.
+- **🚨 IRAN / OIL WATCH — ONGOING (ELEVATED):** Fox News (4 hours ago): "New threats from Iranian Supreme Leader Mojtaba Khamenei amid the US naval blockade in the Strait of Hormuz." Khamenei issuing new threats while Hormuz remains contested. No ceasefire extension confirmed. Brent climbing — $110.63 → $111.21 in 21 minutes. Oil trending toward $112. Weekend: US markets closed, no cushion if Iran escalates.
+- **UAE OPEC Exit — Effective Today (May 1):** UAE officially exits OPEC+ today after 60 years. OPEC loses ~12% of total production. Structural shift in global oil architecture. No coordination advantage for remaining OPEC+ members at time of peak Middle East risk.
+- **Japan Business:** USD/JPY 156.493 — stable. BoJ monitoring Middle East escalation + Brent climbing toward $112. Oil at $111+ adds to FY26 growth headwinds. Vanguard maintains BoJ rate forecast: 1.25% by year-end (two hikes in 2026).
+- **Geopolitical:** Khamenei new threats on Hormuz — Fox News confirmed 4 hours ago. US naval blockade in place. No ceasefire extension reported. Iran conflict at elevated simmer heading into weekend.
+
+### INFRASTRUCTURE STATUS
+- Gateway: ✅ active (pid 65643, port 49273)
+- Dashboard: git commit 67de2d5 pushed to workspace_ito
+- live_oracle.json: ✅ fresh @ 06:00 JST — all 6 assets populated
+- infra_pulse: Gateway probe ok, connectivity ok ✅
+- Hunter-Killer: MISSION CONCLUDED — pure intel pipeline only
+
+---
+### ⚠️ BEARS WATCH — May 1 06:08 JST
+- Brent climbing: $110.63 → $111.21 in 21 min — trending toward $112
+- Khamenei NEW THREATS (Fox News 4hrs ago) on Hormuz blockade
+- Weekend risk: US markets closed Sat-Sun, no cushion if Iran escalates
+- UAE OPEC exit effective today — structural oil market shift
+- If US strikes Iran nuclear sites → Hormuz disruption + OPEC+ fractured → $150+ scenario amplified
+- USD/JPY 156.493 stable — BoJ watching oil impact on FY26 growth
+- Vanguard: BoJ to hike to 1.25% by year-end — yen strength incoming
 
 ---
 ### Beat #156 (05:47 JST May 1) — 🚨 NEW: Trump Rejects Iran Offer. UAE Exits OPEC Today.
