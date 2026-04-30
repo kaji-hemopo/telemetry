@@ -1,11 +1,25 @@
 {
-  "timestamp": "2026-04-30 23:20 JST",
+  "timestamp": "2026-05-01 00:21 JST",
   "items": [
+    {
+      "category": "AI",
+      "title": "Dental practice software maker fixes bug that exposed patients\u2019 medical records",
+      "link": "https://techcrunch.com/?p=3117885",
+      "description": "The security bug is now fixed, but the patient who found it said it was challenging to alert the software company about the issue.",
+      "pub_date": ""
+    },
+    {
+      "category": "AI",
+      "title": "X announces a rebuilt ad platform powered by AI",
+      "link": "https://techcrunch.com/?p=3117901",
+      "description": "X is rolling out a rebuilt ads platform powered by AI as it works to grow revenue again.",
+      "pub_date": ""
+    },
     {
       "category": "AI",
       "title": "Spotify introduces verified artist badges to help distinguish humans from AI",
       "link": "https://techcrunch.com/?p=3117410",
-      "description": "As AI-generated artists and tracks flood music streaming platforms, Spotify is rolling out a new \u201cVerified by Spotify\u201d badge to help listeners more easily identify authentic human ",
+      "description": "Spotify looks for an identifiable artist presence both on and off platform, like concert dates, merch, and linked social accounts on their artist profile.",
       "pub_date": ""
     },
     {
@@ -13,13 +27,6 @@
       "title": "Meta says its business AI now facilitates 10 million conversations a week",
       "link": "https://techcrunch.com/?p=3117862",
       "description": "Meta said over 8 billion advertisers have used at least one of its gen AI tools",
-      "pub_date": ""
-    },
-    {
-      "category": "AI",
-      "title": "SoftBank is creating a robotics company that builds data centers \u2014 and already eyeing a $100B IPO",
-      "link": "https://techcrunch.com/?p=3117844",
-      "description": "You need infrastructure to build AI a and robots, but apparently you also need AI and robots to build infrastructure.",
       "pub_date": ""
     },
     {
@@ -66,38 +73,24 @@
     },
     {
       "category": "AI",
-      "title": "Samsung says the RAM shortage could get even worse next year",
-      "link": "https://www.theverge.com/tech/921190/samsung-ram-shortage-getting-worse-2027",
-      "description": "There may be a long wait before the end of the RAM shortage that's driving up prices on everything from phones to gaming handhelds. During an earnings call on Thursday, Samsung pre",
-      "pub_date": "2026-04-30T09:48:59-04:00"
+      "title": "<![CDATA[$100 Nintendo gift cards are $20 off at Newegg today]]>",
+      "link": "https://www.theverge.com/gadgets/921157/100-nintendo-gift-cards-are-20-off-at-newegg-today",
+      "description": "Nintendo eShop gift cards can be used to buy games, apparel, and even hardware or accessories from its online storefront. No matter what you want to get, you can save a fairly subs",
+      "pub_date": "2026-04-30T11:15:03-04:00"
     },
     {
       "category": "AI",
-      "title": "The Commodore 64 and ZX Spectrum have been turned into retrofuturistic handhelds",
-      "link": "https://www.theverge.com/tech/921178/blaze-entertainment-retro-games-commodore-64-zx-spectrum-handhelds",
-      "description": "Blaze Entertainment, the company behind the cartridge-based Evercade consoles, has announced two new handhelds that reimagine iconic '80s personal computers as portable gaming mach",
-      "pub_date": "2026-04-30T09:45:46-04:00"
+      "title": "<![CDATA[Anbernic\u2019s new rotating screen handheld will start at less than $100]]>",
+      "link": "https://www.theverge.com/tech/921203/anbernic-rg-rotate-android-handheld-pricing-availability-preorders",
+      "description": "Following its sliding screen handheld that debuted last June with a design that some reviewers found to be too chunky and thick, Anbernic has shared more details about its new rota",
+      "pub_date": "2026-04-30T11:00:08-04:00"
     },
     {
       "category": "AI",
-      "title": "OpenAI talks about not talking about goblins",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/921181/openai-codex-goblins",
-      "description": "OpenAI is opening up about its goblin problem. After a report from Wired revealed instructions to OpenAI's coding model to \"never talk about goblins, gremlins, raccoons, trolls, og",
-      "pub_date": "2026-04-30T09:42:29-04:00"
-    },
-    {
-      "category": "AI",
-      "title": "Verified by Spotify badge lets you know this artist isn&#8217;t AI",
-      "link": "https://www.theverge.com/tech/921048/verified-by-spotify-badge",
-      "description": "Spotify is launching a new verification program to combat spam, fakes, and AI. Some artists will now have a \"Verified by Spotify\" badge and a green checkmark on their profile, indi",
-      "pub_date": "2026-04-30T09:08:23-04:00"
-    },
-    {
-      "category": "Tech",
-      "title": "Amazon, Meta join fight to end Google Pay, PhonePe dominance in India",
-      "link": "https://techcrunch.com/?p=3117406",
-      "description": "PhonePe and Google Pay command 80% of India's UPI instant payments network. Rivals are set to meet with regulators to lobby for restrictions.",
-      "pub_date": ""
+      "title": "<![CDATA[All these smart glasses and nothing to do]]>",
+      "link": "https://www.theverge.com/tech/921159/smart-glasses-review-wearable-even-realities-g2-meta-ray-ban-rokid-lucyd-oakley-meta-vanguard",
+      "description": "I'm currently wearing a pair of smart glasses called the Even Realities G2. Another two pairs, from Rokid, sit on my desk. A few feet away, I've got the Meta Ray-Ban Display chargi",
+      "pub_date": "2026-04-30T11:00:00-04:00"
     },
     {
       "category": "World",
@@ -115,17 +108,24 @@
     },
     {
       "category": "World",
-      "title": "How to win \u2014 and lose \u2014 Decoder",
-      "link": "https://www.theverge.com/podcast/920768/decoder-mailbag-how-to-win-lose-ai-nilay-interview",
-      "description": "This interview has been lightly edited for length and clarity.&#160; Hello and welcome to Decoder, Nilay&#8217;s show about big ideas and other problems. This is Nick Statt, senior",
-      "pub_date": "2026-04-30T10:00:00-04:00"
+      "title": "<![CDATA[Subnautica 2 launches soon after lengthy legal dispute]]>",
+      "link": "https://www.theverge.com/games/920668/subnautica-2-early-access-release-date-unknown-worlds-krafton",
+      "description": "After some protracted legal drama, Subnautica 2 is finally about to launch. The game, which is currently Steam's most-wishlisted title and was caught up in a dispute between top ex",
+      "pub_date": "2026-04-30T11:15:00-04:00"
     },
     {
       "category": "World",
-      "title": "Here\u2019s what Netflix\u2019s new vertical video feed is like",
-      "link": "https://www.theverge.com/streaming/920179/netflix-vertical-video-feed-mobile-app-ui",
-      "description": "Netflix is starting to roll out a big revamp of its mobile app, and a central feature is a new vertical video feed called \"Clips\" where you can scroll through clips of shows, movie",
-      "pub_date": "2026-04-30T09:00:00-04:00"
+      "title": "<![CDATA[How Adam Scott became an accidental horror movie star]]>",
+      "link": "https://www.theverge.com/entertainment/920921/adam-scott-interview-hokum-horror",
+      "description": "Adam Scott grew up watching horror movies at, as he describes it, \"probably too young\" an age. But he never set out to work specifically in the genre. Even still, horror seemed to ",
+      "pub_date": "2026-04-30T10:30:00-04:00"
+    },
+    {
+      "category": "World",
+      "title": "<![CDATA[How to win \u2014 and lose \u2014 Decoder]]>",
+      "link": "https://www.theverge.com/podcast/920768/decoder-mailbag-how-to-win-lose-ai-nilay-interview",
+      "description": "This interview has been lightly edited for length and clarity.&#160; Hello and welcome to Decoder, Nilay&#8217;s show about big ideas and other problems. This is Nick Statt, senior",
+      "pub_date": "2026-04-30T10:00:00-04:00"
     }
   ]
 }
