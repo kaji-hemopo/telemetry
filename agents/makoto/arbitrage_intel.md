@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-04-30 09:43 JST
+Generated: 2026-04-30 10:47 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -55,12 +55,10 @@ Generated: 2026-04-30 09:43 JST
 | 85 | Freelancer | Python scraper | Desarrollo MVP para Plataforma PropTech Inmobiliaria | $5,000.00 | https://www.freelancer.com/projects/flutter/Desarrollo-MVP-para-Plataforma-PropTech.html |
 | 85 | Freelancer | Python scraper | Python/Django/C++ Developer Needed | $1,500.00 | https://www.freelancer.com/projects/software-development/Python-Django-Developer-Needed.html |
 | 85 | Freelancer | Data processing API | Data Entry dan Pengetikan Dokumen | $5,000.00 | https://www.freelancer.com/projects/copy-typing/Data-Entry-dan-Pengetikan-Dokumen.html |
-| 85 | Freelancer | Data processing API | desktop application development to manage data from &ldquo;BK-280 | $750.00 | https://www.freelancer.com/projects/api-developmet/BIOBASE-MedicalSystem-Mission-Expert.html |
 | 75 | Freelancer | Python scraper | Optimize AI-Driven Academic Writing Assistant | $250.00 | https://www.freelancer.com/projects/ai-development/Optimize-Driven-Academic-Writing.html |
 | 75 | Freelancer | Python scraper | MVP Plataforma Salud Mental | $250.00 | https://www.freelancer.com/projects/mobile-app-development/MVP-Plataforma-Salud-Mental.html |
 | 75 | Freelancer | Make.com automation | Build an AI-Powered Film &amp; TV Casting Operations Platform (Co | $250.00 | https://www.freelancer.com/projects/ai-development/Build-Powered-Film-Casting-Operations.html |
 | 75 | Freelancer | Make.com automation | YouTube Automation Sales Closer | $250.00 | https://www.freelancer.com/projects/crm/YouTube-Automation-Sales-Closer.html |
-| 75 | Freelancer | Data processing API | Excel Training for Intermediate Users | $250.00 | https://www.freelancer.com/projects/data-analysis/Excel-Training-for-Intermediate-Users.html |
 | 65 | Freelancer | Python scraper | Phone Number Scraping Specialist Needed | $30.00 | https://www.freelancer.com/projects/data-scraping/Phone-Number-Scraping-Specialist-Needed.html |
 | 65 | Freelancer | Python scraper | Fix &amp; Deploy Automation Script | $10.00 | https://www.freelancer.com/projects/automation/Fix-Deploy-Automation-Script.html |
 | 65 | Freelancer | Python scraper | Remove Duplicate Email Contacts Now | $10.00 | https://www.freelancer.com/projects/data-cleansing/Remove-Duplicate-Email-Contacts-Now.html |
@@ -72,6 +70,8 @@ Generated: 2026-04-30 09:43 JST
 | 65 | Freelancer | Python scraper | Cliniko Payment Automation via Claude | I need a small, reliable API integration that lets Anthropic Claude log “manual” | https://www.freelancer.com/projects/api-integration/Cliniko-Payment-Automation-via-Claude.html |
 | 65 | Freelancer | Python scraper | Full-Stack Dev for AI Image Analytics | We are building a product (not a project) and looking for a passionate developer | https://www.freelancer.com/projects/ai-hw-sw/Full-Stack-Dev-for-Image.html |
 | 65 | Freelancer | Python scraper | Offline Legal AI Assistant Configuration | Title: Set up offline AI research and drafting tool on macOS (Ollama + Kotaemon  | https://www.freelancer.com/projects/ai-development/Offline-Legal-Assistant-Configuration.html |
+| 65 | Freelancer | Make.com automation | Microsoft Contract Workflow Automation Setup | $30.00 | https://www.freelancer.com/projects/power-automate/Microsoft-Contract-Workflow-Automation.html |
+| 65 | Freelancer | Make.com automation | Email Campaigns, Email automation and server settings are needed. | $2.00 | https://www.freelancer.com/projects/email-campaign/Email-Campaigns-Email-automation-server.html |
 
 ## Notes
 - Scores prioritize: (1) simple automation/scripting fit, (2) payout magnitude, (3) keyword relevance.
