@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-05-01 03:20 JST
+Generated: 2026-05-01 04:03 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -70,7 +70,7 @@ Generated: 2026-05-01 03:20 JST
 | 65 | Freelancer | Make.com automation | Clone Enfieldshop.ru to English Site | I need Enfieldshop.ru duplicated onto Enfieldshop.com, keeping the current look  | https://www.freelancer.com/projects/web-development/Clone-Enfieldshop-English-Site.html |
 | 65 | Freelancer | Make.com automation | Fintech Marketing Automation &amp; Campaigns | I run a credit-management fintech (www.credityoda.ai) and I’m ready to tighten e | https://www.freelancer.com/projects/digital-marketing/Fintech-Marketing-Automation-Campaigns.html |
 | 65 | Freelancer | Make.com automation | TikTok Automation Setup | I need an automation setup for social media management, specifically on TikTok.  | https://www.freelancer.com/projects/automation/TikTok-Automation-Setup.html |
-| 65 | Freelancer | Make.com automation | Ongoing Google Sheets Workflow Automation | I run an e-commerce operation that lives inside Google Sheets. Right now a lot o | https://www.freelancer.com/projects/google-sheets/Ongoing-Google-Sheets-Workflow.html |
+| 65 | Freelancer | Data processing API | TallyPrime BOM Query TDL | I need a custom TDL that lets me pick several stock items—quickly, through a sea | https://www.freelancer.com/projects/excel/TallyPrime-BOM-Query-TDL.html |
 | 65 | Freelancer | Data processing API | MahaRERA Data Extraction &amp; Processing | I am an independent professional reaching out to enquire about your data extract | https://www.freelancer.com/projects/data-extraction/MahaRERA-Data-Extraction-Processing.html |
 
 ## Notes
