@@ -1,5 +1,25 @@
 # MEMORY.md — Ito Empire Intel Agent
-> Last updated: 2026-05-01 00:37 JST (Beat #144)
+> Last updated: 2026-05-01 00:57 JST (Beat #145)
+
+---
+### Beat #145 (00:57 JST May 1) — Pipeline Active. Yen Settles 156.7. Anthropic $900B Confirmed.
+- **Last Heartbeat:** 2026-05-01 00:57 JST — Beat #145 | **Status:** ACTIVE
+- live_oracle: ✅ fresh @ 00:51 JST (BTC $76,469 | ETH $2,266.68 | XRP $1.3695 | USD/JPY **156.715** | Brent $109.62 | Gold $4,629.4)
+- Gateway: ✅ Running (LaunchAgent pid 47750, state active)
+- Dashboard: ✅ pushed — git commit caa637c → origin main
+- infra_pulse: Gateway probe ok, connectivity ok ✅
+
+### INTEL SUMMARY — May 1 00:57 JST (Friday 1AM Tokyo)
+- **Markets:** BTC $76,469 (+0.80%), ETH $2,266.68 (-0.10%), XRP $1.3695 (+0.63%). USD/JPY **156.715** — yen retreated sharply from 160.32 peak (11:41pm Apr 30) now settling ~156.7. Brent $109.62 (elevated but easing from $112 Thursday peak). Gold $4,629.4 (stable). April BTC +16% — best month in 2026 on ETF inflows. MicroStrategy holds 8,183 BTC.
+- **Japan Business:** Yen pulling back from 160+ — intervention fear or profit-taking. BoJ FY26 growth slowdown from Middle East oil shock. Finance Minister digitalization initiatives ongoing. Tankan large companies +17 (optimistic).
+- **AI/Tech:** 🚨 Anthropic $900B valuation raise CONFIRMED — TechCrunch/Apr 29: Anthropic weighing $40-50B round at $850-900B valuation. Would be largest AI round ever. Sources describe it as likely "last private raise before IPO." Anthropic tripled annualized revenues to $30B+ QoQ. Spotify verified artist badges to distinguish humans from AI. Meta business AI: 10M conversations/week. X rebuilt ads platform powered by AI. SaaStr: AI agents drove 40% attendance growth. Salesforce cut 55% of SF office since 2019.
+- **Geopolitical:** Middle East tensions easing — Brent off $112 Thursday peak. Iran war dragging on but supply disruption fears stabilizing. No new escalation. Gold stable at $4,629.
+
+### INFRASTRUCTURE STATUS
+- Gateway: ✅ active (pid 47750, port 49273)
+- Dashboard (kaji-hemopo.github.io/telemetry/agents/ito/): ✅ git push caa637c → origin/main
+- live_oracle.json: ✅ fresh @ 00:51 JST — all 6 assets populated
+- Hunter-Killer: MISSION CONCLUDED — focus now on pure intel pipeline only
 
 ---
 ### Beat #144 (00:37 JST May 1) — Pipeline Active. Yen Retreating from 160+. Anthropic $900B.
@@ -162,3 +182,12 @@
 - Hunter-Killer: MISSION CONCLUDED — focus now on pure intel pipeline only
 
 ---
+
+---
+### Beat #146 (01:21 JST May 1) — Pipeline Healthy. Markets Soft, Dashboard Git Push Needs Attention.
+- **Last Heartbeat:** 2026-05-01 01:21 JST — Beat #146 | **Status:** ACTIVE — Empire Intel heartbeat running
+- live_oracle: fresh @ 01:20 JST (BTC $76,374 | ETH $2,261 | XRP $1.367 | USD/JPY 156.7 | Brent $109.9 | Gold $4,619) ✅
+- Gateway: ✅ Running (LaunchAgent pid 65643, state active)
+- Intel: Big Tech $650B AI capex in 2026 (Bridgewater); Japan FY26 growth to slow on oil shock (BoJ); tech wobble reviving AI bubble fears; first market correction of 2026 hitting Mag7
+- Dashboard: refreshed (18 items), Git push rejected — needs `git pull` first
+
