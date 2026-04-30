@@ -2,31 +2,31 @@
 > Last updated: 2026-05-01 05:26 JST (Beat #155)
 
 ---
-### Beat #155 (05:26 JST May 1) — 🚨 NEW: Trump Rejects Iran Offer. UAE Exits OPEC Today.
-- **Last Heartbeat:** 2026-05-01 05:26 JST — Beat #155 | **Status:** ACTIVE
-- live_oracle: ✅ fresh @ 05:20 JST (BTC $76,397.89 | ETH $2,263.8 | XRP $1.3691 | USD/JPY **156.551** | Brent **$111.21** | Gold $4,629.5)
+### Beat #156 (05:47 JST May 1) — 🚨 NEW: Trump Rejects Iran Offer. UAE Exits OPEC Today.
+- **Last Heartbeat:** 2026-05-01 05:47 JST — Beat #156 | **Status:** ACTIVE
+- live_oracle: ✅ fresh @ 05:40 JST (BTC $76,522.67 | ETH $2,265.09 | XRP $1.3706 | USD/JPY **156.575** | Brent **$111.21** | Gold $4,629.4)
 - Gateway: ✅ Running (LaunchAgent pid 65643, state active)
-- Dashboard: git commit ab4161e → workspace_ito
+- Dashboard: git commit 07d0510 → workspace_ito
 - infra_pulse: Gateway probe ok, connectivity ok ✅
 
-### INTEL SUMMARY — May 1 05:26 JST (Friday 5:26AM Tokyo)
+### INTEL SUMMARY — May 1 05:47 JST (Friday 5:47AM Tokyo)
 - **🚨 CRITICAL NEW INTEL — DUAL DEVELOPMENTS:**
   1. **Trump Rejected Iran Proposal:** Trump rejected Iran's proposal to reopen the Strait of Hormuz in exchange for shelving the nuclear issue. Trump demands nuclear curbs. US-Iran meeting by June 30 now unlikely (odds of no meeting: 16.2% YES). Iran threatens "painful response." Hormuz remains a chokepoint — this rejection closes the diplomatic off-ramp.
   2. **UAE Exits OPEC Today (May 1):** UAE officially exits OPEC+ after 60 years of membership. OPEC loses ~12% of total production. Guardian calls it "a win for Trump as oil cartel weakened." Structural shift in global oil architecture — OPEC+ coherence damaged at a time of peak Middle East risk.
-- **Markets:** BTC $76,397.89 (+0.99%), ETH $2,263.8 (+1.23%), XRP $1.3691 (+0.65%). USD/JPY **156.551** — yen steady ~156.5, well below 160 intervention zone. Brent **$111.21** — UP from $110.50 at 05:05 beat, climbing. Brent has risen ~$1.70 in 21 minutes — Brent trending toward $112. Gold $4,629.5 (stable). Markets thin pre-weekend JST.
+- **Markets:** BTC $76,522.67 (+1.02%), ETH $2,265.09 (+1.00%), XRP $1.3706 (+0.45%). USD/JPY **156.575** — yen steady ~156.5, well below 160 intervention zone. Brent **$111.21** — UP from $110.50 at 05:05 beat, climbing. Brent has risen ~$1.70 in 21 minutes — Brent trending toward $112. Gold $4,629.4 (stable). Markets thin pre-weekend JST.
 - **🚨 IRAN / OIL WATCH — ONGOING (ELEVATED):** Trump rejection closes diplomatic path. Hormuz proposal explicitly rejected — strait remains at risk. UAE exit today further destabilizes OPEC+ discipline. Brent climbing: $110.50 → $111.21. If US strikes Iranian nuclear facilities → Hormuz disruption + OPEC+ fractured → $150+ scenario amplified. Weekend: no US markets to absorb shock.
-- **Japan Business:** USD/JPY 156.551 — stable. BoJ monitoring Middle East escalation + oil price climb. Oil at $111+ adds to FY26 growth headwinds. Vanguard maintains BoJ rate forecast: 1.25% by year-end (two hikes in 2026).
+- **Japan Business:** USD/JPY 156.575 — stable. BoJ monitoring Middle East escalation + oil price climb. Oil at $111+ adds to FY26 growth headwinds. Vanguard maintains BoJ rate forecast: 1.25% by year-end (two hikes in 2026).
 - **Geopolitical:** Trump rejected Iran's Hormuz-for-nuclear-deal offer — Iran threatened painful response if attacks resume. US-Iran military briefing still pending. Deadlock confirmed. UAE OPEC exit adds geopolitical dimension to oil markets.
 
 ### INFRASTRUCTURE STATUS
 - Gateway: ✅ active (pid 65643, port 49273)
-- Dashboard: git commit ab4161e pushed to workspace_ito
-- live_oracle.json: ✅ fresh @ 05:20 JST — all 6 assets populated
+- Dashboard: git commit 07d0510 pushed to workspace_ito
+- live_oracle.json: ✅ fresh @ 05:40 JST — all 6 assets populated
 - infra_pulse: Gateway probe ok, connectivity ok ✅
 - Hunter-Killer: MISSION CONCLUDED — pure intel pipeline only
 
 ---
-### Beat #154 (05:05 JST May 1) — Pipeline Active. Friday Morning. Weekend Watch.
+### Beat #155 (05:26 JST May 1) — Pipeline Active. Friday Morning. Weekend Watch.
 - **Last Heartbeat:** 2026-05-01 05:05 JST — Beat #154 | **Status:** ACTIVE
 - live_oracle: ✅ fresh @ 05:00 JST (BTC $76,411.27 | ETH $2,261.88 | XRP $1.3706 | USD/JPY **156.56** | Brent **$110.63** | Gold $4,632.9)
 - Gateway: ✅ Running (LaunchAgent pid 65643, state active)
