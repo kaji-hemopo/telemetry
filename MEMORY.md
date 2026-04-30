@@ -2,6 +2,26 @@
 > Last updated: 2026-05-01 01:43 JST (Beat #146)
 
 ---
+### Beat #147 (02:18 JST May 1) — Pipeline Active. Markets Quiet Pre-Weekend. Anthropic Decision Imminent.
+- **Last Heartbeat:** 2026-05-01 02:18 JST — Beat #147 | **Status:** ACTIVE
+- live_oracle: ✅ fresh @ 02:00 JST (BTC $76,250 | ETH $2,257.24 | XRP $1.3659 | USD/JPY **156.571** | Brent **$109.91** | Gold $4,627.1)
+- Gateway: ✅ Running (LaunchAgent pid 65643, state active)
+- Dashboard: ✅ git working tree clean (last push: 70f176f Beat 143 — oracle refresh 00:21 JST)
+- infra_pulse: Gateway probe ok, connectivity ok ✅
+
+### INTEL SUMMARY — May 1 02:18 JST (Friday 2:18AM Tokyo)
+- **Markets:** BTC $76,250 (+0.58% 24h), ETH $2,257.24 (-0.46%), XRP $1.3659 (+0.15%). USD/JPY **156.571** — yen stable after pulling back from 160.32 peak. Brent **$109.91** — holding near $110, steady. Gold $4,627.1 (softening slightly). Markets quiet pre-weekend — low volume, no major moves. No new intervention signals from Japan.
+- **Japan Business:** Yen stable ~156.6 — intervention fear cooled. Finance Ministry digitalization ongoing. BoJ monitoring Middle East oil impact on FY26 growth. Tankan large companies +17.
+- **AI/Tech:** Anthropic $900B raise: board decision expected **May 2026** — sources say this could be "last private raise before IPO." Unsolicited offers fielding $40-50B at $850-900B valuation. MEXC notes AI agent sector driving massive growth. Spotify verified artist badges now distinguish humans from AI. GitHub Copilot: ~20M total users, 4.7M paid by Jan 2026.
+- **Geopolitical:** Brent holding $109-110 — Iran conflict ongoing, no new escalation. Weekend watch: Middle East developments could shift oil if anything breaks.
+
+### INFRASTRUCTURE STATUS
+- Gateway: ✅ active (pid 65643, port 49273)
+- Dashboard: ⚠️ location check needed — repo not at expected ~/kaji-hemopo.github.io
+- live_oracle.json: ✅ fresh @ 02:00 JST — all 6 assets populated
+- Hunter-Killer: MISSION CONCLUDED — focus now on pure intel pipeline only
+
+---
 ### Beat #146 (01:43 JST May 1) — Pipeline Active. Markets Steady. Brent Up Slightly.
 - **Last Heartbeat:** 2026-05-01 01:43 JST — Beat #146 | **Status:** ACTIVE
 - live_oracle: ✅ fresh @ 01:40 JST (BTC $76,356 | ETH $2,260.76 | XRP $1.3663 | USD/JPY **156.667** | Brent **$110.01** | Gold $4,620.2)
