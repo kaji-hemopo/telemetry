@@ -1121,7 +1121,7 @@
     <div class="page-title">
      Intelligence Stream
      <span class="timestamp">
-      2026-04-30 21:20 JST
+      2026-04-30 21:40 JST
      </span>
     </div>
     <div class="controls-right">
@@ -1851,154 +1851,291 @@
    </div>
    <!-- TAB 2: MARKETS -->
    <!-- TAB 2: MARKETS — Intel View (No Charts) -->
-<div class="tab-content" id="tab-markets">
-  <div class="markets-intel-wrapper">
-
-    <!-- SECTION A: Market Intel Grid -->
-    <div class="markets-section-header">
-      <span class="section-eyebrow">LIVE ORACLE</span>
-      <h2 class="markets-section-title">Market Intel</h2>
-      <span class="markets-timestamp" id="markets-timestamp">— JST</span>
-    </div>
-
-    <div class="market-intel-grid" id="market-intel-grid">
+   <div class="tab-content" id="tab-markets">
+    <div class="markets-intel-wrapper">
+     <!-- SECTION A: Market Intel Grid -->
+     <div class="markets-section-header">
+      <span class="section-eyebrow">
+       LIVE ORACLE
+      </span>
+      <h2 class="markets-section-title">
+       Market Intel
+      </h2>
+      <span class="markets-timestamp" id="markets-timestamp">
+       — JST
+      </span>
+     </div>
+     <div class="market-intel-grid" id="market-intel-grid">
       <!-- Populated by JS from live_oracle.json -->
       <div class="market-intel-card" id="mkt-btc">
-        <div class="mi-header">
-          <span class="mi-symbol">BTC</span>
-          <span class="mi-badge-crypto">Crypto</span>
-        </div>
-        <div class="mi-price" id="mi-btc-price">—</div>
-        <div class="mi-change" id="mi-btc-change">—</div>
-        <div class="mi-range">
-          <span>H: <span id="mi-btc-high">—</span></span>
-          <span>L: <span id="mi-btc-low">—</span></span>
-        </div>
+       <div class="mi-header">
+        <span class="mi-symbol">
+         BTC
+        </span>
+        <span class="mi-badge-crypto">
+         Crypto
+        </span>
+       </div>
+       <div class="mi-price" id="mi-btc-price">
+        —
+       </div>
+       <div class="mi-change" id="mi-btc-change">
+        —
+       </div>
+       <div class="mi-range">
+        <span>
+         H:
+         <span id="mi-btc-high">
+          —
+         </span>
+        </span>
+        <span>
+         L:
+         <span id="mi-btc-low">
+          —
+         </span>
+        </span>
+       </div>
       </div>
-
       <div class="market-intel-card" id="mkt-eth">
-        <div class="mi-header">
-          <span class="mi-symbol">ETH</span>
-          <span class="mi-badge-crypto">Crypto</span>
-        </div>
-        <div class="mi-price" id="mi-eth-price">—</div>
-        <div class="mi-change" id="mi-eth-change">—</div>
-        <div class="mi-range">
-          <span>H: <span id="mi-eth-high">—</span></span>
-          <span>L: <span id="mi-eth-low">—</span></span>
-        </div>
+       <div class="mi-header">
+        <span class="mi-symbol">
+         ETH
+        </span>
+        <span class="mi-badge-crypto">
+         Crypto
+        </span>
+       </div>
+       <div class="mi-price" id="mi-eth-price">
+        —
+       </div>
+       <div class="mi-change" id="mi-eth-change">
+        —
+       </div>
+       <div class="mi-range">
+        <span>
+         H:
+         <span id="mi-eth-high">
+          —
+         </span>
+        </span>
+        <span>
+         L:
+         <span id="mi-eth-low">
+          —
+         </span>
+        </span>
+       </div>
       </div>
-
       <div class="market-intel-card" id="mkt-xrp">
-        <div class="mi-header">
-          <span class="mi-symbol">XRP</span>
-          <span class="mi-badge-crypto">Crypto</span>
-        </div>
-        <div class="mi-price" id="mi-xrp-price">—</div>
-        <div class="mi-change" id="mi-xrp-change">—</div>
-        <div class="mi-range">
-          <span>H: <span id="mi-xrp-high">—</span></span>
-          <span>L: <span id="mi-xrp-low">—</span></span>
-        </div>
+       <div class="mi-header">
+        <span class="mi-symbol">
+         XRP
+        </span>
+        <span class="mi-badge-crypto">
+         Crypto
+        </span>
+       </div>
+       <div class="mi-price" id="mi-xrp-price">
+        —
+       </div>
+       <div class="mi-change" id="mi-xrp-change">
+        —
+       </div>
+       <div class="mi-range">
+        <span>
+         H:
+         <span id="mi-xrp-high">
+          —
+         </span>
+        </span>
+        <span>
+         L:
+         <span id="mi-xrp-low">
+          —
+         </span>
+        </span>
+       </div>
       </div>
-
       <div class="market-intel-card" id="mkt-gold">
-        <div class="mi-header">
-          <span class="mi-symbol">XAU</span>
-          <span class="mi-badge-commodity">Commodity</span>
-        </div>
-        <div class="mi-price" id="mi-gold-price">—</div>
-        <div class="mi-change" id="mi-gold-change">—</div>
-        <div class="mi-range">
-          <span>Source: <span id="mi-gold-source">—</span></span>
-        </div>
+       <div class="mi-header">
+        <span class="mi-symbol">
+         XAU
+        </span>
+        <span class="mi-badge-commodity">
+         Commodity
+        </span>
+       </div>
+       <div class="mi-price" id="mi-gold-price">
+        —
+       </div>
+       <div class="mi-change" id="mi-gold-change">
+        —
+       </div>
+       <div class="mi-range">
+        <span>
+         Source:
+         <span id="mi-gold-source">
+          —
+         </span>
+        </span>
+       </div>
       </div>
-
       <div class="market-intel-card" id="mkt-brent">
-        <div class="mi-header">
-          <span class="mi-symbol">Brent</span>
-          <span class="mi-badge-commodity">Energy</span>
-        </div>
-        <div class="mi-price" id="mi-brent-price">—</div>
-        <div class="mi-change" id="mi-brent-change">—</div>
-        <div class="mi-range">
-          <span>Source: <span id="mi-brent-source">—</span></span>
-        </div>
+       <div class="mi-header">
+        <span class="mi-symbol">
+         Brent
+        </span>
+        <span class="mi-badge-commodity">
+         Energy
+        </span>
+       </div>
+       <div class="mi-price" id="mi-brent-price">
+        —
+       </div>
+       <div class="mi-change" id="mi-brent-change">
+        —
+       </div>
+       <div class="mi-range">
+        <span>
+         Source:
+         <span id="mi-brent-source">
+          —
+         </span>
+        </span>
+       </div>
       </div>
-
       <div class="market-intel-card" id="mkt-usdjpy">
-        <div class="mi-header">
-          <span class="mi-symbol">USD/JPY</span>
-          <span class="mi-badge-forex">FX</span>
-        </div>
-        <div class="mi-price" id="mi-usdjpy-price">—</div>
-        <div class="mi-change" id="mi-usdjpy-change">—</div>
-        <div class="mi-range">
-          <span>Source: <span id="mi-usdjpy-source">—</span></span>
-        </div>
+       <div class="mi-header">
+        <span class="mi-symbol">
+         USD/JPY
+        </span>
+        <span class="mi-badge-forex">
+         FX
+        </span>
+       </div>
+       <div class="mi-price" id="mi-usdjpy-price">
+        —
+       </div>
+       <div class="mi-change" id="mi-usdjpy-change">
+        —
+       </div>
+       <div class="mi-range">
+        <span>
+         Source:
+         <span id="mi-usdjpy-source">
+          —
+         </span>
+        </span>
+       </div>
       </div>
-    </div>
-
-    <div class="market-note-row">
-      <span class="market-note-label">Last oracle update:</span>
-      <span class="market-note-value" id="oracle-updated">—</span>
-    </div>
-
-    <!-- SECTION B: Macro Radar -->
-    <div class="markets-section-header" style="margin-top:40px;">
-      <span class="section-eyebrow">REGIME INDICATORS</span>
-      <h2 class="markets-section-title">Macro Radar</h2>
-    </div>
-
-    <div class="macro-radar-grid">
+     </div>
+     <div class="market-note-row">
+      <span class="market-note-label">
+       Last oracle update:
+      </span>
+      <span class="market-note-value" id="oracle-updated">
+       —
+      </span>
+     </div>
+     <!-- SECTION B: Macro Radar -->
+     <div class="markets-section-header" style="margin-top:40px;">
+      <span class="section-eyebrow">
+       REGIME INDICATORS
+      </span>
+      <h2 class="markets-section-title">
+       Macro Radar
+      </h2>
+     </div>
+     <div class="macro-radar-grid">
       <div class="macro-card">
-        <div class="macro-label">Risk-On / Risk-Off</div>
-        <div class="macro-value" id="macro-risk">—</div>
-        <div class="macro-sub">BTC vs Gold correlation</div>
+       <div class="macro-label">
+        Risk-On / Risk-Off
+       </div>
+       <div class="macro-value" id="macro-risk">
+        —
+       </div>
+       <div class="macro-sub">
+        BTC vs Gold correlation
+       </div>
       </div>
       <div class="macro-card">
-        <div class="macro-label">Crypto Dominance</div>
-        <div class="macro-value" id="macro-btcdom">—</div>
-        <div class="macro-sub">BTC market cap share</div>
+       <div class="macro-label">
+        Crypto Dominance
+       </div>
+       <div class="macro-value" id="macro-btcdom">
+        —
+       </div>
+       <div class="macro-sub">
+        BTC market cap share
+       </div>
       </div>
       <div class="macro-card">
-        <div class="macro-label">USD Strength</div>
-        <div class="macro-value" id="macro-dxy">—</div>
-        <div class="macro-sub">DXY Index</div>
+       <div class="macro-label">
+        USD Strength
+       </div>
+       <div class="macro-value" id="macro-dxy">
+        —
+       </div>
+       <div class="macro-sub">
+        DXY Index
+       </div>
       </div>
       <div class="macro-card">
-        <div class="macro-label">US 10Y Yield</div>
-        <div class="macro-value" id="macro-10y">—</div>
-        <div class="macro-sub">Treasury benchmark</div>
+       <div class="macro-label">
+        US 10Y Yield
+       </div>
+       <div class="macro-value" id="macro-10y">
+        —
+       </div>
+       <div class="macro-sub">
+        Treasury benchmark
+       </div>
       </div>
       <div class="macro-card">
-        <div class="macro-label">VIX (Fear)</div>
-        <div class="macro-value" id="macro-vix">—</div>
-        <div class="macro-sub">CBOE volatility</div>
+       <div class="macro-label">
+        VIX (Fear)
+       </div>
+       <div class="macro-value" id="macro-vix">
+        —
+       </div>
+       <div class="macro-sub">
+        CBOE volatility
+       </div>
       </div>
       <div class="macro-card">
-        <div class="macro-label">Gold Signal</div>
-        <div class="macro-value" id="macro-gold-signal">—</div>
-        <div class="macro-sub">Breakout / Range / Retreat</div>
+       <div class="macro-label">
+        Gold Signal
+       </div>
+       <div class="macro-value" id="macro-gold-signal">
+        —
+       </div>
+       <div class="macro-sub">
+        Breakout / Range / Retreat
+       </div>
       </div>
-    </div>
-
-    <!-- SECTION C: Economic Calendar -->
-    <div class="markets-section-header" style="margin-top:40px;">
-      <span class="section-eyebrow">THIS WEEK</span>
-      <h2 class="markets-section-title">Economic Calendar</h2>
-    </div>
-
-    <div class="econ-calendar" id="econ-calendar">
+     </div>
+     <!-- SECTION C: Economic Calendar -->
+     <div class="markets-section-header" style="margin-top:40px;">
+      <span class="section-eyebrow">
+       THIS WEEK
+      </span>
+      <h2 class="markets-section-title">
+       Economic Calendar
+      </h2>
+     </div>
+     <div class="econ-calendar" id="econ-calendar">
       <div class="econ-loading">
-        <div class="econ-spinner"></div>
-        <span>Loading calendar...</span>
+       <div class="econ-spinner">
+       </div>
+       <span>
+        Loading calendar...
+       </span>
       </div>
+     </div>
     </div>
-
-  </div>
-</div>
-<!-- TAB 3: ALERTS + RADAR -->
+   </div>
+   <!-- TAB 3: ALERTS + RADAR -->
    <div class="tab-content" id="tab-venture">
     <div class="ventures-grid" id="ventures-grid">
      <div style="margin: 30px 0 20px 0; border-bottom: 2px solid #00daf3; padding-bottom: 10px;">
