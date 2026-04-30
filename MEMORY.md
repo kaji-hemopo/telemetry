@@ -2,25 +2,42 @@
 > Last updated: 2026-05-01 03:21 JST (Beat #149)
 
 ---
-### Beat #149 (03:21 JST May 1) — Pipeline Active. Markets Steady Pre-Weekend. Brent $109.4.
-- **Last Heartbeat:** 2026-05-01 03:21 JST — Beat #149 | **Status:** ACTIVE
-- live_oracle: ✅ fresh @ 03:22 JST (BTC $76,405 | ETH $2,259.49 | XRP $1.3697 | USD/JPY **156.348** | Brent **$109.36** | Gold $4,635.1)
+### Beat #150 (03:41 JST May 1) — 🚨 CRITICAL: Brent $125+ Wartime High. Trump Iran Briefing.
+- **Last Heartbeat:** 2026-05-01 03:41 JST — Beat #150 | **Status:** ACTIVE
+- live_oracle: ✅ fresh @ 03:40 JST (BTC $76,307 | ETH $2,258.29 | XRP $1.3696 | USD/JPY **156.328** | Brent **$110.55** | Gold $4,634.1)
 - Gateway: ✅ Running (LaunchAgent pid 65643, state active)
-- Dashboard: ✅ git status clean, up to date with origin/main
+- Dashboard: ✅ git pull --rebase + push 54fb358→ origin/main ✅
 - infra_pulse: OK:9 WARN:1 FAIL:0 ✅
 
-### INTEL SUMMARY — May 1 03:21 JST (Friday 3:21AM Tokyo)
-- **Markets:** BTC $76,405 (+1.68% 24h), ETH $2,259.49 (+1.16%), XRP $1.3697 (+1.51%). USD/JPY **156.348** — yen stable at ~156.3, well below 160 intervention zone. Brent **$109.36** — steady near $109, holding firm from $110+ Thursday peak. Gold $4,635.1 (stable). Markets quiet pre-weekend — very low volume, no major moves. No intervention signals.
-- **Japan Business:** Yen stable ~156.3 — intervention fear fully cooled overnight. BoJ kept rate at 0.75% assessing Middle East oil impact on FY26. Finance Minister Katayama signaled intervention preparedness but no action needed at current levels. Tankan large companies +17. Japan PM held phone talks with Iran President Pezeshkian. Small/midsize business sentiment at 3-year low. Japan's financial watchdog ordering MetLife Japan to respond to data breach allegations.
-- **AI/Tech:** Anthropic $900B raise CONFIRMED — decision expected May 2026. Fielding $40-50B offers at $850-900B valuation. Would be largest AI round ever, final private raise before IPO. $40B revenue run rate. Claude Connectors launched (9 integrations). AI coding agents deleting codebases — industry debate ongoing. 137 Ventures raised $700M (SpaceX, Anduril). Stripe Link launches digital wallet for AI agents. Microsoft 365 Copilot: 20M+ paying users. Spotify verified artist badges to distinguish humans from AI.
-- **Geopolitical:** Brent steady $109-110 — Iran conflict ongoing, no new escalation but no resolution. US-Iran talks deadlocked. Markets watching for weekend developments.
+### INTEL SUMMARY — May 1 03:41 JST (Friday 3:41AM Tokyo)
+- **🚨 CRITICAL: Brent $125+ — Wartime High, 4-Year Peak**
+  - Brent hit **$126/barrel** overnight (Apr 30) — highest since 2022.
+  - Axios: Trump to be briefed on **Iran military options** — including potential strike on nuclear facilities.
+  - Oil briefly touched **$125** Thursday, prompts warnings Iran risks **underpriced** in markets.
+  - Brent +55% since Iran war began. Current oracle reads $110.55 but market spiked to $125-126 overnight — significant discrepancy to investigate.
+  - CNBC: "Oil hits wartime high amid report Trump to be briefed on Iran action."
+  - NBC: "Brent rose to more than $126 at one point overnight."
+  - BBC: "Oil price reaches four-year high."
+  - If US strikes Iran nuclear sites — oil flows through Strait of Hormuz at risk → $150+ scenario plausible.
+- **Markets:** BTC $76,307 (+1.35%), ETH $2,258.29 (+1.27%), XRP $1.3696 (+1.18%). USD/JPY **156.328** — yen stable, well below 160 intervention zone. Gold **$4,634.1** (elevated). Markets pre-weekend quiet but oil volatility masking underlying tension.
+- **Japan Business:** BoJ kept rate at 0.75% (Apr 27) — 3 dissenters wanted hike to 1.0%. FY26 growth expected to slow due to Middle East oil shock. Vanguard forecasts BoJ to raise twice more in 2026 to 1.25% by year-end. Yen stable at 156.3 — intervention fear minimal for now.
+- **AI/Tech:** Anthropic $900B raise CONFIRMED — board decision expected May 2026. $50B potential round, last private raise before IPO. $61.5B valuation just 12 months ago → now $900B (15x). Claude Connectors launched (9 integrations). AI coding agents controversy — Cursor agent wiped company production DB.
+- **Geopolitical:** 🚨 IRAN — Trump to be briefed on military options. US-Iran war escalating. Hormuz strait at risk. Oil交易市场 pricing in full blockade scenario. Weekend watching critical.
 
 ### INFRASTRUCTURE STATUS
 - Gateway: ✅ active (pid 65643, port 49273)
-- Dashboard (kaji-hemopo.github.io/telemetry/agents/ito/): ✅ clean, up to date
-- live_oracle.json: ✅ fresh @ 03:22 JST — all 6 assets populated
+- Dashboard (kaji-hemopo.github.io/telemetry/agents/ito/): ✅ pull --rebase + push 54fb358→01dc0fd origin/main
+- live_oracle.json: ✅ fresh @ 03:40 JST — all 6 assets populated
 - infra_pulse: OK:9 WARN:1 FAIL:0 ✅
 - Hunter-Killer: MISSION CONCLUDED — pure intel pipeline only
+
+### ⚠️ BEARS WATCH — May 1 03:41 JST
+- Brent $125-126 wartime high: Trump Iran military briefing. **HIGH RISK.**
+- Oracle shows $110.55 but market spiked to $126 overnight — discrepancy.
+- If US strikes Iran nuclear sites → Hormuz disruption → $150+ oil → global shock.
+- Weekend: Iran conflict could escalate further. Markets closed but oil continues.
+- Vanguard: BoJ to hike to 1.25% by year-end — yen strength incoming.
+- USD/JPY: 156.3 stable but direction unclear with oil shock in progress.
 
 ---
 ### Beat #148 (02:40 JST May 1) — Pipeline Active. Brent Holds $109.5. Dashboard Rebased & Pushed.
