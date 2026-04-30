@@ -1,5 +1,49 @@
 # MEMORY.md — Ito Empire Intel Agent
-> Last updated: 2026-05-01 04:04 JST (Beat #151)
+> Last updated: 2026-05-01 04:44 JST (Beat #153)
+
+---
+### Beat #153 (04:44 JST May 1) — Pipeline Active. Markets Steady. Weekend Watch.
+- **Last Heartbeat:** 2026-05-01 04:44 JST — Beat #153 | **Status:** ACTIVE
+- live_oracle: ✅ fresh @ 04:44 JST (BTC $76,493.12 | ETH $2,265.96 | XRP $1.373 | USD/JPY **156.445** | Brent **$110.51** | Gold $4,630.5)
+- Gateway: ✅ Running (LaunchAgent pid 65643, state active)
+- Dashboard: ✅ git pull --rebase + push 9538ea7 → origin/main
+- infra_pulse: Gateway probe ok, connectivity ok ✅
+
+### INTEL SUMMARY — May 1 04:44 JST (Friday 4:44AM Tokyo)
+- **Markets:** BTC $76,493.12 (+1.40% 24h), ETH $2,265.96 (+1.70%), XRP $1.373 (+1.48%). USD/JPY **156.445** — yen stable at ~156.4, holding well below 160 intervention zone. Brent **$110.51** — firm near $110, settling from overnight $125-126 spike. Gold $4,630.5 (stable). Markets pre-weekend quiet, very low volume. No new Iran escalation since Thursday's wartime spike.
+- **🚨 IRAN / OIL WATCH — ONGOING:** Brent settled ~$110 post overnight spike to $125-126. No new military escalation reported overnight. Oracle confirms $110.51 — consistent with post-spike settling. Weekend watching critical — no US markets to absorb shock if Iran developments emerge. Hormuz still at risk if hostilities resume.
+- **Anthropic $900B:** CONFIRMED — CNBC Apr 30: Anthropic in talks for $50B round at $900B valuation. Board decision expected May 2026. $61.5B → $900B (15x in 12 months). Likely last private raise before IPO.
+- **Japan Business:** USD/JPY 156.445 — stable. BoJ monitoring oil shock impact on FY26 growth. Vanguard forecasts BoJ hikes to 1.25% by year-end. Finance Ministry digitalization ongoing.
+- **Geopolitical:** Iran conflict at steady simmer — no new escalation overnight. Trump briefing on Iran military options confirmed but no action taken yet. Markets pricing in elevated oil risk without new catalyst.
+
+### INFRASTRUCTURE STATUS
+- Gateway: ✅ active (pid 65643, port 49273)
+- Dashboard (kaji-hemopo.github.io/telemetry/agents/ito/): ✅ git push 9538ea7 → origin/main
+- live_oracle.json: ✅ fresh @ 04:44 JST — all 6 assets populated
+- infra_pulse: Gateway probe ok, connectivity ok ✅
+- Hunter-Killer: MISSION CONCLUDED — pure intel pipeline only
+
+---
+### Beat #152 (04:24 JST May 1)
+- **Last Heartbeat:** 2026-05-01 04:24 JST — Beat #152 | **Status:** ACTIVE
+- live_oracle: ✅ fresh @ 04:20 JST (BTC $76,426.65 | ETH $2,263.12 | XRP $1.372 | USD/JPY **156.474** | Brent **$110.77** | Gold $4,638.4)
+- Gateway: ✅ Running (LaunchAgent pid 65643, state active)
+- Dashboard: ✅ git merge conflict resolved + push 9f94a41 → origin/main
+- infra_pulse: Gateway probe ok, connectivity ok ✅
+
+### INTEL SUMMARY — May 1 04:24 JST (Friday 4:24AM Tokyo)
+- **Markets:** BTC $76,426.65 (+1.19% 24h), ETH $2,263.12 (+1.28%), XRP $1.372 (+1.09%). USD/JPY **156.474** — yen stable at ~156.5, holding well below 160 intervention zone. Brent **$110.77** — firm near $110, settling from overnight $125-126 spike. Gold $4,638.4 (stable). Markets pre-weekend quiet, very low volume. No new Iran escalation since Thursday's wartime spike.
+- **🚨 IRAN / OIL WATCH — ONGOING:** Brent settled ~$110 post overnight spike to $125-126. No new military escalation reported overnight. Oracle confirms $110.77 — consistent with post-spike settling. Weekend watching critical — no US markets to absorb shock if Iran developments emerge. Hormuz still at risk if hostilities resume.
+- **Anthropic $900B:** CONFIRMED — CNBC/TechCrunch/SeekingAlpha Apr 29: Anthropic in talks for $50B round at $900B valuation. 733% surge since Oct 2025. Board decision expected May 2026. $61.5B → $900B (15x in 12 months). Tripled annualized revenues to $30B+ QoQ. Likely last private raise before IPO.
+- **Japan Business:** USD/JPY 156.474 — stable. BoJ monitoring oil shock impact on FY26 growth. Vanguard forecasts BoJ hikes to 1.25% by year-end. Finance Ministry digitalization ongoing.
+- **Geopolitical:** Iran conflict at steady simmer — no new escalation overnight. Trump briefing on Iran military options confirmed but no action taken yet. Markets pricing in elevated oil risk without new catalyst.
+
+### INFRASTRUCTURE STATUS
+- Gateway: ✅ active (pid 65643, port 49273)
+- Dashboard (kaji-hemopo.github.io/telemetry/agents/ito/): ✅ git push 9f94a41 → origin/main
+- live_oracle.json: ✅ fresh @ 04:20 JST — all 6 assets populated
+- infra_pulse: Gateway probe ok, connectivity ok ✅
+- Hunter-Killer: MISSION CONCLUDED — pure intel pipeline only
 
 ---
 ### Beat #151 (04:04 JST May 1) — Pipeline Active. Brent $110.73. BTC Stable. Dashboard Pushed.

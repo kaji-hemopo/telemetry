@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-30T18:02:26.978Z",
+  "updatedAt": "2026-04-30T19:27:28.626Z",
   "entries": {
     "memory:memory/2026-04-28.md:407:421": {
       "key": "memory:memory/2026-04-28.md:407:421",
@@ -722,13 +722,13 @@
       "endLine": 38,
       "source": "memory",
       "snippet": "# Ito MEMORY Archive — 2026-04-28 Archived from MEMORY.md during Beat 1168 TO compaction (Kaji COO) Contains: stale delegation context + duplicate Beat #21-22 entries + Niches #37-#42 --- **Competitors:** LaunchDarkly/Optimizely show flag status but no velocity benchmarking, stuck experiment detection, or throughput prediction. --- ## 🔴 STALE CONTEXT — EMPPIRE DELEGATION SYSTEM (Kaji/Titan) *SAITO-processor items — tracked here for context* - **Titan PT Launch:** ENFORCED PARKED · window closed Sat Apr 18 09:00 JST · cron DISABLED · 30+ nudges · ZERO response · reactivate: `\"go Titan\"` - **Empire Morning Briefing v3:** ⏳ PENDING JAX ~202h (8.4d+) · draft ready · deliver with `\"Go Tele",
-      "recallCount": 7,
+      "recallCount": 8,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3.479302409291267,
+      "totalScore": 3.9992672890424728,
       "maxScore": 0.5367811232805252,
       "firstRecalledAt": "2026-04-28T14:35:23.846Z",
-      "lastRecalledAt": "2026-04-30T17:41:00.952Z",
+      "lastRecalledAt": "2026-04-30T19:27:28.626Z",
       "queryHashes": [
         "acdd8e2f81e7",
         "e1ed89beaed2",
@@ -736,7 +736,8 @@
         "148cb9ce0d63",
         "0500f8c3d6d5",
         "1b2cac3b0820",
-        "0521a81f9b71"
+        "0521a81f9b71",
+        "3941092abd41"
       ],
       "recallDays": [
         "2026-04-28",
