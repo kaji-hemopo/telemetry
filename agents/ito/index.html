@@ -882,103 +882,183 @@
         }
 
         /* ===== MOBILE OPTIMIZATIONS ===== */
-        @media (max-width: 768px) {
-            .container {
-                padding: 12px;
-            }
-            
-            .header-controls {
-                flex-direction: column;
-                align-items: stretch;
-            }
-            
-            .controls-right {
-                width: 100%;
-            }
-            
-            .search-bar {
-                min-width: 0;
-            }
-            
-            .tab-bar {
-                padding: 8px 0;
-            }
-            
-            .tab {
-                padding: 10px 16px;
-                font-size: 13px;
-            }
-            
-            /* Grid adjustments for tablet */
-            .news-wall,
-            .markets-grid,
-            .ventures-grid {
-                grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            }
-            
-            .sub-tab-bar {
-                overflow-x: auto;
-                padding-bottom: 8px;
-                flex-wrap: nowrap;
-                -webkit-overflow-scrolling: touch;
-            }
-            
-            .sub-tab {
-                white-space: nowrap;
-                flex-shrink: 0;
-            }
-        }
-        
-        @media (max-width: 480px) {
-            .container {
-                padding: 8px;
-            }
-            
-            .page-title {
-                font-size: 20px;
-            }
-            
-            .tab {
-                padding: 8px 12px;
-                font-size: 12px;
-            }
-            
-            /* Single column layout for very small screens */
-            .news-wall,
-            .markets-grid,
-            .ventures-grid {
-                grid-template-columns: 1fr !important;
-            }
-            
-            .card {
-                padding: 12px;
-            }
-            
-            .card-title {
-                font-size: 15px;
-            }
-            
-            .card-summary {
-                font-size: 13px;
-            }
-            
-            .sub-tab-bar {
-                gap: 6px;
-            }
-            
-            .sub-tab {
-                padding: 6px 12px;
-                font-size: 12px;
-            }
-            
-            /* Ensure minimum tap target size */
-            button, .tab, .sub-tab, .refresh-btn {
-                min-height: 44px;
-                min-width: 44px;
-            }
-        }
-        
-        /* ===== ADDITIONAL STYLES FOR DYNAMIC DATA ===== */
+        /* ===== MOBILE OPTIMIZATION — 480px and below ===== */
+@media (max-width: 768px) {
+    .container {
+        padding: 12px;
+    }
+    .header-controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .controls-right {
+        width: 100%;
+    }
+    .search-bar {
+        min-width: 0;
+        width: 100%;
+    }
+    .tab-bar {
+        overflow-x: auto;
+        padding: 8px 4px;
+        flex-wrap: nowrap;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+    .tab-bar::-webkit-scrollbar { display: none; }
+    .tab {
+        padding: 10px 20px;
+        font-size: 13px;
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+    /* Sub-tabs horizontal scroll */
+    .sub-tab-bar {
+        overflow-x: auto;
+        padding-bottom: 8px;
+        flex-wrap: nowrap;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        gap: 6px;
+    }
+    .sub-tab-bar::-webkit-scrollbar { display: none; }
+    .sub-tab {
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+    /* News wall — 1 col on small tablets */
+    .news-wall {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 8px;
+    }
+    .page-title {
+        font-size: 18px;
+    }
+    .oracle-topbar {
+        padding: 0 12px;
+    }
+    .oracle-brand h1 {
+        font-size: 0.8rem;
+    }
+    .oracle-feed-pill {
+        display: none; /* hide on very small screens */
+    }
+    .tab-bar {
+        border-radius: 8px;
+    }
+    .tab {
+        padding: 8px 14px;
+        font-size: 11px;
+    }
+    /* FORCE single column on all grids for mobile */
+    .news-wall,
+    .market-intel-grid,
+    .macro-radar-grid,
+    .ventures-grid,
+    .ventures-grid > * {
+        grid-template-columns: 1fr !important;
+    }
+    /* Market intel cards — full width */
+    .market-intel-card {
+        padding: 14px;
+    }
+    .mi-price {
+        font-size: 20px;
+    }
+    /* Macro radar — 2 columns on mobile */
+    .macro-radar-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+    .macro-card {
+        padding: 12px;
+    }
+    .macro-value {
+        font-size: 16px;
+    }
+    /* Economic calendar — stack full width */
+    .econ-calendar {
+        gap: 6px;
+    }
+    .econ-event {
+        flex-wrap: wrap;
+        padding: 10px 12px;
+    }
+    .econ-date {
+        min-width: 60px;
+        font-size: 10px;
+    }
+    .econ-name {
+        font-size: 12px;
+        flex: 1 1 100%;
+        order: 3;
+        margin-top: 4px;
+    }
+    .econ-impact {
+        order: 2;
+        margin-left: auto;
+    }
+    .econ-previous, .econ-forecast {
+        font-size: 10px;
+    }
+    .econ-previous, .econ-forecast, .econ-time {
+        display: none; /* hide on mobile to save space */
+    }
+    /* Alerts tab stat boxes */
+    .ventures-grid > div[style*="grid-template-columns: repeat(3, 1fr)"] {
+        grid-template-columns: 1fr 1fr !important;
+    }
+    /* Market intel section header */
+    .markets-section-title {
+        font-size: 16px;
+    }
+    /* Alert stats grid — 3 col tablet, 1 col mobile */
+    .alert-stats-grid {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+    .markets-intel-wrapper {
+        padding: 2px 0 20px 0;
+    }
+    /* Single column cards */
+    .card {
+        padding: 12px;
+    }
+    .card-title {
+        font-size: 14px;
+    }
+    .card-summary {
+        font-size: 12px;
+    }
+    /* Min tap targets */
+    button, .tab, .sub-tab, .refresh-btn, a {
+        min-height: 44px;
+    }
+    .refresh-btn {
+        min-width: 80px;
+    }
+    .sub-tab {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+    /* Tab content padding */
+    .tab-content {
+        padding: 8px 0;
+    }
+    /* Ventures/Alert grid — 1 col */
+    .ventures-grid {
+        gap: 10px;
+    }
+    /* Width fix for grid children */
+    .ventures-grid > * {
+        min-width: 0;
+    }
+}
+
+        /* ===== ADDITIONAL STYLES FOR DYNAMIC DATA ===== */        /* ===== ADDITIONAL STYLES FOR DYNAMIC DATA ===== */
         .score-high {
             background: var(--accent-mint);
         }
@@ -2149,7 +2229,7 @@
        </span>
       </p>
      </div>
-     <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 20px;">
+     <div id="alert-stats-grid" class="alert-stats-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 20px;">
       <div style="background: var(--glass); border: 1px solid var(--border); border-radius: 8px; padding: 14px; text-align: center;">
        <div style="font-size: 24px; font-weight: 800; color: #00daf3;">
         0
