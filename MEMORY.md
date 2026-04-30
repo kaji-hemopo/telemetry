@@ -1,24 +1,25 @@
 # MEMORY.md — Ito Empire Intel Agent
-> Last updated: 2026-05-01 01:43 JST (Beat #146)
+> Last updated: 2026-05-01 02:40 JST (Beat #148)
 
 ---
-### Beat #147 (02:18 JST May 1) — Pipeline Active. Markets Quiet Pre-Weekend. Anthropic Decision Imminent.
-- **Last Heartbeat:** 2026-05-01 02:18 JST — Beat #147 | **Status:** ACTIVE
-- live_oracle: ✅ fresh @ 02:00 JST (BTC $76,250 | ETH $2,257.24 | XRP $1.3659 | USD/JPY **156.571** | Brent **$109.91** | Gold $4,627.1)
+### Beat #148 (02:40 JST May 1) — Pipeline Active. Brent Holds $109.5. Dashboard Rebased & Pushed.
+- **Last Heartbeat:** 2026-05-01 02:40 JST — Beat #148 | **Status:** ACTIVE
+- live_oracle: ✅ fresh @ 02:40 JST (BTC $76,164 | ETH $2,256.23 | XRP $1.3662 | USD/JPY **156.468** | Brent **$109.53** | Gold $4,631.0)
 - Gateway: ✅ Running (LaunchAgent pid 65643, state active)
-- Dashboard: ✅ git working tree clean (last push: 70f176f Beat 143 — oracle refresh 00:21 JST)
-- infra_pulse: Gateway probe ok, connectivity ok ✅
+- Dashboard: ✅ git rebase + push ba3845d → origin/main
+- infra_pulse: OK:9 WARN:1 FAIL:0 ✅
 
-### INTEL SUMMARY — May 1 02:18 JST (Friday 2:18AM Tokyo)
-- **Markets:** BTC $76,250 (+0.58% 24h), ETH $2,257.24 (-0.46%), XRP $1.3659 (+0.15%). USD/JPY **156.571** — yen stable after pulling back from 160.32 peak. Brent **$109.91** — holding near $110, steady. Gold $4,627.1 (softening slightly). Markets quiet pre-weekend — low volume, no major moves. No new intervention signals from Japan.
-- **Japan Business:** Yen stable ~156.6 — intervention fear cooled. Finance Ministry digitalization ongoing. BoJ monitoring Middle East oil impact on FY26 growth. Tankan large companies +17.
-- **AI/Tech:** Anthropic $900B raise: board decision expected **May 2026** — sources say this could be "last private raise before IPO." Unsolicited offers fielding $40-50B at $850-900B valuation. MEXC notes AI agent sector driving massive growth. Spotify verified artist badges now distinguish humans from AI. GitHub Copilot: ~20M total users, 4.7M paid by Jan 2026.
-- **Geopolitical:** Brent holding $109-110 — Iran conflict ongoing, no new escalation. Weekend watch: Middle East developments could shift oil if anything breaks.
+### INTEL SUMMARY — May 1 02:40 JST (Friday 2:40AM Tokyo)
+- **Markets:** BTC $76,164 (+0.24%), ETH $2,256 (-0.79%), XRP $1.3662 (+0.11%). USD/JPY **156.468** — yen stable at ~156.5, holding well below 160+ intervention zone. Brent **$109.53** — firm near $110, Middle East watching weekend. Gold $4,631 (steady). Markets quiet pre-weekend — low volume, no major moves. No intervention signals.
+- **Japan Business:** Yen stabilizing ~156.5 — intervention fear fully cooled. BoJ monitoring Middle East oil impact on FY26 growth. Tankan large companies +17. Finance Ministry digitalization ongoing.
+- **AI/Tech:** Stripe launches Link — digital wallet for AI agents to spend securely via approval flows. Salesforce crowdsourcing AI roadmap with enterprise customers. 137 Ventures raises $700M (SpaceX, Anduril). SaaStr: AI agents drove 40% attendance growth. Anthropic $900B raise: board decision expected May 2026 — last private raise before IPO.
+- **Geopolitical:** Brent holding $109-110 — Iran conflict ongoing, no new escalation. Watching for weekend developments.
 
 ### INFRASTRUCTURE STATUS
 - Gateway: ✅ active (pid 65643, port 49273)
-- Dashboard: ⚠️ location check needed — repo not at expected ~/kaji-hemopo.github.io
-- live_oracle.json: ✅ fresh @ 02:00 JST — all 6 assets populated
+- Dashboard: ✅ git rebase + push ba3845d → origin/main
+- live_oracle.json: ✅ fresh @ 02:40 JST — all 6 assets populated
+- infra_pulse: OK:9 WARN:1 FAIL:0 ✅
 - Hunter-Killer: MISSION CONCLUDED — focus now on pure intel pipeline only
 
 ---
@@ -62,25 +63,6 @@
 - Hunter-Killer: MISSION CONCLUDED — focus now on pure intel pipeline only
 
 ---
-### Beat #144 (00:37 JST May 1) — Pipeline Active. Yen Retreating from 160+. Anthropic $900B.
-- **Last Heartbeat:** 2026-05-01 00:37 JST — Beat #144 | **Status:** ACTIVE
-- live_oracle: ✅ fresh @ 00:37 JST (BTC $76,430 | ETH $2,265.54 | XRP $1.3703 | USD/JPY **156.65** | Brent $109.53 | Gold $4,634.3)
-- Gateway: ✅ Running (LaunchAgent pid 47750, state active)
-- Dashboard: ⚠️ git conflict resolved — pushed (56e01a9)
-- infra_pulse: manual check passed — Gateway active ✅
-
-### INTEL SUMMARY — May 1 00:37 JST (Friday Morning Tokyo)
-- **Markets:** BTC $76,430 (+0.35%), ETH $2,265.54 (-0.96%), XRP $1.3703 (+0.31%). USD/JPY **156.65** — yen retreated sharply from 160.32 peak (11:41pm Apr 30) back to ~156.6. Brent $109.53 (easing from $112 Thursday peak). Gold $4,634 (stable). CoinCodex: BTC target $82,214 by May 10. MEXC: BTC could hit $195K by end of 2026.
-- **Japan Business:** Yen pulling back from 160+ — watch for follow-through. BoJ FY26 growth slowdown from Middle East oil shock. Tankan large companies +17.
-- **AI/Tech:** 🚨 Anthropic seeking $50B raise at $900B valuation (TechCrunch, Apr 29) — board decision expected May. Microsoft 365 Copilot: 20M+ paid users. Google Cloud surpassed $20B but capacity-constrained. GitHub Copilot: ~20M total users, 4.7M paid by Jan 2026.
-- **Geopolitical:** Middle East tensions easing — Brent off $112 Thursday peak. No new escalation.
-
-### INFRASTRUCTURE STATUS
-- Gateway: ✅ active (pid 47750, port 49273)
-- Dashboard: ✅ conflict resolved — git push 56e01a9
-- live_oracle.json: ✅ fresh @ 00:37 JST — all 6 assets populated
-
----
 ### 🚨 ALERT — 23:41 JST Apr 30: USD/JPY +160.32 — Yen Intervention Watch Escalated
 - USD/JPY **160.32** — up from 156.8 just 20 min ago, Yahoo Finance confirms Apr 30 high 160.44
 - Brent **$110.01** — Goldman sees $90 avg on Middle East disruption
@@ -88,12 +70,15 @@
 
 ---
 ### RECENT BEATS
+- Beat #147: 02:18 JST May 1 — BTC $76,250, Brent $109.91, USD/JPY 156.571. ✅
+- Beat #146: 01:43 JST May 1 — USD/JPY 156.667, Brent $110.01, Gold $4,620. ✅
+- Beat #145: 00:57 JST May 1 — USD/JPY 156.715, Brent $109.62, Anthropic $900B confirmed. ✅
+- Beat #144: 00:37 JST May 1 — USD/JPY 156.65, Brent $109.53, Anthropic $900B. ✅
 - Beat #143: 00:21 JST May 1 — USD/JPY 156.7, Brent $109.8, Gold $4,634. ✅
-- Beat #142: 23:41 JST Apr 30 — USD/JPY 160.32, Brent $110.01. ✅
+- Beat #142: 23:41 JST Apr 30 — USD/JPY 160.32, Brent $110.01. ✅ (INTERVENTION WATCH)
 - Beat #141: 22:57 JST Apr 30 — USD/JPY 156.86, Brent $109.9, Gold $4,628. ✅
-- Beat #140: 22:57 JST Apr 30 — Brent $109.9, Yen intervention watch. ✅
 - Beat #139: 22:36 JST Apr 30 — USD/JPY 156.62, Brent $108.64, Claude Opus 4.7. ✅
-- Beat #138: 22:16 JST Apr 30 — oracle fresh. Dashboard push OK ✅
+- Beat #138: 22:16 JST Apr 30 — oracle fresh. Dashboard push OK. ✅
 - Beat #137: 21:53 JST Apr 30 — Nikkei -1.06%, Brent $109.74. ✅
 - Beat #136: 21:34 JST Apr 30 — USD/JPY 160.72. ✅
 - Beat #134: 21:06 JST Apr 30 — GCP Cloud Run artifact supply chain. ✅
