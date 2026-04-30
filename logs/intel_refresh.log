@@ -424,3 +424,65 @@ hint: Updates were rejected because th
    AI: 13
    Tech: 1
    World: 4
+/Users/jacksonhemopo/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+=== Ito Intel Refresh [2026-04-30 23:40 JST] ===
+  Fetching TechCrunch...
+    → 6 items
+  Fetching SaaStr...
+    → 6 items
+  Fetching The Verge...
+    → 6 items
+  Fetching Reuters World...
+    → 0 items
+  Dashboard HTML updated
+  ⚠️ Push failed: To github.com:kaji-hemopo/telemetry.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'github.com:kaji-hemopo/telemetry.git'
+hint: Updates were rejected because th
+
+✅ Done — 18 items across 6 categories
+   AI: 13
+   Tech: 1
+   World: 4
+/Users/jacksonhemopo/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+=== Ito Intel Refresh [2026-05-01 00:00 JST] ===
+  Fetching TechCrunch...
+    → 6 items
+  Fetching SaaStr...
+    → 6 items
+  Fetching The Verge...
+    → 6 items
+  Fetching Reuters World...
+    → 0 items
+  Dashboard HTML updated
+  ⚠️ Push failed: To github.com:kaji-hemopo/telemetry.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'github.com:kaji-hemopo/telemetry.git'
+hint: Updates were rejected because th
+
+✅ Done — 18 items across 6 categories
+   AI: 13
+   Tech: 1
+   World: 4
+/Users/jacksonhemopo/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+=== Ito Intel Refresh [2026-05-01 00:20 JST] ===
+  Fetching TechCrunch...
+    → 6 items
+  Fetching SaaStr...
+    → 6 items
+  Fetching The Verge...
+    → 6 items
+  Fetching Reuters World...
+    → 0 items
+  Dashboard HTML updated
+  ⚠️ Push failed: To github.com:kaji-hemopo/telemetry.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'github.com:kaji-hemopo/telemetry.git'
+hint: Updates were rejected because th
+
+✅ Done — 18 items across 6 categories
+   AI: 14
+   World: 4

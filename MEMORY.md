@@ -1,8 +1,28 @@
 # MEMORY.md — Ito Empire Intel Agent
-> Last updated: 2026-04-30 23:41 JST (Beat #142)
+> Last updated: 2026-05-01 00:21 JST (Beat #143)
 
 ---
-### 🚨 ALERT — 23:41 JST: USD/JPY +160.32 — Yen Intervention Watch Escalated
+### Beat #143 (00:21 JST May 1) — Pipeline Active. USD/JPY Easing Back to 156.7
+- **Last Heartbeat:** 2026-05-01 00:21 JST — Beat #143 | **Status:** ACTIVE
+- live_oracle: ✅ fresh @ 00:21 JST (BTC $76,442 | ETH $2,265 | XRP $1.370 | USD/JPY **156.7** | Brent $109.8 | Gold $4,634)
+- Gateway: ✅ Running (LaunchAgent pid 47750, state active)
+- Dashboard: ✅ pushed to kaji-hemopo.github.io/telemetry/agents/ito/ (git push 70f176f)
+- infra_pulse: OK:9 WARN:1 FAIL:0 ✅
+
+### INTEL SUMMARY — May 1 00:21 JST (Midnight Tokyo)
+- **Markets:** BTC $76,442 (+0.12%), ETH $2,265 (+0.22%), XRP $1.370 (+0.13%). USD/JPY **156.7** — retreated from 160.32 peak, now settling back to pre-spike levels. Brent $109.8 (still elevated but off $112 peak). Gold $4,634 (softening from $4,575). Tradingeconomics confirms Brent extended rally as Iran war drags on — trading above $112 Thursday. HSBC: USD/JPY convergence delayed but intervention caps upside.
+- **Japan Business:** BoJ projects FY26 growth slowdown due to Middle East oil shock (income hit). Finance Minister digitalization initiatives ongoing. Large companies feeling optimistic (Tankan: +17 from +15). HSBC says intervention risk keeps USD/JPY capped despite near-term delays.
+- **AI/Tech:** OpenAI + Anthropic briefed House Homeland Security on cyber-capable AI models. Anthropic revenue catching OpenAI for IPO positioning. Spotify verified artist badges to distinguish humans from AI. Salesforce cut 55% of SF office since 2019. Meta business AI: 10M conversations/week. X rebuilt ads platform powered by AI. SaaStr: AI agents drove 40% attendance growth at annual conference.
+- **Geopolitical:** Iran war dragging on — Brent held $112 Thursday amid supply disruption fears. Ceasefire initially spooked markets in April but oil resilient. Goldman sees $90 avg on Middle East disruption vs actual $110+ spot.
+
+### INFRASTRUCTURE STATUS
+- Gateway: ✅ active (pid 47750, port 49273)
+- Dashboard (kaji-hemopo.github.io/telemetry/agents/ito/): ✅ operational — git push 70f176f
+- live_oracle.json: ✅ fresh @ 00:21 JST — all 6 assets populated
+- Hunter-Killer: MISSION CONCLUDED — focus now on pure intel pipeline only
+
+---
+### 🚨 ALERT — 23:41 JST Apr 30: USD/JPY +160.32 — Yen Intervention Watch Escalated
 - USD/JPY now at **160.32** — up from 156.8 just 20 min ago, Yahoo Finance confirms Apr 30 high of 160.44
 - Bloomberg shows 160.19 mid-day — pair still testing 160+ territory
 - Brent ticking up to **$110.01** (MarketWatch) — Goldman sees $90 avg on Middle East disruption
