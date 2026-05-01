@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-05-01 06:28 JST
+Generated: 2026-05-01 12:19 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -52,26 +52,26 @@ Generated: 2026-05-01 06:28 JST
 
 | Score | Platform | Keyword | Title | Budget/Rate | URL |
 |---:|---|---|---|---|---|
+| 85 | Freelancer | Python scraper | PDF Drawing Takeoff Tool Development | $3,000.00 | https://www.freelancer.com/projects/automation/PDF-Drawing-Takeoff-Tool-Development.html |
+| 85 | Freelancer | Python scraper | Build a RAG-Based AI System for a Large Arabic Text Corpus | $750.00 | https://www.freelancer.com/projects/natural-language-processing/Build-RAG-Based-System-for.html |
 | 85 | Freelancer | Python scraper | Custom Programming Solution Needed | $2,000.00 | https://www.freelancer.com/projects/software-development/Custom-Programming-Solution-Needed.html |
+| 85 | Freelancer | Data processing API | Canadian Tenant Lead List | $1,000.00 | https://www.freelancer.com/projects/excel/Canadian-Tenant-Lead-List.html |
+| 75 | Freelancer | Python scraper | Discord Integration Developer Needed | $250.00 | https://www.freelancer.com/projects/discord-api/Discord-Integration-Developer-Needed.html |
 | 75 | Freelancer | Python scraper | Developer Needed to Build API for Aggregating Job Listings from E | $250.00 | https://www.freelancer.com/projects/ai-development/Developer-Needed-Build-API-for.html |
 | 75 | Freelancer | Python scraper | AI Automation Developer Needed for Ongoing Work | $250.00 | https://www.freelancer.com/projects/openai/Automation-Developer-Needed-for-Ongoing.html |
-| 75 | Freelancer | Python scraper | Python B2B Scraper &amp; Outreach Automation | $250.00 | https://www.freelancer.com/projects/rest-api/Python-Scraper-Outreach-Automation.html |
+| 75 | Freelancer | Make.com automation | Kit Email Templates &amp; Automation Overhaul | $250.00 | https://www.freelancer.com/projects/email-marketing/Kit-Email-Templates-Automation-Overhaul.html |
 | 75 | Freelancer | Make.com automation | NDIS Intake Forms Digitisation &ndash; Smart Web Form + Auto-Fill | $250.00 | https://www.freelancer.com/projects/content-creation/NDIS-Intake-Forms-Digitisation-Smart.html |
+| 75 | Freelancer | Data processing API | Website Development with Experience building using Claude &amp; C | $250.00 | https://www.freelancer.com/projects/web-development/Website-Development-with-Experience.html |
+| 65 | Freelancer | Python scraper | ERP Chatbot for Data Automation | I’m building a new module for our in-house ERP and need a purpose-built AI chatb | https://www.freelancer.com/projects/ai-chatbot-development/ERP-Chatbot-for-Data-Automation.html |
 | 65 | Freelancer | Python scraper | Excel-Claude Integration Script | I need a compact Python workflow that reads a list of company names from an Exce | https://www.freelancer.com/projects/api/Excel-Claude-Integration-Script-40409876.html |
 | 65 | Freelancer | Python scraper | AI Support Chatbox Integration | $10.00 | https://www.freelancer.com/projects/ai-chatbot-development/Support-Chatbox-Integration.html |
 | 65 | Freelancer | Python scraper | Python Excel Automation Script | Every month I have to pour fresh sales data into multiple Excel workbooks, clean | https://www.freelancer.com/projects/data-analysis/Python-Excel-Automation-Script.html |
 | 65 | Freelancer | Python scraper | Excel-Claude Integration Script | I need a compact Python workflow that reads a list of company names from an Exce | https://www.freelancer.com/projects/api/Excel-Claude-Integration-Script.html |
-| 65 | Freelancer | Python scraper | Convert Python Script Into AWS Bot | $10.00 | https://www.freelancer.com/projects/aws-lambda/Convert-Python-Script-Into-AWS.html |
-| 65 | Freelancer | Python scraper | Visa Slot Check system | I need a Python-based solution that books Indian visa appointment from Banglades | https://www.freelancer.com/projects/php/Visa-Slot-Check-system.html |
+| 65 | Freelancer | Make.com automation | AI Automation for Data Cleaning | $30.00 | https://www.freelancer.com/projects/ai-development/Automation-for-Data-Cleaning.html |
+| 65 | Freelancer | Make.com automation | Hiring: B2B Sales &amp; Lead Gen Expert &ndash; WhatsApp AI SaaS  | QuickReach AI is a WhatsApp AI automation platform built for Indian businesses.  | https://www.freelancer.com/projects/b2b-marketing/Hiring-Sales-Lead-Gen-Expert.html |
+| 65 | Freelancer | Make.com automation | Hiring: B2B Sales &amp; Lead Gen Expert &ndash; WhatsApp AI SaaS  | QuickReach AI is a WhatsApp AI automation platform built for Indian businesses.  | https://www.freelancer.com/projects/lead-generation/Hiring-Sales-Lead-Gen-Expert.html |
+| 65 | Freelancer | Make.com automation | Advanced Candidate Marketing &amp; Interview System | Candidate Profile Marketing &amp; Interview Opportunity System Objective: Build  | https://www.freelancer.com/projects/software-development/Advanced-Candidate-Marketing-Interview.html |
 | 65 | Freelancer | Make.com automation | Based B2B Sales Executive &mdash; IT Services (StaxMinds) | Looking for a Commission-Based B2B Sales Executive — IT Services (StaxMinds) We  | https://www.freelancer.com/projects/lead-generation/Based-Sales-Executive-Services-StaxMinds.html |
-| 65 | Freelancer | Make.com automation | Weekly paid - Portfolio Merchandise Operations Manager (Ownership | $10.00 | https://www.freelancer.com/projects/data-analysis/Weekly-paid-Portfolio-Merchandise.html |
-| 65 | Freelancer | Make.com automation | FreshBooks and GPSWOX Automation System | $30.00 | https://www.freelancer.com/projects/api/FreshBooks-GPSWOX-Automation-System.html |
-| 65 | Freelancer | Make.com automation | Replicate Your Proven Bulk-Email System&mdash; cPanel or Windows  | $30.00 | https://www.freelancer.com/projects/import-export/Replicate-Your-Proven-Bulk-Email.html |
-| 65 | Freelancer | Make.com automation | Automated Email Setup from Microsoft Form | I need an automation setup that sends emails from Outlook using information coll | https://www.freelancer.com/projects/microsoft-office/Automated-Email-Setup-from-Microsoft.html |
-| 65 | Freelancer | Make.com automation | Business Account Integration &amp; Workflow Automation ( AI Parse | $15.00 | https://www.freelancer.com/projects/ai-hw-sw/Business-Account-Integration-Workflow.html |
-| 65 | Freelancer | Make.com automation | Web DIN Lookup Automation Tool | I need a small, web-based utility that lets anyone type a Director Identificatio | https://www.freelancer.com/projects/web-development/Web-DIN-Lookup-Automation-Tool.html |
-| 65 | Freelancer | Make.com automation | Bulk Application Form Filling | I have 51–100 online application forms that must be completed quickly and accura | https://www.freelancer.com/projects/data-processing/Bulk-Application-Form-Filling.html |
-| 65 | Freelancer | Data processing API | Basic Data Entry Assistance Needed | I’m converting a stack of printed text documents into digital files and would li | https://www.freelancer.com/projects/microsoft-word/Basic-Data-Entry-Assistance-Needed.html |
 
 ## Notes
 - Scores prioritize: (1) simple automation/scripting fit, (2) payout magnitude, (3) keyword relevance.
