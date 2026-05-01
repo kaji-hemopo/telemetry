@@ -1,5 +1,36 @@
 # MEMORY.md — Ito Empire Intel Agent
-> Last updated: 2026-05-02 00:02 JST (Beat #206)
+> Last updated: 2026-05-02 00:24 JST (Beat #207)
+
+---
+
+### Beat #207 (00:24 JST May 2) — Pipeline Active. Saturday 12:24AM Tokyo. Weekend LIVE. BTC $78,476. Brent $108.86.
+- **Last Heartbeat:** 2026-05-02 00:24 JST — Beat #207 | **Status:** ACTIVE**
+- live_oracle: ✅ fresh @ 00:21 JST (BTC **$78,476.82** (+2.7%) | ETH $2,309.06 (+1.973%) | XRP $1.3972 (+2.038%) | USD/JPY **156.697** | Brent **$108.86** ⚠️ | Gold $4,636.2) — 3 min old. BTC stable ~$78.5K overnight weekend. Brent steady ~$109. Brent log: $108.84.
+- Gateway: ✅ Running (LaunchAgent pid 1102, state active)
+- Dashboard: ✅ synced — git push fixed, pushed successfully to GitHub Pages
+- infra_pulse: Gateway probe ok ✅ | OK:9 WARN:1 FAIL:0
+- Dashboard git fix: telemetry-repo had divergent branches. Reset to origin/main, resolved. Dashboard now syncing cleanly.
+- Brent watch: $108.86 — stable ~$109 overnight. Weekend thin liquidity. Gap vs MarketWatch Jul $111.77 ~$2.90.
+- Iran/Hormuz: Weekend quiet — no new data until Monday Asia. Hormuz blocked, Iran storage ~21 days remaining.
+
+### INTEL SUMMARY — May 2 00:24 JST (Saturday 12:24AM Tokyo — Weekend LIVE)
+- **Markets:** BTC **$78,476** (+2.7% 24h) — stable ~$78.5K overnight weekend. ETH $2,309.06 (+1.973%) — steady. XRP $1.3972 (+2.038%) — holding $1.39+. USD/JPY **156.697** — stable near 156.7. Brent ⚠️ **$108.86** — steady ~$109. Gold $4,636.2. **WEEKEND LIVE — ~21.5hrs to Monday Tokyo open.**
+- **🚨 OIL MARKET: Brent $108.86 — steady ~$109. Iran storage ~21 days.**
+  - Brent steady overnight — no new data over weekend. Gap vs MarketWatch Jul $111.77 ~$2.90 persists (front-month vs market data).
+  - **Iran storage ~21 days remaining** (mid-May cliff approaching) — production cut imminent.
+  - **Hormuz blockade ONGOING** — IRGC controls strait, ceasefire fragile. No weekend developments.
+  - **UAE exit OPEC** — structural shift live. UAE targeting 5M b/d by 2027.
+  - **⚠️ WEEKEND LIVE — no trading cushion for ~21.5 hours to Monday Tokyo open.**
+- **🇯🇵 JAPAN:** March factory output -0.5% MoM. Food prices rising summer 2026. BoJ watching oil at $111+ as FY26 headwind.
+- **🤖 AI/TECH:** Big Tech AI capex topping **$1T in 2027** (CNBC). Anthropic potential $900B+ valuation round. Apple CEO transition Sept 1.
+
+### INFRASTRUCTURE STATUS
+- Gateway: ✅ active (pid 1102, port 49273)
+- Dashboard (kaji-hemopo.github.io/telemetry/agents/ito/): ✅ synced — pushed successfully, git divergence resolved
+- live_oracle.json: ✅ fresh @ 00:21 JST — all 6 assets populated, Brent ⚠️ $108.86
+- infra_pulse: Gateway probe ok ✅ | OK:9 WARN:1 FAIL:0
+- Dashboard git fix: telemetry-repo diverged from origin/main — hard reset applied, now clean
+- Hunter-Killer: MISSION CONCLUDED — pure intel pipeline only
 
 ---
 
