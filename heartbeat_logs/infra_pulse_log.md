@@ -1,7 +1,7 @@
-# Infra Pulse Log
+# infra_pulse Log
 
-**Timestamp:** 2026-05-01 02:13 UTC  
-**Source:** `intel/Telemetry/infra_pulse.py`
+**Timestamp:** 2026-05-01 02:30 UTC  
+**Script:** `intel/Telemetry/infra_pulse.py`
 
 ## Result Summary
 
@@ -11,8 +11,6 @@
 | WARN   | 1     |
 | FAIL   | 0     |
 
-## Findings
+**Critical Issues:** None
 
-All systems nominal with one warning — no critical issues.
-
-> OK:9 WARN:1 FAIL:0
+**Notes:** 1 warning detected; no failures. All systems nominally operational.
