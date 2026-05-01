@@ -1,10 +1,18 @@
 # MEMORY.md — Ito Empire Intel Agent
-> Last updated: 2026-05-02 03:27 JST (Beat #216)
+> Last updated: 2026-05-02 03:48 JST (Beat #217)
 
 ---
 
+### Beat #217 (03:48 JST May 2) — Pipeline Active. Saturday 3:48AM Tokyo. Weekend LIVE. BTC $78,419. Brent $108.18 — Stable Weekend Consolidating.
+- **Last Heartbeat:** 2026-05-02 03:48 JST — Beat #217 | **Status:** ACTIVE**
+- live_oracle: ✅ fresh @ 03:43 JST (BTC **$78,419.18** (+2.735%) | ETH $2,305.43 (+2.058%) | XRP $1.3934 (+1.76%) | USD/JPY **157.039** | Brent ⚠️ **$108.18** | Gold $4,632.9) — BTC holding $78.4K overnight weekend. Brent stable $108.18 — unchanged from 03:23 reading. Weekend consolidating. USD/JPY 157.039. Gold $4,632.9.
+- Gateway: ✅ Running (LaunchAgent pid 1102, state active)
+- Dashboard: ✅ synced — git commit 1a580e5, pushed to GitHub Pages ✅
+- infra_pulse: Gateway probe ok ✅
+- Brent watch: $108.18 — STABLE. Brent log: $108.84 (00:21) → $108.30 → $107.87 → $107.52 → $108.59 (01:44) → $108.18 → $108.15 → $108.09 (02:40) → $107.50 (03:06) → $108.41 (03:23) → **$108.18 (03:43)**. Weekend range: $108.84 high / $107.50 low. Gap vs TradingEconomics May 1 close $108.02 ~$0.16. Gap vs MarketWatch Jul $111.77 ~$3.59.
+- **⚠️ WEEKEND LIVE — ~8.5hrs to Monday Tokyo open.**
+
 ### Beat #216 (03:27 JST May 2) — Pipeline Active. Saturday 3:27AM Tokyo. Weekend LIVE. BTC $78,622. Brent $108.41 — Eased then Stabilized.
-- **Last Heartbeat:** 2026-05-02 03:27 JST — Beat #216 | **Status:** ACTIVE**
 - live_oracle: ✅ fresh @ 03:23 JST (BTC **$78,622.21** (+2.885%) | ETH $2,311.09 (+2.257%) | XRP $1.3956 (+1.876%) | USD/JPY **157.047** | Brent ⚠️ **$108.41** | Gold $4,632.0) — BTC firm ~$78.6K overnight weekend. Brent EASED then STABILIZED: $107.50 (03:06) → **$108.41 (03:23)** — +$0.91 rebound. Weekend swings. USD/JPY ticked up to 157.047. Gold $4,632.0.
 - Gateway: ✅ Running (LaunchAgent pid 1102, state active)
 - Dashboard: ✅ synced — git commit 29c4a1a, pushed to GitHub Pages ✅
