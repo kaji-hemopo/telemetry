@@ -3,7 +3,16 @@
 
 ---
 
-### Beat #221 (05:34 JST May 2) — Pipeline Active. Saturday 5:34AM Tokyo. Weekend LIVE. BTC $78,113. Brent $108.99 — Weekend Range.
+### Beat #222 (05:54 JST May 2) — Pipeline Active. Saturday 5:54AM Tokyo. Weekend LIVE. BTC $78,069. Brent $108.97 — Near Weekend High.
+- **Last Heartbeat:** 2026-05-02 05:54 JST — Beat #222 | **Status:** ACTIVE**
+- live_oracle: ✅ fresh @ 05:54 JST (BTC **$78,069.05** (+2.021%) | ETH $2,296.11 (+1.369%) | XRP $1.3888 (+1.32%) | USD/JPY **157.024** | Brent ⚠️ **$108.97** | Gold $4,625.3) — BTC holding $78.1K overnight weekend. Brent $108.97 — near weekend high. Weekend range $107.50-$108.99. USD/JPY 157.024. Gold $4,625.3.
+- Gateway: ✅ Running (LaunchAgent pid 1102, state active)
+- Dashboard: ✅ synced — git commit 2469763, pushed to GitHub Pages ✅
+- infra_pulse: Gateway probe ok ✅
+- Brent watch: $108.97 — Near Weekend High. Brent log: $108.84 (00:21) → $108.30 → $107.87 → $107.52 → $108.59 (01:44) → $108.18 → $108.15 → $108.09 (02:40) → $107.50 (03:06) → $108.41 (03:23) → $108.18 (03:43) → $108.54 (04:08) → $108.28 (04:55) → $108.36 (05:00) → $108.99 (05:34) → **$108.97 (05:54)**. Weekend range: $108.99 high / $107.50 low. Gap vs MarketWatch Jul $111.77 ~$2.80. Brent at upper end of weekend range — thin liquidity weekend trading holding elevated.
+- **⚠️ WEEKEND LIVE — ~4hrs to Monday Tokyo open.** — Approaching Asia open weekend wrap.
+
+### Beat #221 (05:34 JST May 2)
 - **Last Heartbeat:** 2026-05-02 05:34 JST — Beat #221 | **Status:** ACTIVE**
 - live_oracle: ✅ fresh @ 05:34 JST (BTC **$78,113.64** (+2.349%) | ETH $2,298.36 (+1.639%) | XRP $1.3899 (+1.519%) | USD/JPY **156.997** | Brent ⚠️ **$108.99** | Gold $4,625.1) — BTC holding $78.1K overnight weekend. Brent $108.99 — weekend range $107.50-$108.99. USD/JPY 156.997. Gold $4,625.1.
 - Gateway: ✅ Running (LaunchAgent pid 1102, state active)
