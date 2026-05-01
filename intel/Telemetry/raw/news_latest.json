@@ -1,6 +1,20 @@
 {
-  "timestamp": "2026-05-01 22:40 JST",
+  "timestamp": "2026-05-02 01:44 JST",
   "items": [
+    {
+      "category": "AI",
+      "title": "Pentagon inks deals with Nvidia, Microsoft, and AWS to deploy AI on classified networks",
+      "link": "https://techcrunch.com/?p=3118436",
+      "description": "The deals come as the DOD has doubled down on diversifying its exposure to AI vendors in the wake of its controversial dispute with Anthropic over usage terms of its AI models.",
+      "pub_date": ""
+    },
+    {
+      "category": "AI",
+      "title": "Ubuntu services hit by outages after DDoS attack",
+      "link": "https://techcrunch.com/?p=3118437",
+      "description": "A group of hacktivists have claimed responsibility for a distributed denial-of-service attack, which has affected several Ubuntu and Canonical websites, and prevented users from up",
+      "pub_date": ""
+    },
     {
       "category": "AI",
       "title": "People are finally using Reddit\u2019s search",
@@ -31,16 +45,9 @@
     },
     {
       "category": "AI",
-      "title": "Sources: Anthropic potential $900B+ valuation round could happen within 2 weeks",
-      "link": "https://techcrunch.com/?p=3118328",
-      "description": "Anthropic is asking investors to submit allocations for the AI company\u2019s latest fundraise within the next 48 hours, according to sources familiar with the matter.",
-      "pub_date": ""
-    },
-    {
-      "category": "AI",
-      "title": "Apple was surprised by AI-driven demand for Macs",
-      "link": "https://techcrunch.com/?p=3118257",
-      "description": "Apple said it will be supply-constrained on Mac mini, Studio, and Neo in the next quarter, too.",
+      "title": "Yes, Many Software Leaders Have Moats. No, That\u2019s Not Enough.",
+      "link": "https://www.saastr.com/?p=323482",
+      "description": "Do leaders in B2B software still have moats in the Age of AI? Of course they do. You can see it plain as day in Gross Revenue Retention. The median GRR across B2B software is still",
       "pub_date": ""
     },
     {
@@ -73,10 +80,10 @@
     },
     {
       "category": "AI",
-      "title": "Our Agents Drove Our Salesforce Bill Up 80%, Marketo Hates AI Agents, and We Stealth-Churned Off Notion: The Agents #003",
-      "link": "https://www.saastr.com/?p=324381",
-      "description": "Amelia and I just released Episode #003 of The Agents. Three humans, 20+ agents, revenue went from -19% to +47% YoY, and every week we get into what&#8217;s actually working, what&",
-      "pub_date": ""
+      "title": "<![CDATA[Pentagon strikes classified AI deals with OpenAI, Google, and Nvidia \u2014 but not Anthropic]]>",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/922113/pentagon-ai-classified-openai-google-nvidia",
+      "description": "The Pentagon has struck deals with OpenAI, Google, Microsoft, Amazon, Nvidia, Elon Musk's xAI, and the startup Reflection, allowing the agency to use their AI tools in classified s",
+      "pub_date": "2026-05-01T10:09:56-04:00"
     },
     {
       "category": "AI",
@@ -84,27 +91,6 @@
       "link": "https://www.theverge.com/podcast/922009/musk-openai-trial-testimony-vergecast",
       "description": "Elon Musk is the one who wanted this trial. He has spent months claiming OpenAI \"stole a nonprofit,\" and saying he was the actual driving force behind one of the most important com",
       "pub_date": "2026-05-01T09:33:15-04:00"
-    },
-    {
-      "category": "AI",
-      "title": "<![CDATA[Christian content creators are outsourcing AI slop to gig workers on Fiverr]]>",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/920881/ai-generated-bible-videos-christian-creators-fiverr-slop",
-      "description": "In the beginning, platforms like Fiverr were places where people could hire freelancers to do specialized creative labor using skills that took years to develop. In the age of gene",
-      "pub_date": "2026-05-01T09:25:25-04:00"
-    },
-    {
-      "category": "AI",
-      "title": "<![CDATA[Microsoft wants lawyers to trust its new AI agent in Word documents]]>",
-      "link": "https://www.theverge.com/news/921944/microsoft-word-legal-agent-ai",
-      "description": "Microsoft is launching a new AI agent inside Word that's specifically designed for legal teams. Legal Agent handles document edits, negotiation history, and complex documents to he",
-      "pub_date": "2026-05-01T07:18:54-04:00"
-    },
-    {
-      "category": "AI",
-      "title": "<![CDATA[Dyson finally made a better robot, but a worse vacuum]]>",
-      "link": "https://www.theverge.com/tech/921136/dyson-spot-scrub-ai-wet-dry-robot-vacuum-cleaner-review",
-      "description": "I'm deeply conflicted about the Dyson Spot + Scrub Ai robot vacuum and mop. It's the company's best robotic floor cleaner to date, with excellent mopping performance, good navigati",
-      "pub_date": "2026-05-01T07:00:00-04:00"
     },
     {
       "category": "SaaS",
@@ -115,17 +101,31 @@
     },
     {
       "category": "World",
-      "title": "<![CDATA[Your guide to sci-fi streaming season]]>",
-      "link": "https://www.theverge.com/tech/921610/sci-fi-streaming-shows-2026",
-      "description": "I haven't quite figured out the reason why, but for the last few years, summer has become the moment for new science fiction shows on streaming services. And 2026 isn't any differe",
-      "pub_date": "2026-05-01T09:30:00-04:00"
+      "title": "<![CDATA[Aurzen\u2019s tiny trifold projector is almost 40 percent off right now]]>",
+      "link": "https://www.theverge.com/gadgets/921686/aurzen-zip-mini-projector-garmin-venu-4-watch-deal-sale",
+      "description": "Not all trifolds are created equal \u2014 just ask our own Allison Johnson, who recently spent time with Samsung\u2019s ill-fated Galaxy phone. Aurzen\u2019s Zip projector is the kind of trifold ",
+      "pub_date": "2026-05-01T11:00:46-04:00"
     },
     {
       "category": "World",
-      "title": "<![CDATA[Oura adds birth control support to its period tracker]]>",
-      "link": "https://www.theverge.com/tech/921955/oura-hormonal-birth-control-tracking-update",
-      "description": "Oura is launching a new reproductive health feature that takes hormonal contraception into consideration when tracking period cycles. The smart ring maker describes the Hormonal Bi",
-      "pub_date": "2026-05-01T09:00:00-04:00"
+      "title": "<![CDATA[Some of Xteink\u2019s credit card-sized e-readers are losing their best feature]]>",
+      "link": "https://www.theverge.com/tech/921552/xteink-x3-x4-e-reader-third-party-crosspoint-firmware-usb-blocked",
+      "description": "The Xteink X4 and X3 are excellent alternatives to Kindles and Kobos if you want an e-reader that's as easy to slip into your pocket - just not out of the box. Both devices come wi",
+      "pub_date": "2026-05-01T10:24:54-04:00"
+    },
+    {
+      "category": "World",
+      "title": "<![CDATA[The Verge\u2019s 2026 Mother\u2019s\u00a0Day\u00a0gift guide]]>",
+      "link": "https://www.theverge.com/gadgets/907032/best-mothers-day-gift-ideas-2026-mom-tech-gadgets",
+      "description": "Whether it's managing a busy home or looking out for everyone around them, moms spend a lot of time every day caring for others. Mother's Day, May 10th, is an opportunity to return",
+      "pub_date": "2026-05-01T10:09:03-04:00"
+    },
+    {
+      "category": "World",
+      "title": "<![CDATA[My $5K smart bed needs to shut the hell up]]>",
+      "link": "https://www.theverge.com/column/921654/optimizer-eight-sleep-ai-summaries-health-wellness",
+      "description": "This is Optimizer, a weekly newsletter sent every Friday from Verge senior reviewer Victoria Song that dissects and discusses the latest gizmos and potions that swear they're going",
+      "pub_date": "2026-05-01T10:00:00-04:00"
     }
   ]
 }

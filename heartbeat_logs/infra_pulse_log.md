@@ -1,9 +1,9 @@
 # Infra Pulse Log
 
-**Timestamp:** 2026-05-01T14:56 UTC / 2026-05-01 23:56 Asia/Tokyo  
-**Run by:** cron (ito-infra-pulse)
+**Timestamp:** 2026-05-02 01:30 JST / 2026-05-01 16:30 UTC
+**Source:** `intel/Telemetry/infra_pulse.py`
 
-## Result Summary
+## Summary
 
 | Status | Count |
 |--------|-------|
@@ -11,12 +11,6 @@
 | WARN   | 1     |
 | FAIL   | 0     |
 
-**Overall:** OPERATIONAL (no failures)
+## Verdict: **WARN** — 1 warning detected, no failures.
 
-## Details
-
-- 9 checks passed (OK)
-- 1 check flagged a warning (WARN)
-- 0 checks failed (FAIL)
-
-No critical issues detected. The infrastructure is functioning normally with minor warning(s) that may warrant attention but do not affect overall availability.
+No critical issues. System is nominally healthy with a single non-critical warning flagged.
