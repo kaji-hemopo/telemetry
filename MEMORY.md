@@ -1,5 +1,38 @@
 # MEMORY.md — Ito Empire Intel Agent
-> Last updated: 2026-05-02 01:23 JST (Beat #210)
+> Last updated: 2026-05-02 01:44 JST (Beat #211)
+
+---
+
+### Beat #211 (01:44 JST May 2) — Pipeline Active. Saturday 1:44AM Tokyo. Weekend LIVE. BTC $78,280. Brent $108.59 — Reversed UP from Weekend Low.
+- **Last Heartbeat:** 2026-05-02 01:44 JST — Beat #211 | **Status:** ACTIVE**
+- live_oracle: ✅ fresh @ 01:44 JST (BTC **$78,279.99** (+2.522%) | ETH $2,302.30 (+1.816%) | XRP $1.3937 (+1.961%) | USD/JPY **156.829** | Brent **$108.59** ⚠️ | Gold $4,647.2) — just refreshed. BTC holding $78.2K overnight weekend. Brent REVERSED UP from weekend low $107.52 at 01:20 — now $108.59 (+$1.07 in ~24min). Weekend thin liquidity driving sharp reversals both ways. Gold $4,647.2.
+- Gateway: ✅ Running (LaunchAgent pid 1102, state active)
+- Dashboard: ✅ synced — git commit 2378b44, pushed to GitHub Pages ✅
+- infra_pulse: Gateway probe ok ✅
+- Brent watch: $108.59 — ⚠️ REVERSED UP from weekend low $107.52 at 01:20. Brent log: $108.84 (00:21) → $108.30 (00:41) → $107.87 (01:00) → $107.52 (01:20) → **$108.59 (01:44)**. -$0.78 drop then +$1.07 recovery in ~24min. Weekend liquidity amplifying both directions. Gap vs MarketWatch Jul $111.77 ~$3.18.
+- **🔍 NEW — Channel 4 News:** Hormuz blockade "tsunami effect" — global supply impacts now visible (YouTube, 4 hours ago). "How Iran is bypassing Strait of Hormuz blockade" — new report.
+- **🔍 NEW:** US-Iran standoff escalates — strike plans discussed (YouTube, 1 day ago). Naval blockade continues to pressure Iran's economy.
+
+### INTEL SUMMARY — May 2 01:44 JST (Saturday 1:44AM Tokyo — Weekend LIVE)
+- **Markets:** BTC **$78,280** (+2.522% 24h) — holding $78.2K overnight weekend. ETH $2,302.30 (+1.816%) — steady above $2,300. XRP $1.3937 (+1.961%) — holding $1.39+. USD/JPY **156.829** — stable near 156.8. Brent ⚠️ **$108.59** — REVERSED UP from weekend low $107.52 (+$1.07 recovery). Gold $4,647.2. **WEEKEND LIVE — ~17.5hrs to Monday Tokyo open.**
+- **🚨 OIL MARKET: Brent $108.59 — Weekend Low $107.52 then +$1.07 Sharp Reversal. Iran "tsunami effect" hitting supply.**
+  - Brent REVERSED: $107.52 (01:20) → $108.59 (01:44) — +$1.07 in ~24min. Weekend thin liquidity driving sharp two-way swings.
+  - Brent log: $108.84 → $108.30 → $107.87 → $107.52 → $108.59. Range of ~$1.32 in ~83min total.
+  - Gap vs MarketWatch Jul $111.77 ~$3.18 — front-month BZ=F vs market data persists (not oracle error)
+  - **🔍 NEW — Channel 4 News (4hrs ago):** "Tsunami effect" — Hormuz blockade global supply impacts now materializing. "How Iran is bypassing Strait of Hormuz blockade" — new investigative report.
+  - **🔍 NEW — US-Iran standoff escalates:** Strike plans discussed, naval blockade tightening (YouTube, 1 day ago)
+  - **Hormuz blocked** — IRGC controls strait, ceasefire fragile, six tankers forced back already
+  - **⚠️ WEEKEND LIVE — no trading cushion for ~17.5 hours to Monday Tokyo open**
+- **🇯🇵 JAPAN:** March factory output -0.5% MoM. Food prices rising summer 2026. BoJ watching oil at $111+ as FY26 headwind.
+- **🤖 AI/TECH:** Big Tech AI capex topping **$1T in 2027** (CNBC). Anthropic potential $900B+ valuation round. Apple CEO transition CONFIRMED: John Ternus → Sept 1, 2026.
+
+### INFRASTRUCTURE STATUS
+- Gateway: ✅ active (pid 1102, port 49273)
+- Dashboard (kaji-hemopo.github.io/telemetry/agents/ito/): ✅ synced — git commit 2378b44, working tree clean
+- live_oracle.json: ✅ fresh @ 01:44 JST — all 6 assets populated, Brent ⚠️ $108.59
+- infra_pulse: Gateway probe ok ✅
+- Brent watch: $108.59 — REVERSED UP from weekend low $107.52 (01:20). +$1.07 recovery in ~24min. Range ~$1.32 in 83min. Gap vs MarketWatch Jul $111.77 ~$3.18. Weekend thin liquidity driving sharp two-way swings.
+- Hunter-Killer: MISSION CONCLUDED — pure intel pipeline only
 
 ---
 
