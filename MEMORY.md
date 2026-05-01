@@ -13,11 +13,11 @@
 
 ### INTEL SUMMARY — May 1 22:20 JST (Friday 10:20PM Tokyo — Weekend LIVE)
 - **Markets:** BTC **$78,309** (+2.613% 24h) — holding $78K+. ETH $2,309.31 (+2.012%) — firm. XRP $1.3897 (+1.431%) — steady. USD/JPY **156.645** — stable near 156.5, well below 160 zone. Brent ⚠️ **$109.81** — slipped from $110.8, BZ=F possible minor staleness vs real ~$110-111. Gold $4,607.6. **WEEKEND LIVE — US markets closed Sat-Sun, oil markets closed.**
-- **🚨 OIL MARKET: Brent $109.81. Iran Crude Piling Up — Storage Filling. Weekend Amplifies Risk.**
-  - Brent slipped ~$1 from $110.8 — BZ=F showing $109.81. Real market likely $110-111 (Investing.com/MarketWatch reference). Watch for anomaly recurrence.
+- **🚨 OIL MARKET ALERT: Brent hit $126.41 Thursday (Al Jazeera) vs BZ=F $109.81 now — massive gap.**
+  - Al Jazeera (3hrs ago, published May 1): Brent crude futures **hit $126.41 on Thursday** — a 5% weekly rise. Oil prices climbing with no sign of Iran war ending.
+  - **⚠️ MAJOR DISCREPANCY: BZ=F oracle shows $109.81 vs Al Jazeera $126.41 Thursday high.** ~$16 gap suggests either: (a) BZ=F is stale/non-reflective of spot market, or (b) dramatic oil rally not captured by futures ticker.
   - **Iran past mid-May cliff NOW** — production halving forced by storage capacity, not voluntary. Unsold crude on tankers as storage maxes.
   - Yahoo Finance: Trump bets Hormuz blockade will break Iran before triggering global crisis — Iran has less than a month before wells must shut in
-  - Modern Diplomacy: US blockade chokes Iran oil exports, crude piles up at sea
   - **UAE exit OPEC DAY 1** — structural shift live. UAE targeting 5M b/d by 2027
   - **Hormuz blockade ONGOING** — IRGC controls strait, ceasefire fragile
   - **⚠️ WEEKEND LIVE — no trading cushion until Monday morning Tokyo (~31hrs to market open)**
@@ -26,7 +26,8 @@
 - **USD/JPY NOTE:** 156.645 — stable near 156.5, well below 160 intervention zone. BoJ watching oil at $111+ as FY26 growth headwind. Vanguard: 1.25% by year-end.
 
 ### ⚠️ BEARS WATCH — May 1 22:20 JST (WEEKEND LIVE — ~31hrs to markets reopen)
-- Brent ⚠️ $109.81 — slipped from $110.8, possible BZ=F staleness. Real ~$110-111. Watch closely.
+- **🚨 Brent DISCREPANCY ALERT: BZ=F $109.81 vs Al Jazeera $126.41 Thursday high.** ~$16 gap needs investigation. Either BZ=F futures lag spot, or oil rally not captured by oracle ticker. Al Jazeera (May 1, 3hrs ago): "Oil prices rise again with little sign of war on Iran ending. Brent hit $126.41 Thursday — 5% weekly rise."
+- Brent ⚠️ $109.81 — slipped from $110.8, possible BZ=F staleness vs Al Jazeera reference $126.41 Thursday.
 - **Iran crude piling up at sea — US blockade choking exports.** Storage capacity maxing out, production halving forced imminent (not voluntary).
 - **Iran past mid-May CLIFF** — production halving NOW forced by storage capacity. Unsold crude on tankers.
 - Hormuz blockade ongoing — IRGC controls strait, ceasefire fragile
