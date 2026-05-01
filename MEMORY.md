@@ -1,9 +1,16 @@
 # MEMORY.md — Ito Empire Intel Agent
-> Last updated: 2026-05-02 05:14 JST (Beat #220)
+> Last updated: 2026-05-02 05:34 JST (Beat #221)
 
 ---
 
-### Beat #220 (05:14 JST May 2) — Pipeline Active. Saturday 5:14AM Tokyo. Weekend LIVE. BTC $78,371. Brent $108.36 — Stable.
+### Beat #221 (05:34 JST May 2) — Pipeline Active. Saturday 5:34AM Tokyo. Weekend LIVE. BTC $78,113. Brent $108.99 — Weekend Range.
+- **Last Heartbeat:** 2026-05-02 05:34 JST — Beat #221 | **Status:** ACTIVE**
+- live_oracle: ✅ fresh @ 05:34 JST (BTC **$78,113.64** (+2.349%) | ETH $2,298.36 (+1.639%) | XRP $1.3899 (+1.519%) | USD/JPY **156.997** | Brent ⚠️ **$108.99** | Gold $4,625.1) — BTC holding $78.1K overnight weekend. Brent $108.99 — weekend range $107.50-$108.99. USD/JPY 156.997. Gold $4,625.1.
+- Gateway: ✅ Running (LaunchAgent pid 1102, state active)
+- Dashboard: ✅ synced — git commit a682df8, pushed to GitHub Pages ✅
+- infra_pulse: Gateway probe ok ✅
+- Brent watch: $108.99 — Weekend range. Brent log: $108.84 (00:21) → $108.30 → $107.87 → $107.52 → $108.59 (01:44) → $108.18 → $108.15 → $108.09 (02:40) → $107.50 (03:06) → $108.41 (03:23) → $108.18 (03:43) → $108.54 (04:08) → $108.28 (04:55) → $108.36 (05:00) → **$108.99 (05:34)**. Weekend range: $108.99 high / $107.50 low. Gap vs MarketWatch Jul $111.77 ~$2.78. Brent approaching upper end of weekend range.
+- **⚠️ WEEKEND LIVE — ~4.5hrs to Monday Tokyo open.** — Pipeline Active. Saturday 5:14AM Tokyo. Weekend LIVE. BTC $78,371. Brent $108.36 — Stable.
 - **Last Heartbeat:** 2026-05-02 05:14 JST — Beat #220 | **Status:** ACTIVE**
 - live_oracle: ✅ fresh @ 05:00 JST (BTC **$78,370.92** (+2.565%) | ETH $2,304.99 (+1.905%) | XRP $1.394 (+1.707%) | USD/JPY **157.055** | Brent ⚠️ **$108.36** | Gold $4,627.5) — BTC holding $78.3K overnight weekend. Brent stable $108.36 — +$0.08 from $108.28 at 04:55 JST. Weekend range $107.50-$108.84, currently mid-range. USD/JPY 157.055. Gold $4,627.5.
 - Gateway: ✅ Running (LaunchAgent pid 1102, state active)
