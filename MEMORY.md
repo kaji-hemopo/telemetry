@@ -3,6 +3,19 @@
 
 ---
 
+### Beat #229 (08:18 JST May 2) — Pipeline Active. Saturday 8:18AM Tokyo. Weekend LIVE. BTC $78,099. Brent $108.83 — ~40min to Asia Open.
+- **Last Heartbeat:** 2026-05-02 08:18 JST — Beat #229 | **Status:** ACTIVE**
+- live_oracle: ✅ fresh @ 08:21 JST (BTC **$78,098.65** (+2.349%) | ETH $2,291.58 (+1.558%) | XRP $1.3839 (+1.325%) | USD/JPY **157.033** | Brent ⚠️ **$108.83** | Gold $4,625.6) — BTC holding $78.1K near weekend close. Brent $108.83 — stable at weekend close. USD/JPY 157.033. Gold $4,625.6.
+- Gateway: ✅ Running (LaunchAgent pid 1102, state active)
+- Dashboard: ✅ synced — git commit a487d32, pushed to GitHub Pages ✅ (news_latest refreshed, HTML updated)
+- infra_pulse: Gateway probe ok ✅
+- Brent watch: $108.83 — Weekend Wrap Stable. Brent log: $108.84(00:21)→$108.30→$107.87→$107.52→$108.59(01:44)→$108.18→$108.15→$108.09(02:40)→$107.50(03:06)→$108.41(03:23)→$108.18(03:43)→$108.54(04:08)→$108.28(04:55)→$108.36(05:00)→$108.99(05:34)→$108.97(05:54)→$108.83(06:20)→$108.83(06:57)→$108.83(07:42)→$108.83(08:21). Weekend range: $108.99 high / $107.50 low. Gap vs MarketWatch Jul $111.77 ~$2.94.
+- **⚠️ ~40min to Monday Tokyo open (09:00 JST).** — Asia open imminent.
+- **Iran/Hormuz intel:** Fox News (May 1): US moves to safeguard oil supplies amid Iranian strait blockade. Trump maintains naval blockade amid stalemate. Iran proposes opening Hormuz but Trump dissatisfied with terms. Congress.gov: Iran capability to close Hormuz may be degraded by US/Israeli ops. Iran threatens "long and painful strikes" if US renews attacks. Storage clock: Kpler 12-22 days remaining — mid-May production cliff approaching.
+- **🇯🇵 JAPAN:** BoJ warns oil shock may hurt FY26 growth (Gulf Business, May 2). BoJ sharply ups FY2026 inflation outlook on oil prices, signals caution. Japan gasoline at record ¥190.8/liter. BoJ kept rate unchanged at 0.75% amid Mideast uncertainty.
+- **🤖 AI/TECH:** Pentagon AI partnerships exclude Anthropic (ongoing). Apple CEO transition (John Ternus → Sept 1) confirmed. Big Tech AI capex topping $1T in 2027.
+- **Hunter-Killer:** MISSION CONCLUDED — pure intel pipeline only
+
 ### Beat #228 (07:58 JST May 2) — Pipeline Active. Saturday 7:58AM Tokyo. Weekend LIVE. BTC $78,228. Brent $108.83 — ~1hr to Asia Open.
 - **Last Heartbeat:** 2026-05-02 07:58 JST — Beat #228 | **Status:** ACTIVE**
 - live_oracle: ✅ fresh @ 07:42 JST (BTC **$78,228** (+2.506%) | ETH $2,293.7 (+1.651%) | XRP $1.3865 (+1.523%) | USD/JPY **157.033** | Brent ⚠️ **$108.83** | Gold $4,625.6) — BTC holding $78.2K firm into weekend close. Brent $108.83 — stable at weekend high range. USD/JPY 157.033. Gold $4,625.6.
