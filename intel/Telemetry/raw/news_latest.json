@@ -1,6 +1,20 @@
 {
-  "timestamp": "2026-05-02 06:58 JST",
+  "timestamp": "2026-05-02 08:20 JST",
   "items": [
+    {
+      "category": "AI",
+      "title": "Musely secures $360M from General Catalyst without giving up equity",
+      "link": "https://techcrunch.com/?p=3118531",
+      "description": "The DTC skin, hair, and menopause care brand will use the non-dilutive capital to super-charge customer acquisition.",
+      "pub_date": ""
+    },
+    {
+      "category": "AI",
+      "title": "Meta buys robotics startup to bolster its humanoid AI ambitions",
+      "link": "https://techcrunch.com/?p=3118513",
+      "description": "Meta bought humanoid startup Assured Robot Intelligence to beef up its AI models for robots, the company said.",
+      "pub_date": ""
+    },
     {
       "category": "AI",
       "title": "Coatue has a plan to buy up land for data centers, possibly for Anthropic",
@@ -20,27 +34,6 @@
       "title": "Ubuntu services hit by outages after DDoS attack",
       "link": "https://techcrunch.com/?p=3118437",
       "description": "A group of hacktivists have claimed responsibility for a distributed denial-of-service attack, which has affected several Ubuntu and Canonical websites, and prevented users from up",
-      "pub_date": ""
-    },
-    {
-      "category": "AI",
-      "title": "Musk v. Altman is just getting started",
-      "link": "https://techcrunch.com/?post_type=tc_video&p=3118470",
-      "description": "Elon Musk spent the better part of three days&#160;on the witness stand&#160;this week&#160;in his lawsuit against OpenAI, and&#160;it&#8217;s&#160;already getting messy. Emails, t",
-      "pub_date": ""
-    },
-    {
-      "category": "AI",
-      "title": "People are finally using Reddit\u2019s search",
-      "link": "https://techcrunch.com/?p=3118420",
-      "description": "The company saw a 30% year-on-year jump in the number of people using search every week, CEO Steve Huffman said on Thursday.",
-      "pub_date": ""
-    },
-    {
-      "category": "AI",
-      "title": "ChatGPT Images 2.0 is a hit in India, but not a big winner elsewhere, yet",
-      "link": "https://techcrunch.com/?p=3118178",
-      "description": "Users in India are embracing ChatGPT Images 2.0 for creative, personal visuals \u2014 from avatars to cinematic portraits.",
       "pub_date": ""
     },
     {
@@ -73,6 +66,13 @@
     },
     {
       "category": "AI",
+      "title": "<![CDATA[Apple raises the Mac Mini\u2019s starting price]]>",
+      "link": "https://www.theverge.com/tech/922572/apple-mac-mini-256-model",
+      "description": "Apple's Mac Mini now starts at $799 after the company pulled the $599 option with 256GB of storage from its online store, as spotted earlier by MacRumors. The model's discontinuati",
+      "pub_date": "2026-05-01T17:52:09-04:00"
+    },
+    {
+      "category": "AI",
       "title": "<![CDATA[All the evidence revealed so far in Musk v. Altman]]>",
       "link": "https://www.theverge.com/ai-artificial-intelligence/920775/evidence-exhibits-elon-musk-sam-altman-openai-trial",
       "description": "The Musk v. Altman trial is underway, and that means exhibits, or the evidence to be presented in court, are being revealed piece by piece. So far, email exchanges, photos, and cor",
@@ -84,6 +84,20 @@
       "link": "https://www.theverge.com/tech/922302/amazon-price-tracker-year",
       "description": "Amazon's built-in price tracking feature now allows you to see how much a product's price has changed over the past year. To use the feature, open the Amazon app and select the \"Pr",
       "pub_date": "2026-05-01T13:55:22-04:00"
+    },
+    {
+      "category": "Tech",
+      "title": "Replit\u2019s Amjad Masad on the Cursor deal, fighting Apple, and why he\u2019d rather not sell",
+      "link": "https://techcrunch.com/?p=3118564",
+      "description": "At TechCrunch's sold-out StrictlyVC event in San Francisco on Thursday night, we covered a lot of ground in a short time, beginning with the question everyone in the industry is as",
+      "pub_date": ""
+    },
+    {
+      "category": "Tech",
+      "title": "<![CDATA[Microsoft tests redesigned Windows 11 Run menu with dark mode and more]]>",
+      "link": "https://www.theverge.com/tech/922531/microsoft-windows-11-run-menu-redesign-test",
+      "description": "Microsoft is testing its much-needed refresh for the Windows 11 Run menu, offering a modern interface that the company says is faster and comes with support for dark mode. The rede",
+      "pub_date": "2026-05-01T18:01:53-04:00"
     },
     {
       "category": "SaaS",
@@ -100,13 +114,6 @@
       "pub_date": ""
     },
     {
-      "category": "Finance",
-      "title": "<![CDATA[Players from the NBA, NFL, and MLB call for a ban on betting \u2018unders\u2019]]>",
-      "link": "https://www.theverge.com/entertainment/922244/nba-nfl-mlb-prediction-market-unders-bets",
-      "description": "The unions backing professional NBA, NFL, MLB, NHL, and MLS players are calling on the Commodity Futures Trading Commission (CFTC) to ban prediction market platforms from allowing ",
-      "pub_date": "2026-05-01T12:57:27-04:00"
-    },
-    {
       "category": "World",
       "title": "<![CDATA[Birdfy\u2019s smart bird feeder is down to its best-ever price for Mother\u2019s Day]]>",
       "link": "https://www.theverge.com/gadgets/922165/netvue-birdfy-smart-bird-feeder-bath-mothers-day-deal-sale",
@@ -119,13 +126,6 @@
       "link": "https://www.theverge.com/gadgets/922246/dreame-next-smartphones-aurora-lux-nex-modular",
       "description": "Dreame, a Chinese manufacturer best known for its robot vacuums but with ambitions to do much more, says it's making smartphones now. I'm not sure I believe it. The company showed ",
       "pub_date": "2026-05-01T13:55:08-04:00"
-    },
-    {
-      "category": "World",
-      "title": "<![CDATA[This accessory can snap a Steam Controller to your phone \u2014 or almost anything else]]>",
-      "link": "https://www.theverge.com/games/921823/valve-steam-controller-mechanism-mounts-basegrip-dock",
-      "description": "Valve's new Steam Controller goes on sale on Monday for $99, and accessories-maker Mechanism will be ready. As far as we know, Mechanism's new Basegrip is the very first way to att",
-      "pub_date": "2026-05-01T13:00:00-04:00"
     }
   ]
 }
