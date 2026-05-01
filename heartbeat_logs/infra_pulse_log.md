@@ -1,24 +1,22 @@
 # Infra Pulse Log
 
-**Timestamp:** 2026-05-01 23:32 UTC  
-**Status:** WARN
+**Timestamp:** 2026-05-01T14:56 UTC / 2026-05-01 23:56 Asia/Tokyo  
+**Run by:** cron (ito-infra-pulse)
 
-## Summary
-- **OK:** 9
-- **Warn:** 1
-- **Fail:** 0
+## Result Summary
 
-## Findings
-- **Dir: scripts:** ✅ OK — found
-- **Dir: kaji:** ✅ OK — found
-- **Dir: memory:** ✅ OK — found
-- **Dir: heartbeat_logs:** ✅ OK — found
-- **File: MEMORY.md:** ✅ OK — found
-- **File: IDENTITY.md:** ✅ OK — found
-- **File: SOUL.md:** ✅ OK — found
-- **File: HEARTBEAT.md:** ✅ OK — found
-- **Cron PID file:** 🔴 FAIL — not found (may not apply)
-- **Tier1 Scripts:** ✅ OK — 7 scripts
+| Status | Count |
+|--------|-------|
+| OK     | 9     |
+| WARN   | 1     |
+| FAIL   | 0     |
 
-## Notes
-Ito workspace heartbeat active. Cron session: b59d1431-e95f-4d6a-a6c3-c8850a96f793
+**Overall:** OPERATIONAL (no failures)
+
+## Details
+
+- 9 checks passed (OK)
+- 1 check flagged a warning (WARN)
+- 0 checks failed (FAIL)
+
+No critical issues detected. The infrastructure is functioning normally with minor warning(s) that may warrant attention but do not affect overall availability.
