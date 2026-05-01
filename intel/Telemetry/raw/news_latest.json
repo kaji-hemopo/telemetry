@@ -1,13 +1,6 @@
 {
-  "timestamp": "2026-05-01 21:03 JST",
+  "timestamp": "2026-05-01 18:29 JST",
   "items": [
-    {
-      "category": "AI",
-      "title": "People are finally using Reddit\u2019s search",
-      "link": "https://techcrunch.com/?p=3118420",
-      "description": "The company saw a 30% year-on-year jump in the number of people using search every week, CEO Steve Huffman said on Thursday.",
-      "pub_date": ""
-    },
     {
       "category": "AI",
       "title": "ChatGPT Images 2.0 is a hit in India, but not a big winner elsewhere, yet",
@@ -41,6 +34,13 @@
       "title": "Apple was surprised by AI-driven demand for Macs",
       "link": "https://techcrunch.com/?p=3118257",
       "description": "Apple said it will be supply-constrained on Mac mini, Studio, and Neo in the next quarter, too.",
+      "pub_date": ""
+    },
+    {
+      "category": "AI",
+      "title": "Legal AI startup Legora hits $5.6B valuation and its battle with Harvey just got hotter",
+      "link": "https://techcrunch.com/?p=3118182",
+      "description": "The two wildly fast-growing rivals have raised massive sums, pushed into each other's home turf, and now have dueling ad campaigns.",
       "pub_date": ""
     },
     {
@@ -80,17 +80,10 @@
     },
     {
       "category": "AI",
-      "title": "<![CDATA[Microsoft wants lawyers to trust its new AI agent in Word documents]]>",
-      "link": "https://www.theverge.com/news/921944/microsoft-word-legal-agent-ai",
-      "description": "Microsoft is launching a new AI agent inside Word that's specifically designed for legal teams. Legal Agent handles document edits, negotiation history, and complex documents to he",
-      "pub_date": "2026-05-01T07:18:54-04:00"
-    },
-    {
-      "category": "AI",
-      "title": "<![CDATA[Dyson finally made a better robot, but a worse vacuum]]>",
-      "link": "https://www.theverge.com/tech/921136/dyson-spot-scrub-ai-wet-dry-robot-vacuum-cleaner-review",
-      "description": "I'm deeply conflicted about the Dyson Spot + Scrub Ai robot vacuum and mop. It's the company's best robotic floor cleaner to date, with excellent mopping performance, good navigati",
-      "pub_date": "2026-05-01T07:00:00-04:00"
+      "title": "We Vibe Coded Our Own AI VP of Marketing and Customer Success Platform. Two Vendors Just Lost $20k+ Each. And They\u2019ll Never Know Why.",
+      "link": "https://www.saastr.com/?p=322924",
+      "description": "We&#8217;ve now vibe coded 12+ apps into production at SaaStr. Some replaced things we were paying for. Some filled genuine white space where nothing existed. But two recent builds",
+      "pub_date": ""
     },
     {
       "category": "AI",
@@ -107,18 +100,18 @@
       "pub_date": "2026-04-30T17:25:15-04:00"
     },
     {
-      "category": "SaaS",
-      "title": "Dear SaaStr: I\u2019m Joining a B2B Startup at $3m ARR as VP of Sales.  What Should I Do First?",
-      "link": "https://www.saastr.com/?p=312054",
-      "description": "Dear SaaStr: I&#8217;m Joining a B2B Startup at $3m ARR as VP of Sales. What Should I Do First? Stepping into the VP Sales role at a company with $3M ARR is a pivotal moment. At th",
-      "pub_date": ""
+      "category": "AI",
+      "title": "<![CDATA[Apple\u2019s iPhone revenue jumps to $57 billion despite chip shortages]]>",
+      "link": "https://www.theverge.com/tech/921527/apple-iphone-revenue-q2-2026-earnings",
+      "description": "Apple's iPhone revenue jumped 22 percent to $57 billion over the past few months, despite supply chain issues impacting the device's processor. In an interview with Reuters, Apple ",
+      "pub_date": "2026-04-30T16:58:22-04:00"
     },
     {
-      "category": "World",
-      "title": "<![CDATA[Dyson put someone else\u2019s motor in its robot vacuum]]>",
-      "link": "https://www.theverge.com/tech/921432/dyson-robot-vacuum-motor-picea",
-      "description": "Dyson, a company built on engineering high-speed motors, has confirmed to The Verge that its newest robot vacuum doesn't use a Dyson motor. The recently launched Spot &#38; Scrub A",
-      "pub_date": "2026-05-01T07:00:00-04:00"
+      "category": "SaaS",
+      "title": "<![CDATA[Rivian\u2019s revenue is up as R2 production kicks into gear]]>",
+      "link": "https://www.theverge.com/transportation/921295/rivian-q1-2026-earnings-revenue-profit-r2",
+      "description": "Rivian reported its first quarter earnings of 2026, providing us a closer look at the company's financial health as it kicks off production for the crucial R2 electric vehicle. We'",
+      "pub_date": "2026-04-30T16:05:00-04:00"
     },
     {
       "category": "World",
@@ -126,6 +119,13 @@
       "link": "https://www.theverge.com/policy/921652/congress-fisa-section-702-45-day-extension",
       "description": "Congress has reauthorized Section 702 of the Foreign Intelligence Surveillance Act - but only for another 45 days. The extension is meant to give legislators more time to negotiate",
       "pub_date": "2026-04-30T16:59:58-04:00"
+    },
+    {
+      "category": "World",
+      "title": "<![CDATA[Rivian downsizes new EV factory after Trump\u2019s DOE slashes loan agreement]]>",
+      "link": "https://www.theverge.com/transportation/921585/rivian-georgia-factory-capacity-doe-loan",
+      "description": "Rivian announced some changes today with regard to the factory its building in the state of Georgia. The company was planning to build the facility in two phases, each resulting in",
+      "pub_date": "2026-04-30T16:05:00-04:00"
     }
   ]
 }
