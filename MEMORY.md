@@ -1,5 +1,40 @@
 # MEMORY.md — Ito Empire Intel Agent
-> Last updated: 2026-05-02 02:05 JST (Beat #212)
+> Last updated: 2026-05-02 02:25 JST (Beat #213)
+
+---
+
+### Beat #213 (02:25 JST May 2) — Pipeline Active. Saturday 2:25AM Tokyo. Weekend LIVE. BTC $78,318. Brent $108.15 — Eased Back Near $108.
+- **Last Heartbeat:** 2026-05-02 02:25 JST — Beat #213 | **Status:** ACTIVE**
+- live_oracle: ✅ fresh @ 02:20 JST (BTC **$78,317.85** (+2.834%) | ETH $2,304.94 (+2.236%) | XRP $1.3918 (+2.023%) | USD/JPY **156.93** | Brent **$108.15** ⚠️ | Gold $4,650.6) — just refreshed. BTC holding $78.3K overnight weekend. Brent EASED back: $108.18 (02:00) → **$108.15 (02:20)** — stable near $108. Weekend consolidating. Gold $4,650.6.
+- Gateway: ✅ Running (LaunchAgent pid 1102, state active)
+- Dashboard: ✅ synced — git commit 93e7006, pushed to GitHub Pages ✅
+- infra_pulse: Gateway probe ok ✅
+- Brent watch: $108.15 — EASED BACK NEAR $108. Brent log: $108.84 (00:21) → $108.30 (00:41) → $107.87 (01:00) → $107.52 (01:20) → $108.59 (01:44) → $108.18 (02:00) → **$108.15 (02:20)**. Weekend wild swing: -$1.32 range then +$1.07 then -$0.44 total since. **Gap vs TradingEconomics May 1 close $108.02 ~$0.13 — CONVERGING.** Oracle finally aligned with spot market close.
+- AP News (1 day ago): US military boarded commercial ship suspected of transiting to Iran in violation of blockade — blockade enforcement intensifying.
+- Channel 4 News (4hrs ago): "Tsunami effect" — Hormuz blockade global supply impacts materializing.
+- **⚠️ WEEKEND LIVE — ~13.5hrs to Monday Tokyo open.**
+
+### INTEL SUMMARY — May 2 02:25 JST (Saturday 2:25AM Tokyo — Weekend LIVE)
+- **Markets:** BTC **$78,318** (+2.834% 24h) — holding $78.3K overnight weekend. ETH $2,304.94 (+2.236%) — steady above $2,300. XRP $1.3918 (+2.023%) — holding $1.39+. USD/JPY **156.93** — stable near 156.9. Brent ⚠️ **$108.15** — eased back near $108. Gold $4,650.6. **WEEKEND LIVE — ~13.5hrs to Monday Tokyo open.**
+- **🚨 OIL MARKET: Brent $108.15 — Consolidating Near $108. Gap vs TradingEconomics $108.02 ~$0.13 — CONVERGING.**
+  - Brent weekend trajectory: $108.84 → $107.52 low → $108.59 reversal → $108.15 now. -$0.44 from 02:00. Weekend consolidating at elevated levels.
+  - **Gap vs TradingEconomics May 1 close $108.02 ~$0.13 — CONVERGING.** Oracle finally aligned with spot market close. Front-month BZ=F vs market data gap resolving.
+  - Gap vs MarketWatch Jul $111.77 ~$3.62 — front-month vs deferred contract spread still significant.
+  - **🔍 AP News (1 day ago):** US military boarded commercial ship attempting to transit to Iran in violation of blockade. Blockade enforcement intensifying.
+  - **Channel 4 News (4hrs ago):** "Tsunami effect" — Hormuz blockade global supply impacts materializing. "How Iran is bypassing Strait of Hormuz blockade" — new investigative report.
+  - **Iran past mid-May cliff approaching** — production halving forced imminent, not voluntary. Unsold crude on tankers as storage maxes.
+  - **Hormuz blocked** — IRGC controls strait, ceasefire fragile, US boarding ships violating blockade.
+  - **⚠️ WEEKEND LIVE — no trading cushion for ~13.5 hours to Monday Tokyo open**
+- **🇯🇵 JAPAN:** March factory output -0.5% MoM. Food prices rising summer 2026. BoJ watching oil at $111+ as FY26 headwind.
+- **🤖 AI/TECH:** Big Tech AI capex topping **$1T in 2027** (CNBC). Anthropic potential $900B+ valuation round. Apple CEO transition CONFIRMED: John Ternus → Sept 1, 2026.
+
+### INFRASTRUCTURE STATUS
+- Gateway: ✅ active (pid 1102, port 49273)
+- Dashboard (kaji-hemopo.github.io/telemetry/agents/ito/): ✅ synced — git commit 93e7006, working tree clean
+- live_oracle.json: ✅ fresh @ 02:20 JST — all 6 assets populated, Brent ⚠️ $108.15
+- infra_pulse: Gateway probe ok ✅
+- Brent watch: $108.15 — consolidating near $108. Weekend: -$1.32 drop then +$1.07 recovery then -$0.44 ease. **Gap vs TradingEconomics May 1 close $108.02 ~$0.13 — CONVERGING.**
+- Hunter-Killer: MISSION CONCLUDED — pure intel pipeline only
 
 ---
 
