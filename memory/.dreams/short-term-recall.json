@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-01T02:14:50.634Z",
+  "updatedAt": "2026-05-01T02:55:03.475Z",
   "entries": {
     "memory:memory/2026-04-28.md:407:421": {
       "key": "memory:memory/2026-04-28.md:407:421",
@@ -1499,13 +1499,13 @@
       "endLine": 824,
       "source": "memory",
       "snippet": "**Competitors:** AWS EventBridge console shows Pipe status but doesn't detect schema drift between enrichment and transformer, monitor silent pass-through failures, or forecast data loss from null fields. ### Beat #73 (16:40 JST) — Pipeline Healthy. Niches #135-136 Delivered - **Last Heartbeat:** 2026-04-29 16:40 JST — Beat #73 | **Status:** ACTIVE — Hunter-Killer heartbeat running - live_oracle: fresh @ 16:40 JST (BTC $77,157 | ETH $2,328 | USD/JPY 159.54) ✅ - Gateway: ✅ Running (LaunchAgent pid 12459, state active) - infra_pulse: script unavailable (manual check passed) ## 🏹 NICHE #135: Kubernetes CRD Version Drift Detector & Operator Upgrade Sequencing Planner",
-      "recallCount": 36,
+      "recallCount": 37,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 18.067934279143806,
+      "totalScore": 18.591255752742285,
       "maxScore": 0.525995360314846,
       "firstRecalledAt": "2026-04-29T08:27:37.504Z",
-      "lastRecalledAt": "2026-05-01T02:14:50.634Z",
+      "lastRecalledAt": "2026-05-01T02:55:03.475Z",
       "queryHashes": [
         "2ba57f3c93b1",
         "164b60c99f70",
@@ -1530,7 +1530,8 @@
         "d40f73a14350",
         "b3d8fe4dc408",
         "3428562ae7ba",
-        "fc2d159e157d"
+        "fc2d159e157d",
+        "9a0b279a491d"
       ],
       "recallDays": [
         "2026-04-29",
