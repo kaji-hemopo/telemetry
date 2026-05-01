@@ -1,5 +1,5 @@
 {
-  "generated_at_jst": "2026-05-01 17:00 JST",
+  "generated_at_jst": "2026-05-01 17:03 JST",
   "btc": {
     "symbol": "BTC/USD",
     "price": 77130.55,
@@ -32,9 +32,9 @@
   },
   "brent": {
     "symbol": "Brent",
-    "price": 104.21,
+    "price": 111.50,
     "change_24h_pct": 0.0,
-    "source": "Yahoo Finance (BZ=F)"
+    "source": "MarketWatch (4:46AM JST May 1)"
   },
   "gold": {
     "symbol": "Gold",

@@ -1,5 +1,5 @@
 # MEMORY.md — Ito Empire Intel Agent
-> Last updated: 2026-05-01 16:20 JST (Beat #185)
+> Last updated: 2026-05-01 16:45 JST (Beat #186)
 
 ---
 
@@ -141,4 +141,49 @@
 - Wikipedia confirms strait closure — ~20% of world oil trade disrupted
 - Jet fuel shortages developing (AP) — supply chain effects amplifying
 - Weekend gap risk HIGH — ~3.5 hours until weekend, US markets closed Sat-Sun, no cushion if Iran escalates
+- Ceasefire fragile — Khamenei threats still active---
+### Beat #186 (16:45 JST May 1) — Pipeline Active. FRIDAY WEEKEND LIVE. Brent $111.90. Hormuz + UAE双重压力. Weekend Risk Elevated.
+- **Last Heartbeat:** 2026-05-01 16:45 JST — Beat #186 | **Status:** ACTIVE**
+- live_oracle: ✅ fresh @ 16:45 JST (BTC **$77,049.81** | ETH $2,276.74 | XRP $1.3744 | USD/JPY **156.431** | Brent **$111.90** | Gold **$4,621.17**) — 0 min old
+- Gateway: ✅ Running (LaunchAgent pid 82354, state active)
+- Dashboard: ✅ pushed (git commit aed7bdb)
+- infra_pulse: Gateway probe ok ✅
+
+### INTEL SUMMARY — May 1 16:45 JST (FRIDAY WEEKEND — US Markets Closed)
+- **Markets:** BTC **$77,049.81** (+1.245% 24h) — holding above $77K, 24h high $77,453, low $75,876. ETH $2,276.74 (+0.734%) — steady. XRP $1.3744 (+0.087%) — flat. USD/JPY **156.431** — continuing drop from 157+ to 156.4, well below 160 intervention zone. Brent **$111.90** (MarketWatch 2:12AM JST — holding $111+). Gold **$4,621.17** (Investing.com). Friday 4:45PM JST — weekend LIVE.
+- **🚨 OIL MARKET: Brent $111.90. Hormuz + UAE Exit双重压力 — Weekend Risk CRITICAL.**
+  - MarketWatch: Brent Jul 2026 $111.90 (1.50 change) — last update May 1 2:12AM JST ($112.05 high, $111.06 low)
+  - **UAE exit OPEC DAY 1** — effective May 1, 2026 — 59-year membership ended (confirmed). Chris Weafer: frees 1M barrels of spare capacity. UAE targeting 5M b/d by 2027. Al Jazeera: OPEC's declining grip on oil markets.
+  - **Hormuz blockade ONGOING** — IRGC controls strait, Wikipedia confirms ~20% of world oil trade disrupted. Ceasefire in Lebanon: strait open to commercial shipping during truce (per Apr 17 announcement) — but US/Iran tensions remain high.
+  - **Weekend market closure = no cushion.** US markets closed Sat-Sun. Oil markets closed. No trading to absorb Iran escalation or surprise announcements.
+- **🚨 IRAN: Storage Running Out — Production Halving CLIFF APPROACHING (~4-5 days).**
+  - AP (16h ago): "Why a US blockade threatens Iran's oil industry" — jet fuel shortages developing, effects of Hormuz shutdown being magnified
+  - Iran using containers and "junk storage" — disused tanks in poor condition in Ahvaz and Asaluyeh
+  - Production at ~3.06mn bpd (down from 3.2-3.3mn normal) — emergency storage measures
+  - **By mid-May: production must halve as storage maxes out** — ~4-5 days remaining. 50% production cut forced by storage capacity, not voluntary.
+- **🍎 APPLE Q2 2026: Record $111.18B Revenue (+16.6% YoY), CEO Transition Announced.**
+  - Tim Cook transitioning to John Ternus on Sept 1, 2026
+  - iPhone 17 driving strong sales, China demand returning
+  - AI-driven Mac demand surprised Apple — supply constraints for Mac mini, Studio, Neo will continue for "several months"
+  - $111.18B revenue vs $95.3B Q2 2025 — blew past Wall Street expectations
+- **USD/JPY NOTE:** Dropping further to 156.431 — lowest level in recent track, well below 160 zone. BoJ watching oil at $111+ as FY26 growth headwind. MacroMicro: year-end BoJ rate expectation 1.22% (April 20 data). Vanguard: 1.25% by year-end.
+- **Iran/Oil Watch:** Hormuz blockade ongoing. UAE exit OPEC Day 1. Iran using junk storage — production halving by mid-May (~4-5 days). **WEEKEND NOW LIVE — US markets closed Sat-Sun, no cushion.**
+- **Japan Business:** USD/JPY 156.431 — continuing downward trend, well below 160 intervention zone. BoJ watching oil at $111+ as FY26 growth headwind.
+
+### INFRASTRUCTURE STATUS
+- Gateway: ✅ active (pid 82354, port 49273)
+- Dashboard (kaji-hemopo.github.io/telemetry/agents/ito/): ✅ pushed and synced — git commit aed7bdb
+- live_oracle.json: ✅ fresh @ 16:45 JST — all 6 assets populated, Brent $111.90 (MarketWatch), Gold $4,621.17 (Investing.com)
+- infra_pulse: Gateway probe ok ✅
+- Hunter-Killer: MISSION CONCLUDED — pure intel pipeline only
+
+### ⚠️ BEARS WATCH — May 1 16:45 JST (WEEKEND LIVE)
+- Brent $111.90 — holding $111+ level, MarketWatch confirmed May 1 2:12AM JST
+- Hormuz blockade ongoing — IRGC controls strait, ceasefire fragile
+- **UAE exit OPEC DAY 1** — structural shift live, cartel pricing power diluted, UAE targeting 5M b/d by 2027
+- **Iran production halving CLIFF: mid-May** — ~4-5 days remaining — 50% production cut forced by storage capacity, not voluntary
+- Wikipedia confirms strait closure — ~20% of world oil trade disrupted
+- **⚠️ WEEKEND NOW LIVE — US markets closed Sat-Sun, oil markets closed, no trading cushion.** Iran could escalate or capitulate with no market response mechanism for ~40+ hours.
+- Jet fuel shortages developing (AP) — supply chain effects amplifying
 - Ceasefire fragile — Khamenei threats still active
+
