@@ -1,7 +1,7 @@
 # Infra Pulse Log
 
-**Last Run:** 2026-05-02 02:10 UTC  
-**Status:** OK (1 warning, no failures)
+**Timestamp:** 2026-05-01 17:30 UTC  
+**Status:** WARN
 
 ## Summary
 - **OK:** 9
@@ -21,4 +21,6 @@
 - **Tier1 Scripts:** ✅ OK — 7 scripts
 
 ## Notes
-Ito workspace heartbeat active. All critical infrastructure present. One warning on PID file (non-critical).
+Ito workspace heartbeat active. All core infrastructure present and healthy.
+One warning on Cron PID file — expected if no active cron job running at check time.
+No critical failures.
