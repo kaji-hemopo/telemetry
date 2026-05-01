@@ -1,5 +1,9 @@
 {
+<<<<<<< Updated upstream
   "timestamp": "2026-05-01 18:29 JST",
+=======
+  "timestamp": "2026-05-01 19:53 JST",
+>>>>>>> Stashed changes
   "items": [
     {
       "category": "AI",
@@ -80,13 +84,6 @@
     },
     {
       "category": "AI",
-      "title": "We Vibe Coded Our Own AI VP of Marketing and Customer Success Platform. Two Vendors Just Lost $20k+ Each. And They\u2019ll Never Know Why.",
-      "link": "https://www.saastr.com/?p=322924",
-      "description": "We&#8217;ve now vibe coded 12+ apps into production at SaaStr. Some replaced things we were paying for. Some filled genuine white space where nothing existed. But two recent builds",
-      "pub_date": ""
-    },
-    {
-      "category": "AI",
       "title": "<![CDATA[The craziest part of Musk v. Altman happened while the jury was out of the room]]>",
       "link": "https://www.theverge.com/ai-artificial-intelligence/921713/musk-v-altman-jared-birchall-screw-up-xai",
       "description": "Okay, I am not a lawyer so I only understood about half of what just happened. But I am fairly sure, given the context, that Elon Musk's lawyers may have just fucked up big. Jared ",
@@ -105,6 +102,13 @@
       "link": "https://www.theverge.com/tech/921527/apple-iphone-revenue-q2-2026-earnings",
       "description": "Apple's iPhone revenue jumped 22 percent to $57 billion over the past few months, despite supply chain issues impacting the device's processor. In an interview with Reuters, Apple ",
       "pub_date": "2026-04-30T16:58:22-04:00"
+    },
+    {
+      "category": "SaaS",
+      "title": "Dear SaaStr: I\u2019m Joining a B2B Startup at $3m ARR as VP of Sales.  What Should I Do First?",
+      "link": "https://www.saastr.com/?p=312054",
+      "description": "Dear SaaStr: I&#8217;m Joining a B2B Startup at $3m ARR as VP of Sales. What Should I Do First? Stepping into the VP Sales role at a company with $3M ARR is a pivotal moment. At th",
+      "pub_date": ""
     },
     {
       "category": "SaaS",
