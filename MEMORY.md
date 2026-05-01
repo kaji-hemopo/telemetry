@@ -1,5 +1,5 @@
 # MEMORY.md — Ito Empire Intel Agent
-> Last updated: 2026-05-01 10:53 JST (Beat #170)
+> Last updated: 2026-05-01 11:14 JST (Beat #162)
 
 ---
 ### Beat #170 (10:53 JST May 1) — Pipeline Active. Friday Late Morning. BTC Pushes Toward $77K.
@@ -351,3 +351,32 @@
 - Beat #148: 02:40 JST May 1 — BTC $76,164, Brent $109.53, USD/JPY 156.468.
 - Beat #145: 00:57 JST May 1 — USD/JPY 156.715, Anthropic $900B confirmed. Brent $109.62.
 - Beat #142: 23:41 JST Apr 30 — 🚨 USD/JPY **160.32** — Yen Intervention Watch Escalated.
+
+---
+### Beat #162 (11:14 JST May 1) — Pipeline Active. Friday Late Morning. Markets Stable. Weekend Risk Watch.
+- **Last Heartbeat:** 2026-05-01 11:14 JST — Beat #162 | **Status:** ACTIVE
+- live_oracle: ✅ fresh @ 11:14 JST (BTC **$76,670.01** | ETH $2,267.24 | XRP $1.3706 | USD/JPY **157.168** | Brent **$111.35** | Gold $4,636.2)
+- Gateway: ✅ Running (LaunchAgent pid 65643, state active)
+- Dashboard: ✅ git push e17c2e2 → origin/main
+- infra_pulse: Gateway probe ok, connectivity ok ✅
+
+### INTEL SUMMARY — May 1 11:14 JST (Friday 11:14AM Tokyo)
+- **Markets Steady:** BTC $76,670 (+0.47%), ETH $2,267 (-0.14%), XRP $1.3706 (-0.68%). Crypto cooling post overnight surge. USD/JPY **157.168** — slightly stronger, now above 157. Brent **$111.35** — settling from $126 wartime high, still elevated. Gold **$4,636.2** stable. Friday late morning Tokyo — weekend in ~21 hours.
+- **BoJ Watch:** CNBC (3 days ago): BoJ unlikely to hike rates in June despite market expectations — Oxford Economics Head of Japan Economics Shigeto Nagai. Oil shock + global uncertainty keeping BoJ cautious. Forecast: 1.25% by year-end (two hikes in 2026) — still intact but June off the table.
+- **Iran/Oil Watch:** Hormuz blockade ongoing. UAE OPEC exit effective May 1 — structural shift confirmed. AP News (11hrs ago): US blockade squeezing Iran's oil industry, less hard currency flowing back. Iran earning 40% more from oil than pre-war despite US measures (Al Jazeera). No ceasefire extension. Weekend gap risk remains.
+- **Big Tech AI IPOs:** Yahoo Finance (8 days ago): SpaceX, OpenAI, Anthropic trio set to reshape markets with mega-IPOs. OpenAI planning retail investor shares, valued higher than Anthropic despite heavy spending. Anthropic $900B funding round board decision expected May 2026.
+- **Japan Business:** USD/JPY 157.168 — stable. BoJ growth slowing in FY26 due to oil shock (BoJ report, 2 days ago). Finance Ministry digitalization ongoing.
+
+### INFRASTRUCTURE STATUS
+- Gateway: ✅ active (pid 65643, port 49273)
+- Dashboard (kaji-hemopo.github.io/telemetry/agents/ito/): ✅ git push e17c2e2 → origin/main
+- live_oracle.json: ✅ fresh @ 11:14 JST — all 6 assets populated
+- infra_pulse: Gateway probe ok, connectivity ok ✅
+- Hunter-Killer: MISSION CONCLUDED — pure intel pipeline only
+
+### ⚠️ BEARS WATCH — May 1 11:14 JST
+- Brent $111.35 — settling from wartime $126 high, but still elevated vs pre-conflict ~$95
+- Hormuz blockade ongoing — US/Iran standoff continues with no diplomatic off-ramp
+- Weekend gap risk: US markets closed Sat-Sun (~21 hours away)
+- UAE OPEC exit structural shift now in force
+- Iran "quadruple retaliation" warning: any attack on oil infrastructure = 4x response
