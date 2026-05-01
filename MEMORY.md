@@ -1,22 +1,24 @@
 # MEMORY.md — Ito Empire Intel Agent
-> Last updated: 2026-05-02 06:37 JST (Beat #224)
+> Last updated: 2026-05-02 06:57 JST (Beat #225)
+
+---
+
+### Beat #225 (06:57 JST May 2) — Pipeline Active. Saturday 6:57AM Tokyo. Weekend LIVE. BTC $78,182. Brent $108.83 — Approaching Asia Open.
+- **Last Heartbeat:** 2026-05-02 06:57 JST — Beat #225 | **Status:** ACTIVE**
+- live_oracle: ✅ fresh @ 06:57 JST (BTC **$78,181.86** (+2.269%) | ETH $2,292.49 (+1.497%) | XRP $1.3884 (+1.447%) | USD/JPY **157.033** | Brent ⚠️ **$108.83** | Gold $4,625.6) — BTC holding $78.2K into weekend close. Brent $108.83 — weekend range $107.50-$108.99, currently upper half. USD/JPY 157.033. Gold $4,625.6.
+- Gateway: ✅ Running (LaunchAgent pid 1102, state active)
+- Dashboard: ✅ synced — git commit 758ee81, pushed to GitHub Pages ✅
+- infra_pulse: Gateway probe ok ✅
+- Brent watch: $108.83 — Weekend Wrap. Brent log: $108.84 (00:21) → $108.30 → $107.87 → $107.52 → $108.59 (01:44) → $108.18 → $108.15 → $108.09 (02:40) → $107.50 (03:06) → $108.41 (03:23) → $108.18 (03:43) → $108.54 (04:08) → $108.28 (04:55) → $108.36 (05:00) → $108.99 (05:34) → $108.97 (05:54) → $108.83 (06:20) → $108.83 (06:57). Weekend range: $108.99 high / $107.50 low. Gap vs MarketWatch Jul $111.77 ~$2.94.
+- **⚠️ ~2hrs to Monday Tokyo open.** — Asia open imminent.
+- **Iran/Hormuz intel:** Iran threatens "long and painful strikes" if US renews attacks (Reuters, May 1). CNBC: Big oil earnings Q1 2026 and Iran war impacts. Shadow fleet evasion active. Kpler data: Iran 12-22 days storage remaining — mid-May production cliff live.
+- **🇯🇵 JAPAN:** BoJ watching oil at $108+ as FY26 headwind. Yen intervention risk from higher energy prices (Bloomberg Surveillance, May 1). Japan imports almost all oil.
+- **🤖 AI/TECH:** Apple CEO transition (John Ternus → Sept 1) confirmed. Pentagon AI partnerships exclude Anthropic. White House opposes Anthropic Mythos expansion (Apr 29). Apple forecasts sales growth amid memory shortage.
+- **Hunter-Killer:** MISSION CONCLUDED — pure intel pipeline only
 
 ---
 
 ### Beat #224 (06:37 JST May 2) — Pipeline Active. Saturday 6:37AM Tokyo. Weekend LIVE. BTC $77,969. Brent $108.83 — Weekend Wrapping Up.
-- **Last Heartbeat:** 2026-05-02 06:37 JST — Beat #224 | **Status:** ACTIVE**
-- live_oracle: ✅ fresh @ 06:20 JST (BTC **$77,969.91** (+1.998%) | ETH $2,288.69 (+1.196%) | XRP $1.3864 (+1.212%) | USD/JPY **157.033** | Brent ⚠️ **$108.83** | Gold $4,625.6) — BTC ~$77.9K, easing from weekend peak ~$78.6K. Brent $108.83 — still near $109 after weekend high $108.99. USD/JPY 157.033. Gold $4,625.6.
-- Gateway: ✅ Running (LaunchAgent pid 1102, state active)
-- Dashboard: ✅ synced — git commit 6c20632, pushed to GitHub Pages ✅
-- infra_pulse: Gateway probe ok ✅
-- Brent watch: $108.83 — Weekend Wrap. Brent log: $108.84 (00:21) → $108.30 → $107.87 → $107.52 → $108.59 (01:44) → $108.18 → $108.15 → $108.09 (02:40) → $107.50 (03:06) → $108.41 (03:23) → $108.18 (03:43) → $108.54 (04:08) → $108.28 (04:55) → $108.36 (05:00) → $108.99 (05:34) → $108.97 (05:54) → $108.83 (06:20). Weekend range: $108.99 high / $107.50 low. Gap vs MarketWatch Jul $111.77 ~$2.94.
-- **⚠️ ~3hrs to Monday Tokyo open.** — Weekend nearly over, Asia open approaching.
-- **Iran/Hormuz intel:** Iran threatens "long and painful strikes" if US renews attacks. Shadow fleet evasion active (Al Jazeera, Apr 30). 1News NZ: Iran may be forced to dramatically reduce production. 12-22 days storage remaining per Kpler data — mid-May cliff live.
-- **🇯🇵 JAPAN:** BoJ keeping eyes on Mideast situation, rising prices (Yomiuri, Apr 29). BoJ projects FY26 growth slowdown as oil shock hits income — assumes Middle East situation eases and crude declines. Japan imports almost all oil.
-- **🤖 AI/TECH:** Pentagon announces AI partnerships (excludes Anthropic). White House opposes Anthropic Mythos expansion (Apr 29). Apple forecasts sales growth amid memory shortage (Bloomberg, May 1). Anthropic Apple Project Glasswing security initiative active.
-- **Hunter-Killer:** MISSION CONCLUDED — pure intel pipeline only
-
----
 
 ### Beat #223 (06:14 JST May 2) — Pipeline Active. Saturday 6:14AM Tokyo. Weekend LIVE. BTC $77,949. Brent $108.83 — Weekend Drift Lower.
 - **Last Heartbeat:** 2026-05-02 06:14 JST — Beat #223 | **Status:** ACTIVE**
