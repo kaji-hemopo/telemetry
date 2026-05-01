@@ -1,9 +1,16 @@
-# infra_pulse log
+# Infra Pulse Log
 
-**Timestamp:** 2026-05-01 12:30 UTC (2026-05-01 21:30 JST)
+**Timestamp:** 2026-05-01 12:52 UTC  
+**Run by:** cron (ito-infra-pulse)
 
-**Result:** `OK:9 | WARN:1 | FAIL:0`
+## Summary
+| Status | Count |
+|--------|-------|
+| OK     | 9     |
+| WARN   | 1     |
+| FAIL   | 0     |
 
-**Status:** ✅ HEALTHY
+## Assessment
+**Result:** OK — all checks passed with 1 warning, no failures.
 
-**Summary:** All critical checks passed. 9 services/components are ok, 1 warn (non-critical), 0 failures. No critical issues detected.
+No critical issues detected.
