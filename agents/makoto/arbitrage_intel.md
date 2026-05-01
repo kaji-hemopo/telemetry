@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-05-01 13:47 JST
+Generated: 2026-05-01 14:08 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -60,7 +60,6 @@ Generated: 2026-05-01 13:47 JST
 | 75 | Freelancer | Python scraper | AI Automation Developer Needed for Ongoing Work | $250.00 | https://www.freelancer.com/projects/openai/Automation-Developer-Needed-for-Ongoing.html |
 | 75 | Freelancer | Make.com automation | AI Receptionist for Phone Call Booking | $250.00 | https://www.freelancer.com/projects/openai/Receptionist-for-Phone-Call-Booking.html |
 | 75 | Freelancer | Make.com automation | Kit Email Templates &amp; Automation Overhaul | $250.00 | https://www.freelancer.com/projects/email-marketing/Kit-Email-Templates-Automation-Overhaul.html |
-| 65 | Freelancer | Python scraper | Python Flash-Sale Quota Sniper -- 2 | $30.00 | https://www.freelancer.com/projects/javascript/Python-Flash-Sale-Quota-Sniper.html |
 | 65 | Freelancer | Python scraper | ERP Chatbot for Data Automation | I’m building a new module for our in-house ERP and need a purpose-built AI chatb | https://www.freelancer.com/projects/ai-chatbot-development/ERP-Chatbot-for-Data-Automation.html |
 | 65 | Freelancer | Python scraper | Excel-Claude Integration Script | I need a compact Python workflow that reads a list of company names from an Exce | https://www.freelancer.com/projects/api/Excel-Claude-Integration-Script-40409876.html |
 | 65 | Freelancer | Python scraper | AI Support Chatbox Integration | $10.00 | https://www.freelancer.com/projects/ai-chatbot-development/Support-Chatbox-Integration.html |
@@ -72,6 +71,7 @@ Generated: 2026-05-01 13:47 JST
 | 65 | Freelancer | Make.com automation | Advanced Candidate Marketing &amp; Interview System | Candidate Profile Marketing &amp; Interview Opportunity System Objective: Build  | https://www.freelancer.com/projects/software-development/Advanced-Candidate-Marketing-Interview.html |
 | 65 | Freelancer | Make.com automation | Based B2B Sales Executive &mdash; IT Services (StaxMinds) | Looking for a Commission-Based B2B Sales Executive — IT Services (StaxMinds) We  | https://www.freelancer.com/projects/lead-generation/Based-Sales-Executive-Services-StaxMinds.html |
 | 65 | Freelancer | Make.com automation | Weekly paid - Portfolio Merchandise Operations Manager (Ownership | $10.00 | https://www.freelancer.com/projects/data-analysis/Weekly-paid-Portfolio-Merchandise.html |
+| 65 | Freelancer | Make.com automation | FreshBooks and GPSWOX Automation System | $30.00 | https://www.freelancer.com/projects/api/FreshBooks-GPSWOX-Automation-System.html |
 
 ## Notes
 - Scores prioritize: (1) simple automation/scripting fit, (2) payout magnitude, (3) keyword relevance.
