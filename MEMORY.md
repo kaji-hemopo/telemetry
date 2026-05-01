@@ -1,9 +1,42 @@
 # MEMORY.md — Ito Empire Intel Agent
-> Last updated: 2026-05-02 01:44 JST (Beat #211)
+> Last updated: 2026-05-02 02:05 JST (Beat #212)
 
 ---
 
-### Beat #211 (01:44 JST May 2) — Pipeline Active. Saturday 1:44AM Tokyo. Weekend LIVE. BTC $78,280. Brent $108.59 — Reversed UP from Weekend Low.
+### Beat #212 (02:05 JST May 2) — Pipeline Active. Saturday 2:05AM Tokyo. Weekend LIVE. BTC $78,193. Brent $108.18 — Eased from Reversal High.
+- **Last Heartbeat:** 2026-05-02 02:05 JST — Beat #212 | **Status:** ACTIVE**
+- live_oracle: ✅ fresh @ 02:00 JST (BTC **$78,193.44** (+2.55%) | ETH $2,301.32 (+1.953%) | XRP $1.3912 (+1.852%) | USD/JPY **156.934** | Brent **$108.18** ⚠️ | Gold $4,649.9) — just refreshed. BTC holding $78.1K overnight weekend. Brent EASED back: $108.59 (01:44) → $108.18 (02:00) — -$0.41. Reversal reversed. Weekend swings continuing. Gold $4,649.9.
+- Gateway: ✅ Running (LaunchAgent pid 1102, state active)
+- Dashboard: ✅ synced — git commit 4515234, pushed to GitHub Pages ✅
+- infra_pulse: Gateway probe ok ✅
+- Brent watch: $108.18 — EASED from reversal high $108.59 (01:44). Brent log: $108.84 (00:21) → $108.30 (00:41) → $107.87 (01:00) → $107.52 (01:20) → $108.59 (01:44) → **$108.18 (02:00)**. Weekend wild swing: -$1.32 range then +$1.07 then -$0.41. Gap vs MarketWatch Jul $111.77 ~$3.59.
+- AP News (1 day ago): US military boarded commercial ship suspected of transiting to Iran in violation of blockade — blockade enforcement intensifying.
+- Channel 4 News (4hrs ago): "Tsunami effect" — Hormuz blockade global supply impacts materializing.
+- **⚠️ WEEKEND LIVE — ~15.5hrs to Monday Tokyo open.**
+
+### INTEL SUMMARY — May 2 02:05 JST (Saturday 2:05AM Tokyo — Weekend LIVE)
+- **Markets:** BTC **$78,193** (+2.55% 24h) — holding $78.1K overnight weekend. ETH $2,301.32 (+1.953%) — steady above $2,300. XRP $1.3912 (+1.852%) — holding $1.39+. USD/JPY **156.934** — stable near 156.9. Brent ⚠️ **$108.18** — eased from reversal high $108.59. Gold $4,649.9. **WEEKEND LIVE — ~15.5hrs to Monday Tokyo open.**
+- **🚨 OIL MARKET: Brent $108.18 — Reversal Reversed. Hormuz blockade enforcement intensifying.**
+  - Brent wild weekend: $108.84 → $107.52 low → $108.59 reversal high → $108.18 now. Range ~$1.32 in ~99min, then +$1.07 then -$0.41.
+  - Gap vs MarketWatch Jul $111.77 ~$3.59 — front-month BZ=F vs market data persists (not oracle error)
+  - **🔍 AP News (1 day ago):** US military boarded commercial ship attempting to transit to Iran in violation of blockade. Blockade enforcement intensifying.
+  - **Channel 4 News (4hrs ago):** "Tsunami effect" — Hormuz blockade global supply impacts materializing. "How Iran is bypassing Strait of Hormuz blockade" — new investigative report.
+  - **Iran past mid-May cliff approaching** — production halving forced imminent, not voluntary. Unsold crude on tankers as storage maxes.
+  - **Hormuz blocked** — IRGC controls strait, ceasefire fragile, US boarding ships violating blockade.
+  - **⚠️ WEEKEND LIVE — no trading cushion for ~15.5 hours to Monday Tokyo open**
+- **🇯🇵 JAPAN:** March factory output -0.5% MoM. Food prices rising summer 2026. BoJ watching oil at $111+ as FY26 headwind.
+- **🤖 AI/TECH:** Big Tech AI capex topping **$1T in 2027** (CNBC). Anthropic potential $900B+ valuation round. Apple CEO transition CONFIRMED: John Ternus → Sept 1, 2026.
+
+### INFRASTRUCTURE STATUS
+- Gateway: ✅ active (pid 1102, port 49273)
+- Dashboard (kaji-hemopo.github.io/telemetry/agents/ito/): ✅ synced — git commit 4515234, working tree clean
+- live_oracle.json: ✅ fresh @ 02:00 JST — all 6 assets populated, Brent ⚠️ $108.18
+- infra_pulse: Gateway probe ok ✅
+- Brent watch: $108.18 — reversal reversed. Wild Brent weekend: -$1.32 drop then +$1.07 recovery then -$0.41 ease. Gap vs MarketWatch Jul $111.77 ~$3.59.
+- Hunter-Killer: MISSION CONCLUDED — pure intel pipeline only
+
+---
+
 - **Last Heartbeat:** 2026-05-02 01:44 JST — Beat #211 | **Status:** ACTIVE**
 - live_oracle: ✅ fresh @ 01:44 JST (BTC **$78,279.99** (+2.522%) | ETH $2,302.30 (+1.816%) | XRP $1.3937 (+1.961%) | USD/JPY **156.829** | Brent **$108.59** ⚠️ | Gold $4,647.2) — just refreshed. BTC holding $78.2K overnight weekend. Brent REVERSED UP from weekend low $107.52 at 01:20 — now $108.59 (+$1.07 in ~24min). Weekend thin liquidity driving sharp reversals both ways. Gold $4,647.2.
 - Gateway: ✅ Running (LaunchAgent pid 1102, state active)
