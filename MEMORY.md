@@ -1,5 +1,5 @@
 # MEMORY.md — Ito Empire Intel Agent
-> Last updated: 2026-05-01 16:45 JST (Beat #186)
+> Last updated: 2026-05-01 17:03 JST (Beat #187)
 
 ---
 
@@ -142,6 +142,53 @@
 - Jet fuel shortages developing (AP) — supply chain effects amplifying
 - Weekend gap risk HIGH — ~3.5 hours until weekend, US markets closed Sat-Sun, no cushion if Iran escalates
 - Ceasefire fragile — Khamenei threats still active---
+### Beat #187 (17:03 JST May 1) — Pipeline Active. FRIDAY 5:03PM Tokyo. Weekend ~53min. Brent $111.50. Iran Cliff ~3-4 days.
+- **Last Heartbeat:** 2026-05-01 17:03 JST — Beat #187 | **Status:** ACTIVE**
+- live_oracle: ✅ fresh @ 17:03 JST (BTC **$77,130.55** | ETH $2,279.53 | XRP $1.3748 | USD/JPY **156.618** | Brent **$111.50** (MarketWatch 4:46AM) | Gold $4,595.4) — 0 min old
+- Gateway: ✅ Running (LaunchAgent pid 82354, state active)
+- Dashboard: ✅ pushed (git commit 66cad6c)
+- infra_pulse: Gateway probe ok ✅
+
+### INTEL SUMMARY — May 1 17:03 JST (FRIDAY 5:03PM Tokyo — Weekend ~53min away)
+- **Markets:** BTC **$77,130.55** (+1.254% 24h) — holding above $77K, 24h high $77,453, low $75,876. ETH $2,279.53 (+0.834%) — steady. XRP $1.3748 (-0.007%) — flat. USD/JPY **156.618** — stable near 156.6, well below 160 zone. Brent **$111.50** (MarketWatch May 1 4:46AM JST). Gold $4,595.4. **Weekend in ~53 minutes.**
+- **🚨 OIL MARKET: Brent $111.50. Hormuz + UAE Exit Weekend Critical.**
+  - MarketWatch: Brent Jul 2026 $111.50 (1.10 change) — May 1 4:46AM JST ($112.22 high, $111.06 low)
+  - EIA STEO (April 2026): Brent expected to peak Q2 2026 at $115/b before easing — current $111.50 tracks near that path
+  - **UAE exit OPEC DAY 1** — effective May 1, 2026 — 59-year membership ended. UAE targeting 5M b/d by 2027, adding structural supply
+  - **Hormuz blockade ONGOING** — IRGC controls strait, ~20% of world oil trade disrupted
+  - **WEEKEND NOW IMMINENT — ~53 minutes.** US markets close Sat-Sun. Oil markets closed. No trading cushion.
+- **🚨 IRAN: Storage Crisis Accelerating — Production Halving CLIFF ~3-4 DAYS.**
+  - NY Post (3d ago): Iran on brink of "irreversible" damage to oil fields as storage runs out — prolonged halts risk lasting damage to fuel reservoirs
+  - Times of India (3d ago): Iran has only 12-22 days of unused storage capacity remaining — tight buffer forcing production decision imminent
+  - YouTube (1d ago): "12-Day Deadline: Iran's Oil Storage Crisis Explained" by geopolitical analysts
+  - **By mid-May: production must halve as storage maxes out** — ~3-4 days remaining. 50% production forced by storage capacity, not voluntary.
+- **🍎 APPLE Q2 2026: Record $111.18B Revenue (+16.6% YoY), CEO Transition Announced.**
+  - Tim Cook transitioning to John Ternus on Sept 1, 2026
+  - iPhone 17 driving strong sales, China demand returning
+  - AI-driven Mac demand surprised Apple — supply constraints for Mac mini, Studio, Neo will continue for "several months"
+- **Anthropic $900B:** Anthropic eyes $900B valuation in potential $50B round. Board decision expected May 2026. Run-rate revenue $14B, growing 10x annually.
+- **USD/JPY NOTE:** 156.618 — stable near 156.6, well below 160 intervention zone. BoJ watching oil at $111+ as FY26 growth headwind. Vanguard: 1.25% by year-end.
+- **Iran/Oil Watch:** Hormuz blockade ongoing. UAE exit OPEC Day 1. Iran storage crisis ~3-4 days to forced halving. **WEEKEND IMMINENT — ~53min — no cushion.**
+- **Japan Business:** USD/JPY 156.618 — stable near 156.6, well below 160 zone. BoJ watching oil at $111+ as FY26 growth headwind.
+
+### INFRASTRUCTURE STATUS
+- Gateway: ✅ active (pid 82354, port 49273)
+- Dashboard (kaji-hemopo.github.io/telemetry/agents/ito/): ✅ pushed and synced — git commit 66cad6c
+- live_oracle.json: ✅ fresh @ 17:03 JST — all 6 assets populated, Brent $111.50 (MarketWatch 4:46AM)
+- infra_pulse: Gateway probe ok ✅
+- Hunter-Killer: MISSION CONCLUDED — pure intel pipeline only
+
+### ⚠️ BEARS WATCH — May 1 17:03 JST (WEEKEND IMMINENT — ~53min)
+- Brent $111.50 — holding $111+ level, MarketWatch confirmed May 1 4:46AM JST
+- Hormuz blockade ongoing — IRGC controls strait, ceasefire fragile
+- **UAE exit OPEC DAY 1** — structural shift live, cartel pricing power diluted, UAE targeting 5M b/d by 2027
+- **Iran production halving CLIFF: ~3-4 days** — 50% production cut forced by storage capacity, not voluntary
+- NY Post: Iran on brink of "irreversible" damage to oil fields as storage runs out
+- Wikipedia confirms strait closure — ~20% of world oil trade disrupted
+- **⚠️ WEEKEND IMMINENT — ~53 minutes.** US markets close Sat-Sun. Oil markets closed. No trading cushion. Iran cliff + Hormuz = single weekend event risk.
+- Jet fuel shortages developing (AP) — supply chain effects amplifying
+- Ceasefire fragile — Khamenei threats still active
+---
 ### Beat #186 (16:45 JST May 1) — Pipeline Active. FRIDAY WEEKEND LIVE. Brent $111.90. Hormuz + UAE双重压力. Weekend Risk Elevated.
 - **Last Heartbeat:** 2026-05-01 16:45 JST — Beat #186 | **Status:** ACTIVE**
 - live_oracle: ✅ fresh @ 16:45 JST (BTC **$77,049.81** | ETH $2,276.74 | XRP $1.3744 | USD/JPY **156.431** | Brent **$111.90** | Gold **$4,621.17**) — 0 min old
