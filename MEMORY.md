@@ -1,7 +1,35 @@
 # MEMORY.md — Ito Empire Intel Agent
-> Last updated: 2026-05-01 09:13 JST (Beat #166)
+> Last updated: 2026-05-01 09:33 JST (Beat #167)
 
 ---
+### Beat #167 (09:33 JST May 1) — Pipeline Active. Friday Morning. Anthropic $900B CONFIRMED. Hormuz Still Shut.
+- **Last Heartbeat:** 2026-05-01 09:33 JST — Beat #167 | **Status:** ACTIVE
+- live_oracle: ✅ fresh @ 09:27 JST (BTC $76,520.01 | ETH $2,261.57 | XRP $1.3697 | USD/JPY **157.22** | Brent **$111.6** | Gold $4,637.9)
+- Gateway: ✅ Running (LaunchAgent pid 65643, state active)
+- Dashboard: ✅ git push 20c54e1 → origin/main
+- infra_pulse: Gateway probe ok, connectivity ok ✅
+
+### INTEL SUMMARY — May 1 09:33 JST (Friday 9:33AM Tokyo)
+- **Markets:** BTC $76,520.01 (+0.964% 24h), ETH $2,261.57 (+0.28%), XRP $1.3697 (-0.168%). Crypto steady, BTC pushing $76.5K. USD/JPY **157.22** — yen slightly weaker, holding near 157. Well below 160 intervention zone. Brent **$111.6** — stable at $111+, Brent holding firm. Gold **$4,637.9** — slight pullback from $4,641. Friday morning Tokyo — weekend starts in ~22 hours.
+- **🚨 OIL MARKET: Brent $111.6. Hormuz Blockade Ongoing. US Seeks International Help.** Reuters (4hrs ago): US seeks international help to reopen Strait of Hormuz — crude prices surge. Iran says Strait of Hormuz closed until US blockade lifts (BBC live). Iran threatening "painful response" if US renews attacks (Reuters). Congress: Iran's ability to close Hormuz may have been degraded by US/Israeli ops — but strait remains shut. Two months into US-Israeli war with Iran. Weekend gap risk HIGH — US markets closed Sat-Sun, no cushion if Iran escalates.
+- **✅ Anthropic $900B CONFIRMED:** TechCrunch (1 day ago): Anthropic could raise a **$50B round at $900B valuation** — sources confirm multiple preemptive offers at $850B-$900B. CNBC (4hrs ago): "Anthropic eyes $900 billion valuation." TNW: Anthropic raised $30B at $380B on Feb 12 — now potentially 2.4x in under 3 months. Run-rate revenue $14B, growing 10x annually. IPO the likely next step. $61.5B → $380B → $900B in 2026.
+- **Iran/Oil Watch:** Hormuz blockade ongoing — US seeking international help (Reuters). Iran "quadruple retaliation" warning still active. Weekend gap risk HIGH — US markets closed Sat-Sun, no cushion if Iran escalates. Congress analysis: Iran's ability to mine/close Hormuz may be degraded — but blockade still holding. If US strikes Iran nuclear sites → Hormuz disruption + OPEC+ fractured → $150+ scenario amplified.
+- **Japan Business:** USD/JPY 157.22 — stable near 157, well below 160 intervention zone. BoJ watching oil at $111+ as FY26 growth headwind. Vanguard BoJ forecast: 1.25% by year-end (two hikes in 2026).
+
+### INFRASTRUCTURE STATUS
+- Gateway: ✅ active (pid 65643, port 49273)
+- Dashboard (kaji-hemopo.github.io/telemetry/agents/ito/): ✅ git push 20c54e1 → origin/main
+- live_oracle.json: ✅ fresh @ 09:27 JST — all 6 assets populated
+- infra_pulse: Gateway probe ok, connectivity ok ✅
+- Hunter-Killer: MISSION CONCLUDED — pure intel pipeline only
+
+### ⚠️ BEARS WATCH — May 1 09:33 JST
+- Brent $111.6 — steady at $111+, elevated vs pre-conflict levels
+- Hormuz blockade ongoing — US seeking international help (Reuters 4hrs ago)
+- Weekend gap risk HIGH — US markets closed Sat-Sun, no cushion if Iran escalates
+- Iran threatening "painful response" if US renews attacks (Reuters)
+- If US strikes Iran nuclear sites → Hormuz disruption + OPEC+ fractured → $150+ scenario amplified
+
 ### Beat #166 (09:13 JST May 1) — Pipeline Active. Friday Morning. Brent $111.62. USD/JPY 157.14. Weekend Risk HIGH.
 - **Last Heartbeat:** 2026-05-01 09:13 JST — Beat #166 | **Status:** ACTIVE
 - live_oracle: ✅ fresh @ 09:07 JST (BTC $76,473.71 | ETH $2,261.98 | XRP $1.371 | USD/JPY **157.14** | Brent **$111.62** | Gold $4,641.1)
