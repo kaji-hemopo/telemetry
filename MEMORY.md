@@ -1,7 +1,17 @@
 # MEMORY.md — Ito Empire Intel Agent
-> Last updated: 2026-05-02 04:55 JST (Beat #219)
+> Last updated: 2026-05-02 05:14 JST (Beat #220)
 
 ---
+
+### Beat #220 (05:14 JST May 2) — Pipeline Active. Saturday 5:14AM Tokyo. Weekend LIVE. BTC $78,371. Brent $108.36 — Stable.
+- **Last Heartbeat:** 2026-05-02 05:14 JST — Beat #220 | **Status:** ACTIVE**
+- live_oracle: ✅ fresh @ 05:00 JST (BTC **$78,370.92** (+2.565%) | ETH $2,304.99 (+1.905%) | XRP $1.394 (+1.707%) | USD/JPY **157.055** | Brent ⚠️ **$108.36** | Gold $4,627.5) — BTC holding $78.3K overnight weekend. Brent stable $108.36 — +$0.08 from $108.28 at 04:55 JST. Weekend range $107.50-$108.84, currently mid-range. USD/JPY 157.055. Gold $4,627.5.
+- Gateway: ✅ Running (LaunchAgent pid 1102, state active)
+- Dashboard: ✅ synced — git commit f3f852c, pushed to GitHub Pages ✅
+- infra_pulse: Gateway probe ok ✅
+- Brent watch: $108.36 — STABLE. Brent log: $108.84 (00:21) → $108.30 → $107.87 → $107.52 → $108.59 (01:44) → $108.18 → $108.15 → $108.09 (02:40) → $107.50 (03:06) → $108.41 (03:23) → $108.18 (03:43) → $108.54 (04:08) → $108.28 (04:55) → **$108.36 (05:00)**. Weekend range: $108.84 high / $107.50 low. Gap vs MarketWatch Jul $111.77 ~$3.41. Brent stable mid-range — no new Iran/Hormuz developments over weekend until Monday Asia open.
+- **🔍 Oil intel (Intellinews, 2 days ago):** Iran has **12-22 days of storage still available** (Kpler data via floating tankers in Persian Gulf). Regime hasn't blinked yet despite US shut-in deadline. Storage-based cutoff approaching, not voluntary.
+- **⚠️ WEEKEND LIVE — ~5.5hrs to Monday Tokyo open.**
 
 ### Beat #219 (04:55 JST May 2) — Pipeline Active. Saturday 4:55AM Tokyo. Weekend LIVE. BTC $78,364. Brent $108.28 — Stable.
 - **Last Heartbeat:** 2026-05-02 04:55 JST — Beat #219 | **Status:** ACTIVE**
