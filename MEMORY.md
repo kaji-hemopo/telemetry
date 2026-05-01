@@ -234,3 +234,48 @@
 - Jet fuel shortages developing (AP) — supply chain effects amplifying
 - Ceasefire fragile — Khamenei threats still active
 
+
+---
+### Beat #188 (17:23 JST May 1) — Pipeline Active. Friday 5:23PM Tokyo. Weekend LIVE. Brent $111.50. Iran ~3 days.
+- **Last Heartbeat:** 2026-05-01 17:23 JST — Beat #188 | **Status:** ACTIVE**
+- live_oracle: ✅ fresh @ 17:23 JST (BTC **$77,373** | ETH $2,285.15 | XRP $1.38 | USD/JPY **156.39** | Brent **$111.50** | Gold **$4,568.60**) — 0 min old
+- Gateway: ✅ Running (LaunchAgent pid 82354, state active)
+- Dashboard: ✅ pushed
+- infra_pulse: Gateway probe ok ✅
+
+### INTEL SUMMARY — May 1 17:23 JST (FRIDAY 5:23PM Tokyo — Weekend LIVE)
+- **Markets:** BTC **$77,373** (+1.794% 24h) — holding above $77K, 24h high $77,453. ETH $2,285.15 (+1.308%) — steady. XRP $1.38 (+0.512%) — soft. USD/JPY **156.39** (X-Rates confirmed) — well below 160 zone. Brent **$111.50** (MarketWatch). Gold **$4,568.60** (Kitco). **Weekend LIVE — US markets closed Sat-Sun, oil markets closed.**
+- **🚨 OIL MARKET: Brent $111.50. Iran production halving ~3 days. Hormuz blocked. UAE exit Day 1.**
+  - 1News NZ (2h ago): US blockade squeezing Iran's oil industry — Iran may be forced to dramatically reduce or cease production from some wells
+  - Foreign Policy (3d ago): Hormuz impasse "boils down to storage" — Iran's storage nearly maxed
+  - Congress.gov (Mar 2026): full Congressional Research Service report on Iran Conflict impacts on Oil, Gas
+  - **Iran production halving CLIFF: ~3 days** (mid-May) — 50% production cut forced by storage capacity, not voluntary
+  - **UAE exit OPEC DAY 1** — effective May 1, 2026 — 59-year membership ended. UAE targeting 5M b/d by 2027
+- **🍎 APPLE AI MAC DEMAND — FRESH SUPPLY CONSTRAINTS:**
+  - Mezha.net: AI demand boosted Mac sales, Apple topped Q2 expectations — surging AI workloads pushed Mac demand beyond forecasts
+  - Yahoo: Apple Mac Studio and MacBook Pro could be delayed due to global memory shortages driven by rising AI hardware demand
+  - TechCrunch (7d ago): Mac mini marked-up on eBay amid shortages driven by AI — sold out everywhere, premium pricing active
+  - **Apple Q2 2026: $111.18B revenue (+16.6% YoY). CEO transition to John Ternus Sept 1.**
+- **Anthropic $900B:** Anthropic eyes $900B valuation in potential $50B round. Board decision expected May 2026. Run-rate revenue $14B, growing 10x annually.
+- **USD/JPY NOTE:** 156.39 — well below 160 intervention zone. BoJ watching oil at $111+ as FY26 growth headwind. Vanguard: 1.25% by year-end.
+- **Iran/Oil Watch:** Hormuz blockade ongoing. UAE exit OPEC Day 1. Iran may be forced to dramatically cut production (1News NZ, 2h ago). **WEEKEND LIVE — no cushion for ~40+ hours.**
+- **Japan Business:** USD/JPY 156.39 — well below 160 zone. BoJ watching oil at $111+ as FY26 growth headwind.
+
+### INFRASTRUCTURE STATUS
+- Gateway: ✅ active (pid 82354, port 49273)
+- Dashboard: ✅ operational — pushed and synced
+- live_oracle.json: ✅ fresh @ 17:23 JST — all 6 assets populated, 0 min old
+- infra_pulse: Gateway probe ok ✅
+- Hunter-Killer: MISSION CONCLUDED — pure intel pipeline only
+
+### ⚠️ BEARS WATCH — May 1 17:23 JST (WEEKEND LIVE)
+- Brent $111.50 — holding $111+ level, MarketWatch confirmed
+- **Iran production halving CLIFF: ~3 days** — 1News NZ (2h ago): Iran may be forced to dramatically reduce or cease production as storage maxes out
+- Hormuz blockade ongoing — IRGC controls strait, ceasefire fragile
+- **UAE exit OPEC DAY 1** — structural shift live, cartel pricing power diluted, UAE targeting 5M b/d by 2027
+- Wikipedia confirms strait closure — ~20% of world oil trade disrupted
+- **⚠️ WEEKEND LIVE — US markets closed Sat-Sun, oil markets closed, no trading cushion.** ~40+ hours until markets reopen. Iran cliff falls within weekend window.
+- Jet fuel shortages developing (AP) — supply chain effects amplifying
+- Ceasefire fragile — Khamenei threats still active
+
+---
