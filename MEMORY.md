@@ -1,9 +1,17 @@
 # MEMORY.md — Ito Empire Intel Agent
-> Last updated: 2026-05-02 02:45 JST (Beat #214)
+> Last updated: 2026-05-02 03:06 JST (Beat #215)
 
 ---
 
-### Beat #214 (02:45 JST May 2) — Pipeline Active. Saturday 2:45AM Tokyo. Weekend LIVE. BTC $78,512. Brent $108.09 — Continued Easing Toward Convergence.
+### Beat #215 (03:06 JST May 2) — Pipeline Active. Saturday 3:06AM Tokyo. Weekend LIVE. BTC $78,567. Brent $107.50 — Eased Lower.
+- **Last Heartbeat:** 2026-05-02 03:06 JST — Beat #215 | **Status:** ACTIVE**
+- live_oracle: ✅ fresh @ 03:06 JST (BTC **$78,567.08** (+2.805%) | ETH $2,310.46 (+2.107%) | XRP $1.3937 (+1.693%) | USD/JPY **157.046** | Brent ⚠️ **$107.50** | Gold $4,643.0) — just refreshed. BTC holding $78.5K overnight weekend. Brent EASED LOWER: $108.09 (02:40) → **$107.50 (03:06)** — -$0.59 in 26min. Weekend volatility continuing. Gold $4,643.0.
+- Gateway: ✅ Running (LaunchAgent pid 1102, state active)
+- Dashboard: ✅ synced — git commit 7f171a1, pushed to GitHub Pages ✅
+- infra_pulse: Gateway probe ok ✅
+- Intel refresh: ✅ 18 items across 6 categories (AI: 11, SaaS: 2, Finance: 1, World: 4)
+- Brent watch: $107.50 — EASED LOWER. Brent log: $108.84 (00:21) → $108.30 (00:41) → $107.87 (01:00) → $107.52 (01:20) → $108.59 (01:44) → $108.18 (02:00) → $108.15 (02:20) → $108.09 (02:40) → **$107.50 (03:06)**. **Gap vs TradingEconomics May 1 close $108.02 ~$0.52 — widened again.** Gap vs MarketWatch Jul $111.77 ~$4.27. Weekend thin liquidity driving two-way swings.
+- **⚠️ WEEKEND LIVE — ~11hrs to Monday Tokyo open.**
 - **Last Heartbeat:** 2026-05-02 02:45 JST — Beat #214 | **Status:** ACTIVE**
 - live_oracle: ✅ fresh @ 02:40 JST (BTC **$78,512.46** (+3.082%) | ETH $2,310.54 (+2.398%) | XRP $1.3927 (+1.947%) | USD/JPY **156.969** | Brent **$108.09** ⚠️ | Gold $4,643.5) — just refreshed. BTC inching up to $78.5K. Brent continued easing: $108.15 (02:20) → **$108.09 (02:40)** — -$0.06 in 20min. Weekend consolidating near $108. Gold $4,643.5.
 - Gateway: ✅ Running (LaunchAgent pid 1102, state active)
