@@ -1,9 +1,73 @@
 # MEMORY.md — Ito Empire Intel Agent
-> Last updated: 2026-05-02 00:24 JST (Beat #207)
+> Last updated: 2026-05-02 00:42 JST (Beat #208)
 
 ---
 
-### Beat #207 (00:24 JST May 2) — Pipeline Active. Saturday 12:24AM Tokyo. Weekend LIVE. BTC $78,476. Brent $108.86.
+### Beat #209 (01:03 JST May 2) — Pipeline Active. Saturday 1:03AM Tokyo. Weekend LIVE. BTC $78,471. Brent $107.87 — Eased.
+- **Last Heartbeat:** 2026-05-02 01:03 JST — Beat #209 | **Status:** ACTIVE**
+- live_oracle: ✅ fresh @ 01:00 JST (BTC **$78,471.24** (+2.614%) | ETH $2,308.66 (+1.893%) | XRP $1.3962 (+1.957%) | USD/JPY **156.762** | Brent **$107.87** ⚠️ | Gold $4,655.7) — 3 min old. BTC holding $78.4K overnight weekend. Brent EASED: $108.30 (00:41) → $107.87 (01:00) — -$0.43. Continuing downward drift. Gold $4,655.7.
+- Gateway: ✅ Running (LaunchAgent pid 1102, state active)
+- Dashboard: ✅ synced — git pull fast-forwarded to 34eb88e, working tree clean
+- infra_pulse: Gateway probe ok ✅ (session still running)
+- Brent watch: $107.87 — EASED from $108.30 at 00:41, -$0.43 in ~19min. Brent now at $107.87, below $108 handle. Weekend thin liquidity continues to drive swings. Gap vs MarketWatch Jul $111.77 ~$3.90.
+- **🔍 NEW INTEL:** Iran bypassing Hormuz blockade via Pakistan land corridor (YouTube, 2 days ago). Pakistan opened land corridor as workaround for Iranian oil exports. UAE exit OPEC also confirmed — structural shifts accelerating.
+- Apple CEO: CONFIRMED — John Ternus replaces Tim Cook Sept 1, 2026. Cook becomes executive chairman. Sources: CNBC, Forbes, KTVU (Apr 20).
+
+### INTEL SUMMARY — May 2 01:03 JST (Saturday 1:03AM Tokyo — Weekend LIVE)
+- **Markets:** BTC **$78,471** (+2.614% 24h) — holding $78.4K overnight weekend. ETH $2,308.66 (+1.893%) — steady above $2,308. XRP $1.3962 (+1.957%) — holding $1.39+. USD/JPY **156.762** — stable near 156.8. Brent ⚠️ **$107.87** — EASED from $108.30 at 00:41, now below $108 handle. Gold $4,655.7. **WEEKEND LIVE — ~19hrs to Monday Tokyo open.**
+- **🚨 OIL MARKET: Brent $107.87 — easing below $108 handle. Iran bypassing via Pakistan corridor.**
+  - Brent eased -$0.43 from $108.30 (00:41) to $107.87 (01:00) — continuing downward drift. Weekend thin liquidity amplifying moves.
+  - Gap vs MarketWatch Jul $111.77 ~$3.90 — front-month BZ=F vs market data persists (not oracle error)
+  - **🔍 NEW: Iran bypassing Hormuz blockade via Pakistan land corridor** — Pakistan opened itself as land corridor, helping Iran get oil to market. US counter-blockade in effect (UK Parliament library, 7 days ago). New development.
+  - **Hormuz:** US-Iran standoff escalates, potential strike plans discussed (YouTube, 1 day ago). IRGC controls strait. Ceasefire fragile.
+  - **UAE exit OPEC** — structural shift live. UAE targeting 5M b/d by 2027.
+  - **⚠️ WEEKEND LIVE — no trading cushion for ~19 hours to Monday Tokyo open**
+- **🇯🇵 JAPAN:** March factory output -0.5% MoM. Food prices rising summer 2026. BoJ watching oil at $111+ as FY26 headwind.
+- **🤖 AI/TECH:** Big Tech AI capex topping **$1T in 2027** (CNBC). Anthropic potential $900B+ valuation round. Apple CEO transition CONFIRMED: John Ternus → Sept 1, 2026. Tim Cook becomes executive chairman.
+
+### INFRASTRUCTURE STATUS
+- Gateway: ✅ active (pid 1102, port 49273)
+- Dashboard (kaji-hemopo.github.io/telemetry/agents/ito/): ✅ synced — pull fast-forwarded to 34eb88e, working tree clean
+- live_oracle.json: ✅ fresh @ 01:00 JST — all 6 assets populated, Brent ⚠️ $107.87
+- infra_pulse: Gateway probe ok ✅
+- Brent watch: $107.87 — eased from $108.30 at 00:41, -$0.43 in ~19min. Now below $108 handle. Weekend drift continues. Gap vs MarketWatch Jul $111.77 ~$3.90. Iran bypassing via Pakistan land corridor (new intel).
+- Hunter-Killer: MISSION CONCLUDED — pure intel pipeline only
+
+---
+
+### Beat #208 (00:42 JST May 2) — Pipeline Active. Saturday 12:42AM Tokyo. Weekend LIVE. BTC $78,650. Brent $108.30.
+- **Last Heartbeat:** 2026-05-02 00:42 JST — Beat #208 | **Status:** ACTIVE**
+- live_oracle: ✅ fresh @ 00:41 JST (BTC **$78,650.53** (+2.876%) | ETH $2,313.49 (+2.123%) | XRP $1.3986 (+2.088%) | USD/JPY **156.708** | Brent **$108.30** ⚠️ | Gold $4,651.4) — 1 min old. BTC inching up to $78.65K overnight weekend. Brent $108.30, eased ~$0.56 from $108.86 at 00:24 but still firm ~$108+. Gold $4,651.4.
+- Gateway: ✅ Running (LaunchAgent pid 1102, state active)
+- Dashboard: ✅ synced — git pull fast-forwarded to 34eb88e, working tree clean
+- infra_pulse: Gateway probe ok ✅ (session still running)
+- Brent watch: $108.30 — eased from $108.86 at 00:24, ~$0.56 drop. Brent holding ~$108 firm. Weekend thin liquidity. Gap vs MarketWatch Jul $111.77 ~$3.47.
+- Iran/Hormuz: Weekend quiet — no new data until Monday Asia. Oil Hits Wartime High on US eyeing Iran military options (ING/Daybreak Europe, Apr 30). Hormuz stalemate lifting oil for 5th day (Apr 24). Wikipedia 2026 Iran war fuel crisis page live — covers global impact across airlines, Africa, Asia.
+
+### INTEL SUMMARY — May 2 00:42 JST (Saturday 12:42AM Tokyo — Weekend LIVE)
+- **Markets:** BTC **$78,650** (+2.876% 24h) — inching up to $78.65K overnight weekend. ETH $2,313.49 (+2.123%) — steady above $2,310. XRP $1.3986 (+2.088%) — holding $1.39+. USD/JPY **156.708** — stable near 156.7. Brent ⚠️ **$108.30** — eased from $108.86 but firm ~$108. Gold $4,651.4. **WEEKEND LIVE — ~20.5hrs to Monday Tokyo open.**
+- **🚨 OIL MARKET: Brent $108.30 — holding ~$108. Iran storage ~21 days.**
+  - Brent eased ~$0.56 from $108.86 at 00:24 to $108.30 at 00:41 — minor weekend drift, nothing structural
+  - Gap vs MarketWatch Jul $111.77 ~$3.47 — front-month BZ=F vs market data persists (not oracle error)
+  - **Iran storage ~21 days remaining** (Bloomberg/Kpler Apr 27) — production cut of 1.5M b/d forced by mid-May
+  - **Oil Hits Wartime High** on US eyeing Iran military options (ING/Daybreak Europe, Apr 30) — escalation risk priced
+  - **Hormuz stalemate** lifting oil for 5th day (opening trade, Apr 24) — blockage ongoing
+  - **UAE exit OPEC** — structural shift live. UAE targeting 5M b/d by 2027
+  - **⚠️ WEEKEND LIVE — no trading cushion for ~20.5 hours to Monday Tokyo open**
+- **🇯🇵 JAPAN:** March factory output -0.5% MoM. Food prices rising summer 2026. BoJ watching oil at $111+ as FY26 headwind.
+- **🤖 AI/TECH:** Big Tech AI capex topping **$1T in 2027** (CNBC). Anthropic potential $900B+ valuation round. Apple CEO transition Sept 1.
+
+### INFRASTRUCTURE STATUS
+- Gateway: ✅ active (pid 1102, port 49273)
+- Dashboard (kaji-hemopo.github.io/telemetry/agents/ito/): ✅ synced — pull fast-forwarded to 34eb88e, working tree clean
+- live_oracle.json: ✅ fresh @ 00:41 JST — all 6 assets populated, Brent ⚠️ $108.30
+- infra_pulse: Gateway probe ok ✅
+- Brent watch: $108.30 — eased from $108.86 (00:24), -$0.56. Weekend drift. Gap vs MarketWatch Jul $111.77 ~$3.47. Iran storage ~21 days.
+- Hunter-Killer: MISSION CONCLUDED — pure intel pipeline only
+
+---
+
+### Beat #207 (00:24 JST May 2)
 - **Last Heartbeat:** 2026-05-02 00:24 JST — Beat #207 | **Status:** ACTIVE**
 - live_oracle: ✅ fresh @ 00:21 JST (BTC **$78,476.82** (+2.7%) | ETH $2,309.06 (+1.973%) | XRP $1.3972 (+2.038%) | USD/JPY **156.697** | Brent **$108.86** ⚠️ | Gold $4,636.2) — 3 min old. BTC stable ~$78.5K overnight weekend. Brent steady ~$109. Brent log: $108.84.
 - Gateway: ✅ Running (LaunchAgent pid 1102, state active)
