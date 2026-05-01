@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-05-02 01:44 JST",
+  "timestamp": "2026-05-02 03:06 JST",
   "items": [
     {
       "category": "AI",
@@ -13,6 +13,13 @@
       "title": "Ubuntu services hit by outages after DDoS attack",
       "link": "https://techcrunch.com/?p=3118437",
       "description": "A group of hacktivists have claimed responsibility for a distributed denial-of-service attack, which has affected several Ubuntu and Canonical websites, and prevented users from up",
+      "pub_date": ""
+    },
+    {
+      "category": "AI",
+      "title": "Musk v. Altman is just getting started",
+      "link": "https://techcrunch.com/?post_type=tc_video&p=3118470",
+      "description": "Elon Musk spent the better part of three days&#160;on the witness stand&#160;this week&#160;in his lawsuit against OpenAI, and&#160;it&#8217;s&#160;already getting messy. Emails, t",
       "pub_date": ""
     },
     {
@@ -34,13 +41,6 @@
       "title": "As Tim Cook steps down, Apple hit record sales \u2014 but a chip shortage looms",
       "link": "https://techcrunch.com/?p=3118284",
       "description": "Cook warned that Apple is facing supply-chain headwinds from RAMageddon that could impact its business.",
-      "pub_date": ""
-    },
-    {
-      "category": "AI",
-      "title": "Y Combinator alum Skio sells for $105M cash, only raised $8M, founder says",
-      "link": "https://techcrunch.com/?p=3118287",
-      "description": "Subscription billing fintech Skio sold to its competitor Recharge in what was a healthy exit, according to its founder and former CEO.",
       "pub_date": ""
     },
     {
@@ -73,24 +73,17 @@
     },
     {
       "category": "AI",
-      "title": "Dear SaaStr: What Sales Techniques Helped You Consistently Succeed While Others Failed?",
-      "link": "https://www.saastr.com/?p=307195",
-      "description": "Dear SaaStr: What sales techniques helped you consistently succeed while others failed? A few that basically always work in sales \u2026 but that so many don\u2019t do actually do: Being a p",
+      "title": "<![CDATA[Severe Linux Copy Fail security flaw uncovered using AI scanning help]]>",
+      "link": "https://www.theverge.com/tech/922243/linux-cve-2026-3141-copy-fail-exploit",
+      "description": "Nearly every Linux distribution released since 2017 is currently vulnerable to a security bug called \"Copy Fail\" that allows any user to give themselves administrator privileges. T",
+      "pub_date": "2026-05-01T12:55:16-04:00"
+    },
+    {
+      "category": "SaaS",
+      "title": "Atlassian and Twilio Crush the Quarter, Accelerate. Is the SaaSpocalypse Over?",
+      "link": "https://www.saastr.com/?p=324432",
+      "description": "So this week two of the more important bellwether names in B2B software reported earnings. And neither of them just &#8220;beat.&#8221; Both accelerated. Materially. At $7B and $5.",
       "pub_date": ""
-    },
-    {
-      "category": "AI",
-      "title": "<![CDATA[Pentagon strikes classified AI deals with OpenAI, Google, and Nvidia \u2014 but not Anthropic]]>",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/922113/pentagon-ai-classified-openai-google-nvidia",
-      "description": "The Pentagon has struck deals with OpenAI, Google, Microsoft, Amazon, Nvidia, Elon Musk's xAI, and the startup Reflection, allowing the agency to use their AI tools in classified s",
-      "pub_date": "2026-05-01T10:09:56-04:00"
-    },
-    {
-      "category": "AI",
-      "title": "<![CDATA[Elon Musk had a bad week in court]]>",
-      "link": "https://www.theverge.com/podcast/922009/musk-openai-trial-testimony-vergecast",
-      "description": "Elon Musk is the one who wanted this trial. He has spent months claiming OpenAI \"stole a nonprofit,\" and saying he was the actual driving force behind one of the most important com",
-      "pub_date": "2026-05-01T09:33:15-04:00"
     },
     {
       "category": "SaaS",
@@ -100,32 +93,39 @@
       "pub_date": ""
     },
     {
+      "category": "Finance",
+      "title": "<![CDATA[Players from the NBA, NFL, and MLB call for a ban on betting \u2018unders\u2019]]>",
+      "link": "https://www.theverge.com/entertainment/922244/nba-nfl-mlb-prediction-market-unders-bets",
+      "description": "The unions backing professional NBA, NFL, MLB, NHL, and MLS players are calling on the Commodity Futures Trading Commission (CFTC) to ban prediction market platforms from allowing ",
+      "pub_date": "2026-05-01T12:57:27-04:00"
+    },
+    {
+      "category": "World",
+      "title": "<![CDATA[This accessory can snap a Steam Controller to your phone \u2014 or almost anything else]]>",
+      "link": "https://www.theverge.com/games/921823/valve-steam-controller-mechanism-mounts-basegrip-dock",
+      "description": "Valve's new Steam Controller goes on sale on Monday for $99, and accessories-maker Mechanism will be ready. As far as we know, Mechanism's new Basegrip is the very first way to att",
+      "pub_date": "2026-05-01T13:00:00-04:00"
+    },
+    {
+      "category": "World",
+      "title": "<![CDATA[Dreame\u2019s rocket-powered car can do 0\u201360 in 0.9 seconds because you can just say things now]]>",
+      "link": "https://www.theverge.com/transportation/921204/dreame-ev-car-rocket-boosted-zero-sixty-reality",
+      "description": "When I first heard that a vacuum company had released a rocket-powered electric vehicle with physically impossible-sounding performance specs, I immediately thought James Dyson was",
+      "pub_date": "2026-05-01T12:33:46-04:00"
+    },
+    {
+      "category": "World",
+      "title": "<![CDATA[We just got a new reason to believe the Trump phone is real(ish)]]>",
+      "link": "https://www.theverge.com/gadgets/922180/trump-mobile-t1-phone-ptcrb-certification-t-mobile",
+      "description": "Where's the Trump phone? We're going to keep talking about it every week. We've reached out, as usual, to ask about the Trump phone's whereabouts. This time we've discovered a litt",
+      "pub_date": "2026-05-01T12:28:39-04:00"
+    },
+    {
       "category": "World",
       "title": "<![CDATA[Aurzen\u2019s tiny trifold projector is almost 40 percent off right now]]>",
       "link": "https://www.theverge.com/gadgets/921686/aurzen-zip-mini-projector-garmin-venu-4-watch-deal-sale",
       "description": "Not all trifolds are created equal \u2014 just ask our own Allison Johnson, who recently spent time with Samsung\u2019s ill-fated Galaxy phone. Aurzen\u2019s Zip projector is the kind of trifold ",
       "pub_date": "2026-05-01T11:00:46-04:00"
-    },
-    {
-      "category": "World",
-      "title": "<![CDATA[Some of Xteink\u2019s credit card-sized e-readers are losing their best feature]]>",
-      "link": "https://www.theverge.com/tech/921552/xteink-x3-x4-e-reader-third-party-crosspoint-firmware-usb-blocked",
-      "description": "The Xteink X4 and X3 are excellent alternatives to Kindles and Kobos if you want an e-reader that's as easy to slip into your pocket - just not out of the box. Both devices come wi",
-      "pub_date": "2026-05-01T10:24:54-04:00"
-    },
-    {
-      "category": "World",
-      "title": "<![CDATA[The Verge\u2019s 2026 Mother\u2019s\u00a0Day\u00a0gift guide]]>",
-      "link": "https://www.theverge.com/gadgets/907032/best-mothers-day-gift-ideas-2026-mom-tech-gadgets",
-      "description": "Whether it's managing a busy home or looking out for everyone around them, moms spend a lot of time every day caring for others. Mother's Day, May 10th, is an opportunity to return",
-      "pub_date": "2026-05-01T10:09:03-04:00"
-    },
-    {
-      "category": "World",
-      "title": "<![CDATA[My $5K smart bed needs to shut the hell up]]>",
-      "link": "https://www.theverge.com/column/921654/optimizer-eight-sleep-ai-summaries-health-wellness",
-      "description": "This is Optimizer, a weekly newsletter sent every Friday from Verge senior reviewer Victoria Song that dissects and discusses the latest gizmos and potions that swear they're going",
-      "pub_date": "2026-05-01T10:00:00-04:00"
     }
   ]
 }
