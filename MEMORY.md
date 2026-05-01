@@ -1,9 +1,71 @@
 # MEMORY.md — Ito Empire Intel Agent
-> Last updated: 2026-05-01 17:43 JST (Beat #188)
+> Last updated: 2026-05-01 18:27 JST (Beat #191)
 
 ---
 
-### Beat #188 (17:43 JST May 1) — Pipeline Active. Friday 5:43PM Tokyo. Brent $104. Oracle Malfunction? USD/JPY 156.48. Weekend LIVE.
+### Beat #191 (18:27 JST May 1) — Pipeline Active. Friday 6:27PM Tokyo. Brent Oracle Anomalous. Weekend LIVE.
+- **Last Heartbeat:** 2026-05-01 18:27 JST — Beat #191 | **Status:** ACTIVE**
+- live_oracle: ⚠️ Brent still anomalous @ 18:20 JST — script writes **$105.04** (Yahoo Finance BZ=F stale). BTC $77,329.71 | ETH $2,284.85 | XRP $1.3779 | USD/JPY **156.588** | Gold $4,577.4. Brent reality ~$111.78 (Investing.com May 1) / $110.73 (MarketWatch). Yahoo Finance BZ=F confirmed malfunctioning — oracle understating Brent by ~$6.
+- Gateway: ✅ Running (LaunchAgent pid 82354, state active)
+- Dashboard: ✅ synced — git commit ef16215 (18:27 JST), 18 items across 6 categories
+- infra_pulse: Gateway probe ok ✅
+- Oracle script: scripts/generate_live_oracle.py — BZ=F ticker malfunction persists — needs alternative Brent source
+- git divergence on telemetry resolved via stash/pull
+
+### INTEL SUMMARY — May 1 18:27 JST (Friday 6:27PM Tokyo — Weekend LIVE)
+- **Markets:** BTC **$77,329.71** (+1.686% 24h) — holding above $77K. ETH $2,284.85 (+1.216%). XRP $1.3779 (+0.357%). USD/JPY **156.588** — stable near 156.5. Brent ⚠️ **$105.04 oracle / $111.78 real**. Gold $4,577.4. **WEEKEND LIVE — US markets closed until Monday.**
+- **🚨 OIL ANOMALY PERSISTING: Oracle $105.04 vs Real $111.78 — Yahoo Finance Brent feed malfunction.**
+  - live_oracle.json shows Brent **$105.04** (Yahoo Finance BZ=F) — ~$6 below market
+  - Investing.com (May 1): Brent high **$111.78**, low $111.47
+  - MarketWatch (May 1 8:20AM ET): Brent Jul 2026 **$110.73**
+  - Yahoo Finance BZ=F front-month futures ticker giving stale/wrong data — confirmed malfunctioning
+  - Script `fetch_brent()` uses `yfinance` with `BZ=F` ticker — needs source switch
+  - EIA STEO: Brent expected Q2 2026 peak $115/b — current $111.78 tracks near that path
+- **🚨 IRAN: Storage 12-22 Days — Mid-May Production Halving Still Imminent.**
+  - Intellinews (2d ago): Iran's oil sector "fails to explode" as Trump's shut-in deadline passes
+  - Kpler: Iran has 12-22 days of unused storage capacity remaining (late April estimate)
+  - WSJ (4d ago): regime using containers and "junk storage" — disused tanks in poor condition
+  - **Iran production halving CLIFF: mid-May** — ~14-20 days from today. 50% forced by storage capacity, not voluntary.
+  - Production at ~3.06mn bpd (down from 3.2-3.3mn normal)
+  - **Weekend amplifies event risk** — no market cushion until Monday morning Tokyo
+- **🚨 OIL MARKET CONTEXT: Hormuz + UAE Exit + Iran Cliff = Elevated Floor.**
+  - **UAE exit OPEC DAY 1** — effective May 1, 2026 — ends 59-year membership. UAE targeting 5M b/d by 2027. Structural shift toward more supply.
+  - **Hormuz blockade ONGOING** — IRGC controls strait, ~20% of world oil trade disrupted
+  - **WEEKEND LIVE** — US markets closed Sat-Sun. No trading cushion. Iran cliff + Hormuz = single weekend event risk.
+  - Jet fuel shortages developing (AP) — supply chain effects amplifying
+- **🍎 APPLE Q2 2026: Record $111.18B Revenue (+16.6% YoY), CEO Transition Announced.**
+  - Tim Cook transitioning to John Ternus on Sept 1, 2026
+  - AI-driven Mac demand surprised Apple — supply constraints for Mac mini, Studio, Neo will continue for "several months"
+- **Anthropic $900B:** Anthropic eyes $900B valuation in potential $50B round. Board decision expected May 2026. Run-rate revenue $14B, growing 10x annually.
+- **USD/JPY NOTE:** 156.588 — stable near 156.5, well below 160 intervention zone. BoJ watching oil at $111+ as FY26 growth headwind.
+
+### INFRASTRUCTURE STATUS
+- Gateway: ✅ active (pid 82354, port 49273)
+- Dashboard (kaji-hemopo.github.io/telemetry/agents/ito/): ✅ synced — git commit ef16215
+- live_oracle.json: ⚠️ Brent data suspicious ($105.04 vs real $111.78) — Yahoo Finance BZ=F malfunctioning
+- infra_pulse: Gateway probe ok ✅
+- Oracle script: scripts/generate_live_oracle.py — BZ=F ticker malfunction — needs alternative Brent source
+- Hunter-Killer: MISSION CONCLUDED — pure intel pipeline only
+
+### ⚠️ BEARS WATCH — May 1 18:27 JST (WEEKEND LIVE)
+- Brent real: ~$111.78 (Investing.com) / $110.73 (MarketWatch) — Oracle showing $105.04 (BZ=F malfunction)
+- Hormuz blockade ongoing — IRGC controls strait, ceasefire fragile
+- **UAE exit OPEC DAY 1** — structural shift live, cartel pricing power diluted, UAE targeting 5M b/d by 2027
+- **Iran production halving CLIFF: mid-May** — ~14-20 days from May 1. 50% production forced by storage capacity, not voluntary.
+- Wikipedia confirms strait closure — ~20% of world oil trade disrupted
+- **WEEKEND LIVE** — US markets closed Sat-Sun. Oil markets closed. No trading cushion. Iran cliff + Hormuz = single weekend event risk.
+- Jet fuel shortages developing (AP) — supply chain effects amplifying
+- Ceasefire fragile — Khamenei threats still active
+
+---
+
+### Beat #190 (18:05 JST May 1) — Pipeline Active. Friday 6:05PM Tokyo. Brent Still Anomalous. Weekend LIVE.
+- **Last Heartbeat:** 2026-05-01 18:05 JST — Beat #190 | **Status:** ACTIVE**
+- live_oracle: ⚠️ Brent still anomalous @ 18:05 JST — script writes **$104.63** (Yahoo Finance BZ=F stale/erroneous). BTC $77,339.19 | ETH $2,285.15 | XRP $1.378 | USD/JPY **156.445** | Gold $4,579.7. Brent reality ~$110+ (MarketWatch/Morning check). Oracle using Yahoo Finance BZ=F which is clearly malfunctioning — consistent with Brent stored at $104.22-104.63 while real market ~$110+.
+- Gateway: ✅ Running (LaunchAgent pid 82354, state active)
+- Dashboard: ✅ pushed — git commit d333c6c (18:05 JST)
+- infra_pulse: Gateway probe ok ✅
+- git divergence resolved via stash/pull — dashboard now syncing cleanly
 - **Last Heartbeat:** 2026-05-01 17:43 JST — Beat #188 | **Status:** ACTIVE**
 - live_oracle: ⚠️ ANOMALY @ 17:40 JST — Brent **$104.22** (implausible drop from $111.50; Yahoo Finance feed likely stale/malfunctioning). BTC $77,410.63 | ETH $2,286.14 | XRP $1.3791 | USD/JPY **156.479** | Gold $4,578.1. MarketWatch confirms Brent at **$110.73** (May 1 8:20AM ET). Oracle script writes $104.22 but MarketWatch reality = $110+.
 - Gateway: ✅ Running (LaunchAgent pid 82354, state active)
@@ -330,3 +392,47 @@
 - Ceasefire fragile — Khamenei threats still active
 
 ---
+
+---
+
+### Beat #190 (18:05 JST May 1) — Pipeline Active. Friday 6:05PM Tokyo. Brent Still Anomalous. Weekend LIVE.
+- **Last Heartbeat:** 2026-05-01 18:05 JST — Beat #190 | **Status:** ACTIVE**
+- live_oracle: ⚠️ Brent still anomalous @ 18:05 JST — script writes **$104.63** (Yahoo Finance BZ=F stale/erroneous). BTC $77,339.19 | ETH $2,285.15 | XRP $1.378 | USD/JPY **156.445** | Gold $4,579.7. Brent reality ~$110+ (MarketWatch/morning check). Oracle consistently writes ~$104 while real market ~$110+.
+- Gateway: ✅ Running (LaunchAgent pid 82354, state active)
+- Dashboard: ✅ pushed — git commit d333c6c (18:05 JST)
+- infra_pulse: Gateway probe ok ✅
+- git divergence resolved via stash/pull — dashboard now syncing cleanly
+
+### INTEL SUMMARY — May 1 18:05 JST (Friday 6:05PM Tokyo — WEEKEND LIVE)
+- **Markets:** BTC **$77,339.19** (+1.631% 24h) — holding above $77K, 24h high $77,500, low $75,876. ETH $2,285.15 (+1.193%). XRP $1.378 (+0.306%). USD/JPY **156.445** — stable. Gold $4,579.7. **WEEKEND ACTIVE — US markets closed until Monday.**
+- **🚨 OIL ANOMALY PERSISTS: Yahoo Finance Brent BZ=F still showing $104.63 vs real ~$110+.**
+  - Oracle script consistently writes ~$104 (was $104.22 at 17:40, now $104.63 at 18:05) — clearly stale/erroneous Yahoo Finance feed
+  - Real Brent market: ~$110+ (MarketWatch May 1 morning: $110.73)
+  - **Oracle script needs source fix** — Yahoo Finance BZ=F for Brent giving bad data. Consider MarketWatch direct or alternative source.
+- **🚨 IRAN CLIFF: NOW 1-2 DAYS AWAY.**
+  - Mid-May deadline is NOW — production halving could begin any moment as storage maxes out
+  - Using "junk storage" workaround (disused containers/tanks) — not sustainable
+  - **WEEKEND AMPLIFIES RISK** — no trading cushion, markets closed Sat-Sun
+- **🚨 OIL MARKET: Hormuz + UAE Exit + Iran Cliff = Elevated Floor.**
+  - **UAE exit OPEC DAY 1** — effective May 1, 2026 — ends 59-year membership. UAE targeting 5M b/d by 2027.
+  - **Hormuz blockade ONGOING** — IRGC controls strait, ~20% of world oil trade disrupted
+  - Jet fuel shortages developing (AP) — supply chain effects amplifying
+- **🍎 APPLE Q2 2026: Record $111.18B Revenue (+16.6% YoY), CEO Transition Announced Sept 1.**
+  - AI-driven Mac demand surprised Apple — Mac mini, Studio, Neo supply constrained for "several months"
+- **Anthropic $900B:** Anthropic eyes $900B valuation in potential $50B round. Board decision May 2026. Run-rate revenue $14B, growing 10x annually.
+- **USD/JPY NOTE:** 156.445 — stable near 156.4, well below 160 intervention zone. BoJ watching oil at $111+ as FY26 growth headwind. Vanguard: 1.25% by year-end.
+
+### INFRASTRUCTURE STATUS
+- Gateway: ✅ active (pid 82354, port 49273)
+- Dashboard (kaji-hemopo.github.io/telemetry/agents/ito/): ✅ pushed — git commit d333c6c (18:05 JST)
+- live_oracle.json: ⚠️ Brent anomalous ($104.63 vs real ~$110+) — Yahoo Finance BZ=F malfunctioning, needs source fix
+- infra_pulse: Gateway probe ok ✅
+- git sync: resolved via stash/pull — dashboard now pushing cleanly
+
+### ⚠️ BEARS WATCH — May 1 18:05 JST (WEEKEND LIVE)
+- Brent real: ~$110.73+ — Oracle showing $104.63 (malfunctioning Yahoo Finance BZ=F)
+- **Iran CLIFF: IMMINENT** — 1-2 days, production must halve by storage capacity
+- Hormuz blockade ongoing — IRGC controls strait, ceasefire fragile
+- **UAE exit OPEC DAY 1** — structural shift live
+- **WEEKEND LIVE** — US + oil markets closed Sat-Sun. No trading cushion. Iran cliff is a single weekend event risk.
+- Jet fuel shortages developing (AP)
