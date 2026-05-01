@@ -1,50 +1,51 @@
 # MEMORY.md — Ito Empire Intel Agent
-> Last updated: 2026-05-01 21:59 JST (Beat #200)
+> Last updated: 2026-05-01 22:20 JST (Beat #201)
 
 ---
 
-### Beat #200 (21:59 JST May 1) — Pipeline Active. Friday 9:59PM Tokyo. Weekend LIVE. BTC $78,122. Brent Fixed.
-- **Last Heartbeat:** 2026-05-01 21:59 JST — Beat #200 | **Status:** ACTIVE**
-- live_oracle: ✅ fresh @ 21:59 JST (BTC **$78,122** (+2.182%) | ETH $2,306.62 (+1.63%) | XRP $1.3862 (+0.97%) | USD/JPY **156.592** | Brent **$110.8** | Gold $4,603.7) — 0 min old. Brent ✅ $110.8 (BZ=F恢复正常 — anomaly resolved). BTC pushing toward $78K.
+### Beat #201 (22:20 JST May 1) — Pipeline Active. Friday 10:20PM Tokyo. Weekend LIVE. BTC $78,309. Brent Eased.
+- **Last Heartbeat:** 2026-05-01 22:20 JST — Beat #201 | **Status:** ACTIVE**
+- live_oracle: ✅ fresh @ 22:20 JST (BTC **$78,309.48** (+2.613%) | ETH $2,309.31 (+2.012%) | XRP $1.3897 (+1.431%) | USD/JPY **156.645** | Brent **$109.81** ⚠️ | Gold $4,607.6) — 0 min old. Brent slipped back ~$1 from $110.8 (BZ=F showing $109.81 vs real ~$110-111 — monitor for anomaly recurrence). BTC steady ~$78.3K.
 - Gateway: ✅ Running (LaunchAgent pid 82354, state active)
-- Dashboard: ✅ synced — git commit 39c9106 (21:59 JST) — BTC $78,122
+- Dashboard: ✅ synced — git commit c4b10c5 (22:20 JST) — BTC $78,309
 - infra_pulse: Gateway probe ok ✅
-- Brent anomaly RESOLVED: Yahoo Finance BZ=F back online, showing $110.8 aligned with real market (~$110-111)
+- Brent watch: slipped from $110.8 → $109.81 — ~$1 drop. Watch for BZ=F anomaly recurrence vs real ~$110-111.
 
-### INTEL SUMMARY — May 1 21:59 JST (Friday 9:59PM Tokyo — Weekend LIVE)
-- **Markets:** BTC **$78,122** (+2.182% 24h) — broke above $78K briefly to $78,170 intraday high. ETH $2,306.62 (+1.63%) — strong. XRP $1.3862 (+0.97%) — steady rally. USD/JPY **156.592** — stable near 156.5, well below 160 zone. Brent ✅ **$110.8** — anomaly resolved (BZ=F back online). Gold $4,603.7. **WEEKEND LIVE — US markets closed Sat-Sun, oil markets closed.**
-- **🚨 OIL MARKET: Brent $110.8. Iran Crude Piling Up — Storage Filling.**
-  - Brent anomaly RESOLVED — Yahoo Finance BZ=F恢复正常, showing correct $110.8 vs real ~$110-111
-  - Modern Diplomacy (3hrs ago): US blockade chokes Iran oil exports, crude piles up at sea — unsold crude on tankers as storage sites reach capacity
+### INTEL SUMMARY — May 1 22:20 JST (Friday 10:20PM Tokyo — Weekend LIVE)
+- **Markets:** BTC **$78,309** (+2.613% 24h) — holding $78K+. ETH $2,309.31 (+2.012%) — firm. XRP $1.3897 (+1.431%) — steady. USD/JPY **156.645** — stable near 156.5, well below 160 zone. Brent ⚠️ **$109.81** — slipped from $110.8, BZ=F possible minor staleness vs real ~$110-111. Gold $4,607.6. **WEEKEND LIVE — US markets closed Sat-Sun, oil markets closed.**
+- **🚨 OIL MARKET: Brent $109.81. Iran Crude Piling Up — Storage Filling. Weekend Amplifies Risk.**
+  - Brent slipped ~$1 from $110.8 — BZ=F showing $109.81. Real market likely $110-111 (Investing.com/MarketWatch reference). Watch for anomaly recurrence.
+  - **Iran past mid-May cliff NOW** — production halving forced by storage capacity, not voluntary. Unsold crude on tankers as storage maxes.
   - Yahoo Finance: Trump bets Hormuz blockade will break Iran before triggering global crisis — Iran has less than a month before wells must shut in
-  - **Iran past mid-May cliff NOW — production halving forced by storage imminent, not voluntary**
-  - **UAE exit OPEC DAY 1** — effective May 1, 2026 — structural shift live. UAE targeting 5M b/d by 2027
-  - **Hormuz blockade ONGOING** — IRGC controls strait, ~20% of world oil trade disrupted
-  - **⚠️ WEEKEND LIVE — no trading cushion until Monday morning Tokyo (~33hrs to market open)**
+  - Modern Diplomacy: US blockade chokes Iran oil exports, crude piles up at sea
+  - **UAE exit OPEC DAY 1** — structural shift live. UAE targeting 5M b/d by 2027
+  - **Hormuz blockade ONGOING** — IRGC controls strait, ceasefire fragile
+  - **⚠️ WEEKEND LIVE — no trading cushion until Monday morning Tokyo (~31hrs to market open)**
 - **🍎 APPLE Q2 2026:** $111.18B Revenue (+16.6% YoY), CEO Transition Sept 1. iPhone 17 strong, China returning, AI-driven Mac demand constrained for months.
 - **Anthropic $900B:** Eyes $900B valuation in potential $50B round. Board decision May 2026. Run-rate revenue $14B, growing 10x annually.
-- **USD/JPY NOTE:** 156.592 — stable near 156.5, well below 160 intervention zone. BoJ watching oil at $111+ as FY26 growth headwind. Vanguard: 1.25% by year-end.
-- **Japan Business:** USD/JPY 156.592 — stable below 160 zone. BoJ facing oil-driven inflation headwind at $111+.
+- **USD/JPY NOTE:** 156.645 — stable near 156.5, well below 160 intervention zone. BoJ watching oil at $111+ as FY26 growth headwind. Vanguard: 1.25% by year-end.
 
-### ⚠️ BEARS WATCH — May 1 21:59 JST (WEEKEND LIVE — ~33hrs to markets reopen)
-- Brent ✅ $110.8 — anomaly resolved, aligned with real ~$110-111
+### ⚠️ BEARS WATCH — May 1 22:20 JST (WEEKEND LIVE — ~31hrs to markets reopen)
+- Brent ⚠️ $109.81 — slipped from $110.8, possible BZ=F staleness. Real ~$110-111. Watch closely.
 - **Iran crude piling up at sea — US blockade choking exports.** Storage capacity maxing out, production halving forced imminent (not voluntary).
 - **Iran past mid-May CLIFF** — production halving NOW forced by storage capacity. Unsold crude on tankers.
 - Hormuz blockade ongoing — IRGC controls strait, ceasefire fragile
 - **UAE exit OPEC DAY 1** — structural shift live, cartel pricing power diluted, UAE targeting 5M b/d by 2027
-- **⚠️ WEEKEND LIVE — US markets closed Sat-Sun, oil markets closed, no trading cushion for ~33 hours.**
+- **⚠️ WEEKEND LIVE — US markets closed Sat-Sun, oil markets closed, no trading cushion for ~31 hours.**
 - Jet fuel shortages developing — supply chain effects amplifying
 - Ceasefire fragile — Khamenei threats still active
 
 ### INFRASTRUCTURE STATUS
 - Gateway: ✅ active (pid 82354, port 49273)
-- Dashboard (kaji-hemopo.github.io/telemetry/agents/ito/): ✅ synced — Beat #200 (21:59 JST), BTC $78,122
-- live_oracle.json: ✅ fresh @ 21:59 JST — all 6 assets populated, Brent $110.8 ✅ aligned
+- Dashboard (kaji-hemopo.github.io/telemetry/agents/ito/): ✅ synced — Beat #201 (22:20 JST), BTC $78,309
+- live_oracle.json: ✅ fresh @ 22:20 JST — all 6 assets populated, Brent ⚠️ $109.81
 - infra_pulse: Gateway probe ok ✅
-- Brent anomaly RESOLVED: BZ=F恢复正常, oracle aligned at $110.8
+- Brent watch: slipped $110.8 → $109.81 — monitor BZ=F for anomaly recurrence
 - Hunter-Killer: MISSION CONCLUDED — pure intel pipeline only
 
 ---
+
+### Beat #200 (21:59 JST May 1) — Pipeline Active. Friday 9:59PM Tokyo. Weekend LIVE. BTC $78,122. Brent Fixed.
 
 ### Beat #199 (21:18 JST May 1) — Pipeline Active. Friday 9:18PM Tokyo. Weekend LIVE. Brent $111.2. Iran Piling Up.
 - **Last Heartbeat:** 2026-05-01 21:18 JST — Beat #199 | **Status:** ACTIVE**
