@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-05-01 21:03 JST",
+  "timestamp": "2026-05-01 22:40 JST",
   "items": [
     {
       "category": "AI",
@@ -80,6 +80,20 @@
     },
     {
       "category": "AI",
+      "title": "<![CDATA[Elon Musk had a bad week in court]]>",
+      "link": "https://www.theverge.com/podcast/922009/musk-openai-trial-testimony-vergecast",
+      "description": "Elon Musk is the one who wanted this trial. He has spent months claiming OpenAI \"stole a nonprofit,\" and saying he was the actual driving force behind one of the most important com",
+      "pub_date": "2026-05-01T09:33:15-04:00"
+    },
+    {
+      "category": "AI",
+      "title": "<![CDATA[Christian content creators are outsourcing AI slop to gig workers on Fiverr]]>",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/920881/ai-generated-bible-videos-christian-creators-fiverr-slop",
+      "description": "In the beginning, platforms like Fiverr were places where people could hire freelancers to do specialized creative labor using skills that took years to develop. In the age of gene",
+      "pub_date": "2026-05-01T09:25:25-04:00"
+    },
+    {
+      "category": "AI",
       "title": "<![CDATA[Microsoft wants lawyers to trust its new AI agent in Word documents]]>",
       "link": "https://www.theverge.com/news/921944/microsoft-word-legal-agent-ai",
       "description": "Microsoft is launching a new AI agent inside Word that's specifically designed for legal teams. Legal Agent handles document edits, negotiation history, and complex documents to he",
@@ -93,20 +107,6 @@
       "pub_date": "2026-05-01T07:00:00-04:00"
     },
     {
-      "category": "AI",
-      "title": "<![CDATA[The craziest part of Musk v. Altman happened while the jury was out of the room]]>",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/921713/musk-v-altman-jared-birchall-screw-up-xai",
-      "description": "Okay, I am not a lawyer so I only understood about half of what just happened. But I am fairly sure, given the context, that Elon Musk's lawyers may have just fucked up big. Jared ",
-      "pub_date": "2026-04-30T18:59:51-04:00"
-    },
-    {
-      "category": "AI",
-      "title": "<![CDATA[Roblox\u2019s daily users continue to drop as age checks slow growth]]>",
-      "link": "https://www.theverge.com/games/921694/roblox-q1-2026-132-million-dau",
-      "description": "Roblox's daily active users continued to slip last quarter due in part to its rollout of age checks on its platform. According to its latest earnings report, Roblox currently has 1",
-      "pub_date": "2026-04-30T17:25:15-04:00"
-    },
-    {
       "category": "SaaS",
       "title": "Dear SaaStr: I\u2019m Joining a B2B Startup at $3m ARR as VP of Sales.  What Should I Do First?",
       "link": "https://www.saastr.com/?p=312054",
@@ -115,17 +115,17 @@
     },
     {
       "category": "World",
-      "title": "<![CDATA[Dyson put someone else\u2019s motor in its robot vacuum]]>",
-      "link": "https://www.theverge.com/tech/921432/dyson-robot-vacuum-motor-picea",
-      "description": "Dyson, a company built on engineering high-speed motors, has confirmed to The Verge that its newest robot vacuum doesn't use a Dyson motor. The recently launched Spot &#38; Scrub A",
-      "pub_date": "2026-05-01T07:00:00-04:00"
+      "title": "<![CDATA[Your guide to sci-fi streaming season]]>",
+      "link": "https://www.theverge.com/tech/921610/sci-fi-streaming-shows-2026",
+      "description": "I haven't quite figured out the reason why, but for the last few years, summer has become the moment for new science fiction shows on streaming services. And 2026 isn't any differe",
+      "pub_date": "2026-05-01T09:30:00-04:00"
     },
     {
       "category": "World",
-      "title": "<![CDATA[Congress keeps kicking surveillance reform down the road]]>",
-      "link": "https://www.theverge.com/policy/921652/congress-fisa-section-702-45-day-extension",
-      "description": "Congress has reauthorized Section 702 of the Foreign Intelligence Surveillance Act - but only for another 45 days. The extension is meant to give legislators more time to negotiate",
-      "pub_date": "2026-04-30T16:59:58-04:00"
+      "title": "<![CDATA[Oura adds birth control support to its period tracker]]>",
+      "link": "https://www.theverge.com/tech/921955/oura-hormonal-birth-control-tracking-update",
+      "description": "Oura is launching a new reproductive health feature that takes hormonal contraception into consideration when tracking period cycles. The smart ring maker describes the Hormonal Bi",
+      "pub_date": "2026-05-01T09:00:00-04:00"
     }
   ]
 }
