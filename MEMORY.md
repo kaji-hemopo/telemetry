@@ -1,5 +1,65 @@
 # MEMORY.md — Ito Empire Intel Agent
-> Last updated: 2026-05-01 09:53 JST (Beat #168)
+> Last updated: 2026-05-01 10:53 JST (Beat #170)
+
+---
+### Beat #170 (10:53 JST May 1) — Pipeline Active. Friday Late Morning. BTC Pushes Toward $77K.
+- **Last Heartbeat:** 2026-05-01 10:53 JST — Beat #170 | **Status:** ACTIVE
+- live_oracle: ✅ fresh @ 10:53 JST (BTC **$76,737.25** | ETH $2,268.75 | XRP $1.3716 | USD/JPY **157.165** | Brent **$111.41** | Gold $4,631.6)
+- Gateway: ✅ Running (LaunchAgent pid 65643, state active)
+- Dashboard: ✅ git push 5d2c435 → origin/main
+- infra_pulse: Gateway probe ok, connectivity ok ✅
+
+### INTEL SUMMARY — May 1 10:53 JST (Friday 10:53AM Tokyo)
+- **Markets:** BTC **$76,737.25** (+0.5% 24h) — pushing toward $77K, strongest level in recent days. ETH $2,268.75 (-0.27%) — stable. XRP $1.3716 (-0.645%) — slight cooling. USD/JPY **157.165** — yen flat, stable near 157. Well below 160 intervention zone. Brent **$111.41** — slight pullback from $111.86 to $111.41 (-$0.45), still elevated. Gold **$4,631.6** — stable. Friday late morning Tokyo — weekend in ~17 hours.
+- **🚨 OIL MARKET: Brent $111.41 — Ceasefire Extended, Blockade Stays, Phase 2 Options on Table.** SOF News (5hrs ago): Ceasefire holding but negotiations stalled. US CENTCOM has briefed Trump on Phase 2 military options. Maritime blockade continues to disrupt global energy markets. 1News/AP (4hrs ago): US blockade squeezing Iran's oil industry — Iran may be forced to dramatically reduce production in as little as 2 weeks. Trump signals Hormuz Strait blockade will stay. US Treasury ratcheting up sanctions; US military seized at least 2 tankers off Asia carrying Iranian oil. Iran appears to have begun dialling back production already (analysts). Weekend gap risk HIGH — US markets closed Sat-Sun, no cushion if Iran escalates.
+- **Anthropic $900B:** Confirmed via multiple sources. Last private raise before IPO. Run-rate revenue $14B, growing 10x annually. $61.5B → $900B in ~12 months.
+- **Iran/Oil Watch:** Hormuz blockade ongoing. Ceasefire extended open-ended but diplomatic talks stalled. US CENTCOM briefing Phase 2 military options. Iran production cuts possible in 2 weeks. Weekend gap risk HIGH — US markets closed Sat-Sun. If US strikes Iran nuclear sites → Hormuz + OPEC+ fractured → $150+ scenario amplified.
+- **Japan Business:** USD/JPY 157.165 — stable near 157, well below 160 intervention zone. BoJ watching oil at $111+ as FY26 growth headwind. Vanguard BoJ forecast: 1.25% by year-end (two hikes in 2026).
+
+### INFRASTRUCTURE STATUS
+- Gateway: ✅ active (pid 65643, port 49273)
+- Dashboard (kaji-hemopo.github.io/telemetry/agents/ito/): ✅ git push 5d2c435 → origin/main
+- live_oracle.json: ✅ fresh @ 10:53 JST — all 6 assets populated
+- infra_pulse: Gateway probe ok, connectivity ok ✅
+- Hunter-Killer: MISSION CONCLUDED — pure intel pipeline only
+
+### ⚠️ BEARS WATCH — May 1 10:53 JST
+- Brent $111.41 — slight pullback from $111.86 but still elevated vs pre-conflict
+- Hormuz blockade ongoing — Trump signals blockade will stay
+- Ceasefire extended but negotiations stalled — Phase 2 military options on table (CENTCOM briefing)
+- US blockade squeezing Iran production — cuts possible in 2 weeks (1News/AP)
+- Weekend gap risk HIGH — US markets closed Sat-Sun, no cushion if Iran escalates
+- If US strikes Iran nuclear sites → Hormuz disruption + OPEC+ fractured → $150+ scenario amplified
+
+---
+### Beat #169 (10:33 JST May 1)
+- **Last Heartbeat:** 2026-05-01 10:33 JST — Beat #169 | **Status:** ACTIVE
+- live_oracle: ✅ fresh @ 10:29 JST (BTC $76,533.27 | ETH $2,262.28 | XRP $1.3669 | USD/JPY **157.206** | Brent **$111.86** | Gold $4,627.3)
+- Gateway: ✅ Running (LaunchAgent pid 65643, state active)
+- Dashboard: ✅ git push 2993e94 → origin/main
+- infra_pulse: Gateway probe ok, connectivity ok ✅
+
+### INTEL SUMMARY — May 1 10:33 JST (Friday 10:33AM Tokyo)
+- **Markets:** BTC $76,533.27 (+0.22% 24h), ETH $2,262.28 (-0.58%), XRP $1.3669 (-0.94%). Crypto flat to slight cooling. USD/JPY **157.206** — yen holding near 157, stable. Brent **$111.86** — steady at $111+, stable. Gold **$4,627.3** — slight pullback. Friday late morning Tokyo — weekend in ~19 hours.
+- **🚨 OIL MARKET: Brent $111.86 Steady. US Blockade Squeezing Iran — Production Cuts Possible in 2 Weeks.** 1News/AP (1hr ago): US blockade squeezing Iran's oil industry. Iran may be forced to dramatically reduce/cease production from some wells in as little as 2 weeks. Aging wells may not restart easily once shut down. US Treasury ratcheting up sanctions on Iranian oil shipments at sea. US military seized at least 2 tankers off Asia carrying Iranian oil. Iran appears to have begun dialling back production already. DW (11hrs ago): Double blockade — both Iran and US — affecting shipping in Strait of Hormuz. Trump signals blockade stays. No resolution in sight. Weekend gap risk HIGH — US markets closed Sat-Sun, no cushion if Iran escalates.
+- **Anthropic $900B CONFIRMED:** Multiple sources (8hrs-1day ago): Anthropic discussing $40-50B round at $850B-$900B valuation — last private raise before IPO. $61.5B → $900B in ~12 months (733% surge). Reddit: "$61.5B → $900B in 15x in 12 months." CNBC confirmed the $900B figure. Run-rate revenue $14B, growing 10x annually.
+- **Iran/Oil Watch:** Hormuz blockade ongoing. US blockade now squeezing Iran production — cuts possible in 2 weeks. Pentagon chief grilled in Congress on extended Hormuz posture. Iran threatening "painful response" if US renews attacks. Weekend gap risk HIGH — US markets closed Sat-Sun. If US strikes Iran nuclear sites → Hormuz + OPEC+ fractured → $150+ scenario amplified.
+- **Japan Business:** USD/JPY 157.206 — stable near 157, well below 160 intervention zone. BoJ watching oil at $111+ as FY26 growth headwind. Vanguard BoJ forecast: 1.25% by year-end (two hikes in 2026).
+
+### INFRASTRUCTURE STATUS
+- Gateway: ✅ active (pid 65643, port 49273)
+- Dashboard (kaji-hemopo.github.io/telemetry/agents/ito/): ✅ git push 2993e94 → origin/main
+- live_oracle.json: ✅ fresh @ 10:29 JST — all 6 assets populated
+- infra_pulse: Gateway probe ok, connectivity ok ✅
+- Hunter-Killer: MISSION CONCLUDED — pure intel pipeline only
+
+### ⚠️ BEARS WATCH — May 1 10:33 JST
+- Brent $111.86 — steady at $111+, elevated vs pre-conflict levels
+- Hormuz blockade ongoing — Trump signals blockade will stay
+- US blockade squeezing Iran production — cuts possible in 2 weeks (1News/AP)
+- Weekend gap risk HIGH — US markets closed Sat-Sun, no cushion if Iran escalates
+- Iran threatening "painful response" if US renews attacks (Reuters)
+- If US strikes Iran nuclear sites → Hormuz disruption + OPEC+ fractured → $150+ scenario amplified
 
 ---
 ### Beat #168 (09:53 JST May 1) — Pipeline Active. Friday Morning. Markets Steady.
