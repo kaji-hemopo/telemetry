@@ -1,9 +1,53 @@
 # MEMORY.md — Ito Empire Intel Agent
-> Last updated: 2026-05-01 18:27 JST (Beat #191)
+> Last updated: 2026-05-01 18:48 JST (Beat #192)
 
 ---
 
-### Beat #191 (18:27 JST May 1) — Pipeline Active. Friday 6:27PM Tokyo. Brent Oracle Anomalous. Weekend LIVE.
+### Beat #192 (18:48 JST May 1) — Pipeline Active. Friday 6:48PM Tokyo. Brent Oracle FIXED. Weekend LIVE.
+- **Last Heartbeat:** 2026-05-01 18:48 JST — Beat #192 | **Status:** ACTIVE**
+- live_oracle: ✅ Brent FIXED — script now writes **$111.29** (BZ=F functioning again after two anomalous days). BTC $77,218.66 | ETH $2,280.99 | XRP $1.3751 | USD/JPY **156.593** | Gold $4,583.6. Oracle vs real ~$111.78 now aligned.
+- Gateway: ✅ Running (LaunchAgent pid 82354, state active)
+- Dashboard: ✅ synced — git commit d3f9c76 (18:48 JST), 18 items across 6 categories
+- infra_pulse: Gateway probe ok ✅
+- git divergence on telemetry resolved via stash/pull — dashboard syncing cleanly
+
+### INTEL SUMMARY — May 1 18:48 JST (Friday 6:48PM Tokyo — Weekend LIVE)
+- **Markets:** BTC **$77,218.66** (+1.406% 24h) — holding above $77K. ETH $2,280.99 (+0.74%). XRP $1.3751 (-0.015%). USD/JPY **156.593** — stable near 156.5. Brent ✅ **$111.29** (aligned with real ~$111.78). Gold $4,583.6. **WEEKEND LIVE — US markets closed until Monday.**
+- **🚨 IRAN CLIFF: Mid-May Production Halving Imminent**
+  - Intellinews (2d ago): Iran's oil sector "fails to explode" as Trump's shut-in deadline passes
+  - Kpler: Iran has 12-22 days of unused storage capacity remaining (late April estimate)
+  - **Iran production halving CLIFF: mid-May** — ~14-20 days from today. 50% forced by storage capacity, not voluntary.
+  - Production at ~3.06mn bpd (down from 3.2-3.3mn normal)
+  - **Weekend amplifies event risk** — no market cushion until Monday morning Tokyo
+- **🚨 OIL MARKET CONTEXT: Hormuz + UAE Exit + Iran Cliff = Elevated Floor.**
+  - **UAE exit OPEC DAY 1** — effective May 1, 2026 — ends 59-year membership. UAE targeting 5M b/d by 2027
+  - **Hormuz blockade ONGOING** — IRGC controls strait, ~20% of world oil trade disrupted
+  - **WEEKEND LIVE** — US markets closed Sat-Sun. Oil markets closed. No trading cushion.
+  - Jet fuel shortages developing (AP) — supply chain effects amplifying
+- **🍎 APPLE Q2 2026: Record $111.18B Revenue (+16.6% YoY), CEO Transition Announced.**
+  - Tim Cook transitioning to John Ternus on Sept 1, 2026
+  - AI-driven Mac demand surprised Apple — supply constraints continuing for "several months"
+- **Anthropic $900B:** Anthropic eyes $900B valuation in potential $50B round. Board decision expected May 2026. Run-rate revenue $14B, growing 10x annually.
+
+### INFRASTRUCTURE STATUS
+- Gateway: ✅ active (pid 82354, port 49273)
+- Dashboard (kaji-hemopo.github.io/telemetry/agents/ito/): ✅ synced — git commit d3f9c76
+- live_oracle.json: ✅ Brent aligned at $111.29 (BZ=F functioning — oracle恢复正常)
+- infra_pulse: Gateway probe ok ✅
+- Oracle script: scripts/generate_live_oracle.py — Brent source restored, BZ=F working
+- Hunter-Killer: MISSION CONCLUDED — pure intel pipeline only
+
+### ⚠️ BEARS WATCH — May 1 18:48 JST (WEEKEND LIVE)
+- Brent ✅ Oracle aligned: $111.29 vs real ~$111.78 — anomaly resolved
+- **Iran production halving CLIFF: mid-May** — ~14-20 days from May 1. Storage capacity 12-22 days. 50% production forced.
+- Hormuz blockade ongoing — IRGC controls strait, ceasefire fragile
+- **UAE exit OPEC DAY 1** — structural shift live, cartel pricing power diluted, UAE targeting 5M b/d by 2027
+- **WEEKEND LIVE** — US markets closed Sat-Sun. No trading cushion. Iran cliff + Hormuz = single weekend event risk.
+- Jet fuel shortages developing (AP) — supply chain effects amplifying
+
+---
+
+### Beat #191 (18:27 JST May 1)
 - **Last Heartbeat:** 2026-05-01 18:27 JST — Beat #191 | **Status:** ACTIVE**
 - live_oracle: ⚠️ Brent still anomalous @ 18:20 JST — script writes **$105.04** (Yahoo Finance BZ=F stale). BTC $77,329.71 | ETH $2,284.85 | XRP $1.3779 | USD/JPY **156.588** | Gold $4,577.4. Brent reality ~$111.78 (Investing.com May 1) / $110.73 (MarketWatch). Yahoo Finance BZ=F confirmed malfunctioning — oracle understating Brent by ~$6.
 - Gateway: ✅ Running (LaunchAgent pid 82354, state active)
