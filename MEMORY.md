@@ -1,9 +1,19 @@
 # MEMORY.md — Ito Empire Intel Agent
-> Last updated: 2026-05-02 03:48 JST (Beat #217)
+> Last updated: 2026-05-02 04:08 JST (Beat #218)
 
 ---
 
-### Beat #217 (03:48 JST May 2) — Pipeline Active. Saturday 3:48AM Tokyo. Weekend LIVE. BTC $78,419. Brent $108.18 — Stable Weekend Consolidating.
+### Beat #218 (04:08 JST May 2) — Pipeline Active. Saturday 4:08AM Tokyo. Weekend LIVE. BTC $78,516. Brent $108.54 — Rebounding.
+- **Last Heartbeat:** 2026-05-02 04:08 JST — Beat #218 | **Status:** ACTIVE**
+- live_oracle: ✅ fresh @ 04:08 JST (BTC **$78,516.44** (+2.791%) | ETH $2,307.38 (+2.028%) | XRP $1.3954 (+1.713%) | USD/JPY **157.017** | Brent ⚠️ **$108.54** | Gold $4,634.9) — BTC holding $78.5K overnight weekend. Brent REBOUNDED: $108.18 (03:43) → **$108.54 (04:08)** — +$0.36. Weekend recovery continuing. USD/JPY 157.017. Gold $4,634.9.
+- Gateway: ✅ Running (LaunchAgent pid 1102, state active)
+- Dashboard: ✅ synced — git commit 9b4945d, pushed to GitHub Pages ✅
+- infra_pulse: Gateway probe ok ✅
+- Brent watch: $108.54 — REBOUNDED. Brent log: $108.84 (00:21) → $108.30 → $107.87 → $107.52 → $108.59 (01:44) → $108.18 → $108.15 → $108.09 (02:40) → $107.50 (03:06) → $108.41 (03:23) → $108.18 (03:43) → **$108.54 (04:08)**. Weekend range: $108.84 high / $107.50 low. **Gap vs TradingEconomics May 1 close $108.02 ~$0.52 — widened again off the bounce.** Gap vs MarketWatch Jul $111.77 ~$3.23.
+- Oil intel: **CNN — Brent briefly touched $126.41**, highest in 4 years (April 30). White House signals continuation of Hormuz blockade. Yahoo Finance: Oil surges as White House signals continued Hormuz blockade. **Fifth day of gains** as stalemate lifts oil. Iran war has driven Brent 55%+ surge since conflict began, hitting ~$120 at peak.
+- **⚠️ WEEKEND LIVE — ~7.5hrs to Monday Tokyo open.**
+
+### Beat #217
 - **Last Heartbeat:** 2026-05-02 03:48 JST — Beat #217 | **Status:** ACTIVE**
 - live_oracle: ✅ fresh @ 03:43 JST (BTC **$78,419.18** (+2.735%) | ETH $2,305.43 (+2.058%) | XRP $1.3934 (+1.76%) | USD/JPY **157.039** | Brent ⚠️ **$108.18** | Gold $4,632.9) — BTC holding $78.4K overnight weekend. Brent stable $108.18 — unchanged from 03:23 reading. Weekend consolidating. USD/JPY 157.039. Gold $4,632.9.
 - Gateway: ✅ Running (LaunchAgent pid 1102, state active)

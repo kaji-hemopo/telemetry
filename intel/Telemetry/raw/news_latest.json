@@ -1,6 +1,13 @@
 {
-  "timestamp": "2026-05-02 03:06 JST",
+  "timestamp": "2026-05-02 04:55 JST",
   "items": [
+    {
+      "category": "AI",
+      "title": "Coatue has a plan to buy up land for data centers, possibly for Anthropic",
+      "link": "https://techcrunch.com/?p=3118467",
+      "description": "Coatue, one of the biggest names in venture capital, has a new venture that is reportedly buying land near large power sources.",
+      "pub_date": ""
+    },
     {
       "category": "AI",
       "title": "Pentagon inks deals with Nvidia, Microsoft, and AWS to deploy AI on classified networks",
@@ -38,13 +45,6 @@
     },
     {
       "category": "AI",
-      "title": "As Tim Cook steps down, Apple hit record sales \u2014 but a chip shortage looms",
-      "link": "https://techcrunch.com/?p=3118284",
-      "description": "Cook warned that Apple is facing supply-chain headwinds from RAMageddon that could impact its business.",
-      "pub_date": ""
-    },
-    {
-      "category": "AI",
       "title": "Yes, Many Software Leaders Have Moats. No, That\u2019s Not Enough.",
       "link": "https://www.saastr.com/?p=323482",
       "description": "Do leaders in B2B software still have moats in the Age of AI? Of course they do. You can see it plain as day in Gross Revenue Retention. The median GRR across B2B software is still",
@@ -73,10 +73,17 @@
     },
     {
       "category": "AI",
-      "title": "<![CDATA[Severe Linux Copy Fail security flaw uncovered using AI scanning help]]>",
-      "link": "https://www.theverge.com/tech/922243/linux-cve-2026-3141-copy-fail-exploit",
-      "description": "Nearly every Linux distribution released since 2017 is currently vulnerable to a security bug called \"Copy Fail\" that allows any user to give themselves administrator privileges. T",
-      "pub_date": "2026-05-01T12:55:16-04:00"
+      "title": "<![CDATA[All the evidence revealed so far in Musk v. Altman]]>",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/920775/evidence-exhibits-elon-musk-sam-altman-openai-trial",
+      "description": "The Musk v. Altman trial is underway, and that means exhibits, or the evidence to be presented in court, are being revealed piece by piece. So far, email exchanges, photos, and cor",
+      "pub_date": "2026-05-01T15:14:51-04:00"
+    },
+    {
+      "category": "AI",
+      "title": "<![CDATA[Amazon\u2019s built-in AI price history expands to show the entire last year]]>",
+      "link": "https://www.theverge.com/tech/922302/amazon-price-tracker-year",
+      "description": "Amazon's built-in price tracking feature now allows you to see how much a product's price has changed over the past year. To use the feature, open the Amazon app and select the \"Pr",
+      "pub_date": "2026-05-01T13:55:22-04:00"
     },
     {
       "category": "SaaS",
@@ -101,31 +108,24 @@
     },
     {
       "category": "World",
+      "title": "<![CDATA[Birdfy\u2019s smart bird feeder is down to its best-ever price for Mother\u2019s Day]]>",
+      "link": "https://www.theverge.com/gadgets/922165/netvue-birdfy-smart-bird-feeder-bath-mothers-day-deal-sale",
+      "description": "From crafting machines to smart calendars, a number of unique gifts are already on sale in the run-up to Mother\u2019s Day, May 10th. Birdfy smart feeders are another discounted option ",
+      "pub_date": "2026-05-01T14:42:24-04:00"
+    },
+    {
+      "category": "World",
+      "title": "<![CDATA[Dreame \u2014\u00a0the vacuum company \u2014 just \u2018launched\u2019 its own phones]]>",
+      "link": "https://www.theverge.com/gadgets/922246/dreame-next-smartphones-aurora-lux-nex-modular",
+      "description": "Dreame, a Chinese manufacturer best known for its robot vacuums but with ambitions to do much more, says it's making smartphones now. I'm not sure I believe it. The company showed ",
+      "pub_date": "2026-05-01T13:55:08-04:00"
+    },
+    {
+      "category": "World",
       "title": "<![CDATA[This accessory can snap a Steam Controller to your phone \u2014 or almost anything else]]>",
       "link": "https://www.theverge.com/games/921823/valve-steam-controller-mechanism-mounts-basegrip-dock",
       "description": "Valve's new Steam Controller goes on sale on Monday for $99, and accessories-maker Mechanism will be ready. As far as we know, Mechanism's new Basegrip is the very first way to att",
       "pub_date": "2026-05-01T13:00:00-04:00"
-    },
-    {
-      "category": "World",
-      "title": "<![CDATA[Dreame\u2019s rocket-powered car can do 0\u201360 in 0.9 seconds because you can just say things now]]>",
-      "link": "https://www.theverge.com/transportation/921204/dreame-ev-car-rocket-boosted-zero-sixty-reality",
-      "description": "When I first heard that a vacuum company had released a rocket-powered electric vehicle with physically impossible-sounding performance specs, I immediately thought James Dyson was",
-      "pub_date": "2026-05-01T12:33:46-04:00"
-    },
-    {
-      "category": "World",
-      "title": "<![CDATA[We just got a new reason to believe the Trump phone is real(ish)]]>",
-      "link": "https://www.theverge.com/gadgets/922180/trump-mobile-t1-phone-ptcrb-certification-t-mobile",
-      "description": "Where's the Trump phone? We're going to keep talking about it every week. We've reached out, as usual, to ask about the Trump phone's whereabouts. This time we've discovered a litt",
-      "pub_date": "2026-05-01T12:28:39-04:00"
-    },
-    {
-      "category": "World",
-      "title": "<![CDATA[Aurzen\u2019s tiny trifold projector is almost 40 percent off right now]]>",
-      "link": "https://www.theverge.com/gadgets/921686/aurzen-zip-mini-projector-garmin-venu-4-watch-deal-sale",
-      "description": "Not all trifolds are created equal \u2014 just ask our own Allison Johnson, who recently spent time with Samsung\u2019s ill-fated Galaxy phone. Aurzen\u2019s Zip projector is the kind of trifold ",
-      "pub_date": "2026-05-01T11:00:46-04:00"
     }
   ]
 }
