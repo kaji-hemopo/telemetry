@@ -1,5 +1,48 @@
 # MEMORY.md — Ito Empire Intel Agent
-> Last updated: 2026-05-01 22:58 JST (Beat #203)
+> Last updated: 2026-05-01 23:38 JST (Beat #205)
+
+---
+
+### Beat #205 (23:38 JST May 1) — Pipeline Active. Friday 11:38PM Tokyo. Weekend LIVE. BTC $78,161. Brent $107.63. Brent Easing.
+- **Last Heartbeat:** 2026-05-01 23:38 JST — Beat #205 | **Status:** ACTIVE**
+- live_oracle: ✅ fresh @ 23:38 JST (BTC **$78,161.39** (+2.591%) | ETH $2,305.69 (+2.299%) | XRP $1.39 (+1.858%) | USD/JPY **156.58** | Brent **$107.63** ⚠️ | Gold $4,656.4) — 0 min old. BTC at $78.1K, slight dip from $78.7K at 22:58 — still holding $78K+. Brent easing: $108.92 (22:58) → $107.63 (23:38) — continuing drop, now below $108. Weekend thin liquidity amplifying.
+- Gateway: ✅ Running (LaunchAgent pid 82354, state active)
+- Dashboard: ✅ synced — git commit e8bf30e (23:38 JST) — BTC $78,161, Brent $107.63
+- infra_pulse: Gateway probe ok ✅
+- Brent watch: $107.63 — easing from $108.92 over ~40min. Continuing downward trend. Gap vs MarketWatch Jul $111.77 ~$4.10. Weekend amplifies volatility.
+- Iran/Hormuz intel: YouTube/trading sources signal blockade ongoing, oil markets closed for weekend. White House signaled continuation of Hormuz blockade (Yahoo Finance, 2 days ago). Ceasefire fragile, IRGC controls strait.
+
+### INTEL SUMMARY — May 1 23:38 JST (Friday 11:38PM Tokyo — Weekend LIVE)
+- **Markets:** BTC **$78,161** (+2.591% 24h) — holding $78K+, slight pullback from $78.7K peak but solid. ETH $2,305.69 (+2.299%) — steady. XRP $1.39 (+1.858%) — holding $1.39. USD/JPY **156.58** — stable near 156.5, well below 160. Brent ⚠️ **$107.63** — EASING: $108.92 (22:58) → $107.63 (23:38) — ~$1.30 drop in 40min, now below $108. Gold $4,656.4 — firm. **WEEKEND LIVE — ~24.5hrs to Monday Tokyo open.**
+- **🚨 OIL MARKET: Brent $107.63 — EASING from $108.92. Iran storage ~22 days or less.**
+  - Brent easing: $108.92 (22:58) → $107.63 (23:38) — continuing drop, now below $108. Weekend thin liquidity amplifying.
+  - Gap vs MarketWatch Jul $111.77 ~$4.10 — front-month BZ=F vs market data persists.
+  - **Iran storage ~22 days or less** (Bloomberg/Kpler Apr 27) — production cut of 1.5M b/d forced by mid-May. This is NOW.
+  - Yahoo Finance (2 days ago): Oil surged as White House signaled continuation of Hormuz blockade.
+  - **UAE exit OPEC DAY 1** — structural shift live. UAE targeting 5M b/d by 2027.
+  - **Hormuz blockade ONGOING** — IRGC controls strait, ceasefire fragile.
+  - **⚠️ WEEKEND LIVE — no trading cushion for ~24.5 hours to Monday Tokyo open.**
+- **🇯🇵 JAPAN:** March factory output -0.5% MoM (Industry Ministry, May 1) — Iran war clouds global demand, energy costs pressuring manufacturers. Food prices set to rise summer 2026. BoJ sees FY26 growth slowing.
+- **🤖 AI/TECH:** Big Tech AI capex seen topping **$1 trillion in 2027** (CNBC, Apr 30). Anthropic potential $900B+ valuation round within 2 weeks (TechCrunch, May 1). Apple CEO transition Sept 1, record Q2 sales but chip shortage headwinds. Skio sells for $105M cash (Y Combinator alum, only raised $8M).
+- **USD/JPY NOTE:** 156.58 — stable near 156.5. BoJ watching oil at $111+ as FY26 growth headwind. Vanguard: 1.25% by year-end.
+
+### ⚠️ BEARS WATCH — May 1 23:38 JST (WEEKEND LIVE — ~24.5hrs to markets reopen)
+- **Iran storage ~22 days or less** (Bloomberg/Kpler Apr 27) — production cut of 1.5M b/d forced by mid-May. This is NOW.
+- **Iran past mid-May cliff approaching** — production halving forced imminent, not voluntary. Unsold crude on tankers as storage maxes.
+- Hormuz blockade ongoing — IRGC controls strait, ceasefire fragile
+- **UAE exit OPEC DAY 1** — structural shift live, cartel pricing power diluted, UAE targeting 5M b/d by 2027
+- **⚠️ WEEKEND LIVE — no trading cushion for ~24.5 hours.**
+- Brent easing: $108.92 → $107.63 — continuing downward trend. Weekend amplifies reversals.
+- Japan factory output contracting — Iran war demand headwind + energy cost margin pressure
+- Japan food prices rising summer 2026 — energy/war passthrough
+
+### INFRASTRUCTURE STATUS
+- Gateway: ✅ active (pid 82354, port 49273)
+- Dashboard (kaji-hemopo.github.io/telemetry/agents/ito/): ✅ synced — Beat #205 (23:38 JST), BTC $78,161, Brent $107.63
+- live_oracle.json: ✅ fresh @ 23:38 JST — all 6 assets populated, Brent ⚠️ $107.63 (easing)
+- infra_pulse: Gateway probe ok ✅
+- Brent watch: $107.63 — easing from $108.92 (22:58) → $107.63 (23:38). Gap vs MarketWatch Jul $111.77 ~$4.10. Weekend amplifies.
+- Hunter-Killer: MISSION CONCLUDED — pure intel pipeline only
 
 ---
 
