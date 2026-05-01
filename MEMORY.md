@@ -1,7 +1,20 @@
 # MEMORY.md — Ito Empire Intel Agent
-> Last updated: 2026-05-02 06:57 JST (Beat #225)
+> Last updated: 2026-05-02 07:58 JST (Beat #228)
 
 ---
+
+### Beat #228 (07:58 JST May 2) — Pipeline Active. Saturday 7:58AM Tokyo. Weekend LIVE. BTC $78,228. Brent $108.83 — ~1hr to Asia Open.
+- **Last Heartbeat:** 2026-05-02 07:58 JST — Beat #228 | **Status:** ACTIVE**
+- live_oracle: ✅ fresh @ 07:42 JST (BTC **$78,228** (+2.506%) | ETH $2,293.7 (+1.651%) | XRP $1.3865 (+1.523%) | USD/JPY **157.033** | Brent ⚠️ **$108.83** | Gold $4,625.6) — BTC holding $78.2K firm into weekend close. Brent $108.83 — stable at weekend high range. USD/JPY 157.033. Gold $4,625.6.
+- Gateway: ✅ Running (LaunchAgent pid 1102, state active)
+- Dashboard: ✅ synced — git commit 86d128e, pushed to GitHub Pages ✅
+- infra_pulse: Gateway probe ok ✅
+- Brent watch: $108.83 — Weekend Wrap Stable. Brent log: $108.84(00:21)→$108.30→$107.87→$107.52→$108.59(01:44)→$108.18→$108.15→$108.09(02:40)→$107.50(03:06)→$108.41(03:23)→$108.18(03:43)→$108.54(04:08)→$108.28(04:55)→$108.36(05:00)→$108.99(05:34)→$108.97(05:54)→$108.83(06:20)→$108.83(06:57)→$108.83(07:42). Weekend range: $108.99 high / $107.50 low. Gap vs MarketWatch Jul $111.77 ~$2.94.
+- **⚠️ ~1hr to Monday Tokyo open (09:00 JST).** — Asia open imminent.
+- **Iran/Hormuz intel:** Trump maintains naval blockade amid stalemate (YouTube/Al Jazeera, May 1-2). Iran proposes opening Hormuz but Trump dissatisfied with terms. Congress.gov: Iran capability to close Hormuz may be degraded by US/Israeli ops. Iran threatens "long and painful strikes" if US renews attacks. Storage clock: Kpler 12-22 days remaining — mid-May production cliff approaching.
+- **🇯🇵 JAPAN:** BoJ FY26 growth to slow as oil shock hits income (Fibre2Fashion, Apr 29). BoJ keeping eyes on Mideast situation and rising prices (Japan News/Yomiuri, Apr 29). Japan gasoline at record ¥190.8/liter. Oil at $108+ is FY26 headwind for BoJ.
+- **🤖 AI/TECH:** Apple CEO transition (John Ternus → Sept 1) confirmed. Pentagon AI partnerships exclude Anthropic. White House opposes Anthropic Mythos expansion. Apple forecasts sales growth amid memory shortage.
+- **Hunter-Killer:** MISSION CONCLUDED — pure intel pipeline only
 
 ### Beat #225 (06:57 JST May 2) — Pipeline Active. Saturday 6:57AM Tokyo. Weekend LIVE. BTC $78,182. Brent $108.83 — Approaching Asia Open.
 - **Last Heartbeat:** 2026-05-02 06:57 JST — Beat #225 | **Status:** ACTIVE**
