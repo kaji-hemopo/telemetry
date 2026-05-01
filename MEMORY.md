@@ -1,33 +1,38 @@
 # MEMORY.md — Ito Empire Intel Agent
-> Last updated: 2026-05-01 08:53 JST (Beat #165)
+> Last updated: 2026-05-01 09:13 JST (Beat #166)
 
 ---
-### Beat #165 (08:53 JST May 1) — Pipeline Active. Friday Morning. Brent $111.57. Weekend Risk HIGH.
-- **Last Heartbeat:** 2026-05-01 08:53 JST — Beat #165 | **Status:** ACTIVE
-- live_oracle: ✅ fresh @ 08:53 JST (BTC $76,324.27 | ETH $2,257.20 | XRP $1.3669 | USD/JPY **156.93** | Brent **$111.57** | Gold $4,645.8)
+### Beat #166 (09:13 JST May 1) — Pipeline Active. Friday Morning. Brent $111.62. USD/JPY 157.14. Weekend Risk HIGH.
+- **Last Heartbeat:** 2026-05-01 09:13 JST — Beat #166 | **Status:** ACTIVE
+- live_oracle: ✅ fresh @ 09:07 JST (BTC $76,473.71 | ETH $2,261.98 | XRP $1.371 | USD/JPY **157.14** | Brent **$111.62** | Gold $4,641.1)
 - Gateway: ✅ Running (LaunchAgent pid 65643, state active)
-- Dashboard: ✅ git push 614baae → origin/main
+- Dashboard: ✅ git push a2bfb6a → origin/main
 - infra_pulse: Gateway probe ok, connectivity ok ✅
 
-### INTEL SUMMARY — May 1 08:53 JST (Friday 8:53AM Tokyo)
-- **Markets:** BTC $76,324.27 (-0.06% 24h), ETH $2,257.20 (-0.07%), XRP $1.3669 (-0.07%). Crypto steady, slight cooling. USD/JPY **156.93** — yen stable, slightly stronger from 156.705 at last beat. Brent **$111.57** — steady just above $111, settled after spiking to $118 on Apr 30 (Threads). Gold **$4,645.8** (stable). Friday morning Tokyo — weekend starts in ~27 hours.
-- **🚨 OIL MARKET: Brent $111.57. Hormuz Blockade Ongoing. Reuters 3hrs ago: US seeks international help to reopen Strait.** Reuters: "US seeks international help to reopen Strait of Hormuz — crude prices surge." Two months into US-Israeli war with Iran — vital sea channel remains closed, choking off 20% of world oil and gas. AP News (8hrs ago): Analysis — US blockade threatening Iran's oil industry. Iran seeing less hard currency flowing back. Al Jazeera: Iran earning 40% more from oil exports than before the war despite the blockade.
-- **Iran/Oil Watch:** US seeking international help to reopen Hormuz — no progress. Khamenei vows to protect nuclear/missile capabilities (AP News, 4hrs ago). Iran threatening "painful response" if US renews attacks (Reuters). Trump rejected Hormuz-for-nuclear deal. Weekend gap risk HIGH — US markets closed Sat-Sun, no cushion if Iran escalates.
-- **Anthropic $900B:** Bloomberg/Tech sources (May 2026): Anthropic board weighing $850B-$900B round. Anthropic raised **$30B Series G at $380B** on Feb 12, 2026. Run-rate revenue $14B, growing 10x annually. IPO likely next step.
-- **Japan Business:** USD/JPY 156.93 — stable, yen slightly stronger vs dollar. Well below 160 intervention zone. BoJ watching oil at $111+ as FY26 growth headwind. Vanguard BoJ forecast: 1.25% by year-end (two hikes in 2026).
+### INTEL SUMMARY — May 1 09:13 JST (Friday 9:13AM Tokyo)
+- **Markets:** BTC $76,473.71 (+0.925% 24h), ETH $2,261.98 (+0.37%), XRP $1.371 (+0.051%). Crypto recovering, BTC pushing back toward $76.5K. USD/JPY **157.14** — yen weakening slightly from 156.93, back near 157 handle. Still well below 160 intervention zone. Brent **$111.62** — holding steady at $111+, stable. Gold **$4,641.1** stable. Friday morning Tokyo — weekend starts in ~23 hours.
+- **🚨 OIL MARKET: Brent $111.62. Hormuz Blockade Ongoing. US Seeks International Help.** Reuters (3hrs ago): US seeks international help to reopen Strait of Hormuz — crude prices surge. BBC: Iran says Strait of Hormuz closed until US blockade lifts. Trump warns of extended blockade. AP News (9hrs ago): US blockade threatening Iran's oil industry — fewer tankers shipping Iranian oil, shortages of jet fuel being magnified. YouTube (10hrs ago): Iranian president criticises US siege as "doomed to fail". Two months into US-Israeli war with Iran — vital sea channel remains closed. Iran threatening "painful response" if US renews attacks. Weekend gap risk HIGH.
+- **Anthropic $900B+ CONFIRMED:** Bloomberg (Apr 29, 1 day ago): Anthropic weighing funding offers at **over $900B valuation**. Silicon Valley Invest Club (Apr 15): Anthropic draws investor interest at $800B. Anthropic raised **$30B Series G at $380B** on Feb 12, 2026. Run-rate revenue $14B, growing 10x annually. IPO likely next step. $380B → $900B+ in under 3 months.
+- **Iran/Oil Watch:** US seeking international help to reopen Hormuz — no progress yet. Khamenei vows to protect nuclear/missile capabilities. Iran "quadruple retaliation" warning still active. Weekend gap risk HIGH — US markets closed Sat-Sun, no cushion if Iran escalates.
+- **Japan Business:** USD/JPY 157.14 — yen slight weakening, back toward 157. Well below 160 intervention zone. BoJ watching oil at $111+ as FY26 growth headwind. Vanguard BoJ forecast: 1.25% by year-end (two hikes in 2026).
 
 ### INFRASTRUCTURE STATUS
 - Gateway: ✅ active (pid 65643, port 49273)
-- Dashboard (kaji-hemopo.github.io/telemetry/agents/ito/): ✅ git push 614baae → origin/main
-- live_oracle.json: ✅ fresh @ 08:47 JST — all 6 assets populated
+- Dashboard (kaji-hemopo.github.io/telemetry/agents/ito/): ✅ git push a2bfb6a → origin/main
+- live_oracle.json: ✅ fresh @ 09:07 JST — all 6 assets populated
 - infra_pulse: Gateway probe ok, connectivity ok ✅
 - Hunter-Killer: MISSION CONCLUDED — pure intel pipeline only
 
-### ⚠️ BEARS WATCH — May 1 08:53 JST
-- Brent $111.57 — steady at $111+, settled after $118 Apr 30 spike
+### ⚠️ BEARS WATCH — May 1 09:13 JST
+- Brent $111.62 — steady at $111+, elevated vs pre-conflict levels
 - Hormuz blockade ongoing — US seeking international help (Reuters 3hrs ago)
 - Weekend gap risk HIGH — US markets closed Sat-Sun, no cushion if Iran escalates
 - Iran threatening "painful response" if US renews attacks (Reuters)
+- Khamenei vows to protect nuclear/missile capabilities (AP News 9hrs ago)
+- Trump warns of extended blockade (YouTube 10hrs ago)
+- If US strikes Iran nuclear sites → Hormuz disruption + OPEC+ fractured → $150+ scenario amplified
+---
+### Beat #165 (08:53 JST May 1) — Pipeline Active. Friday Morning. Brent $111.57. Weekend Risk HIGH.
 - Khamenei vows to protect nuclear/missile capabilities (AP News 4hrs ago)
 - Iran earning 40% more from oil than pre-war despite US blockade (Al Jazeera)
 - If US strikes Iran nuclear sites → Hormuz disruption + OPEC+ fractured → $150+ scenario amplified
