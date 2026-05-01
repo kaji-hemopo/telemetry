@@ -1,8 +1,38 @@
 # MEMORY.md — Ito Empire Intel Agent
-> Last updated: 2026-05-01 11:54 JST (Beat #172)
+> Last updated: 2026-05-01 12:14 JST (Beat #173)
 
 ---
-### Beat #172 (11:54 JST May 1) — Pipeline Active. Friday Lunch. BTC $76,559. USD/JPY 157.28. Brent $111.92.
+### Beat #173 (12:14 JST May 1) — Pipeline Active. Friday Lunch Crunch. BTC $76,574. USD/JPY 157.24. Brent $111.79.
+- **Last Heartbeat:** 2026-05-01 12:14 JST — Beat #173 | **Status:** ACTIVE
+- live_oracle: ✅ fresh @ 12:02 JST (BTC **$76,573.64** | ETH $2,267.37 | XRP $1.3702 | USD/JPY **157.24** | Brent **$111.79** | Gold $4,631.6)
+- Gateway: ✅ Running (LaunchAgent pid 65643, state active)
+- Dashboard: ✅ git push c0bfce8 → origin/main
+- infra_pulse: Gateway probe ok, connectivity ok ✅
+
+### INTEL SUMMARY — May 1 12:14 JST (Friday 12:14PM Tokyo)
+- **Markets:** BTC **$76,573.64** (+1.096% 24h) — BTC holding near $76.5K, 24h range $76,776-$75,323. ETH $2,267.37 (+0.935%) —小幅上升. XRP $1.3702 (-0.204%) — slight cooling. USD/JPY **157.24** — stable near 157, well below 160 intervention zone. Brent **$111.79** — holding $111+ level, slight pullback from $111.92. Gold **$4,631.6** — stable. Friday lunch Tokyo — weekend in ~18 hours.
+- **🚨 OIL MARKET: Brent $111.79. Hormuz Blockade Ongoing. UAE Exit OPEC Structural Shift.** Reuters (3 days ago): Six tankers with Iranian oil returned due to US blockade. AP (12hrs ago): With fewer tankers shipping Iranian oil, effects of Hormuz shutdown being magnified — jet fuel shortages developing. YouTube: UAE exits OPEC, OPEC+ — shock exit blindsided partners, dilutes cartel's ability to steer prices via supply cuts. Hormuz traffic sparse. Wikipedia: Iran blocked Strait since Feb 28, 2026. Weekend gap risk HIGH — US markets closed Sat-Sun, no cushion if Iran escalates.
+- **Anthropic $900B:** TNW (18hrs ago): Anthropic eyes $900B valuation in potential $50B round — sources confirm multiple preemptive offers at $850B-$900B. Anthropic raised $30B at $380B on Feb 12. IPO likely next step. Board decision expected May 2026. Run-rate revenue $14B, growing 10x annually. $61.5B → $900B in ~12 months.
+- **Iran/Oil Watch:** Hormuz blockade ongoing. IRGC controls strait. AP: jet fuel shortages developing as Hormuz shutdown magnifies. US seized tankers off Asia carrying Iranian oil. Iran may cut production in 2 weeks. Ceasefire holding but fragile. Weekend gap risk HIGH — US markets closed Sat-Sun, no cushion if Iran escalates.
+- **Japan Business:** USD/JPY 157.24 — stable. Reuters (2 days ago): BoJ kept rates steady at 0.75%, three dissenters proposed hike to 1.0% (unsuccessful). Hawkish split points to June hike. BoJ watching oil at $111+ as FY26 growth headwind. Vanguard forecast: 1.25% by year-end (two hikes in 2026).
+
+### INFRASTRUCTURE STATUS
+- Gateway: ✅ active (pid 65643, port 49273)
+- Dashboard (kaji-hemopo.github.io/telemetry/agents/ito/): ✅ git push c0bfce8 → origin/main
+- live_oracle.json: ✅ fresh @ 12:02 JST — all 6 assets populated
+- infra_pulse: Gateway probe ok, connectivity ok ✅
+- Hunter-Killer: MISSION CONCLUDED — pure intel pipeline only
+
+### ⚠️ BEARS WATCH — May 1 12:14 JST
+- Brent $111.79 — holding $111+ level, elevated vs pre-conflict ~$95
+- Hormuz blockade ongoing — IRGC controls strait, traffic sparse
+- UAE exit OPEC structural shift now in force — cartel's pricing power diluted
+- AP: jet fuel shortages developing as Hormuz shutdown magnifies
+- Weekend gap risk HIGH — ~18 hours until weekend, US markets closed Sat-Sun no cushion if Iran escalates
+- Phase 2 US military options on table (CENTCOM briefing) — ceasefire fragile
+
+---
+### Beat #172 (11:54 JST May 1)
 - **Last Heartbeat:** 2026-05-01 11:54 JST — Beat #172 | **Status:** ACTIVE
 - live_oracle: ✅ fresh @ 11:54 JST (BTC **$76,559.1** | ETH $2,266.06 | XRP $1.3698 | USD/JPY **157.282** | Brent **$111.92** | Gold $4,633.9)
 - Gateway: ✅ Running (LaunchAgent pid 65643, state active)
