@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-05-01 12:19 JST
+Generated: 2026-05-01 13:47 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -54,14 +54,13 @@ Generated: 2026-05-01 12:19 JST
 |---:|---|---|---|---|---|
 | 85 | Freelancer | Python scraper | PDF Drawing Takeoff Tool Development | $3,000.00 | https://www.freelancer.com/projects/automation/PDF-Drawing-Takeoff-Tool-Development.html |
 | 85 | Freelancer | Python scraper | Build a RAG-Based AI System for a Large Arabic Text Corpus | $750.00 | https://www.freelancer.com/projects/natural-language-processing/Build-RAG-Based-System-for.html |
-| 85 | Freelancer | Python scraper | Custom Programming Solution Needed | $2,000.00 | https://www.freelancer.com/projects/software-development/Custom-Programming-Solution-Needed.html |
-| 85 | Freelancer | Data processing API | Canadian Tenant Lead List | $1,000.00 | https://www.freelancer.com/projects/excel/Canadian-Tenant-Lead-List.html |
+| 75 | Freelancer | Python scraper | Python Music Video Automation Suite | $250.00 | https://www.freelancer.com/projects/audio-processing/Python-Music-Video-Automation-Suite.html |
 | 75 | Freelancer | Python scraper | Discord Integration Developer Needed | $250.00 | https://www.freelancer.com/projects/discord-api/Discord-Integration-Developer-Needed.html |
 | 75 | Freelancer | Python scraper | Developer Needed to Build API for Aggregating Job Listings from E | $250.00 | https://www.freelancer.com/projects/ai-development/Developer-Needed-Build-API-for.html |
 | 75 | Freelancer | Python scraper | AI Automation Developer Needed for Ongoing Work | $250.00 | https://www.freelancer.com/projects/openai/Automation-Developer-Needed-for-Ongoing.html |
+| 75 | Freelancer | Make.com automation | AI Receptionist for Phone Call Booking | $250.00 | https://www.freelancer.com/projects/openai/Receptionist-for-Phone-Call-Booking.html |
 | 75 | Freelancer | Make.com automation | Kit Email Templates &amp; Automation Overhaul | $250.00 | https://www.freelancer.com/projects/email-marketing/Kit-Email-Templates-Automation-Overhaul.html |
-| 75 | Freelancer | Make.com automation | NDIS Intake Forms Digitisation &ndash; Smart Web Form + Auto-Fill | $250.00 | https://www.freelancer.com/projects/content-creation/NDIS-Intake-Forms-Digitisation-Smart.html |
-| 75 | Freelancer | Data processing API | Website Development with Experience building using Claude &amp; C | $250.00 | https://www.freelancer.com/projects/web-development/Website-Development-with-Experience.html |
+| 65 | Freelancer | Python scraper | Python Flash-Sale Quota Sniper -- 2 | $30.00 | https://www.freelancer.com/projects/javascript/Python-Flash-Sale-Quota-Sniper.html |
 | 65 | Freelancer | Python scraper | ERP Chatbot for Data Automation | I’m building a new module for our in-house ERP and need a purpose-built AI chatb | https://www.freelancer.com/projects/ai-chatbot-development/ERP-Chatbot-for-Data-Automation.html |
 | 65 | Freelancer | Python scraper | Excel-Claude Integration Script | I need a compact Python workflow that reads a list of company names from an Exce | https://www.freelancer.com/projects/api/Excel-Claude-Integration-Script-40409876.html |
 | 65 | Freelancer | Python scraper | AI Support Chatbox Integration | $10.00 | https://www.freelancer.com/projects/ai-chatbot-development/Support-Chatbox-Integration.html |
@@ -72,6 +71,7 @@ Generated: 2026-05-01 12:19 JST
 | 65 | Freelancer | Make.com automation | Hiring: B2B Sales &amp; Lead Gen Expert &ndash; WhatsApp AI SaaS  | QuickReach AI is a WhatsApp AI automation platform built for Indian businesses.  | https://www.freelancer.com/projects/lead-generation/Hiring-Sales-Lead-Gen-Expert.html |
 | 65 | Freelancer | Make.com automation | Advanced Candidate Marketing &amp; Interview System | Candidate Profile Marketing &amp; Interview Opportunity System Objective: Build  | https://www.freelancer.com/projects/software-development/Advanced-Candidate-Marketing-Interview.html |
 | 65 | Freelancer | Make.com automation | Based B2B Sales Executive &mdash; IT Services (StaxMinds) | Looking for a Commission-Based B2B Sales Executive — IT Services (StaxMinds) We  | https://www.freelancer.com/projects/lead-generation/Based-Sales-Executive-Services-StaxMinds.html |
+| 65 | Freelancer | Make.com automation | Weekly paid - Portfolio Merchandise Operations Manager (Ownership | $10.00 | https://www.freelancer.com/projects/data-analysis/Weekly-paid-Portfolio-Merchandise.html |
 
 ## Notes
 - Scores prioritize: (1) simple automation/scripting fit, (2) payout magnitude, (3) keyword relevance.
