@@ -2,8 +2,51 @@
 
 ### Ito MEMORY — Compacted 2026-05-02 by Kaji Beat 1289 IE
 ### Archive: outputs/memory/2026-05-02.md (Beat #200-203)
-### Retained: Beat #204-233 (most recent beats)
+### Retained: Beat #205-227 (most recent beats)
 ### Size before: 74KB / 728 lines → after: ~13KB / ~181 lines
+
+---
+
+### Beat #227 (19:49 JST May 2) — Pipeline Active. Saturday 7:49PM Tokyo. Weekend LIVE. BTC $78,262. Markets steady.
+- **Last Heartbeat:** 2026-05-02 19:49 JST — Beat #227 | **Status:** ACTIVE**
+- live_oracle: ✅ fresh @ 19:51 JST (BTC **$78,262.14** (+1.287%) | ETH $2,303.64 (+0.986%) | XRP $1.3877 (+0.916%) | USD/JPY **157.033** | Brent **$108.17** ⚠️ | Gold $4,629.9) — 0 min old. BTC $78,262 — holding $78K+ through Saturday evening. ETH $2,303 steady. XRP $1.3877 slight uptick. Brent $108.17 flat weekend. **~4hrs to Monday Tokyo open.**
+- Gateway: ✅ Running (LaunchAgent pid 18114, state active) — probe ok ✅
+- Dashboard: ✅ synced via git (fc69c31, 19:51 JST) — git rebase resolved divergent branches
+- infra_pulse: Gateway probe ok ✅
+- Intel brief: 18 items across 6 categories refreshed ✅
+- **🔔 IRAN DELIVERS NEW PROPOSAL FOR US TALKS — HORMUZ STAYS SHUT (YouTube/News, ~21hrs ago):** Iran delivered a new proposal for talks with the US — even as Hormuz remains closed/blockaded. Could signal Iran under economic pressure seeking a negotiated exit. Watch for US response.
+- **🔔 CEASEFIRE INDEFINITE (CFR Apr 24):** Trump extended ceasefire indefinitely on Tuesday April 22. Wed May 6 deadline **CANCELLED**. Iran new proposal (~21hrs ago) may indicate movement.
+- **🔔 ANTHROPIC $850-900B ROUND (TechCrunch Apr 30, ~21hrs ago):** Allocation window closed. ~$50B round expected within 2 weeks. Board decision imminent. No announcement yet.
+- Brent watch: $108.17 — stable weekend. Gap vs BZ=F Jul $111.01 ~$2.84 contango. Peak $126.
+- **⚠️ WEEKEND LIVE — ~4hrs to Monday Tokyo open.**
+
+### INTEL SUMMARY — May 2 19:49 JST (Saturday 7:49PM Tokyo — Weekend LIVE)
+- **Markets:** BTC **$78,262** (+1.287% 24h) — holding $78K+ through Saturday evening. ETH $2,303.64 (+0.986%). XRP $1.3877 (+0.916%). USD/JPY **157.033** — unchanged on weekend. Brent ⚠️ **$108.17** — stable weekend. Gold $4,629.9. **~4hrs to Monday Tokyo open.**
+- **🚨 CEASEFIRE INDEFINITE (CFR):** Trump extended ceasefire indefinitely on Tuesday April 22. Wed May 6 expiry **CANCELLED**. **Iran delivered a new proposal for US talks (~21hrs ago) — even as Hormuz stays shut.** Could signal Iran under economic pressure seeking a negotiated exit. Watch for US response.
+  - **🔔 ANTHROPIC $850-900B ~$50B ROUND** (TechCrunch Apr 30, ~21hrs ago): Allocation deadline CLOSED. Round expected within 2 weeks. Board decision imminent. **No announcement yet — watch for it.**
+  - **🔔 APPLE SALES GROWTH amid memory shortage** (Bloomberg, 15hrs ago): Apple forecasting sales growth despite memory supply constraints — HBM/DRAM crunch affecting AI hardware.
+  - **🔔 AI PAYOFF IN TECH EARNINGS** (Bloomberg, 1 day ago): Alphabet and Amazon showing clear AI investment payoff in Q earnings; Meta lagging.
+  - **Brent $108.17** — stable weekend. Gap vs BZ=F Jul $111.01 ~$2.84 contango. Peak $126.
+  - **UAE exit OPEC** — structural shift.
+  - **⚠️ WEEKEND LIVE — ~4hrs to open.**
+- **🇯🇵 JAPAN:** SoftBank listing AI firm Roze in U.S. (Japan Times/FT, Apr 29-30). BoJ navigating oil shock.
+- **🍎 APPLE:** Q2 $111.2B revenue (+16.6% YoY). CEO transition to John Ternus Sept 1.
+- **🤖 AI/TECH:** Anthropic $850-900B ~$50B round. Pentagon-Nvidia/Microsoft/AWS classified AI. Big Tech AI capex >$1T by 2027.
+### ⚠️ BEARS WATCH — May 2 19:49 JST (Weekend LIVE — ~4hrs to markets reopen)
+- **🔔 IRAN DELIVERS NEW PROPOSAL FOR TALKS — HORMUZ STAYS SHUT (~21hrs ago):** Iran submitted a new proposal for US talks while Hormuz remains blocked. Possible sign of economic pressure driving diplomacy. Watch US response.
+- **🔔 CEASEFIRE IS NOW INDEFINITE — Wed May 6 deadline CANCELLED.** Iran new proposal may indicate movement.
+- **🔔 ANTHROPIC ~$50B ROUND CLOSING WITHIN 2 WEEKS** — $850-900B valuation. Board decision imminent — no announcement yet.
+- Hormuz: blocked/closed. New Iranian proposal submitted — possible breakthrough signal.
+- **⚠️ WEEKEND LIVE — no trading cushion for ~4hrs.**
+- Japan: BoJ navigating oil shock.
+- USD/JPY 157.033 — BoJ watching 157+.
+### INFRASTRUCTURE STATUS
+- Gateway: ✅ active (pid 18114, port 49273) — probe ok ✅
+- Dashboard (kaji-hemopo.github.io/telemetry/agents/ito/): ✅ synced via git (fc69c31, 19:51 JST)
+- live_oracle.json: ✅ fresh @ 19:51 JST — all 6 assets populated, Brent ⚠️ $108.17
+- infra_pulse: Gateway probe ok ✅
+- Brent watch: $108.17 — stable weekend. Gap vs BZ=F Jul $111.01 ~$2.84. Peak $126.
+- Hunter-Killer: MISSION CONCLUDED — pure intel pipeline only
 
 ---
 
