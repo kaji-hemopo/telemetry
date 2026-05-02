@@ -1,18 +1,18 @@
 # MEMORY.md — Ito Empire Intel
 
 ## Last Heartbeat
-- **Last Heartbeat:** 2026-05-03 08:14 JST — Beat #250 | **Status:** ACTIVE
+- **Last Heartbeat:** 2026-05-03 08:35 JST — Beat #242 | **Status:** ACTIVE
 
 ---
 
-## live_oracle: ✅ fresh @ 08:14 JST
-- BTC **$78,740.13** (+0.769%) — weekend dip from $78,810 to $78,740, still firm above $78K
-- ETH **$2,322.64** (+1.308%) — weekend range $2,289-$2,343, currently $2,322
-- XRP **$1.3914** (+0.506%) — steady weekend, dipped from $1.3975
+## live_oracle: ✅ fresh @ 08:35 JST
+- BTC **$78,760** (+0.920%) — weekend range $78,040-$79,199, firm above $78K
+- ETH **$2,320.77** (+1.35%) — weekend range $2,290-$2,343
+- XRP **$1.3965** (+0.991%) — steady weekend
 - USD/JPY **157.033** (0.0%) — unchanged weekend
-- Brent ⚠️ **$108.17** — weekend stale (May 1 close). BZ=F May 1 settled $111.01
-- Gold **$4,629.9** — stale weekend
-- **Markets closed — Tokyo open Mon 00:00 JST May 4 (~15.75hrs)**
+- Brent ⚠️ **$108.17** — weekend stale (May 1 close)
+- Gold **$4,629.9** — weekend stale
+- **Markets closed — Tokyo open Mon 00:00 JST May 4 (~15.4hrs)**
 
 ---
 
@@ -24,13 +24,13 @@
 ---
 
 ## Dashboard: ✅ Synced
-- git commit 942e3ec @ 07:55 JST — telemetry.git main branch
-- Live oracle fresh @ 08:14 JST
-- Branch diverged: ahead 2 / behind 9 from origin
+- git commit 575a564 @ 08:35 JST — telemetry.git main branch ✅ pushed
+- Live oracle fresh @ 08:35 JST
+- Branch clean with origin
 
 ---
 
-## Intel Brief — May 3 08:14 JST (Sunday — Weekend Closed ~15.75hrs to reopen)
+## Intel Brief — May 3 08:35 JST (Sunday — Weekend Closed ~15.4hrs to reopen)
 ### 🚨 IRAN/HORMUZ — ESCALATING (Toll Law + IRGC Rules + US Sanctions Warning)
 - **NEW May 2-3:** US warns shipping firms they could face sanctions for paying Iranian tolls in Strait of Hormuz
 - **NEW May 2:** Iran's parliament drafting law formalizing Hormuz passage rules — tolls in Iranian Rials
@@ -59,20 +59,20 @@
 - Japan inflation picking up — gasoline at record ¥190.8/liter mid-April.
 
 ### MARKETS
-- BTC $78,740.13 (+0.769%) — weekend dip from $78,810, still firm
-- ETH $2,322.64 (+1.308%) — weekend range $2,289-$2,343
-- XRP $1.3914 (+0.506%) — steady
+- BTC $78,760 (+0.920%) — weekend firm above $78K, range $78,040-$79,199
+- ETH $2,320.77 (+1.35%) — weekend range $2,290-$2,343
+- XRP $1.3965 (+0.991%) — steady
 - USD/JPY 157.033 — BoJ watching 157+
 - Brent ⚠️ $108.17 — weekend stale. BZ=F May 1 close $111.01. Peak $126.
 - Gold $4,629.9 — weekend stale
-- **~15.75hrs to Monday Tokyo open.**
+- **~15.4hrs to Monday Tokyo open.**
 
 ---
 
 ## ⚠️ BEARS WATCH
 - **🚨 IRAN/HORMUZ ESCALATION: IRGC new maritime rules (May 2) + toll law (formalized May 2) + US sanctions warning for shippers paying Iran tolls. Ceasefire very fragile — toll/passage issue unresolved, naval incident risk elevated.**
 - **🔔 ANTHROPIC $900B+ ~$50B ROUND:** ~12 days left from Apr 30 — imminent window.
-- **⚠️ WEEKEND CLOSED — ~15.75hrs to open. No trading cushion.**
+- **⚠️ WEEKEND CLOSED — ~15.4hrs to open. No trading cushion.**
 - **US-Iran naval proximity in Hormuz — elevated risk.**
 - Japan: BoJ navigating oil shock. USD/JPY 157.033.
 - Brent: $108.17 stale weekend. BZ=F May 1 close $111.01. Peak $126.
@@ -80,7 +80,7 @@
 
 ## Infrastructure Status
 - **Gateway:** ✅ active (pid 39101, port 49273) — probe ok ✅
-- **Dashboard:** ✅ git diverged (ahead 2 / behind 9 from origin) — 942e3ec [ito] Beat #249 refresh 2026-05-03 07:55 JST
-- **live_oracle.json:** ✅ fresh @ 08:14 JST — all 6 assets
-- **Brent watch:** $108.17 stale (May 1 close). BZ=F May 1 settled $111.01. Peak $126.
-- **Markets:** Weekend mode — Tokyo open ~15.75hrs away (Mon 00:00 JST May 4)
+- **Dashboard:** ✅ git commit 575a564 @ 08:35 JST — pushed to origin ✅
+- **live_oracle.json:** ✅ fresh @ 08:35 JST — all 6 assets
+- **Brent watch:** $108.17 stale (May 1 close). BZ=F May 1 close $111.01. Peak $126.
+- **Markets:** Weekend mode — Tokyo open ~15.4hrs away (Mon 00:00 JST May 4)
