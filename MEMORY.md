@@ -1,7 +1,20 @@
 # MEMORY.md — Ito Empire Intel Agent
-> Last updated: 2026-05-02 08:58 JST (Beat #231)
+> Last updated: 2026-05-02 09:18 JST (Beat #232)
 
 ---
+
+### Beat #232 (09:18 JST May 2) — Pipeline Active. Saturday 9:18AM Tokyo. Asia Open ~18min ago. BTC $78,255. Brent $108.83 — steady.
+- **Last Heartbeat:** 2026-05-02 09:18 JST — Beat #232 | **Status:** ACTIVE**
+- live_oracle: ✅ fresh @ 09:05 JST (BTC **$78,254.89** (+2.334%) | ETH $2,295.39 (+1.45%) | XRP $1.3866 (+1.13%) | USD/JPY **157.033** | Brent ⚠️ **$108.83** | Gold $4,625.6) — BTC holding $78.2K after Asia open. Brent $108.83 — steady weekend close. USD/JPY 157.033. Gold $4,625.6.
+- Gateway: ✅ Running (LaunchAgent pid 1102, state active)
+- Dashboard: ✅ synced — git commit e571af3, pushed to GitHub Pages ✅ (news_latest refreshed, oracle updated, rebase-push success)
+- infra_pulse: Gateway probe ok ✅ (last run 09:10 JST — OK across 9 checks, 1 warn, 0 fail)
+- Brent watch: $108.83 — STEADY post-Asia open. Brent log: $108.84(00:21)→$108.30→$107.87→$107.52→$108.59(01:44)→$108.18→$108.15→$108.09(02:40)→$107.50(03:06)→$108.41(03:23)→$108.18(03:43)→$108.54(04:08)→$108.28(04:55)→$108.36(05:00)→$108.99(05:34)→$108.97(05:54)→$108.83(06:20)→$108.83(06:57)→$108.83(07:42)→$108.83(08:18)→$108.83(08:45)→$108.83(09:05). Weekend range: $108.99 high / $107.50 low. Gap vs MarketWatch Jul $111.77 ~$2.94.
+- **✅ ASIA OPEN — first ~18min of Tokyo trading.** — Markets uneventful so far. Brent steady, no gap panic. Watch for follow-through.
+- **Iran/Hormuz intel:** Fox Business (May 1, ~7hrs old): Kpler data — Iran oil exports dropping, storage filling. Strait of Hormuz standoff at "critical breaking point." Storage clock: 12-22 days remaining. Congress.gov confirms Iran capability to close Hormuz may be degraded by US/Israeli ops. Iran threatens "long and painful strikes" if US renews attacks.
+- **🇯🇵 JAPAN:** BoJ warns oil shock may hurt FY26 growth (Gulf Business, May 2). Yen shock impacts inflation more than oil shock per BoJ report (cryptorank.io, 2 days ago). Japan gasoline at record ¥190.8/liter. BoJ kept rate at 0.75%.
+- **🤖 AI/TECH:** Pentagon AI partnerships exclude Anthropic (ongoing). Apple CEO transition CONFIRMED: John Ternus → Sept 1, 2026. Big Tech AI capex topping $1T in 2027.
+- **Hunter-Killer:** MISSION CONCLUDED — pure intel pipeline only
 
 ### Beat #231 (08:58 JST May 2) — Pipeline Active. Saturday 8:58AM Tokyo. Asia Open IMMINENT ~2min. BTC $78,121. Brent $108.83 — stable. 🔴 ASIA OPEN 09:00 JST!
 - **Last Heartbeat:** 2026-05-02 08:58 JST — Beat #231 | **Status:** ACTIVE**
