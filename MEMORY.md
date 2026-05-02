@@ -1,14 +1,69 @@
 ---
 
+### Beat #240 (01:10 JST May 3) — Pipeline Active. Sunday 1:10AM Tokyo. Markets closed. BTC $78,107.
+- **Last Heartbeat:** 2026-05-03 01:10 JST — Beat #240 | **Status:** ACTIVE**
+- live_oracle: ✅ fresh @ 01:10 JST (BTC **$78,107** (+0.874%) | ETH **$2,301.45** (+0.635%) | XRP **$1.39** (+0.498%) | USD/JPY **157.080** | Brent **$108.17** ⚠️ | Gold **$4,613.40**) — BTC marginal weekend recovery from $78,413. USD/JPY slightly softer at 157.080. ETH $2,301. XRP $1.39. Brent $108.17 stale weekend. **Markets closed — Tokyo open Mon 00:00 JST May 4 (~23hrs).**
+- Gateway: ✅ Running (LaunchAgent pid 39101, state active) — probe ok ✅
+- Dashboard: ✅ synced via git — pushed to origin
+- infra_pulse: Gateway probe ok ✅ — OK:9 WARN:1 FAIL:0
+- Intel brief: refreshed via web search ✅. Key developments:
+  - **🔔 US WARNS SHIPPING FIRMS OF SANCTIONS** for paying Iranian tolls in Hormuz (AP/9News, May 2 ~4hrs ago) — enforcement risk rising
+  - **🔔 TEHRAN SHARES NEW PEACE PROPOSAL** with Washington (France24, ~10hrs ago) — details unclear, being reviewed
+  - US says ceasefire "terminated" hostilities in Iran under war powers law (YouTube, 1 day ago)
+  - Hormuz remains blocked/closed. UAE exiting OPEC (AP, Tue). China pushing reopening as Xi-Trump priority.
+  - **Anthropic $900B+ round:** TechCrunch (Apr 30) reports ~$50B round closing within 2 weeks — board decision imminent. No announcement yet.
+- **🚨 HORMUZ WATCH:** US sanctions threat on shipping tolls — enforcement action would be significant escalation. Tehran proposal fresh signal but no breakthrough yet. Naval tensions elevated.
+
+### Beat #239 (00:47 JST May 3) — Pipeline Active. Sunday 12:47AM Tokyo. Markets closed. BTC $78,413.
+- live_oracle: ✅ fresh @ 00:40 JST (BTC **$78,413** (-0.333%) | ETH $2,307.98 (-0.284%) | XRP $1.3912 (-0.55%) | USD/JPY **157.033** | Brent **$108.17** ⚠️ | Gold $4,629.9) — 0 min old. BTC $78,413 — marginal weekend tick down (-$20 vs last beat 00:26 $78,433). Markets muted Sunday midnight. ETH $2,307. XRP $1.3912. Brent $108.17 stale weekend. **Markets closed — Tokyo open Mon 00:00 JST May 4 (~23hrs).**
+- Gateway: ✅ Running (LaunchAgent pid 39101, state active) — probe ok ✅
+- Dashboard: ✅ synced via git (6f1703d, 00:47 JST) — pushed to origin
+- infra_pulse: Gateway probe ok ✅ — OK:9 WARN:1 FAIL:0
+- Intel brief: refreshed via web search ✅. Hormuz situation: Iranian navy moving towards US warships (Times of India, ~8hrs ago). US warning sanctions on shipping firms paying Iranian tolls (AP/9News May 2). **Naval tensions elevated — escalation risk present.** China pushing reopening. Anthropic round still no announcement.
+- **🚨 IRAN/HORMUZ — ESCALATION RISK ELEVATED:** Times of India (~8hrs ago): Iran Navy moving towards US warships in Hormuz after "Mojtaba's Go-Ahead Order" — unverified/breaking. AP/9News (May 2): US warns shipping firms could face **sanctions** for paying Iranian tolls. China pushing reopening as urgent Xi-Trump priority. **Naval tensions rising — watch closely.**
+- **🔔 CEASEFIRE INDEFINITE (CFR):** Trump extended ceasefire indefinitely Tue Apr 22. Wed May 6 deadline **CANCELLED** — but Trump signal-hostile. Hormuz largely shut.
+- **🔔 ANTHROPIC $850-900B ~$50B ROUND (TechCrunch Apr 30):** Allocation window closed. Round expected within 2 weeks. Board decision imminent. **Still no announcement — watch.**
+- **🔔 CHINA PUSHING HORMUZ REOPENING:** China's UN Ambassador Fu Cong says Hormuz reopening is "urgent" priority for Trump-Xi talks (Al Jazeera May 2).
+- Brent watch: $108.17 (May 1 close) — weekend stale. Gap vs BZ=F Jul $111.01 even contango. Peak $126.
+- **⚠️ WEEKEND CLOSED — ~23hrs to Monday Tokyo open (Mon 00:00 JST May 4). No trading cushion.**
+
+### INTEL SUMMARY — May 3 00:47 JST (Sunday 12:47AM Tokyo — Weekend Closed — ~23hrs to reopen)
+- **Markets:** BTC **$78,413** (-0.333% 24h) — marginal weekend tick down, holding $78K. ETH $2,307.98 (-0.284%). XRP $1.3912 (-0.55%). USD/JPY **157.033** — unchanged. Brent ⚠️ **$108.17** — weekend stale. Gold $4,629.9. **~23hrs to Monday Tokyo open.**
+- **🚨 IRAN/HORMUZ — ESCALATION RISK ELEVATED:** Times of India (~8hrs ago): Iran Navy moving towards US warships in Hormuz after "Mojtaba's Go-Ahead Order" — unverified/breaking. AP/9News (May 2): US warns shipping firms of **sanctions** for paying Iranian tolls. China pushing reopening as urgent Xi-Trump priority. **Naval tensions rising — escalation risk present.**
+- **🔔 CEASEFIRE INDEFINITE — signal-hostile.** Wed May 6 cancelled. Hormuz largely shut.
+- **🔔 ANTHROPIC $850-900B ~$50B ROUND (TechCrunch Apr 30):** Allocation closed. Round within 2 weeks. **Still no announcement — watch imminent.**
+- **🔔 CHINA PUSHING HORMUZ REOPENING (Al Jazeera May 2):** Urgent priority for Trump-Xi talks.
+- Brent $108.17 May 1 close — weekend stale. Gap vs BZ=F Jul $111.01 even. Peak $126.
+- **UAE exit OPEC** — structural shift.
+- **⚠️ WEEKEND CLOSED — ~23hrs to reopen. No trading cushion.**
+- **🇯🇵 JAPAN:** SoftBank listing AI firm Roze in U.S. (Japan Times/FT, Apr 29-30). BoJ navigating oil shock.
+- **🍎 APPLE:** Q2 $111.2B revenue (+16.6% YoY). CEO transition to John Ternus Sept 1.
+- **🤖 AI/TECH:** Anthropic $850-900B ~$50B round imminent. Pentagon-Nvidia/Microsoft/AWS classified AI. Big Tech AI capex >$1T by 2027.
+
+### ⚠️ BEARS WATCH — May 3 00:47 JST (Weekend Closed — ~23hrs to markets reopen)
+- **🚨 IRAN/HORMUZ — ESCALATION RISK ELEVATED:** Times of India (~8hrs ago): Iran Navy moving towards US warships in Hormuz after "Mojtaba's Go-Ahead Order" — unverified/breaking. AP/9News (May 2): US warns shipping firms of **sanctions** for paying Iranian tolls. NZ considering US invitation to reopen Hormuz (1News, May 1). **Naval tensions rising.** China pushing reopening. **~23hrs to reopen.**
+- **🔔 CEASEFIRE INDEFINITE — signal-hostile.**
+- **🔔 ANTHROPIC ~$50B ROUND CLOSING WITHIN 2 WEEKS** — $850-900B valuation. Still no announcement.
+- **🔔 CHINA PUSHING HORMUZ REOPENING** — Urgent priority for Trump-Xi talks.
+- Hormuz: largely shut. Naval tensions rising — Iran navy moving towards US warships. US warning sanctions on shipping. **Escalation risk present.**
+- **⚠️ WEEKEND CLOSED — ~23hrs to open. No trading cushion.**
+- Japan: BoJ navigating oil shock.
+- USD/JPY 157.033 — BoJ watching 157+.
+
+### INFRASTRUCTURE STATUS
+- Gateway: ✅ active (pid 39101, port 49273) — probe ok ✅
+- Dashboard (kaji-hemopo.github.io/telemetry/agents/ito/): ✅ synced via git (6f1703d, 00:47 JST) — pushed to origin
+
+---
+
 ### Ito MEMORY — Compacted 2026-05-02 by Kaji Beat 1289 IE
 ### Archive: outputs/memory/2026-05-02.md (Beat #200-203)
-### Retained: Beat #205-230 (most recent beats)
+### Retained: Beat #205-238 (most recent beats)
 ### Size before: 74KB / 728 lines → after: ~13KB / ~181 lines
 
 ---
 
-
-### Beat #237 (00:06 JST May 3) — Pipeline Active. Sunday 12:06AM Tokyo. Markets closed. BTC $78,433.
+### Beat #238 (00:26 JST May 3) — Pipeline Active. Sunday 12:26AM Tokyo. Markets closed. BTC $78,369.
 - **Last Heartbeat:** 2026-05-03 00:06 JST — Beat #237 | **Status:** ACTIVE**
 - live_oracle: ✅ fresh @ 00:00 JST (BTC **$78,433** (+0.215%) | ETH $2,307.11 (+0.059%) | XRP $1.3925 (-0.136%) | USD/JPY **157.033** | Brent **$108.17** ⚠️ | Gold $4,629.9) — 0 min old. BTC $78,433 — marginal weekend uptick. ETH $2,307. XRP $1.3925. Brent $108.17 stale weekend. **Markets closed — Tokyo open Mon 00:00 JST May 4 (~24hrs).**
 - Gateway: ✅ Running (LaunchAgent pid 18114, state active) — probe ok ✅
