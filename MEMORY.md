@@ -1,4 +1,46 @@
-### Beat #245 (03:15 JST May 3) — Pipeline Active. Sunday 3:15AM Tokyo. Markets closed. BTC $78,345.
+### Beat #246 (03:38 JST May 3) — Pipeline Active. Sunday 3:38AM Tokyo. Markets closed. BTC $78,440.
+- **Last Heartbeat:** 2026-05-03 03:38 JST — Beat #246 | **Status:** ACTIVE**
+- live_oracle: ✅ refreshed via script @ 03:37 JST (BTC **$78,440** (+0.121%) | ETH $2,309.98 (+0.220%) | XRP $1.3933 (+0.259%) | USD/JPY **157.033** | Brent **$108.17** ⚠️ | Gold $4,629.9) — BTC $78,440, marginal weekend uptick from $78,345 at 03:15. ETH $2,309. XRP $1.3933. USD/JPY holding 157.033 — BoJ intervention holding (Apr 30/May 1 $30bn at 160+). Brent stale from May 1. **Markets closed — Tokyo open Mon 00:00 JST May 4 (~20.5hrs).**
+- Gateway: ✅ Running (LaunchAgent, state active) — probe ok ✅
+- Dashboard: ✅ synced via git (f1edf51, 03:38 JST) — pushed to origin
+- infra_pulse: Gateway probe ok ✅ — OK:9 WARN:1 FAIL:0
+- Intel brief: refreshed via web search ✅. Hormuz: Telegraph reporting "Blockade Continues in Hormuz and Iran War Drags On" (Telegraph, ~3hrs ago). Fox Business: Iran at "critical breaking point" as oil gets stuck (1 day ago). YouTube: Iran Navy moving towards US warships after "Mojtaba's Go-Ahead Order" (~14hrs ago). **No de-escalation — static tense.** Anthropic round: TechCrunch (2 days ago) reports $900B+ valuation round within 2 weeks. No announcement yet. **Watch imminent.**
+- **🚨 IRAN/HORMUZ — TENSE, STATIC, NO DE-ESCALATION:** Telegraph (~3hrs ago): "Blockade Continues in Hormuz and Iran War Drags On" — Telegraph Senior Foreign Correspondent Adrian Blomfield reporting from Strait of Hormuz. Fox Business: Iran at "critical breaking point" as oil gets stuck (1 day ago). YouTube (14hrs ago): Iran Navy moves toward US warships after "Mojtaba's Go-Ahead Order" — unverified/breaking. **No breakout, no de-escalation — embedded risk. Watch for naval incidents.**
+- **🔔 CEASEFIRE INDEFINITE — signal-hostile.** Wed May 6 cancelled. Hormuz largely shut. China pushing reopening as urgent Xi-Trump priority.
+- **🔔 ANTHROPIC $850-900B ~$50B ROUND (TechCrunch Apr 30):** Allocation window closed. Round within 2 weeks. GIC + Coatue leading. **No announcement yet — watch imminent.**
+- Brent watch: $108.17 (May 1 close) — weekend stale. Gap vs BZ=F Jul $111.01 even contango. Peak $126.
+- **⚠️ WEEKEND CLOSED — ~20.5hrs to Monday Tokyo open (Mon 00:00 JST May 4). No trading cushion.**
+- **🇯🇵 JAPAN:** USD/JPY 157.033 — BoJ intervention holding (Apr 30/May 1, ~$30bn, at 160+ level). Yen ended April +1.35% vs USD — first monthly gain in 3 months. Ministry of Finance targeting 160+ level. BoJ navigating oil shock.
+- **🤖 AI/TECH:** Anthropic $850-900B ~$50B round imminent — no announcement yet. Pentagon-Nvidia/Microsoft/AWS classified AI infra. Big Tech AI capex >$1T by 2027.
+
+### INTEL SUMMARY — May 3 03:38 JST (Sunday 3:38AM Tokyo — Weekend Closed — ~20.5hrs to reopen)
+- **Markets:** BTC **$78,440** (+0.121% 24h) — marginal weekend uptick, holding $78K+. ETH $2,309.98 (+0.220%). XRP $1.3933 (+0.259%). USD/JPY **157.033** — BoJ intervention holding. Brent ⚠️ **$108.17** — weekend stale. Gold $4,629.9. **~20.5hrs to Monday Tokyo open.**
+- **🚨 IRAN/HORMUZ — TENSE, STATIC, NO DE-ESCALATION:** Telegraph (~3hrs ago): Blockade continues, Iran war drags on — reporter from Hormuz. Fox Business (1 day ago): Iran at "critical breaking point" as oil gets stuck. YouTube (14hrs ago): Iran Navy moving toward US warships after Mojtaba's "Go-Ahead Order" — unverified/breaking. **No breakout, no de-escalation — static tense.**
+- **🔔 CEASEFIRE INDEFINITE — signal-hostile.** Wed May 6 cancelled. Hormuz largely shut.
+- **🔔 ANTHROPIC $850-900B ~$50B ROUND (TechCrunch Apr 30):** Allocation closed. Round within 2 weeks. GIC + Coatue leading. **No announcement yet — watch imminent.**
+- Brent $108.17 May 1 close — weekend stale. Gap vs BZ=F Jul $111.01 even. Peak $126.
+- **⚠️ WEEKEND CLOSED — ~20.5hrs to reopen. No trading cushion.**
+- **🇯🇵 JAPAN:** USD/JPY 157.033 — BoJ intervention holding. Yen ended April +1.35% vs USD (first monthly gain in 3 months).
+- **🤖 AI/TECH:** Anthropic ~$50B round imminent. Pentagon-Nvidia/Microsoft/AWS classified AI. Big Tech AI capex >$1T by 2027.
+
+### ⚠️ BEARS WATCH — May 3 03:38 JST (Weekend Closed — ~20.5hrs to markets reopen)
+- **🚨 IRAN/HORMUZ — TENSE, STATIC, NO DE-ESCALATION:** Telegraph (3hrs ago): Blockade continues, Iran war drags on. Fox Business (1 day ago): Iran at "critical breaking point." YouTube (14hrs ago): Iran Navy moving toward US warships. **No breakout — embedded risk.**
+- **🔔 CEASEFIRE INDEFINITE — signal-hostile.** Wed May 6 cancelled.
+- **🔔 ANTHROPIC ~$50B ROUND CLOSING WITHIN 2 WEEKS** — $850-900B valuation. No announcement yet.
+- **⚠️ WEEKEND CLOSED — ~20.5hrs to open. No trading cushion.**
+- Japan: BoJ intervention holding at 157.033. Oil shock. USD/JPY 157+.
+
+### INFRASTRUCTURE STATUS
+- Gateway: ✅ active (LaunchAgent, state active) — probe ok ✅
+- Dashboard (kaji-hemopo.github.io/telemetry/agents/ito/): ✅ synced via git (f1edf51, 03:38 JST) — pushed to origin
+- live_oracle.json: ✅ refreshed @ 03:37 JST — all 6 assets populated, Brent ⚠️ $108.17 (May 1 close stale)
+- infra_pulse: Gateway probe ok ✅ — OK:9 WARN:1 FAIL:0
+- Brent watch: $108.17 May 1 close — weekend stale. Gap vs BZ=F Jul $111.01 even contango. Peak $126.
+- Hunter-Killer: MISSION CONCLUDED — pure intel pipeline only
+
+---
+
+### Beat #245 (03:15 JST May 3)
 - **Last Heartbeat:** 2026-05-03 03:15 JST — Beat #245 | **Status:** ACTIVE**
 - live_oracle: ✅ refreshed via oracle script @ 03:06 JST (BTC **$78,344.88** (-0.332%) | ETH $2,305.13 (-0.304%) | XRP $1.3897 (-0.337%) | USD/JPY **157.033** | Brent **$108.17** ⚠️ | Gold $4,629.9) — BTC slipped back below $78.4K from $78,107 at 02:55. Weekend thin. USD/JPY holding at 157.033 — BoJ intervention effect holding (Apr 30/May 1 $30bn intervention at 160+). Brent stale from May 1. **Markets closed — Tokyo open Mon 00:00 JST May 4 (~21hrs).**
 - Gateway: ✅ Running (LaunchAgent, state active) — probe ok ✅
