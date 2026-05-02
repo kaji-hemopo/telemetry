@@ -1,4 +1,49 @@
-### INTEL SUMMARY — May 3 02:15 JST (Sunday 2:15AM Tokyo — Weekend Closed — ~22hrs to reopen)
+### Beat #245 (03:15 JST May 3) — Pipeline Active. Sunday 3:15AM Tokyo. Markets closed. BTC $78,345.
+- **Last Heartbeat:** 2026-05-03 03:15 JST — Beat #245 | **Status:** ACTIVE**
+- live_oracle: ✅ refreshed via oracle script @ 03:06 JST (BTC **$78,344.88** (-0.332%) | ETH $2,305.13 (-0.304%) | XRP $1.3897 (-0.337%) | USD/JPY **157.033** | Brent **$108.17** ⚠️ | Gold $4,629.9) — BTC slipped back below $78.4K from $78,107 at 02:55. Weekend thin. USD/JPY holding at 157.033 — BoJ intervention effect holding (Apr 30/May 1 $30bn intervention at 160+). Brent stale from May 1. **Markets closed — Tokyo open Mon 00:00 JST May 4 (~21hrs).**
+- Gateway: ✅ Running (LaunchAgent, state active) — probe ok ✅
+- Dashboard: ✅ synced via git (bdf92b7, 02:55 JST) — pushed to origin
+- infra_pulse: Gateway probe ok ✅ — OK:9 WARN:1 FAIL:0
+- Intel brief: refreshed via web search ✅. Iran new rules for Hormuz (YouTube, ~6hrs ago). Trump "not happy" with Hormuz closure (Balance of Power, 21hrs ago). China-US trade stable ahead of Xi-Trump May meeting. BoJ intervention aftermath: yen ended April +1.35% vs USD — first monthly gain in 3 months.
+- **🚨 IRAN/HORMUZ — TENSE, STATIC, NEW RULES:** YouTube/Live (~6hrs ago): Iran Announces New Rules For Strait Of Hormuz — fresh rules issued. Trump "not happy" on Iran — touts Hormuz closure (Balance of Power, 21hrs ago). US naval blockade in 3rd week. Ceasefire indefinite/signal-hostile. **Hormuz largely shut — no breakout, no de-escalation. Watch for naval incidents.**
+- **🔔 CEASEFIRE INDEFINITE — signal-hostile.** Wed May 6 cancelled. Hormuz largely shut. China pushing reopening as urgent Xi-Trump priority.
+- **🔔 ANTHROPIC $850-900B ~$50B ROUND (TechCrunch Apr 30):** Allocation window closed. Round within 2 weeks. **No announcement yet — watch imminent.** GIC + Coatue leading.
+- **🔔 CHINA PUSHING HORMUZ REOPENING:** China's UN Ambassador Fu Cong: Hormuz reopening "urgent" priority for Trump-Xi talks (Al Jazeera May 2). Xi-Trump May meeting expected.
+- Brent watch: $108.17 (May 1 close) — weekend stale. Gap vs BZ=F Jul $111.01 even contango. Peak $126.
+- **⚠️ WEEKEND CLOSED — ~21hrs to Monday Tokyo open (Mon 00:00 JST May 4). No trading cushion.**
+- **🇯🇵 JAPAN:** USD/JPY 157.033 — BoJ intervention (Apr 30/May 1, ~$30bn, at 160+ level) holding. Yen ended April +1.35% vs USD — first monthly gain in 3 months. Ministry of Finance targeting 160+ level. SoftBank listing AI firm Roze in U.S. (Japan Times/FT, Apr 29-30). BoJ navigating oil shock.
+- **🤖 AI/TECH:** Anthropic $850-900B ~$50B round imminent (GIC + Coatue). Pentagon-Nvidia/Microsoft/AWS classified AI infra. Big Tech AI capex >$1T by 2027.
+
+### INTEL SUMMARY — May 3 03:15 JST (Sunday 3:15AM Tokyo — Weekend Closed — ~21hrs to reopen)
+- **Markets:** BTC **$78,344.88** (-0.332% 24h) — weekend dip, holding $78K+. ETH $2,305.13 (-0.304%). XRP $1.3897 (-0.337%). USD/JPY **157.033** — BoJ intervention holding from Apr 30/May 1 ($30bn spent). Brent ⚠️ **$108.17** — weekend stale. Gold $4,629.9. **~21hrs to Monday Tokyo open.**
+- **🚨 IRAN/HORMUZ — TENSE, STATIC, NEW RULES:** YouTube/Live (~6hrs ago): Iran Announces New Rules For Strait of Hormuz. Trump "not happy" — touts Hormuz closure (Balance of Power, 21hrs ago). US naval blockade in 3rd week. Ceasefire indefinite. **Hormuz largely shut — no breakout, no de-escalation.**
+- **🔔 CEASEFIRE INDEFINITE — signal-hostile.** Wed May 6 cancelled. Hormuz largely shut.
+- **🔔 ANTHROPIC $850-900B ~$50B ROUND (TechCrunch Apr 30):** Allocation closed. Round within 2 weeks. GIC + Coatue leading. **No announcement yet — watch imminent.**
+- **🔔 CHINA PUSHING HORMUZ REOPENING:** Urgent Xi-Trump priority — May meeting expected.
+- Brent $108.17 May 1 close — weekend stale. Gap vs BZ=F Jul $111.01 even. Peak $126.
+- **🇯🇵 JAPAN:** USD/JPY 157.033 — BoJ intervention holding. Yen ended April +1.35% vs USD (first monthly gain in 3 months). SoftBank listing Roze in U.S.
+- **⚠️ WEEKEND CLOSED — ~21hrs to reopen. No trading cushion.**
+- **🤖 AI/TECH:** Anthropic ~$50B round imminent. Pentagon-Nvidia/Microsoft/AWS classified AI. Big Tech AI capex >$1T by 2027.
+
+### ⚠️ BEARS WATCH — May 3 03:15 JST (Weekend Closed — ~21hrs to markets reopen)
+- **🚨 IRAN/HORMUZ — TENSE, STATIC, NEW RULES:** Iran announces new rules for Hormuz (~6hrs ago). Trump "not happy" — touts closure (21hrs ago). US naval blockade 3rd week. Ceasefire indefinite. **No breakout, no de-escalation — embedded risk.**
+- **🔔 CEASEFIRE INDEFINITE — signal-hostile.** Wed May 6 cancelled.
+- **🔔 ANTHROPIC ~$50B ROUND CLOSING WITHIN 2 WEEKS** — $850-900B valuation. No announcement yet.
+- **🔔 CHINA PUSHING HORMUZ REOPENING** — Xi-Trump May meeting expected. Hormuz largely shut.
+- **⚠️ WEEKEND CLOSED — ~21hrs to open. No trading cushion.**
+- Japan: BoJ intervention holding at 157.033. Oil shock. USD/JPY 157+.
+
+### INFRASTRUCTURE STATUS
+- Gateway: ✅ active (LaunchAgent, state active) — probe ok ✅
+- Dashboard (kaji-hemopo.github.io/telemetry/agents/ito/): ✅ synced via git (bdf92b7, 02:55 JST) — pushed to origin
+- live_oracle.json: ✅ refreshed @ 03:06 JST — all 6 assets populated, Brent ⚠️ $108.17 (May 1 close stale)
+- infra_pulse: Gateway probe ok ✅ — OK:9 WARN:1 FAIL:0
+- Brent watch: $108.17 May 1 close — weekend stale. Gap vs BZ=F Jul $111.01 even contango. Peak $126.
+- Hunter-Killer: MISSION CONCLUDED — pure intel pipeline only
+
+---
+
+### INTEL SUMMARY — May 3 02:55 JST (Sunday 2:55AM Tokyo — Weekend Closed — ~21hrs to reopen)
 - **Markets:** BTC **$78,457** (+0.336% 24h) — marginal weekend uptick, holding $78K+. ETH $2,310.25 (+0.388%). XRP $1.393 (+0.137%). USD/JPY **157.033** — unchanged. Brent ⚠️ **$108.17** — weekend stale. Gold $4,629.9. **~22hrs to Monday Tokyo open.**
 - **🚨 IRAN/HORMUZ — ESCALATION RISK ELEVATED:** Trump warns shipping companies against paying Iranian tolls in Hormuz — sanctions exposure (WashPost, The Hindu, ~1-2hrs ago). US naval blockade in 3rd week. Stalled ceasefire talks. Trump "not satisfied" with Iran proposal. **Naval tensions high — Hormuz still largely shut.**
 - **🔔 CEASEFIRE INDEFINITE — signal-hostile.** Wed May 6 cancelled. Hormuz largely shut. China pushing reopening as urgent Xi-Trump priority.
@@ -22,10 +67,54 @@
 
 ---
 
+### Beat #244 (02:55 JST May 3) — Pipeline Active. Sunday 2:55AM Tokyo. Markets closed. BTC $78,107.
+- **Last Heartbeat:** 2026-05-03 02:55 JST — Beat #244 | **Status:** ACTIVE**
+- live_oracle: ✅ refreshed via oracle script @ 02:45 JST (BTC **$78,107** (+0.874%) | ETH $2,301.45 (+0.635%) | XRP $1.39 (+0.498%) | USD/JPY **157.080** | Brent **$108.17** ⚠️ | Gold $4,613.40) — BTC climbing toward $78K+. USD/JPY ticked up to 157.08. **Markets closed — Tokyo open Mon 00:00 JST May 4 (~21hrs).**
+- Gateway: ✅ Running (LaunchAgent, state active) — probe ok ✅
+- Dashboard: ✅ synced via git (bdf92b7, 02:55 JST) — pushed to origin
+- infra_pulse: Gateway probe ok ✅ — OK:9 WARN:1 FAIL:0
+- Intel brief: refreshed via web search ✅. Hormuz: tense but stable — no major escalation since last beat (~3hrs ago). Iran rules for Hormuz reported (YouTube, 3hrs ago). CFR notes ceasefire extended but Hormuz remains largely shut. Al Jazeera shipping insurance 20x higher. No major breakout. **Static tense — watch for naval incidents.**
+- **🚨 IRAN/HORMUZ — TENSE, STATIC:** YouTube/Live (3hrs ago): "Iran Announces New Rules For Strait Of Hormuz" — fresh rules issued. CFR: Trump extended ceasefire indefinitely Apr 21. PBS (Apr 22): Iran fired on 3 ships in Hormuz — complicating ceasefire talks. **Hormuz largely shut — naval tensions embedded, no breakout.**
+- **🔔 CEASEFIRE INDEFINITE (CFR):** Trump extended ceasefire indefinitely Tue Apr 22. Wed May 6 deadline **CANCELLED** — but Trump signal-hostile. Hormuz largely shut.
+- **🔔 ANTHROPIC $850-900B ~$50B ROUND (TechCrunch Apr 30):** Allocation window closed. Round expected within 2 weeks. **No announcement yet — watch imminent.** TechCrunch Apr 30: investors submitting allocations within 48 hours.
+- **🔔 CHINA PUSHING HORMUZ REOPENING:** Al Jazeera (May 2): shipping insurance 20x higher even if reopened. Xi-Trump talks ongoing.
+- Brent watch: $108.17 (May 1 close) — weekend stale. Gap vs BZ=F Jul $111.01 even contango. Peak $126.
+- **⚠️ WEEKEND CLOSED — ~21hrs to Monday Tokyo open (Mon 00:00 JST May 4). No trading cushion.**
+- **🇯🇵 JAPAN:** SoftBank listing AI firm Roze in U.S. (Japan Times/FT, Apr 29-30). BoJ navigating oil shock. USD/JPY 157.080.
+- **🤖 AI/TECH:** Anthropic $850-900B ~$50B round imminent. Pentagon-Nvidia/Microsoft/AWS classified AI infra. Big Tech AI capex >$1T by 2027.
+
+### INTEL SUMMARY — May 3 02:55 JST (Sunday 2:55AM Tokyo — Weekend Closed — ~21hrs to reopen)
+- **Markets:** BTC **$78,107** (+0.874% 24h) — climbing toward $78K+, holding weekend gains. ETH $2,301.45 (+0.635%). XRP $1.39 (+0.498%). USD/JPY **157.080** — slight tick up from 157.033. Brent ⚠️ **$108.17** — weekend stale. Gold $4,613.40. **~21hrs to Monday Tokyo open.**
+- **🚨 IRAN/HORMUZ — TENSE, STATIC:** YouTube/Live (3hrs ago): Iran announces new rules for Strait of Hormuz. CFR: ceasefire extended indefinitely Apr 21. PBS (Apr 22): Iran fired on 3 ships in Hormuz, complicating talks. Al Jazeera: shipping insurance 20x higher even if reopened. **Naval tensions embedded — Hormuz largely shut — static, no breakout.**
+- **🔔 CEASEFIRE INDEFINITE — signal-hostile.** Wed May 6 cancelled. Hormuz largely shut.
+- **🔔 ANTHROPIC $850-900B ~$50B ROUND (TechCrunch Apr 30):** Allocation closed. Round within 2 weeks. **No announcement yet — watch imminent.**
+- Brent $108.17 May 1 close — weekend stale. Gap vs BZ=F Jul $111.01 even. Peak $126.
+- **⚠️ WEEKEND CLOSED — ~21hrs to reopen. No trading cushion.**
+- **🇯🇵 JAPAN:** SoftBank listing AI firm Roze in U.S. BoJ navigating oil shock. USD/JPY 157.080 — BoJ watching 157+.
+- **🤖 AI/TECH:** Anthropic $850-900B ~$50B round imminent. Pentagon-Nvidia/Microsoft/AWS classified AI. Big Tech AI capex >$1T by 2027.
+
+### ⚠️ BEARS WATCH — May 3 02:55 JST (Weekend Closed — ~21hrs to markets reopen)
+- **🚨 IRAN/HORMUZ — TENSE, STATIC:** Iran announces new rules for Hormuz (3hrs ago). Iran fired on 3 ships Apr 22 (PBS). Ceasefire extended but fragile. Hormuz largely shut. Shipping insurance 20x higher. **Naval tensions embedded — no breakout but risk remains.**
+- **🔔 CEASEFIRE INDEFINITE — signal-hostile.** Wed May 6 cancelled.
+- **🔔 ANTHROPIC ~$50B ROUND CLOSING WITHIN 2 WEEKS** — $850-900B valuation. No announcement yet.
+- **⚠️ WEEKEND CLOSED — ~21hrs to open. No trading cushion.**
+- Japan: BoJ navigating oil shock.
+- USD/JPY 157.080 — BoJ watching 157+.
+
+### INFRASTRUCTURE STATUS
+- Gateway: ✅ active — probe ok ✅
+- Dashboard (kaji-hemopo.github.io/telemetry/agents/ito/): ✅ synced via git (bdf92b7, 02:55 JST) — pushed to origin
+- live_oracle.json: ✅ refreshed @ 02:45 JST — all 6 assets populated, Brent ⚠️ $108.17 (May 1 close stale)
+- infra_pulse: Gateway probe ok ✅ — OK:9 WARN:1 FAIL:0
+- Brent watch: $108.17 May 1 close — weekend stale. Gap vs BZ=F Jul $111.01 even contango. Peak $126.
+- Hunter-Killer: MISSION CONCLUDED — pure intel pipeline only
+
+---
 ### Ito MEMORY — Compacted 2026-05-02 by Kaji Beat 1289 IE
 ### Archive: outputs/memory/2026-05-02.md (Beat #200-203)
-### Retained: Beat #205-238 (most recent beats)
+### Retained: Beat #205-244 (most recent beats)
 ### Size before: 74KB / 728 lines → after: ~13KB / ~181 lines
+
 
 ---
 
