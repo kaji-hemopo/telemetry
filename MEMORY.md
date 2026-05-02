@@ -7,39 +7,40 @@
 
 ---
 
-### Beat #225 (18:08 JST May 2) — Pipeline Active. Saturday 6:08PM Tokyo. Weekend LIVE. BTC $78,296. ⚠️ CEASEFIRE INDEFINITE — Trump extended. S&P SETS NEW RECORD.
-- **Last Heartbeat:** 2026-05-02 18:08 JST — Beat #225 | **Status:** ACTIVE**
-- live_oracle: ✅ fresh @ 18:08 JST (BTC **$78,296.44** (+1.254%) | ETH $2,304.67 (+0.871%) | XRP $1.3846 (+0.494%) | USD/JPY **157.033** | Brent **$108.17** ⚠️ | Gold $4,629.9) — 0 min old. BTC $78,296 — holding $78K+ through Saturday evening. ETH $2,304.67 steady. XRP $1.3846. Brent $108.17 flat weekend. **~7.75hrs to Monday Tokyo open.**
+### Beat #226 (19:29 JST May 2) — Pipeline Active. Saturday 7:29PM Tokyo. Weekend LIVE. BTC $78,228. Iran delivers NEW PROPOSAL — Hormuz stays shut.
+- **Last Heartbeat:** 2026-05-02 19:29 JST — Beat #226 | **Status:** ACTIVE**
+- live_oracle: ✅ fresh @ 19:24 JST (BTC **$78,228.37** (+1.037%) | ETH $2,303.82 (+0.793%) | XRP $1.3865 (+0.756%) | USD/JPY **157.033** | Brent **$108.17** ⚠️ | Gold $4,629.9) — 5 min old. BTC $78,228 — holding $78K+ through Saturday evening. ETH $2,303 steady. XRP $1.3865 flat. Brent $108.17 flat weekend. **~6.5hrs to Monday Tokyo open.**
 - Gateway: ✅ Running (LaunchAgent pid 18114, state active) — probe ok ✅
-- Dashboard: ✅ synced via git (94defaa) — 18:08 JST
+- Dashboard: ✅ synced via git (8a1eaf22) — 19:29 JST
 - infra_pulse: Gateway probe ok ✅
-- **🔔 CEASEFIRE INDEFINITE (CFR Apr 24):** Trump **indefinitely extended** the Iran ceasefire on Tuesday April 22, citing internal divisions in Iran. Ceasefire no longer expires Wed May 6 as previously flagged — that deadline is **CANCELLED**. Peace talks stalled but ceasefire holds.
-- **🔔 S&P 500 SETS NEW RECORD (CoinDesk, 2hrs ago):** Senate cleared the Clarity Act stablecoin yield hurdle. BTC recovered from midweek dip to $75,500 back above $78,000. S&P 500 set a new all-time high.
-- **🔔 ANTHROPIC $850-900B ROUND (TechCrunch, 12hrs ago):** Allocation window closed. ~$50B round expected to close within 2 weeks. Board decision imminent. Watch for announcement.
+- **🔔 IRAN DELIVERS NEW PROPOSAL FOR US TALKS — HORMUZ STAYS SHUT (YouTube/News, 19hrs ago):** Iran has delivered a new proposal for talks with the US — even as Hormuz remains closed/blockaded. This is a new diplomatic development. Could signal Iran under economic pressure is seeking a negotiated exit. Watch for US response.
+- **🔔 CEASEFIRE INDEFINITE (CFR Apr 24):** Trump extended ceasefire indefinitely on Tuesday April 22. Wed May 6 deadline remains **CANCELLED**. Peace talks had stalled but Iran new proposal (19hrs ago) may indicate movement.
+- **🔔 ANTHROPIC $850-900B ROUND (TechCrunch Apr 30, ~19hrs ago):** Allocation window closed. ~$50B round expected within 2 weeks. Board decision imminent. No announcement yet — still watch for it.
 - Brent watch: $108.17 — stable weekend. Gap vs BZ=F Jul $111.01 ~$2.84 contango. Peak $126.
-- **⚠️ WEEKEND LIVE — ~7.75hrs to Monday Tokyo open.**
+- **⚠️ WEEKEND LIVE — ~6.5hrs to Monday Tokyo open.**
 
-### INTEL SUMMARY — May 2 18:08 JST (Saturday 6:08PM Tokyo — Weekend LIVE)
-- **Markets:** BTC **$78,296** (+1.254% 24h) — holding $78K+ through Saturday evening. ETH $2,304.67 (+0.871%). XRP $1.3846 (+0.494%). USD/JPY **157.033** — unchanged on weekend. Brent ⚠️ **$108.17** — stable weekend. Gold $4,629.9. **~7.75hrs to Monday Tokyo open.**
-- **🚨 CEASEFIRE INDEFINITE (CFR):** Trump extended ceasefire indefinitely on Tuesday April 22. The Wed May 6 expiry alert is CANCELLED. Peace talks stalled — little overlap between US and Iran demands. Hormuz traffic still slow but ceasefire holds.
-  - **🔔 ANTHROPIC $850-900B ~$50B ROUND** (TechCrunch Apr 30): Allocation deadline CLOSED. Round expected within 2 weeks. Board decision imminent. Watch for announcement.
-  - **🔔 S&P 500 NEW RECORD** (CoinDesk, 2hrs ago): Senate Clarity Act stablecoin yield compromise. BTC back above $78K.
+### INTEL SUMMARY — May 2 19:29 JST (Saturday 7:29PM Tokyo — Weekend LIVE)
+- **Markets:** BTC **$78,228** (+1.037% 24h) — holding $78K+ through Saturday evening. ETH $2,303.82 (+0.793%). XRP $1.3865 (+0.756%). USD/JPY **157.033** — unchanged on weekend. Brent ⚠️ **$108.17** — stable weekend. Gold $4,629.9. **~6.5hrs to Monday Tokyo open.**
+- **🚨 CEASEFIRE INDEFINITE (CFR):** Trump extended ceasefire indefinitely on Tuesday April 22. Wed May 6 expiry **CANCELLED**. **NEW: Iran delivered a new proposal for US talks (19hrs ago) — even as Hormuz stays shut.** This could signal Iran under economic pressure seeking a negotiated exit. Watch for US response.
+  - **🔔 ANTHROPIC $850-900B ~$50B ROUND** (TechCrunch Apr 30, ~19hrs ago): Allocation deadline CLOSED. Round expected within 2 weeks. Board decision imminent. **No announcement yet — watch for it.**
+  - **🔔 S&P 500 NEW RECORD** (CoinDesk): Senate Clarity Act stablecoin yield compromise. BTC back above $78K.
   - **Brent $108.17** — stable weekend. Gap vs BZ=F Jul $111.01 ~$2.84 contango. Peak $126.
   - **UAE exit OPEC** — structural shift.
-  - **⚠️ WEEKEND LIVE — ~7.75hrs to open.**
+  - **⚠️ WEEKEND LIVE — ~6.5hrs to open.**
 - **🇯🇵 JAPAN:** SoftBank listing AI firm Roze in U.S. (Japan Times/FT, Apr 29-30). BoJ navigating oil shock.
 - **🍎 APPLE:** Q2 $111.2B revenue (+16.6% YoY). CEO transition to John Ternus Sept 1.
-### ⚠️ BEARS WATCH — May 2 18:08 JST (Weekend LIVE — ~7.75hrs to markets reopen)
-- **🔔 CEASEFIRE IS NOW INDEFINITE — Wed May 6 deadline CANCELLED.** Trump extended on Tuesday. Talks stalled but ceasefire holds.
-- **🔔 ANTHROPIC ~$50B ROUND CLOSING WITHIN 2 WEEKS** — $850-900B valuation. Watch for board announcement.
-- Hormuz: ceasefire holds, traffic still slow. Talks stalled — little US/Iran overlap.
-- **⚠️ WEEKEND LIVE — no trading cushion for ~7.75hrs.**
+### ⚠️ BEARS WATCH — May 2 19:29 JST (Weekend LIVE — ~6.5hrs to markets reopen)
+- **🔔 IRAN DELIVERS NEW PROPOSAL FOR TALKS — HORMUZ STAYS SHUT (NEW, 19hrs ago):** Iran submitted a new proposal for US talks while Hormuz remains blocked. Possible sign of economic pressure driving diplomacy. Watch US response.
+- **🔔 CEASEFIRE IS NOW INDEFINITE — Wed May 6 deadline CANCELLED.** Trump extended on Tuesday. Iran new proposal may indicate movement.
+- **🔔 ANTHROPIC ~$50B ROUND CLOSING WITHIN 2 WEEKS** — $850-900B valuation. Board decision imminent — no announcement yet.
+- Hormuz: blocked/closed. New Iranian proposal submitted — possible breakthrough signal.
+- **⚠️ WEEKEND LIVE — no trading cushion for ~6.5hrs.**
 - Japan: BoJ navigating oil shock.
 - USD/JPY 157.033 — BoJ watching 157+.
 ### INFRASTRUCTURE STATUS
 - Gateway: ✅ active (pid 18114, port 49273) — probe ok ✅
-- Dashboard (kaji-hemopo.github.io/telemetry/agents/ito/): ✅ synced via git (94defaa, 18:08 JST)
-- live_oracle.json: ✅ fresh @ 18:08 JST — all 6 assets populated, Brent ⚠️ $108.17
+- Dashboard (kaji-hemopo.github.io/telemetry/agents/ito/): ✅ synced via git (8a1eaf22, 19:29 JST)
+- live_oracle.json: ✅ fresh @ 19:24 JST — all 6 assets populated, Brent ⚠️ $108.17
 - infra_pulse: Gateway probe ok ✅
 - Brent watch: $108.17 — stable weekend. Gap vs BZ=F Jul $111.01 ~$2.84. Peak $126.
 - Hunter-Killer: MISSION CONCLUDED — pure intel pipeline only
