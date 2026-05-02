@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-02T17:15:37.371Z",
+  "updatedAt": "2026-05-02T19:15:38.099Z",
   "entries": {
     "memory:memory/2026-04-28.md:407:421": {
       "key": "memory:memory/2026-04-28.md:407:421",
@@ -1504,13 +1504,13 @@
       "endLine": 824,
       "source": "memory",
       "snippet": "**Competitors:** AWS EventBridge console shows Pipe status but doesn't detect schema drift between enrichment and transformer, monitor silent pass-through failures, or forecast data loss from null fields. ### Beat #73 (16:40 JST) — Pipeline Healthy. Niches #135-136 Delivered - **Last Heartbeat:** 2026-04-29 16:40 JST — Beat #73 | **Status:** ACTIVE — Hunter-Killer heartbeat running - live_oracle: fresh @ 16:40 JST (BTC $77,157 | ETH $2,328 | USD/JPY 159.54) ✅ - Gateway: ✅ Running (LaunchAgent pid 12459, state active) - infra_pulse: script unavailable (manual check passed) ## 🏹 NICHE #135: Kubernetes CRD Version Drift Detector & Operator Upgrade Sequencing Planner",
-      "recallCount": 43,
+      "recallCount": 44,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 21.710597424209112,
-      "maxScore": 0.5298067897558212,
+      "totalScore": 22.246549569070332,
+      "maxScore": 0.5359521448612212,
       "firstRecalledAt": "2026-04-29T08:27:37.504Z",
-      "lastRecalledAt": "2026-05-02T16:55:38.452Z",
+      "lastRecalledAt": "2026-05-02T18:35:37.164Z",
       "queryHashes": [
         "2ba57f3c93b1",
         "164b60c99f70",
@@ -1542,7 +1542,8 @@
         "96b4b9eb2bde",
         "e8e526510034",
         "21e15ce37075",
-        "59def0d842a4"
+        "59def0d842a4",
+        "2b5b8f398d22"
       ],
       "recallDays": [
         "2026-04-29",
@@ -2850,15 +2851,17 @@
       "endLine": 11,
       "source": "memory",
       "snippet": "--- --- ### Beat #241 (01:55 JST May 3) — Pipeline Active. Sunday 1:55AM Tokyo. Markets closed. BTC $78,475. Hormuz tensions elevated. - **Last Heartbeat:** 2026-05-03 01:55 JST — Beat #241 | **Status:** ACTIVE** - live_oracle: ✅ fresh @ 01:40 JST (BTC **$78,475.37** (+0.154%) | ETH **$2,308.74** (+0.23%) | XRP **$1.3917** (-0.215%) | USD/JPY **157.033** | Brent **$108.17** ⚠️ | Gold **$4,629.9**) — 15 min old. BTC $78,475 — marginal uptick through late Saturday night ($78,107 at 01:10). ETH $2,308. XRP $1.3917. Brent $108.17 stale weekend. **Markets closed — Tokyo open Mon 00:00 JST May 4 (~22hrs).** - Gateway: ✅ Running (LaunchAgent pid 39101, state active) — probe ok ✅ - Dashboard: ✅ sy",
-      "recallCount": 1,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.5456101179122924,
-      "maxScore": 0.5456101179122924,
+      "totalScore": 1.8906361251346409,
+      "maxScore": 0.806120930539781,
       "firstRecalledAt": "2026-05-02T17:15:37.371Z",
-      "lastRecalledAt": "2026-05-02T17:15:37.371Z",
+      "lastRecalledAt": "2026-05-02T19:15:38.099Z",
       "queryHashes": [
-        "cae7d7985453"
+        "cae7d7985453",
+        "2b5b8f398d22",
+        "795308362f5a"
       ],
       "recallDays": [
         "2026-05-03"
