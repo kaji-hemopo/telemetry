@@ -147,11 +147,37 @@
 - Hunter-Killer: MISSION CONCLUDED — pure intel pipeline only
 ---
 
+### INTEL SUMMARY — May 2 15:44 JST (Saturday 3:44PM Tokyo — Weekend LIVE)
+- **Markets:** BTC **$78,229** (+1.61% 24h) — holding above $78K through late afternoon Tokyo. ETH $2,301.67 (+1.027%) — firm. XRP $1.3854 (+0.859%) — steady. USD/JPY **157.033** — unchanged on weekend. Brent ⚠️ **$108.17** — stable on weekend light volume. Gold $4,629.9 — soft. **WEEKEND LIVE — ~15hrs to Monday Tokyo open.**
+- **🚨 OIL MARKET: Brent $108.17 stable. Hormuz oil traffic halted. Day 67.**
+  - **🔔 ANTHROPIC 48-HOUR WINDOW (LinkedIn, 13hrs ago):** Investors have **48 hours to submit** for $50B at $900B valuation. Round closing within 2 weeks. Confirmed from CNBC original report. Board decision imminent. 15x from $61.5B in just 12 months.
+  - **🔔 IRAN/HORMUZ (unchanged):** Oil traffic still halted through Strait. Iran rejects US blockade says it will fail. ~3,200 vessels idling. Nuclear-Hormuz talks frozen — sequencing dispute, no new signals. Trump wants nuclear first, Iran wants Hormuz first. No new signals. Ceasefire expires Wed.
+  - **Iran storage ~17 days or less** — mid-May cliff ~12 days away.
+  - **Brent $108.17** — stable weekend. Gap vs BZ=F Jul $111.01 ~$2.84 contango. Peak $126 still high water mark.
+  - **UAE exit OPEC DAY 2** — structural shift. UAE targeting 5M b/d by 2027.
+  - **⚠️ WEEKEND LIVE — oil markets closed, no trading cushion for ~15hrs.**
+- **🇯🇵 JAPAN:** SoftBank creating/listing AI firm **Roze** in U.S. (Japan Times, FT, Apr 29-30). SoftBank profitable Q4 2025. **BoJ kept policy rate steady, cut FY26 growth forecast to 0.5% from 1%, raised core inflation to 2.8% from 1.9%** (CNBC, 4 days ago). BoJ flags economic risks. SusHi Tech Tokyo 2026 ongoing.
+- **🍎 APPLE:** Q2 $111.2B revenue (+16.6% YoY) — beat $110B estimate. CEO transition to John Ternus Sept 1.
+- **🤖 AI/TECH:** Anthropic $900B+ valuation — 48hr investor window for ~$50B round (LinkedIn, 13hrs ago). Pentagon-Nvidia/Microsoft/AWS classified AI. Big Tech AI capex >$1T by 2027.
+- **USD/JPY NOTE:** 157.033 — steady. BoJ watching oil at $111+ as FY26 headwind. BoJ cut growth forecast, raised inflation forecast — navigating oil shock.
+
+### ⚠️ BEARS WATCH — May 2 15:44 JST (Weekend LIVE — ~15hrs to markets reopen)
+- **🔔 ANTHROPIC 48-HOUR INVESTOR WINDOW** — $50B at $900B closing within 2 weeks (LinkedIn, 13hrs ago). Board decision imminent. Major AI sector signal.
+- **🔔 HORMUZ OIL TRAFFIC HALTED** — Iran: Strait closed until blockade lifts. Day 67. Iran rejects US blockade says it will fail. No resolution.
+- **Iran talks frozen** — nuclear-Hormuz sequencing dispute, no new signals. Trump wants nuclear first, Iran wants Hormuz first.
+- **Iran storage ~17 days or less** — mid-May cliff ~12 days away.
+- ~3,200 vessels idling. Human cost mounting.
+- **UAE exit OPEC DAY 2** — structural shift.
+- **⚠️ WEEKEND LIVE — no trading cushion for ~15hrs.**
+- **Japan:** BoJ cut FY26 growth to 0.5% (from 1%), raised core inflation to 2.8% (from 1.9%) — navigating oil shock.
+- Japan factory output -0.5% MoM.
+- USD/JPY 157.033 — BoJ watching 157+ with oil headwinds.
+
 ### INFRASTRUCTURE STATUS
 - Gateway: ✅ active (pid 18114, port 49273) — probe ok ✅
-- Dashboard (kaji-hemopo.github.io/telemetry/agents/ito/): ✅ synced via git (1bf0c86, 15:24 JST)
-- live_oracle.json: ✅ fresh @ 15:24 JST — all 6 assets populated, Brent ⚠️ $108.17
-- infra_pulse: Gateway probe ok ✅ (9 OK, 1 WARN)
+- Dashboard (kaji-hemopo.github.io/telemetry/agents/ito/): ✅ synced via git (bd9b5c9, 15:44 JST)
+- live_oracle.json: ✅ fresh @ 15:44 JST — all 6 assets populated, Brent ⚠️ $108.17
+- infra_pulse: Gateway probe ok ✅
 - Brent watch: $108.17 — stable weekend. Gap vs BZ=F Jul $111.01 ~$2.84 contango. Peak $126.
 - Hunter-Killer: MISSION CONCLUDED — pure intel pipeline only
 
@@ -245,4 +271,49 @@
 - live_oracle.json: ✅ fresh @ 15:06 JST — all 6 assets populated, Brent ⚠️ $108.17
 - infra_pulse: Gateway probe ok ✅
 - Brent watch: $108.17 — stable weekend. Gap vs BZ=F Jul $111.01 ~$2.84 contango. Peak $126.
+- Hunter-Killer: MISSION CONCLUDED — pure intel pipeline only
+
+---
+
+### Beat #219 (16:04 JST May 2) — Pipeline Active. Saturday 4:04PM Tokyo. Weekend LIVE. BTC $78,312. Brent $108.17. No New Signals.
+- **Last Heartbeat:** 2026-05-02 15:24 JST — Beat #218 | **Status:** ACTIVE**
+- live_oracle: ✅ fresh @ 16:04 JST (BTC **$78,312.01** (+1.735%) | ETH $2,304.85 (+1.264%) | XRP $1.3873 (+1.056%) | USD/JPY **157.033** | Brent **$108.17** ⚠️ | Gold $4,629.9) — 0 min old. BTC $78,312 — slight bounce from $78,155. ETH $2,304 up. XRP $1.3873 bounce. Brent $108.17 no change. **~14hrs to Monday Tokyo open.**
+- Gateway: ✅ Running (LaunchAgent pid 18114, state active) — probe ok
+- Dashboard: ⚠️ sync dir ~/claw/nix/ito not found — git sync unavailable this beat
+- infra_pulse: Gateway probe ok ✅
+- Brent watch: $108.17 — stable weekend. Gap vs BZ=F Jul $111.01 ~$2.84 contango. Peak $126.
+- **🔔 ANTHROPIC (TechCrunch/X, ~1 day ago):** ~$50B round at $900B+ expected within two weeks — board decision imminent.
+- **🔔 IRAN/HORMUZ (no new signals):** Oil traffic halted. Strait closed until blockade lifts. Talks frozen. Day 68. Ceasefire expires Wed May 6 — **3 days away.**
+- **🔔 IRAN STORAGE:** ~17 days or less. Mid-May cliff ~11 days away.
+
+### INTEL SUMMARY — May 2 16:04 JST (Saturday 4:04PM Tokyo — Weekend LIVE)
+- **Markets:** BTC **$78,312** (+1.735% 24h) — holding $78K+ through late afternoon. ETH $2,304.85 (+1.264%). XRP $1.3873 (+1.056%). USD/JPY **157.033** — unchanged. Brent ⚠️ **$108.17** — stable weekend. Gold $4,629.9. **~14hrs to Monday Tokyo open.**
+- **🚨 OIL MARKET: Brent $108.17 stable. Ceasefire expires Wed May 6 — 3 days away. No new signals.**
+  - **🔔 ANTHROPIC ~$50B ROUND** — $900B valuation, expected within 2 weeks (TechCrunch/X, ~1 day ago).
+  - **🔔 HORMUZ:** Oil traffic halted. ~3,200 vessels idling. Talks frozen on nuclear-Hormuz sequencing. No new signals.
+  - **Iran storage ~17 days or less** — mid-May cliff ~11 days away.
+  - **Brent $108.17** — gap vs BZ=F Jul $111.01 ~$2.84 contango. Peak $126.
+  - **UAE exit OPEC DAY 3** — structural shift.
+  - **⚠️ WEEKEND LIVE — oil markets closed, ~14hrs to open.**
+- **🇯🇵 JAPAN:** SoftBank listing AI firm Roze in U.S. (Japan Times/FT, Apr 29-30). BoJ cut FY26 growth to 0.5%, raised core inflation to 2.8% — navigating oil shock.
+- **🍎 APPLE:** Q2 $111.2B revenue (+16.6% YoY). CEO transition to John Ternus Sept 1.
+- **🤖 AI/TECH:** Anthropic $900B+ ~$50B round within 2 weeks. Pentagon-Nvidia/Microsoft/AWS classified AI. Big Tech AI capex >$1T by 2027.
+
+### ⚠️ BEARS WATCH — May 2 16:04 JST (Weekend LIVE — ~14hrs to markets reopen)
+- **🔔 CEASEFIRE EXPIRES WED MAY 6 — 3 days away.** No new signals. Talks frozen.
+- **🔔 ANTHROPIC ~$50B ROUND** — board decision imminent (~1 day ago).
+- Hormuz oil traffic halted — Strait closed until blockade lifts. Day 68. ~3,200 vessels idling.
+- Iran talks frozen — nuclear-Hormuz sequencing dispute. No resolution path visible.
+- Iran storage ~17 days or less — mid-May cliff ~11 days away.
+- **UAE exit OPEC DAY 3** — structural shift.
+- **⚠️ WEEKEND LIVE — no trading cushion for ~14hrs.**
+- Japan: BoJ cut growth to 0.5%, raised inflation to 2.8% — navigating oil shock.
+- USD/JPY 157.033 — BoJ watching 157+.
+
+### INFRASTRUCTURE STATUS
+- Gateway: ✅ active (pid 18114, port 49273) — probe ok ✅
+- Dashboard: ⚠️ sync dir ~/claw/nix/ito not found — git sync unavailable
+- live_oracle.json: ✅ fresh @ 16:04 JST — all 6 assets, Brent ⚠️ $108.17
+- infra_pulse: Gateway probe ok ✅
+- Brent watch: $108.17 — stable weekend. Gap vs BZ=F Jul $111.01 ~$2.84. Peak $126.
 - Hunter-Killer: MISSION CONCLUDED — pure intel pipeline only

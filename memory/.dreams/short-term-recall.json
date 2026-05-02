@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-02T06:44:56.342Z",
+  "updatedAt": "2026-05-02T07:04:56.674Z",
   "entries": {
     "memory:memory/2026-04-28.md:407:421": {
       "key": "memory:memory/2026-04-28.md:407:421",
@@ -925,13 +925,13 @@
       "endLine": 498,
       "source": "memory",
       "snippet": "**Capex:** ~$8k. Infra: ~$80/mo. **Effort:** <3 hrs/week. **Competitors:** Datadog shows dashboard status but doesn't detect broken widget queries, IaC drift, or template variable mismatches automatically. --- **Last Heartbeat: 2026-04-29 01:55 JST — Beat #50 **Status:** ACTIVE — Hunter-Killer heartbeat running --- ### Beat #49 (01:35 JST) — Pipeline Healthy. Niches #87-88 Delivered - infra_pulse: OK:9 WARN:1 FAIL:0 ✅ - Niches #87-88: [generated below] ## 🏹 NICHE #87: Istio EnvoyFilter Production Misconfiguration Drift & Silent mTLS/Routing Failure Detector **B2B Problem:** Platform engineering and SRE teams managing Istio service meshes face silent EnvoyFilter misconfiguration drift —",
-      "recallCount": 45,
+      "recallCount": 46,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 22.21678794622422,
+      "totalScore": 22.736292994022374,
       "maxScore": 0.524598142504692,
       "firstRecalledAt": "2026-04-28T17:30:28.127Z",
-      "lastRecalledAt": "2026-04-30T07:23:43.832Z",
+      "lastRecalledAt": "2026-05-02T07:04:56.674Z",
       "queryHashes": [
         "07cdaf9aaf7e",
         "2ba57f3c93b1",
@@ -962,11 +962,13 @@
         "aa978f709790",
         "4c9a8fbf9c84",
         "3e906bcb4220",
-        "0044f75bed6f"
+        "0044f75bed6f",
+        "e8e526510034"
       ],
       "recallDays": [
         "2026-04-29",
-        "2026-04-30"
+        "2026-04-30",
+        "2026-05-02"
       ],
       "conceptTags": [
         "80/mo",
@@ -1501,13 +1503,13 @@
       "endLine": 824,
       "source": "memory",
       "snippet": "**Competitors:** AWS EventBridge console shows Pipe status but doesn't detect schema drift between enrichment and transformer, monitor silent pass-through failures, or forecast data loss from null fields. ### Beat #73 (16:40 JST) — Pipeline Healthy. Niches #135-136 Delivered - **Last Heartbeat:** 2026-04-29 16:40 JST — Beat #73 | **Status:** ACTIVE — Hunter-Killer heartbeat running - live_oracle: fresh @ 16:40 JST (BTC $77,157 | ETH $2,328 | USD/JPY 159.54) ✅ - Gateway: ✅ Running (LaunchAgent pid 12459, state active) - infra_pulse: script unavailable (manual check passed) ## 🏹 NICHE #135: Kubernetes CRD Version Drift Detector & Operator Upgrade Sequencing Planner",
-      "recallCount": 40,
+      "recallCount": 41,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 20.153855289518827,
+      "totalScore": 20.673341540992254,
       "maxScore": 0.5298067897558212,
       "firstRecalledAt": "2026-04-29T08:27:37.504Z",
-      "lastRecalledAt": "2026-05-01T14:18:57.574Z",
+      "lastRecalledAt": "2026-05-02T07:04:56.674Z",
       "queryHashes": [
         "2ba57f3c93b1",
         "164b60c99f70",
@@ -1536,12 +1538,14 @@
         "9a0b279a491d",
         "344c1890f444",
         "9915e1111bc2",
-        "96b4b9eb2bde"
+        "96b4b9eb2bde",
+        "e8e526510034"
       ],
       "recallDays": [
         "2026-04-29",
         "2026-04-30",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-02"
       ],
       "conceptTags": [
         "gateway",
