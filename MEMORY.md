@@ -7,7 +7,46 @@
 
 ---
 
-### Beat #224 (17:45 JST May 2) — Pipeline Active. Saturday 5:45PM Tokyo. Weekend LIVE. BTC $78,328. Brent $108.17. ⚠️ CEASEFIRE EXPIRES WED MAY 6 — 2.5 DAYS.
+### Beat #225 (18:08 JST May 2) — Pipeline Active. Saturday 6:08PM Tokyo. Weekend LIVE. BTC $78,296. ⚠️ CEASEFIRE INDEFINITE — Trump extended. S&P SETS NEW RECORD.
+- **Last Heartbeat:** 2026-05-02 18:08 JST — Beat #225 | **Status:** ACTIVE**
+- live_oracle: ✅ fresh @ 18:08 JST (BTC **$78,296.44** (+1.254%) | ETH $2,304.67 (+0.871%) | XRP $1.3846 (+0.494%) | USD/JPY **157.033** | Brent **$108.17** ⚠️ | Gold $4,629.9) — 0 min old. BTC $78,296 — holding $78K+ through Saturday evening. ETH $2,304.67 steady. XRP $1.3846. Brent $108.17 flat weekend. **~7.75hrs to Monday Tokyo open.**
+- Gateway: ✅ Running (LaunchAgent pid 18114, state active) — probe ok ✅
+- Dashboard: ✅ synced via git (94defaa) — 18:08 JST
+- infra_pulse: Gateway probe ok ✅
+- **🔔 CEASEFIRE INDEFINITE (CFR Apr 24):** Trump **indefinitely extended** the Iran ceasefire on Tuesday April 22, citing internal divisions in Iran. Ceasefire no longer expires Wed May 6 as previously flagged — that deadline is **CANCELLED**. Peace talks stalled but ceasefire holds.
+- **🔔 S&P 500 SETS NEW RECORD (CoinDesk, 2hrs ago):** Senate cleared the Clarity Act stablecoin yield hurdle. BTC recovered from midweek dip to $75,500 back above $78,000. S&P 500 set a new all-time high.
+- **🔔 ANTHROPIC $850-900B ROUND (TechCrunch, 12hrs ago):** Allocation window closed. ~$50B round expected to close within 2 weeks. Board decision imminent. Watch for announcement.
+- Brent watch: $108.17 — stable weekend. Gap vs BZ=F Jul $111.01 ~$2.84 contango. Peak $126.
+- **⚠️ WEEKEND LIVE — ~7.75hrs to Monday Tokyo open.**
+
+### INTEL SUMMARY — May 2 18:08 JST (Saturday 6:08PM Tokyo — Weekend LIVE)
+- **Markets:** BTC **$78,296** (+1.254% 24h) — holding $78K+ through Saturday evening. ETH $2,304.67 (+0.871%). XRP $1.3846 (+0.494%). USD/JPY **157.033** — unchanged on weekend. Brent ⚠️ **$108.17** — stable weekend. Gold $4,629.9. **~7.75hrs to Monday Tokyo open.**
+- **🚨 CEASEFIRE INDEFINITE (CFR):** Trump extended ceasefire indefinitely on Tuesday April 22. The Wed May 6 expiry alert is CANCELLED. Peace talks stalled — little overlap between US and Iran demands. Hormuz traffic still slow but ceasefire holds.
+  - **🔔 ANTHROPIC $850-900B ~$50B ROUND** (TechCrunch Apr 30): Allocation deadline CLOSED. Round expected within 2 weeks. Board decision imminent. Watch for announcement.
+  - **🔔 S&P 500 NEW RECORD** (CoinDesk, 2hrs ago): Senate Clarity Act stablecoin yield compromise. BTC back above $78K.
+  - **Brent $108.17** — stable weekend. Gap vs BZ=F Jul $111.01 ~$2.84 contango. Peak $126.
+  - **UAE exit OPEC** — structural shift.
+  - **⚠️ WEEKEND LIVE — ~7.75hrs to open.**
+- **🇯🇵 JAPAN:** SoftBank listing AI firm Roze in U.S. (Japan Times/FT, Apr 29-30). BoJ navigating oil shock.
+- **🍎 APPLE:** Q2 $111.2B revenue (+16.6% YoY). CEO transition to John Ternus Sept 1.
+### ⚠️ BEARS WATCH — May 2 18:08 JST (Weekend LIVE — ~7.75hrs to markets reopen)
+- **🔔 CEASEFIRE IS NOW INDEFINITE — Wed May 6 deadline CANCELLED.** Trump extended on Tuesday. Talks stalled but ceasefire holds.
+- **🔔 ANTHROPIC ~$50B ROUND CLOSING WITHIN 2 WEEKS** — $850-900B valuation. Watch for board announcement.
+- Hormuz: ceasefire holds, traffic still slow. Talks stalled — little US/Iran overlap.
+- **⚠️ WEEKEND LIVE — no trading cushion for ~7.75hrs.**
+- Japan: BoJ navigating oil shock.
+- USD/JPY 157.033 — BoJ watching 157+.
+### INFRASTRUCTURE STATUS
+- Gateway: ✅ active (pid 18114, port 49273) — probe ok ✅
+- Dashboard (kaji-hemopo.github.io/telemetry/agents/ito/): ✅ synced via git (94defaa, 18:08 JST)
+- live_oracle.json: ✅ fresh @ 18:08 JST — all 6 assets populated, Brent ⚠️ $108.17
+- infra_pulse: Gateway probe ok ✅
+- Brent watch: $108.17 — stable weekend. Gap vs BZ=F Jul $111.01 ~$2.84. Peak $126.
+- Hunter-Killer: MISSION CONCLUDED — pure intel pipeline only
+
+---
+
+### Beat #224 (17:45 JST May 2)
 - **Last Heartbeat:** 2026-05-02 17:45 JST — Beat #224 | **Status:** ACTIVE**
 - live_oracle: ✅ fresh @ 17:45 JST (BTC **$78,328.10** (+1.239%) | ETH $2,303.78 (+0.829%) | XRP $1.3843 (+0.443%) | USD/JPY **157.033** | Brent **$108.17** ⚠️ | Gold $4,629.9) — 0 min old. BTC $78,328 — holding $78K+. ETH $2,303 steady. XRP $1.3843. Brent $108.17 flat weekend. **~9.25hrs to Monday Tokyo open.**
 - Gateway: ✅ Running (LaunchAgent pid 18114, state active) — probe ok ✅
