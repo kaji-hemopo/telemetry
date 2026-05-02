@@ -217,3 +217,44 @@
 - infra_pulse: Gateway probe ok ✅
 - Brent watch: $108.17 Friday close — stale weekend. Gap vs BZ=F Jul $111.01 ~$2.84. Peak $126.
 - Hunter-Killer: MISSION CONCLUDED — pure intel pipeline only
+
+---
+
+### Beat #229 (20:36 JST May 2) — Pipeline Active. Saturday 8:36PM Tokyo. Weekend LIVE. BTC $78,191. Iran escalation risk elevated — Trump "not happy."
+- **Last Heartbeat:** 2026-05-02 20:36 JST — Beat #229 | **Status:** ACTIVE**
+- live_oracle: ✅ fresh @ 20:36 JST (BTC **$78,191** (+0.973%) | ETH $2,302.81 (+0.703%) | XRP $1.3878 (+0.711%) | USD/JPY **157.033** | Brent **$108.17** ⚠️ stale Fri close | Gold $4,629.9) — 0 min old. BTC $78,191 — holding $78K+ through Saturday evening. ETH $2,302 steady. XRP $1.3878 flat. Brent stale from Friday close. **~12hrs to Monday Tokyo open.**
+- Gateway: ✅ Running (LaunchAgent pid 18114, state active) — probe ok ✅
+- Dashboard: ✅ synced via git (5cfa9a8, 20:36 JST) — pushed to origin
+- infra_pulse: Gateway probe ok ✅ — OK:9 WARN:1 FAIL:0
+- **🚨 TRUMP REJECTS IRAN PROPOSAL, REPORTEDLY UNHAPPY — CONSIDERING "BLAST HELL OUT OF IRAN" (Al Jazeera, ~14hrs ago):** Trump said he is "not happy" with Iran's proposal to reopen Hormuz while shelving nuclear talks. Vance expressed concern about US arms depletion. Al Jazeera reports Trump considering "option to blast the hell out of Iran" (~14hrs ago). **This is escalation risk — not progress.** Hormuz still closed. Iran proposal was a potential off-ramp — Trump rejected it.
+- **🔔 CEASEFIRE INDEFINITE (CFR):** Trump extended ceasefire indefinitely on Tuesday April 22. Wed May 6 deadline **CANCELLED** — but Trump now signal-hostile. Hormuz still closed.
+- **🔔 ANTHROPIC $850-900B ROUND (TechCrunch Apr 30):** Allocation window closed. ~$50B round expected within 2 weeks. Board decision imminent. **No announcement yet.**
+- Brent watch: $108.17 Friday close — weekend stale. Gap vs BZ=F Jul $111.01 ~$2.84 contango. Peak $126.
+- **⚠️ WEEKEND LIVE — ~12hrs to Monday Tokyo open. Elevated escalation risk. Iran proposal rejected — potential military option on the table.**
+
+### INTEL SUMMARY — May 2 20:36 JST (Saturday 8:36PM Tokyo — Weekend LIVE)
+- **Markets:** BTC **$78,191** (+0.973% 24h) — holding $78K+ through Saturday evening. ETH $2,302.81 (+0.703%). XRP $1.3878 (+0.711%). USD/JPY **157.033** — unchanged on weekend. Brent **$108.17** ⚠️ stale Fri close. Gold $4,629.9. **~12hrs to Monday Tokyo open.**
+- **🚨 IRAN ESCALATION SIGNAL — ELEVATED:** Trump rejected Iran's proposal (shelve nuclear, open Hormuz) — "not happy." Vance warned about arms depletion. Trump reportedly considering military option. **Iran's proposal was a potential diplomatic off-ramp — rejected. This is a hostile signal. Escalation risk elevated.** Hormuz still closed.
+- **🔔 ANTHROPIC $850-900B ~$50B ROUND** (TechCrunch Apr 30): Allocation deadline CLOSED. Round expected within 2 weeks. Board decision imminent. **No announcement yet — watch.**
+- Brent $108.17 Friday close — weekend no update. Gap vs BZ=F Jul $111.01 ~$2.84 contango. Peak $126.
+- **UAE exit OPEC** — structural shift.
+- **⚠️ WEEKEND LIVE — ~12hrs to open. Elevated escalation risk.**
+- **🇯🇵 JAPAN:** SoftBank listing AI firm Roze in U.S. (Japan Times/FT, Apr 29-30). BoJ navigating oil shock.
+- **🍎 APPLE:** Q2 $111.2B revenue (+16.6% YoY). CEO transition to John Ternus Sept 1.
+- **🤖 AI/TECH:** Anthropic $850-900B ~$50B round. Pentagon-Nvidia/Microsoft/AWS classified AI. Big Tech AI capex >$1T by 2027.
+### ⚠️ BEARS WATCH — May 2 20:36 JST (Weekend LIVE — ~12hrs to markets reopen)
+- **🚨 TRUMP REJECTED IRAN PROPOSAL — considering "blast hell out of Iran" (Al Jazeera ~14hrs ago):** Iran offered to open Hormuz and postpone nuclear program — Trump "not happy" and rejected. Vance flagged arms depletion. **This is a hostile signal. Potential diplomatic off-ramp declined. Military option being considered.**
+- **🔔 CEASEFIRE INDEFINITE — but now signal-hostile.** Wed May 6 cancelled. Hormuz still blocked.
+- **🔔 ANTHROPIC ~$50B ROUND CLOSING WITHIN 2 WEEKS** — $850-900B valuation. No announcement yet.
+- Hormuz: blocked/closed. Iran proposal rejected. Escalation risk elevated — military option on the table. Iran storage still a factor (~10 days or less estimated).
+- **⚠️ WEEKEND LIVE — no trading cushion for ~12hrs. Elevated escalation risk.**
+- Japan: BoJ navigating oil shock.
+- USD/JPY 157.033 — BoJ watching 157+.
+### INFRASTRUCTURE STATUS
+- Gateway: ✅ active (pid 18114, port 49273) — probe ok ✅
+- Dashboard (kaji-hemopo.github.io/telemetry/agents/ito/): ✅ synced via git (5cfa9a8, 20:36 JST) — pushed to origin
+- live_oracle.json: ✅ fresh @ 20:36 JST — BTC/ETH/XRP/USD/JPY live, Brent stale from Fri close
+- infra_pulse: Gateway probe ok ✅ — OK:9 WARN:1 FAIL:0
+- Brent watch: $108.17 Friday close — stale weekend. Gap vs BZ=F Jul $111.01 ~$2.84. Peak $126.
+- Hunter-Killer: MISSION CONCLUDED — pure intel pipeline only
+
