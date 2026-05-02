@@ -468,6 +468,7 @@
 
 ### Beat #214 (13:04 JST May 2) — Pipeline Active. Saturday 1:04PM Tokyo. Weekend LIVE. BTC $78,411. Brent $108.17. Fox: Hormuz Oil Traffic Halted Despite Ceasefire.
 - **Last Heartbeat:** 2026-05-02 12:41 JST — Beat #213 | **Status:** ACTIVE**
+<<<<<<< Updated upstream
 - live_oracle: ✅ fresh @ 13:00 JST (BTC **$78,411.03** (+1.648%) | ETH $2,304.44 (+0.934%) | XRP $1.3859 (+0.69%) | USD/JPY **157.033** | Brent **$108.17** ⚠️ | Gold $4,629.9) — 0 min old. BTC drifting $78.4K firm, slight dip from $78,215 (12:41 JST) to $78,411 — $196 bounce within $78K range. ETH $2,304 steady. XRP $1.3859 flat. Brent $108.17 stable — slightly below $108.83 (12:41 JST) on weekend light volume. **~5.5hrs to Monday Tokyo open.**
 - Gateway: ✅ Running (LaunchAgent pid 18114, state active) — probe ok
 - Dashboard: ⚠️ sync dir ~/claw/nix/ito not found — pushing directly via git
@@ -506,4 +507,43 @@
 - live_oracle.json: ✅ fresh @ 13:00 JST — all 6 assets populated, Brent ⚠️ $108.17
 - infra_pulse: Gateway probe ok ✅
 - Brent watch: $108.17 — stable weekend. Gap vs BZ=F Jul $111.01 ~$2.84 contango. Peak $126.
+=======
+- live_oracle: ✅ fresh @ 13:00 JST (BTC **$78,411.03** (+1.648%) | ETH $2,304.44 (+0.934%) | XRP $1.3859 (+0.69%) | USD/JPY **157.033** | Brent **$108.17** ⚠️ | Gold $4,629.9) — 0 min old. BTC $78,411 — firm in $78K range. ETH $2,304 steady. Brent $108.17 — slight ease from $108.83 on weekend light volume. **~5.5hrs to Monday Tokyo open.**
+- Gateway: ✅ Running (LaunchAgent pid 18114, state active) — probe ok
+- Dashboard: ⚠️ ~/claw/nix/ito not found — pushing via git to telemetry ✅
+- infra_pulse: Gateway probe ok ✅
+- Brent watch: $108.17 — stable weekend. Gap vs BZ=F Jul $111.01 ~$2.84 contango. Peak $126.
+- **🔔 IRAN/HORMUZ (Fox News, ~2hrs ago):** "Hormuz choke point persists as Iran halts oil traffic despite Trump ceasefire" — oil traffic still halted, ~3,200 vessels idling. Iran: Strait closed until blockade lifts.
+- **🔔 IRAN TALKS:** Talks frozen on nuclear-Hormuz sequencing dispute. Trump wants nuclear first, Iran wants Hormuz first. No new signals. Day 67.
+
+### INTEL SUMMARY — May 2 13:04 JST (Saturday 1:04PM Tokyo — Weekend LIVE)
+- **Markets:** BTC **$78,411** (+1.648% 24h) — firm in $78K range. ETH $2,304.44 (+0.934%). XRP $1.3859 (+0.69%). USD/JPY **157.033** — steady. Brent ⚠️ **$108.17** — stable weekend. Gold $4,629.9. **~5.5hrs to Monday Tokyo open.**
+- **🚨 OIL MARKET: Brent $108.17. Hormuz oil traffic halted despite ceasefire. Day 67.**
+  - **🔔 FOX NEWS (~2hrs ago):** Hormuz oil traffic halted despite Trump ceasefire — Iran says Strait closed until blockade lifts. ~3,200 vessels idling.
+  - Nuclear-Hormuz talks frozen — sequencing dispute, no new signals.
+  - **Iran storage ~18 days or less** — production cut 1.5M b/d forced imminent by mid-May.
+  - Brent $108.17 — gap vs BZ=F Jul $111.01 ~$2.84 contango. Peak $126.
+  - **UAE exit OPEC DAY 2** — structural shift.
+  - **⚠️ WEEKEND LIVE — oil markets closed, no trading cushion for ~5.5hrs.**
+- **🇯🇵 JAPAN:** SoftBank creating/listing AI firm **Roze** in U.S. (Japan Times, FT, Apr 29-30). SoftBank profitable Q4 2025. SusHi Tech Tokyo 2026 ongoing.
+- **🍎 APPLE:** Q2 $111.2B revenue (+16.6% YoY) — beat $110B estimate. Tim Cook victory lap. CEO transition to John Ternus Sept 1.
+- **🤖 AI/TECH:** Anthropic $900B valuation potential $50B round (May board). Pentagon-Nvidia/Microsoft/AWS classified AI. Big Tech AI capex >$1T by 2027.
+- **USD/JPY NOTE:** 157.033 — steady. BoJ watching oil at $111+ as FY26 headwind.
+
+### ⚠️ BEARS WATCH — May 2 13:04 JST (Weekend LIVE — ~5.5hrs to markets reopen)
+- **🔔 HORMUZ OIL TRAFFIC HALTED despite ceasefire** — Iran: Strait closed until blockade lifts. Day 67.
+- **Iran talks frozen** — nuclear-Hormuz sequencing dispute, no new signals.
+- **Iran storage ~18 days or less** — mid-May cliff ~13 days away.
+- ~3,200 vessels idling. Human cost mounting.
+- **UAE exit OPEC DAY 2** — structural shift.
+- **⚠️ WEEKEND LIVE — no trading cushion for ~5.5hrs.**
+- Japan factory output -0.5% MoM.
+- USD/JPY 157.033 — BoJ watching 157+.
+
+### INFRASTRUCTURE STATUS
+- Gateway: ✅ active (pid 18114, port 49273)
+- Dashboard: ✅ synced via git (8ce2474)
+- live_oracle.json: ✅ fresh @ 13:00 JST
+- infra_pulse: Gateway probe ok ✅
+>>>>>>> Stashed changes
 - Hunter-Killer: MISSION CONCLUDED — pure intel pipeline only
