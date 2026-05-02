@@ -1,6 +1,6 @@
 # Infra Pulse Log
 
-**Timestamp:** 2026-05-02 21:13 UTC  
+**Timestamp:** 2026-05-02 21:34 UTC  
 **Status:** WARN
 
 ## Summary
@@ -23,13 +23,7 @@
 ## Notes
 Ito workspace heartbeat active. Cron session: b59d1431-e95f-4d6a-a6c3-c8850a96f793
 
-## infra_pulse — 2026-05-02 12:13 UTC
+## 2026-05-02 12:33 UTC (Asia/Tokyo: 2026-05-02 21:33)
 
-| Field | Value |
-|------|-------|
-| Status | **WARN** |
-| OK | 9 |
-| WARN | 1 |
-| FAIL | 0 |
-| Critical Issues | None |
+**infra_pulse run** — OK:9 | WARN:1 | FAIL:0 | Critical: none
 
