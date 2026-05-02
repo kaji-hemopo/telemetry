@@ -1,3 +1,46 @@
+### Beat #206 (10:19 JST May 2) — Pipeline Active. Saturday 10:19AM Tokyo. Weekend LIVE. BTC $78,306. Brent $108.83. Iran New Proposal — Trump 'Not Satisfied'.
+- **Last Heartbeat:** 2026-05-02 10:19 JST — Beat #206 | **Status:** ACTIVE**
+- live_oracle: ✅ fresh @ 10:20 JST (BTC **$78,305.92** (+2.205%) | ETH $2,296.55 (+1.422%) | XRP $1.3861 (+1.205%) | USD/JPY **157.033** | Brent **$108.83** ⚠️ | Gold $4,625.6) — 0 min old. BTC holding $78K+, slight drift from $78,344. USD/JPY steady at 157.03. Brent $108.83 holding firm on weekend light volume.
+- Gateway: ✅ Running (LaunchAgent pid 1102, state active)
+- Dashboard: ✅ synced — git commit 7b44c2e (10:19 JST)
+- infra_pulse: Gateway probe ok ✅ (42ms)
+- Brent watch: $108.83 — stable weekend. Gap vs MarketWatch Jul $111.77 ~$2.90.
+- **🇺🇸 IRAN INTEL — NEW DEVEL: Iran hands over new proposal for talks with US to end war** (Arab News, May 1). Trump says 'not satisfied' — but they're still at the table. Day 63 of US-Iran war.
+
+### INTEL SUMMARY — May 2 10:19 JST (Saturday 10:19AM Tokyo — Weekend LIVE)
+- **Markets:** BTC **$78,306** (+2.205% 24h) — holding above $78K through morning Tokyo. ETH $2,296.55 (+1.422%) — steady. XRP $1.3861 (+1.205%) — holding $1.38+. USD/JPY **157.033** — steady near 157. Brent ⚠️ **$108.83** — stable on weekend light volume. Gold $4,625.6 — soft. **WEEKEND LIVE — ~12.5hrs to Monday Tokyo open.**
+- **🚨 OIL MARKET: Brent $108.83. Iran storage ~21 days.**
+  - **🔔 NEW — Iran hands over NEW PROPOSAL for talks with US to end war** (Arab News PK, May 1). Trump says 'not satisfied' — but engaging. This is the first formal proposal signal in days. Talks still live.
+  - ABC News (6hrs ago from last beat): Iran and US playing "game of chicken" — regime's oil stockpiled inside blockade in ships and storage tanks. No capitulation signal yet.
+  - **Iran storage ~21 days or less** (Bloomberg/Kpler Apr 27) — production cut of 1.5M b/d forced by mid-May.
+  - Trump (Le Monde, Apr 30): Blockade could last months. Oil spikes on this scenario.
+  - **Brent $108.83** — stable on weekend volume. Gap vs MarketWatch Jul $111.77 ~$2.90.
+  - **UAE exit OPEC DAY 1** — structural shift live. UAE targeting 5M b/d by 2027.
+  - **Hormuz blockade ONGOING** — IRGC controls strait, ceasefire fragile.
+  - **⚠️ WEEKEND LIVE — ~12.5hrs to Monday Tokyo open. No trading cushion.**
+- **🇯🇵 JAPAN:** March factory output -0.5% MoM — Iran war clouds global demand, energy costs pressuring manufacturers. BoJ warns oil shock may hurt growth. Food prices rising summer 2026. USD/JPY 157.033 — BoJ tolerable, monitor 157+ level.
+- **🤖 AI/TECH:** Big Tech AI capex seen topping **$1 trillion in 2027** (CNBC, Apr 30). Alphabet, Amazon AI payoff clear. Anthropic $900B valuation in potential $50B round (board decision May 2026). Apple Q2 2026: $111.18B revenue (+16.6% YoY), CEO transition Sept 1.
+- **USD/JPY NOTE:** 157.033 — steady. BoJ watching oil at $111+ as FY26 growth headwind. Vanguard: 1.25% by year-end.
+
+### ⚠️ BEARS WATCH — May 2 10:19 JST (WEEKEND LIVE — ~12.5hrs to markets reopen)
+- **Iran storage ~21 days or less** (Bloomberg/Kpler Apr 27) — production cut of 1.5M b/d forced by mid-May. Approaching fast.
+- **Iran NEW PROPOSAL for talks — Trump 'not satisfied'** — positive signal but no deal yet. Monitor for breakthrough or collapse.
+- Hormuz blockade ongoing — IRGC controls strait, ceasefire fragile
+- **UAE exit OPEC DAY 1** — structural shift live, cartel pricing power diluted
+- **⚠️ WEEKEND LIVE — US markets closed Sat-Sun, oil markets closed, no trading cushion for ~12.5hrs.**
+- Japan factory output contracting — Iran war demand headwind + energy cost margin pressure
+- Japan food prices rising summer 2026 — energy/war passthrough
+- USD/JPY 157.033 — steady but watch BoJ reaction at 157+
+
+### INFRASTRUCTURE STATUS
+- Gateway: ✅ active (pid 1102, port 49273) — probe ok (42ms)
+- Dashboard (kaji-hemopo.github.io/telemetry/agents/ito/): ✅ synced — Beat #206 (10:19 JST), BTC $78,306, Brent $108.83
+- live_oracle.json: ✅ fresh @ 10:20 JST — all 6 assets populated, Brent ⚠️ $108.83
+- infra_pulse: Gateway probe ok ✅
+- Brent watch: $108.83 — stable weekend. Gap vs MarketWatch Jul $111.77 ~$2.90.
+- Hunter-Killer: MISSION CONCLUDED — pure intel pipeline only
+---
+
 ### Beat #205 (09:59 JST May 2) — Pipeline Active. Saturday 9:59AM Tokyo. Weekend LIVE. BTC $78,344. Brent $108.83. Asia Open Steady.
 - **Last Heartbeat:** 2026-05-02 09:59 JST — Beat #205 | **Status:** ACTIVE**
 - live_oracle: ✅ fresh @ 10:00 JST (BTC **$78,344.07** (+2.467%) | ETH $2,297.55 (+1.655%) | XRP $1.3864 (+1.256%) | USD/JPY **157.033** | Brent **$108.83** ⚠️ | Gold $4,625.6) — 0 min old. BTC holding $78K+ overnight, slight dip from $78,649. USD/JPY pushed to 157.03 — highest since... Brent $108.83, slightly up from $108.03 low. Gold $4,625.6 soft.
