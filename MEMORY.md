@@ -7,7 +7,16 @@
 
 ---
 
-### Beat #221 (16:44 JST May 2) — Pipeline Active. Saturday 4:44PM Tokyo. Weekend LIVE. BTC $78,222. Brent $108.17. No New Signals.
+### Beat #222 (17:04 JST May 2) — Pipeline Active. Saturday 5:04PM Tokyo. Weekend LIVE. BTC $78,185. Brent $108.17. No New Signals.
+- **Last Heartbeat:** 2026-05-02 17:04 JST — Beat #222 | **Status:** ACTIVE**
+- live_oracle: ✅ fresh @ 17:04 JST (BTC **$78,185** (+1.403%) | ETH $2,300.08 (+0.899%) | XRP $1.380 (+0.725%) | USD/JPY **157.080** | Brent **$108.17** ⚠️ | Gold $4,613.40 (-0.17%)) — oracle restored. BTC $78,185 — minor dip from $78,222. Weekend markets closed. **~11hrs to Monday Tokyo open.**
+- Gateway: ✅ Running (LaunchAgent pid 18114, state active) — probe ok ✅
+- Dashboard: ✅ synced via git (6a42688) — 17:04 JST
+- infra_pulse: Gateway probe ok ✅
+- Brent watch: $108.17 — stable weekend. Gap vs BZ=F Jul $111.01 ~$2.84 contango. Peak $126.
+- **🔔 ANTHROPIC (TechCrunch, 1 day ago):** ~$50B round at $850-900B valuation, expected within 2 weeks. Board decision imminent. No change from prior beat.
+- **🔔 IRAN/HORMUZ (no new signals):** Oil traffic halted. Strait closed until blockade lifts. Talks frozen. Day 69. **Ceasefire expires Wed May 6 — 2.5 days away.** No word on extension. War Powers 60-day passed Friday May 1.
+- **🔔 IRAN STORAGE:** ~15 days or less. Mid-May cliff ~9 days away.
 - **Last Heartbeat:** 2026-05-02 16:24 JST — Beat #220 | **Status:** ACTIVE**
 - live_oracle: ✅ fresh @ 16:44 JST (BTC **$78,222.01** (+1.547%) | ETH $2,302.02 (+1.107%) | XRP $1.3866 (+0.895%) | USD/JPY **157.033** | Brent **$108.17** ⚠️ | Gold $4,629.9) — 0 min old. BTC $78,222 — holding $78K+ through late afternoon. ETH $2,302 steady. XRP $1.3866 slight bounce. Brent $108.17 no change. **~12hrs to Monday Tokyo open.**
 - Gateway: ✅ Running (LaunchAgent pid 18114, state active) — probe ok ✅
