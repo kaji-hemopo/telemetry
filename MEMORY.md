@@ -1,9 +1,31 @@
 # MEMORY.md — Ito Empire Intel Agent
-> Last updated: 2026-05-02 08:18 JST (Beat #229)
+> Last updated: 2026-05-02 08:58 JST (Beat #231)
 
 ---
 
-### Beat #229 (08:18 JST May 2) — Pipeline Active. Saturday 8:18AM Tokyo. Weekend LIVE. BTC $78,099. Brent $108.83 — ~40min to Asia Open.
+### Beat #231 (08:58 JST May 2) — Pipeline Active. Saturday 8:58AM Tokyo. Asia Open IMMINENT ~2min. BTC $78,121. Brent $108.83 — stable. 🔴 ASIA OPEN 09:00 JST!
+- **Last Heartbeat:** 2026-05-02 08:58 JST — Beat #231 | **Status:** ACTIVE**
+- live_oracle: ✅ fresh @ 08:45 JST (BTC **$78,121.52** (+2.378%) | ETH $2,292.49 (+1.607%) | XRP $1.3848 (+1.339%) | USD/JPY **157.033** | Brent ⚠️ **$108.83** | Gold $4,625.6) — BTC holding $78.1K stable near Asia open. Brent $108.83 — stable at weekend close. USD/JPY 157.033. Gold $4,625.6.
+- Gateway: ✅ Running (LaunchAgent pid 1102, state active)
+- Dashboard: ✅ synced — git commit 68b4b3b, pushed to GitHub Pages ✅ (nothing new to commit — clean)
+- infra_pulse: Gateway probe ok ✅
+- Brent watch: $108.83 — STABLE at weekend close. Brent log: $108.84(00:21)→$108.30→$107.87→$107.52→$108.59(01:44)→$108.18→$108.15→$108.09(02:40)→$107.50(03:06)→$108.41(03:23)→$108.18(03:43)→$108.54(04:08)→$108.28(04:55)→$108.36(05:00)→$108.99(05:34)→$108.97(05:54)→$108.83(06:20)→$108.83(06:57)→$108.83(07:42)→$108.83(08:18)→$108.83(08:45). Weekend range: $108.99 high / $107.50 low. Gap vs MarketWatch Jul $111.77 ~$2.94.
+- **🔴 ASIA OPEN IN ~2MIN (09:00 JST).** — Weekend over. First trading window after Iran/Hormuz developments. Watch for Brent gap open.
+- **Iran/Hormuz intel:** Fox News (May 1, 5hrs ago): US moves to safeguard oil supplies amid Iranian strait blockade. Trump maintains naval blockade amid stalemate. Iran proposes opening Hormuz but Trump dissatisfied with terms. Congress.gov: Iran capability to close Hormuz may be degraded by US/Israeli ops. Iran threatens "long and painful strikes" if US renews attacks. Storage clock: Kpler 12-22 days remaining — mid-May production cliff approaching.
+- **🇯🇵 JAPAN:** BoJ warns oil shock may hurt FY26 growth (Gulf Business, May 2). BoJ sharply ups FY2026 inflation outlook on oil prices, signals caution. Japan gasoline at record ¥190.8/liter. BoJ kept rate unchanged at 0.75% amid Mideast uncertainty.
+- **🤖 AI/TECH:** Pentagon AI partnerships exclude Anthropic (ongoing). Apple CEO transition CONFIRMED: John Ternus → Sept 1, 2026 (Tim Cook steps down). Big Tech AI capex topping $1T in 2027.
+- **Hunter-Killer:** MISSION CONCLUDED — pure intel pipeline only
+
+
+- infra_pulse: Gateway probe ok ✅
+- Brent watch: $108.83 — STABLE at weekend close. Brent log: $108.84(00:21)→$108.30→$107.87→$107.52→$108.59(01:44)→$108.18→$108.15→$108.09(02:40)→$107.50(03:06)→$108.41(03:23)→$108.18(03:43)→$108.54(04:08)→$108.28(04:55)→$108.36(05:00)→$108.99(05:34)→$108.97(05:54)→$108.83(06:20)→$108.83(06:57)→$108.83(07:42)→$108.83(08:18)→$108.83(08:40). Weekend range: $108.99 high / $107.50 low. Gap vs MarketWatch Jul $111.77 ~$2.94.
+- **⚠️ ~20min to Monday Tokyo open (09:00 JST).** — Asia open imminent.
+- **Iran/Hormuz intel:** Fox News (May 1): US moves to safeguard oil supplies amid Iranian strait blockade. Trump maintains naval blockade amid stalemate. Iran proposes opening Hormuz but Trump dissatisfied with terms. Congress.gov: Iran capability to close Hormuz may be degraded by US/Israeli ops. Iran threatens "long and painful strikes" if US renews attacks. Storage clock: Kpler 12-22 days remaining — mid-May production cliff approaching.
+- **🇯🇵 JAPAN:** BoJ warns oil shock may hurt FY26 growth (Gulf Business, May 2). BoJ sharply ups FY2026 inflation outlook on oil prices, signals caution. Japan gasoline at record ¥190.8/liter. BoJ kept rate unchanged at 0.75% amid Mideast uncertainty.
+- **🤖 AI/TECH:** Pentagon AI partnerships exclude Anthropic (ongoing). Apple CEO transition (John Ternus → Sept 1) confirmed. Big Tech AI capex topping $1T in 2027.
+- **Hunter-Killer:** MISSION CONCLUDED — pure intel pipeline only
+
+### Beat #229 (08:18 JST May 2)
 - **Last Heartbeat:** 2026-05-02 08:18 JST — Beat #229 | **Status:** ACTIVE**
 - live_oracle: ✅ fresh @ 08:21 JST (BTC **$78,098.65** (+2.349%) | ETH $2,291.58 (+1.558%) | XRP $1.3839 (+1.325%) | USD/JPY **157.033** | Brent ⚠️ **$108.83** | Gold $4,625.6) — BTC holding $78.1K near weekend close. Brent $108.83 — stable at weekend close. USD/JPY 157.033. Gold $4,625.6.
 - Gateway: ✅ Running (LaunchAgent pid 1102, state active)
