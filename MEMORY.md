@@ -7,16 +7,18 @@
 
 ---
 
-### Beat #223 (17:24 JST May 2) — Pipeline Active. Saturday 5:24PM Tokyo. Weekend LIVE. BTC $78,286. Brent $108.17. ⚠️ CEASEFIRE EXPIRES IN 2.5 DAYS.
-- **Last Heartbeat:** 2026-05-02 17:24 JST — Beat #223 | **Status:** ACTIVE**
-- live_oracle: ✅ fresh @ 17:24 JST (BTC **$78,286.58** (+1.119%) | ETH $2,301.95 (+0.662%) | XRP $1.385 (+0.384%) | USD/JPY **157.033** | Brent **$108.17** ⚠️ | Gold $4,629.9) — 0 min old. BTC $78,286 — slight dip from $78,338, holding $78K+. ETH $2,301 steady. XRP $1.385. Brent $108.17 flat on weekend. **~10.5hrs to Monday Tokyo open.**
+### Beat #224 (17:45 JST May 2) — Pipeline Active. Saturday 5:45PM Tokyo. Weekend LIVE. BTC $78,328. Brent $108.17. ⚠️ CEASEFIRE EXPIRES WED MAY 6 — 2.5 DAYS.
+- **Last Heartbeat:** 2026-05-02 17:45 JST — Beat #224 | **Status:** ACTIVE**
+- live_oracle: ✅ fresh @ 17:45 JST (BTC **$78,328.10** (+1.239%) | ETH $2,303.78 (+0.829%) | XRP $1.3843 (+0.443%) | USD/JPY **157.033** | Brent **$108.17** ⚠️ | Gold $4,629.9) — 0 min old. BTC $78,328 — holding $78K+. ETH $2,303 steady. XRP $1.3843. Brent $108.17 flat weekend. **~9.25hrs to Monday Tokyo open.**
 - Gateway: ✅ Running (LaunchAgent pid 18114, state active) — probe ok ✅
-- Dashboard: ✅ synced via git (42153f9) — 17:24 JST
+- Dashboard: ✅ synced via git (47f7de0) — 17:45 JST
 - infra_pulse: Gateway probe ok ✅
 - Brent watch: $108.17 — stable weekend. Gap vs BZ=F Jul $111.01 ~$2.84 contango. Peak $126.
-- **🔔 ANTHROPIC (TechCrunch, TODAY):** Asking investors to submit allocations **within 48 hours** as of Apr 30 — deadline was **TODAY May 2**. Round could happen within 2 weeks at $850-900B valuation, ~$50B. Multiple preemptive offers. Board decision imminent. Confirmed by Bloomberg/Reuters. 15x from $61.5B in ~12 months. Feb 2026 raise: $30B at $380B. **⚠️ ALLOCATION DEADLINE TODAY.**
-- **🔔 IRAN/HORMUZ (Fox Business, 15hrs ago):** "Iran at critical breaking point as oil gets stuck" — Kpler: Iran oil exports dropped, storage filling, shutdown risk growing amid Strait tensions. Day 70. **Ceasefire expires Wed May 6 — 2.5 days away.** No word on extension. Talks frozen on nuclear-Hormuz sequencing. ~3,200 vessels idling.
-- **🔔 IRAN STORAGE:** ~15 days or less. Mid-May cliff ~7 days away.
+- **🔔 ANTHROPIC (TechCrunch Apr 30):** 48-hour allocation deadline window — **CLOSED TODAY.** Round could happen within 2 weeks at $850-900B valuation. Watch for announcement.
+- **🔔 IRAN/HORMUZ (Fox Business):** Ceasefire expires Wed May 6 — 2.5 days away. Day 70. No word on extension. Iran exports dropped, storage filling (~15 days or less). Talks frozen.
+- **🔔 OIL:** OPEC+ hikes output +206K b/d May (Apr 5 Al Jazeera). Hormuz disruption outweighs UAE OPEC exit (Reuters Apr 28). Brent $108.17 stable weekend.
+- **🔔 JAPAN:** BoJ cut FY26 growth to 0.5%, raised core inflation to 2.8% — navigating oil shock.
+- **⚠️ WEEKEND LIVE — ~9.25hrs to Monday Tokyo open.**
 
 ### INTEL SUMMARY — May 2 17:24 JST (Saturday 5:24PM Tokyo — Weekend LIVE)
 - **Markets:** BTC **$78,286** (+1.119% 24h) — holding $78K+ through Saturday afternoon. ETH $2,301.95 (+0.662%). XRP $1.385 (+0.384%). USD/JPY **157.033** — unchanged on weekend. Brent ⚠️ **$108.17** — stable weekend. Gold $4,629.9. **~10.5hrs to Monday Tokyo open.**
@@ -31,20 +33,20 @@
 - **🇯🇵 JAPAN:** SoftBank listing AI firm Roze in U.S. (Japan Times/FT, Apr 29-30). BoJ cut FY26 growth to 0.5%, raised core inflation to 2.8% — navigating oil shock.
 - **🍎 APPLE:** Q2 $111.2B revenue (+16.6% YoY). CEO transition to John Ternus Sept 1.
 - **🤖 AI/TECH:** Anthropic $850-900B ~$50B round, allocation deadline TODAY (TechCrunch). Pentagon-Nvidia/Microsoft/AWS classified AI. Big Tech AI capex >$1T by 2027.
-### ⚠️ BEARS WATCH — May 2 17:24 JST (Weekend LIVE — ~10.5hrs to markets reopen)
+### ⚠️ BEARS WATCH — May 2 17:45 JST (Weekend LIVE — ~9.25hrs to markets reopen)
 - **🔔 CEASEFIRE EXPIRES WED MAY 6 — 2.5 days away.** No word on extension. Talks frozen. ⚠️ Iran exports dropping, storage filling.
-- **🔔 ANTHROPIC ALLOCATION DEADLINE TODAY** — 48-hour window from Apr 30 closes today. Round expected within 2 weeks. Watch for announcement.
+- **🔔 ANTHROPIC ALLOCATION DEADLINE CLOSED TODAY.** Round expected within 2 weeks at $850-900B valuation. Watch for board announcement.
 - Hormuz oil traffic halted — Strait closed until blockade lifts. Day 70. ~3,200 vessels idling.
 - Iran talks frozen — nuclear-Hormuz sequencing dispute. No resolution path visible.
 - Iran storage ~15 days or less — mid-May cliff ~7 days away.
-- **UAE exit OPEC DAY 4** — structural shift.
-- **⚠️ WEEKEND LIVE — no trading cushion for ~10.5hrs.**
+- **UAE exit OPEC** — structural shift ongoing.
+- **⚠️ WEEKEND LIVE — no trading cushion for ~9.25hrs.**
 - Japan: BoJ cut growth to 0.5%, raised inflation to 2.8% — navigating oil shock.
 - USD/JPY 157.033 — BoJ watching 157+.
 ### INFRASTRUCTURE STATUS
 - Gateway: ✅ active (pid 18114, port 49273) — probe ok ✅
-- Dashboard (kaji-hemopo.github.io/telemetry/agents/ito/): ✅ synced via git (42153f9, 17:24 JST)
-- live_oracle.json: ✅ fresh @ 17:24 JST — all 6 assets populated, Brent ⚠️ $108.17
+- Dashboard (kaji-hemopo.github.io/telemetry/agents/ito/): ✅ synced via git (47f7de0, 17:45 JST)
+- live_oracle.json: ✅ fresh @ 17:45 JST — all 6 assets populated, Brent ⚠️ $108.17
 - infra_pulse: Gateway probe ok ✅
 - Brent watch: $108.17 — stable weekend. Gap vs BZ=F Jul $111.01 ~$2.84. Peak $126.
 - Hunter-Killer: MISSION CONCLUDED — pure intel pipeline only
