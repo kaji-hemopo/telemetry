@@ -1,6 +1,20 @@
 ---
 
-### Beat #240 (01:10 JST May 3) — Pipeline Active. Sunday 1:10AM Tokyo. Markets closed. BTC $78,107.
+### Beat #241 (01:55 JST May 3) — Pipeline Active. Sunday 1:55AM Tokyo. Markets closed. BTC $78,475. Hormuz tensions elevated.
+- **Last Heartbeat:** 2026-05-03 01:55 JST — Beat #241 | **Status:** ACTIVE**
+- live_oracle: ✅ fresh @ 01:40 JST (BTC **$78,475.37** (+0.154%) | ETH **$2,308.74** (+0.23%) | XRP **$1.3917** (-0.215%) | USD/JPY **157.033** | Brent **$108.17** ⚠️ | Gold **$4,629.9**) — 15 min old. BTC $78,475 — marginal uptick through late Saturday night ($78,107 at 01:10). ETH $2,308. XRP $1.3917. Brent $108.17 stale weekend. **Markets closed — Tokyo open Mon 00:00 JST May 4 (~22hrs).**
+- Gateway: ✅ Running (LaunchAgent pid 39101, state active) — probe ok ✅
+- Dashboard: ✅ synced via git (6399f9e, 01:55 JST) — pushed to origin
+- infra_pulse: Gateway probe ok ✅ — OK:9 WARN:1 FAIL:0
+- Intel brief: refreshed via web search ✅. Latest: ABC News May 1 described Hormuz as still closed. Iran submitted new proposal May 1. Trump "not satisfied." US military developing plans to target Iran's Hormuz capabilities (CNN Apr 23). **Britannica 12hrs ago: ceasefire situation evolving.** Watch for new developments.
+- **🚨 IRAN/HORMUZ — TENSIONS ELEVATED:** ABC World News Tonight (May 1, ~21hrs ago) still described Hormuz as CLOSED. Iran submitted new proposal for US talks — still under review. Trump "not satisfied" with proposal (YouTube San Diego Union Tribune, ~15hrs ago). US military developing plans to target Iran's Hormuz capabilities (CNN Apr 23). Iran threatening "long and painful" strikes if US renews attacks (ABC Australia, May 1). **Britannica 12hrs ago says ceasefire situation still evolving — no confirmed breakthrough.** Naval tensions elevated. ~22hrs to markets reopen.
+- **🔔 CEASEFIRE INDEFINITE (CFR):** Trump extended ceasefire indefinitely Tue Apr 22. Wed May 6 deadline **CANCELLED** — but Trump signal-hostile. Hormuz still largely shut.
+- **🔔 ANTHROPIC $850-900B ~$50B ROUND (TechCrunch Apr 30):** Allocation window closed. Round expected within 2 weeks. Board decision imminent. **Still no announcement — watch imminent.**
+- **🔔 CHINA PUSHING HORMUZ REOPENING:** China's UN Ambassador Fu Cong says Hormuz reopening is "urgent" priority for Trump-Xi talks (Al Jazeera May 2).
+- Brent watch: $108.17 (May 1 close) — weekend stale. Gap vs BZ=F Jul $111.01 even contango. Peak $126.
+- **⚠️ WEEKEND CLOSED — ~22hrs to Monday Tokyo open (Mon 00:00 JST May 4). No trading cushion.**
+
+### Beat #240 (01:10 JST May 3)
 - **Last Heartbeat:** 2026-05-03 01:10 JST — Beat #240 | **Status:** ACTIVE**
 - live_oracle: ✅ fresh @ 01:10 JST (BTC **$78,107** (+0.874%) | ETH **$2,301.45** (+0.635%) | XRP **$1.39** (+0.498%) | USD/JPY **157.080** | Brent **$108.17** ⚠️ | Gold **$4,613.40**) — BTC marginal weekend recovery from $78,413. USD/JPY slightly softer at 157.080. ETH $2,301. XRP $1.39. Brent $108.17 stale weekend. **Markets closed — Tokyo open Mon 00:00 JST May 4 (~23hrs).**
 - Gateway: ✅ Running (LaunchAgent pid 39101, state active) — probe ok ✅
