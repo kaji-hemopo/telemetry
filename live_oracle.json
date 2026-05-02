@@ -1,36 +1,45 @@
 {
-  "generated_at_jst": "2026-05-02 06:06 JST",
-  "markets": {
-    "BTC": {
-      "price": 78281.47,
-      "change_24h_pct": 0,
-      "source": "Yahoo Finance"
-    },
-    "ETH": {
-      "price": 2302.3,
-      "change_24h_pct": 0.0,
-      "source": "Yahoo Finance"
-    },
-    "XRP": {
-      "price": 1.39,
-      "change_24h_pct": 0.0,
-      "source": "Yahoo Finance"
-    },
-    "USD/JPY": {
-      "price": 157.03,
-      "change_24h_pct": 0.0,
-      "source": "Yahoo Finance"
-    },
-    "Brent": {
-      "price": 108.17,
-      "change_24h_pct": 0.0,
-      "source": "Yahoo Finance"
-    },
-    "Gold": {
-      "price": 4644.5,
-      "change_24h_pct": 0.0,
-      "source": "Yahoo Finance"
-    }
+  "generated_at_jst": "2026-05-02 15:24 JST",
+  "btc": {
+    "symbol": "BTC/USD",
+    "price": 78155.29,
+    "change_24h_pct": 1.338,
+    "high_24h": 78914.12,
+    "low_24h": 76882.0,
+    "source": "Binance"
   },
-  "timestamp_utc": "2026-05-02T06:06:27Z"
+  "eth": {
+    "symbol": "ETH/USD",
+    "price": 2298.02,
+    "change_24h_pct": 0.605,
+    "high_24h": 2325.28,
+    "low_24h": 2272.09,
+    "source": "Binance"
+  },
+  "xrp": {
+    "symbol": "XRP/USD",
+    "price": 1.3846,
+    "change_24h_pct": 0.508,
+    "high_24h": 1.3999,
+    "low_24h": 1.3716,
+    "source": "Binance"
+  },
+  "usd_jpy": {
+    "symbol": "USD/JPY",
+    "price": 157.033,
+    "change_24h_pct": 0.0,
+    "source": "Yahoo Finance"
+  },
+  "brent": {
+    "symbol": "Brent",
+    "price": 108.17,
+    "change_24h_pct": 0.0,
+    "source": "Yahoo Finance (BZ=F)"
+  },
+  "gold": {
+    "symbol": "Gold",
+    "price": 4629.9,
+    "change_24h_pct": 0.0,
+    "source": "Yahoo Finance (GC=F)"
+  }
 }
