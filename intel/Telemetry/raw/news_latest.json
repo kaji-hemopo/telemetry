@@ -1,39 +1,53 @@
 {
-  "timestamp": "2026-05-01 04:00 JST",
+  "timestamp": "2026-05-02 08:20 JST",
   "items": [
     {
       "category": "AI",
-      "title": "EV startup Faraday Future paid $7.5M to company tied to founder Jia Yueting",
-      "link": "https://techcrunch.com/?p=3117883",
-      "description": "The perpetually-struggling EV company made the payments while being investigated by the SEC. That four-year-long probe was ultimately closed in March.",
+      "title": "Musely secures $360M from General Catalyst without giving up equity",
+      "link": "https://techcrunch.com/?p=3118531",
+      "description": "The DTC skin, hair, and menopause care brand will use the non-dilutive capital to super-charge customer acquisition.",
       "pub_date": ""
     },
     {
       "category": "AI",
-      "title": "OpenAI announces new advanced security for ChatGPT accounts, including a partnership with Yubico",
-      "link": "https://techcrunch.com/?p=3117592",
-      "description": "OpenAI is launching additional opt-in protections for ChatGPT accounts. The new security initiative includes a new partnership with security key provider Yubico.",
+      "title": "Meta buys robotics startup to bolster its humanoid AI ambitions",
+      "link": "https://techcrunch.com/?p=3118513",
+      "description": "Meta bought humanoid startup Assured Robot Intelligence to beef up its AI models for robots, the company said.",
       "pub_date": ""
     },
     {
       "category": "AI",
-      "title": "Elon Musk testifies that xAI trained Grok on OpenAI models",
-      "link": "https://techcrunch.com/?p=3118017",
-      "description": "\"Distillation\" is a hot topic as frontier labs try to prevent smaller competitors from copying their models.",
+      "title": "Coatue has a plan to buy up land for data centers, possibly for Anthropic",
+      "link": "https://techcrunch.com/?p=3118467",
+      "description": "Coatue, one of the biggest names in venture capital, has a new venture that is reportedly buying land near large power sources.",
       "pub_date": ""
     },
     {
       "category": "AI",
-      "title": "FDA approval, fundraising, and the reality of building in healthcare according to BioticsAI founder",
-      "link": "https://techcrunch.com/?p=3117965",
-      "description": "BioticsAI CEO Robhy Bustami joined Isabelle Johannessen on Build Mode to discuss how the company has navigated a highly regulated space and kept the team motivated while cutting th",
+      "title": "Pentagon inks deals with Nvidia, Microsoft, and AWS to deploy AI on classified networks",
+      "link": "https://techcrunch.com/?p=3118436",
+      "description": "The deals come as the DOD has doubled down on diversifying its exposure to AI vendors in the wake of its controversial dispute with Anthropic over usage terms of its AI models.",
       "pub_date": ""
     },
     {
       "category": "AI",
-      "title": "Google\u2019s Gemini AI assistant is hitting the road in millions of vehicles",
-      "link": "https://techcrunch.com/?p=3117992",
-      "description": "The move signals Google\u2019s push to bring more advanced, conversational AI into the driving experience.",
+      "title": "Ubuntu services hit by outages after DDoS attack",
+      "link": "https://techcrunch.com/?p=3118437",
+      "description": "A group of hacktivists have claimed responsibility for a distributed denial-of-service attack, which has affected several Ubuntu and Canonical websites, and prevented users from up",
+      "pub_date": ""
+    },
+    {
+      "category": "AI",
+      "title": "Yes, Many Software Leaders Have Moats. No, That\u2019s Not Enough.",
+      "link": "https://www.saastr.com/?p=323482",
+      "description": "Do leaders in B2B software still have moats in the Age of AI? Of course they do. You can see it plain as day in Gross Revenue Retention. The median GRR across B2B software is still",
+      "pub_date": ""
+    },
+    {
+      "category": "AI",
+      "title": "20VC x SaaStr: When the Agents Pick the Models, OpenAI Comes Back to Life, and Thoma Bravo Just Wiped Out $5.1B on Medallia",
+      "link": "https://www.saastr.com/?p=324405",
+      "description": "With Harry Stebbings, Jason Lemkin, and Rory O&#8217;Driscoll \ud83c\udfa4 Breaking!! Rory is joining LIVE at SaaStr AI 2026, May 12-14 in the SF Bay Area for an AMA on Investing In the Age A",
       "pub_date": ""
     },
     {
@@ -52,80 +66,66 @@
     },
     {
       "category": "AI",
-      "title": "Dear SaaStr: What Sales Techniques Helped You Consistently Succeed While Others Failed?",
-      "link": "https://www.saastr.com/?p=307195",
-      "description": "Dear SaaStr: What sales techniques helped you consistently succeed while others failed? A few that basically always work in sales \u2026 but that so many don\u2019t do actually do: Being a p",
-      "pub_date": ""
+      "title": "<![CDATA[Apple raises the Mac Mini\u2019s starting price]]>",
+      "link": "https://www.theverge.com/tech/922572/apple-mac-mini-256-model",
+      "description": "Apple's Mac Mini now starts at $799 after the company pulled the $599 option with 256GB of storage from its online store, as spotted earlier by MacRumors. The model's discontinuati",
+      "pub_date": "2026-05-01T17:52:09-04:00"
     },
     {
       "category": "AI",
-      "title": "Our Agents Drove Our Salesforce Bill Up 80%, Marketo Hates AI Agents, and We Stealth-Churned Off Notion: The Agents #003",
-      "link": "https://www.saastr.com/?p=324381",
-      "description": "Amelia and I just released Episode #003 of The Agents. Three humans, 20+ agents, revenue went from -19% to +47% YoY, and every week we get into what&#8217;s actually working, what&",
-      "pub_date": ""
+      "title": "<![CDATA[All the evidence revealed so far in Musk v. Altman]]>",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/920775/evidence-exhibits-elon-musk-sam-altman-openai-trial",
+      "description": "The Musk v. Altman trial is underway, and that means exhibits, or the evidence to be presented in court, are being revealed piece by piece. So far, email exchanges, photos, and cor",
+      "pub_date": "2026-05-01T15:14:51-04:00"
     },
     {
       "category": "AI",
-      "title": "We Vibe Coded Our Own AI VP of Marketing and Customer Success Platform. Two Vendors Just Lost $20k+ Each. And They\u2019ll Never Know Why.",
-      "link": "https://www.saastr.com/?p=322924",
-      "description": "We&#8217;ve now vibe coded 12+ apps into production at SaaStr. Some replaced things we were paying for. Some filled genuine white space where nothing existed. But two recent builds",
-      "pub_date": ""
-    },
-    {
-      "category": "AI",
-      "title": "I Need Agentic Email. Claude Said Try AgentMail For a New Project. So I Did. And Never Looked At Anything Else.",
-      "link": "https://www.saastr.com/?p=324144",
-      "description": "Welcome to the Winner-Take-All Reality of &#8220;AEO&#8221; Let me tell you exactly what happened. Last week I needed email inboxes for our AI agents. QBee, 10K, and the rest of th",
-      "pub_date": ""
-    },
-    {
-      "category": "AI",
-      "title": "Elon Musk confirms xAI used OpenAI\u2019s models to train Grok",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/921546/elon-musk-xai-openai-trial-model-distillation",
-      "description": "In a federal courtroom in California on Thursday, Elon Musk testified that his own AI startup, xAI, has used OpenAI's models to improve its own. The matter at question is model dis",
-      "pub_date": "2026-04-30T14:16:57-04:00"
-    },
-    {
-      "category": "AI",
-      "title": "Live updates from Elon Musk and Sam Altman\u2019s court battle over the future of OpenAI",
-      "link": "https://www.theverge.com/tech/917225/sam-altman-elon-musk-openai-lawsuit",
-      "description": "Sam Altman and Elon Musk are facing off in a high-stakes trial that could alter the future of OpenAI and its most well-known product, ChatGPT. In 2024, Musk filed a lawsuit accusin",
-      "pub_date": "2026-04-30T12:57:14-04:00"
-    },
-    {
-      "category": "AI",
-      "title": "Meta is running get-rich-quick ads for its AI tools",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/915970/meta-manus-ai-ads-website-slop",
-      "description": "Manus, an AI company Meta acquired for $2 billion last year is running ads promising quick, easy money with AI: Find local businesses without websites or with bad websites, have AI",
-      "pub_date": "2026-04-30T12:48:13-04:00"
-    },
-    {
-      "category": "AI",
-      "title": "Microsoft\u2019s DLSS competitor is now available on the Xbox Ally X handheld",
-      "link": "https://www.theverge.com/news/921112/microsoft-auto-sr-xbox-ally-x-preview",
-      "description": "Microsoft is starting to test its Automatic Super Resolution (Auto SR) feature with the Xbox Ally X. Auto SR first debuted on some Copilot Plus PCs nearly two years ago, improving ",
-      "pub_date": "2026-04-30T12:00:00-04:00"
+      "title": "<![CDATA[Amazon\u2019s built-in AI price history expands to show the entire last year]]>",
+      "link": "https://www.theverge.com/tech/922302/amazon-price-tracker-year",
+      "description": "Amazon's built-in price tracking feature now allows you to see how much a product's price has changed over the past year. To use the feature, open the Amazon app and select the \"Pr",
+      "pub_date": "2026-05-01T13:55:22-04:00"
     },
     {
       "category": "Tech",
-      "title": "Xbox owners can now disable Quick Resume for specific games",
-      "link": "https://www.theverge.com/games/921504/xbox-update-quick-resume-disable",
-      "description": "Microsoft has released a new Xbox update that adds a bunch of new features, including the ability to disable Quick Resume for individual games. Quick Resume, which lets you swap be",
-      "pub_date": "2026-04-30T13:51:26-04:00"
+      "title": "Replit\u2019s Amjad Masad on the Cursor deal, fighting Apple, and why he\u2019d rather not sell",
+      "link": "https://techcrunch.com/?p=3118564",
+      "description": "At TechCrunch's sold-out StrictlyVC event in San Francisco on Thursday night, we covered a lot of ground in a short time, beginning with the question everyone in the industry is as",
+      "pub_date": ""
     },
     {
-      "category": "World",
-      "title": "TikTok\u2019s new \u2018Campus Hub\u2019 features college group chats and feeds",
-      "link": "https://techcrunch.com/?p=3117972",
-      "description": "The new hub features dedicated college group chats and personalized feeds designed to help students stay connected with their campus communities, even while they\u2019re away for the su",
+      "category": "Tech",
+      "title": "<![CDATA[Microsoft tests redesigned Windows 11 Run menu with dark mode and more]]>",
+      "link": "https://www.theverge.com/tech/922531/microsoft-windows-11-run-menu-redesign-test",
+      "description": "Microsoft is testing its much-needed refresh for the Windows 11 Run menu, offering a modern interface that the company says is faster and comes with support for dark mode. The rede",
+      "pub_date": "2026-05-01T18:01:53-04:00"
+    },
+    {
+      "category": "SaaS",
+      "title": "Atlassian and Twilio Crush the Quarter, Accelerate. Is the SaaSpocalypse Over?",
+      "link": "https://www.saastr.com/?p=324432",
+      "description": "So this week two of the more important bellwether names in B2B software reported earnings. And neither of them just &#8220;beat.&#8221; Both accelerated. Materially. At $7B and $5.",
+      "pub_date": ""
+    },
+    {
+      "category": "SaaS",
+      "title": "Dear SaaStr: I\u2019m Joining a B2B Startup at $3m ARR as VP of Sales.  What Should I Do First?",
+      "link": "https://www.saastr.com/?p=312054",
+      "description": "Dear SaaStr: I&#8217;m Joining a B2B Startup at $3m ARR as VP of Sales. What Should I Do First? Stepping into the VP Sales role at a company with $3M ARR is a pivotal moment. At th",
       "pub_date": ""
     },
     {
       "category": "World",
-      "title": "Cricut\u2019s Joy 2 makes creating stickers easier for beginners, and it\u2019s on sale",
-      "link": "https://www.theverge.com/gadgets/921355/cricut-joy-2-mothers-day-deal-sale",
-      "description": "If you\u2019ve ever thought about making your own stickers for Etsy or just for fun but don\u2019t know where to begin, I\u2019d recommend taking a look at the Cricut Joy 2. I\u2019ve been testing one",
-      "pub_date": "2026-04-30T12:45:06-04:00"
+      "title": "<![CDATA[Birdfy\u2019s smart bird feeder is down to its best-ever price for Mother\u2019s Day]]>",
+      "link": "https://www.theverge.com/gadgets/922165/netvue-birdfy-smart-bird-feeder-bath-mothers-day-deal-sale",
+      "description": "From crafting machines to smart calendars, a number of unique gifts are already on sale in the run-up to Mother\u2019s Day, May 10th. Birdfy smart feeders are another discounted option ",
+      "pub_date": "2026-05-01T14:42:24-04:00"
+    },
+    {
+      "category": "World",
+      "title": "<![CDATA[Dreame \u2014\u00a0the vacuum company \u2014 just \u2018launched\u2019 its own phones]]>",
+      "link": "https://www.theverge.com/gadgets/922246/dreame-next-smartphones-aurora-lux-nex-modular",
+      "description": "Dreame, a Chinese manufacturer best known for its robot vacuums but with ambitions to do much more, says it's making smartphones now. I'm not sure I believe it. The company showed ",
+      "pub_date": "2026-05-01T13:55:08-04:00"
     }
   ]
 }
