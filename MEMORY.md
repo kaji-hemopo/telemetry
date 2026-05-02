@@ -1,4 +1,45 @@
-### Beat #247 (03:55 JST May 3) — Pipeline Active. Sunday 3:55AM Tokyo. Markets closed. BTC $97,443.5.
+### Beat #248 (04:18 JST May 3) — Pipeline Active. Sunday 4:18AM Tokyo. Markets closed. BTC $78,465.
+- **Last Heartbeat:** 2026-05-03 04:18 JST — Beat #248 | **Status:** ACTIVE**
+- live_oracle: ✅ refreshed via script @ 04:11 JST (BTC **$78,465.04** (-0.035%) | ETH $2,309.72 (+0.15%) | XRP $1.3939 (-0.115%) | USD/JPY **157.033** | Brent **$108.17** ⚠️ | Gold $4,629.9) — BTC $78,465, weekend flat/slight dip. USD/JPY holding 157.033 — BoJ intervention holding. Brent stale from May 1. **Markets closed — Tokyo open Mon 00:00 JST May 4 (~19.7hrs).**
+- Gateway: ✅ Running (LaunchAgent, state active) — probe ok ✅ (3000ms budget)
+- Dashboard: ✅ synced via git (d9ad6f0, 04:18 JST) — pushed to origin
+- Intel brief: refreshed via web search ✅ + refresh_intel_dashboard ✅ (18 items, 6 categories). Hormuz: ABC News (19hrs ago): Trump declares Iran hostilities "terminated" but blockade remains — strait still closed. YouTube (3-4hrs ago): "Iran Announces New Rules for Strait of Hormuz, US Navy..." and US forming "Maritime Freedom Construct" coalition. CryptoBriefing (19hrs ago): Iran proposes new management for Hormuz, US blockade lifted by May 31 at 40.5% YES on Polymarket. **Tense/static — no normalization signal, naval tensions elevated.** Anthropic: No fresh announcement — $850-900B ~$50B round from TechCrunch Apr 29 still pending.
+- **🚨 IRAN/HORMUZ — STATIC TENSE, NO NORMALIZATION:** ABC News (19hrs ago): Trump declares Iran hostilities "terminated" but US naval blockade holds — Hormuz still closed, triggering oil/gas price spikes. YouTube (3-4hrs ago): Iran announces "new rules" for Strait of Hormuz + US forming "Maritime Freedom Construct" coalition to secure Hormuz. CryptoBriefing (19hrs ago): Iran proposes new management framework for Hormuz. Polymarket: 40.5% YES on US blockade lifted by May 31. **No de-escalation — naval tensions elevated, Hormuz effectively shut.**
+- **🔔 CEASEFIRE INDEFINITE — signal-hostile.** Wed May 6 cancelled. Hormuz largely shut. China pushing reopening as urgent Xi-Trump priority.
+- **🔔 ANTHROPIC $850-900B ~$50B ROUND (TechCrunch/Bloomberg Apr 29-30):** Anthropic weighing offers at >$900B valuation. GIC + Coatue leading. ~$50B round within 2 weeks of Apr 29. **No announcement yet — watch imminent.**
+- Brent watch: $108.17 May 1 close — weekend stale. Gap vs BZ=F Jul $111.01 even contango. Peak $126.
+- **⚠️ WEEKEND CLOSED — ~19.7hrs to Monday Tokyo open (Mon 00:00 JST May 4). No trading cushion.**
+- **🇯🇵 JAPAN:** USD/JPY 157.033 — BoJ intervention holding (Apr 30/May 1, ~$30bn, at 160+ level). Yen ended April +1.35% vs USD — first monthly gain in 3 months. Ministry of Finance targeting 160+ level. BoJ navigating oil shock.
+- **🤖 AI/TECH:** Anthropic $850-900B ~$50B round imminent — no announcement yet. Pentagon-Nvidia/Microsoft/AWS classified AI. Big Tech AI capex >$1T by 2027.
+
+### INTEL SUMMARY — May 3 04:18 JST (Sunday 4:18AM Tokyo — Weekend Closed — ~19.7hrs to reopen)
+- **Markets:** BTC **$78,465.04** (-0.035% 24h) — weekend flat/slight dip, holding $78K+. ETH $2,309.72 (+0.15%). XRP $1.3939 (-0.115%). USD/JPY **157.033** — BoJ intervention holding. Brent ⚠️ **$108.17** — weekend stale. Gold $4,629.9. **~19.7hrs to Monday Tokyo open.**
+- **🚨 IRAN/HORMUZ — STATIC TENSE, NO NORMALIZATION:** ABC News (19hrs ago): Trump declares Iran hostilities "terminated" but blockade holds — Hormuz still closed. YouTube (3-4hrs ago): Iran announces "new rules" for Strait + US forming "Maritime Freedom Construct" coalition. CryptoBriefing (19hrs ago): Iran proposes new management for Hormuz. Polymarket 40.5% YES on blockade lifted by May 31. **No de-escalation signal — naval tensions elevated.**
+- **🔔 CEASEFIRE INDEFINITE — signal-hostile.** Wed May 6 cancelled. Hormuz largely shut.
+- **🔔 ANTHROPIC $850-900B ~$50B ROUND (TechCrunch/Bloomberg Apr 29-30):** Weighing offers at >$900B. GIC + Coatue leading. **No announcement yet — watch imminent.**
+- Brent $108.17 May 1 close — weekend stale. Gap vs BZ=F Jul $111.01 even. Peak $126.
+- **⚠️ WEEKEND CLOSED — ~19.7hrs to reopen. No trading cushion.**
+- **🇯🇵 JAPAN:** USD/JPY 157.033 — BoJ intervention holding. Yen ended April +1.35% vs USD (first monthly gain in 3 months).
+- **🤖 AI/TECH:** Anthropic ~$50B round pending. Pentagon-Nvidia/Microsoft/AWS classified AI. Big Tech AI capex >$1T by 2027.
+
+### ⚠️ BEARS WATCH — May 3 04:18 JST (Weekend Closed — ~19.7hrs to markets reopen)
+- **🚨 IRAN/HORMUZ — STATIC TENSE, NO NORMALIZATION:** Trump declares hostilities "terminated" but blockade holds (ABC, 19hrs ago). Iran announces "new rules" for Strait + US forming coalition (YouTube, 3-4hrs ago). Iran proposes new management framework (CryptoBriefing). Polymarket 40.5% on blockade lifted by May 31. **No breakout — Hormuz effectively shut, naval tensions elevated.**
+- **🔔 CEASEFIRE INDEFINITE — signal-hostile.** Wed May 6 cancelled.
+- **🔔 ANTHROPIC ~$50B ROUND CLOSING WITHIN 2 WEEKS** — $850-900B valuation. No announcement yet.
+- **⚠️ WEEKEND CLOSED — ~19.7hrs to open. No trading cushion.**
+- Japan: BoJ intervention holding at 157.033. Oil shock. USD/JPY 157+.
+
+### INFRASTRUCTURE STATUS
+- Gateway: ✅ Running (LaunchAgent, state active) — probe ok ✅ (3000ms budget)
+- Dashboard (kaji-hemopo.github.io/telemetry/agents/ito/): ✅ synced via git (d9ad6f0, 04:18 JST) — pushed to origin
+- live_oracle.json: ✅ refreshed @ 04:11 JST — all 6 assets populated, Brent ⚠️ $108.17 (May 1 close stale)
+- infra_pulse: Gateway probe ok ✅
+- Brent watch: $108.17 May 1 close — weekend stale. Gap vs BZ=F Jul $111.01 even contango. Peak $126.
+- Hunter-Killer: MISSION CONCLUDED — pure intel pipeline only
+
+---
+
+### Beat #247
 - **Last Heartbeat:** 2026-05-03 03:55 JST — Beat #247 | **Status:** ACTIVE**
 - live_oracle: ✅ refreshed via script @ 03:47 JST (BTC **$78,443.5** (+0.002%) | ETH $2,309.86 (+0.174%) | XRP $1.3928 (-0.057%) | USD/JPY **157.033** | Brent **$108.17** ⚠️ | Gold $4,629.9) — BTC $78,443.5, weekend flat/slight uptick from $78,440 at 03:38. USD/JPY holding 157.033 — BoJ intervention holding (Apr 30/May 1 $30bn at 160+). Brent stale from May 1. **Markets closed — Tokyo open Mon 00:00 JST May 4 (~20hrs).**
 - Gateway: ⚠️ probe degraded (LaunchAgent running but read probe timeout 58ms) — Gateway reachable on ws://127.0.0.1:49273
