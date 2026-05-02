@@ -1,12 +1,24 @@
 # Infra Pulse Log
 
-**Run Time:** 2026-05-02 00:10 UTC (Asia/Tokyo: 2026-05-02 09:10)
+**Timestamp:** 2026-05-02 09:34 UTC  
+**Status:** WARN
 
-## Result Summary
+## Summary
 - **OK:** 9
-- **WARN:** 1
-- **FAIL:** 0
+- **Warn:** 1
+- **Fail:** 0
 
-## Status: OK
+## Findings
+- **Dir: scripts:** ✅ OK — found
+- **Dir: kaji:** ✅ OK — found
+- **Dir: memory:** ✅ OK — found
+- **Dir: heartbeat_logs:** ✅ OK — found
+- **File: MEMORY.md:** ✅ OK — found
+- **File: IDENTITY.md:** ✅ OK — found
+- **File: SOUL.md:** ✅ OK — found
+- **File: HEARTBEAT.md:** ✅ OK — found
+- **Cron PID file:** 🔴 FAIL — not found (may not apply)
+- **Tier1 Scripts:** ✅ OK — 7 scripts
 
-No critical issues detected. Infrastructure is healthy with nominal warnings.
+## Notes
+Ito workspace heartbeat active. Cron session: b59d1431-e95f-4d6a-a6c3-c8850a96f793

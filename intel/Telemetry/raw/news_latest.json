@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-05-02 09:19 JST",
+  "timestamp": "2026-05-02 09:40 JST",
   "items": [
     {
       "category": "AI",
@@ -66,6 +66,13 @@
     },
     {
       "category": "AI",
+      "title": "<![CDATA[Splatoon Raiders preorders for the Switch 2 are nearly 20 percent off]]>",
+      "link": "https://www.theverge.com/gadgets/920848/splatoon-raiders-physical-edition-preorder-switch-2-walmart-deal-sale",
+      "description": "Nintendo recently announced a new pricing policy, which knocks $10 off the cost of digital versions of future first-party titles exclusive to the Nintendo Switch 2. Splatoon Raider",
+      "pub_date": "2026-05-01T18:31:00-04:00"
+    },
+    {
+      "category": "AI",
       "title": "<![CDATA[Apple raises the Mac Mini\u2019s starting price]]>",
       "link": "https://www.theverge.com/tech/922572/apple-mac-mini-256-model",
       "description": "Apple's Mac Mini now starts at $799 after the company pulled the $599 option with 256GB of storage from its online store, as spotted earlier by MacRumors. The model's discontinuati",
@@ -119,13 +126,6 @@
       "link": "https://www.theverge.com/gadgets/922165/netvue-birdfy-smart-bird-feeder-bath-mothers-day-deal-sale",
       "description": "From crafting machines to smart calendars, a number of unique gifts are already on sale in the run-up to Mother\u2019s Day, May 10th. Birdfy smart feeders are another discounted option ",
       "pub_date": "2026-05-01T14:42:24-04:00"
-    },
-    {
-      "category": "World",
-      "title": "<![CDATA[Dreame \u2014\u00a0the vacuum company \u2014 just \u2018launched\u2019 its own phones]]>",
-      "link": "https://www.theverge.com/gadgets/922246/dreame-next-smartphones-aurora-lux-nex-modular",
-      "description": "Dreame, a Chinese manufacturer best known for its robot vacuums but with ambitions to do much more, says it's making smartphones now. I'm not sure I believe it. The company showed ",
-      "pub_date": "2026-05-01T13:55:08-04:00"
     }
   ]
 }
