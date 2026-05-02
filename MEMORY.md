@@ -1,20 +1,20 @@
-### Beat #251 (05:35 JST May 3) — Pipeline Active. Sunday 5:35AM Tokyo. Markets closed. BTC $78,447.
-- **Last Heartbeat:** 2026-05-03 05:35 JST — Beat #251 | **Status:** ACTIVE**
-- live_oracle: ✅ refreshed via script @ 05:33 JST (BTC **$78,447** (+0.348%) | ETH **$2,311.33** (+0.5%) | XRP **$1.3934** (+0.209%) | USD/JPY **157.033** | Brent **$108.17** ⚠️ | Gold **$4,629.9**) — BTC $78,447, marginal uptick from $78,431 at 05:15. Weekend flat, slow grind higher through Sunday AM. USD/JPY holding 157.033 — BoJ intervention levels intact. Brent stale from May 1. **Markets closed — Tokyo open Mon 00:00 JST May 4 (~18.4hrs).**
+### Beat #252 (05:55 JST May 3) — Pipeline Active. Sunday 5:55AM Tokyo. Markets closed. BTC $78,452.
+- **Last Heartbeat:** 2026-05-03 05:55 JST — Beat #252 | **Status:** ACTIVE**
+- live_oracle: ✅ fresh @ 05:53 JST (BTC **$78,452.19** (+0.869%) | ETH **$2,311.60** (+1.386%) | XRP **$1.3941** (+0.788%) | USD/JPY **157.033** | Brent **$108.17** ⚠️ | Gold **$4,629.9**) — BTC $78,452, weekend slow grind up. ETH +1.39% leading. XRP +0.79%. USD/JPY holding 157.033. Brent stale from May 1. **Markets closed — Tokyo open Mon 00:00 JST May 4 (~18.1hrs).**
 - Gateway: ✅ Running (LaunchAgent pid 39101, state active) — probe ok ✅
-- Dashboard: ✅ git synced + pushed (bc58e78, 05:35 JST)
-- Infra Pulse: Gateway probe ok ✅
+- Dashboard: ✅ git synced via git (6b75d24, 05:55 JST) — pushed to origin
+- Infra Pulse: Gateway probe ok ✅ — no script refresh_intel_dashboard found (removed from path), skipping dashboard auto-refresh — manual git sync only
 - Hunter-Killer: MISSION CONCLUDED — pure intel pipeline only
 
 - Intel brief: refreshed via web search. Key updates since last beat:
-  - 🔔 **US WARNS SHIPPING FIRMS OF SANCTIONS** (AP/9News, May 2) — for paying Iranian tolls in Hormuz. Enforcement risk rising. 8hrs old.
-  - **Hormuz still blocked/closed.** US says 6 months to clear mines. Al Jazeera: commercial shipping remains unsafe.
-  - **US-sanctioned supertankers entering Gulf** despite blockade (Reuters, Apr 16) — sanctions loophole being exploited
-  - **Iran new peace proposal** shared with Washington (France24) — details still being reviewed. Ceasefire "terminated." War powers law active.
-  - Treasury Dept issued more sanctions on Iranian oil exports targeting shadow banking + Chinese purchases (NYT, Apr 28)
-  - BoJ monitoring Mideast situation + rising prices; Japan growth to slow in FY26 as oil shock hits income (BoJ)
-  - **Anthropic ~$50B round** closing within 2 weeks — board decision imminent (TechCrunch, Apr 30)
-  - China pushing Hormuz reopening as Xi-Trump priority. UAE exiting OPEC (AP, Tue)
+  - 🔔 **US WARNS SHIPPING FIRMS OF SANCTIONS** (AP, 4hrs ago) — for paying Iran tolls to transit Hormuz. Enforcement risk rising for any company paying Iran's blockade fees.
+  - Hormuz still blocked/closed. Iran charging fees for "safe passage" — US pushing back hard.
+  - **Anthropic $900B+ round:** Still no announcement. Yahoo Finance (3 days ago): Anthropic considering offers at >$900B valuation. Bloomberg Apr 29 confirmed weighing multiple preemptive offers. Allocation window from Apr 30 should be closing — **watch for announcement likely Mon.**
+  - No fresh Iran naval confrontation since Sat night. Static tense.
+
+---
+
+### Beat #251 (05:35 JST May 3) — Pipeline Active. Sunday 5:35AM Tokyo. Markets closed. BTC $78,447.
 
 ---
 
