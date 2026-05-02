@@ -1,5 +1,49 @@
 ---
 
+### Beat #213 (12:41 JST May 2) — Pipeline Active. Saturday 12:41PM Tokyo. Weekend LIVE. BTC $78,215. Brent $108.83. Iran Talks Frozen.
+- **Last Heartbeat:** 2026-05-02 12:21 JST — Beat #212 | **Status:** ACTIVE**
+- live_oracle: ✅ fresh @ 12:40 JST (BTC **$78,214.95** (+2.467%) | ETH $2,299 (+1.655%) | XRP $1.384 (+1.256%) | USD/JPY **157.033** | Brent **$108.83** ⚠️ | Gold $4,625.6) — 0 min old. BTC holding $78K through midday Saturday. ETH $2,299 firm. XRP $1.384 steady. USD/JPY 157.033 unchanged. Brent $108.83 stable on weekend. **~6hrs to Monday Tokyo open.**
+- Gateway: ✅ Running (LaunchAgent pid 18114, state active)
+- Dashboard: ✅ synced — git push f2735d3 (12:41 JST) — dashboard live at kaji-hemopo.github.io/telemetry/agents/ito/ ✅
+- infra_pulse: Gateway probe ok ✅ (40ms)
+- Brent watch: $108.83 — stable weekend. Investing.com BTC $78,151.70 close. Brent gap vs BZ=F Jul $111.01 ~$2.18 contango. Peak $126 still high water mark.
+- **🔔 IRAN: Talks frozen on nuclear-Hormuz sequencing dispute. Day 66.**
+  - No new positive signal since ceasefire extension Apr 21/22. Iran offered Hormuz reopening in exchange for lifted blockade but postpone nuclear talks. Trump rejected — wants nuclear on table first. Both sides at table but no movement.
+  - Asharq Al-Awsat: Trump indefinite ceasefire extension confirmed Apr 22.
+  - Iran storage ~18 days or less — production cut 1.5M b/d forced imminent by mid-May. Approaching.
+
+### INTEL SUMMARY — May 2 12:41 JST (Saturday 12:41PM Tokyo — Weekend LIVE)
+- **Markets:** BTC **$78,215** (+2.467% 24h) — holding above $78K through midday Saturday. ETH $2,299 (+1.655%) — firm. XRP $1.384 (+1.256%) — holding $1.38+. USD/JPY **157.033** — unchanged on weekend. Brent ⚠️ **$108.83** — stable weekend light volume. Gold $4,625.6 — soft. **WEEKEND LIVE — ~6hrs to Monday Tokyo open.**
+- **🚨 OIL MARKET: Brent $108.83 stable. Talks frozen on sequencing dispute. Day 66.**
+  - **🔔 CEASEFIRE EXTENDED — but talks frozen on nuclear-Hormuz sequencing.** Trump wants nuclear first, Iran wants Hormuz first. No compromise yet. Both sides still at table.
+  - **Iran storage ~18 days or less** — production cut 1.5M b/d forced imminent by mid-May. Approaching fast.
+  - **Hormuz blockade ONGOING** — IRGC controls strait. Ceasefire extended but fragile.
+  - **Brent $108.83** — stable weekend. Gap vs BZ=F Jul $111.01 ~$2.18 contango. Peak $126 still high water mark.
+  - **UAE exit OPEC DAY 2** — structural shift. UAE targeting 5M b/d by 2027.
+  - **⚠️ WEEKEND LIVE — oil markets closed, no trading cushion for ~6hrs.**
+- **🇯🇵 JAPAN:** SusHi Tech Tokyo 2026 — AI-human coexistence discussed day 2 (Apr 28-29). Experts emphasized AI as collaborative tool not replacement. Japan AI momentum building. SoftBank + 8 cos (NEC, Honda etc.) setting up Japan domestic AI devco with Google backing. March factory output -0.5% MoM — energy/manufacturing headwinds. BoJ watching oil at $111+ as FY26 growth headwind.
+- **🤖 AI/TECH:** Pentagon inks deals with Nvidia, Microsoft, AWS for classified AI networks (TechCrunch). Ubuntu services hit by DDoS, hacktivists claim. Big Tech AI capex seen topping **$1 trillion in 2027**. Anthropic $900B valuation in potential $50B round (May board decision). Musk v Altman trial ongoing.
+- **USD/JPY NOTE:** 157.033 — steady. BoJ watching oil at $111+ as FY26 growth headwind. Vanguard: 1.25% by year-end.
+
+### ⚠️ BEARS WATCH — May 2 12:41 JST (WEEKEND LIVE — ~6hrs to markets reopen)
+- **🔔 Ceasefire extended but Iran talks frozen on sequencing — nuclear vs Hormuz first.** Day 66. No breakthrough, still engaging.
+- **Iran storage ~18 days or less** — production cut 1.5M b/d forced imminent by mid-May. Approaching fast.
+- Hormuz blockade ONGOING — IRGC controls strait.
+- **UAE exit OPEC DAY 2** — structural shift, cartel pricing power diluted.
+- **⚠️ WEEKEND LIVE — oil markets closed, no trading cushion for ~6hrs.**
+- Japan factory output -0.5% MoM — energy/manufacturing headwinds.
+- USD/JPY 157.033 — BoJ watching 157+ with oil at $111+.
+
+### INFRASTRUCTURE STATUS
+- Gateway: ✅ active (LaunchAgent pid 18114, port 49273) — probe ok ✅
+- Dashboard (kaji-hemopo.github.io/telemetry/agents/ito/): ✅ synced — git push f2735d3 (12:41 JST) — dashboard live ✅
+- live_oracle.json: ✅ fresh @ 12:40 JST — all 6 assets populated, Brent ⚠️ $108.83
+- infra_pulse: Gateway probe ok ✅ (40ms)
+- Brent watch: $108.83 — stable weekend. Gap vs BZ=F Jul $111.01 ~$2.18 contango. Peak $126.
+- Hunter-Killer: MISSION CONCLUDED — pure intel pipeline only
+
+---
+
 ### Beat #212 (12:21 JST May 2) — Pipeline Active. Saturday 12:21PM Tokyo. Weekend LIVE. BTC $78,299. Brent $108.83. Trump Extends Ceasefire Despite Iran Response.
 - **Last Heartbeat:** 2026-05-02 12:01 JST — Beat #211 | **Status:** ACTIVE**
 - live_oracle: ✅ fresh @ 12:20 JST (BTC **$78,299.57** (+1.312%) | ETH $2,303.51 (+0.599%) | XRP $1.3854 (+0.515%) | USD/JPY **157.033** | Brent **$108.83** ⚠️ | Gold $4,625.6) — 0 min old. BTC holding $78K+ through midday. ETH $2,303 firm. XRP $1.3854 steady. USD/JPY 157.033 unchanged. Brent $108.83 stable weekend. **~6.5hrs to Monday Tokyo open.**
