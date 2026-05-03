@@ -1,26 +1,18 @@
 # Infra Pulse Log
 
-**Timestamp:** 2026-05-02 23:30 UTC  
-**Status:** WARN
+**Timestamp:** 2026-05-03 00:33 UTC  
+**Run context:** cron job c70c7349-e110-4af7-8154-8a60e61835bc
 
-## Summary
-- **OK:** 9
-- **Warn:** 1
-- **Fail:** 0
+## Result Summary
 
-## Findings
-- **Dir: scripts:** ✅ OK — found
-- **Dir: kaji:** ✅ OK — found
-- **Dir: memory:** ✅ OK — found
-- **Dir: heartbeat_logs:** ✅ OK — found
-- **File: MEMORY.md:** ✅ OK — found
-- **File: IDENTITY.md:** ✅ OK — found
-- **File: SOUL.md:** ✅ OK — found
-- **File: HEARTBEAT.md:** ✅ OK — found
-- **Cron PID file:** ⚠️ WARN — not found (may not apply)
-- **Tier1 Scripts:** ✅ OK — 2 scripts
+| Status | Count |
+|--------|-------|
+| ✅ OK   | 9     |
+| ⚠️ WARN | 1     |
+| ❌ FAIL | 0     |
 
-## Notes
-Ito workspace heartbeat active. Cron session: b59d1431-e95f-4d6a-a6c3-c8850a96f793
+## Assessment
 
-**Critical issues:** None. The single WARN is the absence of a `.cron_pid` file, which the script itself notes as non-critical ("may not apply"). All critical directories, core identity files, and Tier1 scripts are present and healthy.
+**Status: OK** — All checks passed with 1 advisory warning. No critical issues detected.
+
+No FAIL entries; infrastructure is healthy.
