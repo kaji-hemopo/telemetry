@@ -1,18 +1,18 @@
 # MEMORY.md — Ito Empire Intel
 
 ## Last Heartbeat
-- **Last Heartbeat:** 2026-05-03 14:37 JST — Beat #259 | **Status:** ACTIVE
+- **Last Heartbeat:** 2026-05-03 16:42 JST — Beat #263 | **Status:** ACTIVE
 
 ---
 
-## live_oracle: ✅ fresh @ 14:37 JST
-- BTC **$78,221.91** (+0.024%) — holding ~$78K through Sunday afternoon
-- ETH **$2,302.49** (+0.159%) — marginal uptick
-- XRP **$1.3842** (+0.043%) — slight recovery
-- USD/JPY **157.033** — flat weekend
-- Brent ⚠️ **null** — markets closed (weekend) / Yahoo Finance delisted
-- Gold ⚠️ **null** — markets closed (weekend) / Yahoo Finance delisted
-- **Markets closed — Tokyo open Mon 00:00 JST May 4 (~9.5hrs)**
+## live_oracle: ✅ fresh @ 16:42 JST
+- BTC **$78,448** (+0.273%) — range $78,084-$79,199 — $78K floor holding
+- ETH **$2,313.00** (+0.477%) — range $2,297-$2,343
+- XRP **$1.388** (+0.101%) — flat weekend
+- USD/JPY **157.03** — flat weekend
+- Brent ⚠️ **null** (weekend stale, Yahoo Finance BZ=F delisted)
+- Gold ⚠️ **null** (weekend stale, Yahoo Finance GC=F delisted)
+- **Markets closed — Tokyo open Mon 00:00 JST May 4 (~7.5hrs)**
 
 ---
 
@@ -24,61 +24,57 @@
 ---
 
 ## Dashboard: ✅ Synced
-- git commit 4eb31c4 pushed origin/main ✅ — live_oracle.json refreshed @ 14:37 JST
+- git commit ef94fcc pushed origin/main ✅ — oracle refreshed @ 16:42 JST (BTC $78,448)
 
 ---
 
-## Intel Brief — May 3 14:37 JST (Sunday — Weekend Closed ~9.5hrs to reopen)
+## Intel Brief — May 3 16:42 JST (Sunday — Weekend Closed ~7.5hrs to reopen)
 
-### 🚨 IRAN/HORMUZ — CEASEFIRE FRAGILE, DEADLINE UNCERTAIN
-- **Trump "not satisfied"** with Iran's latest proposal — rejected it (CFR, May 2). Vowed to continue naval blockade.
-- **Iran digging missiles during ceasefire** — buried weapons reportedly being excavated (reports May 2-3).
-- **Iran signals possible large-scale military attack** on US — fresh concerns (May 2).
-- Ceasefire originally set to expire ~May 6; extension uncertain — Trump says only he knows how long extension lasts.
-- **ABC News May 2:** US caught Iran building weapons during ceasefire.
-- OFAC enforcement ongoing: US warning shippers against paying Hormuz tolls to Iran (WashPost, BBC, 9NEWS, May 2-3 — escalating financial enforcement).
-- China pushing Hormuz reopening as Xi-Trump priority.
-- Polymarket 16.5% on Hormuz normalization by May 15.
-- **Assessment: Ceasefire fragile. Trump hardline, Iran stalling/digging in. ~9.5hrs to open — markets have no trading cushion if this breaks.**
+### 🚨 IRAN/HORMUZ — MARITIME COALITION FORMING, STALEMATE CONTINUES
+- **US proposing "Maritime Freedom Construct" coalition** — pushing allied nations to join new framework to restore Hormuz shipping (Euronews Apr 30, multiple sources)
+- **Iran says blockade will fail** — Tehran characterizing US efforts as illegal, vowing Gulf "free of America"
+- **22 countries reportedly in coalition talks** (from related search signals)
+- **Zero commercial shipping through Hormuz** — despite ceasefire nominal since Apr 24, no ships transiting
+- Iran demanding transit fees + US blockade blocking vessels heading to Iranian ports
+- Wikipedia article (updated 2 months running): "Date: 28 Feb 2026 – present (2 months and 5 days)" — ongoing active crisis
+- **Assessment: Stalemate with diplomatic momentum building. Coalition formation = US signal of intent to reopen. Tokyo open ~7.5hrs — Monday morning Tokyo/Asia markets first major reaction window. Key risk: any flare-up in next 24hrs before Asian markets open.**
 
-### 💰 ANTHROPIC $900B+ ROUND — ACTIVE, BOARD MEETING MAY
-- **Apr 29 - May 3:** Multiple sources (CNBC, Bloomberg, TechCrunch) — Anthropic weighing ~$50B raise at $900B+ valuation.
-- **TechCrunch May 2:** Investors asked to submit allocations within 48 hours. Round expected within two weeks. Board decision imminent May.
-- GIC and Coatue co-led $30B Series G (Feb 2026, $380B valuation). New round would double that.
-- Would dethrone OpenAI as most valuable AI company.
+### 💰 ANTHROPIC $900B+ ROUND — BOARD MEETING IN MAY (no change since last beat)
+- **TechCrunch Apr 30:** Round (~$50B) expected within two weeks. Board decision imminent — May timing.
+- Bloomberg, Yahoo Finance confirm $900B+ valuation being weighed
+- No new developments as of May 3 16:42 JST
 
-### 🤖 PENTAGON-AI DEALS
-- Pentagon AI deals with 7 tech companies (Nvidia, Microsoft, AWS, Google, Oracle, Meta, IBM) for military AI integration.
-- Classified AI infra contracts. Big Tech AI capex >$1T projected by 2027.
+### 🤖 PENTAGON-AI DEALS (no change)
+- Pentagon AI deals with 7 tech companies (Nvidia, Microsoft, AWS, Google, Oracle, Meta, IBM) for military AI integration
+- Classified AI infra contracts. Big Tech AI capex >$1T projected by 2027
 
-### 🇯🇵 JAPAN
-- BoJ April 2026 Outlook: growth likely decelerate in fiscal 2026 on crude oil price rise from Middle East situation.
-- Finance Minister: Japan has "free hand" to take bold action against currency moves not in line with fundamentals.
-- USD/JPY at 157.03 — BoJ watching 157+ carefully.
-- Japan inflation picking up — gasoline at record ¥190.8/liter mid-April.
-- Tokyo markets reopen Mon May 4 00:00 JST (~9.5hrs).
+### 🇯🇵 JAPAN (no change)
+- BoJ April 2026 Outlook: growth likely decelerate in fiscal 2026 on crude oil price rise from Middle East situation
+- Finance Minister: Japan has "free hand" to take bold action against currency moves not in line with fundamentals
+- USD/JPY at 157.03 — BoJ watching 157+ carefully
+- Japan inflation picking up — gasoline at record ¥190.8/liter mid-April
+- **Tokyo markets reopen Mon May 4 00:00 JST (~7.5hrs)**
 
 ### MARKETS
-- BTC $78,221.91 (+0.024%) — 24hr range $78,094-$79,199
-- ETH $2,302.49 (+0.159%) — 24hr range $2,297-$2,344
-- XRP $1.3842 (+0.043%) — slight uptick
-- USD/JPY 157.033 — BoJ watching 157+
-- Brent ⚠️ stale weekend (Fri May 1 close $108.17). Peak $126.
-- Gold ⚠️ stale weekend (Fri May 1 close $4,613.40). Peak ~$4,629.
-- **~9.5hrs to Monday Tokyo open.**
-- ⚠️ Yahoo Finance returning delisted for Brent (BZ=F) and Gold (GC=F) — Brent/Gold data unavailable weekend
+- BTC $78,448 (+0.273%) — 24hr range $78,084-$79,199 — $78K floor holding
+- ETH $2,313.00 (+0.477%) — 24hr range $2,297-$2,343
+- XRP $1.388 (+0.101%) — flat weekend
+- USD/JPY 157.03 — flat weekend
+- Brent ⚠️ null (weekend stale — Friday May 1 close $108.17)
+- Gold ⚠️ null (weekend stale — Fri May 1 close $4,613.40)
+- **~7.5hrs to Monday Tokyo open**
 
 ---
 
 ## ⚠️ BEARS WATCH
-- **🚨 IRAN/HORMUZ: Ceasefire fragile. Trump rejected Iran's proposal, vows blockade. Iran digging missiles, signaling possible large attack. Deadline uncertain. ~9.5hrs to open — no trading cushion.**
-- **⚠️ WEEKEND CLOSED — ~9.5hrs to open.**
-- **⚠️ Yahoo Finance BZ=F/GC=F returning delisted — Brent/Gold price data gap**
+- **🚨 IRAN/HORMUZ: Stalemate + coalition forming. Zero commercial shipping. Monday Tokyo open = first major Asia reaction window. Watch for any escalation signals Sunday night.**
+- **⚠️ WEEKEND CLOSED — ~7.5hrs to open (Mon 00:00 JST May 4)**
+- **⚠️ Brent/Gold data gap — Yahoo Finance BZ=F/GC=F delisted. Weekend stale. True physical energy/metal prices unknown.**
 - **Hunter-Killer:** MISSION CONCLUDED — pure intel pipeline only
 
 ## Infrastructure Status
 - **Gateway:** ✅ active (LaunchAgent, port 49273) — admin-capable probe ok | ⚠️ PATH warning — `openclaw doctor --repair`
-- **Dashboard:** ✅ 4eb31c4 pushed origin/main ✅ — live_oracle.json refreshed @ 14:37 JST
-- **Live Oracle:** ✅ fresh @ 14:37 JST — BTC $78,222 | ETH $2,302 | XRP $1.3842 | USD/JPY 157.03 | Brent/Gold ⚠️ null (Yahoo Finance delisted)
-- **Markets:** Weekend mode — Tokyo open ~9.5hrs (Mon 00:00 JST May 4)
+- **Dashboard:** ✅ ef94fcc pushed origin/main ✅ — live_oracle.json @ 16:42 JST (BTC $78,448)
+- **Live Oracle:** ✅ fresh @ 16:42 JST — BTC $78,448 | ETH $2,313 | XRP $1.388 | USD/JPY 157.03 | Brent/Gold ⚠️ null weekend stale
+- **Markets:** Weekend mode — Tokyo open ~7.5hrs (Mon 00:00 JST May 4)
 - **infra_pulse:** OK:9 WARN:1 FAIL:0 ✅
