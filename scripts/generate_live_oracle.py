@@ -110,7 +110,8 @@ def fetch_usd_jpy() -> dict:
 
 
 def fetch_brent() -> dict:
-    """Fetch Brent Crude (BZ=F) from Yahoo Finance — primary source for Kaji oil shock monitor."""
+    """Fetch Brent Crude (BZ=F) from Yahoo Finance — REST API fallback for delisted/suspended tickers."""
+    # Try yfinance first (Ticker.history)
     try:
         ticker = yf.Ticker("BZ=F")
         hist = ticker.history(period="1d")
@@ -125,12 +126,34 @@ def fetch_brent() -> dict:
                 "source": "Yahoo Finance (BZ=F)",
             }
     except Exception as e:
-        print(f"  Brent fetch error: {e}", file=sys.stderr)
+        print(f"  Brent yfinance error: {e}", file=sys.stderr)
+    # Fallback: REST API for BZ=F
+    try:
+        resp = requests.get(
+            "https://query1.finance.yahoo.com/v8/finance/chart/BZ=F",
+            timeout=10,
+            headers={"User-Agent": "Mozilla/5.0"},
+        )
+        if resp.ok:
+            data = resp.json()
+            result = data.get("chart", {}).get("result", [])
+            if result:
+                price = result[0].get("meta", {}).get("regularMarketPrice")
+                if price:
+                    return {
+                        "symbol": "Brent",
+                        "price": float(price),
+                        "change_24h_pct": None,
+                        "source": "Yahoo Finance REST (BZ=F)",
+                    }
+    except Exception as e:
+        print(f"  Brent REST error: {e}", file=sys.stderr)
     return {"symbol": "Brent", "price": None, "change_24h_pct": None, "source": "Yahoo Finance (BZ=F)"}
 
 
 def fetch_gold() -> dict:
-    """Fetch Gold (GC=F) from Yahoo Finance."""
+    """Fetch Gold (GC=F) from Yahoo Finance — REST API fallback for delisted/suspended tickers."""
+    # Try yfinance first (Ticker.history)
     try:
         ticker = yf.Ticker("GC=F")
         hist = ticker.history(period="1d")
@@ -145,7 +168,28 @@ def fetch_gold() -> dict:
                 "source": "Yahoo Finance (GC=F)",
             }
     except Exception as e:
-        print(f"  Gold fetch error: {e}", file=sys.stderr)
+        print(f"  Gold yfinance error: {e}", file=sys.stderr)
+    # Fallback: REST API for GC=F
+    try:
+        resp = requests.get(
+            "https://query1.finance.yahoo.com/v8/finance/chart/GC=F",
+            timeout=10,
+            headers={"User-Agent": "Mozilla/5.0"},
+        )
+        if resp.ok:
+            data = resp.json()
+            result = data.get("chart", {}).get("result", [])
+            if result:
+                price = result[0].get("meta", {}).get("regularMarketPrice")
+                if price:
+                    return {
+                        "symbol": "Gold",
+                        "price": float(price),
+                        "change_24h_pct": None,
+                        "source": "Yahoo Finance REST (GC=F)",
+                    }
+    except Exception as e:
+        print(f"  Gold REST error: {e}", file=sys.stderr)
     return {"symbol": "Gold", "price": None, "change_24h_pct": None, "source": "Yahoo Finance (GC=F)"}
 
 
@@ -193,3 +237,18 @@ def main():
 
 if __name__ == "__main__":
     main()
+    # Post-oracle Brent escalation check
+    import subprocess as _subprocess, sys as _sys
+    try:
+        _r = _subprocess.run(
+            ["/opt/homebrew/bin/python3",
+             "/Users/jacksonhemopo/.openclaw/workspace_kaji/scripts/brent_escalation_monitor.py"],
+            capture_output=True, text=True, timeout=30
+        )
+        if _r.returncode == 0:
+            _lines = _r.stdout.strip().split("\n")
+            print("\n[escalation] " + (_lines[-1] if _lines else ""))
+        else:
+            print(f"\n[escalation] WARNING non-zero exit: {_r.stderr.strip()}")
+    except Exception as _e:
+        print(f"\n[escalation] skip: {_e}")

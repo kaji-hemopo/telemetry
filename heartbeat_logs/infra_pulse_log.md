@@ -1,6 +1,6 @@
 # Infra Pulse Log
 
-**Timestamp:** 2026-05-03 14:50 UTC  
+**Timestamp:** 2026-05-03 11:32 UTC  
 **Status:** WARN
 
 ## Summary
@@ -17,7 +17,7 @@
 - **File: IDENTITY.md:** ✅ OK — found
 - **File: SOUL.md:** ✅ OK — found
 - **File: HEARTBEAT.md:** ✅ OK — found
-- **Cron PID file:** 🔴 FAIL — not found (may not apply)
+- **Cron PID file:** ⚠️ WARN — not found (may not apply)
 - **Tier1 Scripts:** ✅ OK — 7 scripts
 
 ## Notes
