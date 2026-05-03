@@ -1,18 +1,18 @@
 # MEMORY.md — Ito Empire Intel
 
 ## Last Heartbeat
-- **Last Heartbeat:** 2026-05-03 09:35 JST — Beat #245 | **Status:** ACTIVE**
+- **Last Heartbeat:** 2026-05-03 09:55 JST — Beat #246 | **Status:** ACTIVE**
 
 ---
 
-## live_oracle: ✅ fresh @ 09:35 JST
-- BTC **$78,657.59** (+0.449%) — weekend range $78,040-$79,199, holding above $78K
-- ETH **$2,316.84** (+0.923%) — weekend range $2,290-$2,343
-- XRP **$1.392** (+0.339%) — steady weekend
+## live_oracle: ✅ fresh @ 09:55 JST
+- BTC **$78,490.76** (+0.187%) — weekend range $78,040-$79,199, holding above $78K
+- ETH **$2,312.07** (+0.602%) — weekend range $2,290-$2,343
+- XRP **$1.3889** (+0.151%) — steady weekend
 - USD/JPY **157.033** (0.0%) — unchanged weekend
 - Brent ⚠️ **$108.17** — weekend stale (May 1 close 20:59 JST)
-- Gold **$4,644.50** (+0.315%) — weekend stale
-- **Markets closed — Tokyo open Mon 00:00 JST May 4 (~14.5hrs)**
+- Gold **$4,629.90** (+0.0%) — weekend stale
+- **Markets closed — Tokyo open Mon 00:00 JST May 4 (~14hrs)**
 
 ---
 
@@ -49,10 +49,10 @@
 - Pentagon deals with 7 tech companies for AI military integration (Nvidia, Microsoft, AWS, others).
 - Classified AI infra. Big Tech AI capex >$1T by 2027.
 
-### 💰 ANTHROPIC $900B+ ROUND — STILL WATCH
-- Datagrom (2 days ago): Anthropic received preemptive offers for $40-50B at $850-900B valuation — no announcement yet.
-- TechCrunch (Apr 30): ~$50B round closing within 2 weeks — board decision imminent.
-- **Still no announcement — watch today/tomorrow.**
+### 💰 ANTHROPIC $900B+ ROUND — CLOSING SOON
+- **May 3:** Multiple sources (Bloomberg, TechCrunch, Seeking Alpha, LinkedIn) — Anthropic is actively raising ~$50B at $900B+ valuation. Expected to close within 2 weeks. **Board decision imminent — watch for announcement.**
+- 733% valuation surge since Oct 2025.
+- Would dethrone OpenAI as most valuable AI company.
 
 ### 🇯🇵 JAPAN
 - BoJ: Japan growth to slow in FY26 as oil shock hits income.
@@ -61,13 +61,13 @@
 - Japan inflation picking up — gasoline at record ¥190.8/liter mid-April.
 
 ### MARKETS
-- BTC $78,657.59 (+0.449%) — holding above $78K, range $78,040-$79,199
-- ETH $2,316.84 (+0.923%) — range $2,290-$2,343
-- XRP $1.392 (+0.339%) — steady
+- BTC $78,490.76 (+0.187%) — holding above $78K, range $78,040-$79,199
+- ETH $2,312.07 (+0.602%) — range $2,290-$2,343
+- XRP $1.3889 (+0.151%) — steady
 - USD/JPY 157.033 — BoJ watching 157+
 - Brent ⚠️ $108.17 stale weekend. Peak $126.
-- Gold $4,644.50 (+0.315%) — weekend stale
-- **~14.5hrs to Monday Tokyo open.**
+- Gold $4,629.90 weekend stale
+- **~14hrs to Monday Tokyo open.**
 
 ---
 
@@ -78,6 +78,6 @@
 
 ## Infrastructure Status
 - **Gateway:** ✅ active (pid 39101, port 49273) — probe ok ✅
-- **Dashboard:** ✅ git commit c9bf183 @ 09:35 JST — merged origin/main, conflict resolved — pushed to origin ✅
-- **live_oracle.json:** ✅ fresh @ 09:35 JST — all 6 assets
-- **Markets:** Weekend mode — Tokyo open ~14.5hrs (Mon 00:00 JST May 4)
+- **Dashboard:** ✅ git commit c9bf183 @ 09:35 JST — merged origin/main, live_oracle.json conflict resolved — telemetry.git main branch ✅ pushed
+- **Live Oracle:** ✅ fresh @ 09:55 JST — BTC $78,491 | ETH $2,312 | XRP $1.389 | USD/JPY 157.033 | Brent $108.17 | Gold $4,630 — all 6 assets
+- **Markets:** Weekend mode — Tokyo open ~14hrs (Mon 00:00 JST May 4)
