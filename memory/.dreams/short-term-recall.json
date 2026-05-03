@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-03T08:43:02.867Z",
+  "updatedAt": "2026-05-03T09:04:21.596Z",
   "entries": {
     "memory:memory/2026-04-28.md:407:421": {
       "key": "memory:memory/2026-04-28.md:407:421",
@@ -1572,15 +1572,14 @@
       "endLine": 1595,
       "source": "memory",
       "snippet": "**Competitors:** GitHub Actions shows runner status but doesn't track label drift, correlate job queue times with runner availability, or detect runner group permission drift from IaC baseline. --- **Last Heartbeat: 2026-04-29 08:52 JST — Beat #61 **Status:** ACTIVE — Hunter-Killer heartbeat running --- ### Beat #63 (09:37 JST) — Pipeline Healthy. Niches #115-116 Delivered - infra_pulse: OK @ 09:37 JST (9 OK, 1 WARN, 0 FAIL) ✅ - Gateway: ✅ Running (LaunchAgent pid 95567, state active) - live_oracle: BTC $76,288 | ETH $2,285.37 | JPY ~159.58 ✅ ## 🏹 NICHE #115: Multi-Cloud Kubernetes ResourceQuota Theft Detector & Cross-Namespace Phantom Exhaustion Forecaster",
-      "recallCount": 58,
+      "recallCount": 59,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 29.36597826629877,
+      "totalScore": 29.891834573447706,
       "maxScore": 0.5404132992029189,
       "firstRecalledAt": "2026-04-29T08:27:37.504Z",
-      "lastRecalledAt": "2026-05-03T08:02:55.085Z",
+      "lastRecalledAt": "2026-05-03T09:04:21.596Z",
       "queryHashes": [
-        "326bb9670b6e",
         "1ef0a9ed419e",
         "cf70f1831998",
         "aa978f709790",
@@ -1611,7 +1610,8 @@
         "0859d4b180af",
         "46038a19b2c5",
         "8286f271495b",
-        "d60e838d32d3"
+        "d60e838d32d3",
+        "ae1d52abb95e"
       ],
       "recallDays": [
         "2026-04-29",
@@ -2855,13 +2855,13 @@
       "endLine": 11,
       "source": "memory",
       "snippet": "--- --- ### Beat #241 (01:55 JST May 3) — Pipeline Active. Sunday 1:55AM Tokyo. Markets closed. BTC $78,475. Hormuz tensions elevated. - **Last Heartbeat:** 2026-05-03 01:55 JST — Beat #241 | **Status:** ACTIVE** - live_oracle: ✅ fresh @ 01:40 JST (BTC **$78,475.37** (+0.154%) | ETH **$2,308.74** (+0.23%) | XRP **$1.3917** (-0.215%) | USD/JPY **157.033** | Brent **$108.17** ⚠️ | Gold **$4,629.9**) — 15 min old. BTC $78,475 — marginal uptick through late Saturday night ($78,107 at 01:10). ETH $2,308. XRP $1.3917. Brent $108.17 stale weekend. **Markets closed — Tokyo open Mon 00:00 JST May 4 (~22hrs).** - Gateway: ✅ Running (LaunchAgent pid 39101, state active) — probe ok ✅ - Dashboard: ✅ sy",
-      "recallCount": 17,
+      "recallCount": 18,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 9.267116057800465,
+      "totalScore": 9.792181396412067,
       "maxScore": 0.806120930539781,
       "firstRecalledAt": "2026-05-02T17:15:37.371Z",
-      "lastRecalledAt": "2026-05-03T08:43:02.867Z",
+      "lastRecalledAt": "2026-05-03T09:04:21.596Z",
       "queryHashes": [
         "cae7d7985453",
         "2b5b8f398d22",
@@ -2878,7 +2878,8 @@
         "828bdc155a8c",
         "b1c0c69cf133",
         "bb7d5b17493f",
-        "ff3802a977a8"
+        "ff3802a977a8",
+        "ae1d52abb95e"
       ],
       "recallDays": [
         "2026-05-03"
@@ -2937,18 +2938,19 @@
       "endLine": 61,
       "source": "memory",
       "snippet": "- live_oracle: ✅ fresh @ 09:55 JST (BTC **$78,490.76** (+0.187%) | ETH **$2,312.07** (+0.602%) | XRP **$1.3889** (+0.151%) | USD/JPY **157.033** | Brent **$108.17** ⚠️ | Gold **$4,629.90**) — BTC marginal drift, ETH slight uptick. Markets closed — ~14hrs to open Mon 00:00 JST. - Gateway: ✅ Running (LaunchAgent pid 39101, state active) — probe ok ✅ - Dashboard: ✅ git commit d39c3e3 pushed origin/main ✅ - infra_pulse: OK:9 WARN:1 FAIL:0 ✅ - Intel brief: updated. Hormuz: US sanctions warning on shippers (May 2) — financial enforcement escalation. Anthropic $900B round: active, closing within 2 weeks, board imminent. China pushing Hormuz reopening as Xi-Trump priority. - **Alert threshold: no ne",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.0725196689367293,
-      "maxScore": 0.5218155771493912,
+      "totalScore": 2.5976195335388184,
+      "maxScore": 0.5250998646020889,
       "firstRecalledAt": "2026-05-03T02:19:33.922Z",
-      "lastRecalledAt": "2026-05-03T08:43:02.867Z",
+      "lastRecalledAt": "2026-05-03T09:04:21.596Z",
       "queryHashes": [
         "828bdc155a8c",
         "b1c0c69cf133",
         "bb7d5b17493f",
-        "ff3802a977a8"
+        "ff3802a977a8",
+        "ae1d52abb95e"
       ],
       "recallDays": [
         "2026-05-03"
