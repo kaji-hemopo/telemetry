@@ -38,8 +38,8 @@
   },
   "gold": {
     "symbol": "Gold",
-    "price": 4629.9,
-    "change_24h_pct": 0.0,
+    "price": 4644.5,
+    "change_24h_pct": 0.315,
     "source": "Yahoo Finance (GC=F)"
   }
 }
