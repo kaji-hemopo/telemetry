@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-05-04T07:25:00Z",
+  "markets": {
+    "BTC": { "price": 79015.00, "change_24h": null, "source": "binance" },
+    "ETH": { "price": 2337.24, "change_24h": null, "source": "binance" },
+    "XRP": { "price": 1.3982, "change_24h": null, "source": "binance" },
+    "USDJPY": { "price": 157.09, "source": "frankfurter" },
+    "Brent": { "price": 109.62, "source": "EIA weekly 2026-04-24" },
+    "Gold": { "price": null, "source": "unavailable" }
+  }
+}
