@@ -1,6 +1,6 @@
 # Infra Pulse Log
 
-**Timestamp:** 2026-05-03 10:33 UTC  
+**Timestamp:** 2026-05-03 01:51 UTC  
 **Status:** WARN
 
 ## Summary
@@ -18,7 +18,9 @@
 - **File: SOUL.md:** ✅ OK — found
 - **File: HEARTBEAT.md:** ✅ OK — found
 - **Cron PID file:** ⚠️ WARN — not found (may not apply)
-- **Tier1 Scripts:** ✅ OK — 8 scripts
+- **Tier1 Scripts:** ✅ OK — found
 
 ## Notes
 Ito workspace heartbeat active. Cron session: b59d1431-e95f-4d6a-a6c3-c8850a96f793
+Single warn: cron PID file not present (expected for this setup).
+No critical failures.
