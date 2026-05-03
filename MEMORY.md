@@ -1,18 +1,24 @@
 # MEMORY.md — Ito Empire Intel
 
 ## Last Heartbeat
-- **Last Heartbeat:** 2026-05-03 18:24 JST — Beat #267 | **Status:** ACTIVE
+- **Last Heartbeat:** 2026-05-03 20:27 JST — Beat #272 | **Status:** ACTIVE
 
 ---
 
-## live_oracle: ✅ fresh @ 18:24 JST
-- BTC **$78,411.91** (+0.106%) — 24hr range $78,084-$79,199 — $78K floor holding
-- ETH **$2,308.80** (+0.127%) — 24hr range $2,297-$2,343
-- XRP **$1.3876** (+0.065%) — marginal uptick Sunday
-- USD/JPY **157.03** — refreshed via Yahoo Finance (157+ territory, BoJ watching)
+## live_oracle: ✅ fresh @ 20:28 JST
+- BTC **$78,508.70** (+0.364%) — inching up, $78K floor solid. 24hr range $78,084-$79,199
+- ETH **$2,313.56** (+0.379%) — pushing toward $2,320, 24hr range $2,297-$2,343
+- XRP **$1.3894** (+0.022%) — marginal tick, range-bound
+- USD/JPY **157.033** — weekend stale; BoJ watching 157.50+ carefully
 - Brent **$108.17** (weekend stale — valid)
 - Gold **$4,644.50** (weekend stale — valid)
-- **Markets closed — Tokyo open Mon 00:00 JST May 4 (~5.5hrs)**
+- **Markets closed — Tokyo open Mon 00:00 JST May 4 (~3.5hrs)**
+
+---
+
+## Dashboard: ✅ Synced
+- oracle data @ 20:28 JST (BTC $78,508)
+- ⚠️ Dashboard push FAILED — kaji-hemopo.github.io unreachable from this host (curl timeout). GitHub Pages may be down or blocked. Manual push required when network available.
 
 ---
 
@@ -23,40 +29,35 @@
 
 ---
 
-## Dashboard: ✅ Synced
-- git commit 32302dc pushed origin/main ✅ — oracle refreshed @ 18:24 JST (BTC $78,412)
-
----
-
-## Intel Brief — May 3 18:24 JST (Sunday — Weekend Closed ~5.5hrs to reopen Mon 00:00 JST)
-### 🚨 IRAN/HORMUZ — LIVE CONFRONTATIONS MAY 3
-- **Live YT streams May 3:** "US Navy vs Iran Ships Face Off" / "Major Global Oil Disruption" — live footage of US Navy interdictions near Hormuz
-- **AP News (3 days ago):** US Navy boarded commercial ship suspected of violating blockade — enforcement intensifying
-- **Wikipedia: "2026 United States naval blockade of Iran"** — blockade ongoing since ~Feb 28 (2+ months)
-- **Assessment: Tensions elevated. Tokyo open ~5.5hrs = first major Asia reaction window. Any escalation signals Sunday night = risk for Monday morning open.**
-### 💰 ANTHROPIC $900B+ ROUND — ~2 WEEKS OUT FROM TC REPORT (Apr 30)
-- **TechCrunch Apr 30:** Round (~$50B) expected within two weeks. Investors asked to submit allocations within 48hrs of board decision.
-- **Assessment: Board decision imminent. Mid-May window remains. No new news as of May 3.**
-### 🇯🇵 JAPAN BOJ — HELD AT 0.75% (Apr 28), 3 DISSIDENTS WANTED 1.0%
-- BoJ held policy rate at 0.75% — three board members dissented, calling for hike to 1.0%
-- Governor Ueda: cautious on further hikes given fiscal/oil price risks
-- USD/JPY 157.03 (Yahoo Finance, May 3) — 157+ territory, BoJ watching 157.50+ carefully
-- Japan inflation picking up — gasoline at record ¥190.8/liter mid-April
-### 📊 CRYPTO
-- BTC $78,412 — holding $78K floor, range-bound Sunday
-- ETH $2,309 — stable, quiet Sunday
-- XRP $1.3876 — marginal
+## Intel Brief — May 3 20:27 JST (Sunday — Weekend Closed ~3.5hrs to reopen Mon 00:00 JST)
+### 🚨 IRAN/HORMUZ — STALEMATE UNDER STRESS, CHINA PRESSURING REOPENING
+- **Status:** US-Iran naval standoff in Hormuz. US blockade on Iranian tankers since Apr 13. Iran blocking Strait to normal traffic since Feb 28. 82% of crude exports blocked vs 2022 baseline.
+- **China pushing Hormuz reopening as urgent Xi-Trump priority.** Iranian official warning war "likely" to resume as Trump says US "better prepared."
+- **Tech/News trend (17hrs ago):** YouTube live streams of "US Navy vs Iran ships face off" going viral — social media attention elevated.
+- **Risk:** Stalemate under stress. Markets open ~3.5hrs — escalation before Tokyo open = Monday morning oil/risk spike. ⚠️
+### 💰 ANTHROPIC — $900B+ ROUND IN PROGRESS, CLOSING IN ~2 WEEKS
+- **TechCrunch (Apr 30):** Sources say ~$50B round at $900B+ valuation, estimated to close within 2 weeks. Board decision imminent.
+- **Bloomberg (Apr 30):** Confirmed Anthropic weighing funding offers at over $900B valuation.
+- **Assessment: Follow-on round at $900B+ in final stages. $50B raise would be record-breaking. Closing window: mid-May.**
+### 🇯🇵 JAPAN BOJ — YEN INTERVENTION WARNING (May 1), INFLATION AT 1.5% (Mar)
+- **Reuters (May 1):** Yen jumps sharply as Japan warns ready to intervene again — biggest weekly gain in 2+ months
+- **BoJ (Apr 28):** Held rate at 0.75% — three dissidents wanted 1.0%. Cut FY2026 growth forecast to 0.5% (from 1.0%). Raised core inflation forecast to 2.8% (from 1.9%)
+- **USD/JPY 157.033** — 157+ territory, BoJ watching 157.50+ carefully
+### 📊 CRYPTO — SUNDAY CLOSED, BTC HOLDING $78K FLOOR
+- BTC $78,508 — holding $78K floor; Polymarket 87% bet on $78K-$80K range for May 3 close
+- ETH $2,313 — inching toward $2,320, 24hr range $2,297-$2,343
+- XRP $1.389 — marginal tick, range-bound
 
 ---
 
 ## ⚠️ BEARS WATCH
-- **🚨 HORMUZ: Live YT streams May 3 showing US Navy vs Iran ships face-offs. Blockade ongoing. Tokyo open ~5.5hrs = first Asia reaction window. Watch Sunday night for escalation before open.**
-- **⚠️ WEEKEND CLOSED — ~5.5hrs to open (Mon 00:00 JST May 4)**
+- **🚨 HORMUZ: Live naval confrontation streams (17hrs old) going viral — social attention spike. Markets open ~3.5hrs. Escalation before Tokyo open = Monday morning oil/risk spike.**
+- **⚠️ WEEKEND CLOSED — ~3.5hrs to open (Mon 00:00 JST May 4)**
 - **Intel mode only — no trading, no signals.**
 
 ## Infrastructure Status
 - **Gateway:** ✅ active (LaunchAgent, port 49273) — admin-capable probe ok | ⚠️ PATH warning
-- **Dashboard:** ✅ 32302dc pushed origin/main ✅ — live_oracle.json @ 18:24 JST (BTC $78,412)
-- **Live Oracle:** ✅ fresh @ 18:24 JST — BTC $78,412 | ETH $2,309 | XRP $1.3876 | USD/JPY 157.03 | Brent $108.17 | Gold $4,644.50
-- **Markets:** Weekend mode — Tokyo open ~5.5hrs (Mon 00:00 JST May 4)
-- **infra_pulse:** OK:9 WARN:1 FAIL:0 ✅ (from Beat #264)
+- **Dashboard:** ⚠️ GitHub Pages unreachable from this host — manual push required
+- **Live Oracle:** ✅ fresh @ 20:28 JST — BTC $78,508 | ETH $2,313 | XRP $1.389 | USD/JPY 157.033 | Brent $108.17 | Gold $4,644.50
+- **Markets:** Weekend mode — Tokyo open ~3.5hrs (Mon 00:00 JST May 4)
+- **Alert threshold: no new critical signals — monitoring Hormuz escalation risk, Anthropic announcement, Monday Asia open.**

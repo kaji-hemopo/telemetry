@@ -237,3 +237,18 @@ def main():
 
 if __name__ == "__main__":
     main()
+    # Post-oracle Brent escalation check
+    import subprocess as _subprocess, sys as _sys
+    try:
+        _r = _subprocess.run(
+            ["/opt/homebrew/bin/python3",
+             "/Users/jacksonhemopo/.openclaw/workspace_kaji/scripts/brent_escalation_monitor.py"],
+            capture_output=True, text=True, timeout=30
+        )
+        if _r.returncode == 0:
+            _lines = _r.stdout.strip().split("\n")
+            print("\n[escalation] " + (_lines[-1] if _lines else ""))
+        else:
+            print(f"\n[escalation] WARNING non-zero exit: {_r.stderr.strip()}")
+    except Exception as _e:
+        print(f"\n[escalation] skip: {_e}")
