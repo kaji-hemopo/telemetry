@@ -1,25 +1,25 @@
 {
-  "generated_at_jst": "2026-05-03 23:35 JST",
+  "generated_at_jst": "2026-05-03 23:56 JST",
   "btc": {
     "symbol": "BTC/USD",
-    "price": 78701.5,
-    "change_24h_pct": 0.334,
+    "price": 78730,
+    "change_24h_pct": 0.41,
     "high_24h": 79199.48,
     "low_24h": 78084.08,
     "source": "Binance"
   },
   "eth": {
     "symbol": "ETH/USD",
-    "price": 2325.15,
-    "change_24h_pct": 0.764,
+    "price": 2327.2,
+    "change_24h_pct": 0.91,
     "high_24h": 2343.6,
     "low_24h": 2297.59,
     "source": "Binance"
   },
   "xrp": {
     "symbol": "XRP/USD",
-    "price": 1.3938,
-    "change_24h_pct": 0.122,
+    "price": 1.4,
+    "change_24h_pct": 0.39,
     "high_24h": 1.4003,
     "low_24h": 1.3814,
     "source": "Binance"
@@ -34,12 +34,12 @@
     "symbol": "Brent",
     "price": 108.17,
     "change_24h_pct": null,
-    "source": "Yahoo Finance REST (BZ=F) — stale via rate limit; ETF fallback unchanged"
+    "source": "Yahoo Finance REST (BZ=F) \u2014 stale via rate limit; ETF fallback unchanged"
   },
   "gold": {
     "symbol": "Gold",
     "price": 4644.5,
     "change_24h_pct": null,
-    "source": "Yahoo Finance REST (GC=F) — stale via rate limit; ETF fallback unchanged"
+    "source": "Yahoo Finance REST (GC=F) \u2014 stale via rate limit; ETF fallback unchanged"
   }
 }
