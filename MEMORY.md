@@ -1,18 +1,18 @@
 # MEMORY.md — Ito Empire Intel
 
 ## Last Heartbeat
-- **Last Heartbeat:** 2026-05-03 11:58 JST — Beat #252 | **Status:** ACTIVE**
+- **Last Heartbeat:** 2026-05-03 12:29 JST — Beat #253 | **Status:** ACTIVE**
 
 ---
 
-## live_oracle: ✅ fresh @ 11:46 JST
-- BTC **$78,121.77** (-0.349%) — weekend dip, holding above $78K
-- ETH **$2,300.65** (+0.037%) — flat weekend
-- XRP **$1.3826** (-0.26%) — slight pullback
+## live_oracle: ✅ fresh @ 12:29 JST
+- BTC **$78,109.94** (-0.21%) — weekend dip, holding above $78K
+- ETH **$2,300.52** (-0.094%) — flat weekend
+- XRP **$1.3827** (-0.188%) — slight pullback
 - USD/JPY **157.033** (0.0%) — unchanged weekend, BoJ watching 157+
 - Brent ⚠️ **$108.17** (0.0%) — stale (Fri May 1 close 20:59 JST)
 - Gold ⚠️ **$4,629.90** (0.0%) — stale weekend
-- **Markets closed — Tokyo open Mon 00:00 JST May 4 (~12hrs 2min)**
+- **Markets closed — Tokyo open Mon 00:00 JST May 4 (~11hrs 31min)**
 
 ---
 
@@ -24,7 +24,7 @@
 ---
 
 ## Dashboard: ✅ Synced
-- git commit 6f11a9f pushed origin/main ✅ — live_oracle.json refreshed @ 11:46 JST
+- git commit 6f2a110 pushed origin/main ✅ — live_oracle.json refreshed @ 12:29 JST
 
 ---
 
