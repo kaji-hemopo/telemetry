@@ -6,6 +6,7 @@ Reads curated venture ideas (hardcoded from Ito's vetted database)
 Outputs to agents/ito/venture_intel.md
 """
 
+import json
 import requests
 import yfinance as yf
 import os
@@ -14,6 +15,8 @@ from datetime import datetime
 
 WORKSPACE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUTPUT_PATH = os.path.join(WORKSPACE, "outputs", "venture_intel.md")
+
+ORACLE_FILE = os.path.expanduser("~/.openclaw/workspace_ito/live_oracle.json")
 
 # ---------------------------------------------------------------------------
 # Venture Ideas — Ito's vetted micro-SaaS database (curated for Jackson)
@@ -71,49 +74,53 @@ VENTURE_IDEAS = [
 # ---------------------------------------------------------------------------
 
 def fetch_brent() -> tuple[float, float]:
-    """Fetch Brent Crude — primary: CoinGecko spot, fallback: yfinance BZ=F futures.
-    Sanity check: CoinGecko Brent below $80/bbl is considered stale/rate-limited.
+    """Fetch Brent Crude from live_oracle.json (Ito workspace).
+    Falls back to yfinance BZ=F if oracle file is missing/invalid.
     """
-    # Primary: CoinGecko (spot Brent)
     try:
-        resp = requests.get(
-            "https://api.coingecko.com/api/v3/simple/price",
-            params={"ids": "crude-oil-brent", "vs_currencies": "usd"},
-            headers={"Accept": "application/json"},
-            timeout=10,
-        )
-        if resp.ok:
-            data = resp.json()
-            price = float(data["crude-oil-brent"]["usd"])
-            # Sanity: Brent rarely drops below $40; $80 is a safe floor to detect stale/rate-limited responses
-            if price and price >= 80:
-                return price, 0.0
-            else:
-                print(f"    CoinGecko returned suspicious Brent ${price} — treating as stale, trying fallbacks", file=sys.stderr)
+        with open(ORACLE_FILE) as f:
+            d = json.load(f)
+        price = float(d.get("brent", {}).get("price", 0))
+        if price and price >= 80:
+            source = d.get("brent", {}).get("source", "oracle")
+            print(f"    Brent from oracle ({source}): ${price:.2f}")
+            return price, 0.0
     except Exception as e:
-        print(f"    CoinGecko error: {e}", file=sys.stderr)
-    # Fallback 1: yfinance BZ=F (Brent Crude Jun 2026 futures — approximate spot)
+        print(f"    oracle read error: {e}", file=sys.stderr)
+    # Fallback: yfinance BZ=F
     try:
         bz = yf.Ticker("BZ=F")
         hist = bz.history(period="1d")
         if not hist.empty:
             futures_price = float(hist["Close"].iloc[-1])
-            print(f"    yfinance BZ=F (futures): ${futures_price:.2f}")
+            print(f"    yfinance BZ=F (futures fallback): ${futures_price:.2f}")
             return futures_price, 0.0
     except Exception as e:
-        print(f"    yfinance BZ=F error: {e}", file=sys.stderr)
+        print(f"    yfinance BZ=F fallback error: {e}", file=sys.stderr)
     return None, None
 
 
 def fetch_gold() -> tuple[float, float]:
-    """Fetch Gold spot price — primary: yfinance GC=F (gold futures), fallback: GLD ETF."""
+    """Fetch Gold from live_oracle.json (Ito workspace).
+    Falls back to yfinance GC=F if oracle file is missing/invalid.
+    """
+    try:
+        with open(ORACLE_FILE) as f:
+            d = json.load(f)
+        price = float(d.get("gold", {}).get("price", 0))
+        if price and price >= 1000:
+            source = d.get("gold", {}).get("source", "oracle")
+            print(f"    Gold from oracle ({source}): ${price:,.2f}")
+            return round(price, 2), 0.0
+    except Exception as e:
+        print(f"    oracle read error: {e}", file=sys.stderr)
+    # Fallback: yfinance GC=F
     for ticker_sym in ["GC=F", "GLD"]:
         try:
             ticker = yf.Ticker(ticker_sym)
             hist = ticker.history(period="1d")
             if not hist.empty:
                 price = float(hist["Close"].iloc[-1])
-                # GLD is 1/10 the price of spot gold
                 if ticker_sym == "GLD":
                     price = price * 10
                 return round(price, 2), 0.0
