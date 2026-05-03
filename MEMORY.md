@@ -1,66 +1,62 @@
 # MEMORY.md — Ito Empire Intel
 
 ## Last Heartbeat
-- **Last Heartbeat:** 2026-05-04 07:25 JST — Beat #301 | **Status:** ACTIVE
+- **Last Heartbeat:** 2026-05-04 07:50 JST — Beat #302 | **Status:** ACTIVE
 
 ---
 
-## live_oracle: ✅ fresh @ 07:25 JST
-- BTC **$79,015.00** | ETH **$2,337.24** | XRP **$1.3982** | USD/JPY **157.09** | Brent **$109.62** (weekly Apr 24) | Gold **N/A** (APIs unavailable)
-- Markets steady. BTC holding $79K. ETH $2,337. USD/JPY 157.09. Brent $109.62 (EIA weekly). Gold API sources down — marking N/A.
+## live_oracle: ✅ fresh @ 07:40 JST
+- BTC **$79,156.71** | ETH **$2,340.14** | XRP **$1.3982** | USD/JPY **157.033** | Brent **$107.46** | Gold **$4,632.20**
+- Markets: BTC ticking up (+0.6%), ETH +0.8%, XRP +0.3%. BTC holding near $79K. Gold back online ($4,632). Brent $107.46. USD/JPY 157.03 steady.
 - **Gateway:** ✅ Running — probe ok ✅
-- **Dashboard:** ✅ telemetry pushed — b10f9db @ 07:27 JST
+- **Dashboard:** ✅ telemetry pushed — 18c2b15 @ 07:50 JST
 
-### Beat #301 (07:25 JST May 4) — Monday Tokyo session active. Markets steady.
+### Beat #302 (07:50 JST May 4) — Monday morning Tokyo session.
 
-- **🔴 IRAN — CEASEFIRE DAY 67, TRUMP REVIEWING NEW PROPOSAL, HEGSETH ARGUES WAR IS OVER:**
-  - AP News (May 3, ~23hrs ago): Trump says reviewing a new Iran proposal to end the war, expressed skepticism it would be acceptable
-  - AP News: Trump — "guide" stranded ships from Strait of Hormuz starting Monday (May 4)
-  - Fortune (May 1): Trump White House argues Iran War is over because of cease-fire that began in April — avoids need to seek congressional approval
-  - Hegseth testified Senate: ceasefire "effectively paused the war" — admin hasn't met requirement to seek congressional approval for extended military action under 1973 War Powers Act
-  - CFR (May 2): Trump rejected Iran's latest peace proposal, vowed to continue US naval blockade; Iran maintains chokehold on Strait of Hormuz
-  - YouTube (May 3): "US Weighs 'Final Blow' Options On Iran" — tensions escalating, amid fragile ceasefire
-  - **Ceasefire Day 67. Trump reviewing new proposal but skeptical. Hegseth/White House legal argument: war is over — avoids Congress. Blockade continues. "Final Blow" options under review. WATCH: WITKOFF, Hormuz shipping guidance, escalation signals.**
-  - **📊 MARKETS — BTC $79,015 STEADY, USD/JPY 157.09:**
-  - BTC $79,015 — holding near $79K, Monday Tokyo ~5hrs active
-  - ETH $2,337.24 — stable
-  - XRP $1.3982 — stable
-  - USD/JPY 157.09 — slight uptick from 157.033 (yen weakening slightly)
-  - Brent $109.62 (weekly Apr 24 EIA) — steady near $110
-  - Gold N/A — API sources (CoinGecko, Kitco, Metals API) all down/unavailable
-  - Markets: Monday morning Tokyo session. Steady. No panic. BTC holding $79K despite Iran tensions.
+- **🔴 IRAN — CEASEFIRE DAY 67, WAR POWERS ACT LOOPHOLE IN FOCUS:**
+  - War Powers Act 60-day deadline passed ~May 2 — Hegseth argues ceasefire "pauses" war, no congressional approval needed
+  - Al Jazeera (May 1): Has the ceasefire reset the clock on War Powers Act deadline? Lawmakers challenge — US forces remain active despite halted air attacks
+  - POLITICO (Apr 30): Hegseth told senators ceasefire pauses 60-day clock — war can continue legally
+  - YouTube: Hegseth War Powers Act loophole — legal debate intensifying
+  - **CEASEFIRE DAY 67. Hegseth legal position: war is paused, not over — avoids Congress. Deadline passed. Legal challenge unresolved. US forces still active. Markets steady, watching for escalation signals.**
+  - **📊 MARKETS — BTC $79,157 TICKING UP:**
+  - BTC $79,156.71 — +0.6% 24h, holding $79K
+  - ETH $2,340.14 — +0.8% 24h, firm
+  - XRP $1.3982 — +0.3% 24h, stable
+  - USD/JPY 157.033 — steady, slight yen weakness
+  - Brent $107.46 — firm, anchored near $107-110
+  - Gold $4,632.20 — back online, APIs recovered
+  - Markets: Monday morning. Broad crypto rally. BTC pushing toward $80K. Gold recovered. Steady risk sentiment despite Iran legal ambiguity.
 
-- **⚠️ Alert threshold: ELEVATED — Ceasefire Day 67, Hegseth argues war is legally over (avoids Congress), Trump reviewing "final blow" options, continuing blockade. Shipping guidance from Hormuz starts today (May 4). Anthropic round within window, still no close. Markets steady.**
-- Markets: Monday Tokyo session ~5hrs active. BTC $79,015 steady. USD/JPY 157.09. Brent $109.62. Gold N/A.
+- **⚠️ Alert threshold: MODERATE-ELEVATED — Ceasefire Day 67. War Powers Act 60-day deadline passed May 2. Hegseth loophole legally contested by lawmakers. No congressional approval obtained. US forces still active. Markets steady but geopolitical risk elevated. WATCH: Congress challenge, White House statement, any Hormuz incident.**
+- Markets: Monday Tokyo session. BTC $79,157 (+0.6%), ETH $2,340 (+0.8%). Broad rally. Gold $4,632 recovered.
 
 ---
 
 ## Dashboard: ✅ telemetry REPO — kaji-hemopo/telemetry.git
 - git remote: https://github.com/kaji-hemopo/telemetry.git
-- oracle data @ 07:25 JST — BTC $79,015 | ETH $2,337.24 | XRP $1.3982 | USD/JPY 157.09 | Brent $109.62 | Gold N/A
-- ✅ Pushed to GitHub (telemetry/master) — b10f9db ✅
+- oracle data @ 07:40 JST — BTC $79,157 | ETH $2,340 | XRP $1.3982 | USD/JPY 157.03 | Brent $107.46 | Gold $4,632
+- ✅ Pushed to GitHub (telemetry/main) — 18c2b15 ✅
 
 ## Gateway: ✅ Running
 - LaunchAgent active, probe ok ✅
 - ⚠️ Service config PATH missing required dirs: /Users/jacksonhemopo/.nix-profile/bin — run `openclaw doctor --repair` when convenient
 
-## Intel Brief — May 4 07:25 JST (Monday — Tokyo Session Active)
-### 🔴 IRAN — CEASEFIRE DAY 67, LEGAL GAMBIT + "FINAL BLOW" OPTIONS
-- AP News (May 3): Trump reviewing new Iran proposal, skeptical it would be acceptable
-- Fortune (May 1): White House argues war is over legally — avoids 1973 War Powers Act congressional approval requirement (Hegseth testimony)
-- CFR (May 2): Trump rejected Iran's latest peace proposal, vows to continue blockade
-- YouTube (May 3): "US Weighs 'Final Blow' Options" — tensions escalating, fragile ceasefire
-- May 4: Trump to "guide" stranded ships from Strait of Hormuz — starts today
-- **WATCH: WITKOFF visit, Hormuz shipping update, White House statement. Hegseth legal argument = war is paused not ended. "Final blow" options in play.**
-### 📊 MARKETS — BTC $79,015 STEADY
-- BTC $79,015 — holding $79K level, Monday morning stability
-- ETH $2,337.24 — stable
-- XRP $1.3982 — stable
-- USD/JPY 157.09 — slight yen weakness from 157.03
-- Brent $109.62 (EIA weekly Apr 24) — anchored near $110
-- Gold N/A — all major APIs unavailable
+## Intel Brief — May 4 07:50 JST (Monday — Tokyo Morning Session)
+### 🔴 IRAN — CEASEFIRE DAY 67, WAR POWERS ACT 60-DAY DEADLINE PASSED
+- War Powers Act deadline passed ~May 2 — Hegseth argues "ceasefire pauses war" to avoid congressional approval
+- Al Jazeera (May 1): Has the ceasefire reset the clock? Lawmakers challenge — US forces remain active despite halted air attacks
+- POLITICO (Apr 30): Hegseth told senators ceasefire pauses 60-day clock — war can continue without Congress
+- **WATCH: Congressional challenge response, White House statement, Hormuz shipping guidance (starts today May 4).**
+### 📊 MARKETS — BTC $79,157, CRYPTO RALLYING
+- BTC $79,156.71 — +0.6% 24h, near $79K
+- ETH $2,340.14 — +0.8% 24h, firm
+- XRP $1.3982 — +0.3% 24h, stable
+- USD/JPY 157.033 — steady
+- Brent $107.46 — firm near $107
+- Gold $4,632.20 — recovered, APIs back online
 ---
 
 ## ⚠️ BEARS WATCH
-- **🔴 CEASEFIRE DAY 67 — Hegseth/White House legally arguing war is OVER (avoids Congress), Trump reviewing "final blow" options against Iran, blockade continues, shipping guidance from Hormuz starts today. WATCH: WITKOFF, White House escalation statement, Hormuz incident.**
+- **🔴 CEASEFIRE DAY 67 — War Powers Act 60-day deadline passed May 2. Hegseth loophole: "ceasefire pauses war" avoids Congress. Legal challenge active. US forces still deployed. May 4: Hormuz shipping guidance from White House. WATCH: Congressional pushback, White House escalation statement, Hormuz incident.**
 - **Intel mode only — no trading, no signals.**
