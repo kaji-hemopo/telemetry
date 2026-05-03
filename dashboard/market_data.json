@@ -1,9 +1,31 @@
 {
-  "generated_at_jst": "2026-05-04 07:05 JST",
-  "btc": { "price": 79011.89, "change_24h_pct": 0.324, "high_24h": 79268.0, "low_24h": 78084.08 },
-  "eth": { "price": 2337.22, "change_24h_pct": 0.469, "high_24h": 2344.35, "low_24h": 2297.59 },
-  "xrp": { "price": 1.3963, "change_24h_pct": 0.151, "high_24h": 1.4003, "low_24h": 1.3814 },
-  "usd_jpy": { "price": 157.033, "change_24h_pct": 0.0 },
-  "brent": { "price": 108.17 },
-  "gold": { "price": 4644.5 }
+  "generated_at_jst": "2026-05-04 08:53 JST",
+  "btc": {
+    "price": 78551,
+    "change_24h_pct": -0.1328,
+    "high_24h": 79447,
+    "low_24h": 78084
+  },
+  "eth": {
+    "price": 2323.4,
+    "change_24h_pct": 0.305,
+    "high_24h": 2356.92,
+    "low_24h": 2297.59
+  },
+  "xrp": {
+    "price": 1.39,
+    "change_24h_pct": -0.524,
+    "high_24h": 1.4042,
+    "low_24h": 1.3814
+  },
+  "usd_jpy": {
+    "price": 157.09,
+    "change_24h_pct": 0
+  },
+  "brent": {
+    "price": 107.92
+  },
+  "gold": {
+    "price": 4628.2
+  }
 }
