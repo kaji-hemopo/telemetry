@@ -1,78 +1,95 @@
 # MEMORY.md — Ito Empire Intel
 
 ## Last Heartbeat
-- **Last Heartbeat:** 2026-05-03 23:14 JST — Beat #278 | **Status:** ACTIVE
+- **Last Heartbeat:** 2026-05-04 01:00 JST — Beat #282 | **Status:** ACTIVE
 
 ---
 
-## live_oracle: ✅ fresh @ 23:08 JST
-- BTC **$78,717.47** (+0.45%) — 24hr range $78,084-$79,199. Holding $78K floor through Sunday evening.
-- ETH **$2,323.93** (+0.701%) — 24hr range $2,298-$2,344. Pushing back toward $2,330.
-- XRP **$1.394** (+0.151%) — 24hr range $1.381-$1.400. Range-bound.
-- USD/JPY **157.033** — weekend stale; Tokyo open ~46min (Mon 00:00 JST May 4)
-- Brent **$108.17** (stale via Yahoo Finance BZ=F) — 429 rate limit; ETF fallback active
-- Gold **$4,644.50** (stale via Yahoo Finance GC=F) — ETF fallback active
-- **Markets closed — Tokyo open ~46min (Mon 00:00 JST May 4)**
+## live_oracle: ✅ fresh @ 01:00 JST (generated at 01:00 JST)
+- BTC **$78,668.36** (+0.23%) | ETH **$2,329.50** (+0.88%) | XRP **$1.396** (+0.19%) | USD/JPY **157.033** | Brent **$108.17** ⚠️ | Gold **$4,644.50**
+- All 6 assets live. BTC holding $78.6K floor. ETH pushing toward $2,330. Tokyo markets open ~1hr.
+- **Gateway:** ✅ Running — probe ok ✅
+- **Dashboard:** ✅ git commit f9327ca pushed origin/main ✅
+- **Infra pulse:** OK ✅
+
+### Beat #282 (01:00 JST May 4) — Pipeline Active. Monday 1:00AM Tokyo. Markets OPEN (~1hr).
+- Markets: BTC $78,668 (+0.23%), ETH $2,329 (+0.88%), XRP $1.396 (+0.19%). USD/JPY 157.033. Brent $108.17. Gold $4,644.50.
+- **Tokyo open ~1hr** — first Asian trading hour after weekend. Watch for Brent pre-open activity, USD/JPY movement.
+- **🚨 CEASEFIRE EXPIRES WED MAY 6** — Iran warns naval vessels near strait = breach. Both sides trading violations. War "likely" to resume per Iranian official.
+- **🔔 ANTHROPIC $900B+ ROUND:** Still no announcement. Board decision expected this week per TechCrunch (Apr 29-30). Allocation window closed.
+- **🔔 HORMUZ WATCH:** US warned shipping firms of sanctions for paying Iran tolls (BBC, May 3). Hormuz effectively closed. Ceasefire at breaking point.
+- **⚠️ Alert threshold: moderate — ceasefire expires Wed May 6, geopolitical risk elevated, Tokyo open ~1hr.**
+
+### Beat #281 (00:40 JST May 4) — Pipeline Active. Monday 12:40AM Tokyo. Markets OPEN (~1hr ago).
+- Markets: BTC $78,690 (+0.35%), ETH $2,327 (+0.83%), XRP $1.3951 (+0.28%). USD/JPY 157.033 (post-intervention steady). Brent $108.17. Gold $4,644.50.
+- Hormuz: ceasefire expires **Wed May 6**. Both sides trading violations. Iran submitted new peace proposal — Trump "not satisfied." Iran military official warns war may resume. Tensions HIGH. Ceasefire at breaking point.
+- **🔔 ANTHROPIC $900B+ ROUND:** Still no announcement. Allocation window closed (Apr 30). Round expected within ~2 weeks. Board decision imminent — watch any moment.
+- **🔔 JAPAN YEN INTERVENTION:** ~$34.5B deployed May 1. Dollar hit 155.5 yen. Japan officials warn ready to intervene again. Yen currently ~157 — analysts expect short-lived effect. Watching for follow-up.
+- **Alert threshold: CEASEFIRE EXPIRES WED MAY 6 — elevated risk window. No new critical signals beyond above.**
+- XRP **$1.40** (+0.39%) — CoinGecko live. Range-bound.
+- USD/JPY **157.033** — weekend stale; Tokyo open ~5min (Mon 00:00 JST May 4)
+- Brent **$108.17 / $111.01 (May 1)** — Yahoo Finance 429 rate limited; ETF fallback active; EIA May 1 close $111.01
+- Gold **$4,644.50** — gold_oracle.py confirmed @ 23:56 JST
+- **Markets: Tokyo open ~5min (Mon 00:00 JST May 4)**
 - Gateway: ✅ Running (LaunchAgent) — probe ok
-- infra_pulse: Gateway probe ok ✅ — OK:9 WARN:1 FAIL:0
+- infra_pulse: PASS — OK:10 WARN:0 FAIL:0 ✅
 
-### Intel Brief (May 3 ~23:00 JST)
-- **🚨 HORMUZ: 40 IRANIAN ATTACK VESSELS CONFIRMED — IRANIAN SUPER TANKER SLIPS BLOCKADE ($220M CARGO):** TOI (May 3) reports Iranian super tanker Rich Starry slipped past US blockade carrying $220M oil cargo. ~40 Iranian attack vessels confirmed in Hormuz satellite imagery. US sanctions warning on shipping firms (May 2) now in effect — enforcement gauntlet active. Iran effectively closed strait by attack/threat; now demanding tolls. Ceasefire nominally holding but military posture escalating.
-- **Anthropic $900B+ round:** Board decision this week. Allocation window closed. Follow-on ~$50B at final stages.
-- **Alert threshold: no new critical signals — monitoring Hormuz sanctions enforcement, Tokyo open risk, Brent spike potential.**
+### Intel Brief (May 3 ~23:56 JST)
+- **🚨 HORMUZ: STALEMATE, CEASEFIRE HOLDING, IRAN WARNED OF BLOCKADE BREACH — Tokyo open imminent, watch for surprise:** Wikipedia/TOI (May 3) — Iran warns naval vessels near strait = breach of ceasefire. Shipping firms warned of US sanctions for paying Iranian tolls. Hormuz effectively closed to normal traffic; insurance 20x elevated. No new attacks today. **Status: monitoring, Tokyo open in ~5min.**
+- **Anthropic $900B+ round:** TechCrunch (Apr 29-30) — ~$50B at $900B+ valuation, close within two weeks. Allocation window expired; board decision expected this week (May 2026). GIC + Coatue involved.
+- **🇯🇵 Japan Yen Intervention — MAJOR:** Japan spent ~$34.5B on May 1 intervention (Bloomberg). Yen surged 2%+ — biggest gain in 3 years. Second major FX campaign since 2024. Tokyo open ~5min — watch for follow-up.
+- **Alert threshold: moderate — Hormuz quiet but geopolitical risk elevated, Tokyo open imminent, Brent stable.**
 
-### Beat #278 (23:14 JST May 3) — Pipeline Active. Tokyo open ~46min.
-- **Last Heartbeat:** 2026-05-03 23:14 JST — Beat #278 | **Status:** ACTIVE
+### Beat #280 (23:56 JST May 3) — Pipeline Active. Tokyo open ~5min.
+- **Last Heartbeat:** 2026-05-03 23:56 JST — Beat #280 | **Status:** ACTIVE
 
 ---
 
 ## Dashboard: ✅ telemetry REPO LOCATED — kaji-hemopo/telemetry.git
 - git remote: git@github.com:kaji-hemopo/telemetry.git
-- oracle data @ 23:08 JST — BTC $78,717 | ETH $2,324 | XRP $1.394 | USD/JPY 157.033 | Brent $108.17 | Gold $4,644.50
-- ✅ Pushed to GitHub (telemetry/main) — 3dd56bf
-- **PATH ISSUE RESOLVED:** was looking for ~/kaji-hemopo.github.io (wrong); correct path is ~/telemetry
+- oracle data @ 23:56 JST — BTC $78,730 | ETH $2,327 | XRP $1.40 | USD/JPY 157.033 | Brent stale | Gold $4,644.50
+- ✅ Pushed to GitHub (telemetry/main) — a6c1709
 - live_oracle.json in intel/Telemetry/live_oracle.json
 
 ---
 
 ## Gateway: ✅ Running
-- LaunchAgent active (pid 55265), port 49273, ws://127.0.0.1:49273
+- LaunchAgent active, port 49273, ws://127.0.0.1:49273
 - Probe: ok ✅ (admin-capable)
 - ⚠️ Service config PATH missing required dirs: /Users/jacksonhemopo/.nix-profile/bin — run `openclaw doctor --repair` when convenient
 
 ---
 
-## Intel Brief — May 3 22:07 JST (Sunday — Tokyo Open ~51min)
-### 🚨 IRAN/HORMUZ — 40 IRANIAN ATTACK VESSELS IN HORMUZ; TRUMP URGES IRAN "GET SMART SOON"
-- **🚨 NEW (TOI, May 3, ~11AM IST / ~1hr ago):** Nearly 40 Iranian attack vessels spotted in satellite images in Strait of Hormuz — significant show of force.
-- **Trump urges Iran to "get smart soon" (BBC, ~4 days ago):** US President Donald Trump escalated rhetoric from "not satisfied" to direct warning.
-- **Iran's Hormuz Route "Gone" — UAE Shuts Down (TBN/ILTV Israel News, May 3, ~18hrs ago):** Iran's Hormuz route effectively gone as UAE closes routing. First sanctioned tanker (Chinese-owned Rich Starry) became the first sanctioned vessel to exit the Gulf after US blockade.
-- **Iran threatens "long and painful strikes" if US renews attacks (Reuters, ~3 days ago):** Tehran restated its claim and warned of response.
-- **Status:** Ceasefire holding but Iranian military show of force (40 vessels) is new escalation signal. Trump's patience visibly fraying. Hormuz route "gone" per reports. Tokyo open in ~51min — watch for pre-open announcement.
-### 💰 ANTHROPIC — $900B+ ROUND, ALLOCATION DEADLINE PASSED, BOARD MEETING MAY
-- **TechCrunch (Apr 30):** ~$50B round at $900B+ valuation. Allocation window closed (48hr deadline passed). Board decision expected in May — **this week.**
-- **Bloomberg (Apr 30):** Confirmed Anthropic weighing funding offers at over $900B valuation.
-- **Intellizence:** On Feb 12, Anthropic raised $30B at $380B post-money (prior round).
-- **Assessment: Follow-on $50B round at $900B+ in final stages. Board decision imminent — likely within days.**
-### 🇯🇵 JAPAN BOJ — YEN INTERVENTION WARNING (May 1), INFLATION AT 1.5% (Mar)
-- **Reuters (May 1):** Yen jumps sharply as Japan warns ready to intervene again — biggest weekly gain in 2+ months
-- **BoJ (Apr 28):** Held rate at 0.75% — three dissidents wanted 1.0%. Cut FY2026 growth forecast to 0.5% (from 1.0%). Raised core inflation forecast to 2.8% (from 1.9%)
-- **USD/JPY 157.033** — 157+ territory, BoJ watching 157.50+ carefully. Tokyo open ~51min.
-### 📊 CRYPTO — BTC HOLDING $78K FLOOR, ETH PUSHING TOWARD $2,330
-- BTC $78,729 — holding $78K floor, 24hr range $78,084-$79,199
-- ETH $2,327 — pushing toward $2,330, 24hr range $2,298-$2,344
-- XRP $1.3976 — marginal tick, range-bound
+## Intel Brief — May 3 23:56 JST (Sunday — Tokyo Open ~5min)
+### 🚨 IRAN/HORMUZ — CEASEFIRE HOLDING, CEASEFIRE WARNED OF BREACH, SHIPPING INSURANCE 20X
+- **Iran warns naval vessels near strait = ceasefire breach** (Wikipedia, May 3). Iran will respond to military vessels entering ceasefire zone.
+- **US warns shipping firms of sanctions** for paying Iranian tolls (9News, May 3). Hormuz effectively closed to normal traffic.
+- **Shipping insurance 20x elevated** vs pre-war (Al Jazeera, Apr 28). Even if strait reopens, costs prohibitive.
+- **No new attacks reported May 3.** Rich Starry tanker exit confirmed prior. Ceasefire nominally holding — tension elevated but quiet night.
+- **Tokyo open ~5min — First Asia reaction window. Watch for Brent spike, USD/JPY movement, any BoJ/intervention signals.**
+### 💰 ANTHROPIC — $900B+ ROUND, BOARD DECISION EXPECTED THIS WEEK
+- **TechCrunch (Apr 29-30):** ~$50B round at $900B+ valuation, close within 2 weeks. Allocation window expired. Board decision expected this week.
+- **GIC + Coatue confirmed** as lead investors.
+### 🇯🇵 JAPAN YEN — $34.5B INTERVENTION MAY 1, BIGGEST 3-YR GAIN
+- **Japan spent ~$34.5B (¥5.4T) on May 1 FX intervention** (Bloomberg). Yen surged 2%+, biggest gain in 3 years.
+- **BoJ core CPI forecast 2.8% for 2026** — real interest rate pressure; intervention campaign active.
+- **Tokyo open ~5min — watch for follow-up intervention signals or BoJ statements.**
+### 📊 CRYPTO — BTC HOLDING $78K FLOOR, ETH PUSHING $2,330
+- BTC $78,730 — holding $78K floor (+0.41%)
+- ETH $2,327 — pushing toward $2,330 (+0.91%)
+- XRP $1.40 — marginal tick, range-bound
 
 ---
 
 ## ⚠️ BEARS WATCH
-- **🚨 40 IRANIAN ATTACK VESSELS CONFIRMED IN HORMUZ + IRANIAN TANKER SLIPS BLOCKADE ($220M):** TOI (May 3) confirms ~40 Iranian attack vessels in Hormuz via satellite imagery. Iranian super tanker Rich Starry slipped past US blockade with $220M oil cargo. US sanctions on shippers paying Iranian tolls now active. Enforcement gauntlet running — strait effectively closed by threat. Ceasefire nominally holding.
-- **⚠️ TOKYO OPEN ~46MIN (Mon 00:00 JST May 4) — Watch for any Iran/pre-open announcement. BoJ also in watch mode at 157+ USD/JPY. Brent spike risk if Hormuz tension spikes ahead of Asia open.**
+- **🚨 TOKYO OPEN IMMINENT (~5min) — First Asia market reaction window for weekend developments. Watch: Brent pre-open spike, USD/JPY movement, BoJ/intervention signals.**
+- **⚠️ HORMUZ: Ceasefire nominally holding but Iran warns of breach. Shipping insurance 20x. Tokyo open imminent — elevated geopolitical risk.**
 - **Intel mode only — no trading, no signals.**
 
 ## Infrastructure Status
-- **Gateway:** ✅ active (LaunchAgent, pid 55265, port 49273) — admin-capable probe ok | ⚠️ PATH warning
-- **Dashboard:** ✅ repo found (~/telemetry), oracle pushed @ 23:08 JST
-- **Live Oracle:** ✅ fresh @ 23:08 JST — BTC $78,717 | ETH $2,324 | XRP $1.394 | USD/JPY 157.033 | Brent $108.17 | Gold $4,644.50
-- **Markets:** Weekend mode — Tokyo open ~46min (Mon 00:00 JST May 4)
-- **Alert threshold: elevated — 40 Iranian vessels confirmed, tanker slipped $220M cargo, Tokyo open imminent.**
+- **Gateway:** ✅ active (LaunchAgent, port 49273) — admin-capable probe ok | ⚠️ PATH warning
+- **Dashboard:** ✅ repo found (~/telemetry), oracle pushed @ 23:56 JST — a6c1709
+- **Live Oracle:** ✅ fresh @ 23:56 JST — BTC $78,730 | ETH $2,327 | XRP $1.40 | USD/JPY 157.033 | Brent stale | Gold $4,644.50
+- **infra_pulse:** PASS ✅ — OK:10 WARN:0 FAIL:0
+- **Markets:** Tokyo open ~5min (Mon 00:00 JST May 4) — weekend closing, first Asia session
+- **Alert threshold: moderate — Hormuz tense but quiet, Tokyo open imminent, Yen intervention big story.**
