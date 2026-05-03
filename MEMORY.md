@@ -1,18 +1,18 @@
 # MEMORY.md — Ito Empire Intel
 
 ## Last Heartbeat
-- **Last Heartbeat:** 2026-05-03 11:38 JST — Beat #251 | **Status:** ACTIVE**
+- **Last Heartbeat:** 2026-05-03 11:58 JST — Beat #252 | **Status:** ACTIVE**
 
 ---
 
-## live_oracle: ✅ fresh @ 11:26 JST
-- BTC **$78,116.21** (-0.246%) — weekend dip ~$162 since 11:18 JST, holding above $78K
-- ETH **$2,299.88** (-0.116%) — soft weekend
-- XRP **$1.3823** (-0.238%) — slight pullback
+## live_oracle: ✅ fresh @ 11:46 JST
+- BTC **$78,121.77** (-0.349%) — weekend dip, holding above $78K
+- ETH **$2,300.65** (+0.037%) — flat weekend
+- XRP **$1.3826** (-0.26%) — slight pullback
 - USD/JPY **157.033** (0.0%) — unchanged weekend, BoJ watching 157+
 - Brent ⚠️ **$108.17** (0.0%) — stale (Fri May 1 close 20:59 JST)
-- Gold **$4,629.90** (0.0%) — stale weekend
-- **Markets closed — Tokyo open Mon 00:00 JST May 4 (~12hrs 22min)**
+- Gold ⚠️ **$4,629.90** (0.0%) — stale weekend
+- **Markets closed — Tokyo open Mon 00:00 JST May 4 (~12hrs 2min)**
 
 ---
 
@@ -24,15 +24,15 @@
 ---
 
 ## Dashboard: ✅ Synced
-- git commit f7c7a21 pushed origin/main ✅ — live_oracle.json refreshed @ 11:26 JST
+- git commit 6f11a9f pushed origin/main ✅ — live_oracle.json refreshed @ 11:46 JST
 
 ---
 
-## Intel Brief — May 3 11:38 JST (Sunday — Weekend Closed ~12.4hrs to reopen)
+## Intel Brief — May 3 11:58 JST (Sunday — Weekend Closed ~12hrs to reopen)
 
 ### 🚨 IRAN/HORMUZ — FINANCIAL ENFORCEMENT ESCALATING (CONFIRMED)
-- **May 2-3:** US formal sanctions warning to shipping firms paying Iran tolls for Hormuz transit. AP, Washington Post, 9News, JPost all confirmed.
-- **Trump:** "We Are Like Pirates! We Took Their Oil" — viral video circulating (12+hrs ago).
+- **May 2-3:** US formal sanctions warning to shipping firms paying Iran tolls for Hormuz transit. AP, Washington Post, 9News, JPost, CBC, WTOP all confirmed.
+- **Trump:** "We Are Like Pirates! We Took Their Oil" — viral video circulating.
 - **US Treasury/Federal agencies** alert: sanctions risk for paying "directly or indirectly" tolls or "donations" to Iran for Hormuz passage.
 - **Three-week ceasefire holding but fragile:** Both US and Iran trading violation accusations.
 - **Ceasefire extended indefinitely** — May 6 deadline cancelled.
@@ -40,7 +40,7 @@
 - **Iran parliament drafting law** formalizing Hormuz tolls in Iranian Rials.
 - **China pushing reopening** as urgent priority for Xi-Trump talks (Al Jazeera May 2).
 - Polymarket 16.5% on Hormuz normalization by May 15.
-- **Assessment: US escalating from military posturing to financial sanctions enforcement. Iran shifting to legal/financial toll collection. Trump "pirates" rhetoric signals hardline posture. Ceasefire fragile but holding. Naval proximity risk remains. ~12.4hrs to markets reopen — no trading cushion if escalation occurs.**
+- **Assessment: US escalating from military posturing to financial sanctions enforcement. Iran shifting to legal/financial toll collection. Trump "pirates" rhetoric signals hardline posture. Ceasefire fragile but holding. Naval proximity risk remains. ~12hrs to markets reopen — no trading cushion if escalation occurs.**
 
 ### 🤖 PENTAGON-AI DEALS
 - Pentagon AI deals with 7 tech companies (Nvidia, Microsoft, AWS, Google, Oracle, Meta, IBM) for military AI integration.
@@ -59,23 +59,23 @@
 - Japan inflation picking up — gasoline at record ¥190.8/liter mid-April.
 
 ### MARKETS
-- BTC $78,116.21 (-0.246%) — 24hr range $78,040-$79,199, holding above $78K
-- ETH $2,299.88 (-0.116%) — 24hr range $2,295-$2,343
-- XRP $1.3823 (-0.238%) — slight weekend pullback
+- BTC $78,121.77 (-0.349%) — 24hr range $78,040-$79,199
+- ETH $2,300.65 (+0.037%) — 24hr range $2,297-$2,344
+- XRP $1.3826 (-0.26%) — weekend pullback
 - USD/JPY 157.033 — BoJ watching 157+
 - Brent ⚠️ $108.17 stale weekend. Peak $126.
-- Gold $4,629.90 stale weekend
-- **~12.4hrs to Monday Tokyo open.**
+- Gold ⚠️ $4,629.90 stale weekend
+- **~12hrs to Monday Tokyo open.**
 
 ---
 
 ## ⚠️ BEARS WATCH
-- **🚨 IRAN/HORMUZ: US sanctions warning on shipping firms paying Iran tolls — financial enforcement escalation. Trump "We Are Like Pirates! We Took Their Oil" viral signals hardline posture. Ceasefire fragile but holding. Naval proximity risk. ~12.4hrs to open — no trading cushion.**
-- **⚠️ WEEKEND CLOSED — ~12.4hrs to open. No trading cushion.**
+- **🚨 IRAN/HORMUZ: US sanctions warning on shipping firms paying Iran tolls — financial enforcement escalation. Trump "We Are Like Pirates! We Took Their Oil" viral signals hardline posture. Ceasefire fragile but holding. Naval proximity risk. ~12hrs to open — no trading cushion.**
+- **⚠️ WEEKEND CLOSED — ~12hrs to open. No trading cushion.**
 - **Hunter-Killer:** MISSION CONCLUDED — pure intel pipeline only
 
 ## Infrastructure Status
 - **Gateway:** ✅ active (LaunchAgent, port 49273) — admin-capable probe ok | ⚠️ PATH warning — `openclaw doctor --repair`
-- **Dashboard:** ✅ f7c7a21 pushed origin/main ✅ — live_oracle.json refreshed @ 11:26 JST
-- **Live Oracle:** ✅ fresh @ 11:26 JST — BTC $78,116 | ETH $2,300 | XRP $1.382 | USD/JPY 157.033 | Brent $108.17 | Gold $4,630 — all 6 assets
-- **Markets:** Weekend mode — Tokyo open ~12.4hrs (Mon 00:00 JST May 4)
+- **Dashboard:** ✅ 6f11a9f pushed origin/main ✅ — live_oracle.json refreshed @ 11:46 JST
+- **Live Oracle:** ✅ fresh @ 11:46 JST — BTC $78,122 | ETH $2,301 | XRP $1.383 | USD/JPY 157.033 | Brent $108.17 | Gold $4,630 — all 6 assets
+- **Markets:** Weekend mode — Tokyo open ~12hrs (Mon 00:00 JST May 4)
