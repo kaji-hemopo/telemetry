@@ -1,25 +1,25 @@
 {
-  "generated_at_jst": "2026-05-03 13:46 JST",
+  "generated_at_jst": "2026-05-03 23:08 JST",
   "btc": {
     "symbol": "BTC/USD",
-    "price": 78177.89,
-    "change_24h_pct": -0.019,
+    "price": 78717.47,
+    "change_24h_pct": 0.45,
     "high_24h": 79199.48,
-    "low_24h": 78040.0,
+    "low_24h": 78084.08,
     "source": "Binance"
   },
   "eth": {
     "symbol": "ETH/USD",
-    "price": 2302.07,
-    "change_24h_pct": 0.042,
+    "price": 2323.93,
+    "change_24h_pct": 0.701,
     "high_24h": 2343.6,
-    "low_24h": 2296.62,
+    "low_24h": 2297.59,
     "source": "Binance"
   },
   "xrp": {
     "symbol": "XRP/USD",
-    "price": 1.3845,
-    "change_24h_pct": 0.08,
+    "price": 1.394,
+    "change_24h_pct": 0.151,
     "high_24h": 1.4003,
     "low_24h": 1.3814,
     "source": "Binance"
@@ -32,14 +32,14 @@
   },
   "brent": {
     "symbol": "Brent",
-    "price": null,
+    "price": 108.17,
     "change_24h_pct": null,
-    "source": "Yahoo Finance (BZ=F)"
+    "source": "Yahoo Finance REST (BZ=F)"
   },
   "gold": {
     "symbol": "Gold",
-    "price": null,
+    "price": 4644.5,
     "change_24h_pct": null,
-    "source": "Yahoo Finance (GC=F)"
+    "source": "Yahoo Finance REST (GC=F)"
   }
 }
