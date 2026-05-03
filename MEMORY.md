@@ -1,18 +1,18 @@
 # MEMORY.md — Ito Empire Intel
 
 ## Last Heartbeat
-- **Last Heartbeat:** 2026-05-03 17:22 JST — Beat #265 | **Status:** ACTIVE
+- **Last Heartbeat:** 2026-05-03 18:06 JST — Beat #266 | **Status:** ACTIVE
 
 ---
 
-## live_oracle: ✅ fresh @ 17:22 JST
-- BTC **$78,444** (+0.201%) — 24hr range $78,084-$79,199 — $78K floor holding, marginal tick up from $78,387 @ 17:05
-- ETH **$2,309.56** (+0.32%) — 24hr range $2,297-$2,343
-- XRP **$1.3872** (+0.166%) — flat weekend
-- USD/JPY **157.033** — flat weekend
-- Brent **$108.17** (weekend stale — valid, Yahoo Finance showing null on some queries)
-- Gold **$4,644.5** (weekend stale — valid)
-- **Markets closed — Tokyo open Mon 00:00 JST May 4 (~6.5hrs)**
+## live_oracle: ✅ fresh @ 18:06 JST
+- BTC **$78,390** (+0.113%) — 24hr range $78,084-$79,199 — $78K floor holding
+- ETH **$2,307.68** (+0.137%) — 24hr range $2,297-$2,343
+- XRP **$1.3882** (+0.289%) — marginal uptick Sunday
+- USD/JPY **156.56** — stale (Frankfurter Apr 30 rate; Yahoo Finance rate-limited)
+- Brent **$108.17** (weekend stale — valid)
+- Gold **$4,613.40** (weekend stale — valid)
+- **Markets closed — Tokyo open Mon 00:00 JST May 4 (~6hrs)**
 
 ---
 
@@ -24,55 +24,47 @@
 ---
 
 ## Dashboard: ✅ Synced
-- git commit 772b03f pushed origin/main ✅ — oracle refreshed @ 17:22 JST (BTC $78,444)
+- git commit 5b26c8a pushed origin/main ✅ — oracle refreshed @ 18:06 JST (BTC $78,390)
 
 ---
 
-## Intel Brief — May 3 17:22 JST (Sunday — Weekend Closed ~6.5hrs to reopen)
+## Intel Brief — May 3 18:06 JST (Sunday — Weekend Closed ~6hrs to reopen Mon 00:00 JST)
 
-### 🚨 IRAN/HORMUZ — BLOCKADE ONGOING, NO RESOLUTION
-- **Wikipedia: "2026 United States naval blockade of Iran"** — blockade ongoing since ~Feb 28, 2026 (2+ months)
-- **NYT:** Negotiations to reopen Hormuz at a standoff — Trump dismissed Iran's latest peace proposal
-- **Fox Business (2 days ago):** "Iran at critical breaking point as oil gets stuck" — Kpler confirms oil shipments blocked
-- **United Against Nuclear Iran May 1:** US Central Command executing blockade mission. Zero commercial shipping through Hormuz.
-- **Iran:** Vowing Gulf "free of America" — demanding transit fees
-- **Assessment: Stalemate continues. Tokyo open ~6.5hrs = first major Asia reaction window. Any escalation signals Sunday night = risk for Monday morning open.**
+### 🚨 IRAN/HORMUZ — LIVE CONFRONTATIONS MAY 3
+- **Live YT streams May 3:** "US Navy vs Iran Ships Face Off" / "Major Global Oil Disruption" — live footage of US Navy interdictions near Hormuz
+- **AP News (3 days ago):** US Navy boarded commercial ship suspected of violating blockade — enforcement intensifying
+- **Wikipedia: "2026 United States naval blockade of Iran"** — blockade ongoing since ~Feb 28 (2+ months)
+- **Assessment: Tensions elevated. Tokyo open ~6hrs = first major Asia reaction window. Any escalation signals Sunday night = risk for Monday morning open.**
 
-### 💰 ANTHROPIC $900B+ ROUND — BOARD IMMINENT (within ~2 weeks from Apr 30 report)
-- **TechCrunch Apr 30:** Round ($50B range) expected within two weeks. Investors asked to submit allocations within 48 hours of that report.
-- Intellizence: Feb 2026 already raised $30B at $380B post-money valuation
-- **Assessment: Still tracking toward board decision mid-May. No new news as of May 3.**
+### 💰 ANTHROPIC $900B+ ROUND — ~2 WEEKS OUT FROM TC REPORT (Apr 30)
+- **TechCrunch Apr 30:** Round (~$50B) expected within two weeks. Investors asked to submit allocations within 48hrs of board decision.
+- **Assessment: Board decision imminent. Mid-May window remains. No new news as of May 3.**
 
-### 🤖 PENTAGON-AI DEALS (no change)
-- Pentagon AI deals with 7 tech companies (Nvidia, Microsoft, AWS, Google, Oracle, Meta, IBM)
-- Classified AI infra contracts. Big Tech AI capex >$1T projected by 2027
-
-### 🇯🇵 JAPAN (no change)
-- BoJ April 2026 Outlook: growth likely decelerate fiscal 2026 on crude oil price rise
-- Finance Minister: Japan has "free hand" to take bold action against currency moves not in line with fundamentals
-- USD/JPY at 157.033 — BoJ watching 157+ carefully
+### 🇯🇵 JAPAN BOJ — HELD AT 0.75% (Apr 28), 3 DISSIDENTS WANTED 1.0%
+- BoJ held policy rate at 0.75% — three board members dissented, calling for hike to 1.0%
+- Governor Ueda: cautious on further hikes given fiscal/oil price risks
+- USD/JPY 156.56 (Frankfurter, Apr 30) — BoJ watching 157+ carefully
 - Japan inflation picking up — gasoline at record ¥190.8/liter mid-April
-- **Tokyo markets reopen Mon May 4 00:00 JST (~6.5hrs)**
 
-### MARKETS
-- BTC $78,444 (+0.201%) — 24hr range $78,084-$79,199 — $78K floor holding
-- ETH $2,309.56 (+0.32%) — 24hr range $2,297-$2,343
-- XRP $1.3872 (+0.166%) — flat weekend
-- USD/JPY 157.033 — flat weekend
-- Brent $108.17 (weekend stale but valid — data gap from Yahoo Finance delisting issue)
-- Gold $4,644.5 (weekend stale but valid)
-- **~6.5hrs to Monday Tokyo open**
+### MARKETS (Sunday 18:06 JST)
+- BTC $78,390 (+0.113%) — 24hr range $78,084-$79,199 — $78K floor holding
+- ETH $2,307.68 (+0.137%) — 24hr range $2,297-$2,343
+- XRP $1.3882 (+0.289%) — marginal uptick Sunday
+- USD/JPY 156.56 — stale (Frankfurter)
+- Brent $108.17 (stale weekend)
+- Gold $4,613.40 (stale weekend)
+- **~6hrs to Monday Tokyo open (Mon 00:00 JST May 4)**
 
 ---
 
 ## ⚠️ BEARS WATCH
-- **🚨 IRAN/HORMUZ: Blockade ongoing 2+ months. Zero commercial shipping. Tokyo open ~6.5hrs. Watch Sunday night for escalation signals before Asia open.**
-- **⚠️ WEEKEND CLOSED — ~6.5hrs to open (Mon 00:00 JST May 4)**
+- **🚨 HORMUZ: Live YT streams May 3 showing US Navy vs Iran ships face-offs. Blockade ongoing. Tokyo open ~6hrs = first Asia reaction window. Watch Sunday night for escalation before open.**
+- **⚠️ WEEKEND CLOSED — ~6hrs to open (Mon 00:00 JST May 4)**
 - **Intel mode only — no trading, no signals.**
 
 ## Infrastructure Status
-- **Gateway:** ✅ active (LaunchAgent, port 49273) — admin-capable probe ok | ⚠️ PATH warning — `openclaw doctor --repair`
-- **Dashboard:** ✅ 772b03f pushed origin/main ✅ — live_oracle.json @ 17:22 JST (BTC $78,444)
-- **Live Oracle:** ✅ fresh @ 17:22 JST — BTC $78,444 | ETH $2,310 | XRP $1.39 | USD/JPY 157.03 | Brent $108.17 | Gold $4,644.5
-- **Markets:** Weekend mode — Tokyo open ~6.5hrs (Mon 00:00 JST May 4)
-- **infra_pulse:** last known OK:9 WARN:1 FAIL:0 ✅ (from Beat #264)
+- **Gateway:** ✅ active (LaunchAgent, port 49273) — admin-capable probe ok | ⚠️ PATH warning
+- **Dashboard:** ✅ 5b26c8a pushed origin/main ✅ — live_oracle.json @ 18:06 JST (BTC $78,390)
+- **Live Oracle:** ✅ fresh @ 18:06 JST — BTC $78,390 | ETH $2,308 | XRP $1.39 | USD/JPY 156.56 | Brent $108.17 | Gold $4,613
+- **Markets:** Weekend mode — Tokyo open ~6hrs (Mon 00:00 JST May 4)
+- **infra_pulse:** OK:9 WARN:1 FAIL:0 ✅ (from Beat #264)
