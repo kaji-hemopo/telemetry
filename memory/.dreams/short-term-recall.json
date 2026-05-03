@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-03T09:04:21.596Z",
+  "updatedAt": "2026-05-03T09:45:40.127Z",
   "entries": {
     "memory:memory/2026-04-28.md:407:421": {
       "key": "memory:memory/2026-04-28.md:407:421",
@@ -2938,19 +2938,20 @@
       "endLine": 61,
       "source": "memory",
       "snippet": "- live_oracle: ✅ fresh @ 09:55 JST (BTC **$78,490.76** (+0.187%) | ETH **$2,312.07** (+0.602%) | XRP **$1.3889** (+0.151%) | USD/JPY **157.033** | Brent **$108.17** ⚠️ | Gold **$4,629.90**) — BTC marginal drift, ETH slight uptick. Markets closed — ~14hrs to open Mon 00:00 JST. - Gateway: ✅ Running (LaunchAgent pid 39101, state active) — probe ok ✅ - Dashboard: ✅ git commit d39c3e3 pushed origin/main ✅ - infra_pulse: OK:9 WARN:1 FAIL:0 ✅ - Intel brief: updated. Hormuz: US sanctions warning on shippers (May 2) — financial enforcement escalation. Anthropic $900B round: active, closing within 2 weeks, board imminent. China pushing Hormuz reopening as Xi-Trump priority. - **Alert threshold: no ne",
-      "recallCount": 5,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.5976195335388184,
+      "totalScore": 3.1076244682073595,
       "maxScore": 0.5250998646020889,
       "firstRecalledAt": "2026-05-03T02:19:33.922Z",
-      "lastRecalledAt": "2026-05-03T09:04:21.596Z",
+      "lastRecalledAt": "2026-05-03T09:45:40.127Z",
       "queryHashes": [
         "828bdc155a8c",
         "b1c0c69cf133",
         "bb7d5b17493f",
         "ff3802a977a8",
-        "ae1d52abb95e"
+        "ae1d52abb95e",
+        "2ba57f3c93b1"
       ],
       "recallDays": [
         "2026-05-03"
@@ -3004,15 +3005,16 @@
       "endLine": 71,
       "source": "memory",
       "snippet": "- live_oracle: ✅ fresh @ 10:00 JST (BTC **$78,542.32** (+0.253%) | ETH **$2,314.08** (+0.719%) | XRP **$1.3892** (+0.195%) | USD/JPY **157.033** | Brent ⚠️ **$108.17** stale | Gold **$4,629.90** stale) — all 6 assets. BTC $78,542 steady ~$78K. Markets closed ~13.7hrs to open. - Gateway: ✅ Running (LaunchAgent pid 39101, state active) — probe ok ✅ - Dashboard: ✅ synced git commit b29f2fb @ 10:16 JST — pushed to telemetry.git main - Intel brief: refreshed via web search ✅. Key developments: - **🚨 US WARNS SHIPPING FIRMS OF SANCTIONS** for paying Iran to transit Hormuz (AP, Washington Post, BBC, May 2-3) — financial enforcement escalation beyond military posturing - **Ceasefire holding but",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.5239289432764053,
+      "totalScore": 1.0319853603839872,
       "maxScore": 0.5239289432764053,
       "firstRecalledAt": "2026-05-03T08:43:02.867Z",
-      "lastRecalledAt": "2026-05-03T08:43:02.867Z",
+      "lastRecalledAt": "2026-05-03T09:45:40.127Z",
       "queryHashes": [
-        "ff3802a977a8"
+        "ff3802a977a8",
+        "2ba57f3c93b1"
       ],
       "recallDays": [
         "2026-05-03"
