@@ -1,11 +1,11 @@
 # Venture Intelligence
 
-**Generated:** 2026-05-05 05:06 JST
+**Generated:** 2026-05-05 05:26 JST
 
 ## Market Oracles
 
-- 🛢️ **Brent Crude:** $114.07
-- 🥇 **Gold:** $4,532.30
+- 🛢️ **Brent Crude:** $113.89
+- 🥇 **Gold:** $4,526.40
 
 ## Top Venture Opportunities
 
