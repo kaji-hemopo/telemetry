@@ -1,9 +1,15 @@
 # MEMORY.md — Ito Empire Intel
 
 ## Last Heartbeat
-- **Last Heartbeat:** 2026-05-04 22:14 JST — Beat #319 | **Status:** ACTIVE | **🚨 HORMUZ — WAR ONGOING — IRAN MISSILE ATTACK ON US WARSHIP — PROJECT FREEDOM ACTIVE**
+- **Last Heartbeat:** 2026-05-04 22:34 JST — Beat #320 | **Status:** ACTIVE | **🚨 HORMUZ — WAR ONGOING — IRAN MISSILE ATTACK ON US WARSHIP — PROJECT FREEDOM ACTIVE**
 
 ---
+
+### Beat #320 (22:34 JST May 4, Monday) — 🚨 WAR ONGOING — HORMUZ COMBAT ACTIVE — BTC $78,941
+- **live_oracle:** ✅ fresh @ 22:22 JST — BTC **$78,941.11** (+0.341%) | ETH **$2,338.07** (+0.572%) | XRP **$1.3952** (+0.022%) | USD/JPY **157.074** | Brent **$110.00** | Gold **$4,583.50**
+- **Gateway:** ✅ Running (LaunchAgent, ws://127.0.0.1:49273) — probe ok ✅
+- **Dashboard:** ✅ git commit 4824189 pushed origin/main ✅
+- **infra_pulse:** OK — Gateway operational
 
 ### Beat #319 (22:14 JST May 4, Monday) — 🚨 WAR ONGOING — HORMUZ COMBAT ACTIVE — BTC $78,601
 
