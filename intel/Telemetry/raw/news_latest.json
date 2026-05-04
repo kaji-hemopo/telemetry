@@ -1,6 +1,13 @@
 {
-  "timestamp": "2026-05-04 08:12 JST",
+  "timestamp": "2026-05-04 12:38 JST",
   "items": [
+    {
+      "category": "AI",
+      "title": "We\u2019ll take it: a TikToker rallies pledges to buy Spirit Airlines after its abrupt weekend collapse",
+      "link": "https://techcrunch.com/?p=3118668",
+      "description": "Within hours he'd thrown up a website \u2014 a janky, one-hour job, by his own admission \u2014 and by Sunday, 36,000 \"founding patrons\" had pledged nearly $23 million, crashing his servers ",
+      "pub_date": ""
+    },
     {
       "category": "AI",
       "title": "\u2018This is fine\u2019 creator says AI startup stole his art",
@@ -111,13 +118,6 @@
       "title": "This tiny, magnetic e-reader could stop you from doomscrolling",
       "link": "https://techcrunch.com/?p=3117139",
       "description": "The Xteink X3 is a delightfully tiny, MagSafe-compatible e-ink reader that attaches to the back of your phone like a Pop Socket.",
-      "pub_date": ""
-    },
-    {
-      "category": "World",
-      "title": "Farewell, Jeeves: Ask.com shuts down",
-      "link": "https://techcrunch.com/?p=3118614",
-      "description": "Owner IAC says it's discontinuing its search business.",
       "pub_date": ""
     },
     {
