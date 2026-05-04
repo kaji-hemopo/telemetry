@@ -1,16 +1,16 @@
 # MEMORY.md — Ito Empire Intel
 
 ## Last Heartbeat
-- **Last Heartbeat:** 2026-05-04 23:34 JST — Beat #323 | **Status:** ACTIVE | **🚨 HORMUZ — WAR ONGOING — IRAN MISSILE ATTACK ON US WARSHIP — PROJECT FREEDOM ACTIVE**
+- **Last Heartbeat:** 2026-05-04 23:56 JST — Beat #324 | **Status:** ACTIVE | **🚨 HORMUZ — WAR ONGOING — PROJECT FREEDOM ACTIVE — IRAN THREATENING ESCALATION**
 
 ---
 
-### Beat #323 (23:34 JST May 4, Monday) — 🚨 WAR ONGOING — HORMUZ COMBAT ACTIVE — BTC $79,251
-- **live_oracle:** ✅ fresh @ 23:24 JST — BTC **$79,251.49** (+0.768%) | ETH **$2,346.26** (+0.989%) | XRP **$1.3981** (+0.294%) | USD/JPY **157.072** | Brent **$110.37** | Gold **$4,573.00**
+### Beat #324 (23:56 JST May 4, Monday) — 🚨 WAR ONGOING — HORMUZ COMBAT ACTIVE — BTC $79,660
+- **live_oracle:** ✅ fresh @ 23:45 JST — BTC **$79,660.66** (+1.209%) | ETH **$2,356.44** (+1.309%) | XRP **$1.4036** (+0.616%) | USD/JPY **157.031** | Brent **$110.98** | Gold **$4,590.30**
 - **Gateway:** ✅ Running (LaunchAgent, ws://127.0.0.1:49273) — probe ok ✅
-- **Dashboard:** ✅ git commit 8df4c7b pushed origin/main ✅
+- **Dashboard:** ✅ git commit d9c337d pushed origin/main ✅
 - **infra_pulse:** OK — Gateway operational
-- **Intel:** Hormuz war ongoing — Iran fired missiles at US warship (Al Jazeera, ~6hrs ago) — US denies hit — Project Freedom escort active — Iran warns all foreign armed forces will be attacked if they enter Hormuz. Trump says US "better prepared" for potential strikes. China pushing Hormuz reopening as urgent Xi-Trump priority. US-EU tariffs live. Anthropic $900B round: board imminent (~9 days).
+- **Intel:** 2 US-flagged merchant ships transited Hormuz under Project Freedom escort. Iran refuses to stand down — IRGC military official warns US forces will be attacked if they enter Hormuz. Iran claims 2 missiles hit US warship (US denies). China pushing Hormuz reopening as urgent Xi-Trump priority. BTC breaking higher — $79,660 now, crypto rallying despite war escalation.
 
 ---
 
@@ -48,30 +48,28 @@
 
 | Asset | Price | 24h | Note |
 |---|---|---|---|
-| BTC | $79,251.49 | +0.768% | BTC breaking higher — $79.2K, war ongoing but crypto rallying |
-| ETH | $2,346.26 | +0.989% | ETH leading the move |
-| XRP | $1.3981 | +0.294% | XRP recovering |
-| USD/JPY | 157.072 | flat | Golden Week mute |
-| Brent | $110.37 | flat | War premium elevated but stable |
-| Gold | $4,573.00 | flat | Muted but elevated ~$4,573 |
+| BTC | $79,660.66 | +1.209% | BTC surging — $79,660 now, breaking above $79K on war/escalation risk |
+| ETH | $2,356.44 | +1.309% | ETH leading the move |
+| XRP | $1.4036 | +0.616% | XRP recovering |
+| USD/JPY | 157.031 | flat | Golden Week mute |
+| Brent | $110.98 | flat | War premium elevated but stable |
+| Gold | $4,590.30 | flat | Muted but elevated ~$4,590 |
 
 **🔔 KEY MONITORS:**
 
-- **🚨 HORMUZ: War ongoing — Iran fired missiles at US warship — Project Freedom escort active**
-- **Iran warns all foreign armed forces will be attacked if they enter Hormuz**
-- **Trump: US "better prepared" for potential new strikes**
-- **China pushing Hormuz reopening as Xi-Trump priority**
-- **BTC: $79,251 — breaking higher through $79K despite war — crypto rally active**
+- **🚨 HORMUZ: War ongoing — 2 US-flagged ships transited under Project Freedom — Iran refuses to back down**
+- **Iran: "All foreign armed forces will be attacked if they enter Hormuz"** — IRGC official
+- **BTC: $79,660 — breaking to new highs through $79K despite war escalation — crypto rallying**
 - **Anthropic: Board meeting ~May 13-14 — ~9 days away — $900B round closing within 2 weeks**
 - **US-EU tariff dispute live (25% tariffs applied)**
-- **Japan: hopes to stick to existing US deal, $550B investment pledge maintained**
+- **Japan: Golden Week ongoing — markets muted but risk elevated**
 
 **Infrastructure Status:**
 - Gateway: ✅ Running (LaunchAgent, probe ok ws://127.0.0.1:49273)
 - Dashboard: ✅ kaji-hemopo.github.io/telemetry/agents/ito/ — synced
-- Oracle: ✅ all 6 assets live @ 23:24 JST — git synced 8df4c7b
+- Oracle: ✅ all 6 assets live @ 23:45 JST — git synced d9c337d
 
 ---
 
-*Last full refresh: 2026-05-04 23:34 JST*
-*Next heartbeat: ~23:54 JST. War ongoing — Hormuz active — BTC breaking higher through $79K.*
+*Last full refresh: 2026-05-04 23:56 JST*
+*Next heartbeat: ~00:16 JST Tue May 5.*
