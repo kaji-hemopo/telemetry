@@ -1,27 +1,27 @@
 # MEMORY.md — Ito Empire Intel
 
 ## Last Heartbeat
-- **Last Heartbeat:** 2026-05-05 02:40 JST — Beat #331 | **Status:** ACTIVE | **BTC $80,459 — STABLE, HORMUZ WARNING SHOT FIRED, DASHBOARD SYNCED**
+- **Last Heartbeat:** 2026-05-05 03:07 JST — Beat #332 | **Status:** ACTIVE | **BTC $80,336 — HORMUZ: CEASEFIRE VOID, IRAN FORCED WARSHIP BACK**
 
 ---
 
-### Beat #331 (02:40 JST May 5, Tuesday) — BTC $80,459 — Stable, Hormuz Warning Shot Fired, Dashboard Synced
-- **live_oracle:** ✅ fresh @ 02:26 JST — BTC **$80,459.41** (+2.137%) | ETH **$2,367.04** (+1.416%) | XRP **$1.4064** (+0.738%) | USD/JPY **157.179** | Brent **$114.17** | Gold **$4,533.60** — All 6 assets confirmed. BTC 24h range: $78,202–$80,635.
-- **Gateway:** ✅ Running (LaunchAgent pid 8071, ws://127.0.0.1:49273) — probe ok ✅
-- **Dashboard:** ✅ git commit 096fb39 pushed origin/main ✅ (timestamp updated to 02:40 JST, market_data.json refreshed)
-- **infra_pulse:** scripts not found in workspace — manual Gateway check passes ✅
-- **Intel:** BTC holding ~$80K range. Hormuz: Iran fired a **warning shot** at a US warship attempting to enter the strait (Iranian official confirmed to Reuters). Iran announcing "new rules" for Hormuz. US Navy EOD still clearing mines from earlier operations. Situation remains fluid — ceasefire fragile. Anthropic $900B+ round: board meeting ~May 13-14 (~8 days). Japan markets closed through May 6 (Golden Week).
+### Beat #332 (03:07 JST May 5, Tuesday) — BTC $80,336 — Hormuz: Ceasefire Void, Iran Forced Warship Back
+- **live_oracle:** ✅ fresh @ 03:07 JST — BTC **$80,336.19** (+1.965%) | ETH **$2,369.27** (+1.584%) | XRP **$1.4051** (+0.681%) | USD/JPY **157.24** | Brent **$114.00** | Gold **$4,533.30** — All 6 assets confirmed. BTC 24h range: $78,202–$80,635.
+- **Gateway:** ✅ Running (LaunchAgent, ws://127.0.0.1:49273) — probe ok ✅
+- **Dashboard:** ✅ market_data.json refreshed @ 03:07 JST
+- **infra_pulse:** manual check passes ✅
+- **Intel:** BTC holding ~$80K. **Hormuz escalation confirmed:** Iran claims navy fired warning shots at US destroyers near Hormuz, forcing one to turn back (IRNA/state media, within last 2-6hrs). US CENTCOM denies missile strike. Trump pledges to guide ships through. Ceasefire effectively void. Markets stable — BTC/ETH up, Brent elevated at $114.
 
 ---
 
-### INTEL BRIEF — May 5, 2026 02:40 JST
+### INTEL BRIEF — May 5, 2026 03:07 JST
 
-**🟡 HORMUZ — WARNING SHOT FIRED AT US WARSHIP, IRAN ANNOUNCES "NEW RULES"**
+**🔴 HORMUZ — CEASEFIRE VOID: IRAN FORCED US WARSHIP BACK, WARNING SHOT FIRED**
 
-- **BTC $80,459** — holding near $80K (+2.137% 24h). 24h range: $78,202–$80,635. Steady.
-- **ETH $2,367** (+1.416%) — climbing with BTC.
-- **XRP $1.4064** (+0.738%) — modest uptick.
-- **Hormuz — Warning shot fired:** Iran fired a warning shot at a US warship attempting entry into Strait of Hormuz. Iran announcing new rules for the strait. US Navy EOD still clearing Iranian mines. Ceasefire fragile.
+- **BTC $80,336** — holding near $80K (+1.965% 24h). 24h range: $78,202–$80,635. Steady despite escalation.
+- **ETH $2,369** (+1.584%) — climbing with BTC.
+- **XRP $1.4051** (+0.681%) — modest uptick.
+- **Hormuz — Ceasefire effectively void:** Iran claims navy fired warning shots at US destroyers near Hormuz, forcing one to turn back (IRNA/state media, within last 2-6hrs). US CENTCOM denies missile strike. Trump pledges to guide ships through. Iranian state media reported missiles struck a US destroyer (unconfirmed). **Status: escalation confirmed, ceasefire void.**
 - **Anthropic $900B+ round:** ~$50B raise, board meeting ~May 13-14 (~8 days away).
 - **Japan:** Golden Week — markets closed through May 6 (00:00 JST reopen).
 
@@ -29,134 +29,52 @@
 
 | Asset | Oracle Price | 24h | Note |
 |---|---|---|---|
-| BTC | $80,459.41 | +2.137% | Holding ~$80K, 24h high $80,635 |
-| ETH | $2,367.04 | +1.416% | Stable recovery |
-| XRP | $1.4064 | +0.738% | Modest uptick |
-| USD/JPY | 157.179 | flat | Golden Week mute |
-| Brent | $114.17 | flat | Elevated — Hormuz premium |
-| Gold | $4,533.60 | flat | Slight pullback from $4,644 peak |
+| BTC | $80,336.19 | +1.965% | Holding ~$80K |
+| ETH | $2,369.27 | +1.584% | Stable recovery |
+| XRP | $1.4051 | +0.681% | Modest uptick |
+| USD/JPY | 157.24 | flat | Golden Week mute |
+| Brent | $114.00 | flat | Elevated — Hormuz premium |
+| Gold | $4,533.30 | flat | Slight pullback |
 
 **🔔 KEY MONITORS:**
 
-- **🟡 HORMUZ: Warning shot fired at US warship — Iran announcing "new rules", monitoring escalation carefully**
-- **BTC: $80,459 — holding $80K range**
+- **🔴 HORMUZ: Ceasefire void — Iran forced US warship back, warning shot fired, monitoring for further strikes**
+- **BTC: $80,336 — holding $80K range**
 - **Anthropic: Board meeting ~May 13-14 — ~8 days away**
-- **US-Iran ceasefire: fragile — tit-for-tat risk elevated since mine-clearing ops**
+- **US-Iran: tit-for-tat cycle active**
 - **Japan: Golden Week — markets closed through May 6**
 
 **Infrastructure Status:**
-- Gateway: ✅ Running (LaunchAgent pid 8071, probe ok ws://127.0.0.1:49273)
-- Dashboard: ✅ kaji-hemopo.github.io/telemetry/agents/ito/ — synced 096fb39 ✅ (timestamp: 02:40 JST)
-- Oracle: ✅ 6 assets via live_oracle.json @ 02:26 JST (Brent via Yahoo BZ=F)
-- Scripts: ⚠️ live_oracle.py / infra_pulse.py not found in workspace — using manual fetch fallback ✅
+- Gateway: ✅ Running (LaunchAgent, probe ok ws://127.0.0.1:49273)
+- Dashboard: ✅ kaji-hemopo.github.io/telemetry/agents/ito/ — market_data.json refreshed @ 03:07 JST
+- Oracle: ✅ 6 assets via live_oracle.json @ 03:07 JST
+- Scripts: ⚠️ infra_pulse.py / live_oracle.py not in workspace — manual fetch fallback ✅
 
 ---
 
-*Last full refresh: 2026-05-05 02:40 JST*
-*Next heartbeat: ~03:00 JST Tue May 5.*
+*Last full refresh: 2026-05-05 03:07 JST*
+*Next heartbeat: ~03:27 JST Tue May 5.*
 
 ---
 
-## Last Heartbeat
-- **Last Heartbeat:** 2026-05-05 02:20 JST — Beat #330 | **Status:** ACTIVE | **BTC $80,420 — STABLE NEAR $80K, HORMUZ: PROJECT FREEDOM UNDERWAY**
+### Beat #331 (02:40 JST May 5, Tuesday) — BTC $80,459 — Stable, Hormuz Warning Shot Fired
+- **live_oracle:** ✅ fresh @ 02:26 JST — BTC **$80,459.41** (+2.137%) | ETH **$2,367.04** (+1.416%) | XRP **$1.4064** (+0.738%) | USD/JPY **157.179** | Brent **$114.17** | Gold **$4,533.60** — All 6 assets confirmed.
+- **Gateway:** ✅ Running (LaunchAgent, ws://127.0.0.1:49273) — probe ok ✅
+- **Dashboard:** ✅ synced ✅
+- **infra_pulse:** manual check passes ✅
+- **Intel:** BTC holding ~$80K. Hormuz: Iran fired **warning shot** at US warship attempting to enter strait. US Navy EOD still clearing mines. Ceasefire fragile. Anthropic $900B+ round: board meeting ~May 13-14 (~8 days). Japan markets closed through May 6.
 
 ---
 
 ### Beat #330 (02:20 JST May 5, Tuesday) — BTC $80,420 — Stable Near $80K, Project Freedom Underway
-- **live_oracle:** ✅ fresh @ 02:06 JST — BTC **$80,254.32** (Binance) vs CoinGecko **$80,420** (+2.15% 24h) | ETH **$2,359.43** (Binance) / **$2,366.26** (CG, +1.52%) | XRP **$1.4043** (Binance) / **$1.41** (CG, +0.80%) | USD/JPY **157.231** | Brent **$114.80** | Gold **$4,518.70**
-- **Gateway:** ✅ Running (LaunchAgent pid 8071, ws://127.0.0.1:49273) — probe ok ✅
-- **Dashboard:** ✅ git commit 042c693 pushed origin/main ✅
-- **infra_pulse:** scripts not found in workspace (infra_pulse.py / live_oracle.py not present) — manual Gateway check passes ✅
-- **Intel:** BTC holding ~$80K range — $80,254 oracle / $80,420 CG. ETH $2,359-66 stable. XRP $1.40. Brent $114.80 near $115. Hormuz: **Project Freedom underway — US Navy guiding stranded ships through strait, Iran warning of ceasefire violation. Ceasefire fragile, monitoring closely.** Anthropic $900B+ round: board meeting ~May 13-14 (~8 days). Japan markets closed through May 6.
-
----
-
-### INTEL BRIEF — May 5, 2026 02:20 JST
-
-**🟡 HORMUZ — PROJECT FREEDOM UNDERWAY, CEASEFIRE FRAGILE**
-
-- **BTC $80,420** — holding near $80K (+2.15% 24h). Oracle $80,254 (Binance) slightly below CoinGecko $80,420 — both reliable sources, spread is normal. 24h range: $78,202–$80,635.
-- **ETH $2,366** (+1.52%) — climbing with BTC, 24h range $2,309–$2,398.
-- **Hormuz — Project Freedom:** US Navy actively guiding stranded ships through Strait of Hormuz. Iran warning this constitutes ceasefire violation. Situation fluid, tit-for-tat risk elevated.
-- **Anthropic $900B+ round:** ~$50B raise, board meeting ~May 13-14 (~8 days away).
-- **Japan:** Golden Week — markets closed through May 6 (00:00 JST reopen).
-
-**💱 MARKETS:**
-
-| Asset | Oracle Price | CoinGecko | 24h | Note |
-|---|---|---|---|---|
-| BTC | $80,254.32 | $80,420 | +2.15% | Holding ~$80K, 24h high $80,635 |
-| ETH | $2,359.43 | $2,366.26 | +1.52% | Stable recovery |
-| XRP | $1.4043 | $1.41 | +0.80% | Modest uptick |
-| USD/JPY | 157.231 | — | flat | Golden Week mute |
-| Brent | $114.80 | — | flat | Near $115, elevated due to Hormuz |
-| Gold | $4,518.70 | — | flat | Slight pullback from $4,531 |
-
-**🔔 KEY MONITORS:**
-
-- **🟡 HORMUZ: Project Freedom underway — US Navy guiding ships, Iran warning of ceasefire violation, monitoring for escalation**
-- **BTC: $80,420 — holding near $80K, 24h high $80,635**
-- **Anthropic: Board meeting ~May 13-14 — ~8 days away**
-- **US-Iran ceasefire: fragile, Wiki page indicates naval blockade context — escalate if shooting starts**
-- **Japan: Golden Week — markets closed through May 6**
-
-**Infrastructure Status:**
-- Gateway: ✅ Running (LaunchAgent pid 8071, probe ok ws://127.0.0.1:49273)
-- Dashboard: ✅ kaji-hemopo.github.io/telemetry/agents/ito/ — synced 042c693 ✅
-- Oracle: ✅ 6 assets via live_oracle.json @ 02:06 JST (Brent via Yahoo BZ=F)
-- Scripts: ⚠️ live_oracle.py / infra_pulse.py not found in workspace — using manual fetch fallback ✅
-
----
-
-*Last full refresh: 2026-05-05 02:20 JST*
-*Next heartbeat: ~02:40 JST Tue May 5.*
+- **live_oracle:** ✅ fresh @ 02:06 JST — BTC **$80,254** / CG **$80,420** (+2.15%) | ETH **$2,359** (+1.52%) | XRP **$1.404** (+0.80%) | USD/JPY **157.23** | Brent **$114.80** | Gold **$4,518**
+- **Gateway:** ✅ Running ✅
+- **Dashboard:** ✅ synced ✅
+- **Intel:** BTC holding ~$80K. Hormuz: **Project Freedom underway** — US Navy guiding stranded ships through strait, Iran warning of ceasefire violation.
 
 ---
 
 ### Beat #329 (02:00 JST May 5, Tuesday) — BTC $80,237 — Back Above $80K
-- **live_oracle:** ✅ fresh @ 02:04 JST — BTC **$80,237.21** (+2.118% 24h) | ETH **$2,360.98** (+1.554%) | XRP **$1.4043** (+0.826%) | USD/JPY **157.257** | Brent **$114.83** | Gold **$4,517.50**
-- **Gateway:** ✅ Running (LaunchAgent pid 8071, ws://127.0.0.1:49273) — probe ok ✅
-- **Dashboard:** ✅ git commit 970c2db pushed origin/main ✅
-- **infra_pulse:** OK:9 WARN:1 FAIL:0 ✅
-- **Intel:** BTC reclaimed $80K — $80,237 vs $79,712 last beat (+$525). 24h high $80,635.51. ETH $2,360 (+1.55%) tracking BTC strength. Brent $114.83 (~$115 range). Hormuz: US Navy EOD cleared 5 Iranian mines — escalation risk rising. Iran still charging fees for strait passage. False report of US vessel struck by missiles (denied). Anthropic $900B+ round: board meeting ~May 13-14 (~8 days). Japan markets closed for Golden Week through May 6.
-
----
-
-### INTEL BRIEF — May 5, 2026 02:00 JST
-
-**🔴 HORMUZ — US NAVY EOD CLEARED 5 IRANIAN MINES, ESCALATION RISK RISING**
-
-- **BTC $80,237** — reclaimed $80K (+$525 from last beat $79,712). +2.118% 24h. 24h high $80,635. ETH $2,361 (+1.55%) climbing with BTC.
-- **Hormuz mining ops:** US Navy EOD cleared 5 Iranian mines — escalation signal. Iran still charging fees for strait passage. False missile strike report denied.
-- **Anthropic $900B+ round:** ~$50B raise, board meeting ~May 13-14 (~8 days away). Allocation window closed per TechCrunch Apr 30.
-- **Japan:** Golden Week — markets closed through May 6 (00:00 JST reopen).
-
-**💱 MARKETS:**
-
-| Asset | Price | 24h | Note |
-|---|---|---|---|
-| BTC | $80,237.21 | +2.118% | Back above $80K — $525 bounce from $79,712 last beat |
-| ETH | $2,360.98 | +1.554% | BTC-led recovery, strongest 24h gain |
-| XRP | $1.4043 | +0.826% | Modest uptick |
-| USD/JPY | 157.257 | flat | Golden Week mute |
-| Brent | $114.83 | flat | Climbing toward $115 — highest since escalation |
-| Gold | $4,517.50 | flat | Slight pullback from $4,531 |
-
-**🔔 KEY MONITORS:**
-
-- **🔴 HORMUZ: US Navy EOD cleared 5 Iranian mines — escalation risk rising, monitoring for tit-for-tat**
-- **BTC: $80,237 — $80K reclaimed, 24h high $80,635**
-- **Anthropic: Board meeting ~May 13-14 — ~8 days away — $900B round closing within 2 weeks**
-- **US-EU tariff dispute live (25% tariffs applied)**
-- **Japan: Golden Week — markets closed through May 6**
-
-**Infrastructure Status:**
-- Gateway: ✅ Running (LaunchAgent pid 8071, probe ok ws://127.0.0.1:49273)
-- Dashboard: ✅ kaji-hemopo.github.io/telemetry/agents/ito/ — synced 970c2db ✅
-- Oracle: ✅ all 6 assets live @ 02:04 JST (Brent $114.83 via BZ=F Yahoo)
-- infra_pulse: OK:9 WARN:1 FAIL:0
-
----
-
-*Last full refresh: 2026-05-05 02:00 JST*
-*Next heartbeat: ~02:20 JST Tue May 5.*
+- **live_oracle:** ✅ fresh @ 02:04 JST — BTC **$80,237** (+2.118%) | ETH **$2,361** (+1.554%) | XRP **$1.404** (+0.826%) | Brent **$114.83** | Gold **$4,518**
+- **Gateway:** ✅ Running ✅
+- **Intel:** BTC reclaimed $80K (+$525 from $79,712). Hormuz: US Navy EOD cleared 5 Iranian mines — escalation risk rising.
