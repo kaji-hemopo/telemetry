@@ -1,24 +1,9 @@
 # Infra Pulse Log
 
-**Timestamp:** 2026-05-04 12:10 UTC  
-**Status:** WARN
+## 2026-05-04 12:35 UTC (Asia/Tokyo: Monday, May 4th, 2026 - 9:35 PM)
 
-## Summary
-- **OK:** 9
-- **Warn:** 1
-- **Fail:** 0
+- **Result:** `WARN`
+- **Counts:** OK:9 | WARN:1 | FAIL:0
+- **Summary:** One check returned a warning. No failures detected.
 
-## Findings
-- **Dir: scripts:** ✅ OK — found
-- **Dir: kaji:** ✅ OK — found
-- **Dir: memory:** ✅ OK — found
-- **Dir: heartbeat_logs:** ✅ OK — found
-- **File: MEMORY.md:** ✅ OK — found
-- **File: IDENTITY.md:** ✅ OK — found
-- **File: SOUL.md:** ✅ OK — found
-- **File: HEARTBEAT.md:** ✅ OK — found
-- **Cron PID file:** ⚠️ WARN — not found (may not apply)
-- **Tier1 Scripts:** ✅ OK — found
-
-## Notes
-Ito workspace heartbeat active. Cron session: b59d1431-e95f-4d6a-a6c3-c8850a96f793
+---
