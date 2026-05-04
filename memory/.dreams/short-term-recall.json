@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-04T03:15:28.467Z",
+  "updatedAt": "2026-05-04T05:26:59.093Z",
   "entries": {
     "memory:memory/2026-04-28.md:407:421": {
       "key": "memory:memory/2026-04-28.md:407:421",
@@ -2857,13 +2857,13 @@
       "endLine": 11,
       "source": "memory",
       "snippet": "--- --- ### Beat #241 (01:55 JST May 3) — Pipeline Active. Sunday 1:55AM Tokyo. Markets closed. BTC $78,475. Hormuz tensions elevated. - **Last Heartbeat:** 2026-05-03 01:55 JST — Beat #241 | **Status:** ACTIVE** - live_oracle: ✅ fresh @ 01:40 JST (BTC **$78,475.37** (+0.154%) | ETH **$2,308.74** (+0.23%) | XRP **$1.3917** (-0.215%) | USD/JPY **157.033** | Brent **$108.17** ⚠️ | Gold **$4,629.9**) — 15 min old. BTC $78,475 — marginal uptick through late Saturday night ($78,107 at 01:10). ETH $2,308. XRP $1.3917. Brent $108.17 stale weekend. **Markets closed — Tokyo open Mon 00:00 JST May 4 (~22hrs).** - Gateway: ✅ Running (LaunchAgent pid 39101, state active) — probe ok ✅ - Dashboard: ✅ sy",
-      "recallCount": 31,
+      "recallCount": 32,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 16.79031360291164,
+      "totalScore": 17.344114412295035,
       "maxScore": 0.806120930539781,
       "firstRecalledAt": "2026-05-02T17:15:37.371Z",
-      "lastRecalledAt": "2026-05-04T03:15:28.467Z",
+      "lastRecalledAt": "2026-05-04T05:26:59.093Z",
       "queryHashes": [
         "cae7d7985453",
         "2b5b8f398d22",
@@ -2894,7 +2894,8 @@
         "ee97eea38f91",
         "c1ee592d3718",
         "3469d3aa231b",
-        "04cf5e598dbc"
+        "04cf5e598dbc",
+        "7785a532b33c"
       ],
       "recallDays": [
         "2026-05-03",
@@ -2957,13 +2958,13 @@
       "endLine": 61,
       "source": "memory",
       "snippet": "- live_oracle: ✅ fresh @ 09:55 JST (BTC **$78,490.76** (+0.187%) | ETH **$2,312.07** (+0.602%) | XRP **$1.3889** (+0.151%) | USD/JPY **157.033** | Brent **$108.17** ⚠️ | Gold **$4,629.90**) — BTC marginal drift, ETH slight uptick. Markets closed — ~14hrs to open Mon 00:00 JST. - Gateway: ✅ Running (LaunchAgent pid 39101, state active) — probe ok ✅ - Dashboard: ✅ git commit d39c3e3 pushed origin/main ✅ - infra_pulse: OK:9 WARN:1 FAIL:0 ✅ - Intel brief: updated. Hormuz: US sanctions warning on shippers (May 2) — financial enforcement escalation. Anthropic $900B round: active, closing within 2 weeks, board imminent. China pushing Hormuz reopening as Xi-Trump priority. - **Alert threshold: no ne",
-      "recallCount": 16,
+      "recallCount": 17,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 8.499371109902858,
+      "totalScore": 9.043919026851654,
       "maxScore": 0.5597265750169753,
       "firstRecalledAt": "2026-05-03T02:19:33.922Z",
-      "lastRecalledAt": "2026-05-04T03:15:28.467Z",
+      "lastRecalledAt": "2026-05-04T05:26:59.093Z",
       "queryHashes": [
         "828bdc155a8c",
         "b1c0c69cf133",
@@ -2980,7 +2981,8 @@
         "c80ef396e493",
         "c1ee592d3718",
         "3469d3aa231b",
-        "04cf5e598dbc"
+        "04cf5e598dbc",
+        "7785a532b33c"
       ],
       "recallDays": [
         "2026-05-03",
@@ -3098,13 +3100,13 @@
       "endLine": 91,
       "source": "memory",
       "snippet": "- **War \"likely\" to resume:** Iranian official warning as Trump says US \"better prepared\" (YouTube, ~10hrs ago) - China pushing Hormuz reopening as urgent Xi-Trump priority - **Alert threshold: no new critical signals — monitoring Hormuz sanctions enforcement, Anthropic announcement, Monday Asia open risk.** - Markets: closed Sunday ~5hrs to Monday 00:00 JST open. ### Beat #261 (15:22 JST May 3) — Pipeline Active. Sunday 3:22PM Tokyo. BTC $78,084. Brent/Gold FAILING. Markets ~6hrs to open. - **Last Heartbeat:** 2026-05-03 15:22 JST — Beat #261 | **Status:** ACTIVE** - live_oracle: ✅ fresh @ 15:26 JST (BTC **$78,084** (-0.101%) | ETH **$2,300.39** (+0.084%) | XRP **$1.3824** (-0.166%) |",
-      "recallCount": 10,
+      "recallCount": 11,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 5.3910409033298485,
+      "totalScore": 5.941430336236953,
       "maxScore": 0.5721664980053901,
       "firstRecalledAt": "2026-05-03T10:05:43.906Z",
-      "lastRecalledAt": "2026-05-04T03:15:28.467Z",
+      "lastRecalledAt": "2026-05-04T05:26:59.093Z",
       "queryHashes": [
         "b4592b26b55a",
         "0257f0fc2fa4",
@@ -3115,7 +3117,8 @@
         "ee97eea38f91",
         "5df2f0614667",
         "3469d3aa231b",
-        "04cf5e598dbc"
+        "04cf5e598dbc",
+        "7785a532b33c"
       ],
       "recallDays": [
         "2026-05-03",
@@ -3139,13 +3142,13 @@
       "endLine": 106,
       "source": "memory",
       "snippet": "- **Alert threshold: no new critical signals — monitoring Hormuz stability, Anthropic announcement, Brent/Gold fix.** - Markets: closed Sunday ~6hrs to Monday 00:00 JST open. ### Beat #262 (17:44 JST May 3) — Pipeline Active. Sunday 5:44PM Tokyo. Markets ~7hrs to open. - **Last Heartbeat:** 2026-05-03 17:44 JST — Beat #262 | **Status:** ACTIVE** - live_oracle: ✅ fresh @ 17:40 JST (BTC **$78,419.90** (-0.101%) | ETH **$2,309.44** (+0.232%) | XRP **$1.3878** (+0.209%) | USD/JPY **157.033** | Brent ✅ **$108.17** stale | Gold ✅ **$4,644.50** stale) — all 6 assets. BTC marginal ~$78K. Brent/Gold restored via ETF fallback (GLD/USO). Markets closed ~7hrs to Mon 00:00 JST open. - Gateway: ✅ Running",
-      "recallCount": 7,
+      "recallCount": 8,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3.7734326809644694,
+      "totalScore": 4.3241686984896655,
       "maxScore": 0.5668963819742202,
       "firstRecalledAt": "2026-05-03T10:05:43.906Z",
-      "lastRecalledAt": "2026-05-04T03:15:28.467Z",
+      "lastRecalledAt": "2026-05-04T05:26:59.093Z",
       "queryHashes": [
         "b4592b26b55a",
         "0257f0fc2fa4",
@@ -3153,7 +3156,8 @@
         "978121c1a36b",
         "27f1393e9423",
         "3469d3aa231b",
-        "04cf5e598dbc"
+        "04cf5e598dbc",
+        "7785a532b33c"
       ],
       "recallDays": [
         "2026-05-03",
@@ -3177,19 +3181,20 @@
       "endLine": 50,
       "source": "memory",
       "snippet": "- **🚨 IRAN/HORMUZ — ESCALATION RISK ELEVATED:** Times of India (~8hrs ago): Iran Navy moving towards US warships in Hormuz after \"Mojtaba's Go-Ahead Order\" — unverified/breaking. AP/9News (May 2): US warns shipping firms could face **sanctions** for paying Iranian tolls. China pushing reopening as urgent Xi-Trump priority. **Naval tensions rising — watch closely.** - **🔔 CEASEFIRE INDEFINITE (CFR):** Trump extended ceasefire indefinitely Tue Apr 22. Wed May 6 deadline **CANCELLED** — but Trump signal-hostile. Hormuz largely shut. - **🔔 ANTHROPIC $850-900B ~$50B ROUND (TechCrunch Apr 30):** Allocation window closed. Round expected within 2 weeks. Board decision imminent. **Still no announc",
-      "recallCount": 5,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.7227282151579857,
+      "totalScore": 3.2657098516821863,
       "maxScore": 0.5641721978783607,
       "firstRecalledAt": "2026-05-03T10:05:43.906Z",
-      "lastRecalledAt": "2026-05-04T03:15:28.467Z",
+      "lastRecalledAt": "2026-05-04T05:26:59.093Z",
       "queryHashes": [
         "b4592b26b55a",
         "978121c1a36b",
         "27f1393e9423",
         "ee97eea38f91",
-        "04cf5e598dbc"
+        "04cf5e598dbc",
+        "7785a532b33c"
       ],
       "recallDays": [
         "2026-05-03",
@@ -3246,19 +3251,20 @@
       "endLine": 72,
       "source": "memory",
       "snippet": "- live_oracle: ✅ fresh @ 10:00 JST (BTC **$78,542.32** (+0.253%) | ETH **$2,314.08** (+0.719%) | XRP **$1.3892** (+0.195%) | USD/JPY **157.033** | Brent ⚠️ **$108.17** stale | Gold **$4,629.90** stale) — all 6 assets. BTC $78,542 steady ~$78K. Markets closed ~13.7hrs to open. - Gateway: ✅ Running (LaunchAgent pid 39101, state active) — probe ok ✅ - Dashboard: ✅ synced git commit b29f2fb @ 10:16 JST — pushed to telemetry.git main - Intel brief: refreshed via web search ✅. Key developments: - **🚨 US WARNS SHIPPING FIRMS OF SANCTIONS** for paying Iran to transit Hormuz (AP, Washington Post, BBC, May 2-3) — financial enforcement escalation beyond military posturing - **Ceasefire holding but",
-      "recallCount": 5,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.696083945035934,
+      "totalScore": 3.2408608809113497,
       "maxScore": 0.5603985175490379,
       "firstRecalledAt": "2026-05-03T10:05:43.906Z",
-      "lastRecalledAt": "2026-05-04T02:18:02.740Z",
+      "lastRecalledAt": "2026-05-04T05:26:59.093Z",
       "queryHashes": [
         "b4592b26b55a",
         "978121c1a36b",
         "27f1393e9423",
         "c80ef396e493",
-        "3469d3aa231b"
+        "3469d3aa231b",
+        "7785a532b33c"
       ],
       "recallDays": [
         "2026-05-03",
