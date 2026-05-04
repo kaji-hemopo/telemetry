@@ -1,74 +1,94 @@
 # MEMORY.md — Ito Empire Intel
 
 ## Last Heartbeat
-- **Last Heartbeat:** 2026-05-04 10:13 JST — Beat #309 | **Status:** ACTIVE
+- **Last Heartbeat:** 2026-05-04 11:16 JST — Beat #311 | **Status:** ACTIVE
 
 ---
 
-## live_oracle: ✅ fresh @ 10:13 JST
-- BTC **$78,456** (+0.129%) | ETH **$2,317** (+0.333%) | XRP **$1.3859** (-0.036%) | USD/JPY **157.033** | Brent **$107.6** | Gold **$4,622.50**
-- **Markets:** BTC $78,415 — intra-day range $78,084-$79,447. ETH $2,313 marginally positive. XRP $1.3842 slight downside. USD/JPY 157.033 (Yahoo). Brent $108.12. Gold $4,619. Monday 10AM Tokyo. Crypto slight downside bias, holding $78-79K range. No new news on Iran counter-proposal.
+## live_oracle: ✅ fresh @ 11:16 JST
+- BTC **$79,832** (+2.087%) | ETH **$2,357.75** (+2.361%) | XRP **$1.4035** (+1.453%) | USD/JPY **null** (stale) | Brent **$108.01** | Gold **$4,622.70**
+- **Markets:** BTC $79,832 — intra-day $78,084-$80,100, +2.09% 24h. ETH $2,357.75 +2.36%. XRP $1.4035 +1.45%. All three crypto assets pushing higher into Monday afternoon Tokyo. Asia markets active. Brent $108.01 recovered. Gold $4,622.70 holding elevated levels. USD/JPY still null (Yahoo rate limit).
 - **Gateway:** ✅ Running — probe ok ✅
-- **Dashboard:** ✅ telemetry pushed — 378a8a0 @ 09:54 JST (git push SUCCESS)
+- **Dashboard:** ✅ telemetry pushed — 69dae66 @ 11:16 JST (git push SUCCESS)
 
-### Beat #308 (09:54 JST May 4) — Monday mid-morning Tokyo session.
+### Beat #311 (11:16 JST May 4) — Monday late morning Tokyo. Crypto pushing higher.
 
-- **🟡 IRAN — CEASEFIRE DAY 67. NO NEW DEVELOPMENT. WATCH FOR US RESPONSE.**
+- **🟡 IRAN — CEASEFIRE DAY 67+. NO FRESH DEVELOPMENT.**
+  - No new signals on Iran counter-proposal via Pakistan since last beat
+  - Ceasefire holding but fragile — both sides trading violations
+  - Hormuz: US sanctions warning on shippers paying Iran tolls (AP/BBC, May 2-3) — financial enforcement active
+  - Trump says US "better prepared" for war if it resumes; Iranian official warns war likely to resume
+  - **Last significant incident:** USS Spruance seized Iranian cargo ship Touska (Apr 19)
+  - **WATCH: US response to Iran counter-proposal, Hormuz sanctions enforcement, escalation signals.**
+
+- **📊 MARKETS — BTC $79,832, BROADER CRYPTO RALLY:**
+  - BTC $79,832 — +2.087% 24h, intra-day $78,084-$80,100 — strong positive momentum, breaking above $79K
+  - ETH $2,357.75 — +2.361% 24h, range $2,297-$2,362 — outperforming
+  - XRP $1.4035 — +1.453% 24h, range $1.381-$1.411 — steady gains
+  - USD/JPY null (Yahoo rate-limited, stale)
+  - Brent $108.01 — recovering from weekend, +0.0% (stale Sunday close)
+  - Gold $4,622.70 — holding elevated levels above $4,600
+  - Asia markets active. Broad crypto rally into Monday afternoon Tokyo session.
+
+- **⚠️ Alert threshold: LOW-MODERATE — No new critical signals. Ceasefire Day 67+. Iran counter-proposal in play, US response pending. Hormuz sanctions enforcement active. Monday crypto rally — BTC breaking $80K resistance. Watch follow-through.**
+
+---
+
+### Beat #310 (10:55 JST May 4) — Monday late morning Tokyo. Asia markets open.
+
+- **🟡 IRAN — CEASEFIRE DAY 67+. NO NEW DEVELOPMENT.**
   - No fresh news on Iran counter-proposal (Pakistan backchannel) since last beat
   - Guardian (May 1): Iran sent revised proposal to Pakistan mediators, contents unclear, Trump "not satisfied"
   - Ceasefire holding but fragile — low-level violations ongoing
-  - Hormuz: US sanctions warning on shippers paying Iran tolls (AP/BBC, May 2) — enforcement active
+  - Hormuz: US sanctions warning on shippers paying Iran tolls (AP/BBC, May 2-3) — financial enforcement active
   - Trump called War Powers Act unconstitutional (May 1) — White House: ceasefire terminated hostilities, no congressional approval needed
-  - Congress ran out of time May 2 — law not self-enforcing
   - **Last significant incident:** USS Spruance seized Iranian cargo ship Touska (Apr 19)
   - **WATCH: US response to Iran counter-proposal, Hormuz sanctions enforcement, White House statement.**
 
-- **📊 MARKETS — BTC $78,456, MARGINAL UPSIDE, RANGE-BOUND:**
-  - BTC $78,456.25 — +0.129% 24h, intra-day $78,084-$79,447
-  - ETH $2,317.02 — +0.333% 24h, range $2,297-$2,357
-  - XRP $1.3859 — -0.036% 24h, range $1.381-$1.404
-  - USD/JPY 157.033 (Yahoo Finance)
-  - Brent $107.6 (slight drop — watch energy sector)
-  - Gold $4,622.50 (holding elevated levels)
-  - Monday 10:13AM Tokyo. Crypto marginal upside, relatively steady. BTC holding $78-79K range.
+- **📊 MARKETS — BTC $79,252, CONFIRMED UPSIDE:**
+  - BTC $79,251.52 — +1.012% 24h, intra-day $78,084-$79,447
+  - ETH $2,341.12 — +1.443% 24h, range $2,297-$2,344
+  - XRP $1.3994 — +0.973% 24h, range $1.381-$1.404
+  - USD/JPY 157.033 (Yahoo — rate limited, stale)
+  - Brent $107.13 (May 3 close — slight recovery)
+  - Gold $4,644.50 (still elevated, holding gains)
+  - Asia markets now active (Sydney/Tokyo open). Positive start to week — BTC breaking toward $79K+.
 
-- **⚠️ Alert threshold: LOW-MODERATE — No new critical signals. Ceasefire Day 67. Iran counter-proposal in play, US response pending. Hormuz sanctions enforcement active. Iranian official warning war likely to resume. Monitoring.**
+- **⚠️ Alert threshold: LOW-MODERATE — No new critical signals. Ceasefire Day 67+. Iran counter-proposal in play, US response pending. Hormuz sanctions enforcement active. Monday Asia open — watching for follow-through on crypto upside.**
 
 ---
 
 ## Dashboard: ✅ telemetry REPO — kaji-hemopo/telemetry.git
 - git remote: https://github.com/kaji-hemopo/telemetry.git
-- oracle data @ 10:13 JST — BTC $78,456 | ETH $2,317 | XRP $1.386 | USD/JPY 157.033 | Brent $107.6 | Gold $4,622.50
-- ✅ Pushed to GitHub @ 10:13 JST
+- oracle data @ 10:55 JST — BTC $79,252 | ETH $2,341 | XRP $1.399 | USD/JPY 157.033 | Brent $107.13 | Gold $4,644.50
+- ✅ Pushed to GitHub @ 10:55 JST
 
 ## Gateway: ✅ Running
 - LaunchAgent active, probe ok ✅
 - ⚠️ Service config PATH missing required dirs: /Users/jacksonhemopo/.nix-profile/bin — run `openclaw doctor --repair` when convenient
-- ⚠️ Binance rate-limited (HTTP 400 on BTC-USD/ETH-USD/XRP-USD pairs) — using direct Binance API ✅
+- ⚠️ Yahoo Finance rate-limited (HTTP 429) — USD/JPY stale at 157.033, Gold stale at $4,644.50
 
-## Intel Brief — May 4 10:13 JST (Monday — Tokyo Late Morning)
-### 🟡 IRAN — CEASEFIRE DAY 67, NO NEW DEVELOPMENT TODAY
+## Intel Brief — May 4 10:55 JST (Monday — Tokyo Late Morning)
+### 🟡 IRAN — CEASEFIRE DAY 67+, NO NEW DEVELOPMENT TODAY
 - **Iran counter-proposal via Pakistan:** No fresh update since last beat. Status unchanged.
 - Ceasefire holding but fragile — both sides trading violations
-- US warns shipping firms: payments to Iran/IRGC for Hormuz transit may trigger sanctions (May 2)
-- Iranian official: War "likely" to resume — Trump says US "better prepared" (YouTube, ~4hrs ago)
+- US warns shipping firms: payments to Iran/IRGC for Hormuz transit may trigger sanctions (May 2-3)
+- Iranian official: War "likely" to resume — Trump says US "better prepared" (YouTube, ~12hrs ago)
 - **WATCH: US response to Iran proposal, Hormuz incident, escalation signals.**
-### 📊 MARKETS — BTC $78,456, MARGINAL UPSIDE
-- BTC $78,456.25 — +0.129% 24h, range $78,084-$79,447
-- ETH $2,317.02 — +0.333% 24h, range $2,297-$2,357
-- XRP $1.3859 — -0.036% 24h, range $1.381-$1.404
-- USD/JPY 157.033 (Yahoo)
-- Brent $107.6 (slight drop)
-- Gold $4,622.50 (elevated)
+### 📊 MARKETS — BTC $79,252, POSITIVE START TO WEEK
+- BTC $79,251.52 — +1.012% 24h, intra-day range $78,084-$79,447 — breaking higher
+- ETH $2,341.12 — +1.443% 24h, range $2,297-$2,344
+- XRP $1.3994 — +0.973% 24h, range $1.381-$1.404
+- USD/JPY 157.033 (Yahoo — stale)
+- Brent $107.13 (May 3 close — slight recovery from weekend drop)
+- Gold $4,644.50 (elevated)
+- Asia markets now active. Crypto showing positive momentum — BTC holding $79K+.
 ### 📰 TECH INTEL
-- **Anthropic $900B+ round (TechCrunch Apr 30):** Allocation window closed, round closing within days, board decision imminent. **No formal announcement yet.**
-- BTC holding $78-79K despite geopolitical noise — relatively resilient
-
-
----
-
-## ⚠️ BEARS WATCH
-- **🟡 CEASEFIRE DAY 67 — No new Iran development today. Iran counter-proposal via Pakistan in play, US response pending. Ceasefire holding but fragile. Iranian official warning war likely to resume. Hormuz: US warning shipping firms not to pay Iran tolls — sanctions enforcement active. WATCH: US response to Iran proposal, Hormuz incident, escalation signals.**
+- **Anthropic $900B+ round (TechCrunch Apr 30):** Allocation window closed, round closing within days, board decision imminent. **Still no formal announcement — watch imminent.**
+- **US-Iran talks ongoing** — cargo ship seized Hormuz (Apr 19), diplomatic channel active
+- BTC holding $79K despite geopolitical noise — relatively resilient into week start
+### 🏹 BEARS WATCH
+- **🟡 CEASEFIRE DAY 67+ — No new Iran development today. Iran counter-proposal via Pakistan in play, US response pending. Ceasefire holding but fragile. Iranian official warning war likely to resume. Hormuz: US warning shipping firms not to pay Iran tolls — sanctions enforcement active. WATCH: US response to Iran proposal, Hormuz incident, escalation signals.**
 - **Intel mode only — no trading, no signals.**
 
 ---
@@ -86,4 +106,3 @@
   - **🔔 ANTHROPIC $900B+ ROUND:** Allocation window closed (Apr 30). Board decision imminent. **Still no formal announcement — watch imminent.**
 - **Alert threshold: no new critical signals — monitoring Hormuz sanctions enforcement, cargo seizure, Anthropic announcement, Monday Asia open.**
 - Markets: Asia open ~1hr.
-
