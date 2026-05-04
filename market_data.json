@@ -1,13 +1,11 @@
 {
-  "generated_at_jst": "2026-05-05 03:33 JST",
-  "btc_usd": 80231.0,
-  "eth_usd": 2363.05,
-  "xrp_usd": 1.41,
-  "usd_jpy": 156.78,
-  "brent": 113.7,
-  "gold": 4532.8,
-  "btc_24h_change": 1.952,
-  "eth_24h_change": 1.389,
-  "xrp_24h_change": 0.894,
-  "source": "CoinGecko + exchangerate-api + live_oracle.json"
+  "generated_at_jst": "2026-05-05 04:47 JST",
+  "beat": 336,
+  "btc": { "price": 79998.05, "change_24h_pct": 1.519, "high_24h": 80776.99, "low_24h": 78202.0, "source": "Binance" },
+  "eth": { "price": 2355.74, "change_24h_pct": 0.875, "high_24h": 2398.93, "low_24h": 2309.24, "source": "Binance" },
+  "xrp": { "price": 1.3988, "change_24h_pct": 0.179, "high_24h": 1.4209, "low_24h": 1.3829, "source": "Binance" },
+  "usd_jpy": { "price": 157.073, "change_24h_pct": 0.0, "source": "Yahoo Finance" },
+  "brent": { "price": 114.07, "change_24h_pct": 0.0, "source": "Yahoo Finance" },
+  "gold": { "price": 4532.3, "change_24h_pct": 0.0, "source": "Yahoo Finance" },
+  "intel_note": "BTC pulling back from $80.2K to $79,998 — $230 down but still near $80K. Hormuz: two missiles confirmed on US warship per Iranian state media, US sunk 6 Iranian boats, cargo ship seized. Tit-for-tat deepening. Brent elevated at $114.07."
 }
