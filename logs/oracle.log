@@ -2794,3 +2794,78 @@ Written to /Users/jacksonhemopo/.openclaw/workspace_ito/live_oracle.json
 Done. BTC=$78332.43, ETH=$2310.57, XRP=$1.3835, USD/JPY=None, Brent=$108.58, Gold=$4617.0
 
 [escalation] [brent_escalation] OK — Brent 108.58 · tiers: {'WATCH': 105, 'WARNING': 105, 'CRITICAL': 0} · no new alert
+/Users/jacksonhemopo/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+$USDJPY=X: possibly delisted; no price data found  (period=1d)
+Fetching live oracle data...
+  BTC... $78549.26
+  ETH... $2319.59
+  XRP... $1.3887
+  USD/JPY... FAILED
+  Brent... $107.58
+  Gold... $4620.9
+
+Written to /Users/jacksonhemopo/.openclaw/workspace_ito/live_oracle.json
+Done. BTC=$78549.26, ETH=$2319.59, XRP=$1.3887, USD/JPY=None, Brent=$107.58, Gold=$4620.9
+
+[escalation] [brent_escalation] OK — Brent 107.58 · tiers: {'WATCH': 107, 'WARNING': 107, 'CRITICAL': 0} · no new alert
+/Users/jacksonhemopo/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+$USDJPY=X: possibly delisted; no price data found  (period=1d)
+Fetching live oracle data...
+  BTC... $78450.56
+  ETH... $2314.49
+  XRP... $1.385
+  USD/JPY... FAILED
+  Brent... $107.95
+  Gold... $4609.8
+
+Written to /Users/jacksonhemopo/.openclaw/workspace_ito/live_oracle.json
+Done. BTC=$78450.56, ETH=$2314.49, XRP=$1.385, USD/JPY=None, Brent=$107.95, Gold=$4609.8
+
+[escalation] [brent_escalation] OK — Brent 107.95 · tiers: {'WATCH': 109, 'WARNING': 109, 'CRITICAL': 0} · no new alert
+/Users/jacksonhemopo/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+$USDJPY=X: possibly delisted; no price data found  (period=1d)
+Fetching live oracle data...
+  BTC... $78875.26
+  ETH... $2331.72
+  XRP... $1.3936
+  USD/JPY... FAILED
+  Brent... $108.27
+  Gold... $4605.7
+
+Written to /Users/jacksonhemopo/.openclaw/workspace_ito/live_oracle.json
+Done. BTC=$78875.26, ETH=$2331.72, XRP=$1.3936, USD/JPY=None, Brent=$108.27, Gold=$4605.7
+
+[escalation] [brent_escalation] OK — Brent 108.27 · tiers: {'WATCH': 112, 'WARNING': 112, 'CRITICAL': 0} · no new alert
+/Users/jacksonhemopo/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+$USDJPY=X: possibly delisted; no price data found  (period=1d)
+Fetching live oracle data...
+  BTC... $79824.21
+  ETH... $2353.35
+  XRP... $1.4068
+  USD/JPY... FAILED
+  Brent... $108.18
+  Gold... $4612.3
+
+Written to /Users/jacksonhemopo/.openclaw/workspace_ito/live_oracle.json
+Done. BTC=$79824.21, ETH=$2353.35, XRP=$1.4068, USD/JPY=None, Brent=$108.18, Gold=$4612.3
+
+[escalation] [brent_escalation] OK — Brent 108.18 · tiers: {'WATCH': 114, 'WARNING': 114, 'CRITICAL': 0} · no new alert
+/Users/jacksonhemopo/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+$USDJPY=X: possibly delisted; no price data found  (period=1d)
+Fetching live oracle data...
+  BTC... $79876.4
+  ETH... $2365.74
+  XRP... $1.4069
+  USD/JPY... FAILED
+  Brent... $108.0
+  Gold... $4619.9
+
+Written to /Users/jacksonhemopo/.openclaw/workspace_ito/live_oracle.json
+Done. BTC=$79876.4, ETH=$2365.74, XRP=$1.4069, USD/JPY=None, Brent=$108.0, Gold=$4619.9
+
+[escalation] [brent_escalation] OK — Brent 108.0 · tiers: {'WATCH': 116, 'WARNING': 116, 'CRITICAL': 0} · no new alert
