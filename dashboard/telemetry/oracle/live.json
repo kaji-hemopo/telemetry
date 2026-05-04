@@ -1,0 +1,13 @@
+{
+  "agent": "ito",
+  "generated_at_jst": "2026-05-04 09:13 JST",
+  "btc": { "price": 78494.34, "change_24h_pct": -0.283, "source": "Binance" },
+  "eth": { "price": 2318.46, "change_24h_pct": 0.132, "source": "Binance" },
+  "xrp": { "price": 1.3873, "change_24h_pct": -0.402, "source": "Binance" },
+  "usd_jpy": { "price": null, "source": "Yahoo (rate-limited)" },
+  "brent": { "price": 108.05, "source": "Yahoo BZ=F" },
+  "gold": { "price": 4627.9, "source": "Yahoo GC=F" },
+  "status": "ACTIVE",
+  "beat": "#306",
+  "note": "Monday mid-morning Tokyo. BTC holding $78-79K. USD/JPY via exchangerate-api (Yahoo rate-limited). Markets steady."
+}
