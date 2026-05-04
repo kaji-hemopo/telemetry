@@ -1,39 +1,25 @@
 {
-  "timestamp": "2026-05-04 21:09 JST",
+  "timestamp": "2026-05-05 00:35 JST",
   "items": [
     {
       "category": "AI",
-      "title": "Ouster\u2019s new color lidar is coming to replace cameras",
-      "link": "https://techcrunch.com/?p=3118469",
-      "description": "A sensor that can simultaneously capture depth and image data has long been a \"holy grail,\" Ouster CEO Angus Pacala told TechCrunch.",
+      "title": "Amazon opens up its global logistics network to all businesses",
+      "link": "https://techcrunch.com/?p=3118731",
+      "description": "The new service, called Amazon Supply Chain Services, pits the e-commerce giant directly against UPS and FedEx.",
       "pub_date": ""
     },
     {
       "category": "AI",
-      "title": "Nicolas Sauvage is betting on the boring parts of AI",
-      "link": "https://techcrunch.com/?p=3118651",
-      "description": "The portfolio he has assembled since 2019 is dotted with technologies that have become more widely interesting to VCs over the last year:",
+      "title": "Doordash adds AI tools to speed up merchant onboarding, edit photos of dishes",
+      "link": "https://techcrunch.com/?p=3118710",
+      "description": "DoorDash on Monday added new AI-powered tools that let merchants speed up onboarding, edit photos to make dishes look better, and create new websites from existing content.",
       "pub_date": ""
     },
     {
       "category": "AI",
-      "title": "We\u2019ll take it: a TikToker rallies pledges to buy Spirit Airlines after its abrupt weekend collapse",
-      "link": "https://techcrunch.com/?p=3118668",
-      "description": "Within hours he'd thrown up a website \u2014 a janky, one-hour job, by his own admission \u2014 and by Sunday, 36,000 \"founding patrons\" had pledged nearly $23 million, crashing his servers ",
-      "pub_date": ""
-    },
-    {
-      "category": "AI",
-      "title": "\u2018This is fine\u2019 creator says AI startup stole his art",
-      "link": "https://techcrunch.com/?p=3118660",
-      "description": "The ad comes from Artisan, the AI startup behind billboards urging businesses to \"stop hiring humans.\"",
-      "pub_date": ""
-    },
-    {
-      "category": "AI",
-      "title": "In Harvard study, AI offered more accurate emergency room diagnoses than two human doctors",
-      "link": "https://techcrunch.com/?p=3118654",
-      "description": "A new study examines how large language models perform in a variety of medical contexts, including real emergency room cases \u2014 where at least one model seemed to be more accurate t",
+      "title": "We Just Crossed 1,000,000 Startup Valuations on Our Free SaaStr.ai VC Tools",
+      "link": "https://www.saastr.com/?p=324450",
+      "description": "Pretty wild milestone this week. We just crossed 1,002,048 startup valuations run through our free SaaStr.ai VC tools. Plus 4,423+ pitch decks analyzed. With 1,200+ active founders",
       "pub_date": ""
     },
     {
@@ -52,51 +38,44 @@
     },
     {
       "category": "AI",
-      "title": "The Simplest Way to Make Your Product More Agentic This Month? Make Sure Your API Is Actually Agent-Friendly. It Probably Isn\u2019t.",
-      "link": "https://www.saastr.com/?p=324197",
-      "description": "Every B2B CEO we talk to right now has some version of the same question. &#8220;How do we become more agentic? What&#8217;s the first move? Do we need a Chief AI Officer? A forwar",
-      "pub_date": ""
+      "title": "<![CDATA[Dara Khosrowshahi on replacing Uber drivers \u2014 and himself \u2014 with AI]]>",
+      "link": "https://www.theverge.com/podcast/922909/dara-khosrowshahi-uber-drivers-ai-hotels-service",
+      "description": "Today, I\u2019m talking with Uber CEO Dara Khosrowshahi. It\u2019s become something of an annual tradition to have Dara join us in the studio when he comes to New York for Uber\u2019s big GO-GET ",
+      "pub_date": "2026-05-04T10:30:00-04:00"
     },
     {
       "category": "AI",
-      "title": "<![CDATA[Reggie Fils-Aim\u00e9 says Amazon once asked Nintendo to break the law]]>",
-      "link": "https://www.theverge.com/games/922840/reggie-fils-aime-amazon-nintendo-illegal",
-      "description": "Way back in the DS days, Nintendo decided to stop selling to Amazon. During a recent lecture at NYU, former Nintendo of America President Reggie Fils-Aim&#233; said it was because ",
-      "pub_date": "2026-05-03T11:24:27-04:00"
-    },
-    {
-      "category": "AI",
-      "title": "<![CDATA[Shokz\u2019s bassy OpenRun Pro 2 are $40 off thanks to a new Mother\u2019s Day promo]]>",
-      "link": "https://www.theverge.com/gadgets/922616/shokz-openrun-pro-2-bone-conduction-headphones-mothers-day-deal-sale",
-      "description": "If you\u2019re looking to pick up a pair of open-ear headphones for yourself \u2014 or your mom \u2014 Shokz is running a Mother\u2019s Day sale. Now through May 10th, the company\u2019s best pair of bone ",
-      "pub_date": "2026-05-03T11:00:00-04:00"
-    },
-    {
-      "category": "AI",
-      "title": "<![CDATA[How the internet\u2019s favorite squirrel dad made the hottest camera app of 2026]]>",
-      "link": "https://www.theverge.com/tech/921690/dualshot-recorder-iphone-camera-app-derrick-downey-jr",
-      "description": "It's not hyperbole to call DualShot Recorder an overnight sensation. It took only 12 hours from the time it was released to hit number one on the App Store's list of top paid apps.",
-      "pub_date": "2026-05-03T09:00:00-04:00"
-    },
-    {
-      "category": "AI",
-      "title": "<![CDATA[AI music is flooding streaming services \u2014 but who wants it?]]>",
-      "link": "https://www.theverge.com/column/921599/ai-music-is-flooding-streaming-services-but-who-wants-it",
-      "description": "This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more on how AI is changing music and the music industry, follow Terrence O'Brie",
-      "pub_date": "2026-05-03T08:00:00-04:00"
-    },
-    {
-      "category": "AI",
-      "title": "<![CDATA[Meta\u2019s historic loss in court could cost a lot more than $375 million]]>",
-      "link": "https://www.theverge.com/policy/922380/new-mexico-meta-public-nuisance-trial-kids-safety",
-      "description": "New Mexico Attorney General Ra&#250;l Torrez won a historic sum of $375 million in a landmark child safety case against Meta earlier this year. But the next stage of the fight coul",
-      "pub_date": "2026-05-02T14:25:26-04:00"
+      "title": "<![CDATA[Hisense aggressively cuts the price of its RGB LED TV on release day]]>",
+      "link": "https://www.theverge.com/tech/922571/hisense-cuts-price-ur9",
+      "description": "The Hisense UR9 - the first RGB LED TV to be released this year - is now available for much less than originally revealed. The 65-inch UR9 is now $1,999, while the 75-inch model is",
+      "pub_date": "2026-05-04T09:00:00-04:00"
     },
     {
       "category": "Tech",
-      "title": "TechCrunch Mobility: How do you issue a ticket to a robotaxi?",
-      "link": "https://techcrunch.com/?p=3118566",
-      "description": "Welcome back to TechCrunch Mobility \u2014 your central hub for news and insights on the future of transportation.",
+      "title": "As X shuts down Communities, Acorn debuts an alternative that puts creators in control",
+      "link": "https://techcrunch.com/?p=3118732",
+      "description": "Acorn lets organizations build and run their own online communities using decentralized tech, with custom feeds, moderation, and analytics tools.",
+      "pub_date": ""
+    },
+    {
+      "category": "Tech",
+      "title": "5 days only: Bring a\u00a0partner or\u00a0colleague and get 50% off a second TechCrunch Disrupt 2026 pass",
+      "link": "https://techcrunch.com/?p=3118686",
+      "description": "The BOGO offer is live.\u00a0For a limited time, buy one pass to\u00a0TechCrunch Disrupt 2026\u00a0and\u00a0get 50% off a second of the same ticket type. Offer ends this Friday, May 8. Save here.",
+      "pub_date": ""
+    },
+    {
+      "category": "Tech",
+      "title": "Barocal can cool your food and drink by squeezing a hunk of plastic crystals",
+      "link": "https://techcrunch.com/?p=3118648",
+      "description": "Barocal might have discovered a cheap, nonpolluting material that could dethrone today's refrigeration technology.",
+      "pub_date": ""
+    },
+    {
+      "category": "SaaS",
+      "title": "High GRR Is Great. But It Can Also Mask Decay. A Real Risk for ServiceNow and Workday in Particular.",
+      "link": "https://www.saastr.com/?p=324354",
+      "description": "a16z called Workday &#8220;arguably the most important and least loved product in enterprise software.&#8221;\u00a0 I&#8217;m not sure I&#8217;d put it quite there, but the data they us",
       "pub_date": ""
     },
     {
@@ -115,17 +94,38 @@
     },
     {
       "category": "SaaS",
-      "title": "Dear SaaStr:  What Should I Do When VCs Ask About The Competition?",
-      "link": "https://www.saastr.com/?p=292398",
-      "description": "Dear SaaStr: What Should I Do When VCs Ask About The Competition? Embrace it.\u00a0 This is your chance to shine. &#34;How to Stand Out in a Competitive Market: Learn from Your Competit",
+      "title": "<![CDATA[Homebridge 2.0 is here, and it speaks Matter]]>",
+      "link": "https://www.theverge.com/tech/922877/homebridge-2-0-matter-update-robot-vacuums",
+      "description": "Homebridge, the popular software solution that allows you to integrate non-HomeKit devices like Ring cameras into Apple Home, is adding support for the Matter smart home standard. ",
+      "pub_date": "2026-05-04T08:35:06-04:00"
+    },
+    {
+      "category": "Finance",
+      "title": "US healthcare marketplaces shared citizenship and race data with ad tech giants",
+      "link": "https://techcrunch.com/?p=3118733",
+      "description": "Virginia and Washington D.C. paused the data collection and sharing, after Bloomberg's investigation found their health insurance marketplaces were sharing users' information with ",
       "pub_date": ""
     },
     {
+      "category": "Finance",
+      "title": "<![CDATA[Amazon\u2019s trying to turn its massive shipping operation into another AWS]]>",
+      "link": "https://www.theverge.com/tech/923013/amazon-supply-chain-services",
+      "description": "Amazon might have a part in delivering all kinds of stuff to your door soon, as its massive shipping network opens up to other companies outside its marketplace, more directly comp",
+      "pub_date": "2026-05-04T11:16:14-04:00"
+    },
+    {
+      "category": "Finance",
+      "title": "<![CDATA[GameStop makes $56 billion offer to acquire eBay]]>",
+      "link": "https://www.theverge.com/games/922935/gamestop-ebay-bid",
+      "description": "GameStop has made an offer to acquire eBay for $56 billion, which comes as part of GameStop CEO Ryan Cohen's plan to transform the online marketplace into a \"legit competitor to Am",
+      "pub_date": "2026-05-04T09:46:24-04:00"
+    },
+    {
       "category": "World",
-      "title": "<![CDATA[These reusable digital Polaroids are a clever way to cover a fridge in memories]]>",
-      "link": "https://www.theverge.com/tech/917067/vidabay-snap-nfc-e-ink-paper-fridge-magnet-photo-hands-on",
-      "description": "I love when my friends have their fridges covered in Polaroids. It\u2019s often a visual crash course of what\u2019s been going on in their lives chronicling recent adventures, get-togethers",
-      "pub_date": "2026-05-03T09:00:00-04:00"
+      "title": "<![CDATA[Tesla hits Musk\u2019s threshold for \u2018safe unsupervised\u2019 driving]]>",
+      "link": "https://www.theverge.com/transportation/922900/tesla-10-billion-miles-unsupervised-fsd-robotaxi-elon-musk",
+      "description": "We've crossed yet another one of Elon Musk's self-driving thresholds. Tesla's fleet of vehicles using the company's Full Self-Driving (Supervised) system has driven over 10 billion",
+      "pub_date": "2026-05-04T10:28:01-04:00"
     }
   ]
 }
