@@ -1,24 +1,24 @@
-# infra_pulse Log
+# Infra Pulse Log
 
-**Timestamp:** 2026-05-04 06:10 UTC (Asia/Tokyo: 2026-05-04 15:10)  
-**Source:** `intel/Telemetry/infra_pulse.py`
+**Timestamp:** 2026-05-04 12:10 UTC  
+**Status:** WARN
 
 ## Summary
+- **OK:** 9
+- **Warn:** 1
+- **Fail:** 0
 
-| Status | Count |
-|--------|-------|
-| ✅ OK   | 9     |
-| ⚠️ WARN | 1     |
-| ❌ FAIL | 0     |
+## Findings
+- **Dir: scripts:** ✅ OK — found
+- **Dir: kaji:** ✅ OK — found
+- **Dir: memory:** ✅ OK — found
+- **Dir: heartbeat_logs:** ✅ OK — found
+- **File: MEMORY.md:** ✅ OK — found
+- **File: IDENTITY.md:** ✅ OK — found
+- **File: SOUL.md:** ✅ OK — found
+- **File: HEARTBEAT.md:** ✅ OK — found
+- **Cron PID file:** ⚠️ WARN — not found (may not apply)
+- **Tier1 Scripts:** ✅ OK — found
 
-**Result:** `OK:9 | WARN:1 | FAIL:0`
-
-## Assessment
-
-All critical checks passed with no failures. One warning was recorded but does not indicate a critical issue.
-
-## Raw Output
-
-```
-[infra_pulse] WARN — OK:9 WARN:1 FAIL:0
-```
+## Notes
+Ito workspace heartbeat active. Cron session: b59d1431-e95f-4d6a-a6c3-c8850a96f793
