@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-04T20:07:48.179Z",
+  "updatedAt": "2026-05-04T21:08:28.338Z",
   "entries": {
     "memory:memory/2026-04-28.md:407:421": {
       "key": "memory:memory/2026-04-28.md:407:421",
@@ -3349,20 +3349,22 @@
       "endLine": 84,
       "source": "memory",
       "snippet": "- **Last Heartbeat:** 2026-05-03 18:45 JST — Beat #268 | **Status:** ACTIVE** - live_oracle: ✅ fresh @ 18:40 JST (BTC **$78,602.87** (+0.370%) | ETH **$2,321.10** (+0.654%) | XRP **$1.3905** (+0.325%) | USD/JPY **157.033** | Brent ✅ **$108.17** (BZ=F) | Gold ✅ **$4,644.50** (GC=F)) — all 6 assets healthy. BTC $78,602 — marginal weekend drift. Markets closed ~5hrs to Mon 00:00 JST open. - Gateway: ✅ Running (LaunchAgent, state active) — probe ok ✅ - Dashboard: ✅ git sync commit 36e57b4 pushed origin/main ✅ - infra_pulse: Gateway probe ok ✅ — OK:9 WARN:1 FAIL:0 - Intel brief: refreshed via web search ✅. Key (last ~12-18hrs): - **🚨 US WARNS SHIPPING FIRMS OF SANCTIONS** for paying Iran Hormu",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.62240489423275,
+      "totalScore": 2.162028267979622,
       "maxScore": 0.5462707951664925,
       "firstRecalledAt": "2026-05-03T23:53:30.797Z",
-      "lastRecalledAt": "2026-05-04T12:52:44.521Z",
+      "lastRecalledAt": "2026-05-04T21:08:28.338Z",
       "queryHashes": [
         "15442330dbab",
         "c80ef396e493",
-        "f13d6d0fea13"
+        "f13d6d0fea13",
+        "a93754942425"
       ],
       "recallDays": [
-        "2026-05-04"
+        "2026-05-04",
+        "2026-05-05"
       ],
       "conceptTags": [
         "gateway",

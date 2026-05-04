@@ -1,34 +1,34 @@
 {
-  "generated_at_jst": "2026-05-05 05:47 JST",
-  "beat": 339,
+  "generated_at_jst": "2026-05-05 06:08 JST",
+  "beat": 340,
   "btc": {
-    "price": 79934,
-    "change_24h_pct": 1.354,
+    "price": 80044,
+    "change_24h_pct": 1.3728,
     "high_24h": 80776.99,
     "low_24h": 78202.0,
     "source": "CoinGecko"
   },
   "eth": {
-    "price": 2349.45,
-    "change_24h_pct": 0.786,
+    "price": 2354.73,
+    "change_24h_pct": 1.0808,
     "source": "CoinGecko"
   },
   "xrp": {
     "price": 1.39,
-    "change_24h_pct": -0.223,
+    "change_24h_pct": 0.0324,
     "source": "CoinGecko"
   },
   "usd_jpy": {
-    "price": 157.24,
-    "source": "proxy"
+    "price": 156.747,
+    "source": "Yahoo Finance (May 4 close)"
   },
   "brent": {
-    "price": 114.42,
-    "source": "TradingEconomics"
+    "price": 114.74,
+    "source": "Yahoo Finance BZ=F (May 4 close)"
   },
   "gold": {
     "price": 4513.82,
-    "source": "Investing.com"
+    "source": "Investing.com XAUUSD"
   },
-  "intel_note": "BTC ,934 \u2014 slight dip from ,031 (-$97). Still holding near $80K. Hormuz: Iran claims warship turned back, US denies clash. Aljazeera 1hr ago: Iran claims navy forced US warship to turn back from Strait. US denies. Hormuz situation: fresh dispute, Iran asserting control claim."
+  "intel_note": "BTC holding near $80K. Hormuz: competing narratives — Iran claims forced US warship back, US denies clash. Project Freedom underway. IRGC unveiled new map claiming Hormuz control. Brent $114.74 — elevated Hormuz premium. Japan markets closed through May 6."
 }
