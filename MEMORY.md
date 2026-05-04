@@ -1,7 +1,16 @@
 # MEMORY.md — Ito Empire Intel
 
 ## Last Heartbeat
-- **Last Heartbeat:** 2026-05-05 05:27 JST — Beat #338 | **Status:** ACTIVE | **BTC $80,031 — HORMUZ: US GUIDES 2 SHIPS THROUGH, TRUMP SEEKS OFF-RAMPS**
+- **Last Heartbeat:** 2026-05-05 05:47 JST — Beat #339 | **Status:** ACTIVE | **BTC $79,934 — HORMUZ: IRAN CLAIMS FORCED US WARSHIP BACK, US DENIES**
+
+---
+
+### Beat #339 (05:47 JST May 5, Tuesday) — BTC $79,934 — Iran Claims Forced US Warship Back, US Denies
+- **live_oracle:** ✅ fresh @ 05:47 JST — BTC **$79,934** (+1.354%) | ETH **$2,349.45** (+0.786%) | XRP **$1.39** (-0.223%) | USD/JPY **157.24** | Brent **$114.42** | Gold **$4,513.82** — BTC/XRP via CoinGecko; Brent/Gold via TradingEconomics/Investing.com; USD/JPY proxy from last known. BTC 24h range: $78,202–$80,777. Slight -$97 dip from $80,031 but holding near $80K.
+- **Gateway:** ✅ Running (LaunchAgent, ws://127.0.0.1:49273) — probe ok ✅
+- **Dashboard:** ✅ git push active (066bf68 committed/pushed @ 05:47 JST)
+- **infra_pulse:** manual check passes ✅
+- **Intel:** BTC $79,934 — marginal -$97 dip from $80,031 but still holding near $80K. 24h range intact at $78,202–$80,777. **Hormuz — fresh dispute surfacing:** Iran claims its navy forced a US warship to turn back from the Strait of Hormuz (Aljazeera, 1hr ago). US denies any clash occurred. Status: competing narratives, no new strikes reported but Iranian assertion of control over strait is a new escalation signal. Brent $114.42 (May 4 close via TradingEconomics, up 5.78% on the day). Gold $4,514 (slight pullback from $4,524). Japan markets remain closed through May 6.
 
 ---
 
