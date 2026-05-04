@@ -1,16 +1,26 @@
 # MEMORY.md — Ito Empire Intel
 
 ## Last Heartbeat
-- **Last Heartbeat:** 2026-05-05 06:28 JST — Beat #342 | **Status:** ACTIVE | **BTC $80,206 — SIMMERING, NO NEW STRIKES**
+- **Last Heartbeat:** 2026-05-05 07:08 JST — Beat #344 | **Status:** ACTIVE | **BTC $80,267 — HORMUZ: IRAN FIRES ON US-FLAGGED VESSELS (NBC, ~1HR AGO), CEASEFIRE VOID**
 
 ---
 
-### Beat #342 (06:28 JST May 5, Tuesday) — BTC $80,206 — Simmering, No New Strikes
-- **live_oracle:** ✅ fresh @ 06:28 JST — BTC **$80,206** (+1.644%) | ETH **$2,360.17** (+1.216%) | XRP **$1.40** (+0.228%) | USD/JPY **156.747** (last known) | Brent **$114.42** (TE May 4 close) | Gold **$4,556.20** (MW May 4 close) — BTC/ETH/XRP via CoinGecko; FX/Commodities via last-known/alt sources. BTC 24h range: $78,202–$80,777. Marginal -$41 dip from $80,247 last beat, within normal range.
-- **Gateway:** ✅ Running (LaunchAgent, ws://127.0.0.1:49273) — probe ok ✅
-- **Dashboard:** ✅ git push active (cc27f3e committed/pushed @ 06:28 JST)
+### Beat #344 (07:08 JST May 5, Tuesday) — BTC $80,267 — Iran Fires on US-Flagged Vessels, Ceasefire Void
+- **live_oracle:** ✅ fresh @ 06:59 JST — BTC **$80,267** (+1.803%) | ETH **$2,361.13** (+1.600%) | XRP **$1.3976** (+0.402%) | USD/JPY **157.13** | Brent **$113.76** | Gold **$4,532.40** — All 6 assets confirmed. BTC 24h range: $78,202–$80,777. Marginal +$54 from $80,260 at 06:48 JST. Gateway working (WIP stash active).
+- **Gateway:** ✅ Running (LaunchAgent, ws://127.0.0.1:49273) — status ok ✅
+- **Dashboard:** ⚠️ Sites directory not found — dashboard push skipped
 - **infra_pulse:** manual check passes ✅
-- **Intel:** BTC $80,206 — minor -$41 dip, holding $80K. No new escalation signals. Hormuz: tension simmering, Project Freedom guiding ships through, no fresh strikes. Brent $114.42 stable (elevated). Japan markets closed through May 6.
+- **Intel:** BTC $80,267 — marginal +$54 from last beat, holding $80K. **Hormuz — Iran fires on US-flagged vessels despite ceasefire (NBC News, ~1hr ago):** Iran fired at US-flagged vessels in the Strait of Hormuz despite声称 ceasefire. NBC News correspondents report IRGC cruise missile and drone attack on US military ships. CENTCOM commander confirmed Iran carried out attack. Project Freedom active. Status: ceasefire void, tit-for-tat active. **Anthropic $900B+ round:** ~$50B raise, board meeting ~May 13-14 (~8 days away). **Japan:** Golden Week — markets closed through May 6 (00:00 JST reopen).
+
+
+---
+
+### Beat #343 (06:48 JST May 5, Tuesday) — BTC $80,260 — Iran Fires on US-Flagged Vessels, Tit-for-Tat Active
+- **live_oracle:** ✅ fresh @ 06:34 JST — BTC **$80,259** (+1.698%) | ETH **$2,361.90** (+1.276%) | XRP **$1.3976** (+0.244%) | USD/JPY **157.169** | Brent **$113.76** | Gold **$4,532.40** — BTC/ETH/XRP via Binance/cached; USD/JPY/Brent/Gold via live_oracle.json (06:34 JST). BTC 24h range: $78,202–$80,777. Marginal +$54 from $80,206 at 06:28 JST. CoinGecko live check confirms BTC $80,260 (+1.985%) at 06:49 JST.
+- **Gateway:** ✅ Running (LaunchAgent, ws://127.0.0.1:49273) — status confirmed ✅
+- **Dashboard:** ⚠️ Sites directory not found — dashboard push skipped (no Sites/kaji-hemopo.github.io path)
+- **infra_pulse:** manual check passes ✅
+- **Intel:** BTC $80,260 — marginal +$54 from last beat, holding $80K. **Hormuz — Iran fires on US-flagged vessels despite ceasefire claims (NBC, ~46min ago):** Iran has fired at US-flagged vessels in the Strait of Hormuz despite声称 ceasefire. NBC News reports IRGC actions. CENTCOM confirmed two US-flagged ships passed through Strait safely (Fox News, ~6hrs ago) — Project Freedom active. Retired officials assessing situation. Status: tit-for-tat active, ceasefire void. **Anthropic $900B+ round:** ~$50B raise, board meeting ~May 13-14 (~8 days away). **Japan:** Golden Week — markets closed through May 6 (00:00 JST reopen).
 
 ### Beat #341 (06:28 JST May 5, Tuesday) — BTC $80,247 — Hormuz Tensions Simmer, Brent $114.42
 - **live_oracle:** ✅ fresh @ 06:28 JST — BTC **$80,247** (+1.695%) | ETH **$2,360.21** (+1.287%) | XRP **$1.40** | USD/JPY **156.747** (last known) | Brent **$114.42** (TE May 4 close) | Gold **$4,556.20** (MW May 4 close) — BTC via CoinGecko; FX/Commodities via last-known/alt sources due to 429s. BTC 24h range: $78,202–$80,777. Holding near $80K.
