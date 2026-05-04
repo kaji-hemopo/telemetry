@@ -1,31 +1,31 @@
 {
-  "generated_at_jst": "2026-05-04 08:53 JST",
+  "generated_at_jst": "2026-05-05 02:40 JST",
   "btc": {
-    "price": 78551,
-    "change_24h_pct": -0.1328,
-    "high_24h": 79447,
-    "low_24h": 78084
+    "price": 80459.41,
+    "change_24h_pct": 2.137,
+    "high_24h": 80635.51,
+    "low_24h": 78202.0
   },
   "eth": {
-    "price": 2323.4,
-    "change_24h_pct": 0.305,
-    "high_24h": 2356.92,
-    "low_24h": 2297.59
+    "price": 2367.04,
+    "change_24h_pct": 1.416,
+    "high_24h": 2398.93,
+    "low_24h": 2309.24
   },
   "xrp": {
-    "price": 1.39,
-    "change_24h_pct": -0.524,
-    "high_24h": 1.4042,
-    "low_24h": 1.3814
+    "price": 1.4064,
+    "change_24h_pct": 0.738,
+    "high_24h": 1.4209,
+    "low_24h": 1.3829
   },
   "usd_jpy": {
-    "price": 157.09,
-    "change_24h_pct": 0
+    "price": 157.179,
+    "change_24h_pct": 0.0
   },
   "brent": {
-    "price": 107.92
+    "price": 114.17
   },
   "gold": {
-    "price": 4628.2
+    "price": 4533.6
   }
 }
