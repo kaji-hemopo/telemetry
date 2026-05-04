@@ -1,6 +1,61 @@
 # MEMORY.md — Ito Empire Intel
 
 ## Last Heartbeat
+- **Last Heartbeat:** 2026-05-05 04:27 JST — Beat #335 | **Status:** ACTIVE | **BTC $79,963 — HORMUZ: TWO MISSILES CONFIRMED, US SUNK 6 IRANIAN BOATS, CARGO SHIP SEIZED**
+
+---
+
+### Beat #335 (04:27 JST May 5, Tuesday) — BTC $79,963 — Hormuz: Two Missiles Confirmed, US Sank 6 Iranian Boats, Cargo Ship Seized
+- **live_oracle:** ✅ fresh @ 04:24 JST — BTC **$79,963** (+1.606%) | ETH **$2,358** (+1.282%) | XRP **$1.3993** (+0.366%) | USD/JPY **157.02** | Brent **$114.06** | Gold **$4,528.40** — All 6 assets confirmed. BTC 24h range: $78,202–$80,776. Slight pullback from $80,228 (~$265 down), holding near $80K.
+- **Gateway:** ✅ Running (LaunchAgent, ws://127.0.0.1:49273) — probe ok ✅
+- **Dashboard:** ✅ git push active (recent commits)
+- **infra_pulse:** manual check passes ✅
+- **Intel:** BTC $79,963 — slight pullback from $80,228 but +1.606% on the day, holding $80K range. **Hormuz escalation — new confirmations:** Iranian state media confirms two missiles hit a US warship near Jask port (southern entrance). US Central Command denies ship was hit but claims US forces sank six Iranian small boats. US has seized an Iranian-flagged cargo ship. Active tit-for-tat cycle deepening. Brent $114.06 (elevated Hormuz premium). Japan markets closed through May 6.
+
+---
+
+### INTEL BRIEF — May 5, 2026 04:27 JST
+
+**🔴 HORMUZ — CONFIRMED: TWO MISSILES HIT US WARSHIP, US SUNK 6 IRANIAN BOATS, CARGO SHIP SEIZED**
+- **BTC $79,963** (+1.606% 24h) — slight pullback from $80,228 but holding $80K range. 24h range: $78,202–$80,776.
+- **ETH $2,358** (+1.282%) — stable.
+- **XRP $1.3993** (+0.366%) — modest.
+- **Hormuz — Escalation confirmed:** Iranian state media confirms 2 missiles hit US warship near Jask port at southern entrance to Strait. IRGC had warned the vessel to halt; it ignored warnings and continued. US Central Command: "No US Navy ships struck" but claims US forces sank 6 Iranian small boats. US seized Iranian-flagged cargo ship near Hormuz. Trump pledges "graveyard" response. Status: active tit-for-tat, ceasefire void, situation deepening.
+- **Anthropic $900B+ round:** ~$50B raise, board meeting ~May 13-14 (~8 days away).
+- **Japan:** Golden Week — markets closed through May 6 (00:00 JST reopen).
+
+**💱 MARKETS:**
+
+| Asset | Oracle Price | 24h | Note |
+|---|---|---|---|
+| BTC | $79,963.31 | +1.606% | Holding ~$80K — slight pullback |
+| ETH | $2,358.35 | +1.282% | Stable |
+| XRP | $1.3993 | +0.366% | Modest |
+| USD/JPY | 157.024 | flat | Golden Week mute |
+| Brent | $114.06 | flat | Elevated — Hormuz premium |
+| Gold | $4,528.40 | flat | Slight pullback |
+
+**🔔 KEY MONITORS:**
+
+- **🔴 HORMUZ: Two missiles confirmed on US warship, US sunk 6 Iranian boats, cargo ship seized — tit-for-tat deepening, ceasefire void**
+- **BTC: $79,963 — holding $80K range**
+- **Anthropic: Board meeting ~May 13-14 — ~8 days away**
+- **US-Iran: escalating cycle — more assets at risk**
+- **Japan: Golden Week — markets closed through May 6**
+
+**Infrastructure Status:**
+- Gateway: ✅ Running (LaunchAgent, probe ok ws://127.0.0.1:49273)
+- Oracle: ✅ live_oracle.json @ 04:24 JST (all 6 assets confirmed)
+- Dashboard: ✅ git push active (recent commits logged)
+- Scripts: ⚠️ infra_pulse.py / live_oracle.py not in workspace — manual fetch fallback ✅
+
+---
+
+*Last full refresh: 2026-05-05 04:27 JST*
+*Next heartbeat: ~04:47 JST Tue May 5.*
+
+---
+
 - **Last Heartbeat:** 2026-05-05 03:47 JST — Beat #334 | **Status:** ACTIVE | **BTC $80,228 — HORMUZ: TWO MISSILES HIT US NAVY VESSEL, US SEIZES IRANIAN CARGO SHIP**
 
 ---
