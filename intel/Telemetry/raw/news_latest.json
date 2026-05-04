@@ -1,6 +1,20 @@
 {
-  "timestamp": "2026-05-04 14:27 JST",
+  "timestamp": "2026-05-04 21:09 JST",
   "items": [
+    {
+      "category": "AI",
+      "title": "Ouster\u2019s new color lidar is coming to replace cameras",
+      "link": "https://techcrunch.com/?p=3118469",
+      "description": "A sensor that can simultaneously capture depth and image data has long been a \"holy grail,\" Ouster CEO Angus Pacala told TechCrunch.",
+      "pub_date": ""
+    },
+    {
+      "category": "AI",
+      "title": "Nicolas Sauvage is betting on the boring parts of AI",
+      "link": "https://techcrunch.com/?p=3118651",
+      "description": "The portfolio he has assembled since 2019 is dotted with technologies that have become more widely interesting to VCs over the last year:",
+      "pub_date": ""
+    },
     {
       "category": "AI",
       "title": "We\u2019ll take it: a TikToker rallies pledges to buy Spirit Airlines after its abrupt weekend collapse",
@@ -24,9 +38,9 @@
     },
     {
       "category": "AI",
-      "title": "AI-generated actors and scripts are now ineligible for Oscars",
-      "link": "https://techcrunch.com/?p=3118619",
-      "description": "Bad news for Tilly Norwood.",
+      "title": "Dear SaaStr:  Do I Really Need a Top Brand VC?",
+      "link": "https://www.saastr.com/?p=89624",
+      "description": "Dear SaaStr: How important is it to have a premier VC fund backing you vs angels at a higher valuation? I think in most cases, it mostly boils down to\u00a0Next Round Risk. If you raise",
       "pub_date": ""
     },
     {
@@ -104,20 +118,6 @@
       "title": "Dear SaaStr:  What Should I Do When VCs Ask About The Competition?",
       "link": "https://www.saastr.com/?p=292398",
       "description": "Dear SaaStr: What Should I Do When VCs Ask About The Competition? Embrace it.\u00a0 This is your chance to shine. &#34;How to Stand Out in a Competitive Market: Learn from Your Competit",
-      "pub_date": ""
-    },
-    {
-      "category": "SaaS",
-      "title": "Atlassian and Twilio Crush the Quarter, Accelerate. Is the SaaSpocalypse Over?",
-      "link": "https://www.saastr.com/?p=324432",
-      "description": "So this week two of the more important bellwether names in B2B software reported earnings. And neither of them just &#8220;beat.&#8221; Both accelerated. Materially. At $7B and $5.",
-      "pub_date": ""
-    },
-    {
-      "category": "World",
-      "title": "This tiny, magnetic e-reader could stop you from doomscrolling",
-      "link": "https://techcrunch.com/?p=3117139",
-      "description": "The Xteink X3 is a delightfully tiny, MagSafe-compatible e-ink reader that attaches to the back of your phone like a Pop Socket.",
       "pub_date": ""
     },
     {

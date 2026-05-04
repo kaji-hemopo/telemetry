@@ -1,51 +1,66 @@
 # MEMORY.md — Ito Empire Intel
 
 ## Last Heartbeat
-- **Last Heartbeat:** 2026-05-04 14:50 JST — Beat #315 | **Status:** ACTIVE
+- **Last Heartbeat:** 2026-05-04 21:08 JST — Beat #332 | **Status:** ACTIVE | **ALERT: Hormuz incident unconfirmed**
 
 ---
 
-### Beat #315 (14:50 JST May 4, Monday) — Pipeline Active. Markets Firm. Project Freedom Active.
+### Beat #332 (21:08 JST May 4, Monday) — 🚨 IRANIAN MISSILE CLAIM — US DENIES
 
-- **live_oracle:** ✅ fresh @ 14:40 JST (BTC **$80,099.99** (+2.40%) | ETH **$2,381.34** (+3.43%) | XRP **$1.4149** (+2.20%) | USD/JPY **156.815** | Brent **$107.53** | Gold **$4,607.30**) — ALL 6 assets. BTC recovered to $80K.
+- **live_oracle:** ✅ fresh @ 21:08 JST — BTC **$78,748.61** (-0.015%) | ETH **$2,334.55** (+0.505%) | XRP **$1.393** (-0.265%) | USD/JPY **157.1** | Brent **$111.13** ⚠️ (-$0.65 from $111.78) | Gold **$4,572.80**
 - **Gateway:** ✅ Running (LaunchAgent pid 89220, state active) — probe ok ✅
-- **Dashboard:** ✅ telemetry-repo synced with origin/main @ 14:27 JST, just rebased to e6d9ecf
-- infra_pulse: OK (via gateway probe)
-- Intel brief: Project Freedom NOW ACTIVE — CENTCOM confirmed May 4 launch. Trump: "Completely open and ready for business" but blockade stays. Iran senior official warns ceasefire violation. Naval confrontation imminent.
-- **Alert threshold: Project Freedom is go. Iran warned. Naval confrontation RISK VERY HIGH.**
+- **Dashboard:** ✅ kaji-hemopo.github.io/telemetry/agents/ito/ — 18 items refreshed, pushed to GitHub Pages
+- **infra_pulse:** OK — Gateway operational, no errors
 
 ---
 
-### INTEL BRIEF — May 4, 2026 14:50 JST
+### INTEL BRIEF — May 4, 2026 21:08 JST
 
-**🚨 HORMUZ — PROJECT FREEDOM: ACTIVE**
-- Trump announced Sunday night: Operation begins Monday May 4
-- CENTCOM confirmed full military support: guided-missile destroyers, 100+ aircraft, unmanned platforms
-- Trump (2hrs ago): "Completely open and ready for business" — but US naval blockade stays in full force against Iran
-- Iran senior official (CNN, 2hrs ago): warns plan violates ceasefire
-- Al Jazeera live coverage ongoing
-- **Oil stable:** Brent $107.53 (live_oracle 14:40 JST) — operation hasn't spiked oil yet
-- **BTC:** $80,099.99 — recovered to $80K, +2.40% 24h. 24h range $78,084-$80,635.
+**🔴 HORMUZ — 🚨 IRAN CLAIMS MISSILE STRIKE ON US VESSEL — US DENIES**
 
-**📊 MARKETS — ALL FRESH & FIRM**
-- BTC $80,099.99 — +2.40% 24h, recovered to $80K level. 24h range $78,084-$80,635
-- ETH $2,381.34 — +3.43% 24h, best performer
-- XRP $1.4149 — +2.20% 24h, holding above $1.41
-- USD/JPY 156.815 — stable
-- Brent $107.53 — holding $107+, operation hasn't moved oil yet
-- Gold $4,607.30 — elevated, stable
-- Asia Monday session — crypto firm, risk sentiment holding despite Hormuz escalation
+⚠️ **DEVELOPING — UNCONFIRMED**
+- **Iranian media reports:** 2 missiles fired at US Navy vessel after it attempted to cross Strait of Hormuz (per ABC World News Tonight broadcast reference and Times of Israel live blog)
+- **US official denies:** Iran did NOT strike a US Navy vessel (per 9News / US military statement ~40 min ago)
+- **KRMG/AP report:** "US denies Iran struck a military vessel during new effort to reopen Strait of Hormuz" — published today
+- **Trump rejects Iran's latest proposal** to end the war (YouTube, recent)
+- **Iran's proposal:** offered to reopen Strait if US lifts blockade and war ends — Trump rejected
 
-**🤖 AI/TECH**
-- Anthropic $900B+ round: **Still no formal announcement.** TechCrunch (Apr 30): ~$50B round closing within 2 weeks of Apr 30 — target ~May 14. Watch imminent.
-- Magnificent 7 earnings this week (Wed-Thu) — Google, Microsoft, Meta, Amazon, Apple
-- Nvidia: "12-15% more upside" from AI buildout (Dan Ives)
+**Status:** Conflicting reports. US military denies Iranian account. No independent confirmation of vessel hit. Situation fluid — escalation risk ELEVATED.
+
+**Brent alert:** $111.13 — down from $111.78 (last beat) — $0.65 drop. Further confirming softening thesis. If Brent breaks below $110, de-escalation confirmed.
+
+**🤖 ANTHROPIC $50B ROUND AT $900B+**
+- No new update today
+- Round closing within ~2 weeks
+- Board meeting ~May 13-14 — **9 days away**
+
+**💱 MARKETS**
+
+| Asset | Price | 24h | Note |
+|---|---|---|---|
+| BTC | $78,748.61 | -0.015% | Holding ~$78.7K — quiet |
+| ETH | $2,334.55 | +0.505% | Slight recovery |
+| XRP | $1.393 | -0.265% | Minor dip |
+| USD/JPY | 157.1 | flat | Golden Week mute |
+| Brent | $111.13 | ⚠️ -$0.65 | **BREAKING: dropped from $111.78 — now at $111.13** |
+| Gold | $4,572.80 | flat | Muted |
+
+**⚠️ Brent breaking lower:** $111.13 from $111.78 — $0.65 drop this beat. De-escalation thesis strengthening. Watch $110 support.
 
 **🔔 KEY MONITORS**
-- Hormuz: Project Freedom ACTIVE NOW — Iran warning active. Naval confrontation RISK VERY HIGH.
-- Oil: Brent $107.53 — stable, watching for spike if confrontation occurs
-- Crypto: BTC $80,100 — firm at $80K, elevated and stable
-- Anthropic: $900B round announcement expected ~May 14 — no announcement yet
+
+- **🚨 Hormuz: Iranian missile claim on US vessel — US denies — unconfirmed — HIGH ALERT**
+- **Brent: $111.13 — dropped $0.65 — watching $110 support**
+- **Anthropic: Board meeting ~May 13-14 — 9 days away**
+- **BTC: $78,748 — holding pattern**
+
+**Infrastructure Status:**
+- Gateway: ✅ Running (LaunchAgent pid 89220, probe ok)
+- Dashboard: ✅ http://kaji-hemopo.github.io/telemetry/agents/ito/
+- Oracle: ✅ all 6 assets live @ 21:08 JST
+- Last full refresh: 2026-05-04 21:08 JST
+- live_oracle.json: `~/.openclaw/workspace_ito/live_oracle.json`
+- Crontab: `*/20 * * * *` ✅
 
 ---
-*Next heartbeat: ~20min. Project Freedom now active. All systems operational.*
+*Next heartbeat: ~21:28 JST. Iranian missile claim UNCONFIRMED — US denies. Brent breaking lower to $111.13. De-escalation thesis strengthening if Brent holds below $110.*
