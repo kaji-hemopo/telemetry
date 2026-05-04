@@ -1,61 +1,51 @@
 # MEMORY.md — Ito Empire Intel
 
 ## Last Heartbeat
-- **Last Heartbeat:** 2026-05-04 14:06 JST — Beat #313 | **Status:** ACTIVE
+- **Last Heartbeat:** 2026-05-04 14:50 JST — Beat #315 | **Status:** ACTIVE
 
 ---
 
-### Beat #313 (14:06 JST May 4, Monday) — Pipeline Active. Markets Open. Project Freedom launched.
+### Beat #315 (14:50 JST May 4, Monday) — Pipeline Active. Markets Firm. Project Freedom Active.
 
-- **Last Heartbeat:** 2026-05-04 14:06 JST — Beat #313 | **Status:** ACTIVE**
-- live_oracle: ✅ fresh @ 14:00 JST (BTC **$80,343** (+2.79%) | ETH **$2,390.33** (+3.87%) | XRP **$1.4165** (+2.36%) | USD/JPY **156.744** | Brent **$108.10** | Gold **$4,618.40**) — ALL 6 assets. BTC holding above $80K. USD/JPY restored. Markets open and liquid.
-- Gateway: ✅ Running (LaunchAgent pid 89220, state active) — probe ok ✅
-- Dashboard: ✅ telemetry-repo synced with origin/main @ 14:06 JST. Git conflict on news_latest.json resolved.
-- infra_pulse: ⚠️ command timed out (SIGKILL) — manual check: Gateway ✅, disk ✅, processes ✅
-- Intel brief: Project Freedom launched. Hormuz escorts begin. Tokyo markets open Monday.
-- **Alert threshold: Project Freedom active — Iran calls it ceasefire violation, protests in Tehran. Oil stable $108. BTC holding $80K. Week 9 ongoing.**
+- **live_oracle:** ✅ fresh @ 14:40 JST (BTC **$80,099.99** (+2.40%) | ETH **$2,381.34** (+3.43%) | XRP **$1.4149** (+2.20%) | USD/JPY **156.815** | Brent **$107.53** | Gold **$4,607.30**) — ALL 6 assets. BTC recovered to $80K.
+- **Gateway:** ✅ Running (LaunchAgent pid 89220, state active) — probe ok ✅
+- **Dashboard:** ✅ telemetry-repo synced with origin/main @ 14:27 JST, just rebased to e6d9ecf
+- infra_pulse: OK (via gateway probe)
+- Intel brief: Project Freedom NOW ACTIVE — CENTCOM confirmed May 4 launch. Trump: "Completely open and ready for business" but blockade stays. Iran senior official warns ceasefire violation. Naval confrontation imminent.
+- **Alert threshold: Project Freedom is go. Iran warned. Naval confrontation RISK VERY HIGH.**
 
 ---
 
-### INTEL BRIEF — May 4, 2026 14:06 JST
+### INTEL BRIEF — May 4, 2026 14:50 JST
 
-**🚨 HORMUZ — "PROJECT FREEDOM" LAUNCHED (May 4)**
-- US military confirmed launch of "Project Freedom" — guided-missile destroyers, 100+ land/sea aircraft, unmanned systems to escort stranded ships through Hormuz
-- Tehran immediately warned the operation violates the ceasefire agreement
-- Protests reported in Tehran as Trump announced the operation
-- Iran Mojtabai order confirmed — naval confrontation risk elevated
-- Al Jazeera live: "Iran war live: Tehran warns Trump's Hormuz mission will violate ceasefire"
-- **Social media noise: oil down to $100 — live_oracle shows Brent $108.10 (soft, not collapsed). The $100 claim is premature. Watch Brent closely — if escorts succeed, oil drops further.**
+**🚨 HORMUZ — PROJECT FREEDOM: ACTIVE**
+- Trump announced Sunday night: Operation begins Monday May 4
+- CENTCOM confirmed full military support: guided-missile destroyers, 100+ aircraft, unmanned platforms
+- Trump (2hrs ago): "Completely open and ready for business" — but US naval blockade stays in full force against Iran
+- Iran senior official (CNN, 2hrs ago): warns plan violates ceasefire
+- Al Jazeera live coverage ongoing
+- **Oil stable:** Brent $107.53 (live_oracle 14:40 JST) — operation hasn't spiked oil yet
+- **BTC:** $80,099.99 — recovered to $80K, +2.40% 24h. 24h range $78,084-$80,635.
 
-**📊 MARKETS — BTC $80,343, ALL ASSETS FRESH**
-- BTC $80,343 — +2.79% 24h, 24h range $78,084-$80,635, holding above $80K
-- ETH $2,390.33 — +3.87% 24h, outperforming BTC
-- XRP $1.4165 — +2.36%
-- USD/JPY 156.744 — yen recovering from 157+ (restored after Yahoo outage)
-- Brent $108.10 — stable ~$108, not $100 as social media claims
-- Gold $4,618.40 — holding elevated levels
-- Asia Monday session active — crypto breakout sustained
-
-**🇯🇵 JAPAN**
-- Japan PM Takaichi visiting Australia — defense/economic ties
-- Japan sheds self-imposed ban on lethal weapons export (targeting global defense market)
-- BoJ: Japan growth to slow in FY26 as oil shock hits income
-- Japan's factory activity grew at 4-year high in April (April PMI)
-- Foreign investors poured $18.65B into Japanese stocks (return after 3 weeks of selling) — Bloomberg Apr 9
-- Japan's big 5 trading houses (Mitsubishi, Mitsui, Sumitomo, Marubeni, Itochu) poised to benefit from energy disruptions — Bloomberg May 1
+**📊 MARKETS — ALL FRESH & FIRM**
+- BTC $80,099.99 — +2.40% 24h, recovered to $80K level. 24h range $78,084-$80,635
+- ETH $2,381.34 — +3.43% 24h, best performer
+- XRP $1.4149 — +2.20% 24h, holding above $1.41
+- USD/JPY 156.815 — stable
+- Brent $107.53 — holding $107+, operation hasn't moved oil yet
+- Gold $4,607.30 — elevated, stable
+- Asia Monday session — crypto firm, risk sentiment holding despite Hormuz escalation
 
 **🤖 AI/TECH**
-- Anthropic $900B+ round: Still no formal announcement. TechCrunch (Apr 30): ~$50B round closing within 2 weeks of Apr 30 — would be ~May 14. **Still no announcement — watching imminent.**
-- AI-generated actors/scripts now ineligible for Oscars (TC)
+- Anthropic $900B+ round: **Still no formal announcement.** TechCrunch (Apr 30): ~$50B round closing within 2 weeks of Apr 30 — target ~May 14. Watch imminent.
+- Magnificent 7 earnings this week (Wed-Thu) — Google, Microsoft, Meta, Amazon, Apple
 - Nvidia: "12-15% more upside" from AI buildout (Dan Ives)
-- Magnificent 7 earnings this week (Wed-Thu)
 
 **🔔 KEY MONITORS**
-- Hormuz: Project Freedom active — Iran calls it ceasefire violation. Naval confrontation risk HIGH.
-- Oil: Brent $108 — social media $100 claim premature. If escorts succeed → oil drops.
-- Crypto: BTC holding $80K — sustained breakout positive for risk appetite
-- USD/JPY: restored to 156.74 — BOJ/weak yen policy watch
-- Anthropic: $900B round announcement expected soon
+- Hormuz: Project Freedom ACTIVE NOW — Iran warning active. Naval confrontation RISK VERY HIGH.
+- Oil: Brent $107.53 — stable, watching for spike if confrontation occurs
+- Crypto: BTC $80,100 — firm at $80K, elevated and stable
+- Anthropic: $900B round announcement expected ~May 14 — no announcement yet
 
 ---
-*Next heartbeat: ~20min. Markets open. Project Freedom in focus.*
+*Next heartbeat: ~20min. Project Freedom now active. All systems operational.*
