@@ -1,10 +1,35 @@
-# infra_pulse Log
+# Infra Pulse Log
 
-**Timestamp:** 2026-05-04 13:51 UTC (2026-05-04 22:51 JST)
-**Status:** OK (9 OK | 1 WARN | 0 FAIL)
+**Timestamp:** 2026-05-04 23:10 UTC  
+**Status:** WARN
 
-**Findings:**
-- All systems nominal across the board.
-- 1 warning detected — not critical; requires monitoring.
+## Summary
+- **OK:** 9
+- **Warn:** 1
+- **Fail:** 0
 
-**Next run:** Scheduled automatically.
+## Findings
+- **Dir: scripts:** ✅ OK — found
+- **Dir: kaji:** ✅ OK — found
+- **Dir: memory:** ✅ OK — found
+- **Dir: heartbeat_logs:** ✅ OK — found
+- **File: MEMORY.md:** ✅ OK — found
+- **File: IDENTITY.md:** ✅ OK — found
+- **File: SOUL.md:** ✅ OK — found
+- **File: HEARTBEAT.md:** ✅ OK — found
+- **Cron PID file:** 🔴 FAIL — not found (may not apply)
+- **Tier1 Scripts:** ✅ OK — 7 scripts
+
+## Notes
+Ito workspace heartbeat active. Cron session: b59d1431-e95f-4d6a-a6c3-c8850a96f793
+
+---
+
+## infra_pulse — 2026-05-04 14:10 UTC
+
+| Field | Value |
+|-------|-------|
+| **Status** | OK (9 OK : 1 WARN : 0 FAIL) |
+| **Critical Issues** | None |
+
+**Notes:** 1 warning detected. Review source script for details.
