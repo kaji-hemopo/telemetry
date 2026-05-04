@@ -1,16 +1,16 @@
 # MEMORY.md — Ito Empire Intel
 
 ## Last Heartbeat
-- **Last Heartbeat:** 2026-05-05 04:47 JST — Beat #336 | **Status:** ACTIVE | **BTC $79,998 — HORMUZ: TWO MISSILES CONFIRMED ON US WARSHIP, US SUNK 6 IRANIAN BOATS, CARGO SHIP SEIZED, TIT-FOR-TAT DEEPENING**
+- **Last Heartbeat:** 2026-05-05 05:07 JST — Beat #337 | **Status:** ACTIVE | **BTC $79,980 — HORMUZ: TRUMP THREATENS IRAN 'BLOWN OFF FACE OF EARTH', CEASEFIRE FRAGILE**
 
 ---
 
-### Beat #336 (04:47 JST May 5, Tuesday) — BTC $79,998 — Hormuz: Missiles Confirmed, US Sunk 6 Boats, Cargo Ship Seized
-- **live_oracle:** ✅ fresh @ 04:44 JST — BTC **$79,998** (+1.519%) | ETH **$2,355.74** (+0.875%) | XRP **$1.3988** (+0.179%) | USD/JPY **157.073** | Brent **$114.07** | Gold **$4,532.30** — All 6 assets confirmed. BTC 24h range: $78,202–$80,777. Pullback ~$230 from $80,228 but holding near $80K.
+### Beat #337 (05:07 JST May 5, Tuesday) — BTC $79,980 — Trump Threatens Iran 'Blow Off Face of Earth', Ceasefire Fragile
+- **live_oracle:** ✅ fresh @ 05:06 JST — BTC **$79,980** (+1.576%) | ETH **$2,354.06** (+0.856%) | XRP **$1.3953** (+0.072%) | USD/JPY **157.129** | Brent **$113.89** | Gold **$4,526.40** — All 6 assets confirmed. BTC 24h range: $78,202–$80,777. Small -$18 dip from $79,998 at 04:44 JST but holding $80K.
 - **Gateway:** ✅ Running (LaunchAgent, ws://127.0.0.1:49273) — probe ok ✅
-- **Dashboard:** ✅ git push active (7078af6 committed/pushed @ 04:47 JST)
+- **Dashboard:** ✅ git push active (696b034 committed/pushed @ 05:07 JST)
 - **infra_pulse:** manual check passes ✅
-- **Intel:** BTC $79,998 — $230 pullback from $80,228 but still +1.519% on the day, holding $80K range. **Hormuz escalation — confirmed and deepening:** Iranian state media confirms two missiles hit a US warship near Jask port. US Central Command denies ship was hit but confirms US forces sank six Iranian small boats. US seized an Iranian-flagged cargo ship near Hormuz. Trump pledges "graveyard" response. Active tit-for-tat cycle deepening — ceasefire void. Brent $114.07 (elevated Hormuz premium). Japan markets closed through May 6 (reopen 00:00 JST).
+- **Intel:** BTC $79,980 — marginal -$18 dip from 04:44 but holding $80K. 24h range intact at $78,202–$80,777. **Hormuz: Trump threatens Iran 'blown off face of Earth'** if they attack US ships guiding vessels (Fox News, 2hrs ago). US has blown up 6 Iranian boats, Iran hit US warship with 2 confirmed missiles. Ceasefire void — tit-for-tat active. **Fragile ceasefire holding but with active strikes ongoing.** Brent $113.89 (slight pullback from $114.07 but still elevated). Gold $4,526 (slight pullback). Japan markets closed through May 6 (reopen 00:00 JST).
 
 ---
 
