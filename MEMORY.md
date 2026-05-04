@@ -1,9 +1,16 @@
 # MEMORY.md — Ito Empire Intel
 
 ## Last Heartbeat
-- **Last Heartbeat:** 2026-05-05 06:28 JST — Beat #341 | **Status:** ACTIVE | **BTC $80,247 — HORMUZ TENSIONS SIMMER, BRENT $114.42**
+- **Last Heartbeat:** 2026-05-05 06:28 JST — Beat #342 | **Status:** ACTIVE | **BTC $80,206 — SIMMERING, NO NEW STRIKES**
 
 ---
+
+### Beat #342 (06:28 JST May 5, Tuesday) — BTC $80,206 — Simmering, No New Strikes
+- **live_oracle:** ✅ fresh @ 06:28 JST — BTC **$80,206** (+1.644%) | ETH **$2,360.17** (+1.216%) | XRP **$1.40** (+0.228%) | USD/JPY **156.747** (last known) | Brent **$114.42** (TE May 4 close) | Gold **$4,556.20** (MW May 4 close) — BTC/ETH/XRP via CoinGecko; FX/Commodities via last-known/alt sources. BTC 24h range: $78,202–$80,777. Marginal -$41 dip from $80,247 last beat, within normal range.
+- **Gateway:** ✅ Running (LaunchAgent, ws://127.0.0.1:49273) — probe ok ✅
+- **Dashboard:** ✅ git push active (cc27f3e committed/pushed @ 06:28 JST)
+- **infra_pulse:** manual check passes ✅
+- **Intel:** BTC $80,206 — minor -$41 dip, holding $80K. No new escalation signals. Hormuz: tension simmering, Project Freedom guiding ships through, no fresh strikes. Brent $114.42 stable (elevated). Japan markets closed through May 6.
 
 ### Beat #341 (06:28 JST May 5, Tuesday) — BTC $80,247 — Hormuz Tensions Simmer, Brent $114.42
 - **live_oracle:** ✅ fresh @ 06:28 JST — BTC **$80,247** (+1.695%) | ETH **$2,360.21** (+1.287%) | XRP **$1.40** | USD/JPY **156.747** (last known) | Brent **$114.42** (TE May 4 close) | Gold **$4,556.20** (MW May 4 close) — BTC via CoinGecko; FX/Commodities via last-known/alt sources due to 429s. BTC 24h range: $78,202–$80,777. Holding near $80K.
@@ -11,9 +18,6 @@
 - **Dashboard:** ✅ git push active (3423ff8 committed/pushed @ 06:28 JST)
 - **infra_pulse:** manual check passes ✅
 - **Intel:** BTC $80,247 — holding near $80K, marginal +$203 from 06:08. **Hormuz — tension simmering, no new strikes:** No fresh strikes reported overnight. Iran claims forced US warship back from Strait (US denies clash). Project Freedom US guiding ships through. Ceasefire void but active tit-for-tat paused. Brent $114.42 (elevated Hormuz premium from $107.13 May 3). Gold $4,556 (slight pullback from $4,514 last beat). Japan markets closed through May 6 (reopen 00:00 JST).
-- **Dashboard:** ✅ git push active (0ad5817 committed/pushed @ 06:08 JST)
-- **infra_pulse:** manual check passes ✅
-- **Intel:** BTC $80,044 — holding near $80K, +1.373% on the day. **Hormuz — competing narratives:** Iran claims navy forced a US warship to turn back from the Strait (Aljazeera, 2hrs ago), IRGC unveiled new map claiming Hormuz control. US denies any clash occurred. Project Freedom underway (US guiding ships through). Status: fresh dispute signal, competing narratives, no new strikes but Iranian assertion of strait control is a new escalation signal. Brent $114.74 (up sharply from $107.13 May 3 — Hormuz premium elevated). Japan markets remain closed through May 6.
 
 ---
 
