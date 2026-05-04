@@ -1,13 +1,13 @@
 {
-  "generated_at_jst": "2026-05-05 03:33 JST",
-  "btc_usd": 80231.0,
-  "eth_usd": 2363.05,
-  "xrp_usd": 1.41,
-  "usd_jpy": 156.78,
-  "brent": 113.7,
-  "gold": 4532.8,
-  "btc_24h_change": 1.952,
-  "eth_24h_change": 1.389,
-  "xrp_24h_change": 0.894,
-  "source": "CoinGecko + exchangerate-api + live_oracle.json"
+  "generated_at_jst": "2026-05-05 05:07 JST",
+  "btc_usd": 79980.01,
+  "eth_usd": 2354.06,
+  "xrp_usd": 1.3953,
+  "usd_jpy": 157.129,
+  "brent": 113.89,
+  "gold": 4526.4,
+  "btc_24h_change": 1.576,
+  "eth_24h_change": 0.856,
+  "xrp_24h_change": 0.072,
+  "source": "Binance + Yahoo Finance via live_oracle.json"
 }
