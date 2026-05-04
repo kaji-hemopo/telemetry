@@ -1,7 +1,16 @@
 # MEMORY.md — Ito Empire Intel
 
 ## Last Heartbeat
-- **Last Heartbeat:** 2026-05-05 05:07 JST — Beat #337 | **Status:** ACTIVE | **BTC $79,980 — HORMUZ: TRUMP THREATENS IRAN 'BLOWN OFF FACE OF EARTH', CEASEFIRE FRAGILE**
+- **Last Heartbeat:** 2026-05-05 05:27 JST — Beat #338 | **Status:** ACTIVE | **BTC $80,031 — HORMUZ: US GUIDES 2 SHIPS THROUGH, TRUMP SEEKS OFF-RAMPS**
+
+---
+
+### Beat #338 (05:27 JST May 5, Tuesday) — BTC $80,031 — US Guides 2 Ships Through Hormuz, Trump Seeks Off-Ramps
+- **live_oracle:** ✅ fresh @ 05:26 JST — BTC **$80,031** (+1.434%) | ETH **$2,353.72** (+0.786%) | XRP **$1.3946** (+0.022%) | USD/JPY **157.24** | Brent **$113.65** | Gold **$4,524.50** — All 6 assets confirmed. BTC 24h range: $78,202–$80,777. Slight dip from $80,017 but still holding $80K.
+- **Gateway:** ✅ Running (LaunchAgent, ws://127.0.0.1:49273) — probe ok ✅
+- **Dashboard:** ✅ git push active (e750d55 committed/pushed @ 05:27 JST)
+- **infra_pulse:** manual check passes ✅
+- **Intel:** BTC $80,031 — marginal dip but holding $80K. 24h range intact at $78,202–$80,777. **Hormuz — de-escalation signals emerging:** US guided two ships through Strait of Hormuz overnight (CENTCOM, Fox News, ~4hrs ago). US-led task force telling ships to reroute on first day of new effort to reopen the Strait. Trump appears to be seeking diplomatic off-ramps — "still looking for a silver lining" per expert Trita Parsi. CENTCOM denies any US ships struck despite Iran claiming two missiles hit a US warship. Status: tit-for-tat paused, tension simmering but active strikes halted for now.
 
 ---
 
