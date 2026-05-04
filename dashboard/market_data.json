@@ -1,39 +1,13 @@
 {
-  "generated_at_jst": "2026-05-05 03:07 JST",
-  "btc": {
-    "price": 80336.19,
-    "change_24h_pct": 1.965,
-    "high_24h": 80635.51,
-    "low_24h": 78202.0,
-    "source": "Binance"
-  },
-  "eth": {
-    "price": 2369.27,
-    "change_24h_pct": 1.584,
-    "high_24h": 2398.93,
-    "low_24h": 2309.24,
-    "source": "Binance"
-  },
-  "xrp": {
-    "price": 1.4051,
-    "change_24h_pct": 0.681,
-    "high_24h": 1.4209,
-    "low_24h": 1.3829,
-    "source": "Binance"
-  },
-  "usd_jpy": {
-    "price": 157.24,
-    "change_24h_pct": 0.0,
-    "source": "Yahoo Finance"
-  },
-  "brent": {
-    "price": 114.0,
-    "change_24h_pct": 0.0,
-    "source": "Yahoo Finance (BZ=F)"
-  },
-  "gold": {
-    "price": 4533.3,
-    "change_24h_pct": 0.0,
-    "source": "Yahoo Finance (GC=F)"
-  }
+  "generated_at_jst": "2026-05-05 03:33 JST",
+  "btc_usd": 80231.0,
+  "eth_usd": 2363.05,
+  "xrp_usd": 1.41,
+  "usd_jpy": 156.78,
+  "brent": 113.7,
+  "gold": 4532.8,
+  "btc_24h_change": 1.952,
+  "eth_24h_change": 1.389,
+  "xrp_24h_change": 0.894,
+  "source": "CoinGecko + exchangerate-api + live_oracle.json"
 }

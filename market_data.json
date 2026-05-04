@@ -1,8 +1,13 @@
 {
-  "btc": { "price": 79660.66, "change_24h_pct": 1.209, "high_24h": 80635.51, "low_24h": 78202.00 },
-  "eth": { "price": 2356.44, "change_24h_pct": 1.309, "high_24h": 2398.93, "low_24h": 2309.24 },
-  "xrp": { "price": 1.4036, "change_24h_pct": 0.616, "high_24h": 1.4209, "low_24h": 1.3829 },
-  "usd_jpy": { "price": 157.031, "change_24h_pct": 0.0 },
-  "brent": { "price": 110.98, "change_24h_pct": 0.0 },
-  "gold": { "price": 4590.3, "change_24h_pct": 0.0 }
+  "generated_at_jst": "2026-05-05 03:33 JST",
+  "btc_usd": 80231.0,
+  "eth_usd": 2363.05,
+  "xrp_usd": 1.41,
+  "usd_jpy": 156.78,
+  "brent": 113.7,
+  "gold": 4532.8,
+  "btc_24h_change": 1.952,
+  "eth_24h_change": 1.389,
+  "xrp_24h_change": 0.894,
+  "source": "CoinGecko + exchangerate-api + live_oracle.json"
 }
