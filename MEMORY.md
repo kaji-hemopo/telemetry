@@ -1,7 +1,16 @@
 # MEMORY.md — Ito Empire Intel
 
 ## Last Heartbeat
-- **Last Heartbeat:** 2026-05-04 21:52 JST — Beat #318 | **Status:** ACTIVE | **🚨 HORMUZ — WAR ONGOING — IRAN FIRED MISSILES AT US WARSHIP — PROJECT FREEDOM ACTIVE**
+- **Last Heartbeat:** 2026-05-04 22:14 JST — Beat #319 | **Status:** ACTIVE | **🚨 HORMUZ — WAR ONGOING — IRAN MISSILE ATTACK ON US WARSHIP — PROJECT FREEDOM ACTIVE**
+
+---
+
+### Beat #319 (22:14 JST May 4, Monday) — 🚨 WAR ONGOING — HORMUZ COMBAT ACTIVE — BTC $78,601
+
+- **live_oracle:** ✅ fresh @ 22:03 JST — BTC **$78,601** (-0.155%) | ETH **$2,327.66** (+0.102%) | XRP **$1.3898** (-0.48%) | USD/JPY **157.132** | Brent **$110.07** | Gold **$4,584.40**
+- **Gateway:** ✅ Running (LaunchAgent, ws://127.0.0.1:49273) — probe ok ✅
+- **Dashboard:** ✅ git commit ea23ba6 pushed origin/main ✅
+- **infra_pulse:** OK/WARN — Gateway operational
 
 ---
 
@@ -23,46 +32,40 @@
 
 ---
 
-### INTEL BRIEF — May 4, 2026 21:28 JST
+### INTEL BRIEF — May 4, 2026 22:14 JST
 
-**🔴🚨 HORMUZ — IRANIAN MISSILES HIT US WARSHIP — CEASEFIRE OVER — WAR RESUMED**
+**🔴🚨 HORMUZ — WAR ONGOING — IRAN ATTACKED US WARSHIP — PROJECT FREEDOM ACTIVE**
 
-⚠️ **MAJOR ESCALATION — CEASEFIRE CONFIRMED BROKEN**
+⚠️ **WAR RESUMED — MAJOR ESCALATION**
 
-- **Iran hit US warship with TWO MISSILES** near Strait of Hormuz (Iranian state media, France24 live)
-- **US LAUNCHED "PROJECT FREEDOM"** — escorting commercial ships through Hormuz
-- **Iran warns of ceasefire breach** if US escorts ships through (France24, 12hrs ago)
-- **Ceasefire "ended long before" Iran attacked** US warship (analyst on YouTube, ~36 min ago)
-- **US denies vessel was hit** (contradicting Iranian claim) — conflicting reports
-- **Trump rejected Iran's latest proposal** to end war — ceasefire over
-- **LIVE: Iran launching missiles, US ships being escorted** through Hormuz
-- **Wikipedia 2026 Iran war page active** — situation escalating rapidly
-- **Iran lawmaker:** "Hormuz will not return to pre-war state" (Al Jazeera, 15hrs ago)
-- **Iran warning "long and painful" strikes** if US renews attacks
+- **Iran fired missiles at US warship** attempting to pass through Hormuz (YouTube live, 1-3hrs ago)
+- **US denies warship was hit** — conflicting reports with Iranian claim
+- **US launched "PROJECT FREEDOM"** — escorting commercial ships through Hormuz
+- **Iran military warns: US forces will be attacked** if they enter Hormuz (The Guardian, 7hrs ago)
+- **Ceasefire "ended long before" Iran attacked** US warship (analyst, ~1hr ago)
+- **Trump rejected Iran's proposal** to end war
+- **Cargo ship near Hormuz attacked** earlier Sunday (AP News, 10hrs ago)
 
-**Status:** Ceasefire is over. War has resumed. Major escalation. Project Freedom in effect. Naval combat active. BTC holding $78K but with elevated volatility — crypto being used as hedge but also showing some stability despite escalation.
-
-**⚠️ BRENT MOVEMENT:** $111.06 — up from weekend lows of $108.17. Oil market pricing in conflict resumption. However Brent down from $111.78 earlier beat — choppy.
+**Status:** War ongoing. Hormuz contested. Naval forces in contact. Brent elevated at $110+. BTC holding ~$78.6K — crypto stable as safe haven despite escalation.
 
 **💱 MARKETS:**
 
 | Asset | Price | 24h | Note |
 |---|---|---|---|
-| BTC | $78,852.02 | +0.064% | Holding ~$78.8K — war resuming but BTC stable |
-| ETH | $2,338.70 | +0.46% | Stable |
-| XRP | $1.394 | -0.208% | Muted |
-| USD/JPY | 157.086 | flat | Golden Week mute |
-| Brent | $111.06 | ⚠️ | Elevated — war premium |
-| Gold | $4,572.40 | flat | Muted |
+| BTC | $78,601 | -0.155% | Holding ~$78.6K — war ongoing but crypto stable |
+| ETH | $2,327.66 | +0.102% | Stable |
+| XRP | $1.3898 | -0.48% | Muted |
+| USD/JPY | 157.132 | flat | Golden Week mute |
+| Brent | $110.07 | ⚠️ | War premium intact — down from $111 peak |
+| Gold | $4,584.40 | flat | Muted but elevated |
 
 **🔔 KEY MONITORS:**
 
-- **🚨 HORMUZ: War ongoing — Iran fired missiles at US warship — Project Freedom escort operation active**
-- **New: Iran firing missiles at US warship to prevent entry into Hormuz (Al Jazeera, live May 4)**
-- **Trump: US to begin escorting ships in Strait of Hormuz — naval combat ongoing**
+- **🚨 HORMUZ: War ongoing — Iran fired missiles at US warship — Project Freedom escort active**
+- **Iran warns all foreign armed forces will be attacked if they enter Hormuz**
 - **Hezbollah using fiber-optic-guided drones** — northern front intensifying
-- **Brent: $110.83 — elevated from weekend $108.17 — war premium intact**
-- **BTC: $78,975 — holding steady despite escalation — crypto safe-haven narrative holding**
+- **Brent: $110.07 — war premium intact but off $111 peak**
+- **BTC: $78,601 — holding steady despite escalation**
 - **Anthropic: Board meeting ~May 13-14 — 9 days away**
 - **Japan PMI: 4-year high factory growth** — domestic economy strong
 
