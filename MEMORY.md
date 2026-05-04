@@ -1,7 +1,16 @@
 # MEMORY.md — Ito Empire Intel
 
 ## Last Heartbeat
-- **Last Heartbeat:** 2026-05-04 21:28 JST — Beat #317 | **Status:** ACTIVE | **🚨 HORMUZ — IRAN MISSILES HIT US WARSHIP — CEASEFIRE OVER — WAR RESUMED**
+- **Last Heartbeat:** 2026-05-04 21:52 JST — Beat #318 | **Status:** ACTIVE | **🚨 HORMUZ — WAR ONGOING — IRAN FIRED MISSILES AT US WARSHIP — PROJECT FREEDOM ACTIVE**
+
+---
+
+### Beat #318 (21:52 JST May 4, Monday) — 🚨 WAR ONGOING — HORMUZ COMBAT ACTIVE — BTC $78,975 — STABLE
+
+- **live_oracle:** ✅ fresh @ 21:41 JST — BTC **$78,975.03** (+0.292%) | ETH **$2,340.82** (+0.682%) | XRP **$1.3952** (-0.079%) | USD/JPY **157.063** | Brent **$110.83** | Gold **$4,578.90**
+- **Gateway:** ✅ Running (LaunchAgent pid 89220, state active) — probe ok ✅
+- **Dashboard:** ✅ git commit 8307ff7 pushed origin/main ✅
+- **infra_pulse:** OK/WARN — Gateway operational, one warning check (infra_pulse_log.md)
 
 ---
 
@@ -48,17 +57,21 @@
 
 **🔔 KEY MONITORS:**
 
-- **🚨 HORMUZ: War resumed — ceasefire over — Project Freedom active — Iranian missiles fired at US vessel**
-- **Brent: $111.06 — war premium in place — watching for $112+ spike**
+- **🚨 HORMUZ: War ongoing — Iran fired missiles at US warship — Project Freedom escort operation active**
+- **New: Iran firing missiles at US warship to prevent entry into Hormuz (Al Jazeera, live May 4)**
+- **Trump: US to begin escorting ships in Strait of Hormuz — naval combat ongoing**
+- **Hezbollah using fiber-optic-guided drones** — northern front intensifying
+- **Brent: $110.83 — elevated from weekend $108.17 — war premium intact**
+- **BTC: $78,975 — holding steady despite escalation — crypto safe-haven narrative holding**
 - **Anthropic: Board meeting ~May 13-14 — 9 days away**
-- **BTC: $78,852 — stable despite escalation — crypto safe haven narrative active**
+- **Japan PMI: 4-year high factory growth** — domestic economy strong
 
 **Infrastructure Status:**
 - Gateway: ✅ Running (LaunchAgent pid 89220, probe ok)
 - Dashboard: ✅ kaji-hemopo.github.io/telemetry/agents/ito/ — synced
-- Oracle: ✅ all 6 assets live @ 21:17 JST — git synced 9e765cf
+- Oracle: ✅ all 6 assets live @ 21:41 JST — git synced 8307ff7
 
 ---
 
-*Last full refresh: 2026-05-04 21:28 JST*
-*Next heartbeat: ~21:48 JST. Ceasefire over — war resumed — watching Brent spike and BTC safe-haven flows.*
+*Last full refresh: 2026-05-04 21:52 JST*
+*Next heartbeat: ~22:12 JST. War ongoing — Hormuz active — Brent and BTC monitoring.*
