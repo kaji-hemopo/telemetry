@@ -1,18 +1,32 @@
 {
-  "timestamp": "2026-05-05 00:35 JST",
+  "timestamp": "2026-05-05 02:04 JST",
   "items": [
     {
       "category": "AI",
-      "title": "Amazon opens up its global logistics network to all businesses",
-      "link": "https://techcrunch.com/?p=3118731",
-      "description": "The new service, called Amazon Supply Chain Services, pits the e-commerce giant directly against UPS and FedEx.",
+      "title": "Elon Musk\u2019s only expert witness at the OpenAI trial fears an AGI arms race",
+      "link": "https://techcrunch.com/?p=3118775",
+      "description": "Stuart Russell is a long-time AI researcher who thinks governments need to restrain frontier labs.",
       "pub_date": ""
     },
     {
       "category": "AI",
-      "title": "Doordash adds AI tools to speed up merchant onboarding, edit photos of dishes",
-      "link": "https://techcrunch.com/?p=3118710",
-      "description": "DoorDash on Monday added new AI-powered tools that let merchants speed up onboarding, edit photos to make dishes look better, and create new websites from existing content.",
+      "title": "Sierra raises $950M as the race to own enterprise AI gets serious",
+      "link": "https://techcrunch.com/?p=3118797",
+      "description": "The raise gives Sierra more than $1 billion to work with \u2014 capital the company says it will use to become the \"global standard\" for AI-powered customer experiences.",
+      "pub_date": ""
+    },
+    {
+      "category": "AI",
+      "title": "Elon Musk sent ominous texts to Greg Brockman, Sam Altman after asking for a settlement, OpenAI claims",
+      "link": "https://techcrunch.com/?p=3118770",
+      "description": "Musk texted OpenAI's president and co-founder saying that he and CEO Sam Altman \"will be the most hated men in America.\"",
+      "pub_date": ""
+    },
+    {
+      "category": "AI",
+      "title": "Anthropic and OpenAI are both launching joint ventures for enterprise AI services",
+      "link": "https://techcrunch.com/?p=3118761",
+      "description": "Both Anthropic and OpenAI have partnered with asset managers to more aggressively market their enterprise AI products.",
       "pub_date": ""
     },
     {
@@ -38,17 +52,17 @@
     },
     {
       "category": "AI",
+      "title": "<![CDATA[Live updates from Elon Musk and Sam Altman\u2019s court battle over the future of OpenAI]]>",
+      "link": "https://www.theverge.com/tech/917225/sam-altman-elon-musk-openai-lawsuit",
+      "description": "Sam Altman and Elon Musk are facing off in a high-stakes trial that could alter the future of OpenAI and its most well-known product, ChatGPT. In 2024, Musk filed a lawsuit accusin",
+      "pub_date": "2026-05-04T11:43:49-04:00"
+    },
+    {
+      "category": "AI",
       "title": "<![CDATA[Dara Khosrowshahi on replacing Uber drivers \u2014 and himself \u2014 with AI]]>",
       "link": "https://www.theverge.com/podcast/922909/dara-khosrowshahi-uber-drivers-ai-hotels-service",
       "description": "Today, I\u2019m talking with Uber CEO Dara Khosrowshahi. It\u2019s become something of an annual tradition to have Dara join us in the studio when he comes to New York for Uber\u2019s big GO-GET ",
       "pub_date": "2026-05-04T10:30:00-04:00"
-    },
-    {
-      "category": "AI",
-      "title": "<![CDATA[Hisense aggressively cuts the price of its RGB LED TV on release day]]>",
-      "link": "https://www.theverge.com/tech/922571/hisense-cuts-price-ur9",
-      "description": "The Hisense UR9 - the first RGB LED TV to be released this year - is now available for much less than originally revealed. The 65-inch UR9 is now $1,999, while the 75-inch model is",
-      "pub_date": "2026-05-04T09:00:00-04:00"
     },
     {
       "category": "Tech",
@@ -59,17 +73,10 @@
     },
     {
       "category": "Tech",
-      "title": "5 days only: Bring a\u00a0partner or\u00a0colleague and get 50% off a second TechCrunch Disrupt 2026 pass",
-      "link": "https://techcrunch.com/?p=3118686",
-      "description": "The BOGO offer is live.\u00a0For a limited time, buy one pass to\u00a0TechCrunch Disrupt 2026\u00a0and\u00a0get 50% off a second of the same ticket type. Offer ends this Friday, May 8. Save here.",
-      "pub_date": ""
-    },
-    {
-      "category": "Tech",
-      "title": "Barocal can cool your food and drink by squeezing a hunk of plastic crystals",
-      "link": "https://techcrunch.com/?p=3118648",
-      "description": "Barocal might have discovered a cheap, nonpolluting material that could dethrone today's refrigeration technology.",
-      "pub_date": ""
+      "title": "<![CDATA[The Pixel 11 could be the next victim of the RAM shortage]]>",
+      "link": "https://www.theverge.com/tech/923252/google-pixel-11-spec-leak-lower-ram",
+      "description": "Google's next round of Pixel phones could be a downgrade compared to the Pixel 10 lineup due to the ongoing RAM shortage. Leaked specs for the Pixel 11 lineup shared by MysticLeaks",
+      "pub_date": "2026-05-04T12:48:21-04:00"
     },
     {
       "category": "SaaS",
@@ -93,17 +100,10 @@
       "pub_date": ""
     },
     {
-      "category": "SaaS",
-      "title": "<![CDATA[Homebridge 2.0 is here, and it speaks Matter]]>",
-      "link": "https://www.theverge.com/tech/922877/homebridge-2-0-matter-update-robot-vacuums",
-      "description": "Homebridge, the popular software solution that allows you to integrate non-HomeKit devices like Ring cameras into Apple Home, is adding support for the Matter smart home standard. ",
-      "pub_date": "2026-05-04T08:35:06-04:00"
-    },
-    {
       "category": "Finance",
       "title": "US healthcare marketplaces shared citizenship and race data with ad tech giants",
       "link": "https://techcrunch.com/?p=3118733",
-      "description": "Virginia and Washington D.C. paused the data collection and sharing, after Bloomberg's investigation found their health insurance marketplaces were sharing users' information with ",
+      "description": "Virginia and Washington, D.C. paused the data collection and sharing, after Bloomberg's investigation found their health insurance marketplaces were sharing users' information with",
       "pub_date": ""
     },
     {
@@ -114,18 +114,18 @@
       "pub_date": "2026-05-04T11:16:14-04:00"
     },
     {
-      "category": "Finance",
-      "title": "<![CDATA[GameStop makes $56 billion offer to acquire eBay]]>",
-      "link": "https://www.theverge.com/games/922935/gamestop-ebay-bid",
-      "description": "GameStop has made an offer to acquire eBay for $56 billion, which comes as part of GameStop CEO Ryan Cohen's plan to transform the online marketplace into a \"legit competitor to Am",
-      "pub_date": "2026-05-04T09:46:24-04:00"
+      "category": "World",
+      "title": "<![CDATA[The creator of Roomba is back with a furry robot companion]]>",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/922947/roomba-creator-new-robot-familiar-machines-magic-ai-launch",
+      "description": "Colin Angle, the maker of the Roomba and the man who helped put 50 million household robots into people's homes, is back with a new robot. But this one is designed as a companion, ",
+      "pub_date": "2026-05-04T12:51:38-04:00"
     },
     {
       "category": "World",
-      "title": "<![CDATA[Tesla hits Musk\u2019s threshold for \u2018safe unsupervised\u2019 driving]]>",
-      "link": "https://www.theverge.com/transportation/922900/tesla-10-billion-miles-unsupervised-fsd-robotaxi-elon-musk",
-      "description": "We've crossed yet another one of Elon Musk's self-driving thresholds. Tesla's fleet of vehicles using the company's Full Self-Driving (Supervised) system has driven over 10 billion",
-      "pub_date": "2026-05-04T10:28:01-04:00"
+      "title": "<![CDATA[The best Star Wars Day deals]]>",
+      "link": "https://www.theverge.com/gadgets/922905/best-star-wars-day-2026-may-the-fourth-4th-deals-sale",
+      "description": "May the Fourth be with us all on this Star Wars Day. While things have been relatively quiet with the multimedia gold mine that is Star Wars, with just some murmurs about upcoming ",
+      "pub_date": "2026-05-04T12:29:18-04:00"
     }
   ]
 }

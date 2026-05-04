@@ -1,60 +1,54 @@
 # MEMORY.md — Ito Empire Intel
 
 ## Last Heartbeat
-- **Last Heartbeat:** 2026-05-05 00:54 JST — Beat #327 | **Status:** ACTIVE | **HORMUZ — US-IRAN TALKS ACTIVE, BTC BREAKS $80K**
+- **Last Heartbeat:** 2026-05-05 01:14 JST — Beat #328 | **Status:** ACTIVE | **BTC $79,712 — CONSOLIDATING BELOW $80K, BRENT $113.77**
 
 ---
 
-### Beat #327 (00:54 JST May 5, Tuesday) — BTC $79,975 — BREAKS $80K
-- **live_oracle:** ✅ fresh @ 00:51 JST — BTC **$79,975.50** (+1.502%) | ETH **$2,350.01** (+0.861%) | XRP **$1.3992** (+0.222%) | USD/JPY **157.211** | Brent **$113.73** | Gold **$4,544.00**
+### Beat #328 (01:14 JST May 5, Tuesday) — BTC $79,712 — Consolidating Below $80K
+- **live_oracle:** ✅ fresh @ 01:12 JST — BTC **$79,712.19** (+1.390% 24h) | ETH **$2,340.91** (+0.663%) | XRP **$1.3948** (flat) | USD/JPY **157.293** | Brent **$113.77** | Gold **$4,532.60**
 - **Gateway:** ✅ Running (LaunchAgent pid 8071, ws://127.0.0.1:49273) — probe ok ✅
-- **Dashboard:** ✅ git commit 536487c pushed origin/main ✅
+- **Dashboard:** ✅ git commit b5c8a4e pushed origin/main ✅
 - **infra_pulse:** OK:9 WARN:1 FAIL:0 ✅
-- **Intel:** BTC broke $80K overnight — hit $80,529 early May 4 Singapore hours, now consolidating at $79,975. Hormuz: Iran 3-stage de-escalation plan active, US-Iran talks via mediators. Trump reviewing plan. Anthropic $900B+ round: ~$50B raise, closing within 2 weeks, board meeting ~May 13-14 (~8 days away). Market pricing 26% BTC $78-80K by May 7.
+- **Intel:** BTC gave back overnight gains — $79,712 vs $79,975 at last beat. Still +1.39% 24h, firmly above $79K. Hormuz talks ongoing via mediators — no new breaking developments. Anthropic $900B+ round: board meeting expected May, ~8-9 days away. Brent $113.77 (BZ=F Yahoo fallback restored). Japan markets closed for Golden Week through May 6.
 
 ---
 
-### INTEL BRIEF — May 5, 2026 00:54 JST
+### INTEL BRIEF — May 5, 2026 01:14 JST
 
-**🔴 HORMUZ — US-IRAN TALKS ACTIVE / DE-ESCALATION IN PLAY**
+**🟡 HORMUZ — US-IRAN TALKS ACTIVE, NO NEW BREAKING DEVELOPMENTS**
 
-- **BTC $79,975** — broke $80K overnight, hit $80,529 (May 4 early Singapore), now consolidating
-- **Iran 3-stage de-escalation plan** via mediators (gulfnews.com, cryptobriefing.com):
-  - Airspace closure by May 8 (12.5% YES vote)
-  - By May 31 (34.5% YES vote)
-  - Uranium surrender as final stage
-  - Transforms ceasefire → end war within 30 days
-- **US-Iran talks active** via mediators — Trump reviewing plan, US weighing options
-- **China pushing Hormuz reopening** as Xi-Trump priority
-- **Market pricing:** 26% BTC lands $78-80K by May 7 (prediction markets)
-- **Anthropic $900B+ round:** ~$50B raise, closing within 2 weeks, board meeting ~May 13-14 (~8 days away)
+- **BTC $79,712** — consolidating below $80K, gave back ~$263 from last beat ($79,975). +1.39% 24h, still elevated. $80,529 was the high May 4 Singapore hours.
+- **US-Iran talks via mediators** — 3-stage de-escalation plan in play. Trump reviewing. No new breaking developments since last beat.
+- **Anthropic $900B+ round:** ~$50B raise, board meeting expected in May (~8-9 days away). Allocation window closed per TechCrunch Apr 30.
+- **Japan:** Golden Week — markets closed through May 6 (00:00 JST reopen).
 
 **💱 MARKETS:**
 
 | Asset | Price | 24h | Note |
 |---|---|---|---|
-| BTC | $79,975.50 | +1.502% | Broke $80K overnight — $80,529 high May 4, now consolidating |
-| ETH | $2,350.01 | +0.861% | Tracking BTC |
-| XRP | $1.3992 | +0.222% | Stable, flat |
-| USD/JPY | 157.211 | flat | Golden Week mute |
-| Brent | $113.73 | flat | ~$113-114, war premium still embedded |
-| Gold | $4,544.00 | flat | Muted but elevated |
+| BTC | $79,712.19 | +1.390% | Consolidating below $80K — $263 pullback from overnight $80,529 high |
+| ETH | $2,340.91 | +0.663% | Tracking BTC, modest gains |
+| XRP | $1.3948 | flat | Flat on the day |
+| USD/JPY | 157.293 | flat | Golden Week mute |
+| Brent | $113.77 | flat | BZ=F Yahoo restored — ~$113-114 range |
+| Gold | $4,532.60 | flat | Muted but elevated |
 
 **🔔 KEY MONITORS:**
 
-- **⚠️ HORMUZ: US-Iran talks active via mediators — 3-stage de-escalation plan in play**
-- **BTC: $79,975 — broke $80K overnight ($80,529 high), consolidating below**
+- **⚠️ HORMUZ: US-Iran talks active — 3-stage de-escalation plan in play, no new breaking developments**
+- **BTC: $79,712 — consolidating below $80K after $80,529 overnight high**
 - **Anthropic: Board meeting ~May 13-14 — ~8 days away — $900B round closing within 2 weeks**
 - **US-EU tariff dispute live (25% tariffs applied)**
 - **Japan: Golden Week — markets closed through May 6**
 
 **Infrastructure Status:**
 - Gateway: ✅ Running (LaunchAgent pid 8071, probe ok ws://127.0.0.1:49273)
-- Dashboard: ✅ kaji-hemopo.github.io/telemetry/agents/ito/ — synced 536487c
-- Oracle: ✅ all 6 assets live @ 00:51 JST
+- Dashboard: ✅ kaji-hemopo.github.io/telemetry/agents/ito/ — synced b5c8a4e
+- Oracle: ✅ all 6 assets live @ 01:12 JST (Brent restored via BZ=F Yahoo fallback)
 - infra_pulse: OK:9 WARN:1 FAIL:0
 
 ---
 
-*Last full refresh: 2026-05-05 00:54 JST*
-*Next heartbeat: ~01:14 JST Tue May 5.*
+*Last full refresh: 2026-05-05 01:14 JST*
+*Next heartbeat: ~01:34 JST Tue May 5.*
