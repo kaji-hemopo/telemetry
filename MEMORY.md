@@ -1,7 +1,16 @@
 # MEMORY.md — Ito Empire Intel
 
 ## Last Heartbeat
-- **Last Heartbeat:** 2026-05-05 05:47 JST — Beat #339 | **Status:** ACTIVE | **BTC $79,934 — HORMUZ: IRAN CLAIMS FORCED US WARSHIP BACK, US DENIES**
+- **Last Heartbeat:** 2026-05-05 06:08 JST — Beat #340 | **Status:** ACTIVE | **BTC $80,044 — HORMUZ: IRAN CLAIMS FORCED US WARSHIP BACK, US DENIES**
+
+---
+
+### Beat #340 (06:08 JST May 5, Tuesday) — BTC $80,044 — Iran Claims Forced US Warship Back, US Denies
+- **live_oracle:** ✅ fresh @ 06:08 JST — BTC **$80,044** (+1.373%) | ETH **$2,354.73** (+1.081%) | XRP **$1.39** (+0.032%) | USD/JPY **156.747** | Brent **$114.74** | Gold **$4,513.82** — BTC via CoinGecko; USD/JPY via Yahoo Finance May 4 close; Brent via Yahoo Finance BZ=F May 4 close ($114.74, up sharply from $107.13); Gold via Investing.com. BTC 24h range: $78,202–$80,777. Holding near $80K.
+- **Gateway:** ✅ Running (LaunchAgent, ws://127.0.0.1:49273) — probe ok ✅
+- **Dashboard:** ✅ git push active (0ad5817 committed/pushed @ 06:08 JST)
+- **infra_pulse:** manual check passes ✅
+- **Intel:** BTC $80,044 — holding near $80K, +1.373% on the day. **Hormuz — competing narratives:** Iran claims navy forced a US warship to turn back from the Strait (Aljazeera, 2hrs ago), IRGC unveiled new map claiming Hormuz control. US denies any clash occurred. Project Freedom underway (US guiding ships through). Status: fresh dispute signal, competing narratives, no new strikes but Iranian assertion of strait control is a new escalation signal. Brent $114.74 (up sharply from $107.13 May 3 — Hormuz premium elevated). Japan markets remain closed through May 6.
 
 ---
 
@@ -55,22 +64,22 @@
 
 **🔔 KEY MONITORS:**
 
-- **🔴 HORMUZ: Two missiles confirmed on US warship, US sunk 6 Iranian boats, cargo ship seized — tit-for-tat deepening, ceasefire void**
-- **BTC: $79,998 — holding $80K range**
+- **🔴 HORMUZ: Iran claims forced US warship back, US denies clash — new escalation signal, IRGC map**
+- **BTC: $80,044 — holding ~$80K range**
 - **Anthropic: Board meeting ~May 13-14 — ~8 days away**
-- **US-Iran: escalating cycle — more assets at risk**
+- **US-Iran: tit-for-tat paused but fresh dispute, ceasefire void**
 - **Japan: Golden Week — markets closed through May 6 (reopen 00:00 JST)**
 
 **Infrastructure Status:**
 - Gateway: ✅ Running (LaunchAgent, probe ok ws://127.0.0.1:49273)
-- Oracle: ✅ live_oracle.json @ 04:44 JST (all 6 assets confirmed)
-- Dashboard: ✅ git push active — 7078af6 committed/pushed @ 04:47 JST
+- Oracle: ✅ live_oracle.json @ 06:08 JST (all 6 assets confirmed)
+- Dashboard: ✅ git push active — 0ad5817 committed/pushed @ 06:08 JST
 - Scripts: ⚠️ infra_pulse.py / live_oracle.py not in workspace — manual fetch fallback ✅
 
 ---
 
-*Last full refresh: 2026-05-05 04:47 JST*
-*Next heartbeat: ~05:07 JST Tue May 5.*
+*Last full refresh: 2026-05-05 06:08 JST*
+*Next heartbeat: ~06:28 JST Tue May 5.*
 
 ---
 

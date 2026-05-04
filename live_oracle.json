@@ -1,17 +1,45 @@
 {
-  "timestamp": "2026-05-05T06:08:00Z",
-  "timestamp_jst": "2026-05-05 15:08 JST",
-  "assets": {
-    "BTC": { "price": 80044, "unit": "USD", "change_24h": 1.3728, "source": "CoinGecko" },
-    "ETH": { "price": 2354.73, "unit": "USD", "change_24h": 1.0808, "source": "CoinGecko" },
-    "XRP": { "price": 1.39, "unit": "USD", "change_24h": 0.0324, "source": "CoinGecko" },
-    "USD_JPY": { "price": 156.747, "unit": "JPY", "source": "Yahoo Finance (May 4 close)" },
-    "Brent": { "price": 114.74, "unit": "USD/bbl", "source": "Yahoo Finance BZ=F (May 4 close)" },
-    "Gold": { "price": 4513.82, "unit": "USD/oz", "source": "Investing.com XAUUSD" }
+  "generated_at_jst": "2026-05-05 06:11 JST",
+  "btc": {
+    "symbol": "BTC/USD",
+    "price": 80127.26,
+    "change_24h_pct": 1.374,
+    "high_24h": 80776.99,
+    "low_24h": 78202.0,
+    "source": "Binance"
   },
-  "notes": {
-    "japan_markets": "Golden Week — closed through May 6 (00:00 JST reopen)",
-    "brent_surge": "Brent $114.74 — up sharply from $107.13 (May 3), Hormuz premium elevated",
-    "btc_24h_range": "$78,202 – $80,777"
+  "eth": {
+    "symbol": "ETH/USD",
+    "price": 2356.7,
+    "change_24h_pct": 0.967,
+    "high_24h": 2398.93,
+    "low_24h": 2309.24,
+    "source": "Binance"
+  },
+  "xrp": {
+    "symbol": "XRP/USD",
+    "price": 1.3948,
+    "change_24h_pct": -0.043,
+    "high_24h": 1.4209,
+    "low_24h": 1.3829,
+    "source": "Binance"
+  },
+  "usd_jpy": {
+    "symbol": "USD/JPY",
+    "price": 157.151,
+    "change_24h_pct": 0.0,
+    "source": "Yahoo Finance"
+  },
+  "brent": {
+    "symbol": "Brent",
+    "price": 113.76,
+    "change_24h_pct": 0.0,
+    "source": "Yahoo Finance (BZ=F)"
+  },
+  "gold": {
+    "symbol": "Gold",
+    "price": 4532.4,
+    "change_24h_pct": 0.0,
+    "source": "Yahoo Finance (GC=F)"
   }
 }
