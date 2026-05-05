@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-05-06 03:22 JST
+Generated: 2026-05-06 03:43 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -57,21 +57,21 @@ Generated: 2026-05-06 03:22 JST
 | 75 | Freelancer | Python scraper | Bol.com API &amp; Packstation Web Tool | $250.00 | https://www.freelancer.com/projects/api-developmet/Bol-com-API-Packstation-Web.html |
 | 75 | Freelancer | Data processing API | Bubble Golf Booking App Build | $250.00 | https://www.freelancer.com/projects/web-development/Bubble-Golf-Booking-App-Build.html |
 | 75 | Freelancer | Data processing API | Data Scraping &amp; Lead Generation - Estate-Owned Property Maili | $250.00 | https://www.freelancer.com/projects/data-collection/Data-Scraping-Lead-Generation-Estate.html |
-| 75 | Freelancer | Data processing API | Android AI Route Planning Module | $250.00 | https://www.freelancer.com/projects/machine-learning/Android-Route-Planning-Module.html |
-| 65 | Freelancer | Python scraper | Windows Python Automation Script Development | $15.00 | https://www.freelancer.com/projects/automation/Windows-Python-Automation-Script.html |
+| 65 | Freelancer | Python scraper | Dhan API + websocket algo -- 2 | I need a clean, production-ready Python script that plugs into the Dhan API and  | https://www.freelancer.com/projects/api/Dhan-API-websocket-algo.html |
+| 65 | Freelancer | Python scraper | Yelp İletişim Verisi &Ccedil;ekimi | $30.00 | https://www.freelancer.com/projects/scrapy/Yelp-leti-Verisi-ekimi.html |
 | 65 | Freelancer | Python scraper | ELO-Based Stockfish Blunder Tool | $30.00 | https://www.freelancer.com/projects/web-development/ELO-Based-Stockfish-Blunder-Tool.html |
 | 65 | Freelancer | Python scraper | python Coding Developer Needed/New Web based Junior Level | $2.00 | https://www.freelancer.com/projects/backend-development/python-Coding-Developer-Needed-New.html |
 | 65 | Freelancer | Python scraper | Custom Classification ML Application | $10.00 | https://www.freelancer.com/projects/api-developmet/Custom-Classification-Application.html |
 | 65 | Freelancer | Python scraper | Parking System API Developer Needed Software Developer Required & | $15.00 | https://www.freelancer.com/projects/api-developmet/Parking-System-API-Developer-Needed.html |
 | 65 | Freelancer | Python scraper | python Coding Developer Needed/New Web based Junior Level | $2.00 | https://www.freelancer.com/projects/flask/python-Coding-Developer-Needed-New.html |
 | 65 | Freelancer | Python scraper | ML/AI Engineers Needed | I'm seeking experienced ML/AI engineers for a development project. The primary t | https://www.freelancer.com/projects/data-processing/Engineers-Needed.html |
-| 65 | Freelancer | Python scraper | JavaScript &amp; Python Coding Support | $2.00 | https://www.freelancer.com/projects/software-development/JavaScript-Python-Coding-Support.html |
 | 65 | Freelancer | Make.com automation | Goethe-Institut Exam Slot Automation | I need a rock-solid automation script that can run on my Windows machine around  | https://www.freelancer.com/projects/automation/Goethe-Institut-Exam-Slot-Automation.html |
 | 65 | Freelancer | Make.com automation | B2B Sales Development Representative (SDR) for AI Voice Agency &n | $10.00 | https://www.freelancer.com/projects/b2b-marketing/Sales-Development-Representative-SDR-for.html |
 | 65 | Freelancer | Make.com automation | AI-Powered Fintech Solutions Developer | $30.00 | https://www.freelancer.com/projects/ai-development/Powered-Fintech-Solutions-Developer.html |
 | 65 | Freelancer | Make.com automation | Urgent Hiring Nintex Developer | We’re on the lookout for a Nintex Developer/Workflow Automation Specialist to jo | https://www.freelancer.com/projects/microsoft-365/Urgent-Hiring-Nintex-Developer.html |
 | 65 | Freelancer | Make.com automation | Odoo CRM + Project Automation Setup for Solar Business | cope of Work: 1. CRM Setup Configure pipeline: Lead → Qualified → Site Survey →  | https://www.freelancer.com/projects/project-management/Odoo-CRM-Project-Automation-Setup.html |
 | 65 | Freelancer | Make.com automation | Excel Multilingual Sync Automation | $10.00 | https://www.freelancer.com/projects/data-management/Excel-Multilingual-Sync-Automation.html |
+| 65 | Freelancer | Make.com automation | Excel Macro Data Automation | I have a growing number of spreadsheets that need to be cleaned and formatted th | https://www.freelancer.com/projects/excel-macros/Excel-Macro-Data-Cleaning-Automation.html |
 
 ## Notes
 - Scores prioritize: (1) simple automation/scripting fit, (2) payout magnitude, (3) keyword relevance.
