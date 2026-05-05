@@ -1,11 +1,21 @@
 # MEMORY.md — Ito Empire Intel
 
 ## Last Heartbeat
-- **Last Heartbeat:** 2026-05-06 07:05 JST — Beat #410 | **Status:** ACTIVE | **BTC $81,511 — +$91, Pushing Back to $81.5K, 24h Range $79,744–$81,791 Intact, Japan Reopen ~16.75hrs, Hormuz: Quieter Today, No Fresh Strike May 6, Anthropic Closes ~May 8 (~9.5hrs)**
+- **Last Heartbeat:** 2026-05-06 07:26 JST — Beat #411 | **Status:** ACTIVE | **BTC $81,458 — Japan Reopen ~16.5hrs, Hormuz: Quieter Today/No Fresh Strike May 6, Brent $110.50 ⚠️, Anthropic ~May 8 (~8.5hrs)**
 
 ---
 
-### Beat #410 (07:05 JST May 6, Wednesday) — BTC $81,511 — +$91, Pushing Back to $81.5K, 24h Range $79,744–$81,791 Intact, Japan Reopen ~16.75hrs, Hormuz: Quieter Today, No Fresh Strike May 6, Anthropic Closes ~May 8 (~9.5hrs)
+---
+
+### Beat #411 (07:26 JST May 6, Wednesday) — BTC $81,458 — −$53, 24h Range $79,744–$81,791 Intact, Japan Reopen ~16.5hrs, Hormuz: Quieter Today, No Fresh Strike May 6, Brent $110.50 ⚠️
+- **live_oracle:** ✅ fresh @ 07:26 JST — BTC **$81,458.04** (Binance, +1.455% 24h) | ETH **$2,376.77** (+0.590% 24h) | XRP **$1.4183** (+1.343% 24h) | USD/JPY **157.899** (Yahoo, stale/GW) | Brent **$110.50** ⚠️ (Yahoo, stale/GW) | Gold **$4,567.8** (Yahoo, stale/GW) — BTC −$53 from beat #410 ($81,511). Slight pullback from $81.5K, holding above $81.4K. 24h range: **$79,744–$81,791** intact. Crypto live via Binance, FX/commodities stale (Golden Week). Dashboard synced @ 07:26 JST ✅
+- **Gateway:** ✅ Running (LaunchAgent pid 30496, state active) — probe ok ✅
+- **Dashboard:** ✅ live_oracle.json synced to ~/Sites/kaji-hemopo.github.io/telemetry/agents/ito/ (07:26 JST)
+- **infra_pulse:** manual check passes ✅
+- **Intel:** BTC $81,458 — −$53 from beat #410 ($81,511), slight pullback from $81.5K, holding above $81.4K. 24h range: $79,744–$81,791 intact. **Hormuz — quieter today, no fresh confirmed strike May 6:** Web search (May 6): freshest results still May 4-5 era. 7News/ILTV Hormuz clashes (May 5), Al Jazeera Iran warship (May 5), CNN Iran UAE attacks (May 4-5), YouTube no-fresh-strike today. No confirmed fresh strike on May 6 in current scan — situation simmering at elevated level but militarily quieter. **Japan markets CLOSED — Constitution Memorial Day May 6:** Full equity/TOPIX closed all day May 6. Full liquidity resumes **May 7 00:00 JST (~16.5hrs)** — first Asian equity session since active Hormuz engagement + US-Iran clashes. Watch for gap/rally. **Anthropic $900B+ round:** Forbes (4 days ago): White House confirms 'imminent' May Bitcoin bombshell, Trump calls on lawmakers to pass Bitcoin/crypto market structure bill. TechCrunch (4 days ago): ~$50B round at $900B+ valuation, closes within two weeks (~May 8, ~8.5hrs). Board meeting May 13-14 (~4.5 days). No fresh news today. **Alert threshold: Japan midnight tonight (May 7 00:00 JST) — first equity session since active Hormuz engagement + confirmed US-Iran clashes, watch for gap/rally.**
+
+---
+### Beat #410
 - **live_oracle:** ✅ fresh @ 07:05 JST — BTC **$81,511.02** (Binance, +1.526% 24h) | ETH **$2,378.11** (+0.671% 24h) | XRP **$1.4199** (+1.516% 24h) | USD/JPY **157.839** (Yahoo, stale/GW) | Brent **$110.50** (Yahoo, stale/GW) | Gold **$4,567.8** (Yahoo, stale/GW) — BTC +$91 from beat #409 ($81,420). Bounce from session lows, pushing back above $81.5K. 24h range: **$79,744–$81,791** intact. Crypto live via Binance, FX/commodities stale (Golden Week). Dashboard synced @ 07:05 JST ✅
 - **Gateway:** ✅ Running (LaunchAgent pid 30496, state active) — probe ok ✅
 - **Dashboard:** ✅ live_oracle.json synced to ~/Sites/kaji-hemopo.github.io/telemetry/agents/ito/ (07:05 JST)
