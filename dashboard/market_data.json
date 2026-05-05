@@ -1,34 +1,50 @@
 {
-    "generated_at_jst": "2026-05-05 09:12 JST",
-    "markets": {
-        "btc_usd": {
-            "price": 79944,
-            "change_24h_pct": 1.894,
-            "high_24h": 80777,
-            "low_24h": 78202
-        },
-        "eth_usd": {
-            "price": 2350.36,
-            "change_24h_pct": 1.494
-        },
-        "xrp_usd": {
-            "price": 1.392,
-            "change_24h_pct": 0.354
-        },
-        "usd_jpy": {
-            "price": 157.193
-        },
-        "brent": {
-            "price": 113.43
-        },
-        "gold": {
-            "price": 4532.3
-        }
-    },
-    "intel": {
-        "hormuz": "South Korean carrier HMM Namu struck near Hormuz — first major casualty. Iran threatens all US ships entering Strait. Trump: 'blown off face of earth.' US guided 2 ships through overnight. Status: tit-for-tat active, ceasefire void.",
-        "anthropic": "$900B+ round — board meeting May 13-14 (~8 days away). ~$50B raise.",
-        "japan": "Golden Week — markets closed through May 6 (reopen ~15hrs)."
-    },
-    "status": "beat-350"
+  "generated_at_jst": "2026-05-06 05:06 JST",
+  "btc": {
+    "symbol": "BTC/USD",
+    "price": 81674.88,
+    "change_24h_pct": 2.119,
+    "high_24h": 81770.0,
+    "low_24h": 79744.91,
+    "source": "Binance"
+  },
+  "eth": {
+    "symbol": "ETH/USD",
+    "price": 2376.04,
+    "change_24h_pct": 0.934,
+    "high_24h": 2399.5,
+    "low_24h": 2344.83,
+    "source": "Binance"
+  },
+  "xrp": {
+    "symbol": "XRP/USD",
+    "price": 1.4153,
+    "change_24h_pct": 1.433,
+    "high_24h": 1.4206,
+    "low_24h": 1.3901,
+    "source": "Binance"
+  },
+  "usd_jpy": {
+    "symbol": "USD/JPY",
+    "price": 157.856,
+    "change_24h_pct": 0.0,
+    "source": "Yahoo Finance"
+  },
+  "brent": {
+    "symbol": "Brent",
+    "price": 110.25,
+    "change_24h_pct": 0.0,
+    "source": "Yahoo Finance (BZ=F)"
+  },
+  "gold": {
+    "symbol": "Gold",
+    "price": 4565.0,
+    "change_24h_pct": 0.0,
+    "source": "Yahoo Finance (GC=F)"
+  },
+  "market_status": {
+    "Japan": "CLOSED - Constitution Memorial Day (Golden Week)",
+    "Japan_reopen": "May 7 00:00 JST (~19hrs)",
+    "note": "First equity session since active Hormuz engagement"
+  }
 }
