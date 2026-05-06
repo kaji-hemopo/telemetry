@@ -1,5 +1,14 @@
 ## Last Heartbeat
-- **Last Heartbeat:** 2026-05-07 02:38 JST — Beat #461 | **Status:** ACTIVE | BTC $81,487 (↑+$56), ETH $2,350.57 (↓−$2.50), XRP $1.4277 (↑+$0.002), USD/JPY 156.49 (→), Brent $101.58 (→), Gold $4,693.2 (↓−$4.10) — BTC recovering toward $81.5K, Brent steady $101+, Yen inching weaker
+- **Last Heartbeat:** 2026-05-07 02:59 JST — Beat #462 | **Status:** ACTIVE | BTC $81,456 (↓−$31), ETH $2,349.35 (↓−$1.22), XRP $1.4257 (↓−$0.002), USD/JPY 156.48 (→), Brent $101.59 (→), Gold $4,691.5 (↓−$1.70) — Markets flat, Japan session smooth, US-Iran deal memo close
+
+---
+
+### Beat #462 (02:59 JST May 7, Thursday) — BTC $81,456 ↓ −$31, ETH $2,349.35 ↓ −$1.22, XRP $1.4257 ↓ −$0.002, USD/JPY 156.476 (→), Brent $101.59 (→), Gold $4,691.5 ↓ −$1.70 — Markets flat, Japan session smooth
+- **live_oracle:** ✅ fresh @ 02:48 JST — BTC **$81,455.59** (Binance, −$31.37 from beat #461 $81,486.96) | ETH **$2,349.35** (Binance, −$1.22) | XRP **$1.4257** (Binance, −$0.002) | USD/JPY **156.476** (Yahoo, −0.017 from 156.493) | Brent **$101.59** (Yahoo BZ=F, +$0.01 from $101.58) | Gold **$4,691.5** (Yahoo GC=F, −$1.70 from $4,693.2) — BTC marginal pullback, continuing consolidation near $81.5K. 24h range **$80,731–$82,850** intact. Crypto: BTC −0.04%, ETH −0.05%, XRP −0.14%. USD/JPY 156.476 flat, holding above 156. Brent $101.59 stable. Gold $4,691.5 marginal −$1.70. Dashboard synced @ 02:59 JST ✅
+- **Gateway:** ✅ Running (LaunchAgent pid 82892, probe ok) ✅
+- **Dashboard:** ✅ live_oracle.json synced to ~/Sites/kaji-hemopo.github.io/telemetry/agents/ito/ + git pushed (02:59 JST) ✅
+- **infra_pulse:** Gateway reachable, systems operational ✅
+- **Intel:** BTC $81,456 — marginal −$31 pullback from beat #461, continuing consolidation near $81.5K. 24h range **$80,731–$82,850** intact. Pullback orderly — no panic, volume normal. Crypto: BTC −0.04%, ETH −0.05%, XRP −0.14%. USD/JPY 156.476 flat, holding above 156. Brent $101.59 stable at $101+. Gold $4,691.5 marginal. **US-Iran deal:** "Closing in on one-page memorandum to end war" (YouTube, ~7hrs ago). Positive signal, negotiations at advanced stage. **Japan equity session:** Smooth — no shocks, markets at/near record highs. Nikkei 225 near 60,000. **Anthropic $900B+ round:** Est ~6 days away (TechCrunch, board mtg May 13-14). **Alert threshold: no critical signals — BTC consolidating at $81.5K, Brent stable $101+, US-Iran deal close. Monitoring.**
 
 ---
 
