@@ -1,17 +1,17 @@
 {
-  "timestamp_jst": "2026-05-06 05:25 JST",
+  "timestamp_jst": "2026-05-06 16:13 JST",
   "markets": {
     "crypto": {
-      "BTC_USD": 81624.92,
-      "ETH_USD": 2384.51,
-      "XRP_USD": 1.4151
+      "BTC_USD": 81568.73,
+      "ETH_USD": 2372.26,
+      "XRP_USD": 1.4272
     },
     "fx": {
-      "USD_JPY": 157.883
+      "USD_JPY": 156.506
     },
     "commodities": {
-      "Brent": 110.1,
-      "Gold": 4568.2
+      "Brent": 108.45,
+      "Gold": 4677.4
     }
   },
   "sources": {
@@ -19,5 +19,5 @@
     "fx": "Yahoo Finance",
     "commodities": "Yahoo Finance"
   },
-  "notes": "Japan markets closed May 6 (Constitution Memorial Day). Full equity resumes May 7 00:00 JST."
+  "notes": "Japan equity/TOPIX reopens May 7 00:00 JST (~46min). First session since active Hormuz engagement + US-Iran clashes. Goldman Sachs estimate Japan spent ~$30B last week intervening in JPY."
 }
