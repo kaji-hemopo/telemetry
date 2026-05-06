@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-05-06 03:43 JST
+Generated: 2026-05-07 00:42 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -37,7 +37,6 @@ Generated: 2026-05-06 03:43 JST
 | 90 | Lancers | LP制作 | 【急募】スキャン代行サービスLP制作！軽微な編集可能なシステム希望 | ¥200,000 | https://www.lancers.jp/work/detail/5518118 |
 | 90 | Lancers | LP制作 | 【急募】makeshopでのLPページ制作（デザイン＆実装）依頼 | ¥200,000 | https://www.lancers.jp/work/detail/5524800 |
 | 90 | Lancers | LP制作 | 【WordPress】保育接遇研修LP制作の依頼 | ¥80,000 | https://www.lancers.jp/work/detail/5527273 |
-| 90 | Lancers | LP制作 | 【単品通販LP制作】シャンプーHTML/CSS/JSコーディングまで | ¥80,000 | https://www.lancers.jp/work/detail/5527010 |
 | 90 | Lancers | LINE構築 | 2回目 【予算30万以内】Amazon物販向けLINE公式アカウント初期構築（タグ付け・ステップ配信等） | ¥300,000 | https://www.lancers.jp/work/detail/5521293 |
 | 90 | Lancers | LINE構築 | 【急募】カスタマーサポートを探しています | ¥80,000 | https://www.lancers.jp/work/detail/5465120 |
 | 90 | Lancers | API連携 | 【急募】既存システムの保守・改善ができるエンジニア募集 | ¥100,000 | https://www.lancers.jp/work/detail/5518756 |
@@ -47,31 +46,33 @@ Generated: 2026-05-06 03:43 JST
 | 90 | Lancers | API連携 | 【急募】ECストア注文データと出荷データを連携するシステム開発 | ¥50,000 | https://www.lancers.jp/work/detail/5189850 |
 | 90 | Lancers | API連携 | 【短期・API開発】ShopifyとD-ID連携による動画生成システム構築 | ¥100,000 | https://www.lancers.jp/work/detail/5282891 |
 | 75 | Lancers | スクレイピング | 【急募】紙の伝票をWEBシステムへ自動データ入力開発【AI使用可能】 | ¥100,000 | https://www.lancers.jp/work/detail/5411519 |
+| 75 | Lancers | スクレイピング | SNS自動化ツールの作成、保守 | ¥50,000 | https://www.lancers.jp/work/detail/5125911 |
 
 ## Global Highlights (USD)
 
 | Score | Platform | Keyword | Title | Budget/Rate | URL |
 |---:|---|---|---|---|---|
-| 85 | Freelancer | Python scraper | Python Stock Pattern Detector Bot | $750.00 | https://www.freelancer.com/projects/computer-vision/Python-Stock-Pattern-Detector-Bot.html |
-| 85 | Freelancer | Python scraper | Real-Time Trading Workstation Development | $750.00 | https://www.freelancer.com/projects/full-stack-development/Real-Time-Trading-Workstation.html |
-| 75 | Freelancer | Python scraper | Bol.com API &amp; Packstation Web Tool | $250.00 | https://www.freelancer.com/projects/api-developmet/Bol-com-API-Packstation-Web.html |
-| 75 | Freelancer | Data processing API | Bubble Golf Booking App Build | $250.00 | https://www.freelancer.com/projects/web-development/Bubble-Golf-Booking-App-Build.html |
-| 75 | Freelancer | Data processing API | Data Scraping &amp; Lead Generation - Estate-Owned Property Maili | $250.00 | https://www.freelancer.com/projects/data-collection/Data-Scraping-Lead-Generation-Estate.html |
-| 65 | Freelancer | Python scraper | Dhan API + websocket algo -- 2 | I need a clean, production-ready Python script that plugs into the Dhan API and  | https://www.freelancer.com/projects/api/Dhan-API-websocket-algo.html |
-| 65 | Freelancer | Python scraper | Yelp İletişim Verisi &Ccedil;ekimi | $30.00 | https://www.freelancer.com/projects/scrapy/Yelp-leti-Verisi-ekimi.html |
-| 65 | Freelancer | Python scraper | ELO-Based Stockfish Blunder Tool | $30.00 | https://www.freelancer.com/projects/web-development/ELO-Based-Stockfish-Blunder-Tool.html |
-| 65 | Freelancer | Python scraper | python Coding Developer Needed/New Web based Junior Level | $2.00 | https://www.freelancer.com/projects/backend-development/python-Coding-Developer-Needed-New.html |
-| 65 | Freelancer | Python scraper | Custom Classification ML Application | $10.00 | https://www.freelancer.com/projects/api-developmet/Custom-Classification-Application.html |
-| 65 | Freelancer | Python scraper | Parking System API Developer Needed Software Developer Required & | $15.00 | https://www.freelancer.com/projects/api-developmet/Parking-System-API-Developer-Needed.html |
-| 65 | Freelancer | Python scraper | python Coding Developer Needed/New Web based Junior Level | $2.00 | https://www.freelancer.com/projects/flask/python-Coding-Developer-Needed-New.html |
-| 65 | Freelancer | Python scraper | ML/AI Engineers Needed | I'm seeking experienced ML/AI engineers for a development project. The primary t | https://www.freelancer.com/projects/data-processing/Engineers-Needed.html |
-| 65 | Freelancer | Make.com automation | Goethe-Institut Exam Slot Automation | I need a rock-solid automation script that can run on my Windows machine around  | https://www.freelancer.com/projects/automation/Goethe-Institut-Exam-Slot-Automation.html |
-| 65 | Freelancer | Make.com automation | B2B Sales Development Representative (SDR) for AI Voice Agency &n | $10.00 | https://www.freelancer.com/projects/b2b-marketing/Sales-Development-Representative-SDR-for.html |
-| 65 | Freelancer | Make.com automation | AI-Powered Fintech Solutions Developer | $30.00 | https://www.freelancer.com/projects/ai-development/Powered-Fintech-Solutions-Developer.html |
-| 65 | Freelancer | Make.com automation | Urgent Hiring Nintex Developer | We’re on the lookout for a Nintex Developer/Workflow Automation Specialist to jo | https://www.freelancer.com/projects/microsoft-365/Urgent-Hiring-Nintex-Developer.html |
-| 65 | Freelancer | Make.com automation | Odoo CRM + Project Automation Setup for Solar Business | cope of Work: 1. CRM Setup Configure pipeline: Lead → Qualified → Site Survey →  | https://www.freelancer.com/projects/project-management/Odoo-CRM-Project-Automation-Setup.html |
-| 65 | Freelancer | Make.com automation | Excel Multilingual Sync Automation | $10.00 | https://www.freelancer.com/projects/data-management/Excel-Multilingual-Sync-Automation.html |
-| 65 | Freelancer | Make.com automation | Excel Macro Data Automation | I have a growing number of spreadsheets that need to be cleaned and formatted th | https://www.freelancer.com/projects/excel-macros/Excel-Macro-Data-Cleaning-Automation.html |
+| 85 | Freelancer | Python scraper | Advanced IRCTC Tatkal Booking Software | $1,500.00 | https://www.freelancer.com/projects/dot-net/Advanced-IRCTC-Tatkal-Booking-Software.html |
+| 75 | Freelancer | Python scraper | YOLO Truck Gate OCR Automation | $250.00 | https://www.freelancer.com/projects/yolo/YOLO-Truck-Gate-OCR-Automation.html |
+| 75 | Freelancer | Python scraper | Multifaceted Digital Creation &amp; Documentation | $250.00 | https://www.freelancer.com/projects/unity/Multifaceted-Digital-Creation.html |
+| 75 | Freelancer | Data processing API | QuickBooks IIF Import Specialist | $250.00 | https://www.freelancer.com/projects/data-management/QuickBooks-IIF-Import-Specialist.html |
+| 65 | Freelancer | Python scraper | Django Blog Backend Developer | I’m building a content-driven site and need a solid Python backend—Django is my  | https://www.freelancer.com/projects/rest-api/Django-Blog-Backend-Developer.html |
+| 65 | Freelancer | Python scraper | Extract PDF Tables to SQLite | I have a collection of PDFs whose tables combine normal text with embedded image | https://www.freelancer.com/projects/optical-character-recognition/Extract-PDF-Tables-SQLite.html |
+| 65 | Freelancer | Python scraper | PDF Text to Excel Conversion | $8.00 | https://www.freelancer.com/projects/data-extraction/PDF-Text-Excel-Conversion-40423280.html |
+| 65 | Freelancer | Python scraper | AI Agent do Automatyzacji Marketplace (400 SKU) | Budowa Agenta AI do automatyzacji Marketplace (400 SKU na początek) Cel projektu | https://www.freelancer.com/projects/ai-development/Agent-Automatyzacji-Marketplace-SKU.html |
+| 65 | Freelancer | Python scraper | * **Role:** Freelance Developer (2&ndash;3 years of experience).
+ | More details: Which specific APIs do you need to be developed? RESTful APIs What | https://www.freelancer.com/projects/nodejs/Role-Freelance-Developer-years.html |
+| 65 | Freelancer | Python scraper | Api integration development | $30.00 | https://www.freelancer.com/projects/api-developmet/Api-integration-development.html |
+| 65 | Freelancer | Python scraper | AI Inventory Automation App | I want to replace the spreadsheets and guesswork in my clothing business with a  | https://www.freelancer.com/projects/api-developmet/Inventory-Automation-App.html |
+| 65 | Freelancer | Python scraper | REST API Tax Code Fetch | I need a small, well-structured REST call that receives basic product details an | https://www.freelancer.com/projects/api-developmet/REST-API-Tax-Code-Fetch.html |
+| 65 | Freelancer | Python scraper | Agentic AI Developer&mdash;KPI Analyzing Agent Build | Role Overview We are looking for an Agentic AI Developer whose primary responsib | https://www.freelancer.com/projects/ai-development/Agentic-Developer-KPI-Analyzing-Agent.html |
+| 65 | Freelancer | Python scraper | Python Developer for API &amp; KPI Management | We are looking for a Python Developer to build and manage APIs, data processing, | https://www.freelancer.com/projects/fastapi/Python-Developer-for-API-KPI.html |
+| 65 | Freelancer | Make.com automation | Claude code - second brain+ PA build | $10.00 | https://www.freelancer.com/projects/api-developmet/Claude-code-second-brain-build.html |
+| 65 | Freelancer | Make.com automation | AI Specialist for Automation and Web Development | $30.00 | https://www.freelancer.com/projects/web-development/Specialist-for-Automation-Web.html |
+| 65 | Freelancer | Make.com automation | 10-Day Software Automation Oversight | $15.00 | https://www.freelancer.com/projects/project-management/Day-Software-Automation-Oversight.html |
+| 65 | Freelancer | Make.com automation | OpenClaw Specialist (Systems Expert &amp; AI Automation) | $8.00 | https://www.freelancer.com/projects/open-claw/OpenClaw-Specialist-Systems-Expert.html |
+| 65 | Freelancer | Make.com automation | Wati-CRM Lead Automation Setup | I need the entire lead-capture and nurturing flow for my real-estate campaigns a | https://www.freelancer.com/projects/automation/Wati-CRM-Lead-Automation-Setup.html |
+| 65 | Freelancer | Make.com automation | Rapid Spanish Government Appointment Booking | I urgently need help securing the earliest possible “cita previa” appointments f | https://www.freelancer.com/projects/appointment-setting/Rapid-Spanish-Government-Appointment.html |
 
 ## Notes
 - Scores prioritize: (1) simple automation/scripting fit, (2) payout magnitude, (3) keyword relevance.
