@@ -1,50 +1,30 @@
 {
-  "generated_at_jst": "2026-05-06 05:06 JST",
-  "btc": {
-    "symbol": "BTC/USD",
-    "price": 81674.88,
-    "change_24h_pct": 2.119,
-    "high_24h": 81770.0,
-    "low_24h": 79744.91,
-    "source": "Binance"
+  "generated_at_jst": "2026-05-06 22:34 JST",
+  "generated_at_iso": "2026-05-06T22:34:52.934497+09:00",
+  "market": {
+    "BTC_USD": {
+      "price": 82024.62,
+      "change_24h_pct": 0.519,
+      "high_24h": 82850.0,
+      "low_24h": 80731.14
+    },
+    "ETH_USD": {
+      "price": 2387.08,
+      "change_24h_pct": -0.352
+    },
+    "XRP_USD": {
+      "price": 1.432,
+      "change_24h_pct": 1.051
+    },
+    "USD_JPY": {
+      "price": 156.221
+    },
+    "Brent": {
+      "price": 103.57
+    },
+    "Gold": {
+      "price": 4691.5
+    }
   },
-  "eth": {
-    "symbol": "ETH/USD",
-    "price": 2376.04,
-    "change_24h_pct": 0.934,
-    "high_24h": 2399.5,
-    "low_24h": 2344.83,
-    "source": "Binance"
-  },
-  "xrp": {
-    "symbol": "XRP/USD",
-    "price": 1.4153,
-    "change_24h_pct": 1.433,
-    "high_24h": 1.4206,
-    "low_24h": 1.3901,
-    "source": "Binance"
-  },
-  "usd_jpy": {
-    "symbol": "USD/JPY",
-    "price": 157.856,
-    "change_24h_pct": 0.0,
-    "source": "Yahoo Finance"
-  },
-  "brent": {
-    "symbol": "Brent",
-    "price": 110.25,
-    "change_24h_pct": 0.0,
-    "source": "Yahoo Finance (BZ=F)"
-  },
-  "gold": {
-    "symbol": "Gold",
-    "price": 4565.0,
-    "change_24h_pct": 0.0,
-    "source": "Yahoo Finance (GC=F)"
-  },
-  "market_status": {
-    "Japan": "CLOSED - Constitution Memorial Day (Golden Week)",
-    "Japan_reopen": "May 7 00:00 JST (~19hrs)",
-    "note": "First equity session since active Hormuz engagement"
-  }
+  "alerts": []
 }
