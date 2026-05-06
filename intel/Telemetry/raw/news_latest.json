@@ -1,39 +1,46 @@
 {
-  "timestamp": "2026-05-06 19:57 JST",
+  "timestamp": "2026-05-07 03:02 JST",
   "items": [
     {
       "category": "AI",
-      "title": "Peter Sarlin\u2019s QuTwo reaches $380M valuation in angel round",
-      "link": "https://techcrunch.com/?p=3119437",
-      "description": "QyTw0, the Finnish AI lab founded by former AMD Silo AI CEO Peter Sarlin, is now valued at \u20ac325 million (approximately $380 million) after raising a \u20ac25 million angel round ($29 mi",
+      "title": "SpaceX may spend up to $119 billion on \u2018Terafab\u2019 chip factory in Texas",
+      "link": "https://techcrunch.com/?p=3119755",
+      "description": "SpaceX, Elon Musk's space company that also houses his AI company, xAI, is considering spending $55 billion, at least initially, to build a semiconductor factory in Texas, accordin",
       "pub_date": ""
     },
     {
       "category": "AI",
-      "title": "Marc Lore says that AI will soon enable anyone open a restaurant",
-      "link": "https://techcrunch.com/?p=3119385",
-      "description": "Wonder wants to turn its robotic kitchens into AI-powered \u201crestaurant factories,\u201d letting anyone spin up a virtual food brand with a prompt.",
+      "title": "DeepSeek could hit $45B valuation from its first investment round",
+      "link": "https://techcrunch.com/?p=3119749",
+      "description": "The Chinese AI lab came to prominence in early 2025 after launching a large language model that trained on a fraction of the compute power and at a fraction of the cost of the big ",
       "pub_date": ""
     },
     {
       "category": "AI",
-      "title": "SAP bets $1.16B on 18-month-old German AI lab and says yes to NemoClaw",
-      "link": "https://techcrunch.com/?p=3119050",
-      "description": "SAP plans to buy German AI startup Prior Labs and invest heavily in it. It is also prohibiting customers' agents use to a select few like Nvidia's NemoClaw.",
+      "title": "Google updates AI search to include quotes from Reddit and other sources",
+      "link": "https://techcrunch.com/?p=3119669",
+      "description": "While citing web forums and discussion boards can help users find answers to more niche queries, this design choice could also prove chaotic.",
       "pub_date": ""
     },
     {
       "category": "AI",
-      "title": "Bumble\u2019s paying users are slipping as it bets on an overhaul later this year",
-      "link": "https://techcrunch.com/?p=3119474",
-      "description": "The company is making a big bet that the swiping model is outdated and most matches never turn into actual dates. The company wants to fix that by redesigning profiles, changing ho",
+      "title": "Khosla-backed robotics startup Genesis AI has gone full stack, demo shows",
+      "link": "https://techcrunch.com/?p=3119609",
+      "description": "Genesis AI, a startup that raised a $105 million seed round to build foundational AI for robotics, has unveiled its first model, GENE-26.5, but also a demo showcasing a set of robo",
       "pub_date": ""
     },
     {
       "category": "AI",
-      "title": "Altara secures $7M to bridge the data gap that\u2019s slowing down physical sciences",
-      "link": "https://techcrunch.com/?p=3119445",
-      "description": "Altara\u2019s AI aims to diagnose failures and help speed up R&#038;D by unifying  data siloed across spreadsheets and legacy systems.",
+      "title": "Tinder owner Match Group is slowing hiring to pay for its increased use of AI tools",
+      "link": "https://techcrunch.com/?p=3119642",
+      "description": "Match Group said that it's slowing its hiring plans for the rest of the year because AI tools \"cost a lot of money.\"",
+      "pub_date": ""
+    },
+    {
+      "category": "AI",
+      "title": "Tragedy Apps, Database Deletions, AI PR Pitches I Block on Sight, and Why We\u2019re Hiring a Marketer to Report to an AI Agent: The Agents #004 is Out!",
+      "link": "https://www.saastr.com/?p=324593",
+      "description": "Amelia and I just shipped Episode #004 of The Agents. Same setup: three humans, 20+ agents, revenue went from -19% to +47% YoY, and every week we get into what&#8217;s actually wor",
       "pub_date": ""
     },
     {
@@ -52,58 +59,37 @@
     },
     {
       "category": "AI",
-      "title": "Palantir Q1 2026 Has Broken the Enterprise Software Mold. Again. Revenue Growth Accelerates to 85% at $6.5B+ ARR",
-      "link": "https://www.saastr.com/?p=324538",
-      "description": "Three months ago we asked if Palantir might be the greatest enterprise software company ever built. The data said the question was at least worth asking. Today the question got har",
-      "pub_date": ""
+      "title": "<![CDATA[Mira Murati tells the court that she couldn\u2019t trust Sam Altman\u2019s words]]>",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/925338/openai-musk-v-altman-mira-murati",
+      "description": "Mira Murati, OpenAI's former CTO, has testified under oath that CEO Sam Altman lied to her about the safety standards for a new AI model. In a video deposition shown during the ong",
+      "pub_date": "2026-05-06T13:55:53-04:00"
     },
     {
       "category": "AI",
-      "title": "<![CDATA[Chrome\u2019s AI features may be hogging 4GB of your computer storage]]>",
-      "link": "https://www.theverge.com/tech/924933/google-chrome-4gb-gemini-nano-ai-features",
-      "description": "Google Chrome may be taking up more of your storage than expected thanks to a large on-device AI model file that, in some cases, is being automatically downloaded to the browser's ",
-      "pub_date": "2026-05-06T06:13:09-04:00"
-    },
-    {
-      "category": "AI",
-      "title": "<![CDATA[Google Home\u2019s Gemini AI can handle more complicated requests]]>",
-      "link": "https://www.theverge.com/tech/924755/google-home-gemini-3-1-upgrade",
-      "description": "Google Home users can now ask Gemini to complete more complex, multi-step tasks and combine multiple tasks in a single command. Google has updated Gemini for Home to Gemini 3.1, wh",
-      "pub_date": "2026-05-05T17:46:04-04:00"
-    },
-    {
-      "category": "AI",
-      "title": "<![CDATA[Apple agrees to pay iPhone owners $250 million for not delivering AI Siri]]>",
-      "link": "https://www.theverge.com/tech/924706/apple-iphone-siri-intelligence-class-action-lawsuit-settlement",
-      "description": "Apple has agreed to pay $250 million to settle a class action lawsuit that accused it of misleading customers about the availability of its Apple Intelligence features. The propose",
-      "pub_date": "2026-05-05T17:18:23-04:00"
-    },
-    {
-      "category": "AI",
-      "title": "<![CDATA[Microsoft gives up on Xbox Copilot AI]]>",
-      "link": "https://www.theverge.com/games/924551/microsoft-xbox-ceo-copilot-ai-asha-sharma",
-      "description": "Xbox is \"winding down Copilot on mobile\" and \"will stop development of Copilot on console,\" new Xbox CEO Asha Sharma announced on Tuesday. The move follows Sharma's reorganization ",
-      "pub_date": "2026-05-05T15:54:37-04:00"
-    },
-    {
-      "category": "AI",
-      "title": "<![CDATA[Apple could let you pick a favorite AI model in iOS 27]]>",
-      "link": "https://www.theverge.com/tech/924515/apple-intelligence-third-party-chatbot-extensions-ios-27",
-      "description": "The next update to Apple's operating systems could allow users to choose their preferred AI model for running Apple Intelligence. According to Bloomberg's Mark Gurman, Apple is pla",
-      "pub_date": "2026-05-05T15:45:30-04:00"
+      "title": "<![CDATA[This slim ice cream maker could fit in my already crowded kitchen]]>",
+      "link": "https://www.theverge.com/tech/925124/nutribullet-chill-ice-cream-maker",
+      "description": "For the past few months, I've defiantly walked past the Ninja Creami at Costco as I think about our air fryer, toaster oven, breadmaker, rice cooker, and stand mixer already vying ",
+      "pub_date": "2026-05-06T12:07:43-04:00"
     },
     {
       "category": "Tech",
-      "title": "<![CDATA[Threads is finally getting DMs on the web]]>",
-      "link": "https://www.theverge.com/tech/924436/meta-threads-web-dms-direct-messages",
-      "description": "Nearly a year after rolling out Threads direct messaging to everyone on mobile, Meta is finally bringing the feature to the web. Meta says it's \"testing\" DMs on the web now, but pl",
-      "pub_date": "2026-05-05T14:30:42-04:00"
+      "title": "<![CDATA[Here\u2019s what Microsoft is offering long-serving employees to voluntarily retire]]>",
+      "link": "https://www.theverge.com/report/925218/microsoft-voluntary-retirement-program-package-details",
+      "description": "Microsoft revealed last month that it's planning to offer long-serving employees in the US the ability to voluntarily retire. While the terms of the buyout were supposed to be anno",
+      "pub_date": "2026-05-06T13:22:19-04:00"
+    },
+    {
+      "category": "Tech",
+      "title": "<![CDATA[The best beauty tech you can still grab in time for Mother\u2019s Day]]>",
+      "link": "https://www.theverge.com/gadgets/923581/best-mothers-day-beauty-tech-gift-ideas-2026",
+      "description": "If you\u2019re looking to indulge mom this Mother\u2019s Day, a gift that makes her feel a little more taken care of is a good place to start. Fortunately, if you\u2019re looking for something to",
+      "pub_date": "2026-05-06T12:30:00-04:00"
     },
     {
       "category": "SaaS",
-      "title": "Nuro receives driverless testing permit ahead of Uber robotaxi service launch",
-      "link": "https://techcrunch.com/?p=3119465",
-      "description": "The Silicon Valley AV startup has not started driverless testing yet.",
+      "title": "Want to Know How Any B2B Company Is Really Doing? Follow the Net New Customer Growth",
+      "link": "https://www.saastr.com/?p=323643",
+      "description": "There&#8217;s one metric that tells you more about the health of a B2B company than revenue growth, NRR, or margins. And many founders hide from it when things decelerate. The #1 K",
       "pub_date": ""
     },
     {
@@ -121,11 +107,25 @@
       "pub_date": ""
     },
     {
-      "category": "SaaS",
-      "title": "High GRR Is Great. But It Can Also Mask Decay. A Real Risk for ServiceNow and Workday in Particular.",
-      "link": "https://www.saastr.com/?p=324354",
-      "description": "a16z called Workday &#8220;arguably the most important and least loved product in enterprise software.&#8221;\u00a0 I&#8217;m not sure I&#8217;d put it quite there, but the data they us",
+      "category": "World",
+      "title": "Chrome on Android now supports approximate instead of precise location sharing",
+      "link": "https://techcrunch.com/?p=3119688",
+      "description": "The new feature is a small win for Android users, as it gives them more control over how much location data they share with websites.",
       "pub_date": ""
+    },
+    {
+      "category": "World",
+      "title": "<![CDATA[The 44 best last-minute Mother\u2019s Day gift ideas for 2026]]>",
+      "link": "https://www.theverge.com/gadgets/907032/best-mothers-day-gift-ideas-2026-mom-tech-gadgets",
+      "description": "Whether it's managing a busy home or looking out for everyone around them, moms spend a lot of time every day caring for others. This Sunday, Mother's Day, is an opportunity to ret",
+      "pub_date": "2026-05-06T13:34:00-04:00"
+    },
+    {
+      "category": "World",
+      "title": "<![CDATA[Native Instruments Komplete 26 adds weird new synths and experimental piano sounds]]>",
+      "link": "https://www.theverge.com/tech/925211/native-instruments-komplete-26-absynth-massive-kontakt",
+      "description": "The latest version of Native Instruments' Komplete music production bundle is here with 62 new additions, including the wonderfully weird Absynth 6. Komplete 26 comes in several fl",
+      "pub_date": "2026-05-06T12:37:40-04:00"
     }
   ]
 }
