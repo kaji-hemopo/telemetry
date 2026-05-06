@@ -1,0 +1,30 @@
+{
+  "generated_at_jst": "2026-05-06 22:34 JST",
+  "generated_at_iso": "2026-05-06T22:34:52.934497+09:00",
+  "market": {
+    "BTC_USD": {
+      "price": 82024.62,
+      "change_24h_pct": 0.519,
+      "high_24h": 82850.0,
+      "low_24h": 80731.14
+    },
+    "ETH_USD": {
+      "price": 2387.08,
+      "change_24h_pct": -0.352
+    },
+    "XRP_USD": {
+      "price": 1.432,
+      "change_24h_pct": 1.051
+    },
+    "USD_JPY": {
+      "price": 156.221
+    },
+    "Brent": {
+      "price": 103.57
+    },
+    "Gold": {
+      "price": 4691.5
+    }
+  },
+  "alerts": []
+}
