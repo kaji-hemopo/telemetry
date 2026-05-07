@@ -1,11 +1,11 @@
 {
-  "generated_at_jst": "2026-05-07 01:18 JST",
+  "generated_at_jst": "2026-05-07 15:19 JST",
   "gold": {
     "symbol": "XAU/USD",
-    "price": 4695.0,
+    "price": 4716.3,
     "change_24h_pct": 0.0,
-    "high_24h": 4734.6,
-    "low_24h": 4556.1,
+    "high_24h": 4730.5,
+    "low_24h": 4694.0,
     "source": "Yahoo Finance (GC=F)"
   }
 }
