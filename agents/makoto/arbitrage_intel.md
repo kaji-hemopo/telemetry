@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-05-07 00:42 JST
+Generated: 2026-05-07 10:43 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -52,27 +52,26 @@ Generated: 2026-05-07 00:42 JST
 
 | Score | Platform | Keyword | Title | Budget/Rate | URL |
 |---:|---|---|---|---|---|
-| 85 | Freelancer | Python scraper | Advanced IRCTC Tatkal Booking Software | $1,500.00 | https://www.freelancer.com/projects/dot-net/Advanced-IRCTC-Tatkal-Booking-Software.html |
+| 85 | Freelancer | Python scraper | Predictive Analytics Neural Network Development | $3,000.00 | https://www.freelancer.com/projects/data-analysis/Predictive-Analytics-Neural-Network.html |
+| 75 | Freelancer | Python scraper | Transportation Provider | $250.00 | https://www.freelancer.com/projects/angular/Transportation-Provider.html |
+| 75 | Freelancer | Python scraper | Full-Stack Developer for AI Project | $250.00 | https://www.freelancer.com/projects/ai-development/Full-Stack-Developer-for-Project.html |
 | 75 | Freelancer | Python scraper | YOLO Truck Gate OCR Automation | $250.00 | https://www.freelancer.com/projects/yolo/YOLO-Truck-Gate-OCR-Automation.html |
-| 75 | Freelancer | Python scraper | Multifaceted Digital Creation &amp; Documentation | $250.00 | https://www.freelancer.com/projects/unity/Multifaceted-Digital-Creation.html |
-| 75 | Freelancer | Data processing API | QuickBooks IIF Import Specialist | $250.00 | https://www.freelancer.com/projects/data-management/QuickBooks-IIF-Import-Specialist.html |
+| 75 | Freelancer | Make.com automation | Profisol Industrial Automation Website Development | $250.00 | https://www.freelancer.com/projects/web-development/Profisol-Industrial-Automation-Website.html |
+| 75 | Freelancer | Make.com automation | YouTube Automation Expert Needed | $250.00 | https://www.freelancer.com/projects/video-editing/YouTube-Automation-Expert-Needed.html |
+| 75 | Freelancer | Data processing API | AI-Based Trading Card Grading App Development | $200.00 | https://www.freelancer.com/projects/ai-development/Based-Trading-Card-Grading-App.html |
+| 75 | Freelancer | Data processing API | Excel Award Tracker Printing Fix | $250.00 | https://www.freelancer.com/projects/data-analysis/Excel-Award-Tracker-Printing-Fix.html |
+| 65 | Freelancer | Python scraper | PDF Keyword Summarizer Tool | $30.00 | https://www.freelancer.com/projects/python/PDF-Keyword-Summarizer-Tool.html |
+| 65 | Freelancer | Python scraper | Protein Drug Modeling Using Existing Structures | $30.00 | https://www.freelancer.com/projects/pandas/Protein-Drug-Modeling-Using-Existing.html |
+| 65 | Freelancer | Python scraper | Aviator Predictor Real-Time Analytics | $10.00 | https://www.freelancer.com/projects/api-developmet/Aviator-Predictor-Real-Time-Analytics.html |
+| 65 | Freelancer | Python scraper | AI Engineer: Hermes Agent + Postiz + Operational Marketplace Auto | $30.00 | https://www.freelancer.com/projects/database-management/Engineer-Hermes-Agent-Postiz-Operational.html |
+| 65 | Freelancer | Python scraper | python Coding Work Needed/New Web based Junior Level | $2.00 | https://www.freelancer.com/projects/javascript/python-Coding-Work-Needed-New.html |
 | 65 | Freelancer | Python scraper | Django Blog Backend Developer | I’m building a content-driven site and need a solid Python backend—Django is my  | https://www.freelancer.com/projects/rest-api/Django-Blog-Backend-Developer.html |
-| 65 | Freelancer | Python scraper | Extract PDF Tables to SQLite | I have a collection of PDFs whose tables combine normal text with embedded image | https://www.freelancer.com/projects/optical-character-recognition/Extract-PDF-Tables-SQLite.html |
-| 65 | Freelancer | Python scraper | PDF Text to Excel Conversion | $8.00 | https://www.freelancer.com/projects/data-extraction/PDF-Text-Excel-Conversion-40423280.html |
-| 65 | Freelancer | Python scraper | AI Agent do Automatyzacji Marketplace (400 SKU) | Budowa Agenta AI do automatyzacji Marketplace (400 SKU na początek) Cel projektu | https://www.freelancer.com/projects/ai-development/Agent-Automatyzacji-Marketplace-SKU.html |
-| 65 | Freelancer | Python scraper | * **Role:** Freelance Developer (2&ndash;3 years of experience).
- | More details: Which specific APIs do you need to be developed? RESTful APIs What | https://www.freelancer.com/projects/nodejs/Role-Freelance-Developer-years.html |
-| 65 | Freelancer | Python scraper | Api integration development | $30.00 | https://www.freelancer.com/projects/api-developmet/Api-integration-development.html |
-| 65 | Freelancer | Python scraper | AI Inventory Automation App | I want to replace the spreadsheets and guesswork in my clothing business with a  | https://www.freelancer.com/projects/api-developmet/Inventory-Automation-App.html |
-| 65 | Freelancer | Python scraper | REST API Tax Code Fetch | I need a small, well-structured REST call that receives basic product details an | https://www.freelancer.com/projects/api-developmet/REST-API-Tax-Code-Fetch.html |
-| 65 | Freelancer | Python scraper | Agentic AI Developer&mdash;KPI Analyzing Agent Build | Role Overview We are looking for an Agentic AI Developer whose primary responsib | https://www.freelancer.com/projects/ai-development/Agentic-Developer-KPI-Analyzing-Agent.html |
-| 65 | Freelancer | Python scraper | Python Developer for API &amp; KPI Management | We are looking for a Python Developer to build and manage APIs, data processing, | https://www.freelancer.com/projects/fastapi/Python-Developer-for-API-KPI.html |
-| 65 | Freelancer | Make.com automation | Claude code - second brain+ PA build | $10.00 | https://www.freelancer.com/projects/api-developmet/Claude-code-second-brain-build.html |
-| 65 | Freelancer | Make.com automation | AI Specialist for Automation and Web Development | $30.00 | https://www.freelancer.com/projects/web-development/Specialist-for-Automation-Web.html |
-| 65 | Freelancer | Make.com automation | 10-Day Software Automation Oversight | $15.00 | https://www.freelancer.com/projects/project-management/Day-Software-Automation-Oversight.html |
-| 65 | Freelancer | Make.com automation | OpenClaw Specialist (Systems Expert &amp; AI Automation) | $8.00 | https://www.freelancer.com/projects/open-claw/OpenClaw-Specialist-Systems-Expert.html |
-| 65 | Freelancer | Make.com automation | Wati-CRM Lead Automation Setup | I need the entire lead-capture and nurturing flow for my real-estate campaigns a | https://www.freelancer.com/projects/automation/Wati-CRM-Lead-Automation-Setup.html |
 | 65 | Freelancer | Make.com automation | Rapid Spanish Government Appointment Booking | I urgently need help securing the earliest possible “cita previa” appointments f | https://www.freelancer.com/projects/appointment-setting/Rapid-Spanish-Government-Appointment.html |
+| 65 | Freelancer | Make.com automation | monday.com Pipeline Optimization | $30.00 | https://www.freelancer.com/projects/api/monday-com-Pipeline-Optimization.html |
+| 65 | Freelancer | Make.com automation | Instagram &amp; WhatsApp AI Automation | The goal is to stand up a single system that runs Instagram and WhatsApp convers | https://www.freelancer.com/projects/ai-chatbot-development/Instagram-WhatsApp-Automation.html |
+| 65 | Freelancer | Make.com automation | Manage SMS Automation Developer | $15.00 | https://www.freelancer.com/projects/project-management/Manage-SMS-Automation-Developer.html |
+| 65 | Freelancer | Make.com automation | AI Automation for Content Creation | $30.00 | https://www.freelancer.com/projects/content-creation/Automation-for-Content-Creation.html |
+| 65 | Freelancer | Make.com automation | Claude code - second brain+ PA build | $10.00 | https://www.freelancer.com/projects/api-developmet/Claude-code-second-brain-build.html |
 
 ## Notes
 - Scores prioritize: (1) simple automation/scripting fit, (2) payout magnitude, (3) keyword relevance.
