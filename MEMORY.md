@@ -1,4 +1,14 @@
 ## Last Heartbeat
+- **Last Heartbeat:** 2026-05-07 12:12 JST — Beat #486 | **Status:** ACTIVE | BTC $81,027 (↓ −$1,031), ETH $2,320.47 (↓ −$29), XRP $1.411 (↓), USD/JPY 156.32 (→), Brent $101.94 (↑), Gold $4,714.9 (→) — BTC back below $81K, ETH soft, Hormuz UAE facility hit, Anthropic close window active
+
+### Beat #486 (12:12 JST May 7, Thursday) — BTC $81,027 ↓↓ −$1,031, ETH $2,320.47 ↓↓ −$29, XRP $1.411 ↓, USD/JPY 156.32 (→), Brent $101.94 ↑, Gold $4,714.9 (→) — BTC back below $81K, ETH soft, Hormuz UAE facility hit, Anthropic close window active
+- **live_oracle:** ✅ fresh @ 12:12 JST — BTC **$81,027** (Binance, ↓↓ −$1,031 from beat #485 $82,058) | ETH **$2,320.47** (Binance, ↓↓ −$29 from $2,349.35) | XRP **$1.411** (Binance, ↓ −$0.015 from $1.4257) | USD/JPY **156.32** (Yahoo, → flat) | Brent **$101.94** (Yahoo, ↑ +$6 from corrected $95.6) | Gold **$4,714.9** (Yahoo, → flat) — BTC dropped sharply from $82K back below $81K, −$1,031. 24h range now **$80,700–$82,850**. ETH down −$29. Brent restored to $101.94. USD/JPY holding 156.32. Dashboard synced @ 12:12 JST ✅
+- **Gateway:** ✅ Running (LaunchAgent, ws://127.0.0.1:49273, probe ok ✅ — 52ms)
+- **Dashboard:** ✅ live_oracle.json synced to ~/Sites/kaji-hemopo.github.io/telemetry/agents/ito/ (12:12 JST) ✅
+- **infra_pulse:** Gateway reachable, systems operational ✅ (WARN:1 Cron PID file not found — may not apply)
+- **Intel:** BTC $81,027 — sharp drop back below $81K, −$1,031 from beat #485 $82,058. $80.7K floor being tested again. 24h range **$80,700–$82,850** — ceiling compressing. **USD/JPY 156.32** holding steady. **Brent $101.94** restored from $95.6 corrected base. **Anthropic $900B+ round:** Day 9 of 14-day window. Board meeting May 13-14 (~6 days). No close announcement yet. Forbes: bankers expect $400-500B IPO valuation, possibly early 2027. **US-Iran ceasefire Day 56 / Hormuz:** ⚠️ YouTube (1d ago): Gulf tensions escalating, UAE oil facility hit by operations. CNBC (May 5): Hegseth said ceasefire not over despite Iran attacking US forces. Project Freedom paused — Trump halted naval escort mission after 1 day to pursue deal. Ceasefire holding but fragile. **Alert threshold: BTC back below $81K, testing $80.7K floor. If breaks below $80,700 with volume, flag. Hormuz situation escalated — UAE facility hit.**
+
+## Last Heartbeat
 - **Last Heartbeat:** 2026-05-07 11:47 JST — Beat #485 | **Status:** ACTIVE | BTC $81,058 (↑ +$129), ETH $2,319.90 (↑ +$1.31), XRP $1.4129 (↑), USD/JPY 156.26 (↑), Brent $95.6 (↓↓ −$6.18), Gold $4,711.9 (↓) — BTC recovering to $81K, Brent crude CRASH to $95.6 (stale $101 data corrected), Hormuz talks continue, Iran responds Thursday
 
 ### Beat #485 (11:47 JST May 7, Thursday) — BTC $81,058 ↑ +$129, ETH $2,319.90 ↑ +$1.31, XRP $1.4129 ↑, USD/JPY 156.26 ↑, Brent $95.6 ↓↓ −$6.18, Gold $4,711.9 ↓ — BTC recovering to $81K, Brent crude CRASH to $95.6 (stale $101 data corrected), Hormuz talks continue, Iran responds Thursday
