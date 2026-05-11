@@ -1,6 +1,6 @@
 # Makoto Arbitrage Intel
 
-Generated: 2026-05-07 10:43 JST
+Generated: 2026-05-07 21:40 JST
 
 ## Scan Scope
 - Domestic/JPY: CrowdWorks.jp + Lancers.jp
@@ -52,26 +52,26 @@ Generated: 2026-05-07 10:43 JST
 
 | Score | Platform | Keyword | Title | Budget/Rate | URL |
 |---:|---|---|---|---|---|
-| 85 | Freelancer | Python scraper | Predictive Analytics Neural Network Development | $3,000.00 | https://www.freelancer.com/projects/data-analysis/Predictive-Analytics-Neural-Network.html |
-| 75 | Freelancer | Python scraper | Transportation Provider | $250.00 | https://www.freelancer.com/projects/angular/Transportation-Provider.html |
-| 75 | Freelancer | Python scraper | Full-Stack Developer for AI Project | $250.00 | https://www.freelancer.com/projects/ai-development/Full-Stack-Developer-for-Project.html |
-| 75 | Freelancer | Python scraper | YOLO Truck Gate OCR Automation | $250.00 | https://www.freelancer.com/projects/yolo/YOLO-Truck-Gate-OCR-Automation.html |
-| 75 | Freelancer | Make.com automation | Profisol Industrial Automation Website Development | $250.00 | https://www.freelancer.com/projects/web-development/Profisol-Industrial-Automation-Website.html |
-| 75 | Freelancer | Make.com automation | YouTube Automation Expert Needed | $250.00 | https://www.freelancer.com/projects/video-editing/YouTube-Automation-Expert-Needed.html |
-| 75 | Freelancer | Data processing API | AI-Based Trading Card Grading App Development | $200.00 | https://www.freelancer.com/projects/ai-development/Based-Trading-Card-Grading-App.html |
-| 75 | Freelancer | Data processing API | Excel Award Tracker Printing Fix | $250.00 | https://www.freelancer.com/projects/data-analysis/Excel-Award-Tracker-Printing-Fix.html |
-| 65 | Freelancer | Python scraper | PDF Keyword Summarizer Tool | $30.00 | https://www.freelancer.com/projects/python/PDF-Keyword-Summarizer-Tool.html |
-| 65 | Freelancer | Python scraper | Protein Drug Modeling Using Existing Structures | $30.00 | https://www.freelancer.com/projects/pandas/Protein-Drug-Modeling-Using-Existing.html |
-| 65 | Freelancer | Python scraper | Aviator Predictor Real-Time Analytics | $10.00 | https://www.freelancer.com/projects/api-developmet/Aviator-Predictor-Real-Time-Analytics.html |
-| 65 | Freelancer | Python scraper | AI Engineer: Hermes Agent + Postiz + Operational Marketplace Auto | $30.00 | https://www.freelancer.com/projects/database-management/Engineer-Hermes-Agent-Postiz-Operational.html |
-| 65 | Freelancer | Python scraper | python Coding Work Needed/New Web based Junior Level | $2.00 | https://www.freelancer.com/projects/javascript/python-Coding-Work-Needed-New.html |
-| 65 | Freelancer | Python scraper | Django Blog Backend Developer | I’m building a content-driven site and need a solid Python backend—Django is my  | https://www.freelancer.com/projects/rest-api/Django-Blog-Backend-Developer.html |
-| 65 | Freelancer | Make.com automation | Rapid Spanish Government Appointment Booking | I urgently need help securing the earliest possible “cita previa” appointments f | https://www.freelancer.com/projects/appointment-setting/Rapid-Spanish-Government-Appointment.html |
-| 65 | Freelancer | Make.com automation | monday.com Pipeline Optimization | $30.00 | https://www.freelancer.com/projects/api/monday-com-Pipeline-Optimization.html |
-| 65 | Freelancer | Make.com automation | Instagram &amp; WhatsApp AI Automation | The goal is to stand up a single system that runs Instagram and WhatsApp convers | https://www.freelancer.com/projects/ai-chatbot-development/Instagram-WhatsApp-Automation.html |
-| 65 | Freelancer | Make.com automation | Manage SMS Automation Developer | $15.00 | https://www.freelancer.com/projects/project-management/Manage-SMS-Automation-Developer.html |
-| 65 | Freelancer | Make.com automation | AI Automation for Content Creation | $30.00 | https://www.freelancer.com/projects/content-creation/Automation-for-Content-Creation.html |
-| 65 | Freelancer | Make.com automation | Claude code - second brain+ PA build | $10.00 | https://www.freelancer.com/projects/api-developmet/Claude-code-second-brain-build.html |
+| 75 | Freelancer | Python scraper | Bol.com API &amp; Packstation Web Tool | $250.00 | https://www.freelancer.com/projects/api-developmet/Bol-com-API-Packstation-Web.html |
+| 75 | Freelancer | Python scraper | Scrape Australian IT Company Data | $250.00 | https://www.freelancer.com/projects/data-collection/Scrape-Australian-Company-Data.html |
+| 75 | Freelancer | Make.com automation | Zapier Workflow Creation Needed | $250.00 | https://www.freelancer.com/projects/zapier/Zapier-Workflow-Creation-Needed.html |
+| 65 | Freelancer | Python scraper | Bulk Phone Data Cleanup | I have an Excel file of roughly 10,000 phone records. The numbers are randomly s | https://www.freelancer.com/projects/python/Bulk-Phone-Data-Cleanup.html |
+| 65 | Freelancer | Python scraper | Need to build Agent AI for Quotation Creation | We are looking to build an Agent AI which : Takes the input of quotation request | https://www.freelancer.com/projects/large-language-models/Need-build-Agent-for-Quotation.html |
+| 65 | Freelancer | Python scraper | Web3&amp;AI-powered RPG | $15.00 | https://www.freelancer.com/projects/fastapi/Web-powered-RPG.html |
+| 65 | Freelancer | Python scraper | Cricket Prediction Telegram Bot &amp; Wallet | I need a full-featured Telegram bot that lets my users place cricket predictions | https://www.freelancer.com/projects/nodejs/Cricket-Prediction-Telegram-Bot-Wallet.html |
+| 65 | Freelancer | Python scraper | Cricket Prediction &amp; Rewards Bot | 1. Overview Telegram bot जो users को cricket matches पर prediction करने देता है। | https://www.freelancer.com/projects/python/Cricket-Prediction-Rewards-Bot.html |
+| 65 | Freelancer | Python scraper | Python Book Data Scraping Pipeline | $10.00 | https://www.freelancer.com/projects/google-sheets/Python-Book-Data-Scraping-Pipeline.html |
+| 65 | Freelancer | Python scraper | Python Dev for Data Processing Automation | Project Title Python Developer Needed for Small Data Processing / Automation Tas | https://www.freelancer.com/projects/python/Python-Dev-for-Data-Processing-40425126.html |
+| 65 | Freelancer | Python scraper | Custom Claude Bot Development | $8.00 | https://www.freelancer.com/projects/ai-chatbot-development/Custom-Claude-Bot-Development.html |
+| 65 | Freelancer | Python scraper | Clean &amp; Standardize Text Data | $30.00 | https://www.freelancer.com/projects/data-analysis/Clean-Standardize-Text-Data.html |
+| 65 | Freelancer | Python scraper | Ferramenta IA para Suporte Psicoterap&ecirc;utico | $15.00 | https://www.freelancer.com/projects/ai-chatbot-development/Ferramenta-para-Suporte-Psicoterap-utico.html |
+| 65 | Freelancer | Python scraper | Python Dev for Data Processing Automation | Project Title Python Developer Needed for Small Data Processing / Automation Tas | https://www.freelancer.com/projects/python/Python-Dev-for-Data-Processing.html |
+| 65 | Freelancer | Python scraper | Playwright Python Test Automation | Automation Test Engineer Experience: 1+ Year Contract Duration: 3 Months Start:  | https://www.freelancer.com/projects/automation/Playwright-Python-Test-Automation.html |
+| 65 | Freelancer | Make.com automation | n8n Expert Needed for Simple AI Social Media Automation // cr410n | $30.00 | https://www.freelancer.com/projects/n8n/Expert-Needed-for-Simple-Social.html |
+| 65 | Freelancer | Make.com automation | AI Video Workflowg Automation | I’m building an end-to-end pipeline that will find videos on my NAS and upload i | https://www.freelancer.com/projects/python/Video-Workflowg-Automation.html |
+| 65 | Freelancer | Make.com automation | B2B Test Automation Lead Gen | I need a results-driven partner to fill my calendar with qualified sales calls f | https://www.freelancer.com/projects/lead-generation/Test-Automation-Lead-Gen.html |
+| 65 | Freelancer | Make.com automation | Nintex Developer | URGENT HIRING!!! We’re on the lookout for a Nintex Developer / Workflow Automati | https://www.freelancer.com/projects/automation/Nintex-Developer.html |
+| 65 | Freelancer | Make.com automation | Aplikasi Auto Scroll TikTok Android | $8.00 | https://www.freelancer.com/projects/android-app-development/Aplikasi-Auto-Scroll-TikTok-Android.html |
 
 ## Notes
 - Scores prioritize: (1) simple automation/scripting fit, (2) payout magnitude, (3) keyword relevance.
